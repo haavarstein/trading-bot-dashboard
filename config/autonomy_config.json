@@ -1,0 +1,107 @@
+{
+  "version": "2.0.0",
+  "mode": "PAPER_TRADING",
+  "enabled": true,
+  "comment_mode": "PAPER_TRADING = IBKR paper account with real market data. No real money at risk.",
+  
+  "account": {
+    "broker": "IBKR",
+    "account_type": "PAPER",
+    "account_id": "PENDING_ACTIVATION",
+    "username": "<IBKR_USERNAME>",
+    "starting_capital": 1000,
+    "max_capital_at_risk": 1000,
+    "comment": "Paper trading account - account ID will be provided after activation (format: DU######)"
+  },
+
+  "position_limits": {
+    "max_positions": 3,
+    "max_position_size_usd": 200,
+    "max_position_size_pct": 20,
+    "min_position_size_usd": 50,
+    "comment": "PDT-safe: max 3 positions for <$25k accounts"
+  },
+
+  "order_limits": {
+    "max_daily_orders": 3,
+    "max_orders_per_symbol_per_day": 1,
+    "require_stop_loss": true,
+    "require_take_profit": true,
+    "min_risk_reward_ratio": 1.5,
+    "comment": "Avoid PDT violations - max 3 day trades per 5 rolling days"
+  },
+
+  "risk_rules": {
+    "max_loss_per_trade_pct": 2,
+    "max_loss_per_day_pct": 5,
+    "max_concentration_pct": 30,
+    "min_stop_distance_pct": 1,
+    "max_stop_distance_pct": 5,
+    "comment": "2% max loss per trade, 5% max daily drawdown"
+  },
+
+  "instrument_rules": {
+    "allowed_instruments": ["STOCK"],
+    "banned_instruments": ["OPTION", "CRYPTO", "FOREX", "FUTURE", "OTC", "LEVERAGED_ETF", "INVERSE_ETF"],
+    "min_price": 5,
+    "max_price": 1000,
+    "min_avg_volume": 500000,
+    "max_spread_pct": 0.5,
+    "ban_earnings_within_days": 3,
+    "comment": "Cash equities only, no penny stocks or low liquidity"
+  },
+
+  "allowed_symbols": "AI_DECIDES",
+  "comment_allowed_symbols": "AI models use Alpha Radar to scan and select stocks. No hard whitelist.",
+  
+  "stock_criteria": {
+    "min_price": 5,
+    "max_price": 1000,
+    "min_avg_volume": 500000,
+    "max_spread_pct": 0.5,
+    "comment": "AI scans for liquid US stocks meeting these criteria"
+  },
+
+  "trading_hours": {
+    "market_open": "09:30",
+    "market_close": "16:00",
+    "timezone": "America/New_York",
+    "allow_premarket": false,
+    "allow_afterhours": false,
+    "comment": "Regular hours only for safety"
+  },
+
+  "consensus_rules": {
+    "require_dual_model_agreement": true,
+    "model_1": "grok-beta",
+    "model_2": "claude-sonnet-4-5",
+    "min_confidence": 70,
+    "log_all_disagreements": true,
+    "comment": "Both models must agree on action AND symbol"
+  },
+
+  "telegram": {
+    "enabled": true,
+    "chat_id": "<TELEGRAM_CHAT_ID>",
+    "notify_on_trade": true,
+    "notify_on_disagreement": true,
+    "notify_on_blocker": true,
+    "notify_on_error": true,
+    "daily_summary": true,
+    "comment": "Telegram notifications to @your_telegram_bot"
+  },
+
+  "kill_switch": {
+    "file_path": "./KILL_SWITCH.txt",
+    "comment": "Create this file to immediately stop all trading"
+  },
+
+  "data_files": {
+    "trade_journal": "./data/trade_journal.jsonl",
+    "order_ledger": "./data/order_ledger.jsonl",
+    "consensus_log": "./data/consensus_log.jsonl",
+    "candidate_outcomes": "./data/candidate_outcomes.jsonl"
+  },
+
+  "last_updated": "2026-08-06T11:40:00Z"
+}

@@ -1,0 +1,36 @@
+# Git Ignore for Trading Bot
+# Protects sensitive data
+
+# Credentials
+.env
+*.env
+credentials.json
+
+# API Keys
+*_key.txt
+*_token.txt
+*_secret.txt
+
+# Local data
+data/*.jsonl
+data/candidates.json
+logs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Backups
+*.backup
+*.bak
+
+# Screenshots
+screenshots/
+
+# Kill switch (if active)
+KILL_SWITCH.txt
+
+# OS
+.DS_Store
+Thumbs.db

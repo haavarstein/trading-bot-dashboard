@@ -1,0 +1,10 @@
+# IBKR MCP Server Configuration Added
+# Edit ~/.hermes/config.yaml and add under mcp_servers:
+
+ibkr:
+  command: npx
+  args:
+    - -y
+    - interactive-brokers-mcp
+  enabled: false  # Enable after TWS/Gateway is running
+  connect_timeout: 90
