@@ -176,7 +176,23 @@ def main() -> int:
         cash = snap.get("cash")
         equity = snap.get("equity")
         open_pnl_total = snap.get("open_pnl")
-        holdings_rows = list(snap.get("positions") or [])
+        if open_pnl_total is None:
+            open_pnl_total = snap.get("unrealized_pnl")
+        holdings_rows = []
+        for h in list(snap.get("positions") or []):
+            # Normalize broker snapshot keys to dashboard-style names.
+            holdings_rows.append(
+                {
+                    "symbol": h.get("symbol"),
+                    "qty": h.get("qty"),
+                    "avg_cost": h.get("avg_cost"),
+                    "last": h.get("last", h.get("current_price", h.get("last_price"))),
+                    "open_pnl": h.get("open_pnl", h.get("unrealized_pnl")),
+                    "open_pnl_pct": h.get("open_pnl_pct"),
+                    "stop": h.get("stop", h.get("stop_loss")),
+                    "target": h.get("target", h.get("take_profit")),
+                }
+            )
         # largest absolute move first, then symbol
         holdings_rows.sort(key=lambda h: (-abs(float(h.get("open_pnl") or 0)), str(h.get("symbol") or "")))
         open_syms = [h.get("symbol") for h in holdings_rows if h.get("symbol")]
