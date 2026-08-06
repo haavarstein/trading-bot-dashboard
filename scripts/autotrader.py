@@ -5,6 +5,7 @@ Implements dual-model consensus + validation + Telegram notifications
 """
 
 import json
+import math
 import os
 import sys
 from datetime import datetime, timezone
@@ -156,8 +157,8 @@ class DryRunAutoTrader:
             float(self.config['position_limits']['max_position_size_usd']),
             float(broker_snapshot.get('buying_power', 0))
         )
-        qty = round(max_position_usd / entry_price, 4)
-        min_qty = round(float(self.config['position_limits']['min_position_size_usd']) / entry_price, 4)
+        qty = math.floor((max_position_usd / entry_price) * 10000) / 10000
+        min_qty = math.ceil((float(self.config['position_limits']['min_position_size_usd']) / entry_price) * 10000) / 10000
         qty = max(qty, min_qty)
 
         sentiment = str(best_payload.get('sentiment', 'mixed'))
