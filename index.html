@@ -119,7 +119,7 @@
         <div class="card small"><div class="label">Simulated orders today</div><div class="value small" id="stat-orders">0</div><div class="sub">Dry-run orders written to the ledger.</div></div>
         <div class="card small"><div class="label">Top active symbol</div><div class="value small" id="stat-top-symbol">--</div><div class="sub">Most frequent symbol in today’s consensus log.</div></div>
         <div class="card small"><div class="label">Scanner version</div><div class="value small blue" id="stat-scanner">--</div><div class="sub">Current candidate generator.</div></div>
-        <div class="card small"><div class="label">MCP status</div><div class="value small" id="stat-mcp">TV ✓ / IBKR server ✓</div><div class="sub">TradingView connected, IBKR server reachable.</div></div>
+        <div class="card small"><div class="label">MCP status</div><div class="value small" id="stat-mcp">Sim paper</div><div class="sub">Local simulated paper. IBKR MCP paused until personal account is active.</div></div>
       </div>
     </section>
 
@@ -184,20 +184,20 @@
         <div class="card">
           <h3>Working now</h3>
           <ul class="clean">
-            <li>TradingView MCP chart connection is live.</li>
-            <li>IBKR MCP server process responds and exposes tools.</li>
-            <li>Alpha Radar is ranking candidates from a broader universe.</li>
-            <li>Autotrader now chooses from the ranked candidate list.</li>
+            <li>Simulated paper trading runs on a NYSE 15-minute schedule.</li>
+            <li>Alpha Radar ranks liquid US stock candidates.</li>
+            <li>Autotrader chooses from the ranked candidate list.</li>
+            <li>Dashboard refreshes from local activity logs.</li>
             <li>GitHub → Vercel auto-deploy is active.</li>
           </ul>
         </div>
         <div class="card">
-          <h3>Still pending</h3>
+          <h3>Paused / later</h3>
           <ul class="clean">
-            <li>IBKR account authentication and live paper-account readback.</li>
+            <li>IBKR MCP / personal paper account connection (waiting for account activation).</li>
             <li>True independent dual-LLM model prompts.</li>
-            <li>Broker-truth holdings and P/L on the dashboard.</li>
-            <li>Real paper orders instead of simulated order entries.</li>
+            <li>Broker-truth holdings and live P/L.</li>
+            <li>Broker-confirmed paper orders.</li>
           </ul>
         </div>
       </div>
