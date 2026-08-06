@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-08-06T16:45:59.287642+00:00",
+  "generated_at": "2026-08-06T17:00:59.891876+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 996.83,
+    "portfolio_value": 998.35,
     "starting_cash": 1000.0,
-    "total_return_pct": -0.32,
-    "total_pnl": -3.17,
-    "realized_pnl": -2.18,
-    "open_pnl": -1.0,
-    "capital_deployed": 598.96,
-    "cash": 397.87,
-    "closed_trades": 2,
-    "win_rate_pct": 50.0,
-    "vs_spy_pct": -0.16,
-    "spy_return_pct": -0.16,
+    "total_return_pct": -0.16,
+    "total_pnl": -1.65,
+    "realized_pnl": -2.37,
+    "open_pnl": 0.71,
+    "capital_deployed": 400.69,
+    "cash": 597.66,
+    "closed_trades": 3,
+    "win_rate_pct": 33.33,
+    "vs_spy_pct": -0.13,
+    "spy_return_pct": -0.03,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-06T16:46:00.528870+00:00"
+    "updated_at": "2026-08-06T17:01:01.104688+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.16,
-    "price": 768.1799926757812,
+    "return_pct": -0.03,
+    "price": 769.1300048828125,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 10,
-    "consensus_count_today": 25,
-    "validated_count_today": 23,
+    "consensus_count_today": 26,
+    "validated_count_today": 24,
     "blocked_count_today": 2,
-    "fills_today": 9,
-    "simulated_orders_today": 23,
+    "fills_today": 10,
+    "simulated_orders_today": 24,
     "top_symbol_today": "LRCX"
   },
   "holdings": [
@@ -38,34 +38,22 @@
       "symbol": "BAC",
       "qty": 3.1713,
       "avg_cost": 63.065,
-      "last": 63.1349983215332,
-      "market_value": 200.22,
-      "open_pnl": 0.22,
-      "open_pnl_pct": 0.11,
+      "last": 63.037200927734375,
+      "market_value": 199.91,
+      "open_pnl": -0.09,
+      "open_pnl_pct": -0.04,
       "stop": 61.49,
       "target": 66.22,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (beat): Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat"
     },
     {
-      "symbol": "PANW",
-      "qty": 0.5622,
-      "avg_cost": 355.72,
-      "last": 353.54998779296875,
-      "market_value": 198.77,
-      "open_pnl": -1.22,
-      "open_pnl_pct": -0.61,
-      "stop": 346.83,
-      "target": 373.51,
-      "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (catalyst, launch): China launches cybersecurity review into Palo Alto Networks products - Reuters"
-    },
-    {
       "symbol": "LRCX",
       "qty": 0.6463,
       "avg_cost": 309.41,
-      "last": 309.4100036621094,
-      "market_value": 199.97,
-      "open_pnl": 0.0,
-      "open_pnl_pct": 0.0,
+      "last": 310.6549987792969,
+      "market_value": 200.78,
+      "open_pnl": 0.8,
+      "open_pnl_pct": 0.4,
       "stop": 301.67,
       "target": 324.88,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool"
@@ -74,15 +62,15 @@
   "latest_candidate": {
     "symbol": "LRCX",
     "name": "Lam Research",
-    "price": 309.4100036621094,
-    "volume": 3349068.0,
-    "avg_volume": 12869176.8,
-    "percent_change": 0.6473196758358706,
+    "price": 310.6199951171875,
+    "volume": 3456367.0,
+    "avg_volume": 12879906.7,
+    "percent_change": 1.0409152136106288,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 13,
     "liquidity_score": 81.1,
-    "rank_score": 72.18,
+    "rank_score": 72.5,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
     "top_headlines": [
@@ -130,19 +118,35 @@
   },
   "latest_decision": {
     "model": "grok-beta",
-    "action": "BUY",
-    "symbol": "LRCX",
-    "confidence": 90,
-    "entry_price": 309.4100036621094,
-    "stop_loss": 301.67,
-    "take_profit": 324.88,
-    "qty": 0.6463,
-    "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
-    "reason_code": "new_entry",
-    "timestamp": "2026-08-06T16:45:57.127884+00:00"
+    "action": "SELL",
+    "symbol": "PANW",
+    "confidence": 78,
+    "entry_price": 355.3800048828125,
+    "stop_loss": 346.83,
+    "take_profit": 373.51,
+    "qty": 0.5622,
+    "thesis": "Rotate out of PANW to free risk budget for stronger setup ANET",
+    "reason_code": "rotation",
+    "timestamp": "2026-08-06T17:00:57.766093+00:00"
   },
-  "stance": "Buying pressure on LRCX. Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+  "stance": "Exiting PANW. Rotate out of PANW to free risk budget for stronger setup ANET",
   "activity": [
+    {
+      "type": "fill",
+      "symbol": "PANW",
+      "status": "filled_paper",
+      "headline": "SELL PANW @ $355.38",
+      "detail": "Rotate out of PANW to free risk budget for stronger setup ANET",
+      "timestamp": "2026-08-06T17:00:57.768060+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "PANW",
+      "status": "validated",
+      "headline": "SELL PANW \u2014 validated",
+      "detail": "Rotate out of PANW to free risk budget for stronger setup ANET",
+      "timestamp": "2026-08-06T17:00:57.766093+00:00"
+    },
     {
       "type": "fill",
       "symbol": "LRCX",
@@ -222,25 +226,21 @@
       "headline": "BUY BAC @ $63.06",
       "detail": "Bullish setup from ranked candidate list: Headline-driven setup (beat): Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat",
       "timestamp": "2026-08-06T15:50:14.375161+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "BAC",
-      "status": "validated",
-      "headline": "BUY BAC \u2014 validated",
-      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (beat): Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat",
-      "timestamp": "2026-08-06T15:50:14.374161+00:00"
-    },
-    {
-      "type": "fill",
-      "symbol": "ANET",
-      "status": "filled_paper",
-      "headline": "SELL ANET @ $193.23",
-      "detail": "Demo exit so dashboard shows a real SELL fill and realized P/L",
-      "timestamp": "2026-08-06T15:50:07.568279+00:00"
     }
   ],
   "recent_trades": [
+    {
+      "timestamp": "2026-08-06T17:00:57.768060+00:00",
+      "action": "SELL",
+      "symbol": "PANW",
+      "qty": 0.5622,
+      "price": 355.3800048828125,
+      "notional": 199.79,
+      "realized_pnl": -0.19,
+      "reason": "rotation",
+      "thesis": "Rotate out of PANW to free risk budget for stronger setup ANET",
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-08-06T16:45:57.128884+00:00",
       "action": "BUY",
@@ -352,6 +352,19 @@
   ],
   "closed_trades": [
     {
+      "timestamp": "2026-08-06T17:00:57.767105+00:00",
+      "symbol": "PANW",
+      "qty": 0.5622,
+      "avg_cost": 355.72,
+      "exit_price": 355.3800048828125,
+      "proceeds": 199.79,
+      "realized_pnl": -0.19,
+      "reason": "rotation",
+      "thesis": "Rotate out of PANW to free risk budget for stronger setup ANET",
+      "opened_at": "2026-08-06T16:00:50.163941+00:00",
+      "hold_seconds": 3607
+    },
+    {
       "timestamp": "2026-08-06T16:31:07.135083+00:00",
       "symbol": "LRCX",
       "qty": 0.6417,
@@ -395,15 +408,15 @@
     {
       "symbol": "LRCX",
       "name": "Lam Research",
-      "price": 309.4100036621094,
-      "volume": 3349068.0,
-      "avg_volume": 12869176.8,
-      "percent_change": 0.6473196758358706,
+      "price": 310.6199951171875,
+      "volume": 3456367.0,
+      "avg_volume": 12879906.7,
+      "percent_change": 1.0409152136106288,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
       "liquidity_score": 81.1,
-      "rank_score": 72.18,
+      "rank_score": 72.5,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
       "top_headlines": [
@@ -450,74 +463,17 @@
       ]
     },
     {
-      "symbol": "JPM",
-      "name": "JPMorgan",
-      "price": 356.9599914550781,
-      "volume": 2055304.0,
-      "avg_volume": 6664570.4,
-      "percent_change": -0.6346728764270816,
-      "exchange": "",
-      "sentiment": "bearish",
-      "catalyst_score": -10,
-      "liquidity_score": 78.24,
-      "rank_score": 59.74,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (warns): JPMorgan\u2019s Jamie Dimon warns high market leverage could trigger quick disruption (JPM:NYSE) - Seeking Alpha",
-      "top_headlines": [
-        "SpaceX Stock Primed for Massive 122% Upside, JPMorgan Says - benzinga.com",
-        "JPMorgan\u2019s Jamie Dimon warns high market leverage could trigger quick disruption (JPM:NYSE) - Seeking Alpha",
-        "COIN and CRCL Stock Outlook as JPMorgan CEO Warns of Elevated Leverage Amid S&P 500 Pullback - CoinGape"
-      ],
-      "matched_headlines": [
-        {
-          "title": "JPMorgan\u2019s Jamie Dimon warns high market leverage could trigger quick disruption (JPM:NYSE) - Seeking Alpha",
-          "keywords": [
-            "warns"
-          ]
-        },
-        {
-          "title": "COIN and CRCL Stock Outlook as JPMorgan CEO Warns of Elevated Leverage Amid S&P 500 Pullback - CoinGape",
-          "keywords": [
-            "warns"
-          ]
-        },
-        {
-          "title": "Nike Stock Falls 3.6% After JPMorgan Warns of $1 Billion Hit - Yahoo Finance",
-          "keywords": [
-            "fall",
-            "falls",
-            "warns"
-          ]
-        },
-        {
-          "title": "JPMorgan Chase (NYSE:JPM) fraud-claim scrutiny weighs on stock at analysts\u2019 target - TechStock\u00b2",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "fraud"
-          ]
-        },
-        {
-          "title": "JPMorgan Resets Arista Stock Target After AI Surge - TradingView",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "ANET",
       "name": "Arista Networks",
-      "price": 191.75,
-      "volume": 4001366.0,
-      "avg_volume": 8989146.6,
-      "percent_change": -2.8178995628149237,
+      "price": 192.8000030517578,
+      "volume": 4107347.0,
+      "avg_volume": 8999744.7,
+      "percent_change": -2.2857404909229886,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
       "liquidity_score": 79.54,
-      "rank_score": 54.69,
+      "rank_score": 54.26,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst, demand): Arista Networks Stock Surges as Earnings Prove AI Demand Is Real - Barron's",
       "top_headlines": [
@@ -552,15 +508,15 @@
     {
       "symbol": "UNH",
       "name": "UnitedHealth",
-      "price": 405.489990234375,
-      "volume": 1633606.0,
-      "avg_volume": 4261840.6,
-      "percent_change": -1.758936345396729,
+      "price": 404.5400085449219,
+      "volume": 1688648.0,
+      "avg_volume": 4267344.8,
+      "percent_change": -1.9890954464150516,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
       "liquidity_score": 76.3,
-      "rank_score": 48.35,
+      "rank_score": 48.54,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): UNH Stock Becomes Dow\u2019s Biggest Driver Back To 50,000 \u2014 Will Trump Tailwinds Spark Another Leg Higher? - Stocktwits",
       "top_headlines": [
@@ -604,17 +560,75 @@
       ]
     },
     {
-      "symbol": "PANW",
-      "name": "Palo Alto Networks",
-      "price": 353.6199951171875,
-      "volume": 2785826.0,
-      "avg_volume": 5897112.6,
-      "percent_change": -2.492695211392668,
+      "symbol": "META",
+      "name": "Meta",
+      "price": 590.72998046875,
+      "volume": 7080350.0,
+      "avg_volume": 18941415.0,
+      "percent_change": 0.33289075062966444,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
-      "liquidity_score": 77.71,
-      "rank_score": 47.65,
+      "liquidity_score": 82.77,
+      "rank_score": 48.18,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst): After Earnings, Is Meta Stock a Buy, a Sell, or Fairly Valued? - Morningstar",
+      "top_headlines": [
+        "After Earnings, Is Meta Stock a Buy, a Sell, or Fairly Valued? - Morningstar",
+        "Why Is Everyone Talking About Meta Stock? - The Motley Fool",
+        "Mark Zuckerberg sends a strong message to Meta stock investors - thestreet.com"
+      ],
+      "matched_headlines": [
+        {
+          "title": "After Earnings, Is Meta Stock a Buy, a Sell, or Fairly Valued? - Morningstar",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "70% Gains From Here? Wall Street Pros Expect Exactly That From Meta in 12 Months - 24/7 Wall St.",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Is Meta Platforms Stock a Smart Buy Ahead of Q1 2026 Earnings? Unpacking AI Growth and Investment Potential - TradingKey",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "growth"
+          ]
+        },
+        {
+          "title": "Meta becomes latest firm to say its AI hacked another company - BBC",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Meta stock sinks 10% on earnings miss, 'barely passable' quarter - aol.com",
+          "keywords": [
+            "catalyst",
+            "miss"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "PANW",
+      "name": "Palo Alto Networks",
+      "price": 355.1549987792969,
+      "volume": 2934624.0,
+      "avg_volume": 5911992.4,
+      "percent_change": -2.0694327488632904,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 7,
+      "liquidity_score": 77.72,
+      "rank_score": 47.31,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, launch): China launches cybersecurity review into Palo Alto Networks products - Reuters",
       "top_headlines": [
