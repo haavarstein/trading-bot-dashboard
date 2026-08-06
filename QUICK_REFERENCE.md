@@ -43,7 +43,7 @@ hermes cronjob resume autotrader-cycle
 **Capital:** $1,000  
 **Max Position:** $200  
 **Max Positions:** 3  
-**Stocks:** TSLA, NVDA, AAPL, SPY, QQQ  
+**Stocks:** AI-selected candidates from Alpha Radar  
 **Min R:R:** 1.5:1  
 **Max Loss/Trade:** 2%  
 

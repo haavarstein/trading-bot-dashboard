@@ -309,10 +309,15 @@ class DryRunAutoTrader:
                     radar_data = json.load(f)
                     candidates = [c['symbol'] for c in radar_data.get('candidates', [])]
             else:
-                candidates = ['TSLA', 'NVDA', 'AAPL']  # Fallback
+                raise RuntimeError(
+                    'Alpha Radar candidates file missing; run alpha_radar.py before autotrader when allowed_symbols=AI_DECIDES'
+                )
         else:
             candidates = allowed
-        
+
+        if not candidates:
+            raise RuntimeError('No candidates available for model review')
+
         market_context = {sym: self.get_mock_market_data(sym) for sym in candidates}
         
         decision1 = self.get_model_decision(model1_name, broker_snapshot, market_context)

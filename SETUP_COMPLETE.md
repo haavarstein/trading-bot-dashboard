@@ -12,7 +12,7 @@
 - **File:** `~/trading-bot/config/autonomy_config.json`
 - **Capital:** $1,000
 - **Max Positions:** 3 (PDT-safe)
-- **Allowed Stocks:** TSLA, NVDA, AAPL, SPY, QQQ
+- **Allowed Stocks:** AI-selected candidates from Alpha Radar
 - **Mode:** DRY_RUN (no real money)
 - **Telegram:** Configured for a configured Telegram recipient
 

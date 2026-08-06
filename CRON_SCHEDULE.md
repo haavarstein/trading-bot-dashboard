@@ -22,7 +22,7 @@
 hermes cronjob create \
   --name "premarket-scan" \
   --schedule "0 12 * * 1-5" \
-  --prompt "Scan watchlist (TSLA, NVDA, AAPL, SPY, QQQ) for premarket catalysts, volume, and sentiment. Save candidates to ~/trading-bot/data/candidates.json. No trading - analysis only." \
+  --prompt "Scan liquid U.S. stocks for catalysts, volume, and sentiment. Save ranked candidates to ~/trading-bot/data/candidates.json. No trading - analysis only." \
   --workdir "$HOME/trading-bot" \
   --enabled_toolsets terminal,file,web
 

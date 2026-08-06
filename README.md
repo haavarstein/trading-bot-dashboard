@@ -9,7 +9,7 @@
 
 ## 🎯 What This Bot Does
 
-1. **Scans 5 stocks** every 15 minutes during market hours (TSLA, NVDA, AAPL, SPY, QQQ)
+1. **Scans AI-selected candidates** every 15 minutes during market hours
 2. **Dual-model consensus**: Two AI models must agree on every trade
 3. **Risk validation**: Code enforces stop-loss, position sizing, R:R ratios
 4. **Telegram alerts**: Real-time notifications for trades, disagreements, blockers
