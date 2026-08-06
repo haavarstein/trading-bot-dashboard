@@ -13,11 +13,11 @@
     "comment": "Local simulated paper account until personal IBKR paper is approved/active. No live broker connection."
   },
   "position_limits": {
-    "max_positions": 3,
+    "max_positions": 5,
     "max_position_size_usd": 200,
     "max_position_size_pct": 20,
     "min_position_size_usd": 50,
-    "comment": "PDT-safe: max 3 positions for <$25k accounts"
+    "comment": "Max open names sized by capital: ~starting_capital/max_position_size_usd. PDT is separate (day-trade count under $25k), not a 3-position hold cap."
   },
   "order_limits": {
     "max_daily_orders": 20,
@@ -100,12 +100,12 @@
     "consensus_log": "./data/consensus_log.jsonl",
     "candidate_outcomes": "./data/candidate_outcomes.jsonl"
   },
-  "last_updated": "2026-08-06T17:51:12Z",
+  "last_updated": "2026-08-06T18:00:57Z",
   "execution_rules": {
-    "allow_rotation": false,
-    "rotation_min_score": 80,
-    "rotation_min_hold_minutes": 60,
-    "rotation_require_open_winner": true,
-    "comment": "Rotation off: sell only on stop/target unless explicitly re-enabled."
+    "allow_rotation": true,
+    "rotation_min_score": 70,
+    "rotation_min_hold_minutes": 45,
+    "rotation_require_open_winner": false,
+    "comment": "Rotation allowed for better ranked setups. Min hold reduces 15m churn. Stop/target still primary exits."
   }
 }
