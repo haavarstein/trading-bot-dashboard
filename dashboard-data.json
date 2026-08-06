@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-08-06T15:41:10.253248+00:00",
+  "generated_at": "2026-08-06T15:41:39.040549+00:00",
   "scanner": "alpha_radar_v2_news_ranked",
   "stats": {
     "candidate_count": 10,
-    "consensus_count_today": 15,
-    "validated_count_today": 13,
+    "consensus_count_today": 16,
+    "validated_count_today": 14,
     "blocked_count_today": 2,
-    "simulated_orders_today": 13,
+    "simulated_orders_today": 14,
     "top_symbol_today": "LRCX"
   },
   "latest_candidate": {
     "symbol": "LRCX",
     "name": "Lam Research",
-    "price": 310.3299865722656,
-    "volume": 2754193.0,
-    "avg_volume": 12809689.3,
-    "percent_change": 0.9465789530372594,
+    "price": 310.3450012207031,
+    "volume": 2759725.0,
+    "avg_volume": 12810242.5,
+    "percent_change": 0.9514630359797087,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 13,
@@ -72,26 +72,26 @@
       "action": "BUY",
       "symbol": "LRCX",
       "confidence": 90,
-      "entry_price": 310.3299865722656,
-      "stop_loss": 302.57,
-      "take_profit": 325.85,
+      "entry_price": 310.3450012207031,
+      "stop_loss": 302.59,
+      "take_profit": 325.86,
       "qty": 0.6444,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
-      "timestamp": "2026-08-06T15:41:10.051671+00:00"
+      "timestamp": "2026-08-06T15:41:38.871736+00:00"
     },
     "model2": {
       "model": "claude-sonnet-4-5",
       "action": "BUY",
       "symbol": "LRCX",
       "confidence": 90,
-      "entry_price": 310.3299865722656,
-      "stop_loss": 302.57,
-      "take_profit": 325.85,
+      "entry_price": 310.3450012207031,
+      "stop_loss": 302.59,
+      "take_profit": 325.86,
       "qty": 0.6444,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
-      "timestamp": "2026-08-06T15:41:10.051671+00:00"
+      "timestamp": "2026-08-06T15:41:38.871736+00:00"
     },
-    "timestamp": "2026-08-06T15:41:10.051671+00:00",
+    "timestamp": "2026-08-06T15:41:38.871736+00:00",
     "consensus": true,
     "reason": null,
     "validation": {
@@ -104,15 +104,31 @@
     "action": "BUY",
     "symbol": "LRCX",
     "qty": 0.6444,
-    "entry_price": 310.3299865722656,
-    "stop_loss": 302.57,
-    "take_profit": 325.85,
+    "entry_price": 310.3450012207031,
+    "stop_loss": 302.59,
+    "take_profit": 325.86,
     "confidence": 90,
     "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
     "status": "SIMULATED",
-    "timestamp": "2026-08-06T15:41:10.052669+00:00"
+    "timestamp": "2026-08-06T15:41:38.872732+00:00"
   },
   "activity": [
+    {
+      "type": "order",
+      "symbol": "LRCX",
+      "status": "simulated",
+      "headline": "BUY LRCX simulated",
+      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+      "timestamp": "2026-08-06T15:41:38.872732+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "LRCX",
+      "status": "validated",
+      "headline": "Consensus VALIDATED for LRCX",
+      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+      "timestamp": "2026-08-06T15:41:38.871736+00:00"
+    },
     {
       "type": "order",
       "symbol": "LRCX",
@@ -176,32 +192,16 @@
       "headline": "Consensus VALIDATED for LRCX",
       "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
       "timestamp": "2026-08-06T15:39:00.883518+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "LRCX",
-      "status": "validated",
-      "headline": "Consensus VALIDATED for LRCX",
-      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
-      "timestamp": "2026-08-06T14:25:58.833118+00:00"
-    },
-    {
-      "type": "order",
-      "symbol": "LRCX",
-      "status": "simulated",
-      "headline": "BUY LRCX simulated",
-      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
-      "timestamp": "2026-08-06T14:25:58.833118+00:00"
     }
   ],
   "top_candidates": [
     {
       "symbol": "LRCX",
       "name": "Lam Research",
-      "price": 310.3299865722656,
-      "volume": 2754193.0,
-      "avg_volume": 12809689.3,
-      "percent_change": 0.9465789530372594,
+      "price": 310.3450012207031,
+      "volume": 2759725.0,
+      "avg_volume": 12810242.5,
+      "percent_change": 0.9514630359797087,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
@@ -255,15 +255,15 @@
     {
       "symbol": "ANET",
       "name": "Arista Networks",
-      "price": 192.66000366210938,
-      "volume": 3194551.0,
-      "avg_volume": 8908465.1,
-      "percent_change": -2.356694518281315,
+      "price": 192.63999938964844,
+      "volume": 3203548.0,
+      "avg_volume": 8909364.8,
+      "percent_change": -2.3668330174493546,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
       "liquidity_score": 79.5,
-      "rank_score": 54.31,
+      "rank_score": 54.32,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst, demand): Arista Networks Stock Surges as Earnings Prove AI Demand Is Real - Barron's",
       "top_headlines": [
@@ -298,15 +298,15 @@
     {
       "symbol": "UNH",
       "name": "UnitedHealth",
-      "price": 404.260009765625,
-      "volume": 1307040.0,
-      "avg_volume": 4229184.0,
-      "percent_change": -2.0569328248031495,
+      "price": 404.239990234375,
+      "volume": 1310792.0,
+      "avg_volume": 4229559.2,
+      "percent_change": -2.0617831049364024,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
       "liquidity_score": 76.26,
-      "rank_score": 48.58,
+      "rank_score": 48.59,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (growth): The Case For UnitedHealth Stock Is Margin, Not Growth - Trefis",
       "top_headlines": [
@@ -350,17 +350,66 @@
       ]
     },
     {
+      "symbol": "PANW",
+      "name": "Palo Alto Networks",
+      "price": 356.55010986328125,
+      "volume": 2308713.0,
+      "avg_volume": 5849401.3,
+      "percent_change": -1.6847443162000069,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 7,
+      "liquidity_score": 77.67,
+      "rank_score": 47.0,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (catalyst, launch): China launches cybersecurity review into Palo Alto Networks products - Reuters",
+      "top_headlines": [
+        "China launches cybersecurity review into Palo Alto Networks products - Reuters",
+        "PANW Stock Holds Near Record Highs Despite Fresh China Security Review That Mirrors Micron Case - Stocktwits",
+        "Palo Alto Networks enters key TASE TA-35 and TA-125 indices - The Jerusalem Post"
+      ],
+      "matched_headlines": [
+        {
+          "title": "China launches cybersecurity review into Palo Alto Networks products - Reuters",
+          "keywords": [
+            "catalyst",
+            "launch"
+          ]
+        },
+        {
+          "title": "PANW Stock Holds Near Record Highs Despite Fresh China Security Review That Mirrors Micron Case - Stocktwits",
+          "keywords": [
+            "record"
+          ]
+        },
+        {
+          "title": "Palo Alto Networks (PANW) Could Be 131% Above Fair Value As FireMon Integration Draws Focus - simplywall.st",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "China launches security review of Palo Alto Networks products (PANW:NASDAQ) - Seeking Alpha",
+          "keywords": [
+            "catalyst",
+            "launch"
+          ]
+        }
+      ]
+    },
+    {
       "symbol": "WMT",
       "name": "Walmart",
-      "price": 111.94999694824219,
-      "volume": 7280972.0,
-      "avg_volume": 21956587.2,
-      "percent_change": -0.3471598739200746,
+      "price": 111.91500091552734,
+      "volume": 7288825.0,
+      "avg_volume": 21957372.5,
+      "percent_change": -0.3783117644805696,
       "exchange": "",
       "sentiment": "bearish",
       "catalyst_score": -7,
       "liquidity_score": 83.42,
-      "rank_score": 46.79,
+      "rank_score": 46.82,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst): Walmart Earnings: Bull Put Spread Trade - Barchart.com",
       "top_headlines": [
@@ -395,55 +444,6 @@
           "keywords": [
             "catalyst",
             "downgrade"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "PANW",
-      "name": "Palo Alto Networks",
-      "price": 357.6448059082031,
-      "volume": 2304939.0,
-      "avg_volume": 5849023.9,
-      "percent_change": -1.3828924345842433,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 7,
-      "liquidity_score": 77.67,
-      "rank_score": 46.76,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (catalyst, launch): China launches cybersecurity review into Palo Alto Networks products - Reuters",
-      "top_headlines": [
-        "China launches cybersecurity review into Palo Alto Networks products - Reuters",
-        "PANW Stock Holds Near Record Highs Despite Fresh China Security Review That Mirrors Micron Case - Stocktwits",
-        "Palo Alto Networks enters key TASE TA-35 and TA-125 indices - The Jerusalem Post"
-      ],
-      "matched_headlines": [
-        {
-          "title": "China launches cybersecurity review into Palo Alto Networks products - Reuters",
-          "keywords": [
-            "catalyst",
-            "launch"
-          ]
-        },
-        {
-          "title": "PANW Stock Holds Near Record Highs Despite Fresh China Security Review That Mirrors Micron Case - Stocktwits",
-          "keywords": [
-            "record"
-          ]
-        },
-        {
-          "title": "Palo Alto Networks (PANW) Could Be 131% Above Fair Value As FireMon Integration Draws Focus - simplywall.st",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "China launches security review of Palo Alto Networks products (PANW:NASDAQ) - Seeking Alpha",
-          "keywords": [
-            "catalyst",
-            "launch"
           ]
         }
       ]
