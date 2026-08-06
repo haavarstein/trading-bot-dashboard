@@ -3,7 +3,7 @@
 **Status:** DRY-RUN MODE (Safe to test)  
 **Capital:** $1,000  
 **Max Positions:** 3 (PDT-safe)  
-**Notifications:** Telegram (@your_telegram_bot)
+**Notifications:** Telegram (recipient configured locally)
 
 ---
 

@@ -8,7 +8,7 @@
     "broker": "IBKR",
     "account_type": "PAPER",
     "account_id": "PENDING_ACTIVATION",
-    "username": "<IBKR_USERNAME>",
+    "username": "",
     "starting_capital": 1000,
     "max_capital_at_risk": 1000,
     "comment": "Paper trading account - account ID will be provided after activation (format: DU######)"
@@ -82,13 +82,13 @@
 
   "telegram": {
     "enabled": true,
-    "chat_id": "<TELEGRAM_CHAT_ID>",
+    "chat_id": "",
     "notify_on_trade": true,
     "notify_on_disagreement": true,
     "notify_on_blocker": true,
     "notify_on_error": true,
     "daily_summary": true,
-    "comment": "Telegram notifications to @your_telegram_bot"
+    "comment": "Telegram notifications to the configured local recipient"
   },
 
   "kill_switch": {

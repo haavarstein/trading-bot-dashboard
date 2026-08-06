@@ -48,7 +48,7 @@ hermes cronjob resume autotrader-cycle
 **Max Loss/Trade:** 2%  
 
 **Mode:** DRY_RUN (safe)  
-**Telegram:** Enabled (ID: <TELEGRAM_CHAT_ID>)
+**Telegram:** Enabled (recipient configured locally)
 
 ---
 

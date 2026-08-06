@@ -27,7 +27,7 @@
 ```
 1. Launch IB Gateway (or TWS)
 2. Select "IB API" mode
-3. Username: <IBKR_USERNAME>
+3. Username: your IBKR paper username
 4. Password: (you have it)
 5. Trading Mode: PAPER TRADING
 6. Click Login

@@ -14,7 +14,7 @@
 - **Max Positions:** 3 (PDT-safe)
 - **Allowed Stocks:** TSLA, NVDA, AAPL, SPY, QQQ
 - **Mode:** DRY_RUN (no real money)
-- **Telegram:** Configured for user <TELEGRAM_CHAT_ID>
+- **Telegram:** Configured for a configured Telegram recipient
 
 ### 2. Telegram Integration ✅  
 - **File:** `~/trading-bot/scripts/telegram_notifier.py`
