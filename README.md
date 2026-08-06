@@ -42,6 +42,14 @@ generate_dashboard_data.py → dashboard-data.json → Vercel
 Telegram paper-session report (holdings P/L bullets)
 ```
 
+### Consensus models (config)
+
+- `model_1`: `grok-4.5` (`model_1_effort`: `medium`)
+- `model_2`: `claude-sonnet-5`
+- `min_confidence`: 70
+- `max_candidates_to_llm`: 8
+- `require_dual_model_agreement`: true
+
 ### Honest status of “dual models”
 Decision paths are labeled for the Farzad-style dual-agreement gate. Current paper path uses a **deterministic local consensus engine** over Alpha Radar candidates (not a claim of live multi-provider LLM research desks on every tick).
 

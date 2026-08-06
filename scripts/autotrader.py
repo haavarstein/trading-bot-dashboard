@@ -578,7 +578,9 @@ class DryRunAutoTrader:
 
         model1_name = self.config["consensus_rules"]["model_1"]
         model2_name = self.config["consensus_rules"]["model_2"]
-        print(f"🤖 Requesting decisions from {model1_name} and {model2_name}...")
+        effort = self.config.get("consensus_rules", {}).get("model_1_effort")
+        effort_txt = f" (effort={effort})" if effort else ""
+        print(f"🤖 Requesting decisions from {model1_name}{effort_txt} and {model2_name}...")
 
         allowed = self.config.get("allowed_symbols", "AI_DECIDES")
         market_context: Dict[str, Dict] = {}
@@ -588,6 +590,9 @@ class DryRunAutoTrader:
                 raise RuntimeError("Alpha Radar candidates file missing; run alpha_radar.py first")
             radar_data = json.loads(candidates_file.read_text(encoding="utf-8"))
             candidate_records = radar_data.get("candidates", [])
+            max_to_llm = int(self.config.get("consensus_rules", {}).get("max_candidates_to_llm") or 0)
+            if max_to_llm > 0:
+                candidate_records = candidate_records[:max_to_llm]
             for candidate in candidate_records:
                 sym = candidate.get("symbol")
                 if not sym:

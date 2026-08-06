@@ -66,7 +66,11 @@ class AlphaRadar:
 
         self.criteria = self.config.get('stock_criteria', {})
         self.candidates_path = "./data/candidates.json"
-        self.max_candidates = 10
+        self.max_candidates = int(
+            self.config.get("consensus_rules", {}).get("max_candidates_to_llm")
+            or self.config.get("scanner", {}).get("max_candidates")
+            or 10
+        )
         self.universe = DEFAULT_UNIVERSE
         self.session = requests.Session()
         self.session.headers.update({

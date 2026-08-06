@@ -21,8 +21,8 @@ class TestAutoTraderValidation(unittest.TestCase):
             },
             'consensus_rules': {
                 'min_confidence': 70,
-                'model_1': 'grok-beta',
-                'model_2': 'claude-sonnet-4-5',
+                'model_1': 'grok-4.5',
+                'model_2': 'claude-sonnet-5',
             },
             'position_limits': {'max_position_size_usd': 200, 'min_position_size_usd': 50, 'max_positions': 3},
             'order_limits': {'min_risk_reward_ratio': 1.5},
@@ -54,7 +54,7 @@ class TestAutoTraderValidation(unittest.TestCase):
                 }
             }
 
-            decision = trader.get_model_decision('grok-beta', broker_snapshot, market_data)
+            decision = trader.get_model_decision('grok-4.5', broker_snapshot, market_data)
             valid, reason = trader.validate_order(decision, broker_snapshot)
 
             self.assertTrue(valid, reason)

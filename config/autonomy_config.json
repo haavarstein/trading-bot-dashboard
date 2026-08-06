@@ -75,11 +75,13 @@
   },
   "consensus_rules": {
     "require_dual_model_agreement": true,
-    "model_1": "grok-beta",
-    "model_2": "claude-sonnet-4-5",
+    "model_1": "grok-4.5",
+    "model_1_effort": "medium",
+    "model_2": "claude-sonnet-5",
     "min_confidence": 70,
     "log_all_disagreements": true,
-    "comment": "Both models must agree on action AND symbol"
+    "max_candidates_to_llm": 8,
+    "comment": "Both models must agree on action AND symbol. model_1_effort applies when live LLM calls are enabled."
   },
   "telegram": {
     "enabled": true,
@@ -101,7 +103,7 @@
     "consensus_log": "./data/consensus_log.jsonl",
     "candidate_outcomes": "./data/candidate_outcomes.jsonl"
   },
-  "last_updated": "2026-08-06T18:05:41Z",
+  "last_updated": "2026-08-06T23:57:26Z",
   "execution_rules": {
     "allow_rotation": true,
     "rotation_min_score": 70,
