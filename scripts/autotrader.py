@@ -106,6 +106,97 @@ class DryRunAutoTrader:
     def _position_map(self, broker_snapshot: Dict) -> Dict[str, Dict]:
         return {p["symbol"]: p for p in broker_snapshot.get("positions", [])}
 
+
+    def _risk_map(self, entry: float, stop: float, target: float, confidence: int, horizon_days: int = 5) -> Dict:
+        risk = max(abs(entry - stop), 1e-9)
+        reward = max(abs(target - entry), 0.0)
+        rr = round(reward / risk, 2)
+        return {
+            "stop": round(float(stop), 2),
+            "target": round(float(target), 2),
+            "horizon_days": horizon_days,
+            "rr": rr,
+            "confidence_10": max(1, min(10, int(round(confidence / 10)))),
+            "confidence": int(confidence),
+        }
+
+    def _build_buy_reasoning(self, symbol: str, payload: Dict, entry: float, stop: float, target: float, qty: float, confidence: int, score: float) -> Dict:
+        name = payload.get("name") or symbol
+        catalyst = str(payload.get("catalyst") or "ranked catalyst setup")
+        sentiment = str(payload.get("sentiment") or "mixed")
+        headlines = payload.get("top_headlines") or []
+        rank = payload.get("rank_score")
+        cat = payload.get("catalyst_score")
+        notional = round(qty * entry, 2)
+        narrative = (
+            f"{name} ({symbol}) screened as a {sentiment} catalyst setup on Alpha Radar. "
+            f"Primary driver: {catalyst}. "
+            f"Entry sized at ${notional:.2f} under the ${float(self.config['position_limits']['max_position_size_usd']):.0f} single-name cap "
+            f"with predefined invalidation and upside map before the next 15-minute loop."
+        )
+        bullets = [
+            f"Rank/catalyst scores: rank={rank}, catalyst={cat}; sentiment={sentiment}.",
+            f"Measured starter ${notional:.2f} with stop under structure and target into the extension zone.",
+        ]
+        if headlines:
+            bullets.append(f"Lead headline: {headlines[0]}")
+        if len(headlines) > 1:
+            bullets.append(f"Secondary confirmation: {headlines[1]}")
+        risk = self._risk_map(entry, stop, target, confidence)
+        return {
+            "headline": f"Bought ${symbol}",
+            "narrative": narrative,
+            "bullets": bullets,
+            "risk_map": risk,
+            "thesis": narrative,
+        }
+
+    def _build_sell_reasoning(self, symbol: str, pos: Dict, px: float, reason_code: str, thesis: str, confidence: int) -> Dict:
+        stop = float(pos.get("stop_loss") or px * 0.97)
+        target = float(pos.get("take_profit") or px * 1.03)
+        avg = float(pos.get("avg_cost") or px)
+        pnl = round((px - avg) * float(pos.get("qty") or 0), 2)
+        if reason_code == "stop_loss":
+            narrative = (
+                f"HERMES AUTO-TRADE: Exiting full {symbol} position on stop-loss. "
+                f"Price ${px:.2f} tagged invalidation at ${stop:.2f}. Realized path ${pnl:+.2f}."
+            )
+            bullets = [
+                "Hard stop hit; capital preservation over thesis hope.",
+                "Position closed in full; no scale-out remaining.",
+            ]
+        elif reason_code == "take_profit":
+            narrative = (
+                f"HERMES AUTO-TRADE: Exiting full {symbol} position on take-profit. "
+                f"Price ${px:.2f} reached target ${target:.2f}. Realized path ${pnl:+.2f}."
+            )
+            bullets = [
+                "Target zone filled; lock gains and free risk budget.",
+                "No trail extension in current paper rules.",
+            ]
+        elif reason_code == "rotation":
+            narrative = (
+                f"HERMES AUTO-TRADE: Exiting full {symbol} position via gated rotation. "
+                f"{thesis} Mark ${px:.2f} vs avg ${avg:.2f} (open P/L path ${pnl:+.2f})."
+            )
+            bullets = [
+                "Rotation only after min-hold gate and stronger ranked replacement.",
+                "Original stop/target were not the primary exit trigger on this fill.",
+                "Capital recycled toward higher-scoring catalyst setup.",
+            ]
+        else:
+            narrative = thesis or f"Exiting {symbol} at ${px:.2f}."
+            bullets = [thesis or "Discretionary/paper exit."]
+        risk = self._risk_map(avg, stop, target, confidence)
+        return {
+            "headline": f"Sold ${symbol}",
+            "narrative": narrative,
+            "bullets": bullets,
+            "risk_map": risk,
+            "thesis": narrative,
+        }
+
+
     def get_model_decision(self, model_name: str, broker_snapshot: Dict, market_data: Dict) -> Dict:
         """Deterministic paper decision: exits first, then ranked buys, else HOLD."""
         if not market_data:
@@ -119,6 +210,7 @@ class DryRunAutoTrader:
             stop = pos.get("stop_loss")
             target = pos.get("take_profit")
             if stop is not None and px and px <= float(stop):
+                reason = self._build_sell_reasoning(sym, pos, px, "stop_loss", f"Stop-loss exit for {sym}", 95)
                 return {
                     "model": model_name,
                     "action": "SELL",
@@ -128,11 +220,13 @@ class DryRunAutoTrader:
                     "stop_loss": float(stop),
                     "take_profit": float(target or px),
                     "qty": float(pos["qty"]),
-                    "thesis": f"Stop-loss exit for {sym} at ${px:.2f} (stop ${float(stop):.2f})",
+                    "thesis": reason["thesis"],
                     "reason_code": "stop_loss",
+                    "reasoning": reason,
                     "timestamp": datetime.now(timezone.utc).isoformat(),
                 }
             if target is not None and px and px >= float(target):
+                reason = self._build_sell_reasoning(sym, pos, px, "take_profit", f"Take-profit exit for {sym}", 90)
                 return {
                     "model": model_name,
                     "action": "SELL",
@@ -142,8 +236,9 @@ class DryRunAutoTrader:
                     "stop_loss": float(stop or px),
                     "take_profit": float(target),
                     "qty": float(pos["qty"]),
-                    "thesis": f"Take-profit exit for {sym} at ${px:.2f} (target ${float(target):.2f})",
+                    "thesis": reason["thesis"],
                     "reason_code": "take_profit",
+                    "reasoning": reason,
                     "timestamp": datetime.now(timezone.utc).isoformat(),
                 }
 
@@ -206,6 +301,8 @@ class DryRunAutoTrader:
                                 pass
                 if weakest_sym:
                     px = float(positions[weakest_sym]["current_price"])
+                    thesis = f"Rotate out of {weakest_sym} to free risk budget for stronger setup {best_sym}"
+                    reason = self._build_sell_reasoning(weakest_sym, positions[weakest_sym], px, "rotation", thesis, 78)
                     return {
                         "model": model_name,
                         "action": "SELL",
@@ -215,8 +312,9 @@ class DryRunAutoTrader:
                         "stop_loss": float(positions[weakest_sym].get("stop_loss") or px * 0.97),
                         "take_profit": float(positions[weakest_sym].get("take_profit") or px * 1.03),
                         "qty": float(positions[weakest_sym]["qty"]),
-                        "thesis": f"Rotate out of {weakest_sym} to free risk budget for stronger setup {best_sym}",
+                        "thesis": reason["thesis"],
                         "reason_code": "rotation",
+                        "reasoning": reason,
                         "timestamp": datetime.now(timezone.utc).isoformat(),
                     }
 
@@ -253,11 +351,12 @@ class DryRunAutoTrader:
             if qty <= 0 or round(qty * entry_price, 2) < min_pos:
                 return self._hold_decision(model_name, broker_snapshot, "Sized position below minimum")
 
-            sentiment = str(best_payload.get("sentiment", "mixed"))
-            catalyst = str(best_payload.get("catalyst", "ranked candidate"))
             confidence = max(
                 self.config["consensus_rules"]["min_confidence"],
                 min(95, int(70 + min(20, (best_score or 0) / 3))),
+            )
+            reason = self._build_buy_reasoning(
+                best_symbol, best_payload, entry_price, stop_loss, take_profit, qty, confidence, float(best_score or 0)
             )
             return {
                 "model": model_name,
@@ -268,8 +367,9 @@ class DryRunAutoTrader:
                 "stop_loss": stop_loss,
                 "take_profit": take_profit,
                 "qty": qty,
-                "thesis": f"{sentiment.capitalize()} setup from ranked candidate list: {catalyst}",
+                "thesis": reason["thesis"],
                 "reason_code": "new_entry",
+                "reasoning": reason,
                 "timestamp": datetime.now(timezone.utc).isoformat(),
             }
 
@@ -421,6 +521,7 @@ class DryRunAutoTrader:
             "confidence": decision.get("confidence"),
             "thesis": decision.get("thesis"),
             "reason_code": decision.get("reason_code"),
+            "reasoning": decision.get("reasoning"),
             "status": status,
             "fill": fill,
             "timestamp": datetime.now(timezone.utc).isoformat(),

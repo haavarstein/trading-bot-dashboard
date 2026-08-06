@@ -41,6 +41,155 @@ def parse_ts(s: str):
         return None
 
 
+def build_trade_reasoning(fills, orders, closed):
+    """Build Farzad-style trade reasoning cards from fills + order ledger."""
+    order_by_key = {}
+    for o in orders:
+        if o.get("action") not in ("BUY", "SELL"):
+            continue
+        key = (o.get("symbol"), o.get("action"), o.get("timestamp"))
+        order_by_key[key] = o
+        # also index loosely by symbol+action latest
+        order_by_key[(o.get("symbol"), o.get("action"), "latest")] = o
+
+    closed_by_ts = {c.get("timestamp"): c for c in closed}
+    cards = []
+    for f in reversed(fills):
+        if f.get("action") not in ("BUY", "SELL"):
+            continue
+        if f.get("symbol") in ("AAA",):  # skip test junk
+            continue
+        sym = f.get("symbol")
+        action = f.get("action")
+        px = float(f.get("price") or 0)
+        qty = float(f.get("qty") or 0)
+        notional = float(f.get("notional") or (px * qty) or 0)
+        stop = f.get("stop_loss")
+        target = f.get("take_profit")
+        conf = f.get("confidence")
+        thesis = f.get("thesis") or f.get("reason") or ""
+        reason_code = f.get("reason") or ""
+
+        # prefer reasoning from matching order ledger entry
+        reasoning = None
+        for o in reversed(orders):
+            if o.get("symbol") == sym and o.get("action") == action:
+                # close timestamps
+                ot = o.get("timestamp") or ""
+                ft = f.get("timestamp") or ""
+                if ot[:16] == ft[:16] or abs(
+                    (parse_ts(ot).timestamp() if parse_ts(ot) else 0)
+                    - (parse_ts(ft).timestamp() if parse_ts(ft) else 0)
+                ) < 5:
+                    reasoning = o.get("reasoning")
+                    if stop is None:
+                        stop = o.get("stop_loss")
+                    if target is None:
+                        target = o.get("take_profit")
+                    if conf is None:
+                        conf = o.get("confidence")
+                    if not thesis:
+                        thesis = o.get("thesis") or ""
+                    if not reason_code:
+                        reason_code = o.get("reason_code") or ""
+                    break
+
+        if stop is None or target is None:
+            # try closed trade companion / position defaults
+            if action == "SELL":
+                for c in closed:
+                    if c.get("symbol") == sym and c.get("timestamp") == f.get("timestamp"):
+                        reason_code = c.get("reason") or reason_code
+                        break
+
+        entry_for_rr = px
+        if action == "SELL":
+            for c in closed:
+                if c.get("symbol") == sym and str(c.get("timestamp", ""))[:19] == str(f.get("timestamp", ""))[:19]:
+                    entry_for_rr = float(c.get("avg_cost") or px)
+                    break
+
+        stop_f = float(stop) if stop is not None else round(entry_for_rr * 0.975, 2)
+        target_f = float(target) if target is not None else round(entry_for_rr * 1.05, 2)
+        conf_i = int(conf or (90 if action == "BUY" else 80))
+        risk = max(abs(entry_for_rr - stop_f), 1e-9)
+        reward = max(abs(target_f - entry_for_rr), 0.0)
+        rr = round(reward / risk, 2)
+
+        if reasoning and isinstance(reasoning, dict):
+            narrative = reasoning.get("narrative") or reasoning.get("thesis") or thesis
+            bullets = reasoning.get("bullets") or []
+            risk_map = reasoning.get("risk_map") or {}
+            headline = reasoning.get("headline") or (f"Bought ${sym}" if action == "BUY" else f"Sold ${sym}")
+        else:
+            if action == "BUY":
+                headline = f"Bought ${sym}"
+                narrative = thesis or f"{sym} entered from Alpha Radar ranked catalyst list."
+                bullets = [
+                    f"Paper fill size ${notional:.2f} under the single-name cap.",
+                    f"Invalidation mapped under entry; upside mapped to target before the next decision loops.",
+                ]
+                if "Headline-driven" in thesis or "catalyst" in thesis.lower():
+                    bullets.append("Catalyst/news rank was the primary selection input.")
+            else:
+                headline = f"Sold ${sym}"
+                if reason_code == "rotation" or "rotat" in thesis.lower():
+                    narrative = (
+                        f"HERMES AUTO-TRADE: Exiting full {sym} position via gated rotation. {thesis}"
+                    )
+                    bullets = [
+                        "Rotation recycled risk budget toward a higher-ranked setup.",
+                        "Original stop/target were not necessarily tagged on this exit.",
+                    ]
+                elif reason_code == "stop_loss" or "stop" in thesis.lower():
+                    narrative = thesis or f"Exiting {sym} on stop-loss at ${px:.2f}."
+                    bullets = ["Hard stop hit; capital preservation over thesis hope."]
+                elif reason_code == "take_profit" or "take-profit" in thesis.lower() or "target" in thesis.lower():
+                    narrative = thesis or f"Exiting {sym} on take-profit at ${px:.2f}."
+                    bullets = ["Target zone filled; gains locked."]
+                else:
+                    narrative = thesis or f"Exiting {sym} at ${px:.2f}."
+                    bullets = [thesis or "Paper exit recorded."]
+                if f.get("realized_pnl") is not None:
+                    bullets.append(f"Realized P/L on fill: ${float(f.get('realized_pnl')):+.2f}.")
+            risk_map = {
+                "stop": stop_f,
+                "target": target_f,
+                "horizon_days": 5,
+                "rr": rr,
+                "confidence_10": max(1, min(10, int(round(conf_i / 10)))),
+                "confidence": conf_i,
+            }
+
+        cards.append(
+            {
+                "timestamp": f.get("timestamp"),
+                "action": action,
+                "symbol": sym,
+                "qty": qty,
+                "price": px,
+                "notional": round(notional, 2),
+                "headline": headline,
+                "side_label": "buy" if action == "BUY" else "sell",
+                "narrative": narrative,
+                "bullets": bullets,
+                "risk_map": {
+                    "stop": float(risk_map.get("stop", stop_f)),
+                    "target": float(risk_map.get("target", target_f)),
+                    "horizon_days": int(risk_map.get("horizon_days", 5)),
+                    "rr": float(risk_map.get("rr", rr)),
+                    "confidence_10": int(risk_map.get("confidence_10", max(1, min(10, int(round(conf_i / 10)))))),
+                    "confidence": int(risk_map.get("confidence", conf_i)),
+                },
+                "reason_code": reason_code or f.get("reason") or ("new_entry" if action == "BUY" else "exit"),
+                "realized_pnl": f.get("realized_pnl"),
+                "status": f.get("status"),
+            }
+        )
+    return cards
+
+
+
 def main():
     now = datetime.now(timezone.utc)
     today = now.date()
@@ -202,6 +351,7 @@ def main():
         "stance": stance,
         "activity": activity,
         "recent_trades": recent_trades,
+        "trade_reasoning": build_trade_reasoning(fills, orders, closed),
         "closed_trades": closed_recent,
         "top_candidates": candidates[:5],
         "limits": {

@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-06T18:05:46.640452+00:00",
+  "generated_at": "2026-08-06T18:09:26.804931+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 996.58,
+    "portfolio_value": 996.86,
     "starting_cash": 1000.0,
-    "total_return_pct": -0.34,
-    "total_pnl": -3.42,
+    "total_return_pct": -0.31,
+    "total_pnl": -3.14,
     "realized_pnl": -3.31,
-    "open_pnl": -0.11,
-    "capital_deployed": 599.86,
+    "open_pnl": 0.17,
+    "capital_deployed": 600.14,
     "cash": 396.72,
     "closed_trades": 4,
     "win_rate_pct": 25.0,
-    "vs_spy_pct": -0.28,
-    "spy_return_pct": -0.06,
+    "vs_spy_pct": -0.22,
+    "spy_return_pct": -0.09,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-06T18:05:48.402590+00:00"
+    "updated_at": "2026-08-06T18:09:28.103258+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.06,
-    "price": 768.8900146484375,
+    "return_pct": -0.09,
+    "price": 768.72998046875,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,10 +38,10 @@
       "symbol": "BAC",
       "qty": 3.1713,
       "avg_cost": 63.065,
-      "last": 62.904998779296875,
-      "market_value": 199.49,
-      "open_pnl": -0.51,
-      "open_pnl_pct": -0.25,
+      "last": 62.92499923706055,
+      "market_value": 199.55,
+      "open_pnl": -0.44,
+      "open_pnl_pct": -0.22,
       "stop": 61.49,
       "target": 66.22,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (beat): Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat"
@@ -50,10 +50,10 @@
       "symbol": "UNH",
       "qty": 0.4953,
       "avg_cost": 403.775,
-      "last": 404.8699951171875,
-      "market_value": 200.53,
-      "open_pnl": 0.54,
-      "open_pnl_pct": 0.27,
+      "last": 405.1099853515625,
+      "market_value": 200.65,
+      "open_pnl": 0.66,
+      "open_pnl_pct": 0.33,
       "stop": 393.68,
       "target": 423.96,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (ai, catalyst): UNH Stock Becomes Dow\u2019s Biggest Driver Back To 50,000 \u2014 Will Trump Tailwinds Spark Another Leg Higher? - Stocktwits"
@@ -62,10 +62,10 @@
       "symbol": "LRCX",
       "qty": 0.6489,
       "avg_cost": 308.185,
-      "last": 307.9700012207031,
-      "market_value": 199.84,
-      "open_pnl": -0.14,
-      "open_pnl_pct": -0.07,
+      "last": 308.114501953125,
+      "market_value": 199.94,
+      "open_pnl": -0.05,
+      "open_pnl_pct": -0.02,
       "stop": 300.48,
       "target": 323.59,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (ai, catalyst, guidance): Why Lam Research (LRCX) Is Up 21.8% After Strong Q4 Results And AI-Driven Margin Guidance - simplywall.st"
@@ -359,6 +359,304 @@
       "realized_pnl": null,
       "reason": null,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (beat): Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat",
+      "status": "FILLED_PAPER"
+    }
+  ],
+  "trade_reasoning": [
+    {
+      "timestamp": "2026-08-06T18:00:53.056406+00:00",
+      "action": "BUY",
+      "symbol": "LRCX",
+      "qty": 0.6489,
+      "price": 308.18499755859375,
+      "notional": 199.98,
+      "headline": "Bought $LRCX",
+      "side_label": "buy",
+      "narrative": "Bullish setup from ranked candidate list: Headline-driven setup (ai, catalyst, guidance): Why Lam Research (LRCX) Is Up 21.8% After Strong Q4 Results And AI-Driven Margin Guidance - simplywall.st",
+      "bullets": [
+        "Paper fill size $199.98 under the single-name cap.",
+        "Invalidation mapped under entry; upside mapped to target before the next decision loops.",
+        "Catalyst/news rank was the primary selection input."
+      ],
+      "risk_map": {
+        "stop": 300.48,
+        "target": 323.59,
+        "horizon_days": 5,
+        "rr": 2.0,
+        "confidence_10": 9,
+        "confidence": 90
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-06T17:46:06.354489+00:00",
+      "action": "SELL",
+      "symbol": "LRCX",
+      "qty": 0.6463,
+      "price": 307.9549865722656,
+      "notional": 199.03,
+      "headline": "Sold $LRCX",
+      "side_label": "sell",
+      "narrative": "HERMES AUTO-TRADE: Exiting full LRCX position via gated rotation. Rotate out of LRCX to free risk budget for stronger setup XOM",
+      "bullets": [
+        "Rotation recycled risk budget toward a higher-ranked setup.",
+        "Original stop/target were not necessarily tagged on this exit.",
+        "Realized P/L on fill: $-0.94."
+      ],
+      "risk_map": {
+        "stop": 301.67,
+        "target": 324.88,
+        "horizon_days": 5,
+        "rr": 2.0,
+        "confidence_10": 8,
+        "confidence": 78
+      },
+      "reason_code": "rotation",
+      "realized_pnl": -0.94,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-06T17:16:23.562599+00:00",
+      "action": "BUY",
+      "symbol": "UNH",
+      "qty": 0.4953,
+      "price": 403.7749938964844,
+      "notional": 199.99,
+      "headline": "Bought $UNH",
+      "side_label": "buy",
+      "narrative": "Bullish setup from ranked candidate list: Headline-driven setup (ai, catalyst): UNH Stock Becomes Dow\u2019s Biggest Driver Back To 50,000 \u2014 Will Trump Tailwinds Spark Another Leg Higher? - Stocktwits",
+      "bullets": [
+        "Paper fill size $199.99 under the single-name cap.",
+        "Invalidation mapped under entry; upside mapped to target before the next decision loops.",
+        "Catalyst/news rank was the primary selection input."
+      ],
+      "risk_map": {
+        "stop": 393.68,
+        "target": 423.96,
+        "horizon_days": 5,
+        "rr": 2.0,
+        "confidence_10": 9,
+        "confidence": 90
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-06T17:00:57.768060+00:00",
+      "action": "SELL",
+      "symbol": "PANW",
+      "qty": 0.5622,
+      "price": 355.3800048828125,
+      "notional": 199.79,
+      "headline": "Sold $PANW",
+      "side_label": "sell",
+      "narrative": "HERMES AUTO-TRADE: Exiting full PANW position via gated rotation. Rotate out of PANW to free risk budget for stronger setup ANET",
+      "bullets": [
+        "Rotation recycled risk budget toward a higher-ranked setup.",
+        "Original stop/target were not necessarily tagged on this exit.",
+        "Realized P/L on fill: $-0.19."
+      ],
+      "risk_map": {
+        "stop": 346.83,
+        "target": 373.51,
+        "horizon_days": 5,
+        "rr": 2.0,
+        "confidence_10": 8,
+        "confidence": 78
+      },
+      "reason_code": "rotation",
+      "realized_pnl": -0.19,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-06T16:45:57.128884+00:00",
+      "action": "BUY",
+      "symbol": "LRCX",
+      "qty": 0.6463,
+      "price": 309.4100036621094,
+      "notional": 199.97,
+      "headline": "Bought $LRCX",
+      "side_label": "buy",
+      "narrative": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+      "bullets": [
+        "Paper fill size $199.97 under the single-name cap.",
+        "Invalidation mapped under entry; upside mapped to target before the next decision loops.",
+        "Catalyst/news rank was the primary selection input."
+      ],
+      "risk_map": {
+        "stop": 301.67,
+        "target": 324.88,
+        "horizon_days": 5,
+        "rr": 2.0,
+        "confidence_10": 9,
+        "confidence": 90
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-06T16:31:07.139100+00:00",
+      "action": "SELL",
+      "symbol": "LRCX",
+      "qty": 0.6417,
+      "price": 308.0450134277344,
+      "notional": 197.67,
+      "headline": "Sold $LRCX",
+      "side_label": "sell",
+      "narrative": "HERMES AUTO-TRADE: Exiting full LRCX position via gated rotation. Rotate out of LRCX to free risk budget for stronger setup UNH",
+      "bullets": [
+        "Rotation recycled risk budget toward a higher-ranked setup.",
+        "Original stop/target were not necessarily tagged on this exit.",
+        "Realized P/L on fill: $-2.31."
+      ],
+      "risk_map": {
+        "stop": 303.85,
+        "target": 327.23,
+        "horizon_days": 5,
+        "rr": 2.0,
+        "confidence_10": 8,
+        "confidence": 78
+      },
+      "reason_code": "rotation",
+      "realized_pnl": -2.31,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-06T16:00:50.163941+00:00",
+      "action": "BUY",
+      "symbol": "PANW",
+      "qty": 0.5622,
+      "price": 355.7200012207031,
+      "notional": 199.99,
+      "headline": "Bought $PANW",
+      "side_label": "buy",
+      "narrative": "Bullish setup from ranked candidate list: Headline-driven setup (catalyst, launch): China launches cybersecurity review into Palo Alto Networks products - Reuters",
+      "bullets": [
+        "Paper fill size $199.99 under the single-name cap.",
+        "Invalidation mapped under entry; upside mapped to target before the next decision loops.",
+        "Catalyst/news rank was the primary selection input."
+      ],
+      "risk_map": {
+        "stop": 346.83,
+        "target": 373.51,
+        "horizon_days": 5,
+        "rr": 2.0,
+        "confidence_10": 9,
+        "confidence": 90
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-06T15:50:14.375161+00:00",
+      "action": "BUY",
+      "symbol": "BAC",
+      "qty": 3.1713,
+      "price": 63.064998626708984,
+      "notional": 200.0,
+      "headline": "Bought $BAC",
+      "side_label": "buy",
+      "narrative": "Bullish setup from ranked candidate list: Headline-driven setup (beat): Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat",
+      "bullets": [
+        "Paper fill size $200.00 under the single-name cap.",
+        "Invalidation mapped under entry; upside mapped to target before the next decision loops.",
+        "Catalyst/news rank was the primary selection input."
+      ],
+      "risk_map": {
+        "stop": 61.49,
+        "target": 66.22,
+        "horizon_days": 5,
+        "rr": 2.0,
+        "confidence_10": 9,
+        "confidence": 90
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-06T15:50:07.568279+00:00",
+      "action": "SELL",
+      "symbol": "ANET",
+      "qty": 1.0357,
+      "price": 193.22999572753906,
+      "notional": 200.13,
+      "headline": "Sold $ANET",
+      "side_label": "sell",
+      "narrative": "Demo exit so dashboard shows a real SELL fill and realized P/L",
+      "bullets": [
+        "Demo exit so dashboard shows a real SELL fill and realized P/L",
+        "Realized P/L on fill: $+0.13."
+      ],
+      "risk_map": {
+        "stop": 188.27,
+        "target": 202.75,
+        "horizon_days": 5,
+        "rr": 2.0,
+        "confidence_10": 8,
+        "confidence": 80
+      },
+      "reason_code": "demo_take_profit_sample",
+      "realized_pnl": 0.13,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-06T15:49:41.748264+00:00",
+      "action": "BUY",
+      "symbol": "ANET",
+      "qty": 1.0357,
+      "price": 193.10000610351562,
+      "notional": 199.99,
+      "headline": "Bought $ANET",
+      "side_label": "buy",
+      "narrative": "Bullish setup from ranked candidate list: Headline-driven setup (ai, catalyst, demand): Arista Networks Stock Surges as Earnings Prove AI Demand Is Real - Barron's",
+      "bullets": [
+        "Paper fill size $199.99 under the single-name cap.",
+        "Invalidation mapped under entry; upside mapped to target before the next decision loops.",
+        "Catalyst/news rank was the primary selection input."
+      ],
+      "risk_map": {
+        "stop": 188.27,
+        "target": 202.76,
+        "horizon_days": 5,
+        "rr": 2.0,
+        "confidence_10": 9,
+        "confidence": 90
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-06T15:49:36.234045+00:00",
+      "action": "BUY",
+      "symbol": "LRCX",
+      "qty": 0.6417,
+      "price": 311.6449890136719,
+      "notional": 199.98,
+      "headline": "Bought $LRCX",
+      "side_label": "buy",
+      "narrative": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+      "bullets": [
+        "Paper fill size $199.98 under the single-name cap.",
+        "Invalidation mapped under entry; upside mapped to target before the next decision loops.",
+        "Catalyst/news rank was the primary selection input."
+      ],
+      "risk_map": {
+        "stop": 303.85,
+        "target": 327.23,
+        "horizon_days": 5,
+        "rr": 2.0,
+        "confidence_10": 9,
+        "confidence": 90
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
       "status": "FILLED_PAPER"
     }
   ],

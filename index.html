@@ -310,6 +310,73 @@
       line-height: 1.5;
     }
 
+
+    .reason-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 18px 18px 16px;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.18);
+    }
+    .reason-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+    .reason-title {
+      margin: 0;
+      font-size: 22px;
+      letter-spacing: -0.03em;
+      font-weight: 730;
+    }
+    .reason-meta {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .reason-body {
+      margin: 12px 0 0;
+      color: #d5e0ee;
+      font-size: 14.5px;
+      line-height: 1.55;
+    }
+    .reason-bullets {
+      margin: 12px 0 0;
+      padding-left: 18px;
+      color: var(--muted);
+      font-size: 13.5px;
+      line-height: 1.5;
+    }
+    .reason-bullets li { margin: 7px 0; }
+    .risk-map {
+      margin-top: 14px;
+      color: #e7eef8;
+      font-size: 13.5px;
+      font-weight: 650;
+      line-height: 1.45;
+    }
+    .reason-foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .btn-more {
+      border: 1px solid var(--border-strong);
+      background: rgba(255,255,255,0.04);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 9px 14px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .btn-more:hover { background: rgba(255,255,255,0.07); }
+
     @media (max-width: 1100px) {
       .kpi-row, .sec-row, .split-2, .metrics { grid-template-columns: 1fr 1fr; }
     }
@@ -346,6 +413,7 @@
       <a href="#holdings-section">Holdings</a>
       <a href="#stance-section">Decisions</a>
       <a href="#trades-section">Trades</a>
+      <a href="#reasoning-section">Reasoning</a>
       <a href="#improvements-section">Improvements</a>
     </nav>
 
@@ -479,6 +547,23 @@
       </div>
     </section>
 
+
+    <section id="reasoning-section" class="section">
+      <div class="shell">
+        <div class="section-head">
+          <h2>Trade reasoning</h2>
+          <p>The simple version first, then the technical map behind each executed trade.</p>
+        </div>
+        <div class="list" id="reasoning-list">
+          <div class="row hint">Loading trade reasoning…</div>
+        </div>
+        <div class="reason-foot">
+          <span id="reasoning-count">Showing 0 of 0 trade decisions.</span>
+          <button class="btn-more" id="reasoning-more" type="button">Show more</button>
+        </div>
+      </div>
+    </section>
+
     <section id="improvements-section" class="section">
       <div class="shell">
         <div class="section-head">
@@ -571,6 +656,10 @@
         detail: 'Official IBKR remote auth is blocked for now; simulated paper continues until the personal account is active.'
       }
     ];
+
+
+    let reasoningVisible = 3;
+    let reasoningCards = [];
 
     async function load() {
       const updatedEl = document.getElementById('updated');
@@ -693,6 +782,11 @@
         </div>
       `).join('') : '<div class="row hint">No activity yet.</div>');
 
+
+      reasoningCards = Array.isArray(d.trade_reasoning) ? d.trade_reasoning : [];
+      if (!reasoningVisible || reasoningVisible < 3) reasoningVisible = 3;
+      renderReasoning();
+
       const improvements = (d.improvements && d.improvements.length) ? d.improvements : DEFAULT_IMPROVEMENTS;
       setHtml('improvements-list', improvements.map((item, idx) => `
         <div class="row">
@@ -707,6 +801,55 @@
       if (updatedEl) updatedEl.textContent = `Updated ${when}`;
       return when;
     }
+
+
+    function renderReasoning() {
+      const all = reasoningCards || [];
+      const show = all.slice(0, reasoningVisible);
+      const list = document.getElementById('reasoning-list');
+      const count = document.getElementById('reasoning-count');
+      const btn = document.getElementById('reasoning-more');
+      if (!list) return;
+
+      if (!all.length) {
+        list.innerHTML = '<div class="row hint">No executed trade reasoning yet. Fills will appear here after the next paper buys/sells.</div>';
+        if (count) count.textContent = 'Showing 0 of 0 trade decisions.';
+        if (btn) btn.style.display = 'none';
+        return;
+      }
+
+      list.innerHTML = show.map(card => {
+        const rm = card.risk_map || {};
+        const bullets = (card.bullets || []).map(b => `<li>${esc(b)}</li>`).join('');
+        const side = (card.action || '').toUpperCase() === 'SELL' ? 'sell' : 'buy';
+        const conf10 = rm.confidence_10 ?? Math.max(1, Math.min(10, Math.round((rm.confidence || 80) / 10)));
+        return `
+          <div class="reason-card">
+            <div class="reason-top">
+              <div>
+                <h3 class="reason-title">${esc(card.headline || ((side === 'buy' ? 'Bought' : 'Sold') + ' $' + (card.symbol || '')))}</h3>
+                <div class="reason-meta">${esc(formatWhen(card.timestamp))} · ${esc(side)} · ${esc(money(card.notional || (card.price * card.qty)))}</div>
+              </div>
+              <span class="${chip(side)}">${esc(card.symbol || '')}</span>
+            </div>
+            <p class="reason-body">${esc(card.narrative || card.thesis || '')}</p>
+            ${bullets ? `<ul class="reason-bullets">${bullets}</ul>` : ''}
+            <div class="risk-map">Risk map: stop ${esc(money(rm.stop))}; target ${esc(money(rm.target))}; horizon ${esc(rm.horizon_days ?? 5)} trading days; R:R ${esc(Number(rm.rr ?? 0).toFixed(2))}:1; confidence ${esc(conf10)}/10.</div>
+          </div>
+        `;
+      }).join('');
+
+      if (count) count.textContent = `Showing ${show.length} of ${all.length} trade decisions.`;
+      if (btn) {
+        if (show.length >= all.length) {
+          btn.style.display = 'none';
+        } else {
+          btn.style.display = 'inline-flex';
+          btn.textContent = `Show ${Math.min(3, all.length - show.length)} more`;
+        }
+      }
+    }
+
 
     const HARD_REFRESH_MS = 5 * 60 * 1000;
     setInterval(() => location.reload(), HARD_REFRESH_MS);
