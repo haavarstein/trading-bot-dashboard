@@ -1,295 +1,248 @@
-# 🤖 IBKR Auto-Trader with Telegram Notifications
+# Hermes Auto-Trader (Simulated Paper)
 
-**Status:** DRY-RUN MODE (Safe to test)  
-**Capital:** $1,000  
-**Max Positions:** 3 (PDT-safe)  
-**Notifications:** Telegram (recipient configured locally)
+Public monitor + local simulated paper trading bot inspired by the Farzad.money trust-dashboard pattern.
 
----
+**Live dashboard:** https://trading-bot-delta-roan.vercel.app  
+**Mode today:** `PAPER_TRADING` via **local paper broker** (real market marks, simulated cash/fills)  
+**IBKR MCP:** paused until a personal paper account is approved/active  
+**Capital:** $1,000 starting simulated cash  
+**Cadence:** every 15 minutes during NYSE regular hours (09:30–16:00 America/New_York, Mon–Fri)
 
-## 🎯 What This Bot Does
-
-1. **Scans AI-selected candidates** every 15 minutes during market hours
-2. **Dual-model consensus**: Two AI models must agree on every trade
-3. **Risk validation**: Code enforces stop-loss, position sizing, R:R ratios
-4. **Telegram alerts**: Real-time notifications for trades, disagreements, blockers
-5. **Full logging**: Every decision, consensus, and order recorded in JSONL
+> This is experimental software, not financial advice. Early paper results are not proof of edge.
 
 ---
 
-## 🏗️ Architecture (Farzad.money Pattern)
+## What it does
 
-```
-┌─────────────────────────────────────────┐
-│ LAYER 1: DUAL-MODEL CONSENSUS          │
-│ • Grok Beta + Claude Sonnet 4.5        │
-│ • Independent decisions (no collusion)  │
-│ • Must agree on action AND symbol      │
-└─────────────────────────────────────────┘
-              ↓
-┌─────────────────────────────────────────┐
-│ LAYER 2: DETERMINISTIC VALIDATION      │
-│ • Buying power check                    │
-│ • Position size limits                  │
-│ • Risk/reward ratio (min 1.5:1)        │
-│ • Stop-loss requirements                │
-│ • Symbol whitelist                      │
-│ • Kill switch check                     │
-└─────────────────────────────────────────┘
-              ↓
-┌─────────────────────────────────────────┐
-│ LAYER 3: EXECUTION (DRY-RUN)           │
-│ • Simulated order placement             │
-│ • Telegram notification                 │
-│ • Order ledger logging                  │
-│ • Journal entry                         │
-└─────────────────────────────────────────┘
-```
+1. **Alpha Radar** ranks liquid equity candidates from catalyst/news + liquidity signals (`scripts/alpha_radar.py` → `data/candidates.json`).
+2. **Decision engine** (`scripts/autotrader.py`) chooses BUY / SELL / HOLD from ranked candidates + open portfolio state.
+3. **Local paper broker** (`scripts/paper_broker.py`) is account truth: cash, positions, fills, realized/open P/L, SPY benchmark start.
+4. **Dashboard publisher** rebuilds `dashboard-data.json` and pushes the public snapshot to GitHub → Vercel.
+5. **Telegram session report** summarizes decision/fill status plus per-holding `+/- $` and `%` bullets (mobile-friendly).
+
+There is **no live broker order routing** in the current path.
 
 ---
 
-## 📁 File Structure
+## Architecture (current)
 
 ```
-~/trading-bot/
+Alpha Radar (news/catalyst rank)
+        ↓
+Dual decision paths must agree on action + symbol
+        ↓
+Deterministic validation (cash, size, stop/target, R:R, concentration)
+        ↓
+Local Paper Broker fills (BUY/SELL)  ← account source of truth
+        ↓
+JSONL ledgers + portfolio.json
+        ↓
+generate_dashboard_data.py → dashboard-data.json → Vercel
+        ↓
+Telegram paper-session report (holdings P/L bullets)
+```
+
+### Honest status of “dual models”
+Decision paths are labeled for the Farzad-style dual-agreement gate. Current paper path uses a **deterministic local consensus engine** over Alpha Radar candidates (not a claim of live multi-provider LLM research desks on every tick).
+
+---
+
+## Hard limits (config)
+
+From `config/autonomy_config.json` (source of truth):
+
+| Limit | Typical value |
+|------|----------------|
+| Max single position | $200 |
+| Max open positions | 5 (capital-sized: ~$1000 / $200) |
+| Min new-buy reward-to-risk | 1.5:1 |
+| Daily loss halt | 3% (~$30 on $1k start) |
+| Portfolio drawdown halt | 8% |
+| Stop + target | required on entries |
+| Rotation | allowed with min-hold gate (default 45m) |
+| Session | NYSE regular hours only |
+
+**Note on PDT:** Pattern Day Trader rules are about **day-trade count** under $25k, **not** “max 3 open holdings.” Open-position count here is capital-sized.
+
+---
+
+## Dashboard (Farzad-style monitor)
+
+Public page sections:
+
+- Portfolio value / total return / vs S&P 500 / P/L
+- Realized P/L, open P/L, capital deployed, closed trades, SPY
+- How Hermes is trying to win (edge + hard limits + learning sample)
+- Current holdings with stop/target
+- Decisions / stance
+- Recent fills
+- Trade reasoning cards (narrative + bullets + risk map)
+- Improvements changelog
+- Hard refresh every 5 minutes
+
+Data contract: `dashboard-data.json` (generated, committed for static hosting).
+
+---
+
+## Repo layout
+
+```text
+trading-bot/
 ├── config/
-│   └── autonomy_config.json       ← All trading rules & limits
+│   └── autonomy_config.json      # rules & limits
 ├── scripts/
-│   ├── telegram_notifier.py       ← Telegram integration
-│   └── autotrader.py              ← Main trading logic
-├── data/
-│   ├── trade_journal.jsonl        ← All trades
-│   ├── order_ledger.jsonl         ← All orders (proposed/rejected/filled)
-│   ├── consensus_log.jsonl        ← Model agreements/disagreements
-│   └── candidates.json            ← Premarket scan results
-├── logs/                          ← Cron job logs (auto-created)
-├── CRON_SCHEDULE.md              ← Hermes cron job setup
-├── KILL_SWITCH_README.md         ← Emergency stop instructions
-└── README.md                      ← This file
+│   ├── alpha_radar.py            # candidate scanner
+│   ├── autotrader.py             # decisions + paper execution
+│   ├── paper_broker.py           # local account truth
+│   ├── generate_dashboard_data.py
+│   └── run_paper_session.py      # NYSE session runner (scan→trade→publish)
+├── data/                         # local runtime (mostly gitignored)
+│   ├── portfolio.json
+│   ├── fills.jsonl
+│   ├── closed_trades.jsonl
+│   ├── order_ledger.jsonl
+│   ├── consensus_log.jsonl
+│   └── candidates.json
+├── tests/
+├── index.html                    # public dashboard UI
+├── dashboard-data.json           # published snapshot
+└── README.md
 ```
+
+Secrets (`.env`, tokens, portfolio private state) stay gitignored. Do not commit account IDs, chat IDs, or credentials.
 
 ---
 
-## 🚀 Quick Start
-
-### 1. Test Telegram Notifications
+## Quick start (local)
 
 ```bash
 cd ~/trading-bot
-python3 scripts/telegram_notifier.py
+
+# 1) Scan candidates
+python scripts/alpha_radar.py
+
+# 2) Run one paper decision/execution cycle
+python scripts/autotrader.py
+
+# 3) Rebuild dashboard JSON
+python scripts/generate_dashboard_data.py
+
+# 4) Full session (scan + trade + dashboard [+ git push unless disabled])
+python scripts/run_paper_session.py --force
+# off-hours safe no-push:
+PAPER_NO_PUSH=1 python scripts/run_paper_session.py --force
 ```
 
-You should receive a test message on Telegram.
-
-### 2. Run a Dry-Run Cycle Manually
+### Tests
 
 ```bash
-python3 scripts/autotrader.py
+python -m unittest discover -s tests -p "test_*.py" -v
 ```
 
-Watch for:
-- ✅ Consensus reached between models
-- ✅ Validation passed
-- 🧪 DRY-RUN trade notification to Telegram
+---
 
-### 3. Install Hermes Cron Jobs
+## Automation (Hermes cron)
 
-See `CRON_SCHEDULE.md` for the three cron job commands:
+Active pattern:
 
-```bash
-# Premarket scan (8:00 AM ET daily)
-hermes cronjob create --name "premarket-scan" --schedule "0 12 * * 1-5" ...
+- **Name:** `nyse-paper-session-15m`
+- **Schedule:** `*/15 9-15 * * 1-5` (cron window)
+- **Runner:** Hermes script wrapper → `scripts/run_paper_session.py`
+- **Session gate:** code enforces true NYSE regular hours `09:30–16:00 ET`
+- **Delivery:** Telegram summary
 
-# Autotrader (every 15 min during market hours)
-hermes cronjob create --name "autotrader-cycle" --schedule "*/15 13-20 * * 1-5" ...
+Off-hours ticks should print `SKIP ...` and not open new risk.
 
-# Daily reconciliation (4:30 PM ET daily)
-hermes cronjob create --name "daily-reconciliation" --schedule "30 20 * * 1-5" ...
-```
-
-### 4. Monitor
+Useful commands:
 
 ```bash
-# View consensus log
-tail -f ~/trading-bot/data/consensus_log.jsonl
-
-# View order ledger
-tail -f ~/trading-bot/data/order_ledger.jsonl
-
-# List cron jobs
 hermes cronjob list
+# trigger one tick manually if your Hermes build supports it
 ```
 
 ---
 
-## 🛡️ Safety Features
+## Telegram report contents
 
-### Hard Limits (autonomy_config.json)
-- ✅ Max $200 per position
-- ✅ Max 3 open positions
-- ✅ Max 3 daily orders (PDT-safe)
-- ✅ 2% max loss per trade
-- ✅ 5% max daily drawdown
-- ✅ Min 1.5:1 risk/reward ratio
+Each session summary is meant to be readable on mobile and includes:
 
-### Banned Instruments
-- ❌ Options
-- ❌ Crypto
-- ❌ Margin
-- ❌ Penny stocks (<$5)
-- ❌ Illiquid stocks (<500k avg volume)
-- ❌ Leveraged/Inverse ETFs
+- top scanner candidate
+- decision clarity: **HOLD (no new fill)** vs **BUY/SELL fill**
+- last real fill
+- equity / cash / open P/L
+- **holdings bullets** like the dashboard chips:
+  - symbol, shares, last mark
+  - open P/L `$` and `%`
+  - stop / target
+- publish status + dashboard URL
 
-### Kill Switch
-Create this file to stop all trading:
+---
+
+## Logs for analysis
+
+| File | Purpose |
+|------|---------|
+| `data/fills.jsonl` | Actual paper BUY/SELL fills |
+| `data/closed_trades.jsonl` | Closed trades + realized P/L + reason |
+| `data/order_ledger.jsonl` | Decision → status trail (incl. HOLD) |
+| `data/consensus_log.jsonl` | Agreement / validation outcomes |
+| `data/portfolio.json` | Cash + open positions state |
+| `data/candidates.json` | Latest Alpha Radar ranking |
+
+Exit reasons you may see: `new_entry`, `stop_loss`, `take_profit`, `rotation`, `hold`.
+
+---
+
+## Safety / kill switch
+
+Create this file to halt trading logic that honors it:
+
 ```bash
-touch ~/trading-bot/KILL_SWITCH.txt
+touch KILL_SWITCH.txt
 ```
 
----
+Also keep:
 
-## 📊 Telegram Notifications
-
-You'll receive notifications for:
-
-1. **🟢 Trade Signals** (dry-run or live)
-   - Action, symbol, price, qty
-   - Stop loss, take profit, R:R ratio
-   - Confidence score, thesis
-
-2. **⚠️ Model Disagreements**
-   - Shows both model decisions
-   - Reason for blocking
-
-3. **🛑 Validation Blockers**
-   - Insufficient buying power
-   - Position size violations
-   - Risk/reward too low
-   - Kill switch active
-
-4. **❌ System Errors**
-   - Auth failures
-   - Script crashes
-   - API errors
-
-5. **📈 Daily Summary** (post-close)
-   - Trades executed
-   - Win rate
-   - P&L
-   - Consensus rate
+- position size caps
+- stop/target requirements
+- session-hours gate
+- IBKR MCP disabled until personal paper is ready
 
 ---
 
-## 🔄 Transition to LIVE Mode
+## IBKR status (important)
 
-### Prerequisites:
-1. ✅ Run dry-run for at least 2 weeks
-2. ✅ Verify Telegram notifications work
-3. ✅ Review all consensus logs
-4. ✅ Set up IBKR API access (TWS or IB Gateway)
-5. ✅ Install IBKR MCP server
-6. ✅ Test with paper trading account first
+- **Official IBKR remote MCP** and **local Client Portal bridge** are **not** the active account path right now.
+- Hermes `ibkr` / `ibkr_remote` MCP entries should remain **enabled: false**.
+- When a personal IBKR paper account is approved/active, broker truth can replace the local paper broker without throwing away Alpha Radar / dashboard / cron.
 
-### To Enable LIVE:
-1. Edit `config/autonomy_config.json`:
-   ```json
-   {
-     "mode": "LIVE",
-     "enabled": true
-   }
-   ```
-
-2. Update `autotrader.py` to use real IBKR MCP calls instead of mock data
-
-3. **START WITH TINY CAPITAL** (e.g., $100)
-
-4. Monitor closely for first week
+Do not leave stale `hermes mcp login ibkr_*` processes or `localhost:5000` Client Portal Java running in the background while parked.
 
 ---
 
-## 📝 Daily Workflow
+## Deploy
 
-**Morning (before market):**
-- Check Telegram for premarket scan results
-- Review kill switch status
-- Verify cron jobs are running
+Static hosting:
 
-**During market hours:**
-- Monitor Telegram for trade signals
-- Watch for disagreement notifications
-- Check validation blockers
+1. `index.html` + `dashboard-data.json` on `main`
+2. GitHub repo → Vercel production
+3. Session runner commits/pushes dashboard snapshot after market cycles (when publish is enabled)
 
-**After close:**
-- Review daily summary
-- Check consensus log for patterns
-- Update strategy if needed
+Privacy checklist before any public change:
+
+- no `.env` / tokens / account numbers
+- no personal emails/usernames/chat IDs in tracked files
+- prefer generic bot author metadata on public history
 
 ---
 
-## 🚨 Troubleshooting
+## Maintainer note
 
-**No Telegram notifications?**
-```bash
-# Check bot token in Hermes gateway config
-cat ~/.hermes/gateway.yaml | grep telegram
-
-# Test manually
-python3 ~/trading-bot/scripts/telegram_notifier.py
-```
-
-**Cron jobs not running?**
-```bash
-# List jobs
-hermes cronjob list
-
-# Check logs
-hermes cronjob logs autotrader-cycle
-```
-
-**Bot keeps blocking trades?**
-```bash
-# Check consensus log for reasons
-cat ~/trading-bot/data/consensus_log.jsonl | jq '.reason'
-
-# Common issues:
-# - Models disagree on symbol
-# - Confidence < 70%
-# - Stop/target mismatch
-# - Buying power insufficient
-```
+**Keep this README current whenever behavior, limits, dashboard sections, cron, or broker mode change.**  
+README updates are part of the change, not a later cleanup task.
 
 ---
 
-## 📚 Key Files
+## Disclaimer
 
-- **autonomy_config.json**: All trading rules (edit this to change limits)
-- **telegram_notifier.py**: Telegram integration (works standalone)
-- **autotrader.py**: Main bot logic (currently uses mock data)
-- **consensus_log.jsonl**: Every model decision + outcome
-- **order_ledger.jsonl**: Every proposed/executed order
-
----
-
-## ⚡ Next Steps
-
-1. **Install IBKR MCP server** (for live broker data)
-2. **Connect TradingView MCP** (for real-time market data)
-3. **Run dry-run for 2 weeks** (build confidence)
-4. **Review disagreement patterns** (improve consensus)
-5. **Transition to paper trading** (IBKR paper account)
-6. **Start live with $100** (test real execution)
-
----
-
-**Built with:** Hermes Agent + Farzad.money pattern  
-**License:** Your own risk - this is experimental  
-**Support:** Review logs, not financial advice
-
----
-
-## 🎓 Learning Resources
-
-- Farzad.money instructions: https://farzad.money/instructions.html
-- Miles Deutscher TradingView MCP: https://x.com/milesdeutscher/status/2084655895926255662
-- IBKR API docs: https://interactivebrokers.github.io/
-- Hermes docs: https://hermes-agent.nousresearch.com/docs
+Experimental paper-trading research tooling. Not investment advice. You are solely responsible for any use of this software, including any future live trading.
