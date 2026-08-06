@@ -7,183 +7,484 @@
   <title>Hermes Auto-Trader</title>
   <style>
     :root {
-      --bg: #070b10;
-      --panel: rgba(255,255,255,.03);
-      --panel-2: rgba(255,255,255,.045);
-      --border: rgba(255,255,255,.08);
-      --text: #edf3fb;
-      --muted: #93a4b8;
-      --green: #36d28f;
-      --red: #ff6b7a;
-      --blue: #5aa8ff;
-      --amber: #ffca6b;
-      --radius: 18px;
-      --max: 1180px;
+      --bg0: #05070b;
+      --bg1: #0a0f16;
+      --card: #10161f;
+      --card-2: #121a24;
+      --border: rgba(255,255,255,0.075);
+      --border-strong: rgba(255,255,255,0.11);
+      --text: #f3f7fc;
+      --muted: #8b9bb0;
+      --muted-2: #6f8198;
+      --green: #34d399;
+      --green-soft: rgba(52,211,153,0.12);
+      --red: #fb7185;
+      --red-soft: rgba(251,113,133,0.12);
+      --blue: #60a5fa;
+      --amber: #fbbf24;
+      --shadow: 0 18px 50px rgba(0,0,0,0.35);
+      --radius: 22px;
+      --radius-sm: 16px;
+      --max: 1120px;
     }
+
     * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; background:
-      radial-gradient(circle at top left, rgba(54,210,143,.08), transparent 28%),
-      radial-gradient(circle at top right, rgba(90,168,255,.07), transparent 24%),
-      var(--bg);
-      color: var(--text); font-family: Inter, Segoe UI, Arial, sans-serif; }
-    body { padding: 28px 18px 48px; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background:
+        radial-gradient(900px 520px at 12% -10%, rgba(52,211,153,0.10), transparent 55%),
+        radial-gradient(800px 480px at 92% 0%, rgba(96,165,250,0.08), transparent 50%),
+        linear-gradient(180deg, #070b11 0%, var(--bg0) 40%, #04060a 100%);
+    }
+    body { padding: 34px 18px 64px; }
+
     .wrap { max-width: var(--max); margin: 0 auto; }
-    .top { display:flex; justify-content:space-between; gap:16px; align-items:flex-start; margin-bottom:18px; }
-    h1 { margin:0; font-size:42px; letter-spacing:-.04em; }
-    .sub { color: var(--muted); font-size:14px; line-height:1.5; }
-    .pills { display:flex; flex-wrap:wrap; gap:8px; }
-    .pill, .btn { border:1px solid var(--border); background:rgba(255,255,255,.03); color:var(--text); border-radius:999px; padding:8px 12px; font-size:13px; text-decoration:none; }
-    .nav { display:flex; flex-wrap:wrap; gap:8px; margin: 10px 0 22px; justify-content:center; }
-    .grid-kpi { display:grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap:14px; margin-bottom:14px; }
-    .grid-sec { display:grid; grid-template-columns: repeat(5, 1fr); gap:12px; margin-bottom:22px; }
-    .card { background: linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.02)); border:1px solid var(--border); border-radius: var(--radius); padding:18px; }
-    .label { color: var(--muted); font-size:11px; letter-spacing:.12em; text-transform:uppercase; }
-    .value { margin-top:10px; font-size:40px; font-weight:750; letter-spacing:-.04em; }
-    .value.sm { font-size:28px; }
-    .green { color: var(--green); } .red { color: var(--red); } .blue { color: var(--blue); } .amber { color: var(--amber); }
-    .badge { display:inline-flex; margin-top:10px; padding:5px 10px; border-radius:999px; border:1px solid var(--border); background: rgba(54,210,143,.12); color:#bff5da; font-size:12px; }
-    .section { margin: 0 0 22px; }
-    .section h2 { margin:0 0 8px; font-size:24px; letter-spacing:-.02em; }
-    .split { display:grid; grid-template-columns: 1fr 1fr; gap:14px; }
-    .list { display:grid; gap:10px; }
-    .row { background: var(--panel-2); border:1px solid var(--border); border-radius:14px; padding:14px; }
-    .row-top { display:flex; justify-content:space-between; gap:10px; align-items:center; flex-wrap:wrap; }
-    .chip { padding:5px 9px; border-radius:999px; border:1px solid var(--border); font-size:12px; color:#cfe0f5; background: rgba(90,168,255,.12); }
-    .chip.green { background: rgba(54,210,143,.14); color:#c7ffe5; }
-    .chip.red { background: rgba(255,107,122,.14); color:#ffd1d6; }
-    .chip.amber { background: rgba(255,202,107,.14); color:#ffe7b4; }
-    ul.clean { margin:10px 0 0 18px; color:var(--muted); }
-    ul.clean li { margin:7px 0; }
-    .metrics { display:grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap:10px; }
-    .metric { background: rgba(0,0,0,.18); border:1px solid var(--border); border-radius:12px; padding:12px; }
-    .metric .k { color:var(--muted); font-size:11px; text-transform:uppercase; letter-spacing:.08em; }
-    .metric .v { margin-top:6px; font-size:16px; font-weight:650; }
-    .footer { text-align:center; color:var(--muted); font-size:12px; margin-top:28px; }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+    .brand h1 {
+      margin: 0;
+      font-size: 44px;
+      line-height: 1.02;
+      letter-spacing: -0.045em;
+      font-weight: 750;
+    }
+    .brand p {
+      margin: 10px 0 0;
+      max-width: 560px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .top-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+    }
+    .pill, .nav a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border-strong);
+      background: rgba(255,255,255,0.03);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 9px 14px;
+      font-size: 13px;
+      text-decoration: none;
+      backdrop-filter: blur(8px);
+      white-space: nowrap;
+    }
+    .pill.muted { color: var(--muted); }
+    .pill.soft {
+      background: rgba(255,255,255,0.04);
+      color: #d7e3f2;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 8px 0 28px;
+    }
+    .nav a:hover { border-color: rgba(255,255,255,0.18); background: rgba(255,255,255,0.05); }
+
+    .kpi-row {
+      display: grid;
+      grid-template-columns: 1.45fr 1fr 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+    .sec-row {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.018));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 20px 18px;
+    }
+    .card.hero { padding: 22px 20px 18px; }
+
+    .label {
+      color: var(--muted-2);
+      font-size: 11px;
+      font-weight: 650;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    .value {
+      margin-top: 12px;
+      font-size: 48px;
+      line-height: 1;
+      font-weight: 760;
+      letter-spacing: -0.045em;
+      color: var(--text);
+    }
+    .value.sm {
+      font-size: 34px;
+      margin-top: 10px;
+    }
+    .value.xs {
+      font-size: 28px;
+      margin-top: 10px;
+    }
+    .green { color: var(--green) !important; }
+    .red { color: var(--red) !important; }
+    .blue { color: var(--blue) !important; }
+    .amber { color: var(--amber) !important; }
+
+    .hint {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .badge {
+      display: inline-flex;
+      margin-top: 14px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(52,211,153,0.25);
+      background: var(--green-soft);
+      color: #baf7dd;
+      font-size: 12px;
+      font-weight: 650;
+    }
+    .badge.down {
+      border-color: rgba(251,113,133,0.28);
+      background: var(--red-soft);
+      color: #ffd0d7;
+    }
+
+    .section { margin: 0 0 28px; }
+    .section-head { margin-bottom: 14px; }
+    .section-head h2 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      letter-spacing: -0.03em;
+      font-weight: 720;
+    }
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .shell {
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+      box-shadow: var(--shadow);
+      padding: 22px;
+    }
+    .split-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 16px;
+    }
+    .inner {
+      background: rgba(0,0,0,0.18);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 18px;
+    }
+    .inner h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      letter-spacing: -0.02em;
+    }
+    .inner .lead {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 13.5px;
+      line-height: 1.5;
+    }
+    ul.clean {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+    ul.clean li { margin: 8px 0; }
+
+    .list { display: grid; gap: 12px; }
+    .row {
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 16px;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.18);
+    }
+    .row-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .row-top strong {
+      font-size: 16px;
+      letter-spacing: -0.02em;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border-strong);
+      background: rgba(96,165,250,0.10);
+      color: #d7e8ff;
+      font-size: 12px;
+      font-weight: 650;
+    }
+    .chip.green { background: var(--green-soft); color: #c8f9e3; border-color: rgba(52,211,153,0.22); }
+    .chip.red { background: var(--red-soft); color: #ffd2d9; border-color: rgba(251,113,133,0.22); }
+    .chip.amber { background: rgba(251,191,36,0.12); color: #ffe7a8; border-color: rgba(251,191,36,0.22); }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .metric {
+      background: rgba(0,0,0,0.22);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 12px;
+    }
+    .metric .k {
+      color: var(--muted-2);
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 650;
+    }
+    .metric .v {
+      margin-top: 7px;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .stance-value {
+      margin-top: 12px;
+      font-size: 22px;
+      line-height: 1.35;
+      font-weight: 650;
+      letter-spacing: -0.02em;
+    }
+
+    .footer {
+      margin-top: 34px;
+      text-align: center;
+      color: var(--muted-2);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
     @media (max-width: 1100px) {
-      .grid-kpi, .grid-sec, .split { grid-template-columns: 1fr 1fr; }
+      .kpi-row, .sec-row, .split-2, .metrics { grid-template-columns: 1fr 1fr; }
     }
     @media (max-width: 720px) {
-      body { padding: 16px; }
-      h1 { font-size: 32px; }
-      .top { flex-direction: column; }
-      .grid-kpi, .grid-sec, .split, .metrics { grid-template-columns: 1fr; }
-      .value { font-size: 32px; }
+      body { padding: 18px 12px 40px; }
+      .brand h1 { font-size: 34px; }
+      .topbar { flex-direction: column; }
+      .top-actions { align-items: flex-start; }
+      .kpi-row, .sec-row, .split-2, .metrics { grid-template-columns: 1fr; }
+      .value { font-size: 40px; }
+      .value.sm { font-size: 30px; }
+      .shell { padding: 16px; }
     }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <div class="top">
-      <div>
+    <header class="topbar">
+      <div class="brand">
         <h1>Hermes Auto-Trader</h1>
-        <p class="sub">Local simulated paper account with real market marks. Buys and sells hit a persistent portfolio so the dashboard can show equity, holdings, and P/L.</p>
+        <p>Monitor for local simulated paper trading: portfolio truth, open risk, decisions, and fills.</p>
       </div>
-      <div class="pills">
-        <span class="pill" id="updated">Loading…</span>
-        <span class="pill" id="mode-pill">SIM PAPER</span>
+      <div class="top-actions">
+        <span class="pill muted" id="updated">Loading latest update…</span>
+        <span class="pill soft" id="mode-pill">SIM PAPER</span>
       </div>
-    </div>
+    </header>
 
     <nav class="nav">
-      <a class="pill" href="#performance">Performance</a>
-      <a class="pill" href="#edge">How it works</a>
-      <a class="pill" href="#holdings-section">Holdings</a>
-      <a class="pill" href="#stance-section">Decisions</a>
-      <a class="pill" href="#trades-section">Trades</a>
-      <a class="pill" href="#activity-section">Activity</a>
+      <a href="#performance">Performance</a>
+      <a href="#edge">How it works</a>
+      <a href="#holdings-section">Holdings</a>
+      <a href="#stance-section">Decisions</a>
+      <a href="#trades-section">Trades</a>
+      <a href="#improvements-section">Improvements</a>
     </nav>
 
-    <section id="performance" class="section">
-      <div class="grid-kpi">
-        <div class="card">
+    <section id="performance">
+      <div class="kpi-row">
+        <div class="card hero">
           <div class="label">Portfolio value</div>
           <div class="value" id="equity">--</div>
           <div class="badge" id="equity-badge">Loading</div>
-          <p class="sub" id="equity-sub">Starting capital loading…</p>
+          <div class="hint" id="equity-sub">Starting capital loading…</div>
         </div>
         <div class="card">
           <div class="label">Total return</div>
           <div class="value sm" id="total-return">--</div>
-          <p class="sub" id="total-return-sub">Since paper start.</p>
+          <div class="hint" id="total-return-sub">Since paper start.</div>
         </div>
         <div class="card">
           <div class="label">Vs S&amp;P 500</div>
           <div class="value sm" id="vs-spy">--</div>
-          <p class="sub" id="vs-spy-sub">Hermes return minus SPY over the same window.</p>
+          <div class="hint" id="vs-spy-sub">Hermes return minus SPY over the same window.</div>
         </div>
         <div class="card">
           <div class="label">Profit or loss</div>
           <div class="value sm" id="total-pnl">--</div>
-          <p class="sub">Dollars gained or lost so far.</p>
+          <div class="hint">Dollars gained or lost so far.</div>
         </div>
       </div>
 
-      <div class="grid-sec">
-        <div class="card"><div class="label">Realized P/L</div><div class="value sm" id="realized">--</div><div class="sub">Locked in from closed trades.</div></div>
-        <div class="card"><div class="label">Open P/L</div><div class="value sm" id="open-pnl">--</div><div class="sub">Mark-to-market on open holdings.</div></div>
-        <div class="card"><div class="label">Capital deployed</div><div class="value sm blue" id="deployed">--</div><div class="sub">Cost/mark of open positions.</div></div>
-        <div class="card"><div class="label">Closed trades</div><div class="value sm" id="closed">--</div><div class="sub" id="winrate">Win rate loading…</div></div>
-        <div class="card"><div class="label">S&amp;P 500 (SPY)</div><div class="value sm" id="spy">--</div><div class="sub">Buy-and-hold benchmark from paper start.</div></div>
+      <div class="sec-row">
+        <div class="card">
+          <div class="label">Realized P/L</div>
+          <div class="value xs" id="realized">--</div>
+          <div class="hint">Locked in from closed trades.</div>
+        </div>
+        <div class="card">
+          <div class="label">Open P/L</div>
+          <div class="value xs" id="open-pnl">--</div>
+          <div class="hint">Mark-to-market on open holdings.</div>
+        </div>
+        <div class="card">
+          <div class="label">Capital deployed</div>
+          <div class="value xs blue" id="deployed">--</div>
+          <div class="hint">Cost/mark of open positions.</div>
+        </div>
+        <div class="card">
+          <div class="label">Closed trades</div>
+          <div class="value xs amber" id="closed">--</div>
+          <div class="hint" id="winrate">Win rate loading…</div>
+        </div>
+        <div class="card">
+          <div class="label">S&amp;P 500 (SPY)</div>
+          <div class="value xs" id="spy">--</div>
+          <div class="hint">Buy-and-hold benchmark from paper start.</div>
+        </div>
       </div>
     </section>
 
     <section id="edge" class="section">
-      <h2>How Hermes is trying to win</h2>
-      <p class="sub">The edge it is pursuing, the limits it cannot waive, and how it acts without a live IBKR connection yet.</p>
-      <div class="split" style="margin-top:12px;">
-        <div class="card">
-          <h3>The edge it is pursuing</h3>
-          <ul class="clean">
-            <li>Broad-market discovery ranks catalyst/news setups before the 15-minute decision loop.</li>
-            <li>Dual decision paths must agree on action and symbol before risk code runs.</li>
-            <li>Local paper broker is the account source of truth: cash, fills, holdings, realized/open P/L.</li>
-            <li>Stops and targets are attached on entry; exits fire on stop, target, or rotation.</li>
-            <li>IBKR MCP stays paused until the personal paper account is approved/active.</li>
-          </ul>
+      <div class="shell">
+        <div class="section-head">
+          <h2>How Hermes is trying to win</h2>
+          <p>The edge it is pursuing, the limits it cannot waive, and how it acts without a live IBKR connection yet.</p>
         </div>
-        <div class="card">
-          <h3>Hard limits and evidence</h3>
-          <ul class="clean" id="limits-list">
-            <li>Loading limits…</li>
-          </ul>
+        <div class="split-2">
+          <div class="inner">
+            <h3>The edge it is pursuing</h3>
+            <p class="lead">Find catalyst-driven liquid setups, force dual agreement, then hard-limit risk before any paper fill.</p>
+            <ul class="clean">
+              <li>Broad-market discovery ranks catalyst/news setups before the 15-minute decision loop.</li>
+              <li>Dual decision paths must agree on action and symbol before risk code runs.</li>
+              <li>Local paper broker is the account source of truth: cash, fills, holdings, realized/open P/L.</li>
+              <li>Stops and targets are attached on entry; exits fire on stop, target, or rotation.</li>
+              <li>Every candidate, fill, miss, and closed trade feeds the public activity trail.</li>
+            </ul>
+          </div>
+          <div class="inner">
+            <h3>Hard limits and evidence</h3>
+            <p class="lead">The goal is to beat the S&amp;P 500. Early results are not proof of durable edge.</p>
+            <ul class="clean" id="limits-list">
+              <li>Loading limits…</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="holdings-section" class="section">
-      <h2>Current holdings</h2>
-      <p class="sub">Open paper positions with stop/target context.</p>
-      <div class="list" id="holdings-list" style="margin-top:12px;"><div class="row sub">Loading holdings…</div></div>
+      <div class="section-head">
+        <h2>Current holdings</h2>
+        <p>Open paper positions with stop/target context.</p>
+      </div>
+      <div class="list" id="holdings-list">
+        <div class="row hint">Loading holdings…</div>
+      </div>
     </section>
 
     <section id="stance-section" class="section">
-      <div class="split">
+      <div class="split-2">
         <div class="card">
           <div class="label">What the bot is thinking now</div>
-          <div class="value sm" style="font-size:22px; line-height:1.35; font-weight:600;" id="stance-text">Loading…</div>
-          <p class="sub" id="latest-decision-sub" style="margin-top:12px;"></p>
+          <div class="stance-value" id="stance-text">Loading…</div>
+          <div class="hint" id="latest-decision-sub"></div>
         </div>
         <div class="card">
           <div class="label">Top ranked candidate</div>
-          <div class="value sm" id="top-cand">--</div>
-          <p class="sub" id="top-cand-sub">Waiting for scanner output…</p>
+          <div class="value sm" id="top-cand" style="font-size:34px;">--</div>
+          <div class="hint" id="top-cand-sub">Waiting for scanner output…</div>
         </div>
       </div>
     </section>
 
     <section id="trades-section" class="section">
-      <h2>Recent fills</h2>
-      <p class="sub">Actual paper buys and sells written through the local broker.</p>
-      <div class="list" id="trades-list" style="margin-top:12px;"><div class="row sub">Loading trades…</div></div>
+      <div class="section-head">
+        <h2>Recent fills</h2>
+        <p>Actual paper buys and sells written through the local broker.</p>
+      </div>
+      <div class="list" id="trades-list">
+        <div class="row hint">Loading trades…</div>
+      </div>
     </section>
 
     <section id="activity-section" class="section">
-      <h2>Today’s activity</h2>
-      <p class="sub">Consensus checks and paper fills from today’s session loop.</p>
-      <div class="list" id="activity-list" style="margin-top:12px;"><div class="row sub">Loading activity…</div></div>
+      <div class="section-head">
+        <h2>Today’s activity</h2>
+        <p>Consensus checks and paper fills from today’s session loop.</p>
+      </div>
+      <div class="list" id="activity-list">
+        <div class="row hint">Loading activity…</div>
+      </div>
     </section>
 
-    <div class="footer">Public monitor for simulated paper trading. Auto-deployed via GitHub → Vercel. Not IBKR broker truth until personal paper is connected.</div>
+    <section id="improvements-section" class="section">
+      <div class="shell">
+        <div class="section-head">
+          <h2>What improved</h2>
+          <p>Public changelog of system changes that affect trust, risk, or visibility.</p>
+        </div>
+        <div class="list" id="improvements-list">
+          <div class="row hint">Loading improvements…</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      Public monitor for simulated paper trading. Auto-deployed via GitHub → Vercel.<br />
+      Not IBKR broker truth until the personal paper account is connected.
+    </div>
   </div>
 
   <script>
@@ -202,21 +503,18 @@
       try {
         const d = new Date(s);
         if (Number.isNaN(d.getTime())) return String(s);
-        // Explicit date + time so the pill never looks empty/broken.
         return d.toLocaleString(undefined, {
           year: 'numeric',
           month: 'short',
           day: 'numeric',
           hour: 'numeric',
-          minute: '2-digit',
-          second: '2-digit',
+          minute: '2-digit'
         });
       } catch {
         return String(s);
       }
     }
 
-    const dt = formatWhen;
     const esc = (s) => String(s ?? '')
       .replace(/&/g, '&amp;')
       .replace(/</g, '&lt;')
@@ -245,6 +543,25 @@
       if (el) el.className = value;
     }
 
+    const DEFAULT_IMPROVEMENTS = [
+      {
+        title: 'Local paper broker becomes account truth',
+        detail: 'Buys and sells now change cash, holdings, realized P/L, and open P/L instead of only writing simulated logs.'
+      },
+      {
+        title: 'Farzad-style trust monitor',
+        detail: 'Dashboard prioritizes portfolio value, benchmark delta, holdings with stops/targets, stance, fills, and changelog.'
+      },
+      {
+        title: 'NYSE 15-minute paper loop',
+        detail: 'Cron runs scan → decide → fill → publish during regular hours so the public page keeps moving.'
+      },
+      {
+        title: 'IBKR MCP paused on purpose',
+        detail: 'Official IBKR remote auth is blocked for now; simulated paper continues until the personal account is active.'
+      }
+    ];
+
     async function load() {
       const updatedEl = document.getElementById('updated');
       if (updatedEl) updatedEl.textContent = 'Loading latest update…';
@@ -255,44 +572,51 @@
       const s = d.summary || {};
       const stats = d.stats || {};
 
-      // Always set the timestamp first and keep it unless fetch itself failed.
       const when = formatWhen(d.generated_at || s.updated_at);
       if (updatedEl) updatedEl.textContent = `Updated ${when}`;
       setText('mode-pill', d.mode || 'SIM PAPER');
 
+      // Farzad pattern: big portfolio number stays white; badge/returns carry the color.
       setText('equity', money(s.portfolio_value));
-      setClass('equity', 'value ' + cls(s.total_pnl));
-      setText('equity-badge', (s.total_pnl || 0) >= 0 ? 'Portfolio is up so far' : 'Portfolio is down so far');
+      setClass('equity', 'value');
+      const up = (s.total_pnl || 0) >= 0;
+      const badge = document.getElementById('equity-badge');
+      if (badge) {
+        badge.textContent = up ? 'Portfolio is up so far' : 'Portfolio is down so far';
+        badge.className = up ? 'badge' : 'badge down';
+      }
       setText('equity-sub', `Started with ${money(s.starting_cash)} · local simulated paper broker.`);
 
       setText('total-return', pct(s.total_return_pct));
       setClass('total-return', 'value sm ' + cls(s.total_return_pct));
-      setText('total-return-sub', s.started_at ? `Since paper start ${formatWhen(s.started_at)}` : 'Since paper start.');
+      setText('total-return-sub', s.started_at ? `Since paper start ${formatWhen(s.started_at)}.` : 'Since paper start.');
 
       setText('vs-spy', pct(s.vs_spy_pct));
       setClass('vs-spy', 'value sm ' + cls(s.vs_spy_pct));
-      setText('vs-spy-sub', `Hermes ${pct(s.total_return_pct)} vs SPY ${pct(s.spy_return_pct)}.`);
+      setText('vs-spy-sub', `Hermes return minus SPY over the same window. SPY returned ${pct(s.spy_return_pct)}.`);
 
       setText('total-pnl', money(s.total_pnl));
       setClass('total-pnl', 'value sm ' + cls(s.total_pnl));
 
       setText('realized', money(s.realized_pnl));
-      setClass('realized', 'value sm ' + cls(s.realized_pnl));
+      setClass('realized', 'value xs ' + cls(s.realized_pnl));
       setText('open-pnl', money(s.open_pnl));
-      setClass('open-pnl', 'value sm ' + cls(s.open_pnl));
+      setClass('open-pnl', 'value xs ' + cls(s.open_pnl));
       setText('deployed', money(s.capital_deployed));
+      setClass('deployed', 'value xs blue');
       setText('closed', String(s.closed_trades ?? 0));
+      setClass('closed', 'value xs amber');
       setText('winrate', `${s.win_rate_pct ?? 0}% win rate so far.`);
       setText('spy', pct(s.spy_return_pct));
-      setClass('spy', 'value sm ' + cls(s.spy_return_pct));
+      setClass('spy', 'value xs ' + cls(s.spy_return_pct));
 
       const limits = d.limits || {};
       setHtml('limits-list', `
+        <li>Minimum new-buy reward-to-risk: ${esc(limits.min_rr ?? '--')}:1</li>
         <li>Maximum single position: ${esc(money(limits.max_position_usd))}</li>
         <li>Maximum open positions: ${esc(limits.max_positions ?? '--')}</li>
-        <li>Minimum new-buy reward-to-risk: ${esc(limits.min_rr ?? '--')}:1</li>
         <li>Daily loss halt: ${esc(limits.max_daily_loss_pct ?? '--')}%</li>
-        <li>Cadence: ${esc((d.system || {}).cadence || 'NYSE 15m')}</li>
+        <li>Cadence: ${esc((d.system || {}).cadence || 'every 15m during NYSE regular hours')}</li>
         <li>Fills today: ${esc(stats.fills_today ?? 0)} · candidates ranked: ${esc(stats.candidate_count ?? 0)}</li>
       `);
 
@@ -303,21 +627,21 @@
             <strong>${esc(h.symbol)} · ${esc(h.qty)} sh</strong>
             <span class="${chip(h.open_pnl >= 0 ? 'buy' : 'sell')}">${esc(money(h.open_pnl))} (${esc(pct(h.open_pnl_pct))})</span>
           </div>
-          <div class="metrics" style="margin-top:10px;">
+          <div class="metrics">
             <div class="metric"><div class="k">Avg cost</div><div class="v">${esc(money(h.avg_cost))}</div></div>
             <div class="metric"><div class="k">Last</div><div class="v">${esc(money(h.last))}</div></div>
             <div class="metric"><div class="k">Stop</div><div class="v">${esc(money(h.stop))}</div></div>
             <div class="metric"><div class="k">Target</div><div class="v">${esc(money(h.target))}</div></div>
           </div>
-          <p class="sub" style="margin-top:10px;">${esc(h.thesis || '')}</p>
+          <div class="hint" style="margin-top:12px;">${esc(h.thesis || '')}</div>
         </div>
-      `).join('') : '<div class="row sub">No open holdings — waiting for the next buy fill.</div>');
+      `).join('') : '<div class="row hint">No open holdings — waiting for the next buy fill.</div>');
 
       setText('stance-text', d.stance || 'No stance yet.');
       const ld = d.latest_decision || {};
       setText('latest-decision-sub', ld.action
         ? `Latest decision: ${ld.action} ${ld.symbol || ''} @ ${ld.confidence || '--'}% confidence.`
-        : '');
+        : 'No latest decision recorded.');
 
       const tc = d.latest_candidate || {};
       setText('top-cand', tc.symbol || '--');
@@ -330,10 +654,10 @@
             <strong>${esc(t.action)} ${esc(t.symbol)} · ${esc(t.qty)} @ ${esc(money(t.price))}</strong>
             <span class="${chip((t.action || '').toLowerCase())}">${esc(t.status || t.action)}</span>
           </div>
-          <p class="sub">${esc(t.thesis || t.reason || '')}</p>
-          <div class="sub">${esc(formatWhen(t.timestamp))}${typeof t.realized_pnl === 'number' ? ` · realized ${esc(money(t.realized_pnl))}` : ''}</div>
+          <div class="hint">${esc(t.thesis || t.reason || '')}</div>
+          <div class="hint">${esc(formatWhen(t.timestamp))}${typeof t.realized_pnl === 'number' ? ` · realized ${esc(money(t.realized_pnl))}` : ''}</div>
         </div>
-      `).join('') : '<div class="row sub">No fills yet.</div>');
+      `).join('') : '<div class="row hint">No fills yet.</div>');
 
       const activity = d.activity || [];
       setHtml('activity-list', activity.length ? activity.map(a => `
@@ -342,28 +666,35 @@
             <strong>${esc(a.headline || 'Activity')}</strong>
             <span class="${chip(a.status)}">${esc(a.status || a.type)}</span>
           </div>
-          <p class="sub">${esc(a.detail || '')}</p>
-          <div class="sub">${esc(formatWhen(a.timestamp))}</div>
+          <div class="hint">${esc(a.detail || '')}</div>
+          <div class="hint">${esc(formatWhen(a.timestamp))}</div>
         </div>
-      `).join('') : '<div class="row sub">No activity yet.</div>');
+      `).join('') : '<div class="row hint">No activity yet.</div>');
 
-      // Re-affirm timestamp at end so partial DOM issues cannot leave a failure message.
+      const improvements = (d.improvements && d.improvements.length) ? d.improvements : DEFAULT_IMPROVEMENTS;
+      setHtml('improvements-list', improvements.map((item, idx) => `
+        <div class="row">
+          <div class="row-top">
+            <strong>${esc(item.title || ('Improvement ' + (idx + 1)))}</strong>
+            <span class="chip">${esc(item.when ? formatWhen(item.when) : 'shipped')}</span>
+          </div>
+          <div class="hint">${esc(item.detail || '')}</div>
+        </div>
+      `).join(''));
+
       if (updatedEl) updatedEl.textContent = `Updated ${when}`;
       return when;
     }
 
-    // Hard refresh every 5 minutes.
     const HARD_REFRESH_MS = 5 * 60 * 1000;
     setInterval(() => location.reload(), HARD_REFRESH_MS);
 
     load().catch(err => {
       console.error(err);
       const el = document.getElementById('updated');
-      // Only show failure if we never got a successful timestamp this session.
       if (el && !String(el.textContent || '').startsWith('Updated ')) {
         el.textContent = 'Update time unavailable — retrying…';
       }
-      // One automatic retry helps transient CDN glitches.
       setTimeout(() => {
         load().catch((err2) => {
           console.error(err2);
