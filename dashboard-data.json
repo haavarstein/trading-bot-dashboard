@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-08-06T15:59:36.979591+00:00",
+  "generated_at": "2026-08-06T16:00:52.539692+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 999.38,
+    "portfolio_value": 999.0,
     "starting_cash": 1000.0,
-    "total_return_pct": -0.06,
-    "total_pnl": -0.62,
+    "total_return_pct": -0.1,
+    "total_pnl": -1.0,
     "realized_pnl": 0.13,
-    "open_pnl": -0.77,
-    "capital_deployed": 399.22,
-    "cash": 600.16,
+    "open_pnl": -1.13,
+    "capital_deployed": 598.83,
+    "cash": 400.17,
     "closed_trades": 1,
     "win_rate_pct": 100.0,
-    "vs_spy_pct": 0.11,
-    "spy_return_pct": -0.17,
+    "vs_spy_pct": 0.08,
+    "spy_return_pct": -0.18,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-06T15:59:38.217776+00:00"
+    "updated_at": "2026-08-06T16:00:54.892828+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.17,
-    "price": 768.0700073242188,
+    "return_pct": -0.18,
+    "price": 768.0,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 10,
-    "consensus_count_today": 21,
-    "validated_count_today": 19,
+    "consensus_count_today": 22,
+    "validated_count_today": 20,
     "blocked_count_today": 2,
-    "fills_today": 6,
-    "simulated_orders_today": 19,
+    "fills_today": 7,
+    "simulated_orders_today": 20,
     "top_symbol_today": "ANET"
   },
   "holdings": [
@@ -38,10 +38,10 @@
       "symbol": "LRCX",
       "qty": 0.6417,
       "avg_cost": 311.645,
-      "last": 310.32501220703125,
-      "market_value": 199.14,
-      "open_pnl": -0.85,
-      "open_pnl_pct": -0.42,
+      "last": 310.1000061035156,
+      "market_value": 198.99,
+      "open_pnl": -0.99,
+      "open_pnl_pct": -0.5,
       "stop": 303.85,
       "target": 327.23,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool"
@@ -50,33 +50,45 @@
       "symbol": "BAC",
       "qty": 3.1713,
       "avg_cost": 63.065,
-      "last": 63.09000015258789,
-      "market_value": 200.08,
-      "open_pnl": 0.08,
-      "open_pnl_pct": 0.04,
+      "last": 63.03499984741211,
+      "market_value": 199.9,
+      "open_pnl": -0.1,
+      "open_pnl_pct": -0.05,
       "stop": 61.49,
       "target": 66.22,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (beat): Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat"
+    },
+    {
+      "symbol": "PANW",
+      "qty": 0.5622,
+      "avg_cost": 355.72,
+      "last": 355.6451110839844,
+      "market_value": 199.94,
+      "open_pnl": -0.04,
+      "open_pnl_pct": -0.02,
+      "stop": 346.83,
+      "target": 373.51,
+      "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (catalyst, launch): China launches cybersecurity review into Palo Alto Networks products - Reuters"
     }
   ],
   "latest_candidate": {
     "symbol": "LRCX",
     "name": "Lam Research",
-    "price": 311.6449890136719,
-    "volume": 2833689.0,
-    "avg_volume": 12817638.9,
-    "percent_change": 1.3743332904156125,
+    "price": 309.9649963378906,
+    "volume": 2994038.0,
+    "avg_volume": 12833673.8,
+    "percent_change": 0.8278520587451937,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 13,
     "liquidity_score": 81.08,
-    "rank_score": 72.76,
+    "rank_score": 72.32,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
     "top_headlines": [
       "Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
       "Lam Research (LRCX) On Strong Earnings And AI Demand With Fair Value Still In Debate - Yahoo Finance",
-      "Lam Research Corporation $LRCX Shares Bought by Chapin Davis Inc. - MarketBeat"
+      "Lam Research Corp. stock outperforms competitors despite losses on the day - MarketWatch"
     ],
     "matched_headlines": [
       {
@@ -119,18 +131,34 @@
   "latest_decision": {
     "model": "grok-beta",
     "action": "BUY",
-    "symbol": "BAC",
+    "symbol": "PANW",
     "confidence": 90,
-    "entry_price": 63.064998626708984,
-    "stop_loss": 61.49,
-    "take_profit": 66.22,
-    "qty": 3.1713,
-    "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (beat): Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat",
+    "entry_price": 355.7200012207031,
+    "stop_loss": 346.83,
+    "take_profit": 373.51,
+    "qty": 0.5622,
+    "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (catalyst, launch): China launches cybersecurity review into Palo Alto Networks products - Reuters",
     "reason_code": "new_entry",
-    "timestamp": "2026-08-06T15:50:14.374161+00:00"
+    "timestamp": "2026-08-06T16:00:50.162979+00:00"
   },
-  "stance": "Buying pressure on BAC. Bullish setup from ranked candidate list: Headline-driven setup (beat): Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat",
+  "stance": "Buying pressure on PANW. Bullish setup from ranked candidate list: Headline-driven setup (catalyst, launch): China launches cybersecurity review into Palo Alto Networks products - Reuters",
   "activity": [
+    {
+      "type": "fill",
+      "symbol": "PANW",
+      "status": "filled_paper",
+      "headline": "BUY PANW @ $355.72",
+      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (catalyst, launch): China launches cybersecurity review into Palo Alto Networks products - Reuters",
+      "timestamp": "2026-08-06T16:00:50.163941+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "PANW",
+      "status": "validated",
+      "headline": "BUY PANW \u2014 validated",
+      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (catalyst, launch): China launches cybersecurity review into Palo Alto Networks products - Reuters",
+      "timestamp": "2026-08-06T16:00:50.162979+00:00"
+    },
     {
       "type": "fill",
       "symbol": "AAA",
@@ -210,25 +238,21 @@
       "headline": "BUY LRCX \u2014 validated",
       "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
       "timestamp": "2026-08-06T15:45:38.311267+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "LRCX",
-      "status": "validated",
-      "headline": "BUY LRCX \u2014 validated",
-      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
-      "timestamp": "2026-08-06T15:42:47.326752+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "LRCX",
-      "status": "validated",
-      "headline": "BUY LRCX \u2014 validated",
-      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
-      "timestamp": "2026-08-06T15:41:38.871736+00:00"
     }
   ],
   "recent_trades": [
+    {
+      "timestamp": "2026-08-06T16:00:50.163941+00:00",
+      "action": "BUY",
+      "symbol": "PANW",
+      "qty": 0.5622,
+      "price": 355.7200012207031,
+      "notional": 199.99,
+      "realized_pnl": null,
+      "reason": null,
+      "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (catalyst, launch): China launches cybersecurity review into Palo Alto Networks products - Reuters",
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-08-06T15:52:44.323477+00:00",
       "action": "SELL",
@@ -334,21 +358,21 @@
     {
       "symbol": "LRCX",
       "name": "Lam Research",
-      "price": 311.6449890136719,
-      "volume": 2833689.0,
-      "avg_volume": 12817638.9,
-      "percent_change": 1.3743332904156125,
+      "price": 309.9649963378906,
+      "volume": 2994038.0,
+      "avg_volume": 12833673.8,
+      "percent_change": 0.8278520587451937,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
       "liquidity_score": 81.08,
-      "rank_score": 72.76,
+      "rank_score": 72.32,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
       "top_headlines": [
         "Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
         "Lam Research (LRCX) On Strong Earnings And AI Demand With Fair Value Still In Debate - Yahoo Finance",
-        "Lam Research Corporation $LRCX Shares Bought by Chapin Davis Inc. - MarketBeat"
+        "Lam Research Corp. stock outperforms competitors despite losses on the day - MarketWatch"
       ],
       "matched_headlines": [
         {
@@ -389,80 +413,113 @@
       ]
     },
     {
-      "symbol": "BAC",
-      "name": "Bank of America",
-      "price": 63.064998626708984,
-      "volume": 7815975.0,
-      "avg_volume": 27505147.5,
-      "percent_change": -0.292492289788167,
+      "symbol": "PANW",
+      "name": "Palo Alto Networks",
+      "price": 355.7200012207031,
+      "volume": 2426982.0,
+      "avg_volume": 5861228.2,
+      "percent_change": -1.91363877221825,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 10,
-      "liquidity_score": 84.39,
-      "rank_score": 55.89,
+      "liquidity_score": 77.68,
+      "rank_score": 60.68,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat",
+      "catalyst": "Headline-driven setup (catalyst, launch): China launches cybersecurity review into Palo Alto Networks products - Reuters",
       "top_headlines": [
-        "Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat",
-        "Bank of America spends over $250M annually on GLP-1 coverage, CEO says - Seeking Alpha",
-        "BAC|Bank of America Corp|Price:63.215|Chg%:+0.315 - TradingKey"
+        "China launches cybersecurity review into Palo Alto Networks products - Reuters",
+        "PANW Stock Holds Near Record Highs Despite Fresh China Security Review That Mirrors Micron Case - Stocktwits",
+        "Palo Alto Networks enters key TASE TA-35 and TA-125 indices - The Jerusalem Post"
       ],
       "matched_headlines": [
         {
-          "title": "Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat",
+          "title": "China launches cybersecurity review into Palo Alto Networks products - Reuters",
           "keywords": [
-            "beat"
+            "catalyst",
+            "launch"
           ]
         },
         {
-          "title": "Dycom Industries, Inc. $DY Stock Position Raised by Bank of America Corp DE - MarketBeat",
+          "title": "PANW Stock Holds Near Record Highs Despite Fresh China Security Review That Mirrors Micron Case - Stocktwits",
+          "keywords": [
+            "record"
+          ]
+        },
+        {
+          "title": "China launches security review of Palo Alto Networks products (PANW:NASDAQ) - Seeking Alpha",
+          "keywords": [
+            "catalyst",
+            "launch"
+          ]
+        },
+        {
+          "title": "Palo Alto Networks (PANW) Could Be 131% Above Fair Value As FireMon Integration Draws Focus - simplywall.st",
           "keywords": [
             "ai",
-            "beat",
-            "catalyst",
-            "raised"
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Avior Wealth Management LLC Purchases 10,155 Shares of Palo Alto Networks, Inc. $PANW - MarketBeat",
+          "keywords": [
+            "beat"
           ]
         }
       ]
     },
     {
-      "symbol": "ANET",
-      "name": "Arista Networks",
-      "price": 193.10000610351562,
-      "volume": 3294352.0,
-      "avg_volume": 8918445.2,
-      "percent_change": -2.1336939370382964,
+      "symbol": "AVGO",
+      "name": "Broadcom",
+      "price": 422.1099853515625,
+      "volume": 5315288.0,
+      "avg_volume": 18836658.8,
+      "percent_change": 0.9156513778911279,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 9,
-      "liquidity_score": 79.5,
-      "rank_score": 54.13,
+      "catalyst_score": 7,
+      "liquidity_score": 82.75,
+      "rank_score": 48.65,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst, demand): Arista Networks Stock Surges as Earnings Prove AI Demand Is Real - Barron's",
+      "catalyst": "Headline-driven setup (ai, catalyst, deal): Broadcom (AVGO) Stock May Trade Above Fair Value As AI Supply Deal Expands - simplywall.st",
       "top_headlines": [
-        "Arista Networks Stock Climbs 25% On A 5-Day Winning Streak - Trefis",
-        "Arista Networks Stock Surges as Earnings Prove AI Demand Is Real - Barron's",
-        "Stocks making the biggest moves after the bell: SpaceX, AMD, Pinterest, Arista Networks, Wynn Resorts & more - CNBC"
+        "Broadcom (AVGO) Stock May Trade Above Fair Value As AI Supply Deal Expands - simplywall.st",
+        "Fund Update: New $513.0M $AVGO stock position opened by BAILLIE GIFFORD & CO - Quiver Quantitative",
+        "Broadcom Is Down 20% From Its All-Time High. Here's Why It's a Screaming Bargain. - Yahoo Finance"
       ],
       "matched_headlines": [
         {
-          "title": "Arista Networks Stock Surges as Earnings Prove AI Demand Is Real - Barron's",
+          "title": "Broadcom (AVGO) Stock May Trade Above Fair Value As AI Supply Deal Expands - simplywall.st",
           "keywords": [
             "ai",
             "catalyst",
-            "demand"
+            "deal"
           ]
         },
         {
-          "title": "Mirador Capital Partners LP Invests $3.60 Million in Arista Networks, Inc. $ANET - MarketBeat",
+          "title": "Fund Update: New $513.0M $AVGO stock position opened by BAILLIE GIFFORD & CO - Quiver Quantitative",
           "keywords": [
-            "beat"
+            "ai",
+            "catalyst"
           ]
         },
         {
-          "title": "Arista Networks\u2019 stock jumps on stellar earnings and revenue beat and strong forecast - SiliconANGLE",
+          "title": "Broadcom Is Down 20% From Its All-Time High. Here's Why It's a Screaming Bargain. - Yahoo Finance",
           "keywords": [
-            "beat",
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Broadcom adds API protection and AI tools for private clouds - Stock Titan",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Broadcom Is Down 20% From Its All-Time High. Here's Why It's a Screaming Bargain. - The Motley Fool",
+          "keywords": [
+            "ai",
             "catalyst"
           ]
         }
@@ -471,15 +528,15 @@
     {
       "symbol": "UNH",
       "name": "UnitedHealth",
-      "price": 404.4150085449219,
-      "volume": 1359435.0,
-      "avg_volume": 4234423.5,
-      "percent_change": -2.019380122369019,
+      "price": 405.57000732421875,
+      "volume": 1437027.0,
+      "avg_volume": 4242182.7,
+      "percent_change": -1.7395500123031495,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 8,
-      "liquidity_score": 76.27,
-      "rank_score": 52.56,
+      "catalyst_score": 7,
+      "liquidity_score": 76.28,
+      "rank_score": 48.33,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): UNH Stock Becomes Dow\u2019s Biggest Driver Back To 50,000 \u2014 Will Trump Tailwinds Spark Another Leg Higher? - Stocktwits",
       "top_headlines": [
@@ -523,50 +580,51 @@
       ]
     },
     {
-      "symbol": "PANW",
-      "name": "Palo Alto Networks",
-      "price": 356.6499938964844,
-      "volume": 2360394.0,
-      "avg_volume": 5854569.4,
-      "percent_change": -1.6572022569173444,
+      "symbol": "WMT",
+      "name": "Walmart",
+      "price": 111.81109619140625,
+      "volume": 7862007.0,
+      "avg_volume": 22014690.7,
+      "percent_change": -0.4708030654492596,
       "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 7,
-      "liquidity_score": 77.67,
-      "rank_score": 46.98,
+      "sentiment": "bearish",
+      "catalyst_score": -7,
+      "liquidity_score": 83.43,
+      "rank_score": 46.89,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (catalyst, launch): China launches cybersecurity review into Palo Alto Networks products - Reuters",
+      "catalyst": "Headline-driven setup (catalyst): Walmart Earnings: Bull Put Spread Trade - Barchart.com",
       "top_headlines": [
-        "China launches cybersecurity review into Palo Alto Networks products - Reuters",
-        "PANW Stock Holds Near Record Highs Despite Fresh China Security Review That Mirrors Micron Case - Stocktwits",
-        "Palo Alto Networks enters key TASE TA-35 and TA-125 indices - The Jerusalem Post"
+        "RBC Capital reiterates Walmart stock Outperform rating at $137 - Investing.com",
+        "Walmart Stock And 2 Consumer Staples Picks For Rising Food And Fuel Costs - simplywall.st",
+        "Walmart Earnings: Bull Put Spread Trade - Barchart.com"
       ],
       "matched_headlines": [
         {
-          "title": "China launches cybersecurity review into Palo Alto Networks products - Reuters",
+          "title": "Walmart Earnings: Bull Put Spread Trade - Barchart.com",
           "keywords": [
-            "catalyst",
-            "launch"
-          ]
-        },
-        {
-          "title": "PANW Stock Holds Near Record Highs Despite Fresh China Security Review That Mirrors Micron Case - Stocktwits",
-          "keywords": [
-            "record"
-          ]
-        },
-        {
-          "title": "Palo Alto Networks (PANW) Could Be 131% Above Fair Value As FireMon Integration Draws Focus - simplywall.st",
-          "keywords": [
-            "ai",
             "catalyst"
           ]
         },
         {
-          "title": "China launches security review of Palo Alto Networks products (PANW:NASDAQ) - Seeking Alpha",
+          "title": "Eyes on the skies: Walmart expands drone partnership with Alphabet's Wing to Florida (WMT:NASDAQ) - Seeking Alpha",
           "keywords": [
             "catalyst",
-            "launch"
+            "partnership"
+          ]
+        },
+        {
+          "title": "Walmart Shares Slip After Oppenheimer Downgrades Stock Ahead of Earnings - Yahoo Finance",
+          "keywords": [
+            "catalyst",
+            "downgrade",
+            "downgrades"
+          ]
+        },
+        {
+          "title": "Walmart Stock Slides After Analyst Downgrade: Time To Buy Or Stay Away? - Benzinga",
+          "keywords": [
+            "catalyst",
+            "downgrade"
           ]
         }
       ]
