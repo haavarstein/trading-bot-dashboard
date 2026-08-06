@@ -1,19 +1,24 @@
 #!/usr/bin/env python3
 """
-DRY-RUN Trading Bot - Main Orchestrator
-Implements dual-model consensus + validation + Telegram notifications
+Simulated paper autotrader.
+
+Uses local PaperBroker as account truth (buy/sell/cash/positions/P&L).
+No IBKR MCP required until personal paper account is active.
 """
+
+from __future__ import annotations
 
 import json
 import math
 import os
 import sys
 from datetime import datetime, timezone
-from typing import Dict, Any, Optional, Tuple
 from pathlib import Path
+from typing import Any, Dict, Optional, Tuple
 
-# Add scripts directory to path
 sys.path.insert(0, str(Path(__file__).parent))
+
+from paper_broker import PaperBroker, load_broker, quote  # noqa: E402
 
 try:
     from telegram_notifier import TelegramNotifier
@@ -24,414 +29,516 @@ except ImportError:
 
 class DryRunAutoTrader:
     def __init__(self, config_path: str = "./config/autonomy_config.json"):
-        self.config = self._load_config(config_path)
-        self.mode = self.config['mode']
-        self.enabled = self.config['enabled']
-        
-        # Initialize Telegram
-        self.telegram = TelegramNotifier(config_path) if TelegramNotifier else None
-        
-        # Data paths
-        self.trade_journal_path = self.config['data_files']['trade_journal']
-        self.order_ledger_path = self.config['data_files']['order_ledger']
-        self.consensus_log_path = self.config['data_files']['consensus_log']
-        
-        # Ensure data files exist
+        self.root = Path(__file__).resolve().parent.parent
+        self.config_path = str((self.root / config_path).resolve()) if not Path(config_path).is_absolute() else config_path
+        # allow relative from cwd
+        if not Path(self.config_path).exists():
+            self.config_path = config_path
+        self.config = self._load_config(self.config_path)
+        self.mode = self.config["mode"]
+        self.enabled = self.config["enabled"]
+        self.telegram = TelegramNotifier(self.config_path) if TelegramNotifier else None
+
+        self.trade_journal_path = self._resolve_data(self.config["data_files"]["trade_journal"])
+        self.order_ledger_path = self._resolve_data(self.config["data_files"]["order_ledger"])
+        self.consensus_log_path = self._resolve_data(self.config["data_files"]["consensus_log"])
         self._init_data_files()
-        
+
+        starting = float(self.config.get("account", {}).get("starting_capital", 1000))
+        portfolio_path = Path(self.trade_journal_path).parent / "portfolio.json"
+        self.broker = PaperBroker(starting_cash=starting, path=portfolio_path)
+
+    def _resolve_data(self, path: str) -> str:
+        p = Path(path)
+        if not p.is_absolute():
+            p = self.root / path
+        return str(p)
+
     def _load_config(self, config_path: str) -> Dict:
-        """Load and validate configuration"""
-        with open(config_path, 'r') as f:
+        with open(config_path, "r", encoding="utf-8") as f:
             config = json.load(f)
-        
-        # Validate critical fields
-        assert config['mode'] in ['DRY_RUN', 'PAPER_TRADING', 'LIVE'], "Mode must be DRY_RUN, PAPER_TRADING, or LIVE"
-        assert config['enabled'] is False or config['mode'] in ['PAPER_TRADING', 'LIVE'], "Cannot enable DRY_RUN mode"
-        
+        assert config["mode"] in ["DRY_RUN", "PAPER_TRADING", "LIVE"], "Mode must be DRY_RUN, PAPER_TRADING, or LIVE"
+        assert config["enabled"] is False or config["mode"] in ["PAPER_TRADING", "LIVE"], "Cannot enable DRY_RUN mode"
         return config
-    
+
     def _init_data_files(self):
-        """Initialize JSONL data files if they don't exist"""
         for path in [self.trade_journal_path, self.order_ledger_path, self.consensus_log_path]:
             os.makedirs(os.path.dirname(path), exist_ok=True)
             if not os.path.exists(path):
-                with open(path, 'w') as f:
-                    pass  # Create empty file
-    
+                open(path, "w", encoding="utf-8").close()
+
     def check_kill_switch(self) -> bool:
-        """Check if kill switch file exists"""
-        kill_switch_path = self.config['kill_switch']['file_path']
+        kill_switch_path = self.config["kill_switch"]["file_path"]
+        if not Path(kill_switch_path).is_absolute():
+            kill_switch_path = str(self.root / kill_switch_path)
         if os.path.exists(kill_switch_path):
-            if self.telegram:
-                self.telegram.notify_status(
-                    "KILL_SWITCH", 
-                    f"Kill switch detected at {kill_switch_path}. All trading halted."
-                )
             print(f"🔴 KILL SWITCH ACTIVE: {kill_switch_path}")
             return True
         return False
-    
+
     def log_to_ledger(self, ledger_path: str, entry: Dict):
-        """Append entry to JSONL ledger"""
-        entry['timestamp'] = datetime.now(timezone.utc).isoformat()
-        with open(ledger_path, 'a') as f:
-            f.write(json.dumps(entry) + '\n')
-    
-    def get_mock_broker_snapshot(self) -> Dict:
-        """
-        Simulates reading from IBKR MCP.
-        In LIVE mode, this would call actual IBKR MCP tools.
-        """
-        return {
-            "account_id": self.config['account']['account_id'],
-            "buying_power": 950.00,  # Simulated
-            "positions": [
-                {
-                    "symbol": "TSLA",
-                    "qty": 3,
-                    "avg_cost": 320.00,
-                    "current_price": 321.55,
-                    "unrealized_pnl": 4.65
-                }
-            ],
-            "pending_orders": [],
-            "mode": "DRY_RUN"
+        entry = dict(entry)
+        entry["timestamp"] = entry.get("timestamp") or datetime.now(timezone.utc).isoformat()
+        with open(ledger_path, "a", encoding="utf-8") as f:
+            f.write(json.dumps(entry) + "\n")
+
+    def get_broker_snapshot(self) -> Dict:
+        snap = self.broker.snapshot()
+        # Compatibility keys used by older validators
+        snap["buying_power"] = snap["cash"]
+        return snap
+
+    def get_market_data(self, symbol: str, candidate: Optional[Dict] = None) -> Dict:
+        price = quote(symbol)
+        base = {
+            "symbol": symbol,
+            "price": float(price) if price is not None else 0.0,
+            "volume": 0,
+            "rsi": 50.0,
+            "ema50": float(price) if price is not None else 0.0,
         }
-    
-    def get_mock_market_data(self, symbol: str) -> Dict:
-        """
-        Simulates market data from TradingView MCP.
-        In LIVE mode, this would call actual TradingView MCP tools.
-        """
-        mock_data = {
-            "TSLA": {"price": 321.55, "volume": 27820813, "rsi": 37.53, "ema50": 335.00},
-            "NVDA": {"price": 125.50, "volume": 45000000, "rsi": 55.20, "ema50": 122.00},
-            "AAPL": {"price": 227.00, "volume": 35000000, "rsi": 48.30, "ema50": 225.00},
-            "SPY": {"price": 565.00, "volume": 50000000, "rsi": 52.00, "ema50": 560.00},
-            "QQQ": {"price": 485.00, "volume": 30000000, "rsi": 54.00, "ema50": 480.00},
-        }
-        return mock_data.get(symbol, {"price": 0, "volume": 0, "rsi": 50, "ema50": 0})
-    
+        if candidate:
+            base.update(candidate)
+            if not base.get("price") and candidate.get("price"):
+                base["price"] = float(candidate["price"])
+        return base
+
+    def _position_map(self, broker_snapshot: Dict) -> Dict[str, Dict]:
+        return {p["symbol"]: p for p in broker_snapshot.get("positions", [])}
+
     def get_model_decision(self, model_name: str, broker_snapshot: Dict, market_data: Dict) -> Dict:
-        """
-        Dry-run decision engine.
-        
-        Chooses from the provided candidate set rather than using a hardcoded
-        symbol. In LIVE mode this should be replaced with a real LLM call using
-        the evidence bundle.
-        """
+        """Deterministic paper decision: exits first, then ranked buys, else HOLD."""
         if not market_data:
-            raise RuntimeError('No market data provided to decision engine')
+            raise RuntimeError("No market data provided to decision engine")
 
-        best_symbol = None
-        best_payload = None
-        best_score = None
+        positions = self._position_map(broker_snapshot)
 
+        # 1) Forced exits on stop / target
+        for sym, pos in positions.items():
+            px = float(pos.get("current_price") or 0)
+            stop = pos.get("stop_loss")
+            target = pos.get("take_profit")
+            if stop is not None and px and px <= float(stop):
+                return {
+                    "model": model_name,
+                    "action": "SELL",
+                    "symbol": sym,
+                    "confidence": 95,
+                    "entry_price": px,
+                    "stop_loss": float(stop),
+                    "take_profit": float(target or px),
+                    "qty": float(pos["qty"]),
+                    "thesis": f"Stop-loss exit for {sym} at ${px:.2f} (stop ${float(stop):.2f})",
+                    "reason_code": "stop_loss",
+                    "timestamp": datetime.now(timezone.utc).isoformat(),
+                }
+            if target is not None and px and px >= float(target):
+                return {
+                    "model": model_name,
+                    "action": "SELL",
+                    "symbol": sym,
+                    "confidence": 90,
+                    "entry_price": px,
+                    "stop_loss": float(stop or px),
+                    "take_profit": float(target),
+                    "qty": float(pos["qty"]),
+                    "thesis": f"Take-profit exit for {sym} at ${px:.2f} (target ${float(target):.2f})",
+                    "reason_code": "take_profit",
+                    "timestamp": datetime.now(timezone.utc).isoformat(),
+                }
+
+        # 2) Rank candidates for new buys
+        ranked = []
         for symbol, payload in market_data.items():
-            price = float(payload.get('price', 0) or 0)
+            price = float(payload.get("price", 0) or 0)
             if price <= 0:
                 continue
-
-            rank_score = float(payload.get('rank_score', 0) or 0)
-            catalyst_score = float(payload.get('catalyst_score', 0) or 0)
-            rsi = float(payload.get('rsi', 50) or 50)
-            ema50 = float(payload.get('ema50', price) or price)
-            sentiment = str(payload.get('sentiment', 'mixed'))
-            sentiment_bonus = 6 if sentiment == 'bullish' else (2 if sentiment == 'mixed' else -4)
+            rank_score = float(payload.get("rank_score", 0) or 0)
+            catalyst_score = float(payload.get("catalyst_score", 0) or 0)
+            rsi = float(payload.get("rsi", 50) or 50)
+            ema50 = float(payload.get("ema50", price) or price)
+            sentiment = str(payload.get("sentiment", "mixed"))
+            sentiment_bonus = 6 if sentiment == "bullish" else (2 if sentiment == "mixed" else -4)
             trend_bonus = 4 if price >= ema50 else -3
             rsi_bonus = 4 if 45 <= rsi <= 65 else (1 if 35 <= rsi < 45 else -2)
-            score = rank_score + catalyst_score + sentiment_bonus + trend_bonus + rsi_bonus
+            # Prefer names not already held hard
+            held_penalty = -25 if symbol in positions else 0
+            score = rank_score + catalyst_score + sentiment_bonus + trend_bonus + rsi_bonus + held_penalty
+            ranked.append((score, symbol, payload))
 
-            if best_score is None or score > best_score:
-                best_score = score
-                best_symbol = symbol
-                best_payload = payload
+        ranked.sort(key=lambda x: x[0], reverse=True)
+        max_positions = int(self.config["position_limits"]["max_positions"])
+        cash = float(broker_snapshot.get("buying_power") or broker_snapshot.get("cash") or 0)
 
-        if best_symbol is None or best_payload is None:
-            raise RuntimeError('Decision engine could not select a viable candidate')
+        # 3) Rotate: if full and top candidate much better than weakest hold, sell weakest
+        if len(positions) >= max_positions and ranked:
+            best_score, best_sym, best_payload = ranked[0]
+            if best_sym not in positions:
+                # weakest by open_pnl_pct then rank absence
+                weakest_sym = None
+                weakest_metric = None
+                for sym, pos in positions.items():
+                    metric = float(pos.get("open_pnl_pct") or 0.0)
+                    if weakest_metric is None or metric < weakest_metric:
+                        weakest_metric = metric
+                        weakest_sym = sym
+                if weakest_sym and best_score >= 40:
+                    px = float(positions[weakest_sym]["current_price"])
+                    return {
+                        "model": model_name,
+                        "action": "SELL",
+                        "symbol": weakest_sym,
+                        "confidence": 78,
+                        "entry_price": px,
+                        "stop_loss": float(positions[weakest_sym].get("stop_loss") or px * 0.97),
+                        "take_profit": float(positions[weakest_sym].get("take_profit") or px * 1.03),
+                        "qty": float(positions[weakest_sym]["qty"]),
+                        "thesis": f"Rotate out of {weakest_sym} to free risk budget for stronger setup {best_sym}",
+                        "reason_code": "rotation",
+                        "timestamp": datetime.now(timezone.utc).isoformat(),
+                    }
 
-        entry_price = float(best_payload['price'])
-        stop_loss = round(entry_price * 0.975, 2)
-        take_profit = round(entry_price * 1.05, 2)
-        max_position_usd = min(
-            float(self.config['position_limits']['max_position_size_usd']),
-            float(broker_snapshot.get('buying_power', 0))
-        )
-        qty = math.floor((max_position_usd / entry_price) * 10000) / 10000
-        min_qty = math.ceil((float(self.config['position_limits']['min_position_size_usd']) / entry_price) * 10000) / 10000
-        qty = max(qty, min_qty)
+        # 4) Buy top candidate if room + cash
+        min_pos = float(self.config["position_limits"]["min_position_size_usd"])
+        max_pos = float(self.config["position_limits"]["max_position_size_usd"])
+        if ranked and len(positions) < max_positions and cash >= min_pos:
+            best_score, best_symbol, best_payload = ranked[0]
+            # Avoid piling into same name beyond one full unit if already held near max
+            if best_symbol in positions:
+                held_val = float(positions[best_symbol].get("market_value") or 0)
+                if held_val >= max_pos * 0.9:
+                    # try next not-held
+                    alt = next(((s, p, sc) for sc, s, p in ranked if s not in positions), None)
+                    if alt is None:
+                        return self._hold_decision(model_name, broker_snapshot, "Already fully allocated in top name")
+                    best_symbol, best_payload, best_score = alt[0], alt[1], alt[2]
 
-        sentiment = str(best_payload.get('sentiment', 'mixed'))
-        catalyst = str(best_payload.get('catalyst', 'ranked candidate'))
-        confidence = max(
-            self.config['consensus_rules']['min_confidence'],
-            min(95, int(70 + min(20, (best_score or 0) / 3)))
-        )
+            entry_price = float(best_payload["price"])
+            stop_loss = round(entry_price * 0.975, 2)
+            take_profit = round(entry_price * 1.05, 2)
+            budget = min(max_pos, cash)
+            # leave a little cash buffer
+            budget = min(budget, max(0.0, cash - 5.0))
+            if budget < min_pos:
+                return self._hold_decision(model_name, broker_snapshot, "Not enough cash for minimum position")
 
+            qty = math.floor((budget / entry_price) * 10000) / 10000
+            min_qty = math.ceil((min_pos / entry_price) * 10000) / 10000
+            qty = max(qty, min_qty)
+            # clamp to cash
+            while qty > 0 and round(qty * entry_price, 2) > cash + 0.01:
+                qty = round(qty - 0.0001, 4)
+            if qty <= 0 or round(qty * entry_price, 2) < min_pos:
+                return self._hold_decision(model_name, broker_snapshot, "Sized position below minimum")
+
+            sentiment = str(best_payload.get("sentiment", "mixed"))
+            catalyst = str(best_payload.get("catalyst", "ranked candidate"))
+            confidence = max(
+                self.config["consensus_rules"]["min_confidence"],
+                min(95, int(70 + min(20, (best_score or 0) / 3))),
+            )
+            return {
+                "model": model_name,
+                "action": "BUY",
+                "symbol": best_symbol,
+                "confidence": confidence,
+                "entry_price": entry_price,
+                "stop_loss": stop_loss,
+                "take_profit": take_profit,
+                "qty": qty,
+                "thesis": f"{sentiment.capitalize()} setup from ranked candidate list: {catalyst}",
+                "reason_code": "new_entry",
+                "timestamp": datetime.now(timezone.utc).isoformat(),
+            }
+
+        return self._hold_decision(model_name, broker_snapshot, "No actionable edge after portfolio checks")
+
+    def _hold_decision(self, model_name: str, broker_snapshot: Dict, why: str) -> Dict:
+        positions = broker_snapshot.get("positions") or []
+        symbol = positions[0]["symbol"] if positions else "CASH"
+        px = float(positions[0]["current_price"]) if positions else 0.0
         return {
-            'model': model_name,
-            'action': 'BUY',
-            'symbol': best_symbol,
-            'confidence': confidence,
-            'entry_price': entry_price,
-            'stop_loss': stop_loss,
-            'take_profit': take_profit,
-            'qty': qty,
-            'thesis': f"{sentiment.capitalize()} setup from ranked candidate list: {catalyst}",
-            'timestamp': datetime.now(timezone.utc).isoformat()
+            "model": model_name,
+            "action": "HOLD",
+            "symbol": symbol,
+            "confidence": 80,
+            "entry_price": px,
+            "stop_loss": px * 0.99 if px else 0.0,
+            "take_profit": px * 1.01 if px else 0.0,
+            "qty": 0,
+            "thesis": why,
+            "reason_code": "hold",
+            "timestamp": datetime.now(timezone.utc).isoformat(),
         }
-    
+
     def check_consensus(self, decision1: Dict, decision2: Dict) -> Tuple[bool, Optional[str]]:
-        """
-        Check if two model decisions agree.
-        Returns: (consensus_reached, reason_if_blocked)
-        """
-        # Must agree on action
-        if decision1['action'] != decision2['action']:
+        if decision1["action"] != decision2["action"]:
             return False, f"Action mismatch: {decision1['action']} vs {decision2['action']}"
-        
-        # Must agree on symbol
-        if decision1['symbol'] != decision2['symbol']:
+        if decision1["symbol"] != decision2["symbol"]:
             return False, f"Symbol mismatch: {decision1['symbol']} vs {decision2['symbol']}"
-        
-        # Both must meet minimum confidence
-        min_confidence = self.config['consensus_rules']['min_confidence']
-        if decision1['confidence'] < min_confidence:
+        min_confidence = self.config["consensus_rules"]["min_confidence"]
+        if decision1["confidence"] < min_confidence:
             return False, f"Model 1 confidence {decision1['confidence']}% < {min_confidence}%"
-        if decision2['confidence'] < min_confidence:
+        if decision2["confidence"] < min_confidence:
             return False, f"Model 2 confidence {decision2['confidence']}% < {min_confidence}%"
-        
-        # Stops and targets should be materially similar (within 5%)
-        if abs(decision1['stop_loss'] - decision2['stop_loss']) / decision1['entry_price'] > 0.05:
-            return False, f"Stop loss mismatch: ${decision1['stop_loss']} vs ${decision2['stop_loss']}"
-        
-        if abs(decision1['take_profit'] - decision2['take_profit']) / decision1['entry_price'] > 0.05:
-            return False, f"Take profit mismatch: ${decision1['take_profit']} vs ${decision2['take_profit']}"
-        
+        if decision1["action"] in ("BUY", "SELL"):
+            if decision1["entry_price"] and abs(decision1["stop_loss"] - decision2["stop_loss"]) / decision1["entry_price"] > 0.05:
+                return False, f"Stop loss mismatch: ${decision1['stop_loss']} vs ${decision2['stop_loss']}"
+            if decision1["entry_price"] and abs(decision1["take_profit"] - decision2["take_profit"]) / decision1["entry_price"] > 0.05:
+                return False, f"Take profit mismatch: ${decision1['take_profit']} vs ${decision2['take_profit']}"
         return True, None
-    
+
     def validate_order(self, decision: Dict, broker_snapshot: Dict) -> Tuple[bool, Optional[str]]:
-        """
-        Deterministic validation of agreed decision.
-        Even with consensus, code enforces all risk rules.
-        """
-        symbol = decision['symbol']
-        action = decision['action']
-        entry = decision['entry_price']
-        stop = decision['stop_loss']
-        target = decision['take_profit']
-        qty = decision['qty']
-        
-        # Check kill switch first
         if self.check_kill_switch():
             return False, "Kill switch active"
-        
-        # Check symbol whitelist (if AI_DECIDES, skip whitelist check)
-        allowed = self.config.get('allowed_symbols', 'AI_DECIDES')
-        if allowed != 'AI_DECIDES' and symbol not in allowed:
+
+        action = decision["action"]
+        if action == "HOLD":
+            return True, None
+
+        symbol = decision["symbol"]
+        entry = float(decision["entry_price"])
+        stop = float(decision.get("stop_loss") or 0)
+        target = float(decision.get("take_profit") or 0)
+        qty = float(decision.get("qty") or 0)
+
+        allowed = self.config.get("allowed_symbols", "AI_DECIDES")
+        if allowed != "AI_DECIDES" and symbol not in allowed:
             return False, f"{symbol} not in allowed symbols"
-        
-        # Check buying power
+
+        if action == "SELL":
+            held = {p["symbol"]: p for p in broker_snapshot.get("positions", [])}
+            if symbol not in held:
+                return False, f"No open position to sell for {symbol}"
+            if qty <= 0:
+                return False, "Sell qty must be positive"
+            return True, None
+
+        if action != "BUY":
+            return False, f"Unsupported action {action}"
+
         position_value = round(entry * qty, 2)
-        if position_value - round(float(broker_snapshot['buying_power']), 2) > 0.01:
-            return False, f"Insufficient buying power: ${broker_snapshot['buying_power']:.2f} < ${position_value:.2f}"
-        
-        # Check position size limits
-        max_position = round(float(self.config['position_limits']['max_position_size_usd']), 2)
-        min_position = round(float(self.config['position_limits']['min_position_size_usd']), 2)
+        cash = round(float(broker_snapshot.get("buying_power") or broker_snapshot.get("cash") or 0), 2)
+        if position_value - cash > 0.01:
+            return False, f"Insufficient buying power: ${cash:.2f} < ${position_value:.2f}"
+
+        max_position = round(float(self.config["position_limits"]["max_position_size_usd"]), 2)
+        min_position = round(float(self.config["position_limits"]["min_position_size_usd"]), 2)
         if position_value - max_position > 0.01:
             return False, f"Position size ${position_value:.2f} > max ${max_position:.2f}"
-        
         if min_position - position_value > 0.01:
             return False, f"Position size ${position_value:.2f} < min ${min_position:.2f}"
-        
-        # Check risk/reward ratio
+
+        max_positions = int(self.config["position_limits"]["max_positions"])
+        open_count = len(broker_snapshot.get("positions") or [])
+        held_symbols = {p["symbol"] for p in broker_snapshot.get("positions", [])}
+        if symbol not in held_symbols and open_count >= max_positions:
+            return False, f"Max positions reached ({max_positions})"
+
         risk = abs(entry - stop) * qty
         reward = abs(target - entry) * qty
         rr_ratio = reward / risk if risk > 0 else 0
-        
-        min_rr = self.config['order_limits']['min_risk_reward_ratio']
+        min_rr = self.config["order_limits"]["min_risk_reward_ratio"]
         if rr_ratio < min_rr:
             return False, f"Risk/Reward {rr_ratio:.2f} < minimum {min_rr}"
-        
-        # Check stop loss requirements
-        if not stop or stop == 0:
+
+        if not stop:
             return False, "Stop loss required but not provided"
-        
-        if not target or target == 0:
+        if not target:
             return False, "Take profit required but not provided"
-        
-        # Check stop distance
-        stop_distance_pct = abs(entry - stop) / entry * 100
-        if stop_distance_pct < self.config['risk_rules']['min_stop_distance_pct']:
-            return False, f"Stop too tight: {stop_distance_pct:.2f}% < {self.config['risk_rules']['min_stop_distance_pct']}%"
-        
-        if stop_distance_pct > self.config['risk_rules']['max_stop_distance_pct']:
-            return False, f"Stop too wide: {stop_distance_pct:.2f}% > {self.config['risk_rules']['max_stop_distance_pct']}%"
-        
-        # All validations passed
+
+        stop_distance_pct = abs(entry - stop) / entry * 100 if entry else 0
+        if stop_distance_pct < self.config["risk_rules"]["min_stop_distance_pct"]:
+            return False, f"Stop too tight: {stop_distance_pct:.2f}%"
+        if stop_distance_pct > self.config["risk_rules"]["max_stop_distance_pct"]:
+            return False, f"Stop too wide: {stop_distance_pct:.2f}%"
+
         return True, None
-    
+
     def execute_trade(self, decision: Dict, dry_run: bool = True):
-        """
-        Execute approved trade (or simulate in dry-run mode).
-        """
-        symbol = decision['symbol']
-        action = decision['action']
-        qty = decision['qty']
-        entry = decision['entry_price']
-        stop = decision['stop_loss']
-        target = decision['take_profit']
-        
+        symbol = decision["symbol"]
+        action = decision["action"]
+        qty = float(decision.get("qty") or 0)
+        entry = float(decision.get("entry_price") or 0)
+        stop = decision.get("stop_loss")
+        target = decision.get("take_profit")
+
+        fill = None
+        status = "HOLD"
+        if action == "HOLD":
+            status = "HOLD"
+        elif action == "BUY":
+            fill = self.broker.buy(
+                symbol,
+                qty,
+                entry,
+                stop_loss=float(stop) if stop is not None else None,
+                take_profit=float(target) if target is not None else None,
+                thesis=decision.get("thesis", ""),
+                confidence=decision.get("confidence"),
+            )
+            status = "FILLED_PAPER"
+        elif action == "SELL":
+            fill = self.broker.sell(
+                symbol,
+                qty=qty,
+                price=entry,
+                reason=decision.get("reason_code", "signal"),
+                thesis=decision.get("thesis", ""),
+            )
+            status = "FILLED_PAPER"
+
         order_entry = {
-            "mode": "DRY_RUN" if dry_run else "LIVE",
+            "mode": "PAPER_SIM",
             "action": action,
             "symbol": symbol,
             "qty": qty,
             "entry_price": entry,
             "stop_loss": stop,
             "take_profit": target,
-            "confidence": decision['confidence'],
-            "thesis": decision['thesis'],
-            "status": "SIMULATED" if dry_run else "PENDING",
-            "timestamp": datetime.now(timezone.utc).isoformat()
+            "confidence": decision.get("confidence"),
+            "thesis": decision.get("thesis"),
+            "reason_code": decision.get("reason_code"),
+            "status": status,
+            "fill": fill,
+            "timestamp": datetime.now(timezone.utc).isoformat(),
         }
-        
-        # Log to order ledger
         self.log_to_ledger(self.order_ledger_path, order_entry)
-        
-        # Send Telegram notification
-        if self.telegram:
-            self.telegram.notify_trade_signal(
-                action=action,
-                symbol=symbol,
-                price=entry,
-                qty=qty,
-                stop=stop,
-                target=target,
-                confidence=decision['confidence'],
-                thesis=decision['thesis'],
-                dry_run=dry_run
-            )
-        
-        print(f"\n{'[DRY-RUN]' if dry_run else '[LIVE]'} {action} {qty} {symbol} @ ${entry:.2f}")
-        print(f"  Stop: ${stop:.2f} | Target: ${target:.2f}")
-        print(f"  Thesis: {decision['thesis']}")
-    
+
+        if self.telegram and action in ("BUY", "SELL"):
+            try:
+                self.telegram.notify_trade_signal(
+                    action=action,
+                    symbol=symbol,
+                    price=entry,
+                    qty=qty,
+                    stop=stop or 0,
+                    target=target or 0,
+                    confidence=decision.get("confidence", 0),
+                    thesis=decision.get("thesis", ""),
+                    dry_run=True,
+                )
+            except Exception as exc:
+                print(f"Telegram notify failed: {exc}")
+
+        tag = "[PAPER]"
+        if action == "HOLD":
+            print(f"\n{tag} HOLD — {decision.get('thesis')}")
+        else:
+            print(f"\n{tag} {action} {qty} {symbol} @ ${entry:.2f} -> {status}")
+            if stop and target and action == "BUY":
+                print(f"  Stop: ${float(stop):.2f} | Target: ${float(target):.2f}")
+            if fill and action == "SELL":
+                print(f"  Realized P/L: ${float(fill.get('realized_pnl') or 0):.2f} ({fill.get('reason')})")
+            print(f"  Thesis: {decision.get('thesis')}")
+
+        snap = self.broker.snapshot()
+        print(
+            f"  Portfolio: equity ${snap['equity']:.2f} | cash ${snap['cash']:.2f} | "
+            f"open P/L ${snap['open_pnl']:.2f} | realized ${snap['realized_pnl']:.2f}"
+        )
+
     def run_trading_cycle(self):
-        """
-        Main trading cycle - called by cron job.
-        """
-        print(f"\n{'='*60}")
+        print(f"\n{'=' * 60}")
         print(f"Trading Bot Cycle - {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S')} UTC")
         print(f"Mode: {self.mode} | Enabled: {self.enabled}")
-        print(f"{'='*60}\n")
-        
-        # Check kill switch
+        print(f"{'=' * 60}\n")
+
         if self.check_kill_switch():
             return
-        
-        # Step 1: Read broker snapshot (via IBKR MCP in production)
-        broker_snapshot = self.get_mock_broker_snapshot()
-        print(f"📊 Broker Snapshot: ${broker_snapshot['buying_power']:.2f} buying power")
-        
-        # Step 2: Get independent decisions from both models
-        model1_name = self.config['consensus_rules']['model_1']
-        model2_name = self.config['consensus_rules']['model_2']
-        
-        print(f"🤖 Requesting decisions from {model1_name} and {model2_name}...")
-        
-        # Get market context (from Alpha Radar candidates if AI decides)
-        allowed = self.config.get('allowed_symbols', 'AI_DECIDES')
-        market_context = {}
-        if allowed == 'AI_DECIDES':
-            # Load candidates from Alpha Radar
-            candidates_file = './data/candidates.json'
-            if os.path.exists(candidates_file):
-                with open(candidates_file, 'r') as f:
-                    radar_data = json.load(f)
-                    candidate_records = radar_data.get('candidates', [])
-            else:
-                raise RuntimeError(
-                    'Alpha Radar candidates file missing; run alpha_radar.py before autotrader when allowed_symbols=AI_DECIDES'
-                )
 
+        broker_snapshot = self.get_broker_snapshot()
+        print(
+            f"📊 Paper account: equity ${broker_snapshot['equity']:.2f} | "
+            f"cash ${broker_snapshot['cash']:.2f} | positions {len(broker_snapshot.get('positions') or [])}"
+        )
+
+        model1_name = self.config["consensus_rules"]["model_1"]
+        model2_name = self.config["consensus_rules"]["model_2"]
+        print(f"🤖 Requesting decisions from {model1_name} and {model2_name}...")
+
+        allowed = self.config.get("allowed_symbols", "AI_DECIDES")
+        market_context: Dict[str, Dict] = {}
+        if allowed == "AI_DECIDES":
+            candidates_file = self.root / "data" / "candidates.json"
+            if not candidates_file.exists():
+                raise RuntimeError("Alpha Radar candidates file missing; run alpha_radar.py first")
+            radar_data = json.loads(candidates_file.read_text(encoding="utf-8"))
+            candidate_records = radar_data.get("candidates", [])
             for candidate in candidate_records:
-                sym = candidate.get('symbol')
+                sym = candidate.get("symbol")
                 if not sym:
                     continue
-                merged = self.get_mock_market_data(sym)
-                merged.update(candidate)
-                market_context[sym] = merged
+                market_context[sym] = self.get_market_data(sym, candidate)
         else:
-            candidates = allowed
-            if not candidates:
-                raise RuntimeError('No candidates available for model review')
-            market_context = {sym: self.get_mock_market_data(sym) for sym in candidates}
+            for sym in allowed:
+                market_context[sym] = self.get_market_data(sym)
+
+        # Ensure held symbols have market data for exits
+        for pos in broker_snapshot.get("positions", []):
+            sym = pos["symbol"]
+            if sym not in market_context:
+                market_context[sym] = self.get_market_data(sym)
 
         if not market_context:
-            raise RuntimeError('No candidates available for model review')
-        
+            raise RuntimeError("No candidates available for model review")
+
         decision1 = self.get_model_decision(model1_name, broker_snapshot, market_context)
         decision2 = self.get_model_decision(model2_name, broker_snapshot, market_context)
-        
         print(f"  {model1_name}: {decision1['action']} {decision1['symbol']} @ {decision1['confidence']}%")
         print(f"  {model2_name}: {decision2['action']} {decision2['symbol']} @ {decision2['confidence']}%")
-        
-        # Log consensus attempt
+
         consensus_entry = {
             "model1": decision1,
             "model2": decision2,
-            "timestamp": datetime.now(timezone.utc).isoformat()
+            "timestamp": datetime.now(timezone.utc).isoformat(),
         }
-        
-        # Step 3: Check consensus
         consensus, reason = self.check_consensus(decision1, decision2)
         consensus_entry["consensus"] = consensus
         consensus_entry["reason"] = reason
-        
+
         if not consensus:
             print(f"\n🚫 CONSENSUS BLOCKED: {reason}")
             self.log_to_ledger(self.consensus_log_path, consensus_entry)
-            
             if self.telegram:
-                self.telegram.notify_disagreement(decision1, decision2, reason)
+                try:
+                    self.telegram.notify_disagreement(decision1, decision2, reason)
+                except Exception:
+                    pass
             return
-        
+
         print(f"\n✅ CONSENSUS REACHED: {decision1['action']} {decision1['symbol']}")
-        
-        # Step 4: Deterministic validation
         valid, blocker_reason = self.validate_order(decision1, broker_snapshot)
         consensus_entry["validation"] = {"valid": valid, "reason": blocker_reason}
         self.log_to_ledger(self.consensus_log_path, consensus_entry)
-        
+
         if not valid:
             print(f"🛑 VALIDATION BLOCKED: {blocker_reason}")
             if self.telegram:
-                self.telegram.notify_blocker("VALIDATION_FAILED", blocker_reason)
+                try:
+                    self.telegram.notify_blocker("VALIDATION_FAILED", blocker_reason)
+                except Exception:
+                    pass
             return
-        
-        print(f"✅ VALIDATION PASSED")
-        
-        # Step 5: Execute (determine if real or simulated)
-        is_simulation = (self.mode in ['DRY_RUN', 'PAPER_TRADING'])
-        self.execute_trade(decision1, dry_run=is_simulation)
-        
-        print(f"\n{'='*60}\n")
+
+        print("✅ VALIDATION PASSED")
+        self.execute_trade(decision1, dry_run=True)
+        print(f"\n{'=' * 60}\n")
 
 
 if __name__ == "__main__":
     try:
+        # Prefer running from repo root
+        os.chdir(Path(__file__).resolve().parent.parent)
         trader = DryRunAutoTrader()
         trader.run_trading_cycle()
     except Exception as e:
         import traceback
+
         print(f"\n❌ ERROR: {e}")
         traceback.print_exc()
-        
-        # Try to send error notification
         try:
-            notifier = TelegramNotifier()
-            notifier.notify_error("AUTOTRADER_CRASH", str(e), traceback.format_exc())
-        except:
+            if TelegramNotifier:
+                TelegramNotifier().notify_error("AUTOTRADER_CRASH", str(e), traceback.format_exc())
+        except Exception:
             pass

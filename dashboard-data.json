@@ -1,26 +1,76 @@
 {
-  "generated_at": "2026-08-06T15:45:38.576031+00:00",
+  "generated_at": "2026-08-06T15:51:12.931565+00:00",
+  "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
+  "summary": {
+    "portfolio_value": 999.95,
+    "starting_cash": 1000.0,
+    "total_return_pct": -0.0,
+    "total_pnl": -0.05,
+    "realized_pnl": 0.13,
+    "open_pnl": -0.18,
+    "capital_deployed": 399.79,
+    "cash": 600.16,
+    "closed_trades": 1,
+    "win_rate_pct": 100.0,
+    "vs_spy_pct": 0.02,
+    "spy_return_pct": -0.02,
+    "started_at": "2026-08-06T15:49:32.343883+00:00",
+    "updated_at": "2026-08-06T15:51:14.069026+00:00"
+  },
+  "benchmark": {
+    "symbol": "SPY",
+    "return_pct": -0.02,
+    "price": 769.2100219726562,
+    "start_price": 769.3900146484375
+  },
   "stats": {
     "candidate_count": 10,
-    "consensus_count_today": 18,
-    "validated_count_today": 16,
+    "consensus_count_today": 21,
+    "validated_count_today": 19,
     "blocked_count_today": 2,
-    "simulated_orders_today": 16,
-    "top_symbol_today": "LRCX"
+    "fills_today": 4,
+    "simulated_orders_today": 19,
+    "top_symbol_today": "ANET"
   },
+  "holdings": [
+    {
+      "symbol": "LRCX",
+      "qty": 0.6417,
+      "avg_cost": 311.645,
+      "last": 311.1600036621094,
+      "market_value": 199.67,
+      "open_pnl": -0.31,
+      "open_pnl_pct": -0.16,
+      "stop": 303.85,
+      "target": 327.23,
+      "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool"
+    },
+    {
+      "symbol": "BAC",
+      "qty": 3.1713,
+      "avg_cost": 63.065,
+      "last": 63.10499954223633,
+      "market_value": 200.12,
+      "open_pnl": 0.13,
+      "open_pnl_pct": 0.06,
+      "stop": 61.49,
+      "target": 66.22,
+      "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (beat): Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat"
+    }
+  ],
   "latest_candidate": {
     "symbol": "LRCX",
     "name": "Lam Research",
-    "price": 309.42498779296875,
-    "volume": 2795438.0,
-    "avg_volume": 12813813.8,
-    "percent_change": 0.6521938317804696,
+    "price": 311.6449890136719,
+    "volume": 2833689.0,
+    "avg_volume": 12817638.9,
+    "percent_change": 1.3743332904156125,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 13,
     "liquidity_score": 81.08,
-    "rank_score": 72.18,
+    "rank_score": 72.76,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
     "top_headlines": [
@@ -66,147 +116,196 @@
       }
     ]
   },
-  "latest_consensus": {
-    "model1": {
-      "model": "grok-beta",
-      "action": "BUY",
-      "symbol": "LRCX",
-      "confidence": 90,
-      "entry_price": 309.42498779296875,
-      "stop_loss": 301.69,
-      "take_profit": 324.9,
-      "qty": 0.6463,
-      "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
-      "timestamp": "2026-08-06T15:45:38.311267+00:00"
-    },
-    "model2": {
-      "model": "claude-sonnet-4-5",
-      "action": "BUY",
-      "symbol": "LRCX",
-      "confidence": 90,
-      "entry_price": 309.42498779296875,
-      "stop_loss": 301.69,
-      "take_profit": 324.9,
-      "qty": 0.6463,
-      "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
-      "timestamp": "2026-08-06T15:45:38.311267+00:00"
-    },
-    "timestamp": "2026-08-06T15:45:38.311267+00:00",
-    "consensus": true,
-    "reason": null,
-    "validation": {
-      "valid": true,
-      "reason": null
-    }
-  },
-  "latest_order": {
-    "mode": "DRY_RUN",
+  "latest_decision": {
+    "model": "grok-beta",
     "action": "BUY",
-    "symbol": "LRCX",
-    "qty": 0.6463,
-    "entry_price": 309.42498779296875,
-    "stop_loss": 301.69,
-    "take_profit": 324.9,
+    "symbol": "BAC",
     "confidence": 90,
-    "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
-    "status": "SIMULATED",
-    "timestamp": "2026-08-06T15:45:38.316266+00:00"
+    "entry_price": 63.064998626708984,
+    "stop_loss": 61.49,
+    "take_profit": 66.22,
+    "qty": 3.1713,
+    "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (beat): Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat",
+    "reason_code": "new_entry",
+    "timestamp": "2026-08-06T15:50:14.374161+00:00"
   },
+  "stance": "Buying pressure on BAC. Bullish setup from ranked candidate list: Headline-driven setup (beat): Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat",
   "activity": [
     {
-      "type": "order",
+      "type": "fill",
+      "symbol": "BAC",
+      "status": "filled_paper",
+      "headline": "BUY BAC @ $63.06",
+      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (beat): Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat",
+      "timestamp": "2026-08-06T15:50:14.375161+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "BAC",
+      "status": "validated",
+      "headline": "BUY BAC \u2014 validated",
+      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (beat): Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat",
+      "timestamp": "2026-08-06T15:50:14.374161+00:00"
+    },
+    {
+      "type": "fill",
+      "symbol": "ANET",
+      "status": "filled_paper",
+      "headline": "SELL ANET @ $193.23",
+      "detail": "Demo exit so dashboard shows a real SELL fill and realized P/L",
+      "timestamp": "2026-08-06T15:50:07.568279+00:00"
+    },
+    {
+      "type": "fill",
+      "symbol": "ANET",
+      "status": "filled_paper",
+      "headline": "BUY ANET @ $193.10",
+      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (ai, catalyst, demand): Arista Networks Stock Surges as Earnings Prove AI Demand Is Real - Barron's",
+      "timestamp": "2026-08-06T15:49:41.748264+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "ANET",
+      "status": "validated",
+      "headline": "BUY ANET \u2014 validated",
+      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (ai, catalyst, demand): Arista Networks Stock Surges as Earnings Prove AI Demand Is Real - Barron's",
+      "timestamp": "2026-08-06T15:49:41.747251+00:00"
+    },
+    {
+      "type": "fill",
       "symbol": "LRCX",
-      "status": "simulated",
-      "headline": "BUY LRCX simulated",
+      "status": "filled_paper",
+      "headline": "BUY LRCX @ $311.64",
       "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
-      "timestamp": "2026-08-06T15:45:38.316266+00:00"
+      "timestamp": "2026-08-06T15:49:36.234045+00:00"
     },
     {
       "type": "consensus",
       "symbol": "LRCX",
       "status": "validated",
-      "headline": "Consensus VALIDATED for LRCX",
+      "headline": "BUY LRCX \u2014 validated",
+      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+      "timestamp": "2026-08-06T15:49:36.233046+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "LRCX",
+      "status": "validated",
+      "headline": "BUY LRCX \u2014 validated",
       "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
       "timestamp": "2026-08-06T15:45:38.311267+00:00"
     },
     {
-      "type": "order",
-      "symbol": "LRCX",
-      "status": "simulated",
-      "headline": "BUY LRCX simulated",
-      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
-      "timestamp": "2026-08-06T15:42:47.327259+00:00"
-    },
-    {
       "type": "consensus",
       "symbol": "LRCX",
       "status": "validated",
-      "headline": "Consensus VALIDATED for LRCX",
+      "headline": "BUY LRCX \u2014 validated",
       "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
       "timestamp": "2026-08-06T15:42:47.326752+00:00"
     },
     {
-      "type": "order",
-      "symbol": "LRCX",
-      "status": "simulated",
-      "headline": "BUY LRCX simulated",
-      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
-      "timestamp": "2026-08-06T15:41:38.872732+00:00"
-    },
-    {
       "type": "consensus",
       "symbol": "LRCX",
       "status": "validated",
-      "headline": "Consensus VALIDATED for LRCX",
+      "headline": "BUY LRCX \u2014 validated",
       "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
       "timestamp": "2026-08-06T15:41:38.871736+00:00"
     },
     {
-      "type": "order",
-      "symbol": "LRCX",
-      "status": "simulated",
-      "headline": "BUY LRCX simulated",
-      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
-      "timestamp": "2026-08-06T15:41:10.052669+00:00"
-    },
-    {
       "type": "consensus",
       "symbol": "LRCX",
       "status": "validated",
-      "headline": "Consensus VALIDATED for LRCX",
+      "headline": "BUY LRCX \u2014 validated",
       "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
       "timestamp": "2026-08-06T15:41:10.051671+00:00"
     },
     {
-      "type": "order",
-      "symbol": "LRCX",
-      "status": "simulated",
-      "headline": "BUY LRCX simulated",
-      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
-      "timestamp": "2026-08-06T15:40:01.992212+00:00"
-    },
-    {
       "type": "consensus",
       "symbol": "LRCX",
       "status": "validated",
-      "headline": "Consensus VALIDATED for LRCX",
+      "headline": "BUY LRCX \u2014 validated",
       "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
       "timestamp": "2026-08-06T15:40:01.990216+00:00"
+    }
+  ],
+  "recent_trades": [
+    {
+      "timestamp": "2026-08-06T15:50:14.375161+00:00",
+      "action": "BUY",
+      "symbol": "BAC",
+      "qty": 3.1713,
+      "price": 63.064998626708984,
+      "notional": 200.0,
+      "realized_pnl": null,
+      "reason": null,
+      "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (beat): Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat",
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-06T15:50:07.568279+00:00",
+      "action": "SELL",
+      "symbol": "ANET",
+      "qty": 1.0357,
+      "price": 193.22999572753906,
+      "notional": 200.13,
+      "realized_pnl": 0.13,
+      "reason": "demo_take_profit_sample",
+      "thesis": "Demo exit so dashboard shows a real SELL fill and realized P/L",
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-06T15:49:41.748264+00:00",
+      "action": "BUY",
+      "symbol": "ANET",
+      "qty": 1.0357,
+      "price": 193.10000610351562,
+      "notional": 199.99,
+      "realized_pnl": null,
+      "reason": null,
+      "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (ai, catalyst, demand): Arista Networks Stock Surges as Earnings Prove AI Demand Is Real - Barron's",
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-06T15:49:36.234045+00:00",
+      "action": "BUY",
+      "symbol": "LRCX",
+      "qty": 0.6417,
+      "price": 311.6449890136719,
+      "notional": 199.98,
+      "realized_pnl": null,
+      "reason": null,
+      "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+      "status": "FILLED_PAPER"
+    }
+  ],
+  "closed_trades": [
+    {
+      "timestamp": "2026-08-06T15:50:07.568279+00:00",
+      "symbol": "ANET",
+      "qty": 1.0357,
+      "avg_cost": 193.1,
+      "exit_price": 193.22999572753906,
+      "proceeds": 200.13,
+      "realized_pnl": 0.13,
+      "reason": "demo_take_profit_sample",
+      "thesis": "Demo exit so dashboard shows a real SELL fill and realized P/L",
+      "opened_at": "2026-08-06T15:49:41.748264+00:00",
+      "hold_seconds": 25
     }
   ],
   "top_candidates": [
     {
       "symbol": "LRCX",
       "name": "Lam Research",
-      "price": 309.42498779296875,
-      "volume": 2795438.0,
-      "avg_volume": 12813813.8,
-      "percent_change": 0.6521938317804696,
+      "price": 311.6449890136719,
+      "volume": 2833689.0,
+      "avg_volume": 12817638.9,
+      "percent_change": 1.3743332904156125,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
       "liquidity_score": 81.08,
-      "rank_score": 72.18,
+      "rank_score": 72.76,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
       "top_headlines": [
@@ -253,57 +352,38 @@
       ]
     },
     {
-      "symbol": "JPM",
-      "name": "JPMorgan",
-      "price": 356.2300109863281,
-      "volume": 1605645.0,
-      "avg_volume": 6619604.5,
-      "percent_change": -0.8378742149734241,
+      "symbol": "BAC",
+      "name": "Bank of America",
+      "price": 63.064998626708984,
+      "volume": 7815975.0,
+      "avg_volume": 27505147.5,
+      "percent_change": -0.292492289788167,
       "exchange": "",
-      "sentiment": "bearish",
-      "catalyst_score": -10,
-      "liquidity_score": 78.21,
-      "rank_score": 59.9,
+      "sentiment": "bullish",
+      "catalyst_score": 10,
+      "liquidity_score": 84.39,
+      "rank_score": 55.89,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (catalyst): This drug researcher just reported earnings and could keep rallying on biotech bounceback, JPMorgan says - CNBC",
+      "catalyst": "Headline-driven setup (beat): Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat",
       "top_headlines": [
-        "This drug researcher just reported earnings and could keep rallying on biotech bounceback, JPMorgan says - CNBC",
-        "SpaceX Stock Primed for Massive 122% Upside, JPMorgan Says - Benzinga",
-        "JPMorgan\u2019s Jamie Dimon warns high market leverage could trigger quick disruption (JPM:NYSE) - Seeking Alpha"
+        "Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat",
+        "Bank of America spends over $250M annually on GLP-1 coverage, CEO says - Seeking Alpha",
+        "BAC|Bank of America Corp|Price:63.215|Chg%:+0.315 - TradingKey"
       ],
       "matched_headlines": [
         {
-          "title": "This drug researcher just reported earnings and could keep rallying on biotech bounceback, JPMorgan says - CNBC",
+          "title": "Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat",
           "keywords": [
-            "catalyst"
+            "beat"
           ]
         },
         {
-          "title": "JPMorgan\u2019s Jamie Dimon warns high market leverage could trigger quick disruption (JPM:NYSE) - Seeking Alpha",
-          "keywords": [
-            "warns"
-          ]
-        },
-        {
-          "title": "COIN and CRCL Stock Outlook as JPMorgan CEO Warns of Elevated Leverage Amid S&P 500 Pullback - CoinGape",
-          "keywords": [
-            "warns"
-          ]
-        },
-        {
-          "title": "JPMorgan Chase (NYSE:JPM) fraud-claim scrutiny weighs on stock at analysts\u2019 target - TechStock\u00b2",
+          "title": "Dycom Industries, Inc. $DY Stock Position Raised by Bank of America Corp DE - MarketBeat",
           "keywords": [
             "ai",
+            "beat",
             "catalyst",
-            "fraud"
-          ]
-        },
-        {
-          "title": "Nike Stock Falls 3.6% After JPMorgan Warns of $1 Billion Hit - Yahoo Finance",
-          "keywords": [
-            "fall",
-            "falls",
-            "warns"
+            "raised"
           ]
         }
       ]
@@ -311,15 +391,15 @@
     {
       "symbol": "ANET",
       "name": "Arista Networks",
-      "price": 192.39999389648438,
-      "volume": 3239627.0,
-      "avg_volume": 8912972.7,
-      "percent_change": -2.488471807238904,
+      "price": 193.10000610351562,
+      "volume": 3294352.0,
+      "avg_volume": 8918445.2,
+      "percent_change": -2.1336939370382964,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
       "liquidity_score": 79.5,
-      "rank_score": 54.42,
+      "rank_score": 54.13,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst, demand): Arista Networks Stock Surges as Earnings Prove AI Demand Is Real - Barron's",
       "top_headlines": [
@@ -354,15 +434,15 @@
     {
       "symbol": "UNH",
       "name": "UnitedHealth",
-      "price": 404.5801086425781,
-      "volume": 1331862.0,
-      "avg_volume": 4231666.2,
-      "percent_change": -1.9793800987091155,
+      "price": 404.4150085449219,
+      "volume": 1359435.0,
+      "avg_volume": 4234423.5,
+      "percent_change": -2.019380122369019,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 7,
+      "catalyst_score": 8,
       "liquidity_score": 76.27,
-      "rank_score": 48.52,
+      "rank_score": 52.56,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): UNH Stock Becomes Dow\u2019s Biggest Driver Back To 50,000 \u2014 Will Trump Tailwinds Spark Another Leg Higher? - Stocktwits",
       "top_headlines": [
@@ -408,15 +488,15 @@
     {
       "symbol": "PANW",
       "name": "Palo Alto Networks",
-      "price": 356.010009765625,
-      "volume": 2343353.0,
-      "avg_volume": 5852865.3,
-      "percent_change": -1.8336717116123398,
+      "price": 356.6499938964844,
+      "volume": 2360394.0,
+      "avg_volume": 5854569.4,
+      "percent_change": -1.6572022569173444,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
       "liquidity_score": 77.67,
-      "rank_score": 47.12,
+      "rank_score": 46.98,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, launch): China launches cybersecurity review into Palo Alto Networks products - Reuters",
       "top_headlines": [
@@ -454,5 +534,17 @@
         }
       ]
     }
-  ]
+  ],
+  "limits": {
+    "max_position_usd": 200,
+    "max_positions": 3,
+    "min_rr": 1.5,
+    "max_daily_loss_pct": 5
+  },
+  "system": {
+    "broker": "local_paper_broker",
+    "ibkr_mcp": "paused",
+    "cadence": "every 15m during NYSE regular hours",
+    "note": "Simulated paper account with real market marks. Not IBKR-confirmed."
+  }
 }

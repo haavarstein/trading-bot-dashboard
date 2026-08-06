@@ -12,7 +12,7 @@ class TestAutoTraderDecision(unittest.TestCase):
         cfg = {
             'mode': 'PAPER_TRADING',
             'enabled': True,
-            'account': {'account_id': 'DU####'},
+            'account': {'account_id': 'SIM', 'starting_capital': 1000},
             'kill_switch': {'file_path': str(root / 'KILL_SWITCH.txt')},
             'data_files': {
                 'trade_journal': str(data_dir / 'trade_journal.jsonl'),
@@ -24,9 +24,9 @@ class TestAutoTraderDecision(unittest.TestCase):
                 'model_1': 'grok-beta',
                 'model_2': 'claude-sonnet-4-5',
             },
-            'position_limits': {'max_position_size_usd': 200, 'min_position_size_usd': 50},
+            'position_limits': {'max_position_size_usd': 200, 'min_position_size_usd': 50, 'max_positions': 3},
             'order_limits': {'min_risk_reward_ratio': 1.5},
-            'risk_rules': {'min_stop_distance_pct': 1, 'max_stop_distance_pct': 5},
+            'risk_rules': {'min_stop_distance_pct': 1, 'max_stop_distance_pct': 5, 'max_loss_per_day_pct': 5},
             'allowed_symbols': 'AI_DECIDES',
             'telegram': {'enabled': False, 'chat_id': ''},
         }
