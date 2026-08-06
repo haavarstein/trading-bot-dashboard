@@ -100,5 +100,12 @@
     "consensus_log": "./data/consensus_log.jsonl",
     "candidate_outcomes": "./data/candidate_outcomes.jsonl"
   },
-  "last_updated": "2026-08-06T15:37:33Z"
+  "last_updated": "2026-08-06T17:51:12Z",
+  "execution_rules": {
+    "allow_rotation": false,
+    "rotation_min_score": 80,
+    "rotation_min_hold_minutes": 60,
+    "rotation_require_open_winner": true,
+    "comment": "Rotation off: sell only on stop/target unless explicitly re-enabled."
+  }
 }

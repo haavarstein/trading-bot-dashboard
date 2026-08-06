@@ -170,11 +170,18 @@ class DryRunAutoTrader:
         max_positions = int(self.config["position_limits"]["max_positions"])
         cash = float(broker_snapshot.get("buying_power") or broker_snapshot.get("cash") or 0)
 
-        # 3) Rotate: if full and top candidate much better than weakest hold, sell weakest
-        if len(positions) >= max_positions and ranked:
+        # 3) Rotation is DISABLED by default.
+        # Previous behavior sold the weakest open name every cycle whenever a new
+        # scanner favorite appeared, often at a small loss and *before* stop/target.
+        # That caused the 15-minute "sell red" pattern. Exits are stop/target only
+        # unless config explicitly enables rotation with hard gates.
+        allow_rotation = bool(self.config.get("execution_rules", {}).get("allow_rotation", False))
+        if allow_rotation and len(positions) >= max_positions and ranked:
             best_score, best_sym, best_payload = ranked[0]
-            if best_sym not in positions:
-                # weakest by open_pnl_pct then rank absence
+            min_edge = float(self.config.get("execution_rules", {}).get("rotation_min_score", 80))
+            min_hold_minutes = float(self.config.get("execution_rules", {}).get("rotation_min_hold_minutes", 60))
+            require_winner = bool(self.config.get("execution_rules", {}).get("rotation_require_open_winner", True))
+            if best_sym not in positions and best_score >= min_edge:
                 weakest_sym = None
                 weakest_metric = None
                 for sym, pos in positions.items():
@@ -182,7 +189,22 @@ class DryRunAutoTrader:
                     if weakest_metric is None or metric < weakest_metric:
                         weakest_metric = metric
                         weakest_sym = sym
-                if weakest_sym and best_score >= 40:
+                if weakest_sym is not None:
+                    # Optional: never rotate a loser just to chase a new headline name.
+                    if require_winner and (weakest_metric is None or weakest_metric < 0):
+                        weakest_sym = None
+                    # Optional minimum hold time
+                    if weakest_sym is not None:
+                        opened_at = positions[weakest_sym].get("opened_at")
+                        if opened_at:
+                            try:
+                                opened_dt = datetime.fromisoformat(str(opened_at).replace("Z", "+00:00"))
+                                age_min = (datetime.now(timezone.utc) - opened_dt).total_seconds() / 60.0
+                                if age_min < min_hold_minutes:
+                                    weakest_sym = None
+                            except Exception:
+                                pass
+                if weakest_sym:
                     px = float(positions[weakest_sym]["current_price"])
                     return {
                         "model": model_name,
