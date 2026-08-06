@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-08-06T15:40:02.228965+00:00",
+  "generated_at": "2026-08-06T15:41:10.253248+00:00",
   "scanner": "alpha_radar_v2_news_ranked",
   "stats": {
     "candidate_count": 10,
-    "consensus_count_today": 14,
-    "validated_count_today": 12,
+    "consensus_count_today": 15,
+    "validated_count_today": 13,
     "blocked_count_today": 2,
-    "simulated_orders_today": 12,
+    "simulated_orders_today": 13,
     "top_symbol_today": "LRCX"
   },
   "latest_candidate": {
     "symbol": "LRCX",
     "name": "Lam Research",
-    "price": 310.17999267578125,
-    "volume": 2736490.0,
-    "avg_volume": 12807919.0,
-    "percent_change": 0.8977877586020167,
+    "price": 310.3299865722656,
+    "volume": 2754193.0,
+    "avg_volume": 12809689.3,
+    "percent_change": 0.9465789530372594,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 13,
-    "liquidity_score": 81.07,
-    "rank_score": 72.38,
+    "liquidity_score": 81.08,
+    "rank_score": 72.42,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
     "top_headlines": [
       "Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
       "Lam Research (LRCX) On Strong Earnings And AI Demand With Fair Value Still In Debate - Yahoo Finance",
-      "Lam Research Corp. stock outperforms competitors despite losses on the day - MarketWatch"
+      "Lam Research Corporation $LRCX Shares Bought by Chapin Davis Inc. - MarketBeat"
     ],
     "matched_headlines": [
       {
@@ -72,26 +72,26 @@
       "action": "BUY",
       "symbol": "LRCX",
       "confidence": 90,
-      "entry_price": 310.17999267578125,
-      "stop_loss": 302.43,
-      "take_profit": 325.69,
-      "qty": 0.6447,
+      "entry_price": 310.3299865722656,
+      "stop_loss": 302.57,
+      "take_profit": 325.85,
+      "qty": 0.6444,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
-      "timestamp": "2026-08-06T15:40:01.990216+00:00"
+      "timestamp": "2026-08-06T15:41:10.051671+00:00"
     },
     "model2": {
       "model": "claude-sonnet-4-5",
       "action": "BUY",
       "symbol": "LRCX",
       "confidence": 90,
-      "entry_price": 310.17999267578125,
-      "stop_loss": 302.43,
-      "take_profit": 325.69,
-      "qty": 0.6447,
+      "entry_price": 310.3299865722656,
+      "stop_loss": 302.57,
+      "take_profit": 325.85,
+      "qty": 0.6444,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
-      "timestamp": "2026-08-06T15:40:01.990216+00:00"
+      "timestamp": "2026-08-06T15:41:10.051671+00:00"
     },
-    "timestamp": "2026-08-06T15:40:01.990216+00:00",
+    "timestamp": "2026-08-06T15:41:10.051671+00:00",
     "consensus": true,
     "reason": null,
     "validation": {
@@ -103,16 +103,32 @@
     "mode": "DRY_RUN",
     "action": "BUY",
     "symbol": "LRCX",
-    "qty": 0.6447,
-    "entry_price": 310.17999267578125,
-    "stop_loss": 302.43,
-    "take_profit": 325.69,
+    "qty": 0.6444,
+    "entry_price": 310.3299865722656,
+    "stop_loss": 302.57,
+    "take_profit": 325.85,
     "confidence": 90,
     "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
     "status": "SIMULATED",
-    "timestamp": "2026-08-06T15:40:01.992212+00:00"
+    "timestamp": "2026-08-06T15:41:10.052669+00:00"
   },
   "activity": [
+    {
+      "type": "order",
+      "symbol": "LRCX",
+      "status": "simulated",
+      "headline": "BUY LRCX simulated",
+      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+      "timestamp": "2026-08-06T15:41:10.052669+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "LRCX",
+      "status": "validated",
+      "headline": "Consensus VALIDATED for LRCX",
+      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+      "timestamp": "2026-08-06T15:41:10.051671+00:00"
+    },
     {
       "type": "order",
       "symbol": "LRCX",
@@ -176,43 +192,27 @@
       "headline": "BUY LRCX simulated",
       "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
       "timestamp": "2026-08-06T14:25:58.833118+00:00"
-    },
-    {
-      "type": "order",
-      "symbol": "LRCX",
-      "status": "simulated",
-      "headline": "BUY LRCX simulated",
-      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
-      "timestamp": "2026-08-06T14:25:16.653517+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "LRCX",
-      "status": "validated",
-      "headline": "Consensus VALIDATED for LRCX",
-      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
-      "timestamp": "2026-08-06T14:25:16.652008+00:00"
     }
   ],
   "top_candidates": [
     {
       "symbol": "LRCX",
       "name": "Lam Research",
-      "price": 310.17999267578125,
-      "volume": 2736490.0,
-      "avg_volume": 12807919.0,
-      "percent_change": 0.8977877586020167,
+      "price": 310.3299865722656,
+      "volume": 2754193.0,
+      "avg_volume": 12809689.3,
+      "percent_change": 0.9465789530372594,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
-      "liquidity_score": 81.07,
-      "rank_score": 72.38,
+      "liquidity_score": 81.08,
+      "rank_score": 72.42,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
       "top_headlines": [
         "Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
         "Lam Research (LRCX) On Strong Earnings And AI Demand With Fair Value Still In Debate - Yahoo Finance",
-        "Lam Research Corp. stock outperforms competitors despite losses on the day - MarketWatch"
+        "Lam Research Corporation $LRCX Shares Bought by Chapin Davis Inc. - MarketBeat"
       ],
       "matched_headlines": [
         {
@@ -253,54 +253,17 @@
       ]
     },
     {
-      "symbol": "BAC",
-      "name": "Bank of America",
-      "price": 63.0,
-      "volume": 7508755.0,
-      "avg_volume": 27474425.5,
-      "percent_change": -0.3952569169960474,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 10,
-      "liquidity_score": 84.39,
-      "rank_score": 55.97,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat",
-      "top_headlines": [
-        "Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat",
-        "Bank of America spends over $250M annually on GLP-1 coverage, CEO says - Seeking Alpha",
-        "BAC|Bank of America Corp|Price:63.215|Chg%:+0.315 - TradingKey"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Dycom Industries, Inc. $DY Stock Position Raised by Bank of America Corp DE - MarketBeat",
-          "keywords": [
-            "ai",
-            "beat",
-            "catalyst",
-            "raised"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "ANET",
       "name": "Arista Networks",
-      "price": 192.0500030517578,
-      "volume": 3180496.0,
-      "avg_volume": 8907059.6,
-      "percent_change": -2.665853008930231,
+      "price": 192.66000366210938,
+      "volume": 3194551.0,
+      "avg_volume": 8908465.1,
+      "percent_change": -2.356694518281315,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
       "liquidity_score": 79.5,
-      "rank_score": 54.56,
+      "rank_score": 54.31,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst, demand): Arista Networks Stock Surges as Earnings Prove AI Demand Is Real - Barron's",
       "top_headlines": [
@@ -335,15 +298,15 @@
     {
       "symbol": "UNH",
       "name": "UnitedHealth",
-      "price": 404.2099914550781,
-      "volume": 1303817.0,
-      "avg_volume": 4228861.7,
-      "percent_change": -2.0690511314165656,
+      "price": 404.260009765625,
+      "volume": 1307040.0,
+      "avg_volume": 4229184.0,
+      "percent_change": -2.0569328248031495,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
       "liquidity_score": 76.26,
-      "rank_score": 48.59,
+      "rank_score": 48.58,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (growth): The Case For UnitedHealth Stock Is Margin, Not Growth - Trefis",
       "top_headlines": [
@@ -389,15 +352,15 @@
     {
       "symbol": "WMT",
       "name": "Walmart",
-      "price": 111.95999908447266,
-      "volume": 7249247.0,
-      "avg_volume": 21953414.7,
-      "percent_change": -0.33825642318434124,
+      "price": 111.94999694824219,
+      "volume": 7280972.0,
+      "avg_volume": 21956587.2,
+      "percent_change": -0.3471598739200746,
       "exchange": "",
       "sentiment": "bearish",
       "catalyst_score": -7,
       "liquidity_score": 83.42,
-      "rank_score": 46.78,
+      "rank_score": 46.79,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst): Walmart Earnings: Bull Put Spread Trade - Barchart.com",
       "top_headlines": [
@@ -432,6 +395,55 @@
           "keywords": [
             "catalyst",
             "downgrade"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "PANW",
+      "name": "Palo Alto Networks",
+      "price": 357.6448059082031,
+      "volume": 2304939.0,
+      "avg_volume": 5849023.9,
+      "percent_change": -1.3828924345842433,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 7,
+      "liquidity_score": 77.67,
+      "rank_score": 46.76,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (catalyst, launch): China launches cybersecurity review into Palo Alto Networks products - Reuters",
+      "top_headlines": [
+        "China launches cybersecurity review into Palo Alto Networks products - Reuters",
+        "PANW Stock Holds Near Record Highs Despite Fresh China Security Review That Mirrors Micron Case - Stocktwits",
+        "Palo Alto Networks enters key TASE TA-35 and TA-125 indices - The Jerusalem Post"
+      ],
+      "matched_headlines": [
+        {
+          "title": "China launches cybersecurity review into Palo Alto Networks products - Reuters",
+          "keywords": [
+            "catalyst",
+            "launch"
+          ]
+        },
+        {
+          "title": "PANW Stock Holds Near Record Highs Despite Fresh China Security Review That Mirrors Micron Case - Stocktwits",
+          "keywords": [
+            "record"
+          ]
+        },
+        {
+          "title": "Palo Alto Networks (PANW) Could Be 131% Above Fair Value As FireMon Integration Draws Focus - simplywall.st",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "China launches security review of Palo Alto Networks products (PANW:NASDAQ) - Seeking Alpha",
+          "keywords": [
+            "catalyst",
+            "launch"
           ]
         }
       ]
