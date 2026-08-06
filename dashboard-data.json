@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-08-06T16:38:23.164681+00:00",
+  "generated_at": "2026-08-06T16:45:59.287642+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 996.49,
+    "portfolio_value": 996.83,
     "starting_cash": 1000.0,
-    "total_return_pct": -0.35,
-    "total_pnl": -3.51,
+    "total_return_pct": -0.32,
+    "total_pnl": -3.17,
     "realized_pnl": -2.18,
-    "open_pnl": -1.33,
-    "capital_deployed": 398.65,
-    "cash": 597.84,
+    "open_pnl": -1.0,
+    "capital_deployed": 598.96,
+    "cash": 397.87,
     "closed_trades": 2,
     "win_rate_pct": 50.0,
-    "vs_spy_pct": -0.26,
-    "spy_return_pct": -0.09,
+    "vs_spy_pct": -0.16,
+    "spy_return_pct": -0.16,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-06T16:38:24.288657+00:00"
+    "updated_at": "2026-08-06T16:46:00.528870+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.09,
-    "price": 768.719970703125,
+    "return_pct": -0.16,
+    "price": 768.1799926757812,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 10,
-    "consensus_count_today": 24,
-    "validated_count_today": 22,
+    "consensus_count_today": 25,
+    "validated_count_today": 23,
     "blocked_count_today": 2,
-    "fills_today": 8,
-    "simulated_orders_today": 22,
+    "fills_today": 9,
+    "simulated_orders_today": 23,
     "top_symbol_today": "LRCX"
   },
   "holdings": [
@@ -38,10 +38,10 @@
       "symbol": "BAC",
       "qty": 3.1713,
       "avg_cost": 63.065,
-      "last": 63.154998779296875,
-      "market_value": 200.28,
-      "open_pnl": 0.29,
-      "open_pnl_pct": 0.14,
+      "last": 63.1349983215332,
+      "market_value": 200.22,
+      "open_pnl": 0.22,
+      "open_pnl_pct": 0.11,
       "stop": 61.49,
       "target": 66.22,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (beat): Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat"
@@ -50,27 +50,39 @@
       "symbol": "PANW",
       "qty": 0.5622,
       "avg_cost": 355.72,
-      "last": 352.8450012207031,
-      "market_value": 198.37,
-      "open_pnl": -1.62,
-      "open_pnl_pct": -0.81,
+      "last": 353.54998779296875,
+      "market_value": 198.77,
+      "open_pnl": -1.22,
+      "open_pnl_pct": -0.61,
       "stop": 346.83,
       "target": 373.51,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (catalyst, launch): China launches cybersecurity review into Palo Alto Networks products - Reuters"
+    },
+    {
+      "symbol": "LRCX",
+      "qty": 0.6463,
+      "avg_cost": 309.41,
+      "last": 309.4100036621094,
+      "market_value": 199.97,
+      "open_pnl": 0.0,
+      "open_pnl_pct": 0.0,
+      "stop": 301.67,
+      "target": 324.88,
+      "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool"
     }
   ],
   "latest_candidate": {
     "symbol": "LRCX",
     "name": "Lam Research",
-    "price": 307.6099853515625,
-    "volume": 3254029.0,
-    "avg_volume": 12859672.9,
-    "percent_change": 0.06179556161940704,
+    "price": 309.4100036621094,
+    "volume": 3349068.0,
+    "avg_volume": 12869176.8,
+    "percent_change": 0.6473196758358706,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 13,
-    "liquidity_score": 81.09,
-    "rank_score": 71.71,
+    "liquidity_score": 81.1,
+    "rank_score": 72.18,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
     "top_headlines": [
@@ -118,19 +130,35 @@
   },
   "latest_decision": {
     "model": "grok-beta",
-    "action": "SELL",
+    "action": "BUY",
     "symbol": "LRCX",
-    "confidence": 78,
-    "entry_price": 308.0450134277344,
-    "stop_loss": 303.85,
-    "take_profit": 327.23,
-    "qty": 0.6417,
-    "thesis": "Rotate out of LRCX to free risk budget for stronger setup UNH",
-    "reason_code": "rotation",
-    "timestamp": "2026-08-06T16:31:07.133087+00:00"
+    "confidence": 90,
+    "entry_price": 309.4100036621094,
+    "stop_loss": 301.67,
+    "take_profit": 324.88,
+    "qty": 0.6463,
+    "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+    "reason_code": "new_entry",
+    "timestamp": "2026-08-06T16:45:57.127884+00:00"
   },
-  "stance": "Exiting LRCX. Rotate out of LRCX to free risk budget for stronger setup UNH",
+  "stance": "Buying pressure on LRCX. Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
   "activity": [
+    {
+      "type": "fill",
+      "symbol": "LRCX",
+      "status": "filled_paper",
+      "headline": "BUY LRCX @ $309.41",
+      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+      "timestamp": "2026-08-06T16:45:57.128884+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "LRCX",
+      "status": "validated",
+      "headline": "BUY LRCX \u2014 validated",
+      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+      "timestamp": "2026-08-06T16:45:57.127884+00:00"
+    },
     {
       "type": "fill",
       "symbol": "LRCX",
@@ -210,25 +238,21 @@
       "headline": "SELL ANET @ $193.23",
       "detail": "Demo exit so dashboard shows a real SELL fill and realized P/L",
       "timestamp": "2026-08-06T15:50:07.568279+00:00"
-    },
-    {
-      "type": "fill",
-      "symbol": "ANET",
-      "status": "filled_paper",
-      "headline": "BUY ANET @ $193.10",
-      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (ai, catalyst, demand): Arista Networks Stock Surges as Earnings Prove AI Demand Is Real - Barron's",
-      "timestamp": "2026-08-06T15:49:41.748264+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "ANET",
-      "status": "validated",
-      "headline": "BUY ANET \u2014 validated",
-      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (ai, catalyst, demand): Arista Networks Stock Surges as Earnings Prove AI Demand Is Real - Barron's",
-      "timestamp": "2026-08-06T15:49:41.747251+00:00"
     }
   ],
   "recent_trades": [
+    {
+      "timestamp": "2026-08-06T16:45:57.128884+00:00",
+      "action": "BUY",
+      "symbol": "LRCX",
+      "qty": 0.6463,
+      "price": 309.4100036621094,
+      "notional": 199.97,
+      "realized_pnl": null,
+      "reason": null,
+      "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-08-06T16:31:07.139100+00:00",
       "action": "SELL",
@@ -371,15 +395,15 @@
     {
       "symbol": "LRCX",
       "name": "Lam Research",
-      "price": 307.6099853515625,
-      "volume": 3254029.0,
-      "avg_volume": 12859672.9,
-      "percent_change": 0.06179556161940704,
+      "price": 309.4100036621094,
+      "volume": 3349068.0,
+      "avg_volume": 12869176.8,
+      "percent_change": 0.6473196758358706,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
-      "liquidity_score": 81.09,
-      "rank_score": 71.71,
+      "liquidity_score": 81.1,
+      "rank_score": 72.18,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
       "top_headlines": [
@@ -426,42 +450,55 @@
       ]
     },
     {
-      "symbol": "BAC",
-      "name": "Bank of America",
-      "price": 63.18000030517578,
-      "volume": 9060833.0,
-      "avg_volume": 27629633.3,
-      "percent_change": -0.11067145426753952,
+      "symbol": "JPM",
+      "name": "JPMorgan",
+      "price": 356.9599914550781,
+      "volume": 2055304.0,
+      "avg_volume": 6664570.4,
+      "percent_change": -0.6346728764270816,
       "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 11,
-      "liquidity_score": 84.41,
-      "rank_score": 61.25,
+      "sentiment": "bearish",
+      "catalyst_score": -10,
+      "liquidity_score": 78.24,
+      "rank_score": 59.74,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): Bank of America Corp DE Trims Stock Position in General Mills, Inc. $GIS - MarketBeat",
+      "catalyst": "Headline-driven setup (warns): JPMorgan\u2019s Jamie Dimon warns high market leverage could trigger quick disruption (JPM:NYSE) - Seeking Alpha",
       "top_headlines": [
-        "Bank of America Corp DE Trims Stock Position in General Mills, Inc. $GIS - MarketBeat",
-        "Bank of America spends over $250M annually on GLP-1 coverage, CEO says - Seeking Alpha",
-        "BAC|Bank of America Corp|Price:63.215|Chg%:+0.315 - TradingKey"
+        "SpaceX Stock Primed for Massive 122% Upside, JPMorgan Says - benzinga.com",
+        "JPMorgan\u2019s Jamie Dimon warns high market leverage could trigger quick disruption (JPM:NYSE) - Seeking Alpha",
+        "COIN and CRCL Stock Outlook as JPMorgan CEO Warns of Elevated Leverage Amid S&P 500 Pullback - CoinGape"
       ],
       "matched_headlines": [
         {
-          "title": "Bank of America Corp DE Trims Stock Position in General Mills, Inc. $GIS - MarketBeat",
+          "title": "JPMorgan\u2019s Jamie Dimon warns high market leverage could trigger quick disruption (JPM:NYSE) - Seeking Alpha",
           "keywords": [
-            "beat"
+            "warns"
           ]
         },
         {
-          "title": "Dycom Industries, Inc. $DY Stock Position Raised by Bank of America Corp DE - MarketBeat",
+          "title": "COIN and CRCL Stock Outlook as JPMorgan CEO Warns of Elevated Leverage Amid S&P 500 Pullback - CoinGape",
+          "keywords": [
+            "warns"
+          ]
+        },
+        {
+          "title": "Nike Stock Falls 3.6% After JPMorgan Warns of $1 Billion Hit - Yahoo Finance",
+          "keywords": [
+            "fall",
+            "falls",
+            "warns"
+          ]
+        },
+        {
+          "title": "JPMorgan Chase (NYSE:JPM) fraud-claim scrutiny weighs on stock at analysts\u2019 target - TechStock\u00b2",
           "keywords": [
             "ai",
-            "beat",
             "catalyst",
-            "raised"
+            "fraud"
           ]
         },
         {
-          "title": "UBS Reaffirms Their Buy Rating on Bank of America (BAC) - The Globe and Mail",
+          "title": "JPMorgan Resets Arista Stock Target After AI Surge - TradingView",
           "keywords": [
             "ai",
             "catalyst"
@@ -470,17 +507,114 @@
       ]
     },
     {
-      "symbol": "PANW",
-      "name": "Palo Alto Networks",
-      "price": 353.9649963378906,
-      "volume": 2663705.0,
-      "avg_volume": 5884900.5,
-      "percent_change": -2.397564450564528,
+      "symbol": "ANET",
+      "name": "Arista Networks",
+      "price": 191.75,
+      "volume": 4001366.0,
+      "avg_volume": 8989146.6,
+      "percent_change": -2.8178995628149237,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 10,
-      "liquidity_score": 77.7,
-      "rank_score": 61.07,
+      "catalyst_score": 9,
+      "liquidity_score": 79.54,
+      "rank_score": 54.69,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst, demand): Arista Networks Stock Surges as Earnings Prove AI Demand Is Real - Barron's",
+      "top_headlines": [
+        "Arista Networks Stock Climbs 25% On A 5-Day Winning Streak - Trefis",
+        "Arista Networks Stock Surges as Earnings Prove AI Demand Is Real - Barron's",
+        "Stocks making the biggest moves after the bell: SpaceX, AMD, Pinterest, Arista Networks, Wynn Resorts & more - CNBC"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Arista Networks Stock Surges as Earnings Prove AI Demand Is Real - Barron's",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "demand"
+          ]
+        },
+        {
+          "title": "Mirador Capital Partners LP Invests $3.60 Million in Arista Networks, Inc. $ANET - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Arista Networks\u2019 stock jumps on stellar earnings and revenue beat and strong forecast - SiliconANGLE",
+          "keywords": [
+            "beat",
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "UNH",
+      "name": "UnitedHealth",
+      "price": 405.489990234375,
+      "volume": 1633606.0,
+      "avg_volume": 4261840.6,
+      "percent_change": -1.758936345396729,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 7,
+      "liquidity_score": 76.3,
+      "rank_score": 48.35,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst): UNH Stock Becomes Dow\u2019s Biggest Driver Back To 50,000 \u2014 Will Trump Tailwinds Spark Another Leg Higher? - Stocktwits",
+      "top_headlines": [
+        "UNH Stock Becomes Dow\u2019s Biggest Driver Back To 50,000 \u2014 Will Trump Tailwinds Spark Another Leg Higher? - Stocktwits",
+        "The Case For UnitedHealth Stock Is Margin, Not Growth - Trefis",
+        "Is UnitedHealth Group (UNH) Fairly Valued After Margin Recovery Optimism? - simplywall.st"
+      ],
+      "matched_headlines": [
+        {
+          "title": "UNH Stock Becomes Dow\u2019s Biggest Driver Back To 50,000 \u2014 Will Trump Tailwinds Spark Another Leg Higher? - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "The Case For UnitedHealth Stock Is Margin, Not Growth - Trefis",
+          "keywords": [
+            "growth"
+          ]
+        },
+        {
+          "title": "Is UnitedHealth Group (UNH) Fairly Valued After Margin Recovery Optimism? - simplywall.st",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "UnitedHealth Group Stock (UNH) Opinions on Q2 Earnings and Subsequent Price Action - Quiver Quantitative",
+          "keywords": [
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Is UnitedHealth Stock Still a Buy in August After Its Q2 Beat Last Month? - 24/7 Wall St.",
+          "keywords": [
+            "beat"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "PANW",
+      "name": "Palo Alto Networks",
+      "price": 353.6199951171875,
+      "volume": 2785826.0,
+      "avg_volume": 5897112.6,
+      "percent_change": -2.492695211392668,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 7,
+      "liquidity_score": 77.71,
+      "rank_score": 47.65,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, launch): China launches cybersecurity review into Palo Alto Networks products - Reuters",
       "top_headlines": [
@@ -513,112 +647,6 @@
           "title": "Palo Alto Networks (PANW) Could Be 131% Above Fair Value As FireMon Integration Draws Focus - simplywall.st",
           "keywords": [
             "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Avior Wealth Management LLC Purchases 10,155 Shares of Palo Alto Networks, Inc. $PANW - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "JPM",
-      "name": "JPMorgan",
-      "price": 357.0299987792969,
-      "volume": 1969218.0,
-      "avg_volume": 6655961.8,
-      "percent_change": -0.6151852564176623,
-      "exchange": "",
-      "sentiment": "bearish",
-      "catalyst_score": -10,
-      "liquidity_score": 78.23,
-      "rank_score": 59.73,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (warns): JPMorgan\u2019s Jamie Dimon warns high market leverage could trigger quick disruption (JPM:NYSE) - Seeking Alpha",
-      "top_headlines": [
-        "SpaceX Stock Primed for Massive 122% Upside, JPMorgan Says - Benzinga",
-        "JPMorgan\u2019s Jamie Dimon warns high market leverage could trigger quick disruption (JPM:NYSE) - Seeking Alpha",
-        "COIN and CRCL Stock Outlook as JPMorgan CEO Warns of Elevated Leverage Amid S&P 500 Pullback - CoinGape"
-      ],
-      "matched_headlines": [
-        {
-          "title": "JPMorgan\u2019s Jamie Dimon warns high market leverage could trigger quick disruption (JPM:NYSE) - Seeking Alpha",
-          "keywords": [
-            "warns"
-          ]
-        },
-        {
-          "title": "COIN and CRCL Stock Outlook as JPMorgan CEO Warns of Elevated Leverage Amid S&P 500 Pullback - CoinGape",
-          "keywords": [
-            "warns"
-          ]
-        },
-        {
-          "title": "JPMorgan Chase (NYSE:JPM) fraud-claim scrutiny weighs on stock at analysts\u2019 target - TechStock\u00b2",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "fraud"
-          ]
-        },
-        {
-          "title": "Nike Stock Falls 3.6% After JPMorgan Warns of $1 Billion Hit - Yahoo Finance",
-          "keywords": [
-            "fall",
-            "falls",
-            "warns"
-          ]
-        },
-        {
-          "title": "JPMorgan Resets Arista Stock Target After AI Surge - TradingView",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "ANET",
-      "name": "Arista Networks",
-      "price": 191.0500030517578,
-      "volume": 3861533.0,
-      "avg_volume": 8975163.3,
-      "percent_change": -3.172669699606555,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 9,
-      "liquidity_score": 79.53,
-      "rank_score": 54.97,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst, demand): Arista Networks Stock Surges as Earnings Prove AI Demand Is Real - Barron's",
-      "top_headlines": [
-        "Arista Networks Stock Climbs 25% On A 5-Day Winning Streak - Trefis",
-        "Arista Networks Stock Surges as Earnings Prove AI Demand Is Real - Barron's",
-        "Stocks making the biggest moves after the bell: SpaceX, AMD, Pinterest, Arista Networks, Wynn Resorts & more - CNBC"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Arista Networks Stock Surges as Earnings Prove AI Demand Is Real - Barron's",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "demand"
-          ]
-        },
-        {
-          "title": "Mirador Capital Partners LP Invests $3.60 Million in Arista Networks, Inc. $ANET - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Arista Networks\u2019 stock jumps on stellar earnings and revenue beat and strong forecast - SiliconANGLE",
-          "keywords": [
-            "beat",
             "catalyst"
           ]
         }
