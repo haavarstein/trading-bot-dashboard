@@ -209,6 +209,23 @@ def main():
             "max_positions": cfg.get("position_limits", {}).get("max_positions"),
             "min_rr": cfg.get("order_limits", {}).get("min_risk_reward_ratio"),
             "max_daily_loss_pct": cfg.get("risk_rules", {}).get("max_loss_per_day_pct"),
+            "max_daily_loss_usd": round(
+                float(cfg.get("account", {}).get("starting_capital", 1000))
+                * float(cfg.get("risk_rules", {}).get("max_loss_per_day_pct", 5))
+                / 100.0,
+                2,
+            ),
+            "max_drawdown_pct": cfg.get("risk_rules", {}).get("max_drawdown_pct", 8),
+            "allow_rotation": bool(cfg.get("execution_rules", {}).get("allow_rotation", False)),
+            "rotation_min_hold_minutes": cfg.get("execution_rules", {}).get("rotation_min_hold_minutes"),
+            "rotation_min_score": cfg.get("execution_rules", {}).get("rotation_min_score"),
+        },
+        "learning": {
+            "candidate_signals_logged": len(candidates),
+            "fills_logged": len(fills),
+            "closed_outcomes": len(closed),
+            "consensus_events": len(consensus),
+            "note": "Paper sample is provisional until large enough for durable edge review.",
         },
         "system": {
             "broker": "local_paper_broker",

@@ -29,11 +29,12 @@
   },
   "risk_rules": {
     "max_loss_per_trade_pct": 2,
-    "max_loss_per_day_pct": 5,
+    "max_loss_per_day_pct": 3,
     "max_concentration_pct": 30,
     "min_stop_distance_pct": 1,
     "max_stop_distance_pct": 5,
-    "comment": "2% max loss per trade, 5% max daily drawdown"
+    "comment": "2% max loss per trade, 3% max daily drawdown halt, 8% portfolio drawdown halt",
+    "max_drawdown_pct": 8
   },
   "instrument_rules": {
     "allowed_instruments": [
@@ -100,7 +101,7 @@
     "consensus_log": "./data/consensus_log.jsonl",
     "candidate_outcomes": "./data/candidate_outcomes.jsonl"
   },
-  "last_updated": "2026-08-06T18:00:57Z",
+  "last_updated": "2026-08-06T18:05:41Z",
   "execution_rules": {
     "allow_rotation": true,
     "rotation_min_score": 70,

@@ -407,26 +407,28 @@
       <div class="shell">
         <div class="section-head">
           <h2>How Hermes is trying to win</h2>
-          <p>The edge it is pursuing, the limits it cannot waive, and how it acts without a live IBKR connection yet.</p>
+          <p>The edge it is pursuing, the limits it cannot waive, and how it learns without grading its own homework.</p>
         </div>
         <div class="split-2">
           <div class="inner">
             <h3>The edge it is pursuing</h3>
-            <p class="lead">Find catalyst-driven liquid setups, force dual agreement, then hard-limit risk before any paper fill.</p>
+            <p class="lead">Find underpriced company-specific change and compound gains while hard-limiting avoidable loss.</p>
             <ul class="clean">
-              <li>Broad-market discovery ranks catalyst/news setups before the 15-minute decision loop.</li>
-              <li>Dual decision paths must agree on action and symbol before risk code runs.</li>
-              <li>Local paper broker is the account source of truth: cash, fills, holdings, realized/open P/L.</li>
-              <li>Stops and targets are attached on entry; exits fire on stop, target, or rotation.</li>
-              <li>Every candidate, fill, miss, and closed trade feeds the public activity trail.</li>
+              <li>Broad-market discovery looks for fresh catalysts before the 15-minute decision loop.</li>
+              <li>Alpha Radar ranks liquid names on catalyst/news strength, liquidity, and sentiment before any trade idea is sized.</li>
+              <li>Two decision paths then make blind decisions from the same ranked evidence. Any disagreement blocks execution and is published below.</li>
+              <li>The desk enters only when both paths agree and paper-broker cash, open concentration, stop/target geometry, and recomputed reward-to-risk all pass.</li>
+              <li>Stops and targets are attached on entry. Exits fire on stop, target, or gated rotation when a clearly stronger setup needs risk budget.</li>
+              <li>Every candidate, fill, miss, blocked trade, and closed outcome feeds the learning/audit loop. Risk expansion never auto-promotes itself.</li>
             </ul>
           </div>
           <div class="inner">
             <h3>Hard limits and evidence</h3>
-            <p class="lead">The goal is to beat the S&amp;P 500. Early results are not proof of durable edge.</p>
+            <p class="lead">The goal is to beat the S&amp;P 500. Outperformance is not guaranteed, and early results are not proof of durable edge.</p>
             <ul class="clean" id="limits-list">
               <li>Loading limits…</li>
             </ul>
+            <p class="lead" id="learning-sample" style="margin-top:14px;">Learning sample loading…</p>
           </div>
         </div>
       </div>
@@ -619,14 +621,26 @@
       setClass('spy', 'value xs ' + cls(s.spy_return_pct));
 
       const limits = d.limits || {};
+      const learn = d.learning || {};
+      const dailyLossUsd = limits.max_daily_loss_usd;
+      const dailyLossTxt = (typeof dailyLossUsd === 'number')
+        ? `${money(dailyLossUsd)} or ${esc(limits.max_daily_loss_pct ?? '--')}%`
+        : `${esc(limits.max_daily_loss_pct ?? '--')}%`;
       setHtml('limits-list', `
         <li>Minimum new-buy reward-to-risk: ${esc(limits.min_rr ?? '--')}:1</li>
         <li>Maximum single position: ${esc(money(limits.max_position_usd))}</li>
-        <li>Maximum open positions: ${esc(limits.max_positions ?? '--')}</li>
-        <li>Daily loss halt: ${esc(limits.max_daily_loss_pct ?? '--')}%</li>
+        <li>Maximum open positions: ${esc(limits.max_positions ?? '--')} (capital-sized, not a PDT hold cap)</li>
+        <li>Daily loss halt: ${dailyLossTxt}</li>
+        <li>Portfolio drawdown halt: ${esc(limits.max_drawdown_pct ?? '--')}%</li>
         <li>Cadence: ${esc((d.system || {}).cadence || 'every 15m during NYSE regular hours')}</li>
-        <li>Fills today: ${esc(stats.fills_today ?? 0)} · candidates ranked: ${esc(stats.candidate_count ?? 0)}</li>
+        <li>Rotation: ${esc(limits.allow_rotation ? 'allowed with min-hold gate' : 'disabled')} · min hold ${esc(limits.rotation_min_hold_minutes ?? '--')}m</li>
       `);
+      const candN = learn.candidate_signals_logged ?? stats.candidate_count ?? 0;
+      const closedN = learn.closed_outcomes ?? s.closed_trades ?? 0;
+      const fillsN = learn.fills_logged ?? stats.fills_today ?? 0;
+      setText('learning-sample',
+        `Learning sample: ${candN} candidate signals logged · ${fillsN} fills · ${closedN} closed outcomes. Early paper results stay provisional until the sample is large enough for review.`
+      );
 
       const holdings = d.holdings || [];
       setHtml('holdings-list', holdings.length ? holdings.map(h => `

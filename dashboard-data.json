@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-06T18:00:55.257795+00:00",
+  "generated_at": "2026-08-06T18:05:46.640452+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 997.01,
+    "portfolio_value": 996.58,
     "starting_cash": 1000.0,
-    "total_return_pct": -0.3,
-    "total_pnl": -2.99,
+    "total_return_pct": -0.34,
+    "total_pnl": -3.42,
     "realized_pnl": -3.31,
-    "open_pnl": 0.32,
-    "capital_deployed": 600.29,
+    "open_pnl": -0.11,
+    "capital_deployed": 599.86,
     "cash": 396.72,
     "closed_trades": 4,
     "win_rate_pct": 25.0,
-    "vs_spy_pct": -0.2,
-    "spy_return_pct": -0.1,
+    "vs_spy_pct": -0.28,
+    "spy_return_pct": -0.06,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-06T18:00:56.615615+00:00"
+    "updated_at": "2026-08-06T18:05:48.402590+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.1,
-    "price": 768.6400146484375,
+    "return_pct": -0.06,
+    "price": 768.8900146484375,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,10 +38,10 @@
       "symbol": "BAC",
       "qty": 3.1713,
       "avg_cost": 63.065,
-      "last": 62.92499923706055,
-      "market_value": 199.55,
-      "open_pnl": -0.44,
-      "open_pnl_pct": -0.22,
+      "last": 62.904998779296875,
+      "market_value": 199.49,
+      "open_pnl": -0.51,
+      "open_pnl_pct": -0.25,
       "stop": 61.49,
       "target": 66.22,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (beat): Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat"
@@ -50,10 +50,10 @@
       "symbol": "UNH",
       "qty": 0.4953,
       "avg_cost": 403.775,
-      "last": 404.69000244140625,
-      "market_value": 200.44,
-      "open_pnl": 0.45,
-      "open_pnl_pct": 0.23,
+      "last": 404.8699951171875,
+      "market_value": 200.53,
+      "open_pnl": 0.54,
+      "open_pnl_pct": 0.27,
       "stop": 393.68,
       "target": 423.96,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (ai, catalyst): UNH Stock Becomes Dow\u2019s Biggest Driver Back To 50,000 \u2014 Will Trump Tailwinds Spark Another Leg Higher? - Stocktwits"
@@ -62,10 +62,10 @@
       "symbol": "LRCX",
       "qty": 0.6489,
       "avg_cost": 308.185,
-      "last": 308.6700134277344,
-      "market_value": 200.3,
-      "open_pnl": 0.31,
-      "open_pnl_pct": 0.16,
+      "last": 307.9700012207031,
+      "market_value": 199.84,
+      "open_pnl": -0.14,
+      "open_pnl_pct": -0.07,
       "stop": 300.48,
       "target": 323.59,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (ai, catalyst, guidance): Why Lam Research (LRCX) Is Up 21.8% After Strong Q4 Results And AI-Driven Margin Guidance - simplywall.st"
@@ -695,9 +695,21 @@
   ],
   "limits": {
     "max_position_usd": 200,
-    "max_positions": 3,
+    "max_positions": 5,
     "min_rr": 1.5,
-    "max_daily_loss_pct": 5
+    "max_daily_loss_pct": 3,
+    "max_daily_loss_usd": 30.0,
+    "max_drawdown_pct": 8,
+    "allow_rotation": true,
+    "rotation_min_hold_minutes": 45,
+    "rotation_min_score": 70
+  },
+  "learning": {
+    "candidate_signals_logged": 10,
+    "fills_logged": 13,
+    "closed_outcomes": 5,
+    "consensus_events": 30,
+    "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "system": {
     "broker": "local_paper_broker",
