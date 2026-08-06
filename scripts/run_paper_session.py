@@ -52,15 +52,21 @@ def is_nyse_regular_session(now: datetime | None = None) -> tuple[bool, str]:
     return True, f"regular session ({now.strftime('%H:%M %Z')})"
 
 
-def last_jsonl_symbol(path: Path) -> str | None:
+def last_jsonl_row(path: Path) -> dict | None:
     if not path.exists():
         return None
     lines = [ln.strip() for ln in path.read_text(encoding="utf-8", errors="ignore").splitlines() if ln.strip()]
     if not lines:
         return None
     try:
-        row = json.loads(lines[-1])
+        return json.loads(lines[-1])
     except Exception:
+        return None
+
+
+def last_jsonl_symbol(path: Path) -> str | None:
+    row = last_jsonl_row(path)
+    if not row:
         return None
     if "symbol" in row:
         return row.get("symbol")
@@ -127,9 +133,19 @@ def main() -> int:
     # Extract a compact signal for the summary
     selected = None
     for line in trade_out.splitlines():
-        if "CONSENSUS REACHED" in line or "VALIDATION PASSED" in line or "BUY " in line:
+        # Prefer actual fill lines over generic VALIDATION PASSED (which also fires on HOLD)
+        if "[PAPER] BUY" in line or "[PAPER] SELL" in line or "FILLED_PAPER" in line:
             selected = line.strip()
-    order_sym = last_jsonl_symbol(ROOT / "data" / "order_ledger.jsonl")
+        elif selected is None and ("CONSENSUS REACHED" in line or "VALIDATION PASSED" in line or "HOLD" in line):
+            selected = line.strip()
+
+    last_order = last_jsonl_row(ROOT / "data" / "order_ledger.jsonl") or {}
+    last_fill = last_jsonl_row(ROOT / "data" / "fills.jsonl") or {}
+    order_action = last_order.get("action")
+    order_sym = last_order.get("symbol")
+    order_status = last_order.get("status")
+    order_reason = last_order.get("reason_code") or last_order.get("thesis") or ""
+
     cand_sym = None
     cand_path = ROOT / "data" / "candidates.json"
     if cand_path.exists():
@@ -140,6 +156,14 @@ def main() -> int:
                 cand_sym = cands[0].get("symbol")
         except Exception:
             pass
+
+    open_syms = []
+    try:
+        pf = json.loads((ROOT / "data" / "portfolio.json").read_text(encoding="utf-8"))
+        open_syms = sorted((pf.get("positions") or {}).keys())
+        cash = pf.get("cash")
+    except Exception:
+        cash = None
 
     # 3) Dashboard data
     dash = run([py, str(SCRIPTS / "generate_dashboard_data.py")], timeout=60)
@@ -161,7 +185,23 @@ def main() -> int:
 
     print("---")
     print(f"top_candidate: {cand_sym or 'n/a'}")
-    print(f"latest_order_symbol: {order_sym or 'n/a'}")
+    if order_action == "HOLD":
+        print(f"decision: HOLD {order_sym or ''} — no new fill".strip())
+        print(f"why: {(last_order.get('thesis') or order_reason or 'no actionable edge')[:140]}")
+    elif order_action in ("BUY", "SELL") and order_status == "FILLED_PAPER":
+        px = last_order.get("entry_price")
+        qty = last_order.get("qty")
+        print(f"fill: {order_action} {order_sym} qty={qty} @ ${float(px or 0):.2f} -> {order_status}")
+        if order_reason:
+            print(f"reason: {str(order_reason)[:120]}")
+    else:
+        print(f"latest_order: {order_action or 'n/a'} {order_sym or 'n/a'} ({order_status or 'n/a'})")
+    if last_fill:
+        print(
+            f"last_fill: {last_fill.get('action')} {last_fill.get('symbol')} @ "
+            f"${float(last_fill.get('price') or 0):.2f} ({str(last_fill.get('timestamp') or '')[:19]}Z)"
+        )
+    print(f"open_positions: {', '.join(open_syms) if open_syms else 'none'}" + (f" | cash=${float(cash):.2f}" if cash is not None else ""))
     if selected:
         print(f"signal: {selected}")
     print(f"publish: {publish}")
