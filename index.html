@@ -23,9 +23,9 @@
       --blue: #60a5fa;
       --amber: #fbbf24;
       --shadow: 0 18px 50px rgba(0,0,0,0.35);
-      --radius: 22px;
+      --radius: 26px;
       --radius-sm: 16px;
-      --max: 1120px;
+      --max: 1240px;
     }
 
     * { box-sizing: border-box; }
@@ -104,14 +104,14 @@
     .kpi-row {
       display: grid;
       grid-template-columns: 1.45fr 1fr 1fr 1fr;
-      gap: 14px;
-      margin-bottom: 14px;
+      gap: 18px;
+      margin-bottom: 18px;
     }
     .sec-row {
       display: grid;
       grid-template-columns: repeat(5, minmax(0, 1fr));
-      gap: 12px;
-      margin-bottom: 28px;
+      gap: 14px;
+      margin-bottom: 32px;
     }
 
     .card {
@@ -119,9 +119,15 @@
       border: 1px solid var(--border);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      padding: 20px 18px;
+      padding: 26px 22px;
+      min-height: 168px;
     }
-    .card.hero { padding: 22px 20px 18px; }
+    .card.hero {
+      padding: 28px 24px 22px;
+      min-height: 210px;
+    }
+    .kpi-row .card { min-height: 210px; }
+    .sec-row .card { min-height: 168px; }
 
     .label {
       color: var(--muted-2);
@@ -131,20 +137,20 @@
       text-transform: uppercase;
     }
     .value {
-      margin-top: 12px;
-      font-size: 48px;
-      line-height: 1;
+      margin-top: 14px;
+      font-size: 60px;
+      line-height: 0.98;
       font-weight: 760;
-      letter-spacing: -0.045em;
+      letter-spacing: -0.05em;
       color: var(--text);
     }
     .value.sm {
-      font-size: 34px;
-      margin-top: 10px;
+      font-size: 42px;
+      margin-top: 12px;
     }
     .value.xs {
-      font-size: 28px;
-      margin-top: 10px;
+      font-size: 34px;
+      margin-top: 12px;
     }
     .green { color: var(--green) !important; }
     .red { color: var(--red) !important; }
@@ -152,15 +158,15 @@
     .amber { color: var(--amber) !important; }
 
     .hint {
-      margin-top: 10px;
+      margin-top: 12px;
       color: var(--muted);
-      font-size: 13px;
+      font-size: 14px;
       line-height: 1.45;
     }
     .badge {
       display: inline-flex;
-      margin-top: 14px;
-      padding: 7px 12px;
+      margin-top: 16px;
+      padding: 8px 14px;
       border-radius: 999px;
       border: 1px solid rgba(52,211,153,0.25);
       background: var(--green-soft);
@@ -313,8 +319,10 @@
       .topbar { flex-direction: column; }
       .top-actions { align-items: flex-start; }
       .kpi-row, .sec-row, .split-2, .metrics { grid-template-columns: 1fr; }
-      .value { font-size: 40px; }
-      .value.sm { font-size: 30px; }
+      .value { font-size: 48px; }
+      .value.sm { font-size: 36px; }
+      .value.xs { font-size: 30px; }
+      .kpi-row .card, .sec-row .card, .card.hero { min-height: 0; }
       .shell { padding: 16px; }
     }
   </style>
