@@ -113,32 +113,71 @@ class DryRunAutoTrader:
     
     def get_model_decision(self, model_name: str, broker_snapshot: Dict, market_data: Dict) -> Dict:
         """
-        Simulates asking Grok or Claude for a decision.
-        In LIVE mode, this would call actual LLM APIs with market context.
+        Dry-run decision engine.
         
-        Returns: {
-            "action": "BUY" | "SELL" | "HOLD",
-            "symbol": str,
-            "confidence": int (0-100),
-            "stop_loss": float,
-            "take_profit": float,
-            "thesis": str
-        }
+        Chooses from the provided candidate set rather than using a hardcoded
+        symbol. In LIVE mode this should be replaced with a real LLM call using
+        the evidence bundle.
         """
-        # DRY-RUN: Return simulated decision
-        # In production, this calls Hermes with the model and evidence bundle
-        
+        if not market_data:
+            raise RuntimeError('No market data provided to decision engine')
+
+        best_symbol = None
+        best_payload = None
+        best_score = None
+
+        for symbol, payload in market_data.items():
+            price = float(payload.get('price', 0) or 0)
+            if price <= 0:
+                continue
+
+            rank_score = float(payload.get('rank_score', 0) or 0)
+            catalyst_score = float(payload.get('catalyst_score', 0) or 0)
+            rsi = float(payload.get('rsi', 50) or 50)
+            ema50 = float(payload.get('ema50', price) or price)
+            sentiment = str(payload.get('sentiment', 'mixed'))
+            sentiment_bonus = 6 if sentiment == 'bullish' else (2 if sentiment == 'mixed' else -4)
+            trend_bonus = 4 if price >= ema50 else -3
+            rsi_bonus = 4 if 45 <= rsi <= 65 else (1 if 35 <= rsi < 45 else -2)
+            score = rank_score + catalyst_score + sentiment_bonus + trend_bonus + rsi_bonus
+
+            if best_score is None or score > best_score:
+                best_score = score
+                best_symbol = symbol
+                best_payload = payload
+
+        if best_symbol is None or best_payload is None:
+            raise RuntimeError('Decision engine could not select a viable candidate')
+
+        entry_price = float(best_payload['price'])
+        stop_loss = round(entry_price * 0.975, 2)
+        take_profit = round(entry_price * 1.05, 2)
+        max_position_usd = min(
+            float(self.config['position_limits']['max_position_size_usd']),
+            float(broker_snapshot.get('buying_power', 0))
+        )
+        qty = round(max_position_usd / entry_price, 4)
+        min_qty = round(float(self.config['position_limits']['min_position_size_usd']) / entry_price, 4)
+        qty = max(qty, min_qty)
+
+        sentiment = str(best_payload.get('sentiment', 'mixed'))
+        catalyst = str(best_payload.get('catalyst', 'ranked candidate'))
+        confidence = max(
+            self.config['consensus_rules']['min_confidence'],
+            min(95, int(70 + min(20, (best_score or 0) / 3)))
+        )
+
         return {
-            "model": model_name,
-            "action": "BUY",
-            "symbol": "NVDA",
-            "confidence": 75,
-            "entry_price": 125.50,
-            "stop_loss": 122.00,
-            "take_profit": 132.00,
-            "qty": 1,
-            "thesis": "AI sector momentum, RSI neutral, above 50 EMA",
-            "timestamp": datetime.now(timezone.utc).isoformat()
+            'model': model_name,
+            'action': 'BUY',
+            'symbol': best_symbol,
+            'confidence': confidence,
+            'entry_price': entry_price,
+            'stop_loss': stop_loss,
+            'take_profit': take_profit,
+            'qty': qty,
+            'thesis': f"{sentiment.capitalize()} setup from ranked candidate list: {catalyst}",
+            'timestamp': datetime.now(timezone.utc).isoformat()
         }
     
     def check_consensus(self, decision1: Dict, decision2: Dict) -> Tuple[bool, Optional[str]]:
@@ -192,16 +231,18 @@ class DryRunAutoTrader:
             return False, f"{symbol} not in allowed symbols"
         
         # Check buying power
-        position_value = entry * qty
-        if position_value > broker_snapshot['buying_power']:
+        position_value = round(entry * qty, 2)
+        if position_value - round(float(broker_snapshot['buying_power']), 2) > 0.01:
             return False, f"Insufficient buying power: ${broker_snapshot['buying_power']:.2f} < ${position_value:.2f}"
         
         # Check position size limits
-        if position_value > self.config['position_limits']['max_position_size_usd']:
-            return False, f"Position size ${position_value:.2f} > max ${self.config['position_limits']['max_position_size_usd']}"
+        max_position = round(float(self.config['position_limits']['max_position_size_usd']), 2)
+        min_position = round(float(self.config['position_limits']['min_position_size_usd']), 2)
+        if position_value - max_position > 0.01:
+            return False, f"Position size ${position_value:.2f} > max ${max_position:.2f}"
         
-        if position_value < self.config['position_limits']['min_position_size_usd']:
-            return False, f"Position size ${position_value:.2f} < min ${self.config['position_limits']['min_position_size_usd']}"
+        if min_position - position_value > 0.01:
+            return False, f"Position size ${position_value:.2f} < min ${min_position:.2f}"
         
         # Check risk/reward ratio
         risk = abs(entry - stop) * qty
@@ -301,24 +342,34 @@ class DryRunAutoTrader:
         
         # Get market context (from Alpha Radar candidates if AI decides)
         allowed = self.config.get('allowed_symbols', 'AI_DECIDES')
+        market_context = {}
         if allowed == 'AI_DECIDES':
             # Load candidates from Alpha Radar
             candidates_file = './data/candidates.json'
             if os.path.exists(candidates_file):
                 with open(candidates_file, 'r') as f:
                     radar_data = json.load(f)
-                    candidates = [c['symbol'] for c in radar_data.get('candidates', [])]
+                    candidate_records = radar_data.get('candidates', [])
             else:
                 raise RuntimeError(
                     'Alpha Radar candidates file missing; run alpha_radar.py before autotrader when allowed_symbols=AI_DECIDES'
                 )
+
+            for candidate in candidate_records:
+                sym = candidate.get('symbol')
+                if not sym:
+                    continue
+                merged = self.get_mock_market_data(sym)
+                merged.update(candidate)
+                market_context[sym] = merged
         else:
             candidates = allowed
+            if not candidates:
+                raise RuntimeError('No candidates available for model review')
+            market_context = {sym: self.get_mock_market_data(sym) for sym in candidates}
 
-        if not candidates:
+        if not market_context:
             raise RuntimeError('No candidates available for model review')
-
-        market_context = {sym: self.get_mock_market_data(sym) for sym in candidates}
         
         decision1 = self.get_model_decision(model1_name, broker_snapshot, market_context)
         decision2 = self.get_model_decision(model2_name, broker_snapshot, market_context)
