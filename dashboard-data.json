@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-08-06T17:16:29.075140+00:00",
+  "generated_at": "2026-08-06T17:30:53.703303+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 997.06,
+    "portfolio_value": 996.45,
     "starting_cash": 1000.0,
-    "total_return_pct": -0.29,
-    "total_pnl": -2.94,
+    "total_return_pct": -0.35,
+    "total_pnl": -3.55,
     "realized_pnl": -2.37,
-    "open_pnl": -0.58,
-    "capital_deployed": 599.39,
+    "open_pnl": -1.18,
+    "capital_deployed": 598.78,
     "cash": 397.67,
     "closed_trades": 3,
     "win_rate_pct": 33.33,
-    "vs_spy_pct": -0.14,
-    "spy_return_pct": -0.15,
+    "vs_spy_pct": -0.17,
+    "spy_return_pct": -0.18,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-06T17:16:30.987456+00:00"
+    "updated_at": "2026-08-06T17:30:55.050455+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.15,
-    "price": 768.209716796875,
+    "return_pct": -0.18,
+    "price": 768.0399780273438,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 10,
-    "consensus_count_today": 27,
-    "validated_count_today": 25,
+    "consensus_count_today": 28,
+    "validated_count_today": 26,
     "blocked_count_today": 2,
     "fills_today": 11,
-    "simulated_orders_today": 25,
+    "simulated_orders_today": 26,
     "top_symbol_today": "LRCX"
   },
   "holdings": [
@@ -38,10 +38,10 @@
       "symbol": "BAC",
       "qty": 3.1713,
       "avg_cost": 63.065,
-      "last": 62.94499969482422,
-      "market_value": 199.62,
-      "open_pnl": -0.38,
-      "open_pnl_pct": -0.19,
+      "last": 62.75,
+      "market_value": 199.0,
+      "open_pnl": -1.0,
+      "open_pnl_pct": -0.5,
       "stop": 61.49,
       "target": 66.22,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (beat): Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat"
@@ -50,10 +50,10 @@
       "symbol": "LRCX",
       "qty": 0.6463,
       "avg_cost": 309.41,
-      "last": 309.2300109863281,
-      "market_value": 199.86,
-      "open_pnl": -0.12,
-      "open_pnl_pct": -0.06,
+      "last": 308.9849853515625,
+      "market_value": 199.7,
+      "open_pnl": -0.27,
+      "open_pnl_pct": -0.14,
       "stop": 301.67,
       "target": 324.88,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool"
@@ -62,10 +62,10 @@
       "symbol": "UNH",
       "qty": 0.4953,
       "avg_cost": 403.775,
-      "last": 403.6099853515625,
-      "market_value": 199.91,
-      "open_pnl": -0.08,
-      "open_pnl_pct": -0.04,
+      "last": 403.9549865722656,
+      "market_value": 200.08,
+      "open_pnl": 0.09,
+      "open_pnl_pct": 0.04,
       "stop": 393.68,
       "target": 423.96,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (ai, catalyst): UNH Stock Becomes Dow\u2019s Biggest Driver Back To 50,000 \u2014 Will Trump Tailwinds Spark Another Leg Higher? - Stocktwits"
@@ -74,15 +74,15 @@
   "latest_candidate": {
     "symbol": "LRCX",
     "name": "Lam Research",
-    "price": 309.05999755859375,
-    "volume": 3555953.0,
-    "avg_volume": 12889865.3,
-    "percent_change": 0.533466937488404,
+    "price": 309.1400146484375,
+    "volume": 3703052.0,
+    "avg_volume": 12904575.2,
+    "percent_change": 0.5594955258524338,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 13,
-    "liquidity_score": 81.1,
-    "rank_score": 72.09,
+    "liquidity_score": 81.11,
+    "rank_score": 72.11,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
     "top_headlines": [
@@ -130,19 +130,27 @@
   },
   "latest_decision": {
     "model": "grok-beta",
-    "action": "BUY",
-    "symbol": "UNH",
-    "confidence": 90,
-    "entry_price": 403.7749938964844,
-    "stop_loss": 393.68,
-    "take_profit": 423.96,
-    "qty": 0.4953,
-    "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (ai, catalyst): UNH Stock Becomes Dow\u2019s Biggest Driver Back To 50,000 \u2014 Will Trump Tailwinds Spark Another Leg Higher? - Stocktwits",
-    "reason_code": "new_entry",
-    "timestamp": "2026-08-06T17:16:23.561628+00:00"
+    "action": "HOLD",
+    "symbol": "BAC",
+    "confidence": 80,
+    "entry_price": 62.7599983215332,
+    "stop_loss": 62.13239833831787,
+    "take_profit": 63.387598304748536,
+    "qty": 0,
+    "thesis": "No actionable edge after portfolio checks",
+    "reason_code": "hold",
+    "timestamp": "2026-08-06T17:30:51.646573+00:00"
   },
-  "stance": "Buying pressure on UNH. Bullish setup from ranked candidate list: Headline-driven setup (ai, catalyst): UNH Stock Becomes Dow\u2019s Biggest Driver Back To 50,000 \u2014 Will Trump Tailwinds Spark Another Leg Higher? - Stocktwits",
+  "stance": "Holding / no new risk. No actionable edge after portfolio checks",
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "BAC",
+      "status": "hold",
+      "headline": "HOLD BAC \u2014 hold",
+      "detail": "No actionable edge after portfolio checks",
+      "timestamp": "2026-08-06T17:30:51.646573+00:00"
+    },
     {
       "type": "fill",
       "symbol": "UNH",
@@ -230,14 +238,6 @@
       "headline": "BUY PANW \u2014 validated",
       "detail": "Bullish setup from ranked candidate list: Headline-driven setup (catalyst, launch): China launches cybersecurity review into Palo Alto Networks products - Reuters",
       "timestamp": "2026-08-06T16:00:50.162979+00:00"
-    },
-    {
-      "type": "fill",
-      "symbol": "AAA",
-      "status": "filled_paper",
-      "headline": "SELL AAA @ $105.00",
-      "detail": "test sell",
-      "timestamp": "2026-08-06T15:52:44.323477+00:00"
     }
   ],
   "recent_trades": [
@@ -420,15 +420,15 @@
     {
       "symbol": "LRCX",
       "name": "Lam Research",
-      "price": 309.05999755859375,
-      "volume": 3555953.0,
-      "avg_volume": 12889865.3,
-      "percent_change": 0.533466937488404,
+      "price": 309.1400146484375,
+      "volume": 3703052.0,
+      "avg_volume": 12904575.2,
+      "percent_change": 0.5594955258524338,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
-      "liquidity_score": 81.1,
-      "rank_score": 72.09,
+      "liquidity_score": 81.11,
+      "rank_score": 72.11,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
       "top_headlines": [
@@ -475,54 +475,17 @@
       ]
     },
     {
-      "symbol": "BAC",
-      "name": "Bank of America",
-      "price": 62.959999084472656,
-      "volume": 10349704.0,
-      "avg_volume": 27758520.4,
-      "percent_change": -0.4584994711894763,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 10,
-      "liquidity_score": 84.43,
-      "rank_score": 56.03,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): Bank of America Corp DE Trims Stock Position in General Mills, Inc. $GIS - MarketBeat",
-      "top_headlines": [
-        "Bank of America Corp DE Trims Stock Position in General Mills, Inc. $GIS - MarketBeat",
-        "Bank of America spends over $250M annually on GLP-1 coverage, CEO says - Seeking Alpha",
-        "BAC|Bank of America Corp|Price:63.215|Chg%:+0.315 - TradingKey"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Bank of America Corp DE Trims Stock Position in General Mills, Inc. $GIS - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Dycom Industries, Inc. $DY Stock Position Raised by Bank of America Corp DE - MarketBeat",
-          "keywords": [
-            "ai",
-            "beat",
-            "catalyst",
-            "raised"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "UNH",
       "name": "UnitedHealth",
-      "price": 403.7749938964844,
-      "volume": 1796136.0,
-      "avg_volume": 4278093.6,
-      "percent_change": -2.174441212238795,
+      "price": 403.8999938964844,
+      "volume": 1909369.0,
+      "avg_volume": 4289416.9,
+      "percent_change": -2.1441565362848274,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 76.31,
-      "rank_score": 52.69,
+      "liquidity_score": 76.32,
+      "rank_score": 52.66,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): UNH Stock Becomes Dow\u2019s Biggest Driver Back To 50,000 \u2014 Will Trump Tailwinds Spark Another Leg Higher? - Stocktwits",
       "top_headlines": [
@@ -568,15 +531,15 @@
     {
       "symbol": "PANW",
       "name": "Palo Alto Networks",
-      "price": 355.0450134277344,
-      "volume": 3036111.0,
-      "avg_volume": 5922141.1,
-      "percent_change": -2.09976014930775,
+      "price": 357.1199951171875,
+      "volume": 3109884.0,
+      "avg_volume": 5929518.4,
+      "percent_change": -1.5276039510779649,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
-      "liquidity_score": 77.72,
-      "rank_score": 47.34,
+      "liquidity_score": 77.73,
+      "rank_score": 46.88,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, launch): China launches cybersecurity review into Palo Alto Networks products - Reuters",
       "top_headlines": [
@@ -615,51 +578,94 @@
       ]
     },
     {
-      "symbol": "WMT",
-      "name": "Walmart",
-      "price": 111.27999877929688,
-      "volume": 10149963.0,
-      "avg_volume": 22243486.3,
-      "percent_change": -0.9435620376963003,
+      "symbol": "META",
+      "name": "Meta",
+      "price": 587.8900146484375,
+      "volume": 7482514.0,
+      "avg_volume": 18981631.4,
+      "percent_change": -0.14946496146544913,
       "exchange": "",
-      "sentiment": "bearish",
-      "catalyst_score": -7,
-      "liquidity_score": 83.47,
-      "rank_score": 47.28,
+      "sentiment": "bullish",
+      "catalyst_score": 6,
+      "liquidity_score": 82.78,
+      "rank_score": 44.04,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (catalyst): Walmart Earnings: Bull Put Spread Trade - Barchart.com",
+      "catalyst": "Headline-driven setup (ai, catalyst): After Earnings, Is Meta Stock a Buy, a Sell, or Fairly Valued? - Morningstar",
       "top_headlines": [
-        "Walmart Stock And 2 Consumer Staples Picks For Rising Food And Fuel Costs - simplywall.st",
-        "Walmart Earnings: Bull Put Spread Trade - Barchart.com",
-        "Walmart SEP6 (SWMT02609) Futures Forum and Discussion - Moomoo"
+        "After Earnings, Is Meta Stock a Buy, a Sell, or Fairly Valued? - Morningstar",
+        "Mark Zuckerberg's Net Worth Dropped $18 Billion in a Single Day as Meta Stock Extended a Losing Streak. Is the Sell-Off Overdone? - The Motley Fool",
+        "Mark Zuckerberg sends a strong message to Meta stock investors - thestreet.com"
       ],
       "matched_headlines": [
         {
-          "title": "Walmart Earnings: Bull Put Spread Trade - Barchart.com",
+          "title": "After Earnings, Is Meta Stock a Buy, a Sell, or Fairly Valued? - Morningstar",
           "keywords": [
+            "ai",
             "catalyst"
           ]
         },
         {
-          "title": "Eyes on the skies: Walmart expands drone partnership with Alphabet's Wing to Florida (WMT:NASDAQ) - Seeking Alpha",
+          "title": "Mark Zuckerberg's Net Worth Dropped $18 Billion in a Single Day as Meta Stock Extended a Losing Streak. Is the Sell-Off Overdone? - The Motley Fool",
           "keywords": [
-            "catalyst",
-            "partnership"
+            "drop"
           ]
         },
         {
-          "title": "Walmart Shares Slip After Oppenheimer Downgrades Stock Ahead of Earnings - Yahoo Finance",
+          "title": "70% Gains From Here? Wall Street Pros Expect Exactly That From Meta in 12 Months - 24/7 Wall St.",
           "keywords": [
-            "catalyst",
-            "downgrade",
-            "downgrades"
+            "ai",
+            "catalyst"
           ]
         },
         {
-          "title": "Walmart Stock Slides After Analyst Downgrade: Time To Buy Or Stay Away? - Benzinga",
+          "title": "Is Meta Platforms Stock a Smart Buy Ahead of Q1 2026 Earnings? Unpacking AI Growth and Investment Potential - TradingKey",
           "keywords": [
+            "ai",
             "catalyst",
-            "downgrade"
+            "growth"
+          ]
+        },
+        {
+          "title": "Meta becomes latest firm to say its AI hacked another company - BBC",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "ANET",
+      "name": "Arista Networks",
+      "price": 192.85000610351562,
+      "volume": 4349686.0,
+      "avg_volume": 9023978.6,
+      "percent_change": -2.2603981097073773,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 6,
+      "liquidity_score": 79.55,
+      "rank_score": 40.74,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst, demand): Arista Networks Stock Surges as Earnings Prove AI Demand Is Real - Barron's",
+      "top_headlines": [
+        "Arista Networks Stock Climbs 25% On A 5-Day Winning Streak - Trefis",
+        "Arista Networks Stock Surges as Earnings Prove AI Demand Is Real - Barron's",
+        "Is Arista Networks (ANET) Outperforming Other Computer and Technology Stocks This Year? - Yahoo Finance"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Arista Networks Stock Surges as Earnings Prove AI Demand Is Real - Barron's",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "demand"
+          ]
+        },
+        {
+          "title": "Mirador Capital Partners LP Invests $3.60 Million in Arista Networks, Inc. $ANET - MarketBeat",
+          "keywords": [
+            "beat"
           ]
         }
       ]
