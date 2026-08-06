@@ -24,6 +24,7 @@ from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent.parent
 SCRIPTS = ROOT / "scripts"
+sys.path.insert(0, str(SCRIPTS))
 NY = ZoneInfo("America/New_York")
 MARKET_OPEN = time(9, 30)
 MARKET_CLOSE = time(16, 0)
@@ -157,13 +158,48 @@ def main() -> int:
         except Exception:
             pass
 
+    # Fresh mark-to-market snapshot for Telegram bullets (same numbers style as dashboard)
     open_syms = []
+    holdings_rows = []
+    cash = None
+    equity = None
+    open_pnl_total = None
     try:
-        pf = json.loads((ROOT / "data" / "portfolio.json").read_text(encoding="utf-8"))
-        open_syms = sorted((pf.get("positions") or {}).keys())
-        cash = pf.get("cash")
+        from paper_broker import load_broker
+
+        cfg = {}
+        cfg_path = ROOT / "config" / "autonomy_config.json"
+        if cfg_path.exists():
+            cfg = json.loads(cfg_path.read_text(encoding="utf-8"))
+        starting = float(cfg.get("account", {}).get("starting_capital", 1000))
+        snap = load_broker(starting_cash=starting).snapshot()
+        cash = snap.get("cash")
+        equity = snap.get("equity")
+        open_pnl_total = snap.get("open_pnl")
+        holdings_rows = list(snap.get("positions") or [])
+        # largest absolute move first, then symbol
+        holdings_rows.sort(key=lambda h: (-abs(float(h.get("open_pnl") or 0)), str(h.get("symbol") or "")))
+        open_syms = [h.get("symbol") for h in holdings_rows if h.get("symbol")]
     except Exception:
-        cash = None
+        try:
+            pf = json.loads((ROOT / "data" / "portfolio.json").read_text(encoding="utf-8"))
+            open_syms = sorted((pf.get("positions") or {}).keys())
+            cash = pf.get("cash")
+            for sym, pos in (pf.get("positions") or {}).items():
+                holdings_rows.append(
+                    {
+                        "symbol": sym,
+                        "qty": pos.get("qty"),
+                        "avg_cost": pos.get("avg_cost"),
+                        "last_price": pos.get("last_price") or pos.get("last"),
+                        "open_pnl": pos.get("open_pnl"),
+                        "open_pnl_pct": pos.get("open_pnl_pct"),
+                        "stop_loss": pos.get("stop_loss"),
+                        "take_profit": pos.get("take_profit"),
+                    }
+                )
+        except Exception:
+            cash = None
 
     # 3) Dashboard data
     dash = run([py, str(SCRIPTS / "generate_dashboard_data.py")], timeout=60)
@@ -201,7 +237,44 @@ def main() -> int:
             f"last_fill: {last_fill.get('action')} {last_fill.get('symbol')} @ "
             f"${float(last_fill.get('price') or 0):.2f} ({str(last_fill.get('timestamp') or '')[:19]}Z)"
         )
-    print(f"open_positions: {', '.join(open_syms) if open_syms else 'none'}" + (f" | cash=${float(cash):.2f}" if cash is not None else ""))
+    # Portfolio bullets for mobile/Telegram (mirror dashboard holding chips)
+    if equity is not None:
+        try:
+            print(f"equity: ${float(equity):.2f} | cash: ${float(cash or 0):.2f} | open_pnl: ${float(open_pnl_total or 0):+.2f}")
+        except Exception:
+            pass
+
+    if holdings_rows:
+        print("holdings:")
+        for h in holdings_rows:
+            sym = h.get("symbol") or "?"
+            qty = h.get("qty")
+            last = h.get("last") if h.get("last") is not None else h.get("last_price")
+            avg = h.get("avg_cost")
+            pnl = float(h.get("open_pnl") or 0)
+            pct = h.get("open_pnl_pct")
+            if pct is None and avg and last and float(avg) != 0:
+                pct = (float(last) - float(avg)) / float(avg) * 100.0
+            pct = float(pct or 0)
+            stop = h.get("stop") if h.get("stop") is not None else h.get("stop_loss")
+            target = h.get("target") if h.get("target") is not None else h.get("take_profit")
+            sign = "+" if pnl >= 0 else ""
+            # Example: • MSFT 0.401sh  last $499.34  +$0.83 (+0.41%)  stop 484.85 / tgt 522.14
+            qty_s = f"{float(qty):.4f}".rstrip("0").rstrip(".") if qty is not None else "?"
+            last_s = f"${float(last):.2f}" if last is not None else "n/a"
+            stop_s = f"{float(stop):.2f}" if stop is not None else "--"
+            tgt_s = f"{float(target):.2f}" if target is not None else "--"
+            print(
+                f"• {sym} {qty_s}sh  last {last_s}  {sign}${pnl:.2f} ({sign}{pct:.2f}%)  "
+                f"stop {stop_s} / tgt {tgt_s}"
+            )
+    else:
+        print("holdings: none")
+
+    print(
+        f"open_positions: {', '.join(open_syms) if open_syms else 'none'}"
+        + (f" | cash=${float(cash):.2f}" if cash is not None else "")
+    )
     if selected:
         print(f"signal: {selected}")
     print(f"publish: {publish}")
