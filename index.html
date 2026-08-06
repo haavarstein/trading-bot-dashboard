@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hermes Paper Trading Dashboard Prototype</title>
+  <title>Hermes Paper Trader Dashboard</title>
   <style>
     :root {
       --bg: #0b0f14;
@@ -21,100 +21,50 @@
       --radius-sm: 12px;
       --max: 1220px;
     }
-
     * { box-sizing: border-box; }
     html, body { margin: 0; padding: 0; background: radial-gradient(circle at top, #101824 0%, var(--bg) 42%); color: var(--text); font-family: Inter, Segoe UI, Arial, sans-serif; }
     body { padding: 28px; }
     .wrap { max-width: var(--max); margin: 0 auto; }
-
-    .topbar {
-      display: flex; gap: 20px; align-items: center; justify-content: space-between;
-      margin-bottom: 18px;
-    }
-    .title h1 { margin: 0; font-size: 36px; line-height: 1.05; letter-spacing: -.03em; }
-    .title p { margin: 8px 0 0; color: var(--muted); font-size: 15px; }
-    .actions { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
-    .pill, .btn {
-      border: 1px solid var(--border); background: rgba(255,255,255,.02); color: var(--text);
-      border-radius: 999px; padding: 10px 14px; font-size: 14px; text-decoration: none;
-      display: inline-flex; align-items: center; gap: 8px;
-    }
-    .btn.primary { background: linear-gradient(180deg, #2d7ce8, #2164be); border-color: #347ddd; }
-    .nav { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 26px; }
-
-    .grid-hero {
-      display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 16px; margin-bottom: 16px;
-    }
-    .grid-stats {
-      display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin-bottom: 26px;
-    }
-    .section { margin: 0 0 24px; }
-    .section-head { margin-bottom: 14px; }
-    .section-head h2 { margin: 0 0 8px; font-size: 26px; letter-spacing: -.02em; }
-    .section-head p { margin: 0; color: var(--muted); font-size: 15px; }
-
-    .card {
-      background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
-      border: 1px solid var(--border); border-radius: var(--radius); padding: 18px;
-      box-shadow: var(--shadow);
-    }
-    .card.small { padding: 16px; border-radius: 16px; }
-    .label { color: var(--muted); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
-    .value { margin-top: 10px; font-size: 38px; font-weight: 700; letter-spacing: -.04em; }
-    .value.small { font-size: 28px; }
-    .sub { margin-top: 10px; color: var(--muted); font-size: 14px; line-height: 1.45; }
-    .green { color: var(--green); }
-    .red { color: var(--red); }
-    .blue { color: var(--blue); }
-    .amber { color: var(--amber); }
-
-    .split-2 { display: grid; grid-template-columns: 1.15fr .85fr; gap: 16px; }
-    .mini-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; }
-    .mini-card { background: var(--panel-2); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px; }
-    .mini-card h3 { margin: 0 0 8px; font-size: 16px; }
-    ul.clean { margin: 10px 0 0 18px; padding: 0; color: var(--muted); }
-    ul.clean li { margin: 8px 0; }
-
-    .holdings { display: grid; gap: 12px; }
-    .holding {
-      display: grid; grid-template-columns: 1.25fr repeat(6, .8fr); gap: 14px; align-items: center;
-      background: rgba(255,255,255,.02); border: 1px solid var(--border); border-radius: 16px; padding: 16px;
-    }
-    .ticker { font-size: 22px; font-weight: 700; letter-spacing: -.03em; }
-    .kicker { color: var(--muted); font-size: 13px; margin-top: 4px; }
-    .metric .m-label { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .08em; }
-    .metric .m-value { margin-top: 6px; font-size: 16px; font-weight: 650; }
-
-    .thinking, .journal, .improvements { display: grid; gap: 12px; }
-    .note, .trade, .change {
-      background: rgba(255,255,255,.02); border: 1px solid var(--border); border-radius: 16px; padding: 16px;
-    }
-    .trade-top, .change-top { display: flex; justify-content: space-between; gap: 12px; align-items: center; flex-wrap: wrap; }
-    .badge {
-      padding: 6px 10px; border-radius: 999px; border: 1px solid var(--border);
-      background: rgba(90,168,255,.12); color: #b7d6ff; font-size: 12px; font-weight: 600;
-    }
-    .trade h3, .change h3, .note h3 { margin: 0 0 8px; font-size: 18px; }
-    .trade p, .change p, .note p { margin: 8px 0 0; color: var(--muted); line-height: 1.55; }
-
-    .footer {
-      margin-top: 28px; color: var(--muted); font-size: 13px; text-align: center;
-    }
-
-    @media (max-width: 1100px) {
-      .grid-hero { grid-template-columns: repeat(2, 1fr); }
-      .grid-stats { grid-template-columns: repeat(2, 1fr); }
-      .split-2 { grid-template-columns: 1fr; }
-      .holding { grid-template-columns: 1fr 1fr; }
-    }
-    @media (max-width: 720px) {
-      body { padding: 16px; }
-      .topbar { flex-direction: column; align-items: flex-start; }
-      .grid-hero, .grid-stats, .mini-grid { grid-template-columns: 1fr; }
-      .holding { grid-template-columns: 1fr; }
-      .value { font-size: 30px; }
-      .section-head h2 { font-size: 22px; }
-    }
+    .topbar { display:flex; justify-content:space-between; align-items:center; gap:20px; margin-bottom:18px; }
+    .title h1 { margin:0; font-size:36px; line-height:1.05; letter-spacing:-.03em; }
+    .title p { margin:8px 0 0; color:var(--muted); font-size:15px; }
+    .actions { display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+    .pill, .btn { border:1px solid var(--border); background:rgba(255,255,255,.02); color:var(--text); border-radius:999px; padding:10px 14px; font-size:14px; text-decoration:none; display:inline-flex; align-items:center; gap:8px; }
+    .btn.primary { background: linear-gradient(180deg, #2d7ce8, #2164be); border-color:#347ddd; }
+    .nav { display:flex; flex-wrap:wrap; gap:10px; margin:18px 0 26px; }
+    .grid-hero { display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:16px; margin-bottom:16px; }
+    .grid-stats { display:grid; grid-template-columns:repeat(5,1fr); gap:16px; margin-bottom:26px; }
+    .split-2 { display:grid; grid-template-columns:1.1fr .9fr; gap:16px; }
+    .section { margin:0 0 24px; }
+    .section-head { margin-bottom:14px; }
+    .section-head h2 { margin:0 0 8px; font-size:26px; letter-spacing:-.02em; }
+    .section-head p { margin:0; color:var(--muted); font-size:15px; }
+    .card { background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01)); border:1px solid var(--border); border-radius:var(--radius); padding:18px; box-shadow:var(--shadow); }
+    .card.small { padding:16px; border-radius:16px; }
+    .label { color:var(--muted); font-size:12px; letter-spacing:.12em; text-transform:uppercase; }
+    .value { margin-top:10px; font-size:38px; font-weight:700; letter-spacing:-.04em; }
+    .value.small { font-size:28px; }
+    .sub { margin-top:10px; color:var(--muted); font-size:14px; line-height:1.45; }
+    .green { color:var(--green); }
+    .red { color:var(--red); }
+    .blue { color:var(--blue); }
+    .amber { color:var(--amber); }
+    .mini-grid { display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:12px; }
+    .mini-card, .row-card, .feed-item { background:var(--panel-2); border:1px solid var(--border); border-radius:var(--radius-sm); padding:14px; }
+    ul.clean { margin:10px 0 0 18px; padding:0; color:var(--muted); }
+    ul.clean li { margin:8px 0; }
+    .feed, .candidates, .orders { display:grid; gap:12px; }
+    .feed-top { display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; }
+    .badge { padding:6px 10px; border-radius:999px; border:1px solid var(--border); background:rgba(90,168,255,.12); color:#b7d6ff; font-size:12px; font-weight:600; }
+    .badge.green { color:#c7ffe5; background:rgba(54,210,143,.14); }
+    .badge.red { color:#ffd1d6; background:rgba(255,107,122,.14); }
+    .kpi-list { display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:12px; }
+    .metric-label { color:var(--muted); font-size:11px; text-transform:uppercase; letter-spacing:.08em; }
+    .metric-value { margin-top:6px; font-size:16px; font-weight:650; }
+    .footer { margin-top:28px; color:var(--muted); font-size:13px; text-align:center; }
+    .loading { color: var(--muted); }
+    @media (max-width:1100px){ .grid-hero{grid-template-columns:repeat(2,1fr)} .grid-stats{grid-template-columns:repeat(2,1fr)} .split-2{grid-template-columns:1fr} }
+    @media (max-width:720px){ body{padding:16px} .topbar{flex-direction:column;align-items:flex-start} .grid-hero,.grid-stats,.mini-grid,.kpi-list{grid-template-columns:1fr} .value{font-size:30px} .section-head h2{font-size:22px} }
   </style>
 </head>
 <body>
@@ -122,198 +72,214 @@
     <header class="topbar">
       <div class="title">
         <h1>Hermes Paper Trader</h1>
-        <p>Monitor surface for paper performance, open risk, AI reasoning, and system changes.</p>
+        <p>Live monitor for today’s scanner output, consensus checks, and simulated paper-trading activity.</p>
       </div>
       <div class="actions">
-        <span class="pill">Updated Aug 6 · 08:55 AM</span>
-        <a class="btn" href="#how">How it works</a>
-        <a class="btn primary" href="#trades">Review decisions</a>
+        <span class="pill" id="updated-pill">Loading latest activity…</span>
+        <a class="btn" href="#activity">Today’s activity</a>
+        <a class="btn primary" href="#candidates">Top candidates</a>
       </div>
     </header>
 
     <nav class="nav">
       <a class="pill" href="#performance">Performance</a>
-      <a class="pill" href="#how">System logic</a>
-      <a class="pill" href="#holdings">Holdings</a>
-      <a class="pill" href="#thinking">Current view</a>
-      <a class="pill" href="#trades">Trade journal</a>
-      <a class="pill" href="#improvements">Improvements</a>
+      <a class="pill" href="#activity">Activity</a>
+      <a class="pill" href="#candidate-focus">Candidate focus</a>
+      <a class="pill" href="#candidates">Top candidates</a>
+      <a class="pill" href="#orders">Recent orders</a>
+      <a class="pill" href="#system">System</a>
     </nav>
 
     <section id="performance" class="section">
       <div class="grid-hero">
         <div class="card">
-          <div class="label">Portfolio value</div>
-          <div class="value">$1,018.95</div>
-          <div class="sub">Started with $1,000.00 · paper account target budget view</div>
+          <div class="label">Latest candidate</div>
+          <div class="value" id="hero-symbol">--</div>
+          <div class="sub" id="hero-catalyst">Waiting for scanner data…</div>
         </div>
         <div class="card small">
-          <div class="label">Total return</div>
-          <div class="value small green">+1.90%</div>
-          <div class="sub">Since bot activation window.</div>
+          <div class="label">Candidates ranked</div>
+          <div class="value small blue" id="stat-candidate-count">0</div>
+          <div class="sub">Current scan output.</div>
         </div>
         <div class="card small">
-          <div class="label">Vs SPY</div>
-          <div class="value small green">+0.42%</div>
-          <div class="sub">Strategy minus benchmark.</div>
+          <div class="label">Validated today</div>
+          <div class="value small green" id="stat-validated">0</div>
+          <div class="sub">Consensus + risk checks passed.</div>
         </div>
         <div class="card small">
-          <div class="label">Profit / loss</div>
-          <div class="value small green">+$18.95</div>
-          <div class="sub">Broker-truth summary target.</div>
+          <div class="label">Blocked today</div>
+          <div class="value small red" id="stat-blocked">0</div>
+          <div class="sub">Caught by deterministic rules.</div>
         </div>
       </div>
 
       <div class="grid-stats">
-        <div class="card small"><div class="label">Realized P/L</div><div class="value small green">+$12.08</div><div class="sub">Closed trades locked in.</div></div>
-        <div class="card small"><div class="label">Open P/L</div><div class="value small green">+$6.87</div><div class="sub">Open positions mark-to-market.</div></div>
-        <div class="card small"><div class="label">Capital deployed</div><div class="value small">$330.00</div><div class="sub">Open cost basis.</div></div>
-        <div class="card small"><div class="label">Closed trades</div><div class="value small">10</div><div class="sub">40% win rate so far.</div></div>
-        <div class="card small"><div class="label">Decision cadence</div><div class="value small blue">15 min</div><div class="sub">Market-hour evaluation loop.</div></div>
+        <div class="card small"><div class="label">Consensus checks today</div><div class="value small" id="stat-consensus">0</div><div class="sub">Independent decision pairs reviewed.</div></div>
+        <div class="card small"><div class="label">Simulated orders today</div><div class="value small" id="stat-orders">0</div><div class="sub">Dry-run orders written to the ledger.</div></div>
+        <div class="card small"><div class="label">Top active symbol</div><div class="value small" id="stat-top-symbol">--</div><div class="sub">Most frequent symbol in today’s consensus log.</div></div>
+        <div class="card small"><div class="label">Scanner version</div><div class="value small blue" id="stat-scanner">--</div><div class="sub">Current candidate generator.</div></div>
+        <div class="card small"><div class="label">MCP status</div><div class="value small" id="stat-mcp">TV ✓ / IBKR server ✓</div><div class="sub">TradingView connected, IBKR server reachable.</div></div>
       </div>
     </section>
 
-    <section id="how" class="section">
+    <section id="activity" class="section">
       <div class="section-head">
-        <h2>How this system is trying to win</h2>
-        <p>Farzad-style monitor surface: explain edge, enforce guardrails, and show what changed.</p>
+        <h2>Today’s activity</h2>
+        <p>Real entries generated from the scanner, consensus log, and order ledger.</p>
+      </div>
+      <div class="feed" id="activity-feed">
+        <div class="feed-item loading">Loading activity…</div>
+      </div>
+    </section>
+
+    <section id="candidate-focus" class="section">
+      <div class="section-head">
+        <h2>Candidate focus</h2>
+        <p>The current highest-ranked setup from today’s scanner.</p>
       </div>
       <div class="split-2">
         <div class="card">
-          <div class="mini-grid">
-            <div class="mini-card">
-              <h3>The edge being pursued</h3>
-              <ul class="clean">
-                <li>Find company-specific change before the move is fully priced.</li>
-                <li>Use AI for ranking and explanation, not for waiving risk rules.</li>
-                <li>Prefer liquid names with clean exits and clear catalysts.</li>
-              </ul>
-            </div>
-            <div class="mini-card">
-              <h3>Decision architecture</h3>
-              <ul class="clean">
-                <li>Alpha Radar creates candidates.</li>
-                <li>Two models review independently.</li>
-                <li>Deterministic code validates sizing, stops, and reward/risk.</li>
-              </ul>
-            </div>
-          </div>
+          <div class="label">Current leader</div>
+          <div class="value" id="focus-symbol">--</div>
+          <div class="sub" id="focus-thesis">Waiting for candidate details…</div>
         </div>
         <div class="card">
-          <div class="label">Hard limits</div>
+          <div class="kpi-list">
+            <div class="mini-card"><div class="metric-label">Price</div><div class="metric-value" id="focus-price">--</div></div>
+            <div class="mini-card"><div class="metric-label">1-day move</div><div class="metric-value" id="focus-change">--</div></div>
+            <div class="mini-card"><div class="metric-label">Rank score</div><div class="metric-value" id="focus-rank">--</div></div>
+            <div class="mini-card"><div class="metric-label">Sentiment</div><div class="metric-value" id="focus-sentiment">--</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="candidates" class="section">
+      <div class="section-head">
+        <h2>Top candidates</h2>
+        <p>What Alpha Radar thinks is most interesting right now.</p>
+      </div>
+      <div class="candidates" id="candidate-list">
+        <div class="row-card loading">Loading ranked candidates…</div>
+      </div>
+    </section>
+
+    <section id="orders" class="section">
+      <div class="section-head">
+        <h2>Recent orders</h2>
+        <p>Latest simulated actions that made it through the pipeline.</p>
+      </div>
+      <div class="orders" id="order-list">
+        <div class="row-card loading">Loading recent orders…</div>
+      </div>
+    </section>
+
+    <section id="system" class="section">
+      <div class="section-head">
+        <h2>System status</h2>
+        <p>What is working now versus what still needs tomorrow’s broker auth.</p>
+      </div>
+      <div class="split-2">
+        <div class="card">
+          <h3>Working now</h3>
           <ul class="clean">
-            <li>Minimum reward/risk: <span class="text">1.5:1</span></li>
-            <li>Max single position: <span class="text">$200</span></li>
-            <li>Daily loss halt: <span class="text">$15 or 3%</span></li>
-            <li>Portfolio drawdown halt: <span class="text">8%</span></li>
-            <li>Research budget cap: <span class="text">30 calls / day</span></li>
+            <li>TradingView MCP chart connection is live.</li>
+            <li>IBKR MCP server process responds and exposes tools.</li>
+            <li>Alpha Radar is ranking candidates from a broader universe.</li>
+            <li>Autotrader now chooses from the ranked candidate list.</li>
+            <li>GitHub → Vercel auto-deploy is active.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Still pending</h3>
+          <ul class="clean">
+            <li>IBKR account authentication and live paper-account readback.</li>
+            <li>True independent dual-LLM model prompts.</li>
+            <li>Broker-truth holdings and P/L on the dashboard.</li>
+            <li>Real paper orders instead of simulated order entries.</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section id="holdings" class="section">
-      <div class="section-head">
-        <h2>Current holdings</h2>
-        <p>Card-rows instead of a plain table keeps the page readable while preserving a broker-style structure.</p>
-      </div>
-      <div class="holdings">
-        <div class="holding">
-          <div>
-            <div class="ticker">LRCX</div>
-            <div class="kicker">1 open entry · semicap / AI equipment</div>
-          </div>
-          <div class="metric"><div class="m-label">Shares</div><div class="m-value">0.6033</div></div>
-          <div class="metric"><div class="m-label">Avg cost</div><div class="m-value">$298.36</div></div>
-          <div class="metric"><div class="m-label">Last mark</div><div class="m-value">$307.71</div></div>
-          <div class="metric"><div class="m-label">Open P/L</div><div class="m-value green">+$5.64</div></div>
-          <div class="metric"><div class="m-label">Stop</div><div class="m-value amber">$265.00</div></div>
-          <div class="metric"><div class="m-label">Target</div><div class="m-value blue">$350.00</div></div>
-        </div>
-
-        <div class="holding">
-          <div>
-            <div class="ticker">AMZN</div>
-            <div class="kicker">1 open entry · cloud / AI platform</div>
-          </div>
-          <div class="metric"><div class="m-label">Shares</div><div class="m-value">0.5545</div></div>
-          <div class="metric"><div class="m-label">Avg cost</div><div class="m-value">$270.52</div></div>
-          <div class="metric"><div class="m-label">Last mark</div><div class="m-value">$272.59</div></div>
-          <div class="metric"><div class="m-label">Open P/L</div><div class="m-value green">+$1.15</div></div>
-          <div class="metric"><div class="m-label">Stop</div><div class="m-value amber">$248.00</div></div>
-          <div class="metric"><div class="m-label">Target</div><div class="m-value blue">$340.00</div></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="thinking" class="section">
-      <div class="section-head">
-        <h2>What Hermes is thinking</h2>
-        <p>Qualitative commentary matters. This is what makes the page feel like an intelligent operator, not a static report.</p>
-      </div>
-      <div class="thinking">
-        <div class="note card">
-          <h3>Holding what it owns</h3>
-          <p>Right now the system is holding LRCX and AMZN and not forcing a new entry. The candidate list is active, but nothing scores clean enough relative to stop distance and current portfolio exposure.</p>
-          <p><strong>Action threshold:</strong> Buy only when both models agree, reward/risk clears 1.5:1, and no drawdown guardrail is close to firing.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="trades" class="section">
-      <div class="section-head">
-        <h2>Trade reasoning</h2>
-        <p>The dashboard should show not just trades, but why they happened and what would invalidate them.</p>
-      </div>
-      <div class="journal">
-        <div class="trade">
-          <div class="trade-top">
-            <h3>Bought AMZN</h3>
-            <span class="badge">Jul 31 · buy · $150.00</span>
-          </div>
-          <p>AWS re-acceleration, strong AI capex narrative, and a post-earnings drift setup gave the system a liquid, catalyst-backed long with enough room to target $340 while anchoring risk at $248.</p>
-        </div>
-        <div class="trade">
-          <div class="trade-top">
-            <h3>Bought LRCX</h3>
-            <span class="badge">Jul 30 · buy · $180.00</span>
-          </div>
-          <p>Record quarter, strong guide, and heavy-volume gap retention supported the thesis that semicap leadership was not fully priced. Entry only passed after both models independently rated it high conviction.</p>
-        </div>
-        <div class="trade">
-          <div class="trade-top">
-            <h3>Sold CLSK</h3>
-            <span class="badge">Jul 29 · sell · $130.95</span>
-          </div>
-          <p>The catalyst window aged out without follow-through. The system exited because the time horizon expired, proving the journal can justify a sell for discipline rather than emotion.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="improvements" class="section">
-      <div class="section-head">
-        <h2>What improved</h2>
-        <p>A public change log is part of the trust layer. It shows the system learning without pretending the earlier version never existed.</p>
-      </div>
-      <div class="improvements">
-        <div class="change">
-          <div class="change-top">
-            <h3>Consensus gate hardened before execution</h3>
-            <span class="badge">2026-08-06</span>
-          </div>
-          <p>Every new trade now requires two independent model decisions plus deterministic validation. This prevents a single-model hallucination from placing even a paper order.</p>
-        </div>
-        <div class="change">
-          <div class="change-top">
-            <h3>Alpha Radar candidate feed added</h3>
-            <span class="badge">2026-08-06</span>
-          </div>
-          <p>The bot is no longer boxed into a fixed five-symbol list. It can scan liquid candidates and decide from a live universe, while still respecting deployment and loss limits.</p>
-        </div>
-      </div>
-    </section>
-
-    <div class="footer">Prototype monitor surface for your IBKR paper-trading bot. Built as a self-contained local HTML artifact.</div>
+    <div class="footer">Public dashboard powered by generated local activity data. Auto-deployed via GitHub → Vercel.</div>
   </div>
+
+  <script>
+    function money(n){ return typeof n === 'number' ? `$${n.toFixed(2)}` : '--'; }
+    function pct(n){ return typeof n === 'number' ? `${n.toFixed(2)}%` : '--'; }
+    function dt(s){ try { return new Date(s).toLocaleString(); } catch { return s || '--'; } }
+    function badgeClass(status){ if(status === 'validated' || status === 'simulated') return 'badge green'; if(status === 'blocked') return 'badge red'; return 'badge'; }
+
+    async function loadDashboard(){
+      const res = await fetch('./dashboard-data.json?_=' + Date.now());
+      const data = await res.json();
+      const stats = data.stats || {};
+      const candidate = data.latest_candidate || {};
+      const latestOrder = data.latest_order || {};
+
+      document.getElementById('updated-pill').textContent = `Updated ${dt(data.generated_at)}`;
+      document.getElementById('hero-symbol').textContent = candidate.symbol || '--';
+      document.getElementById('hero-catalyst').textContent = candidate.catalyst || 'No catalyst summary available';
+      document.getElementById('stat-candidate-count').textContent = stats.candidate_count ?? 0;
+      document.getElementById('stat-validated').textContent = stats.validated_count_today ?? 0;
+      document.getElementById('stat-blocked').textContent = stats.blocked_count_today ?? 0;
+      document.getElementById('stat-consensus').textContent = stats.consensus_count_today ?? 0;
+      document.getElementById('stat-orders').textContent = stats.simulated_orders_today ?? 0;
+      document.getElementById('stat-top-symbol').textContent = stats.top_symbol_today || '--';
+      document.getElementById('stat-scanner').textContent = data.scanner || '--';
+
+      document.getElementById('focus-symbol').textContent = candidate.symbol || '--';
+      document.getElementById('focus-thesis').textContent = candidate.catalyst || 'No thesis available';
+      document.getElementById('focus-price').textContent = money(candidate.price);
+      document.getElementById('focus-change').textContent = pct(candidate.percent_change);
+      document.getElementById('focus-rank').textContent = typeof candidate.rank_score === 'number' ? candidate.rank_score.toFixed(2) : '--';
+      document.getElementById('focus-sentiment').textContent = candidate.sentiment || '--';
+
+      const activityHtml = (data.activity || []).map(item => `
+        <div class="feed-item">
+          <div class="feed-top">
+            <strong>${item.headline || 'Activity'}</strong>
+            <span class="${badgeClass(item.status)}">${item.status || item.type || 'event'}</span>
+          </div>
+          <p class="sub">${item.detail || ''}</p>
+          <div class="sub">${dt(item.timestamp)}</div>
+        </div>
+      `).join('') || '<div class="feed-item">No activity yet.</div>';
+      document.getElementById('activity-feed').innerHTML = activityHtml;
+
+      const candidateHtml = (data.top_candidates || []).map(c => `
+        <div class="row-card">
+          <div class="feed-top">
+            <strong>${c.symbol} · ${money(c.price)}</strong>
+            <span class="badge">score ${typeof c.rank_score === 'number' ? c.rank_score.toFixed(2) : '--'}</span>
+          </div>
+          <p class="sub">${c.catalyst || ''}</p>
+          <div class="sub">Δ ${pct(c.percent_change)} · sentiment ${c.sentiment || '--'} · avg vol ${Math.round(c.avg_volume || 0).toLocaleString()}</div>
+        </div>
+      `).join('') || '<div class="row-card">No candidates yet.</div>';
+      document.getElementById('candidate-list').innerHTML = candidateHtml;
+
+      const orders = [latestOrder, ...(data.activity || []).filter(x => x.type === 'order').map(x => ({symbol:x.symbol, thesis:x.detail, status:x.status, timestamp:x.timestamp}))]
+        .filter((v, i, a) => v && (v.symbol || v.headline) && i < 5);
+      const orderHtml = orders.map(o => `
+        <div class="row-card">
+          <div class="feed-top">
+            <strong>${o.action ? `${o.action} ${o.symbol}` : (o.symbol || 'Order')}</strong>
+            <span class="${badgeClass(o.status)}">${o.status || 'event'}</span>
+          </div>
+          <p class="sub">${o.thesis || 'No thesis recorded'}</p>
+          <div class="sub">${o.entry_price ? `${money(o.entry_price)} · ` : ''}${dt(o.timestamp)}</div>
+        </div>
+      `).join('') || '<div class="row-card">No recent orders yet.</div>';
+      document.getElementById('order-list').innerHTML = orderHtml;
+    }
+
+    loadDashboard().catch(err => {
+      document.getElementById('updated-pill').textContent = 'Dashboard data failed to load';
+      console.error(err);
+    });
+  </script>
 </body>
 </html>

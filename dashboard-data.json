@@ -1,0 +1,483 @@
+{
+  "generated_at": "2026-08-06T14:31:35.535517+00:00",
+  "scanner": "alpha_radar_v2_news_ranked",
+  "stats": {
+    "candidate_count": 10,
+    "consensus_count_today": 11,
+    "validated_count_today": 9,
+    "blocked_count_today": 2,
+    "simulated_orders_today": 9,
+    "top_symbol_today": "NVDA"
+  },
+  "latest_candidate": {
+    "symbol": "LRCX",
+    "name": "Lam Research",
+    "price": 310.239990234375,
+    "volume": 1549418.0,
+    "avg_volume": 12689211.8,
+    "percent_change": 0.9173042363761137,
+    "exchange": "",
+    "sentiment": "bullish",
+    "catalyst_score": 13,
+    "liquidity_score": 81.03,
+    "rank_score": 72.39,
+    "news_hits": 8,
+    "catalyst": "Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+    "top_headlines": [
+      "Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+      "Lam Research (LRCX) On Strong Earnings And AI Demand With Fair Value Still In Debate - finance.yahoo.com",
+      "Lam Research Corporation $LRCX Shares Bought by Chapin Davis Inc. - MarketBeat"
+    ],
+    "matched_headlines": [
+      {
+        "title": "Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+        "keywords": [
+          "growth"
+        ]
+      },
+      {
+        "title": "Lam Research (LRCX) On Strong Earnings And AI Demand With Fair Value Still In Debate - finance.yahoo.com",
+        "keywords": [
+          "ai",
+          "catalyst",
+          "demand"
+        ]
+      },
+      {
+        "title": "Lam Research Corporation $LRCX Shares Bought by Chapin Davis Inc. - MarketBeat",
+        "keywords": [
+          "beat"
+        ]
+      },
+      {
+        "title": "Lam Research (LRCX) Stock Could Be Fully Priced Following Record AI Driven Earnings - simplywall.st",
+        "keywords": [
+          "ai",
+          "catalyst",
+          "record"
+        ]
+      },
+      {
+        "title": "Lam Research Climbs as Strong Earnings and AI-Driven Chip Spending Optimism Support Shares - Quiver Quantitative",
+        "keywords": [
+          "ai",
+          "catalyst"
+        ]
+      }
+    ]
+  },
+  "latest_consensus": {
+    "model1": {
+      "model": "grok-beta",
+      "action": "BUY",
+      "symbol": "LRCX",
+      "confidence": 90,
+      "entry_price": 310.239990234375,
+      "stop_loss": 302.48,
+      "take_profit": 325.75,
+      "qty": 0.6446,
+      "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+      "timestamp": "2026-08-06T14:25:58.832115+00:00"
+    },
+    "model2": {
+      "model": "claude-sonnet-4-5",
+      "action": "BUY",
+      "symbol": "LRCX",
+      "confidence": 90,
+      "entry_price": 310.239990234375,
+      "stop_loss": 302.48,
+      "take_profit": 325.75,
+      "qty": 0.6446,
+      "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+      "timestamp": "2026-08-06T14:25:58.832115+00:00"
+    },
+    "timestamp": "2026-08-06T14:25:58.833118+00:00",
+    "consensus": true,
+    "reason": null,
+    "validation": {
+      "valid": true,
+      "reason": null
+    }
+  },
+  "latest_order": {
+    "mode": "DRY_RUN",
+    "action": "BUY",
+    "symbol": "LRCX",
+    "qty": 0.6446,
+    "entry_price": 310.239990234375,
+    "stop_loss": 302.48,
+    "take_profit": 325.75,
+    "confidence": 90,
+    "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+    "status": "SIMULATED",
+    "timestamp": "2026-08-06T14:25:58.833118+00:00"
+  },
+  "activity": [
+    {
+      "type": "consensus",
+      "symbol": "LRCX",
+      "status": "validated",
+      "headline": "Consensus VALIDATED for LRCX",
+      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+      "timestamp": "2026-08-06T14:25:58.833118+00:00"
+    },
+    {
+      "type": "order",
+      "symbol": "LRCX",
+      "status": "simulated",
+      "headline": "BUY LRCX simulated",
+      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+      "timestamp": "2026-08-06T14:25:58.833118+00:00"
+    },
+    {
+      "type": "order",
+      "symbol": "LRCX",
+      "status": "simulated",
+      "headline": "BUY LRCX simulated",
+      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+      "timestamp": "2026-08-06T14:25:16.653517+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "LRCX",
+      "status": "validated",
+      "headline": "Consensus VALIDATED for LRCX",
+      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+      "timestamp": "2026-08-06T14:25:16.652008+00:00"
+    },
+    {
+      "type": "order",
+      "symbol": "LRCX",
+      "status": "simulated",
+      "headline": "BUY LRCX simulated",
+      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+      "timestamp": "2026-08-06T14:23:38.937846+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "LRCX",
+      "status": "validated",
+      "headline": "Consensus VALIDATED for LRCX",
+      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+      "timestamp": "2026-08-06T14:23:38.936853+00:00"
+    },
+    {
+      "type": "order",
+      "symbol": "LRCX",
+      "status": "simulated",
+      "headline": "BUY LRCX simulated",
+      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+      "timestamp": "2026-08-06T14:20:53.519329+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "LRCX",
+      "status": "validated",
+      "headline": "Consensus VALIDATED for LRCX",
+      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+      "timestamp": "2026-08-06T14:20:53.518329+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "LRCX",
+      "status": "blocked",
+      "headline": "Consensus BLOCKED for LRCX",
+      "detail": "Position size $200.00 > max $200",
+      "timestamp": "2026-08-06T14:19:44.460469+00:00"
+    },
+    {
+      "type": "order",
+      "symbol": "NVDA",
+      "status": "simulated",
+      "headline": "BUY NVDA simulated",
+      "detail": "AI sector momentum, RSI neutral, above 50 EMA",
+      "timestamp": "2026-08-06T13:59:40.607952+00:00"
+    }
+  ],
+  "top_candidates": [
+    {
+      "symbol": "LRCX",
+      "name": "Lam Research",
+      "price": 310.239990234375,
+      "volume": 1549418.0,
+      "avg_volume": 12689211.8,
+      "percent_change": 0.9173042363761137,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 13,
+      "liquidity_score": 81.03,
+      "rank_score": 72.39,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+      "top_headlines": [
+        "Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+        "Lam Research (LRCX) On Strong Earnings And AI Demand With Fair Value Still In Debate - finance.yahoo.com",
+        "Lam Research Corporation $LRCX Shares Bought by Chapin Davis Inc. - MarketBeat"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+          "keywords": [
+            "growth"
+          ]
+        },
+        {
+          "title": "Lam Research (LRCX) On Strong Earnings And AI Demand With Fair Value Still In Debate - finance.yahoo.com",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "demand"
+          ]
+        },
+        {
+          "title": "Lam Research Corporation $LRCX Shares Bought by Chapin Davis Inc. - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Lam Research (LRCX) Stock Could Be Fully Priced Following Record AI Driven Earnings - simplywall.st",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "record"
+          ]
+        },
+        {
+          "title": "Lam Research Climbs as Strong Earnings and AI-Driven Chip Spending Optimism Support Shares - Quiver Quantitative",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "PANW",
+      "name": "Palo Alto Networks",
+      "price": 354.9599914550781,
+      "volume": 1560440.0,
+      "avg_volume": 5774574.0,
+      "percent_change": -2.123204138663539,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 10,
+      "liquidity_score": 77.62,
+      "rank_score": 60.84,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (catalyst, launch): China launches cybersecurity review into Palo Alto Networks products - Reuters",
+      "top_headlines": [
+        "China launches cybersecurity review into Palo Alto Networks products - Reuters",
+        "Palo Alto Networks enters key TASE TA-35 and TA-125 indices - The Jerusalem Post",
+        "PANW Stock Holds Near Record Highs Despite Fresh China Security Review That Mirrors Micron Case - Stocktwits"
+      ],
+      "matched_headlines": [
+        {
+          "title": "China launches cybersecurity review into Palo Alto Networks products - Reuters",
+          "keywords": [
+            "catalyst",
+            "launch"
+          ]
+        },
+        {
+          "title": "PANW Stock Holds Near Record Highs Despite Fresh China Security Review That Mirrors Micron Case - Stocktwits",
+          "keywords": [
+            "record"
+          ]
+        },
+        {
+          "title": "Palo Alto Networks (PANW) Could Be 131% Above Fair Value As FireMon Integration Draws Focus - simplywall.st",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "China launches security review of Palo Alto Networks products (PANW:NASDAQ) - Seeking Alpha",
+          "keywords": [
+            "catalyst",
+            "launch"
+          ]
+        },
+        {
+          "title": "Avior Wealth Management LLC Purchases 10,155 Shares of Palo Alto Networks, Inc. $PANW - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "META",
+      "name": "Meta",
+      "price": 590.4849853515625,
+      "volume": 3174461.0,
+      "avg_volume": 18550826.1,
+      "percent_change": 0.2912794068009564,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 9,
+      "liquidity_score": 82.68,
+      "rank_score": 56.14,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst): After Earnings, Is Meta Stock a Buy, a Sell, or Fairly Valued? - Morningstar",
+      "top_headlines": [
+        "After Earnings, Is Meta Stock a Buy, a Sell, or Fairly Valued? - Morningstar",
+        "Why Is Everyone Talking About Meta Stock? - The Motley Fool",
+        "Mark Zuckerberg sends a strong message to Meta stock investors - thestreet.com"
+      ],
+      "matched_headlines": [
+        {
+          "title": "After Earnings, Is Meta Stock a Buy, a Sell, or Fairly Valued? - Morningstar",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Is Meta Platforms Stock a Smart Buy Ahead of Q1 2026 Earnings? Unpacking AI Growth and Investment Potential - TradingKey",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "growth"
+          ]
+        },
+        {
+          "title": "Meta becomes latest firm to say its AI hacked another company - BBC",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "META Stock Drops For Fourth Session: Meta Recruits Cybersecurity Experts To Fortify AI Agents - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "drop",
+            "drops"
+          ]
+        },
+        {
+          "title": "Meta\u2019s Earnings Drop Shows Wall Street Wants More Than Ad Growth - MarketBeat",
+          "keywords": [
+            "beat",
+            "catalyst",
+            "drop",
+            "growth"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "MSFT",
+      "name": "Microsoft",
+      "price": 496.94000244140625,
+      "volume": 7523345.0,
+      "avg_volume": 46411354.5,
+      "percent_change": 1.9447772437754525,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 7,
+      "liquidity_score": 86.67,
+      "rank_score": 50.06,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst): After Earnings, Is Microsoft Stock a Buy, a Sell, or Fairly Valued? - Morningstar",
+      "top_headlines": [
+        "After Earnings, Is Microsoft Stock a Buy, a Sell, or Fairly Valued? - Morningstar",
+        "Microsoft Stock (MSFT) Opinions on Strong Earnings and Azure Growth - Quiver Quantitative",
+        "MSFT Stock Drop: Microsoft Copilot Functionality Issues Lead to 10% Stock Drop and Securities Fraud Class Action for Investors - PR Newswire"
+      ],
+      "matched_headlines": [
+        {
+          "title": "After Earnings, Is Microsoft Stock a Buy, a Sell, or Fairly Valued? - Morningstar",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Microsoft Stock (MSFT) Opinions on Strong Earnings and Azure Growth - Quiver Quantitative",
+          "keywords": [
+            "catalyst",
+            "growth"
+          ]
+        },
+        {
+          "title": "MSFT Stock Drop: Microsoft Copilot Functionality Issues Lead to 10% Stock Drop and Securities Fraud Class Action for Investors - PR Newswire",
+          "keywords": [
+            "drop",
+            "fraud"
+          ]
+        },
+        {
+          "title": "Billionaire Bill Ackman Built a $2.1 Billion Stake in Microsoft After the Stock Slid. Is It Still a Buy? - finance.yahoo.com",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Is Microsoft Still Undervalued After Its 25% Post-Earnings Rally? - The Motley Fool",
+          "keywords": [
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "UNH",
+      "name": "UnitedHealth",
+      "price": 406.6300048828125,
+      "volume": 650621.0,
+      "avg_volume": 4163542.1,
+      "percent_change": -1.4827365517110842,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 7,
+      "liquidity_score": 76.19,
+      "rank_score": 48.11,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (growth): The Case For UnitedHealth Stock Is Margin, Not Growth - Trefis",
+      "top_headlines": [
+        "The Case For UnitedHealth Stock Is Margin, Not Growth - Trefis",
+        "UnitedHealth Group Stock (UNH) Opinions on Q2 Earnings and Subsequent Price Action - Quiver Quantitative",
+        "UNH Stock Becomes Dow\u2019s Biggest Driver Back To 50,000 \u2014 Will Trump Tailwinds Spark Another Leg Higher? - Stocktwits"
+      ],
+      "matched_headlines": [
+        {
+          "title": "The Case For UnitedHealth Stock Is Margin, Not Growth - Trefis",
+          "keywords": [
+            "growth"
+          ]
+        },
+        {
+          "title": "UnitedHealth Group Stock (UNH) Opinions on Q2 Earnings and Subsequent Price Action - Quiver Quantitative",
+          "keywords": [
+            "catalyst"
+          ]
+        },
+        {
+          "title": "UNH Stock Becomes Dow\u2019s Biggest Driver Back To 50,000 \u2014 Will Trump Tailwinds Spark Another Leg Higher? - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Is UnitedHealth Group (UNH) Fairly Valued After Margin Recovery Optimism? - simplywall.st",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Is UnitedHealth Stock Still a Buy in August After Its Q2 Beat Last Month? - 24/7 Wall St.",
+          "keywords": [
+            "beat"
+          ]
+        }
+      ]
+    }
+  ]
+}
