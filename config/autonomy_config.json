@@ -2,18 +2,16 @@
   "version": "2.0.0",
   "mode": "PAPER_TRADING",
   "enabled": true,
-  "comment_mode": "PAPER_TRADING = IBKR paper account with real market data. No real money at risk.",
-  
+  "comment_mode": "SIMULATED_PAPER = local paper sim with real market data via yfinance. No IBKR MCP required until personal account is active.",
   "account": {
-    "broker": "IBKR",
+    "broker": "SIMULATED",
     "account_type": "PAPER",
-    "account_id": "PENDING_ACTIVATION",
+    "account_id": "SIM_PAPER_LOCAL",
     "username": "",
     "starting_capital": 1000,
     "max_capital_at_risk": 1000,
-    "comment": "Paper trading account - account ID will be provided after activation (format: DU######)"
+    "comment": "Local simulated paper account until personal IBKR paper is approved/active. No live broker connection."
   },
-
   "position_limits": {
     "max_positions": 3,
     "max_position_size_usd": 200,
@@ -21,16 +19,14 @@
     "min_position_size_usd": 50,
     "comment": "PDT-safe: max 3 positions for <$25k accounts"
   },
-
   "order_limits": {
-    "max_daily_orders": 3,
-    "max_orders_per_symbol_per_day": 1,
+    "max_daily_orders": 20,
+    "max_orders_per_symbol_per_day": 3,
     "require_stop_loss": true,
     "require_take_profit": true,
     "min_risk_reward_ratio": 1.5,
-    "comment": "Avoid PDT violations - max 3 day trades per 5 rolling days"
+    "comment": "Paper sim visibility: allow multiple cycles during NYSE hours. Not a live PDT account."
   },
-
   "risk_rules": {
     "max_loss_per_trade_pct": 2,
     "max_loss_per_day_pct": 5,
@@ -39,10 +35,19 @@
     "max_stop_distance_pct": 5,
     "comment": "2% max loss per trade, 5% max daily drawdown"
   },
-
   "instrument_rules": {
-    "allowed_instruments": ["STOCK"],
-    "banned_instruments": ["OPTION", "CRYPTO", "FOREX", "FUTURE", "OTC", "LEVERAGED_ETF", "INVERSE_ETF"],
+    "allowed_instruments": [
+      "STOCK"
+    ],
+    "banned_instruments": [
+      "OPTION",
+      "CRYPTO",
+      "FOREX",
+      "FUTURE",
+      "OTC",
+      "LEVERAGED_ETF",
+      "INVERSE_ETF"
+    ],
     "min_price": 5,
     "max_price": 1000,
     "min_avg_volume": 500000,
@@ -50,10 +55,8 @@
     "ban_earnings_within_days": 3,
     "comment": "Cash equities only, no penny stocks or low liquidity"
   },
-
   "allowed_symbols": "AI_DECIDES",
   "comment_allowed_symbols": "AI models use Alpha Radar to scan and select stocks. No hard whitelist.",
-  
   "stock_criteria": {
     "min_price": 5,
     "max_price": 1000,
@@ -61,7 +64,6 @@
     "max_spread_pct": 0.5,
     "comment": "AI scans for liquid US stocks meeting these criteria"
   },
-
   "trading_hours": {
     "market_open": "09:30",
     "market_close": "16:00",
@@ -70,7 +72,6 @@
     "allow_afterhours": false,
     "comment": "Regular hours only for safety"
   },
-
   "consensus_rules": {
     "require_dual_model_agreement": true,
     "model_1": "grok-beta",
@@ -79,7 +80,6 @@
     "log_all_disagreements": true,
     "comment": "Both models must agree on action AND symbol"
   },
-
   "telegram": {
     "enabled": true,
     "chat_id": "",
@@ -90,18 +90,15 @@
     "daily_summary": true,
     "comment": "Telegram notifications to the configured local recipient"
   },
-
   "kill_switch": {
     "file_path": "./KILL_SWITCH.txt",
     "comment": "Create this file to immediately stop all trading"
   },
-
   "data_files": {
     "trade_journal": "./data/trade_journal.jsonl",
     "order_ledger": "./data/order_ledger.jsonl",
     "consensus_log": "./data/consensus_log.jsonl",
     "candidate_outcomes": "./data/candidate_outcomes.jsonl"
   },
-
-  "last_updated": "2026-08-06T11:40:00Z"
+  "last_updated": "2026-08-06T15:37:33Z"
 }
