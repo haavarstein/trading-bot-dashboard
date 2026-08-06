@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-08-06T15:39:19.203501+00:00",
+  "generated_at": "2026-08-06T15:40:02.228965+00:00",
   "scanner": "alpha_radar_v2_news_ranked",
   "stats": {
     "candidate_count": 10,
-    "consensus_count_today": 13,
-    "validated_count_today": 11,
+    "consensus_count_today": 14,
+    "validated_count_today": 12,
     "blocked_count_today": 2,
-    "simulated_orders_today": 11,
+    "simulated_orders_today": 12,
     "top_symbol_today": "LRCX"
   },
   "latest_candidate": {
     "symbol": "LRCX",
     "name": "Lam Research",
-    "price": 309.95001220703125,
-    "volume": 2732510.0,
-    "avg_volume": 12807521.0,
-    "percent_change": 0.8229779028005948,
+    "price": 310.17999267578125,
+    "volume": 2736490.0,
+    "avg_volume": 12807919.0,
+    "percent_change": 0.8977877586020167,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 13,
     "liquidity_score": 81.07,
-    "rank_score": 72.32,
+    "rank_score": 72.38,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
     "top_headlines": [
@@ -72,26 +72,26 @@
       "action": "BUY",
       "symbol": "LRCX",
       "confidence": 90,
-      "entry_price": 309.95001220703125,
-      "stop_loss": 302.2,
-      "take_profit": 325.45,
-      "qty": 0.6452,
+      "entry_price": 310.17999267578125,
+      "stop_loss": 302.43,
+      "take_profit": 325.69,
+      "qty": 0.6447,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
-      "timestamp": "2026-08-06T15:39:18.737626+00:00"
+      "timestamp": "2026-08-06T15:40:01.990216+00:00"
     },
     "model2": {
       "model": "claude-sonnet-4-5",
       "action": "BUY",
       "symbol": "LRCX",
       "confidence": 90,
-      "entry_price": 309.95001220703125,
-      "stop_loss": 302.2,
-      "take_profit": 325.45,
-      "qty": 0.6452,
+      "entry_price": 310.17999267578125,
+      "stop_loss": 302.43,
+      "take_profit": 325.69,
+      "qty": 0.6447,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
-      "timestamp": "2026-08-06T15:39:18.737626+00:00"
+      "timestamp": "2026-08-06T15:40:01.990216+00:00"
     },
-    "timestamp": "2026-08-06T15:39:18.737626+00:00",
+    "timestamp": "2026-08-06T15:40:01.990216+00:00",
     "consensus": true,
     "reason": null,
     "validation": {
@@ -103,16 +103,32 @@
     "mode": "DRY_RUN",
     "action": "BUY",
     "symbol": "LRCX",
-    "qty": 0.6452,
-    "entry_price": 309.95001220703125,
-    "stop_loss": 302.2,
-    "take_profit": 325.45,
+    "qty": 0.6447,
+    "entry_price": 310.17999267578125,
+    "stop_loss": 302.43,
+    "take_profit": 325.69,
     "confidence": 90,
     "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
     "status": "SIMULATED",
-    "timestamp": "2026-08-06T15:39:18.738626+00:00"
+    "timestamp": "2026-08-06T15:40:01.992212+00:00"
   },
   "activity": [
+    {
+      "type": "order",
+      "symbol": "LRCX",
+      "status": "simulated",
+      "headline": "BUY LRCX simulated",
+      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+      "timestamp": "2026-08-06T15:40:01.992212+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "LRCX",
+      "status": "validated",
+      "headline": "Consensus VALIDATED for LRCX",
+      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
+      "timestamp": "2026-08-06T15:40:01.990216+00:00"
+    },
     {
       "type": "order",
       "symbol": "LRCX",
@@ -176,37 +192,21 @@
       "headline": "Consensus VALIDATED for LRCX",
       "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
       "timestamp": "2026-08-06T14:25:16.652008+00:00"
-    },
-    {
-      "type": "order",
-      "symbol": "LRCX",
-      "status": "simulated",
-      "headline": "BUY LRCX simulated",
-      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
-      "timestamp": "2026-08-06T14:23:38.937846+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "LRCX",
-      "status": "validated",
-      "headline": "Consensus VALIDATED for LRCX",
-      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
-      "timestamp": "2026-08-06T14:23:38.936853+00:00"
     }
   ],
   "top_candidates": [
     {
       "symbol": "LRCX",
       "name": "Lam Research",
-      "price": 309.95001220703125,
-      "volume": 2732510.0,
-      "avg_volume": 12807521.0,
-      "percent_change": 0.8229779028005948,
+      "price": 310.17999267578125,
+      "volume": 2736490.0,
+      "avg_volume": 12807919.0,
+      "percent_change": 0.8977877586020167,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
       "liquidity_score": 81.07,
-      "rank_score": 72.32,
+      "rank_score": 72.38,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
       "top_headlines": [
@@ -256,8 +256,8 @@
       "symbol": "BAC",
       "name": "Bank of America",
       "price": 63.0,
-      "volume": 7497744.0,
-      "avg_volume": 27473324.4,
+      "volume": 7508755.0,
+      "avg_volume": 27474425.5,
       "percent_change": -0.3952569169960474,
       "exchange": "",
       "sentiment": "bullish",
@@ -292,15 +292,15 @@
     {
       "symbol": "ANET",
       "name": "Arista Networks",
-      "price": 192.14999389648438,
-      "volume": 3161457.0,
-      "avg_volume": 8905155.7,
-      "percent_change": -2.615175979907985,
+      "price": 192.0500030517578,
+      "volume": 3180496.0,
+      "avg_volume": 8907059.6,
+      "percent_change": -2.665853008930231,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
       "liquidity_score": 79.5,
-      "rank_score": 54.52,
+      "rank_score": 54.56,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst, demand): Arista Networks Stock Surges as Earnings Prove AI Demand Is Real - Barron's",
       "top_headlines": [
@@ -335,15 +335,15 @@
     {
       "symbol": "UNH",
       "name": "UnitedHealth",
-      "price": 404.3900146484375,
-      "volume": 1301342.0,
-      "avg_volume": 4228614.2,
-      "percent_change": -2.0254355788158693,
+      "price": 404.2099914550781,
+      "volume": 1303817.0,
+      "avg_volume": 4228861.7,
+      "percent_change": -2.0690511314165656,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
       "liquidity_score": 76.26,
-      "rank_score": 48.56,
+      "rank_score": 48.59,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (growth): The Case For UnitedHealth Stock Is Margin, Not Growth - Trefis",
       "top_headlines": [
@@ -387,50 +387,51 @@
       ]
     },
     {
-      "symbol": "PANW",
-      "name": "Palo Alto Networks",
-      "price": 357.1199951171875,
-      "volume": 2287639.0,
-      "avg_volume": 5847293.9,
-      "percent_change": -1.5276039510779649,
+      "symbol": "WMT",
+      "name": "Walmart",
+      "price": 111.95999908447266,
+      "volume": 7249247.0,
+      "avg_volume": 21953414.7,
+      "percent_change": -0.33825642318434124,
       "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 7,
-      "liquidity_score": 77.67,
-      "rank_score": 46.87,
+      "sentiment": "bearish",
+      "catalyst_score": -7,
+      "liquidity_score": 83.42,
+      "rank_score": 46.78,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (catalyst, launch): China launches cybersecurity review into Palo Alto Networks products - Reuters",
+      "catalyst": "Headline-driven setup (catalyst): Walmart Earnings: Bull Put Spread Trade - Barchart.com",
       "top_headlines": [
-        "China launches cybersecurity review into Palo Alto Networks products - Reuters",
-        "PANW Stock Holds Near Record Highs Despite Fresh China Security Review That Mirrors Micron Case - Stocktwits",
-        "Palo Alto Networks enters key TASE TA-35 and TA-125 indices - The Jerusalem Post"
+        "RBC Capital reiterates Walmart stock Outperform rating at $137 - Investing.com",
+        "Walmart Stock And 2 Consumer Staples Picks For Rising Food And Fuel Costs - simplywall.st",
+        "Walmart Earnings: Bull Put Spread Trade - Barchart.com"
       ],
       "matched_headlines": [
         {
-          "title": "China launches cybersecurity review into Palo Alto Networks products - Reuters",
+          "title": "Walmart Earnings: Bull Put Spread Trade - Barchart.com",
           "keywords": [
-            "catalyst",
-            "launch"
-          ]
-        },
-        {
-          "title": "PANW Stock Holds Near Record Highs Despite Fresh China Security Review That Mirrors Micron Case - Stocktwits",
-          "keywords": [
-            "record"
-          ]
-        },
-        {
-          "title": "Palo Alto Networks (PANW) Could Be 131% Above Fair Value As FireMon Integration Draws Focus - simplywall.st",
-          "keywords": [
-            "ai",
             "catalyst"
           ]
         },
         {
-          "title": "China launches security review of Palo Alto Networks products (PANW:NASDAQ) - Seeking Alpha",
+          "title": "Eyes on the skies: Walmart expands drone partnership with Alphabet's Wing to Florida (WMT:NASDAQ) - Seeking Alpha",
           "keywords": [
             "catalyst",
-            "launch"
+            "partnership"
+          ]
+        },
+        {
+          "title": "Walmart Shares Slip After Oppenheimer Downgrades Stock Ahead of Earnings - Yahoo Finance",
+          "keywords": [
+            "catalyst",
+            "downgrade",
+            "downgrades"
+          ]
+        },
+        {
+          "title": "Walmart Stock Slides After Analyst Downgrade: Time To Buy Or Stay Away? - Benzinga",
+          "keywords": [
+            "catalyst",
+            "downgrade"
           ]
         }
       ]
