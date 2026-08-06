@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-06T15:51:12.931565+00:00",
+  "generated_at": "2026-08-06T15:59:36.979591+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 999.95,
+    "portfolio_value": 999.38,
     "starting_cash": 1000.0,
-    "total_return_pct": -0.0,
-    "total_pnl": -0.05,
+    "total_return_pct": -0.06,
+    "total_pnl": -0.62,
     "realized_pnl": 0.13,
-    "open_pnl": -0.18,
-    "capital_deployed": 399.79,
+    "open_pnl": -0.77,
+    "capital_deployed": 399.22,
     "cash": 600.16,
     "closed_trades": 1,
     "win_rate_pct": 100.0,
-    "vs_spy_pct": 0.02,
-    "spy_return_pct": -0.02,
+    "vs_spy_pct": 0.11,
+    "spy_return_pct": -0.17,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-06T15:51:14.069026+00:00"
+    "updated_at": "2026-08-06T15:59:38.217776+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.02,
-    "price": 769.2100219726562,
+    "return_pct": -0.17,
+    "price": 768.0700073242188,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -29,7 +29,7 @@
     "consensus_count_today": 21,
     "validated_count_today": 19,
     "blocked_count_today": 2,
-    "fills_today": 4,
+    "fills_today": 6,
     "simulated_orders_today": 19,
     "top_symbol_today": "ANET"
   },
@@ -38,10 +38,10 @@
       "symbol": "LRCX",
       "qty": 0.6417,
       "avg_cost": 311.645,
-      "last": 311.1600036621094,
-      "market_value": 199.67,
-      "open_pnl": -0.31,
-      "open_pnl_pct": -0.16,
+      "last": 310.32501220703125,
+      "market_value": 199.14,
+      "open_pnl": -0.85,
+      "open_pnl_pct": -0.42,
       "stop": 303.85,
       "target": 327.23,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool"
@@ -50,10 +50,10 @@
       "symbol": "BAC",
       "qty": 3.1713,
       "avg_cost": 63.065,
-      "last": 63.10499954223633,
-      "market_value": 200.12,
-      "open_pnl": 0.13,
-      "open_pnl_pct": 0.06,
+      "last": 63.09000015258789,
+      "market_value": 200.08,
+      "open_pnl": 0.08,
+      "open_pnl_pct": 0.04,
       "stop": 61.49,
       "target": 66.22,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (beat): Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat"
@@ -133,6 +133,22 @@
   "activity": [
     {
       "type": "fill",
+      "symbol": "AAA",
+      "status": "filled_paper",
+      "headline": "SELL AAA @ $105.00",
+      "detail": "test sell",
+      "timestamp": "2026-08-06T15:52:44.323477+00:00"
+    },
+    {
+      "type": "fill",
+      "symbol": "AAA",
+      "status": "filled_paper",
+      "headline": "BUY AAA @ $100.00",
+      "detail": "test buy",
+      "timestamp": "2026-08-06T15:52:43.853898+00:00"
+    },
+    {
+      "type": "fill",
       "symbol": "BAC",
       "status": "filled_paper",
       "headline": "BUY BAC @ $63.06",
@@ -210,25 +226,33 @@
       "headline": "BUY LRCX \u2014 validated",
       "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
       "timestamp": "2026-08-06T15:41:38.871736+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "LRCX",
-      "status": "validated",
-      "headline": "BUY LRCX \u2014 validated",
-      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
-      "timestamp": "2026-08-06T15:41:10.051671+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "LRCX",
-      "status": "validated",
-      "headline": "BUY LRCX \u2014 validated",
-      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
-      "timestamp": "2026-08-06T15:40:01.990216+00:00"
     }
   ],
   "recent_trades": [
+    {
+      "timestamp": "2026-08-06T15:52:44.323477+00:00",
+      "action": "SELL",
+      "symbol": "AAA",
+      "qty": 2.0,
+      "price": 105.0,
+      "notional": 210.0,
+      "realized_pnl": 10.0,
+      "reason": "test_tp",
+      "thesis": "test sell",
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-06T15:52:43.853898+00:00",
+      "action": "BUY",
+      "symbol": "AAA",
+      "qty": 2.0,
+      "price": 100.0,
+      "notional": 200.0,
+      "realized_pnl": null,
+      "reason": null,
+      "thesis": "test buy",
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-08-06T15:50:14.375161+00:00",
       "action": "BUY",
@@ -279,6 +303,19 @@
     }
   ],
   "closed_trades": [
+    {
+      "timestamp": "2026-08-06T15:52:44.322288+00:00",
+      "symbol": "AAA",
+      "qty": 2.0,
+      "avg_cost": 100.0,
+      "exit_price": 105.0,
+      "proceeds": 210.0,
+      "realized_pnl": 10.0,
+      "reason": "test_tp",
+      "thesis": "test sell",
+      "opened_at": "2026-08-06T15:52:43.853898+00:00",
+      "hold_seconds": 0
+    },
     {
       "timestamp": "2026-08-06T15:50:07.568279+00:00",
       "symbol": "ANET",

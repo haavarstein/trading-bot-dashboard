@@ -87,10 +87,10 @@
     <nav class="nav">
       <a class="pill" href="#performance">Performance</a>
       <a class="pill" href="#edge">How it works</a>
-      <a class="pill" href="#holdings">Holdings</a>
-      <a class="pill" href="#stance">Decisions</a>
-      <a class="pill" href="#trades">Trades</a>
-      <a class="pill" href="#activity">Activity</a>
+      <a class="pill" href="#holdings-section">Holdings</a>
+      <a class="pill" href="#stance-section">Decisions</a>
+      <a class="pill" href="#trades-section">Trades</a>
+      <a class="pill" href="#activity-section">Activity</a>
     </nav>
 
     <section id="performance" class="section">
@@ -150,17 +150,17 @@
       </div>
     </section>
 
-    <section id="holdings" class="section">
+    <section id="holdings-section" class="section">
       <h2>Current holdings</h2>
       <p class="sub">Open paper positions with stop/target context.</p>
-      <div class="list" id="holdings" style="margin-top:12px;"><div class="row sub">Loading holdings…</div></div>
+      <div class="list" id="holdings-list" style="margin-top:12px;"><div class="row sub">Loading holdings…</div></div>
     </section>
 
-    <section id="stance" class="section">
+    <section id="stance-section" class="section">
       <div class="split">
         <div class="card">
           <div class="label">What the bot is thinking now</div>
-          <div class="value sm" style="font-size:22px; line-height:1.35; font-weight:600;" id="stance">Loading…</div>
+          <div class="value sm" style="font-size:22px; line-height:1.35; font-weight:600;" id="stance-text">Loading…</div>
           <p class="sub" id="latest-decision-sub" style="margin-top:12px;"></p>
         </div>
         <div class="card">
@@ -171,26 +171,59 @@
       </div>
     </section>
 
-    <section id="trades" class="section">
+    <section id="trades-section" class="section">
       <h2>Recent fills</h2>
       <p class="sub">Actual paper buys and sells written through the local broker.</p>
-      <div class="list" id="trades" style="margin-top:12px;"><div class="row sub">Loading trades…</div></div>
+      <div class="list" id="trades-list" style="margin-top:12px;"><div class="row sub">Loading trades…</div></div>
     </section>
 
-    <section id="activity" class="section">
+    <section id="activity-section" class="section">
       <h2>Today’s activity</h2>
       <p class="sub">Consensus checks and paper fills from today’s session loop.</p>
-      <div class="list" id="activity" style="margin-top:12px;"><div class="row sub">Loading activity…</div></div>
+      <div class="list" id="activity-list" style="margin-top:12px;"><div class="row sub">Loading activity…</div></div>
     </section>
 
     <div class="footer">Public monitor for simulated paper trading. Auto-deployed via GitHub → Vercel. Not IBKR broker truth until personal paper is connected.</div>
   </div>
 
   <script>
-    const money = (n) => typeof n === 'number' ? `$${n.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2})}` : '--';
-    const pct = (n) => typeof n === 'number' ? `${n >= 0 ? '+' : ''}${n.toFixed(2)}%` : '--';
-    const cls = (n) => typeof n === 'number' ? (n > 0 ? 'green' : (n < 0 ? 'red' : '')) : '';
-    const dt = (s) => { try { return new Date(s).toLocaleString(); } catch { return s || '--'; } };
+    const money = (n) => typeof n === 'number' && Number.isFinite(n)
+      ? `$${n.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2})}`
+      : '--';
+    const pct = (n) => typeof n === 'number' && Number.isFinite(n)
+      ? `${n >= 0 ? '+' : ''}${n.toFixed(2)}%`
+      : '--';
+    const cls = (n) => typeof n === 'number' && Number.isFinite(n)
+      ? (n > 0 ? 'green' : (n < 0 ? 'red' : ''))
+      : '';
+
+    function formatWhen(s) {
+      if (!s) return '--';
+      try {
+        const d = new Date(s);
+        if (Number.isNaN(d.getTime())) return String(s);
+        // Explicit date + time so the pill never looks empty/broken.
+        return d.toLocaleString(undefined, {
+          year: 'numeric',
+          month: 'short',
+          day: 'numeric',
+          hour: 'numeric',
+          minute: '2-digit',
+          second: '2-digit',
+        });
+      } catch {
+        return String(s);
+      }
+    }
+
+    const dt = formatWhen;
+    const esc = (s) => String(s ?? '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+
     const chip = (status) => {
       const s = (status || '').toLowerCase();
       if (s.includes('fill') || s === 'validated' || s === 'buy') return 'chip green';
@@ -199,112 +232,147 @@
       return 'chip';
     };
 
-    async function load() {
-      const res = await fetch('./dashboard-data.json?_=' + Date.now());
-      const d = await res.json();
-      const s = d.summary || {};
-      const b = d.benchmark || {};
-      const stats = d.stats || {};
-
-      document.getElementById('updated').textContent = `Updated ${dt(d.generated_at)}`;
-      document.getElementById('mode-pill').textContent = d.mode || 'SIM PAPER';
-
-      document.getElementById('equity').textContent = money(s.portfolio_value);
-      document.getElementById('equity').className = 'value ' + cls(s.total_pnl);
-      document.getElementById('equity-badge').textContent = (s.total_pnl || 0) >= 0 ? 'Portfolio is up so far' : 'Portfolio is down so far';
-      document.getElementById('equity-sub').textContent = `Started with ${money(s.starting_cash)} · local simulated paper broker.`;
-
-      document.getElementById('total-return').textContent = pct(s.total_return_pct);
-      document.getElementById('total-return').className = 'value sm ' + cls(s.total_return_pct);
-      document.getElementById('total-return-sub').textContent = s.started_at ? `Since paper start ${dt(s.started_at)}` : 'Since paper start.';
-
-      document.getElementById('vs-spy').textContent = pct(s.vs_spy_pct);
-      document.getElementById('vs-spy').className = 'value sm ' + cls(s.vs_spy_pct);
-      document.getElementById('vs-spy-sub').textContent = `Hermes ${pct(s.total_return_pct)} vs SPY ${pct(s.spy_return_pct)}.`;
-
-      document.getElementById('total-pnl').textContent = money(s.total_pnl);
-      document.getElementById('total-pnl').className = 'value sm ' + cls(s.total_pnl);
-
-      document.getElementById('realized').textContent = money(s.realized_pnl);
-      document.getElementById('realized').className = 'value sm ' + cls(s.realized_pnl);
-      document.getElementById('open-pnl').textContent = money(s.open_pnl);
-      document.getElementById('open-pnl').className = 'value sm ' + cls(s.open_pnl);
-      document.getElementById('deployed').textContent = money(s.capital_deployed);
-      document.getElementById('closed').textContent = s.closed_trades ?? 0;
-      document.getElementById('winrate').textContent = `${s.win_rate_pct ?? 0}% win rate so far.`;
-      document.getElementById('spy').textContent = pct(s.spy_return_pct);
-      document.getElementById('spy').className = 'value sm ' + cls(s.spy_return_pct);
-
-      const limits = d.limits || {};
-      document.getElementById('limits-list').innerHTML = `
-        <li>Maximum single position: ${money(limits.max_position_usd)}</li>
-        <li>Maximum open positions: ${limits.max_positions ?? '--'}</li>
-        <li>Minimum new-buy reward-to-risk: ${limits.min_rr ?? '--'}:1</li>
-        <li>Daily loss halt: ${limits.max_daily_loss_pct ?? '--'}%</li>
-        <li>Cadence: ${(d.system || {}).cadence || 'NYSE 15m'}</li>
-        <li>Fills today: ${stats.fills_today ?? 0} · candidates ranked: ${stats.candidate_count ?? 0}</li>
-      `;
-
-      const holdings = d.holdings || [];
-      document.getElementById('holdings').innerHTML = holdings.length ? holdings.map(h => `
-        <div class="row">
-          <div class="row-top">
-            <strong>${h.symbol} · ${h.qty} sh</strong>
-            <span class="${chip(h.open_pnl >= 0 ? 'buy' : 'sell')}">${money(h.open_pnl)} (${pct(h.open_pnl_pct)})</span>
-          </div>
-          <div class="metrics" style="margin-top:10px;">
-            <div class="metric"><div class="k">Avg cost</div><div class="v">${money(h.avg_cost)}</div></div>
-            <div class="metric"><div class="k">Last</div><div class="v">${money(h.last)}</div></div>
-            <div class="metric"><div class="k">Stop</div><div class="v">${money(h.stop)}</div></div>
-            <div class="metric"><div class="k">Target</div><div class="v">${money(h.target)}</div></div>
-          </div>
-          <p class="sub" style="margin-top:10px;">${h.thesis || ''}</p>
-        </div>
-      `).join('') : '<div class="row sub">No open holdings — waiting for the next buy fill.</div>';
-
-      document.getElementById('stance').textContent = d.stance || 'No stance yet.';
-      const ld = d.latest_decision || {};
-      document.getElementById('latest-decision-sub').textContent = ld.action ? `Latest decision: ${ld.action} ${ld.symbol || ''} @ ${ld.confidence || '--'}% confidence.` : '';
-
-      const tc = d.latest_candidate || {};
-      document.getElementById('top-cand').textContent = tc.symbol || '--';
-      document.getElementById('top-cand-sub').textContent = tc.catalyst || 'No catalyst summary.';
-
-      const trades = d.recent_trades || [];
-      document.getElementById('trades').innerHTML = trades.length ? trades.map(t => `
-        <div class="row">
-          <div class="row-top">
-            <strong>${t.action} ${t.symbol} · ${t.qty} @ ${money(t.price)}</strong>
-            <span class="${chip((t.action || '').toLowerCase())}">${t.status || t.action}</span>
-          </div>
-          <p class="sub">${t.thesis || t.reason || ''}</p>
-          <div class="sub">${dt(t.timestamp)}${typeof t.realized_pnl === 'number' ? ` · realized ${money(t.realized_pnl)}` : ''}</div>
-        </div>
-      `).join('') : '<div class="row sub">No fills yet.</div>';
-
-      const activity = d.activity || [];
-      document.getElementById('activity').innerHTML = activity.length ? activity.map(a => `
-        <div class="row">
-          <div class="row-top">
-            <strong>${a.headline || 'Activity'}</strong>
-            <span class="${chip(a.status)}">${a.status || a.type}</span>
-          </div>
-          <p class="sub">${a.detail || ''}</p>
-          <div class="sub">${dt(a.timestamp)}</div>
-        </div>
-      `).join('') : '<div class="row sub">No activity yet.</div>';
+    function setText(id, value) {
+      const el = document.getElementById(id);
+      if (el) el.textContent = value;
+    }
+    function setHtml(id, value) {
+      const el = document.getElementById(id);
+      if (el) el.innerHTML = value;
+    }
+    function setClass(id, value) {
+      const el = document.getElementById(id);
+      if (el) el.className = value;
     }
 
-    
-    // Hard refresh every 5 minutes so Vercel/CDN-cached JSON and UI stay fresh.
+    async function load() {
+      const updatedEl = document.getElementById('updated');
+      if (updatedEl) updatedEl.textContent = 'Loading latest update…';
+
+      const res = await fetch('./dashboard-data.json?_=' + Date.now(), { cache: 'no-store' });
+      if (!res.ok) throw new Error('HTTP ' + res.status + ' loading dashboard-data.json');
+      const d = await res.json();
+      const s = d.summary || {};
+      const stats = d.stats || {};
+
+      // Always set the timestamp first and keep it unless fetch itself failed.
+      const when = formatWhen(d.generated_at || s.updated_at);
+      if (updatedEl) updatedEl.textContent = `Updated ${when}`;
+      setText('mode-pill', d.mode || 'SIM PAPER');
+
+      setText('equity', money(s.portfolio_value));
+      setClass('equity', 'value ' + cls(s.total_pnl));
+      setText('equity-badge', (s.total_pnl || 0) >= 0 ? 'Portfolio is up so far' : 'Portfolio is down so far');
+      setText('equity-sub', `Started with ${money(s.starting_cash)} · local simulated paper broker.`);
+
+      setText('total-return', pct(s.total_return_pct));
+      setClass('total-return', 'value sm ' + cls(s.total_return_pct));
+      setText('total-return-sub', s.started_at ? `Since paper start ${formatWhen(s.started_at)}` : 'Since paper start.');
+
+      setText('vs-spy', pct(s.vs_spy_pct));
+      setClass('vs-spy', 'value sm ' + cls(s.vs_spy_pct));
+      setText('vs-spy-sub', `Hermes ${pct(s.total_return_pct)} vs SPY ${pct(s.spy_return_pct)}.`);
+
+      setText('total-pnl', money(s.total_pnl));
+      setClass('total-pnl', 'value sm ' + cls(s.total_pnl));
+
+      setText('realized', money(s.realized_pnl));
+      setClass('realized', 'value sm ' + cls(s.realized_pnl));
+      setText('open-pnl', money(s.open_pnl));
+      setClass('open-pnl', 'value sm ' + cls(s.open_pnl));
+      setText('deployed', money(s.capital_deployed));
+      setText('closed', String(s.closed_trades ?? 0));
+      setText('winrate', `${s.win_rate_pct ?? 0}% win rate so far.`);
+      setText('spy', pct(s.spy_return_pct));
+      setClass('spy', 'value sm ' + cls(s.spy_return_pct));
+
+      const limits = d.limits || {};
+      setHtml('limits-list', `
+        <li>Maximum single position: ${esc(money(limits.max_position_usd))}</li>
+        <li>Maximum open positions: ${esc(limits.max_positions ?? '--')}</li>
+        <li>Minimum new-buy reward-to-risk: ${esc(limits.min_rr ?? '--')}:1</li>
+        <li>Daily loss halt: ${esc(limits.max_daily_loss_pct ?? '--')}%</li>
+        <li>Cadence: ${esc((d.system || {}).cadence || 'NYSE 15m')}</li>
+        <li>Fills today: ${esc(stats.fills_today ?? 0)} · candidates ranked: ${esc(stats.candidate_count ?? 0)}</li>
+      `);
+
+      const holdings = d.holdings || [];
+      setHtml('holdings-list', holdings.length ? holdings.map(h => `
+        <div class="row">
+          <div class="row-top">
+            <strong>${esc(h.symbol)} · ${esc(h.qty)} sh</strong>
+            <span class="${chip(h.open_pnl >= 0 ? 'buy' : 'sell')}">${esc(money(h.open_pnl))} (${esc(pct(h.open_pnl_pct))})</span>
+          </div>
+          <div class="metrics" style="margin-top:10px;">
+            <div class="metric"><div class="k">Avg cost</div><div class="v">${esc(money(h.avg_cost))}</div></div>
+            <div class="metric"><div class="k">Last</div><div class="v">${esc(money(h.last))}</div></div>
+            <div class="metric"><div class="k">Stop</div><div class="v">${esc(money(h.stop))}</div></div>
+            <div class="metric"><div class="k">Target</div><div class="v">${esc(money(h.target))}</div></div>
+          </div>
+          <p class="sub" style="margin-top:10px;">${esc(h.thesis || '')}</p>
+        </div>
+      `).join('') : '<div class="row sub">No open holdings — waiting for the next buy fill.</div>');
+
+      setText('stance-text', d.stance || 'No stance yet.');
+      const ld = d.latest_decision || {};
+      setText('latest-decision-sub', ld.action
+        ? `Latest decision: ${ld.action} ${ld.symbol || ''} @ ${ld.confidence || '--'}% confidence.`
+        : '');
+
+      const tc = d.latest_candidate || {};
+      setText('top-cand', tc.symbol || '--');
+      setText('top-cand-sub', tc.catalyst || 'No catalyst summary.');
+
+      const trades = d.recent_trades || [];
+      setHtml('trades-list', trades.length ? trades.map(t => `
+        <div class="row">
+          <div class="row-top">
+            <strong>${esc(t.action)} ${esc(t.symbol)} · ${esc(t.qty)} @ ${esc(money(t.price))}</strong>
+            <span class="${chip((t.action || '').toLowerCase())}">${esc(t.status || t.action)}</span>
+          </div>
+          <p class="sub">${esc(t.thesis || t.reason || '')}</p>
+          <div class="sub">${esc(formatWhen(t.timestamp))}${typeof t.realized_pnl === 'number' ? ` · realized ${esc(money(t.realized_pnl))}` : ''}</div>
+        </div>
+      `).join('') : '<div class="row sub">No fills yet.</div>');
+
+      const activity = d.activity || [];
+      setHtml('activity-list', activity.length ? activity.map(a => `
+        <div class="row">
+          <div class="row-top">
+            <strong>${esc(a.headline || 'Activity')}</strong>
+            <span class="${chip(a.status)}">${esc(a.status || a.type)}</span>
+          </div>
+          <p class="sub">${esc(a.detail || '')}</p>
+          <div class="sub">${esc(formatWhen(a.timestamp))}</div>
+        </div>
+      `).join('') : '<div class="row sub">No activity yet.</div>');
+
+      // Re-affirm timestamp at end so partial DOM issues cannot leave a failure message.
+      if (updatedEl) updatedEl.textContent = `Updated ${when}`;
+      return when;
+    }
+
+    // Hard refresh every 5 minutes.
     const HARD_REFRESH_MS = 5 * 60 * 1000;
-    setInterval(() => {
-      location.reload();
-    }, HARD_REFRESH_MS);
+    setInterval(() => location.reload(), HARD_REFRESH_MS);
 
     load().catch(err => {
-      document.getElementById('updated').textContent = 'Dashboard data failed to load';
       console.error(err);
+      const el = document.getElementById('updated');
+      // Only show failure if we never got a successful timestamp this session.
+      if (el && !String(el.textContent || '').startsWith('Updated ')) {
+        el.textContent = 'Update time unavailable — retrying…';
+      }
+      // One automatic retry helps transient CDN glitches.
+      setTimeout(() => {
+        load().catch((err2) => {
+          console.error(err2);
+          const el2 = document.getElementById('updated');
+          if (el2 && !String(el2.textContent || '').startsWith('Updated ')) {
+            el2.textContent = 'Dashboard data failed to load';
+          }
+        });
+      }, 1500);
     });
   </script>
 </body>
