@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="refresh" content="300" />
   <title>Hermes Auto-Trader</title>
   <style>
     :root {
@@ -293,6 +294,13 @@
         </div>
       `).join('') : '<div class="row sub">No activity yet.</div>';
     }
+
+    
+    // Hard refresh every 5 minutes so Vercel/CDN-cached JSON and UI stay fresh.
+    const HARD_REFRESH_MS = 5 * 60 * 1000;
+    setInterval(() => {
+      location.reload();
+    }, HARD_REFRESH_MS);
 
     load().catch(err => {
       document.getElementById('updated').textContent = 'Dashboard data failed to load';
