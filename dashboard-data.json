@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-08-06T17:30:53.703303+00:00",
+  "generated_at": "2026-08-06T17:46:08.601445+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 996.45,
+    "portfolio_value": 996.74,
     "starting_cash": 1000.0,
-    "total_return_pct": -0.35,
-    "total_pnl": -3.55,
-    "realized_pnl": -2.37,
-    "open_pnl": -1.18,
-    "capital_deployed": 598.78,
-    "cash": 397.67,
-    "closed_trades": 3,
-    "win_rate_pct": 33.33,
+    "total_return_pct": -0.33,
+    "total_pnl": -3.26,
+    "realized_pnl": -3.31,
+    "open_pnl": 0.06,
+    "capital_deployed": 400.04,
+    "cash": 596.7,
+    "closed_trades": 4,
+    "win_rate_pct": 25.0,
     "vs_spy_pct": -0.17,
-    "spy_return_pct": -0.18,
+    "spy_return_pct": -0.16,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-06T17:30:55.050455+00:00"
+    "updated_at": "2026-08-06T17:46:11.296526+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.18,
-    "price": 768.0399780273438,
+    "return_pct": -0.16,
+    "price": 768.1699829101562,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 10,
-    "consensus_count_today": 28,
-    "validated_count_today": 26,
+    "consensus_count_today": 29,
+    "validated_count_today": 27,
     "blocked_count_today": 2,
-    "fills_today": 11,
-    "simulated_orders_today": 26,
+    "fills_today": 12,
+    "simulated_orders_today": 27,
     "top_symbol_today": "LRCX"
   },
   "holdings": [
@@ -38,34 +38,22 @@
       "symbol": "BAC",
       "qty": 3.1713,
       "avg_cost": 63.065,
-      "last": 62.75,
-      "market_value": 199.0,
-      "open_pnl": -1.0,
-      "open_pnl_pct": -0.5,
+      "last": 62.92499923706055,
+      "market_value": 199.55,
+      "open_pnl": -0.44,
+      "open_pnl_pct": -0.22,
       "stop": 61.49,
       "target": 66.22,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (beat): Bank of America Corp DE Has $161.42 Million Stock Holdings in Edison International $EIX - MarketBeat"
     },
     {
-      "symbol": "LRCX",
-      "qty": 0.6463,
-      "avg_cost": 309.41,
-      "last": 308.9849853515625,
-      "market_value": 199.7,
-      "open_pnl": -0.27,
-      "open_pnl_pct": -0.14,
-      "stop": 301.67,
-      "target": 324.88,
-      "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool"
-    },
-    {
       "symbol": "UNH",
       "qty": 0.4953,
       "avg_cost": 403.775,
-      "last": 403.9549865722656,
-      "market_value": 200.08,
-      "open_pnl": 0.09,
-      "open_pnl_pct": 0.04,
+      "last": 404.7900085449219,
+      "market_value": 200.49,
+      "open_pnl": 0.5,
+      "open_pnl_pct": 0.25,
       "stop": 393.68,
       "target": 423.96,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (ai, catalyst): UNH Stock Becomes Dow\u2019s Biggest Driver Back To 50,000 \u2014 Will Trump Tailwinds Spark Another Leg Higher? - Stocktwits"
@@ -74,15 +62,15 @@
   "latest_candidate": {
     "symbol": "LRCX",
     "name": "Lam Research",
-    "price": 309.1400146484375,
-    "volume": 3703052.0,
-    "avg_volume": 12904575.2,
-    "percent_change": 0.5594955258524338,
+    "price": 308.19500732421875,
+    "volume": 3804482.0,
+    "avg_volume": 12914718.2,
+    "percent_change": 0.2520961104136292,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 13,
     "liquidity_score": 81.11,
-    "rank_score": 72.11,
+    "rank_score": 71.87,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
     "top_headlines": [
@@ -130,19 +118,35 @@
   },
   "latest_decision": {
     "model": "grok-beta",
-    "action": "HOLD",
-    "symbol": "BAC",
-    "confidence": 80,
-    "entry_price": 62.7599983215332,
-    "stop_loss": 62.13239833831787,
-    "take_profit": 63.387598304748536,
-    "qty": 0,
-    "thesis": "No actionable edge after portfolio checks",
-    "reason_code": "hold",
-    "timestamp": "2026-08-06T17:30:51.646573+00:00"
+    "action": "SELL",
+    "symbol": "LRCX",
+    "confidence": 78,
+    "entry_price": 307.9549865722656,
+    "stop_loss": 301.67,
+    "take_profit": 324.88,
+    "qty": 0.6463,
+    "thesis": "Rotate out of LRCX to free risk budget for stronger setup XOM",
+    "reason_code": "rotation",
+    "timestamp": "2026-08-06T17:46:06.352491+00:00"
   },
-  "stance": "Holding / no new risk. No actionable edge after portfolio checks",
+  "stance": "Exiting LRCX. Rotate out of LRCX to free risk budget for stronger setup XOM",
   "activity": [
+    {
+      "type": "fill",
+      "symbol": "LRCX",
+      "status": "filled_paper",
+      "headline": "SELL LRCX @ $307.95",
+      "detail": "Rotate out of LRCX to free risk budget for stronger setup XOM",
+      "timestamp": "2026-08-06T17:46:06.354489+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "LRCX",
+      "status": "validated",
+      "headline": "SELL LRCX \u2014 validated",
+      "detail": "Rotate out of LRCX to free risk budget for stronger setup XOM",
+      "timestamp": "2026-08-06T17:46:06.352491+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "BAC",
@@ -222,25 +226,21 @@
       "headline": "HOLD LRCX \u2014 hold",
       "detail": "No actionable edge after portfolio checks",
       "timestamp": "2026-08-06T16:16:22.567382+00:00"
-    },
-    {
-      "type": "fill",
-      "symbol": "PANW",
-      "status": "filled_paper",
-      "headline": "BUY PANW @ $355.72",
-      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (catalyst, launch): China launches cybersecurity review into Palo Alto Networks products - Reuters",
-      "timestamp": "2026-08-06T16:00:50.163941+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "PANW",
-      "status": "validated",
-      "headline": "BUY PANW \u2014 validated",
-      "detail": "Bullish setup from ranked candidate list: Headline-driven setup (catalyst, launch): China launches cybersecurity review into Palo Alto Networks products - Reuters",
-      "timestamp": "2026-08-06T16:00:50.162979+00:00"
     }
   ],
   "recent_trades": [
+    {
+      "timestamp": "2026-08-06T17:46:06.354489+00:00",
+      "action": "SELL",
+      "symbol": "LRCX",
+      "qty": 0.6463,
+      "price": 307.9549865722656,
+      "notional": 199.03,
+      "realized_pnl": -0.94,
+      "reason": "rotation",
+      "thesis": "Rotate out of LRCX to free risk budget for stronger setup XOM",
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-08-06T17:16:23.562599+00:00",
       "action": "BUY",
@@ -348,21 +348,22 @@
       "reason": "demo_take_profit_sample",
       "thesis": "Demo exit so dashboard shows a real SELL fill and realized P/L",
       "status": "FILLED_PAPER"
-    },
-    {
-      "timestamp": "2026-08-06T15:49:41.748264+00:00",
-      "action": "BUY",
-      "symbol": "ANET",
-      "qty": 1.0357,
-      "price": 193.10000610351562,
-      "notional": 199.99,
-      "realized_pnl": null,
-      "reason": null,
-      "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (ai, catalyst, demand): Arista Networks Stock Surges as Earnings Prove AI Demand Is Real - Barron's",
-      "status": "FILLED_PAPER"
     }
   ],
   "closed_trades": [
+    {
+      "timestamp": "2026-08-06T17:46:06.353492+00:00",
+      "symbol": "LRCX",
+      "qty": 0.6463,
+      "avg_cost": 309.41,
+      "exit_price": 307.9549865722656,
+      "proceeds": 199.03,
+      "realized_pnl": -0.94,
+      "reason": "rotation",
+      "thesis": "Rotate out of LRCX to free risk budget for stronger setup XOM",
+      "opened_at": "2026-08-06T16:45:57.128884+00:00",
+      "hold_seconds": 3609
+    },
     {
       "timestamp": "2026-08-06T17:00:57.767105+00:00",
       "symbol": "PANW",
@@ -420,15 +421,15 @@
     {
       "symbol": "LRCX",
       "name": "Lam Research",
-      "price": 309.1400146484375,
-      "volume": 3703052.0,
-      "avg_volume": 12904575.2,
-      "percent_change": 0.5594955258524338,
+      "price": 308.19500732421875,
+      "volume": 3804482.0,
+      "avg_volume": 12914718.2,
+      "percent_change": 0.2520961104136292,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
       "liquidity_score": 81.11,
-      "rank_score": 72.11,
+      "rank_score": 71.87,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (growth): Accenture vs. Lam Research: A Comparison of Revenue Growth and Stability - The Motley Fool",
       "top_headlines": [
@@ -475,17 +476,71 @@
       ]
     },
     {
-      "symbol": "UNH",
-      "name": "UnitedHealth",
-      "price": 403.8999938964844,
-      "volume": 1909369.0,
-      "avg_volume": 4289416.9,
-      "percent_change": -2.1441565362848274,
+      "symbol": "XOM",
+      "name": "Exxon Mobil",
+      "price": 154.1699981689453,
+      "volume": 5524950.0,
+      "avg_volume": 13180735.0,
+      "percent_change": 1.6751257695308066,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 76.32,
-      "rank_score": 52.66,
+      "liquidity_score": 81.2,
+      "rank_score": 53.02,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst): Analysts Offer Insights on Energy Companies: Exxon Mobil (XOM) and Marathon Petroleum (MPC) - The Globe and Mail",
+      "top_headlines": [
+        "Analysts Offer Insights on Energy Companies: Exxon Mobil (XOM) and Marathon Petroleum (MPC) - The Globe and Mail",
+        "ExxonMobil Corporation $XOM Shares Sold by NewEdge Advisors LLC - MarketBeat",
+        "ExxonMobil (XOM) Stock Hides A $17b Free Cash Flow Surge - simplywall.st"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Analysts Offer Insights on Energy Companies: Exxon Mobil (XOM) and Marathon Petroleum (MPC) - The Globe and Mail",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "ExxonMobil Corporation $XOM Shares Sold by NewEdge Advisors LLC - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "ExxonMobil Holdings (XOM) Could Be 9% Undervalued On Strong Q2 Earnings - Yahoo Finance",
+          "keywords": [
+            "catalyst"
+          ]
+        },
+        {
+          "title": "ExxonMobil Corporation (NYSE:XOM) Receives Consensus Recommendation of \"Hold\" from Analysts - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Analysts Offer Insights on Energy Companies: Solaris Energy Infrastructure (SEI), Energy Transfer (ET) and Exxon Mobil (XOM) - The Globe and Mail",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "UNH",
+      "name": "UnitedHealth",
+      "price": 404.8900146484375,
+      "volume": 1984006.0,
+      "avg_volume": 4296880.6,
+      "percent_change": -1.904296875,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 8,
+      "liquidity_score": 76.33,
+      "rank_score": 52.47,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): UNH Stock Becomes Dow\u2019s Biggest Driver Back To 50,000 \u2014 Will Trump Tailwinds Spark Another Leg Higher? - Stocktwits",
       "top_headlines": [
@@ -529,17 +584,67 @@
       ]
     },
     {
+      "symbol": "WMT",
+      "name": "Walmart",
+      "price": 111.44000244140625,
+      "volume": 11054259.0,
+      "avg_volume": 22333915.9,
+      "percent_change": -0.8011339912967581,
+      "exchange": "",
+      "sentiment": "bearish",
+      "catalyst_score": -7,
+      "liquidity_score": 83.49,
+      "rank_score": 47.16,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (catalyst): Walmart Earnings: Bull Put Spread Trade - Barchart.com",
+      "top_headlines": [
+        "RBC Capital reiterates Walmart stock Outperform rating at $137 - Investing.com",
+        "Walmart Stock And 2 Consumer Staples Picks For Rising Food And Fuel Costs - simplywall.st",
+        "Walmart Earnings: Bull Put Spread Trade - Barchart.com"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Walmart Earnings: Bull Put Spread Trade - Barchart.com",
+          "keywords": [
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Eyes on the skies: Walmart expands drone partnership with Alphabet's Wing to Florida (WMT:NASDAQ) - Seeking Alpha",
+          "keywords": [
+            "catalyst",
+            "partnership"
+          ]
+        },
+        {
+          "title": "Walmart Shares Slip After Oppenheimer Downgrades Stock Ahead of Earnings - Yahoo Finance",
+          "keywords": [
+            "catalyst",
+            "downgrade",
+            "downgrades"
+          ]
+        },
+        {
+          "title": "Walmart Stock Slides After Analyst Downgrade: Time To Buy Or Stay Away? - Benzinga",
+          "keywords": [
+            "catalyst",
+            "downgrade"
+          ]
+        }
+      ]
+    },
+    {
       "symbol": "PANW",
       "name": "Palo Alto Networks",
-      "price": 357.1199951171875,
-      "volume": 3109884.0,
-      "avg_volume": 5929518.4,
-      "percent_change": -1.5276039510779649,
+      "price": 356.57000732421875,
+      "volume": 3197602.0,
+      "avg_volume": 5938290.2,
+      "percent_change": -1.6792577831562256,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
-      "liquidity_score": 77.73,
-      "rank_score": 46.88,
+      "liquidity_score": 77.74,
+      "rank_score": 47.0,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, launch): China launches cybersecurity review into Palo Alto Networks products - Reuters",
       "top_headlines": [
@@ -573,99 +678,6 @@
           "keywords": [
             "ai",
             "catalyst"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "META",
-      "name": "Meta",
-      "price": 587.8900146484375,
-      "volume": 7482514.0,
-      "avg_volume": 18981631.4,
-      "percent_change": -0.14946496146544913,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 6,
-      "liquidity_score": 82.78,
-      "rank_score": 44.04,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): After Earnings, Is Meta Stock a Buy, a Sell, or Fairly Valued? - Morningstar",
-      "top_headlines": [
-        "After Earnings, Is Meta Stock a Buy, a Sell, or Fairly Valued? - Morningstar",
-        "Mark Zuckerberg's Net Worth Dropped $18 Billion in a Single Day as Meta Stock Extended a Losing Streak. Is the Sell-Off Overdone? - The Motley Fool",
-        "Mark Zuckerberg sends a strong message to Meta stock investors - thestreet.com"
-      ],
-      "matched_headlines": [
-        {
-          "title": "After Earnings, Is Meta Stock a Buy, a Sell, or Fairly Valued? - Morningstar",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Mark Zuckerberg's Net Worth Dropped $18 Billion in a Single Day as Meta Stock Extended a Losing Streak. Is the Sell-Off Overdone? - The Motley Fool",
-          "keywords": [
-            "drop"
-          ]
-        },
-        {
-          "title": "70% Gains From Here? Wall Street Pros Expect Exactly That From Meta in 12 Months - 24/7 Wall St.",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Is Meta Platforms Stock a Smart Buy Ahead of Q1 2026 Earnings? Unpacking AI Growth and Investment Potential - TradingKey",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "growth"
-          ]
-        },
-        {
-          "title": "Meta becomes latest firm to say its AI hacked another company - BBC",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "ANET",
-      "name": "Arista Networks",
-      "price": 192.85000610351562,
-      "volume": 4349686.0,
-      "avg_volume": 9023978.6,
-      "percent_change": -2.2603981097073773,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 6,
-      "liquidity_score": 79.55,
-      "rank_score": 40.74,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst, demand): Arista Networks Stock Surges as Earnings Prove AI Demand Is Real - Barron's",
-      "top_headlines": [
-        "Arista Networks Stock Climbs 25% On A 5-Day Winning Streak - Trefis",
-        "Arista Networks Stock Surges as Earnings Prove AI Demand Is Real - Barron's",
-        "Is Arista Networks (ANET) Outperforming Other Computer and Technology Stocks This Year? - Yahoo Finance"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Arista Networks Stock Surges as Earnings Prove AI Demand Is Real - Barron's",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "demand"
-          ]
-        },
-        {
-          "title": "Mirador Capital Partners LP Invests $3.60 Million in Arista Networks, Inc. $ANET - MarketBeat",
-          "keywords": [
-            "beat"
           ]
         }
       ]
