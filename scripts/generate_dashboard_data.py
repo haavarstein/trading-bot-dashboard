@@ -304,6 +304,140 @@ def build_thinking(holdings, latest_decision, latest_candidate, snap, now, cfg):
 
 
 
+def build_equity_curve(fills, snap, starting_cash: float) -> dict:
+    """
+    Build paper equity curve from fills + current snapshot.
+    Also appends a durable point to data/equity_curve.jsonl each generate.
+    """
+    started = (snap or {}).get("started_at")
+    points = []
+    cash = float(starting_cash)
+    positions: dict[str, dict] = {}  # sym -> {qty, last}
+
+    def mark_equity():
+        eq = cash
+        for pos in positions.values():
+            eq += float(pos.get("qty") or 0) * float(pos.get("last") or 0)
+        return round(eq, 2)
+
+    if started:
+        points.append({
+            "t": started,
+            "equity": round(float(starting_cash), 2),
+            "cash": round(float(starting_cash), 2),
+            "event": "start",
+        })
+
+    ordered = sorted(
+        [f for f in fills if f.get("action") in ("BUY", "SELL") and f.get("symbol") not in ("AAA",)],
+        key=lambda r: r.get("timestamp") or "",
+    )
+    for f in ordered:
+        sym = f.get("symbol")
+        action = f.get("action")
+        ts = f.get("timestamp")
+        try:
+            qty = float(f.get("qty") or 0)
+            px = float(f.get("price") or 0)
+        except Exception:
+            continue
+        if not sym or not ts or qty <= 0 or px <= 0:
+            continue
+
+        if f.get("cash_after") is not None:
+            try:
+                cash = float(f.get("cash_after"))
+            except Exception:
+                pass
+        else:
+            if action == "BUY":
+                cash -= qty * px
+            else:
+                cash += qty * px
+
+        pos = positions.get(sym) or {"qty": 0.0, "last": px}
+        if action == "BUY":
+            pos["qty"] = float(pos.get("qty") or 0) + qty
+            pos["last"] = px
+        else:
+            pos["qty"] = max(0.0, float(pos.get("qty") or 0) - qty)
+            pos["last"] = px
+            if pos["qty"] <= 1e-8:
+                positions.pop(sym, None)
+                pos = None
+        if pos is not None:
+            positions[sym] = pos
+
+        # refresh last print for other names from this fill only; equity uses last known
+        points.append({
+            "t": ts,
+            "equity": mark_equity(),
+            "cash": round(cash, 2),
+            "event": f"{action} {sym}",
+        })
+
+    # current snapshot point (true M2M)
+    now_eq = snap.get("equity")
+    now_ts = snap.get("updated_at") or datetime.now(timezone.utc).isoformat()
+    if now_eq is not None:
+        cur = {
+            "t": now_ts,
+            "equity": round(float(now_eq), 2),
+            "cash": round(float(snap.get("cash") or cash), 2),
+            "event": "mark",
+        }
+        if not points or points[-1].get("t") != cur["t"]:
+            points.append(cur)
+
+        # durable local history (gitignored via data/*.jsonl)
+        curve_path = DATA / "equity_curve.jsonl"
+        try:
+            prev = read_jsonl(curve_path)
+            # dedupe on minute bucket
+            bucket = str(cur["t"])[:16]
+            if not prev or str(prev[-1].get("t", ""))[:16] != bucket:
+                with curve_path.open("a", encoding="utf-8") as fh:
+                    fh.write(json.dumps(cur) + "
+")
+            # merge stored marks that might fill gaps between fills
+            stored = read_jsonl(curve_path)
+            by_t = {p["t"]: p for p in points if p.get("t")}
+            for s in stored:
+                if s.get("t") and s.get("equity") is not None:
+                    by_t[s["t"]] = {
+                        "t": s["t"],
+                        "equity": round(float(s["equity"]), 2),
+                        "cash": s.get("cash"),
+                        "event": s.get("event") or "mark",
+                    }
+            points = [by_t[k] for k in sorted(by_t.keys())]
+        except Exception:
+            pass
+
+    # downsample if huge
+    if len(points) > 400:
+        step = max(1, len(points) // 400)
+        head = points[::step]
+        if head[-1] is not points[-1]:
+            head.append(points[-1])
+        points = head
+
+    start_eq = float(starting_cash)
+    end_eq = float(points[-1]["equity"]) if points else start_eq
+    change = round(end_eq - start_eq, 2)
+    change_pct = round((change / start_eq) * 100.0, 2) if start_eq else 0.0
+    return {
+        "currency": "USD",
+        "start_equity": start_eq,
+        "latest_equity": end_eq,
+        "change": change,
+        "change_pct": change_pct,
+        "points": points,
+        "source": "local_paper_fills_and_marks",
+    }
+
+
+
 def main():
     now = datetime.now(timezone.utc)
     today = now.date()
@@ -446,6 +580,7 @@ def main():
     closed_recent = closed_results[:20]
 
     thinking = build_thinking(holdings, latest_decision, latest_candidate, snap, now, cfg)
+    equity_curve = build_equity_curve(fills, snap, starting)
     stance = thinking.get("headline") or "Patient — waiting for a clean ranked setup."
     if latest_decision and latest_decision.get("thesis") and latest_decision.get("action") in ("BUY", "SELL"):
         # keep short stance string for older consumers
@@ -537,6 +672,7 @@ def main():
             "consensus_events": len(consensus),
             "note": "Paper sample is provisional until large enough for durable edge review.",
         },
+        "equity_curve": equity_curve,
         "system": {
             "broker": "local_paper_broker",
             "ibkr_mcp": "paused",

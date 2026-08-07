@@ -626,6 +626,117 @@
       font-size: 13px;
     }
 
+
+    /* Equity curve chart (SPCX-inspired) */
+    .chart-shell {
+      margin: 0 0 28px;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: linear-gradient(165deg, #1c1917 0%, #292524 48%, #0c0a09 100%);
+      box-shadow: var(--shadow);
+      padding: 18px 18px 14px;
+      color: #fafaf9;
+    }
+    .chart-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .chart-title-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .chart-title {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 720;
+      letter-spacing: -0.02em;
+      color: #fafaf9;
+    }
+    .chart-live {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: #d6d3d1;
+      text-transform: uppercase;
+    }
+    .chart-live .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #22c55e;
+      box-shadow: 0 0 0 0 rgba(34,197,94,0.55);
+      animation: pulse-live 1.6s infinite;
+    }
+    @keyframes pulse-live {
+      0% { box-shadow: 0 0 0 0 rgba(34,197,94,0.45); }
+      70% { box-shadow: 0 0 0 8px rgba(34,197,94,0); }
+      100% { box-shadow: 0 0 0 0 rgba(34,197,94,0); }
+    }
+    .chart-ranges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .chart-range-btn {
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.04);
+      color: #d6d3d1;
+      border-radius: 10px;
+      padding: 6px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .chart-range-btn:hover { background: rgba(255,255,255,0.08); color: #fff; }
+    .chart-range-btn.active {
+      border-color: rgba(248,113,113,0.7);
+      background: rgba(248,113,113,0.14);
+      color: #fecaca;
+    }
+    .chart-canvas-wrap {
+      position: relative;
+      width: 100%;
+      height: 280px;
+      border-radius: 16px;
+      overflow: hidden;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.03), transparent 40%),
+        radial-gradient(80% 90% at 50% 120%, rgba(248,113,113,0.12), transparent 55%);
+    }
+    .chart-canvas-wrap svg { width: 100%; height: 100%; display: block; }
+    .chart-summary {
+      margin-top: 10px;
+      color: #a8a29e;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .chart-summary .up { color: #4ade80; font-weight: 700; }
+    .chart-summary .down { color: #f87171; font-weight: 700; }
+    .chart-empty {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #a8a29e;
+      font-size: 14px;
+    }
+    @media (max-width: 720px) {
+      .chart-canvas-wrap { height: 220px; }
+    }
+
     .footer {
       margin-top: 34px;
       text-align: center;
@@ -734,6 +845,7 @@
 
     <nav class="nav">
       <a href="#performance">Performance</a>
+      <a href="#equity-chart">Chart</a>
       <a href="#edge">How it works</a>
       <a href="#holdings-section">Holdings</a>
       <a href="#stance-section">Thinking</a>
@@ -794,6 +906,31 @@
           <div class="value xs" id="spy">--</div>
           <div class="hint">Buy-and-hold benchmark from paper start.</div>
         </div>
+      </div>
+    </section>
+
+    <section id="equity-chart" class="section">
+      <div class="chart-shell">
+        <div class="chart-head">
+          <div class="chart-title-row">
+            <h3 class="chart-title">Hermes · Portfolio Value</h3>
+            <span class="chart-live"><span class="dot"></span> PAPER</span>
+          </div>
+          <div class="chart-ranges" id="chart-ranges">
+            <button type="button" class="chart-range-btn" data-range="1D">1D</button>
+            <button type="button" class="chart-range-btn" data-range="1W">1W</button>
+            <button type="button" class="chart-range-btn" data-range="1M">1M</button>
+            <button type="button" class="chart-range-btn active" data-range="3M">3M</button>
+            <button type="button" class="chart-range-btn" data-range="6M">6M</button>
+            <button type="button" class="chart-range-btn" data-range="1Y">1Y</button>
+            <button type="button" class="chart-range-btn" data-range="ALL">ALL</button>
+          </div>
+        </div>
+        <div class="chart-canvas-wrap" id="chart-canvas-wrap">
+          <div class="chart-empty" id="chart-empty">Loading equity curve…</div>
+          <svg id="equity-svg" viewBox="0 0 1000 280" preserveAspectRatio="none" aria-label="Portfolio equity chart"></svg>
+        </div>
+        <div class="chart-summary" id="chart-summary">Portfolio equity curve from local paper fills and marks.</div>
       </div>
     </section>
 
@@ -1021,6 +1158,155 @@
     let reasoningVisible = 3;
     let reasoningCards = [];
 
+    
+    let equityCurvePoints = [];
+    let activeChartRange = 'ALL';
+
+    const RANGE_MS = {
+      '1D': 1 * 86400000,
+      '1W': 7 * 86400000,
+      '1M': 30 * 86400000,
+      '3M': 91 * 86400000,
+      '6M': 182 * 86400000,
+      '1Y': 365 * 86400000,
+      'ALL': Infinity,
+    };
+
+    function filterCurve(points, rangeKey) {
+      if (!points.length) return [];
+      const ms = RANGE_MS[rangeKey] ?? Infinity;
+      if (!Number.isFinite(ms)) return points.slice();
+      const end = new Date(points[points.length - 1].t).getTime();
+      const start = end - ms;
+      const filtered = points.filter(p => {
+        const ts = new Date(p.t).getTime();
+        return Number.isFinite(ts) && ts >= start;
+      });
+      return filtered.length >= 2 ? filtered : points.slice();
+    }
+
+    function renderEquityChart(rangeKey) {
+      activeChartRange = rangeKey || activeChartRange || 'ALL';
+      const svg = document.getElementById('equity-svg');
+      const empty = document.getElementById('chart-empty');
+      const summary = document.getElementById('chart-summary');
+      const wrap = document.getElementById('chart-canvas-wrap');
+      if (!svg) return;
+
+      document.querySelectorAll('.chart-range-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-range') === activeChartRange);
+      });
+
+      const pts = filterCurve(equityCurvePoints, activeChartRange)
+        .map(p => ({ t: new Date(p.t).getTime(), equity: Number(p.equity), raw: p }))
+        .filter(p => Number.isFinite(p.t) && Number.isFinite(p.equity));
+
+      if (pts.length < 2) {
+        svg.innerHTML = '';
+        if (empty) {
+          empty.style.display = 'flex';
+          empty.textContent = pts.length ? 'Need more points for a curve — next sessions will fill this in.' : 'No equity history yet.';
+        }
+        if (summary) summary.textContent = 'Portfolio equity curve from local paper fills and marks.';
+        return;
+      }
+      if (empty) empty.style.display = 'none';
+
+      const W = 1000, H = 280;
+      const padL = 54, padR = 18, padT = 18, padB = 28;
+      const xs = pts.map(p => p.t);
+      const ys = pts.map(p => p.equity);
+      const minX = Math.min(...xs), maxX = Math.max(...xs);
+      const minY = Math.min(...ys), maxY = Math.max(...ys);
+      const yPad = Math.max((maxY - minY) * 0.12, Math.abs(maxY) * 0.004, 0.5);
+      const y0 = minY - yPad, y1 = maxY + yPad;
+      const xSpan = Math.max(maxX - minX, 1);
+      const ySpan = Math.max(y1 - y0, 1);
+      const xMap = (t) => padL + ((t - minX) / xSpan) * (W - padL - padR);
+      const yMap = (v) => padT + (1 - (v - y0) / ySpan) * (H - padT - padB);
+
+      const startEq = pts[0].equity;
+      const endEq = pts[pts.length - 1].equity;
+      const delta = endEq - startEq;
+      const deltaPct = startEq ? (delta / startEq) * 100 : 0;
+      const up = delta >= 0;
+      const stroke = up ? '#4ade80' : '#f87171';
+      const fillTop = up ? 'rgba(74,222,128,0.28)' : 'rgba(248,113,113,0.30)';
+
+      // path
+      let dLine = '';
+      pts.forEach((p, i) => {
+        const x = xMap(p.t), y = yMap(p.equity);
+        dLine += (i === 0 ? `M ${x} ${y}` : ` L ${x} ${y}`);
+      });
+      const lastX = xMap(pts[pts.length - 1].t);
+      const firstX = xMap(pts[0].t);
+      const baseY = H - padB;
+      const dArea = `${dLine} L ${lastX} ${baseY} L ${firstX} ${baseY} Z`;
+
+      // y ticks
+      const yTicks = 4;
+      let grid = '';
+      for (let i = 0; i <= yTicks; i++) {
+        const v = y0 + (ySpan * i) / yTicks;
+        const y = yMap(v);
+        grid += `<line x1="${padL}" y1="${y}" x2="${W - padR}" y2="${y}" stroke="rgba(255,255,255,0.06)" stroke-width="1" />`;
+        grid += `<text x="${padL - 8}" y="${y + 4}" fill="#a8a29e" font-size="11" text-anchor="end">$${v.toFixed(0)}</text>`;
+      }
+
+      // x ticks
+      const xTicks = 5;
+      let xLabels = '';
+      for (let i = 0; i < xTicks; i++) {
+        const t = minX + (xSpan * i) / Math.max(xTicks - 1, 1);
+        const x = xMap(t);
+        const label = new Date(t).toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
+        xLabels += `<text x="${x}" y="${H - 8}" fill="#a8a29e" font-size="11" text-anchor="middle">${label}</text>`;
+      }
+
+      // baseline at start equity
+      const base = yMap(startEq);
+      const baseLine = `<line x1="${padL}" y1="${base}" x2="${W - padR}" y2="${base}" stroke="rgba(255,255,255,0.22)" stroke-dasharray="4 6" stroke-width="1.2" />`;
+
+      const gid = 'eqGrad';
+      svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+      svg.innerHTML = `
+        <defs>
+          <linearGradient id="${gid}" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="${stroke}" stop-opacity="0.34"/>
+            <stop offset="100%" stop-color="${stroke}" stop-opacity="0.02"/>
+          </linearGradient>
+        </defs>
+        ${grid}
+        ${baseLine}
+        <path d="${dArea}" fill="url(#${gid})"></path>
+        <path d="${dLine}" fill="none" stroke="${stroke}" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"></path>
+        <circle cx="${lastX}" cy="${yMap(endEq)}" r="4.2" fill="${stroke}" stroke="#0c0a09" stroke-width="1.6">
+          <animate attributeName="r" values="4.2;9" dur="1.6s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.9;0" dur="1.6s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="${lastX}" cy="${yMap(endEq)}" r="3.6" fill="${stroke}" stroke="#0c0a09" stroke-width="1.5"></circle>
+        ${xLabels}
+      `;
+
+      if (summary) {
+        const cls = up ? 'up' : 'down';
+        const dir = up ? 'up' : 'down';
+        const sign = delta >= 0 ? '+' : '';
+        summary.innerHTML =
+          `Hermes portfolio value: <strong style="color:#fafaf9">$${endEq.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2})}</strong> currently, ` +
+          `<span class="${cls}">${dir} $${Math.abs(delta).toFixed(2)} (${sign}${deltaPct.toFixed(2)}%)</span> over ${activeChartRange}. ` +
+          `Local paper curve · ${pts.length} points.`;
+      }
+    }
+
+    document.getElementById('chart-ranges')?.addEventListener('click', (ev) => {
+      const btn = ev.target.closest('.chart-range-btn');
+      if (!btn) return;
+      renderEquityChart(btn.getAttribute('data-range'));
+    });
+
+
     async function load() {
       const updatedEl = document.getElementById('updated');
       if (updatedEl) updatedEl.textContent = 'Loading latest update…';
@@ -1034,6 +1320,13 @@
       const when = formatWhen(d.generated_at || s.updated_at);
       if (updatedEl) updatedEl.textContent = `Updated ${when}`;
       setText('mode-pill', d.mode || 'SIM PAPER');
+
+      equityCurvePoints = Array.isArray((d.equity_curve || {}).points) ? d.equity_curve.points : [];
+      // default ALL while history is short; fall back to active
+      const defaultRange = equityCurvePoints.length < 8 ? 'ALL' : (activeChartRange || 'ALL');
+      renderEquityChart(defaultRange);
+
+
 
       // Farzad pattern: big portfolio number stays white; badge/returns carry the color.
       setText('equity', money(s.portfolio_value));

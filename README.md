@@ -79,6 +79,7 @@ From `config/autonomy_config.json` (source of truth):
 Public page sections:
 
 - Portfolio value / total return / vs S&P 500 / P/L
+- Portfolio equity chart (local paper curve, SPCX-style ranges)
 - Realized P/L, open P/L, capital deployed, closed trades, SPY
 - How Hermes is trying to win (edge + hard limits + learning sample)
 - Current holdings with stop/target
