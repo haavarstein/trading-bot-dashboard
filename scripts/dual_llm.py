@@ -120,11 +120,15 @@ bullets (array of 2-4 short strings).
 Hard rules:
 - Prefer liquid catalyst setups from the candidate list.
 - Max new buy notional about ${max_pos}.
-- Require stop and target with reward:risk >= {min_rr}.
-- Max open names about {max_names}. If full, HOLD or SELL (rotation/stop/target) only.
-- SELL only a symbol currently held, unless no positions.
-- If no clean edge, HOLD.
+- Require stop and target with reward:risk >= {min_rr} on BUY/SELL plans.
+- Max open names about {max_names}.
+- Book-full policy: you MAY SELL a currently held name to rotate into a clearly better candidate
+  (reason_code=rotation). Prefer the weakest hold (worst open P/L or weakest thesis) as SELL symbol.
+  Rotation is allowed by desk policy when a new candidate is materially better.
+- SELL only a symbol currently held (stop_loss / take_profit / rotation).
+- If no clean edge to buy or rotate, action=HOLD. On HOLD set symbol to "CASH" (not a random watch name).
 - Do not invent symbols outside candidates/held names.
+- Confidence: use >=70 only when recommending BUY/SELL. HOLD may use 55-75.
 
 PORTFOLIO:
 {_portfolio_brief(broker)}

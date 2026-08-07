@@ -489,20 +489,53 @@ def main():
             }
         )
     for row in today_consensus[-8:]:
-        sym = row.get("model1", {}).get("symbol", "N/A")
-        action = row.get("model1", {}).get("action", "")
-        validation = row.get("validation", {})
+        m1 = row.get("model1") or {}
+        m2 = row.get("model2") or {}
+        sym = m1.get("symbol", "N/A")
+        action = str(m1.get("action") or "").upper()
+        validation = row.get("validation") or {}
+        agreed = bool(row.get("consensus"))
         valid = validation.get("valid")
-        status = "validated" if valid else "blocked"
-        if row.get("model1", {}).get("action") == "HOLD" and valid:
+        reason = (
+            validation.get("reason")
+            or row.get("reason")
+            or m1.get("thesis")
+            or ""
+        )
+
+        # Label honestly: HOLD focus mismatches are not risk blocks
+        if action == "HOLD" and agreed and (valid is None or valid is True):
             status = "hold"
+            headline = "HOLD — no new trade"
+        elif action == "HOLD" and not agreed:
+            status = "hold"
+            headline = "HOLD — desks disagreed on focus"
+            reason = row.get("reason") or reason
+        elif agreed and valid:
+            status = "validated"
+            headline = f"{action} {sym} — validated"
+        elif agreed and valid is False:
+            status = "blocked"
+            headline = f"{action} {sym} — blocked"
+        else:
+            status = "no_consensus"
+            headline = f"{action} {sym} — no consensus"
+            reason = row.get("reason") or reason
+
+        if (m1.get("symbol") or "") != (m2.get("symbol") or "") or str(m1.get("action") or "") != str(m2.get("action") or ""):
+            desk = (
+                f"Desks: {m1.get('action')} {m1.get('symbol')} ({m1.get('confidence')}%) vs "
+                f"{m2.get('action')} {m2.get('symbol')} ({m2.get('confidence')}%). "
+            )
+            reason = desk + (reason or "")
+
         activity.append(
             {
                 "type": "consensus",
                 "symbol": sym,
                 "status": status,
-                "headline": f"{action} {sym} — {status}",
-                "detail": validation.get("reason") or row.get("model1", {}).get("thesis", ""),
+                "headline": headline,
+                "detail": reason,
                 "timestamp": row.get("timestamp"),
             }
         )

@@ -49,7 +49,8 @@ Telegram paper-session report (holdings P/L bullets)
 - `min_confidence`: 70
 - `max_candidates_to_llm`: 8
 - `require_dual_model_agreement`: true
-- Dual agreement required; disagreements are logged and block execution
+- Dual agreement required on **BUY/SELL** (same symbol); pure **HOLD+HOLD agrees even if watch symbols differ**
+- Rotation SELLs are allowed when book is full (policy + dual-LLM prompt); stop/target still primary exits
 - If a provider key is missing or a live call fails, that desk uses a **tagged deterministic fallback** (`source=fallback`)
 
 ### Honest status of dual models

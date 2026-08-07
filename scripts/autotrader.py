@@ -403,20 +403,40 @@ class DryRunAutoTrader:
         }
 
     def check_consensus(self, decision1: Dict, decision2: Dict) -> Tuple[bool, Optional[str]]:
-        if decision1["action"] != decision2["action"]:
-            return False, f"Action mismatch: {decision1['action']} vs {decision2['action']}"
-        if decision1["symbol"] != decision2["symbol"]:
-            return False, f"Symbol mismatch: {decision1['symbol']} vs {decision2['symbol']}"
+        a1 = str(decision1.get("action") or "").upper()
+        a2 = str(decision2.get("action") or "").upper()
+        if a1 != a2:
+            return False, f"Action mismatch: {a1} vs {a2}"
+
+        # HOLD = no trade. Symbol is just "what they watched"; do not require match.
+        if a1 == "HOLD":
+            # Soft confidence floor for patient holds (still want non-junk)
+            hold_floor = min(50, int(self.config["consensus_rules"]["min_confidence"]))
+            if int(decision1.get("confidence") or 0) < hold_floor:
+                return False, f"Model 1 HOLD confidence {decision1.get('confidence')}% < {hold_floor}%"
+            if int(decision2.get("confidence") or 0) < hold_floor:
+                return False, f"Model 2 HOLD confidence {decision2.get('confidence')}% < {hold_floor}%"
+            return True, None
+
+        if decision1.get("symbol") != decision2.get("symbol"):
+            return False, f"Symbol mismatch: {decision1.get('symbol')} vs {decision2.get('symbol')}"
+
         min_confidence = self.config["consensus_rules"]["min_confidence"]
         if decision1["confidence"] < min_confidence:
             return False, f"Model 1 confidence {decision1['confidence']}% < {min_confidence}%"
         if decision2["confidence"] < min_confidence:
             return False, f"Model 2 confidence {decision2['confidence']}% < {min_confidence}%"
-        if decision1["action"] in ("BUY", "SELL"):
-            if decision1["entry_price"] and abs(decision1["stop_loss"] - decision2["stop_loss"]) / decision1["entry_price"] > 0.05:
-                return False, f"Stop loss mismatch: ${decision1['stop_loss']} vs ${decision2['stop_loss']}"
-            if decision1["entry_price"] and abs(decision1["take_profit"] - decision2["take_profit"]) / decision1["entry_price"] > 0.05:
-                return False, f"Take profit mismatch: ${decision1['take_profit']} vs ${decision2['take_profit']}"
+
+        if a1 in ("BUY", "SELL"):
+            entry = float(decision1.get("entry_price") or 0) or 0.0
+            if entry:
+                try:
+                    if abs(float(decision1.get("stop_loss") or 0) - float(decision2.get("stop_loss") or 0)) / entry > 0.05:
+                        return False, f"Stop loss mismatch: ${decision1.get('stop_loss')} vs ${decision2.get('stop_loss')}"
+                    if abs(float(decision1.get("take_profit") or 0) - float(decision2.get("take_profit") or 0)) / entry > 0.05:
+                        return False, f"Take profit mismatch: ${decision1.get('take_profit')} vs ${decision2.get('take_profit')}"
+                except Exception:
+                    pass
         return True, None
 
     def validate_order(self, decision: Dict, broker_snapshot: Dict) -> Tuple[bool, Optional[str]]:
