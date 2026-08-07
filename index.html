@@ -481,13 +481,8 @@
           <div class="inner">
             <h3>The edge it is pursuing</h3>
             <p class="lead">Find underpriced company-specific change and compound gains while hard-limiting avoidable loss.</p>
-            <ul class="clean">
-              <li>Broad-market discovery looks for fresh catalysts before the 15-minute decision loop.</li>
-              <li>Alpha Radar ranks liquid names on catalyst/news strength, liquidity, and sentiment before any trade idea is sized.</li>
-              <li>Two decision paths then make blind decisions from the same ranked evidence. Any disagreement blocks execution and is published below.</li>
-              <li>The desk enters only when both paths agree and paper-broker cash, open concentration, stop/target geometry, and recomputed reward-to-risk all pass.</li>
-              <li>Stops and targets are attached on entry. Exits fire on stop, target, or gated rotation when a clearly stronger setup needs risk budget.</li>
-              <li>Every candidate, fill, miss, blocked trade, and closed outcome feeds the learning/audit loop. Risk expansion never auto-promotes itself.</li>
+            <ul class="clean" id="edge-list">
+              <li>Loading edge description…</li>
             </ul>
           </div>
           <div class="inner">
@@ -711,6 +706,34 @@
 
       const limits = d.limits || {};
       const learn = d.learning || {};
+      const cons = d.consensus || {};
+      const prettyModel = (id, effort) => {
+        const raw = String(id || '').trim();
+        if (!raw) return 'Model';
+        let name = raw
+          .replace(/^claude-sonnet-5$/i, 'Claude Sonnet 5')
+          .replace(/^claude-sonnet-4-5$/i, 'Claude Sonnet 4.5')
+          .replace(/^grok-4\.5$/i, 'Grok 4.5')
+          .replace(/^grok-4\.1-fast$/i, 'Grok 4.1 Fast')
+          .replace(/^grok-beta$/i, 'Grok Beta');
+        if (name === raw) {
+          name = raw.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+        }
+        if (effort) name += ` (${effort} effort)`;
+        return name;
+      };
+      const m1 = prettyModel(cons.model_1 || 'grok-4.5', cons.model_1_effort || null);
+      const m2 = prettyModel(cons.model_2 || 'claude-sonnet-5', null);
+      const maxCand = cons.max_candidates_to_llm ?? 8;
+      const minConf = cons.min_confidence ?? 70;
+      setHtml('edge-list', `
+        <li>Broad-market discovery looks for fresh catalysts before the 15-minute decision loop.</li>
+        <li>Alpha Radar ranks liquid names on catalyst/news strength, liquidity, and sentiment, then passes up to ${esc(maxCand)} candidates into the decision desk.</li>
+        <li><strong>${esc(m1)}</strong> and <strong>${esc(m2)}</strong> then make blind decisions from the same ranked evidence. Any disagreement blocks execution and is published below.</li>
+        <li>The desk enters only when both models agree (min confidence ${esc(minConf)}%) and paper-broker cash, open concentration, stop/target geometry, and recomputed reward-to-risk all pass.</li>
+        <li>Stops and targets are attached on entry. Exits fire on stop, target, or gated rotation when a clearly stronger setup needs risk budget.</li>
+        <li>Every candidate, fill, miss, blocked trade, and closed outcome feeds the learning/audit loop. Risk expansion never auto-promotes itself.</li>
+      `);
       const dailyLossUsd = limits.max_daily_loss_usd;
       const dailyLossTxt = (typeof dailyLossUsd === 'number')
         ? `${money(dailyLossUsd)} or ${esc(limits.max_daily_loss_pct ?? '--')}%`
@@ -721,6 +744,7 @@
         <li>Maximum open positions: ${esc(limits.max_positions ?? '--')} (capital-sized, not a PDT hold cap)</li>
         <li>Daily loss halt: ${dailyLossTxt}</li>
         <li>Portfolio drawdown halt: ${esc(limits.max_drawdown_pct ?? '--')}%</li>
+        <li>Consensus desk: ${esc(m1)} + ${esc(m2)} · dual agreement required</li>
         <li>Cadence: ${esc((d.system || {}).cadence || 'every 15m during NYSE regular hours')}</li>
         <li>Rotation: ${esc(limits.allow_rotation ? 'allowed with min-hold gate' : 'disabled')} · min hold ${esc(limits.rotation_min_hold_minutes ?? '--')}m</li>
       `);

@@ -370,6 +370,19 @@ def main():
             "rotation_min_hold_minutes": cfg.get("execution_rules", {}).get("rotation_min_hold_minutes"),
             "rotation_min_score": cfg.get("execution_rules", {}).get("rotation_min_score"),
         },
+        "consensus": {
+            "require_dual_model_agreement": bool(
+                cfg.get("consensus_rules", {}).get("require_dual_model_agreement", True)
+            ),
+            "model_1": cfg.get("consensus_rules", {}).get("model_1", "grok-4.5"),
+            "model_1_effort": cfg.get("consensus_rules", {}).get("model_1_effort"),
+            "model_2": cfg.get("consensus_rules", {}).get("model_2", "claude-sonnet-5"),
+            "min_confidence": cfg.get("consensus_rules", {}).get("min_confidence", 70),
+            "max_candidates_to_llm": cfg.get("consensus_rules", {}).get("max_candidates_to_llm", 8),
+            "log_all_disagreements": bool(
+                cfg.get("consensus_rules", {}).get("log_all_disagreements", True)
+            ),
+        },
         "learning": {
             "candidate_signals_logged": len(candidates),
             "fills_logged": len(fills),
