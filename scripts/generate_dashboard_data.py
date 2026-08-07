@@ -406,7 +406,44 @@ def main():
             }
         )
 
-    closed_recent = closed[-8:][::-1]
+    # Closed results newest first (Farzad-style list)
+    closed_sorted = sorted(
+        closed,
+        key=lambda r: r.get("timestamp") or "",
+        reverse=True,
+    )
+    closed_results = []
+    for row in closed_sorted:
+        if row.get("symbol") in ("AAA",):
+            continue
+        avg = float(row.get("avg_cost") or 0)
+        qty = float(row.get("qty") or 0)
+        pnl = row.get("realized_pnl")
+        try:
+            pnl_f = float(pnl) if pnl is not None else None
+        except Exception:
+            pnl_f = None
+        basis = avg * qty if avg and qty else None
+        pct = None
+        if pnl_f is not None and basis and abs(basis) > 1e-9:
+            pct = round(pnl_f / abs(basis) * 100.0, 2)
+        closed_results.append(
+            {
+                "timestamp": row.get("timestamp"),
+                "symbol": row.get("symbol"),
+                "qty": row.get("qty"),
+                "avg_cost": row.get("avg_cost"),
+                "exit_price": row.get("exit_price"),
+                "proceeds": row.get("proceeds"),
+                "realized_pnl": pnl_f,
+                "realized_pnl_pct": pct,
+                "reason": row.get("reason"),
+                "thesis": row.get("thesis"),
+                "opened_at": row.get("opened_at"),
+                "hold_seconds": row.get("hold_seconds"),
+            }
+        )
+    closed_recent = closed_results[:20]
 
     thinking = build_thinking(holdings, latest_decision, latest_candidate, snap, now, cfg)
     stance = thinking.get("headline") or "Patient — waiting for a clean ranked setup."
@@ -462,6 +499,7 @@ def main():
         "recent_trades": recent_trades,
         "trade_reasoning": build_trade_reasoning(fills, orders, closed),
         "closed_trades": closed_recent,
+        "closed_results": closed_results,
         "top_candidates": candidates[:5],
         "limits": {
             "max_position_usd": cfg.get("position_limits", {}).get("max_position_size_usd"),

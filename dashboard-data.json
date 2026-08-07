@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T00:05:49.117221+00:00",
+  "generated_at": "2026-08-07T00:07:06.223601+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
@@ -16,7 +16,7 @@
     "vs_spy_pct": -0.03,
     "spy_return_pct": -0.11,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-07T00:05:51.418609+00:00"
+    "updated_at": "2026-08-07T00:07:08.263713+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
@@ -234,7 +234,7 @@
         "plan": "stop 484.9 or target 522.1"
       }
     ],
-    "last_checked": "2026-08-07T00:05:49.117221+00:00",
+    "last_checked": "2026-08-07T00:07:06.223601+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "HOLD",
@@ -787,6 +787,7 @@
       "exit_price": 62.88999938964844,
       "proceeds": 199.44,
       "realized_pnl": -0.55,
+      "realized_pnl_pct": -0.28,
       "reason": "rotation",
       "thesis": "HERMES AUTO-TRADE: Exiting full BAC position via gated rotation. Rotate out of BAC to free risk budget for stronger setup MSFT Mark $62.89 vs avg $63.06 (open P/L path $-0.55).",
       "opened_at": "2026-08-06T15:50:14.375161+00:00",
@@ -800,6 +801,7 @@
       "exit_price": 307.9549865722656,
       "proceeds": 199.03,
       "realized_pnl": -0.94,
+      "realized_pnl_pct": -0.47,
       "reason": "rotation",
       "thesis": "Rotate out of LRCX to free risk budget for stronger setup XOM",
       "opened_at": "2026-08-06T16:45:57.128884+00:00",
@@ -813,6 +815,7 @@
       "exit_price": 355.3800048828125,
       "proceeds": 199.79,
       "realized_pnl": -0.19,
+      "realized_pnl_pct": -0.1,
       "reason": "rotation",
       "thesis": "Rotate out of PANW to free risk budget for stronger setup ANET",
       "opened_at": "2026-08-06T16:00:50.163941+00:00",
@@ -826,23 +829,11 @@
       "exit_price": 308.0450134277344,
       "proceeds": 197.67,
       "realized_pnl": -2.31,
+      "realized_pnl_pct": -1.16,
       "reason": "rotation",
       "thesis": "Rotate out of LRCX to free risk budget for stronger setup UNH",
       "opened_at": "2026-08-06T15:49:36.234045+00:00",
       "hold_seconds": 2490
-    },
-    {
-      "timestamp": "2026-08-06T15:52:44.322288+00:00",
-      "symbol": "AAA",
-      "qty": 2.0,
-      "avg_cost": 100.0,
-      "exit_price": 105.0,
-      "proceeds": 210.0,
-      "realized_pnl": 10.0,
-      "reason": "test_tp",
-      "thesis": "test sell",
-      "opened_at": "2026-08-06T15:52:43.853898+00:00",
-      "hold_seconds": 0
     },
     {
       "timestamp": "2026-08-06T15:50:07.568279+00:00",
@@ -852,6 +843,79 @@
       "exit_price": 193.22999572753906,
       "proceeds": 200.13,
       "realized_pnl": 0.13,
+      "realized_pnl_pct": 0.07,
+      "reason": "demo_take_profit_sample",
+      "thesis": "Demo exit so dashboard shows a real SELL fill and realized P/L",
+      "opened_at": "2026-08-06T15:49:41.748264+00:00",
+      "hold_seconds": 25
+    }
+  ],
+  "closed_results": [
+    {
+      "timestamp": "2026-08-06T18:45:53.226731+00:00",
+      "symbol": "BAC",
+      "qty": 3.1713,
+      "avg_cost": 63.065,
+      "exit_price": 62.88999938964844,
+      "proceeds": 199.44,
+      "realized_pnl": -0.55,
+      "realized_pnl_pct": -0.28,
+      "reason": "rotation",
+      "thesis": "HERMES AUTO-TRADE: Exiting full BAC position via gated rotation. Rotate out of BAC to free risk budget for stronger setup MSFT Mark $62.89 vs avg $63.06 (open P/L path $-0.55).",
+      "opened_at": "2026-08-06T15:50:14.375161+00:00",
+      "hold_seconds": 10538
+    },
+    {
+      "timestamp": "2026-08-06T17:46:06.353492+00:00",
+      "symbol": "LRCX",
+      "qty": 0.6463,
+      "avg_cost": 309.41,
+      "exit_price": 307.9549865722656,
+      "proceeds": 199.03,
+      "realized_pnl": -0.94,
+      "realized_pnl_pct": -0.47,
+      "reason": "rotation",
+      "thesis": "Rotate out of LRCX to free risk budget for stronger setup XOM",
+      "opened_at": "2026-08-06T16:45:57.128884+00:00",
+      "hold_seconds": 3609
+    },
+    {
+      "timestamp": "2026-08-06T17:00:57.767105+00:00",
+      "symbol": "PANW",
+      "qty": 0.5622,
+      "avg_cost": 355.72,
+      "exit_price": 355.3800048828125,
+      "proceeds": 199.79,
+      "realized_pnl": -0.19,
+      "realized_pnl_pct": -0.1,
+      "reason": "rotation",
+      "thesis": "Rotate out of PANW to free risk budget for stronger setup ANET",
+      "opened_at": "2026-08-06T16:00:50.163941+00:00",
+      "hold_seconds": 3607
+    },
+    {
+      "timestamp": "2026-08-06T16:31:07.135083+00:00",
+      "symbol": "LRCX",
+      "qty": 0.6417,
+      "avg_cost": 311.645,
+      "exit_price": 308.0450134277344,
+      "proceeds": 197.67,
+      "realized_pnl": -2.31,
+      "realized_pnl_pct": -1.16,
+      "reason": "rotation",
+      "thesis": "Rotate out of LRCX to free risk budget for stronger setup UNH",
+      "opened_at": "2026-08-06T15:49:36.234045+00:00",
+      "hold_seconds": 2490
+    },
+    {
+      "timestamp": "2026-08-06T15:50:07.568279+00:00",
+      "symbol": "ANET",
+      "qty": 1.0357,
+      "avg_cost": 193.1,
+      "exit_price": 193.22999572753906,
+      "proceeds": 200.13,
+      "realized_pnl": 0.13,
+      "realized_pnl_pct": 0.07,
       "reason": "demo_take_profit_sample",
       "thesis": "Demo exit so dashboard shows a real SELL fill and realized P/L",
       "opened_at": "2026-08-06T15:49:41.748264+00:00",

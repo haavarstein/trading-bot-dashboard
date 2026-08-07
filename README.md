@@ -85,6 +85,7 @@ Public page sections:
 - What Hermes is thinking (plain English stance + triggers + owned cards)
 - Decisions / stance
 - Recent fills
+- Closed results (locked-in P/L list)
 - Trade reasoning cards (narrative + bullets + risk map)
 - Improvements changelog
 - Hard refresh every 5 minutes

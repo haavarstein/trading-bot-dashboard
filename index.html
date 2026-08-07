@@ -525,6 +525,73 @@
       .think-checked { text-align: left; }
     }
 
+
+    /* Closed results */
+    .closed-shell {
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.028), rgba(255,255,255,0.012));
+      box-shadow: var(--shadow);
+      padding: 26px 24px 18px;
+    }
+    .closed-shell h2 {
+      margin: 0 0 8px;
+      font-size: 30px;
+      font-weight: 720;
+      letter-spacing: -0.03em;
+    }
+    .closed-shell .sub {
+      margin: 0 0 10px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .closed-list { display: grid; }
+    .closed-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 4px;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+    .closed-row:last-child { border-bottom: 0; }
+    .closed-left .sym {
+      font-size: 18px;
+      font-weight: 750;
+      letter-spacing: -0.02em;
+      color: #f3f7fc;
+    }
+    .closed-left .when {
+      margin-top: 5px;
+      color: #8b9bb0;
+      font-size: 13px;
+    }
+    .closed-right {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+    .closed-right .pnl {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .closed-right .pnl.green { color: var(--green); }
+    .closed-right .pnl.red { color: var(--red); }
+    .closed-right .pct {
+      margin-left: 10px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .closed-right .pct.green { color: var(--green); }
+    .closed-right .pct.red { color: var(--red); }
+    .closed-foot {
+      margin-top: 8px;
+      padding-top: 8px;
+      color: #7f91a8;
+      font-size: 13px;
+    }
+
     .footer {
       margin-top: 34px;
       text-align: center;
@@ -636,6 +703,7 @@
       <a href="#holdings-section">Holdings</a>
       <a href="#stance-section">Thinking</a>
       <a href="#trades-section">Trades</a>
+      <a href="#closed-section">Closed</a>
       <a href="#reasoning-section">Reasoning</a>
       <a href="#improvements-section">Improvements</a>
     </nav>
@@ -779,6 +847,18 @@
       </div>
       <div class="list" id="trades-list">
         <div class="row hint">Loading trades…</div>
+      </div>
+    </section>
+
+    
+    <section id="closed-section" class="section">
+      <div class="closed-shell">
+        <h2>Closed results</h2>
+        <p class="sub">Trades that are finished and locked in.</p>
+        <div class="closed-list" id="closed-list">
+          <div class="closed-row"><div class="closed-left"><div class="when">Loading closed results…</div></div></div>
+        </div>
+        <div class="closed-foot" id="closed-foot">Showing 0 of 0 closed results, newest first.</div>
       </div>
     </section>
 
@@ -1137,6 +1217,42 @@
           <div class="hint">${esc(formatWhen(a.timestamp))}</div>
         </div>
       `).join('') : '<div class="row hint">No activity yet.</div>');
+
+
+
+      // Closed results (newest first)
+      const closedResults = Array.isArray(d.closed_results)
+        ? d.closed_results
+        : (Array.isArray(d.closed_trades) ? d.closed_trades : []);
+      const closedShow = closedResults.slice(0, 20);
+      setHtml('closed-list', closedShow.length ? closedShow.map(c => {
+        const pnl = c.realized_pnl;
+        const pp = c.realized_pnl_pct;
+        const tone = typeof pnl === 'number' ? (pnl >= 0 ? 'green' : 'red') : '';
+        const pnlTxt = typeof pnl === 'number'
+          ? `${pnl >= 0 ? '+' : '-'}$${Math.abs(pnl).toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2})}`
+          : '--';
+        const pctTxt = typeof pp === 'number'
+          ? `${pp >= 0 ? '+' : ''}${pp.toFixed(2)}%`
+          : '--';
+        return `
+          <div class="closed-row">
+            <div class="closed-left">
+              <div class="sym">${esc(c.symbol || '--')}</div>
+              <div class="when">Closed ${esc(formatWhen(c.timestamp))}</div>
+            </div>
+            <div class="closed-right">
+              <span class="pnl ${tone}">${esc(pnlTxt)}</span>
+              <span class="pct ${tone}">${esc(pctTxt)}</span>
+            </div>
+          </div>
+        `;
+      }).join('') : `
+          <div class="closed-row">
+            <div class="closed-left"><div class="when">No closed trades yet.</div></div>
+          </div>
+      `);
+      setText('closed-foot', `Showing ${closedShow.length} of ${closedResults.length} closed results, newest first.`);
 
 
       reasoningCards = Array.isArray(d.trade_reasoning) ? d.trade_reasoning : [];
