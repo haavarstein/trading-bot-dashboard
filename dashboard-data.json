@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T00:07:06.223601+00:00",
+  "generated_at": "2026-08-07T00:23:31.996017+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
@@ -16,7 +16,7 @@
     "vs_spy_pct": -0.03,
     "spy_return_pct": -0.11,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-07T00:07:08.263713+00:00"
+    "updated_at": "2026-08-07T00:23:33.862397+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
@@ -234,7 +234,7 @@
         "plan": "stop 484.9 or target 522.1"
       }
     ],
-    "last_checked": "2026-08-07T00:07:06.223601+00:00",
+    "last_checked": "2026-08-07T00:23:31.996017+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "HOLD",
@@ -1208,6 +1208,118 @@
     "closed_outcomes": 6,
     "consensus_events": 37,
     "note": "Paper sample is provisional until large enough for durable edge review."
+  },
+  "equity_curve": {
+    "currency": "USD",
+    "start_equity": 1000.0,
+    "latest_equity": 998.6,
+    "change": -1.4,
+    "change_pct": -0.14,
+    "points": [
+      {
+        "t": "2026-08-06T15:49:32.343883+00:00",
+        "equity": 1000.0,
+        "cash": 1000.0,
+        "event": "start"
+      },
+      {
+        "t": "2026-08-06T15:49:36.234045+00:00",
+        "equity": 1000.0,
+        "cash": 800.02,
+        "event": "BUY LRCX"
+      },
+      {
+        "t": "2026-08-06T15:49:41.748264+00:00",
+        "equity": 1000.01,
+        "cash": 600.03,
+        "event": "BUY ANET"
+      },
+      {
+        "t": "2026-08-06T15:50:07.568279+00:00",
+        "equity": 1000.14,
+        "cash": 800.16,
+        "event": "SELL ANET"
+      },
+      {
+        "t": "2026-08-06T15:50:14.375161+00:00",
+        "equity": 1000.14,
+        "cash": 600.16,
+        "event": "BUY BAC"
+      },
+      {
+        "t": "2026-08-06T16:00:50.163941+00:00",
+        "equity": 1000.14,
+        "cash": 400.17,
+        "event": "BUY PANW"
+      },
+      {
+        "t": "2026-08-06T16:31:07.139100+00:00",
+        "equity": 997.82,
+        "cash": 597.84,
+        "event": "SELL LRCX"
+      },
+      {
+        "t": "2026-08-06T16:45:57.128884+00:00",
+        "equity": 997.83,
+        "cash": 397.87,
+        "event": "BUY LRCX"
+      },
+      {
+        "t": "2026-08-06T17:00:57.768060+00:00",
+        "equity": 997.63,
+        "cash": 597.66,
+        "event": "SELL PANW"
+      },
+      {
+        "t": "2026-08-06T17:16:23.562599+00:00",
+        "equity": 997.63,
+        "cash": 397.67,
+        "event": "BUY UNH"
+      },
+      {
+        "t": "2026-08-06T17:46:06.354489+00:00",
+        "equity": 996.69,
+        "cash": 596.7,
+        "event": "SELL LRCX"
+      },
+      {
+        "t": "2026-08-06T18:00:53.056406+00:00",
+        "equity": 996.69,
+        "cash": 396.72,
+        "event": "BUY LRCX"
+      },
+      {
+        "t": "2026-08-06T18:15:51.839510+00:00",
+        "equity": 996.69,
+        "cash": 196.72,
+        "event": "BUY XOM"
+      },
+      {
+        "t": "2026-08-06T18:31:02.916762+00:00",
+        "equity": 996.68,
+        "cash": 5.01,
+        "event": "BUY PANW"
+      },
+      {
+        "t": "2026-08-06T18:45:53.227729+00:00",
+        "equity": 996.13,
+        "cash": 204.45,
+        "event": "SELL BAC"
+      },
+      {
+        "t": "2026-08-06T19:00:53.392334+00:00",
+        "equity": 996.13,
+        "cash": 5.04,
+        "event": "BUY MSFT"
+      },
+      {
+        "t": "2026-08-07T00:23:33.862397+00:00",
+        "equity": 998.6,
+        "cash": 5.04,
+        "event": "mark"
+      }
+    ],
+    "source": "local_paper_fills_and_marks"
   },
   "system": {
     "broker": "local_paper_broker",

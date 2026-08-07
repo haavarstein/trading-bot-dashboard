@@ -397,8 +397,7 @@ def build_equity_curve(fills, snap, starting_cash: float) -> dict:
             bucket = str(cur["t"])[:16]
             if not prev or str(prev[-1].get("t", ""))[:16] != bucket:
                 with curve_path.open("a", encoding="utf-8") as fh:
-                    fh.write(json.dumps(cur) + "
-")
+                    fh.write(json.dumps(cur) + "\n")
             # merge stored marks that might fill gaps between fills
             stored = read_jsonl(curve_path)
             by_t = {p["t"]: p for p in points if p.get("t")}
