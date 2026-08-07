@@ -43,21 +43,18 @@ Telegram paper-session report (holdings P/L bullets)
 ```
 
 ### Consensus models (config)
-
-- `model_1`: `grok-4.5` (`model_1_effort`: `medium`)
-- `model_2`: `claude-sonnet-5`
+- `model_1`: `grok-4.5` (`model_1_effort`: `medium`) via xAI (`XAI_API_KEY`, optional `XAI_MODEL_ID`)
+- `model_2`: `claude-sonnet-5` via Anthropic (`ANTHROPIC_API_KEY`)
 - `min_confidence`: 70
 - `max_candidates_to_llm`: 8
 - `require_dual_model_agreement`: true
-
-### Consensus models (config)
-- `model_1`: `grok-4.5` (`model_1_effort`: `medium`) via xAI when `XAI_API_KEY` is set
-- `model_2`: `claude-sonnet-5` via Anthropic when `ANTHROPIC_API_KEY` is set
 - Dual agreement required; disagreements are logged and block execution
-- If a provider key is missing or a live call fails, that desk uses a **tagged deterministic fallback** (`source=fallback`) so the book still runs
+- If a provider key is missing or a live call fails, that desk uses a **tagged deterministic fallback** (`source=fallback`)
 
 ### Honest status of dual models
-Live dual-LLM is **enabled in code**. Grok live calls need an xAI API key in Hermes/trading-bot `.env`. Claude live calls use the Anthropic key already present in Hermes env. Dashboard edge copy reports `decision_mode` (`live_dual_llm` vs `fallback_deterministic`).
+Live dual-LLM path is implemented in `scripts/dual_llm.py` and wired through `autotrader.py`.
+Keys live only in local gitignored `.env` (Hermes + trading-bot) — never in git.
+Dashboard edge copy reports `decision_mode` (`live_dual_llm` vs `fallback_deterministic`).
 
 ---
 
@@ -85,7 +82,7 @@ From `config/autonomy_config.json` (source of truth):
 Public page sections:
 
 - Portfolio value / total return / vs S&P 500 / P/L
-- Portfolio equity chart (local paper curve, SPCX-style ranges)
+- Portfolio equity chart (local paper curve; 1D–ALL ranges, scrub tooltip, buy/sell markers)
 - Realized P/L, open P/L, capital deployed, closed trades, SPY
 - How Hermes is trying to win (edge + hard limits + learning sample)
 - Current holdings with stop/target
@@ -111,6 +108,7 @@ trading-bot/
 ├── scripts/
 │   ├── alpha_radar.py            # candidate scanner
 │   ├── autotrader.py             # decisions + paper execution
+│   ├── dual_llm.py               # live Grok/Claude desks + fallback
 │   ├── paper_broker.py           # local account truth
 │   ├── generate_dashboard_data.py
 │   └── run_paper_session.py      # NYSE session runner (scan→trade→publish)
@@ -120,6 +118,7 @@ trading-bot/
 │   ├── closed_trades.jsonl
 │   ├── order_ledger.jsonl
 │   ├── consensus_log.jsonl
+│   ├── equity_curve.jsonl
 │   └── candidates.json
 ├── tests/
 ├── index.html                    # public dashboard UI
@@ -128,6 +127,12 @@ trading-bot/
 ```
 
 Secrets (`.env`, tokens, portfolio private state) stay gitignored. Do not commit account IDs, chat IDs, or credentials.
+
+## Privacy / secrets checklist
+- `.env` / `.env*` are gitignored
+- API keys (`XAI_API_KEY`, `ANTHROPIC_API_KEY`, etc.) must never be committed or published
+- Runtime ledgers under `data/` are local; public site gets sanitized `dashboard-data.json` only
+- Before public push: scan for `xai-`, `sk-ant-`, bearer tokens, private keys, passwords
 
 ---
 
