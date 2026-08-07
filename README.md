@@ -95,6 +95,7 @@ Public page sections:
 - Improvements changelog
 - Lists use show-more (3 at a time): fills, closed, activity, reasoning
 - Hard refresh every 5 minutes
+- **5m mark-and-publish** during NYSE hours: refresh holdings/SPY marks + push `dashboard-data.json` (no dual-LLM)
 
 Data contract: `dashboard-data.json` (generated, committed for static hosting).
 
@@ -132,7 +133,9 @@ Secrets (`.env`, tokens, portfolio private state) stay gitignored. Do not commit
 ## Privacy / secrets checklist
 - `.env` / `.env*` are gitignored
 - API keys (`FMP_API_KEY`, `XAI_API_KEY`, `ANTHROPIC_API_KEY`, etc.) must never be committed or published
-- Market data: `QUOTE_PROVIDER=fmp` (default when key present) with yfinance fallback
+- Market data: FMP single-quote capable; **bulk multi-symbol uses yfinance** on free FMP (comma bulk = 402)
+- 5m dashboard marks: holdings+SPY bulk via yfinance; browser never holds API keys
+- FMP daily budget file local: `data/fmp_call_budget.json` (gitignored)
 - Runtime ledgers under `data/` are local; public site gets sanitized `dashboard-data.json` only
 - Before public push: scan for `xai-`, `sk-ant-`, bearer tokens, private keys, passwords
 
@@ -170,7 +173,11 @@ python -m unittest discover -s tests -p "test_*.py" -v
 
 Active pattern:
 
-- **Name:** `nyse-paper-session-15m`
+- **Name:** `nyse-paper-session-15m` (scan + dual desk + trade)
+- **Name:** `nyse-mark-publish-5m` (marks only + dashboard push)
+  - Schedule: `*/5 9-15 * * 1-5` America/New_York window via Hermes cron
+  - Quotes: **yfinance bulk** for holdings+SPY (0 FMP on free tier multi)
+  - FMP: reserved/budgeted singles (`FMP_DAILY_CALL_LIMIT=200`), not full-universe spam
 - **Schedule:** `*/15 9-15 * * 1-5` (cron window)
 - **Runner:** Hermes script wrapper → `scripts/run_paper_session.py`
 - **Session gate:** code enforces true NYSE regular hours `09:30–16:00 ET`

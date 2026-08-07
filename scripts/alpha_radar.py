@@ -86,9 +86,11 @@ class AlphaRadar:
         # Prefer FMP when configured
         if market_data is not None:
             try:
-                bulk = market_data.quotes_bulk(symbols)
+                # Free FMP = singles only; never burn budget on full universe.
+                bulk = market_data.quotes_bulk(
+                    symbols, prefer="yfinance", allow_fmp_singles=False
+                )
                 if bulk:
-                    # normalize keys expected by radar
                     for sym, q in bulk.items():
                         out[sym] = {
                             "name": q.get("name") or sym,
@@ -97,7 +99,7 @@ class AlphaRadar:
                             "avg_volume": q.get("avg_volume") or q.get("volume") or 0.0,
                             "percent_change": q.get("percent_change") or 0.0,
                             "exchange": q.get("exchange") or "",
-                            "source": q.get("source") or "fmp",
+                            "source": q.get("source") or "yfinance",
                         }
                     if len(out) >= max(1, int(len(symbols) * 0.5)):
                         return out

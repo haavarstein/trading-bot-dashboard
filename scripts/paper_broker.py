@@ -147,26 +147,57 @@ class PaperBroker:
         self.path.write_text(json.dumps(state, indent=2), encoding="utf-8")
         self.state = state
 
-    def mark_to_market(self, symbols: list[str] | None = None) -> dict[str, float]:
+    def mark_to_market(
+        self,
+        symbols: list[str] | None = None,
+        prefetched: dict[str, float] | None = None,
+    ) -> dict[str, float]:
+        """Mark positions. Prefer one bulk prefetch (yfinance/FMP layer) over N singles."""
         marks: dict[str, float] = {}
         pos = self.state.get("positions", {})
-        targets = symbols or list(pos.keys())
+        targets = list(symbols) if symbols is not None else list(pos.keys())
+        # always include open positions if symbols partially provided
+        for sym in list(pos.keys()):
+            if sym not in targets:
+                targets.append(sym)
+
+        price_map: dict[str, float] = {}
+        if prefetched:
+            for k, v in prefetched.items():
+                try:
+                    if v is not None:
+                        price_map[str(k).upper()] = float(v)
+                except Exception:
+                    pass
+        missing = [s for s in targets if s.upper() not in price_map]
+        if missing and market_data is not None:
+            try:
+                bulk = market_data.quotes_bulk(missing, prefer="yfinance", allow_fmp_singles=False)
+                for s, row in (bulk or {}).items():
+                    if row and row.get("price") is not None:
+                        price_map[str(s).upper()] = float(row["price"])
+            except Exception:
+                pass
         for sym in targets:
-            px = quote(sym)
+            su = sym.upper()
+            px = price_map.get(su)
             if px is None:
-                # keep previous mark if any
-                if sym in pos and pos[sym].get("last_price"):
+                px = quote(sym)
+            if px is None:
+                if su in pos and pos[su].get("last_price"):
+                    marks[su] = float(pos[su]["last_price"])
+                elif sym in pos and pos[sym].get("last_price"):
                     marks[sym] = float(pos[sym]["last_price"])
                 continue
-            marks[sym] = px
-            if sym in pos:
-                p = pos[sym]
+            marks[su] = float(px)
+            p = pos.get(su) or pos.get(sym)
+            if p:
                 qty = float(p["qty"])
                 avg = float(p["avg_cost"])
-                p["last_price"] = px
-                p["market_value"] = round(qty * px, 2)
-                p["open_pnl"] = round((px - avg) * qty, 2)
-                p["open_pnl_pct"] = round(((px - avg) / avg) * 100, 2) if avg else 0.0
+                p["last_price"] = float(px)
+                p["market_value"] = round(qty * float(px), 2)
+                p["open_pnl"] = round((float(px) - avg) * qty, 2)
+                p["open_pnl_pct"] = round(((float(px) - avg) / avg) * 100, 2) if avg else 0.0
                 p["marked_at"] = utc_now()
         self._save()
         return marks
