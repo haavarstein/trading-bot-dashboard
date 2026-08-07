@@ -50,8 +50,14 @@ Telegram paper-session report (holdings P/L bullets)
 - `max_candidates_to_llm`: 8
 - `require_dual_model_agreement`: true
 
-### Honest status of “dual models”
-Decision paths are labeled for the Farzad-style dual-agreement gate. Current paper path uses a **deterministic local consensus engine** over Alpha Radar candidates (not a claim of live multi-provider LLM research desks on every tick).
+### Consensus models (config)
+- `model_1`: `grok-4.5` (`model_1_effort`: `medium`) via xAI when `XAI_API_KEY` is set
+- `model_2`: `claude-sonnet-5` via Anthropic when `ANTHROPIC_API_KEY` is set
+- Dual agreement required; disagreements are logged and block execution
+- If a provider key is missing or a live call fails, that desk uses a **tagged deterministic fallback** (`source=fallback`) so the book still runs
+
+### Honest status of dual models
+Live dual-LLM is **enabled in code**. Grok live calls need an xAI API key in Hermes/trading-bot `.env`. Claude live calls use the Anthropic key already present in Hermes env. Dashboard edge copy reports `decision_mode` (`live_dual_llm` vs `fallback_deterministic`).
 
 ---
 
@@ -89,6 +95,7 @@ Public page sections:
 - Closed results (locked-in P/L list)
 - Trade reasoning cards (narrative + bullets + risk map)
 - Improvements changelog
+- Lists use show-more (3 at a time): fills, closed, activity, reasoning
 - Hard refresh every 5 minutes
 
 Data contract: `dashboard-data.json` (generated, committed for static hosting).

@@ -737,6 +737,49 @@
       .chart-canvas-wrap { height: 220px; }
     }
 
+
+    .list-foot, .reason-foot, .closed-foot-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .btn-more {
+      border: 1px solid var(--border-strong);
+      background: #fff;
+      color: var(--text);
+      border-radius: 999px;
+      padding: 9px 14px;
+      font-size: 13px;
+      font-weight: 650;
+      cursor: pointer;
+      box-shadow: var(--shadow-sm);
+    }
+    .btn-more:hover { background: #faf7f1; }
+    .btn-more:disabled, .btn-more[hidden] { display: none !important; }
+    .chart-tooltip {
+      position: absolute;
+      pointer-events: none;
+      z-index: 5;
+      min-width: 140px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(12,10,9,0.92);
+      color: #fafaf9;
+      font-size: 12px;
+      line-height: 1.4;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+      transform: translate(-50%, -120%);
+      display: none;
+    }
+    .chart-tooltip strong { display: block; font-size: 14px; margin-bottom: 2px; }
+    .chart-tooltip span { color: #a8a29e; }
+    .chart-event-note { fill: #fafaf9; font-size: 10px; }
+
     .footer {
       margin-top: 34px;
       text-align: center;
@@ -927,6 +970,7 @@
           </div>
         </div>
         <div class="chart-canvas-wrap" id="chart-canvas-wrap">
+          <div class="chart-tooltip" id="chart-tooltip"></div>
           <div class="chart-empty" id="chart-empty">Loading equity curve…</div>
           <svg id="equity-svg" viewBox="0 0 1000 280" preserveAspectRatio="none" aria-label="Portfolio equity chart"></svg>
         </div>
@@ -1020,6 +1064,10 @@
       <div class="list" id="trades-list">
         <div class="row hint">Loading trades…</div>
       </div>
+      <div class="list-foot">
+        <span id="trades-count">Showing 0 of 0 fills.</span>
+        <button class="btn-more" id="trades-more" type="button">Show more</button>
+      </div>
     </section>
 
     
@@ -1030,7 +1078,10 @@
         <div class="closed-list" id="closed-list">
           <div class="closed-row"><div class="closed-left"><div class="when">Loading closed results…</div></div></div>
         </div>
-        <div class="closed-foot" id="closed-foot">Showing 0 of 0 closed results, newest first.</div>
+        <div class="list-foot closed-foot-wrap">
+          <span class="closed-foot" id="closed-foot">Showing 0 of 0 closed results, newest first.</span>
+          <button class="btn-more" id="closed-more" type="button">Show more</button>
+        </div>
       </div>
     </section>
 
@@ -1041,6 +1092,10 @@
       </div>
       <div class="list" id="activity-list">
         <div class="row hint">Loading activity…</div>
+      </div>
+      <div class="list-foot">
+        <span id="activity-count">Showing 0 of 0 activity items.</span>
+        <button class="btn-more" id="activity-more" type="button">Show more</button>
       </div>
     </section>
 
@@ -1155,10 +1210,47 @@
     ];
 
 
-    let reasoningVisible = 3;
+    const PAGE_SIZE = 3;
     let reasoningCards = [];
+    const pager = {
+      trades: { items: [], visible: PAGE_SIZE },
+      closed: { items: [], visible: PAGE_SIZE },
+      activity: { items: [], visible: PAGE_SIZE },
+      reasoning: { items: [], visible: PAGE_SIZE },
+    };
+
 
     
+
+    function updatePagerFoot(kind, countId, btnId, label) {
+      const st = pager[kind];
+      const total = (st.items || []).length;
+      const shown = Math.min(st.visible, total);
+      const countEl = document.getElementById(countId);
+      const btn = document.getElementById(btnId);
+      if (countEl) countEl.textContent = `Showing ${shown} of ${total} ${label}.`;
+      if (btn) {
+        if (shown >= total) {
+          btn.hidden = true;
+        } else {
+          btn.hidden = false;
+          const more = Math.min(PAGE_SIZE, total - shown);
+          btn.textContent = `Show ${more} more`;
+        }
+      }
+    }
+
+    function bindPager(btnId, kind, rerender) {
+      const btn = document.getElementById(btnId);
+      if (!btn || btn._boundPager) return;
+      btn._boundPager = true;
+      btn.addEventListener('click', () => {
+        pager[kind].visible += PAGE_SIZE;
+        rerender();
+      });
+    }
+
+
     let equityCurvePoints = [];
     let activeChartRange = 'ALL';
 
@@ -1269,6 +1361,18 @@
       const baseLine = `<line x1="${padL}" y1="${base}" x2="${W - padR}" y2="${base}" stroke="rgba(255,255,255,0.22)" stroke-dasharray="4 6" stroke-width="1.2" />`;
 
       const gid = 'eqGrad';
+      // event markers on trade fills
+      let eventMarks = '';
+      pts.forEach((p) => {
+        const ev = (p.raw && p.raw.event) ? String(p.raw.event) : '';
+        if (!ev || ev === 'start' || ev === 'mark') return;
+        const x = xMap(p.t), y = yMap(p.equity);
+        const isBuy = ev.startsWith('BUY');
+        const isSell = ev.startsWith('SELL');
+        if (!isBuy && !isSell) return;
+        const col = isBuy ? '#4ade80' : '#f87171';
+        eventMarks += `<circle cx="${x}" cy="${y}" r="3" fill="${col}" stroke="#0c0a09" stroke-width="1" opacity="0.95"></circle>`;
+      });
       svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
       svg.innerHTML = `
         <defs>
@@ -1286,8 +1390,46 @@
           <animate attributeName="opacity" values="0.9;0" dur="1.6s" repeatCount="indefinite"/>
         </circle>
         <circle cx="${lastX}" cy="${yMap(endEq)}" r="3.6" fill="${stroke}" stroke="#0c0a09" stroke-width="1.5"></circle>
+        ${eventMarks}
         ${xLabels}
+        <rect id="chart-hit" x="${padL}" y="${padT}" width="${W - padL - padR}" height="${H - padT - padB}" fill="transparent"></rect>
       `;
+
+      // scrub tooltip
+      const tip = document.getElementById('chart-tooltip');
+      const hit = svg.querySelector('#chart-hit');
+      const move = (clientX, clientY) => {
+        if (!tip || !wrap) return;
+        const rect = wrap.getBoundingClientRect();
+        const relX = clientX - rect.left;
+        const svgX = (relX / rect.width) * W;
+        // nearest point
+        let best = 0, bestDist = Infinity;
+        pts.forEach((p, i) => {
+          const dx = Math.abs(xMap(p.t) - svgX);
+          if (dx < bestDist) { bestDist = dx; best = i; }
+        });
+        const p = pts[best];
+        const x = xMap(p.t), y = yMap(p.equity);
+        tip.style.display = 'block';
+        tip.style.left = `${(x / W) * rect.width}px`;
+        tip.style.top = `${(y / H) * rect.height}px`;
+        const when = new Date(p.t).toLocaleString(undefined,{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
+        const ev = (p.raw && p.raw.event) ? p.raw.event : '';
+        tip.innerHTML = `<strong>$${p.equity.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2})}</strong><span>${when}</span>${ev ? `<span>${ev}</span>` : ''}`;
+      };
+      const hide = () => { if (tip) tip.style.display = 'none'; };
+      if (hit) {
+        hit.addEventListener('mousemove', (e) => move(e.clientX, e.clientY));
+        hit.addEventListener('mouseleave', hide);
+        hit.addEventListener('touchstart', (e) => {
+          const t = e.touches[0]; if (t) move(t.clientX, t.clientY);
+        }, {passive:true});
+        hit.addEventListener('touchmove', (e) => {
+          const t = e.touches[0]; if (t) move(t.clientX, t.clientY);
+        }, {passive:true});
+        hit.addEventListener('touchend', hide);
+      }
 
       if (summary) {
         const cls = up ? 'up' : 'down';
@@ -1384,10 +1526,15 @@
       const m2 = prettyModel(cons.model_2 || 'claude-sonnet-5', null);
       const maxCand = cons.max_candidates_to_llm ?? 8;
       const minConf = cons.min_confidence ?? 70;
+      const mode = cons.decision_mode || 'fallback_deterministic';
+      const modeLine = mode === 'live_dual_llm'
+        ? `<li><strong>${esc(m1)}</strong> and <strong>${esc(m2)}</strong> make blind live decisions from the same ranked evidence when API keys are available. Any disagreement blocks execution and is published below.</li>`
+        : `<li><strong>${esc(m1)}</strong> and <strong>${esc(m2)}</strong> are the configured desk labels. Live dual-LLM runs when provider keys are present; otherwise a deterministic fallback desk is used and tagged in logs. Disagreement still blocks execution.</li>`;
       setHtml('edge-list', `
+
         <li>Broad-market discovery looks for fresh catalysts before the 15-minute decision loop.</li>
         <li>Alpha Radar ranks liquid names on catalyst/news strength, liquidity, and sentiment, then passes up to ${esc(maxCand)} candidates into the decision desk.</li>
-        <li><strong>${esc(m1)}</strong> and <strong>${esc(m2)}</strong> then make blind decisions from the same ranked evidence. Any disagreement blocks execution and is published below.</li>
+        ${modeLine}
         <li>The desk enters only when both models agree (min confidence ${esc(minConf)}%) and paper-broker cash, open concentration, stop/target geometry, and recomputed reward-to-risk all pass.</li>
         <li>Stops and targets are attached on entry. Exits fire on stop, target, or gated rotation when a clearly stronger setup needs risk budget.</li>
         <li>Every candidate, fill, miss, blocked trade, and closed outcome feeds the learning/audit loop. Risk expansion never auto-promotes itself.</li>
@@ -1402,7 +1549,7 @@
         <li>Maximum open positions: ${esc(limits.max_positions ?? '--')} (capital-sized, not a PDT hold cap)</li>
         <li>Daily loss halt: ${dailyLossTxt}</li>
         <li>Portfolio drawdown halt: ${esc(limits.max_drawdown_pct ?? '--')}%</li>
-        <li>Consensus desk: ${esc(m1)} + ${esc(m2)} · dual agreement required</li>
+        <li>Consensus desk: ${esc(m1)} + ${esc(m2)} · dual agreement required · mode ${esc(mode)}</li>
         <li>Cadence: ${esc((d.system || {}).cadence || 'every 15m during NYSE regular hours')}</li>
         <li>Rotation: ${esc(limits.allow_rotation ? 'allowed with min-hold gate' : 'disabled')} · min hold ${esc(limits.rotation_min_hold_minutes ?? '--')}m</li>
       `);
@@ -1522,70 +1669,109 @@
       setText('top-cand', tc.symbol || '--');
       setText('top-cand-sub', tc.catalyst || 'No catalyst summary.');
 
-      const trades = d.recent_trades || [];
-      setHtml('trades-list', trades.length ? trades.map(t => `
-        <div class="row">
-          <div class="row-top">
-            <strong>${esc(t.action)} ${esc(t.symbol)} · ${esc(t.qty)} @ ${esc(money(t.price))}</strong>
-            <span class="${chip((t.action || '').toLowerCase())}">${esc(t.status || t.action)}</span>
+      
+      pager.trades.items = d.recent_trades || [];
+      if (pager.trades.visible < PAGE_SIZE) pager.trades.visible = PAGE_SIZE;
+      function renderTrades() {
+        const all = pager.trades.items;
+        const show = all.slice(0, pager.trades.visible);
+        setHtml('trades-list', show.length ? show.map(t => `
+          <div class="row">
+            <div class="row-top">
+              <strong>${esc(t.action)} ${esc(t.symbol)} · ${esc(t.qty)} @ ${esc(money(t.price))}</strong>
+              <span class="${chip((t.action || '').toLowerCase())}">${esc(t.status || t.action)}</span>
+            </div>
+            <div class="hint">${esc(t.thesis || t.reason || '')}</div>
+            <div class="hint">${esc(formatWhen(t.timestamp))}${typeof t.realized_pnl === 'number' ? ` · realized ${esc(money(t.realized_pnl))}` : ''}</div>
           </div>
-          <div class="hint">${esc(t.thesis || t.reason || '')}</div>
-          <div class="hint">${esc(formatWhen(t.timestamp))}${typeof t.realized_pnl === 'number' ? ` · realized ${esc(money(t.realized_pnl))}` : ''}</div>
-        </div>
-      `).join('') : '<div class="row hint">No fills yet.</div>');
+        `).join('') : '<div class="row hint">No fills yet.</div>');
+        updatePagerFoot('trades', 'trades-count', 'trades-more', 'fills');
+      }
+      renderTrades();
+      bindPager('trades-more', 'trades', renderTrades);
 
-      const activity = d.activity || [];
-      setHtml('activity-list', activity.length ? activity.map(a => `
-        <div class="row">
-          <div class="row-top">
-            <strong>${esc(a.headline || 'Activity')}</strong>
-            <span class="${chip(a.status)}">${esc(a.status || a.type)}</span>
+
+      
+      pager.activity.items = d.activity || [];
+      if (pager.activity.visible < PAGE_SIZE) pager.activity.visible = PAGE_SIZE;
+      function renderActivity() {
+        const all = pager.activity.items;
+        const show = all.slice(0, pager.activity.visible);
+        setHtml('activity-list', show.length ? show.map(a => `
+          <div class="row">
+            <div class="row-top">
+              <strong>${esc(a.headline || 'Activity')}</strong>
+              <span class="${chip(a.status)}">${esc(a.status || a.type)}</span>
+            </div>
+            <div class="hint">${esc(a.detail || '')}</div>
+            <div class="hint">${esc(formatWhen(a.timestamp))}</div>
           </div>
-          <div class="hint">${esc(a.detail || '')}</div>
-          <div class="hint">${esc(formatWhen(a.timestamp))}</div>
-        </div>
-      `).join('') : '<div class="row hint">No activity yet.</div>');
+        `).join('') : '<div class="row hint">No activity yet.</div>');
+        updatePagerFoot('activity', 'activity-count', 'activity-more', 'activity items');
+      }
+      renderActivity();
+      bindPager('activity-more', 'activity', renderActivity);
 
 
 
-      // Closed results (newest first)
-      const closedResults = Array.isArray(d.closed_results)
+
+      
+      pager.closed.items = Array.isArray(d.closed_results)
         ? d.closed_results
         : (Array.isArray(d.closed_trades) ? d.closed_trades : []);
-      const closedShow = closedResults.slice(0, 20);
-      setHtml('closed-list', closedShow.length ? closedShow.map(c => {
-        const pnl = c.realized_pnl;
-        const pp = c.realized_pnl_pct;
-        const tone = typeof pnl === 'number' ? (pnl >= 0 ? 'green' : 'red') : '';
-        const pnlTxt = typeof pnl === 'number'
-          ? `${pnl >= 0 ? '+' : '-'}$${Math.abs(pnl).toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2})}`
-          : '--';
-        const pctTxt = typeof pp === 'number'
-          ? `${pp >= 0 ? '+' : ''}${pp.toFixed(2)}%`
-          : '--';
-        return `
-          <div class="closed-row">
-            <div class="closed-left">
-              <div class="sym">${esc(c.symbol || '--')}</div>
-              <div class="when">Closed ${esc(formatWhen(c.timestamp))}</div>
+      if (pager.closed.visible < PAGE_SIZE) pager.closed.visible = PAGE_SIZE;
+      function renderClosed() {
+        const all = pager.closed.items;
+        const show = all.slice(0, pager.closed.visible);
+        setHtml('closed-list', show.length ? show.map(c => {
+          const pnl = c.realized_pnl;
+          const pp = c.realized_pnl_pct;
+          const tone = typeof pnl === 'number' ? (pnl >= 0 ? 'green' : 'red') : '';
+          const pnlTxt = typeof pnl === 'number'
+            ? `${pnl >= 0 ? '+' : '-'}$${Math.abs(pnl).toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2})}`
+            : '--';
+          const pctTxt = typeof pp === 'number'
+            ? `${pp >= 0 ? '+' : ''}${pp.toFixed(2)}%`
+            : '--';
+          return `
+            <div class="closed-row">
+              <div class="closed-left">
+                <div class="sym">${esc(c.symbol || '--')}</div>
+                <div class="when">Closed ${esc(formatWhen(c.timestamp))}</div>
+              </div>
+              <div class="closed-right">
+                <span class="pnl ${tone}">${esc(pnlTxt)}</span>
+                <span class="pct ${tone}">${esc(pctTxt)}</span>
+              </div>
             </div>
-            <div class="closed-right">
-              <span class="pnl ${tone}">${esc(pnlTxt)}</span>
-              <span class="pct ${tone}">${esc(pctTxt)}</span>
+          `;
+        }).join('') : `
+            <div class="closed-row">
+              <div class="closed-left"><div class="when">No closed trades yet.</div></div>
             </div>
-          </div>
-        `;
-      }).join('') : `
-          <div class="closed-row">
-            <div class="closed-left"><div class="when">No closed trades yet.</div></div>
-          </div>
-      `);
-      setText('closed-foot', `Showing ${closedShow.length} of ${closedResults.length} closed results, newest first.`);
+        `);
+        const total = all.length, shown = Math.min(pager.closed.visible, total);
+        setText('closed-foot', `Showing ${shown} of ${total} closed results, newest first.`);
+        const btn = document.getElementById('closed-more');
+        if (btn) {
+          if (shown >= total) btn.hidden = true;
+          else {
+            btn.hidden = false;
+            btn.textContent = `Show ${Math.min(PAGE_SIZE, total - shown)} more`;
+          }
+        }
+      }
+      renderClosed();
+      bindPager('closed-more', 'closed', renderClosed);
 
 
-      reasoningCards = Array.isArray(d.trade_reasoning) ? d.trade_reasoning : [];
-      if (!reasoningVisible || reasoningVisible < 3) reasoningVisible = 3;
+
+      
+      pager.reasoning.items = Array.isArray(d.trade_reasoning) ? d.trade_reasoning : [];
+      reasoningCards = pager.reasoning.items;
+      if (pager.reasoning.visible < PAGE_SIZE) pager.reasoning.visible = PAGE_SIZE;
       renderReasoning();
+
 
       const improvements = (d.improvements && d.improvements.length) ? d.improvements : DEFAULT_IMPROVEMENTS;
       setHtml('improvements-list', improvements.map((item, idx) => `
@@ -1604,8 +1790,8 @@
 
 
     function renderReasoning() {
-      const all = reasoningCards || [];
-      const show = all.slice(0, reasoningVisible);
+      const all = pager.reasoning.items || reasoningCards || [];
+      const show = all.slice(0, pager.reasoning.visible);
       const list = document.getElementById('reasoning-list');
       const count = document.getElementById('reasoning-count');
       const btn = document.getElementById('reasoning-more');
@@ -1639,15 +1825,7 @@
         `;
       }).join('');
 
-      if (count) count.textContent = `Showing ${show.length} of ${all.length} trade decisions.`;
-      if (btn) {
-        if (show.length >= all.length) {
-          btn.style.display = 'none';
-        } else {
-          btn.style.display = 'inline-flex';
-          btn.textContent = `Show ${Math.min(3, all.length - show.length)} more`;
-        }
-      }
+      updatePagerFoot('reasoning', 'reasoning-count', 'reasoning-more', 'trade decisions');
     }
 
 

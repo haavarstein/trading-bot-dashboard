@@ -19,6 +19,7 @@ from typing import Any, Dict, Optional, Tuple
 sys.path.insert(0, str(Path(__file__).parent))
 
 from paper_broker import PaperBroker, load_broker, quote  # noqa: E402
+import dual_llm  # noqa: E402
 
 try:
     from telegram_notifier import TelegramNotifier
@@ -258,7 +259,15 @@ class DryRunAutoTrader:
             rsi_bonus = 4 if 45 <= rsi <= 65 else (1 if 35 <= rsi < 45 else -2)
             # Prefer names not already held hard
             held_penalty = -25 if symbol in positions else 0
-            score = rank_score + catalyst_score + sentiment_bonus + trend_bonus + rsi_bonus + held_penalty
+            # Model personality on fallback path so dual desks are not identical clones.
+            mn = (model_name or "").lower()
+            if "grok" in mn:
+                style = 0.35 * catalyst_score + 0.15 * rank_score + (3 if sentiment == "bullish" else 0)
+            elif "claude" in mn or "sonnet" in mn:
+                style = 0.15 * catalyst_score + 0.30 * rank_score + rsi_bonus * 0.8 + (2 if price >= ema50 else -2)
+            else:
+                style = 0.0
+            score = rank_score + catalyst_score + sentiment_bonus + trend_bonus + rsi_bonus + held_penalty + style
             ranked.append((score, symbol, payload))
 
         ranked.sort(key=lambda x: x[0], reverse=True)
@@ -611,10 +620,49 @@ class DryRunAutoTrader:
         if not market_context:
             raise RuntimeError("No candidates available for model review")
 
-        decision1 = self.get_model_decision(model1_name, broker_snapshot, market_context)
-        decision2 = self.get_model_decision(model2_name, broker_snapshot, market_context)
-        print(f"  {model1_name}: {decision1['action']} {decision1['symbol']} @ {decision1['confidence']}%")
-        print(f"  {model2_name}: {decision2['action']} {decision2['symbol']} @ {decision2['confidence']}%")
+        rules = {
+            "max_position_usd": self.config.get("position_limits", {}).get("max_position_size_usd", 200),
+            "max_positions": self.config.get("position_limits", {}).get("max_positions", 5),
+            "min_rr": self.config.get("order_limits", {}).get("min_risk_reward_ratio", 1.5),
+            "max_candidates_to_llm": self.config.get("consensus_rules", {}).get("max_candidates_to_llm", 8),
+        }
+        status = dual_llm.provider_status()
+        print(
+            f"  providers: xai={'yes' if status.get('xai_key') else 'no'} | "
+            f"anthropic={'yes' if status.get('anthropic_key') else 'no'}"
+        )
+
+        def _fallback(name, broker, market):
+            return self.get_model_decision(name, broker, market)
+
+        decision1 = dual_llm.get_live_or_fallback(
+            model1_name,
+            broker_snapshot,
+            market_context,
+            rules,
+            _fallback,
+            effort=effort,
+        )
+        # ensure timestamp
+        decision1.setdefault("timestamp", datetime.now(timezone.utc).isoformat())
+        decision2 = dual_llm.get_live_or_fallback(
+            model2_name,
+            broker_snapshot,
+            market_context,
+            rules,
+            _fallback,
+            effort=None,
+        )
+        decision2.setdefault("timestamp", datetime.now(timezone.utc).isoformat())
+
+        print(
+            f"  {model1_name}: {decision1['action']} {decision1['symbol']} @ {decision1['confidence']}% "
+            f"[{decision1.get('source', '?')}]"
+        )
+        print(
+            f"  {model2_name}: {decision2['action']} {decision2['symbol']} @ {decision2['confidence']}% "
+            f"[{decision2.get('source', '?')}]"
+        )
 
         consensus_entry = {
             "model1": decision1,

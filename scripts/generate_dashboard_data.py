@@ -663,6 +663,27 @@ def main():
             "log_all_disagreements": bool(
                 cfg.get("consensus_rules", {}).get("log_all_disagreements", True)
             ),
+            "decision_mode": (
+                "live_dual_llm"
+                if any((r.get("model1") or {}).get("source") == "live" or (r.get("model2") or {}).get("source") == "live" for r in (today_consensus or consensus)[-12:])
+                else "fallback_deterministic"
+            ),
+            "live_share_recent": round(
+                (
+                    sum(
+                        1
+                        for r in (today_consensus or consensus)[-20:]
+                        for side in ("model1", "model2")
+                        if (r.get(side) or {}).get("source") == "live"
+                    )
+                    / max(
+                        1,
+                        2 * len((today_consensus or consensus)[-20:] or [1]),
+                    )
+                )
+                * 100,
+                1,
+            ),
         },
         "learning": {
             "candidate_signals_logged": len(candidates),
