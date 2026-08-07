@@ -1225,15 +1225,18 @@
     function updatePagerFoot(kind, countId, btnId, label) {
       const st = pager[kind];
       const total = (st.items || []).length;
-      const shown = Math.min(st.visible, total);
+      const shown = Math.min(st.visible || 0, total);
       const countEl = document.getElementById(countId);
       const btn = document.getElementById(btnId);
       if (countEl) countEl.textContent = `Showing ${shown} of ${total} ${label}.`;
       if (btn) {
-        if (shown >= total) {
+        if (shown >= total || total === 0) {
           btn.hidden = true;
+          btn.style.display = 'none';
         } else {
           btn.hidden = false;
+          btn.style.display = '';
+          btn.disabled = false;
           const more = Math.min(PAGE_SIZE, total - shown);
           btn.textContent = `Show ${more} more`;
         }
@@ -1242,12 +1245,14 @@
 
     function bindPager(btnId, kind, rerender) {
       const btn = document.getElementById(btnId);
-      if (!btn || btn._boundPager) return;
-      btn._boundPager = true;
-      btn.addEventListener('click', () => {
-        pager[kind].visible += PAGE_SIZE;
+      if (!btn) return;
+      // onclick assignment is idempotent and survives repeated load() calls
+      btn.onclick = (ev) => {
+        ev.preventDefault();
+        if (!pager[kind]) return;
+        pager[kind].visible = (pager[kind].visible || PAGE_SIZE) + PAGE_SIZE;
         rerender();
-      });
+      };
     }
 
 
@@ -1771,6 +1776,7 @@
       reasoningCards = pager.reasoning.items;
       if (pager.reasoning.visible < PAGE_SIZE) pager.reasoning.visible = PAGE_SIZE;
       renderReasoning();
+      bindPager('reasoning-more', 'reasoning', renderReasoning);
 
 
       const improvements = (d.improvements && d.improvements.length) ? d.improvements : DEFAULT_IMPROVEMENTS;
@@ -1800,7 +1806,7 @@
       if (!all.length) {
         list.innerHTML = '<div class="row hint">No executed trade reasoning yet. Fills will appear here after the next paper buys/sells.</div>';
         if (count) count.textContent = 'Showing 0 of 0 trade decisions.';
-        if (btn) btn.style.display = 'none';
+        if (btn) { btn.hidden = true; btn.style.display = 'none'; }
         return;
       }
 
