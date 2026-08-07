@@ -190,6 +190,120 @@ def build_trade_reasoning(fills, orders, closed):
 
 
 
+def build_thinking(holdings, latest_decision, latest_candidate, snap, now, cfg):
+    """Farzad-style plain-English stance block."""
+    held = [h for h in holdings if h.get("symbol")]
+    syms = [h.get("symbol") for h in held]
+    act = (latest_decision or {}).get("action") or "HOLD"
+    dec_sym = (latest_decision or {}).get("symbol")
+    top = (latest_candidate or {}).get("symbol")
+    cash = float((snap or {}).get("cash") or 0)
+    max_pos = int(((cfg or {}).get("position_limits") or {}).get("max_positions") or 5)
+    min_pos = float(((cfg or {}).get("position_limits") or {}).get("min_position_size_usd") or 50)
+
+    if act == "BUY" and dec_sym:
+        badge = f"Looking to buy {dec_sym}"
+        headline = f"Buying pressure on {dec_sym}."
+        plain = (
+            f"Right now Hermes wants exposure to {dec_sym}. "
+            f"The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared."
+        )
+    elif act == "SELL" and dec_sym:
+        badge = f"Exiting {dec_sym}"
+        headline = f"Selling {dec_sym}."
+        plain = (
+            f"Right now Hermes is exiting {dec_sym}. "
+            f"That can be stop, target, or gated rotation when a stronger setup needs risk budget."
+        )
+    else:
+        if syms:
+            joined = ", ".join(syms)
+            badge = "Holding what it owns"
+            headline = f"Holding {joined}. No new trade right now."
+            plain = (
+                f"Right now Hermes is holding {joined} and not forcing a new trade. "
+                f"Nothing new looked clean enough, so the safe move is patience."
+            )
+        else:
+            badge = "Waiting in cash"
+            headline = "No open holdings. Waiting for a clean setup."
+            plain = (
+                "Right now Hermes is in cash and not forcing a trade. "
+                "It will only act when a ranked setup clears dual agreement and risk checks."
+            )
+
+    triggers = []
+    for h in held:
+        sym = h.get("symbol")
+        avg = h.get("avg_cost")
+        stop = h.get("stop")
+        target = h.get("target")
+        try:
+            avg_s = f"${float(avg):.2f}"
+            stop_s = f"${float(stop):.2f}"
+            tgt_s = f"${float(target):.2f}"
+        except Exception:
+            avg_s, stop_s, tgt_s = str(avg), str(stop), str(target)
+        triggers.append(
+            f"It owns {sym}, bought near {avg_s}. Simple plan: sell if it falls to about {stop_s}, or take profit near {tgt_s}."
+        )
+
+    if len(held) >= max_pos:
+        triggers.append(
+            f"Book is at max open names ({max_pos}). A new buy needs a free slot, enough cash, or a gated rotation."
+        )
+    elif cash < min_pos:
+        triggers.append(
+            f"Cash is only about ${cash:.2f}, below the ${min_pos:.0f} minimum new-buy size, so fresh entries wait."
+        )
+    else:
+        triggers.append(
+            "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside."
+        )
+    if top and top not in syms:
+        triggers.append(
+            f"Top scanner name right now is {top}, but it still has to clear dual agreement and risk code before any fill."
+        )
+    triggers.append("If nothing looks clean, do nothing. Sitting in cash or holdings is allowed.")
+
+    owned_cards = []
+    for h in held:
+        owned_cards.append(
+            {
+                "symbol": h.get("symbol"),
+                "qty": h.get("qty"),
+                "avg_cost": h.get("avg_cost"),
+                "stop": h.get("stop"),
+                "target": h.get("target"),
+                "last": h.get("last"),
+                "open_pnl": h.get("open_pnl"),
+                "open_pnl_pct": h.get("open_pnl_pct"),
+                "line": (
+                    f"Bought near ${float(h.get('avg_cost') or 0):.2f} · "
+                    f"Sell safety line ${float(h.get('stop') or 0):.2f} · "
+                    f"Profit target ${float(h.get('target') or 0):.2f}"
+                ),
+                "plan": (
+                    f"stop {float(h.get('stop') or 0):.1f} or target {float(h.get('target') or 0):.1f}"
+                ),
+            }
+        )
+
+    return {
+        "badge": badge,
+        "headline": headline,
+        "plain_english": plain,
+        "triggers": triggers,
+        "owned": owned_cards,
+        "last_checked": now.isoformat(),
+        "cadence_note": "Checked about every 15 minutes while the market is open",
+        "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
+        "action": act,
+        "symbols_held": syms,
+    }
+
+
+
 def main():
     now = datetime.now(timezone.utc)
     today = now.date()
@@ -294,17 +408,11 @@ def main():
 
     closed_recent = closed[-8:][::-1]
 
-    stance = "Patient — waiting for a clean ranked setup."
-    if latest_decision:
-        act = latest_decision.get("action")
-        sym = latest_decision.get("symbol")
-        thesis = latest_decision.get("thesis") or ""
-        if act == "BUY":
-            stance = f"Buying pressure on {sym}. {thesis}"
-        elif act == "SELL":
-            stance = f"Exiting {sym}. {thesis}"
-        elif act == "HOLD":
-            stance = f"Holding / no new risk. {thesis}"
+    thinking = build_thinking(holdings, latest_decision, latest_candidate, snap, now, cfg)
+    stance = thinking.get("headline") or "Patient — waiting for a clean ranked setup."
+    if latest_decision and latest_decision.get("thesis") and latest_decision.get("action") in ("BUY", "SELL"):
+        # keep short stance string for older consumers
+        stance = f"{thinking.get('headline')} {(latest_decision.get('thesis') or '')}".strip()
 
     payload = {
         "generated_at": now.isoformat(),
@@ -349,6 +457,7 @@ def main():
         "latest_candidate": latest_candidate,
         "latest_decision": latest_decision,
         "stance": stance,
+        "thinking": thinking,
         "activity": activity,
         "recent_trades": recent_trades,
         "trade_reasoning": build_trade_reasoning(fills, orders, closed),

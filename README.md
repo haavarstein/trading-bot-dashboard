@@ -82,6 +82,7 @@ Public page sections:
 - Realized P/L, open P/L, capital deployed, closed trades, SPY
 - How Hermes is trying to win (edge + hard limits + learning sample)
 - Current holdings with stop/target
+- What Hermes is thinking (plain English stance + triggers + owned cards)
 - Decisions / stance
 - Recent fills
 - Trade reasoning cards (narrative + bullets + risk map)

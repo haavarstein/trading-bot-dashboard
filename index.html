@@ -408,6 +408,123 @@
       }
     }
 
+
+    /* What Hermes is thinking */
+    .think-shell {
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.028), rgba(255,255,255,0.012));
+      box-shadow: var(--shadow);
+      padding: 26px 24px 22px;
+    }
+    .think-shell h2 {
+      margin: 0 0 8px;
+      font-size: 30px;
+      font-weight: 720;
+      letter-spacing: -0.03em;
+    }
+    .think-sub {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+      max-width: 900px;
+    }
+    .think-meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 18px 0 14px;
+    }
+    .think-badge {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid rgba(96,165,250,0.28);
+      background: rgba(96,165,250,0.12);
+      color: #d7e8ff;
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 13px;
+      font-weight: 650;
+    }
+    .think-checked {
+      text-align: right;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .think-checked strong {
+      display: block;
+      color: #d7e3f2;
+      font-weight: 650;
+      margin-bottom: 2px;
+    }
+    .think-headline {
+      margin: 0 0 16px;
+      font-size: 28px;
+      line-height: 1.2;
+      font-weight: 750;
+      letter-spacing: -0.03em;
+      color: #f5f8fc;
+    }
+    .think-h3 {
+      margin: 18px 0 8px;
+      font-size: 15px;
+      font-weight: 750;
+      color: #eef4fb;
+    }
+    .think-plain {
+      margin: 0;
+      color: #c5d2e3;
+      font-size: 15px;
+      line-height: 1.55;
+      max-width: 980px;
+    }
+    .think-bullets {
+      margin: 8px 0 0;
+      padding-left: 18px;
+      color: #9aacc0;
+      font-size: 14.5px;
+      line-height: 1.55;
+    }
+    .think-bullets li { margin: 8px 0; }
+    .think-owned {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .think-own-card {
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 18px;
+      background: rgba(8,12,18,0.65);
+      padding: 16px;
+    }
+    .think-own-card .sym {
+      font-size: 20px;
+      font-weight: 750;
+      letter-spacing: -0.02em;
+      color: #f3f7fc;
+    }
+    .think-own-card .meta {
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .think-foot {
+      margin-top: 16px;
+      color: #7f91a8;
+      font-size: 12.5px;
+    }
+    @media (max-width: 720px) {
+      .think-owned { grid-template-columns: 1fr; }
+      .think-headline { font-size: 22px; }
+      .think-checked { text-align: left; }
+    }
+
     .footer {
       margin-top: 34px;
       text-align: center;
@@ -517,7 +634,7 @@
       <a href="#performance">Performance</a>
       <a href="#edge">How it works</a>
       <a href="#holdings-section">Holdings</a>
-      <a href="#stance-section">Decisions</a>
+      <a href="#stance-section">Thinking</a>
       <a href="#trades-section">Trades</a>
       <a href="#reasoning-section">Reasoning</a>
       <a href="#improvements-section">Improvements</a>
@@ -616,16 +733,41 @@
     </section>
 
     <section id="stance-section" class="section">
-      <div class="split-2">
-        <div class="card">
-          <div class="label">What the bot is thinking now</div>
-          <div class="stance-value" id="stance-text">Loading…</div>
-          <div class="hint" id="latest-decision-sub"></div>
+      <div class="think-shell">
+        <h2>What Hermes is thinking</h2>
+        <p class="think-sub">Plain English. Updated about every 15 minutes: what it owns, what would make it buy or sell, and why it is patient right now.</p>
+
+        <div class="think-meta">
+          <span class="think-badge" id="think-badge">Loading…</span>
+          <div class="think-checked">
+            <strong id="think-checked">Last checked: --</strong>
+            <span id="think-cadence">Checked about every 15 minutes while the market is open</span>
+          </div>
         </div>
-        <div class="card">
-          <div class="label">Top ranked candidate</div>
-          <div class="value sm" id="top-cand" style="font-size:34px;">--</div>
-          <div class="hint" id="top-cand-sub">Waiting for scanner output…</div>
+
+        <h3 class="think-headline" id="think-headline">Loading stance…</h3>
+
+        <div class="think-h3">In plain English</div>
+        <p class="think-plain" id="think-plain">Loading…</p>
+
+        <div class="think-h3">What would make it do something</div>
+        <ul class="think-bullets" id="think-triggers">
+          <li>Loading…</li>
+        </ul>
+
+        <div class="think-h3">What it owns right now</div>
+        <div class="think-owned" id="think-owned">
+          <div class="think-own-card"><div class="meta">Loading holdings…</div></div>
+        </div>
+
+        <div class="think-foot" id="think-foot">Written for normal people. Updated on each live check. Private account details are removed.</div>
+
+        <!-- keep hidden anchors for older JS ids -->
+        <div style="display:none">
+          <div id="stance-text"></div>
+          <div id="latest-decision-sub"></div>
+          <div id="top-cand"></div>
+          <div id="top-cand-sub"></div>
         </div>
       </div>
     </section>
@@ -938,13 +1080,37 @@
         `;
       }).join('') : '<div class="hold-card"><div class="hold-entry">No open holdings — waiting for the next buy fill.</div></div>');
 
-      setText('stance-text', d.stance || 'No stance yet.');
+      const th = d.thinking || {};
       const ld = d.latest_decision || {};
+      const tc = d.latest_candidate || {};
+
+      setText('think-badge', th.badge || (d.stance ? 'Current stance' : 'Loading…'));
+      setText('think-headline', th.headline || d.stance || 'No stance yet.');
+      setText('think-plain', th.plain_english || d.stance || 'No plain-English stance yet.');
+      setText('think-checked', `Last checked: ${formatWhen(th.last_checked || d.generated_at)}`);
+      setText('think-cadence', th.cadence_note || 'Checked about every 15 minutes while the market is open');
+      setText('think-foot', th.footer || 'Written for normal people. Updated on each live check. Private account details are removed.');
+
+      const triggers = th.triggers || [];
+      setHtml('think-triggers', triggers.length
+        ? triggers.map(x => `<li>${esc(x)}</li>`).join('')
+        : '<li>No trigger list yet.</li>');
+
+      const owned = th.owned || [];
+      setHtml('think-owned', owned.length ? owned.map(o => `
+        <div class="think-own-card">
+          <div class="sym">${esc(o.symbol)}</div>
+          <div class="meta">holding · ${esc(typeof o.qty === 'number' ? o.qty.toLocaleString(undefined,{maximumFractionDigits:6}) : o.qty)} shares</div>
+          <div class="meta">${esc(o.line || '')}</div>
+          <div class="meta">${esc(o.plan || '')}</div>
+        </div>
+      `).join('') : '<div class="think-own-card"><div class="meta">No open holdings right now.</div></div>');
+
+      // Back-compat hidden fields
+      setText('stance-text', th.headline || d.stance || 'No stance yet.');
       setText('latest-decision-sub', ld.action
         ? `Latest decision: ${ld.action} ${ld.symbol || ''} @ ${ld.confidence || '--'}% confidence.`
         : 'No latest decision recorded.');
-
-      const tc = d.latest_candidate || {};
       setText('top-cand', tc.symbol || '--');
       setText('top-cand-sub', tc.catalyst || 'No catalyst summary.');
 
