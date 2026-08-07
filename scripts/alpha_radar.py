@@ -18,6 +18,10 @@ from typing import List, Dict, Any
 
 import requests
 import yfinance as yf
+try:
+    import market_data
+except Exception:
+    market_data = None
 
 
 DEFAULT_UNIVERSE = [
@@ -79,6 +83,26 @@ class AlphaRadar:
 
     def fetch_quotes_bulk(self, symbols: List[str]) -> Dict[str, Dict[str, Any]]:
         out: Dict[str, Dict[str, Any]] = {}
+        # Prefer FMP when configured
+        if market_data is not None:
+            try:
+                bulk = market_data.quotes_bulk(symbols)
+                if bulk:
+                    # normalize keys expected by radar
+                    for sym, q in bulk.items():
+                        out[sym] = {
+                            "name": q.get("name") or sym,
+                            "price": q.get("price"),
+                            "volume": q.get("volume") or 0.0,
+                            "avg_volume": q.get("avg_volume") or q.get("volume") or 0.0,
+                            "percent_change": q.get("percent_change") or 0.0,
+                            "exchange": q.get("exchange") or "",
+                            "source": q.get("source") or "fmp",
+                        }
+                    if len(out) >= max(1, int(len(symbols) * 0.5)):
+                        return out
+            except Exception:
+                out = {}
         hist = yf.download(
             tickers=" ".join(symbols),
             period="10d",
@@ -268,7 +292,8 @@ class AlphaRadar:
     def run(self):
         print(f"\n{'='*60}")
         print(f"Alpha Radar Scan - {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S')} UTC")
-        print(f"Universe size: {len(self.universe)} | Quote source: yfinance | News: Google RSS")
+        src = "fmp" if (market_data and getattr(market_data, "provider_name", lambda: "yfinance")() == "fmp") else "yfinance"
+        print(f"Universe size: {len(self.universe)} | Quote source: {src} | News: Google RSS")
         print(f"{'='*60}\n")
 
         candidates = self.scan_market()

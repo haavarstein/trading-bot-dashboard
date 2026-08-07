@@ -16,6 +16,10 @@ from pathlib import Path
 from typing import Any
 
 try:
+    import market_data
+except Exception:  # pragma: no cover
+    market_data = None
+try:
     import yfinance as yf
 except Exception:  # pragma: no cover
     yf = None
@@ -53,7 +57,15 @@ def _append_jsonl(path: Path, row: dict) -> None:
 
 
 def quote(symbol: str) -> float | None:
-    """Best-effort last price."""
+    """Best-effort last price (FMP primary, yfinance fallback)."""
+    if market_data is not None:
+        try:
+            px = market_data.quote(symbol)
+            if px is not None:
+                return float(px)
+        except Exception:
+            pass
+    # last-resort direct yfinance
     if yf is None:
         return None
     try:

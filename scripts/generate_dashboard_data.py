@@ -17,6 +17,10 @@ import sys
 
 sys.path.insert(0, sys_path_note)
 from paper_broker import load_broker  # noqa: E402
+try:
+    import market_data  # noqa: E402
+except Exception:
+    market_data = None
 
 
 def read_jsonl(path: Path):
@@ -697,6 +701,7 @@ def main():
             "broker": "local_paper_broker",
             "ibkr_mcp": "paused",
             "cadence": "every 15m during NYSE regular hours",
+            "market_data": (market_data.provider_status() if market_data else {"provider": "yfinance"}),
             "note": "Simulated paper account with real market marks. Not IBKR-confirmed.",
         },
     }

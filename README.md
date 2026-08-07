@@ -16,7 +16,8 @@ Public monitor + local simulated paper trading bot inspired by the Farzad.money 
 
 1. **Alpha Radar** ranks liquid equity candidates from catalyst/news + liquidity signals (`scripts/alpha_radar.py` → `data/candidates.json`).
 2. **Decision engine** (`scripts/autotrader.py`) chooses BUY / SELL / HOLD from ranked candidates + open portfolio state.
-3. **Local paper broker** (`scripts/paper_broker.py`) is account truth: cash, positions, fills, realized/open P/L, SPY benchmark start.
+3. **Market data** via Financial Modeling Prep (primary) with yfinance fallback (`scripts/market_data.py`).
+4. **Local paper broker** (`scripts/paper_broker.py`) is account truth: cash, positions, fills, realized/open P/L, SPY benchmark start.
 4. **Dashboard publisher** rebuilds `dashboard-data.json` and pushes the public snapshot to GitHub → Vercel.
 5. **Telegram session report** summarizes decision/fill status plus per-holding `+/- $` and `%` bullets (mobile-friendly).
 
@@ -130,7 +131,8 @@ Secrets (`.env`, tokens, portfolio private state) stay gitignored. Do not commit
 
 ## Privacy / secrets checklist
 - `.env` / `.env*` are gitignored
-- API keys (`XAI_API_KEY`, `ANTHROPIC_API_KEY`, etc.) must never be committed or published
+- API keys (`FMP_API_KEY`, `XAI_API_KEY`, `ANTHROPIC_API_KEY`, etc.) must never be committed or published
+- Market data: `QUOTE_PROVIDER=fmp` (default when key present) with yfinance fallback
 - Runtime ledgers under `data/` are local; public site gets sanitized `dashboard-data.json` only
 - Before public push: scan for `xai-`, `sk-ant-`, bearer tokens, private keys, passwords
 

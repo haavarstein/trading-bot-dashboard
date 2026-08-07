@@ -103,12 +103,17 @@
     "consensus_log": "./data/consensus_log.jsonl",
     "candidate_outcomes": "./data/candidate_outcomes.jsonl"
   },
-  "last_updated": "2026-08-06T23:57:26Z",
+  "last_updated": "2026-08-07T11:39:42Z",
   "execution_rules": {
     "allow_rotation": true,
     "rotation_min_score": 70,
     "rotation_min_hold_minutes": 45,
     "rotation_require_open_winner": false,
     "comment": "Rotation allowed for better ranked setups. Min hold reduces 15m churn. Stop/target still primary exits."
+  },
+  "market_data": {
+    "provider": "fmp",
+    "fallback": "yfinance",
+    "comment": "FMP primary quotes when FMP_API_KEY set in local .env; yfinance fallback."
   }
 }
