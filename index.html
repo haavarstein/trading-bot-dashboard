@@ -302,6 +302,112 @@
       letter-spacing: -0.02em;
     }
 
+
+    /* Farzad-style holdings cards */
+    .holdings-shell {
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.028), rgba(255,255,255,0.012));
+      box-shadow: var(--shadow);
+      padding: 26px 24px 22px;
+    }
+    .holdings-shell .section-head h2 {
+      font-size: 30px;
+      font-weight: 720;
+      letter-spacing: -0.03em;
+    }
+    .holdings-shell .section-head p {
+      max-width: 920px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+    .hold-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .hold-card {
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 22px;
+      background: rgba(8, 12, 18, 0.72);
+      padding: 20px 22px 18px;
+    }
+    .hold-top {
+      display: grid;
+      grid-template-columns: minmax(120px, 0.9fr) repeat(3, minmax(0, 1fr));
+      gap: 14px 18px;
+      align-items: start;
+    }
+    .hold-sym {
+      margin: 0;
+      font-size: 28px;
+      line-height: 1.05;
+      font-weight: 750;
+      letter-spacing: -0.03em;
+      color: #f5f8fc;
+    }
+    .hold-entry {
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .hold-k {
+      color: #7f91a8;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .hold-v {
+      margin-top: 8px;
+      color: #f3f7fc;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      font-variant-numeric: tabular-nums;
+    }
+    .hold-v.sm {
+      font-size: 20px;
+    }
+    .hold-v.green { color: var(--green); }
+    .hold-v.red { color: var(--red); }
+    .hold-pct {
+      margin-top: 4px;
+      font-size: 14px;
+      font-weight: 650;
+      font-variant-numeric: tabular-nums;
+    }
+    .hold-pct.green { color: var(--green); }
+    .hold-pct.red { color: var(--red); }
+    .hold-bottom {
+      display: grid;
+      grid-template-columns: minmax(120px, 0.9fr) repeat(3, minmax(0, 1fr));
+      gap: 14px 18px;
+      margin-top: 18px;
+      padding-top: 4px;
+    }
+    .hold-thesis {
+      margin-top: 16px;
+      color: #8fa0b5;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    @media (max-width: 900px) {
+      .hold-top, .hold-bottom {
+        grid-template-columns: 1fr 1fr;
+      }
+      .hold-sym { font-size: 24px; }
+      .hold-v { font-size: 18px; }
+    }
+    @media (max-width: 560px) {
+      .hold-top, .hold-bottom {
+        grid-template-columns: 1fr;
+      }
+    }
+
     .footer {
       margin-top: 34px;
       text-align: center;
@@ -498,12 +604,14 @@
     </section>
 
     <section id="holdings-section" class="section">
-      <div class="section-head">
-        <h2>Current holdings</h2>
-        <p>Open paper positions with stop/target context.</p>
-      </div>
-      <div class="list" id="holdings-list">
-        <div class="row hint">Loading holdings…</div>
+      <div class="holdings-shell">
+        <div class="section-head">
+          <h2>Current holdings</h2>
+          <p id="holdings-blurb">Each stock uses its raw market quote for marks, never a made-up scaled price. Open P/L below is quote-marked against average cost in the local paper broker.</p>
+        </div>
+        <div class="hold-list" id="holdings-list">
+          <div class="hold-card"><div class="hold-entry">Loading holdings…</div></div>
+        </div>
       </div>
     </section>
 
@@ -756,21 +864,79 @@
       );
 
       const holdings = d.holdings || [];
-      setHtml('holdings-list', holdings.length ? holdings.map(h => `
-        <div class="row">
-          <div class="row-top">
-            <strong>${esc(h.symbol)} · ${esc(h.qty)} sh</strong>
-            <span class="${chip(h.open_pnl >= 0 ? 'buy' : 'sell')}">${esc(money(h.open_pnl))} (${esc(pct(h.open_pnl_pct))})</span>
+      const openPnlSum = holdings.reduce((a, h) => a + (typeof h.open_pnl === 'number' ? h.open_pnl : 0), 0);
+      const blurb = document.getElementById('holdings-blurb');
+      if (blurb) {
+        const sign = openPnlSum >= 0 ? '+' : '';
+        blurb.textContent =
+          `Each stock uses its raw market quote for marks, never a made-up scaled price. ` +
+          `Quote-marked open P/L is ${sign}$${Math.abs(openPnlSum).toFixed(2)}. ` +
+          `What is still open can still change the final result.`;
+      }
+      setHtml('holdings-list', holdings.length ? holdings.map(h => {
+        const pnl = h.open_pnl;
+        const pp = h.open_pnl_pct;
+        const up = typeof pnl === 'number' ? pnl >= 0 : true;
+        const tone = typeof pnl === 'number' ? (up ? 'green' : 'red') : '';
+        const pnlTxt = typeof pnl === 'number' ? `${pnl >= 0 ? '+' : ''}${money(pnl).replace('$', '$')}` : '--';
+        // money() already has $; for signed P/L rebuild
+        const pnlSigned = typeof pnl === 'number'
+          ? `${pnl >= 0 ? '+' : '-'}$${Math.abs(pnl).toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2})}`
+          : '--';
+        const pctSigned = typeof pp === 'number'
+          ? `${pp >= 0 ? '+' : ''}${pp.toFixed(2)}%`
+          : '--';
+        const qty = h.qty;
+        const qtyTxt = typeof qty === 'number'
+          ? qty.toLocaleString(undefined,{maximumFractionDigits:4})
+          : esc(qty ?? '--');
+        const costBasis = (typeof h.qty === 'number' && typeof h.avg_cost === 'number')
+          ? money(h.qty * h.avg_cost)
+          : (typeof h.market_value === 'number' ? money(h.market_value) : '--');
+        const entries = h.entries_count || h.open_entries || 1;
+        return `
+          <div class="hold-card">
+            <div class="hold-top">
+              <div>
+                <div class="hold-sym">${esc(h.symbol || '--')}</div>
+                <div class="hold-entry">${esc(entries)} open ${entries === 1 ? 'entry' : 'entries'}</div>
+              </div>
+              <div>
+                <div class="hold-k">Shares</div>
+                <div class="hold-v sm">${qtyTxt}</div>
+              </div>
+              <div>
+                <div class="hold-k">Cost basis</div>
+                <div class="hold-v sm">${esc(costBasis)}</div>
+              </div>
+              <div>
+                <div class="hold-k">Avg cost</div>
+                <div class="hold-v sm">${esc(money(h.avg_cost))}</div>
+              </div>
+            </div>
+            <div class="hold-bottom">
+              <div>
+                <div class="hold-k">Last mark</div>
+                <div class="hold-v">${esc(money(h.last))}</div>
+              </div>
+              <div>
+                <div class="hold-k">Open P/L</div>
+                <div class="hold-v ${tone}">${esc(pnlSigned)}</div>
+                <div class="hold-pct ${tone}">${esc(pctSigned)}</div>
+              </div>
+              <div>
+                <div class="hold-k">Stop zone</div>
+                <div class="hold-v sm">${esc(money(h.stop))}</div>
+              </div>
+              <div>
+                <div class="hold-k">Target zone</div>
+                <div class="hold-v sm">${esc(money(h.target))}</div>
+              </div>
+            </div>
+            ${h.thesis ? `<div class="hold-thesis">${esc(h.thesis)}</div>` : ''}
           </div>
-          <div class="metrics">
-            <div class="metric"><div class="k">Avg cost</div><div class="v">${esc(money(h.avg_cost))}</div></div>
-            <div class="metric"><div class="k">Last</div><div class="v">${esc(money(h.last))}</div></div>
-            <div class="metric"><div class="k">Stop</div><div class="v">${esc(money(h.stop))}</div></div>
-            <div class="metric"><div class="k">Target</div><div class="v">${esc(money(h.target))}</div></div>
-          </div>
-          <div class="hint" style="margin-top:12px;">${esc(h.thesis || '')}</div>
-        </div>
-      `).join('') : '<div class="row hint">No open holdings — waiting for the next buy fill.</div>');
+        `;
+      }).join('') : '<div class="hold-card"><div class="hold-entry">No open holdings — waiting for the next buy fill.</div></div>');
 
       setText('stance-text', d.stance || 'No stance yet.');
       const ld = d.latest_decision || {};
