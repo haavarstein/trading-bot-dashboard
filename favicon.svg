@@ -1,34 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Hermes Auto-Trader">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#faf7f1"/>
-      <stop offset="100%" stop-color="#f3efe6"/>
-    </linearGradient>
-    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#292524"/>
-      <stop offset="100%" stop-color="#1c1917"/>
-    </linearGradient>
-    <linearGradient id="line" x1="0" y1="1" x2="1" y2="0">
-      <stop offset="0%" stop-color="#34d399"/>
-      <stop offset="100%" stop-color="#059669"/>
-    </linearGradient>
-  </defs>
-
-  <!-- soft app tile -->
-  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bg)"/>
-  <rect x="2.75" y="2.75" width="58.5" height="58.5" rx="15.25" fill="none" stroke="rgba(28,25,23,0.10)" stroke-width="1.5"/>
-
-  <!-- dark hero card -->
-  <rect x="10" y="10" width="44" height="44" rx="12" fill="url(#tile)"/>
-
-  <!-- workspace accent -->
-  <circle cx="18.5" cy="18.5" r="2.2" fill="#ea580c"/>
-
-  <!-- monogram H -->
-  <path d="M22 24.5h3.4v6.2H30.2V24.5H33.6V39H30.2v-6.4h-4.8V39H22V24.5z" fill="#fafaf9"/>
-
-  <!-- equity sparkline -->
-  <path d="M20 42.5 L26.5 40.2 L31 41.4 L37.5 36.8 L44 34.5"
-        fill="none" stroke="url(#line)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="44" cy="34.5" r="2.1" fill="#4ade80"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Hermes">
+  <rect width="64" height="64" rx="12" fill="#0a0a0a"/>
+  <path fill="#ffffff"
+        d="M18 14h8v14h12V14h8v36h-8V36H26v14h-8V14z"/>
 </svg>
