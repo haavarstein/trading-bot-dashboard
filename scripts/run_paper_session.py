@@ -28,6 +28,20 @@ sys.path.insert(0, str(SCRIPTS))
 NY = ZoneInfo("America/New_York")
 MARKET_OPEN = time(9, 30)
 MARKET_CLOSE = time(16, 0)
+DASHBOARD_URL = os.environ.get(
+    "DASHBOARD_URL", "https://trading-bot-delta-roan.vercel.app"
+)
+
+
+def log(msg: str = "") -> None:
+    """Diagnostics for local/cron logs — NOT delivered to Telegram (no_agent uses stdout)."""
+    print(msg, file=sys.stderr, flush=True)
+
+
+def tg(msg: str) -> None:
+    """Telegram-facing stdout for Hermes no_agent delivery."""
+    print(msg, flush=True)
+
 
 
 def run(cmd: list[str], timeout: int = 300) -> subprocess.CompletedProcess:
@@ -106,30 +120,30 @@ def main() -> int:
     open_ok, reason = is_nyse_regular_session(now)
 
     if not open_ok and not force:
-        # Quiet-ish skip for off-hours cron ticks that still fire near edges
-        print(f"SKIP paper session — {reason}")
+        # Silent for Telegram (empty stdout). Details only on stderr.
+        log(f"SKIP paper session — {reason}")
         return 0
 
     py = sys.executable
-    print(f"PAPER SESSION START — {now.strftime('%Y-%m-%d %H:%M %Z')} ({reason if open_ok else 'FORCED'})")
+    log(f"PAPER SESSION START — {now.strftime('%Y-%m-%d %H:%M %Z')} ({reason if open_ok else 'FORCED'})")
 
     # 1) Scan
     scan = run([py, str(SCRIPTS / "alpha_radar.py")], timeout=300)
     if scan.returncode != 0:
-        print("SCAN FAILED")
-        print((scan.stderr or scan.stdout)[-500:])
+        log("SCAN FAILED")
+        log((scan.stderr or scan.stdout)[-500:])
         return 1
-    print("SCAN OK")
+    log("SCAN OK")
 
     # 2) Trade cycle (simulated paper)
     trade = run([py, str(SCRIPTS / "autotrader.py")], timeout=180)
     trade_out = (trade.stdout or "") + (trade.stderr or "")
     if trade.returncode != 0:
-        print("TRADE CYCLE FAILED")
-        print(trade_out[-500:])
+        log("TRADE CYCLE FAILED")
+        log(trade_out[-500:])
         # still refresh dashboard from whatever logs exist
     else:
-        print("TRADE CYCLE OK")
+        log("TRADE CYCLE OK")
 
     # Extract a compact signal for the summary
     selected = None
@@ -220,10 +234,10 @@ def main() -> int:
     # 3) Dashboard data
     dash = run([py, str(SCRIPTS / "generate_dashboard_data.py")], timeout=60)
     if dash.returncode != 0:
-        print("DASHBOARD GEN FAILED")
-        print((dash.stderr or dash.stdout)[-400:])
+        log("DASHBOARD GEN FAILED")
+        log((dash.stderr or dash.stdout)[-400:])
         return 1
-    print("DASHBOARD DATA OK")
+    log("DASHBOARD DATA OK")
 
     # 4) Publish snapshot (best-effort)
     publish = "skip publish"
@@ -235,33 +249,9 @@ def main() -> int:
         except Exception as exc:
             publish = f"publish error: {exc}"
 
-    print("---")
-    print(f"top_candidate: {cand_sym or 'n/a'}")
-    if order_action == "HOLD":
-        print(f"decision: HOLD {order_sym or ''} — no new fill".strip())
-        print(f"why: {(last_order.get('thesis') or order_reason or 'no actionable edge')[:140]}")
-    elif order_action in ("BUY", "SELL") and order_status == "FILLED_PAPER":
-        px = last_order.get("entry_price")
-        qty = last_order.get("qty")
-        print(f"fill: {order_action} {order_sym} qty={qty} @ ${float(px or 0):.2f} -> {order_status}")
-        if order_reason:
-            print(f"reason: {str(order_reason)[:120]}")
-    else:
-        print(f"latest_order: {order_action or 'n/a'} {order_sym or 'n/a'} ({order_status or 'n/a'})")
-    if last_fill:
-        print(
-            f"last_fill: {last_fill.get('action')} {last_fill.get('symbol')} @ "
-            f"${float(last_fill.get('price') or 0):.2f} ({str(last_fill.get('timestamp') or '')[:19]}Z)"
-        )
-    # Portfolio bullets for mobile/Telegram (mirror dashboard holding chips)
-    if equity is not None:
-        try:
-            print(f"equity: ${float(equity):.2f} | cash: ${float(cash or 0):.2f} | open_pnl: ${float(open_pnl_total or 0):+.2f}")
-        except Exception:
-            pass
-
+    # Build holdings lines (stderr always; Telegram only on BUY/SELL)
+    hold_lines = []
     if holdings_rows:
-        print("holdings:")
         for h in holdings_rows:
             sym = h.get("symbol") or "?"
             qty = h.get("qty")
@@ -275,27 +265,96 @@ def main() -> int:
             stop = h.get("stop") if h.get("stop") is not None else h.get("stop_loss")
             target = h.get("target") if h.get("target") is not None else h.get("take_profit")
             sign = "+" if pnl >= 0 else ""
-            # Example: • MSFT 0.401sh  last $499.34  +$0.83 (+0.41%)  stop 484.85 / tgt 522.14
             qty_s = f"{float(qty):.4f}".rstrip("0").rstrip(".") if qty is not None else "?"
             last_s = f"${float(last):.2f}" if last is not None else "n/a"
             stop_s = f"{float(stop):.2f}" if stop is not None else "--"
             tgt_s = f"{float(target):.2f}" if target is not None else "--"
-            print(
+            hold_lines.append(
                 f"• {sym} {qty_s}sh  last {last_s}  {sign}${pnl:.2f} ({sign}{pct:.2f}%)  "
                 f"stop {stop_s} / tgt {tgt_s}"
             )
-    else:
-        print("holdings: none")
 
-    print(
+    log("---")
+    log(f"top_candidate: {cand_sym or 'n/a'}")
+    is_fill = order_action in ("BUY", "SELL") and str(order_status) == "FILLED_PAPER"
+    if order_action == "HOLD":
+        log(f"decision: HOLD {order_sym or ''} — no new fill".strip())
+        log(f"why: {(last_order.get('thesis') or order_reason or 'no actionable edge')[:140]}")
+    elif is_fill:
+        px = last_order.get("entry_price")
+        qty = last_order.get("qty")
+        log(f"fill: {order_action} {order_sym} qty={qty} @ ${float(px or 0):.2f} -> {order_status}")
+        if order_reason:
+            log(f"reason: {str(order_reason)[:120]}")
+    else:
+        log(f"latest_order: {order_action or 'n/a'} {order_sym or 'n/a'} ({order_status or 'n/a'})")
+    if last_fill:
+        log(
+            f"last_fill: {last_fill.get('action')} {last_fill.get('symbol')} @ "
+            f"${float(last_fill.get('price') or 0):.2f} ({str(last_fill.get('timestamp') or '')[:19]}Z)"
+        )
+    if equity is not None:
+        try:
+            log(f"equity: ${float(equity):.2f} | cash: ${float(cash or 0):.2f} | open_pnl: ${float(open_pnl_total or 0):+.2f}")
+        except Exception:
+            pass
+    if hold_lines:
+        log("holdings:")
+        for line in hold_lines:
+            log(line)
+    else:
+        log("holdings: none")
+    log(
         f"open_positions: {', '.join(open_syms) if open_syms else 'none'}"
         + (f" | cash=${float(cash):.2f}" if cash is not None else "")
     )
     if selected:
-        print(f"signal: {selected}")
-    print(f"publish: {publish}")
-    print("dashboard: https://trading-bot-delta-roan.vercel.app")
-    print("PAPER SESSION DONE")
+        log(f"signal: {selected}")
+    log(f"publish: {publish}")
+    log(f"dashboard: {DASHBOARD_URL}")
+    log("PAPER SESSION DONE")
+
+    # Telegram (Hermes no_agent delivers STDOUT only). Silent on HOLD / no fill.
+    if is_fill:
+        px = float(last_order.get("entry_price") or last_fill.get("price") or 0)
+        qty = float(last_order.get("qty") or last_fill.get("qty") or 0)
+        emoji = "🟢" if order_action == "BUY" else "🔴"
+        thesis = str(last_order.get("thesis") or order_reason or "")[:180]
+        lines = [
+            f"{emoji} PAPER FILL — {order_action} {order_sym}",
+            f"Qty {qty:.4f} @ ${px:.2f} (${qty * px:.2f})",
+        ]
+        if equity is not None:
+            try:
+                lines.append(
+                    f"Equity ${float(equity):.2f} | cash ${float(cash or 0):.2f} | open P/L ${float(open_pnl_total or 0):+.2f}"
+                )
+            except Exception:
+                pass
+        if thesis:
+            lines.append(f"Why: {thesis}")
+        if hold_lines:
+            lines.append("Holdings:")
+            lines.extend(hold_lines[:8])
+        lines.append(f"Dashboard: {DASHBOARD_URL}")
+        tg('\n'.join(lines))
+        # Also send via notifier API when token available (belt + suspenders)
+        try:
+            from telegram_notifier import TelegramNotifier
+
+            TelegramNotifier().notify_fill_summary(
+                action=order_action,
+                symbol=order_sym,
+                qty=qty,
+                price=px,
+                equity=equity,
+                open_pnl=open_pnl_total,
+                thesis=thesis,
+                holdings_lines=hold_lines,
+            )
+        except Exception as exc:
+            log(f"telegram notifier optional send failed: {exc}")
+
     return 0 if trade.returncode == 0 else 2
 
 

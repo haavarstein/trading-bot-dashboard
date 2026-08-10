@@ -40,7 +40,7 @@ JSONL ledgers + portfolio.json
         ↓
 generate_dashboard_data.py → dashboard-data.json → Vercel
         ↓
-Telegram paper-session report (holdings P/L bullets)
+Telegram alerts on **BUY/SELL fills only** (no HOLD spam) + dashboard link
 ```
 
 ### Consensus models (config)
@@ -242,6 +242,13 @@ Also keep:
 - IBKR MCP disabled until personal paper is ready
 
 ---
+
+## Telegram policy
+
+- Notify on **BUY/SELL paper fills only**
+- **No HOLD** / no routine disagreement spam
+- Every trade alert includes the public dashboard URL
+- Hermes 15m cron delivers stdout only when a fill happens (HOLD sessions stay silent)
 
 ## IBKR status (important)
 

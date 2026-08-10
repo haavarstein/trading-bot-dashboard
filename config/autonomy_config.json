@@ -85,13 +85,15 @@
   },
   "telegram": {
     "enabled": true,
-    "chat_id": "",
+    "chat_id": "TELEGRAM_CHAT_ID_ENV",
     "notify_on_trade": true,
-    "notify_on_disagreement": true,
-    "notify_on_blocker": true,
+    "notify_on_disagreement": false,
+    "notify_on_blocker": false,
     "notify_on_error": true,
     "daily_summary": true,
-    "comment": "Telegram notifications to the configured local recipient"
+    "comment": "Telegram: BUY/SELL fills only (no HOLD spam). Always include dashboard URL.",
+    "notify_on_hold": false,
+    "dashboard_url": "https://trading-bot-delta-roan.vercel.app"
   },
   "kill_switch": {
     "file_path": "./KILL_SWITCH.txt",
@@ -103,7 +105,7 @@
     "consensus_log": "./data/consensus_log.jsonl",
     "candidate_outcomes": "./data/candidate_outcomes.jsonl"
   },
-  "last_updated": "2026-08-07T11:39:42Z",
+  "last_updated": "2026-08-10T18:17:07Z",
   "execution_rules": {
     "allow_rotation": true,
     "rotation_min_score": 70,
