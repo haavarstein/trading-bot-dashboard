@@ -101,6 +101,7 @@ Public page sections:
 - Decisions / stance
 - Recent fills
 - Closed results (locked-in P/L list)
+- Top 5 Take Profit (best winners: entry/exit/P/L)
 - Trade reasoning cards (narrative + bullets + risk map)
 - Improvements changelog
 - Lists use show-more (3 at a time): fills, closed, activity, reasoning

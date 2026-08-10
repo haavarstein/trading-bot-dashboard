@@ -615,6 +615,77 @@ def main():
         )
     closed_recent = closed_results[:20]
 
+    # Top take-profit / best locked winners (for quick success scan)
+    def _is_tp_reason(reason: str, thesis: str = "") -> bool:
+        blob = f"{reason or ''} {thesis or ''}".lower()
+        keys = (
+            "take_profit", "take-profit", "take profit", "target", "tp",
+            "demo_take_profit", "test_tp",
+        )
+        return any(k in blob for k in keys)
+
+    junk_syms = {"AAA", "TEST", "DUMMY"}
+    winners = []
+    for row in closed_results:
+        sym = str(row.get("symbol") or "").upper()
+        if not sym or sym in junk_syms:
+            continue
+        pnl_f = row.get("realized_pnl")
+        try:
+            pnl_f = float(pnl_f) if pnl_f is not None else None
+        except Exception:
+            pnl_f = None
+        if pnl_f is None or pnl_f <= 0:
+            continue
+        avg = float(row.get("avg_cost") or 0)
+        qty = float(row.get("qty") or 0)
+        exit_px = float(row.get("exit_price") or 0)
+        entry_notional = round(avg * qty, 2) if avg and qty else None
+        exit_notional = row.get("proceeds")
+        if exit_notional is None and exit_px and qty:
+            exit_notional = round(exit_px * qty, 2)
+        reason = str(row.get("reason") or "")
+        thesis = str(row.get("thesis") or "")
+        tp_hit = _is_tp_reason(reason, thesis)
+        winners.append(
+            {
+                "symbol": sym,
+                "timestamp": row.get("timestamp"),
+                "opened_at": row.get("opened_at"),
+                "qty": qty,
+                "entry_price": avg,
+                "exit_price": exit_px or None,
+                "entry_value": entry_notional,
+                "exit_value": float(exit_notional) if exit_notional is not None else None,
+                "realized_pnl": round(pnl_f, 2),
+                "realized_pnl_pct": row.get("realized_pnl_pct"),
+                "reason": reason or ("take_profit" if tp_hit else "winner"),
+                "take_profit_hit": tp_hit,
+                "hold_seconds": row.get("hold_seconds"),
+            }
+        )
+
+    # Prefer explicit take-profit winners first, then largest $ P/L
+    winners.sort(
+        key=lambda r: (
+            0 if r.get("take_profit_hit") else 1,
+            -float(r.get("realized_pnl") or 0),
+            str(r.get("timestamp") or ""),
+        )
+    )
+    # de-dupe by symbol keeping best pnl row
+    seen = set()
+    top_take_profits = []
+    for w in winners:
+        sym = w["symbol"]
+        if sym in seen:
+            continue
+        seen.add(sym)
+        top_take_profits.append(w)
+        if len(top_take_profits) >= 5:
+            break
+
+
     thinking = build_thinking(holdings, latest_decision, latest_candidate, snap, now, cfg)
     equity_curve = build_equity_curve(fills, snap, starting)
     stance = thinking.get("headline") or "Patient — waiting for a clean ranked setup."
@@ -671,6 +742,7 @@ def main():
         "trade_reasoning": build_trade_reasoning(fills, orders, closed),
         "closed_trades": closed_recent,
         "closed_results": closed_results,
+        "top_take_profits": top_take_profits,
         "top_candidates": candidates[:5],
         "limits": {
             "max_position_usd": cfg.get("position_limits", {}).get("max_position_size_usd"),

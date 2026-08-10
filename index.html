@@ -560,6 +560,75 @@
     }
 
 
+
+    /* Top take profits */
+    .tp-shell {
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: var(--card);
+      box-shadow: var(--shadow);
+      padding: 26px 24px 18px;
+    }
+    .tp-shell h2 {
+      margin: 0 0 8px;
+      font-size: 30px;
+      font-weight: 720;
+      letter-spacing: -0.03em;
+    }
+    .tp-shell .sub {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .tp-list { display: grid; gap: 0; }
+    .tp-row {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr 1fr 1fr;
+      gap: 12px;
+      align-items: center;
+      padding: 14px 4px;
+      border-bottom: 1px solid var(--border);
+    }
+    .tp-row:last-child { border-bottom: 0; }
+    .tp-row .sym {
+      font-size: 18px;
+      font-weight: 750;
+      letter-spacing: -0.02em;
+    }
+    .tp-row .meta {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 4px;
+    }
+    .tp-row .num {
+      font-variant-numeric: tabular-nums;
+      font-size: 14px;
+      font-weight: 650;
+    }
+    .tp-row .lbl {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 3px;
+    }
+    .tp-badge {
+      display: inline-flex;
+      margin-top: 6px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+      background: rgba(5,150,105,0.12);
+      color: #047857;
+    }
+    .tp-empty { color: var(--muted); font-size: 14px; padding: 8px 0 4px; }
+    @media (max-width: 720px) {
+      .tp-row { grid-template-columns: 1fr 1fr; }
+    }
+
     /* Closed results */
     .closed-shell {
       border: 1px solid var(--border);
@@ -893,6 +962,7 @@
       <a href="#holdings-section">Holdings</a>
       <a href="#stance-section">Thinking</a>
       <a href="#trades-section">Trades</a>
+      <a href="#top-tp-section">Top TP</a>
       <a href="#closed-section">Closed</a>
       <a href="#reasoning-section">Reasoning</a>
       <a href="#improvements-section">Improvements</a>
@@ -1071,6 +1141,18 @@
     </section>
 
     
+
+    <section id="top-tp-section" class="section">
+      <div class="tp-shell">
+        <h2>Top 5 Take Profit</h2>
+        <p class="sub">Best locked-in winners — entry value, exit, and realized P/L. Take-profit hits first, then other green closes.</p>
+        <div class="tp-list" id="top-tp-list">
+          <div class="tp-empty">Loading top take profits…</div>
+        </div>
+        <div class="closed-foot" id="top-tp-foot" style="margin-top:12px">Showing winners only (positive realized P/L).</div>
+      </div>
+    </section>
+
     <section id="closed-section" class="section">
       <div class="closed-shell">
         <h2>Closed results</h2>
@@ -1726,6 +1808,65 @@
 
 
       
+      
+      // Top 5 Take Profit
+      const tps = Array.isArray(d.top_take_profits) ? d.top_take_profits : [];
+      const tpList = document.getElementById('top-tp-list');
+      const tpFoot = document.getElementById('top-tp-foot');
+      if (tpList) {
+        if (!tps.length) {
+          tpList.innerHTML = '<div class="tp-empty">No locked-in winners yet. Take-profit exits will rank here.</div>';
+        } else {
+          tpList.innerHTML = tps.map((r, i) => {
+            const pnl = r.realized_pnl;
+            const pct = r.realized_pnl_pct;
+            const tone = typeof pnl === 'number' && pnl >= 0 ? 'green' : 'red';
+            const pnlTxt = typeof pnl === 'number'
+              ? `${pnl >= 0 ? '+' : '-'}$${Math.abs(pnl).toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2})}`
+              : '--';
+            const pctTxt = typeof pct === 'number'
+              ? `${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%`
+              : '--';
+            const entryV = typeof r.entry_value === 'number' ? money(r.entry_value) : (typeof r.entry_price === 'number' ? money(r.entry_price) : '--');
+            const exitV = typeof r.exit_value === 'number' ? money(r.exit_value) : (typeof r.exit_price === 'number' ? money(r.exit_price) : '--');
+            const entryPx = typeof r.entry_price === 'number' ? money(r.entry_price) : '--';
+            const exitPx = typeof r.exit_price === 'number' ? money(r.exit_price) : '--';
+            const badge = r.take_profit_hit ? '<span class="tp-badge">Take profit</span>' : '<span class="tp-badge" style="background:rgba(37,99,235,0.1);color:#1d4ed8">Winner</span>';
+            return `
+              <div class="tp-row">
+                <div>
+                  <div class="sym">#${i+1} ${esc(r.symbol || '--')}</div>
+                  <div class="meta">Closed ${esc(formatWhen(r.timestamp))}</div>
+                  ${badge}
+                </div>
+                <div class="num">
+                  <span class="lbl">Entry</span>
+                  ${esc(entryV)}
+                  <div class="meta">${esc(entryPx)} × ${esc(r.qty ?? '--')}</div>
+                </div>
+                <div class="num">
+                  <span class="lbl">Exit</span>
+                  ${esc(exitV)}
+                  <div class="meta">${esc(exitPx)}</div>
+                </div>
+                <div class="num ${tone}" style="text-align:right">
+                  <span class="lbl">P/L</span>
+                  ${esc(pnlTxt)}
+                  <div class="meta ${tone}">${esc(pctTxt)}</div>
+                </div>
+              </div>
+            `;
+          }).join('');
+        }
+      }
+      if (tpFoot) {
+        const tpHits = tps.filter(x => x.take_profit_hit).length;
+        tpFoot.textContent = tps.length
+          ? `Top ${tps.length} winner${tps.length===1?'':'s'} · ${tpHits} tagged take-profit · ranked by TP hit then P/L`
+          : 'No positive closed trades yet.';
+      }
+
+
       pager.closed.items = Array.isArray(d.closed_results)
         ? d.closed_results
         : (Array.isArray(d.closed_trades) ? d.closed_trades : []);
