@@ -43,20 +43,29 @@ generate_dashboard_data.py → dashboard-data.json → Vercel
 Telegram alerts on **BUY/SELL fills only** (no HOLD spam) + dashboard link
 ```
 
-### Consensus models (config)
-- `model_1`: `grok-4.5` (`model_1_effort`: `medium`) via xAI (`XAI_API_KEY`, optional `XAI_MODEL_ID`)
-- `model_2`: `claude-sonnet-5` via Anthropic (`ANTHROPIC_API_KEY`)
-- `min_confidence`: 70
-- `max_candidates_to_llm`: 8
-- `require_dual_model_agreement`: true
+### Consensus models (config) — junior first, senior gate
+**Juniors (cheap screen, every cycle)**
+- `junior_model_1`: `grok-4.3` (fallback `grok-build-0.1`) via xAI
+- `junior_model_2`: `claude-haiku-4-5` via Anthropic
+
+**Seniors (final gate when escalated)**
+- `model_1`: `grok-4.5` (`model_1_effort`: `medium`) via xAI
+- `model_2`: `claude-sonnet-5` via Anthropic
+
+**Escalation rules**
+- Juniors always see the same ranked evidence (max 8 candidates)
+- Escalate to seniors when juniors **disagree**, confidence is **borderline**, or action is **BUY/SELL**
+- Agreed junior **HOLD** can finalize without seniors (saves tokens)
+- Senior dual agreement remains the final trade gate; senior disagreement blocks execution
+- `min_confidence`: 70 (BUY/SELL); junior HOLD floor 55
 - Dual agreement required on **BUY/SELL** (same symbol); pure **HOLD+HOLD agrees even if watch symbols differ**
-- Rotation SELLs are allowed when book is full (policy + dual-LLM prompt); stop/target still primary exits
-- If a provider key is missing or a live call fails, that desk uses a **tagged deterministic fallback** (`source=fallback`)
+- Rotation SELLs allowed when book is full; stop/target still primary exits
+- Missing keys / failed calls → tagged deterministic `source=fallback`
 
 ### Honest status of dual models
-Live dual-LLM path is implemented in `scripts/dual_llm.py` and wired through `autotrader.py`.
-Keys live only in local gitignored `.env` (Hermes + trading-bot) — never in git.
-Dashboard edge copy reports `decision_mode` (`live_dual_llm` vs `fallback_deterministic`).
+Junior→senior path is implemented in `scripts/dual_llm.py` (`run_junior_senior_consensus`) and wired in `autotrader.py`.
+Keys live only in local gitignored `.env` — never in git.
+Dashboard reports `decision_mode`, junior model names, and last `tier` / escalate reason.
 
 ---
 

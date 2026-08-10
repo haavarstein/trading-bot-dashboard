@@ -1532,6 +1532,10 @@
       const maxCand = cons.max_candidates_to_llm ?? 8;
       const minConf = cons.min_confidence ?? 70;
       const mode = cons.decision_mode || 'fallback_deterministic';
+      const j1n = cons.junior_model_1 || 'grok-4.3';
+      const j2n = cons.junior_model_2 || 'claude-haiku-4-5';
+      const juniorOn = cons.junior_enabled !== false;
+
       const modeLine = mode === 'live_dual_llm'
         ? `<li><strong>${esc(m1)}</strong> and <strong>${esc(m2)}</strong> make blind live decisions from the same ranked evidence when API keys are available. Any disagreement blocks execution and is published below.</li>`
         : `<li><strong>${esc(m1)}</strong> and <strong>${esc(m2)}</strong> are the configured desk labels. Live dual-LLM runs when provider keys are present; otherwise a deterministic fallback desk is used and tagged in logs. Disagreement still blocks execution.</li>`;
@@ -1540,6 +1544,7 @@
         <li>Broad-market discovery looks for fresh catalysts before the 15-minute decision loop.</li>
         <li>Alpha Radar ranks liquid names on catalyst/news strength, liquidity, and sentiment, then passes up to ${esc(maxCand)} candidates into the decision desk.</li>
         ${modeLine}
+        ${juniorOn ? `<li><strong>Junior screen first:</strong> ${esc(j1n)} + ${esc(j2n)}. Escalate to seniors on BUY/SELL, disagreement, or borderline confidence. Agreed junior HOLD can finalize without seniors.</li>` : ''}
         <li>The desk enters only when both models agree (min confidence ${esc(minConf)}%) and paper-broker cash, open concentration, stop/target geometry, and recomputed reward-to-risk all pass.</li>
         <li>Stops and targets are attached on entry. Exits fire on stop, target, or gated rotation when a clearly stronger setup needs risk budget.</li>
         <li>Every candidate, fill, miss, blocked trade, and closed outcome feeds the learning/audit loop. Risk expansion never auto-promotes itself.</li>

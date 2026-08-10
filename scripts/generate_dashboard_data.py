@@ -692,6 +692,10 @@ def main():
             "require_dual_model_agreement": bool(
                 cfg.get("consensus_rules", {}).get("require_dual_model_agreement", True)
             ),
+            "junior_enabled": bool(cfg.get("consensus_rules", {}).get("junior_enabled", True)),
+            "junior_model_1": cfg.get("consensus_rules", {}).get("junior_model_1", "grok-4.3"),
+            "junior_model_1_fallback": cfg.get("consensus_rules", {}).get("junior_model_1_fallback", "grok-build-0.1"),
+            "junior_model_2": cfg.get("consensus_rules", {}).get("junior_model_2", "claude-haiku-4-5"),
             "model_1": cfg.get("consensus_rules", {}).get("model_1", "grok-4.5"),
             "model_1_effort": cfg.get("consensus_rules", {}).get("model_1_effort"),
             "model_2": cfg.get("consensus_rules", {}).get("model_2", "claude-sonnet-5"),
@@ -702,20 +706,37 @@ def main():
             ),
             "decision_mode": (
                 "live_dual_llm"
-                if any((r.get("model1") or {}).get("source") == "live" or (r.get("model2") or {}).get("source") == "live" for r in (today_consensus or consensus)[-12:])
+                if any(
+                    (r.get("model1") or {}).get("source") == "live"
+                    or (r.get("model2") or {}).get("source") == "live"
+                    or (r.get("junior1") or {}).get("source") == "live"
+                    for r in (today_consensus or consensus)[-12:]
+                )
                 else "fallback_deterministic"
+            ),
+            "last_tier": ((today_consensus or consensus)[-1].get("tier") if (today_consensus or consensus) else None),
+            "last_escalate_reason": (
+                (today_consensus or consensus)[-1].get("escalate_reason")
+                if (today_consensus or consensus)
+                else None
             ),
             "live_share_recent": round(
                 (
                     sum(
                         1
                         for r in (today_consensus or consensus)[-20:]
-                        for side in ("model1", "model2")
+                        for side in ("model1", "model2", "junior1", "junior2")
                         if (r.get(side) or {}).get("source") == "live"
                     )
                     / max(
                         1,
-                        2 * len((today_consensus or consensus)[-20:] or [1]),
+                        sum(
+                            1
+                            for r in (today_consensus or consensus)[-20:]
+                            for side in ("model1", "model2", "junior1", "junior2")
+                            if r.get(side)
+                        )
+                        or 1,
                     )
                 )
                 * 100,

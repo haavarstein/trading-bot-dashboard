@@ -640,58 +640,97 @@ class DryRunAutoTrader:
         if not market_context:
             raise RuntimeError("No candidates available for model review")
 
+        cr = self.config.get("consensus_rules") or {}
         rules = {
             "max_position_usd": self.config.get("position_limits", {}).get("max_position_size_usd", 200),
             "max_positions": self.config.get("position_limits", {}).get("max_positions", 5),
             "min_rr": self.config.get("order_limits", {}).get("min_risk_reward_ratio", 1.5),
-            "max_candidates_to_llm": self.config.get("consensus_rules", {}).get("max_candidates_to_llm", 8),
+            "max_candidates_to_llm": cr.get("max_candidates_to_llm", 8),
+            # junior/senior desk config
+            "junior_enabled": cr.get("junior_enabled", True),
+            "junior_model_1": cr.get("junior_model_1", "grok-4.3"),
+            "junior_model_1_fallback": cr.get("junior_model_1_fallback", "grok-build-0.1"),
+            "junior_model_2": cr.get("junior_model_2", "claude-haiku-4-5"),
+            "model_1": cr.get("model_1", model1_name),
+            "model_1_effort": cr.get("model_1_effort", effort),
+            "model_2": cr.get("model_2", model2_name),
+            "min_confidence": cr.get("min_confidence", 70),
+            "junior_hold_min_confidence": cr.get("junior_hold_min_confidence", 55),
+            "borderline_confidence_band": cr.get("borderline_confidence_band", 5),
+            "escalate_on_buy_sell": cr.get("escalate_on_buy_sell", True),
+            "escalate_on_junior_disagree": cr.get("escalate_on_junior_disagree", True),
+            "escalate_on_borderline_confidence": cr.get("escalate_on_borderline_confidence", True),
         }
         status = dual_llm.provider_status()
         print(
             f"  providers: xai={'yes' if status.get('xai_key') else 'no'} | "
             f"anthropic={'yes' if status.get('anthropic_key') else 'no'}"
         )
+        print(
+            f"  desk: juniors {rules['junior_model_1']}+{rules['junior_model_2']} → "
+            f"seniors {rules['model_1']}+{rules['model_2']} (escalate BUY/SELL/disagree/borderline)"
+        )
 
         def _fallback(name, broker, market):
             return self.get_model_decision(name, broker, market)
 
-        decision1 = dual_llm.get_live_or_fallback(
-            model1_name,
+        desk = dual_llm.run_junior_senior_consensus(
             broker_snapshot,
             market_context,
             rules,
             _fallback,
-            effort=effort,
+            self.check_consensus,
         )
-        # ensure timestamp
+        decision1 = desk["decision1"]
+        decision2 = desk["decision2"]
         decision1.setdefault("timestamp", datetime.now(timezone.utc).isoformat())
-        decision2 = dual_llm.get_live_or_fallback(
-            model2_name,
-            broker_snapshot,
-            market_context,
-            rules,
-            _fallback,
-            effort=None,
-        )
         decision2.setdefault("timestamp", datetime.now(timezone.utc).isoformat())
 
-        print(
-            f"  {model1_name}: {decision1['action']} {decision1['symbol']} @ {decision1['confidence']}% "
-            f"[{decision1.get('source', '?')}]"
-        )
-        print(
-            f"  {model2_name}: {decision2['action']} {decision2['symbol']} @ {decision2['confidence']}% "
-            f"[{decision2.get('source', '?')}]"
-        )
+        j1, j2 = desk.get("junior1"), desk.get("junior2")
+        if j1 and j2:
+            print(
+                f"  junior {j1.get('model')}: {j1.get('action')} {j1.get('symbol')} @ {j1.get('confidence')}% "
+                f"[{j1.get('source','?')}/{j1.get('provider_model_id','')}]"
+            )
+            print(
+                f"  junior {j2.get('model')}: {j2.get('action')} {j2.get('symbol')} @ {j2.get('confidence')}% "
+                f"[{j2.get('source','?')}/{j2.get('provider_model_id','')}]"
+            )
+            print(
+                f"  junior_agree={desk.get('junior_agreed')} escalate={desk.get('tier')=='senior_escalated'} "
+                f"reason={desk.get('escalate_reason')}"
+            )
+        if desk.get("tier") == "senior_escalated":
+            print(
+                f"  senior {decision1.get('model')}: {decision1.get('action')} {decision1.get('symbol')} "
+                f"@ {decision1.get('confidence')}% [{decision1.get('source','?')}/{decision1.get('provider_model_id','')}]"
+            )
+            print(
+                f"  senior {decision2.get('model')}: {decision2.get('action')} {decision2.get('symbol')} "
+                f"@ {decision2.get('confidence')}% [{decision2.get('source','?')}/{decision2.get('provider_model_id','')}]"
+            )
+        else:
+            print(
+                f"  final(junior_only) {decision1.get('action')} {decision1.get('symbol')} / "
+                f"{decision2.get('action')} {decision2.get('symbol')}"
+            )
 
+        consensus = bool(desk.get("consensus"))
+        reason = desk.get("consensus_reason")
         consensus_entry = {
             "model1": decision1,
             "model2": decision2,
+            "junior1": j1,
+            "junior2": j2,
+            "senior1": desk.get("senior1"),
+            "senior2": desk.get("senior2"),
+            "tier": desk.get("tier"),
+            "escalate_reason": desk.get("escalate_reason"),
+            "junior_agreed": desk.get("junior_agreed"),
             "timestamp": datetime.now(timezone.utc).isoformat(),
+            "consensus": consensus,
+            "reason": reason,
         }
-        consensus, reason = self.check_consensus(decision1, decision2)
-        consensus_entry["consensus"] = consensus
-        consensus_entry["reason"] = reason
 
         if not consensus:
             print(f"\n🚫 CONSENSUS BLOCKED: {reason}")

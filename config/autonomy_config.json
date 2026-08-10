@@ -75,13 +75,22 @@
   },
   "consensus_rules": {
     "require_dual_model_agreement": true,
+    "junior_enabled": true,
+    "junior_model_1": "grok-4.3",
+    "junior_model_1_fallback": "grok-build-0.1",
+    "junior_model_2": "claude-haiku-4-5",
     "model_1": "grok-4.5",
     "model_1_effort": "medium",
     "model_2": "claude-sonnet-5",
     "min_confidence": 70,
+    "junior_hold_min_confidence": 55,
+    "borderline_confidence_band": 5,
+    "escalate_on_buy_sell": true,
+    "escalate_on_junior_disagree": true,
+    "escalate_on_borderline_confidence": true,
     "log_all_disagreements": true,
     "max_candidates_to_llm": 8,
-    "comment": "Both models must agree on action AND symbol. model_1_effort applies when live LLM calls are enabled."
+    "comment": "Juniors (grok-4.3/haiku-4.5) screen first. Escalate to seniors (grok-4.5 + claude-sonnet-5) when juniors disagree, confidence is borderline, or action is BUY/SELL. Agreed junior HOLD can finalize without seniors. Senior dual agreement is final trade gate."
   },
   "telegram": {
     "enabled": true,
@@ -105,7 +114,7 @@
     "consensus_log": "./data/consensus_log.jsonl",
     "candidate_outcomes": "./data/candidate_outcomes.jsonl"
   },
-  "last_updated": "2026-08-10T18:17:07Z",
+  "last_updated": "2026-08-10T18:21:55Z",
   "execution_rules": {
     "allow_rotation": true,
     "rotation_min_score": 70,
