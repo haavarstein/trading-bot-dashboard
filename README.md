@@ -100,7 +100,7 @@ Public page sections:
 - What Hermes is thinking (plain English stance + triggers + owned cards)
 - Decisions / stance
 - Recent fills
-- Closed results (locked-in P/L list)
+- Top 5 Stop Loss (worst losers: entry/exit/P/L)
 - Top 5 Take Profit (best winners: entry/exit/P/L)
 - Trade reasoning cards (narrative + bullets + risk map)
 - Improvements changelog

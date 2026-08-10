@@ -632,6 +632,16 @@
       background: rgba(5,150,105,0.12);
       color: #047857;
     }
+    .sl-badge {
+      display: inline-flex;
+      margin-top: 6px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+      background: rgba(220,38,38,0.12);
+      color: #b91c1c;
+    }
     .tp-empty { color: var(--muted); font-size: 14px; padding: 8px 0 4px; }
     @media (max-width: 720px) {
       .tp-row { grid-template-columns: 1fr 1fr; }
@@ -971,7 +981,7 @@
       <a href="#stance-section">Thinking</a>
       <a href="#trades-section">Trades</a>
       <a href="#top-tp-section">Top TP</a>
-      <a href="#closed-section">Closed</a>
+      <a href="#top-sl-section">Top SL</a>
       <a href="#reasoning-section">Reasoning</a>
       <a href="#improvements-section">Improvements</a>
     </nav>
@@ -1161,17 +1171,14 @@
       </div>
     </section>
 
-    <section id="closed-section" class="section">
-      <div class="closed-shell">
-        <h2>Closed results</h2>
-        <p class="sub">Trades that are finished and locked in.</p>
-        <div class="closed-list" id="closed-list">
-          <div class="closed-row"><div class="closed-left"><div class="when">Loading closed results…</div></div></div>
+    <section id="top-sl-section" class="section">
+      <div class="tp-shell">
+        <h2>Top 5 Stop Loss</h2>
+        <p class="sub">Worst locked-in losers — entry value, exit, and realized P/L. Stop-loss hits first, then other red closes.</p>
+        <div class="tp-list" id="top-sl-list">
+          <div class="tp-empty">Loading top stop losses…</div>
         </div>
-        <div class="list-foot closed-foot-wrap">
-          <span class="closed-foot" id="closed-foot">Showing 0 of 0 closed results, newest first.</span>
-          <button class="btn-more" id="closed-more" type="button">Show more</button>
-        </div>
+        <div class="closed-foot" id="top-sl-foot" style="margin-top:12px">Showing losers only (negative realized P/L).</div>
       </div>
     </section>
 
@@ -1875,53 +1882,66 @@
       }
 
 
-      pager.closed.items = Array.isArray(d.closed_results)
-        ? d.closed_results
-        : (Array.isArray(d.closed_trades) ? d.closed_trades : []);
-      if (pager.closed.visible < PAGE_SIZE) pager.closed.visible = PAGE_SIZE;
-      function renderClosed() {
-        const all = pager.closed.items;
-        const show = all.slice(0, pager.closed.visible);
-        setHtml('closed-list', show.length ? show.map(c => {
-          const pnl = c.realized_pnl;
-          const pp = c.realized_pnl_pct;
-          const tone = typeof pnl === 'number' ? (pnl >= 0 ? 'green' : 'red') : '';
-          const pnlTxt = typeof pnl === 'number'
-            ? `${pnl >= 0 ? '+' : '-'}$${Math.abs(pnl).toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2})}`
-            : '--';
-          const pctTxt = typeof pp === 'number'
-            ? `${pp >= 0 ? '+' : ''}${pp.toFixed(2)}%`
-            : '--';
-          return `
-            <div class="closed-row">
-              <div class="closed-left">
-                <div class="sym">${esc(c.symbol || '--')}</div>
-                <div class="when">Closed ${esc(formatWhen(c.timestamp))}</div>
+      
+      // Top 5 Stop Loss
+      const sls = Array.isArray(d.top_stop_losses) ? d.top_stop_losses : [];
+      const slList = document.getElementById('top-sl-list');
+      const slFoot = document.getElementById('top-sl-foot');
+      if (slList) {
+        if (!sls.length) {
+          slList.innerHTML = '<div class="tp-empty">No locked-in losers yet. Stop-loss exits will rank here.</div>';
+        } else {
+          slList.innerHTML = sls.map((r, i) => {
+            const pnl = r.realized_pnl;
+            const pct = r.realized_pnl_pct;
+            const tone = typeof pnl === 'number' && pnl >= 0 ? 'green' : 'red';
+            const pnlTxt = typeof pnl === 'number'
+              ? `${pnl >= 0 ? '+' : '-'}$${Math.abs(pnl).toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2})}`
+              : '--';
+            const pctTxt = typeof pct === 'number'
+              ? `${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%`
+              : '--';
+            const entryV = typeof r.entry_value === 'number' ? money(r.entry_value) : (typeof r.entry_price === 'number' ? money(r.entry_price) : '--');
+            const exitV = typeof r.exit_value === 'number' ? money(r.exit_value) : (typeof r.exit_price === 'number' ? money(r.exit_price) : '--');
+            const entryPx = typeof r.entry_price === 'number' ? money(r.entry_price) : '--';
+            const exitPx = typeof r.exit_price === 'number' ? money(r.exit_price) : '--';
+            const badge = r.stop_loss_hit
+              ? '<span class="sl-badge">Stop loss</span>'
+              : '<span class="sl-badge" style="background:rgba(120,113,108,0.12);color:#57534e">Loser</span>';
+            return `
+              <div class="tp-row">
+                <div>
+                  <div class="sym">#${i+1} ${esc(r.symbol || '--')}</div>
+                  <div class="meta">Closed ${esc(formatWhen(r.timestamp))}</div>
+                  ${badge}
+                </div>
+                <div class="num">
+                  <span class="lbl">Entry</span>
+                  ${esc(entryV)}
+                  <div class="meta">${esc(entryPx)} × ${esc(r.qty ?? '--')}</div>
+                </div>
+                <div class="num">
+                  <span class="lbl">Exit</span>
+                  ${esc(exitV)}
+                  <div class="meta">${esc(exitPx)}</div>
+                </div>
+                <div class="num ${tone}" style="text-align:right">
+                  <span class="lbl">P/L</span>
+                  ${esc(pnlTxt)}
+                  <div class="meta ${tone}">${esc(pctTxt)}</div>
+                </div>
               </div>
-              <div class="closed-right">
-                <span class="pnl ${tone}">${esc(pnlTxt)}</span>
-                <span class="pct ${tone}">${esc(pctTxt)}</span>
-              </div>
-            </div>
-          `;
-        }).join('') : `
-            <div class="closed-row">
-              <div class="closed-left"><div class="when">No closed trades yet.</div></div>
-            </div>
-        `);
-        const total = all.length, shown = Math.min(pager.closed.visible, total);
-        setText('closed-foot', `Showing ${shown} of ${total} closed results, newest first.`);
-        const btn = document.getElementById('closed-more');
-        if (btn) {
-          if (shown >= total) btn.hidden = true;
-          else {
-            btn.hidden = false;
-            btn.textContent = `Show ${Math.min(PAGE_SIZE, total - shown)} more`;
-          }
+            `;
+          }).join('');
         }
       }
-      renderClosed();
-      bindPager('closed-more', 'closed', renderClosed);
+      if (slFoot) {
+        const slHits = sls.filter(x => x.stop_loss_hit).length;
+        slFoot.textContent = sls.length
+          ? `Top ${sls.length} loser${sls.length===1?'':'s'} · ${slHits} tagged stop-loss · ranked by SL hit then worst P/L`
+          : 'No negative closed trades yet.';
+      }
+
 
 
 

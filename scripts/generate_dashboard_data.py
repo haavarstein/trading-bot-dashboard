@@ -686,6 +686,75 @@ def main():
             break
 
 
+
+    # Top stop-loss / worst locked losers (pair with Top 5 Take Profit)
+    def _is_sl_reason(reason: str, thesis: str = "") -> bool:
+        blob = f"{reason or ''} {thesis or ''}".lower()
+        keys = (
+            "stop_loss", "stop-loss", "stop loss", "stopped", "hit stop", "sl",
+            "demo_stop", "test_sl",
+        )
+        return any(k in blob for k in keys)
+
+    losers = []
+    for row in closed_results:
+        sym = str(row.get("symbol") or "").upper()
+        if not sym or sym in junk_syms:
+            continue
+        pnl_f = row.get("realized_pnl")
+        try:
+            pnl_f = float(pnl_f) if pnl_f is not None else None
+        except Exception:
+            pnl_f = None
+        if pnl_f is None or pnl_f >= 0:
+            continue
+        avg = float(row.get("avg_cost") or 0)
+        qty = float(row.get("qty") or 0)
+        exit_px = float(row.get("exit_price") or 0)
+        entry_notional = round(avg * qty, 2) if avg and qty else None
+        exit_notional = row.get("proceeds")
+        if exit_notional is None and exit_px and qty:
+            exit_notional = round(exit_px * qty, 2)
+        reason = str(row.get("reason") or "")
+        thesis = str(row.get("thesis") or "")
+        sl_hit = _is_sl_reason(reason, thesis)
+        losers.append(
+            {
+                "symbol": sym,
+                "timestamp": row.get("timestamp"),
+                "opened_at": row.get("opened_at"),
+                "qty": qty,
+                "entry_price": avg,
+                "exit_price": exit_px or None,
+                "entry_value": entry_notional,
+                "exit_value": float(exit_notional) if exit_notional is not None else None,
+                "realized_pnl": round(pnl_f, 2),
+                "realized_pnl_pct": row.get("realized_pnl_pct"),
+                "reason": reason or ("stop_loss" if sl_hit else "loser"),
+                "stop_loss_hit": sl_hit,
+                "hold_seconds": row.get("hold_seconds"),
+            }
+        )
+
+    # Prefer explicit stop-loss tags first, then worst (most negative) $ P/L
+    losers.sort(
+        key=lambda r: (
+            0 if r.get("stop_loss_hit") else 1,
+            float(r.get("realized_pnl") or 0),  # more negative first
+            str(r.get("timestamp") or ""),
+        )
+    )
+    seen_l = set()
+    top_stop_losses = []
+    for w in losers:
+        sym = w["symbol"]
+        if sym in seen_l:
+            continue
+        seen_l.add(sym)
+        top_stop_losses.append(w)
+        if len(top_stop_losses) >= 5:
+            break
+
     thinking = build_thinking(holdings, latest_decision, latest_candidate, snap, now, cfg)
     equity_curve = build_equity_curve(fills, snap, starting)
     stance = thinking.get("headline") or "Patient — waiting for a clean ranked setup."
@@ -743,6 +812,7 @@ def main():
         "closed_trades": closed_recent,
         "closed_results": closed_results,
         "top_take_profits": top_take_profits,
+        "top_stop_losses": top_stop_losses,
         "top_candidates": candidates[:5],
         "limits": {
             "max_position_usd": cfg.get("position_limits", {}).get("max_position_size_usd"),
