@@ -50,6 +50,9 @@ class TelegramNotifier:
         self.notify_on_blocker = bool(tg.get("notify_on_blocker", False))
         self.notify_on_error = bool(tg.get("notify_on_error", True))
         self.notify_on_hold = bool(tg.get("notify_on_hold", False))
+        self.notify_on_api_credits = bool(tg.get("notify_on_api_credits", True))
+        self.api_credit_cooldown_min = int(tg.get("api_credit_cooldown_min", 360))
+        self._credit_state_path = Path(__file__).resolve().parent.parent / "data" / "api_credit_alerts.json"
 
     def _get_bot_token(self) -> Optional[str]:
         env = os.environ.get("TELEGRAM_BOT_TOKEN") or os.environ.get("TELEGRAM_TOKEN")
@@ -208,6 +211,92 @@ class TelegramNotifier:
             message += f"\n```\n{stack_trace[:500]}\n```"
         message += self._footer()
         self.send_message(message)
+
+    def _credit_cooldown_ok(self, provider: str) -> bool:
+        """Return True if we should send (not in cooldown)."""
+        try:
+            st = {}
+            if self._credit_state_path.exists():
+                st = json.loads(self._credit_state_path.read_text(encoding="utf-8"))
+            key = (provider or "unknown").lower()
+            last = st.get(key) or {}
+            last_ts = last.get("ts")
+            if not last_ts:
+                return True
+            from datetime import datetime, timezone
+            prev = datetime.fromisoformat(str(last_ts).replace("Z", "+00:00"))
+            age_min = (datetime.now(timezone.utc) - prev).total_seconds() / 60.0
+            return age_min >= float(self.api_credit_cooldown_min or 360)
+        except Exception:
+            return True
+
+    def _mark_credit_alert(self, provider: str, detail: str) -> None:
+        try:
+            st = {}
+            if self._credit_state_path.exists():
+                st = json.loads(self._credit_state_path.read_text(encoding="utf-8"))
+            key = (provider or "unknown").lower()
+            st[key] = {
+                "ts": datetime.now(timezone.utc).isoformat(),
+                "detail": (detail or "")[:300],
+            }
+            self._credit_state_path.parent.mkdir(parents=True, exist_ok=True)
+            self._credit_state_path.write_text(json.dumps(st, indent=2), encoding="utf-8")
+        except Exception:
+            pass
+
+    @staticmethod
+    def looks_like_credit_error(exc_or_text) -> bool:
+        text = str(exc_or_text or "").lower()
+        needles = [
+            "credit",
+            "quota",
+            "insufficient",
+            "billing",
+            "payment required",
+            "402",
+            "out of credits",
+            "exceeded your current quota",
+            "rate limit",
+            "429",
+            "budget exhausted",
+            "daily call budget exhausted",
+            "too many requests",
+            "plan limit",
+            "usage limit",
+            "spend limit",
+        ]
+        return any(n in text for n in needles)
+
+    def notify_api_credits(
+        self,
+        provider: str,
+        detail: str,
+        http_status: int | None = None,
+        force: bool = False,
+    ) -> bool:
+        """Alert when an API is out of credits / over quota / hard rate-limited."""
+        if not self.notify_on_api_credits and not force:
+            return False
+        prov = (provider or "api").strip() or "api"
+        if not force and not self._credit_cooldown_ok(prov):
+            print(f"[Telegram] credit alert suppressed (cooldown): {prov}")
+            return False
+        status_bit = f" (HTTP {http_status})" if http_status else ""
+        message = f"""
+💳 *API CREDITS / QUOTA ALERT*{status_bit}
+
+*Provider:* `{prov}`
+*Detail:* {(detail or 'credit/quota issue detected')[:500]}
+
+Trading may fall back to cheaper paths or skip live model calls until this is fixed.
+""".strip()
+        message += self._footer()
+        ok = self.send_message(message)
+        if ok:
+            self._mark_credit_alert(prov, detail)
+        return ok
+
 
     def notify_fill_summary(
         self,

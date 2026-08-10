@@ -131,7 +131,14 @@ def main() -> int:
     scan = run([py, str(SCRIPTS / "alpha_radar.py")], timeout=300)
     if scan.returncode != 0:
         log("SCAN FAILED")
-        log((scan.stderr or scan.stdout)[-500:])
+        err = (scan.stderr or scan.stdout)[-500:]
+        log(err)
+        try:
+            from credit_alerts import looks_like_credit_error, notify_credit_issue
+            if looks_like_credit_error(err):
+                notify_credit_issue("alpha_radar", err)
+        except Exception:
+            pass
         return 1
     log("SCAN OK")
 
@@ -141,6 +148,12 @@ def main() -> int:
     if trade.returncode != 0:
         log("TRADE CYCLE FAILED")
         log(trade_out[-500:])
+        try:
+            from credit_alerts import looks_like_credit_error, notify_credit_issue
+            if looks_like_credit_error(trade_out):
+                notify_credit_issue("autotrader", trade_out[-500:])
+        except Exception:
+            pass
         # still refresh dashboard from whatever logs exist
     else:
         log("TRADE CYCLE OK")

@@ -774,6 +774,10 @@ if __name__ == "__main__":
         traceback.print_exc()
         try:
             if TelegramNotifier:
-                TelegramNotifier().notify_error("AUTOTRADER_CRASH", str(e), traceback.format_exc())
+                from credit_alerts import looks_like_credit_error, notify_credit_issue
+                if looks_like_credit_error(e):
+                    notify_credit_issue("trading-bot", f"AUTOTRADER_CRASH: {e}")
+                else:
+                    TelegramNotifier().notify_error("AUTOTRADER_CRASH", str(e), traceback.format_exc())
         except Exception:
             pass

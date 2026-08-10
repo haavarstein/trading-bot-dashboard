@@ -132,6 +132,11 @@ def _fmp_get(path: str, params: Optional[dict] = None) -> Any:
     if not key:
         raise RuntimeError("FMP_API_KEY not set")
     if _budget_remaining() <= 0:
+        try:
+            from credit_alerts import notify_credit_issue
+            notify_credit_issue("fmp", "FMP daily call budget exhausted (local guard)", http_status=None)
+        except Exception:
+            pass
         raise RuntimeError("FMP daily call budget exhausted")
     q = dict(params or {})
     q["apikey"] = key
@@ -142,11 +147,31 @@ def _fmp_get(path: str, params: Optional[dict] = None) -> Any:
             data = json.loads(resp.read().decode("utf-8", errors="replace"))
         _budget_inc(1)
         return data
-    except urllib.error.HTTPError:
+    except urllib.error.HTTPError as e:
         try:
             _budget_inc(1)
         except Exception:
             pass
+        body = ""
+        try:
+            body = e.read().decode("utf-8", errors="replace")[:400]
+        except Exception:
+            body = str(e)
+        detail = f"FMP HTTP {getattr(e, 'code', '?')}: {body or e}"
+        if getattr(e, "code", None) in (402, 429) or "limit" in detail.lower() or "credit" in detail.lower():
+            try:
+                from credit_alerts import notify_credit_issue
+                notify_credit_issue("fmp", detail, http_status=getattr(e, "code", None))
+            except Exception:
+                pass
+        raise
+    except Exception as e:
+        if "budget exhausted" in str(e).lower():
+            try:
+                from credit_alerts import notify_credit_issue
+                notify_credit_issue("fmp", str(e), http_status=None)
+            except Exception:
+                pass
         raise
 
 

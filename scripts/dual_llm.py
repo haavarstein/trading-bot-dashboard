@@ -50,9 +50,33 @@ _load_dotenv_files()
 def _http_json(url: str, headers: dict, payload: dict, timeout: int = 45) -> dict:
     data = json.dumps(payload).encode("utf-8")
     req = urllib.request.Request(url, data=data, headers=headers, method="POST")
-    with urllib.request.urlopen(req, timeout=timeout) as resp:
-        body = resp.read().decode("utf-8", errors="replace")
-    return json.loads(body)
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            body = resp.read().decode("utf-8", errors="replace")
+        return json.loads(body)
+    except Exception as exc:
+        # Credit/quota detection for xAI / Anthropic
+        status = getattr(exc, "code", None)
+        err_body = ""
+        try:
+            if hasattr(exc, "read"):
+                err_body = exc.read().decode("utf-8", errors="replace")[:500]
+        except Exception:
+            err_body = str(exc)
+        detail = f"{exc} {err_body}".strip()
+        provider = "llm"
+        low = (url or "").lower()
+        if "api.x.ai" in low:
+            provider = "xai"
+        elif "anthropic.com" in low:
+            provider = "anthropic"
+        try:
+            from credit_alerts import looks_like_credit_error, notify_credit_issue
+            if status in (402, 429) or looks_like_credit_error(detail):
+                notify_credit_issue(provider, detail, http_status=status if isinstance(status, int) else None)
+        except Exception:
+            pass
+        raise
 
 
 def _extract_json_obj(text: str) -> dict:
@@ -356,6 +380,15 @@ def get_live_or_fallback(
         # unknown model family
         raise RuntimeError(f"no live provider mapping for {model_name}")
     except Exception as exc:
+        try:
+            from credit_alerts import looks_like_credit_error, notify_credit_issue
+            if looks_like_credit_error(exc):
+                prov = "xai" if ("grok" in (model_name or "").lower() or "xai" in (model_name or "").lower()) else (
+                    "anthropic" if any(x in (model_name or "").lower() for x in ("claude", "haiku", "sonnet", "anthropic")) else "llm"
+                )
+                notify_credit_issue(prov, f"{model_name}: {exc}", http_status=None)
+        except Exception:
+            pass
         fb = fallback_fn(model_name, broker, market)
         fb = dict(fb)
         fb["source"] = "fallback"

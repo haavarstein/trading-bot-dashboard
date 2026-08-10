@@ -100,9 +100,11 @@
     "notify_on_blocker": false,
     "notify_on_error": true,
     "daily_summary": true,
-    "comment": "Telegram: BUY/SELL fills only (no HOLD spam). Always include dashboard URL.",
+    "comment": "Telegram: BUY/SELL fills + API credit/quota alerts (cooldown). No HOLD spam. Dashboard URL on messages.",
     "notify_on_hold": false,
-    "dashboard_url": "https://trading-bot-delta-roan.vercel.app"
+    "dashboard_url": "https://trading-bot-delta-roan.vercel.app",
+    "notify_on_api_credits": true,
+    "api_credit_cooldown_min": 360
   },
   "kill_switch": {
     "file_path": "./KILL_SWITCH.txt",
@@ -114,7 +116,7 @@
     "consensus_log": "./data/consensus_log.jsonl",
     "candidate_outcomes": "./data/candidate_outcomes.jsonl"
   },
-  "last_updated": "2026-08-10T18:21:55Z",
+  "last_updated": "2026-08-10T18:27:36Z",
   "execution_rules": {
     "allow_rotation": true,
     "rotation_min_score": 70,

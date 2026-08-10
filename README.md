@@ -255,6 +255,7 @@ Also keep:
 ## Telegram policy
 
 - Notify on **BUY/SELL paper fills only**
+- Also notify on **API credit/quota exhaustion** (FMP / xAI / Anthropic), cooldown 6h per provider
 - **No HOLD** / no routine disagreement spam
 - Every trade alert includes the public dashboard URL
 - Hermes 15m cron delivers stdout only when a fill happens (HOLD sessions stay silent)
