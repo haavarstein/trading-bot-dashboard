@@ -650,6 +650,17 @@ class DryRunAutoTrader:
         if self.check_kill_switch():
             return
 
+        # Refresh the influencer social feed if stale (enabled & handles configured).
+        # This guarantees the desk reads fresh tweets on every 15-min cycle even
+        # without a separate cron job; refresh() is a no-op inside the freshness window.
+        try:
+            from influencer_feed import is_enabled as _inf_enabled
+            if _inf_enabled():
+                from influencer_feed import refresh as _inf_refresh
+                _inf_refresh(force=False)
+        except Exception as _iexc:
+            print(f"  (influencer feed refresh skipped: {_iexc})")
+
         broker_snapshot = self.get_broker_snapshot()
         print(
             f"📊 Paper account: equity ${broker_snapshot['equity']:.2f} | "

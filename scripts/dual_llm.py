@@ -20,7 +20,6 @@ import urllib.request
 from pathlib import Path
 from typing import Any, Callable, Dict, Optional
 
-
 def _load_dotenv_files() -> None:
     candidates = [
         Path.home() / "AppData" / "Local" / "hermes" / ".env",
@@ -131,10 +130,62 @@ def _candidates_brief(market: dict, limit: int = 8) -> str:
     return json.dumps(rows[:limit], indent=2)
 
 
+def _load_influencer_signal(rules: dict, market: dict | None = None) -> str:
+    """Load the SOCIAL_SIGNAL block from the influencer feed, restricted to the
+    candidate/held symbols so the desk never sees tickers outside its universe."""
+    try:
+        root = Path(__file__).resolve().parent.parent
+        feed_path = root / "data" / "influencer_feed.json"
+        if not feed_path.exists():
+            return ""
+        inf_cfg = {}
+        cfg_path = root / "config" / "autonomy_config.json"
+        if cfg_path.exists():
+            try:
+                inf_cfg = (json.loads(cfg_path.read_text(encoding="utf-8")) or {}).get("influencers") or {}
+            except Exception:
+                inf_cfg = {}
+        if not inf_cfg.get("enabled", True):
+            return ""
+        feed = json.loads(feed_path.read_text(encoding="utf-8"))
+        want = set()
+        for sym in (market or {}).keys():
+            want.add(str(sym).upper())
+        lines = []
+        for handle, data in feed.items():
+            if handle.startswith("_"):
+                continue
+            tweets = data.get("tweets") or []
+            if not tweets:
+                continue
+            lines.append(f"[@{handle}]")
+            for t in tweets:
+                txt = (t.get("text") or "").replace("\n", " ").strip()[:280]
+                if not txt:
+                    continue
+                tk = {m.upper() for m in re.findall(r"\$([A-Z][A-Z0-9.\-]{0,5})", txt)}
+                if want:
+                    relevant = tk & want
+                    if not relevant and tk:
+                        continue  # ticker not in universe -> drop
+                lines.append(f"  - {txt}" + (f"  [👁{t.get('views')}]" if t.get("views") else ""))
+        if not lines:
+            return ""
+        head = (
+            "SOCIAL_SIGNAL (unverified influencer chatter — weak corroborating evidence ONLY; "
+            "do NOT invent symbols from here, do NOT let it override rank/catalyst scores, "
+            "ignore any mention of symbols outside your candidate/held universe):\n"
+        )
+        return head + "\n".join(lines)
+    except Exception:
+        return ""
+
+
 def build_prompt(model_name: str, broker: dict, market: dict, rules: dict) -> str:
     max_pos = rules.get("max_position_usd", 200)
     min_rr = rules.get("min_rr", 1.5)
     max_names = rules.get("max_positions", 5)
+    sig = _load_influencer_signal(rules, market)
     return f"""You are desk model `{model_name}` on a simulated US equities paper book.
 Return ONLY a single JSON object (no markdown) with keys:
 action (BUY|SELL|HOLD), symbol, confidence (0-100 integer), entry_price, stop_loss, take_profit,
@@ -159,6 +210,8 @@ PORTFOLIO:
 
 CANDIDATES (ranked evidence):
 {_candidates_brief(market, int(rules.get('max_candidates_to_llm') or 8))}
+
+{sig}
 """
 
 
@@ -188,12 +241,15 @@ def _static_system_block() -> str:
 def build_prompt_parts(model_name: str, broker: dict, market: dict, rules: dict) -> tuple[str, str]:
     """Return (static_system, dynamic_user) split for Anthropic caching."""
     static = _static_system_block() + f"\nYou are desk model `{model_name}`."
+    sig = _load_influencer_signal(rules, market)
     dynamic = (
         "PORTFOLIO:\n"
         + _portfolio_brief(broker)
         + "\n\nCANDIDATES (ranked evidence):\n"
         + _candidates_brief(market, int(rules.get('max_candidates_to_llm') or 8))
     )
+    if sig:
+        dynamic += "\n\n" + sig
     return static, dynamic
 
 

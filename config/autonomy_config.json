@@ -138,5 +138,24 @@
     "provider": "fmp",
     "fallback": "yfinance",
     "comment": "FMP primary quotes when FMP_API_KEY set in local .env; yfinance fallback."
+  },
+  "influencers": {
+    "enabled": true,
+    "handles": [
+      "kevinxu",
+      "thelonginvest",
+      "mmatters22596",
+      "thevaluetrade",
+      "amitisinvesting",
+      "sunxliao",
+      "trendspider"
+    ],
+    "max_tweets_per_handle": 5,
+    "refresh_minutes": 15,
+    "fetch": {
+      "provider": "tikhub",
+      "endpoint": "/api/v1/twitter/web/fetch_user_post_tweet"
+    },
+    "comment": "Social/sentiment overlay. Pulled every 15 min by influencer_feed.py. Fed to BOTH juniors and seniors as weak corroborating evidence. Only surfaces symbols already in the candidate/held universe; never a standalone buy trigger. Add more handles over time."
   }
 }
