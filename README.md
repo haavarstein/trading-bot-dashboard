@@ -71,6 +71,8 @@ Junior→senior path is implemented in `scripts/dual_llm.py` (`run_junior_senior
 Keys live only in local gitignored `.env` — never in git.
 Dashboard reports `decision_mode`, junior model names, and last `tier` / escalate reason.
 
+**Anthropic prompt caching:** wired but **off by default** — desk prompts (~200 tokens) are below Anthropic's ~1024-token cache floor, so caching would not engage. Enable with `ANTHROPIC_PROMPT_CACHE=1` only if a large static context is ever added (e.g. big RAG context for the desk).
+
 ---
 
 ## Hard limits (config)

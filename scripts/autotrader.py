@@ -735,6 +735,11 @@ class DryRunAutoTrader:
             "junior4": j4,
             "junior_votes": desk.get("junior_votes"),
             "junior_actions": desk.get("junior_actions"),
+            "cache_stats": {
+                "junior2": (j2 or {}).get("cache_stats"),
+                "junior3": (j3 or {}).get("cache_stats"),
+                "senior2": (decision2 or {}).get("cache_stats"),
+            } if (j2 or j3 or decision2) else None,
             "senior1": desk.get("senior1"),
             "senior2": desk.get("senior2"),
             "tier": desk.get("tier"),

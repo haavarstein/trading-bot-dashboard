@@ -162,6 +162,41 @@ CANDIDATES (ranked evidence):
 """
 
 
+def _static_system_block() -> str:
+    """Stable instruction block. Identical across cycles => cacheable prefix."""
+    return (
+        "You are a careful equities trading desk model on a simulated US equities paper book.\n"
+        "Return ONLY a single JSON object (no markdown) with keys:\n"
+        "action (BUY|SELL|HOLD), symbol, confidence (0-100 integer), entry_price, stop_loss, take_profit,\n"
+        "qty (float shares), thesis (2-4 sentences), reason_code (new_entry|stop_loss|take_profit|rotation|hold),\n"
+        "bullets (array of 2-4 short strings).\n\n"
+        "Hard rules:\n"
+        "- Prefer liquid catalyst setups from the candidate list.\n"
+        "- Max new buy notional about $200.\n"
+        "- Require stop and target with reward:risk >= 1.5 on BUY/SELL plans.\n"
+        "- Max open names about 5.\n"
+        "- Book-full policy: you MAY SELL a currently held name to rotate into a clearly better candidate\n"
+        "  (reason_code=rotation). Prefer the weakest hold (worst open P/L or weakest thesis) as SELL symbol.\n"
+        "  Rotation is allowed by desk policy when a new candidate is materially better.\n"
+        "- SELL only a symbol currently held (stop_loss / take_profit / rotation).\n"
+        "- If no clean edge to buy or rotate, action=HOLD. On HOLD set symbol to \"CASH\" (not a random watch name).\n"
+        "- Do not invent symbols outside candidates/held names.\n"
+        "- Confidence: use >=70 only when recommending BUY/SELL. HOLD may use 55-75.\n"
+    )
+
+
+def build_prompt_parts(model_name: str, broker: dict, market: dict, rules: dict) -> tuple[str, str]:
+    """Return (static_system, dynamic_user) split for Anthropic caching."""
+    static = _static_system_block() + f"\nYou are desk model `{model_name}`."
+    dynamic = (
+        "PORTFOLIO:\n"
+        + _portfolio_brief(broker)
+        + "\n\nCANDIDATES (ranked evidence):\n"
+        + _candidates_brief(market, int(rules.get('max_candidates_to_llm') or 8))
+    )
+    return static, dynamic
+
+
 def _xai_model_candidates(model: str) -> list[str]:
     name = (model or "").strip()
     env_map = {
@@ -253,18 +288,44 @@ def _anthropic_model_candidates(model: str) -> list[str]:
     return ordered
 
 
-def call_anthropic_claude(model: str, prompt: str) -> dict:
+def call_anthropic_claude(
+    model: str,
+    prompt: str,
+    static_system: str | None = None,
+    dynamic_user: str | None = None,
+) -> dict:
     key = os.environ.get("ANTHROPIC_API_KEY")
     if not key:
         raise RuntimeError("ANTHROPIC_API_KEY not set")
     last_err = None
+    use_cache = os.environ.get("ANTHROPIC_PROMPT_CACHE", "0") == "1"
+
+    # Build messages: cacheable static system block + dynamic user data
+    messages: list = []
+    system_blocks: list = []
+    if use_cache and static_system:
+        # static system with cache_control ephemeral
+        system_blocks = [
+            {
+                "type": "text",
+                "text": static_system,
+                "cache_control": {"type": "ephemeral"},
+            }
+        ]
+        messages = [{"role": "user", "content": dynamic_user or prompt}]
+    else:
+        # legacy: no caching
+        messages = [{"role": "user", "content": prompt}]
+
     for model_id in _anthropic_model_candidates(model):
         payload = {
             "model": model_id,
             "max_tokens": 900,
             "temperature": 0.2,
-            "messages": [{"role": "user", "content": prompt}],
+            "messages": messages,
         }
+        if system_blocks:
+            payload["system"] = system_blocks
         try:
             data = _http_json(
                 "https://api.anthropic.com/v1/messages",
@@ -284,6 +345,14 @@ def call_anthropic_claude(model: str, prompt: str) -> dict:
             obj["_provider"] = "anthropic"
             obj["_model_id"] = model_id
             obj["_requested_model"] = model
+            usage = data.get("usage") or {}
+            obj["_cache_stats"] = {
+                "cache_creation_input_tokens": usage.get("cache_creation_input_tokens"),
+                "cache_read_input_tokens": usage.get("cache_read_input_tokens"),
+                "input_tokens": usage.get("input_tokens"),
+                "output_tokens": usage.get("output_tokens"),
+                "cached": bool(usage.get("cache_read_input_tokens") or 0),
+            }
             return obj
         except Exception as exc:
             last_err = exc
@@ -395,11 +464,13 @@ def normalize_decision(raw: dict, model_name: str, source: str) -> dict:
         },
         "thesis": thesis,
     }
+    cs = raw.get("_cache_stats") if isinstance(raw.get("_cache_stats"), dict) else {}
     return {
         "model": model_name,
         "action": action,
         "symbol": symbol,
         "confidence": confidence,
+        "cache_stats": cs or None,
         "entry_price": entry,
         "stop_loss": round(stop, 2),
         "take_profit": round(target, 2),
@@ -433,7 +504,8 @@ def get_live_or_fallback(
             out = normalize_decision(raw, model_name, source="live")
             return out
         if "claude" in name or "anthropic" in name or "sonnet" in name or "haiku" in name:
-            raw = call_anthropic_claude(model_name, prompt)
+            static, dynamic = build_prompt_parts(model_name, broker, market, rules)
+            raw = call_anthropic_claude(model_name, prompt, static_system=static, dynamic_user=dynamic)
             out = normalize_decision(raw, model_name, source="live")
             return out
         if "deepseek" in name or "nous" in name:
