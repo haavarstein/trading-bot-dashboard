@@ -696,18 +696,18 @@ class DryRunAutoTrader:
         decision2.setdefault("timestamp", datetime.now(timezone.utc).isoformat())
 
         j1, j2 = desk.get("junior1"), desk.get("junior2")
-        if j1 and j2:
+        j3 = desk.get("junior3")
+        j4 = desk.get("junior4")
+        all_juniors = [j for j in (j1, j2, j3, j4) if j]
+        for j in all_juniors:
             print(
-                f"  junior {j1.get('model')}: {j1.get('action')} {j1.get('symbol')} @ {j1.get('confidence')}% "
-                f"[{j1.get('source','?')}/{j1.get('provider_model_id','')}]"
+                f"  junior {j.get('model')}: {j.get('action')} {j.get('symbol')} @ {j.get('confidence')}% "
+                f"[{j.get('source','?')}/{j.get('provider_model_id','')}]"
             )
-            print(
-                f"  junior {j2.get('model')}: {j2.get('action')} {j2.get('symbol')} @ {j2.get('confidence')}% "
-                f"[{j2.get('source','?')}/{j2.get('provider_model_id','')}]"
-            )
+        if all_juniors:
             print(
                 f"  junior_agree={desk.get('junior_agreed')} escalate={desk.get('tier')=='senior_escalated'} "
-                f"reason={desk.get('escalate_reason')}"
+                f"reason={desk.get('escalate_reason')} votes={desk.get('junior_votes')}"
             )
         if desk.get("tier") == "senior_escalated":
             print(
@@ -731,6 +731,10 @@ class DryRunAutoTrader:
             "model2": decision2,
             "junior1": j1,
             "junior2": j2,
+            "junior3": j3,
+            "junior4": j4,
+            "junior_votes": desk.get("junior_votes"),
+            "junior_actions": desk.get("junior_actions"),
             "senior1": desk.get("senior1"),
             "senior2": desk.get("senior2"),
             "tier": desk.get("tier"),
