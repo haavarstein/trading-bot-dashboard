@@ -66,6 +66,12 @@ Telegram alerts on **BUY/SELL fills only** (no HOLD spam) + dashboard link
 - Rotation SELLs allowed when book is full; stop/target still primary exits
 - Missing keys / failed calls → tagged deterministic `source=fallback`
 
+### Consensus pipeline (stage-split — fixes category error)
+1. **Exit gate (risk):** held position at/below stop or at/above target executes deterministically (`tier: risk_exit`) — no junior vote. Risk action, not discretionary.
+2. **Junior nomination (entries):** juniors each nominate a candidate symbol; a symbol with `junior_min_agree` live BUY votes is passed to seniors. Seniors vote **that ticker only** (same question → no PANW-vs-JPM mismatch).
+3. **Senior confirm:** seniors BUY/HOLD the nominated symbol; dual agreement required to size/fill.
+4. **Junior HOLD finalize:** 3-of-4 junior HOLD with no nomination → done, no senior cost.
+
 ### Honest status of dual models
 Junior→senior path is implemented in `scripts/dual_llm.py` (`run_junior_senior_consensus`) and wired in `autotrader.py`.
 Keys live only in local gitignored `.env` — never in git.

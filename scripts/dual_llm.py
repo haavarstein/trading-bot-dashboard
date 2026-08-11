@@ -681,6 +681,36 @@ def junior_majority_vote(
     return False, f"junior_hold_quorum_{len(hold_ok)}_lt_{min_agree}", tally
 
 
+def junior_nomination(
+    juniors: list[dict],
+    min_agree: int = 3,
+    hold_floor: int = 55,
+) -> str | None:
+    """
+    Juniors nominate a candidate symbol for ENTRY.
+    Count BUY votes by symbol among LIVE juniors; return the symbol with >= min_agree
+    live BUY votes. HOLDs or conflicting symbols do not produce a nomination.
+    Returns the nominated symbol or None.
+    """
+    if not juniors:
+        return None
+    buys: dict[str, int] = {}
+    for j in juniors:
+        if j.get("source") != "live":
+            continue
+        if str(j.get("action") or "").upper() != "BUY":
+            continue
+        sym = str(j.get("symbol") or "").upper().strip()
+        if not sym or sym == "CASH":
+            continue
+        buys[sym] = buys.get(sym, 0) + 1
+    if not buys:
+        return None
+    # highest-vote symbol meeting the min_agree quorum
+    best = max(buys, key=buys.get)
+    return best if buys[best] >= max(1, min_agree) else None
+
+
 def run_junior_senior_consensus(
     broker: dict,
     market: dict,
@@ -787,8 +817,20 @@ def run_junior_senior_consensus(
         return result
 
     # Senior escalation (trade intent or no quorum)
-    s1 = get_live_or_fallback(s1_name, broker, market, cr, fallback_fn, effort=effort)
-    s2 = get_live_or_fallback(s2_name, broker, market, cr, fallback_fn, effort=None)
+    # Entries: juniors NOMINATE a candidate symbol; seniors vote on THAT symbol only.
+    nomination = junior_nomination(juniors, min_agree=junior_min_agree, hold_floor=hold_floor)
+    if nomination:
+        esc_reason = "junior_nomination"
+        result["junior_nomination"] = nomination
+        # Restrict senior market context to the nominated symbol so both seniors
+        # evaluate the SAME question (kills the category error).
+        nom_market = {nomination: market.get(nomination)}
+        s1 = get_live_or_fallback(s1_name, broker, nom_market, cr, fallback_fn, effort=effort)
+        s2 = get_live_or_fallback(s2_name, broker, nom_market, cr, fallback_fn, effort=None)
+    else:
+        result["junior_nomination"] = None
+        s1 = get_live_or_fallback(s1_name, broker, market, cr, fallback_fn, effort=effort)
+        s2 = get_live_or_fallback(s2_name, broker, market, cr, fallback_fn, effort=None)
     ok, reason = senior_check_fn(s1, s2)
     result.update({
         "decision1": s1,

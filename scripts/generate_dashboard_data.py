@@ -559,6 +559,8 @@ def main():
                 "agents": agents,
                 "tier": row.get("tier"),
                 "escalate_reason": row.get("escalate_reason"),
+                "stage": row.get("stage"),
+                "junior_nomination": row.get("junior_nomination"),
                 "timestamp": row.get("timestamp"),
             }
         )
@@ -885,6 +887,8 @@ def main():
                 else "fallback_deterministic"
             ),
             "last_tier": ((today_consensus or consensus)[-1].get("tier") if (today_consensus or consensus) else None),
+            "last_stage": ((today_consensus or consensus)[-1].get("stage") if (today_consensus or consensus) else None),
+            "last_junior_nomination": ((today_consensus or consensus)[-1].get("junior_nomination") if (today_consensus or consensus) else None),
             "last_escalate_reason": (
                 (today_consensus or consensus)[-1].get("escalate_reason")
                 if (today_consensus or consensus)

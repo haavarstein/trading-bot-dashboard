@@ -590,6 +590,57 @@ class DryRunAutoTrader:
             f"open P/L ${snap['open_pnl']:.2f} | realized ${snap['realized_pnl']:.2f}"
         )
 
+    def check_deterministic_exit(self, broker_snapshot: Dict) -> Dict | None:
+        """
+        Stage-1 risk gate: a held position at/below stop or at/above target is a
+        risk action, NOT a discretionary trade. It executes without the junior
+        majority vote (senior-only deterministic exit).
+        Returns a SELL decision dict or None.
+        """
+        positions = self._position_map(broker_snapshot)
+        for sym, pos in positions.items():
+            try:
+                px = float(pos.get("current_price") or 0)
+            except Exception:
+                continue
+            stop = pos.get("stop_loss")
+            target = pos.get("take_profit")
+            if stop is not None and px and px <= float(stop):
+                reason = self._build_sell_reasoning(sym, pos, px, "stop_loss", f"Stop-loss exit for {sym}", 95)
+                return {
+                    "model": "risk-gate",
+                    "action": "SELL",
+                    "symbol": sym,
+                    "confidence": 95,
+                    "entry_price": px,
+                    "stop_loss": float(stop),
+                    "take_profit": float(target or px),
+                    "qty": float(pos["qty"]),
+                    "thesis": reason["thesis"],
+                    "reason_code": "stop_loss",
+                    "reasoning": reason,
+                    "stage": "exit",
+                    "timestamp": datetime.now(timezone.utc).isoformat(),
+                }
+            if target is not None and px and px >= float(target):
+                reason = self._build_sell_reasoning(sym, pos, px, "take_profit", f"Take-profit exit for {sym}", 90)
+                return {
+                    "model": "risk-gate",
+                    "action": "SELL",
+                    "symbol": sym,
+                    "confidence": 90,
+                    "entry_price": px,
+                    "stop_loss": float(stop or px),
+                    "take_profit": float(target),
+                    "qty": float(pos["qty"]),
+                    "thesis": reason["thesis"],
+                    "reason_code": "take_profit",
+                    "reasoning": reason,
+                    "stage": "exit",
+                    "timestamp": datetime.now(timezone.utc).isoformat(),
+                }
+        return None
+
     def run_trading_cycle(self):
         print(f"\n{'=' * 60}")
         print(f"Trading Bot Cycle - {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S')} UTC")
@@ -604,6 +655,37 @@ class DryRunAutoTrader:
             f"📊 Paper account: equity ${broker_snapshot['equity']:.2f} | "
             f"cash ${broker_snapshot['cash']:.2f} | positions {len(broker_snapshot.get('positions') or [])}"
         )
+
+        # Stage-1 risk gate: deterministic stop/target exits run BEFORE the desk consensus.
+        # A held position at its stop/target is a risk action, not a discretionary trade.
+        exit_decision = self.check_deterministic_exit(broker_snapshot)
+        if exit_decision:
+            print(
+                f"🚨 RISK GATE EXIT: {exit_decision['action']} {exit_decision['symbol']} "
+                f"({exit_decision['reason_code']}) @ ${exit_decision['entry_price']:.2f}"
+            )
+            valid, blocker = self.validate_order(exit_decision, broker_snapshot)
+            entry = {
+                "model1": exit_decision,
+                "model2": exit_decision,
+                "junior1": None, "junior2": None, "junior3": None, "junior4": None,
+                "junior_votes": None,
+                "tier": "risk_exit",
+                "escalate_reason": exit_decision["reason_code"],
+                "junior_agreed": None,
+                "stage": "exit",
+                "timestamp": datetime.now(timezone.utc).isoformat(),
+                "consensus": valid,
+                "reason": f"deterministic {exit_decision['reason_code']} exit",
+                "validation": {"valid": valid, "reason": blocker},
+            }
+            self.log_to_ledger(self.consensus_log_path, entry)
+            if valid:
+                print("✅ RISK GATE EXIT VALIDATED — executing")
+                self.execute_trade(exit_decision, dry_run=True)
+            else:
+                print(f"🛑 RISK GATE EXIT BLOCKED: {blocker}")
+            return
 
         model1_name = self.config["consensus_rules"]["model_1"]
         model2_name = self.config["consensus_rules"]["model_2"]
@@ -745,6 +827,8 @@ class DryRunAutoTrader:
             "tier": desk.get("tier"),
             "escalate_reason": desk.get("escalate_reason"),
             "junior_agreed": desk.get("junior_agreed"),
+            "junior_nomination": desk.get("junior_nomination"),
+            "stage": desk.get("stage") or "entry",
             "timestamp": datetime.now(timezone.utc).isoformat(),
             "consensus": consensus,
             "reason": reason,
