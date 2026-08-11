@@ -647,6 +647,37 @@
       .tp-row { grid-template-columns: 1fr 1fr; }
     }
 
+
+    .agent-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin: 6px 8px 2px 0;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--card-2);
+      font-size: 11px;
+      font-variant-numeric: tabular-nums;
+    }
+    .agent-role {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--blue-soft);
+      color: var(--blue);
+      font-weight: 800;
+      font-size: 10px;
+    }
+    .agent-role.senior { background: var(--orange-soft); color: var(--orange); }
+    .agent-name { color: var(--ink-soft); font-weight: 650; }
+    .agent-act { font-weight: 800; }
+    .agent-sym { color: var(--muted); font-weight: 700; }
+    .agent-conf { color: var(--muted-2); }
+
     /* Closed results */
     .closed-shell {
       border: 1px solid var(--border);
@@ -1836,6 +1867,31 @@
       function renderActivity() {
         const all = pager.activity.items;
         const show = all.slice(0, pager.activity.visible);
+        const chipColor = (action) => {
+          const a = String(action || '').toUpperCase();
+          if (a === 'BUY') return 'green';
+          if (a === 'SELL') return 'red';
+          if (a === 'HOLD') return '';
+          return '';
+        };
+        const agentChips = (agents) => {
+          if (!Array.isArray(agents) || !agents.length) return '';
+          const shortName = (m) => {
+            const s = String(m || '');
+            if (!s) return '?';
+            const p2 = s.replace(/^grok-/i,'G').replace(/^claude-/i,'C').replace(/^deepseek-/i,'DS');
+            return p2.replace(/[-.]/g,' ').split(' ').slice(0,2).join(' ');
+          };
+          return agents.map(a => `
+            <span class="agent-chip" title="${esc(a.model || '')} · ${esc(a.source || '')}">
+              <span class="agent-role ${a.tier === 'senior' ? 'senior' : ''}">${a.tier === 'senior' ? 'S' : 'J'}</span>
+              <span class="agent-name">${esc(shortName(a.model))}</span>
+              <span class="${chipColor(a.action)} agent-act">${esc(a.action || '—')}</span>
+              <span class="agent-sym">${esc(a.symbol || '')}</span>
+              <span class="agent-conf">${typeof a.confidence === 'number' ? a.confidence + '%' : ''}</span>
+            </span>
+          `).join('');
+        };
         setHtml('activity-list', show.length ? show.map(a => `
           <div class="row">
             <div class="row-top">
@@ -1843,6 +1899,7 @@
               <span class="${chip(a.status)}">${esc(a.status || a.type)}</span>
             </div>
             <div class="hint">${esc(a.detail || '')}</div>
+            ${agentChips(a.agents)}
             <div class="hint">${esc(formatWhen(a.timestamp))}</div>
           </div>
         `).join('') : '<div class="row hint">No activity yet.</div>');

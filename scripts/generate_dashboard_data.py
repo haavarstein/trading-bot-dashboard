@@ -529,6 +529,26 @@ def main():
             )
             reason = desk + (reason or "")
 
+        # Collect every agent's individual vote (juniors + seniors)
+        agents = []
+        for key in ("junior1", "junior2", "junior3", "junior4", "model1", "model2"):
+            a = row.get(key) or {}
+            if not a:
+                continue
+            a_action = str(a.get("action") or "").upper()
+            a_sym = a.get("symbol") or "CASH"
+            agents.append(
+                {
+                    "model": a.get("model") or key,
+                    "action": a_action,
+                    "symbol": a_sym,
+                    "confidence": a.get("confidence"),
+                    "source": a.get("source"),
+                    "provider": a.get("provider"),
+                    "tier": "junior" if key.startswith("junior") else "senior",
+                }
+            )
+
         activity.append(
             {
                 "type": "consensus",
@@ -536,6 +556,9 @@ def main():
                 "status": status,
                 "headline": headline,
                 "detail": reason,
+                "agents": agents,
+                "tier": row.get("tier"),
+                "escalate_reason": row.get("escalate_reason"),
                 "timestamp": row.get("timestamp"),
             }
         )
