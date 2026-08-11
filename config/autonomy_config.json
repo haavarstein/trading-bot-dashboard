@@ -90,7 +90,17 @@
     "escalate_on_borderline_confidence": true,
     "log_all_disagreements": true,
     "max_candidates_to_llm": 8,
-    "comment": "Juniors (grok-4.3/haiku-4.5) screen first. Escalate to seniors (grok-4.5 + claude-sonnet-5) when juniors disagree, confidence is borderline, or action is BUY/SELL. Agreed junior HOLD can finalize without seniors. Senior dual agreement is final trade gate."
+    "comment": "4 independent juniors (grok-4.3, claude-haiku-4-5, deepseek-v4-flash via Nous, grok-build-0.1) screen first. 3-of-4 majority HOLD can finalize without seniors. Escalate to seniors (grok-4.5 + claude-sonnet-5) on any live trade intent, split, or no quorum. Senior dual agreement is the final gate.",
+    "junior_model_3": "deepseek-v4-flash",
+    "junior_model_3_enabled": true,
+    "junior_models": [
+      "grok-4.3",
+      "claude-haiku-4-5",
+      "deepseek-v4-flash",
+      "grok-build-0.1"
+    ],
+    "junior_model_4": "grok-build-0.1",
+    "junior_min_agree": 3
   },
   "telegram": {
     "enabled": true,
@@ -116,7 +126,7 @@
     "consensus_log": "./data/consensus_log.jsonl",
     "candidate_outcomes": "./data/candidate_outcomes.jsonl"
   },
-  "last_updated": "2026-08-10T18:27:36Z",
+  "last_updated": "2026-08-11T14:16:03Z",
   "execution_rules": {
     "allow_rotation": true,
     "rotation_min_score": 70,

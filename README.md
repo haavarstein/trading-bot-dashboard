@@ -44,9 +44,12 @@ Telegram alerts on **BUY/SELL fills only** (no HOLD spam) + dashboard link
 ```
 
 ### Consensus models (config) — junior first, senior gate
-**Juniors (cheap screen, every cycle)**
+**Juniors (cheap screen, every cycle) — 4 independent models**
 - `junior_model_1`: `grok-4.3` (fallback `grok-build-0.1`) via xAI
 - `junior_model_2`: `claude-haiku-4-5` via Anthropic
+- `junior_model_3`: `deepseek-v4-flash` via Nous Portal (`NOUS_API_KEY`)
+- `junior_model_4`: `grok-build-0.1` via xAI
+- `junior_min_agree`: 3 (3-of-4 majority HOLD finalizes without seniors)
 
 **Seniors (final gate when escalated)**
 - `model_1`: `grok-4.5` (`model_1_effort`: `medium`) via xAI
@@ -54,7 +57,8 @@ Telegram alerts on **BUY/SELL fills only** (no HOLD spam) + dashboard link
 
 **Escalation rules**
 - Juniors always see the same ranked evidence (max 8 candidates)
-- Escalate to seniors when juniors **disagree**, confidence is **borderline**, or action is **BUY/SELL**
+- Escalate to seniors on **any live BUY/SELL intent**, split, or when junior quorum is missed
+- 3-of-4 majority HOLD finalizes cheaply without seniors
 - Agreed junior **HOLD** can finalize without seniors (saves tokens)
 - Senior dual agreement remains the final trade gate; senior disagreement blocks execution
 - `min_confidence`: 70 (BUY/SELL); junior HOLD floor 55

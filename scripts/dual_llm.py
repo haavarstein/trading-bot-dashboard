@@ -291,6 +291,65 @@ def call_anthropic_claude(model: str, prompt: str) -> dict:
     raise RuntimeError(f"Anthropic call failed for {model}: {last_err}")
 
 
+
+def _nous_model_candidates(model: str) -> list[str]:
+    name = (model or "").strip()
+    env = os.environ.get("NOUS_MODEL_ID") or os.environ.get("DEEPSEEK_MODEL_ID") or "deepseek/deepseek-v4-flash-0731"
+    aliases = {
+        "deepseek": [env, "deepseek/deepseek-v4-flash-0731"],
+        "deepseek-v4-flash": [env, "deepseek/deepseek-v4-flash-0731"],
+        "deepseek-v4-flash-0731": [env, "deepseek/deepseek-v4-flash-0731"],
+        "deepseek/deepseek-v4-flash-0731": [env, "deepseek/deepseek-v4-flash-0731"],
+    }
+    ordered = []
+    for cand in aliases.get(name, [name, env]):
+        if cand and cand not in ordered:
+            ordered.append(cand)
+    if name and name not in ordered:
+        ordered.insert(0, name)
+    return ordered
+
+
+def call_nous_deepseek(model: str, prompt: str, effort: str | None = None) -> dict:
+    """Nous Portal (OpenAI-compatible) DeepSeek call."""
+    key = os.environ.get("NOUS_API_KEY")
+    if not key:
+        raise RuntimeError("NOUS_API_KEY not set")
+    base = os.environ.get("NOUS_BASE_URL", "https://inference-api.nousresearch.com/v1").rstrip("/")
+    last_err = None
+    for model_id in _nous_model_candidates(model):
+        payload = {
+            "model": model_id,
+            "temperature": 0.2,
+            "messages": [
+                {"role": "system", "content": "You are a careful equities trading desk model. Output JSON only."},
+                {"role": "user", "content": prompt},
+            ],
+        }
+        if effort:
+            payload["messages"][0]["content"] += f" Effort setting: {effort}."
+        try:
+            data = _http_json(
+                f"{base}/chat/completions",
+                {
+                    "Content-Type": "application/json",
+                    "Authorization": f"Bearer {key}",
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+                },
+                payload,
+            )
+            text = data["choices"][0]["message"]["content"]
+            obj = _extract_json_obj(text)
+            obj["_provider"] = "nous"
+            obj["_model_id"] = model_id
+            obj["_requested_model"] = model
+            return obj
+        except Exception as exc:
+            last_err = exc
+            continue
+    raise RuntimeError(f"Nous DeepSeek call failed for {model}: {last_err}")
+
+
 def normalize_decision(raw: dict, model_name: str, source: str) -> dict:
     action = str(raw.get("action") or "HOLD").upper().strip()
     if action not in ("BUY", "SELL", "HOLD"):
@@ -377,6 +436,10 @@ def get_live_or_fallback(
             raw = call_anthropic_claude(model_name, prompt)
             out = normalize_decision(raw, model_name, source="live")
             return out
+        if "deepseek" in name or "nous" in name:
+            raw = call_nous_deepseek(model_name, prompt, effort=effort)
+            out = normalize_decision(raw, model_name, source="live")
+            return out
         # unknown model family
         raise RuntimeError(f"no live provider mapping for {model_name}")
     except Exception as exc:
@@ -436,6 +499,34 @@ def junior_pair_agrees(j1: dict, j2: dict, hold_floor: int = 55) -> tuple[bool, 
     return True, None
 
 
+
+def junior_pair_agrees3(
+    j1: dict,
+    j2: dict,
+    j3: dict | None,
+    hold_floor: int = 55,
+) -> tuple[bool, str | None, list[str]]:
+    """3-way junior screen. 2-of-3 HOLD agreement can finalize.
+    Returns (agreed, reason, actions)."""
+    actions = [
+        str((j1 or {}).get("action") or "").upper(),
+        str((j2 or {}).get("action") or "").upper(),
+        str((j3 or {}).get("action") or "").upper() if j3 else None,
+    ]
+    non_hold = [a for a in actions if a and a != "HOLD"]
+    # Any BUY/SELL presence → escalate (trades always need seniors), and it's not a clean HOLD finalize
+    if non_hold:
+        return False, "junior_trade_intent", actions
+
+    # All HOLD (or missing 3rd → treat as HOLD-eligible pair)
+    h1, h2 = _conf(j1), _conf(j2)
+    h3 = _conf(j3) if j3 else None
+    confs = [c for c in (h1, h2, h3) if c is not None]
+    if any(c < hold_floor for c in confs):
+        return False, f"junior_hold_confidence_below_{hold_floor}", actions
+    return True, None, actions
+
+
 def should_escalate_to_seniors(
     j1: dict,
     j2: dict,
@@ -479,6 +570,45 @@ def should_escalate_to_seniors(
     return False, "junior_hold_final"
 
 
+def junior_majority_vote(
+    juniors: list[dict],
+    hold_floor: int = 55,
+    min_agree: int = 2,
+) -> tuple[bool, str | None, dict]:
+    """
+    Majority screen over N juniors.
+    - Any BUY/SELL intent from a live junior → escalate (trades need seniors).
+    - Otherwise count HOLDs; >= min_agree HOLDs (with conf>=floor) → agreed HOLD.
+    - Live juniors only count toward agreement; fallback-only juniors don't veto.
+    Returns (agreed, reason, tally).
+    """
+    tally = {"HOLD": 0, "BUY": 0, "SELL": 0, "live": 0, "fallback": 0}
+    for j in juniors or []:
+        a = str((j or {}).get("action") or "HOLD").upper()
+        if a in ("BUY", "SELL"):
+            tally[a] += 1
+            if j.get("source") == "live":
+                tally["live"] += 1
+        elif a == "HOLD":
+            tally["HOLD"] += 1
+            if j.get("source") == "live":
+                tally["live"] += 1
+        else:
+            tally["HOLD"] += 1
+
+    live_h = [j for j in juniors if j and j.get("source") == "live"]
+    non_hold = [j for j in live_h if str((j or {}).get("action") or "").upper() in ("BUY", "SELL")]
+    if non_hold:
+        syms = ",".join(str(j.get("symbol")) for j in non_hold)
+        return False, f"junior_trade_intent ({syms})", tally
+
+    hold_ok = [j for j in juniors if str((j or {}).get("action") or "").upper() == "HOLD" and _conf(j) >= hold_floor]
+    # Use live HOLDs for quorum; fallbacks can fill if we have at least one live anchor
+    if len(hold_ok) >= min_agree:
+        return True, None, tally
+    return False, f"junior_hold_quorum_{len(hold_ok)}_lt_{min_agree}", tally
+
+
 def run_junior_senior_consensus(
     broker: dict,
     market: dict,
@@ -487,19 +617,28 @@ def run_junior_senior_consensus(
     senior_check_fn: Callable[[dict, dict], tuple],
 ) -> dict:
     """
-    Junior-first dual desk with optional senior escalation.
+    Junior-first N-way desk with senior escalation.
 
-    Returns dict with:
-      decision1/decision2 (final gate pair used for execution),
-      junior1/junior2, senior1/senior2 (optional),
-      tier: junior_only | senior_escalated,
+    Juniors (configurable list, default 4): grok-4.3, claude-haiku-4-5,
+      deepseek-v4-flash (Nous), grok-build-0.1. Majority HOLD (>= junior_min_agree)
+      can finalize without seniors. Escalate on trade intent, split, or borderline.
+    Seniors (grok-4.5 + claude-sonnet-5) are the final gate.
+
+    Returns:
+      decision1/decision2, junior1..4, senior1/senior2, junior_votes,
+      tier (junior_only|senior_escalated|senior_only),
       escalate_reason, junior_agreed, consensus, consensus_reason
     """
     cr = dict(rules or {})
     junior_on = bool(cr.get("junior_enabled", True))
-    j1_name = cr.get("junior_model_1") or "grok-4.3"
-    j1_fb = cr.get("junior_model_1_fallback") or "grok-build-0.1"
-    j2_name = cr.get("junior_model_2") or "claude-haiku-4-5"
+    junior_min_agree = int(cr.get("junior_min_agree", 3))
+    junior_list = (cr.get("junior_models") or [
+        cr.get("junior_model_1") or "grok-4.3",
+        cr.get("junior_model_2") or "claude-haiku-4-5",
+        cr.get("junior_model_3") or "deepseek-v4-flash",
+        cr.get("junior_model_4") or "grok-build-0.1",
+    ])
+    junior_list = [m for m in junior_list if m]
     s1_name = cr.get("model_1") or cr.get("senior_model_1") or "grok-4.5"
     s2_name = cr.get("model_2") or cr.get("senior_model_2") or "claude-sonnet-5"
     effort = cr.get("model_1_effort") or cr.get("senior_model_1_effort") or "medium"
@@ -512,10 +651,9 @@ def run_junior_senior_consensus(
         return {
             "decision1": d1,
             "decision2": d2,
-            "junior1": None,
-            "junior2": None,
-            "senior1": d1,
-            "senior2": d2,
+            "junior1": None, "junior2": None, "junior3": None, "junior4": None,
+            "junior_votes": {},
+            "senior1": d1, "senior2": d2,
             "tier": "senior_only",
             "escalate_reason": "junior_disabled",
             "junior_agreed": None,
@@ -523,60 +661,73 @@ def run_junior_senior_consensus(
             "consensus_reason": reason,
         }
 
-    # Juniors first
-    j1 = get_live_or_fallback(j1_name, broker, market, cr, fallback_fn, effort=None)
-    if j1.get("source") == "fallback":
-        # try explicit xAI junior fallback id once if primary junior failed
-        j1b = get_live_or_fallback(j1_fb, broker, market, cr, fallback_fn, effort=None)
-        if j1b.get("source") == "live":
-            j1 = j1b
-            j1["model"] = j1_name  # keep logical desk label
-            j1["provider_model_id"] = j1b.get("provider_model_id")
-            j1["junior_fallback_used"] = j1_fb
-    j2 = get_live_or_fallback(j2_name, broker, market, cr, fallback_fn, effort=None)
+    # Run all juniors
+    juniors = []
+    for name in junior_list:
+        j = get_live_or_fallback(name, broker, market, cr, fallback_fn, effort=None)
+        juniors.append(j)
 
-    j_ok, j_reason = junior_pair_agrees(j1, j2, hold_floor=hold_floor)
-    escalate, esc_reason = should_escalate_to_seniors(j1, j2, j_ok, cr)
+    # Agree / escalate
+    j_ok, j_reason, tally = junior_majority_vote(juniors, hold_floor=hold_floor, min_agree=junior_min_agree)
+
+    # Escalation drivers
+    escalate = False
+    esc_reason = ""
+    # trade intent
+    any_trade = any(
+        str((j or {}).get("action") or "").upper() in ("BUY", "SELL") and j.get("source") == "live"
+        for j in juniors
+    )
+    # disagreement
+    actions = [str((j or {}).get("action") or "").upper() for j in juniors if j]
+    if not j_ok and (any_trade or tally.get("BUY") or tally.get("SELL")):
+        escalate = True
+        esc_reason = "junior_trade_or_split"
+    elif not j_ok:
+        escalate = True
+        esc_reason = "junior_hold_quorum_miss"
 
     result = {
-        "junior1": j1,
-        "junior2": j2,
-        "junior_agreed": j_ok,
-        "junior_reason": j_reason,
+        "junior_votes": tally,
         "escalate_reason": esc_reason,
         "senior1": None,
         "senior2": None,
     }
+    for i, j in enumerate(juniors, 1):
+        result[f"junior{i}"] = j
 
-    if not escalate:
-        # Final = juniors (HOLD path)
-        ok, reason = senior_check_fn(j1, j2)
-        result.update(
-            {
-                "decision1": j1,
-                "decision2": j2,
-                "tier": "junior_only",
-                "consensus": ok,
-                "consensus_reason": reason,
-            }
-        )
+    if not escalate and j_ok:
+        # Use two live junior HOLDs as the final pair if available
+        holds = [j for j in juniors if str((j or {}).get("action") or "").upper() == "HOLD"]
+        holds_live = [j for j in holds if j and j.get("source") == "live"]
+        pick = (holds_live or holds)[:2]
+        if len(pick) == 1:
+            pick.append(pick[0])
+        ok, reason = senior_check_fn(pick[0], pick[1] if len(pick) > 1 else pick[0])
+        result.update({
+            "decision1": pick[0],
+            "decision2": pick[1] if len(pick) > 1 else pick[0],
+            "tier": "junior_only",
+            "junior_agreed": True,
+            "consensus": ok,
+            "consensus_reason": reason,
+        })
         return result
 
-    # Senior escalation
+    # Senior escalation (trade intent or no quorum)
     s1 = get_live_or_fallback(s1_name, broker, market, cr, fallback_fn, effort=effort)
     s2 = get_live_or_fallback(s2_name, broker, market, cr, fallback_fn, effort=None)
     ok, reason = senior_check_fn(s1, s2)
-    result.update(
-        {
-            "decision1": s1,
-            "decision2": s2,
-            "senior1": s1,
-            "senior2": s2,
-            "tier": "senior_escalated",
-            "consensus": ok,
-            "consensus_reason": reason,
-        }
-    )
+    result.update({
+        "decision1": s1,
+        "decision2": s2,
+        "senior1": s1,
+        "senior2": s2,
+        "tier": "senior_escalated",
+        "junior_agreed": j_ok,
+        "consensus": ok,
+        "consensus_reason": reason,
+    })
     return result
 
 
@@ -585,4 +736,5 @@ def provider_status() -> dict:
         "xai_key": bool(os.environ.get("XAI_API_KEY") or os.environ.get("GROK_API_KEY")),
         "anthropic_key": bool(os.environ.get("ANTHROPIC_API_KEY")),
         "openai_key": bool(os.environ.get("OPENAI_API_KEY")),
+        "nous_key": bool(os.environ.get("NOUS_API_KEY")),
     }

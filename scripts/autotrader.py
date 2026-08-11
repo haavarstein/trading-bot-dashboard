@@ -648,9 +648,18 @@ class DryRunAutoTrader:
             "max_candidates_to_llm": cr.get("max_candidates_to_llm", 8),
             # junior/senior desk config
             "junior_enabled": cr.get("junior_enabled", True),
+            "junior_models": cr.get("junior_models", [
+                cr.get("junior_model_1", "grok-4.3"),
+                cr.get("junior_model_2", "claude-haiku-4-5"),
+                cr.get("junior_model_3", "deepseek-v4-flash"),
+                cr.get("junior_model_4", "grok-build-0.1"),
+            ]),
+            "junior_min_agree": cr.get("junior_min_agree", 3),
             "junior_model_1": cr.get("junior_model_1", "grok-4.3"),
             "junior_model_1_fallback": cr.get("junior_model_1_fallback", "grok-build-0.1"),
             "junior_model_2": cr.get("junior_model_2", "claude-haiku-4-5"),
+            "junior_model_3": cr.get("junior_model_3", "deepseek-v4-flash"),
+            "junior_model_3_enabled": cr.get("junior_model_3_enabled", True),
             "model_1": cr.get("model_1", model1_name),
             "model_1_effort": cr.get("model_1_effort", effort),
             "model_2": cr.get("model_2", model2_name),

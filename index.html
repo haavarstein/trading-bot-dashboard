@@ -1635,13 +1635,19 @@
       const mode = cons.decision_mode || 'fallback_deterministic';
       const j1n = prettyModel(cons.junior_model_1 || 'grok-4.3', null);
       const j2n = prettyModel(cons.junior_model_2 || 'claude-haiku-4-5', null);
+      const j3n = prettyModel(cons.junior_model_3 || 'deepseek-v4-flash', null);
+      const juniorModels = (Array.isArray(cons.junior_models) && cons.junior_models.length)
+        ? cons.junior_models
+        : [cons.junior_model_1 || 'grok-4.3', cons.junior_model_2 || 'claude-haiku-4-5', cons.junior_model_3 || 'deepseek-v4-flash', cons.junior_model_4 || 'grok-build-0.1'];
+      const juniorNames = juniorModels.map(m => prettyModel(m, null)).join(' + ');
+      const minJunior = cons.junior_min_agree ?? 3;
       const juniorOn = cons.junior_enabled !== false;
 
       const seniorLine = mode === 'live_dual_llm'
         ? `<li><strong>Senior agent trade:</strong> <strong>${esc(m1)}</strong> and <strong>${esc(m2)}</strong> make blind live decisions from the same ranked evidence when API keys are available. Any disagreement blocks execution and is published below.</li>`
         : `<li><strong>Senior agent trade:</strong> <strong>${esc(m1)}</strong> and <strong>${esc(m2)}</strong> are the final gate. Live dual-LLM runs when provider keys are present; otherwise a deterministic fallback is tagged in logs. Disagreement still blocks execution.</li>`;
       const juniorLine = juniorOn
-        ? `<li><strong>Junior agent screen first:</strong> <strong>${esc(j1n)}</strong> + <strong>${esc(j2n)}</strong>. Escalate to seniors on BUY/SELL, disagreement, or borderline confidence. Agreed junior HOLD can finalize without seniors.</li>`
+        ? `<li><strong>Junior agent screen first:</strong> <strong>${esc(juniorNames)}</strong>. A ${esc(minJunior)}-of-${esc(juniorModels.length)} majority HOLD can finalize without seniors; any live BUY/SELL intent, split, or borderline confidence escalates to seniors.</li>`
         : '';
       setHtml('edge-list', `
         <li>Broad-market discovery looks for fresh catalysts before the 15-minute decision loop.</li>
@@ -1662,7 +1668,7 @@
         <li>Maximum open positions: ${esc(limits.max_positions ?? '--')} (capital-sized, not a PDT hold cap)</li>
         <li>Daily loss halt: ${dailyLossTxt}</li>
         <li>Portfolio drawdown halt: ${esc(limits.max_drawdown_pct ?? '--')}%</li>
-        <li>Consensus desk: Juniors ${esc(j1n)} + ${esc(j2n)} → Seniors ${esc(m1)} + ${esc(m2)} · dual agreement required · mode ${esc(mode)}</li>
+        <li>Consensus desk: Juniors ${esc(juniorNames)} → Seniors ${esc(m1)} + ${esc(m2)} · majority HOLD finalizes cheap · trades always senior-gated · mode ${esc(mode)}</li>
         <li>Cadence: ${esc((d.system || {}).cadence || 'every 15m during NYSE regular hours')}</li>
         <li>Rotation: ${esc(limits.allow_rotation ? 'allowed with min-hold gate' : 'disabled')} · min hold ${esc(limits.rotation_min_hold_minutes ?? '--')}m</li>
       `);
