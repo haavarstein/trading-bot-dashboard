@@ -61,7 +61,9 @@ class TelegramNotifier:
 
         tg = config.get("telegram") or {}
         self.enabled = bool(tg.get("enabled", True))
-        self.chat_id = tg.get("chat_id") or os.environ.get("TELEGRAM_CHAT_ID") or "TELEGRAM_CHAT_ID_ENV"
+        # chat_id comes ONLY from the TELEGRAM_CHAT_ID env var (loaded from .env),
+        # never hardcoded, so no identifier lives in tracked source/config.
+        self.chat_id = os.environ.get("TELEGRAM_CHAT_ID") or tg.get("chat_id_env")
         self.bot_token = self._get_bot_token()
         self.dashboard_url = (
             tg.get("dashboard_url")
