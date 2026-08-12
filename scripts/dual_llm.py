@@ -15,6 +15,7 @@ from __future__ import annotations
 import json
 import os
 import re
+import sys
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -475,6 +476,160 @@ def call_nous_deepseek(model: str, prompt: str, effort: str | None = None) -> di
     raise RuntimeError(f"Nous DeepSeek call failed for {model}: {last_err}")
 
 
+def _openai_model_candidates(model: str) -> list[str]:
+    name = (model or "").strip()
+    env = os.environ.get("OPENAI_MODEL_ID") or "gpt-5.6-sol"
+    aliases = {
+        "gpt-5.6-sol": [env, "gpt-5.6-sol"],
+        "sol": [env, "gpt-5.6-sol"],
+        "gpt-5.6": [env, "gpt-5.6-sol"],
+        "gpt5.6sol": [env, "gpt-5.6-sol"],
+    }
+    ordered = []
+    for cand in aliases.get(name, [name, env]):
+        if cand and cand not in ordered:
+            ordered.append(cand)
+    if name and name not in ordered:
+        ordered.insert(0, name)
+    return ordered
+
+
+def call_openai_gpt(
+    model: str,
+    prompt: str,
+    image_path: str | None = None,
+    effort: str | None = None,
+    max_tokens: int = 900,
+) -> dict:
+    """
+    Direct OpenAI Chat Completions call (gpt-5.6-sol family).
+    Supports optional image input (chart) via image_path -> base64 data URL.
+    Returns the raw JSON object (normalize_decision adds desk fields).
+    """
+    key = os.environ.get("OPENAI_API_KEY")
+    if not key:
+        raise RuntimeError("OPENAI_API_KEY not set")
+    last_err = None
+    for model_id in _openai_model_candidates(model):
+        content: list = [{"type": "text", "text": prompt}]
+        if image_path and os.path.exists(image_path):
+            try:
+                import base64
+
+                ext = str(image_path).rsplit(".", 1)[-1].lower()
+                mime = {"png": "image/png", "jpg": "image/jpeg", "jpeg": "image/jpeg", "webp": "image/webp"}.get(ext, "image/png")
+                with open(image_path, "rb") as f:
+                    b64 = base64.b64encode(f.read()).decode()
+                content.append({
+                    "type": "image_url",
+                    "image_url": {"url": f"data:{mime};base64,{b64}"},
+                })
+            except Exception as e:
+                last_err = e
+                # drop image, continue with text-only rather than fail hard
+                content = [{"type": "text", "text": prompt}]
+        payload = {
+            "model": model_id,
+            # gpt-5.6-sol only supports temperature=1 (default); omit it entirely.
+            "max_completion_tokens": max_tokens,
+            "messages": [{"role": "user", "content": content}],
+        }
+        if effort:
+            payload["messages"][0]["content"][0]["text"] += f" Effort setting: {effort}."
+        try:
+            data = _http_json(
+                "https://api.openai.com/v1/chat/completions",
+                {"Content-Type": "application/json", "Authorization": f"Bearer {key}"},
+                payload,
+            )
+            text = data["choices"][0]["message"]["content"]
+            obj = _extract_json_obj(text)
+            obj["_provider"] = "openai"
+            obj["_model_id"] = model_id
+            obj["_requested_model"] = model
+            usage = data.get("usage") or {}
+            obj["_usage"] = {
+                "input_tokens": usage.get("prompt_tokens"),
+                "output_tokens": usage.get("completion_tokens"),
+                "total_tokens": usage.get("total_tokens"),
+            }
+            return obj
+        except Exception as exc:
+            last_err = exc
+            continue
+    raise RuntimeError(f"OpenAI call failed for {model}: {last_err}")
+
+
+def sol_chart_validator(
+    symbol: str,
+    rules: dict,
+    chart_path: str | None = None,
+    extra_context: str = "",
+) -> dict:
+    """
+    GPT-5.6 Sol chart-vision TA validator. Generates a candlestick chart for
+    `symbol` (via chart_gen.py) and asks Sol to read it: support/resistance,
+    entry zone, stop-loss, and a BUY/SELL/HOLD recommendation.
+
+    Runs as an ADDITIONAL senior validator on escalated trades. Returns a
+    normalized decision dict (source='live', provider='openai') or a
+    deterministic HOLD fallback on any failure. Never blocks a valid trade
+    outright — its read is logged and visible to the desk.
+    """
+    model = (rules.get("sol_model") or "gpt-5.6-sol").strip()
+    chart_path = chart_path or rules.get("sol_chart_path")
+
+    # 1) Ensure a chart exists for the symbol
+    if not chart_path or not os.path.exists(chart_path):
+        try:
+            root = Path(__file__).resolve().parent.parent
+            gen = root / "scripts" / "chart_gen.py"
+            out = root / "data" / "charts" / f"{symbol}.png"
+            if gen.exists():
+                import subprocess
+                py = os.environ.get("SOL_CHART_PY") or os.environ.get("VENV_PYTHON") or sys.executable
+                subprocess.run(
+                    [py, str(gen), symbol, "--days", str(rules.get("sol_chart_days", 60)), "--out", str(out)],
+                    capture_output=True, text=True, timeout=120,
+                )
+                if out.exists():
+                    chart_path = str(out)
+        except Exception:
+            chart_path = None
+
+    prompt = (
+        "You are a chart-reading technical-analysis validator on a simulated equities desk.\n"
+        f"Analyze the candlestick chart for {symbol} (daily).\n"
+        "Draw support and resistance levels, and mark a potential entry zone and a stop-loss zone.\n"
+        "Return ONLY a single JSON object with keys:\n"
+        "action (BUY|SELL|HOLD), symbol, confidence (0-100 integer), entry_price, stop_loss, take_profit,\n"
+        "support_levels (array of numbers), resistance_levels (array of numbers),\n"
+        "chart_read (2-4 sentences: trend, S/R, entry/stop rationale).\n"
+        "Be conservative: if the chart is extended, unclear, or near strong resistance, prefer HOLD.\n"
+        "Your read is weak corroborating evidence — never override a strong desk consensus.\n"
+        f"{extra_context}\n"
+    )
+
+    try:
+        raw = call_openai_gpt(model, prompt, image_path=chart_path, max_tokens=int(rules.get("sol_max_tokens", 600)))
+        out = normalize_decision(raw, model, source="live")
+        out["support_levels"] = raw.get("support_levels") or []
+        out["resistance_levels"] = raw.get("resistance_levels") or []
+        out["chart_read"] = raw.get("chart_read") or raw.get("thesis") or ""
+        return out
+    except Exception as exc:
+        fb = {
+            "model": model, "action": "HOLD", "symbol": symbol, "confidence": 60,
+            "entry_price": 0, "stop_loss": 0, "take_profit": 0, "qty": 0,
+            "thesis": f"Sol chart validator unavailable: {str(exc)[:140]}",
+            "reason_code": "hold", "source": "fallback",
+            "fallback_reason": str(exc)[:240],
+            "support_levels": [], "resistance_levels": [],
+            "chart_read": f"Sol chart validator failed: {str(exc)[:140]}",
+        }
+        return fb
+
+
 def normalize_decision(raw: dict, model_name: str, source: str) -> dict:
     action = str(raw.get("action") or "HOLD").upper().strip()
     if action not in ("BUY", "SELL", "HOLD"):
@@ -566,6 +721,10 @@ def get_live_or_fallback(
             return out
         if "deepseek" in name or "nous" in name:
             raw = call_nous_deepseek(model_name, prompt, effort=effort)
+            out = normalize_decision(raw, model_name, source="live")
+            return out
+        if "gpt-5.6" in name or "sol" in name or name.startswith("gpt") or name == "openai":
+            raw = call_openai_gpt(model_name, prompt, effort=effort)
             out = normalize_decision(raw, model_name, source="live")
             return out
         # unknown model family
@@ -887,6 +1046,27 @@ def run_junior_senior_consensus(
         result["junior_nomination"] = None
         s1 = get_live_or_fallback(s1_name, broker, market, cr, fallback_fn, effort=effort)
         s2 = get_live_or_fallback(s2_name, broker, market, cr, fallback_fn, effort=None)
+
+    # GPT-5.6 Sol chart-vision validator (optional third senior read on escalation).
+    # Focus on the nominated symbol if present, else the top ranked candidate.
+    sol = None
+    if cr.get("sol_chart_validator_enabled", True):
+        focus_sym = nomination or ""
+        if not focus_sym and market:
+            # top candidate by rank_score
+            ranked = sorted(
+                ((sym, m) for sym, m in market.items() if m),
+                key=lambda x: float((x[1] or {}).get("rank_score") or 0), reverse=True,
+            )
+            if ranked:
+                focus_sym = ranked[0][0]
+        if focus_sym:
+            try:
+                sol = sol_chart_validator(focus_sym, cr)
+                result["sol_chart"] = sol
+            except Exception as _se:
+                result["sol_chart"] = None
+
     ok, reason = senior_check_fn(s1, s2)
     result.update({
         "decision1": s1,

@@ -100,7 +100,13 @@
       "grok-build-0.1"
     ],
     "junior_model_4": "grok-build-0.1",
-    "junior_min_agree": 3
+    "junior_min_agree": 3,
+    "sol_chart_validator_enabled": true,
+    "sol_model": "gpt-5.6-sol",
+    "sol_chart_days": 60,
+    "sol_max_tokens": 600,
+    "sol_chart_path": "./data/charts/{symbol}.png",
+    "comment_sol": "GPT-5.6 Sol chart-vision validator: optional third senior read on escalated trades. Generates candlestick chart (chart_gen.py) and asks Sol for S/R levels, entry zone, stop-loss, BUY/SELL/HOLD. Uses direct OpenAI API (OPENAI_API_KEY); gpt-5.6-sol only supports temperature=1. Weaker than text seniors - logged, never blocks a valid trade."
   },
   "telegram": {
     "enabled": true,

@@ -762,6 +762,12 @@ class DryRunAutoTrader:
             "escalate_on_buy_sell": cr.get("escalate_on_buy_sell", True),
             "escalate_on_junior_disagree": cr.get("escalate_on_junior_disagree", True),
             "escalate_on_borderline_confidence": cr.get("escalate_on_borderline_confidence", True),
+            # GPT-5.6 Sol chart-vision validator
+            "sol_chart_validator_enabled": cr.get("sol_chart_validator_enabled", True),
+            "sol_model": cr.get("sol_model", "gpt-5.6-sol"),
+            "sol_chart_days": cr.get("sol_chart_days", 60),
+            "sol_max_tokens": cr.get("sol_max_tokens", 600),
+            "sol_chart_path": cr.get("sol_chart_path"),
         }
         status = dual_llm.provider_status()
         print(
