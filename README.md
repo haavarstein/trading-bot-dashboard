@@ -54,6 +54,13 @@ Telegram alerts on **BUY/SELL fills only** (no HOLD spam) + dashboard link
 **Seniors (final gate when escalated)**
 - `model_1`: `grok-4.5` (`model_1_effort`: `medium`) via xAI
 - `model_2`: `claude-sonnet-5` via Anthropic
+- **`gpt-5.6-sol` (chart-vision validator):** on every escalated trade, OpenAI's flagship vision model reads a real candlestick chart (`chart_gen.py` → `mplfinance`) of the nominated/top candidate, draws support/resistance, marks entry & stop-loss zones, and returns a BUY/SELL/HOLD TA read. Wired as an **advisory third senior** — its read is logged in the consensus entry (`sol_chart`) but never blocks a valid dual-senior consensus. Direct OpenAI API (`OPENAI_API_KEY`); note `gpt-5.6-sol` only supports `temperature=1` and requires `max_completion_tokens` (not `max_tokens`).
+
+**Influencer news feed (social signal)**
+- 15 stock-influencer X handles are pulled every 15 min by `scripts/influencer_feed.py` via **Scrape Creators** (`/v1/twitter/user-tweets`, `SCRAPECREATORS_API_KEY`).
+- The `SOCIAL_SIGNAL` block is injected into **both junior and senior** prompts as **weak corroborating evidence**.
+- It only surfaces influencer mentions of tickers already in the candidate/held universe — the desk never sees symbols it can't trade, and social chatter can't override rank/catalyst scores or single-handedly flip a HOLD→BUY.
+- Handles configured in `autonomy_config.json → influencers.handles`.
 
 **Escalation rules**
 - Juniors always see the same ranked evidence (max 8 candidates)
@@ -133,7 +140,9 @@ trading-bot/
 ├── scripts/
 │   ├── alpha_radar.py            # candidate scanner
 │   ├── autotrader.py             # decisions + paper execution
-│   ├── dual_llm.py               # live Grok/Claude desks + fallback
+│   ├── dual_llm.py               # live Grok/Claude/Sol desks + fallback
+│   ├── influencer_feed.py        # pull X feeds (Scrape Creators) every 15 min
+│   ├── chart_gen.py              # candlestick + S/R charts for Sol validator
 │   ├── paper_broker.py           # local account truth
 │   ├── generate_dashboard_data.py
 │   └── run_paper_session.py      # NYSE session runner (scan→trade→publish)
@@ -144,7 +153,9 @@ trading-bot/
 │   ├── order_ledger.jsonl
 │   ├── consensus_log.jsonl
 │   ├── equity_curve.jsonl
-│   └── candidates.json
+│   ├── candidates.json
+│   ├── influencer_feed.json      # cached influencer tweets
+│   └── charts/                   # candlestick PNGs for Sol
 ├── tests/
 ├── index.html                    # public dashboard UI
 ├── dashboard-data.json           # published snapshot
@@ -243,6 +254,9 @@ Each session summary is meant to be readable on mobile and includes:
 | `data/consensus_log.jsonl` | Agreement / validation outcomes |
 | `data/portfolio.json` | Cash + open positions state |
 | `data/candidates.json` | Latest Alpha Radar ranking |
+| `data/influencer_feed.json` | Cached X tweets per influencer handle (refresh every 15 min) |
+| `data/charts/<SYMBOL>.png` | Candlestick charts rendered for the GPT-5.6 Sol validator |
+| `data/consensus_log.jsonl` → `sol_chart` | GPT-5.6 Sol's TA read: action, S/R levels, entry/stop, chart_read |
 
 Exit reasons you may see: `new_entry`, `stop_loss`, `take_profit`, `rotation`, `hold`.
 
