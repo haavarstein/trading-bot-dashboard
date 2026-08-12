@@ -143,7 +143,9 @@ def main() -> int:
     log("SCAN OK")
 
     # 2) Trade cycle (simulated paper)
-    trade = run([py, str(SCRIPTS / "autotrader.py")], timeout=180)
+    # Timeout must cover the influencer feed refresh (26 handles via Scrape
+    # Creators ~130s) plus the LLM consensus (~60s). 180s was too tight.
+    trade = run([py, str(SCRIPTS / "autotrader.py")], timeout=300)
     trade_out = (trade.stdout or "") + (trade.stderr or "")
     if trade.returncode != 0:
         log("TRADE CYCLE FAILED")
