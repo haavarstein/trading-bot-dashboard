@@ -1,71 +1,59 @@
 {
-  "generated_at": "2026-08-12T13:30:41.148135+00:00",
+  "generated_at": "2026-08-12T13:33:18.987912+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1028.45,
+    "portfolio_value": 1028.11,
     "starting_cash": 1000.0,
-    "total_return_pct": 2.85,
-    "total_pnl": 28.45,
-    "realized_pnl": 10.0,
-    "open_pnl": 18.48,
-    "capital_deployed": 1017.54,
-    "cash": 10.91,
-    "closed_trades": 6,
-    "win_rate_pct": 33.33,
-    "vs_spy_pct": 2.25,
-    "spy_return_pct": 0.6,
+    "total_return_pct": 2.81,
+    "total_pnl": 28.11,
+    "realized_pnl": 22.61,
+    "open_pnl": 5.52,
+    "capital_deployed": 804.61,
+    "cash": 223.5,
+    "closed_trades": 7,
+    "win_rate_pct": 42.86,
+    "vs_spy_pct": 2.35,
+    "spy_return_pct": 0.46,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-12T13:30:42.409045+00:00"
+    "updated_at": "2026-08-12T13:33:19.891502+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.6,
-    "price": 773.97,
+    "return_pct": 0.46,
+    "price": 772.95001,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 0,
-    "validated_count_today": 0,
+    "consensus_count_today": 1,
+    "validated_count_today": 1,
     "blocked_count_today": 0,
-    "fills_today": 0,
-    "simulated_orders_today": 0,
-    "top_symbol_today": "UNH"
+    "fills_today": 1,
+    "simulated_orders_today": 1,
+    "top_symbol_today": "LRCX"
   },
   "holdings": [
     {
       "symbol": "UNH",
       "qty": 0.4953,
       "avg_cost": 403.775,
-      "last": 401.2900085449219,
-      "market_value": 198.76,
-      "open_pnl": -1.23,
-      "open_pnl_pct": -0.62,
+      "last": 403.4800109863281,
+      "market_value": 199.84,
+      "open_pnl": -0.15,
+      "open_pnl_pct": -0.07,
       "stop": 393.68,
       "target": 423.96,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (ai, catalyst): UNH Stock Becomes Dow\u2019s Biggest Driver Back To 50,000 \u2014 Will Trump Tailwinds Spark Another Leg Higher? - Stocktwits"
     },
     {
-      "symbol": "LRCX",
-      "qty": 0.6489,
-      "avg_cost": 308.185,
-      "last": 327.3299865722656,
-      "market_value": 212.4,
-      "open_pnl": 12.42,
-      "open_pnl_pct": 6.21,
-      "stop": 300.48,
-      "target": 323.59,
-      "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (ai, catalyst, guidance): Why Lam Research (LRCX) Is Up 21.8% After Strong Q4 Results And AI-Driven Margin Guidance - simplywall.st"
-    },
-    {
       "symbol": "XOM",
       "qty": 1.2993,
       "avg_cost": 153.9263,
-      "last": 158.9199981689453,
-      "market_value": 206.48,
-      "open_pnl": 6.49,
-      "open_pnl_pct": 3.24,
+      "last": 158.33999633789062,
+      "market_value": 205.73,
+      "open_pnl": 5.73,
+      "open_pnl_pct": 2.87,
       "stop": 150.08,
       "target": 161.62,
       "thesis": "Exxon Mobil (XOM) screened as a bullish catalyst setup on Alpha Radar. Primary driver: Headline-driven setup (ai, catalyst): Analysts Offer Insights on Energy Companies: Exxon Mobil (XOM) and Marathon Petroleum (MPC) - The Globe and Mail. Entry sized at $200.00 under the $200 single-name cap with predefined invalidation and upside map before the next 15-minute loop."
@@ -74,10 +62,10 @@
       "symbol": "MSFT",
       "qty": 0.401,
       "avg_cost": 497.28,
-      "last": 499.8299865722656,
-      "market_value": 200.43,
-      "open_pnl": 1.02,
-      "open_pnl_pct": 0.51,
+      "last": 498.32000732421875,
+      "market_value": 199.83,
+      "open_pnl": 0.42,
+      "open_pnl_pct": 0.21,
       "stop": 484.85,
       "target": 522.14,
       "thesis": "Microsoft (MSFT) screened as a bullish catalyst setup on Alpha Radar. Primary driver: Headline-driven setup (ai, catalyst): After Earnings, Is Microsoft Stock a Buy, a Sell, or Fairly Valued? - Morningstar. Entry sized at $199.41 under the $200 single-name cap with predefined invalidation and upside map before the next 15-minute loop."
@@ -86,57 +74,64 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 363.07,
-      "last": 362.67010498046875,
-      "market_value": 199.47,
-      "open_pnl": -0.22,
-      "open_pnl_pct": -0.11,
+      "last": 362.20001220703125,
+      "market_value": 199.21,
+      "open_pnl": -0.48,
+      "open_pnl_pct": -0.24,
       "stop": 354.0,
       "target": 376.7,
       "thesis": "JPM is the strongest unowned catalyst name on the board, with a sponsorship deal headline, bullish sentiment, and solid rank score while the book still has room under the five-name cap. Notional stays inside the ~$200 new-buy limit with defined risk. Neutral RSI leaves room for follow-through if flows support the narrative. Diversifies existing healthcare, semi, energy, and tech exposure."
     }
   ],
   "latest_candidate": {
-    "symbol": "UNH",
-    "name": "UNH",
-    "price": 403.5050048828125,
-    "volume": 1748078.0,
-    "avg_volume": 4043787.8,
-    "percent_change": -1.2807617254579653,
+    "symbol": "LRCX",
+    "name": "LRCX",
+    "price": 327.3500061035156,
+    "volume": 254790.0,
+    "avg_volume": 9884339.0,
+    "percent_change": 5.118654588470351,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 22,
-    "liquidity_score": 76.07,
-    "rank_score": 104.94,
+    "catalyst_score": 18,
+    "liquidity_score": 79.95,
+    "rank_score": 95.59,
     "news_hits": 8,
-    "catalyst": "Headline-driven setup (ai, beat, beats): UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
+    "catalyst": "Headline-driven setup (beat): Sapient Capital LLC Has $240,000 Stock Position in Lam Research Corporation $LRCX - marketbeat.com",
     "top_headlines": [
-      "UnitedHealth Group Stock (UNH) Opinions on Regulatory Scrutiny - Quiver Quantitative",
-      "UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
-      "UnitedHealth Group Incorporated $UNH Stock Position Raised by Generali Investments Management Co LLC - MarketBeat"
+      "Sapient Capital LLC Has $240,000 Stock Position in Lam Research Corporation $LRCX - marketbeat.com",
+      "Lam Research (LRCX) Upgraded to Strong Buy: Here's Why - Yahoo Finance",
+      "Lam Research (NASDAQ:LRCX) Stock Price Up 1.6% - What's Next? - marketbeat.com"
     ],
     "matched_headlines": [
       {
-        "title": "UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
+        "title": "Sapient Capital LLC Has $240,000 Stock Position in Lam Research Corporation $LRCX - marketbeat.com",
         "keywords": [
-          "ai",
-          "beat",
-          "beats",
-          "catalyst",
-          "guidance",
-          "raises"
+          "beat"
         ]
       },
       {
-        "title": "UnitedHealth Group Incorporated $UNH Stock Position Raised by Generali Investments Management Co LLC - MarketBeat",
+        "title": "Lam Research (LRCX) Upgraded to Strong Buy: Here's Why - Yahoo Finance",
         "keywords": [
-          "ai",
-          "beat",
           "catalyst",
-          "raised"
+          "upgrade"
         ]
       },
       {
-        "title": "Handelsbanken Fonder AB Grows Holdings in UnitedHealth Group Incorporated $UNH - MarketBeat",
+        "title": "Lam Research (NASDAQ:LRCX) Stock Price Up 1.6% - What's Next? - marketbeat.com",
+        "keywords": [
+          "beat"
+        ]
+      },
+      {
+        "title": "Lam Research (LRCX) Gains An AI Supply Chain Tailwind As Customer Demand Surges - Yahoo! Finance Canada",
+        "keywords": [
+          "ai",
+          "catalyst",
+          "demand"
+        ]
+      },
+      {
+        "title": "Lam Research Corporation $LRCX Shares Sold by Insight Wealth Strategies LLC - marketbeat.com",
         "keywords": [
           "beat"
         ]
@@ -144,59 +139,48 @@
     ]
   },
   "latest_decision": {
-    "model": "grok-4.3",
-    "action": "HOLD",
-    "symbol": "CASH",
-    "confidence": 60,
-    "cache_stats": null,
-    "entry_price": 0.0,
-    "stop_loss": 0.0,
-    "take_profit": 0.0,
-    "qty": 0.0,
-    "thesis": "Portfolio is at max 5 names with limited cash. Top candidate UNH is already held and shows negative open P/L but strong catalyst rank. No new candidate offers materially superior setup to justify rotation from weakest hold. No stops or targets triggered on existing positions.",
-    "reason_code": "hold",
+    "model": "risk-gate",
+    "action": "SELL",
+    "symbol": "LRCX",
+    "confidence": 90,
+    "entry_price": 327.614990234375,
+    "stop_loss": 300.48,
+    "take_profit": 323.59,
+    "qty": 0.6489,
+    "thesis": "HERMES AUTO-TRADE: Exiting full LRCX position on take-profit. Price $327.61 reached target $323.59. Realized path $+12.61.",
+    "reason_code": "take_profit",
     "reasoning": {
-      "headline": "Hold $CASH",
-      "narrative": "Portfolio is at max 5 names with limited cash. Top candidate UNH is already held and shows negative open P/L but strong catalyst rank. No new candidate offers materially superior setup to justify rotation from weakest hold. No stops or targets triggered on existing positions.",
+      "headline": "Sold $LRCX",
+      "narrative": "HERMES AUTO-TRADE: Exiting full LRCX position on take-profit. Price $327.61 reached target $323.59. Realized path $+12.61.",
       "bullets": [
-        "5 open positions, cash $10.91 limits new entries",
-        "UNH top ranked but already held; weakest P/L",
-        "No rotation candidate exceeds held names materially",
-        "Reward:risk not applicable on HOLD"
+        "Target zone filled; lock gains and free risk budget.",
+        "No trail extension in current paper rules."
       ],
       "risk_map": {
-        "stop": 0.0,
-        "target": 0.0,
+        "stop": 300.48,
+        "target": 323.59,
         "horizon_days": 5,
-        "rr": 0.0,
-        "confidence_10": 6,
-        "confidence": 60
+        "rr": 2.0,
+        "confidence_10": 9,
+        "confidence": 90
       },
-      "thesis": "Portfolio is at max 5 names with limited cash. Top candidate UNH is already held and shows negative open P/L but strong catalyst rank. No new candidate offers materially superior setup to justify rotation from weakest hold. No stops or targets triggered on existing positions."
+      "thesis": "HERMES AUTO-TRADE: Exiting full LRCX position on take-profit. Price $327.61 reached target $323.59. Realized path $+12.61."
     },
-    "source": "live",
-    "provider": "xai",
-    "provider_model_id": "grok-4.3",
-    "bullets": [
-      "5 open positions, cash $10.91 limits new entries",
-      "UNH top ranked but already held; weakest P/L",
-      "No rotation candidate exceeds held names materially",
-      "Reward:risk not applicable on HOLD"
-    ],
-    "timestamp": "2026-08-11T22:31:22.209638+00:00"
+    "stage": "exit",
+    "timestamp": "2026-08-12T13:33:13.326450+00:00"
   },
-  "stance": "Holding UNH, LRCX, XOM, MSFT, JPM. No new trade right now.",
+  "stance": "Selling LRCX. HERMES AUTO-TRADE: Exiting full LRCX position on take-profit. Price $327.61 reached target $323.59. Realized path $+12.61.",
   "thinking": {
-    "badge": "Holding what it owns",
-    "headline": "Holding UNH, LRCX, XOM, MSFT, JPM. No new trade right now.",
-    "plain_english": "Right now Hermes is holding UNH, LRCX, XOM, MSFT, JPM and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
+    "badge": "Exiting LRCX",
+    "headline": "Selling LRCX.",
+    "plain_english": "Right now Hermes is exiting LRCX. That can be stop, target, or gated rotation when a stronger setup needs risk budget.",
     "triggers": [
       "It owns UNH, bought near $403.77. Simple plan: sell if it falls to about $393.68, or take profit near $423.96.",
-      "It owns LRCX, bought near $308.19. Simple plan: sell if it falls to about $300.48, or take profit near $323.59.",
       "It owns XOM, bought near $153.93. Simple plan: sell if it falls to about $150.08, or take profit near $161.62.",
       "It owns MSFT, bought near $497.28. Simple plan: sell if it falls to about $484.85, or take profit near $522.14.",
       "It owns JPM, bought near $363.07. Simple plan: sell if it falls to about $354.00, or take profit near $376.70.",
-      "Book is at max open names (5). A new buy needs a free slot, enough cash, or a gated rotation.",
+      "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
+      "Top scanner name right now is LRCX, but it still has to clear dual agreement and risk code before any fill.",
       "On any trade that escalates to seniors, the gpt-5.6-sol chart validator reads a real candlestick chart to sanity-check support/resistance, entry, and stop before a fill.",
       "If nothing looks clean, do nothing. Sitting in cash or holdings is allowed."
     ],
@@ -207,23 +191,11 @@
         "avg_cost": 403.775,
         "stop": 393.68,
         "target": 423.96,
-        "last": 401.2900085449219,
-        "open_pnl": -1.23,
-        "open_pnl_pct": -0.62,
+        "last": 403.4800109863281,
+        "open_pnl": -0.15,
+        "open_pnl_pct": -0.07,
         "line": "Bought near $403.77 \u00b7 Sell safety line $393.68 \u00b7 Profit target $423.96",
         "plan": "stop 393.7 or target 424.0"
-      },
-      {
-        "symbol": "LRCX",
-        "qty": 0.6489,
-        "avg_cost": 308.185,
-        "stop": 300.48,
-        "target": 323.59,
-        "last": 327.3299865722656,
-        "open_pnl": 12.42,
-        "open_pnl_pct": 6.21,
-        "line": "Bought near $308.19 \u00b7 Sell safety line $300.48 \u00b7 Profit target $323.59",
-        "plan": "stop 300.5 or target 323.6"
       },
       {
         "symbol": "XOM",
@@ -231,9 +203,9 @@
         "avg_cost": 153.9263,
         "stop": 150.08,
         "target": 161.62,
-        "last": 158.9199981689453,
-        "open_pnl": 6.49,
-        "open_pnl_pct": 3.24,
+        "last": 158.33999633789062,
+        "open_pnl": 5.73,
+        "open_pnl_pct": 2.87,
         "line": "Bought near $153.93 \u00b7 Sell safety line $150.08 \u00b7 Profit target $161.62",
         "plan": "stop 150.1 or target 161.6"
       },
@@ -243,9 +215,9 @@
         "avg_cost": 497.28,
         "stop": 484.85,
         "target": 522.14,
-        "last": 499.8299865722656,
-        "open_pnl": 1.02,
-        "open_pnl_pct": 0.51,
+        "last": 498.32000732421875,
+        "open_pnl": 0.42,
+        "open_pnl_pct": 0.21,
         "line": "Bought near $497.28 \u00b7 Sell safety line $484.85 \u00b7 Profit target $522.14",
         "plan": "stop 484.9 or target 522.1"
       },
@@ -255,27 +227,79 @@
         "avg_cost": 363.07,
         "stop": 354.0,
         "target": 376.7,
-        "last": 362.67010498046875,
-        "open_pnl": -0.22,
-        "open_pnl_pct": -0.11,
+        "last": 362.20001220703125,
+        "open_pnl": -0.48,
+        "open_pnl_pct": -0.24,
         "line": "Bought near $363.07 \u00b7 Sell safety line $354.00 \u00b7 Profit target $376.70",
         "plan": "stop 354.0 or target 376.7"
       }
     ],
-    "last_checked": "2026-08-12T13:30:41.148135+00:00",
+    "last_checked": "2026-08-12T13:33:18.987912+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "HOLD",
+    "action": "SELL",
     "symbols_held": [
       "UNH",
-      "LRCX",
       "XOM",
       "MSFT",
       "JPM"
     ]
   },
-  "activity": [],
+  "activity": [
+    {
+      "type": "fill",
+      "symbol": "LRCX",
+      "status": "filled_paper",
+      "headline": "SELL LRCX @ $327.61",
+      "detail": "HERMES AUTO-TRADE: Exiting full LRCX position on take-profit. Price $327.61 reached target $323.59. Realized path $+12.61.",
+      "timestamp": "2026-08-12T13:33:13.328443+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "LRCX",
+      "status": "validated",
+      "headline": "SELL LRCX \u2014 validated",
+      "detail": "deterministic take_profit exit",
+      "agents": [
+        {
+          "model": "risk-gate",
+          "action": "SELL",
+          "symbol": "LRCX",
+          "confidence": 90,
+          "source": null,
+          "provider": null,
+          "tier": "senior"
+        },
+        {
+          "model": "risk-gate",
+          "action": "SELL",
+          "symbol": "LRCX",
+          "confidence": 90,
+          "source": null,
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "risk_exit",
+      "escalate_reason": "take_profit",
+      "stage": "exit",
+      "junior_nomination": null,
+      "timestamp": "2026-08-12T13:33:13.326450+00:00"
+    }
+  ],
   "recent_trades": [
+    {
+      "timestamp": "2026-08-12T13:33:13.328443+00:00",
+      "action": "SELL",
+      "symbol": "LRCX",
+      "qty": 0.6489,
+      "price": 327.614990234375,
+      "notional": 212.59,
+      "realized_pnl": 12.61,
+      "reason": "take_profit",
+      "thesis": "HERMES AUTO-TRADE: Exiting full LRCX position on take-profit. Price $327.61 reached target $323.59. Realized path $+12.61.",
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-08-11T21:33:24.290133+00:00",
       "action": "BUY",
@@ -383,21 +407,35 @@
       "reason": null,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (ai, catalyst): UNH Stock Becomes Dow\u2019s Biggest Driver Back To 50,000 \u2014 Will Trump Tailwinds Spark Another Leg Higher? - Stocktwits",
       "status": "FILLED_PAPER"
-    },
-    {
-      "timestamp": "2026-08-06T17:00:57.768060+00:00",
-      "action": "SELL",
-      "symbol": "PANW",
-      "qty": 0.5622,
-      "price": 355.3800048828125,
-      "notional": 199.79,
-      "realized_pnl": -0.19,
-      "reason": "rotation",
-      "thesis": "Rotate out of PANW to free risk budget for stronger setup ANET",
-      "status": "FILLED_PAPER"
     }
   ],
   "trade_reasoning": [
+    {
+      "timestamp": "2026-08-12T13:33:13.328443+00:00",
+      "action": "SELL",
+      "symbol": "LRCX",
+      "qty": 0.6489,
+      "price": 327.614990234375,
+      "notional": 212.59,
+      "headline": "Sold $LRCX",
+      "side_label": "sell",
+      "narrative": "HERMES AUTO-TRADE: Exiting full LRCX position on take-profit. Price $327.61 reached target $323.59. Realized path $+12.61.",
+      "bullets": [
+        "Target zone filled; lock gains and free risk budget.",
+        "No trail extension in current paper rules."
+      ],
+      "risk_map": {
+        "stop": 300.48,
+        "target": 323.59,
+        "horizon_days": 5,
+        "rr": 2.0,
+        "confidence_10": 9,
+        "confidence": 90
+      },
+      "reason_code": "take_profit",
+      "realized_pnl": 12.61,
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-08-11T21:33:24.290133+00:00",
       "action": "BUY",
@@ -862,6 +900,20 @@
   ],
   "closed_trades": [
     {
+      "timestamp": "2026-08-12T13:33:13.327444+00:00",
+      "symbol": "LRCX",
+      "qty": 0.6489,
+      "avg_cost": 308.185,
+      "exit_price": 327.614990234375,
+      "proceeds": 212.59,
+      "realized_pnl": 12.61,
+      "realized_pnl_pct": 6.31,
+      "reason": "take_profit",
+      "thesis": "HERMES AUTO-TRADE: Exiting full LRCX position on take-profit. Price $327.61 reached target $323.59. Realized path $+12.61.",
+      "opened_at": "2026-08-06T18:00:53.056406+00:00",
+      "hold_seconds": 502340
+    },
+    {
       "timestamp": "2026-08-11T18:44:01.472745+00:00",
       "symbol": "PANW",
       "qty": 0.5381,
@@ -947,6 +999,20 @@
     }
   ],
   "closed_results": [
+    {
+      "timestamp": "2026-08-12T13:33:13.327444+00:00",
+      "symbol": "LRCX",
+      "qty": 0.6489,
+      "avg_cost": 308.185,
+      "exit_price": 327.614990234375,
+      "proceeds": 212.59,
+      "realized_pnl": 12.61,
+      "realized_pnl_pct": 6.31,
+      "reason": "take_profit",
+      "thesis": "HERMES AUTO-TRADE: Exiting full LRCX position on take-profit. Price $327.61 reached target $323.59. Realized path $+12.61.",
+      "opened_at": "2026-08-06T18:00:53.056406+00:00",
+      "hold_seconds": 502340
+    },
     {
       "timestamp": "2026-08-11T18:44:01.472745+00:00",
       "symbol": "PANW",
@@ -1049,6 +1115,21 @@
       "hold_seconds": 432778
     },
     {
+      "symbol": "LRCX",
+      "timestamp": "2026-08-12T13:33:13.327444+00:00",
+      "opened_at": "2026-08-06T18:00:53.056406+00:00",
+      "qty": 0.6489,
+      "entry_price": 308.185,
+      "exit_price": 327.614990234375,
+      "entry_value": 199.98,
+      "exit_value": 212.59,
+      "realized_pnl": 12.61,
+      "realized_pnl_pct": 6.31,
+      "reason": "take_profit",
+      "take_profit_hit": true,
+      "hold_seconds": 502340
+    },
+    {
       "symbol": "ANET",
       "timestamp": "2026-08-06T15:50:07.568279+00:00",
       "opened_at": "2026-08-06T15:49:41.748264+00:00",
@@ -1113,23 +1194,78 @@
   ],
   "top_candidates": [
     {
-      "symbol": "UNH",
-      "name": "UNH",
-      "price": 403.5050048828125,
-      "volume": 1748078.0,
-      "avg_volume": 4043787.8,
-      "percent_change": -1.2807617254579653,
+      "symbol": "LRCX",
+      "name": "LRCX",
+      "price": 327.3500061035156,
+      "volume": 254790.0,
+      "avg_volume": 9884339.0,
+      "percent_change": 5.118654588470351,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 22,
-      "liquidity_score": 76.07,
-      "rank_score": 104.94,
+      "catalyst_score": 18,
+      "liquidity_score": 79.95,
+      "rank_score": 95.59,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (beat): Sapient Capital LLC Has $240,000 Stock Position in Lam Research Corporation $LRCX - marketbeat.com",
+      "top_headlines": [
+        "Sapient Capital LLC Has $240,000 Stock Position in Lam Research Corporation $LRCX - marketbeat.com",
+        "Lam Research (LRCX) Upgraded to Strong Buy: Here's Why - Yahoo Finance",
+        "Lam Research (NASDAQ:LRCX) Stock Price Up 1.6% - What's Next? - marketbeat.com"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Sapient Capital LLC Has $240,000 Stock Position in Lam Research Corporation $LRCX - marketbeat.com",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Lam Research (LRCX) Upgraded to Strong Buy: Here's Why - Yahoo Finance",
+          "keywords": [
+            "catalyst",
+            "upgrade"
+          ]
+        },
+        {
+          "title": "Lam Research (NASDAQ:LRCX) Stock Price Up 1.6% - What's Next? - marketbeat.com",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Lam Research (LRCX) Gains An AI Supply Chain Tailwind As Customer Demand Surges - Yahoo! Finance Canada",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "demand"
+          ]
+        },
+        {
+          "title": "Lam Research Corporation $LRCX Shares Sold by Insight Wealth Strategies LLC - marketbeat.com",
+          "keywords": [
+            "beat"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "UNH",
+      "name": "UNH",
+      "price": 401.2900085449219,
+      "volume": 99555.0,
+      "avg_volume": 3692825.5,
+      "percent_change": -0.22377331386189597,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 19,
+      "liquidity_score": 75.67,
+      "rank_score": 93.53,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, beat, beats): UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
       "top_headlines": [
-        "UnitedHealth Group Stock (UNH) Opinions on Regulatory Scrutiny - Quiver Quantitative",
         "UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
-        "UnitedHealth Group Incorporated $UNH Stock Position Raised by Generali Investments Management Co LLC - MarketBeat"
+        "UnitedHealth (UNH) Stock Slips As Medical Cost Fears Mute Profit Rebound - simplywall.st",
+        "UnitedHealth Group Incorporated $UNH Shares Bought by Annex Advisory Services LLC - marketbeat.com"
       ],
       "matched_headlines": [
         {
@@ -1144,16 +1280,20 @@
           ]
         },
         {
-          "title": "UnitedHealth Group Incorporated $UNH Stock Position Raised by Generali Investments Management Co LLC - MarketBeat",
+          "title": "UnitedHealth Group Incorporated $UNH Shares Bought by Annex Advisory Services LLC - marketbeat.com",
           "keywords": [
-            "ai",
-            "beat",
-            "catalyst",
-            "raised"
+            "beat"
           ]
         },
         {
-          "title": "Handelsbanken Fonder AB Grows Holdings in UnitedHealth Group Incorporated $UNH - MarketBeat",
+          "title": "UNH 260814 505.00P (UNH260814P505000) Stock Options Chain | Quotes & News - moomoo.com",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "UnitedHealth Group Incorporated $UNH Shares Sold by Bay Colony Advisory Group Inc d b a Bay Colony Advisors - marketbeat.com",
           "keywords": [
             "beat"
           ]
@@ -1161,117 +1301,59 @@
       ]
     },
     {
-      "symbol": "LRCX",
-      "name": "LRCX",
-      "price": 310.81500244140625,
-      "volume": 4005706.0,
-      "avg_volume": 11103090.6,
-      "percent_change": 1.4409297104664638,
+      "symbol": "PLTR",
+      "name": "PLTR",
+      "price": 173.9698944091797,
+      "volume": 1708650.0,
+      "avg_volume": 59419675.0,
+      "percent_change": -0.5545375664159413,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 17,
-      "liquidity_score": 80.45,
-      "rank_score": 88.72,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst, demand): Lam Research (LRCX) Gains An AI Supply Chain Tailwind As Customer Demand Surges - Yahoo! Finance Canada",
+      "catalyst_score": 13,
+      "liquidity_score": 87.74,
+      "rank_score": 73.1,
+      "news_hits": 7,
+      "catalyst": "Headline-driven setup (ai, catalyst, guidance): Palantir Grew Revenue 85% and Raised Full-Year Guidance by 10 Points \u2014 So Why Is PLTR Down 26% YTD? - TradingKey",
       "top_headlines": [
-        "Lam Research (LRCX) Gains An AI Supply Chain Tailwind As Customer Demand Surges - Yahoo! Finance Canada",
-        "Redhawk Wealth Advisors Inc. Purchases 7,613 Shares of Lam Research Corporation $LRCX - MarketBeat",
-        "Is Lam Research (LRCX) Fairly Valued On Record Results And New AI Guidance? - simplywall.st"
+        "Palantir Technologies Inc. (PLTR) vs. Microsoft Corporation (MSFT): Can Palantir Pull Off a Microsoft-Style Comeback? - Yahoo Finance",
+        "Palantir Grew Revenue 85% and Raised Full-Year Guidance by 10 Points \u2014 So Why Is PLTR Down 26% YTD? - TradingKey",
+        "Palantir Technologies Inc. $PLTR Shares Acquired by Canvas Wealth Advisors LLC - marketbeat.com"
       ],
       "matched_headlines": [
         {
-          "title": "Lam Research (LRCX) Gains An AI Supply Chain Tailwind As Customer Demand Surges - Yahoo! Finance Canada",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "demand"
-          ]
-        },
-        {
-          "title": "Redhawk Wealth Advisors Inc. Purchases 7,613 Shares of Lam Research Corporation $LRCX - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Is Lam Research (LRCX) Fairly Valued On Record Results And New AI Guidance? - simplywall.st",
+          "title": "Palantir Grew Revenue 85% and Raised Full-Year Guidance by 10 Points \u2014 So Why Is PLTR Down 26% YTD? - TradingKey",
           "keywords": [
             "ai",
             "catalyst",
             "guidance",
-            "record"
+            "raised"
           ]
         },
         {
-          "title": "Lam Research Corporation $LRCX Shares Sold by Handelsbanken Fonder AB - MarketBeat",
+          "title": "Palantir Technologies Inc. $PLTR Shares Acquired by Canvas Wealth Advisors LLC - marketbeat.com",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "Lam Research (LRCX) Upgraded to Strong Buy: Here's Why - Yahoo Finance",
-          "keywords": [
-            "catalyst",
-            "upgrade"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "JPM",
-      "name": "JPM",
-      "price": 363.07000732421875,
-      "volume": 2152804.0,
-      "avg_volume": 6052310.4,
-      "percent_change": 0.911642541871017,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 15,
-      "liquidity_score": 77.82,
-      "rank_score": 79.9,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (catalyst, deal): JPM, Partners with Olympics for Historic Sponsorship Deal - GuruFocus",
-      "top_headlines": [
-        "JPM, Partners with Olympics for Historic Sponsorship Deal - GuruFocus",
-        "Handelsbanken Fonder AB Sells 20,390 Shares of JPMorgan Chase & Co. $JPM - MarketBeat",
-        "JPM Outlook: S&P 500 Seen Reaching 8,000, Room for 3% Further Gain - TechStock\u00b2"
-      ],
-      "matched_headlines": [
-        {
-          "title": "JPM, Partners with Olympics for Historic Sponsorship Deal - GuruFocus",
-          "keywords": [
-            "catalyst",
-            "deal"
-          ]
-        },
-        {
-          "title": "Handelsbanken Fonder AB Sells 20,390 Shares of JPMorgan Chase & Co. $JPM - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "JPM Outlook: S&P 500 Seen Reaching 8,000, Room for 3% Further Gain - TechStock\u00b2",
+          "title": "Michael Burry Adds To NVDA, PLTR, ORCL Shorts \u2014 Why He\u2019s Thinking About 2005 Again - TradingView",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "JPMorgan Chase (JPM) Gets a Buy from Barclays - The Globe and Mail",
+          "title": "Palantir Stock (PLTR) Drops in Premarket After 40% Weekly Surge with Valuation Questions Resurfacing - TechStock\u00b2",
           "keywords": [
-            "ai",
-            "catalyst"
+            "drop",
+            "drops"
           ]
         },
         {
-          "title": "How Investors May Respond To JPM (JPM) Buybacks, Blockchain Traction and Upgraded Earnings Expectations - simplywall.st",
+          "title": "Michael Burry Adds To NVDA, PLTR, ORCL Shorts \u2014 Why He\u2019s Thinking About 2005 Again - Stocktwits",
           "keywords": [
             "ai",
-            "buyback",
-            "catalyst",
-            "upgrade"
+            "catalyst"
           ]
         }
       ]
@@ -1279,25 +1361,38 @@
     {
       "symbol": "META",
       "name": "META",
-      "price": 602.9299926757812,
-      "volume": 8602203.0,
-      "avg_volume": 19431320.3,
-      "percent_change": 1.3464011960806261,
+      "price": 604.135009765625,
+      "volume": 459806.0,
+      "avg_volume": 17694230.6,
+      "percent_change": 0.8370634746477734,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 12,
-      "liquidity_score": 82.89,
-      "rank_score": 69.01,
+      "liquidity_score": 82.48,
+      "rank_score": 68.54,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, beat, catalyst): Meta\u2019s Muse Glimmer Release Reframes Its AI Spending Bet - MarketBeat",
+      "catalyst": "Headline-driven setup (record): Rep. Julia Letlow bought Meta stock after signing an NDA with the company, records show - wwno.org",
       "top_headlines": [
-        "Meta\u2019s Muse Glimmer Release Reframes Its AI Spending Bet - MarketBeat",
         "Rep. Julia Letlow bought Meta stock after signing an NDA with the company, records show - wwno.org",
-        "The Options Market Prices A Swing Of Hundreds Of Dollars In Meta Stock - Trefis"
+        "Meta Stock Jumps 2.3% as Open-Weight AI Strategy Returns - Yahoo Finance",
+        "Meta\u2019s Muse Glimmer Release Reframes Its AI Spending Bet - marketbeat.com"
       ],
       "matched_headlines": [
         {
-          "title": "Meta\u2019s Muse Glimmer Release Reframes Its AI Spending Bet - MarketBeat",
+          "title": "Rep. Julia Letlow bought Meta stock after signing an NDA with the company, records show - wwno.org",
+          "keywords": [
+            "record"
+          ]
+        },
+        {
+          "title": "Meta Stock Jumps 2.3% as Open-Weight AI Strategy Returns - Yahoo Finance",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Meta\u2019s Muse Glimmer Release Reframes Its AI Spending Bet - marketbeat.com",
           "keywords": [
             "ai",
             "beat",
@@ -1305,9 +1400,11 @@
           ]
         },
         {
-          "title": "Rep. Julia Letlow bought Meta stock after signing an NDA with the company, records show - wwno.org",
+          "title": "Letlow\u2019s purchase of Meta stock after signing an NDA raises ethics concerns - businessreport.com",
           "keywords": [
-            "record"
+            "ai",
+            "catalyst",
+            "raises"
           ]
         },
         {
@@ -1316,68 +1413,61 @@
             "ai",
             "catalyst"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "symbol": "UBER",
+      "name": "UBER",
+      "price": 78.38500213623047,
+      "volume": 466828.0,
+      "avg_volume": 22032392.8,
+      "percent_change": -0.1973501113955701,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 12,
+      "liquidity_score": 83.43,
+      "rank_score": 68.17,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst): After Earnings, Is Uber Stock a Buy, a Sell, or Fairly Valued? - Morningstar",
+      "top_headlines": [
+        "After Earnings, Is Uber Stock a Buy, a Sell, or Fairly Valued? - Morningstar",
+        "Uber: 3 Growth Engines Make The AV Spending Risk Worth Taking (Rating Upgrade) - Seeking Alpha",
+        "Why is Uber stock rallying today? - Investing.com"
+      ],
+      "matched_headlines": [
         {
-          "title": "Meta Stock Rises as $1 Billion AI Strategy Unfolds - Yahoo Finance UK",
+          "title": "After Earnings, Is Uber Stock a Buy, a Sell, or Fairly Valued? - Morningstar",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "Meta Stock Climbs On Open-Source Model Launch; Zuckerberg Criticizes AI Rivals - Investor's Business Daily",
+          "title": "Uber: 3 Growth Engines Make The AV Spending Risk Worth Taking (Rating Upgrade) - Seeking Alpha",
           "keywords": [
-            "ai",
             "catalyst",
-            "launch"
+            "growth",
+            "upgrade"
           ]
-        }
-      ]
-    },
-    {
-      "symbol": "CVX",
-      "name": "CVX",
-      "price": 196.3000030517578,
-      "volume": 2976808.0,
-      "avg_volume": 8287530.8,
-      "percent_change": 0.713149332272397,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 10,
-      "liquidity_score": 79.18,
-      "rank_score": 58.45,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): Chevron Corporation $CVX Shares Sold by Generali Investments Management Co LLC - MarketBeat",
-      "top_headlines": [
-        "Chevron Corporation (CVX) Stock forecasts - Yahoo Finance UK",
-        "Chevron Corporation $CVX Shares Sold by Generali Investments Management Co LLC - MarketBeat",
-        "Chevron (CVX) Stock May Still Look Reasonable Despite Its 125% Run - simplywall.st"
-      ],
-      "matched_headlines": [
+        },
         {
-          "title": "Chevron Corporation $CVX Shares Sold by Generali Investments Management Co LLC - MarketBeat",
+          "title": "Canvas Wealth Advisors LLC Buys 39,082 Shares of Uber Technologies, Inc. $UBER - marketbeat.com",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "CVX's Q2 Earnings Beat: Can Strong Momentum Drive the Stock Higher? - Yahoo Finance",
+          "title": "Should You Bet on UBER Stock Following Its Q2 Earnings Beat? - Yahoo Finance",
           "keywords": [
             "beat",
             "catalyst"
           ]
         },
         {
-          "title": "Chevron CDR (Cad Hedged) (CVX-T) Stock Price and News - The Globe and Mail",
+          "title": "Uber Technologies Stock (UBER) Opinions on Post-Earnings Performance and Autonomous Vehicle Concerns - Quiver Quantitative",
           "keywords": [
-            "ai",
             "catalyst"
-          ]
-        },
-        {
-          "title": "Deane Retirement Strategies Inc. Acquires Shares of 39,525 Chevron Corporation $CVX - MarketBeat",
-          "keywords": [
-            "beat"
           ]
         }
       ]
@@ -1408,13 +1498,7 @@
       "grok-build-0.1"
     ],
     "junior_min_agree": 3,
-    "junior_votes": {
-      "HOLD": 4,
-      "BUY": 0,
-      "SELL": 0,
-      "live": 4,
-      "fallback": 0
-    },
+    "junior_votes": null,
     "junior_model_3_enabled": true,
     "model_1": "grok-4.5",
     "model_1_effort": "medium",
@@ -1424,26 +1508,26 @@
     "min_confidence": 70,
     "max_candidates_to_llm": 8,
     "log_all_disagreements": true,
-    "decision_mode": "live_dual_llm",
-    "last_tier": "junior_only",
-    "last_stage": "entry",
+    "decision_mode": "fallback_deterministic",
+    "last_tier": "risk_exit",
+    "last_stage": "exit",
     "last_junior_nomination": null,
-    "last_escalate_reason": "",
-    "live_share_recent": 97.4
+    "last_escalate_reason": "take_profit",
+    "live_share_recent": 0.0
   },
   "learning": {
     "candidate_signals_logged": 8,
-    "fills_logged": 19,
-    "closed_outcomes": 7,
-    "consensus_events": 113,
+    "fills_logged": 20,
+    "closed_outcomes": 8,
+    "consensus_events": 114,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1028.45,
-    "change": 28.45,
-    "change_pct": 2.84,
+    "latest_equity": 1028.11,
+    "change": 28.11,
+    "change_pct": 2.81,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -3310,6 +3394,18 @@
         "equity": 1028.45,
         "cash": 10.91,
         "event": "mark"
+      },
+      {
+        "t": "2026-08-12T13:33:13.328443+00:00",
+        "equity": 1022.58,
+        "cash": 223.5,
+        "event": "SELL LRCX"
+      },
+      {
+        "t": "2026-08-12T13:33:19.891502+00:00",
+        "equity": 1028.11,
+        "cash": 223.5,
+        "event": "mark"
       }
     ],
     "source": "local_paper_fills_and_marks"
@@ -3324,9 +3420,9 @@
       "fmp_key": true,
       "yfinance": true,
       "quote_provider_env": "fmp",
-      "fmp_calls_today": 8,
+      "fmp_calls_today": 11,
       "fmp_daily_limit": 200,
-      "fmp_remaining": 192,
+      "fmp_remaining": 189,
       "cache_ttl_sec": 90.0
     },
     "note": "Simulated paper account with real market marks. Not IBKR-confirmed."
