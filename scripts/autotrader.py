@@ -883,6 +883,19 @@ class DryRunAutoTrader:
             return
 
         print("✅ VALIDATION PASSED")
+        # Desk-consensus SELL (line 699 already returned for deterministic risk
+        # exits): a senior-driven exit is discretionary, so its reason must be
+        # rotation/signal — never stop_loss/take_profit, which are reserved for
+        # actual price-triggered risk-gate exits. A model emitting stop_loss here
+        # would mislabel the fill.
+        if decision1.get("action") == "SELL":
+            rc = str(decision1.get("reason_code") or "").lower()
+            if rc in ("stop_loss", "take_profit"):
+                decision1["reason_code"] = "rotation"
+                reasoning = decision1.get("reasoning") or {}
+                if isinstance(reasoning, dict):
+                    reasoning["headline"] = f"Sold {decision1.get('symbol')} (rotation)"
+                    decision1["reasoning"] = reasoning
         self.execute_trade(decision1, dry_run=True)
         print(f"\n{'=' * 60}\n")
 
