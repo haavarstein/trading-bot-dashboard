@@ -329,46 +329,12 @@ def main() -> int:
     log(f"dashboard: {DASHBOARD_URL}")
     log("PAPER SESSION DONE")
 
-    # Telegram (Hermes no_agent delivers STDOUT only). Silent on HOLD / no fill.
+    # Telegram: the trade signal (PAPER BUY/SELL with risk details) is already sent
+    # by autotrader.execute_trade -> notify_trade_signal. Nothing else is sent here
+    # so the user receives exactly ONE message per fill, not three. Keep diagnostics
+    # in the stderr log (not delivered by the no_agent cron).
     if is_fill:
-        px = float(last_order.get("entry_price") or last_fill.get("price") or 0)
-        qty = float(last_order.get("qty") or last_fill.get("qty") or 0)
-        emoji = "🟢" if order_action == "BUY" else "🔴"
-        thesis = str(last_order.get("thesis") or order_reason or "")[:180]
-        lines = [
-            f"{emoji} PAPER FILL — {order_action} {order_sym}",
-            f"Qty {qty:.4f} @ ${px:.2f} (${qty * px:.2f})",
-        ]
-        if equity is not None:
-            try:
-                lines.append(
-                    f"Equity ${float(equity):.2f} | cash ${float(cash or 0):.2f} | open P/L ${float(open_pnl_total or 0):+.2f}"
-                )
-            except Exception:
-                pass
-        if thesis:
-            lines.append(f"Why: {thesis}")
-        if hold_lines:
-            lines.append("Holdings:")
-            lines.extend(hold_lines[:8])
-        lines.append(f"Dashboard: {DASHBOARD_URL}")
-        tg('\n'.join(lines))
-        # Also send via notifier API when token available (belt + suspenders)
-        try:
-            from telegram_notifier import TelegramNotifier
-
-            TelegramNotifier().notify_fill_summary(
-                action=order_action,
-                symbol=order_sym,
-                qty=qty,
-                price=px,
-                equity=equity,
-                open_pnl=open_pnl_total,
-                thesis=thesis,
-                holdings_lines=hold_lines,
-            )
-        except Exception as exc:
-            log(f"telegram notifier optional send failed: {exc}")
+        log(f"tg-fill (single notification via autotrader): {order_action} {order_sym} qty={qty}")
 
     return 0 if trade.returncode == 0 else 2
 
