@@ -115,6 +115,11 @@ def _portfolio_brief(broker: dict) -> str:
 def _candidates_brief(market: dict, limit: int = 8) -> str:
     rows = []
     for sym, payload in market.items():
+        if payload is None:
+            # A candidate can be absent from the market map (stale nomination,
+            # ticker not returned by the provider). Skip it rather than crash
+            # on payload.get(); the desk simply doesn't see that symbol.
+            continue
         rows.append(
             {
                 "symbol": sym,
@@ -182,11 +187,18 @@ def _load_influencer_signal(rules: dict, market: dict | None = None) -> str:
         return ""
 
 
-def build_prompt(model_name: str, broker: dict, market: dict, rules: dict) -> str:
+def build_prompt(model_name: str, broker: dict, market: dict, rules: dict, directive: str | None = None) -> str:
     max_pos = rules.get("max_position_usd", 200)
     min_rr = rules.get("min_rr", 1.5)
     max_names = rules.get("max_positions", 5)
     sig = _load_influencer_signal(rules, market)
+    directive_block = (
+        f"\n\nDIRECTIVE: {directive}\n"
+        "The juniors escalated a specific action on a specific symbol. Confirm or reject "
+        "exactly that action on that symbol. Do NOT answer a different question.\n"
+        if directive
+        else ""
+    )
     return f"""You are desk model `{model_name}` on a simulated US equities paper book.
 Return ONLY a single JSON object (no markdown) with keys:
 action (BUY|SELL|HOLD), symbol, confidence (0-100 integer), entry_price, stop_loss, take_profit,
@@ -205,7 +217,7 @@ Hard rules:
 - If no clean edge to buy or rotate, action=HOLD. On HOLD set symbol to "CASH" (not a random watch name).
 - Do not invent symbols outside candidates/held names.
 - Confidence: use >=70 only when recommending BUY/SELL. HOLD may use 55-75.
-
+{directive_block}
 PORTFOLIO:
 {_portfolio_brief(broker)}
 
@@ -239,7 +251,7 @@ def _static_system_block() -> str:
     )
 
 
-def build_prompt_parts(model_name: str, broker: dict, market: dict, rules: dict) -> tuple[str, str]:
+def build_prompt_parts(model_name: str, broker: dict, market: dict, rules: dict, directive: str | None = None) -> tuple[str, str]:
     """Return (static_system, dynamic_user) split for Anthropic caching."""
     static = _static_system_block() + f"\nYou are desk model `{model_name}`."
     sig = _load_influencer_signal(rules, market)
@@ -249,6 +261,12 @@ def build_prompt_parts(model_name: str, broker: dict, market: dict, rules: dict)
         + "\n\nCANDIDATES (ranked evidence):\n"
         + _candidates_brief(market, int(rules.get('max_candidates_to_llm') or 8))
     )
+    if directive:
+        dynamic = (
+            "DIRECTIVE: " + directive + "\n"
+            "The juniors escalated a specific action on a specific symbol. Confirm or reject "
+            "exactly that action on that symbol. Do NOT answer a different question.\n\n"
+        ) + dynamic
     if sig:
         dynamic += "\n\n" + sig
     return static, dynamic
@@ -703,11 +721,12 @@ def get_live_or_fallback(
     rules: dict,
     fallback_fn: Callable[[str, dict, dict], dict],
     effort: str | None = None,
+    directive: str | None = None,
 ) -> dict:
     """
     Try live provider for model_name; on any failure use fallback_fn(model_name, broker, market).
     """
-    prompt = build_prompt(model_name, broker, market, rules)
+    prompt = build_prompt(model_name, broker, market, rules, directive=directive)
     name = (model_name or "").lower()
     try:
         if "grok" in name or name.startswith("xai"):
@@ -715,7 +734,7 @@ def get_live_or_fallback(
             out = normalize_decision(raw, model_name, source="live")
             return out
         if "claude" in name or "anthropic" in name or "sonnet" in name or "haiku" in name:
-            static, dynamic = build_prompt_parts(model_name, broker, market, rules)
+            static, dynamic = build_prompt_parts(model_name, broker, market, rules, directive=directive)
             raw = call_anthropic_claude(model_name, prompt, static_system=static, dynamic_user=dynamic)
             out = normalize_decision(raw, model_name, source="live")
             return out
@@ -900,30 +919,37 @@ def junior_nomination(
     juniors: list[dict],
     min_agree: int = 3,
     hold_floor: int = 55,
-) -> str | None:
+) -> tuple[str, str] | None:
     """
-    Juniors nominate a candidate symbol for ENTRY.
-    Count BUY votes by symbol among LIVE juniors; return the symbol with >= min_agree
-    live BUY votes. HOLDs or conflicting symbols do not produce a nomination.
-    Returns the nominated symbol or None.
+    Juniors nominate an (action, symbol) pair for the desk.
+
+    Counts both BUY and SELL votes by (action, symbol) among LIVE juniors and
+    returns the highest-vote pair with >= min_agree live votes. Unlike the old
+    version this is NOT entry-only: a SELL (rotation) intent from the juniors
+    becomes a first-class nomination so it reaches the seniors pinned to the
+    SAME question instead of being dropped (the SELL-vs-BUY deadlock). HOLDs or
+    conflicting pairs do not produce a nomination.
+
+    Returns (action, symbol) or None.
     """
     if not juniors:
         return None
-    buys: dict[str, int] = {}
+    votes: dict[tuple[str, str], int] = {}
     for j in juniors:
         if j.get("source") != "live":
             continue
-        if str(j.get("action") or "").upper() != "BUY":
+        a = str(j.get("action") or "").upper().strip()
+        if a not in ("BUY", "SELL"):
             continue
         sym = str(j.get("symbol") or "").upper().strip()
         if not sym or sym == "CASH":
             continue
-        buys[sym] = buys.get(sym, 0) + 1
-    if not buys:
+        votes[(a, sym)] = votes.get((a, sym), 0) + 1
+    if not votes:
         return None
-    # highest-vote symbol meeting the min_agree quorum
-    best = max(buys, key=buys.get)
-    return best if buys[best] >= max(1, min_agree) else None
+    # highest-vote pair meeting the min_agree quorum
+    best = max(votes, key=votes.get)
+    return best if votes[best] >= max(1, min_agree) else None
 
 
 def run_junior_senior_consensus(
@@ -1032,16 +1058,29 @@ def run_junior_senior_consensus(
         return result
 
     # Senior escalation (trade intent or no quorum)
-    # Entries: juniors NOMINATE a candidate symbol; seniors vote on THAT symbol only.
+    # Juniors NOMINATE an (action, symbol) pair; seniors confirm/reject THAT
+    # question (both BUY and SELL are first-class, so a rotation SELL no longer
+    # gets dropped into a full-market mismatch). Restrict context to the symbol.
     nomination = junior_nomination(juniors, min_agree=junior_min_agree, hold_floor=hold_floor)
     if nomination:
+        nom_action, nom_symbol = nomination
         esc_reason = "junior_nomination"
-        result["junior_nomination"] = nomination
+        result["junior_nomination"] = nom_symbol
+        result["junior_nomination_action"] = nom_action
         # Restrict senior market context to the nominated symbol so both seniors
-        # evaluate the SAME question (kills the category error).
-        nom_market = {nomination: market.get(nomination)}
-        s1 = get_live_or_fallback(s1_name, broker, nom_market, cr, fallback_fn, effort=effort)
-        s2 = get_live_or_fallback(s2_name, broker, nom_market, cr, fallback_fn, effort=None)
+        # evaluate the SAME question (kills the category error), and pin the
+        # action so they don't answer a different one (kills SELL-vs-BUY deadlock).
+        nom_payload = market.get(nom_symbol)
+        if nom_payload is None:
+            # Nominated symbol missing from the market map: fall back to the
+            # full market rather than build {sym: None} and crash the desk.
+            result["escalate_reason"] = "junior_nomination_missing_symbol"
+            nom_market = dict(market)
+        else:
+            nom_market = {nom_symbol: nom_payload}
+        directive = f"{nom_action} {nom_symbol}"
+        s1 = get_live_or_fallback(s1_name, broker, nom_market, cr, fallback_fn, effort=effort, directive=directive)
+        s2 = get_live_or_fallback(s2_name, broker, nom_market, cr, fallback_fn, effort=None, directive=directive)
     else:
         result["junior_nomination"] = None
         s1 = get_live_or_fallback(s1_name, broker, market, cr, fallback_fn, effort=effort)

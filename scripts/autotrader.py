@@ -845,7 +845,14 @@ class DryRunAutoTrader:
             "escalate_reason": desk.get("escalate_reason"),
             "junior_agreed": desk.get("junior_agreed"),
             "junior_nomination": desk.get("junior_nomination"),
-            "stage": desk.get("stage") or "entry",
+            "junior_nomination_action": desk.get("junior_nomination_action"),
+            # stage reflects the nominated action (SELL => exit, BUY => entry),
+            # not hardcoded "entry", so rotation SELLs aren't mislabeled.
+            "stage": desk.get("stage")
+            or (
+                "exit" if str(desk.get("junior_nomination_action") or "").upper() == "SELL"
+                else "entry"
+            ),
             "timestamp": datetime.now(timezone.utc).isoformat(),
             "consensus": consensus,
             "reason": reason,
