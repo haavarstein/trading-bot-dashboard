@@ -167,9 +167,10 @@
     "max_tweets_per_handle": 5,
     "refresh_minutes": 15,
     "fetch": {
-      "provider": "tikhub",
-      "endpoint": "/api/v1/twitter/web/fetch_user_post_tweet"
+      "provider": "scrapecreators",
+      "base_url": "https://api.scrapecreators.com",
+      "endpoint": "/v1/twitter/user-tweets"
     },
-    "comment": "Social/sentiment overlay. Pulled every 15 min by influencer_feed.py. Fed to BOTH juniors and seniors as weak corroborating evidence. Only surfaces symbols already in the candidate/held universe; never a standalone buy trigger. Add more handles over time."
+    "comment": "Social/sentiment overlay. Pulled every 15 min by influencer_feed.py. Fed to BOTH juniors and seniors as weak corroborating evidence. Only surfaces symbols already in the candidate/held universe; never a standalone buy trigger. Provider: Scrape Creators /v1/twitter/user-tweets (SCRAPECREATORS_API_KEY). Add more handles over time."
   }
 }

@@ -29,10 +29,9 @@ from __future__ import annotations
 import json
 import os
 import re
-import shutil
-import subprocess
 import sys
 import time
+import urllib.parse
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -74,115 +73,70 @@ def handles() -> list[str]:
     return [h for h in hs if h]
 
 
-def _monid_cmd(monid_bin: str) -> list[str]:
-    """monid is a POSIX shell shim on Windows; run it through bash so the
-    subprocess can execute it (CreateProcess can't run a bare .sh script)."""
-    if os.name == "nt":
-        bash = shutil.which("bash")
-        if bash:
-            return [bash, monid_bin]
-        return ["bash", monid_bin]
-    return [monid_bin]
-
-
-def _monid_bin_path() -> str:
-    """Resolve the monid binary, handling Windows MSYS vs Windows paths."""
-    # 1) explicit env
-    if os.environ.get("MONID_BIN"):
-        return os.environ["MONID_BIN"]
-    # 2) HERMES_HOME/bin/monid (convert MSYS /c/Users/... -> C:\Users\...)
-    hh = os.environ.get("HERMES_HOME")
-    if hh:
-        win = hh
-        m = re.match(r"^/([a-zA-Z])/(.*)$", hh)
-        if m:
-            win = f"{m.group(1).upper()}:\\{m.group(2)}"
-        cand = Path(win) / "bin" / "monid"
-        if cand.exists():
-            return str(cand)
-    # 3) on PATH via shutil.which — prefer a POSIX shell script, not a .CMD
-    found = shutil.which("monid")
-    if found and not found.lower().endswith(".cmd"):
-        return found
-    return "monid"
-
-
-def _monid_available() -> bool:
-    try:
-        monid_bin = _monid_bin_path()
-        cmd = _monid_cmd(monid_bin)
+def _scrapecreators_key() -> str:
+    """Scrape Creators API key from hermes .env / SCRAPECREATORS_API_KEY."""
+    key = os.environ.get("SCRAPECREATORS_API_KEY")
+    if key:
+        return key
+    candidates = [
+        Path.home() / "AppData" / "Local" / "hermes" / ".env",
+        Path.home() / ".hermes" / ".env",
+        ROOT / ".env",
+    ]
+    for p in candidates:
+        if not p.exists():
+            continue
         try:
-            r = subprocess.run(
-                [*cmd, "--version"], capture_output=True, text=True, timeout=30,
-                env={**os.environ, "NO_COLOR": NO_COLOR},
-            )
-            return r.returncode == 0
+            for line in p.read_text(encoding="utf-8", errors="ignore").splitlines():
+                s = line.strip()
+                if s.startswith("SCRAPECREATORS_API_KEY="):
+                    v = s.split("=", 1)[1].strip().strip('"').strip("'")
+                    if v:
+                        return v
         except Exception:
-            return False
-    except Exception:
-        return False
-
-
-def _run_monid(args: list[str]) -> dict:
-    """Run a monid command and parse its JSON output."""
-    monid_bin = _monid_bin_path()
-    r = subprocess.run(
-        [*_monid_cmd(monid_bin), *args],
-        capture_output=True,
-        text=True,
-        timeout=120,
-        env={**os.environ, "NO_COLOR": NO_COLOR},
-    )
-    if r.returncode != 0:
-        raise RuntimeError(f"monid failed: {r.stderr or r.stdout}".strip()[:600])
-    text = r.stdout or ""
-    # monid returns JSON lines / or a JSON object; try to parse best-effort
-    try:
-        return json.loads(text)
-    except Exception:
-        # find trailing JSON object
-        start = text.find("{")
-        end = text.rfind("}")
-        if start >= 0 and end > start:
-            try:
-                return json.loads(text[start : end + 1])
-            except Exception:
-                pass
-        raise RuntimeError(f"could not parse monid output: {text[:400]}")
+            continue
+    return ""
 
 
 def fetch_handle_tweets(handle: str, limit: int = 5) -> list[dict]:
-    """Fetch recent tweets for one handle via Monid/TikHub."""
+    """Fetch recent tweets for one handle via Scrape Creators /v1/twitter/user-tweets.
+
+    Direct HTTP call (no monid/TikHub). Response shape: {"tweets":[{...legacy{full_text,...}, rest_id, views}]}
+    """
+    import urllib.request
+
+    key = _scrapecreators_key()
+    if not key:
+        raise RuntimeError("SCRAPECREATORS_API_KEY not set")
     inf = influencers_config()
     fetch = inf.get("fetch") or {}
-    provider = fetch.get("provider", "tikhub")
-    endpoint = fetch.get("endpoint", "/api/v1/twitter/web/fetch_user_post_tweet")
-    query = {"screen_name": handle}
-    # run with wait; get run id, then poll
-    out = _run_monid([
-        "run", "-p", provider, "-e", endpoint,
-        "--query", json.dumps(query), "-w", "60", "-j",
-    ])
-    # monid run -j returns the completed run (with output) when -w used
-    if isinstance(out, dict) and out.get("runId"):
-        run_id = out["runId"]
-        out = _run_monid(["runs", "get", "-r", run_id, "-w", "30", "-j"])
-    timeline = (out.get("output") or {}).get("timeline") if isinstance(out, dict) else []
+    base = fetch.get("base_url", "https://api.scrapecreators.com")
+    endpoint = fetch.get("endpoint", "/v1/twitter/user-tweets")
+    url = f"{base.rstrip('/')}{endpoint}?handle={urllib.parse.quote(handle)}"
+    req = urllib.request.Request(url, headers={"x-api-key": key})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        data = json.loads(r.read().decode("utf-8", errors="replace"))
+
     tweets = []
-    for t in (timeline or []):
+    for t in (data.get("tweets") or []):
         if not isinstance(t, dict):
             continue
-        text = (t.get("text") or "").strip()
+        legacy = t.get("legacy") or {}
+        text = (legacy.get("full_text") or "").strip()
         if not text:
             continue
+        rest_id = t.get("rest_id") or legacy.get("id_str")
+        views = t.get("views") or {}
+        if isinstance(views, dict):
+            views = views.get("count")
         tweets.append({
-            "id": t.get("tweet_id"),
+            "id": rest_id,
             "text": text,
-            "created_at": t.get("created_at"),
-            "favorites": t.get("favorites"),
-            "retweets": t.get("retweets"),
-            "views": t.get("views"),
-            "url": f"https://x.com/{handle}/status/{t.get('tweet_id')}" if t.get("tweet_id") else None,
+            "created_at": legacy.get("created_at"),
+            "favorites": legacy.get("favorite_count"),
+            "retweets": legacy.get("retweet_count"),
+            "views": views,
+            "url": f"https://x.com/{handle}/status/{rest_id}" if rest_id else None,
         })
         if len(tweets) >= limit:
             break
@@ -226,8 +180,8 @@ def refresh(force: bool = False) -> dict:
         except Exception:
             pass
 
-    if not _monid_available():
-        print("monid CLI not available; using cached feed if present")
+    if not _scrapecreators_key():
+        print("SCRAPECREATORS_API_KEY not set; using cached feed if present")
         return feed
 
     max_per = int(influencers_config().get("max_tweets_per_handle", 5))
