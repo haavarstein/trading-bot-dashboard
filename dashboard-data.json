@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-12T15:35:37.732913+00:00",
+  "generated_at": "2026-08-12T15:35:40.057993+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1028.36,
+    "portfolio_value": 1028.37,
     "starting_cash": 1000.0,
     "total_return_pct": 2.84,
-    "total_pnl": 28.36,
+    "total_pnl": 28.37,
     "realized_pnl": 22.61,
-    "open_pnl": 5.78,
-    "capital_deployed": 1004.67,
+    "open_pnl": 5.79,
+    "capital_deployed": 1004.68,
     "cash": 23.69,
     "closed_trades": 7,
     "win_rate_pct": 42.86,
     "vs_spy_pct": 2.5,
     "spy_return_pct": 0.34,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-12T15:35:38.983495+00:00"
+    "updated_at": "2026-08-12T15:35:41.034953+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
     "return_pct": 0.34,
-    "price": 772.04,
+    "price": 772.0,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -62,7 +62,7 @@
       "symbol": "MSFT",
       "qty": 0.401,
       "avg_cost": 497.28,
-      "last": 492.8999938964844,
+      "last": 492.885009765625,
       "market_value": 197.65,
       "open_pnl": -1.76,
       "open_pnl_pct": -0.88,
@@ -74,9 +74,9 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 363.07,
-      "last": 364.818115234375,
-      "market_value": 200.65,
-      "open_pnl": 0.96,
+      "last": 364.8299865722656,
+      "market_value": 200.66,
+      "open_pnl": 0.97,
       "open_pnl_pct": 0.48,
       "stop": 354.0,
       "target": 376.7,
@@ -242,7 +242,7 @@
         "avg_cost": 497.28,
         "stop": 484.85,
         "target": 522.14,
-        "last": 492.8999938964844,
+        "last": 492.885009765625,
         "open_pnl": -1.76,
         "open_pnl_pct": -0.88,
         "line": "Bought near $497.28 \u00b7 Sell safety line $484.85 \u00b7 Profit target $522.14",
@@ -254,8 +254,8 @@
         "avg_cost": 363.07,
         "stop": 354.0,
         "target": 376.7,
-        "last": 364.818115234375,
-        "open_pnl": 0.96,
+        "last": 364.8299865722656,
+        "open_pnl": 0.97,
         "open_pnl_pct": 0.48,
         "line": "Bought near $363.07 \u00b7 Sell safety line $354.00 \u00b7 Profit target $376.70",
         "plan": "stop 354.0 or target 376.7"
@@ -273,7 +273,7 @@
         "plan": "stop 318.5 or target 341.5"
       }
     ],
-    "last_checked": "2026-08-12T15:35:37.732913+00:00",
+    "last_checked": "2026-08-12T15:35:40.057993+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "SELL",
@@ -1935,8 +1935,8 @@
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1028.36,
-    "change": 28.36,
+    "latest_equity": 1028.37,
+    "change": 28.37,
     "change_pct": 2.84,
     "points": [
       {
@@ -3996,6 +3996,12 @@
         "equity": 1028.36,
         "cash": 23.69,
         "event": "mark"
+      },
+      {
+        "t": "2026-08-12T15:35:41.034953+00:00",
+        "equity": 1028.37,
+        "cash": 23.69,
+        "event": "mark"
       }
     ],
     "source": "local_paper_fills_and_marks"
@@ -4010,9 +4016,9 @@
       "fmp_key": true,
       "yfinance": true,
       "quote_provider_env": "fmp",
-      "fmp_calls_today": 137,
+      "fmp_calls_today": 138,
       "fmp_daily_limit": 200,
-      "fmp_remaining": 63,
+      "fmp_remaining": 62,
       "cache_ttl_sec": 90.0
     },
     "note": "Simulated paper account with real market marks. Not IBKR-confirmed."
