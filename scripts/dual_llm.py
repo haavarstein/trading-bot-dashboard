@@ -919,6 +919,7 @@ def junior_nomination(
     juniors: list[dict],
     min_agree: int = 3,
     hold_floor: int = 55,
+    prefer_exit_when_full: bool = False,
 ) -> tuple[str, str] | None:
     """
     Juniors nominate an (action, symbol) pair for the desk.
@@ -929,6 +930,11 @@ def junior_nomination(
     becomes a first-class nomination so it reaches the seniors pinned to the
     SAME question instead of being dropped (the SELL-vs-BUY deadlock). HOLDs or
     conflicting pairs do not produce a nomination.
+
+    On an even split with no quorum, when `prefer_exit_when_full` is set (book
+    is at max names), prefer the SELL (exit/rotation) side — "sell the weakest"
+    and "buy AMD" are the SAME rotation seen from opposite ends, and the exit
+    side is the unambiguous one when no free capital exists.
 
     Returns (action, symbol) or None.
     """
@@ -949,7 +955,16 @@ def junior_nomination(
         return None
     # highest-vote pair meeting the min_agree quorum
     best = max(votes, key=votes.get)
-    return best if votes[best] >= max(1, min_agree) else None
+    if votes[best] >= max(1, min_agree):
+        return best
+    # no quorum: even split / all pairs below min_agree
+    if prefer_exit_when_full:
+        # Prefer the exit (SELL) side — same rotation from the exit end.
+        sell_pairs = {k: v for k, v in votes.items() if k[0] == "SELL"}
+        if sell_pairs:
+            exit_best = max(sell_pairs, key=sell_pairs.get)
+            return exit_best
+    return None
 
 
 def run_junior_senior_consensus(
@@ -1061,10 +1076,22 @@ def run_junior_senior_consensus(
     # Juniors NOMINATE an (action, symbol) pair; seniors confirm/reject THAT
     # question (both BUY and SELL are first-class, so a rotation SELL no longer
     # gets dropped into a full-market mismatch). Restrict context to the symbol.
-    nomination = junior_nomination(juniors, min_agree=junior_min_agree, hold_floor=hold_floor)
+    # On an even split with the book at max names, prefer the exit side so a
+    # rotation isn't lost to a SELL-vs-BUY category error (config-gated).
+    book_full = len(broker.get("positions") or []) >= max(
+        1, int(rules.get("position_limits", {}).get("max_positions", 5) or 5)
+    )
+    prefer_exit = bool(rules.get("nomination_tie_break_exit_when_full", False)) and book_full
+    nomination = junior_nomination(
+        juniors,
+        min_agree=junior_min_agree,
+        hold_floor=hold_floor,
+        prefer_exit_when_full=prefer_exit,
+    )
     if nomination:
         nom_action, nom_symbol = nomination
         esc_reason = "junior_nomination"
+        result["escalate_reason"] = esc_reason  # write back so the dashboard reflects nomination
         result["junior_nomination"] = nom_symbol
         result["junior_nomination_action"] = nom_action
         # Restrict senior market context to the nominated symbol so both seniors
@@ -1090,7 +1117,9 @@ def run_junior_senior_consensus(
     # Focus on the nominated symbol if present, else the top ranked candidate.
     sol = None
     if cr.get("sol_chart_validator_enabled", True):
-        focus_sym = nomination or ""
+        # nomination is an (action, symbol) tuple — unpack to the symbol string
+        # for the chart filename, never pass the tuple itself.
+        focus_sym = (nom_symbol if nomination else "") or ""
         if not focus_sym and market:
             # top candidate by rank_score
             ranked = sorted(

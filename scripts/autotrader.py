@@ -427,7 +427,13 @@ class DryRunAutoTrader:
         if decision2["confidence"] < min_confidence:
             return False, f"Model 2 confidence {decision2['confidence']}% < {min_confidence}%"
 
-        if a1 in ("BUY", "SELL"):
+        if a1 == "BUY":
+            # Entry-level stop/target agreement only makes sense for a BUY
+            # (opening a position). On a SELL (exit/close) the stop_loss and
+            # take_profit are meaningless — you're closing the position, and
+            # normalize_decision defaults a missing stop to entry*0.975, so the
+            # two seniors would disagree on an irrelevant number. Do not gate
+            # exits on stop/target agreement.
             entry = float(decision1.get("entry_price") or 0) or 0.0
             if entry:
                 try:
@@ -490,7 +496,9 @@ class DryRunAutoTrader:
         reward = abs(target - entry) * qty
         rr_ratio = reward / risk if risk > 0 else 0
         min_rr = self.config["order_limits"]["min_risk_reward_ratio"]
-        if rr_ratio < min_rr:
+        # Epsilon tolerance: a float like 1.4999999 displays as 1.50 and is
+        # really at the minimum — don't reject on a sub-cent rounding error.
+        if rr_ratio < min_rr - 1e-6:
             return False, f"Risk/Reward {rr_ratio:.2f} < minimum {min_rr}"
 
         if not stop:

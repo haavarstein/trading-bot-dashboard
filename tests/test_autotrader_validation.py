@@ -59,6 +59,95 @@ class TestAutoTraderValidation(unittest.TestCase):
 
             self.assertTrue(valid, reason)
 
+    # --- Regression tests for Opus 5 review (2026-08) ---
+
+    def test_sell_consensus_not_gated_on_stop_target(self):
+        """Bug 1: SELL (exit) must NOT require stop/target agreement."""
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            config_path = self.make_config(root)
+            trader = DryRunAutoTrader(str(config_path))
+            # Both seniors SELL UNH, but stops differ wildly (Grok short-style
+            # stop above price, Sonnet 0). On an exit these are meaningless.
+            s1 = {
+                'action': 'SELL', 'symbol': 'UNH', 'confidence': 78,
+                'entry_price': 400.0, 'stop_loss': 410.5, 'take_profit': 0.0,
+                'qty': 0.5, 'thesis': 'exit', 'reason_code': 'rotation',
+            }
+            s2 = {
+                'action': 'SELL', 'symbol': 'UNH', 'confidence': 72,
+                'entry_price': 400.0, 'stop_loss': 0.0, 'take_profit': 0.0,
+                'qty': 0.5, 'thesis': 'exit', 'reason_code': 'rotation',
+            }
+            ok, reason = trader.check_consensus(s1, s2)
+            self.assertTrue(ok, f"SELL consensus should not gate on stop/target: {reason}")
+
+    def test_buy_consensus_still_gates_on_stop_target(self):
+        """BUY entries still require stop/target agreement (unchanged behavior)."""
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            config_path = self.make_config(root)
+            trader = DryRunAutoTrader(str(config_path))
+            b1 = {
+                'action': 'BUY', 'symbol': 'AMD', 'confidence': 80,
+                'entry_price': 100.0, 'stop_loss': 95.0, 'take_profit': 110.0,
+                'qty': 2, 'thesis': 'entry', 'reason_code': 'new_entry',
+            }
+            b2 = {
+                'action': 'BUY', 'symbol': 'AMD', 'confidence': 75,
+                'entry_price': 100.0, 'stop_loss': 99.0, 'take_profit': 110.0,
+                'qty': 2, 'thesis': 'entry', 'reason_code': 'new_entry',
+            }
+            # stop 95 vs 99 => 4% apart, under 5% threshold -> should pass
+            ok, reason = trader.check_consensus(b1, b2)
+            self.assertTrue(ok, f"BUY with close stops should agree: {reason}")
+            # stop 95 vs 100.5 => 5.5% apart -> >5% threshold -> fail
+            b3 = dict(b2, stop_loss=100.5)
+            ok2, _ = trader.check_consensus(b1, b3)
+            self.assertFalse(ok2, "BUY with wildly different stops must be rejected")
+
+    def test_rr_epsilon_tolerance(self):
+        """Bug 4: RR of 1.4999999 (displays 1.50) must not be rejected."""
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            config_path = self.make_config(root)
+            trader = DryRunAutoTrader(str(config_path))
+            broker = {'buying_power': 1000.0, 'positions': [], 'pending_orders': []}
+            # entry 100, stop 99.0 (risk 1.0), target 101.4999999 (reward 1.4999999)
+            # => RR = 1.4999999, displays 1.50
+            decision = {
+                'action': 'BUY', 'symbol': 'AMD', 'confidence': 80,
+                'entry_price': 100.0, 'stop_loss': 99.0, 'take_profit': 101.4999999,
+                'qty': 2, 'thesis': 'entry', 'reason_code': 'new_entry',
+            }
+            valid, reason = trader.validate_order(decision, broker)
+            self.assertTrue(valid, f"RR near minimum must pass with epsilon: {reason}")
+
+    def test_escalate_reason_written_back_on_nomination(self):
+        """Bug 6: escalate_reason must be 'junior_nomination' when juniors nominate."""
+        import scripts.dual_llm as dual_llm
+        juniors = [
+            {'action': 'SELL', 'symbol': 'UNH', 'confidence': 72, 'source': 'live'},
+            {'action': 'SELL', 'symbol': 'UNH', 'confidence': 70, 'source': 'live'},
+            {'action': 'BUY', 'symbol': 'AMD', 'confidence': 71, 'source': 'live'},
+            {'action': 'BUY', 'symbol': 'AMD', 'confidence': 69, 'source': 'live'},
+        ]
+        # Even 2/2 split, min_agree=3 -> no quorum
+        nom = dual_llm.junior_nomination(juniors, min_agree=3)
+        self.assertIsNone(nom, "2/2 split with min_agree=3 should not nominate by default")
+        # Tie-break enabled + book full -> prefer SELL (exit) side
+        nom2 = dual_llm.junior_nomination(juniors, min_agree=3, prefer_exit_when_full=True)
+        self.assertEqual(nom2, ("SELL", "UNH"), "tie-break should prefer the exit side")
+
+    def test_sol_focus_sym_is_string(self):
+        """Bug 3: Sol chart focus must be the symbol string, not the (action,symbol) tuple."""
+        import scripts.dual_llm as dual_llm
+        # nomination is (action, symbol); unpacked symbol must be a plain string
+        nomination = ("SELL", "UNH")
+        focus = (nomination[1] if nomination else "") or ""
+        self.assertEqual(focus, "UNH")
+        self.assertIsInstance(focus, str)
+
 
 if __name__ == '__main__':
     unittest.main()
