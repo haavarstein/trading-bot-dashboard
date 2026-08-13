@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-13T16:06:13.230190+00:00",
+  "generated_at": "2026-08-13T16:07:15.751403+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1033.2,
+    "portfolio_value": 1033.05,
     "starting_cash": 1000.0,
-    "total_return_pct": 3.32,
-    "total_pnl": 33.2,
+    "total_return_pct": 3.31,
+    "total_pnl": 33.05,
     "realized_pnl": 20.56,
-    "open_pnl": 12.66,
-    "capital_deployed": 1011.38,
+    "open_pnl": 12.51,
+    "capital_deployed": 1011.23,
     "cash": 21.82,
     "closed_trades": 8,
     "win_rate_pct": 37.5,
-    "vs_spy_pct": 2.49,
-    "spy_return_pct": 0.83,
+    "vs_spy_pct": 2.5,
+    "spy_return_pct": 0.81,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-13T16:06:26.571675+00:00"
+    "updated_at": "2026-08-13T16:07:29.588142+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.83,
-    "price": 775.8,
+    "return_pct": 0.81,
+    "price": 775.64,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,10 +38,10 @@
       "symbol": "UNH",
       "qty": 0.4953,
       "avg_cost": 403.775,
-      "last": 402.83,
-      "market_value": 199.52,
-      "open_pnl": -0.47,
-      "open_pnl_pct": -0.23,
+      "last": 402.67,
+      "market_value": 199.44,
+      "open_pnl": -0.55,
+      "open_pnl_pct": -0.27,
       "stop": 393.68,
       "target": 423.96,
       "thesis": "Bullish setup from ranked candidate list: Headline-driven setup (ai, catalyst): UNH Stock Becomes Dow\u2019s Biggest Driver Back To 50,000 \u2014 Will Trump Tailwinds Spark Another Leg Higher? - Stocktwits"
@@ -50,10 +50,10 @@
       "symbol": "XOM",
       "qty": 1.2993,
       "avg_cost": 153.9263,
-      "last": 159.51,
-      "market_value": 207.25,
-      "open_pnl": 7.25,
-      "open_pnl_pct": 3.63,
+      "last": 159.63,
+      "market_value": 207.41,
+      "open_pnl": 7.41,
+      "open_pnl_pct": 3.71,
       "stop": 150.08,
       "target": 161.62,
       "thesis": "Exxon Mobil (XOM) screened as a bullish catalyst setup on Alpha Radar. Primary driver: Headline-driven setup (ai, catalyst): Analysts Offer Insights on Energy Companies: Exxon Mobil (XOM) and Marathon Petroleum (MPC) - The Globe and Mail. Entry sized at $200.00 under the $200 single-name cap with predefined invalidation and upside map before the next 15-minute loop."
@@ -62,10 +62,10 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 363.07,
-      "last": 362.94,
-      "market_value": 199.62,
-      "open_pnl": -0.07,
-      "open_pnl_pct": -0.04,
+      "last": 362.98,
+      "market_value": 199.64,
+      "open_pnl": -0.05,
+      "open_pnl_pct": -0.02,
       "stop": 354.0,
       "target": 376.7,
       "thesis": "JPM is the strongest unowned catalyst name on the board, with a sponsorship deal headline, bullish sentiment, and solid rank score while the book still has room under the five-name cap. Notional stays inside the ~$200 new-buy limit with defined risk. Neutral RSI leaves room for follow-through if flows support the narrative. Diversifies existing healthcare, semi, energy, and tech exposure."
@@ -74,10 +74,10 @@
       "symbol": "LRCX",
       "qty": 0.61,
       "avg_cost": 327.56,
-      "last": 337.13,
-      "market_value": 205.65,
-      "open_pnl": 5.84,
-      "open_pnl_pct": 2.92,
+      "last": 336.52,
+      "market_value": 205.28,
+      "open_pnl": 5.47,
+      "open_pnl_pct": 2.74,
       "stop": 318.5,
       "target": 341.5,
       "thesis": "LRCX screens as the top-ranked liquid candidate with a strong rank_score and bullish sentiment on a fresh institutional-position headline. RSI near 50 leaves room for continuation without being overbought. Book has room for a fifth name and cash supports a sub-$200 starter with defined risk. Reward-to-risk is set above 1.5 with a tight invalidation under recent support."
@@ -86,10 +86,10 @@
       "symbol": "CVX",
       "qty": 1.01,
       "avg_cost": 197.26,
-      "last": 197.37,
-      "market_value": 199.34,
-      "open_pnl": 0.11,
-      "open_pnl_pct": 0.06,
+      "last": 197.49,
+      "market_value": 199.46,
+      "open_pnl": 0.23,
+      "open_pnl_pct": 0.12,
       "stop": 191.0,
       "target": 207.0,
       "thesis": "CVX screens as a liquid catalyst setup with solid rank score and bullish sentiment around Q2 earnings beat narrative plus AI power deal headlines. Book has room for one more name under the five-position guideline and cash supports a sub-$200 notional add. Risk defined below recent support with asymmetric upside to the stated target meeting the 1.5 R:R minimum."
@@ -155,51 +155,51 @@
   },
   "latest_decision": {
     "model": "grok-4.5",
-    "action": "HOLD",
-    "symbol": "CASH",
-    "confidence": 62,
+    "action": "SELL",
+    "symbol": "UNH",
+    "confidence": 72,
     "cache_stats": null,
-    "entry_price": 0.0,
-    "stop_loss": 0.0,
-    "take_profit": 0.0,
-    "qty": 0.0,
-    "thesis": "Book is full at 5 names with only ~$22 cash, so any new entry requires a rotation. Top-ranked NVDA carries an explicit caution flag in its catalyst headline and mega-cap AI names (AMD/MSFT) are too expensive for a clean ~$200 notional slice with proper R:R. No held name is at stop or target, and no candidate is materially stronger than the current book to justify forcing a rotation.",
-    "reason_code": "hold",
+    "entry_price": 402.59,
+    "stop_loss": 412.5,
+    "take_profit": 385.0,
+    "qty": 0.4953,
+    "thesis": "Book is full at 5 names with only ~$22 cash, so new risk requires a rotation. UNH is the weakest hold on open P/L and lacks a fresh catalyst versus top-ranked NVDA AI headline momentum. Freeing the ~$199 UNH notional allows a disciplined switch into a higher-ranked liquid catalyst name while keeping risk capped.",
+    "reason_code": "rotation",
     "reasoning": {
-      "headline": "Hold $CASH",
-      "narrative": "Book is full at 5 names with only ~$22 cash, so any new entry requires a rotation. Top-ranked NVDA carries an explicit caution flag in its catalyst headline and mega-cap AI names (AMD/MSFT) are too expensive for a clean ~$200 notional slice with proper R:R. No held name is at stop or target, and no candidate is materially stronger than the current book to justify forcing a rotation.",
+      "headline": "Sold $UNH",
+      "narrative": "Book is full at 5 names with only ~$22 cash, so new risk requires a rotation. UNH is the weakest hold on open P/L and lacks a fresh catalyst versus top-ranked NVDA AI headline momentum. Freeing the ~$199 UNH notional allows a disciplined switch into a higher-ranked liquid catalyst name while keeping risk capped.",
       "bullets": [
-        "Full book + minimal cash blocks new BUY without rotation",
-        "NVDA #1 rank undercut by caution-flagged catalyst",
-        "No stop/target hits; weakest holds only mildly red",
-        "Wait for cleaner catalyst or level on liquid name"
+        "UNH slight loser vs XOM/LRCX strength",
+        "NVDA top rank_score/catalyst in list",
+        "Rotation frees ~$200 for better setup",
+        "R:R on exit plan ~1.8 vs bounce risk"
       ],
       "risk_map": {
-        "stop": 0.0,
-        "target": 0.0,
+        "stop": 412.5,
+        "target": 385.0,
         "horizon_days": 5,
-        "rr": 0.0,
-        "confidence_10": 6,
-        "confidence": 62
+        "rr": 1.77,
+        "confidence_10": 7,
+        "confidence": 72
       },
-      "thesis": "Book is full at 5 names with only ~$22 cash, so any new entry requires a rotation. Top-ranked NVDA carries an explicit caution flag in its catalyst headline and mega-cap AI names (AMD/MSFT) are too expensive for a clean ~$200 notional slice with proper R:R. No held name is at stop or target, and no candidate is materially stronger than the current book to justify forcing a rotation."
+      "thesis": "Book is full at 5 names with only ~$22 cash, so new risk requires a rotation. UNH is the weakest hold on open P/L and lacks a fresh catalyst versus top-ranked NVDA AI headline momentum. Freeing the ~$199 UNH notional allows a disciplined switch into a higher-ranked liquid catalyst name while keeping risk capped."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Full book + minimal cash blocks new BUY without rotation",
-      "NVDA #1 rank undercut by caution-flagged catalyst",
-      "No stop/target hits; weakest holds only mildly red",
-      "Wait for cleaner catalyst or level on liquid name"
+      "UNH slight loser vs XOM/LRCX strength",
+      "NVDA top rank_score/catalyst in list",
+      "Rotation frees ~$200 for better setup",
+      "R:R on exit plan ~1.8 vs bounce risk"
     ],
-    "timestamp": "2026-08-13T15:49:59.149314+00:00"
+    "timestamp": "2026-08-13T16:06:55.231900+00:00"
   },
-  "stance": "Holding UNH, XOM, JPM, LRCX, CVX. No new trade right now.",
+  "stance": "Selling UNH. Book is full at 5 names with only ~$22 cash, so new risk requires a rotation. UNH is the weakest hold on open P/L and lacks a fresh catalyst versus top-ranked NVDA AI headline momentum. Freeing the ~$199 UNH notional allows a disciplined switch into a higher-ranked liquid catalyst name while keeping risk capped.",
   "thinking": {
-    "badge": "Holding what it owns",
-    "headline": "Holding UNH, XOM, JPM, LRCX, CVX. No new trade right now.",
-    "plain_english": "Right now Hermes is holding UNH, XOM, JPM, LRCX, CVX and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
+    "badge": "Exiting UNH",
+    "headline": "Selling UNH.",
+    "plain_english": "Right now Hermes is exiting UNH. That can be stop, target, or gated rotation when a stronger setup needs risk budget.",
     "triggers": [
       "It owns UNH, bought near $403.77. Simple plan: sell if it falls to about $393.68, or take profit near $423.96.",
       "It owns XOM, bought near $153.93. Simple plan: sell if it falls to about $150.08, or take profit near $161.62.",
@@ -218,9 +218,9 @@
         "avg_cost": 403.775,
         "stop": 393.68,
         "target": 423.96,
-        "last": 402.83,
-        "open_pnl": -0.47,
-        "open_pnl_pct": -0.23,
+        "last": 402.67,
+        "open_pnl": -0.55,
+        "open_pnl_pct": -0.27,
         "line": "Bought near $403.77 \u00b7 Sell safety line $393.68 \u00b7 Profit target $423.96",
         "plan": "stop 393.7 or target 424.0"
       },
@@ -230,9 +230,9 @@
         "avg_cost": 153.9263,
         "stop": 150.08,
         "target": 161.62,
-        "last": 159.51,
-        "open_pnl": 7.25,
-        "open_pnl_pct": 3.63,
+        "last": 159.63,
+        "open_pnl": 7.41,
+        "open_pnl_pct": 3.71,
         "line": "Bought near $153.93 \u00b7 Sell safety line $150.08 \u00b7 Profit target $161.62",
         "plan": "stop 150.1 or target 161.6"
       },
@@ -242,9 +242,9 @@
         "avg_cost": 363.07,
         "stop": 354.0,
         "target": 376.7,
-        "last": 362.94,
-        "open_pnl": -0.07,
-        "open_pnl_pct": -0.04,
+        "last": 362.98,
+        "open_pnl": -0.05,
+        "open_pnl_pct": -0.02,
         "line": "Bought near $363.07 \u00b7 Sell safety line $354.00 \u00b7 Profit target $376.70",
         "plan": "stop 354.0 or target 376.7"
       },
@@ -254,9 +254,9 @@
         "avg_cost": 327.56,
         "stop": 318.5,
         "target": 341.5,
-        "last": 337.13,
-        "open_pnl": 5.84,
-        "open_pnl_pct": 2.92,
+        "last": 336.52,
+        "open_pnl": 5.47,
+        "open_pnl_pct": 2.74,
         "line": "Bought near $327.56 \u00b7 Sell safety line $318.50 \u00b7 Profit target $341.50",
         "plan": "stop 318.5 or target 341.5"
       },
@@ -266,17 +266,17 @@
         "avg_cost": 197.26,
         "stop": 191.0,
         "target": 207.0,
-        "last": 197.37,
-        "open_pnl": 0.11,
-        "open_pnl_pct": 0.06,
+        "last": 197.49,
+        "open_pnl": 0.23,
+        "open_pnl_pct": 0.12,
         "line": "Bought near $197.26 \u00b7 Sell safety line $191.00 \u00b7 Profit target $207.00",
         "plan": "stop 191.0 or target 207.0"
       }
     ],
-    "last_checked": "2026-08-13T16:06:13.230190+00:00",
+    "last_checked": "2026-08-13T16:07:15.751403+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "HOLD",
+    "action": "SELL",
     "symbols_held": [
       "UNH",
       "XOM",
@@ -314,16 +314,16 @@
         "model": "grok-build-0.1",
         "action": "SELL",
         "symbol": "UNH",
-        "confidence": 70,
+        "confidence": 72,
         "tone": "sell"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 62,
-        "tone": "hold"
+        "action": "SELL",
+        "symbol": "UNH",
+        "confidence": 72,
+        "tone": "sell"
       },
       {
         "prefix": "S",
@@ -336,6 +336,74 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "UNH",
+      "status": "no_consensus",
+      "headline": "SELL UNH \u2014 no consensus",
+      "detail": "Desks: SELL UNH (72%) vs HOLD CASH (65%). Action mismatch: SELL vs HOLD",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "SELL",
+          "symbol": "UNH",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "NVDA",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "SELL",
+          "symbol": "UNH",
+          "confidence": 78,
+          "source": "fallback",
+          "provider": null,
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "SELL",
+          "symbol": "UNH",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "SELL",
+          "symbol": "UNH",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-08-13T16:06:55.231900+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -811,74 +879,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-08-13T14:22:13.809302+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CASH",
-      "status": "hold",
-      "headline": "HOLD \u2014 no new trade",
-      "detail": "Book is full at 5 names with only ~$22 cash, so any new risk requires a rotation. Top candidates (NVDA/AMZN) are headline-driven with mixed or cautionary catalyst text and do not present a clean, high-conviction edge versus existing holds. CVX is the weakest P/L but carries a fresh earnings-beat catalyst, so forcing a rotation is not justified.",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "SELL",
-          "symbol": "CVX",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 64,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-08-13T14:19:14.979099+00:00"
     }
   ],
   "recent_trades": [
@@ -2246,15 +2246,15 @@
     "candidate_signals_logged": 8,
     "fills_logged": 23,
     "closed_outcomes": 9,
-    "consensus_events": 145,
+    "consensus_events": 146,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1033.2,
-    "change": 33.2,
-    "change_pct": 3.32,
+    "latest_equity": 1033.05,
+    "change": 33.05,
+    "change_pct": 3.3,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -4911,6 +4911,12 @@
       {
         "t": "2026-08-13T16:06:26.571675+00:00",
         "equity": 1033.2,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-13T16:07:29.588142+00:00",
+        "equity": 1033.05,
         "cash": 21.82,
         "event": "mark"
       }
