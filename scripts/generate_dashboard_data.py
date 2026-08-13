@@ -564,15 +564,21 @@ def main():
             reason = row.get("reason") or reason
 
         if (m1.get("symbol") or "") != (m2.get("symbol") or "") or str(m1.get("action") or "") != str(m2.get("action") or ""):
+            m3 = row.get("model3") or {}
             desk = (
                 f"Desks: {m1.get('action')} {m1.get('symbol')} ({m1.get('confidence')}%) vs "
-                f"{m2.get('action')} {m2.get('symbol')} ({m2.get('confidence')}%). "
+                f"{m2.get('action')} {m2.get('symbol')} ({m2.get('confidence')}%)"
             )
+            if m3:
+                desk += (
+                    f" vs {m3.get('action')} {m3.get('symbol')} ({m3.get('confidence')}%)"
+                )
+            desk += ". "
             reason = desk + (reason or "")
 
         # Collect every agent's individual vote (juniors + seniors)
         agents = []
-        for key in ("junior1", "junior2", "junior3", "junior4", "model1", "model2"):
+        for key in ("junior1", "junior2", "junior3", "junior4", "model1", "model2", "model3"):
             a = row.get(key) or {}
             if not a:
                 continue

@@ -335,8 +335,7 @@ def _anthropic_model_candidates(model: str) -> list[str]:
     name = (model or "").strip()
     aliases = {
         "claude-opus-5": [
-            os.environ.get("ANTHROPIC_OPUS_MODEL_ID") or os.environ.get("ANTHROPIC_SENIOR_MODEL_ID"),
-            "claude-opus-5-20260713",
+            os.environ.get("ANTHROPIC_OPUS_MODEL_ID"),
             "claude-opus-5",
             "claude-opus-4-1",
         ],
@@ -986,7 +985,7 @@ def run_junior_senior_consensus(
     market: dict,
     rules: dict,
     fallback_fn: Callable[[str, dict, dict], dict],
-    senior_check_fn: Callable[[dict, dict], tuple],
+    senior_check_fn: Callable[..., tuple],
 ) -> dict:
     """
     Junior-first N-way desk with senior escalation.
@@ -1164,9 +1163,14 @@ def run_junior_senior_consensus(
             except Exception as _se:
                 result["sol_chart"] = None
 
-    ok, reason = senior_check_fn(s1, s2, s3)
+    ok, reason, winner = senior_check_fn(s1, s2, s3)
+    # decision1 is the decision that gets EXECUTED downstream. Under 2-of-3 it
+    # must be the WINNING senior's decision (the majority pair), not always s1
+    # (grok) — otherwise a senior-1 dissent would be executed anyway, or an
+    # agreed SELL by s2+s3 would be silently dropped as a HOLD no-op.
+    exec_decision = winner if winner is not None else s1
     result.update({
-        "decision1": s1,
+        "decision1": exec_decision,
         "decision2": s2,
         "decision3": s3,
         "senior1": s1,

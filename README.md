@@ -79,7 +79,10 @@ Telegram alerts on **BUY/SELL fills only** (no HOLD spam) + dashboard link
 ### Consensus pipeline (stage-split — fixes category error)
 1. **Exit gate (risk):** held position at/below stop or at/above target executes deterministically (`tier: risk_exit`) — no junior vote. Risk action, not discretionary.
 2. **Junior nomination (entries):** juniors each nominate a candidate symbol; a symbol with `junior_min_agree` live BUY votes is passed to seniors. Seniors vote **that ticker only** (same question → no PANW-vs-JPM mismatch).
-3. **Senior confirm:** seniors BUY/HOLD the nominated symbol; dual agreement required to size/fill.
+3. **Senior confirm:** seniors (grok-4.5, sonnet-5, opus-5) vote the nominated ticker;
+   a **2-of-3 majority** on action+symbol is required to size/fill. Only LIVE senior
+   votes count (a fallback copy is not an independent model). The WINNING decision is
+   executed — never a dissent.
 4. **Junior HOLD finalize:** 3-of-4 junior HOLD with no nomination → done, no senior cost.
 
 ### Honest status of dual models

@@ -406,17 +406,19 @@ class DryRunAutoTrader:
             "timestamp": datetime.now(timezone.utc).isoformat(),
         }
 
-    def check_consensus(self, *decisions) -> Tuple[bool, Optional[str]]:
+    def check_consensus(self, *decisions) -> Tuple[bool, Optional[str], Optional[Dict]]:
         """Senior gate. Accepts 2 or 3 senior decisions.
 
         - 2 decisions (legacy / junior-only HOLD path): BOTH must agree on
-          action (+ symbol for trades) — strict dual agreement.
+          action (+ symbol for trades) — strict dual agreement. Returns
+          (ok, reason, None) for backward compat with the 2-arg call sites.
         - 3 decisions (3-senior desk: grok-4.5, sonnet-5, opus-5): a
-          2-of-3 MAJORITY on action+symbol is sufficient (slightly looser gate).
+          2-of-3 MAJORITY on action+symbol is sufficient. Returns (ok, reason,
+          winner) where winner is the decision to execute.
         """
         decisions = [d for d in decisions if d]
         if not decisions:
-            return False, "No senior decisions provided"
+            return False, "No senior decisions provided", None
         if len(decisions) == 3:
             return self._check_consensus_3(decisions)
         # --- 2-decision (legacy) path ---
@@ -463,55 +465,60 @@ class DryRunAutoTrader:
                     pass
         return True, None
 
-    def _check_consensus_3(self, decisions) -> Tuple[bool, Optional[str]]:
+    def _check_consensus_3(self, decisions) -> Tuple[bool, Optional[str], Optional[Dict]]:
         """2-of-3 majority among three seniors (grok-4.5, sonnet-5, opus-5).
 
-        Any two seniors agreeing on action + symbol passes. HOLD+HOLD (any two
-        HOLD) = no trade. This is the standard extension of the dual gate.
+        Only LIVE seniors count toward the majority (a fallback vote is not a
+        real independent model — it would let one real model + one fallback
+        fake a "2-of-3"). Returns (ok, reason, winner) where winner is the
+        decision dict to execute, so the cycle does NOT always run senior 1.
         """
+        # Only live seniors vote; fallback copies are excluded.
+        live = [d for d in decisions if d and str(d.get("source") or "live") == "live"]
+        if not live:
+            return False, "No live senior decisions", None
+        if len(live) < 2:
+            return False, f"Need 2 live seniors, got {len(live)}", None
+
         min_confidence = self.config["consensus_rules"]["min_confidence"]
         hold_floor = min(50, min_confidence)
 
-        # Count action votes
         from collections import Counter
-        actions = Counter(str(d.get("action") or "").upper() for d in decisions)
+        actions = Counter(str(d.get("action") or "").upper() for d in live)
 
-        # 2-of-3 HOLD => no trade
+        # 2-of-3 HOLD => no trade (return a HOLD decision so execution is a no-op)
         if actions["HOLD"] >= 2:
-            # require the agreeing HOLDs to have non-junk confidence
-            holds = [d for d in decisions if str(d.get("action") or "").upper() == "HOLD"]
+            holds = [d for d in live if str(d.get("action") or "").upper() == "HOLD"]
             for d in holds[:2]:
                 if int(d.get("confidence") or 0) < hold_floor:
-                    return False, f"HOLD confidence {d.get('confidence')}% < {hold_floor}%"
-            return True, None
+                    return False, f"HOLD confidence {d.get('confidence')}% < {hold_floor}%", None
+            return True, None, holds[0]
 
-        # Find a trade action with >=2 agreeing seniors
+        # Find a trade action with >=2 agreeing seniors on the SAME symbol
         for action in ("BUY", "SELL"):
             if actions[action] < 2:
                 continue
-            voters = [d for d in decisions if str(d.get("action") or "").upper() == action]
-            # need >=2 on the SAME symbol
+            voters = [d for d in live if str(d.get("action") or "").upper() == action]
             sym_counts = Counter(str(d.get("symbol") or "").upper() for d in voters)
             sym, cnt = max(sym_counts.items(), key=lambda kv: kv[1])
             if cnt >= 2:
-                # confidence floor on the agreeing pair
                 pair = [d for d in voters if str(d.get("symbol") or "").upper() == sym][:2]
                 for d in pair:
                     if int(d.get("confidence") or 0) < min_confidence:
-                        return False, f"{action} {sym} confidence {d.get('confidence')}% < {min_confidence}%"
+                        return False, f"{action} {sym} confidence {d.get('confidence')}% < {min_confidence}%", None
                 # BUY stop/target sanity across the pair
                 if action == "BUY":
                     entry = float(pair[0].get("entry_price") or 0) or 0.0
                     if entry:
                         try:
                             if abs(float(pair[0].get("stop_loss") or 0) - float(pair[1].get("stop_loss") or 0)) / entry > 0.05:
-                                return False, f"Stop loss mismatch: ${pair[0].get('stop_loss')} vs ${pair[1].get('stop_loss')}"
+                                return False, f"Stop loss mismatch: ${pair[0].get('stop_loss')} vs ${pair[1].get('stop_loss')}", None
                             if abs(float(pair[0].get("take_profit") or 0) - float(pair[1].get("take_profit") or 0)) / entry > 0.05:
-                                return False, f"Take profit mismatch: ${pair[0].get('take_profit')} vs ${pair[1].get('take_profit')}"
+                                return False, f"Take profit mismatch: ${pair[0].get('take_profit')} vs ${pair[1].get('take_profit')}", None
                         except Exception:
                             pass
-                return True, None
-        return False, "No 2-of-3 senior agreement"
+                return True, None, pair[0]
+        return False, "No 2-of-3 senior agreement", None
 
     def validate_order(self, decision: Dict, broker_snapshot: Dict) -> Tuple[bool, Optional[str]]:
         if self.check_kill_switch():
@@ -861,6 +868,18 @@ class DryRunAutoTrader:
             f"  desk: juniors {rules['junior_model_1']}+{rules['junior_model_2']} → "
             f"seniors {rules['model_1']}+{rules['model_2']}+{rules['model_3']} (2-of-3, escalate BUY/SELL/disagree/borderline)"
         )
+        # Guard against the model-ID collision: the 3 seniors must resolve to
+        # DISTINCT model IDs, else two "seniors" are the same model with
+        # correlated votes that auto-form the majority and outvote the third.
+        senior_model_ids = set(
+            m for m in (rules.get("model_1"), rules.get("model_2"), rules.get("model_3")) if m
+        )
+        if len(senior_model_ids) < 3:
+            raise RuntimeError(
+                f"Senior model-ID collision: {rules.get('model_1')}, {rules.get('model_2')}, "
+                f"{rules.get('model_3')} resolve to {len(senior_model_ids)} distinct model(s). "
+                "Set ANTHROPIC_OPUS_MODEL_ID so opus-5 differs from sonnet-5, or fix config."
+            )
 
         def _fallback(name, broker, market):
             return self.get_model_decision(name, broker, market)

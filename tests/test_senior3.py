@@ -78,6 +78,54 @@ check("2x SELL conf 60 < 70 => False", consensus_3([
 check("SELL UNH + SELL MSFT + HOLD => False", consensus_3([
     mk("SELL", "UNH", 75), mk("SELL", "MSFT", 75), mk("HOLD", "CASH", 65)]), False)
 
+# --- CRITICAL: winning decision is returned (not always senior 1) ---
+# Build a real DryRunAutoTrader and verify _check_consensus_3 returns the winner.
+import autotrader
+t = autotrader.DryRunAutoTrader()
+def mk2(a, s, c, m, source="live"):
+    return {"model": m, "action": a, "symbol": s, "confidence": c, "source": source,
+            "stop_loss": 100.0, "take_profit": 110.0, "entry_price": 105.0}
+
+# s1(grok) BUY AMD dissent, s2+s3 HOLD -> winner should be a HOLD, NOT grok's BUY
+ok, reason, winner = t.check_consensus(
+    mk2("BUY", "AMD", 72, "grok-4.5"),
+    mk2("HOLD", "CASH", 62, "claude-sonnet-5"),
+    mk2("HOLD", "CASH", 65, "claude-opus-5"),
+)
+check("2x HOLD => ok True", ok, True)
+check("winner is HOLD (not s1's dissent BUY)", (winner or {}).get("action"), "HOLD")
+
+# s1 HOLD, s2+s3 SELL UNH -> winner should be SELL UNH (the majority), not HOLD
+ok, reason, winner = t.check_consensus(
+    mk2("HOLD", "CASH", 65, "grok-4.5"),
+    mk2("SELL", "UNH", 74, "claude-sonnet-5"),
+    mk2("SELL", "UNH", 72, "claude-opus-5"),
+)
+check("2x SELL UNH => ok True", ok, True)
+check("winner is SELL UNH (not s1's HOLD)", (winner or {}).get("action"), "SELL")
+check("winner symbol UNH", (winner or {}).get("symbol"), "UNH")
+
+# fallback seniors do NOT count: 1 live SELL UNH + 2 fallback SELL UNH -> not consensus
+ok, reason, winner = t.check_consensus(
+    mk2("SELL", "UNH", 72, "grok-4.5", source="live"),
+    mk2("SELL", "UNH", 74, "claude-sonnet-5", source="fallback"),
+    mk2("SELL", "UNH", 70, "claude-opus-5", source="fallback"),
+)
+check("fallback majority rejected (need 2 live)", ok, False)
+
+# 2 live SELL UNH + 1 fallback -> ok True, winner SELL UNH
+ok, reason, winner = t.check_consensus(
+    mk2("SELL", "UNH", 72, "grok-4.5", source="live"),
+    mk2("SELL", "UNH", 74, "claude-sonnet-5", source="live"),
+    mk2("SELL", "UNH", 70, "claude-opus-5", source="fallback"),
+)
+check("2 live SELL UNH => ok True", ok, True)
+check("2 live winner SELL UNH", (winner or {}).get("action"), "SELL")
+
+# 2-decision legacy still works (returns 2-tuple)
+r = t.check_consensus(mk2("HOLD", "CASH", 62, "m"), mk2("HOLD", "CASH", 65, "m"))
+check("legacy 2 HOLD => 2-tuple", len(r), 2)
+
 
 # --- verify model_chips includes senior3 ---
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
