@@ -1365,6 +1365,14 @@
         detail: 'FMP dropped. Live holdings marks now come from the official IBKR Gateway (delayed, read-only) via ib_async, with yfinance as fallback. Note: IBKR\'s remote MCP (api.ibkr.com) is DCR-403-blocked for generic clients — Robinhood MCP works via Hermes, IBKR MCP does not; we use the official gateway socket instead.'
       },
       {
+        title: 'NYSE open/close Telegram notifications',
+        detail: 'A cron now pings Telegram at NYSE open (09:30 ET) and close (16:00 ET), computed in your local time so US DST never drifts the alert.'
+      },
+      {
+        title: '15m paper session timeout raised to 480s',
+        detail: 'The trade cycle subprocess had a 300s cap that blew past on slow LLM days (influencer feed ~130s + 4 juniors + up to 2 seniors). Raised to 480s, safely inside the 15m cadence.'
+      },
+      {
         title: 'GPT-5.6 Sol chart-vision senior',
         detail: 'OpenAI\u2019s flagship vision model now reads a real candlestick chart on every escalated trade — drawing support/resistance, marking entry & stop-loss zones, and giving a BUY/SELL/HOLD TA read (advisory third senior, logged in consensus).'
       },
