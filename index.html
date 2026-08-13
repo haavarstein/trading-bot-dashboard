@@ -1422,8 +1422,8 @@
         detail: 'The trade cycle subprocess had a 300s cap that blew past on slow LLM days (influencer feed ~130s + 4 juniors + up to 2 seniors). Raised to 480s, safely inside the 15m cadence.'
       },
       {
-        title: 'Exit (SELL) consensus no longer gated on stop/target agreement',
-        detail: 'A senior-confirmed SELL was unreachable because the stop/target agreement check (an entry concept) also applied to exits, and a missing stop defaulted to entry*0.975 — so seniors disagreed on an irrelevant number every time. Now BUY-only. Also: RR comparison uses an epsilon (1.4999 no longer rejected as 1.50), the Sol chart validator gets the symbol string not the (action,symbol) tuple, and escalate_reason reflects the nomination.'
+        title: 'Exit (SELL) consensus + junior-split tie-break actually fire in production',
+        detail: 'A senior-confirmed SELL was unreachable because the stop/target agreement check (an entry concept) also applied to exits, and a missing stop defaulted to entry*0.975 — so seniors disagreed on an irrelevant number every time. Now BUY-only. An even junior split on a full book (2x SELL UNH vs 2x BUY AMD) deadlocked forever; the tie-break now nominates the SELL (exit) side first — conservative: only on a full book, only on currently-held symbols, needs ≥2 live SELL votes. Critically, the tie-break config flag is now propagated through autotrader\'s flattened rules dict (it was silently never reaching the desk — only unit tests saw it). Also: RR comparison uses an epsilon + 4dp message (1.4999 no longer rejected as "1.50 < 1.5"), the Sol chart validator gets the symbol string not the (action,symbol) tuple, and escalate_reason reflects the nomination.'
       },
       {
         title: 'GPT-5.6 Sol chart-vision senior',

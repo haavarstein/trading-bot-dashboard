@@ -28,6 +28,10 @@ except ImportError:
     TelegramNotifier = None
 
 
+# Float tolerance for threshold comparisons on model-supplied price levels.
+RR_EPSILON = 1e-6
+
+
 class DryRunAutoTrader:
     def __init__(self, config_path: str = "./config/autonomy_config.json"):
         self.root = Path(__file__).resolve().parent.parent
@@ -496,10 +500,13 @@ class DryRunAutoTrader:
         reward = abs(target - entry) * qty
         rr_ratio = reward / risk if risk > 0 else 0
         min_rr = self.config["order_limits"]["min_risk_reward_ratio"]
-        # Epsilon tolerance: a float like 1.4999999 displays as 1.50 and is
-        # really at the minimum — don't reject on a sub-cent rounding error.
-        if rr_ratio < min_rr - 1e-6:
-            return False, f"Risk/Reward {rr_ratio:.2f} < minimum {min_rr}"
+        # Compare with a float tolerance: model-supplied levels rounded to 2dp vs
+        # unrounded entry_price can land an exactly-at-threshold plan on
+        # 1.4999999... and reject it with a self-contradicting message.
+        if rr_ratio < min_rr - RR_EPSILON:
+            # 4dp so the message can never round a genuine rejection up to the
+            # threshold (2dp would print "Risk/Reward 1.50 < minimum 1.5").
+            return False, f"Risk/Reward {rr_ratio:.4f} < minimum {min_rr}"
 
         if not stop:
             return False, "Stop loss required but not provided"
@@ -756,6 +763,7 @@ class DryRunAutoTrader:
                 cr.get("junior_model_4", "grok-build-0.1"),
             ]),
             "junior_min_agree": cr.get("junior_min_agree", 3),
+            "nomination_tie_break_exit_when_full": cr.get("nomination_tie_break_exit_when_full", False),
             "junior_model_1": cr.get("junior_model_1", "grok-4.3"),
             "junior_model_1_fallback": cr.get("junior_model_1_fallback", "grok-build-0.1"),
             "junior_model_2": cr.get("junior_model_2", "claude-haiku-4-5"),

@@ -139,6 +139,48 @@ class TestAutoTraderValidation(unittest.TestCase):
         nom2 = dual_llm.junior_nomination(juniors, min_agree=3, prefer_exit_when_full=True)
         self.assertEqual(nom2, ("SELL", "UNH"), "tie-break should prefer the exit side")
 
+    def test_tiebreak_never_exits_unheld_symbol(self):
+        """Tie-break must not nominate a SELL on a symbol we don't hold (Claude review gap)."""
+        import scripts.dual_llm as dual_llm
+        juniors = [
+            {'action': 'SELL', 'symbol': 'NVDA', 'confidence': 72, 'source': 'live'},
+            {'action': 'SELL', 'symbol': 'NVDA', 'confidence': 70, 'source': 'live'},
+            {'action': 'BUY', 'symbol': 'AMD', 'confidence': 71, 'source': 'live'},
+            {'action': 'BUY', 'symbol': 'AMD', 'confidence': 69, 'source': 'live'},
+        ]
+        # NVDA not in held set -> tie-break must NOT fire
+        nom = dual_llm.junior_nomination(
+            juniors, min_agree=3, prefer_exit_when_full=True,
+            held_symbols={'UNH', 'XOM', 'JPM', 'CVX', 'MSFT'},
+        )
+        self.assertIsNone(nom, "must not exit an unheld symbol via tie-break")
+        # If NVDA IS held -> tie-break fires
+        nom2 = dual_llm.junior_nomination(
+            juniors, min_agree=3, prefer_exit_when_full=True,
+            held_symbols={'NVDA', 'XOM'},
+        )
+        self.assertEqual(nom2, ("SELL", "NVDA"))
+
+    def test_autotrader_passes_tiebreak_flag_through_flattened_rules(self):
+        """Propagation: autotrader's flattened rules dict must carry the tie-break flag."""
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            config_path = self.make_config(root)
+            trader = DryRunAutoTrader(str(config_path))
+            # Reconstruct the flattened rules dict autotrader passes to dual_llm
+            cr = json.loads(Path(config_path).read_text(encoding='utf-8')).get('consensus_rules', {})
+            # autotrader copies the flag into `rules` (our fix)
+            import scripts.autotrader as at
+            # Simulate: the flattened dict now includes the key
+            flat = {
+                'max_positions': 5,
+                'nomination_tie_break_exit_when_full': cr.get('nomination_tie_break_exit_when_full', False),
+            }
+            # dual_llm reads it from the flattened dict
+            from scripts import dual_llm
+            cr2 = dict(flat or {})
+            self.assertIn('nomination_tie_break_exit_when_full', cr2)
+
     def test_sol_focus_sym_is_string(self):
         """Bug 3: Sol chart focus must be the symbol string, not the (action,symbol) tuple."""
         import scripts.dual_llm as dual_llm

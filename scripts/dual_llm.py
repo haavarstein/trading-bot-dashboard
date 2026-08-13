@@ -920,6 +920,7 @@ def junior_nomination(
     min_agree: int = 3,
     hold_floor: int = 55,
     prefer_exit_when_full: bool = False,
+    held_symbols: set[str] | None = None,
 ) -> tuple[str, str] | None:
     """
     Juniors nominate an (action, symbol) pair for the desk.
@@ -934,7 +935,9 @@ def junior_nomination(
     On an even split with no quorum, when `prefer_exit_when_full` is set (book
     is at max names), prefer the SELL (exit/rotation) side — "sell the weakest"
     and "buy AMD" are the SAME rotation seen from opposite ends, and the exit
-    side is the unambiguous one when no free capital exists.
+    side is the unambiguous one when no free capital exists. Only SELLs on
+    currently-held symbols (`held_symbols`) qualify for the tie-break, so we
+    never nominate an exit on a name we don't own.
 
     Returns (action, symbol) or None.
     """
@@ -959,8 +962,13 @@ def junior_nomination(
         return best
     # no quorum: even split / all pairs below min_agree
     if prefer_exit_when_full:
-        # Prefer the exit (SELL) side — same rotation from the exit end.
+        # Prefer the exit (SELL) side — same rotation from the exit end. Only
+        # SELLs on currently-held symbols qualify (never exit a name we don't own).
         sell_pairs = {k: v for k, v in votes.items() if k[0] == "SELL"}
+        if held_symbols is not None:
+            sell_pairs = {
+                k: v for k, v in sell_pairs.items() if k[1] in held_symbols
+            }
         if sell_pairs:
             exit_best = max(sell_pairs, key=sell_pairs.get)
             return exit_best
@@ -1078,15 +1086,26 @@ def run_junior_senior_consensus(
     # gets dropped into a full-market mismatch). Restrict context to the symbol.
     # On an even split with the book at max names, prefer the exit side so a
     # rotation isn't lost to a SELL-vs-BUY category error (config-gated).
-    book_full = len(broker.get("positions") or []) >= max(
-        1, int(rules.get("position_limits", {}).get("max_positions", 5) or 5)
+    # max_positions lives at the top level of the flattened rules dict autotrader
+    # builds (not under position_limits), so read both to be safe.
+    max_positions = int(
+        rules.get("max_positions")
+        or rules.get("position_limits", {}).get("max_positions", 5)
+        or 5
     )
+    book_full = len(broker.get("positions") or []) >= max(1, max_positions)
     prefer_exit = bool(rules.get("nomination_tie_break_exit_when_full", False)) and book_full
+    held_symbols = {
+        str((p or {}).get("symbol") or "").upper()
+        for p in (broker.get("positions") or [])
+        if (p or {}).get("symbol")
+    }
     nomination = junior_nomination(
         juniors,
         min_agree=junior_min_agree,
         hold_floor=hold_floor,
         prefer_exit_when_full=prefer_exit,
+        held_symbols=held_symbols,
     )
     if nomination:
         nom_action, nom_symbol = nomination
