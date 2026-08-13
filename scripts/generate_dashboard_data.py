@@ -912,6 +912,8 @@ def main():
             "model_1": cfg.get("consensus_rules", {}).get("model_1", "grok-4.5"),
             "model_1_effort": cfg.get("consensus_rules", {}).get("model_1_effort"),
             "model_2": cfg.get("consensus_rules", {}).get("model_2", "claude-sonnet-5"),
+            "model_3": cfg.get("consensus_rules", {}).get("model_3", "claude-opus-5"),
+            "model_3_effort": cfg.get("consensus_rules", {}).get("model_3_effort"),
             "sol_chart_validator_enabled": bool(cfg.get("consensus_rules", {}).get("sol_chart_validator_enabled", True)),
             "sol_model": cfg.get("consensus_rules", {}).get("sol_model", "gpt-5.6-sol"),
             "min_confidence": cfg.get("consensus_rules", {}).get("min_confidence", 70),
