@@ -244,7 +244,10 @@ def build_thinking(holdings, latest_decision, latest_candidate, snap, now, cfg, 
             f"Right now Hermes wants exposure to {dec_sym}. "
             f"The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared."
         )
-    elif act == "SELL" and dec_sym:
+    elif act == "SELL" and dec_sym and dec_sym in syms:
+        # Only show an active "Selling X" while X is still held (decision pending
+        # or in flight). If the SELL already executed and X is gone, fall through
+        # to the current-state branch below instead of describing a stale exit.
         badge = f"Exiting {dec_sym}"
         headline = f"Selling {dec_sym}."
         plain = (
