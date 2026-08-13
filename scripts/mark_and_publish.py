@@ -3,12 +3,12 @@
 Lightweight NYSE mark-and-publish job (5m cadence).
 
 - Market-hours gate only (unless --force)
-- Quotes open holdings + SPY in ONE efficient bulk (yfinance; FMP singles avoided)
+- Quotes open holdings + SPY in ONE efficient bulk (IBKR gateway; yfinance fallback)
 - mark_to_market on local paper broker
 - regenerate dashboard-data.json
 - git commit/push snapshot for Vercel
 
-Does NOT run Alpha Radar or dual-LLM (saves FMP + model cost).
+Does NOT run Alpha Radar or dual-LLM (saves model cost).
 Quiet skip off-hours for no_agent cron.
 """
 
@@ -99,8 +99,8 @@ def main() -> int:
     held = [s for s, p in positions.items() if float((p or {}).get("qty") or 0) > 0]
     symbols = list(dict.fromkeys(held + ["SPY"]))
 
-    # Efficient multi-symbol path (yfinance bulk). No FMP singles on the 5m job.
-    bulk = market_data.quotes_bulk(symbols, prefer="yfinance", allow_fmp_singles=False)
+    # Efficient multi-symbol path: IBKR official gateway primary, yfinance fallback.
+    bulk = market_data.quotes_bulk(symbols, prefer="ibkr", allow_fmp_singles=False)
     prefetched = {
         s: float(row["price"])
         for s, row in (bulk or {}).items()
@@ -145,7 +145,7 @@ def main() -> int:
     print(
         f"MARK OK — {now.strftime('%H:%M %Z')} | equity ${float(equity or 0):.2f} | "
         f"openP/L ${float(open_pnl or 0):.2f} | held {len(held)} | "
-        f"quotes {','.join(sources)} | FMP left {md.get('fmp_remaining', '?')}/{md.get('fmp_daily_limit', '?')} | "
+        f"quotes {','.join(sources)} | provider {md.get('provider','?')} | ibkr_gw {md.get('ibkr_gateway','?')} | "
         f"{push_msg}"
     )
     return 0

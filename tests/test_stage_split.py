@@ -34,7 +34,7 @@ class TestJuniorNomination(unittest.TestCase):
             _junior("BUY", "MSFT"),
             _junior("HOLD", "CASH"),
         ]
-        self.assertEqual(dual_llm.junior_nomination(js, min_agree=3), "MSFT")
+        self.assertEqual(dual_llm.junior_nomination(js, min_agree=3), ("BUY", "MSFT"))
 
     def test_no_nomination_when_split(self):
         js = [

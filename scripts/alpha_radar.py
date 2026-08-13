@@ -83,10 +83,9 @@ class AlphaRadar:
 
     def fetch_quotes_bulk(self, symbols: List[str]) -> Dict[str, Dict[str, Any]]:
         out: Dict[str, Dict[str, Any]] = {}
-        # Prefer FMP when configured
+        # Scanner universe: yfinance bulk primary (IBKR single-quote slow for 28 symbols).
         if market_data is not None:
             try:
-                # Free FMP = singles only; never burn budget on full universe.
                 bulk = market_data.quotes_bulk(
                     symbols, prefer="yfinance", allow_fmp_singles=False
                 )
@@ -294,7 +293,7 @@ class AlphaRadar:
     def run(self):
         print(f"\n{'='*60}")
         print(f"Alpha Radar Scan - {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S')} UTC")
-        src = "fmp" if (market_data and getattr(market_data, "provider_name", lambda: "yfinance")() == "fmp") else "yfinance"
+        src = (getattr(market_data, "provider_name", lambda: "yfinance")() if market_data else "yfinance")
         print(f"Universe size: {len(self.universe)} | Quote source: {src} | News: Google RSS")
         print(f"{'='*60}\n")
 

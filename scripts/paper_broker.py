@@ -57,7 +57,7 @@ def _append_jsonl(path: Path, row: dict) -> None:
 
 
 def quote(symbol: str) -> float | None:
-    """Best-effort last price (FMP primary, yfinance fallback)."""
+    """Best-effort last price (IBKR gateway primary, yfinance fallback)."""
     if market_data is not None:
         try:
             px = market_data.quote(symbol)
@@ -152,7 +152,7 @@ class PaperBroker:
         symbols: list[str] | None = None,
         prefetched: dict[str, float] | None = None,
     ) -> dict[str, float]:
-        """Mark positions. Prefer one bulk prefetch (yfinance/FMP layer) over N singles."""
+        """Mark positions. Prefer one bulk prefetch (IBKR/yfinance layer) over N singles."""
         marks: dict[str, float] = {}
         pos = self.state.get("positions", {})
         targets = list(symbols) if symbols is not None else list(pos.keys())
@@ -172,7 +172,7 @@ class PaperBroker:
         missing = [s for s in targets if s.upper() not in price_map]
         if missing and market_data is not None:
             try:
-                bulk = market_data.quotes_bulk(missing, prefer="yfinance", allow_fmp_singles=False)
+                bulk = market_data.quotes_bulk(missing, prefer="ibkr", allow_fmp_singles=False)
                 for s, row in (bulk or {}).items():
                     if row and row.get("price") is not None:
                         price_map[str(s).upper()] = float(row["price"])

@@ -12,7 +12,6 @@ class TestCreditAlerts(unittest.TestCase):
     def test_detects_common_credit_errors(self):
         self.assertTrue(credit_alerts.looks_like_credit_error("HTTP Error 402: Payment Required"))
         self.assertTrue(credit_alerts.looks_like_credit_error("insufficient_quota"))
-        self.assertTrue(credit_alerts.looks_like_credit_error("FMP daily call budget exhausted"))
         self.assertTrue(credit_alerts.looks_like_credit_error("429 Too Many Requests rate limit"))
         self.assertFalse(credit_alerts.looks_like_credit_error("connection reset by peer"))
 

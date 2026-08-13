@@ -166,10 +166,9 @@ Secrets (`.env`, tokens, portfolio private state) stay gitignored. Do not commit
 
 ## Privacy / secrets checklist
 - `.env` / `.env*` are gitignored
-- API keys (`FMP_API_KEY`, `XAI_API_KEY`, `ANTHROPIC_API_KEY`, etc.) must never be committed or published
-- Market data: FMP single-quote capable; **bulk multi-symbol uses yfinance** on free FMP (comma bulk = 402)
-- 5m dashboard marks: holdings+SPY bulk via yfinance; browser never holds API keys
-- FMP daily budget file local: `data/fmp_call_budget.json` (gitignored)
+- API keys (`XAI_API_KEY`, `ANTHROPIC_API_KEY`, etc.) must never be committed or published
+- Market data: **IBKR official gateway primary** (delayed, read-only) for holdings; **yfinance** fallback + scanner bulk
+- 5m dashboard marks: holdings via IBKR gateway → yfinance fallback; browser never holds API keys
 - Runtime ledgers under `data/` are local; public site gets sanitized `dashboard-data.json` only
 - Before public push: scan for `xai-`, `sk-ant-`, bearer tokens, private keys, passwords
 
@@ -210,8 +209,7 @@ Active pattern:
 - **Name:** `nyse-paper-session-15m` (scan + dual desk + trade)
 - **Name:** `nyse-mark-publish-5m` (marks only + dashboard push)
   - Schedule: `*/5 9-15 * * 1-5` America/New_York window via Hermes cron
-  - Quotes: **yfinance bulk** for holdings+SPY (0 FMP on free tier multi)
-  - FMP: reserved/budgeted singles (`FMP_DAILY_CALL_LIMIT=200`), not full-universe spam
+  - Quotes: **IBKR official gateway** for holdings+SPY (delayed), yfinance fallback
 - **Schedule:** `*/15 9-15 * * 1-5` (cron window)
 - **Runner:** Hermes script wrapper → `scripts/run_paper_session.py`
 - **Session gate:** code enforces true NYSE regular hours `09:30–16:00 ET`
@@ -282,7 +280,7 @@ Also keep:
 ## Telegram policy
 
 - Notify on **BUY/SELL paper fills only**
-- Also notify on **API credit/quota exhaustion** (FMP / xAI / Anthropic), cooldown 6h per provider
+- Also notify on **API credit/quota exhaustion** (xAI / Anthropic), cooldown 6h per provider
 - **No HOLD** / no routine disagreement spam
 - Every trade alert includes the public dashboard URL
 - Hermes 15m cron delivers stdout only when a fill happens (HOLD sessions stay silent)
