@@ -287,9 +287,11 @@ Also keep:
 
 ## IBKR status (important)
 
-- **Official IBKR remote MCP** and **local Client Portal bridge** are **not** the active account path right now.
-- Hermes `ibkr` / `ibkr_remote` MCP entries should remain **enabled: false**.
-- When a personal IBKR paper account is approved/active, broker truth can replace the local paper broker without throwing away Alpha Radar / dashboard / cron.
+- **IBKR official Gateway is the PRIMARY market-data quote source** for holdings/portfolio marks (delayed, read-only, live socket `:4001`). Runs via `scripts/ibkr_quotes.py` + `ib_async` against the official gateway (`C:\Jts\ibgateway\1045`, auto-starts at logon). yfinance is the fallback when the gateway is down or for the scanner universe.
+- **IBKR's official remote MCP** (`api.ibkr.com/v1/api/mcp-public`) is **DCR-403-blocked** for generic MCP clients — IBKR only allowlists its certified connectors (Claude / ChatGPT / Grok). Keep `ibkr_remote` MCP entry **disabled**.
+- **Robinhood MCP works via Hermes Agent**; **IBKR MCP does not** (no generic-client path). IBKR is reached via the official gateway socket instead of MCP.
+- The community `interactive-brokers-mcp` npm package was **removed** (unreliable headless auth).
+- The local **paper broker** remains account truth for fills/risk; IBKR supplies live marks only.
 
 Do not leave stale `hermes mcp login ibkr_*` processes or `localhost:5000` Client Portal Java running in the background while parked.
 

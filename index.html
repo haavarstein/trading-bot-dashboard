@@ -1361,6 +1361,10 @@
 
     const DEFAULT_IMPROVEMENTS = [
       {
+        title: 'IBKR official gateway = primary market data',
+        detail: 'FMP dropped. Live holdings marks now come from the official IBKR Gateway (delayed, read-only) via ib_async, with yfinance as fallback. Note: IBKR\'s remote MCP (api.ibkr.com) is DCR-403-blocked for generic clients — Robinhood MCP works via Hermes, IBKR MCP does not; we use the official gateway socket instead.'
+      },
+      {
         title: 'GPT-5.6 Sol chart-vision senior',
         detail: 'OpenAI\u2019s flagship vision model now reads a real candlestick chart on every escalated trade — drawing support/resistance, marking entry & stop-loss zones, and giving a BUY/SELL/HOLD TA read (advisory third senior, logged in consensus).'
       },
@@ -1399,10 +1403,6 @@
       {
         title: 'NYSE 15-minute paper loop',
         detail: 'Cron runs scan → decide → fill → publish during regular hours so the public page keeps moving.'
-      },
-      {
-        title: 'IBKR MCP paused on purpose',
-        detail: 'Official IBKR remote auth is blocked for now; simulated paper continues until the personal account is active.'
       }
     ];
 
