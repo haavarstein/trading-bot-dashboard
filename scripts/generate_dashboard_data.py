@@ -194,7 +194,39 @@ def build_trade_reasoning(fills, orders, closed):
 
 
 
-def build_thinking(holdings, latest_decision, latest_candidate, snap, now, cfg):
+def _build_model_chips(row):
+    """Model tags for the thinking card (e.g. 'J Grok 4.3' 'HOLD CASH 60%').
+    Juniors prefixed J, seniors S, from the latest consensus row."""
+    if not row:
+        return []
+    chips = []
+    # order: juniors then seniors
+    order = [
+        ("junior1", "J"), ("junior2", "J"), ("junior3", "J"), ("junior4", "J"),
+        ("senior1", "S"), ("senior2", "S"),
+    ]
+    for key, prefix in order:
+        v = row.get(key) or {}
+        if not isinstance(v, dict):
+            continue
+        model = str(v.get("model") or "").strip()
+        if not model:
+            continue
+        action = str(v.get("action") or "?").upper()
+        symbol = str(v.get("symbol") or "").upper()
+        conf = v.get("confidence")
+        chips.append({
+            "prefix": prefix,
+            "model": model,
+            "action": action,
+            "symbol": symbol,
+            "confidence": int(conf) if isinstance(conf, (int, float)) else None,
+            "tone": "buy" if action == "BUY" else ("sell" if action == "SELL" else "hold"),
+        })
+    return chips
+
+
+def build_thinking(holdings, latest_decision, latest_candidate, snap, now, cfg, latest_consensus_row=None):
     """Farzad-style plain-English stance block."""
     held = [h for h in holdings if h.get("symbol")]
     syms = [h.get("symbol") for h in held]
@@ -310,6 +342,7 @@ def build_thinking(holdings, latest_decision, latest_candidate, snap, now, cfg):
         "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
         "action": act,
         "symbols_held": syms,
+        "model_chips": _build_model_chips(latest_consensus_row),
     }
 
 
@@ -476,9 +509,11 @@ def main():
 
     latest_candidate = candidates[0] if candidates else {}
     latest_decision = None
+    latest_consensus_row = None
     for row in reversed(today_consensus or consensus):
         if row.get("model1"):
             latest_decision = row.get("model1")
+            latest_consensus_row = row
             break
 
     # Activity feed
@@ -786,7 +821,7 @@ def main():
         if len(top_stop_losses) >= 5:
             break
 
-    thinking = build_thinking(holdings, latest_decision, latest_candidate, snap, now, cfg)
+    thinking = build_thinking(holdings, latest_decision, latest_candidate, snap, now, cfg, latest_consensus_row=latest_consensus_row)
     equity_curve = build_equity_curve(fills, snap, starting)
     stance = thinking.get("headline") or "Patient — waiting for a clean ranked setup."
     if latest_decision and latest_decision.get("thesis") and latest_decision.get("action") in ("BUY", "SELL"):

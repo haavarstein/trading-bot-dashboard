@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T15:51:12.385114+00:00",
+  "generated_at": "2026-08-13T15:52:36.879255+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
@@ -13,15 +13,15 @@
     "cash": 21.82,
     "closed_trades": 8,
     "win_rate_pct": 37.5,
-    "vs_spy_pct": 2.45,
-    "spy_return_pct": 0.84,
+    "vs_spy_pct": null,
+    "spy_return_pct": null,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-13T15:51:25.498511+00:00"
+    "updated_at": "2026-08-13T15:52:41.390282+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.84,
-    "price": 775.83,
+    "return_pct": null,
+    "price": null,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -266,7 +266,7 @@
         "plan": "stop 191.0 or target 207.0"
       }
     ],
-    "last_checked": "2026-08-13T15:51:12.385114+00:00",
+    "last_checked": "2026-08-13T15:52:36.879255+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "HOLD",
@@ -277,7 +277,56 @@
       "LRCX",
       "CVX"
     ],
-    "model_chips": []
+    "model_chips": [
+      {
+        "prefix": "J",
+        "model": "grok-4.3",
+        "action": "SELL",
+        "symbol": "UNH",
+        "confidence": 72,
+        "tone": "sell"
+      },
+      {
+        "prefix": "J",
+        "model": "claude-haiku-4-5",
+        "action": "BUY",
+        "symbol": "NVDA",
+        "confidence": 72,
+        "tone": "buy"
+      },
+      {
+        "prefix": "J",
+        "model": "deepseek-v4-flash",
+        "action": "SELL",
+        "symbol": "UNH",
+        "confidence": 78,
+        "tone": "sell"
+      },
+      {
+        "prefix": "J",
+        "model": "grok-build-0.1",
+        "action": "SELL",
+        "symbol": "UNH",
+        "confidence": 70,
+        "tone": "sell"
+      },
+      {
+        "prefix": "S",
+        "model": "grok-4.5",
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 62,
+        "tone": "hold"
+      },
+      {
+        "prefix": "S",
+        "model": "claude-sonnet-5",
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 65,
+        "tone": "hold"
+      }
+    ]
   },
   "activity": [
     {
@@ -4820,6 +4869,12 @@
         "equity": 1032.91,
         "cash": 21.82,
         "event": "mark"
+      },
+      {
+        "t": "2026-08-13T15:52:41.390282+00:00",
+        "equity": 1032.91,
+        "cash": 21.82,
+        "event": "mark"
       }
     ],
     "source": "local_paper_fills_and_marks"
@@ -4833,7 +4888,7 @@
       "bulk_provider": "yfinance",
       "ibkr_gateway": true,
       "ibkr_port": "4001",
-      "yfinance": true,
+      "yfinance": false,
       "quote_provider_env": "fmp",
       "cache_ttl_sec": 90.0
     },

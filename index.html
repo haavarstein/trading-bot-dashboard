@@ -514,6 +514,48 @@
       letter-spacing: -0.03em;
       color: var(--text);
     }
+    .think-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 4px;
+    }
+    .model-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      border: 1px solid var(--border);
+      background: var(--bg-soft, #f7f6f2);
+      border-radius: 999px;
+      padding: 5px 12px 5px 6px;
+      font-size: 12px;
+      line-height: 1;
+    }
+    .model-chip-badge {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 800;
+      color: #fff;
+      background: var(--blue, #2563eb);
+    }
+    .model-chip-name {
+      font-weight: 700;
+      color: var(--ink-soft);
+      white-space: nowrap;
+    }
+    .model-chip-vote {
+      font-variant-numeric: tabular-nums;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .model-chip-action.buy { color: var(--green); font-weight: 750; }
+    .model-chip-action.sell { color: var(--red); font-weight: 750; }
+    .model-chip-action.hold { color: var(--muted); font-weight: 750; }
     .think-h3 {
       margin: 18px 0 8px;
       font-size: 15px;
@@ -1186,6 +1228,8 @@
         </div>
 
         <h3 class="think-headline" id="think-headline">Loading stance…</h3>
+
+        <div class="think-chips" id="think-chips"></div>
 
         <div class="think-h3">In plain English</div>
         <p class="think-plain" id="think-plain">Loading…</p>
@@ -1877,6 +1921,16 @@
 
       setText('think-badge', th.badge || (d.stance ? 'Current stance' : 'Loading…'));
       setText('think-headline', th.headline || d.stance || 'No stance yet.');
+
+      // Model chips (J/S tags) from the latest consensus row.
+      const chips = th.model_chips || [];
+      setHtml('think-chips', chips.length ? chips.map(c => `
+        <span class="model-chip ${esc(c.tone)}">
+          <span class="model-chip-badge">${esc(c.prefix)}</span>
+          <span class="model-chip-name">${esc(c.model)}</span>
+          <span class="model-chip-vote"><span class="model-chip-action ${esc(c.tone)}">${esc(c.action)}</span> ${esc(c.symbol || '')}${typeof c.confidence === 'number' ? ' ' + c.confidence + '%' : ''}</span>
+        </span>
+      `).join('') : '');
       setText('think-plain', th.plain_english || d.stance || 'No plain-English stance yet.');
       setText('think-checked', `Last checked: ${formatWhen(th.last_checked || d.generated_at)}`);
       setText('think-cadence', th.cadence_note || 'Checked about every 15 minutes while the market is open');
