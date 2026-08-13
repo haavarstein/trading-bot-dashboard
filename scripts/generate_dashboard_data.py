@@ -203,7 +203,7 @@ def _build_model_chips(row):
     # order: juniors then seniors
     order = [
         ("junior1", "J"), ("junior2", "J"), ("junior3", "J"), ("junior4", "J"),
-        ("senior1", "S"), ("senior2", "S"),
+        ("senior1", "S"), ("senior2", "S"), ("senior3", "S"),
     ]
     for key, prefix in order:
         v = row.get(key) or {}

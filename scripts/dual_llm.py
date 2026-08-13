@@ -334,6 +334,12 @@ def call_xai_grok(model: str, prompt: str, effort: str | None = None) -> dict:
 def _anthropic_model_candidates(model: str) -> list[str]:
     name = (model or "").strip()
     aliases = {
+        "claude-opus-5": [
+            os.environ.get("ANTHROPIC_OPUS_MODEL_ID") or os.environ.get("ANTHROPIC_SENIOR_MODEL_ID"),
+            "claude-opus-5-20260713",
+            "claude-opus-5",
+            "claude-opus-4-1",
+        ],
         "claude-sonnet-5": [
             os.environ.get("ANTHROPIC_MODEL_ID") or os.environ.get("ANTHROPIC_SENIOR_MODEL_ID"),
             "claude-sonnet-4-5-20250929",
@@ -1007,7 +1013,9 @@ def run_junior_senior_consensus(
     junior_list = [m for m in junior_list if m]
     s1_name = cr.get("model_1") or cr.get("senior_model_1") or "grok-4.5"
     s2_name = cr.get("model_2") or cr.get("senior_model_2") or "claude-sonnet-5"
+    s3_name = cr.get("model_3") or cr.get("senior_model_3") or "claude-opus-5"
     effort = cr.get("model_1_effort") or cr.get("senior_model_1_effort") or "medium"
+    effort3 = cr.get("model_3_effort") or cr.get("senior_model_3_effort") or "medium"
     hold_floor = int(cr.get("junior_hold_min_confidence") or 55)
 
     if not junior_on:
@@ -1127,10 +1135,12 @@ def run_junior_senior_consensus(
         directive = f"{nom_action} {nom_symbol}"
         s1 = get_live_or_fallback(s1_name, broker, nom_market, cr, fallback_fn, effort=effort, directive=directive)
         s2 = get_live_or_fallback(s2_name, broker, nom_market, cr, fallback_fn, effort=None, directive=directive)
+        s3 = get_live_or_fallback(s3_name, broker, nom_market, cr, fallback_fn, effort=effort3, directive=directive)
     else:
         result["junior_nomination"] = None
         s1 = get_live_or_fallback(s1_name, broker, market, cr, fallback_fn, effort=effort)
         s2 = get_live_or_fallback(s2_name, broker, market, cr, fallback_fn, effort=None)
+        s3 = get_live_or_fallback(s3_name, broker, market, cr, fallback_fn, effort=effort3)
 
     # GPT-5.6 Sol chart-vision validator (optional third senior read on escalation).
     # Focus on the nominated symbol if present, else the top ranked candidate.
@@ -1154,12 +1164,14 @@ def run_junior_senior_consensus(
             except Exception as _se:
                 result["sol_chart"] = None
 
-    ok, reason = senior_check_fn(s1, s2)
+    ok, reason = senior_check_fn(s1, s2, s3)
     result.update({
         "decision1": s1,
         "decision2": s2,
+        "decision3": s3,
         "senior1": s1,
         "senior2": s2,
+        "senior3": s3,
         "tier": "senior_escalated",
         "junior_agreed": j_ok,
         "consensus": ok,

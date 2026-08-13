@@ -406,7 +406,21 @@ class DryRunAutoTrader:
             "timestamp": datetime.now(timezone.utc).isoformat(),
         }
 
-    def check_consensus(self, decision1: Dict, decision2: Dict) -> Tuple[bool, Optional[str]]:
+    def check_consensus(self, *decisions) -> Tuple[bool, Optional[str]]:
+        """Senior gate. Accepts 2 or 3 senior decisions.
+
+        - 2 decisions (legacy / junior-only HOLD path): BOTH must agree on
+          action (+ symbol for trades) — strict dual agreement.
+        - 3 decisions (3-senior desk: grok-4.5, sonnet-5, opus-5): a
+          2-of-3 MAJORITY on action+symbol is sufficient (slightly looser gate).
+        """
+        decisions = [d for d in decisions if d]
+        if not decisions:
+            return False, "No senior decisions provided"
+        if len(decisions) == 3:
+            return self._check_consensus_3(decisions)
+        # --- 2-decision (legacy) path ---
+        decision1, decision2 = decisions[0], decisions[1]
         a1 = str(decision1.get("action") or "").upper()
         a2 = str(decision2.get("action") or "").upper()
         if a1 != a2:
@@ -448,6 +462,56 @@ class DryRunAutoTrader:
                 except Exception:
                     pass
         return True, None
+
+    def _check_consensus_3(self, decisions) -> Tuple[bool, Optional[str]]:
+        """2-of-3 majority among three seniors (grok-4.5, sonnet-5, opus-5).
+
+        Any two seniors agreeing on action + symbol passes. HOLD+HOLD (any two
+        HOLD) = no trade. This is the standard extension of the dual gate.
+        """
+        min_confidence = self.config["consensus_rules"]["min_confidence"]
+        hold_floor = min(50, min_confidence)
+
+        # Count action votes
+        from collections import Counter
+        actions = Counter(str(d.get("action") or "").upper() for d in decisions)
+
+        # 2-of-3 HOLD => no trade
+        if actions["HOLD"] >= 2:
+            # require the agreeing HOLDs to have non-junk confidence
+            holds = [d for d in decisions if str(d.get("action") or "").upper() == "HOLD"]
+            for d in holds[:2]:
+                if int(d.get("confidence") or 0) < hold_floor:
+                    return False, f"HOLD confidence {d.get('confidence')}% < {hold_floor}%"
+            return True, None
+
+        # Find a trade action with >=2 agreeing seniors
+        for action in ("BUY", "SELL"):
+            if actions[action] < 2:
+                continue
+            voters = [d for d in decisions if str(d.get("action") or "").upper() == action]
+            # need >=2 on the SAME symbol
+            sym_counts = Counter(str(d.get("symbol") or "").upper() for d in voters)
+            sym, cnt = max(sym_counts.items(), key=lambda kv: kv[1])
+            if cnt >= 2:
+                # confidence floor on the agreeing pair
+                pair = [d for d in voters if str(d.get("symbol") or "").upper() == sym][:2]
+                for d in pair:
+                    if int(d.get("confidence") or 0) < min_confidence:
+                        return False, f"{action} {sym} confidence {d.get('confidence')}% < {min_confidence}%"
+                # BUY stop/target sanity across the pair
+                if action == "BUY":
+                    entry = float(pair[0].get("entry_price") or 0) or 0.0
+                    if entry:
+                        try:
+                            if abs(float(pair[0].get("stop_loss") or 0) - float(pair[1].get("stop_loss") or 0)) / entry > 0.05:
+                                return False, f"Stop loss mismatch: ${pair[0].get('stop_loss')} vs ${pair[1].get('stop_loss')}"
+                            if abs(float(pair[0].get("take_profit") or 0) - float(pair[1].get("take_profit") or 0)) / entry > 0.05:
+                                return False, f"Take profit mismatch: ${pair[0].get('take_profit')} vs ${pair[1].get('take_profit')}"
+                        except Exception:
+                            pass
+                return True, None
+        return False, "No 2-of-3 senior agreement"
 
     def validate_order(self, decision: Dict, broker_snapshot: Dict) -> Tuple[bool, Optional[str]]:
         if self.check_kill_switch():
@@ -715,9 +779,10 @@ class DryRunAutoTrader:
 
         model1_name = self.config["consensus_rules"]["model_1"]
         model2_name = self.config["consensus_rules"]["model_2"]
+        model3_name = self.config["consensus_rules"].get("model_3") or "claude-opus-5"
         effort = self.config.get("consensus_rules", {}).get("model_1_effort")
         effort_txt = f" (effort={effort})" if effort else ""
-        print(f"🤖 Requesting decisions from {model1_name}{effort_txt} and {model2_name}...")
+        print(f"🤖 Requesting decisions from {model1_name}{effort_txt}, {model2_name}, and {model3_name} (2-of-3)...")
 
         allowed = self.config.get("allowed_symbols", "AI_DECIDES")
         market_context: Dict[str, Dict] = {}
@@ -772,6 +837,8 @@ class DryRunAutoTrader:
             "model_1": cr.get("model_1", model1_name),
             "model_1_effort": cr.get("model_1_effort", effort),
             "model_2": cr.get("model_2", model2_name),
+            "model_3": cr.get("model_3", model3_name),
+            "model_3_effort": cr.get("model_3_effort", cr.get("model_1_effort") or "medium"),
             "min_confidence": cr.get("min_confidence", 70),
             "junior_hold_min_confidence": cr.get("junior_hold_min_confidence", 55),
             "borderline_confidence_band": cr.get("borderline_confidence_band", 5),
@@ -792,7 +859,7 @@ class DryRunAutoTrader:
         )
         print(
             f"  desk: juniors {rules['junior_model_1']}+{rules['junior_model_2']} → "
-            f"seniors {rules['model_1']}+{rules['model_2']} (escalate BUY/SELL/disagree/borderline)"
+            f"seniors {rules['model_1']}+{rules['model_2']}+{rules['model_3']} (2-of-3, escalate BUY/SELL/disagree/borderline)"
         )
 
         def _fallback(name, broker, market):
@@ -807,8 +874,10 @@ class DryRunAutoTrader:
         )
         decision1 = desk["decision1"]
         decision2 = desk["decision2"]
+        decision3 = desk.get("decision3") or decision2
         decision1.setdefault("timestamp", datetime.now(timezone.utc).isoformat())
         decision2.setdefault("timestamp", datetime.now(timezone.utc).isoformat())
+        decision3.setdefault("timestamp", datetime.now(timezone.utc).isoformat())
 
         j1, j2 = desk.get("junior1"), desk.get("junior2")
         j3 = desk.get("junior3")
@@ -833,6 +902,10 @@ class DryRunAutoTrader:
                 f"  senior {decision2.get('model')}: {decision2.get('action')} {decision2.get('symbol')} "
                 f"@ {decision2.get('confidence')}% [{decision2.get('source','?')}/{decision2.get('provider_model_id','')}]"
             )
+            print(
+                f"  senior {decision3.get('model')}: {decision3.get('action')} {decision3.get('symbol')} "
+                f"@ {decision3.get('confidence')}% [{decision3.get('source','?')}/{decision3.get('provider_model_id','')}]"
+            )
         else:
             print(
                 f"  final(junior_only) {decision1.get('action')} {decision1.get('symbol')} / "
@@ -854,9 +927,12 @@ class DryRunAutoTrader:
                 "junior2": (j2 or {}).get("cache_stats"),
                 "junior3": (j3 or {}).get("cache_stats"),
                 "senior2": (decision2 or {}).get("cache_stats"),
-            } if (j2 or j3 or decision2) else None,
+                "senior3": (decision3 or {}).get("cache_stats"),
+            } if (j2 or j3 or decision2 or decision3) else None,
             "senior1": desk.get("senior1"),
             "senior2": desk.get("senior2"),
+            "senior3": desk.get("senior3"),
+            "model3": decision3,
             "tier": desk.get("tier"),
             "escalate_reason": desk.get("escalate_reason"),
             "junior_agreed": desk.get("junior_agreed"),

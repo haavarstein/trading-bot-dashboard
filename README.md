@@ -54,7 +54,10 @@ Telegram alerts on **BUY/SELL fills only** (no HOLD spam) + dashboard link
 **Seniors (final gate when escalated)**
 - `model_1`: `grok-4.5` (`model_1_effort`: `medium`) via xAI
 - `model_2`: `claude-sonnet-5` via Anthropic
-- **`gpt-5.6-sol` (chart-vision validator):** on every escalated trade, OpenAI's flagship vision model reads a real candlestick chart (`chart_gen.py` → `mplfinance`) of the nominated/top candidate, draws support/resistance, marks entry & stop-loss zones, and returns a BUY/SELL/HOLD TA read. Wired as an **advisory third senior** — its read is logged in the consensus entry (`sol_chart`) but never blocks a valid dual-senior consensus. Direct OpenAI API (`OPENAI_API_KEY`); note `gpt-5.6-sol` only supports `temperature=1` and requires `max_completion_tokens` (not `max_tokens`).
+- `model_3`: `claude-opus-5` (`model_3_effort`: `medium`) via Anthropic
+- **Consensus is 2-of-3 majority:** any two seniors agreeing on action+symbol passes
+  (slightly looser than strict dual-agreement); HOLD is the safe default when they split.
+- **`gpt-5.6-sol` (chart-vision validator):** on every escalated trade, OpenAI's flagship vision model reads a real candlestick chart (`chart_gen.py` → `mplfinance`) of the nominated/top candidate, draws support/resistance, marks entry & stop-loss zones, and returns a BUY/SELL/HOLD TA read. Wired as an **advisory fourth senior** — its read is logged in the consensus entry (`sol_chart`) but never blocks a valid 2-of-3 senior consensus. Direct OpenAI API (`OPENAI_API_KEY`); note `gpt-5.6-sol` only supports `temperature=1` and requires `max_completion_tokens` (not `max_tokens`).
 
 **Influencer news feed (social signal)**
 - 15 stock-influencer X handles are pulled every 15 min by `scripts/influencer_feed.py` via **Scrape Creators** (`/v1/twitter/user-tweets`, `SCRAPECREATORS_API_KEY`).
