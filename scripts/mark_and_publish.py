@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Lightweight NYSE mark-and-publish job (5m cadence).
+Lightweight NYSE mark-and-publish job (10m cadence).
 
 - Market-hours gate only (unless --force)
 - Quotes open holdings + SPY in ONE efficient bulk (IBKR gateway; yfinance fallback)
@@ -111,7 +111,8 @@ def main() -> int:
 
     # Write this cycle's SPY mark BEFORE snapshot(skip_mark=True) so it reuses
     # today's prefetched SPY (not last cycle's / Friday's print). snapshot() only
-    # falls back to a live quote when spy_last is missing.
+    # falls back to a live quote when spy_last is missing, or when spy_marked_at
+    # is missing / older than 30m.
     spy_px = prefetched.get("SPY")
     if spy_px is not None:
         from datetime import timezone as _tz
