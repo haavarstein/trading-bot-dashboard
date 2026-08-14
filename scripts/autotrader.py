@@ -97,10 +97,10 @@ class DryRunAutoTrader:
             f.write(json.dumps(entry) + "\n")
 
     def get_broker_snapshot(self) -> Dict:
-        snap = self.broker.snapshot()
-        # Compatibility keys used by older validators
-        snap["buying_power"] = snap["cash"]
-        return snap
+        # snapshot() already sets buying_power = settled_cash and cash = total.
+        # Do NOT overwrite buying_power with total cash — that would let BUY
+        # sizing spend unsettled proceeds.
+        return self.broker.snapshot()
 
     def get_market_data(self, symbol: str, candidate: Optional[Dict] = None) -> Dict:
         price = quote(symbol)
@@ -304,7 +304,9 @@ class DryRunAutoTrader:
                 for sym, pos in positions.items():
                     # Cash-account same-day rule: never rotate out a name opened
                     # today ET (same-day discretionary exit is hard-blocked).
-                    if self._opened_today_et(pos):
+                    # Fail-closed: a missing/bad opened_at counts as today.
+                    opened = pos.get("opened_at")
+                    if not opened or self._opened_today_et(pos):
                         continue
                     metric = float(pos.get("open_pnl_pct") or 0.0)
                     if weakest_metric is None or metric < weakest_metric:
@@ -713,13 +715,42 @@ class DryRunAutoTrader:
         return dt.astimezone(_ET).date() == datetime.now(_ET).date()
 
     def _same_day_exit_blocked(self, pos: Dict, reason_code: str) -> bool:
-        """Cash-account rule: block a same-day exit unless reason is allowed (stop_loss)."""
+        """Cash-account rule: block a same-day exit unless it's a genuine stop-loss.
+
+        - Discretionary exits (rotation / desk SELL / take-profit) on a position
+          opened today ET are blocked. Missing/bad `opened_at` fails CLOSED
+          (treated as today) for discretionary SELLs — never assume prior-day.
+        - `stop_loss` is allowed ONLY when the mark is at/below the stored stop.
+          A SELL tagged `stop_loss` with price above the stop is really a
+          discretionary exit and is blocked same-day (prevents the desk tagging
+          a same-day rotation as stop_loss to bypass the block).
+        """
         rc = str(reason_code or "").lower()
         if not self._same_day_exits_enabled():
             return False
+
+        def _opened_today() -> bool:
+            opened = pos.get("opened_at")
+            if not opened:
+                return True  # fail-closed: missing opened_at counts as today
+            return self._opened_today_et(pos)
+
+        if rc == "stop_loss":
+            # Only a real stop hit (mark <= stored stop) qualifies. Otherwise it
+            # is a discretionary SELL mislabeled as stop_loss.
+            try:
+                px = float(pos.get("current_price") or pos.get("last_price") or 0)
+                stop = pos.get("stop_loss")
+                if stop is not None and px and px <= float(stop):
+                    return False  # genuine stop-loss, allowed same-day
+            except Exception:
+                pass
+            return _opened_today()
+
         if rc in self._same_day_allowed_reasons():
-            return False
-        return self._opened_today_et(pos)
+            return False  # other configured allow reasons (none by default)
+
+        return _opened_today()
 
     def check_deterministic_exit(self, broker_snapshot: Dict) -> Dict | None:
         """

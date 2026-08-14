@@ -202,5 +202,117 @@ class TestUnsettledProceedsLock(unittest.TestCase):
             self.assertEqual(snap["buying_power"], snap["cash"])
 
 
+class TestTicket14CashLedgerDebit(unittest.TestCase):
+    """buy() must debit the TOTAL cash ledger, not settled cash (no evaporation)."""
+
+    def test_buy_debits_total_cash_keeps_unsettled(self):
+        with tempfile.TemporaryDirectory() as td:
+            b = PaperBroker(starting_cash=1000.0, path=Path(td) / "portfolio.json",
+                            cash_account=True, unsettled_proceeds_until="next_session_open")
+            b.buy("MSFT", 0.4, 500.0, stop_loss=480.0, take_profit=520.0)  # cost 200
+            b.sell("MSFT", price=505.0, reason="rotation")  # proceeds 202
+            snap = b.snapshot()
+            self.assertEqual(snap["cash"], 1002.0)
+            self.assertEqual(snap["unsettled_cash"], 202.0)
+            self.assertEqual(snap["settled_cash"], 800.0)
+            old_cash = b.state["cash"]
+            old_unsettled = b.state["unsettled_cash"]
+            # a BUY that fits leftover SETTLED cash (e.g. $100) must debit TOTAL cash
+            b.buy("AAPL", 0.25, 400.0, stop_loss=385.0, take_profit=430.0)  # cost 100
+            self.assertEqual(b.state["cash"], round(old_cash - 100.0, 2))
+            # unsettled cash unchanged (buy consumed settled, not unsettled)
+            self.assertEqual(b.state["unsettled_cash"], old_unsettled)
+
+
+class TestTicket15BuyingPower(unittest.TestCase):
+    """get_broker_snapshot must not clobber buying_power with total cash."""
+
+    def test_get_broker_snapshot_keeps_settled_buying_power(self):
+        with tempfile.TemporaryDirectory() as td:
+            trader = _make_trader(Path(td))
+            # build a SELL then check snapshot buying_power stays settled
+            trader.broker.buy("MSFT", 0.4, 500.0, stop_loss=480.0, take_profit=520.0)
+            trader.broker.sell("MSFT", price=505.0, reason="rotation")
+            snap = trader.get_broker_snapshot()
+            self.assertGreater(snap["unsettled_cash"], 0)
+            self.assertEqual(snap["buying_power"], snap["settled_cash"])
+            self.assertLess(snap["buying_power"], snap["cash"])
+
+
+class TestTicket16DeskStopLossBypass(unittest.TestCase):
+    """A desk SELL tagged stop_loss must not bypass the same-day block when mark>stop."""
+
+    def _decision(self, reason_code, symbol="MSFT", px=495.0):
+        return {"action": "SELL", "symbol": symbol, "entry_price": px,
+                "qty": 0.4, "reason_code": reason_code, "confidence": 78}
+
+    def _same_day_open(self, px=495.0):
+        return {
+            "cash": 1000.0, "buying_power": 1000.0,
+            "positions": [{
+                "symbol": "MSFT", "qty": 0.4, "avg_cost": 495.0,
+                "current_price": px, "stop_loss": 480.0, "take_profit": 520.0,
+                "opened_at": _opened(days_ago=0),  # today ET
+            }],
+        }
+
+    def test_desk_stop_loss_above_stop_blocked_same_day(self):
+        # mark 495 > stored stop 480 -> NOT a real stop hit -> same-day block
+        with tempfile.TemporaryDirectory() as td:
+            trader = _make_trader(Path(td))
+            ok, reason = trader.validate_order(
+                self._decision("stop_loss"), self._same_day_open(px=495.0))
+            self.assertFalse(ok)
+            self.assertEqual(reason, "SAME_DAY_EXIT_BLOCKED")
+
+    def test_desk_stop_loss_at_below_stop_allowed_same_day(self):
+        # mark 475 <= stop 480 -> genuine stop hit -> allowed
+        with tempfile.TemporaryDirectory() as td:
+            trader = _make_trader(Path(td))
+            ok, reason = trader.validate_order(
+                self._decision("stop_loss", px=475.0), self._same_day_open(px=475.0))
+            self.assertTrue(ok, reason)
+
+    def test_missing_opened_at_fails_closed_for_discretionary_sell(self):
+        # no opened_at -> treat as today for a discretionary SELL -> blocked
+        with tempfile.TemporaryDirectory() as td:
+            trader = _make_trader(Path(td))
+            snap = {
+                "cash": 1000.0, "buying_power": 1000.0,
+                "positions": [{
+                    "symbol": "MSFT", "qty": 0.4, "avg_cost": 495.0,
+                    "current_price": 495.0, "stop_loss": 480.0, "take_profit": 520.0,
+                    # no opened_at key
+                }],
+            }
+            ok, reason = trader.validate_order(self._decision("rotation"), snap)
+            self.assertFalse(ok)
+            self.assertEqual(reason, "SAME_DAY_EXIT_BLOCKED")
+
+    def test_block_same_day_exits_false_allows(self):
+        # config off-switch -> same-day rotation SELL is allowed
+        with tempfile.TemporaryDirectory() as td:
+            trader = _make_trader(Path(td),
+                                  execution_rules={"block_same_day_exits": False})
+            snap = self._same_day_open(px=495.0)
+            ok, reason = trader.validate_order(self._decision("rotation"), snap)
+            self.assertTrue(ok, reason)
+
+
+class TestNextSessionOpenRelease(unittest.TestCase):
+    """Friday 16:00 ET sell -> proceeds release Monday 09:30 ET (weekend skipped)."""
+
+    def test_friday_sell_releases_monday_0930(self):
+        # choose a known Friday 2026-08-14 16:00 ET
+        friday = datetime(2026, 8, 14, 16, 0, tzinfo=_ET)
+        with tempfile.TemporaryDirectory() as td:
+            b = PaperBroker(starting_cash=1000.0, path=Path(td) / "portfolio.json",
+                            cash_account=True, unsettled_proceeds_until="next_session_open")
+            release = b._next_session_open_et(friday)
+            self.assertEqual(release.date().isoformat(), "2026-08-17")  # Monday
+            self.assertEqual((release.hour, release.minute), (9, 30))
+            self.assertIn(release.weekday(), (0, 1, 2, 3, 4))  # weekday
+
+
 if __name__ == "__main__":
     unittest.main()
