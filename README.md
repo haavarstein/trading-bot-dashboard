@@ -60,7 +60,7 @@ Telegram alerts on **BUY/SELL fills only** (no HOLD spam) + dashboard link
 - **`gpt-5.6-sol` (chart-vision validator):** on every escalated trade, OpenAI's flagship vision model reads a real candlestick chart (`chart_gen.py` → `mplfinance`) of the nominated/top candidate, draws support/resistance, marks entry & stop-loss zones, and returns a BUY/SELL/HOLD TA read. Wired as an **advisory fourth senior** — its read is logged in the consensus entry (`sol_chart`) but never blocks a valid 2-of-3 senior consensus. Direct OpenAI API (`OPENAI_API_KEY`); note `gpt-5.6-sol` only supports `temperature=1` and requires `max_completion_tokens` (not `max_tokens`).
 
 **Influencer news feed (social signal)**
-- 15 stock-influencer X handles are pulled every 15 min by `scripts/influencer_feed.py` via **Scrape Creators** (`/v1/twitter/user-tweets`, `SCRAPECREATORS_API_KEY`).
+- 28 stock-influencer X handles are pulled by `scripts/influencer_feed.py` via **Scrape Creators** (`/v1/twitter/user-tweets`, `SCRAPECREATORS_API_KEY`), refreshed every 60 min.
 - The `SOCIAL_SIGNAL` block is injected into **both junior and senior** prompts as **weak corroborating evidence**.
 - It only surfaces influencer mentions of tickers already in the candidate/held universe — the desk never sees symbols it can't trade, and social chatter can't override rank/catalyst scores or single-handedly flip a HOLD→BUY.
 - Handles configured in `autonomy_config.json → influencers.handles`.
@@ -70,9 +70,9 @@ Telegram alerts on **BUY/SELL fills only** (no HOLD spam) + dashboard link
 - Escalate to seniors on **any live BUY/SELL intent**, split, or when junior quorum is missed
 - 3-of-4 majority HOLD finalizes cheaply without seniors
 - Agreed junior **HOLD** can finalize without seniors (saves tokens)
-- Senior dual agreement remains the final trade gate; senior disagreement blocks execution
+- Senior **2-of-3 live majority** is the final trade gate; the winner is executed (never a dissent, never a fallback vote). Split on HOLD = safe no-trade.
 - `min_confidence`: 70 (BUY/SELL); junior HOLD floor 55
-- Dual agreement required on **BUY/SELL** (same symbol); pure **HOLD+HOLD agrees even if watch symbols differ**
+- Senior BUY/SELL requires the same action+symbol across the majority; HOLD is the safe default on a split
 - Rotation SELLs allowed when book is full; stop/target still primary exits
 - Missing keys / failed calls → tagged deterministic `source=fallback`
 
@@ -147,7 +147,7 @@ trading-bot/
 │   ├── alpha_radar.py            # candidate scanner
 │   ├── autotrader.py             # decisions + paper execution
 │   ├── dual_llm.py               # live Grok/Claude/Sol desks + fallback
-│   ├── influencer_feed.py        # pull X feeds (Scrape Creators) every 15 min
+│   ├── influencer_feed.py        # pull X feeds (Scrape Creators) every 60 min
 │   ├── chart_gen.py              # candlestick + S/R charts for Sol validator
 │   ├── paper_broker.py           # local account truth
 │   ├── generate_dashboard_data.py
@@ -258,7 +258,7 @@ Each session summary is meant to be readable on mobile and includes:
 | `data/consensus_log.jsonl` | Agreement / validation outcomes |
 | `data/portfolio.json` | Cash + open positions state |
 | `data/candidates.json` | Latest Alpha Radar ranking |
-| `data/influencer_feed.json` | Cached X tweets per influencer handle (refresh every 15 min) |
+| `data/influencer_feed.json` | Cached X tweets per influencer handle (refresh every 60 min) |
 | `data/charts/<SYMBOL>.png` | Candlestick charts rendered for the GPT-5.6 Sol validator |
 | `data/consensus_log.jsonl` → `sol_chart` | GPT-5.6 Sol's TA read: action, S/R levels, entry/stop, chart_read |
 

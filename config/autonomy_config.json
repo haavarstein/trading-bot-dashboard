@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "mode": "PAPER_TRADING",
   "enabled": true,
-  "comment_mode": "SIMULATED_PAPER = local paper sim with real market data via yfinance. No IBKR MCP required until personal account is active.",
+  "comment_mode": "SIMULATED_PAPER = local paper sim with real market data via IBKR official Gateway (holdings marks) + yfinance (scanner/fallback). No IBKR MCP required; FMP removed.",
   "account": {
     "broker": "SIMULATED",
     "account_type": "PAPER",
@@ -92,7 +92,7 @@
     "escalate_on_borderline_confidence": true,
     "log_all_disagreements": true,
     "max_candidates_to_llm": 8,
-    "comment": "4 independent juniors (grok-4.3, claude-haiku-4-5, deepseek-v4-flash via Nous, grok-build-0.1) screen first. 3-of-4 majority HOLD can finalize without seniors. Escalate to seniors (grok-4.5 + claude-sonnet-5) on any live trade intent, split, or no quorum. Senior dual agreement is the final gate.",
+    "comment": "4 independent juniors (grok-4.3, claude-haiku-4-5, deepseek-v4-flash via Nous, grok-build-0.1) screen first. 3-of-4 majority HOLD can finalize without seniors. Escalate to seniors (grok-4.5, claude-sonnet-5, claude-opus-5) on any live trade intent, split, or no quorum. Senior 2-of-3 live majority is the final gate; winner is executed. Sol (gpt-5.6-sol) is advisory only, never blocks.",
     "junior_model_3": "deepseek-v4-flash",
     "junior_model_3_enabled": true,
     "junior_models": [
@@ -145,9 +145,9 @@
     "comment": "Rotation allowed for better ranked setups. Min hold reduces 15m churn. Stop/target still primary exits."
   },
   "market_data": {
-    "provider": "fmp",
+    "provider": "ibkr",
     "fallback": "yfinance",
-    "comment": "FMP primary quotes when FMP_API_KEY set in local .env; yfinance fallback."
+    "comment": "IBKR official Gateway primary for holdings/portfolio marks (delayed, read-only, :4001 via ib_async); yfinance for scanner/bulk + fallback. FMP removed."
   },
   "influencers": {
     "enabled": true,

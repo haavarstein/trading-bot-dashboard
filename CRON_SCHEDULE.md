@@ -1,5 +1,9 @@
 # Trading Bot - Hermes Cron Job Schedule
-# This file documents the cron jobs for the auto-trader
+# SUPERSEDED — see README.md → Automation (Hermes cron). Live jobs:
+#   nyse-paper-session-15m → scripts/run_paper_session.py
+#   nyse-mark-publish-5m   → scripts/mark_and_publish.py
+#   nyse-open-close-notify → NYSE open/close Telegram pings
+# Session gating lives in the runner code (09:30–16:00 America/New_York).
 
 ## Schedule Overview:
 
