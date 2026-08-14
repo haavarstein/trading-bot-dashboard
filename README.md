@@ -212,18 +212,19 @@ python -m unittest discover -s tests -p "test_*.py" -v
 
 ## Automation (Hermes cron)
 
-Active pattern:
+Active jobs (verify with `hermes cronjob list`):
 
-- **Name:** `nyse-paper-session-15m` (scan + dual desk + trade)
-- **Name:** `nyse-mark-publish-5m` (marks only + dashboard push)
-  - Schedule: `*/5 9-15 * * 1-5` America/New_York window via Hermes cron
+- **`nyse-paper-session-15m`** — scan + desk + paper fills + dashboard push
+  - Runner: `scripts/run_paper_session.py` · schedule `*/15 10-17 * * 1-5`
+  - Session gate enforced in the runner code (`09:30–16:00 America/New_York`);
+    off-hours ticks print `SKIP` and open no risk.
+- **`nyse-mark-publish-10m`** — holdings/SPY marks only + dashboard push
+  - Runner: `scripts/mark_and_publish.py` · schedule `*/10 9-15 * * 1-5`
   - Quotes: **IBKR official gateway** for holdings+SPY (delayed), yfinance fallback
-- **Schedule:** `*/15 9-15 * * 1-5` (cron window)
-- **Runner:** Hermes script wrapper → `scripts/run_paper_session.py`
-- **Session gate:** code enforces true NYSE regular hours `09:30–16:00 ET`
-- **Delivery:** Telegram fill alerts only — one message per BUY/SELL paper fill (never HOLD) + API credit/quota alerts. Weekly readiness report is a separate Saturday cron (see below).
-
-Off-hours ticks should print `SKIP ...` and not open new risk.
+- **`nyse-open-close-notify`** — NYSE open/close Telegram pings
+  - Schedule `*/5 10-19 * * 1-5` (local time; DST-safe)
+- **`trading-weekly-readiness`** — go-live readiness report to Telegram
+  - Runner: `scripts/weekly_readiness.py` · schedule `0 11 * * 6` (Saturday)
 
 Useful commands:
 

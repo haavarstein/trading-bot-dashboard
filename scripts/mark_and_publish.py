@@ -108,9 +108,10 @@ def main() -> int:
     }
 
     marks = broker.mark_to_market(symbols=held, prefetched=prefetched)
-    snap = broker.snapshot(skip_mark=True)  # already marked above; avoid double-quote
 
-    # optional: store spy mark on state for generator
+    # Write this cycle's SPY mark BEFORE snapshot(skip_mark=True) so it reuses
+    # today's prefetched SPY (not last cycle's / Friday's print). snapshot() only
+    # falls back to a live quote when spy_last is missing.
     spy_px = prefetched.get("SPY")
     if spy_px is not None:
         from datetime import timezone as _tz
@@ -118,6 +119,8 @@ def main() -> int:
         state["spy_last"] = float(spy_px)
         state["spy_marked_at"] = datetime.now(_tz.utc).isoformat()
         broker._save()
+
+    snap = broker.snapshot(skip_mark=True)  # already marked + SPY prefetched; avoid double-quote
 
     gen = run([sys.executable, str(SCRIPTS / "generate_dashboard_data.py")], timeout=180)
     if gen.returncode != 0:

@@ -35,6 +35,12 @@ def utc_now() -> str:
     return datetime.now(timezone.utc).isoformat()
 
 
+# Max age (seconds) for a cached SPY mark before it's treated as stale and
+# re-quoted. Mark cadence is 10m; 30m headroom avoids re-quoting every cycle
+# while still discarding cross-session/Friday prints.
+SPY_MARK_MAX_AGE = 1800
+
+
 def _read_jsonl(path: Path) -> list[dict]:
     if not path.exists():
         return []
@@ -239,14 +245,24 @@ class PaperBroker:
         total_pnl = round(equity - starting, 2)
         total_return_pct = round((equity / starting - 1.0) * 100, 2) if starting else 0.0
 
-        # SPY benchmark. Prefer a cached mark (mark_and_publish sets spy_last via
-        # prefetch); only hit the quote source when skip_mark (already-marked) and
-        # no cached value exists, or when re-marking.
+        # SPY benchmark. Prefer a cached mark (mark_and_publish sets spy_last +
+        # spy_marked_at via prefetch); only hit the quote source when skip_mark
+        # (already-marked) and no fresh cached value exists, or when re-marking.
         spy_now = self.state.get("spy_last")
-        if spy_now is None or not skip_mark:
+        marked_at = self.state.get("spy_marked_at")
+        spy_fresh = False
+        if marked_at:
+            try:
+                mt = datetime.fromisoformat(marked_at.replace("Z", "+00:00"))
+                spy_fresh = (datetime.now(timezone.utc) - mt).total_seconds() <= SPY_MARK_MAX_AGE
+            except Exception:
+                spy_fresh = False
+        # Ignore a stale spy_last (missing timestamp or older than the mark cadence).
+        if spy_now is None or not skip_mark or not spy_fresh:
             spy_now = quote("SPY")
             if spy_now is not None:
                 self.state["spy_last"] = float(spy_now)
+                self.state["spy_marked_at"] = utc_now()
         spy_start = self.state.get("benchmark", {}).get("start_price")
         spy_return_pct = None
         vs_spy_pct = None

@@ -11,13 +11,14 @@
 - **Session gate:** enforced in the runner code (`09:30–16:00 America/New_York`),
   not by the cron text — off-hours ticks print `SKIP` and open no risk.
 
-### nyse-mark-publish-5m
+### nyse-mark-publish-10m
 - **Runner:** `scripts/mark_and_publish.py` (IBKR holdings/SPY marks + dashboard push)
 - **Schedule:** `*/10 9-15 * * 1-5` (America/New_York window)
 - **Quotes:** IBKR official gateway (delayed) primary, yfinance fallback.
 
 ### nyse-open-close-notify
 - **Runner:** NYSE open/close Telegram pings (computed in local time).
+- **Schedule:** `*/5 10-19 * * 1-5` (DST-safe).
 
 ### trading-weekly-readiness
 - **Runner:** `scripts/weekly_readiness.py` — go-live readiness report to Telegram.

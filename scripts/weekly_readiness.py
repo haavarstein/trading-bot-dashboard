@@ -60,10 +60,9 @@ def _equity_curve():
 
 
 def _max_drawdown(vals):
-    # Empty curve must NOT count as a pass: return a sentinel that fails the
-    # drawdown gate rather than 0.0.
+    # Empty curve → None (missing, not 0.0): must NOT count as a pass.
     if not vals:
-        return float("inf"), ""
+        return None, ""
     peak = vals[0][1]
     mdd, mdd_at = 0.0, ""
     for ts, v in vals:
@@ -127,7 +126,7 @@ def build_report():
         "days": span_days >= GO_LIVE["min_days"],
         "win_rate": wr >= GO_LIVE["win_rate_min"],
         "profit_factor": pf >= GO_LIVE["profit_factor_min"],
-        "drawdown": mdd <= GO_LIVE["max_drawdown_max_pct"],
+        "drawdown": mdd is not None and mdd <= GO_LIVE["max_drawdown_max_pct"],
         "stable_bot": (DATA / ".BOT_FROZEN").exists(),
     }
     passed = [k for k, v in checks.items() if v]
@@ -146,7 +145,7 @@ def build_report():
             "net_realized": round(net, 2),
             "avg_win": round(avg_win, 2),
             "avg_loss": round(avg_loss, 2),
-            "max_drawdown_pct": round(mdd, 2),
+            "max_drawdown_pct": round(mdd, 2) if mdd is not None else None,
             "total_return_pct": total_ret,
             "vs_spy_pct": vs_spy,
             "trading_days": span_days,
@@ -157,11 +156,11 @@ def build_report():
 
 
 def _pct(v):
-    """Format a percent value; return 'n/a' when missing/absent (not 'None%')."""
+    """Format a percent value as 'X.XX%'; return 'n/a' (no '%') when missing/absent."""
     if v is None:
         return "n/a"
     try:
-        return f"{float(v):.2f}"
+        return f"{float(v):.2f}%"
     except Exception:
         return "n/a"
 
@@ -169,7 +168,7 @@ def _pct(v):
 def format_text(r):
     m = r["metrics"]
     c = r["checks"]
-    mdd = "n/a" if m["max_drawdown_pct"] == float("inf") else _pct(m["max_drawdown_pct"])
+    mdd = "n/a" if m["max_drawdown_pct"] is None else _pct(m["max_drawdown_pct"])
     lines = []
     lines.append("📊 *TRADING READINESS REPORT*")
     lines.append(f"Verdict: **{'✅ READY' if r['verdict']=='READY' else '🔴 NOT READY'}** ({r['checks_passed']} gates passed)")
@@ -177,12 +176,12 @@ def format_text(r):
     lines.append(f"· Trades: {m['closed_trades']} (need {r['go_live_bar']['min_trades']}) {'✅' if c['trades'] else '❌'}")
     lines.append(f"· Win rate: {m['win_rate']}% (need {r['go_live_bar']['win_rate_min']}%) {'✅' if c['win_rate'] else '❌'}")
     lines.append(f"· Profit factor: {m['profit_factor']} (need {r['go_live_bar']['profit_factor_min']}) {'✅' if c['profit_factor'] else '❌'}")
-    lines.append(f"· Max drawdown: {mdd}% (cap {r['go_live_bar']['max_drawdown_max_pct']}%) {'✅' if c['drawdown'] else '❌'}")
+    lines.append(f"· Max drawdown: {mdd} (cap {r['go_live_bar']['max_drawdown_max_pct']}%) {'✅' if c['drawdown'] else '❌'}")
     lines.append(f"· Trading days: {m['trading_days']} (need {r['go_live_bar']['min_days']}) {'✅' if c['days'] else '❌'}")
     lines.append(f"· Bot stable/frozen: {'✅' if c['stable_bot'] else '❌'} (create data/.BOT_FROZEN once no more logic changes)")
     lines.append("")
     lines.append(f"Net realized: ${m['net_realized']} | avg win ${m['avg_win']} / avg loss ${m['avg_loss']}")
-    lines.append(f"Total return: {_pct(m['total_return_pct'])}% | vs SPY: {_pct(m['vs_spy_pct'])}%")
+    lines.append(f"Total return: {_pct(m['total_return_pct'])} | vs SPY: {_pct(m['vs_spy_pct'])}")
     lines.append(f"Fills logged: {m['fills_logged']} | generated {r['generated_at'][:16]}Z")
     if r["verdict"] != "READY":
         missing = [k for k, v in c.items() if not v]
