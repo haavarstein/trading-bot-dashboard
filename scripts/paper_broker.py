@@ -408,7 +408,10 @@ class PaperBroker:
                 "updated_at": utc_now(),
             }
 
-        self.state["cash"] = round(cash - cost, 2)
+        # Debit the TOTAL cash ledger by cost (cash holds the full balance incl.
+        # unsettled proceeds). unsettled_cash is untouched — the buy consumed
+        # settled cash, so settled = cash - unsettled falls by exactly cost.
+        self.state["cash"] = round(float(self.state["cash"]) - cost, 2)
         self.state.setdefault("stats", {})
         self.state["stats"]["buys"] = int(self.state["stats"].get("buys") or 0) + 1
 
