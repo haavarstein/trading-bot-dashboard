@@ -6,11 +6,13 @@
   "account": {
     "broker": "SIMULATED",
     "account_type": "PAPER",
+    "cash_account": true,
+    "margin_enabled": false,
     "account_id": "SIM_PAPER_LOCAL",
     "username": "",
     "starting_capital": 1000,
     "max_capital_at_risk": 1000,
-    "comment": "Local simulated paper account until personal IBKR paper is approved/active. No live broker connection."
+    "comment": "Local simulated paper account until personal IBKR paper is approved/active. No live broker connection. Cash account, margin OFF, under $25k: same-day discretionary exits blocked; only stop-loss may exit same-day; sale proceeds settle next session open."
   },
   "position_limits": {
     "max_positions": 5,
@@ -143,7 +145,10 @@
     "rotation_min_score": 70,
     "rotation_min_hold_minutes": 45,
     "rotation_require_open_winner": false,
-    "comment": "Rotation allowed for better ranked setups. Min hold reduces 15m churn. Stop/target still primary exits."
+    "block_same_day_exits": true,
+    "same_day_exit_allow": ["stop_loss"],
+    "unsettled_proceeds_until": "next_session_open",
+    "comment": "Rotation allowed for better ranked setups. Min hold reduces 15m churn. Stop/target still primary exits. CASH ACCOUNT (under $25k, margin off): same-day discretionary exits (rotation / desk SELL / take-profit) are hard-blocked; only stop_loss may exit same-day (opened_at ET calendar date). Sale proceeds are not buying power until the next 09:30 ET session open."
   },
   "market_data": {
     "provider": "ibkr",

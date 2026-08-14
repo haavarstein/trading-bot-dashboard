@@ -11,9 +11,12 @@ from __future__ import annotations
 import json
 import math
 from copy import deepcopy
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from typing import Any
+from zoneinfo import ZoneInfo
+
+_ET = ZoneInfo("America/New_York")
 
 try:
     import market_data
@@ -90,9 +93,12 @@ def quote(symbol: str) -> float | None:
 
 
 class PaperBroker:
-    def __init__(self, starting_cash: float = 1000.0, path: Path = PORTFOLIO_PATH):
+    def __init__(self, starting_cash: float = 1000.0, path: Path = PORTFOLIO_PATH,
+                 cash_account: bool = True, unsettled_proceeds_until: str = "next_session_open"):
         self.path = path
         self.starting_cash = float(starting_cash)
+        self.cash_account = bool(cash_account)
+        self.unsettled_proceeds_until = unsettled_proceeds_until
         self.state = self._load_or_init()
 
     def _default_state(self) -> dict[str, Any]:
@@ -105,6 +111,8 @@ class PaperBroker:
             "updated_at": now,
             "starting_cash": self.starting_cash,
             "cash": self.starting_cash,
+            "unsettled_cash": 0.0,
+            "unsettled_release_at": None,
             "realized_pnl": 0.0,
             "benchmark": {
                 "symbol": "SPY",
@@ -152,6 +160,42 @@ class PaperBroker:
         self.path.parent.mkdir(parents=True, exist_ok=True)
         self.path.write_text(json.dumps(state, indent=2), encoding="utf-8")
         self.state = state
+
+    def _next_session_open_et(self, now=None) -> datetime:
+        """Next NYSE regular-session open (09:30 ET), strictly after `now`."""
+        now = now or datetime.now(_ET)
+        d = now.replace(hour=9, minute=30, second=0, microsecond=0)
+        if d <= now:
+            d = d + timedelta(days=1)
+        while d.weekday() >= 5:  # skip Sat/Sun
+            d = d + timedelta(days=1)
+        return d
+
+    def _release_unsettled(self) -> None:
+        """If past the release time, proceeds become settled (usable as buying power).
+
+        Model: `cash` holds the full balance (incl. unsettled proceeds); when the
+        release time arrives, we clear the unsettled marker so `settled_cash()`
+        returns the full amount again."""
+        if not self.cash_account:
+            return
+        release_at = self.state.get("unsettled_release_at")
+        if not release_at:
+            return
+        try:
+            release_dt = datetime.fromisoformat(str(release_at).replace("Z", "+00:00"))
+            if datetime.now(_ET) >= release_dt.astimezone(_ET):
+                self.state["unsettled_cash"] = 0.0
+                self.state["unsettled_release_at"] = None
+        except Exception:
+            pass
+
+    def settled_cash(self) -> float:
+        """Cash that is settled and usable as buying power (total minus unsettled)."""
+        if not self.cash_account:
+            return float(self.state.get("cash") or 0.0)
+        return round(float(self.state.get("cash") or 0.0)
+                     - float(self.state.get("unsettled_cash") or 0.0), 2)
 
     def mark_to_market(
         self,
@@ -238,6 +282,7 @@ class PaperBroker:
                 }
             )
 
+        self._release_unsettled()
         cash = float(self.state["cash"])
         equity = round(cash + market_value, 2)
         starting = float(self.state.get("starting_cash") or self.starting_cash)
@@ -277,7 +322,9 @@ class PaperBroker:
         return {
             "account_id": "SIM_PAPER_LOCAL",
             "mode": "SIMULATED_PAPER",
-            "buying_power": round(cash, 2),
+            "buying_power": self.settled_cash(),
+            "settled_cash": self.settled_cash(),
+            "unsettled_cash": round(float(self.state.get("unsettled_cash") or 0.0), 2),
             "cash": round(cash, 2),
             "equity": equity,
             "starting_cash": starting,
@@ -317,9 +364,11 @@ class PaperBroker:
             raise ValueError("qty and price must be positive")
 
         cost = round(qty * price, 2)
-        cash = float(self.state["cash"])
+        # Cash account: only settled cash is usable as buying power.
+        self._release_unsettled()
+        cash = self.settled_cash()
         if cost > cash + 0.01:
-            raise ValueError(f"insufficient cash: need {cost:.2f}, have {cash:.2f}")
+            raise ValueError(f"insufficient settled cash: need {cost:.2f}, have {cash:.2f}")
 
         positions = self.state.setdefault("positions", {})
         existing = positions.get(symbol)
@@ -407,6 +456,12 @@ class PaperBroker:
 
         self.state["cash"] = round(float(self.state["cash"]) + proceeds, 2)
         self.state["realized_pnl"] = round(float(self.state.get("realized_pnl") or 0.0) + realized, 2)
+
+        # Cash-account good-faith: sale proceeds are not buying power until the
+        # next NYSE session open (09:30 ET). Track them as unsettled.
+        if self.cash_account:
+            self.state["unsettled_cash"] = round(float(self.state.get("unsettled_cash") or 0.0) + proceeds, 2)
+            self.state["unsettled_release_at"] = self._next_session_open_et().isoformat()
 
         remaining = round(hold_qty - sell_qty, 6)
         closed_trade = {
