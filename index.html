@@ -1410,6 +1410,10 @@
 
     const DEFAULT_IMPROVEMENTS = [
       {
+        title: 'Weekly go-live readiness report (Telegram)',
+        detail: 'Every Saturday, a cron computes progress against the go-live bar — trades, win rate, profit factor, max drawdown, trading days, and whether the bot is frozen — from the paper logs and pings Telegram. Only flips READY when all gates pass. Create data/.BOT_FROZEN once the bot is stable (no more logic changes) to count that gate.'
+      },
+      {
         title: 'Opus-review cleanup: dead code removed, config truth, cost cuts',
         detail: 'P1: removed dead dual_llm helpers (junior_pair_agrees/3, should_escalate_to_seniors), unused notify_fill_summary, check_exit_signals, last_jsonl_symbol, and the candidate_outcomes config (no writer). P2: Sol chart validator defaulted OFF (reversible) and PNGs are reused within 1h instead of regenerated every cycle. P4: live_share_recent now counts all 4 juniors + 3 seniors (was only junior1/2+model1/2); mark_and_publish uses snapshot(skip_mark=True) to avoid double-quoting. Desk print now lists all 4 juniors.'
       },
