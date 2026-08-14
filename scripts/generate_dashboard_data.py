@@ -953,7 +953,7 @@ def main():
                     sum(
                         1
                         for r in (today_consensus or consensus)[-20:]
-                        for side in ("model1", "model2", "junior1", "junior2")
+                        for side in ("model1", "model2", "model3", "junior1", "junior2", "junior3", "junior4")
                         if (r.get(side) or {}).get("source") == "live"
                     )
                     / max(
@@ -961,7 +961,7 @@ def main():
                         sum(
                             1
                             for r in (today_consensus or consensus)[-20:]
-                            for side in ("model1", "model2", "junior1", "junior2")
+                            for side in ("model1", "model2", "model3", "junior1", "junior2", "junior3", "junior4")
                             if r.get(side)
                         )
                         or 1,

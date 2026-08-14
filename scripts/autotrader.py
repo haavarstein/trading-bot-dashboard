@@ -865,7 +865,7 @@ class DryRunAutoTrader:
             f"anthropic={'yes' if status.get('anthropic_key') else 'no'}"
         )
         print(
-            f"  desk: juniors {rules['junior_model_1']}+{rules['junior_model_2']} → "
+            f"  desk: juniors {'+'.join(rules.get('junior_models', [rules.get('junior_model_1',''), rules.get('junior_model_2','')]))} → "
             f"seniors {rules['model_1']}+{rules['model_2']}+{rules['model_3']} (2-of-3, escalate BUY/SELL/disagree/borderline)"
         )
         # Guard against the model-ID collision: the 3 seniors must resolve to

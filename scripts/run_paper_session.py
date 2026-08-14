@@ -79,15 +79,6 @@ def last_jsonl_row(path: Path) -> dict | None:
         return None
 
 
-def last_jsonl_symbol(path: Path) -> str | None:
-    row = last_jsonl_row(path)
-    if not row:
-        return None
-    if "symbol" in row:
-        return row.get("symbol")
-    return (row.get("model1") or {}).get("symbol")
-
-
 def push_dashboard() -> str:
     """Commit only public dashboard snapshot files and push main."""
     # Never stage secrets

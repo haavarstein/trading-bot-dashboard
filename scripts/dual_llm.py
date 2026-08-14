@@ -16,6 +16,7 @@ import json
 import os
 import re
 import sys
+import time
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -602,12 +603,33 @@ def sol_chart_validator(
     model = (rules.get("sol_model") or "gpt-5.6-sol").strip()
     chart_path = chart_path or rules.get("sol_chart_path")
 
-    # 1) Ensure a chart exists for the symbol
+    # 1) Ensure a chart exists for the symbol. Reuse a freshly-rendered PNG
+    #    instead of regenerating every cycle (mplfinance + yfinance cost).
+    #    chart_path is often a "{symbol}" template, so resolve to the real file.
+    root = Path(__file__).resolve().parent.parent
+    out = root / "data" / "charts" / f"{symbol}.png"
+    try:
+        fresh_window = int(rules.get("sol_chart_fresh_seconds") or 3600)
+    except Exception:
+        fresh_window = 3600
+    _resolved = None
+    if chart_path:
+        _cand = str(chart_path).replace("{symbol}", symbol)
+        if os.path.exists(_cand):
+            _resolved = _cand
+    if _resolved is None and out.exists():
+        _resolved = str(out)
+    if _resolved is not None and os.path.exists(_resolved):
+        try:
+            age = (time.time() - os.path.getmtime(_resolved))
+        except Exception:
+            age = fresh_window + 1
+        if age <= fresh_window:
+            chart_path = _resolved  # reuse fresh PNG
+
     if not chart_path or not os.path.exists(chart_path):
         try:
-            root = Path(__file__).resolve().parent.parent
             gen = root / "scripts" / "chart_gen.py"
-            out = root / "data" / "charts" / f"{symbol}.png"
             if gen.exists():
                 import subprocess
                 py = os.environ.get("SOL_CHART_PY") or os.environ.get("VENV_PYTHON") or sys.executable
@@ -793,92 +815,6 @@ def _conf(d: dict) -> int:
         return int(d.get("confidence") or 0)
     except Exception:
         return 0
-
-
-def junior_pair_agrees(j1: dict, j2: dict, hold_floor: int = 55) -> tuple[bool, str | None]:
-    """Lightweight agree check for junior screen (HOLD symbol-flexible)."""
-    a1 = str(j1.get("action") or "").upper()
-    a2 = str(j2.get("action") or "").upper()
-    if a1 != a2:
-        return False, f"Junior action mismatch: {a1} vs {a2}"
-    if a1 == "HOLD":
-        if _conf(j1) < hold_floor or _conf(j2) < hold_floor:
-            return False, "Junior HOLD confidence below floor"
-        return True, None
-    if (j1.get("symbol") or "").upper() != (j2.get("symbol") or "").upper():
-        return False, f"Junior symbol mismatch: {j1.get('symbol')} vs {j2.get('symbol')}"
-    return True, None
-
-
-
-def junior_pair_agrees3(
-    j1: dict,
-    j2: dict,
-    j3: dict | None,
-    hold_floor: int = 55,
-) -> tuple[bool, str | None, list[str]]:
-    """3-way junior screen. 2-of-3 HOLD agreement can finalize.
-    Returns (agreed, reason, actions)."""
-    actions = [
-        str((j1 or {}).get("action") or "").upper(),
-        str((j2 or {}).get("action") or "").upper(),
-        str((j3 or {}).get("action") or "").upper() if j3 else None,
-    ]
-    non_hold = [a for a in actions if a and a != "HOLD"]
-    # Any BUY/SELL presence → escalate (trades always need seniors), and it's not a clean HOLD finalize
-    if non_hold:
-        return False, "junior_trade_intent", actions
-
-    # All HOLD (or missing 3rd → treat as HOLD-eligible pair)
-    h1, h2 = _conf(j1), _conf(j2)
-    h3 = _conf(j3) if j3 else None
-    confs = [c for c in (h1, h2, h3) if c is not None]
-    if any(c < hold_floor for c in confs):
-        return False, f"junior_hold_confidence_below_{hold_floor}", actions
-    return True, None, actions
-
-
-def should_escalate_to_seniors(
-    j1: dict,
-    j2: dict,
-    junior_agreed: bool,
-    rules: dict,
-) -> tuple[bool, str]:
-    """
-    Escalate when:
-      - juniors disagree
-      - action is BUY/SELL (senior final gate on trades)
-      - confidence borderline vs min_confidence
-    HOLD + junior agree can stay junior-only.
-    """
-    cr = rules or {}
-    min_conf = int(cr.get("min_confidence") or 70)
-    band = int(cr.get("borderline_confidence_band") or 5)
-    escalate_trades = bool(cr.get("escalate_on_buy_sell", True))
-    escalate_disagree = bool(cr.get("escalate_on_junior_disagree", True))
-    escalate_border = bool(cr.get("escalate_on_borderline_confidence", True))
-
-    a1 = str(j1.get("action") or "").upper()
-    a2 = str(j2.get("action") or "").upper()
-
-    if escalate_disagree and not junior_agreed:
-        return True, "junior_disagreement"
-
-    if escalate_trades and (a1 in ("BUY", "SELL") or a2 in ("BUY", "SELL")):
-        return True, "buy_sell_requires_senior_gate"
-
-    c1, c2 = _conf(j1), _conf(j2)
-    lo, hi = min(c1, c2), max(c1, c2)
-    if escalate_border:
-        # near the trade threshold, or wide spread between juniors
-        if lo < min_conf <= hi:
-            return True, "borderline_confidence_straddle"
-        if abs(c1 - c2) >= max(10, band * 2) and a1 == a2 == "HOLD" and lo < min_conf:
-            return True, "borderline_confidence_spread"
-        if a1 == a2 == "HOLD" and lo >= min_conf - band and lo < min_conf:
-            return True, "borderline_hold_confidence"
-
-    return False, "junior_hold_final"
 
 
 def junior_majority_vote(

@@ -202,8 +202,9 @@ class PaperBroker:
         self._save()
         return marks
 
-    def snapshot(self) -> dict[str, Any]:
-        self.mark_to_market()
+    def snapshot(self, skip_mark: bool = False) -> dict[str, Any]:
+        if not skip_mark:
+            self.mark_to_market()
         positions = []
         open_pnl = 0.0
         market_value = 0.0
@@ -440,23 +441,6 @@ class PaperBroker:
         _append_jsonl(FILLS_PATH, fill)
         self._save()
         return fill
-
-    def check_exit_signals(self) -> list[dict[str, Any]]:
-        """Return suggested SELL actions for stop/target hits after M2M."""
-        self.mark_to_market()
-        signals = []
-        for sym, p in list(self.state.get("positions", {}).items()):
-            px = float(p.get("last_price") or 0)
-            stop = p.get("stop_loss")
-            target = p.get("take_profit")
-            if not px:
-                continue
-            if stop is not None and px <= float(stop):
-                signals.append({"symbol": sym, "reason": "stop_loss", "price": px, "qty": float(p["qty"])})
-            elif target is not None and px >= float(target):
-                signals.append({"symbol": sym, "reason": "take_profit", "price": px, "qty": float(p["qty"])})
-        return signals
-
 
 def load_broker(starting_cash: float = 1000.0) -> PaperBroker:
     return PaperBroker(starting_cash=starting_cash)

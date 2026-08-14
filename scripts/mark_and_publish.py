@@ -108,7 +108,7 @@ def main() -> int:
     }
 
     marks = broker.mark_to_market(symbols=held, prefetched=prefetched)
-    snap = broker.snapshot()  # may re-mark; cache makes this cheap
+    snap = broker.snapshot(skip_mark=True)  # already marked above; avoid double-quote
 
     # optional: store spy mark on state for generator
     spy_px = prefetched.get("SPY")

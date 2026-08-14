@@ -325,39 +325,6 @@ Trading may fall back to cheaper paths or skip live model calls until this is fi
         return ok
 
 
-    def notify_fill_summary(
-        self,
-        action: str,
-        symbol: str,
-        qty: float,
-        price: float,
-        equity: Optional[float] = None,
-        open_pnl: Optional[float] = None,
-        thesis: str = "",
-        holdings_lines: Optional[list] = None,
-    ):
-        """Compact BUY/SELL fill for cron/session delivery."""
-        if str(action).upper() not in ("BUY", "SELL"):
-            return
-        if not self.notify_on_trade:
-            return
-        action_u = str(action).upper()
-        emoji = "🟢" if action_u == "BUY" else "🔴"
-        lines = [
-            f"{emoji} *PAPER FILL — {action_u} {symbol}*",
-            f"Qty {float(qty):.4f} @ ${float(price):.2f} (${float(qty)*float(price):.2f})",
-        ]
-        if equity is not None:
-            lines.append(f"Equity ${float(equity):.2f}" + (f" | open P/L ${float(open_pnl):+.2f}" if open_pnl is not None else ""))
-        if thesis:
-            lines.append(f"💡 {thesis[:180]}")
-        if holdings_lines:
-            lines.append("Holdings:")
-            lines.extend(holdings_lines[:8])
-        msg = "\n".join(lines) + self._footer()
-        self.send_message(msg)
-
-
 if __name__ == "__main__":
     notifier = TelegramNotifier()
     print("enabled", notifier.enabled, "chat", bool(notifier.chat_id), "token", bool(notifier.bot_token))

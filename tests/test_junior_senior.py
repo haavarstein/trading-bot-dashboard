@@ -14,53 +14,55 @@ import dual_llm  # noqa: E402
 
 
 class TestJuniorSeniorEscalation(unittest.TestCase):
-    def test_hold_hold_stays_junior(self):
-        j1 = {"action": "HOLD", "symbol": "CASH", "confidence": 62}
-        j2 = {"action": "HOLD", "symbol": "MSFT", "confidence": 68}
-        ok, _ = dual_llm.junior_pair_agrees(j1, j2, hold_floor=55)
-        self.assertTrue(ok)
-        esc, reason = dual_llm.should_escalate_to_seniors(
-            j1,
-            j2,
-            ok,
-            {
-                "min_confidence": 70,
-                "escalate_on_buy_sell": True,
-                "escalate_on_junior_disagree": True,
-                "escalate_on_borderline_confidence": True,
-                "borderline_confidence_band": 5,
-            },
-        )
-        self.assertFalse(esc, reason)
-        self.assertEqual(reason, "junior_hold_final")
+    """Escalation policy now lives in junior_majority_vote + junior_nomination.
+
+    (junior_pair_agrees / should_escalate_to_seniors were removed as dead code —
+    production never called them.)"""
+
+    def _junior(self, action, conf, source="live"):
+        return {
+            "action": action, "symbol": "CASH" if action == "HOLD" else "MSFT",
+            "confidence": conf, "source": source,
+            "entry_price": 0, "stop_loss": 0, "take_profit": 0, "qty": 0,
+            "thesis": "x", "reason_code": "hold",
+        }
+
+    def test_hold_majority_stays_junior(self):
+        # All HOLD above floor, 3-of-4 -> agreed HOLD, no escalation
+        js = [self._junior("HOLD", 62), self._junior("HOLD", 68),
+              self._junior("HOLD", 58), self._junior("HOLD", 64)]
+        ok, reason, _ = dual_llm.junior_majority_vote(js, hold_floor=55, min_agree=3)
+        self.assertTrue(ok, reason)
+        # no trade intent -> no nomination either
+        self.assertIsNone(dual_llm.junior_nomination(js, min_agree=3))
 
     def test_buy_escalates_even_if_juniors_agree(self):
-        j1 = {"action": "BUY", "symbol": "MSFT", "confidence": 80}
-        j2 = {"action": "BUY", "symbol": "MSFT", "confidence": 82}
-        ok, _ = dual_llm.junior_pair_agrees(j1, j2)
-        self.assertTrue(ok)
-        esc, reason = dual_llm.should_escalate_to_seniors(
-            j1,
-            j2,
-            ok,
-            {"min_confidence": 70, "escalate_on_buy_sell": True},
-        )
-        self.assertTrue(esc)
-        self.assertEqual(reason, "buy_sell_requires_senior_gate")
-
-    def test_junior_disagree_escalates(self):
-        j1 = {"action": "HOLD", "symbol": "CASH", "confidence": 70}
-        j2 = {"action": "BUY", "symbol": "MSFT", "confidence": 75}
-        ok, _ = dual_llm.junior_pair_agrees(j1, j2)
+        # Any live BUY intent -> escalate regardless of HOLD quorum
+        js = [self._junior("HOLD", 60), self._junior("BUY", 80),
+              self._junior("HOLD", 65), self._junior("HOLD", 62)]
+        ok, reason, _ = dual_llm.junior_majority_vote(js, hold_floor=55, min_agree=3)
         self.assertFalse(ok)
-        esc, reason = dual_llm.should_escalate_to_seniors(
-            j1,
-            j2,
-            ok,
-            {"min_confidence": 70, "escalate_on_junior_disagree": True},
-        )
-        self.assertTrue(esc)
-        self.assertEqual(reason, "junior_disagreement")
+        self.assertIn("junior_trade_intent", reason)
+        # single BUY vote is below the 3-vote nomination quorum -> no pin yet
+        self.assertIsNone(dual_llm.junior_nomination(js, min_agree=3))
+
+    def test_buy_quorum_surfaces_as_nomination(self):
+        # 3 live juniors on the SAME (BUY, symbol) -> a real nomination
+        js = [self._junior("BUY", 80), self._junior("BUY", 82),
+              self._junior("BUY", 78), self._junior("HOLD", 62)]
+        ok, reason, _ = dual_llm.junior_majority_vote(js, hold_floor=55, min_agree=3)
+        self.assertFalse(ok)
+        self.assertIn("junior_trade_intent", reason)
+        self.assertEqual(dual_llm.junior_nomination(js, min_agree=3), ("BUY", "MSFT"))
+
+    def test_junior_split_escalates(self):
+        # No HOLD quorum (2/2 split) -> escalation path, no nomination by default
+        js = [self._junior("SELL", 72), self._junior("BUY", 75),
+              self._junior("SELL", 70), self._junior("BUY", 69)]
+        ok, reason, _ = dual_llm.junior_majority_vote(js, hold_floor=55, min_agree=3)
+        self.assertFalse(ok)
+        # split -> no single-pair quorum -> no nomination (tie-break is separate)
+        self.assertIsNone(dual_llm.junior_nomination(js, min_agree=3))
 
 
 class TestJuniorMajority(unittest.TestCase):

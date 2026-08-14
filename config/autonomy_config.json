@@ -105,12 +105,14 @@
     "junior_min_agree": 3,
     "nomination_tie_break_exit_when_full": true,
     "comment_tie_break": "Even junior split with the book at max names: prefer the SELL (exit/rotation) side so a rotation isn't lost to a SELL-vs-BUY category error. Conservative: only fires on a full book, only on currently-held symbols, needs >=2 live junior SELL votes. Set false to revert to the old deadlock.",
-    "sol_chart_validator_enabled": true,
+    "sol_chart_validator_enabled": false,
     "sol_model": "gpt-5.6-sol",
     "sol_chart_days": 60,
     "sol_max_tokens": 600,
     "sol_chart_path": "./data/charts/{symbol}.png",
-    "comment_sol": "GPT-5.6 Sol chart-vision validator: optional third senior read on escalated trades. Generates candlestick chart (chart_gen.py) and asks Sol for S/R levels, entry zone, stop-loss, BUY/SELL/HOLD. Uses direct OpenAI API (OPENAI_API_KEY); gpt-5.6-sol only supports temperature=1. Weaker than text seniors - logged, never blocks a valid trade."
+    "sol_chart_fresh_seconds": 3600,
+    "comment_sol": "GPT-5.6 Sol chart-vision validator: advisory third senior read on escalated trades (chart_gen.py + OpenAI vision). Currently DISABLED (cost cut) until its reads are reviewed in the consensus log. Set sol_chart_validator_enabled=true to re-enable. Weaker than text seniors - logged, never blocks a valid trade.",
+    "comment_sol_fresh": "sol_chart_fresh_seconds: reuse a PNG rendered within this many seconds instead of regenerating every cycle (mplfinance + yfinance cost)."
   },
   "telegram": {
     "enabled": true,
@@ -133,8 +135,7 @@
   "data_files": {
     "trade_journal": "./data/trade_journal.jsonl",
     "order_ledger": "./data/order_ledger.jsonl",
-    "consensus_log": "./data/consensus_log.jsonl",
-    "candidate_outcomes": "./data/candidate_outcomes.jsonl"
+    "consensus_log": "./data/consensus_log.jsonl"
   },
   "last_updated": "2026-08-11T14:16:03Z",
   "execution_rules": {
