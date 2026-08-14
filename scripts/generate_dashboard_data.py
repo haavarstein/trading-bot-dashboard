@@ -268,7 +268,7 @@ def build_thinking(holdings, latest_decision, latest_candidate, snap, now, cfg, 
             headline = "No open holdings. Waiting for a clean setup."
             plain = (
                 "Right now Hermes is in cash and not forcing a trade. "
-                "It will only act when a ranked setup clears dual agreement and risk checks."
+                "It will only act when a ranked setup clears the senior 2-of-3 live-majority gate and risk checks."
             )
 
     triggers = []
@@ -301,7 +301,7 @@ def build_thinking(holdings, latest_decision, latest_candidate, snap, now, cfg, 
         )
     if top and top not in syms:
         triggers.append(
-            f"Top scanner name right now is {top}, but it still has to clear dual agreement and risk code before any fill."
+            f"Top scanner name right now is {top}, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill."
         )
     sol_model = ((cfg or {}).get("consensus_rules") or {}).get("sol_model", "gpt-5.6-sol")
     sol_on = bool(((cfg or {}).get("consensus_rules") or {}).get("sol_chart_validator_enabled", False))

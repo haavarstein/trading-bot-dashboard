@@ -53,13 +53,17 @@ def _equity_curve():
     for l in _read_jsonl(DATA / "equity_curve.jsonl"):
         eq = l.get("equity") or l.get("value")
         if eq:
-            vals.append((l.get("timestamp", ""), float(eq)))
+            # dashboard writer uses "t" (also accept "timestamp" for safety)
+            ts = l.get("t") or l.get("timestamp") or ""
+            vals.append((ts, float(eq)))
     return vals
 
 
 def _max_drawdown(vals):
+    # Empty curve must NOT count as a pass: return a sentinel that fails the
+    # drawdown gate rather than 0.0.
     if not vals:
-        return 0.0, ""
+        return float("inf"), ""
     peak = vals[0][1]
     mdd, mdd_at = 0.0, ""
     for ts, v in vals:
@@ -152,9 +156,20 @@ def build_report():
     return report
 
 
+def _pct(v):
+    """Format a percent value; return 'n/a' when missing/absent (not 'None%')."""
+    if v is None:
+        return "n/a"
+    try:
+        return f"{float(v):.2f}"
+    except Exception:
+        return "n/a"
+
+
 def format_text(r):
     m = r["metrics"]
     c = r["checks"]
+    mdd = "n/a" if m["max_drawdown_pct"] == float("inf") else _pct(m["max_drawdown_pct"])
     lines = []
     lines.append("📊 *TRADING READINESS REPORT*")
     lines.append(f"Verdict: **{'✅ READY' if r['verdict']=='READY' else '🔴 NOT READY'}** ({r['checks_passed']} gates passed)")
@@ -162,12 +177,12 @@ def format_text(r):
     lines.append(f"· Trades: {m['closed_trades']} (need {r['go_live_bar']['min_trades']}) {'✅' if c['trades'] else '❌'}")
     lines.append(f"· Win rate: {m['win_rate']}% (need {r['go_live_bar']['win_rate_min']}%) {'✅' if c['win_rate'] else '❌'}")
     lines.append(f"· Profit factor: {m['profit_factor']} (need {r['go_live_bar']['profit_factor_min']}) {'✅' if c['profit_factor'] else '❌'}")
-    lines.append(f"· Max drawdown: {m['max_drawdown_pct']}% (cap {r['go_live_bar']['max_drawdown_max_pct']}%) {'✅' if c['drawdown'] else '❌'}")
+    lines.append(f"· Max drawdown: {mdd}% (cap {r['go_live_bar']['max_drawdown_max_pct']}%) {'✅' if c['drawdown'] else '❌'}")
     lines.append(f"· Trading days: {m['trading_days']} (need {r['go_live_bar']['min_days']}) {'✅' if c['days'] else '❌'}")
     lines.append(f"· Bot stable/frozen: {'✅' if c['stable_bot'] else '❌'} (create data/.BOT_FROZEN once no more logic changes)")
     lines.append("")
     lines.append(f"Net realized: ${m['net_realized']} | avg win ${m['avg_win']} / avg loss ${m['avg_loss']}")
-    lines.append(f"Total return: {m['total_return_pct']}% | vs SPY: {m['vs_spy_pct']}%")
+    lines.append(f"Total return: {_pct(m['total_return_pct'])}% | vs SPY: {_pct(m['vs_spy_pct'])}%")
     lines.append(f"Fills logged: {m['fills_logged']} | generated {r['generated_at'][:16]}Z")
     if r["verdict"] != "READY":
         missing = [k for k, v in c.items() if not v]

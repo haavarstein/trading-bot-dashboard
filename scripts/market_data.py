@@ -32,32 +32,12 @@ except Exception:  # pragma: no cover
 _SCRIPT_DIR = Path(__file__).resolve().parent
 _REPO_ROOT = _SCRIPT_DIR.parent
 
+from env_load import load_dotenv as _load_dotenv
+
 _CACHE: dict[str, tuple[float, dict]] = {}
 _CACHE_TTL = float(os.environ.get("QUOTE_CACHE_TTL_SEC", "90"))
 
-
-def _load_dotenv() -> None:
-    candidates = [
-        Path.home() / "AppData" / "Local" / "hermes" / ".env",
-        Path.home() / ".hermes" / ".env",
-        _REPO_ROOT / ".env",
-    ]
-    for path in candidates:
-        if not path.exists():
-            continue
-        try:
-            for line in path.read_text(encoding="utf-8", errors="ignore").splitlines():
-                s = line.strip()
-                if not s or s.startswith("#") or "=" not in s:
-                    continue
-                k, v = s.split("=", 1)
-                k, v = k.strip(), v.strip().strip('"').strip("'")
-                if k and v and k not in os.environ:
-                    os.environ[k] = v
-        except Exception:
-            pass
-
-
+# Load .env after _CACHE_TTL resolution to preserve prior ordering/behavior.
 _load_dotenv()
 
 

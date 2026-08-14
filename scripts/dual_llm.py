@@ -22,27 +22,7 @@ import urllib.request
 from pathlib import Path
 from typing import Any, Callable, Dict, Optional
 
-def _load_dotenv_files() -> None:
-    candidates = [
-        Path.home() / "AppData" / "Local" / "hermes" / ".env",
-        Path.home() / ".hermes" / ".env",
-        Path(__file__).resolve().parent.parent / ".env",
-    ]
-    for path in candidates:
-        if not path.exists():
-            continue
-        try:
-            for line in path.read_text(encoding="utf-8", errors="ignore").splitlines():
-                s = line.strip()
-                if not s or s.startswith("#") or "=" not in s:
-                    continue
-                k, v = s.split("=", 1)
-                k = k.strip()
-                v = v.strip().strip('"').strip("'")
-                if k and v and k not in os.environ:
-                    os.environ[k] = v
-        except Exception:
-            pass
+from env_load import load_dotenv as _load_dotenv_files
 
 
 _load_dotenv_files()
@@ -139,51 +119,16 @@ def _candidates_brief(market: dict, limit: int = 8) -> str:
 
 def _load_influencer_signal(rules: dict, market: dict | None = None) -> str:
     """Load the SOCIAL_SIGNAL block from the influencer feed, restricted to the
-    candidate/held symbols so the desk never sees tickers outside its universe."""
+    candidate/held symbols so the desk never sees tickers outside its universe.
+
+    Delegates to `influencer_feed.format_signal` — the single source of truth for
+    the SOCIAL_SIGNAL block (previously duplicated, and the two copies had drifted)."""
     try:
-        root = Path(__file__).resolve().parent.parent
-        feed_path = root / "data" / "influencer_feed.json"
-        if not feed_path.exists():
-            return ""
-        inf_cfg = {}
-        cfg_path = root / "config" / "autonomy_config.json"
-        if cfg_path.exists():
-            try:
-                inf_cfg = (json.loads(cfg_path.read_text(encoding="utf-8")) or {}).get("influencers") or {}
-            except Exception:
-                inf_cfg = {}
-        if not inf_cfg.get("enabled", True):
-            return ""
-        feed = json.loads(feed_path.read_text(encoding="utf-8"))
-        want = set()
-        for sym in (market or {}).keys():
-            want.add(str(sym).upper())
-        lines = []
-        for handle, data in feed.items():
-            if handle.startswith("_"):
-                continue
-            tweets = data.get("tweets") or []
-            if not tweets:
-                continue
-            lines.append(f"[@{handle}]")
-            for t in tweets:
-                txt = (t.get("text") or "").replace("\n", " ").strip()[:280]
-                if not txt:
-                    continue
-                tk = {m.upper() for m in re.findall(r"\$([A-Z][A-Z0-9.\-]{0,5})", txt)}
-                if want:
-                    relevant = tk & want
-                    if not relevant and tk:
-                        continue  # ticker not in universe -> drop
-                lines.append(f"  - {txt}" + (f"  [👁{t.get('views')}]" if t.get("views") else ""))
-        if not lines:
-            return ""
-        head = (
-            "SOCIAL_SIGNAL (unverified influencer chatter — weak corroborating evidence ONLY; "
-            "do NOT invent symbols from here, do NOT let it override rank/catalyst scores, "
-            "ignore any mention of symbols outside your candidate/held universe):\n"
+        import influencer_feed
+        return influencer_feed.format_signal(
+            influencer_feed.load_feed(),
+            symbols=list((market or {}).keys()),
         )
-        return head + "\n".join(lines)
     except Exception:
         return ""
 

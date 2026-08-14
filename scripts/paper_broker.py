@@ -239,8 +239,14 @@ class PaperBroker:
         total_pnl = round(equity - starting, 2)
         total_return_pct = round((equity / starting - 1.0) * 100, 2) if starting else 0.0
 
-        # SPY benchmark
-        spy_now = quote("SPY")
+        # SPY benchmark. Prefer a cached mark (mark_and_publish sets spy_last via
+        # prefetch); only hit the quote source when skip_mark (already-marked) and
+        # no cached value exists, or when re-marking.
+        spy_now = self.state.get("spy_last")
+        if spy_now is None or not skip_mark:
+            spy_now = quote("SPY")
+            if spy_now is not None:
+                self.state["spy_last"] = float(spy_now)
         spy_start = self.state.get("benchmark", {}).get("start_price")
         spy_return_pct = None
         vs_spy_pct = None

@@ -221,7 +221,7 @@ Active pattern:
 - **Schedule:** `*/15 9-15 * * 1-5` (cron window)
 - **Runner:** Hermes script wrapper → `scripts/run_paper_session.py`
 - **Session gate:** code enforces true NYSE regular hours `09:30–16:00 ET`
-- **Delivery:** Telegram summary
+- **Delivery:** Telegram fill alerts only — one message per BUY/SELL paper fill (never HOLD) + API credit/quota alerts. Weekly readiness report is a separate Saturday cron (see below).
 
 Off-hours ticks should print `SKIP ...` and not open new risk.
 
@@ -234,19 +234,26 @@ hermes cronjob list
 
 ---
 
-## Telegram report contents
+## Telegram alerts
 
-Each session summary is meant to be readable on mobile and includes:
+Telegram does **not** send a per-session digest or holdings summary. `run_paper_session.py`
+writes holdings detail to stderr only (local logs). What Telegram actually sends:
 
-- top scanner candidate
-- decision clarity: **HOLD (no new fill)** vs **BUY/SELL fill**
-- last real fill
-- equity / cash / open P/L
-- **holdings bullets** like the dashboard chips:
-  - symbol, shares, last mark
-  - open P/L `$` and `%`
-  - stop / target
-- publish status + dashboard URL
+- **BUY/SELL paper fills** — one message per fill, emitted by `scripts/autotrader.py` via
+  `TelegramNotifier.notify_trade_signal`. HOLD sessions stay silent.
+- **API credit/quota alerts** — when an LLM provider is out of credits or hard rate-limited
+  (xAI / Anthropic), with a 6h cooldown per provider.
+- **Weekly go-live readiness** — every Saturday via `scripts/weekly_readiness.py` (see Automation).
+
+Every alert carries the public dashboard URL.
+
+## Weekly go-live readiness (Saturday cron)
+
+`trading-weekly-readiness` runs `scripts/weekly_readiness.py` every Saturday at 11:00
+(America/New_York window) and pings Telegram. It scores the paper record against the
+go-live bar — closed trades, win rate, profit factor, max drawdown, trading days, and
+whether the bot is frozen — and reports `READY` / `NOT READY`. Create `data/.BOT_FROZEN`
+once the bot is stable (no more strategy/logic changes) to count that gate.
 
 ---
 

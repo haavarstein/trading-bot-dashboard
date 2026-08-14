@@ -14,10 +14,7 @@ import dual_llm  # noqa: E402
 
 
 class TestJuniorSeniorEscalation(unittest.TestCase):
-    """Escalation policy now lives in junior_majority_vote + junior_nomination.
-
-    (junior_pair_agrees / should_escalate_to_seniors were removed as dead code —
-    production never called them.)"""
+    """Production gate is junior_majority_vote + junior_nomination."""
 
     def _junior(self, action, conf, source="live"):
         return {

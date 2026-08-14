@@ -75,27 +75,9 @@ def handles() -> list[str]:
 
 def _scrapecreators_key() -> str:
     """Scrape Creators API key from hermes .env / SCRAPECREATORS_API_KEY."""
-    key = os.environ.get("SCRAPECREATORS_API_KEY")
-    if key:
-        return key
-    candidates = [
-        Path.home() / "AppData" / "Local" / "hermes" / ".env",
-        Path.home() / ".hermes" / ".env",
-        ROOT / ".env",
-    ]
-    for p in candidates:
-        if not p.exists():
-            continue
-        try:
-            for line in p.read_text(encoding="utf-8", errors="ignore").splitlines():
-                s = line.strip()
-                if s.startswith("SCRAPECREATORS_API_KEY="):
-                    v = s.split("=", 1)[1].strip().strip('"').strip("'")
-                    if v:
-                        return v
-        except Exception:
-            continue
-    return ""
+    from env_load import load_dotenv
+    load_dotenv()  # load all keys from hermes/repo .env (single source of truth)
+    return os.environ.get("SCRAPECREATORS_API_KEY") or ""
 
 
 def fetch_handle_tweets(handle: str, limit: int = 5) -> list[dict]:
