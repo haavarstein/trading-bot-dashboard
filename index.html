@@ -1410,6 +1410,10 @@
 
     const DEFAULT_IMPROVEMENTS = [
       {
+        title: 'Grok-4.6 follow-up: README truth + dead code + safe Sol default',
+        detail: 'README now matches code (IBKR primary not FMP, risk-gate → 4-junior/3-senior diagram, Sol marked disabled, Telegram = fill alerts only, no session digest). Removed unused FMP singles kwargs, unused tg() helper, and 6 stale files (PAPER_TRADING_SETUP, SETUP_COMPLETE, TELEGRAM_TRADINGVIEW_EXPLAINED, TOMORROW_ACTIVATION, dashboard-prototype.html, IBKR_MCP_CONFIG.yaml). Sol code now defaults OFF even if the config key is missing (was default-on = cost risk).'
+      },
+      {
         title: 'Weekly go-live readiness report (Telegram)',
         detail: 'Every Saturday, a cron computes progress against the go-live bar — trades, win rate, profit factor, max drawdown, trading days, and whether the bot is frozen — from the paper logs and pings Telegram. Only flips READY when all gates pass. Create data/.BOT_FROZEN once the bot is stable (no more logic changes) to count that gate.'
       },
