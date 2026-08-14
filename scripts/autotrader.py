@@ -285,7 +285,7 @@ class DryRunAutoTrader:
 
         ranked.sort(key=lambda x: x[0], reverse=True)
         max_positions = int(self.config["position_limits"]["max_positions"])
-        cash = float(broker_snapshot.get("buying_power") or broker_snapshot.get("cash") or 0)
+        cash = self._buying_power(broker_snapshot)
 
         # 3) Rotation is DISABLED by default.
         # Previous behavior sold the weakest open name every cycle whenever a new
@@ -570,7 +570,7 @@ class DryRunAutoTrader:
             return False, f"Unsupported action {action}"
 
         position_value = round(entry * qty, 2)
-        cash = round(float(broker_snapshot.get("buying_power") or broker_snapshot.get("cash") or 0), 2)
+        cash = round(self._buying_power(broker_snapshot), 2)
         if position_value - cash > 0.01:
             return False, f"Insufficient buying power: ${cash:.2f} < ${position_value:.2f}"
 
@@ -699,19 +699,39 @@ class DryRunAutoTrader:
     def _same_day_exits_enabled(self) -> bool:
         return bool(self.config.get("execution_rules", {}).get("block_same_day_exits", True))
 
+    @staticmethod
+    def _buying_power(broker_snapshot: Dict) -> float:
+        """Buying power = settled cash. Never coerce 0.0 to total cash.
+
+        `buying_power` can legitimately be 0.0 (sold the whole book same day; all
+        cash is unsettled). An `or cash` fallback would spend unsettled proceeds.
+        Use explicit None-check; fall back to `settled_cash` when present, else
+        `buying_power`/`cash` only if not None (0.0 stays 0.0)."""
+        bp = broker_snapshot.get("buying_power")
+        if bp is not None:
+            return float(bp)
+        sc = broker_snapshot.get("settled_cash")
+        if sc is not None:
+            return float(sc)
+        c = broker_snapshot.get("cash")
+        return float(c) if c is not None else 0.0
+
     def _same_day_allowed_reasons(self) -> set:
         allow = self.config.get("execution_rules", {}).get("same_day_exit_allow", ["stop_loss"])
         return {str(r).lower() for r in allow}
 
     def _opened_today_et(self, pos: Dict) -> bool:
-        """True if the position was opened on today's ET calendar date."""
+        """True if the position was opened on today's ET calendar date.
+
+        Fail-closed: a missing OR unparseable `opened_at` is treated as today,
+        so a discretionary same-day exit is blocked rather than silently allowed."""
         opened = pos.get("opened_at")
         if not opened:
-            return False
+            return True
         try:
             dt = datetime.fromisoformat(str(opened).replace("Z", "+00:00"))
         except Exception:
-            return False
+            return True  # fail-closed on unparseable
         return dt.astimezone(_ET).date() == datetime.now(_ET).date()
 
     def _same_day_exit_blocked(self, pos: Dict, reason_code: str) -> bool:
