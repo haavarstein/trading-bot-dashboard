@@ -172,7 +172,7 @@ class PaperBroker:
         missing = [s for s in targets if s.upper() not in price_map]
         if missing and market_data is not None:
             try:
-                bulk = market_data.quotes_bulk(missing, prefer="ibkr", allow_fmp_singles=False)
+                bulk = market_data.quotes_bulk(missing, prefer="ibkr")
                 for s, row in (bulk or {}).items():
                     if row and row.get("price") is not None:
                         price_map[str(s).upper()] = float(row["price"])

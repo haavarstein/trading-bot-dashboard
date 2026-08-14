@@ -304,7 +304,7 @@ def build_thinking(holdings, latest_decision, latest_candidate, snap, now, cfg, 
             f"Top scanner name right now is {top}, but it still has to clear dual agreement and risk code before any fill."
         )
     sol_model = ((cfg or {}).get("consensus_rules") or {}).get("sol_model", "gpt-5.6-sol")
-    sol_on = bool(((cfg or {}).get("consensus_rules") or {}).get("sol_chart_validator_enabled", True))
+    sol_on = bool(((cfg or {}).get("consensus_rules") or {}).get("sol_chart_validator_enabled", False))
     if sol_on:
         triggers.append(
             f"On any trade that escalates to seniors, the {sol_model} chart validator reads a real candlestick chart to sanity-check support/resistance, entry, and stop before a fill."
@@ -923,7 +923,7 @@ def main():
             "model_2": cfg.get("consensus_rules", {}).get("model_2", "claude-sonnet-5"),
             "model_3": cfg.get("consensus_rules", {}).get("model_3", "claude-opus-5"),
             "model_3_effort": cfg.get("consensus_rules", {}).get("model_3_effort"),
-            "sol_chart_validator_enabled": bool(cfg.get("consensus_rules", {}).get("sol_chart_validator_enabled", True)),
+            "sol_chart_validator_enabled": bool(cfg.get("consensus_rules", {}).get("sol_chart_validator_enabled", False)),
             "sol_model": cfg.get("consensus_rules", {}).get("sol_model", "gpt-5.6-sol"),
             "min_confidence": cfg.get("consensus_rules", {}).get("min_confidence", 70),
             "max_candidates_to_llm": cfg.get("consensus_rules", {}).get("max_candidates_to_llm", 8),

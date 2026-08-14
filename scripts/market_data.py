@@ -293,8 +293,6 @@ def provider_name() -> str:
 def quotes_bulk(
     symbols: List[str],
     prefer: str | None = None,
-    allow_fmp_singles: bool = False,
-    max_fmp_singles: int = 8,
 ) -> Dict[str, Dict[str, Any]]:
     """
     Efficient multi-symbol quotes.

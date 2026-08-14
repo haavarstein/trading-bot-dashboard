@@ -87,7 +87,7 @@ class AlphaRadar:
         if market_data is not None:
             try:
                 bulk = market_data.quotes_bulk(
-                    symbols, prefer="yfinance", allow_fmp_singles=False
+                    symbols, prefer="yfinance"
                 )
                 if bulk:
                     for sym, q in bulk.items():

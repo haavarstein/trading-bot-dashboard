@@ -16,10 +16,10 @@ Public monitor + local simulated paper trading bot inspired by the Farzad.money 
 
 1. **Alpha Radar** ranks liquid equity candidates from catalyst/news + liquidity signals (`scripts/alpha_radar.py` → `data/candidates.json`).
 2. **Decision engine** (`scripts/autotrader.py`) chooses BUY / SELL / HOLD from ranked candidates + open portfolio state.
-3. **Market data** via Financial Modeling Prep (primary) with yfinance fallback (`scripts/market_data.py`).
+3. **Market data** via the official **IBKR Gateway** (primary, for holdings marks) with **yfinance** fallback + scanner bulk (`scripts/market_data.py`). FMP removed.
 4. **Local paper broker** (`scripts/paper_broker.py`) is account truth: cash, positions, fills, realized/open P/L, SPY benchmark start.
-4. **Dashboard publisher** rebuilds `dashboard-data.json` and pushes the public snapshot to GitHub → Vercel.
-5. **Telegram session report** summarizes decision/fill status plus per-holding `+/- $` and `%` bullets (mobile-friendly).
+5. **Dashboard publisher** rebuilds `dashboard-data.json` and pushes the public snapshot to GitHub → Vercel.
+6. **Telegram fill alerts** send one message per BUY/SELL paper fill (never HOLD); API credit/quota alerts included.
 
 There is **no live broker order routing** in the current path.
 
@@ -30,7 +30,9 @@ There is **no live broker order routing** in the current path.
 ```
 Alpha Radar (news/catalyst rank)
         ↓
-Dual decision paths must agree on action + symbol
+Risk gate (stop/target exits, deterministic, no LLM)
+        ↓
+Junior screen (4 models, 3-of-4 HOLD can finalize) → Senior gate (2-of-3 live majority, winning decision executed)
         ↓
 Deterministic validation (cash, size, stop/target, R:R, concentration)
         ↓
@@ -57,7 +59,7 @@ Telegram alerts on **BUY/SELL fills only** (no HOLD spam) + dashboard link
 - `model_3`: `claude-opus-5` (`model_3_effort`: `medium`) via Anthropic
 - **Consensus is 2-of-3 majority:** any two seniors agreeing on action+symbol passes
   (slightly looser than strict dual-agreement); HOLD is the safe default when they split.
-- **`gpt-5.6-sol` (chart-vision validator):** on every escalated trade, OpenAI's flagship vision model reads a real candlestick chart (`chart_gen.py` → `mplfinance`) of the nominated/top candidate, draws support/resistance, marks entry & stop-loss zones, and returns a BUY/SELL/HOLD TA read. Wired as an **advisory fourth senior** — its read is logged in the consensus entry (`sol_chart`) but never blocks a valid 2-of-3 senior consensus. Direct OpenAI API (`OPENAI_API_KEY`); note `gpt-5.6-sol` only supports `temperature=1` and requires `max_completion_tokens` (not `max_tokens`).
+- **`gpt-5.6-sol` (chart-vision validator):** advisory read that draws support/resistance, entry/stop zones, and a BUY/SELL/HOLD from a candlestick chart (`chart_gen.py` → `mplfinance`). Wired as an advisory senior — logged in the consensus entry (`sol_chart`) but never blocks a valid 2-of-3 senior consensus. **Currently DISABLED** (`sol_chart_validator_enabled: false`) as a cost cut until its reads are reviewed. Direct OpenAI API (`OPENAI_API_KEY`); note `gpt-5.6-sol` only supports `temperature=1` and requires `max_completion_tokens` (not `max_tokens`).
 
 **Influencer news feed (social signal)**
 - 28 stock-influencer X handles are pulled by `scripts/influencer_feed.py` via **Scrape Creators** (`/v1/twitter/user-tweets`, `SCRAPECREATORS_API_KEY`), refreshed every 60 min.

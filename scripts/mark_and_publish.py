@@ -100,7 +100,7 @@ def main() -> int:
     symbols = list(dict.fromkeys(held + ["SPY"]))
 
     # Efficient multi-symbol path: IBKR official gateway primary, yfinance fallback.
-    bulk = market_data.quotes_bulk(symbols, prefer="ibkr", allow_fmp_singles=False)
+    bulk = market_data.quotes_bulk(symbols, prefer="ibkr")
     prefetched = {
         s: float(row["price"])
         for s, row in (bulk or {}).items()

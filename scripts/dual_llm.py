@@ -1080,7 +1080,7 @@ def run_junior_senior_consensus(
     # GPT-5.6 Sol chart-vision validator (optional third senior read on escalation).
     # Focus on the nominated symbol if present, else the top ranked candidate.
     sol = None
-    if cr.get("sol_chart_validator_enabled", True):
+    if cr.get("sol_chart_validator_enabled", False):
         # nomination is an (action, symbol) tuple — unpack to the symbol string
         # for the chart filename, never pass the tuple itself.
         focus_sym = (nom_symbol if nomination else "") or ""

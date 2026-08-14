@@ -38,12 +38,6 @@ def log(msg: str = "") -> None:
     print(msg, file=sys.stderr, flush=True)
 
 
-def tg(msg: str) -> None:
-    """Telegram-facing stdout for Hermes no_agent delivery."""
-    print(msg, flush=True)
-
-
-
 def run(cmd: list[str], timeout: int = 300) -> subprocess.CompletedProcess:
     return subprocess.run(
         cmd,
