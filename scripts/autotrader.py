@@ -15,6 +15,9 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, Optional, Tuple
+from zoneinfo import ZoneInfo
+
+_ET = ZoneInfo("America/New_York")
 
 sys.path.insert(0, str(Path(__file__).parent))
 
@@ -51,7 +54,13 @@ class DryRunAutoTrader:
 
         starting = float(self.config.get("account", {}).get("starting_capital", 1000))
         portfolio_path = Path(self.trade_journal_path).parent / "portfolio.json"
-        self.broker = PaperBroker(starting_cash=starting, path=portfolio_path)
+        acct = self.config.get("account", {}) or {}
+        cash_account = bool(acct.get("cash_account", True))
+        unsettled_until = (self.config.get("execution_rules", {})
+                           .get("unsettled_proceeds_until", "next_session_open"))
+        self.broker = PaperBroker(starting_cash=starting, path=portfolio_path,
+                                  cash_account=cash_account,
+                                  unsettled_proceeds_until=unsettled_until)
 
     def _resolve_data(self, path: str) -> str:
         p = Path(path)
@@ -293,6 +302,10 @@ class DryRunAutoTrader:
                 weakest_sym = None
                 weakest_metric = None
                 for sym, pos in positions.items():
+                    # Cash-account same-day rule: never rotate out a name opened
+                    # today ET (same-day discretionary exit is hard-blocked).
+                    if self._opened_today_et(pos):
+                        continue
                     metric = float(pos.get("open_pnl_pct") or 0.0)
                     if weakest_metric is None or metric < weakest_metric:
                         weakest_metric = metric
@@ -544,6 +557,11 @@ class DryRunAutoTrader:
                 return False, f"No open position to sell for {symbol}"
             if qty <= 0:
                 return False, "Sell qty must be positive"
+            # Cash-account same-day exit block (hard, even if desk/risk agreed):
+            # only allowed reasons (stop_loss) may exit a name opened today ET.
+            rc = str(decision.get("reason_code") or "").lower()
+            if self._same_day_exit_blocked(held[symbol], rc):
+                return False, "SAME_DAY_EXIT_BLOCKED"
             return True, None
 
         if action != "BUY":
@@ -676,6 +694,33 @@ class DryRunAutoTrader:
             f"open P/L ${snap['open_pnl']:.2f} | realized ${snap['realized_pnl']:.2f}"
         )
 
+    def _same_day_exits_enabled(self) -> bool:
+        return bool(self.config.get("execution_rules", {}).get("block_same_day_exits", True))
+
+    def _same_day_allowed_reasons(self) -> set:
+        allow = self.config.get("execution_rules", {}).get("same_day_exit_allow", ["stop_loss"])
+        return {str(r).lower() for r in allow}
+
+    def _opened_today_et(self, pos: Dict) -> bool:
+        """True if the position was opened on today's ET calendar date."""
+        opened = pos.get("opened_at")
+        if not opened:
+            return False
+        try:
+            dt = datetime.fromisoformat(str(opened).replace("Z", "+00:00"))
+        except Exception:
+            return False
+        return dt.astimezone(_ET).date() == datetime.now(_ET).date()
+
+    def _same_day_exit_blocked(self, pos: Dict, reason_code: str) -> bool:
+        """Cash-account rule: block a same-day exit unless reason is allowed (stop_loss)."""
+        rc = str(reason_code or "").lower()
+        if not self._same_day_exits_enabled():
+            return False
+        if rc in self._same_day_allowed_reasons():
+            return False
+        return self._opened_today_et(pos)
+
     def check_deterministic_exit(self, broker_snapshot: Dict) -> Dict | None:
         """
         Stage-1 risk gate: a held position at/below stop or at/above target is a
@@ -709,6 +754,11 @@ class DryRunAutoTrader:
                     "timestamp": datetime.now(timezone.utc).isoformat(),
                 }
             if target is not None and px and px >= float(target):
+                # Cash-account same-day rule: a take-profit on a name opened today
+                # is a same-day discretionary exit and is blocked. Only stop_loss
+                # may exit same-day. Skip take-profit until the next ET session.
+                if self._same_day_exit_blocked(pos, "take_profit"):
+                    continue
                 reason = self._build_sell_reasoning(sym, pos, px, "take_profit", f"Take-profit exit for {sym}", 90)
                 return {
                     "model": "risk-gate",

@@ -111,7 +111,14 @@ From `config/autonomy_config.json` (source of truth):
 | Rotation | allowed with min-hold gate (default 45m) |
 | Session | NYSE regular hours only |
 
-**Note on PDT:** Pattern Day Trader rules are about **day-trade count** under $25k, **not** “max 3 open holdings.” Open-position count here is capital-sized.
+**Note on PDT / cash account:** Under $25k the bot models an IBKR **cash account with margin off**
+(`account.cash_account=true`, `margin_enabled=false`). PDT is a *margin* rule; cash avoids the flag.
+We still **hard-block same-day exits** (`execution_rules.block_same_day_exits=true`): rotation,
+desk SELL, and take-profit are blocked when the position was opened on today's ET calendar date.
+The only same-day exit allowed is **stop-loss** (price at/below stop — capital preservation).
+Stop/target still fire on positions opened on a prior session. **Unsettled proceeds** from any SELL
+are **not buying power** until the next NYSE 09:30 ET session open (`unsettled_proceeds_until:
+next_session_open`); new BUYs use settled cash only. Same-day open count is capital-sized (max 5).
 
 ---
 
