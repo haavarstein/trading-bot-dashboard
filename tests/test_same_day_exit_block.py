@@ -314,5 +314,38 @@ class TestNextSessionOpenRelease(unittest.TestCase):
             self.assertIn(release.weekday(), (0, 1, 2, 3, 4))  # weekday
 
 
+class TestTicket17ZeroBuyingPower(unittest.TestCase):
+    """buying_power == 0 (sold whole book) must not fall back to total cash."""
+
+    def test_buy_fitting_total_cash_but_not_settled_blocked(self):
+        # Sell the whole book: all proceeds unsettled -> buying_power == 0, cash > 0.
+        with tempfile.TemporaryDirectory() as td:
+            trader = _make_trader(Path(td))
+            snapshot = {
+                "buying_power": 0.0,   # settled == 0
+                "settled_cash": 0.0,
+                "cash": 1002.0,         # total (all unsettled)
+                "positions": [],        # whole book sold
+            }
+            decision = {"action": "BUY", "symbol": "NVDA", "entry_price": 100.0,
+                        "qty": 1.0, "stop_loss": 95.0, "take_profit": 120.0,
+                        "confidence": 75}  # cost $100, fits total cash, NOT settled
+            ok, reason = trader.validate_order(decision, snapshot)
+            self.assertFalse(ok)
+            self.assertIn("Insufficient buying power", reason)
+
+    def test_buying_power_helper_never_coerces_zero(self):
+        with tempfile.TemporaryDirectory() as td:
+            trader = _make_trader(Path(td))
+            # buying_power present (0.0) -> must stay 0.0, not fall to cash
+            self.assertEqual(trader._buying_power({"buying_power": 0.0, "cash": 900.0}), 0.0)
+            # buying_power None, settled_cash present -> settled
+            self.assertEqual(trader._buying_power({"settled_cash": 42.0, "cash": 900.0}), 42.0)
+            # neither -> cash
+            self.assertEqual(trader._buying_power({"cash": 900.0}), 900.0)
+            # none -> 0
+            self.assertEqual(trader._buying_power({}), 0.0)
+
+
 if __name__ == "__main__":
     unittest.main()
