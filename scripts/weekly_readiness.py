@@ -15,6 +15,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1] if Path(__file__).resolve().name == "weekly_readiness.py" else Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 
+# Earliest close timestamp (UTC date) included in readiness stats. Trades closed
+# before this (early test/validation days) are excluded so they don't skew
+# win-rate / profit-factor. Set by operator; 2026-08-12 = start of the real run.
+MIN_CLOSE_DATE = "2026-08-12"
+
 # The cron runs a copy under ~/AppData/Local/hermes/scripts/, where parents[1]
 # resolves to the hermes home (its ./data is empty/absent) instead of the
 # trading-bot repo. Always prefer the real paper-trading data dir so the weekly
@@ -84,10 +89,11 @@ def _max_drawdown(vals):
 
 def build_report():
     rows = _read_jsonl(DATA / "closed_trades.jsonl")
-    # exclude test/demo artifacts
+    # exclude test/demo artifacts and trades closed before the real-run start
     real = [r for r in rows
             if "test" not in str(r.get("reason", "")).lower()
-            and "demo" not in str(r.get("reason", "")).lower()]
+            and "demo" not in str(r.get("reason", "")).lower()
+            and str(r.get("timestamp", ""))[:10] >= MIN_CLOSE_DATE]
     wins = [r for r in real if r.get("realized_pnl", 0) > 0]
     losses = [r for r in real if r.get("realized_pnl", 0) <= 0]
     n = len(real)
