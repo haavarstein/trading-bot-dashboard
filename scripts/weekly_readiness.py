@@ -14,6 +14,14 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1] if Path(__file__).resolve().name == "weekly_readiness.py" else Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
+
+# The cron runs a copy under ~/AppData/Local/hermes/scripts/, where parents[1]
+# resolves to the hermes home (its ./data is empty/absent) instead of the
+# trading-bot repo. Always prefer the real paper-trading data dir so the weekly
+# report reflects paper activity, not zeros.
+_REPO_DATA = Path.home() / "trading-bot" / "data"
+if _REPO_DATA.is_dir() and (_REPO_DATA / "closed_trades.jsonl").exists():
+    DATA = _REPO_DATA
 GO_LIVE = {
     "win_rate_min": 35.0,
     "profit_factor_min": 1.5,
