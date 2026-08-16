@@ -108,15 +108,17 @@ def build_report():
     curve = _equity_curve()
     mdd, mdd_at = _max_drawdown(curve)
 
-    # time span
+    # time span = bot's actual operating window (equity curve), NOT the span of
+    # the filtered trade list. The cutoff drops early test trades; trading-days
+    # is a stability gate and must reflect how long the bot has been running.
     span_days = 0
-    if real:
+    if curve:
         try:
-            t0 = min(r.get("timestamp", "") for r in real if r.get("timestamp"))
-            t1 = max(r.get("timestamp", "") for r in real if r.get("timestamp"))
-            d0 = datetime.fromisoformat(t0.replace("Z", "+00:00"))
-            d1 = datetime.fromisoformat(t1.replace("Z", "+00:00"))
-            span_days = max(1, int((d1 - d0).days))
+            ts = [t for t, _ in curve if t]
+            if ts:
+                d0 = datetime.fromisoformat(min(ts).replace("Z", "+00:00"))
+                d1 = datetime.fromisoformat(max(ts).replace("Z", "+00:00"))
+                span_days = max(1, int((d1 - d0).days))
         except Exception:
             span_days = 0
 
