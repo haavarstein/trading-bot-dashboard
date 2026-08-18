@@ -12,9 +12,10 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 OUT = ROOT / "dashboard-data.json"
 
-# Earliest fill date included on the equity curve. Matches
-# weekly_readiness.MIN_CLOSE_DATE — start of the real paper run.
-MIN_FILL_DATE = "2026-08-12"
+# Earliest fill/close date included on the dashboard (equity curve AND the
+# closed-trade boards: recent fills, Top 5 Take Profit, Top 5 Stop Loss).
+# Trades closed before this are early test/validation days and are excluded.
+MIN_FILL_DATE = "2026-08-14"
 
 sys_path_note = str(ROOT / "scripts")
 import sys
@@ -743,7 +744,10 @@ def main():
             }
         )
 
-    # Closed results newest first (Farzad-style list)
+    # Closed results newest first (Farzad-style list).
+    # Apply the shared real-run cutoff (MIN_FILL_DATE, matching the weekly report)
+    # here at the SOURCE so every downstream view — closed_recent, Top 5 Take
+    # Profit, Top 5 Stop Loss — excludes early test/validation trades.
     closed_sorted = sorted(
         closed,
         key=lambda r: r.get("timestamp") or "",
@@ -752,6 +756,8 @@ def main():
     closed_results = []
     for row in closed_sorted:
         if row.get("symbol") in ("AAA",):
+            continue
+        if str(row.get("timestamp") or "")[:10] < MIN_FILL_DATE:
             continue
         avg = float(row.get("avg_cost") or 0)
         qty = float(row.get("qty") or 0)

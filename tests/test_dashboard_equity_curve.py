@@ -66,15 +66,19 @@ class TestDashboardEquityCurve(unittest.TestCase):
             _fill("2026-08-06T15:49:41.748264+00:00", "BUY", "ANET", 1.0, 193.1),
             _fill("2026-08-11T18:44:01.472745+00:00", "SELL", "PANW", 0.5, 382.0),
             _fill("2026-08-12T13:33:13.328443+00:00", "SELL", "LRCX", 0.65, 327.61),
+            _fill("2026-08-14T15:00:00.000000+00:00", "SELL", "JPM", 0.5, 360.0),
         ]
         curve = g.build_equity_curve(fills, self._snap(), 1000.0)
         events = [p["event"] for p in curve["points"]]
+        # pre-cutoff (Aug-06 / 08-11 / 08-12) fills excluded
         self.assertNotIn("BUY ANET", events)
         self.assertNotIn("SELL PANW", events)
-        self.assertIn("SELL LRCX", events)
+        self.assertNotIn("SELL LRCX", events)
+        # on/after cutoff (08-14) fill included
+        self.assertIn("SELL JPM", events)
         self.assertIn("start", events)
         self.assertIn("mark", events)
-        self.assertGreaterEqual(g.MIN_FILL_DATE, "2026-08-12")
+        self.assertGreaterEqual(g.MIN_FILL_DATE, "2026-08-14")
 
     def test_broken_session_burst_does_not_spike(self):
         fills = []
