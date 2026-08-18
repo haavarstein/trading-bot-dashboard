@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-18T14:00:09.126944+00:00",
+  "generated_at": "2026-08-18T14:03:41.757592+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1033.73,
+    "portfolio_value": 1034.28,
     "starting_cash": 1000.0,
-    "total_return_pct": 3.37,
-    "total_pnl": 33.73,
+    "total_return_pct": 3.43,
+    "total_pnl": 34.28,
     "realized_pnl": 32.39,
-    "open_pnl": 1.34,
-    "capital_deployed": 796.62,
+    "open_pnl": 1.88,
+    "capital_deployed": 797.17,
     "cash": 237.11,
     "closed_trades": 13,
     "win_rate_pct": 38.46,
-    "vs_spy_pct": 3.5,
-    "spy_return_pct": -0.13,
+    "vs_spy_pct": 3.47,
+    "spy_return_pct": -0.04,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-18T14:00:12.106940+00:00"
+    "updated_at": "2026-08-18T14:03:44.706833+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.13,
-    "price": 768.3599853515625,
+    "return_pct": -0.04,
+    "price": 769.0537109375,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,10 +38,10 @@
       "symbol": "CVX",
       "qty": 1.01,
       "avg_cost": 197.26,
-      "last": 204.5850067138672,
-      "market_value": 206.63,
-      "open_pnl": 7.4,
-      "open_pnl_pct": 3.71,
+      "last": 204.3000030517578,
+      "market_value": 206.34,
+      "open_pnl": 7.11,
+      "open_pnl_pct": 3.57,
       "stop": 191.0,
       "target": 207.0,
       "thesis": "CVX screens as a liquid catalyst setup with solid rank score and bullish sentiment around Q2 earnings beat narrative plus AI power deal headlines. Book has room for one more name under the five-position guideline and cash supports a sub-$200 notional add. Risk defined below recent support with asymmetric upside to the stated target meeting the 1.5 R:R minimum."
@@ -50,10 +50,10 @@
       "symbol": "AMZN",
       "qty": 0.75,
       "avg_cost": 264.78,
-      "last": 258.2200012207031,
-      "market_value": 193.67,
-      "open_pnl": -4.92,
-      "open_pnl_pct": -2.48,
+      "last": 258.92999267578125,
+      "market_value": 194.2,
+      "open_pnl": -4.39,
+      "open_pnl_pct": -2.21,
       "stop": 256.0,
       "target": 278.0,
       "thesis": "AMZN is the sole ranked candidate with a clear bullish catalyst: Renaissance Technologies disclosed a new $546M long position, supporting institutional accumulation. Price sits near mid-RSI with AI/cloud narrative tailwinds and adequate liquidity for a small add. Book has room under the 5-name cap and cash covers a ~$200 notional entry with defined risk. Reward-to-risk is set above 1.5 with a tight stop under recent support."
@@ -62,10 +62,10 @@
       "symbol": "PANW",
       "qty": 0.53,
       "avg_cost": 375.76,
-      "last": 372.79998779296875,
-      "market_value": 197.58,
-      "open_pnl": -1.57,
-      "open_pnl_pct": -0.79,
+      "last": 373.68280029296875,
+      "market_value": 198.05,
+      "open_pnl": -1.1,
+      "open_pnl_pct": -0.55,
       "stop": 365.0,
       "target": 392.0,
       "thesis": "PANW is the sole ranked liquid catalyst candidate with a bullish institutional accumulation headline and solid rank/catalyst scores. Book has room for one more name under the 5-position cap and cash supports a sub-$200 notional add. Neutral RSI leaves room for continuation if the flow follows through."
@@ -74,10 +74,10 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 360.57,
-      "last": 361.3500061035156,
-      "market_value": 198.74,
-      "open_pnl": 0.43,
-      "open_pnl_pct": 0.22,
+      "last": 361.04998779296875,
+      "market_value": 198.58,
+      "open_pnl": 0.26,
+      "open_pnl_pct": 0.13,
       "stop": 350.0,
       "target": 378.0,
       "thesis": "JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit."
@@ -86,15 +86,15 @@
   "latest_candidate": {
     "symbol": "JPM",
     "name": "JPM",
-    "price": 361.04998779296875,
-    "volume": 376630.0,
-    "avg_volume": 4496058.888888889,
-    "percent_change": -0.49333275355205053,
+    "price": 361.3500061035156,
+    "volume": 586665.0,
+    "avg_volume": 4519396.111111111,
+    "percent_change": -0.4106466347186994,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 16,
-    "liquidity_score": 76.53,
-    "rank_score": 83.37,
+    "liquidity_score": 76.55,
+    "rank_score": 83.31,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (buyback, catalyst): JPM, GS, MS Stocks Edge Higher After-Hours \u2014 Banks Lift Dividends And Announce Buybacks After Fed Stress Test - Stocktwits",
     "top_headlines": [
@@ -143,45 +143,45 @@
     "model": "grok-4.5",
     "action": "BUY",
     "symbol": "ANET",
-    "confidence": 74,
+    "confidence": 72,
     "cache_stats": null,
-    "entry_price": 195.84,
+    "entry_price": 196.56,
     "stop_loss": 189.0,
-    "take_profit": 206.5,
-    "qty": 1.02,
-    "thesis": "ANET ranks second on the desk list with a solid institutional accumulation headline and bullish sentiment while RSI sits neutral, offering a clean liquid add without needing a rotation. Portfolio has room for one more name under the five-position cap and cash supports a sub-$200 notional clip. Risk is defined below recent support with a 1.5x+ reward target into the next resistance zone.",
+    "take_profit": 210.0,
+    "qty": 1.0,
+    "thesis": "ANET ranks as the strongest non-held catalyst name with fresh institutional accumulation (Deutsche Bank stake add) and a solid bullish rank score. Portfolio has room for a fifth name and ~$200 notional capacity without forced rotation. Defined risk below recent support keeps reward-to-risk above 1.5 while participating in networking/AI infrastructure strength.",
     "reason_code": "new_entry",
     "reasoning": {
       "headline": "Bought $ANET",
-      "narrative": "ANET ranks second on the desk list with a solid institutional accumulation headline and bullish sentiment while RSI sits neutral, offering a clean liquid add without needing a rotation. Portfolio has room for one more name under the five-position cap and cash supports a sub-$200 notional clip. Risk is defined below recent support with a 1.5x+ reward target into the next resistance zone.",
+      "narrative": "ANET ranks as the strongest non-held catalyst name with fresh institutional accumulation (Deutsche Bank stake add) and a solid bullish rank score. Portfolio has room for a fifth name and ~$200 notional capacity without forced rotation. Defined risk below recent support keeps reward-to-risk above 1.5 while participating in networking/AI infrastructure strength.",
       "bullets": [
-        "Rank 76.5 + catalyst 14 institutional buy headline",
-        "Neutral RSI 50 leaves room for continuation",
-        "~$200 notional fits cash and max-names policy",
-        "R:R ~1.55 with stop 189 / target 206.5"
+        "Top unused candidate: rank 76+, catalyst_score 14, bullish flow",
+        "Notional ~$197 fits cash and $200 new-buy cap",
+        "Stop 189 / target 210 delivers R:R ~1.8",
+        "Book at 4 names; no need to rotate weaker holds yet"
       ],
       "risk_map": {
         "stop": 189.0,
-        "target": 206.5,
+        "target": 210.0,
         "horizon_days": 5,
-        "rr": 1.56,
+        "rr": 1.78,
         "confidence_10": 7,
-        "confidence": 74
+        "confidence": 72
       },
-      "thesis": "ANET ranks second on the desk list with a solid institutional accumulation headline and bullish sentiment while RSI sits neutral, offering a clean liquid add without needing a rotation. Portfolio has room for one more name under the five-position cap and cash supports a sub-$200 notional clip. Risk is defined below recent support with a 1.5x+ reward target into the next resistance zone."
+      "thesis": "ANET ranks as the strongest non-held catalyst name with fresh institutional accumulation (Deutsche Bank stake add) and a solid bullish rank score. Portfolio has room for a fifth name and ~$200 notional capacity without forced rotation. Defined risk below recent support keeps reward-to-risk above 1.5 while participating in networking/AI infrastructure strength."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Rank 76.5 + catalyst 14 institutional buy headline",
-      "Neutral RSI 50 leaves room for continuation",
-      "~$200 notional fits cash and max-names policy",
-      "R:R ~1.55 with stop 189 / target 206.5"
+      "Top unused candidate: rank 76+, catalyst_score 14, bullish flow",
+      "Notional ~$197 fits cash and $200 new-buy cap",
+      "Stop 189 / target 210 delivers R:R ~1.8",
+      "Book at 4 names; no need to rotate weaker holds yet"
     ],
-    "timestamp": "2026-08-18T13:48:20.939911+00:00"
+    "timestamp": "2026-08-18T14:03:31.688422+00:00"
   },
-  "stance": "Buying pressure on ANET. ANET ranks second on the desk list with a solid institutional accumulation headline and bullish sentiment while RSI sits neutral, offering a clean liquid add without needing a rotation. Portfolio has room for one more name under the five-position cap and cash supports a sub-$200 notional clip. Risk is defined below recent support with a 1.5x+ reward target into the next resistance zone.",
+  "stance": "Buying pressure on ANET. ANET ranks as the strongest non-held catalyst name with fresh institutional accumulation (Deutsche Bank stake add) and a solid bullish rank score. Portfolio has room for a fifth name and ~$200 notional capacity without forced rotation. Defined risk below recent support keeps reward-to-risk above 1.5 while participating in networking/AI infrastructure strength.",
   "thinking": {
     "badge": "Looking to buy ANET",
     "headline": "Buying pressure on ANET.",
@@ -201,9 +201,9 @@
         "avg_cost": 197.26,
         "stop": 191.0,
         "target": 207.0,
-        "last": 204.5850067138672,
-        "open_pnl": 7.4,
-        "open_pnl_pct": 3.71,
+        "last": 204.3000030517578,
+        "open_pnl": 7.11,
+        "open_pnl_pct": 3.57,
         "line": "Bought near $197.26 \u00b7 Sell safety line $191.00 \u00b7 Profit target $207.00",
         "plan": "stop 191.0 or target 207.0"
       },
@@ -213,9 +213,9 @@
         "avg_cost": 264.78,
         "stop": 256.0,
         "target": 278.0,
-        "last": 258.2200012207031,
-        "open_pnl": -4.92,
-        "open_pnl_pct": -2.48,
+        "last": 258.92999267578125,
+        "open_pnl": -4.39,
+        "open_pnl_pct": -2.21,
         "line": "Bought near $264.78 \u00b7 Sell safety line $256.00 \u00b7 Profit target $278.00",
         "plan": "stop 256.0 or target 278.0"
       },
@@ -225,9 +225,9 @@
         "avg_cost": 375.76,
         "stop": 365.0,
         "target": 392.0,
-        "last": 372.79998779296875,
-        "open_pnl": -1.57,
-        "open_pnl_pct": -0.79,
+        "last": 373.68280029296875,
+        "open_pnl": -1.1,
+        "open_pnl_pct": -0.55,
         "line": "Bought near $375.76 \u00b7 Sell safety line $365.00 \u00b7 Profit target $392.00",
         "plan": "stop 365.0 or target 392.0"
       },
@@ -237,14 +237,14 @@
         "avg_cost": 360.57,
         "stop": 350.0,
         "target": 378.0,
-        "last": 361.3500061035156,
-        "open_pnl": 0.43,
-        "open_pnl_pct": 0.22,
+        "last": 361.04998779296875,
+        "open_pnl": 0.26,
+        "open_pnl_pct": 0.13,
         "line": "Bought near $360.57 \u00b7 Sell safety line $350.00 \u00b7 Profit target $378.00",
         "plan": "stop 350.0 or target 378.0"
       }
     ],
-    "last_checked": "2026-08-18T14:00:09.126944+00:00",
+    "last_checked": "2026-08-18T14:03:41.757592+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -275,24 +275,24 @@
         "prefix": "J",
         "model": "deepseek-v4-flash",
         "action": "BUY",
-        "symbol": "JPM",
-        "confidence": 78,
+        "symbol": "ANET",
+        "confidence": 90,
         "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "BUY",
-        "symbol": "JPM",
-        "confidence": 82,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 60,
+        "tone": "hold"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
         "action": "BUY",
         "symbol": "ANET",
-        "confidence": 74,
+        "confidence": 72,
         "tone": "buy"
       },
       {
@@ -300,7 +300,7 @@
         "model": "claude-sonnet-5",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 68,
+        "confidence": 65,
         "tone": "hold"
       },
       {
@@ -314,6 +314,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "ANET",
+      "status": "no_consensus",
+      "headline": "BUY ANET \u2014 no consensus",
+      "detail": "Desks: BUY ANET (72%) vs HOLD CASH (65%) vs BUY ANET (90%). No 2-of-3 senior agreement",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "ANET",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "ANET",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "ANET",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "BUY",
+          "symbol": "ANET",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-08-18T14:03:31.688422+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "ANET",
@@ -539,14 +616,6 @@
       "headline": "SELL MSFT @ $505.00",
       "detail": "rotation",
       "timestamp": "2026-08-18T00:49:27.478232+00:00"
-    },
-    {
-      "type": "fill",
-      "symbol": "MSFT",
-      "status": "filled_paper",
-      "headline": "BUY MSFT @ $500.00",
-      "detail": "",
-      "timestamp": "2026-08-18T00:49:27.475234+00:00"
     }
   ],
   "recent_trades": [
@@ -9586,15 +9655,15 @@
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 361.04998779296875,
-      "volume": 376630.0,
-      "avg_volume": 4496058.888888889,
-      "percent_change": -0.49333275355205053,
+      "price": 361.3500061035156,
+      "volume": 586665.0,
+      "avg_volume": 4519396.111111111,
+      "percent_change": -0.4106466347186994,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 16,
-      "liquidity_score": 76.53,
-      "rank_score": 83.37,
+      "liquidity_score": 76.55,
+      "rank_score": 83.31,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (buyback, catalyst): JPM, GS, MS Stocks Edge Higher After-Hours \u2014 Banks Lift Dividends And Announce Buybacks After Fed Stress Test - Stocktwits",
       "top_headlines": [
@@ -9642,15 +9711,15 @@
     {
       "symbol": "ANET",
       "name": "ANET",
-      "price": 195.83999633789062,
-      "volume": 511104.0,
-      "avg_volume": 7784044.888888889,
-      "percent_change": -1.498848645281748,
+      "price": 196.55999755859375,
+      "volume": 772886.0,
+      "avg_volume": 7813131.777777778,
+      "percent_change": -1.1367114386730548,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 14,
-      "liquidity_score": 78.91,
-      "rank_score": 76.54,
+      "liquidity_score": 78.93,
+      "rank_score": 76.25,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Deutsche Bank AG Acquires 388,354 Shares of Arista Networks, Inc. $ANET - MarketBeat",
       "top_headlines": [
@@ -9700,21 +9769,21 @@
     {
       "symbol": "NFLX",
       "name": "NFLX",
-      "price": 77.45829772949219,
-      "volume": 3000568.0,
-      "avg_volume": 25495452.0,
-      "percent_change": -0.89778134562366,
+      "price": 77.96499633789062,
+      "volume": 5334689.0,
+      "avg_volume": 25754798.777777776,
+      "percent_change": -0.24949758838520397,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
-      "liquidity_score": 84.06,
-      "rank_score": 72.83,
+      "liquidity_score": 84.11,
+      "rank_score": 72.32,
       "news_hits": 6,
       "catalyst": "Headline-driven setup (beat): 27,978 Shares in Netflix, Inc. $NFLX Purchased by UNIVEST FINANCIAL Corp - MarketBeat",
       "top_headlines": [
         "27,978 Shares in Netflix, Inc. $NFLX Purchased by UNIVEST FINANCIAL Corp - MarketBeat",
         "Netflix (NFLX) Stock Quotes, Company News And Chart Analysis - Investor's Business Daily",
-        "Jim Cramer Tells Caller to Average Down on Netflix (NFLX) - Yahoo Finance"
+        "Jim Cramer Tells Caller to Average Down on Netflix (NFLX) - finance.yahoo.com"
       ],
       "matched_headlines": [
         {
@@ -9753,21 +9822,21 @@
     {
       "symbol": "CRWD",
       "name": "CRWD",
-      "price": 214.58999633789062,
-      "volume": 555021.0,
-      "avg_volume": 6076357.888888889,
-      "percent_change": -1.0878085473836574,
+      "price": 212.9199981689453,
+      "volume": 761517.0,
+      "avg_volume": 6099301.888888889,
+      "percent_change": -1.85757033232792,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
-      "liquidity_score": 77.84,
-      "rank_score": 64.05,
+      "liquidity_score": 77.85,
+      "rank_score": 64.66,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Renaissance Technologies Has Taken a New Position in CrowdStrike. What This Means for CRWD Stock. - Barchart.com",
       "top_headlines": [
+        "CRWD vs. FTNT: Which Cybersecurity Stock Should You Buy Right Now? - Zacks Investment Research",
         "Renaissance Technologies Has Taken a New Position in CrowdStrike. What This Means for CRWD Stock. - Barchart.com",
-        "CRWD Could Beat Q2 Expectations Across The Board, Says Benchmark \u2014 Firm Sees Multiple Growth Catalysts - TradingView",
-        "CRWD vs. FTNT: Which Cybersecurity Stock Should You Buy Right Now? - Zacks Investment Research"
+        "CRWD Could Beat Q2 Expectations Across The Board, Says Benchmark \u2014 Firm Sees Multiple Growth Catalysts - TradingView"
       ],
       "matched_headlines": [
         {
@@ -9791,7 +9860,7 @@
           ]
         },
         {
-          "title": "Analysts Have Conflicting Sentiments on These Technology Companies: Globant SA (GLOB), CrowdStrike Holdings (CRWD) and Zscaler (ZS) - theglobeandmail.com",
+          "title": "Analysts Have Conflicting Sentiments on These Technology Companies: Globant SA (GLOB), CrowdStrike Holdings (CRWD) and Zscaler (ZS) - The Globe and Mail",
           "keywords": [
             "ai",
             "catalyst"
@@ -9808,19 +9877,19 @@
     {
       "symbol": "LRCX",
       "name": "LRCX",
-      "price": 322.9599914550781,
-      "volume": 757483.0,
-      "avg_volume": 7032853.666666667,
-      "percent_change": -2.8282568030989905,
+      "price": 322.8500061035156,
+      "volume": 1161762.0,
+      "avg_volume": 7077773.555555556,
+      "percent_change": -2.8613490393518477,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
-      "liquidity_score": 78.47,
-      "rank_score": 64.03,
+      "liquidity_score": 78.5,
+      "rank_score": 64.06,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Lam Research Corporation $LRCX Shares Sold by Watershed Private Wealth LLC - MarketBeat",
       "top_headlines": [
-        "Lam Research (LRCX) Stock Looks Fully Valued After Its 499% Run - Yahoo Finance",
+        "Lam Research (LRCX) Stock Looks Fully Valued After Its 499% Run - finance.yahoo.com",
         "Lam Research Corporation $LRCX Shares Sold by Watershed Private Wealth LLC - MarketBeat",
         "A Look at Lam Research Corp (LRCX) After 3.5% Gain -- GF Value $147.86 vs Price $343.84 - GuruFocus"
       ],
@@ -9881,10 +9950,10 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 1,
-      "BUY": 3,
+      "HOLD": 2,
+      "BUY": 2,
       "SELL": 0,
-      "live": 4,
+      "live": 3,
       "fallback": 0
     },
     "junior_model_3_enabled": true,
@@ -9903,21 +9972,21 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 85.7
+    "live_share_recent": 81.0
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 264,
     "closed_outcomes": 110,
-    "consensus_events": 215,
+    "consensus_events": 216,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1033.73,
-    "change": 33.73,
-    "change_pct": 3.37,
+    "latest_equity": 1034.28,
+    "change": 34.28,
+    "change_pct": 3.43,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -13624,6 +13693,12 @@
       {
         "t": "2026-08-18T14:00:12.106940+00:00",
         "equity": 1033.73,
+        "cash": 237.11,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-18T14:03:44.706833+00:00",
+        "equity": 1034.28,
         "cash": 237.11,
         "event": "mark"
       }
