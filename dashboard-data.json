@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-18T13:40:27.805851+00:00",
+  "generated_at": "2026-08-18T13:48:31.438276+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1037.69,
+    "portfolio_value": 1035.58,
     "starting_cash": 1000.0,
-    "total_return_pct": 3.77,
-    "total_pnl": 37.69,
+    "total_return_pct": 3.56,
+    "total_pnl": 35.58,
     "realized_pnl": 32.39,
-    "open_pnl": 5.3,
-    "capital_deployed": 800.58,
+    "open_pnl": 3.2,
+    "capital_deployed": 798.47,
     "cash": 237.11,
     "closed_trades": 13,
     "win_rate_pct": 38.46,
-    "vs_spy_pct": 3.8,
-    "spy_return_pct": -0.03,
+    "vs_spy_pct": 3.62,
+    "spy_return_pct": -0.06,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-18T13:40:30.992182+00:00"
+    "updated_at": "2026-08-18T13:48:34.406236+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.03,
-    "price": 769.1599731445312,
+    "return_pct": -0.06,
+    "price": 768.9600219726562,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,10 +38,10 @@
       "symbol": "CVX",
       "qty": 1.01,
       "avg_cost": 197.26,
-      "last": 205.08920288085938,
-      "market_value": 207.14,
-      "open_pnl": 7.91,
-      "open_pnl_pct": 3.97,
+      "last": 204.52499389648438,
+      "market_value": 206.57,
+      "open_pnl": 7.34,
+      "open_pnl_pct": 3.68,
       "stop": 191.0,
       "target": 207.0,
       "thesis": "CVX screens as a liquid catalyst setup with solid rank score and bullish sentiment around Q2 earnings beat narrative plus AI power deal headlines. Book has room for one more name under the five-position guideline and cash supports a sub-$200 notional add. Risk defined below recent support with asymmetric upside to the stated target meeting the 1.5 R:R minimum."
@@ -50,10 +50,10 @@
       "symbol": "AMZN",
       "qty": 0.75,
       "avg_cost": 264.78,
-      "last": 259.6700134277344,
-      "market_value": 194.75,
-      "open_pnl": -3.83,
-      "open_pnl_pct": -1.93,
+      "last": 259.5899963378906,
+      "market_value": 194.69,
+      "open_pnl": -3.89,
+      "open_pnl_pct": -1.96,
       "stop": 256.0,
       "target": 278.0,
       "thesis": "AMZN is the sole ranked candidate with a clear bullish catalyst: Renaissance Technologies disclosed a new $546M long position, supporting institutional accumulation. Price sits near mid-RSI with AI/cloud narrative tailwinds and adequate liquidity for a small add. Book has room under the 5-name cap and cash covers a ~$200 notional entry with defined risk. Reward-to-risk is set above 1.5 with a tight stop under recent support."
@@ -62,10 +62,10 @@
       "symbol": "PANW",
       "qty": 0.53,
       "avg_cost": 375.76,
-      "last": 377.4949951171875,
-      "market_value": 200.07,
-      "open_pnl": 0.92,
-      "open_pnl_pct": 0.46,
+      "last": 374.0249938964844,
+      "market_value": 198.23,
+      "open_pnl": -0.92,
+      "open_pnl_pct": -0.46,
       "stop": 365.0,
       "target": 392.0,
       "thesis": "PANW is the sole ranked liquid catalyst candidate with a bullish institutional accumulation headline and solid rank/catalyst scores. Book has room for one more name under the 5-position cap and cash supports a sub-$200 notional add. Neutral RSI leaves room for continuation if the flow follows through."
@@ -74,10 +74,10 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 360.57,
-      "last": 361.1242980957031,
-      "market_value": 198.62,
-      "open_pnl": 0.3,
-      "open_pnl_pct": 0.15,
+      "last": 361.7799987792969,
+      "market_value": 198.98,
+      "open_pnl": 0.67,
+      "open_pnl_pct": 0.34,
       "stop": 350.0,
       "target": 378.0,
       "thesis": "JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit."
@@ -86,15 +86,15 @@
   "latest_candidate": {
     "symbol": "JPM",
     "name": "JPM",
-    "price": 360.5682067871094,
-    "volume": 115589.0,
-    "avg_volume": 4467054.333333333,
-    "percent_change": -0.6261133209431718,
+    "price": 361.04998779296875,
+    "volume": 376630.0,
+    "avg_volume": 4496058.888888889,
+    "percent_change": -0.49333275355205053,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 16,
-    "liquidity_score": 76.5,
-    "rank_score": 83.48,
+    "liquidity_score": 76.53,
+    "rank_score": 83.37,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (buyback, catalyst): JPM, GS, MS Stocks Edge Higher After-Hours \u2014 Banks Lift Dividends And Announce Buybacks After Fed Stress Test - Stocktwits",
     "top_headlines": [
@@ -142,50 +142,50 @@
   "latest_decision": {
     "model": "grok-4.5",
     "action": "BUY",
-    "symbol": "JPM",
-    "confidence": 78,
+    "symbol": "ANET",
+    "confidence": 74,
     "cache_stats": null,
-    "entry_price": 360.57,
-    "stop_loss": 350.0,
-    "take_profit": 378.0,
-    "qty": 0.55,
-    "thesis": "JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit.",
+    "entry_price": 195.84,
+    "stop_loss": 189.0,
+    "take_profit": 206.5,
+    "qty": 1.02,
+    "thesis": "ANET ranks second on the desk list with a solid institutional accumulation headline and bullish sentiment while RSI sits neutral, offering a clean liquid add without needing a rotation. Portfolio has room for one more name under the five-position cap and cash supports a sub-$200 notional clip. Risk is defined below recent support with a 1.5x+ reward target into the next resistance zone.",
     "reason_code": "new_entry",
     "reasoning": {
-      "headline": "Bought $JPM",
-      "narrative": "JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit.",
+      "headline": "Bought $ANET",
+      "narrative": "ANET ranks second on the desk list with a solid institutional accumulation headline and bullish sentiment while RSI sits neutral, offering a clean liquid add without needing a rotation. Portfolio has room for one more name under the five-position cap and cash supports a sub-$200 notional clip. Risk is defined below recent support with a 1.5x+ reward target into the next resistance zone.",
       "bullets": [
-        "Stress-test buyback/dividend catalyst",
-        "Rank score 83+ with bullish sentiment",
-        "R:R ~1.65 via 350 stop / 378 target",
-        "Adds liquid name; book still has capacity"
+        "Rank 76.5 + catalyst 14 institutional buy headline",
+        "Neutral RSI 50 leaves room for continuation",
+        "~$200 notional fits cash and max-names policy",
+        "R:R ~1.55 with stop 189 / target 206.5"
       ],
       "risk_map": {
-        "stop": 350.0,
-        "target": 378.0,
+        "stop": 189.0,
+        "target": 206.5,
         "horizon_days": 5,
-        "rr": 1.65,
-        "confidence_10": 8,
-        "confidence": 78
+        "rr": 1.56,
+        "confidence_10": 7,
+        "confidence": 74
       },
-      "thesis": "JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit."
+      "thesis": "ANET ranks second on the desk list with a solid institutional accumulation headline and bullish sentiment while RSI sits neutral, offering a clean liquid add without needing a rotation. Portfolio has room for one more name under the five-position cap and cash supports a sub-$200 notional clip. Risk is defined below recent support with a 1.5x+ reward target into the next resistance zone."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Stress-test buyback/dividend catalyst",
-      "Rank score 83+ with bullish sentiment",
-      "R:R ~1.65 via 350 stop / 378 target",
-      "Adds liquid name; book still has capacity"
+      "Rank 76.5 + catalyst 14 institutional buy headline",
+      "Neutral RSI 50 leaves room for continuation",
+      "~$200 notional fits cash and max-names policy",
+      "R:R ~1.55 with stop 189 / target 206.5"
     ],
-    "timestamp": "2026-08-18T13:35:00.111555+00:00"
+    "timestamp": "2026-08-18T13:48:20.939911+00:00"
   },
-  "stance": "Buying pressure on JPM. JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit.",
+  "stance": "Buying pressure on ANET. ANET ranks second on the desk list with a solid institutional accumulation headline and bullish sentiment while RSI sits neutral, offering a clean liquid add without needing a rotation. Portfolio has room for one more name under the five-position cap and cash supports a sub-$200 notional clip. Risk is defined below recent support with a 1.5x+ reward target into the next resistance zone.",
   "thinking": {
-    "badge": "Looking to buy JPM",
-    "headline": "Buying pressure on JPM.",
-    "plain_english": "Right now Hermes wants exposure to JPM. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
+    "badge": "Looking to buy ANET",
+    "headline": "Buying pressure on ANET.",
+    "plain_english": "Right now Hermes wants exposure to ANET. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
     "triggers": [
       "It owns CVX, bought near $197.26. Simple plan: sell if it falls to about $191.00, or take profit near $207.00.",
       "It owns AMZN, bought near $264.78. Simple plan: sell if it falls to about $256.00, or take profit near $278.00.",
@@ -201,9 +201,9 @@
         "avg_cost": 197.26,
         "stop": 191.0,
         "target": 207.0,
-        "last": 205.08920288085938,
-        "open_pnl": 7.91,
-        "open_pnl_pct": 3.97,
+        "last": 204.52499389648438,
+        "open_pnl": 7.34,
+        "open_pnl_pct": 3.68,
         "line": "Bought near $197.26 \u00b7 Sell safety line $191.00 \u00b7 Profit target $207.00",
         "plan": "stop 191.0 or target 207.0"
       },
@@ -213,9 +213,9 @@
         "avg_cost": 264.78,
         "stop": 256.0,
         "target": 278.0,
-        "last": 259.6700134277344,
-        "open_pnl": -3.83,
-        "open_pnl_pct": -1.93,
+        "last": 259.5899963378906,
+        "open_pnl": -3.89,
+        "open_pnl_pct": -1.96,
         "line": "Bought near $264.78 \u00b7 Sell safety line $256.00 \u00b7 Profit target $278.00",
         "plan": "stop 256.0 or target 278.0"
       },
@@ -225,9 +225,9 @@
         "avg_cost": 375.76,
         "stop": 365.0,
         "target": 392.0,
-        "last": 377.4949951171875,
-        "open_pnl": 0.92,
-        "open_pnl_pct": 0.46,
+        "last": 374.0249938964844,
+        "open_pnl": -0.92,
+        "open_pnl_pct": -0.46,
         "line": "Bought near $375.76 \u00b7 Sell safety line $365.00 \u00b7 Profit target $392.00",
         "plan": "stop 365.0 or target 392.0"
       },
@@ -237,14 +237,14 @@
         "avg_cost": 360.57,
         "stop": 350.0,
         "target": 378.0,
-        "last": 361.1242980957031,
-        "open_pnl": 0.3,
-        "open_pnl_pct": 0.15,
+        "last": 361.7799987792969,
+        "open_pnl": 0.67,
+        "open_pnl_pct": 0.34,
         "line": "Bought near $360.57 \u00b7 Sell safety line $350.00 \u00b7 Profit target $378.00",
         "plan": "stop 350.0 or target 378.0"
       }
     ],
-    "last_checked": "2026-08-18T13:40:27.805851+00:00",
+    "last_checked": "2026-08-18T13:48:31.438276+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -258,16 +258,16 @@
       {
         "prefix": "J",
         "model": "grok-4.3",
-        "action": "BUY",
-        "symbol": "JPM",
-        "confidence": 82,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 60,
+        "tone": "hold"
       },
       {
         "prefix": "J",
         "model": "claude-haiku-4-5",
         "action": "BUY",
-        "symbol": "JPM",
+        "symbol": "ANET",
         "confidence": 72,
         "tone": "buy"
       },
@@ -276,7 +276,7 @@
         "model": "deepseek-v4-flash",
         "action": "BUY",
         "symbol": "JPM",
-        "confidence": 72,
+        "confidence": 78,
         "tone": "buy"
       },
       {
@@ -284,36 +284,113 @@
         "model": "grok-build-0.1",
         "action": "BUY",
         "symbol": "JPM",
-        "confidence": 78,
+        "confidence": 82,
         "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
         "action": "BUY",
-        "symbol": "JPM",
-        "confidence": 78,
+        "symbol": "ANET",
+        "confidence": 74,
         "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "claude-sonnet-5",
-        "action": "BUY",
-        "symbol": "JPM",
-        "confidence": 78,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 68,
+        "tone": "hold"
       },
       {
         "prefix": "S",
         "model": "claude-opus-5",
         "action": "BUY",
-        "symbol": "JPM",
+        "symbol": "ANET",
         "confidence": 90,
         "tone": "buy"
       }
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "ANET",
+      "status": "no_consensus",
+      "headline": "BUY ANET \u2014 no consensus",
+      "detail": "Desks: BUY ANET (74%) vs HOLD CASH (68%) vs BUY ANET (90%). No 2-of-3 senior agreement",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "ANET",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 78,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 82,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "ANET",
+          "confidence": 74,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 68,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "BUY",
+          "symbol": "ANET",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-08-18T13:48:20.939911+00:00"
+    },
     {
       "type": "fill",
       "symbol": "JPM",
@@ -470,14 +547,6 @@
       "headline": "BUY MSFT @ $500.00",
       "detail": "",
       "timestamp": "2026-08-18T00:49:27.475234+00:00"
-    },
-    {
-      "type": "fill",
-      "symbol": "AAPL",
-      "status": "filled_paper",
-      "headline": "BUY AAPL @ $400.00",
-      "detail": "",
-      "timestamp": "2026-08-18T00:49:25.414380+00:00"
     }
   ],
   "recent_trades": [
@@ -9517,15 +9586,15 @@
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 360.5682067871094,
-      "volume": 115589.0,
-      "avg_volume": 4467054.333333333,
-      "percent_change": -0.6261133209431718,
+      "price": 361.04998779296875,
+      "volume": 376630.0,
+      "avg_volume": 4496058.888888889,
+      "percent_change": -0.49333275355205053,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 16,
-      "liquidity_score": 76.5,
-      "rank_score": 83.48,
+      "liquidity_score": 76.53,
+      "rank_score": 83.37,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (buyback, catalyst): JPM, GS, MS Stocks Edge Higher After-Hours \u2014 Banks Lift Dividends And Announce Buybacks After Fed Stress Test - Stocktwits",
       "top_headlines": [
@@ -9573,15 +9642,15 @@
     {
       "symbol": "ANET",
       "name": "ANET",
-      "price": 194.8699951171875,
-      "volume": 222181.0,
-      "avg_volume": 7751942.333333333,
-      "percent_change": -1.9867277243330477,
+      "price": 195.83999633789062,
+      "volume": 511104.0,
+      "avg_volume": 7784044.888888889,
+      "percent_change": -1.498848645281748,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 14,
-      "liquidity_score": 78.89,
-      "rank_score": 76.92,
+      "liquidity_score": 78.91,
+      "rank_score": 76.54,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Deutsche Bank AG Acquires 388,354 Shares of Arista Networks, Inc. $ANET - MarketBeat",
       "top_headlines": [
@@ -9631,15 +9700,15 @@
     {
       "symbol": "NFLX",
       "name": "NFLX",
-      "price": 77.1500015258789,
-      "volume": 1295942.0,
-      "avg_volume": 25306049.111111112,
-      "percent_change": -1.292223757558625,
+      "price": 77.45829772949219,
+      "volume": 3000568.0,
+      "avg_volume": 25495452.0,
+      "percent_change": -0.89778134562366,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
-      "liquidity_score": 84.03,
-      "rank_score": 73.14,
+      "liquidity_score": 84.06,
+      "rank_score": 72.83,
       "news_hits": 6,
       "catalyst": "Headline-driven setup (beat): 27,978 Shares in Netflix, Inc. $NFLX Purchased by UNIVEST FINANCIAL Corp - MarketBeat",
       "top_headlines": [
@@ -9684,25 +9753,32 @@
     {
       "symbol": "CRWD",
       "name": "CRWD",
-      "price": 212.47000122070312,
-      "volume": 266368.0,
-      "avg_volume": 6044285.333333333,
-      "percent_change": -2.0649899933429623,
+      "price": 214.58999633789062,
+      "volume": 555021.0,
+      "avg_volume": 6076357.888888889,
+      "percent_change": -1.0878085473836574,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 12,
-      "liquidity_score": 77.81,
-      "rank_score": 68.82,
+      "catalyst_score": 11,
+      "liquidity_score": 77.84,
+      "rank_score": 64.05,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat, growth): CRWD Could Beat Q2 Expectations Across The Board, Says Benchmark \u2014 Firm Sees Multiple Growth Catalysts - Stocktwits",
+      "catalyst": "Headline-driven setup (ai, catalyst): Renaissance Technologies Has Taken a New Position in CrowdStrike. What This Means for CRWD Stock. - Barchart.com",
       "top_headlines": [
-        "CRWD Could Beat Q2 Expectations Across The Board, Says Benchmark \u2014 Firm Sees Multiple Growth Catalysts - Stocktwits",
-        "CrowdStrike Could Plunge 30% After Earnings (NASDAQ:CRWD) - Seeking Alpha",
-        "Analysts Have Conflicting Sentiments on These Technology Companies: Globant SA (GLOB), CrowdStrike Holdings (CRWD) and Zscaler (ZS) - The Globe and Mail"
+        "Renaissance Technologies Has Taken a New Position in CrowdStrike. What This Means for CRWD Stock. - Barchart.com",
+        "CRWD Could Beat Q2 Expectations Across The Board, Says Benchmark \u2014 Firm Sees Multiple Growth Catalysts - TradingView",
+        "CRWD vs. FTNT: Which Cybersecurity Stock Should You Buy Right Now? - Zacks Investment Research"
       ],
       "matched_headlines": [
         {
-          "title": "CRWD Could Beat Q2 Expectations Across The Board, Says Benchmark \u2014 Firm Sees Multiple Growth Catalysts - Stocktwits",
+          "title": "Renaissance Technologies Has Taken a New Position in CrowdStrike. What This Means for CRWD Stock. - Barchart.com",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "CRWD Could Beat Q2 Expectations Across The Board, Says Benchmark \u2014 Firm Sees Multiple Growth Catalysts - TradingView",
           "keywords": [
             "beat",
             "growth"
@@ -9715,7 +9791,7 @@
           ]
         },
         {
-          "title": "Analysts Have Conflicting Sentiments on These Technology Companies: Globant SA (GLOB), CrowdStrike Holdings (CRWD) and Zscaler (ZS) - The Globe and Mail",
+          "title": "Analysts Have Conflicting Sentiments on These Technology Companies: Globant SA (GLOB), CrowdStrike Holdings (CRWD) and Zscaler (ZS) - theglobeandmail.com",
           "keywords": [
             "ai",
             "catalyst"
@@ -9726,68 +9802,54 @@
           "keywords": [
             "catalyst"
           ]
-        },
-        {
-          "title": "CRWD Maintained by TD Cowen -- Price Target Raised to $235 - GuruFocus",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "raised"
-          ]
         }
       ]
     },
     {
-      "symbol": "ORCL",
-      "name": "ORCL",
-      "price": 143.27000427246094,
-      "volume": 883153.0,
-      "avg_volume": 23842917.0,
-      "percent_change": -4.8166355263161895,
+      "symbol": "LRCX",
+      "name": "LRCX",
+      "price": 322.9599914550781,
+      "volume": 757483.0,
+      "avg_volume": 7032853.666666667,
+      "percent_change": -2.8282568030989905,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 10,
-      "liquidity_score": 83.77,
-      "rank_score": 63.92,
+      "catalyst_score": 11,
+      "liquidity_score": 78.47,
+      "rank_score": 64.03,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): ORCL Stock At Nearly 2-Month Low: 'Big Red' Reportedly Trimmed Workforce By 13% In FY26 On AI Efficiency - Stocktwits",
+      "catalyst": "Headline-driven setup (beat): Lam Research Corporation $LRCX Shares Sold by Watershed Private Wealth LLC - MarketBeat",
       "top_headlines": [
-        "ORCL Stock At Nearly 2-Month Low: 'Big Red' Reportedly Trimmed Workforce By 13% In FY26 On AI Efficiency - Stocktwits",
-        "Why Oracle (ORCL) Dipped More Than Broader Market Today - Yahoo Finance",
-        "Perigon Wealth Management LLC Takes $5.88 Million Position in Oracle Corporation $ORCL - MarketBeat"
+        "Lam Research (LRCX) Stock Looks Fully Valued After Its 499% Run - Yahoo Finance",
+        "Lam Research Corporation $LRCX Shares Sold by Watershed Private Wealth LLC - MarketBeat",
+        "A Look at Lam Research Corp (LRCX) After 3.5% Gain -- GF Value $147.86 vs Price $343.84 - GuruFocus"
       ],
       "matched_headlines": [
         {
-          "title": "ORCL Stock At Nearly 2-Month Low: 'Big Red' Reportedly Trimmed Workforce By 13% In FY26 On AI Efficiency - Stocktwits",
+          "title": "Lam Research Corporation $LRCX Shares Sold by Watershed Private Wealth LLC - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "A Look at Lam Research Corp (LRCX) After 3.5% Gain -- GF Value $147.86 vs Price $343.84 - GuruFocus",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "Perigon Wealth Management LLC Takes $5.88 Million Position in Oracle Corporation $ORCL - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Oracle Corporation Stock (ORCL) Opinions on AI Data Center Investments - Quiver Quantitative",
+          "title": "Prevail Innovative Wealth Advisors LLC Trims Stake in Lam Research Corporation $LRCX - MarketBeat",
           "keywords": [
             "ai",
+            "beat",
             "catalyst"
           ]
         },
         {
-          "title": "4,972 Shares in Oracle Corporation $ORCL Purchased by Requisite Capital Management LLC - MarketBeat",
+          "title": "Myriad Asset Management Advisors LLC Reduces Position in Lam Research Corporation $LRCX - MarketBeat",
           "keywords": [
             "beat"
-          ]
-        },
-        {
-          "title": "As Oracle Deepens Its Partnership with AWS, Here\u2019s How You Should Play ORCL Stock - Barchart.com",
-          "keywords": [
-            "catalyst",
-            "partnership"
           ]
         }
       ]
@@ -9819,8 +9881,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 0,
-      "BUY": 4,
+      "HOLD": 1,
+      "BUY": 3,
       "SELL": 0,
       "live": 4,
       "fallback": 0
@@ -9839,23 +9901,23 @@
     "decision_mode": "live_dual_llm",
     "last_tier": "senior_escalated",
     "last_stage": "entry",
-    "last_junior_nomination": "JPM",
-    "last_escalate_reason": "junior_nomination",
+    "last_junior_nomination": null,
+    "last_escalate_reason": "junior_trade_or_split",
     "live_share_recent": 85.7
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 264,
     "closed_outcomes": 110,
-    "consensus_events": 214,
+    "consensus_events": 215,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1037.69,
-    "change": 37.69,
-    "change_pct": 3.77,
+    "latest_equity": 1035.58,
+    "change": 35.58,
+    "change_pct": 3.56,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -13544,6 +13606,12 @@
       {
         "t": "2026-08-18T13:40:30.992182+00:00",
         "equity": 1037.69,
+        "cash": 237.11,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-18T13:48:34.406236+00:00",
+        "equity": 1035.58,
         "cash": 237.11,
         "event": "mark"
       }
