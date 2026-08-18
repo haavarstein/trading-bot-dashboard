@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-08-17T19:54:40.242747+00:00",
+  "generated_at": "2026-08-18T00:42:31.004878+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1034.57,
+    "portfolio_value": 1035.28,
     "starting_cash": 1000.0,
-    "total_return_pct": 3.46,
-    "total_pnl": 34.57,
+    "total_return_pct": 3.53,
+    "total_pnl": 35.28,
     "realized_pnl": 32.39,
-    "open_pnl": 2.19,
-    "capital_deployed": 599.15,
+    "open_pnl": 2.89,
+    "capital_deployed": 599.86,
     "cash": 435.42,
     "closed_trades": 13,
     "win_rate_pct": 38.46,
-    "vs_spy_pct": 3.01,
-    "spy_return_pct": 0.45,
+    "vs_spy_pct": 3.1,
+    "spy_return_pct": 0.43,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-17T19:54:43.722547+00:00"
+    "updated_at": "2026-08-18T00:42:34.190769+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.45,
-    "price": 772.8300170898438,
+    "return_pct": 0.43,
+    "price": 772.6699829101562,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 23,
-    "validated_count_today": 4,
-    "blocked_count_today": 19,
-    "fills_today": 3,
-    "simulated_orders_today": 4,
-    "top_symbol_today": "PANW"
+    "consensus_count_today": 0,
+    "validated_count_today": 0,
+    "blocked_count_today": 0,
+    "fills_today": 24,
+    "simulated_orders_today": 0,
+    "top_symbol_today": "MSFT"
   },
   "holdings": [
     {
       "symbol": "CVX",
       "qty": 1.01,
       "avg_cost": 197.26,
-      "last": 202.8300018310547,
-      "market_value": 204.86,
-      "open_pnl": 5.63,
-      "open_pnl_pct": 2.82,
+      "last": 202.6999969482422,
+      "market_value": 204.73,
+      "open_pnl": 5.49,
+      "open_pnl_pct": 2.76,
       "stop": 191.0,
       "target": 207.0,
       "thesis": "CVX screens as a liquid catalyst setup with solid rank score and bullish sentiment around Q2 earnings beat narrative plus AI power deal headlines. Book has room for one more name under the five-position guideline and cash supports a sub-$200 notional add. Risk defined below recent support with asymmetric upside to the stated target meeting the 1.5 R:R minimum."
@@ -50,10 +50,10 @@
       "symbol": "AMZN",
       "qty": 0.75,
       "avg_cost": 264.78,
-      "last": 260.4700012207031,
-      "market_value": 195.35,
-      "open_pnl": -3.23,
-      "open_pnl_pct": -1.63,
+      "last": 261.30999755859375,
+      "market_value": 195.98,
+      "open_pnl": -2.6,
+      "open_pnl_pct": -1.31,
       "stop": 256.0,
       "target": 278.0,
       "thesis": "AMZN is the sole ranked candidate with a clear bullish catalyst: Renaissance Technologies disclosed a new $546M long position, supporting institutional accumulation. Price sits near mid-RSI with AI/cloud narrative tailwinds and adequate liquidity for a small add. Book has room under the 5-name cap and cash covers a ~$200 notional entry with defined risk. Reward-to-risk is set above 1.5 with a tight stop under recent support."
@@ -62,10 +62,10 @@
       "symbol": "PANW",
       "qty": 0.53,
       "avg_cost": 375.76,
-      "last": 375.3599853515625,
-      "market_value": 198.94,
-      "open_pnl": -0.21,
-      "open_pnl_pct": -0.11,
+      "last": 375.760009765625,
+      "market_value": 199.15,
+      "open_pnl": 0.0,
+      "open_pnl_pct": 0.0,
       "stop": 365.0,
       "target": 392.0,
       "thesis": "PANW is the sole ranked liquid catalyst candidate with a bullish institutional accumulation headline and solid rank/catalyst scores. Book has room for one more name under the 5-position cap and cash supports a sub-$200 notional add. Neutral RSI leaves room for continuation if the flow follows through."
@@ -189,9 +189,9 @@
         "avg_cost": 197.26,
         "stop": 191.0,
         "target": 207.0,
-        "last": 202.8300018310547,
-        "open_pnl": 5.63,
-        "open_pnl_pct": 2.82,
+        "last": 202.6999969482422,
+        "open_pnl": 5.49,
+        "open_pnl_pct": 2.76,
         "line": "Bought near $197.26 \u00b7 Sell safety line $191.00 \u00b7 Profit target $207.00",
         "plan": "stop 191.0 or target 207.0"
       },
@@ -201,9 +201,9 @@
         "avg_cost": 264.78,
         "stop": 256.0,
         "target": 278.0,
-        "last": 260.4700012207031,
-        "open_pnl": -3.23,
-        "open_pnl_pct": -1.63,
+        "last": 261.30999755859375,
+        "open_pnl": -2.6,
+        "open_pnl_pct": -1.31,
         "line": "Bought near $264.78 \u00b7 Sell safety line $256.00 \u00b7 Profit target $278.00",
         "plan": "stop 256.0 or target 278.0"
       },
@@ -213,14 +213,14 @@
         "avg_cost": 375.76,
         "stop": 365.0,
         "target": 392.0,
-        "last": 375.3599853515625,
-        "open_pnl": -0.21,
-        "open_pnl_pct": -0.11,
+        "last": 375.760009765625,
+        "open_pnl": 0.0,
+        "open_pnl_pct": 0.0,
         "line": "Bought near $375.76 \u00b7 Sell safety line $365.00 \u00b7 Profit target $392.00",
         "plan": "stop 365.0 or target 392.0"
       }
     ],
-    "last_checked": "2026-08-17T19:54:40.242747+00:00",
+    "last_checked": "2026-08-18T00:42:31.004878+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -290,685 +290,105 @@
   },
   "activity": [
     {
-      "type": "consensus",
-      "symbol": "ANET",
-      "status": "blocked",
-      "headline": "BUY ANET \u2014 blocked",
-      "detail": "Insufficient buying power: $30.30 < $199.45",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "ANET",
-          "confidence": 82,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "ANET",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "ANET",
-          "confidence": 80,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "ANET",
-          "confidence": 75,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "ANET",
-          "confidence": 78,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "ANET",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "CVX",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "entry",
-      "junior_nomination": "ANET",
-      "timestamp": "2026-08-17T19:54:16.950260+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "ANET",
-      "status": "blocked",
-      "headline": "BUY ANET \u2014 blocked",
-      "detail": "Insufficient buying power: $30.30 < $199.06",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "ANET",
-          "confidence": 82,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "ANET",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "ANET",
-          "confidence": 75,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "ANET",
-          "confidence": 75,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "ANET",
-          "confidence": 78,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "ANET",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "CVX",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "entry",
-      "junior_nomination": "ANET",
-      "timestamp": "2026-08-17T19:32:56.531375+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "ANET",
-      "status": "blocked",
-      "headline": "BUY ANET \u2014 blocked",
-      "detail": "Insufficient buying power: $30.30 < $198.67",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "ANET",
-          "confidence": 82,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "ANET",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "ANET",
-          "confidence": 78,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "ANET",
-          "confidence": 80,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "ANET",
-          "confidence": 78,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "ANET",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "CVX",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "entry",
-      "junior_nomination": "ANET",
-      "timestamp": "2026-08-17T19:17:54.484710+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "AAPL",
-      "status": "blocked",
-      "headline": "BUY AAPL \u2014 blocked",
-      "detail": "Insufficient buying power: $30.30 < $198.85",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "AAPL",
-          "confidence": 78,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "ANET",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "AAPL",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "AAPL",
-          "confidence": 78,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "AAPL",
-          "confidence": 74,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "AAPL",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "CVX",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "entry",
-      "junior_nomination": "AAPL",
-      "timestamp": "2026-08-17T19:03:35.541005+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "AAPL",
-      "status": "blocked",
-      "headline": "BUY AAPL \u2014 blocked",
-      "detail": "Insufficient buying power: $30.30 < $198.65",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "AAPL",
-          "confidence": 78,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "ANET",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "AAPL",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "AAPL",
-          "confidence": 75,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "AAPL",
-          "confidence": 74,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "AAPL",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "CVX",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "entry",
-      "junior_nomination": "AAPL",
-      "timestamp": "2026-08-17T18:47:59.312228+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "AAPL",
-      "status": "blocked",
-      "headline": "BUY AAPL \u2014 blocked",
-      "detail": "Insufficient buying power: $30.30 < $198.13",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "AAPL",
-          "confidence": 78,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "ANET",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "AAPL",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "AAPL",
-          "confidence": 75,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "AAPL",
-          "confidence": 74,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "AAPL",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "CVX",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "entry",
-      "junior_nomination": "AAPL",
-      "timestamp": "2026-08-17T18:35:26.997312+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "AAPL",
-      "status": "blocked",
-      "headline": "BUY AAPL \u2014 blocked",
-      "detail": "Insufficient buying power: $30.30 < $198.01",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "AAPL",
-          "confidence": 75,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "ANET",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "AAPL",
-          "confidence": 75,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "AAPL",
-          "confidence": 75,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "AAPL",
-          "confidence": 76,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "AAPL",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "CVX",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "entry",
-      "junior_nomination": "AAPL",
-      "timestamp": "2026-08-17T18:18:14.451241+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "AAPL",
-      "status": "blocked",
-      "headline": "BUY AAPL \u2014 blocked",
-      "detail": "Insufficient buying power: $30.30 < $197.85",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "ANET",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "AAPL",
-          "confidence": 74,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "AAPL",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "AAPL",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "AAPL",
-          "confidence": 74,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "CVX",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-08-17T18:03:19.344876+00:00"
-    },
-    {
       "type": "fill",
-      "symbol": "XOM",
+      "symbol": "MSFT",
       "status": "filled_paper",
-      "headline": "SELL XOM @ $161.79",
-      "detail": "HERMES AUTO-TRADE: Exiting full XOM position on take-profit. Price $161.79 reached target $161.62. Realized path $+10.21.",
-      "timestamp": "2026-08-17T17:31:09.777222+00:00"
+      "headline": "SELL MSFT @ $505.00",
+      "detail": "rotation",
+      "timestamp": "2026-08-18T00:39:15.747398+00:00"
     },
     {
       "type": "fill",
       "symbol": "MSFT",
       "status": "filled_paper",
-      "headline": "SELL MSFT @ $482.44",
-      "detail": "MSFT is at the defined stop level with negative open P/L and no supportive catalyst in the candidate data. Juniors escalated an exit; price action confirms stop discipline rather than holding a weakening name. Closing frees risk budget and avoids further drawdown versus stronger energy holds.",
-      "timestamp": "2026-08-17T14:33:33.549779+00:00"
+      "headline": "BUY MSFT @ $500.00",
+      "detail": "",
+      "timestamp": "2026-08-18T00:39:15.744400+00:00"
     },
     {
       "type": "fill",
-      "symbol": "PANW",
+      "symbol": "NVDA",
       "status": "filled_paper",
-      "headline": "BUY PANW @ $375.76",
-      "detail": "PANW is the sole ranked liquid catalyst candidate with a bullish institutional accumulation headline and solid rank/catalyst scores. Book has room for one more name under the 5-position cap and cash supports a sub-$200 notional add. Neutral RSI leaves room for continuation if the flow follows through.",
-      "timestamp": "2026-08-17T14:18:11.775126+00:00"
+      "headline": "BUY NVDA @ $300.00",
+      "detail": "",
+      "timestamp": "2026-08-18T00:39:13.713840+00:00"
+    },
+    {
+      "type": "fill",
+      "symbol": "MSFT",
+      "status": "filled_paper",
+      "headline": "SELL MSFT @ $505.00",
+      "detail": "rotation",
+      "timestamp": "2026-08-18T00:39:11.681494+00:00"
+    },
+    {
+      "type": "fill",
+      "symbol": "MSFT",
+      "status": "filled_paper",
+      "headline": "BUY MSFT @ $500.00",
+      "detail": "",
+      "timestamp": "2026-08-18T00:39:11.678497+00:00"
+    },
+    {
+      "type": "fill",
+      "symbol": "MSFT",
+      "status": "filled_paper",
+      "headline": "SELL MSFT @ $505.00",
+      "detail": "rotation",
+      "timestamp": "2026-08-18T00:39:07.619988+00:00"
+    },
+    {
+      "type": "fill",
+      "symbol": "MSFT",
+      "status": "filled_paper",
+      "headline": "BUY MSFT @ $500.00",
+      "detail": "",
+      "timestamp": "2026-08-18T00:39:07.614987+00:00"
+    },
+    {
+      "type": "fill",
+      "symbol": "MSFT",
+      "status": "filled_paper",
+      "headline": "SELL MSFT @ $505.00",
+      "detail": "rotation",
+      "timestamp": "2026-08-18T00:38:51.148071+00:00"
+    },
+    {
+      "type": "fill",
+      "symbol": "MSFT",
+      "status": "filled_paper",
+      "headline": "BUY MSFT @ $500.00",
+      "detail": "",
+      "timestamp": "2026-08-18T00:38:51.144064+00:00"
+    },
+    {
+      "type": "fill",
+      "symbol": "AAPL",
+      "status": "filled_paper",
+      "headline": "BUY AAPL @ $400.00",
+      "detail": "",
+      "timestamp": "2026-08-18T00:38:49.080309+00:00"
+    },
+    {
+      "type": "fill",
+      "symbol": "MSFT",
+      "status": "filled_paper",
+      "headline": "SELL MSFT @ $505.00",
+      "detail": "rotation",
+      "timestamp": "2026-08-18T00:38:47.048423+00:00"
+    },
+    {
+      "type": "fill",
+      "symbol": "MSFT",
+      "status": "filled_paper",
+      "headline": "BUY MSFT @ $500.00",
+      "detail": "",
+      "timestamp": "2026-08-18T00:38:47.044424+00:00"
     }
   ],
   "recent_trades": [
     {
-      "timestamp": "2026-08-17T17:31:09.777222+00:00",
-      "action": "SELL",
-      "symbol": "XOM",
-      "qty": 1.2993,
-      "price": 161.78500366210938,
-      "notional": 210.21,
-      "realized_pnl": 10.21,
-      "reason": "take_profit",
-      "thesis": "HERMES AUTO-TRADE: Exiting full XOM position on take-profit. Price $161.79 reached target $161.62. Realized path $+10.21.",
-      "status": "FILLED_PAPER"
-    },
-    {
-      "timestamp": "2026-08-17T14:33:33.549779+00:00",
-      "action": "SELL",
-      "symbol": "MSFT",
-      "qty": 0.404,
-      "price": 482.44,
-      "notional": 194.91,
-      "realized_pnl": -4.86,
-      "reason": "rotation",
-      "thesis": "MSFT is at the defined stop level with negative open P/L and no supportive catalyst in the candidate data. Juniors escalated an exit; price action confirms stop discipline rather than holding a weakening name. Closing frees risk budget and avoids further drawdown versus stronger energy holds.",
-      "status": "FILLED_PAPER"
-    },
-    {
-      "timestamp": "2026-08-17T14:18:11.775126+00:00",
-      "action": "BUY",
-      "symbol": "PANW",
-      "qty": 0.53,
-      "price": 375.76,
-      "notional": 199.15,
-      "realized_pnl": null,
-      "reason": null,
-      "thesis": "PANW is the sole ranked liquid catalyst candidate with a bullish institutional accumulation headline and solid rank/catalyst scores. Book has room for one more name under the 5-position cap and cash supports a sub-$200 notional add. Neutral RSI leaves room for continuation if the flow follows through.",
-      "status": "FILLED_PAPER"
-    },
-    {
-      "timestamp": "2026-08-14T18:50:22.443236+00:00",
+      "timestamp": "2026-08-18T00:39:15.747398+00:00",
       "action": "SELL",
       "symbol": "MSFT",
       "qty": 0.4,
@@ -980,7 +400,7 @@
       "status": "FILLED_PAPER"
     },
     {
-      "timestamp": "2026-08-14T18:50:22.437685+00:00",
+      "timestamp": "2026-08-18T00:39:15.744400+00:00",
       "action": "BUY",
       "symbol": "MSFT",
       "qty": 0.4,
@@ -992,7 +412,7 @@
       "status": "FILLED_PAPER"
     },
     {
-      "timestamp": "2026-08-14T18:50:20.388156+00:00",
+      "timestamp": "2026-08-18T00:39:13.713840+00:00",
       "action": "BUY",
       "symbol": "NVDA",
       "qty": 1.0,
@@ -1004,7 +424,7 @@
       "status": "FILLED_PAPER"
     },
     {
-      "timestamp": "2026-08-14T18:50:18.345304+00:00",
+      "timestamp": "2026-08-18T00:39:11.681494+00:00",
       "action": "SELL",
       "symbol": "MSFT",
       "qty": 0.4,
@@ -1016,7 +436,7 @@
       "status": "FILLED_PAPER"
     },
     {
-      "timestamp": "2026-08-14T18:50:18.342056+00:00",
+      "timestamp": "2026-08-18T00:39:11.678497+00:00",
       "action": "BUY",
       "symbol": "MSFT",
       "qty": 0.4,
@@ -1028,7 +448,7 @@
       "status": "FILLED_PAPER"
     },
     {
-      "timestamp": "2026-08-14T18:50:14.222560+00:00",
+      "timestamp": "2026-08-18T00:39:07.619988+00:00",
       "action": "SELL",
       "symbol": "MSFT",
       "qty": 0.4,
@@ -1040,12 +460,48 @@
       "status": "FILLED_PAPER"
     },
     {
-      "timestamp": "2026-08-14T18:50:14.219073+00:00",
+      "timestamp": "2026-08-18T00:39:07.614987+00:00",
       "action": "BUY",
       "symbol": "MSFT",
       "qty": 0.4,
       "price": 500.0,
       "notional": 200.0,
+      "realized_pnl": null,
+      "reason": null,
+      "thesis": "",
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-18T00:38:51.148071+00:00",
+      "action": "SELL",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "price": 505.0,
+      "notional": 202.0,
+      "realized_pnl": 2.0,
+      "reason": "rotation",
+      "thesis": "",
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-18T00:38:51.144064+00:00",
+      "action": "BUY",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "price": 500.0,
+      "notional": 200.0,
+      "realized_pnl": null,
+      "reason": null,
+      "thesis": "",
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-18T00:38:49.080309+00:00",
+      "action": "BUY",
+      "symbol": "AAPL",
+      "qty": 0.25,
+      "price": 400.0,
+      "notional": 100.0,
       "realized_pnl": null,
       "reason": null,
       "thesis": "",
@@ -1053,6 +509,640 @@
     }
   ],
   "trade_reasoning": [
+    {
+      "timestamp": "2026-08-18T00:39:15.747398+00:00",
+      "action": "SELL",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "price": 505.0,
+      "notional": 202.0,
+      "headline": "Sold $MSFT",
+      "side_label": "sell",
+      "narrative": "HERMES AUTO-TRADE: Exiting full MSFT position via gated rotation. rotation",
+      "bullets": [
+        "Rotation recycled risk budget toward a higher-ranked setup.",
+        "Original stop/target were not necessarily tagged on this exit.",
+        "Realized P/L on fill: $+2.00."
+      ],
+      "risk_map": {
+        "stop": 487.5,
+        "target": 525.0,
+        "horizon_days": 5,
+        "rr": 2.0,
+        "confidence_10": 8,
+        "confidence": 80
+      },
+      "reason_code": "rotation",
+      "realized_pnl": 2.0,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-18T00:39:15.744400+00:00",
+      "action": "BUY",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "price": 500.0,
+      "notional": 200.0,
+      "headline": "Bought $MSFT",
+      "side_label": "buy",
+      "narrative": "MSFT entered from Alpha Radar ranked catalyst list.",
+      "bullets": [
+        "Paper fill size $200.00 under the single-name cap.",
+        "Invalidation mapped under entry; upside mapped to target before the next decision loops."
+      ],
+      "risk_map": {
+        "stop": 480.0,
+        "target": 520.0,
+        "horizon_days": 5,
+        "rr": 1.0,
+        "confidence_10": 9,
+        "confidence": 90
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-18T00:39:13.713840+00:00",
+      "action": "BUY",
+      "symbol": "NVDA",
+      "qty": 1.0,
+      "price": 300.0,
+      "notional": 300.0,
+      "headline": "Bought $NVDA",
+      "side_label": "buy",
+      "narrative": "NVDA entered from Alpha Radar ranked catalyst list.",
+      "bullets": [
+        "Paper fill size $300.00 under the single-name cap.",
+        "Invalidation mapped under entry; upside mapped to target before the next decision loops."
+      ],
+      "risk_map": {
+        "stop": 290.0,
+        "target": 330.0,
+        "horizon_days": 5,
+        "rr": 3.0,
+        "confidence_10": 9,
+        "confidence": 90
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-18T00:39:11.681494+00:00",
+      "action": "SELL",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "price": 505.0,
+      "notional": 202.0,
+      "headline": "Sold $MSFT",
+      "side_label": "sell",
+      "narrative": "HERMES AUTO-TRADE: Exiting full MSFT position via gated rotation. rotation",
+      "bullets": [
+        "Rotation recycled risk budget toward a higher-ranked setup.",
+        "Original stop/target were not necessarily tagged on this exit.",
+        "Realized P/L on fill: $+2.00."
+      ],
+      "risk_map": {
+        "stop": 487.5,
+        "target": 525.0,
+        "horizon_days": 5,
+        "rr": 2.0,
+        "confidence_10": 8,
+        "confidence": 80
+      },
+      "reason_code": "rotation",
+      "realized_pnl": 2.0,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-18T00:39:11.678497+00:00",
+      "action": "BUY",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "price": 500.0,
+      "notional": 200.0,
+      "headline": "Bought $MSFT",
+      "side_label": "buy",
+      "narrative": "MSFT entered from Alpha Radar ranked catalyst list.",
+      "bullets": [
+        "Paper fill size $200.00 under the single-name cap.",
+        "Invalidation mapped under entry; upside mapped to target before the next decision loops."
+      ],
+      "risk_map": {
+        "stop": 480.0,
+        "target": 520.0,
+        "horizon_days": 5,
+        "rr": 1.0,
+        "confidence_10": 9,
+        "confidence": 90
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-18T00:39:07.619988+00:00",
+      "action": "SELL",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "price": 505.0,
+      "notional": 202.0,
+      "headline": "Sold $MSFT",
+      "side_label": "sell",
+      "narrative": "HERMES AUTO-TRADE: Exiting full MSFT position via gated rotation. rotation",
+      "bullets": [
+        "Rotation recycled risk budget toward a higher-ranked setup.",
+        "Original stop/target were not necessarily tagged on this exit.",
+        "Realized P/L on fill: $+2.00."
+      ],
+      "risk_map": {
+        "stop": 487.5,
+        "target": 525.0,
+        "horizon_days": 5,
+        "rr": 2.0,
+        "confidence_10": 8,
+        "confidence": 80
+      },
+      "reason_code": "rotation",
+      "realized_pnl": 2.0,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-18T00:39:07.614987+00:00",
+      "action": "BUY",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "price": 500.0,
+      "notional": 200.0,
+      "headline": "Bought $MSFT",
+      "side_label": "buy",
+      "narrative": "MSFT entered from Alpha Radar ranked catalyst list.",
+      "bullets": [
+        "Paper fill size $200.00 under the single-name cap.",
+        "Invalidation mapped under entry; upside mapped to target before the next decision loops."
+      ],
+      "risk_map": {
+        "stop": 480.0,
+        "target": 520.0,
+        "horizon_days": 5,
+        "rr": 1.0,
+        "confidence_10": 9,
+        "confidence": 90
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-18T00:38:51.148071+00:00",
+      "action": "SELL",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "price": 505.0,
+      "notional": 202.0,
+      "headline": "Sold $MSFT",
+      "side_label": "sell",
+      "narrative": "HERMES AUTO-TRADE: Exiting full MSFT position via gated rotation. rotation",
+      "bullets": [
+        "Rotation recycled risk budget toward a higher-ranked setup.",
+        "Original stop/target were not necessarily tagged on this exit.",
+        "Realized P/L on fill: $+2.00."
+      ],
+      "risk_map": {
+        "stop": 487.5,
+        "target": 525.0,
+        "horizon_days": 5,
+        "rr": 2.0,
+        "confidence_10": 8,
+        "confidence": 80
+      },
+      "reason_code": "rotation",
+      "realized_pnl": 2.0,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-18T00:38:51.144064+00:00",
+      "action": "BUY",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "price": 500.0,
+      "notional": 200.0,
+      "headline": "Bought $MSFT",
+      "side_label": "buy",
+      "narrative": "MSFT entered from Alpha Radar ranked catalyst list.",
+      "bullets": [
+        "Paper fill size $200.00 under the single-name cap.",
+        "Invalidation mapped under entry; upside mapped to target before the next decision loops."
+      ],
+      "risk_map": {
+        "stop": 480.0,
+        "target": 520.0,
+        "horizon_days": 5,
+        "rr": 1.0,
+        "confidence_10": 9,
+        "confidence": 90
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-18T00:38:49.080309+00:00",
+      "action": "BUY",
+      "symbol": "AAPL",
+      "qty": 0.25,
+      "price": 400.0,
+      "notional": 100.0,
+      "headline": "Bought $AAPL",
+      "side_label": "buy",
+      "narrative": "AAPL entered from Alpha Radar ranked catalyst list.",
+      "bullets": [
+        "Paper fill size $100.00 under the single-name cap.",
+        "Invalidation mapped under entry; upside mapped to target before the next decision loops."
+      ],
+      "risk_map": {
+        "stop": 385.0,
+        "target": 430.0,
+        "horizon_days": 5,
+        "rr": 2.0,
+        "confidence_10": 9,
+        "confidence": 90
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-18T00:38:47.048423+00:00",
+      "action": "SELL",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "price": 505.0,
+      "notional": 202.0,
+      "headline": "Sold $MSFT",
+      "side_label": "sell",
+      "narrative": "HERMES AUTO-TRADE: Exiting full MSFT position via gated rotation. rotation",
+      "bullets": [
+        "Rotation recycled risk budget toward a higher-ranked setup.",
+        "Original stop/target were not necessarily tagged on this exit.",
+        "Realized P/L on fill: $+2.00."
+      ],
+      "risk_map": {
+        "stop": 487.5,
+        "target": 525.0,
+        "horizon_days": 5,
+        "rr": 2.0,
+        "confidence_10": 8,
+        "confidence": 80
+      },
+      "reason_code": "rotation",
+      "realized_pnl": 2.0,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-18T00:38:47.044424+00:00",
+      "action": "BUY",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "price": 500.0,
+      "notional": 200.0,
+      "headline": "Bought $MSFT",
+      "side_label": "buy",
+      "narrative": "MSFT entered from Alpha Radar ranked catalyst list.",
+      "bullets": [
+        "Paper fill size $200.00 under the single-name cap.",
+        "Invalidation mapped under entry; upside mapped to target before the next decision loops."
+      ],
+      "risk_map": {
+        "stop": 480.0,
+        "target": 520.0,
+        "horizon_days": 5,
+        "rr": 1.0,
+        "confidence_10": 9,
+        "confidence": 90
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-18T00:37:14.233048+00:00",
+      "action": "SELL",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "price": 505.0,
+      "notional": 202.0,
+      "headline": "Sold $MSFT",
+      "side_label": "sell",
+      "narrative": "HERMES AUTO-TRADE: Exiting full MSFT position via gated rotation. rotation",
+      "bullets": [
+        "Rotation recycled risk budget toward a higher-ranked setup.",
+        "Original stop/target were not necessarily tagged on this exit.",
+        "Realized P/L on fill: $+2.00."
+      ],
+      "risk_map": {
+        "stop": 487.5,
+        "target": 525.0,
+        "horizon_days": 5,
+        "rr": 2.0,
+        "confidence_10": 8,
+        "confidence": 80
+      },
+      "reason_code": "rotation",
+      "realized_pnl": 2.0,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-18T00:37:14.229034+00:00",
+      "action": "BUY",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "price": 500.0,
+      "notional": 200.0,
+      "headline": "Bought $MSFT",
+      "side_label": "buy",
+      "narrative": "MSFT entered from Alpha Radar ranked catalyst list.",
+      "bullets": [
+        "Paper fill size $200.00 under the single-name cap.",
+        "Invalidation mapped under entry; upside mapped to target before the next decision loops."
+      ],
+      "risk_map": {
+        "stop": 480.0,
+        "target": 520.0,
+        "horizon_days": 5,
+        "rr": 1.0,
+        "confidence_10": 9,
+        "confidence": 90
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-18T00:37:12.198414+00:00",
+      "action": "BUY",
+      "symbol": "NVDA",
+      "qty": 1.0,
+      "price": 300.0,
+      "notional": 300.0,
+      "headline": "Bought $NVDA",
+      "side_label": "buy",
+      "narrative": "NVDA entered from Alpha Radar ranked catalyst list.",
+      "bullets": [
+        "Paper fill size $300.00 under the single-name cap.",
+        "Invalidation mapped under entry; upside mapped to target before the next decision loops."
+      ],
+      "risk_map": {
+        "stop": 290.0,
+        "target": 330.0,
+        "horizon_days": 5,
+        "rr": 3.0,
+        "confidence_10": 9,
+        "confidence": 90
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-18T00:37:10.173878+00:00",
+      "action": "SELL",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "price": 505.0,
+      "notional": 202.0,
+      "headline": "Sold $MSFT",
+      "side_label": "sell",
+      "narrative": "HERMES AUTO-TRADE: Exiting full MSFT position via gated rotation. rotation",
+      "bullets": [
+        "Rotation recycled risk budget toward a higher-ranked setup.",
+        "Original stop/target were not necessarily tagged on this exit.",
+        "Realized P/L on fill: $+2.00."
+      ],
+      "risk_map": {
+        "stop": 487.5,
+        "target": 525.0,
+        "horizon_days": 5,
+        "rr": 2.0,
+        "confidence_10": 8,
+        "confidence": 80
+      },
+      "reason_code": "rotation",
+      "realized_pnl": 2.0,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-18T00:37:10.170875+00:00",
+      "action": "BUY",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "price": 500.0,
+      "notional": 200.0,
+      "headline": "Bought $MSFT",
+      "side_label": "buy",
+      "narrative": "MSFT entered from Alpha Radar ranked catalyst list.",
+      "bullets": [
+        "Paper fill size $200.00 under the single-name cap.",
+        "Invalidation mapped under entry; upside mapped to target before the next decision loops."
+      ],
+      "risk_map": {
+        "stop": 480.0,
+        "target": 520.0,
+        "horizon_days": 5,
+        "rr": 1.0,
+        "confidence_10": 9,
+        "confidence": 90
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-18T00:37:06.113844+00:00",
+      "action": "SELL",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "price": 505.0,
+      "notional": 202.0,
+      "headline": "Sold $MSFT",
+      "side_label": "sell",
+      "narrative": "HERMES AUTO-TRADE: Exiting full MSFT position via gated rotation. rotation",
+      "bullets": [
+        "Rotation recycled risk budget toward a higher-ranked setup.",
+        "Original stop/target were not necessarily tagged on this exit.",
+        "Realized P/L on fill: $+2.00."
+      ],
+      "risk_map": {
+        "stop": 487.5,
+        "target": 525.0,
+        "horizon_days": 5,
+        "rr": 2.0,
+        "confidence_10": 8,
+        "confidence": 80
+      },
+      "reason_code": "rotation",
+      "realized_pnl": 2.0,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-18T00:37:06.111282+00:00",
+      "action": "BUY",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "price": 500.0,
+      "notional": 200.0,
+      "headline": "Bought $MSFT",
+      "side_label": "buy",
+      "narrative": "MSFT entered from Alpha Radar ranked catalyst list.",
+      "bullets": [
+        "Paper fill size $200.00 under the single-name cap.",
+        "Invalidation mapped under entry; upside mapped to target before the next decision loops."
+      ],
+      "risk_map": {
+        "stop": 480.0,
+        "target": 520.0,
+        "horizon_days": 5,
+        "rr": 1.0,
+        "confidence_10": 9,
+        "confidence": 90
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-18T00:36:49.616559+00:00",
+      "action": "SELL",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "price": 505.0,
+      "notional": 202.0,
+      "headline": "Sold $MSFT",
+      "side_label": "sell",
+      "narrative": "HERMES AUTO-TRADE: Exiting full MSFT position via gated rotation. rotation",
+      "bullets": [
+        "Rotation recycled risk budget toward a higher-ranked setup.",
+        "Original stop/target were not necessarily tagged on this exit.",
+        "Realized P/L on fill: $+2.00."
+      ],
+      "risk_map": {
+        "stop": 487.5,
+        "target": 525.0,
+        "horizon_days": 5,
+        "rr": 2.0,
+        "confidence_10": 8,
+        "confidence": 80
+      },
+      "reason_code": "rotation",
+      "realized_pnl": 2.0,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-18T00:36:49.611545+00:00",
+      "action": "BUY",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "price": 500.0,
+      "notional": 200.0,
+      "headline": "Bought $MSFT",
+      "side_label": "buy",
+      "narrative": "MSFT entered from Alpha Radar ranked catalyst list.",
+      "bullets": [
+        "Paper fill size $200.00 under the single-name cap.",
+        "Invalidation mapped under entry; upside mapped to target before the next decision loops."
+      ],
+      "risk_map": {
+        "stop": 480.0,
+        "target": 520.0,
+        "horizon_days": 5,
+        "rr": 1.0,
+        "confidence_10": 9,
+        "confidence": 90
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-18T00:36:47.560070+00:00",
+      "action": "BUY",
+      "symbol": "AAPL",
+      "qty": 0.25,
+      "price": 400.0,
+      "notional": 100.0,
+      "headline": "Bought $AAPL",
+      "side_label": "buy",
+      "narrative": "AAPL entered from Alpha Radar ranked catalyst list.",
+      "bullets": [
+        "Paper fill size $100.00 under the single-name cap.",
+        "Invalidation mapped under entry; upside mapped to target before the next decision loops."
+      ],
+      "risk_map": {
+        "stop": 385.0,
+        "target": 430.0,
+        "horizon_days": 5,
+        "rr": 2.0,
+        "confidence_10": 9,
+        "confidence": 90
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-18T00:36:45.536280+00:00",
+      "action": "SELL",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "price": 505.0,
+      "notional": 202.0,
+      "headline": "Sold $MSFT",
+      "side_label": "sell",
+      "narrative": "HERMES AUTO-TRADE: Exiting full MSFT position via gated rotation. rotation",
+      "bullets": [
+        "Rotation recycled risk budget toward a higher-ranked setup.",
+        "Original stop/target were not necessarily tagged on this exit.",
+        "Realized P/L on fill: $+2.00."
+      ],
+      "risk_map": {
+        "stop": 487.5,
+        "target": 525.0,
+        "horizon_days": 5,
+        "rr": 2.0,
+        "confidence_10": 8,
+        "confidence": 80
+      },
+      "reason_code": "rotation",
+      "realized_pnl": 2.0,
+      "status": "FILLED_PAPER"
+    },
+    {
+      "timestamp": "2026-08-18T00:36:45.533269+00:00",
+      "action": "BUY",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "price": 500.0,
+      "notional": 200.0,
+      "headline": "Bought $MSFT",
+      "side_label": "buy",
+      "narrative": "MSFT entered from Alpha Radar ranked catalyst list.",
+      "bullets": [
+        "Paper fill size $200.00 under the single-name cap.",
+        "Invalidation mapped under entry; upside mapped to target before the next decision loops."
+      ],
+      "risk_map": {
+        "stop": 480.0,
+        "target": 520.0,
+        "horizon_days": 5,
+        "rr": 1.0,
+        "confidence_10": 9,
+        "confidence": 90
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-08-17T17:31:09.777222+00:00",
       "action": "SELL",
@@ -7022,6 +7112,146 @@
   ],
   "closed_trades": [
     {
+      "timestamp": "2026-08-18T00:39:15.746397+00:00",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "avg_cost": 500.0,
+      "exit_price": 505.0,
+      "proceeds": 202.0,
+      "realized_pnl": 2.0,
+      "realized_pnl_pct": 1.0,
+      "reason": "rotation",
+      "thesis": "",
+      "opened_at": "2026-08-18T00:39:15.743403+00:00",
+      "hold_seconds": 0
+    },
+    {
+      "timestamp": "2026-08-18T00:39:11.680495+00:00",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "avg_cost": 500.0,
+      "exit_price": 505.0,
+      "proceeds": 202.0,
+      "realized_pnl": 2.0,
+      "realized_pnl_pct": 1.0,
+      "reason": "rotation",
+      "thesis": "",
+      "opened_at": "2026-08-18T00:39:11.678497+00:00",
+      "hold_seconds": 0
+    },
+    {
+      "timestamp": "2026-08-18T00:39:07.618987+00:00",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "avg_cost": 500.0,
+      "exit_price": 505.0,
+      "proceeds": 202.0,
+      "realized_pnl": 2.0,
+      "realized_pnl_pct": 1.0,
+      "reason": "rotation",
+      "thesis": "",
+      "opened_at": "2026-08-18T00:39:07.614987+00:00",
+      "hold_seconds": 0
+    },
+    {
+      "timestamp": "2026-08-18T00:38:51.147084+00:00",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "avg_cost": 500.0,
+      "exit_price": 505.0,
+      "proceeds": 202.0,
+      "realized_pnl": 2.0,
+      "realized_pnl_pct": 1.0,
+      "reason": "rotation",
+      "thesis": "",
+      "opened_at": "2026-08-18T00:38:51.144064+00:00",
+      "hold_seconds": 0
+    },
+    {
+      "timestamp": "2026-08-18T00:38:47.046422+00:00",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "avg_cost": 500.0,
+      "exit_price": 505.0,
+      "proceeds": 202.0,
+      "realized_pnl": 2.0,
+      "realized_pnl_pct": 1.0,
+      "reason": "rotation",
+      "thesis": "",
+      "opened_at": "2026-08-18T00:38:47.044424+00:00",
+      "hold_seconds": 0
+    },
+    {
+      "timestamp": "2026-08-18T00:37:14.232051+00:00",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "avg_cost": 500.0,
+      "exit_price": 505.0,
+      "proceeds": 202.0,
+      "realized_pnl": 2.0,
+      "realized_pnl_pct": 1.0,
+      "reason": "rotation",
+      "thesis": "",
+      "opened_at": "2026-08-18T00:37:14.229034+00:00",
+      "hold_seconds": 0
+    },
+    {
+      "timestamp": "2026-08-18T00:37:10.172878+00:00",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "avg_cost": 500.0,
+      "exit_price": 505.0,
+      "proceeds": 202.0,
+      "realized_pnl": 2.0,
+      "realized_pnl_pct": 1.0,
+      "reason": "rotation",
+      "thesis": "",
+      "opened_at": "2026-08-18T00:37:10.170875+00:00",
+      "hold_seconds": 0
+    },
+    {
+      "timestamp": "2026-08-18T00:37:06.112795+00:00",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "avg_cost": 500.0,
+      "exit_price": 505.0,
+      "proceeds": 202.0,
+      "realized_pnl": 2.0,
+      "realized_pnl_pct": 1.0,
+      "reason": "rotation",
+      "thesis": "",
+      "opened_at": "2026-08-18T00:37:06.111282+00:00",
+      "hold_seconds": 0
+    },
+    {
+      "timestamp": "2026-08-18T00:36:49.614555+00:00",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "avg_cost": 500.0,
+      "exit_price": 505.0,
+      "proceeds": 202.0,
+      "realized_pnl": 2.0,
+      "realized_pnl_pct": 1.0,
+      "reason": "rotation",
+      "thesis": "",
+      "opened_at": "2026-08-18T00:36:49.611545+00:00",
+      "hold_seconds": 0
+    },
+    {
+      "timestamp": "2026-08-18T00:36:45.535270+00:00",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "avg_cost": 500.0,
+      "exit_price": 505.0,
+      "proceeds": 202.0,
+      "realized_pnl": 2.0,
+      "realized_pnl_pct": 1.0,
+      "reason": "rotation",
+      "thesis": "",
+      "opened_at": "2026-08-18T00:36:45.533269+00:00",
+      "hold_seconds": 0
+    },
+    {
       "timestamp": "2026-08-17T17:31:09.775715+00:00",
       "symbol": "XOM",
       "qty": 1.2993,
@@ -7160,149 +7390,149 @@
       "thesis": "",
       "opened_at": "2026-08-14T18:48:15.823259+00:00",
       "hold_seconds": 0
-    },
-    {
-      "timestamp": "2026-08-14T18:47:59.276052+00:00",
-      "symbol": "MSFT",
-      "qty": 0.4,
-      "avg_cost": 500.0,
-      "exit_price": 505.0,
-      "proceeds": 202.0,
-      "realized_pnl": 2.0,
-      "realized_pnl_pct": 1.0,
-      "reason": "rotation",
-      "thesis": "",
-      "opened_at": "2026-08-14T18:47:59.273051+00:00",
-      "hold_seconds": 0
-    },
-    {
-      "timestamp": "2026-08-14T18:47:55.151931+00:00",
-      "symbol": "MSFT",
-      "qty": 0.4,
-      "avg_cost": 500.0,
-      "exit_price": 505.0,
-      "proceeds": 202.0,
-      "realized_pnl": 2.0,
-      "realized_pnl_pct": 1.0,
-      "reason": "rotation",
-      "thesis": "",
-      "opened_at": "2026-08-14T18:47:55.149933+00:00",
-      "hold_seconds": 0
-    },
-    {
-      "timestamp": "2026-08-14T18:40:30.424735+00:00",
-      "symbol": "MSFT",
-      "qty": 0.4,
-      "avg_cost": 500.0,
-      "exit_price": 505.0,
-      "proceeds": 202.0,
-      "realized_pnl": 2.0,
-      "realized_pnl_pct": 1.0,
-      "reason": "rotation",
-      "thesis": "",
-      "opened_at": "2026-08-14T18:40:30.422733+00:00",
-      "hold_seconds": 0
-    },
-    {
-      "timestamp": "2026-08-14T18:40:26.325378+00:00",
-      "symbol": "MSFT",
-      "qty": 0.4,
-      "avg_cost": 500.0,
-      "exit_price": 505.0,
-      "proceeds": 202.0,
-      "realized_pnl": 2.0,
-      "realized_pnl_pct": 1.0,
-      "reason": "rotation",
-      "thesis": "",
-      "opened_at": "2026-08-14T18:40:26.322384+00:00",
-      "hold_seconds": 0
-    },
-    {
-      "timestamp": "2026-08-14T18:40:22.225421+00:00",
-      "symbol": "MSFT",
-      "qty": 0.4,
-      "avg_cost": 500.0,
-      "exit_price": 505.0,
-      "proceeds": 202.0,
-      "realized_pnl": 2.0,
-      "realized_pnl_pct": 1.0,
-      "reason": "rotation",
-      "thesis": "",
-      "opened_at": "2026-08-14T18:40:22.222423+00:00",
-      "hold_seconds": 0
-    },
-    {
-      "timestamp": "2026-08-14T18:40:05.638796+00:00",
-      "symbol": "MSFT",
-      "qty": 0.4,
-      "avg_cost": 500.0,
-      "exit_price": 505.0,
-      "proceeds": 202.0,
-      "realized_pnl": 2.0,
-      "realized_pnl_pct": 1.0,
-      "reason": "rotation",
-      "thesis": "",
-      "opened_at": "2026-08-14T18:40:05.636795+00:00",
-      "hold_seconds": 0
-    },
-    {
-      "timestamp": "2026-08-14T18:40:01.527296+00:00",
-      "symbol": "MSFT",
-      "qty": 0.4,
-      "avg_cost": 500.0,
-      "exit_price": 505.0,
-      "proceeds": 202.0,
-      "realized_pnl": 2.0,
-      "realized_pnl_pct": 1.0,
-      "reason": "rotation",
-      "thesis": "",
-      "opened_at": "2026-08-14T18:40:01.525296+00:00",
-      "hold_seconds": 0
-    },
-    {
-      "timestamp": "2026-08-14T18:37:02.483259+00:00",
-      "symbol": "MSFT",
-      "qty": 0.4,
-      "avg_cost": 500.0,
-      "exit_price": 505.0,
-      "proceeds": 202.0,
-      "realized_pnl": 2.0,
-      "realized_pnl_pct": 1.0,
-      "reason": "rotation",
-      "thesis": "",
-      "opened_at": "2026-08-14T18:37:02.481257+00:00",
-      "hold_seconds": 0
-    },
-    {
-      "timestamp": "2026-08-14T18:36:58.380625+00:00",
-      "symbol": "MSFT",
-      "qty": 0.4,
-      "avg_cost": 500.0,
-      "exit_price": 505.0,
-      "proceeds": 202.0,
-      "realized_pnl": 2.0,
-      "realized_pnl_pct": 1.0,
-      "reason": "rotation",
-      "thesis": "",
-      "opened_at": "2026-08-14T18:36:58.378056+00:00",
-      "hold_seconds": 0
-    },
-    {
-      "timestamp": "2026-08-14T18:36:54.256610+00:00",
-      "symbol": "MSFT",
-      "qty": 0.4,
-      "avg_cost": 500.0,
-      "exit_price": 505.0,
-      "proceeds": 202.0,
-      "realized_pnl": 2.0,
-      "realized_pnl_pct": 1.0,
-      "reason": "rotation",
-      "thesis": "",
-      "opened_at": "2026-08-14T18:36:54.253609+00:00",
-      "hold_seconds": 0
     }
   ],
   "closed_results": [
+    {
+      "timestamp": "2026-08-18T00:39:15.746397+00:00",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "avg_cost": 500.0,
+      "exit_price": 505.0,
+      "proceeds": 202.0,
+      "realized_pnl": 2.0,
+      "realized_pnl_pct": 1.0,
+      "reason": "rotation",
+      "thesis": "",
+      "opened_at": "2026-08-18T00:39:15.743403+00:00",
+      "hold_seconds": 0
+    },
+    {
+      "timestamp": "2026-08-18T00:39:11.680495+00:00",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "avg_cost": 500.0,
+      "exit_price": 505.0,
+      "proceeds": 202.0,
+      "realized_pnl": 2.0,
+      "realized_pnl_pct": 1.0,
+      "reason": "rotation",
+      "thesis": "",
+      "opened_at": "2026-08-18T00:39:11.678497+00:00",
+      "hold_seconds": 0
+    },
+    {
+      "timestamp": "2026-08-18T00:39:07.618987+00:00",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "avg_cost": 500.0,
+      "exit_price": 505.0,
+      "proceeds": 202.0,
+      "realized_pnl": 2.0,
+      "realized_pnl_pct": 1.0,
+      "reason": "rotation",
+      "thesis": "",
+      "opened_at": "2026-08-18T00:39:07.614987+00:00",
+      "hold_seconds": 0
+    },
+    {
+      "timestamp": "2026-08-18T00:38:51.147084+00:00",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "avg_cost": 500.0,
+      "exit_price": 505.0,
+      "proceeds": 202.0,
+      "realized_pnl": 2.0,
+      "realized_pnl_pct": 1.0,
+      "reason": "rotation",
+      "thesis": "",
+      "opened_at": "2026-08-18T00:38:51.144064+00:00",
+      "hold_seconds": 0
+    },
+    {
+      "timestamp": "2026-08-18T00:38:47.046422+00:00",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "avg_cost": 500.0,
+      "exit_price": 505.0,
+      "proceeds": 202.0,
+      "realized_pnl": 2.0,
+      "realized_pnl_pct": 1.0,
+      "reason": "rotation",
+      "thesis": "",
+      "opened_at": "2026-08-18T00:38:47.044424+00:00",
+      "hold_seconds": 0
+    },
+    {
+      "timestamp": "2026-08-18T00:37:14.232051+00:00",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "avg_cost": 500.0,
+      "exit_price": 505.0,
+      "proceeds": 202.0,
+      "realized_pnl": 2.0,
+      "realized_pnl_pct": 1.0,
+      "reason": "rotation",
+      "thesis": "",
+      "opened_at": "2026-08-18T00:37:14.229034+00:00",
+      "hold_seconds": 0
+    },
+    {
+      "timestamp": "2026-08-18T00:37:10.172878+00:00",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "avg_cost": 500.0,
+      "exit_price": 505.0,
+      "proceeds": 202.0,
+      "realized_pnl": 2.0,
+      "realized_pnl_pct": 1.0,
+      "reason": "rotation",
+      "thesis": "",
+      "opened_at": "2026-08-18T00:37:10.170875+00:00",
+      "hold_seconds": 0
+    },
+    {
+      "timestamp": "2026-08-18T00:37:06.112795+00:00",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "avg_cost": 500.0,
+      "exit_price": 505.0,
+      "proceeds": 202.0,
+      "realized_pnl": 2.0,
+      "realized_pnl_pct": 1.0,
+      "reason": "rotation",
+      "thesis": "",
+      "opened_at": "2026-08-18T00:37:06.111282+00:00",
+      "hold_seconds": 0
+    },
+    {
+      "timestamp": "2026-08-18T00:36:49.614555+00:00",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "avg_cost": 500.0,
+      "exit_price": 505.0,
+      "proceeds": 202.0,
+      "realized_pnl": 2.0,
+      "realized_pnl_pct": 1.0,
+      "reason": "rotation",
+      "thesis": "",
+      "opened_at": "2026-08-18T00:36:49.611545+00:00",
+      "hold_seconds": 0
+    },
+    {
+      "timestamp": "2026-08-18T00:36:45.535270+00:00",
+      "symbol": "MSFT",
+      "qty": 0.4,
+      "avg_cost": 500.0,
+      "exit_price": 505.0,
+      "proceeds": 202.0,
+      "realized_pnl": 2.0,
+      "realized_pnl_pct": 1.0,
+      "reason": "rotation",
+      "thesis": "",
+      "opened_at": "2026-08-18T00:36:45.533269+00:00",
+      "hold_seconds": 0
+    },
     {
       "timestamp": "2026-08-17T17:31:09.775715+00:00",
       "symbol": "XOM",
@@ -9095,17 +9325,17 @@
   },
   "learning": {
     "candidate_signals_logged": 8,
-    "fills_logged": 227,
-    "closed_outcomes": 95,
+    "fills_logged": 251,
+    "closed_outcomes": 105,
     "consensus_events": 213,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1034.57,
-    "change": 34.57,
-    "change_pct": 3.46,
+    "latest_equity": 1035.28,
+    "change": 35.28,
+    "change_pct": 3.53,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -9114,49 +9344,13 @@
         "event": "start"
       },
       {
-        "t": "2026-08-06T15:49:41.748264+00:00",
-        "equity": 1000.01,
-        "cash": 600.03,
-        "event": "BUY ANET"
-      },
-      {
-        "t": "2026-08-06T15:50:14.375161+00:00",
-        "equity": 1000.14,
-        "cash": 600.16,
-        "event": "BUY BAC"
-      },
-      {
-        "t": "2026-08-06T16:31:07.139100+00:00",
-        "equity": 997.82,
-        "cash": 597.84,
-        "event": "SELL LRCX"
-      },
-      {
-        "t": "2026-08-06T17:00:57.768060+00:00",
-        "equity": 997.63,
-        "cash": 597.66,
-        "event": "SELL PANW"
-      },
-      {
-        "t": "2026-08-06T17:46:06.354489+00:00",
-        "equity": 996.69,
-        "cash": 596.7,
-        "event": "SELL LRCX"
-      },
-      {
-        "t": "2026-08-06T18:15:51.839510+00:00",
-        "equity": 996.69,
-        "cash": 196.72,
-        "event": "BUY XOM"
-      },
-      {
-        "t": "2026-08-06T18:45:53.227729+00:00",
-        "equity": 996.13,
-        "cash": 204.45,
-        "event": "SELL BAC"
-      },
-      {
         "t": "2026-08-07T00:23:33.862397+00:00",
+        "equity": 998.6,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-07T00:35:22.791709+00:00",
         "equity": 998.6,
         "cash": 5.04,
         "event": "mark"
@@ -9168,8 +9362,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-07T11:41:13.000055+00:00",
+        "equity": 998.59,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-07T11:42:39.327971+00:00",
         "equity": 998.59,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-07T13:31:45.497722+00:00",
+        "equity": 1000.01,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9180,8 +9386,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-07T13:49:49.172502+00:00",
+        "equity": 1005.49,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-07T13:52:02.271632+00:00",
         "equity": 1006.35,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-07T13:55:33.506036+00:00",
+        "equity": 1004.37,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9192,8 +9410,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-07T14:01:16.883722+00:00",
+        "equity": 1003.5,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-07T14:05:33.270454+00:00",
         "equity": 1001.93,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-07T14:10:34.109086+00:00",
+        "equity": 1002.86,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9204,7 +9434,19 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-07T14:16:20.203225+00:00",
+        "equity": 1003.33,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-07T14:20:35.460032+00:00",
+        "equity": 1004.94,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-07T14:25:45.661529+00:00",
         "equity": 1004.94,
         "cash": 5.04,
         "event": "mark"
@@ -9216,8 +9458,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-07T14:31:23.046572+00:00",
+        "equity": 1003.67,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-07T14:35:36.841828+00:00",
         "equity": 1002.68,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-07T14:40:36.717510+00:00",
+        "equity": 1000.93,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9228,8 +9482,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-07T14:46:27.269326+00:00",
+        "equity": 1001.09,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-07T14:50:38.106646+00:00",
         "equity": 1001.8,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-07T14:55:39.370583+00:00",
+        "equity": 1001.26,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9240,8 +9506,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-07T15:01:24.689336+00:00",
+        "equity": 1003.06,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-07T15:05:38.249849+00:00",
         "equity": 1003.67,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-07T15:10:38.858464+00:00",
+        "equity": 1003.51,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9252,8 +9530,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-07T15:17:10.246230+00:00",
+        "equity": 1003.0,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-07T15:20:40.238158+00:00",
         "equity": 1003.48,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-07T15:25:40.203161+00:00",
+        "equity": 1004.33,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9264,8 +9554,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-07T15:30:40.873597+00:00",
+        "equity": 1004.66,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-07T15:31:32.345921+00:00",
         "equity": 1005.43,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-07T15:35:41.409549+00:00",
+        "equity": 1003.78,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9276,8 +9578,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-07T15:45:43.399761+00:00",
+        "equity": 1003.49,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-07T15:46:30.663539+00:00",
         "equity": 1003.87,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-07T15:50:40.289505+00:00",
+        "equity": 1004.43,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9288,8 +9602,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-07T16:00:41.156043+00:00",
+        "equity": 1003.42,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-07T16:01:28.166763+00:00",
         "equity": 1003.4,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-07T16:05:55.298219+00:00",
+        "equity": 1003.91,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9300,8 +9626,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-07T16:15:56.538866+00:00",
+        "equity": 1003.62,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-07T16:16:41.075596+00:00",
         "equity": 1004.17,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-07T16:20:41.290103+00:00",
+        "equity": 1004.23,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9312,8 +9650,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-07T16:30:42.159861+00:00",
+        "equity": 1003.14,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-07T16:31:26.581378+00:00",
         "equity": 1003.1,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-07T16:35:41.971798+00:00",
+        "equity": 1003.66,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9324,8 +9674,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-07T16:45:43.099476+00:00",
+        "equity": 1005.18,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-07T16:46:27.033870+00:00",
         "equity": 1005.01,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-07T16:50:42.603380+00:00",
+        "equity": 1005.58,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9336,8 +9698,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-07T17:00:43.424500+00:00",
+        "equity": 1003.28,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-07T17:01:27.088066+00:00",
         "equity": 1003.1,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-07T17:05:52.591082+00:00",
+        "equity": 1004.1,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9348,8 +9722,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-07T17:15:44.411598+00:00",
+        "equity": 1004.58,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-07T17:16:25.614985+00:00",
         "equity": 1004.61,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-07T17:20:43.944082+00:00",
+        "equity": 1004.8,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9360,8 +9746,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-07T17:30:44.631248+00:00",
+        "equity": 1004.27,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-07T17:31:26.505054+00:00",
         "equity": 1003.75,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-07T17:35:44.779655+00:00",
+        "equity": 1003.31,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9372,8 +9770,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-07T17:45:47.048422+00:00",
+        "equity": 1003.08,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-07T17:46:29.983741+00:00",
         "equity": 1003.02,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-07T17:50:44.838516+00:00",
+        "equity": 1002.6,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9384,8 +9794,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-07T18:00:45.922075+00:00",
+        "equity": 1001.81,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-07T18:01:30.735639+00:00",
         "equity": 1001.73,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-07T18:05:55.336116+00:00",
+        "equity": 1001.6,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9396,8 +9818,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-07T18:15:47.285743+00:00",
+        "equity": 1002.0,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-07T18:16:34.047505+00:00",
         "equity": 1002.14,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-07T18:20:46.419924+00:00",
+        "equity": 1002.45,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9408,8 +9842,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-07T18:30:47.626718+00:00",
+        "equity": 1002.85,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-07T18:31:32.486481+00:00",
         "equity": 1002.49,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-07T18:35:46.955537+00:00",
+        "equity": 1002.51,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9420,8 +9866,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-07T18:45:47.987333+00:00",
+        "equity": 1002.1,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-07T18:46:30.907227+00:00",
         "equity": 1002.11,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-07T18:50:57.132645+00:00",
+        "equity": 1002.26,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9432,8 +9890,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-07T19:00:48.659378+00:00",
+        "equity": 1002.91,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-07T19:01:33.908872+00:00",
         "equity": 1003.41,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-07T19:05:48.301425+00:00",
+        "equity": 1003.78,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9444,8 +9914,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-07T19:15:49.397900+00:00",
+        "equity": 1004.24,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-07T19:16:34.117263+00:00",
         "equity": 1004.21,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-07T19:20:48.926778+00:00",
+        "equity": 1003.84,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9456,8 +9938,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-07T19:30:49.911780+00:00",
+        "equity": 1003.15,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-07T19:31:34.842200+00:00",
         "equity": 1003.08,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-07T19:35:50.291286+00:00",
+        "equity": 1003.24,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9468,8 +9962,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-07T19:45:51.519316+00:00",
+        "equity": 1002.82,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-07T19:46:35.053739+00:00",
         "equity": 1002.86,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-07T19:50:51.014232+00:00",
+        "equity": 1002.85,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9480,8 +9986,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-10T13:30:32.454255+00:00",
+        "equity": 1013.75,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-10T13:31:25.361725+00:00",
         "equity": 1018.84,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-10T13:35:24.761214+00:00",
+        "equity": 1015.68,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9492,8 +10010,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-10T13:45:25.991175+00:00",
+        "equity": 1019.67,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-10T13:46:08.132115+00:00",
         "equity": 1019.67,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-10T13:50:28.975659+00:00",
+        "equity": 1020.22,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9504,8 +10034,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-10T14:00:27.546383+00:00",
+        "equity": 1021.89,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-10T14:01:06.995480+00:00",
         "equity": 1021.73,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-10T14:05:26.189448+00:00",
+        "equity": 1023.01,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9516,8 +10058,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-10T14:15:26.508974+00:00",
+        "equity": 1023.68,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-10T14:16:03.710359+00:00",
         "equity": 1023.67,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-10T14:20:26.422970+00:00",
+        "equity": 1023.14,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9528,8 +10082,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-10T14:30:30.439981+00:00",
+        "equity": 1023.48,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-10T14:31:09.674587+00:00",
         "equity": 1023.5,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-10T14:35:27.208396+00:00",
+        "equity": 1023.57,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9540,8 +10106,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-10T14:45:28.002712+00:00",
+        "equity": 1021.61,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-10T14:46:05.575820+00:00",
         "equity": 1021.73,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-10T14:50:27.978293+00:00",
+        "equity": 1021.9,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9552,8 +10130,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-10T15:00:30.929380+00:00",
+        "equity": 1019.39,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-10T15:01:12.413274+00:00",
         "equity": 1019.4,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-10T15:05:28.488117+00:00",
+        "equity": 1021.12,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9564,8 +10154,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-10T15:15:29.990210+00:00",
+        "equity": 1022.76,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-10T15:16:09.346391+00:00",
         "equity": 1023.13,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-10T15:20:30.478105+00:00",
+        "equity": 1023.34,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9576,8 +10178,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-10T15:30:32.567235+00:00",
+        "equity": 1022.08,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-10T15:31:20.933196+00:00",
         "equity": 1022.44,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-10T15:35:30.484499+00:00",
+        "equity": 1022.52,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9588,8 +10202,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-10T15:45:43.705079+00:00",
+        "equity": 1024.22,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-10T15:46:22.842418+00:00",
         "equity": 1023.97,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-10T15:50:30.558932+00:00",
+        "equity": 1024.06,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9600,8 +10226,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-10T16:00:31.641417+00:00",
+        "equity": 1025.03,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-10T16:01:14.310609+00:00",
         "equity": 1025.17,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-10T16:05:34.036899+00:00",
+        "equity": 1025.03,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9612,8 +10250,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-10T16:15:32.999875+00:00",
+        "equity": 1024.6,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-10T16:16:14.178259+00:00",
         "equity": 1024.52,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-10T16:20:32.268133+00:00",
+        "equity": 1024.44,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9624,8 +10274,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-10T16:30:33.623606+00:00",
+        "equity": 1024.57,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-10T16:31:14.898338+00:00",
         "equity": 1024.42,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-10T16:35:32.709101+00:00",
+        "equity": 1024.37,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9636,8 +10298,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-10T16:45:35.250770+00:00",
+        "equity": 1023.26,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-10T16:46:18.007989+00:00",
         "equity": 1023.46,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-10T16:50:34.109740+00:00",
+        "equity": 1023.38,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9648,8 +10322,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-10T17:00:34.126452+00:00",
+        "equity": 1025.18,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-10T17:01:16.697812+00:00",
         "equity": 1025.48,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-10T17:05:33.716348+00:00",
+        "equity": 1025.1,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9660,8 +10346,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-10T17:15:34.900462+00:00",
+        "equity": 1024.77,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-10T17:16:15.819166+00:00",
         "equity": 1024.89,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-10T17:20:35.797984+00:00",
+        "equity": 1025.23,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9672,8 +10370,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-10T17:30:37.839984+00:00",
+        "equity": 1025.08,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-10T17:31:15.390889+00:00",
         "equity": 1025.1,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-10T17:35:35.053950+00:00",
+        "equity": 1025.41,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9684,8 +10394,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-10T17:45:35.788890+00:00",
+        "equity": 1023.95,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-10T17:46:17.513546+00:00",
         "equity": 1024.05,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-10T17:50:36.951332+00:00",
+        "equity": 1023.83,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9696,8 +10418,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-10T18:00:38.158842+00:00",
+        "equity": 1022.75,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-10T18:01:18.275541+00:00",
         "equity": 1022.57,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-10T18:05:35.983212+00:00",
+        "equity": 1022.92,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9708,8 +10442,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-10T18:15:37.468630+00:00",
+        "equity": 1022.58,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-10T18:16:23.935467+00:00",
         "equity": 1022.65,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-10T18:20:38.745482+00:00",
+        "equity": 1023.12,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9720,8 +10466,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-10T18:26:16.282196+00:00",
+        "equity": 1022.7,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-10T18:30:42.555666+00:00",
         "equity": 1023.1,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-10T18:31:35.740807+00:00",
+        "equity": 1023.24,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9732,8 +10490,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-10T18:37:27.238802+00:00",
+        "equity": 1023.18,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-10T18:40:42.543241+00:00",
         "equity": 1023.53,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-10T18:43:57.168076+00:00",
+        "equity": 1023.55,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9744,8 +10514,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-10T18:46:36.930720+00:00",
+        "equity": 1023.45,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-10T18:50:42.428509+00:00",
         "equity": 1023.6,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-10T18:55:49.263548+00:00",
+        "equity": 1022.79,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9756,8 +10538,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-11T13:32:55.049233+00:00",
+        "equity": 1023.84,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-11T13:35:50.671156+00:00",
         "equity": 1021.3,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-11T13:40:51.107898+00:00",
+        "equity": 1023.11,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9768,8 +10562,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-11T13:47:18.471708+00:00",
+        "equity": 1023.27,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-11T13:50:50.825653+00:00",
         "equity": 1023.55,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-11T13:55:49.639283+00:00",
+        "equity": 1025.11,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9780,8 +10586,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-11T14:02:14.281192+00:00",
+        "equity": 1025.07,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-11T14:05:50.400604+00:00",
         "equity": 1025.0,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-11T14:10:50.925216+00:00",
+        "equity": 1026.61,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9792,8 +10610,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-11T14:17:28.482435+00:00",
+        "equity": 1026.37,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-11T14:18:55.728838+00:00",
         "equity": 1025.87,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-11T14:19:28.050093+00:00",
+        "equity": 1026.18,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9804,8 +10634,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-11T14:25:51.728498+00:00",
+        "equity": 1024.9,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-11T14:30:53.302771+00:00",
         "equity": 1025.41,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-11T14:33:56.219924+00:00",
+        "equity": 1026.09,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9816,8 +10658,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-11T14:40:51.089142+00:00",
+        "equity": 1025.07,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-11T14:45:51.566881+00:00",
         "equity": 1024.45,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-11T14:48:06.276493+00:00",
+        "equity": 1025.1,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9828,7 +10682,19 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-11T14:55:57.413388+00:00",
+        "equity": 1025.1,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-11T15:00:52.519362+00:00",
+        "equity": 1025.12,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-11T15:03:50.072972+00:00",
         "equity": 1025.12,
         "cash": 5.04,
         "event": "mark"
@@ -9840,8 +10706,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-11T15:10:53.606079+00:00",
+        "equity": 1024.44,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-11T15:15:55.342566+00:00",
         "equity": 1024.78,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-11T15:18:20.051554+00:00",
+        "equity": 1024.29,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9852,8 +10730,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-11T15:25:53.260289+00:00",
+        "equity": 1023.6,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-11T15:30:55.004668+00:00",
         "equity": 1023.81,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-11T15:32:39.035452+00:00",
+        "equity": 1023.86,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9864,8 +10754,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-11T15:41:24.846058+00:00",
+        "equity": 1023.98,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-11T15:45:54.572153+00:00",
         "equity": 1023.87,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-11T15:47:41.496304+00:00",
+        "equity": 1023.85,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9876,8 +10778,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-11T15:55:54.417388+00:00",
+        "equity": 1024.03,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-11T16:01:11.037779+00:00",
         "equity": 1024.27,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-11T16:04:24.454518+00:00",
+        "equity": 1023.9,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9888,8 +10802,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-11T16:10:54.981967+00:00",
+        "equity": 1024.07,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-11T16:15:55.962063+00:00",
         "equity": 1023.2,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-11T16:18:22.194909+00:00",
+        "equity": 1023.26,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9900,8 +10826,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-11T16:25:55.063623+00:00",
+        "equity": 1021.45,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-11T16:30:56.890248+00:00",
         "equity": 1021.3,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-11T16:33:33.145377+00:00",
+        "equity": 1020.93,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9912,8 +10850,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-11T16:40:58.912667+00:00",
+        "equity": 1021.6,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-11T16:45:59.951874+00:00",
         "equity": 1020.98,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-11T16:49:07.767369+00:00",
+        "equity": 1022.16,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9924,8 +10874,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-11T16:55:56.484336+00:00",
+        "equity": 1022.89,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-11T17:00:56.723869+00:00",
         "equity": 1022.98,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-11T17:03:00.535400+00:00",
+        "equity": 1022.64,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9936,8 +10898,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-11T17:10:57.184900+00:00",
+        "equity": 1023.0,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-11T17:16:00.215106+00:00",
         "equity": 1022.58,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-11T17:18:52.094579+00:00",
+        "equity": 1022.72,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9948,8 +10922,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-11T17:26:01.304657+00:00",
+        "equity": 1023.33,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-11T17:30:59.026610+00:00",
         "equity": 1023.35,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-11T17:33:01.467801+00:00",
+        "equity": 1023.61,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9960,8 +10946,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-11T17:41:02.091809+00:00",
+        "equity": 1023.71,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-11T17:46:05.373100+00:00",
         "equity": 1023.34,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-11T17:48:26.198580+00:00",
+        "equity": 1023.64,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9972,8 +10970,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-11T17:55:59.401915+00:00",
+        "equity": 1023.72,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-11T18:01:04.508763+00:00",
         "equity": 1023.7,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-11T18:03:49.958195+00:00",
+        "equity": 1023.87,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9984,8 +10994,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-11T18:07:39.405567+00:00",
+        "equity": 1023.51,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-11T18:08:47.538837+00:00",
         "equity": 1023.37,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-11T18:11:07.612384+00:00",
+        "equity": 1023.35,
         "cash": 5.04,
         "event": "mark"
       },
@@ -9996,8 +11018,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-11T18:18:21.343401+00:00",
+        "equity": 1022.36,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-11T18:21:01.483971+00:00",
         "equity": 1021.18,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-11T18:26:05.175421+00:00",
+        "equity": 1020.99,
         "cash": 5.04,
         "event": "mark"
       },
@@ -10008,20 +11042,38 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-11T18:34:04.517309+00:00",
+        "equity": 1021.43,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-11T18:36:01.540060+00:00",
         "equity": 1022.06,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-11T18:44:01.473712+00:00",
-        "equity": 1009.98,
+        "t": "2026-08-11T18:41:01.962736+00:00",
+        "equity": 1021.57,
+        "cash": 5.04,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-11T18:44:21.721713+00:00",
+        "equity": 1021.64,
         "cash": 210.6,
-        "event": "SELL PANW"
+        "event": "mark"
       },
       {
         "t": "2026-08-11T18:46:07.399872+00:00",
         "equity": 1021.53,
+        "cash": 210.6,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-11T18:49:19.683442+00:00",
+        "equity": 1021.65,
         "cash": 210.6,
         "event": "mark"
       },
@@ -10032,10 +11084,16 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-11T21:33:24.290133+00:00",
-        "equity": 1009.98,
+        "t": "2026-08-11T18:55:09.260922+00:00",
+        "equity": 1021.55,
+        "cash": 210.6,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-12T07:56:48.476951+00:00",
+        "equity": 1020.93,
         "cash": 10.91,
-        "event": "BUY JPM"
+        "event": "mark"
       },
       {
         "t": "2026-08-12T13:30:42.409045+00:00",
@@ -10044,8 +11102,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-12T13:33:13.328443+00:00",
+        "equity": 1028.45,
+        "cash": 223.5,
+        "event": "SELL LRCX"
+      },
+      {
         "t": "2026-08-12T13:33:19.891502+00:00",
         "equity": 1028.11,
+        "cash": 223.5,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-12T13:35:35.069848+00:00",
+        "equity": 1027.49,
         "cash": 223.5,
         "event": "mark"
       },
@@ -10056,8 +11126,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-12T13:45:36.855141+00:00",
+        "equity": 1029.65,
+        "cash": 223.5,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-12T13:47:30.124923+00:00",
         "equity": 1028.82,
+        "cash": 223.5,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-12T13:50:36.013904+00:00",
+        "equity": 1028.7,
         "cash": 223.5,
         "event": "mark"
       },
@@ -10068,8 +11150,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-12T14:00:36.692896+00:00",
+        "equity": 1027.88,
+        "cash": 223.5,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-12T14:05:36.931386+00:00",
         "equity": 1028.41,
+        "cash": 223.5,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-12T14:10:40.879085+00:00",
+        "equity": 1028.54,
         "cash": 223.5,
         "event": "mark"
       },
@@ -10080,8 +11174,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-12T14:20:41.640426+00:00",
+        "equity": 1029.4,
+        "cash": 223.5,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-12T14:25:42.011444+00:00",
         "equity": 1029.07,
+        "cash": 223.5,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-12T14:30:38.200528+00:00",
+        "equity": 1029.69,
         "cash": 223.5,
         "event": "mark"
       },
@@ -10092,8 +11198,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-12T14:40:42.210308+00:00",
+        "equity": 1029.29,
+        "cash": 223.5,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-12T14:45:38.682423+00:00",
         "equity": 1028.97,
+        "cash": 223.5,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-12T14:50:39.062678+00:00",
+        "equity": 1028.96,
         "cash": 223.5,
         "event": "mark"
       },
@@ -10104,8 +11222,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-12T15:00:41.035631+00:00",
+        "equity": 1029.1,
+        "cash": 223.5,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-12T15:02:43.233401+00:00",
         "equity": 1029.0,
+        "cash": 223.5,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-12T15:05:39.888734+00:00",
+        "equity": 1028.81,
         "cash": 223.5,
         "event": "mark"
       },
@@ -10116,14 +11246,32 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-12T15:10:44.848191+00:00",
+        "equity": 1028.64,
+        "cash": 223.5,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-12T15:15:40.289058+00:00",
         "equity": 1028.4,
         "cash": 223.5,
         "event": "mark"
       },
       {
+        "t": "2026-08-12T15:17:14.010039+00:00",
+        "equity": 1028.4,
+        "cash": 23.69,
+        "event": "BUY LRCX"
+      },
+      {
         "t": "2026-08-12T15:17:20.486162+00:00",
         "equity": 1028.31,
+        "cash": 23.69,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-12T15:20:40.075209+00:00",
+        "equity": 1027.53,
         "cash": 23.69,
         "event": "mark"
       },
@@ -10134,8 +11282,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-12T15:30:41.122218+00:00",
+        "equity": 1028.31,
+        "cash": 23.69,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-12T15:35:38.983495+00:00",
         "equity": 1028.36,
+        "cash": 23.69,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-12T15:40:45.924409+00:00",
+        "equity": 1028.16,
         "cash": 23.69,
         "event": "mark"
       },
@@ -10146,8 +11306,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-12T15:49:10.365907+00:00",
+        "equity": 1028.57,
+        "cash": 23.69,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-12T15:50:42.131287+00:00",
         "equity": 1028.29,
+        "cash": 23.69,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-12T15:55:47.068882+00:00",
+        "equity": 1028.3,
         "cash": 23.69,
         "event": "mark"
       },
@@ -10158,8 +11330,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-12T16:04:00.238543+00:00",
+        "equity": 1029.03,
+        "cash": 23.69,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-12T16:05:46.549196+00:00",
         "equity": 1029.25,
+        "cash": 23.69,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-12T16:10:46.372930+00:00",
+        "equity": 1029.46,
         "cash": 23.69,
         "event": "mark"
       },
@@ -10170,8 +11354,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-12T16:19:03.961945+00:00",
+        "equity": 1030.59,
+        "cash": 23.69,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-12T16:20:42.884342+00:00",
         "equity": 1030.26,
+        "cash": 23.69,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-12T16:25:46.855575+00:00",
+        "equity": 1030.68,
         "cash": 23.69,
         "event": "mark"
       },
@@ -10182,8 +11378,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-12T16:34:10.893643+00:00",
+        "equity": 1029.92,
+        "cash": 23.69,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-12T16:35:43.059473+00:00",
         "equity": 1029.86,
+        "cash": 23.69,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-12T16:40:48.253716+00:00",
+        "equity": 1030.49,
         "cash": 23.69,
         "event": "mark"
       },
@@ -10194,8 +11402,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-12T16:50:43.728843+00:00",
+        "equity": 1030.66,
+        "cash": 23.69,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-12T16:55:48.715522+00:00",
         "equity": 1030.13,
+        "cash": 23.69,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-12T17:00:44.142804+00:00",
+        "equity": 1030.15,
         "cash": 23.69,
         "event": "mark"
       },
@@ -10206,8 +11426,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-12T17:05:44.347753+00:00",
+        "equity": 1030.01,
+        "cash": 23.69,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-12T17:10:48.109779+00:00",
         "equity": 1029.94,
+        "cash": 23.69,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-12T17:15:45.203996+00:00",
+        "equity": 1030.17,
         "cash": 23.69,
         "event": "mark"
       },
@@ -10218,8 +11450,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-12T17:20:45.298748+00:00",
+        "equity": 1030.86,
+        "cash": 23.69,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-12T17:25:48.902272+00:00",
         "equity": 1030.19,
+        "cash": 23.69,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-12T17:30:45.633910+00:00",
+        "equity": 1030.07,
         "cash": 23.69,
         "event": "mark"
       },
@@ -10230,8 +11474,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-12T17:35:45.761837+00:00",
+        "equity": 1029.87,
+        "cash": 23.69,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-12T17:40:51.786438+00:00",
         "equity": 1030.12,
+        "cash": 23.69,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-12T17:45:50.672804+00:00",
+        "equity": 1030.02,
         "cash": 23.69,
         "event": "mark"
       },
@@ -10242,8 +11498,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-12T17:50:46.242085+00:00",
+        "equity": 1029.82,
+        "cash": 23.69,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-12T17:55:52.025033+00:00",
         "equity": 1029.42,
+        "cash": 23.69,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-12T18:00:47.364923+00:00",
+        "equity": 1030.1,
         "cash": 23.69,
         "event": "mark"
       },
@@ -10254,14 +11522,32 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-12T18:10:51.965856+00:00",
+        "equity": 1030.19,
+        "cash": 23.69,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-12T18:15:48.510334+00:00",
         "equity": 1030.48,
         "cash": 23.69,
         "event": "mark"
       },
       {
+        "t": "2026-08-12T18:18:44.422678+00:00",
+        "equity": 1030.48,
+        "cash": 221.05,
+        "event": "SELL MSFT"
+      },
+      {
         "t": "2026-08-12T18:18:54.168889+00:00",
         "equity": 1031.04,
+        "cash": 221.05,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-12T18:20:47.998847+00:00",
+        "equity": 1031.22,
         "cash": 221.05,
         "event": "mark"
       },
@@ -10272,14 +11558,32 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-12T18:30:48.777310+00:00",
+        "equity": 1031.12,
+        "cash": 221.05,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-12T18:32:52.463312+00:00",
-        "equity": 1020.54,
+        "equity": 1031.12,
         "cash": 21.82,
         "event": "BUY CVX"
       },
       {
+        "t": "2026-08-12T18:33:02.474943+00:00",
+        "equity": 1030.88,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-12T18:35:48.929641+00:00",
         "equity": 1030.68,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-12T18:40:53.140802+00:00",
+        "equity": 1030.78,
         "cash": 21.82,
         "event": "mark"
       },
@@ -10290,8 +11594,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-12T18:47:15.501756+00:00",
+        "equity": 1030.43,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-12T18:50:50.337384+00:00",
         "equity": 1029.63,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-12T18:55:53.232472+00:00",
+        "equity": 1029.47,
         "cash": 21.82,
         "event": "mark"
       },
@@ -10302,8 +11618,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-12T19:19:22.451819+00:00",
+        "equity": 1029.78,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-12T19:32:27.614266+00:00",
         "equity": 1028.2,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-12T19:47:30.353282+00:00",
+        "equity": 1029.07,
         "cash": 21.82,
         "event": "mark"
       },
@@ -10314,8 +11642,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-13T12:07:53.582265+00:00",
+        "equity": 1029.01,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-13T13:31:18.096352+00:00",
         "equity": 1028.84,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-13T13:36:16.433640+00:00",
+        "equity": 1029.09,
         "cash": 21.82,
         "event": "mark"
       },
@@ -10326,8 +11666,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-13T13:46:17.294318+00:00",
+        "equity": 1024.68,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-13T13:49:00.113773+00:00",
         "equity": 1024.32,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-13T13:51:15.283655+00:00",
+        "equity": 1024.8,
         "cash": 21.82,
         "event": "mark"
       },
@@ -10338,8 +11690,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-13T14:01:15.557799+00:00",
+        "equity": 1026.37,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-13T14:03:59.212775+00:00",
         "equity": 1025.94,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-13T14:06:14.984122+00:00",
+        "equity": 1025.11,
         "cash": 21.82,
         "event": "mark"
       },
@@ -10350,8 +11714,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-13T14:16:23.697498+00:00",
+        "equity": 1026.36,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-13T14:20:24.478699+00:00",
         "equity": 1026.27,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-13T14:21:22.691755+00:00",
+        "equity": 1025.67,
         "cash": 21.82,
         "event": "mark"
       },
@@ -10362,8 +11738,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-13T14:31:18.708422+00:00",
+        "equity": 1026.47,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-13T14:34:55.807180+00:00",
         "equity": 1028.11,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-13T14:36:19.192468+00:00",
+        "equity": 1028.12,
         "cash": 21.82,
         "event": "mark"
       },
@@ -10374,8 +11762,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-13T14:46:18.432084+00:00",
+        "equity": 1031.64,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-13T14:51:18.603352+00:00",
         "equity": 1032.27,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-13T14:56:18.549878+00:00",
+        "equity": 1031.06,
         "cash": 21.82,
         "event": "mark"
       },
@@ -10386,8 +11786,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-13T15:05:37.768796+00:00",
+        "equity": 1029.66,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-13T15:06:24.874543+00:00",
         "equity": 1029.54,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-13T15:11:19.781064+00:00",
+        "equity": 1029.63,
         "cash": 21.82,
         "event": "mark"
       },
@@ -10398,8 +11810,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-13T15:20:17.849048+00:00",
+        "equity": 1030.67,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-13T15:21:21.330506+00:00",
         "equity": 1031.68,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-13T15:26:19.933318+00:00",
+        "equity": 1032.07,
         "cash": 21.82,
         "event": "mark"
       },
@@ -10410,8 +11834,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-13T15:35:03.651932+00:00",
+        "equity": 1032.76,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-13T15:36:19.725981+00:00",
         "equity": 1032.57,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-13T15:41:20.444182+00:00",
+        "equity": 1033.94,
         "cash": 21.82,
         "event": "mark"
       },
@@ -10422,7 +11858,19 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-13T15:50:48.408096+00:00",
+        "equity": 1033.6,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-13T15:51:25.498511+00:00",
+        "equity": 1032.91,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-13T15:52:41.390282+00:00",
         "equity": 1032.91,
         "cash": 21.82,
         "event": "mark"
@@ -10434,8 +11882,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-13T16:01:25.624303+00:00",
+        "equity": 1032.25,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-13T16:06:26.571675+00:00",
         "equity": 1033.2,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-13T16:07:29.588142+00:00",
+        "equity": 1033.05,
         "cash": 21.82,
         "event": "mark"
       },
@@ -10446,8 +11906,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-13T16:16:26.509356+00:00",
+        "equity": 1033.71,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-13T16:20:39.819259+00:00",
         "equity": 1034.09,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-13T16:21:28.523291+00:00",
+        "equity": 1034.58,
         "cash": 21.82,
         "event": "mark"
       },
@@ -10458,14 +11930,32 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-13T16:31:23.254260+00:00",
+        "equity": 1033.82,
+        "cash": 21.82,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-13T16:31:33.960972+00:00",
-        "equity": 1029.22,
+        "equity": 1033.82,
         "cash": 230.31,
         "event": "SELL LRCX"
       },
       {
+        "t": "2026-08-13T16:32:17.852610+00:00",
+        "equity": 1035.35,
+        "cash": 230.31,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-13T16:36:15.125940+00:00",
         "equity": 1034.82,
+        "cash": 230.31,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-13T16:41:15.734034+00:00",
+        "equity": 1035.05,
         "cash": 230.31,
         "event": "mark"
       },
@@ -10476,8 +11966,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-13T16:48:51.361846+00:00",
+        "equity": 1035.2,
+        "cash": 230.31,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-13T16:51:15.583217+00:00",
         "equity": 1035.13,
+        "cash": 230.31,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-13T16:56:15.788591+00:00",
+        "equity": 1034.59,
         "cash": 230.31,
         "event": "mark"
       },
@@ -10488,8 +11990,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-13T17:03:31.378733+00:00",
+        "equity": 1034.9,
+        "cash": 30.55,
+        "event": "BUY MSFT"
+      },
+      {
         "t": "2026-08-13T17:04:20.338207+00:00",
         "equity": 1034.7,
+        "cash": 30.55,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-13T17:06:24.143822+00:00",
+        "equity": 1034.54,
         "cash": 30.55,
         "event": "mark"
       },
@@ -10500,8 +12014,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-13T17:16:24.399573+00:00",
+        "equity": 1035.08,
+        "cash": 30.55,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-13T17:21:28.014608+00:00",
         "equity": 1035.32,
+        "cash": 30.55,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-13T17:22:01.988121+00:00",
+        "equity": 1035.34,
         "cash": 30.55,
         "event": "mark"
       },
@@ -10512,8 +12038,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-13T17:31:25.514055+00:00",
+        "equity": 1034.97,
+        "cash": 30.55,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-13T17:35:34.469963+00:00",
         "equity": 1034.95,
+        "cash": 30.55,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-13T17:36:24.491255+00:00",
+        "equity": 1034.85,
         "cash": 30.55,
         "event": "mark"
       },
@@ -10524,8 +12062,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-13T17:46:26.138972+00:00",
+        "equity": 1034.7,
+        "cash": 30.55,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-13T17:50:17.154200+00:00",
         "equity": 1034.61,
+        "cash": 30.55,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-13T17:51:26.502989+00:00",
+        "equity": 1034.39,
         "cash": 30.55,
         "event": "mark"
       },
@@ -10536,8 +12086,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-13T18:01:25.838717+00:00",
+        "equity": 1034.41,
+        "cash": 30.55,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-13T18:05:22.494160+00:00",
         "equity": 1034.55,
+        "cash": 30.55,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-13T18:06:26.253542+00:00",
+        "equity": 1034.48,
         "cash": 30.55,
         "event": "mark"
       },
@@ -10548,8 +12110,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-13T18:16:27.659106+00:00",
+        "equity": 1034.6,
+        "cash": 30.55,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-13T18:20:16.766233+00:00",
         "equity": 1034.57,
+        "cash": 30.55,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-13T18:21:27.657069+00:00",
+        "equity": 1034.6,
         "cash": 30.55,
         "event": "mark"
       },
@@ -10560,8 +12134,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-13T18:31:27.187367+00:00",
+        "equity": 1034.08,
+        "cash": 30.55,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-13T18:36:27.674487+00:00",
         "equity": 1034.0,
+        "cash": 30.55,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-13T18:41:30.328983+00:00",
+        "equity": 1033.47,
         "cash": 30.55,
         "event": "mark"
       },
@@ -10572,8 +12158,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-13T18:50:56.682188+00:00",
+        "equity": 1033.63,
+        "cash": 30.55,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-13T18:51:32.885947+00:00",
         "equity": 1033.45,
+        "cash": 30.55,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-13T18:56:29.943618+00:00",
+        "equity": 1033.6,
         "cash": 30.55,
         "event": "mark"
       },
@@ -10584,13 +12182,31 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-13T19:19:50.046980+00:00",
+        "equity": 1033.79,
+        "cash": 30.55,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-13T19:34:18.663653+00:00",
         "equity": 1034.08,
         "cash": 30.55,
         "event": "mark"
       },
       {
+        "t": "2026-08-13T19:51:24.452233+00:00",
+        "equity": 1034.08,
+        "cash": 228.59,
+        "event": "SELL UNH"
+      },
+      {
         "t": "2026-08-13T19:52:06.360052+00:00",
+        "equity": 1034.56,
+        "cash": 228.59,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-13T19:53:40.866767+00:00",
         "equity": 1034.56,
         "cash": 228.59,
         "event": "mark"
@@ -10602,13 +12218,31 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-13T20:10:21.058709+00:00",
+        "equity": 1034.35,
+        "cash": 228.59,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-13T20:11:58.885661+00:00",
         "equity": 1034.87,
         "cash": 228.59,
         "event": "mark"
       },
       {
+        "t": "2026-08-13T20:40:23.994219+00:00",
+        "equity": 1034.43,
+        "cash": 228.59,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-14T09:51:04.366361+00:00",
+        "equity": 1034.8,
+        "cash": 228.59,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-14T09:52:20.596250+00:00",
         "equity": 1034.8,
         "cash": 228.59,
         "event": "mark"
@@ -10620,14 +12254,32 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-14T13:35:12.315345+00:00",
+        "equity": 1036.81,
+        "cash": 228.59,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-14T13:40:36.607371+00:00",
         "equity": 1039.15,
         "cash": 228.59,
         "event": "mark"
       },
       {
+        "t": "2026-08-14T13:47:59.587989+00:00",
+        "equity": 1039.15,
+        "cash": 30.01,
+        "event": "BUY AMZN"
+      },
+      {
         "t": "2026-08-14T13:48:20.323381+00:00",
         "equity": 1040.19,
+        "cash": 30.01,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-14T13:50:37.232523+00:00",
+        "equity": 1040.28,
         "cash": 30.01,
         "event": "mark"
       },
@@ -10638,8 +12290,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-14T14:02:56.880794+00:00",
+        "equity": 1042.61,
+        "cash": 30.01,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-14T14:10:39.817544+00:00",
         "equity": 1042.65,
+        "cash": 30.01,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-14T14:18:31.695299+00:00",
+        "equity": 1042.83,
         "cash": 30.01,
         "event": "mark"
       },
@@ -10650,8 +12314,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-14T14:30:40.222962+00:00",
+        "equity": 1042.21,
+        "cash": 30.01,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-14T14:33:24.588114+00:00",
         "equity": 1041.83,
+        "cash": 30.01,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-14T14:40:39.342207+00:00",
+        "equity": 1042.36,
         "cash": 30.01,
         "event": "mark"
       },
@@ -10662,104 +12338,38 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-14T15:00:39.858958+00:00",
+        "equity": 1040.82,
+        "cash": 30.01,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-14T15:03:42.001268+00:00",
         "equity": 1040.76,
         "cash": 30.01,
         "event": "mark"
       },
       {
-        "t": "2026-08-14T15:12:32.027565+00:00",
-        "equity": 1999.5,
-        "cash": 800.0,
-        "event": "BUY MSFT"
+        "t": "2026-08-14T15:10:40.972816+00:00",
+        "equity": 1040.42,
+        "cash": 30.01,
+        "event": "mark"
       },
       {
-        "t": "2026-08-14T15:12:36.114540+00:00",
-        "equity": 1999.5,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T15:12:38.158391+00:00",
-        "equity": 2003.52,
-        "cash": 702.0,
-        "event": "BUY NVDA"
-      },
-      {
-        "t": "2026-08-14T15:12:40.198442+00:00",
-        "equity": 2303.52,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T15:14:00.361130+00:00",
-        "equity": 2599.5,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T15:14:04.451107+00:00",
-        "equity": 2599.5,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T15:14:06.504836+00:00",
-        "equity": 2603.52,
-        "cash": 702.0,
-        "event": "BUY NVDA"
-      },
-      {
-        "t": "2026-08-14T15:14:08.564655+00:00",
-        "equity": 2903.52,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T15:15:36.525511+00:00",
-        "equity": 2903.52,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T15:15:40.651767+00:00",
-        "equity": 2903.52,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T15:15:44.717503+00:00",
-        "equity": 3199.5,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T15:18:17.060921+00:00",
-        "equity": 3199.5,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T15:18:21.171670+00:00",
-        "equity": 3199.5,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T15:18:23.194715+00:00",
-        "equity": 3203.52,
-        "cash": 702.0,
-        "event": "BUY NVDA"
-      },
-      {
-        "t": "2026-08-14T15:18:25.265429+00:00",
-        "equity": 3503.52,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
+        "t": "2026-08-14T15:18:52.880508+00:00",
+        "equity": 1040.64,
+        "cash": 30.01,
+        "event": "mark"
       },
       {
         "t": "2026-08-14T15:20:41.665806+00:00",
         "equity": 1040.49,
+        "cash": 30.01,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-14T15:30:47.867937+00:00",
+        "equity": 1040.5,
         "cash": 30.01,
         "event": "mark"
       },
@@ -10770,8 +12380,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-14T15:40:42.814528+00:00",
+        "equity": 1040.86,
+        "cash": 30.01,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-14T15:48:22.511333+00:00",
         "equity": 1040.85,
+        "cash": 30.01,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-14T15:50:43.404593+00:00",
+        "equity": 1040.71,
         "cash": 30.01,
         "event": "mark"
       },
@@ -10782,8 +12404,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-14T16:05:33.289373+00:00",
+        "equity": 1040.94,
+        "cash": 30.01,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-14T16:10:44.111091+00:00",
         "equity": 1040.97,
+        "cash": 30.01,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-14T16:18:58.951941+00:00",
+        "equity": 1040.9,
         "cash": 30.01,
         "event": "mark"
       },
@@ -10794,8 +12428,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-14T16:30:51.647405+00:00",
+        "equity": 1040.44,
+        "cash": 30.01,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-14T16:34:18.510596+00:00",
         "equity": 1040.48,
+        "cash": 30.01,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-14T16:40:46.128792+00:00",
+        "equity": 1040.6,
         "cash": 30.01,
         "event": "mark"
       },
@@ -10806,10 +12452,22 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-14T16:50:46.691512+00:00",
+        "equity": 1040.15,
+        "cash": 30.01,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-14T17:00:46.685684+00:00",
         "equity": 1040.27,
         "cash": 30.01,
         "event": "mark"
+      },
+      {
+        "t": "2026-08-14T17:03:34.242261+00:00",
+        "equity": 1040.27,
+        "cash": 229.45,
+        "event": "SELL JPM"
       },
       {
         "t": "2026-08-14T17:03:54.112260+00:00",
@@ -10818,34 +12476,10 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-14T17:06:09.954315+00:00",
-        "equity": 3303.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T17:06:14.038546+00:00",
-        "equity": 3303.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T17:06:18.143642+00:00",
-        "equity": 3599.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T17:06:25.895768+00:00",
-        "equity": 3599.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T17:06:25.904299+00:00",
-        "equity": 2201.83,
-        "cash": 700.0,
-        "event": "BUY NVDA"
+        "t": "2026-08-14T17:10:47.268805+00:00",
+        "equity": 1040.4,
+        "cash": 229.45,
+        "event": "mark"
       },
       {
         "t": "2026-08-14T17:20:47.903164+00:00",
@@ -10854,152 +12488,32 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-14T17:29:12.375025+00:00",
-        "equity": 2503.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
         "t": "2026-08-14T17:30:49.219367+00:00",
         "equity": 1039.86,
         "cash": 229.45,
         "event": "mark"
       },
       {
-        "t": "2026-08-14T17:31:24.011008+00:00",
-        "equity": 2603.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
+        "t": "2026-08-14T17:33:08.865647+00:00",
+        "equity": 1039.75,
+        "cash": 229.45,
+        "event": "mark"
       },
       {
-        "t": "2026-08-14T17:31:28.102880+00:00",
-        "equity": 2603.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T17:31:32.193709+00:00",
-        "equity": 4299.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T17:33:03.983048+00:00",
-        "equity": 4299.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T17:33:06.009225+00:00",
-        "equity": 4303.83,
-        "cash": 902.0,
-        "event": "BUY AAPL"
-      },
-      {
-        "t": "2026-08-14T17:33:08.087446+00:00",
-        "equity": 4403.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T17:33:20.497338+00:00",
-        "equity": 4399.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T17:33:24.565592+00:00",
-        "equity": 4399.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T17:33:26.606158+00:00",
-        "equity": 4403.83,
-        "cash": 702.0,
-        "event": "BUY NVDA"
-      },
-      {
-        "t": "2026-08-14T17:33:28.661597+00:00",
-        "equity": 4703.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T17:34:26.438450+00:00",
-        "equity": 4703.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T17:34:30.533699+00:00",
-        "equity": 4799.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T17:34:42.893732+00:00",
-        "equity": 4799.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T17:34:46.988765+00:00",
-        "equity": 4799.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T17:34:49.039440+00:00",
-        "equity": 4803.83,
-        "cash": 702.0,
-        "event": "BUY NVDA"
-      },
-      {
-        "t": "2026-08-14T17:34:51.095248+00:00",
-        "equity": 5103.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T17:37:06.589352+00:00",
-        "equity": 5103.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T17:37:10.712250+00:00",
-        "equity": 5199.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T17:37:23.091850+00:00",
-        "equity": 5199.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T17:37:27.189532+00:00",
-        "equity": 5199.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T17:37:29.227614+00:00",
-        "equity": 5203.83,
-        "cash": 702.0,
-        "event": "BUY NVDA"
-      },
-      {
-        "t": "2026-08-14T17:37:31.275144+00:00",
-        "equity": 5503.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
+        "t": "2026-08-14T17:40:48.490308+00:00",
+        "equity": 1039.51,
+        "cash": 229.45,
+        "event": "mark"
       },
       {
         "t": "2026-08-14T17:47:56.215365+00:00",
         "equity": 1038.63,
+        "cash": 229.45,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-14T17:50:49.182966+00:00",
+        "equity": 1038.76,
         "cash": 229.45,
         "event": "mark"
       },
@@ -11010,64 +12524,10 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-14T18:06:58.224185+00:00",
-        "equity": 5499.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T18:07:00.253411+00:00",
-        "equity": 5503.83,
-        "cash": 902.0,
-        "event": "BUY AAPL"
-      },
-      {
-        "t": "2026-08-14T18:07:02.348464+00:00",
-        "equity": 5603.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T18:07:14.738630+00:00",
-        "equity": 5603.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T18:07:18.837460+00:00",
-        "equity": 5603.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T18:07:22.947779+00:00",
-        "equity": 5899.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T18:07:31.261652+00:00",
-        "equity": 5899.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T18:07:31.268682+00:00",
-        "equity": 3503.83,
-        "cash": 902.0,
-        "event": "BUY NVDA"
-      },
-      {
-        "t": "2026-08-14T18:10:39.141515+00:00",
-        "equity": 3603.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T18:10:43.250054+00:00",
-        "equity": 3699.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
+        "t": "2026-08-14T18:04:06.504975+00:00",
+        "equity": 1039.05,
+        "cash": 229.45,
+        "event": "mark"
       },
       {
         "t": "2026-08-14T18:10:49.714624+00:00",
@@ -11076,136 +12536,16 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-14T18:10:55.683018+00:00",
-        "equity": 3703.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T18:10:59.763628+00:00",
-        "equity": 3703.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T18:11:03.855362+00:00",
-        "equity": 6599.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
         "t": "2026-08-14T18:18:28.178668+00:00",
         "equity": 1039.38,
         "cash": 229.45,
         "event": "mark"
       },
       {
-        "t": "2026-08-14T18:23:34.646661+00:00",
-        "equity": 6599.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T18:23:36.679931+00:00",
-        "equity": 6603.83,
-        "cash": 902.0,
-        "event": "BUY AAPL"
-      },
-      {
-        "t": "2026-08-14T18:23:38.773380+00:00",
-        "equity": 6703.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T18:23:55.431037+00:00",
-        "equity": 6703.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T18:23:59.534616+00:00",
-        "equity": 6703.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T18:24:03.631589+00:00",
-        "equity": 6999.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T18:24:56.197744+00:00",
-        "equity": 6999.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T18:24:58.244380+00:00",
-        "equity": 7003.83,
-        "cash": 902.0,
-        "event": "BUY AAPL"
-      },
-      {
-        "t": "2026-08-14T18:25:00.317581+00:00",
-        "equity": 7103.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T18:25:16.844189+00:00",
-        "equity": 7103.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T18:25:20.936308+00:00",
-        "equity": 7103.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T18:25:25.031123+00:00",
-        "equity": 7399.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T18:30:26.909722+00:00",
-        "equity": 7399.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T18:30:28.966418+00:00",
-        "equity": 7403.83,
-        "cash": 902.0,
-        "event": "BUY AAPL"
-      },
-      {
-        "t": "2026-08-14T18:30:31.083019+00:00",
-        "equity": 7503.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T18:30:47.605088+00:00",
-        "equity": 7503.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T18:30:51.657775+00:00",
-        "equity": 7503.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T18:30:55.730295+00:00",
-        "equity": 7799.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
+        "t": "2026-08-14T18:20:52.777199+00:00",
+        "equity": 1038.75,
+        "cash": 229.45,
+        "event": "mark"
       },
       {
         "t": "2026-08-14T18:30:57.116536+00:00",
@@ -11214,76 +12554,10 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-14T18:36:33.582531+00:00",
-        "equity": 7799.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T18:36:35.641921+00:00",
-        "equity": 7803.83,
-        "cash": 902.0,
-        "event": "BUY AAPL"
-      },
-      {
-        "t": "2026-08-14T18:36:37.720475+00:00",
-        "equity": 7903.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T18:36:54.257609+00:00",
-        "equity": 7903.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T18:36:58.381604+00:00",
-        "equity": 7903.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T18:37:02.481257+00:00",
-        "equity": 8199.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T18:40:01.525296+00:00",
-        "equity": 8199.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T18:40:03.551700+00:00",
-        "equity": 8203.83,
-        "cash": 902.0,
-        "event": "BUY AAPL"
-      },
-      {
-        "t": "2026-08-14T18:40:05.639795+00:00",
-        "equity": 8303.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T18:40:22.226422+00:00",
-        "equity": 8303.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T18:40:26.326378+00:00",
-        "equity": 8303.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T18:40:30.422733+00:00",
-        "equity": 8599.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
+        "t": "2026-08-14T18:35:47.234252+00:00",
+        "equity": 1038.04,
+        "cash": 229.45,
+        "event": "mark"
       },
       {
         "t": "2026-08-14T18:40:51.058088+00:00",
@@ -11292,80 +12566,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-14T18:47:55.152933+00:00",
-        "equity": 8603.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T18:47:59.273051+00:00",
-        "equity": 8699.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T18:48:15.823259+00:00",
-        "equity": 8699.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T18:48:19.897150+00:00",
-        "equity": 8699.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T18:48:21.954364+00:00",
-        "equity": 8703.83,
-        "cash": 702.0,
-        "event": "BUY NVDA"
-      },
-      {
-        "t": "2026-08-14T18:48:24.006728+00:00",
-        "equity": 8999.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T18:49:53.517307+00:00",
-        "equity": 8999.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
-      },
-      {
-        "t": "2026-08-14T18:49:55.575648+00:00",
-        "equity": 9003.83,
-        "cash": 902.0,
-        "event": "BUY AAPL"
-      },
-      {
-        "t": "2026-08-14T18:49:57.657895+00:00",
-        "equity": 9103.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T18:50:14.222560+00:00",
-        "equity": 9103.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T18:50:18.345304+00:00",
-        "equity": 9103.83,
-        "cash": 1002.0,
-        "event": "SELL MSFT"
-      },
-      {
-        "t": "2026-08-14T18:50:22.437685+00:00",
-        "equity": 9399.81,
-        "cash": 800.0,
-        "event": "BUY MSFT"
+        "t": "2026-08-14T18:48:23.741231+00:00",
+        "equity": 1037.94,
+        "cash": 229.45,
+        "event": "mark"
       },
       {
         "t": "2026-08-14T18:50:51.589286+00:00",
         "equity": 1038.11,
+        "cash": 229.45,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-14T19:03:49.775147+00:00",
+        "equity": 1037.79,
         "cash": 229.45,
         "event": "mark"
       },
@@ -11376,8 +12590,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-14T19:33:21.887546+00:00",
+        "equity": 1036.78,
+        "cash": 229.45,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-14T19:51:30.920223+00:00",
         "equity": 1036.7,
+        "cash": 229.45,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-17T13:30:44.757504+00:00",
+        "equity": 1037.2,
         "cash": 229.45,
         "event": "mark"
       },
@@ -11388,8 +12614,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-17T13:40:38.224072+00:00",
+        "equity": 1034.29,
+        "cash": 229.45,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-17T13:48:33.695936+00:00",
         "equity": 1035.15,
+        "cash": 229.45,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-17T13:50:38.082869+00:00",
+        "equity": 1033.89,
         "cash": 229.45,
         "event": "mark"
       },
@@ -11400,14 +12638,32 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-17T14:03:37.054404+00:00",
+        "equity": 1033.69,
+        "cash": 229.45,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-17T14:10:40.248373+00:00",
         "equity": 1033.13,
         "cash": 229.45,
         "event": "mark"
       },
       {
+        "t": "2026-08-17T14:18:11.775126+00:00",
+        "equity": 1033.13,
+        "cash": 30.3,
+        "event": "BUY PANW"
+      },
+      {
         "t": "2026-08-17T14:18:42.284779+00:00",
         "equity": 1032.81,
+        "cash": 30.3,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-17T14:20:40.563144+00:00",
+        "equity": 1032.44,
         "cash": 30.3,
         "event": "mark"
       },
@@ -11418,8 +12674,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-17T14:33:33.549779+00:00",
+        "equity": 1031.83,
+        "cash": 225.21,
+        "event": "SELL MSFT"
+      },
+      {
         "t": "2026-08-17T14:33:53.711951+00:00",
         "equity": 1031.84,
+        "cash": 225.21,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-17T14:40:41.250554+00:00",
+        "equity": 1032.43,
         "cash": 225.21,
         "event": "mark"
       },
@@ -11430,8 +12698,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-17T14:51:17.866137+00:00",
+        "equity": 1031.97,
+        "cash": 225.21,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-17T15:00:42.664546+00:00",
         "equity": 1031.31,
+        "cash": 225.21,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-17T15:03:06.207572+00:00",
+        "equity": 1031.68,
         "cash": 225.21,
         "event": "mark"
       },
@@ -11442,8 +12722,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-17T15:17:59.532469+00:00",
+        "equity": 1032.93,
+        "cash": 225.21,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-17T15:20:42.888767+00:00",
         "equity": 1032.94,
+        "cash": 225.21,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-17T15:30:43.615539+00:00",
+        "equity": 1033.72,
         "cash": 225.21,
         "event": "mark"
       },
@@ -11454,8 +12746,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-17T15:40:43.825592+00:00",
+        "equity": 1033.81,
+        "cash": 225.21,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-17T15:48:29.320260+00:00",
         "equity": 1033.8,
+        "cash": 225.21,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-17T15:50:44.744177+00:00",
+        "equity": 1033.86,
         "cash": 225.21,
         "event": "mark"
       },
@@ -11466,8 +12770,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-17T16:05:34.931739+00:00",
+        "equity": 1032.5,
+        "cash": 225.21,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-17T16:10:45.502178+00:00",
         "equity": 1032.44,
+        "cash": 225.21,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-17T16:18:27.759573+00:00",
+        "equity": 1032.22,
         "cash": 225.21,
         "event": "mark"
       },
@@ -11478,8 +12794,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-17T16:30:49.477244+00:00",
+        "equity": 1032.37,
+        "cash": 225.21,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-17T16:34:05.168895+00:00",
         "equity": 1032.28,
+        "cash": 225.21,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-17T16:40:48.517759+00:00",
+        "equity": 1031.94,
         "cash": 225.21,
         "event": "mark"
       },
@@ -11490,8 +12818,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-17T16:50:48.789175+00:00",
+        "equity": 1031.52,
+        "cash": 225.21,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-17T17:00:50.702167+00:00",
         "equity": 1031.68,
+        "cash": 225.21,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-17T17:03:13.767021+00:00",
+        "equity": 1031.6,
         "cash": 225.21,
         "event": "mark"
       },
@@ -11502,14 +12842,32 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-17T17:20:46.836406+00:00",
+        "equity": 1031.75,
+        "cash": 225.21,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-17T17:30:51.498286+00:00",
         "equity": 1032.38,
         "cash": 225.21,
         "event": "mark"
       },
       {
+        "t": "2026-08-17T17:31:09.777222+00:00",
+        "equity": 1032.38,
+        "cash": 435.42,
+        "event": "SELL XOM"
+      },
+      {
         "t": "2026-08-17T17:31:27.824054+00:00",
         "equity": 1032.18,
+        "cash": 435.42,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-17T17:40:51.489478+00:00",
+        "equity": 1032.15,
         "cash": 435.42,
         "event": "mark"
       },
@@ -11520,8 +12878,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-17T17:50:51.796422+00:00",
+        "equity": 1032.95,
+        "cash": 435.42,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-17T18:00:52.538782+00:00",
         "equity": 1033.25,
+        "cash": 435.42,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-17T18:03:32.218861+00:00",
+        "equity": 1033.74,
         "cash": 435.42,
         "event": "mark"
       },
@@ -11532,8 +12902,20 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-17T18:18:27.965929+00:00",
+        "equity": 1034.27,
+        "cash": 435.42,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-17T18:20:52.848402+00:00",
         "equity": 1034.03,
+        "cash": 435.42,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-17T18:30:54.407372+00:00",
+        "equity": 1033.91,
         "cash": 435.42,
         "event": "mark"
       },
@@ -11544,14 +12926,32 @@
         "event": "mark"
       },
       {
+        "t": "2026-08-17T18:40:55.865519+00:00",
+        "equity": 1034.26,
+        "cash": 435.42,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-17T18:48:13.766048+00:00",
         "equity": 1034.65,
         "cash": 435.42,
         "event": "mark"
       },
       {
+        "t": "2026-08-17T18:50:55.227791+00:00",
+        "equity": 1034.81,
+        "cash": 435.42,
+        "event": "mark"
+      },
+      {
         "t": "2026-08-17T19:03:51.058302+00:00",
         "equity": 1035.37,
+        "cash": 435.42,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-17T19:18:10.772719+00:00",
+        "equity": 1035.6,
         "cash": 435.42,
         "event": "mark"
       },
@@ -11564,6 +12964,42 @@
       {
         "t": "2026-08-17T19:54:43.722547+00:00",
         "equity": 1034.57,
+        "cash": 435.42,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-18T00:25:09.004275+00:00",
+        "equity": 1035.28,
+        "cash": 435.42,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-18T00:36:47.560070+00:00",
+        "equity": 1035.28,
+        "cash": 902.0,
+        "event": "BUY AAPL"
+      },
+      {
+        "t": "2026-08-18T00:37:12.198414+00:00",
+        "equity": 1035.28,
+        "cash": 702.0,
+        "event": "BUY NVDA"
+      },
+      {
+        "t": "2026-08-18T00:37:29.402058+00:00",
+        "equity": 1035.28,
+        "cash": 435.42,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-18T00:39:47.610081+00:00",
+        "equity": 1035.28,
+        "cash": 435.42,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-18T00:42:34.190769+00:00",
+        "equity": 1035.28,
         "cash": 435.42,
         "event": "mark"
       }
