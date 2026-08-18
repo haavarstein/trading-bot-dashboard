@@ -12,6 +12,10 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 OUT = ROOT / "dashboard-data.json"
 
+# Earliest fill date included on the equity curve. Matches
+# weekly_readiness.MIN_CLOSE_DATE — start of the real paper run.
+MIN_FILL_DATE = "2026-08-12"
+
 sys_path_note = str(ROOT / "scripts")
 import sys
 
@@ -350,114 +354,203 @@ def build_thinking(holdings, latest_decision, latest_candidate, snap, now, cfg, 
 
 
 
+def _fill_day(fill) -> str:
+    return str(fill.get("timestamp") or "")[:10]
+
+
+def _is_zero_hold_roundtrip(buy: dict, sell: dict) -> bool:
+    """True when a BUY/SELL pair never actually held (broken-session artifact)."""
+    try:
+        if int(sell.get("hold_seconds") or -1) == 0:
+            return True
+    except (TypeError, ValueError):
+        pass
+    opened = sell.get("opened_at") or (buy or {}).get("timestamp")
+    closed = sell.get("timestamp")
+    if opened and closed and str(opened)[:19] == str(closed)[:19]:
+        return True
+    bt = parse_ts((buy or {}).get("timestamp") or "")
+    st = parse_ts(closed or "")
+    if bt is None or st is None:
+        return False
+    hold = (st - bt).total_seconds()
+    return 0 <= hold <= 1.0
+
+
+def _burst_symbol_days(fills) -> set:
+    """(date, symbol) pairs that are a same-day high-frequency / zero-hold burst."""
+    by_key: dict[tuple[str, str], list] = {}
+    for f in fills:
+        day = _fill_day(f)
+        sym = f.get("symbol")
+        if day and sym:
+            by_key.setdefault((day, sym), []).append(f)
+
+    bursts = set()
+    for key, rows in by_key.items():
+        rows = sorted(rows, key=lambda r: r.get("timestamp") or "")
+        last_buy = None
+        zero_holds = 0
+        for f in rows:
+            if f.get("action") == "BUY":
+                last_buy = f
+            elif f.get("action") == "SELL" and last_buy is not None:
+                if _is_zero_hold_roundtrip(last_buy, f):
+                    zero_holds += 1
+                last_buy = None
+        # Generic: many zero-hold round-trips, or a same-symbol same-day spray.
+        if zero_holds >= 3 or len(rows) >= 8:
+            bursts.add(key)
+    return bursts
+
+
+def _dedupe_same_day_fills(fills) -> list:
+    """Keep the first fill of an identical same-day (symbol, action, qty, price)."""
+    seen = set()
+    out = []
+    for f in sorted(fills, key=lambda r: r.get("timestamp") or ""):
+        try:
+            qty = round(float(f.get("qty") or 0), 6)
+            px = round(float(f.get("price") or 0), 4)
+        except (TypeError, ValueError):
+            qty, px = f.get("qty"), f.get("price")
+        key = (_fill_day(f), f.get("symbol"), f.get("action"), qty, px)
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(f)
+    return out
+
+
+def filter_fills_for_equity(fills) -> list:
+    """Fills eligible to appear on the equity curve (real-run, non-burst)."""
+    eligible = []
+    for f in fills or []:
+        if f.get("action") not in ("BUY", "SELL"):
+            continue
+        if f.get("symbol") in ("AAA",):
+            continue
+        if _fill_day(f) < MIN_FILL_DATE:
+            continue
+        eligible.append(f)
+    bursts = _burst_symbol_days(eligible)
+    kept = [f for f in eligible if (_fill_day(f), f.get("symbol")) not in bursts]
+    return _dedupe_same_day_fills(kept)
+
+
+def _stored_mark_point(row: dict) -> dict | None:
+    ts = row.get("t") or row.get("timestamp")
+    eq = row.get("equity") if row.get("equity") is not None else row.get("value")
+    if not ts or eq is None:
+        return None
+    try:
+        equity = round(float(eq), 2)
+    except (TypeError, ValueError):
+        return None
+    return {
+        "t": ts,
+        "equity": equity,
+        "cash": row.get("cash"),
+        "event": row.get("event") or "mark",
+    }
+
+
+def _equity_at_or_before(marks: list, ts: str, default: float) -> float:
+    eq = default
+    for p in marks:
+        if (p.get("t") or "") <= ts:
+            eq = p["equity"]
+        else:
+            break
+    return eq
+
+
 def build_equity_curve(fills, snap, starting_cash: float) -> dict:
     """
-    Build paper equity curve from fills + current snapshot.
+    Build the paper equity curve.
+
+    data/equity_curve.jsonl broker M2M marks are the authoritative series.
+    Filtered fills are event annotations only — they do not reconstruct
+    equity (a broken session's fill replay double-counts position value).
     Also appends a durable point to data/equity_curve.jsonl each generate.
     """
-    started = (snap or {}).get("started_at")
-    points = []
-    cash = float(starting_cash)
-    positions: dict[str, dict] = {}  # sym -> {qty, last}
-
-    def mark_equity():
-        eq = cash
-        for pos in positions.values():
-            eq += float(pos.get("qty") or 0) * float(pos.get("last") or 0)
-        return round(eq, 2)
+    snap = snap or {}
+    started = snap.get("started_at")
+    start_eq = float(starting_cash)
+    by_t: dict[str, dict] = {}
 
     if started:
-        points.append({
+        by_t[started] = {
             "t": started,
-            "equity": round(float(starting_cash), 2),
-            "cash": round(float(starting_cash), 2),
+            "equity": round(start_eq, 2),
+            "cash": round(start_eq, 2),
             "event": "start",
-        })
+        }
 
-    ordered = sorted(
-        [f for f in fills if f.get("action") in ("BUY", "SELL") and f.get("symbol") not in ("AAA",)],
-        key=lambda r: r.get("timestamp") or "",
-    )
-    for f in ordered:
+    # PRIMARY: durable clean marks (same source weekly_readiness uses).
+    curve_path = DATA / "equity_curve.jsonl"
+    stored_rows = read_jsonl(curve_path) if curve_path.exists() else []
+    stored_marks = []
+    for row in stored_rows:
+        pt = _stored_mark_point(row)
+        if pt is None:
+            continue
+        by_t[pt["t"]] = pt
+        stored_marks.append(pt)
+    stored_marks.sort(key=lambda p: p.get("t") or "")
+
+    # SECONDARY: filtered fill events. Equity comes from the last stored mark
+    # (or starting cash), never from a cash/position replay of the fill tape.
+    last_cash = start_eq
+    for f in filter_fills_for_equity(fills):
         sym = f.get("symbol")
         action = f.get("action")
         ts = f.get("timestamp")
         try:
             qty = float(f.get("qty") or 0)
             px = float(f.get("price") or 0)
-        except Exception:
+        except (TypeError, ValueError):
             continue
         if not sym or not ts or qty <= 0 or px <= 0:
             continue
-
         if f.get("cash_after") is not None:
             try:
-                cash = float(f.get("cash_after"))
-            except Exception:
+                last_cash = float(f.get("cash_after"))
+            except (TypeError, ValueError):
                 pass
-        else:
-            if action == "BUY":
-                cash -= qty * px
-            else:
-                cash += qty * px
-
-        pos = positions.get(sym) or {"qty": 0.0, "last": px}
-        if action == "BUY":
-            pos["qty"] = float(pos.get("qty") or 0) + qty
-            pos["last"] = px
-        else:
-            pos["qty"] = max(0.0, float(pos.get("qty") or 0) - qty)
-            pos["last"] = px
-            if pos["qty"] <= 1e-8:
-                positions.pop(sym, None)
-                pos = None
-        if pos is not None:
-            positions[sym] = pos
-
-        # refresh last print for other names from this fill only; equity uses last known
-        points.append({
+        if ts in by_t:
+            continue
+        by_t[ts] = {
             "t": ts,
-            "equity": mark_equity(),
-            "cash": round(cash, 2),
+            "equity": round(float(_equity_at_or_before(stored_marks, ts, start_eq)), 2),
+            "cash": round(last_cash, 2),
             "event": f"{action} {sym}",
-        })
+        }
 
-    # current snapshot point (true M2M)
+    # Current snapshot mark (true M2M) — must always be present when known.
     now_eq = snap.get("equity")
     now_ts = snap.get("updated_at") or datetime.now(timezone.utc).isoformat()
     if now_eq is not None:
         cur = {
             "t": now_ts,
             "equity": round(float(now_eq), 2),
-            "cash": round(float(snap.get("cash") or cash), 2),
+            "cash": round(float(snap.get("cash") if snap.get("cash") is not None else last_cash), 2),
             "event": "mark",
         }
-        if not points or points[-1].get("t") != cur["t"]:
-            points.append(cur)
-
-        # durable local history (gitignored via data/*.jsonl)
-        curve_path = DATA / "equity_curve.jsonl"
+        by_t[now_ts] = cur
         try:
-            prev = read_jsonl(curve_path)
-            # dedupe on minute bucket
+            prev = stored_rows
             bucket = str(cur["t"])[:16]
-            if not prev or str(prev[-1].get("t", ""))[:16] != bucket:
+            last_t = ""
+            if prev:
+                last_t = str(prev[-1].get("t") or prev[-1].get("timestamp") or "")
+            if not prev or last_t[:16] != bucket:
                 with curve_path.open("a", encoding="utf-8") as fh:
                     fh.write(json.dumps(cur) + "\n")
-            # merge stored marks that might fill gaps between fills
-            stored = read_jsonl(curve_path)
-            by_t = {p["t"]: p for p in points if p.get("t")}
-            for s in stored:
-                if s.get("t") and s.get("equity") is not None:
-                    by_t[s["t"]] = {
-                        "t": s["t"],
-                        "equity": round(float(s["equity"]), 2),
-                        "cash": s.get("cash"),
-                        "event": s.get("event") or "mark",
-                    }
-            points = [by_t[k] for k in sorted(by_t.keys())]
         except Exception:
             pass
+
+    points = [by_t[k] for k in sorted(by_t.keys())]
 
     # downsample if huge
     if len(points) > 400:
@@ -467,7 +560,6 @@ def build_equity_curve(fills, snap, starting_cash: float) -> dict:
             head.append(points[-1])
         points = head
 
-    start_eq = float(starting_cash)
     end_eq = float(points[-1]["equity"]) if points else start_eq
     change = round(end_eq - start_eq, 2)
     change_pct = round((change / start_eq) * 100.0, 2) if start_eq else 0.0
