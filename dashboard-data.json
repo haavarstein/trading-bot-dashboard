@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-08-18T14:50:09.201206+00:00",
+  "generated_at": "2026-08-18T14:50:47.202075+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1030.34,
+    "portfolio_value": 1030.55,
     "starting_cash": 1000.0,
-    "total_return_pct": 3.03,
-    "total_pnl": 30.34,
+    "total_return_pct": 3.05,
+    "total_pnl": 30.55,
     "realized_pnl": 32.39,
-    "open_pnl": -2.05,
-    "capital_deployed": 993.14,
+    "open_pnl": -1.84,
+    "capital_deployed": 993.35,
     "cash": 37.2,
     "closed_trades": 13,
     "win_rate_pct": 38.46,
-    "vs_spy_pct": 3.16,
-    "spy_return_pct": -0.13,
+    "vs_spy_pct": 3.15,
+    "spy_return_pct": -0.1,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-18T14:50:12.234758+00:00"
+    "updated_at": "2026-08-18T14:50:50.144830+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.13,
-    "price": 768.4099731445312,
+    "return_pct": -0.1,
+    "price": 768.5999755859375,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 3,
-    "validated_count_today": 2,
+    "consensus_count_today": 4,
+    "validated_count_today": 3,
     "blocked_count_today": 1,
     "fills_today": 38,
-    "simulated_orders_today": 2,
+    "simulated_orders_today": 3,
     "top_symbol_today": "MSFT"
   },
   "holdings": [
@@ -38,10 +38,10 @@
       "symbol": "CVX",
       "qty": 1.01,
       "avg_cost": 197.26,
-      "last": 204.11000061035156,
-      "market_value": 206.15,
-      "open_pnl": 6.92,
-      "open_pnl_pct": 3.47,
+      "last": 203.97000122070312,
+      "market_value": 206.01,
+      "open_pnl": 6.78,
+      "open_pnl_pct": 3.4,
       "stop": 191.0,
       "target": 207.0,
       "thesis": "CVX screens as a liquid catalyst setup with solid rank score and bullish sentiment around Q2 earnings beat narrative plus AI power deal headlines. Book has room for one more name under the five-position guideline and cash supports a sub-$200 notional add. Risk defined below recent support with asymmetric upside to the stated target meeting the 1.5 R:R minimum."
@@ -50,10 +50,10 @@
       "symbol": "AMZN",
       "qty": 0.75,
       "avg_cost": 264.78,
-      "last": 261.5199890136719,
-      "market_value": 196.14,
-      "open_pnl": -2.45,
-      "open_pnl_pct": -1.23,
+      "last": 261.4949951171875,
+      "market_value": 196.12,
+      "open_pnl": -2.46,
+      "open_pnl_pct": -1.24,
       "stop": 256.0,
       "target": 278.0,
       "thesis": "AMZN is the sole ranked candidate with a clear bullish catalyst: Renaissance Technologies disclosed a new $546M long position, supporting institutional accumulation. Price sits near mid-RSI with AI/cloud narrative tailwinds and adequate liquidity for a small add. Book has room under the 5-name cap and cash covers a ~$200 notional entry with defined risk. Reward-to-risk is set above 1.5 with a tight stop under recent support."
@@ -74,10 +74,10 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 360.57,
-      "last": 360.385009765625,
-      "market_value": 198.21,
-      "open_pnl": -0.1,
-      "open_pnl_pct": -0.05,
+      "last": 360.739990234375,
+      "market_value": 198.41,
+      "open_pnl": 0.09,
+      "open_pnl_pct": 0.05,
       "stop": 350.0,
       "target": 378.0,
       "thesis": "JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit."
@@ -86,10 +86,10 @@
       "symbol": "ANET",
       "qty": 1.03,
       "avg_cost": 194.09,
-      "last": 191.27999877929688,
-      "market_value": 197.02,
-      "open_pnl": -2.89,
-      "open_pnl_pct": -1.45,
+      "last": 191.4499969482422,
+      "market_value": 197.19,
+      "open_pnl": -2.72,
+      "open_pnl_pct": -1.36,
       "stop": 187.5,
       "target": 204.5,
       "thesis": "ANET screens as a high-rank liquid catalyst setup on institutional accumulation headlines with bullish sentiment and neutral RSI offering room to run. Deutsche Bank share acquisition provides a clean near-term demand signal while the name remains liquid enough for a small paper allocation. Risk is defined below recent support with a 1.5+ R:R target into the next resistance zone. Adding as a fifth name fits book limits and uses available cash within the $200 notional cap."
@@ -153,51 +153,49 @@
   },
   "latest_decision": {
     "model": "grok-4.5",
-    "action": "BUY",
-    "symbol": "ANET",
-    "confidence": 78,
+    "action": "HOLD",
+    "symbol": "CASH",
+    "confidence": 66,
     "cache_stats": null,
-    "entry_price": 194.09,
-    "stop_loss": 187.5,
-    "take_profit": 204.5,
-    "qty": 1.03,
-    "thesis": "ANET screens as a high-rank liquid catalyst setup on institutional accumulation headlines with bullish sentiment and neutral RSI offering room to run. Deutsche Bank share acquisition provides a clean near-term demand signal while the name remains liquid enough for a small paper allocation. Risk is defined below recent support with a 1.5+ R:R target into the next resistance zone. Adding as a fifth name fits book limits and uses available cash within the $200 notional cap.",
-    "reason_code": "new_entry",
+    "entry_price": 0.0,
+    "stop_loss": 0.0,
+    "take_profit": 0.0,
+    "qty": 0.0,
+    "thesis": "Book is full at 5 names with only ~$37 cash, so any new risk needs a clear rotation. Top-ranked catalysts ANET and JPM are already held; remaining candidates (NFLX/CRWD/etc.) are not materially stronger than the open book on rank, catalyst quality, and liquidity. No position has hit stop or target, so stand aside and let CVX work toward target while monitoring PANW near its stop.",
+    "reason_code": "hold",
     "reasoning": {
-      "headline": "Bought $ANET",
-      "narrative": "ANET screens as a high-rank liquid catalyst setup on institutional accumulation headlines with bullish sentiment and neutral RSI offering room to run. Deutsche Bank share acquisition provides a clean near-term demand signal while the name remains liquid enough for a small paper allocation. Risk is defined below recent support with a 1.5+ R:R target into the next resistance zone. Adding as a fifth name fits book limits and uses available cash within the $200 notional cap.",
+      "headline": "Hold $CASH",
+      "narrative": "Book is full at 5 names with only ~$37 cash, so any new risk needs a clear rotation. Top-ranked catalysts ANET and JPM are already held; remaining candidates (NFLX/CRWD/etc.) are not materially stronger than the open book on rank, catalyst quality, and liquidity. No position has hit stop or target, so stand aside and let CVX work toward target while monitoring PANW near its stop.",
       "bullets": [
-        "Rank 93 catalyst: DB stake add headline",
-        "Bullish sentiment, RSI 50 neutral",
-        "R:R >=1.5 with stops under support",
-        "Notional ~$200, book has room for 5th name"
+        "Max names reached; cash too small for standalone BUY",
+        "ANET/JPM already capture top catalyst ranks",
+        "No stop/target hit; NFLX not clearly worth forcing rotation"
       ],
       "risk_map": {
-        "stop": 187.5,
-        "target": 204.5,
+        "stop": 0.0,
+        "target": 0.0,
         "horizon_days": 5,
-        "rr": 1.58,
-        "confidence_10": 8,
-        "confidence": 78
+        "rr": 0.0,
+        "confidence_10": 7,
+        "confidence": 66
       },
-      "thesis": "ANET screens as a high-rank liquid catalyst setup on institutional accumulation headlines with bullish sentiment and neutral RSI offering room to run. Deutsche Bank share acquisition provides a clean near-term demand signal while the name remains liquid enough for a small paper allocation. Risk is defined below recent support with a 1.5+ R:R target into the next resistance zone. Adding as a fifth name fits book limits and uses available cash within the $200 notional cap."
+      "thesis": "Book is full at 5 names with only ~$37 cash, so any new risk needs a clear rotation. Top-ranked catalysts ANET and JPM are already held; remaining candidates (NFLX/CRWD/etc.) are not materially stronger than the open book on rank, catalyst quality, and liquidity. No position has hit stop or target, so stand aside and let CVX work toward target while monitoring PANW near its stop."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Rank 93 catalyst: DB stake add headline",
-      "Bullish sentiment, RSI 50 neutral",
-      "R:R >=1.5 with stops under support",
-      "Notional ~$200, book has room for 5th name"
+      "Max names reached; cash too small for standalone BUY",
+      "ANET/JPM already capture top catalyst ranks",
+      "No stop/target hit; NFLX not clearly worth forcing rotation"
     ],
-    "timestamp": "2026-08-18T14:32:38.560653+00:00"
+    "timestamp": "2026-08-18T14:50:30.481241+00:00"
   },
-  "stance": "Buying pressure on ANET. ANET screens as a high-rank liquid catalyst setup on institutional accumulation headlines with bullish sentiment and neutral RSI offering room to run. Deutsche Bank share acquisition provides a clean near-term demand signal while the name remains liquid enough for a small paper allocation. Risk is defined below recent support with a 1.5+ R:R target into the next resistance zone. Adding as a fifth name fits book limits and uses available cash within the $200 notional cap.",
+  "stance": "Holding CVX, AMZN, PANW, JPM, ANET. No new trade right now.",
   "thinking": {
-    "badge": "Looking to buy ANET",
-    "headline": "Buying pressure on ANET.",
-    "plain_english": "Right now Hermes wants exposure to ANET. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
+    "badge": "Holding what it owns",
+    "headline": "Holding CVX, AMZN, PANW, JPM, ANET. No new trade right now.",
+    "plain_english": "Right now Hermes is holding CVX, AMZN, PANW, JPM, ANET and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
     "triggers": [
       "It owns CVX, bought near $197.26. Simple plan: sell if it falls to about $191.00, or take profit near $207.00.",
       "It owns AMZN, bought near $264.78. Simple plan: sell if it falls to about $256.00, or take profit near $278.00.",
@@ -214,9 +212,9 @@
         "avg_cost": 197.26,
         "stop": 191.0,
         "target": 207.0,
-        "last": 204.11000061035156,
-        "open_pnl": 6.92,
-        "open_pnl_pct": 3.47,
+        "last": 203.97000122070312,
+        "open_pnl": 6.78,
+        "open_pnl_pct": 3.4,
         "line": "Bought near $197.26 \u00b7 Sell safety line $191.00 \u00b7 Profit target $207.00",
         "plan": "stop 191.0 or target 207.0"
       },
@@ -226,9 +224,9 @@
         "avg_cost": 264.78,
         "stop": 256.0,
         "target": 278.0,
-        "last": 261.5199890136719,
-        "open_pnl": -2.45,
-        "open_pnl_pct": -1.23,
+        "last": 261.4949951171875,
+        "open_pnl": -2.46,
+        "open_pnl_pct": -1.24,
         "line": "Bought near $264.78 \u00b7 Sell safety line $256.00 \u00b7 Profit target $278.00",
         "plan": "stop 256.0 or target 278.0"
       },
@@ -250,9 +248,9 @@
         "avg_cost": 360.57,
         "stop": 350.0,
         "target": 378.0,
-        "last": 360.385009765625,
-        "open_pnl": -0.1,
-        "open_pnl_pct": -0.05,
+        "last": 360.739990234375,
+        "open_pnl": 0.09,
+        "open_pnl_pct": 0.05,
         "line": "Bought near $360.57 \u00b7 Sell safety line $350.00 \u00b7 Profit target $378.00",
         "plan": "stop 350.0 or target 378.0"
       },
@@ -262,17 +260,17 @@
         "avg_cost": 194.09,
         "stop": 187.5,
         "target": 204.5,
-        "last": 191.27999877929688,
-        "open_pnl": -2.89,
-        "open_pnl_pct": -1.45,
+        "last": 191.4499969482422,
+        "open_pnl": -2.72,
+        "open_pnl_pct": -1.36,
         "line": "Bought near $194.09 \u00b7 Sell safety line $187.50 \u00b7 Profit target $204.50",
         "plan": "stop 187.5 or target 204.5"
       }
     ],
-    "last_checked": "2026-08-18T14:50:09.201206+00:00",
+    "last_checked": "2026-08-18T14:50:47.202075+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "BUY",
+    "action": "HOLD",
     "symbols_held": [
       "CVX",
       "AMZN",
@@ -284,62 +282,139 @@
       {
         "prefix": "J",
         "model": "grok-4.3",
-        "action": "BUY",
-        "symbol": "ANET",
-        "confidence": 82,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 65,
+        "tone": "hold"
       },
       {
         "prefix": "J",
         "model": "claude-haiku-4-5",
         "action": "BUY",
-        "symbol": "ANET",
+        "symbol": "NFLX",
         "confidence": 72,
         "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "deepseek-v4-flash",
-        "action": "BUY",
-        "symbol": "ANET",
-        "confidence": 75,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 70,
+        "tone": "hold"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "BUY",
-        "symbol": "ANET",
-        "confidence": 85,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 60,
+        "tone": "hold"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
-        "action": "BUY",
-        "symbol": "ANET",
-        "confidence": 78,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 66,
+        "tone": "hold"
       },
       {
         "prefix": "S",
         "model": "claude-sonnet-5",
-        "action": "BUY",
-        "symbol": "ANET",
-        "confidence": 78,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 65,
+        "tone": "hold"
       },
       {
         "prefix": "S",
         "model": "claude-opus-5",
-        "action": "BUY",
-        "symbol": "ANET",
-        "confidence": 90,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CVX",
+        "confidence": 80,
+        "tone": "hold"
       }
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 no new trade",
+      "detail": "Book is full at 5 names with only ~$37 cash, so any new risk needs a clear rotation. Top-ranked catalysts ANET and JPM are already held; remaining candidates (NFLX/CRWD/etc.) are not materially stronger than the open book on rank, catalyst quality, and liquidity. No position has hit stop or target, so stand aside and let CVX work toward target while monitoring PANW near its stop.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "NFLX",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 70,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 66,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "CVX",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-08-18T14:50:30.481241+00:00"
+    },
     {
       "type": "fill",
       "symbol": "ANET",
@@ -772,14 +847,6 @@
       "headline": "SELL MSFT @ $505.00",
       "detail": "rotation",
       "timestamp": "2026-08-18T00:49:47.967582+00:00"
-    },
-    {
-      "type": "fill",
-      "symbol": "MSFT",
-      "status": "filled_paper",
-      "headline": "BUY MSFT @ $500.00",
-      "detail": "",
-      "timestamp": "2026-08-18T00:49:47.963581+00:00"
     }
   ],
   "recent_trades": [
@@ -10142,8 +10209,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 0,
-      "BUY": 4,
+      "HOLD": 3,
+      "BUY": 1,
       "SELL": 0,
       "live": 4,
       "fallback": 0
@@ -10162,23 +10229,23 @@
     "decision_mode": "live_dual_llm",
     "last_tier": "senior_escalated",
     "last_stage": "entry",
-    "last_junior_nomination": "ANET",
-    "last_escalate_reason": "junior_nomination",
-    "live_share_recent": 82.9
+    "last_junior_nomination": null,
+    "last_escalate_reason": "junior_trade_or_split",
+    "live_share_recent": 83.3
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 265,
     "closed_outcomes": 110,
-    "consensus_events": 218,
+    "consensus_events": 219,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1030.34,
-    "change": 30.34,
-    "change_pct": 3.03,
+    "latest_equity": 1030.55,
+    "change": 30.55,
+    "change_pct": 3.06,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -13939,6 +14006,12 @@
       {
         "t": "2026-08-18T14:50:12.234758+00:00",
         "equity": 1030.34,
+        "cash": 37.2,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-18T14:50:50.144830+00:00",
+        "equity": 1030.55,
         "cash": 37.2,
         "event": "mark"
       }
