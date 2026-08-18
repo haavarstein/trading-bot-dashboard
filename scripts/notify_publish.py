@@ -20,6 +20,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 
+# Dedup state: only notify a given commit once, even if the post-commit hook
+# fires more than once (e.g. commit + a manual verification run, or git calling
+# the hook for a merge). Stored under the repo's .git so it is local-only.
+_DEDUP_PATH = ROOT / ".git" / "notify_publish_last.json"
+
 try:
     from telegram_notifier import TelegramNotifier
 except Exception as exc:  # pragma: no cover
@@ -57,6 +62,24 @@ def _is_routine_snapshot(files: list[str]) -> bool:
     return all(Path(f).as_posix() in ROUTINE_FILES for f in files)
 
 
+def _load_last_notified() -> str:
+    try:
+        import json
+        if _DEDUP_PATH.exists():
+            return str(json.loads(_DEDUP_PATH.read_text(encoding="utf-8")).get("hash", ""))
+    except Exception:
+        pass
+    return ""
+
+
+def _mark_notified(hash_: str) -> None:
+    try:
+        import json
+        _DEDUP_PATH.write_text(json.dumps({"hash": hash_}), encoding="utf-8")
+    except Exception:
+        pass
+
+
 def main() -> int:
     commit = _latest_commit()
     if not commit.get("hash"):
@@ -70,6 +93,12 @@ def main() -> int:
 
     short = commit["hash"][:7]
     subject = commit.get("subject") or "(no subject)"
+
+    # Dedup: if this exact commit was already notified, do not send again.
+    if _load_last_notified() == commit["hash"]:
+        print(f"notify_publish: {short} already notified, skipping duplicate")
+        return 0
+
     count = len(files)
     file_list = "\n".join(f"• `{f}`" for f in files[:12])
     if count > 12:
@@ -84,6 +113,7 @@ def main() -> int:
 
     notifier = TelegramNotifier()
     notifier.send_message(message)
+    _mark_notified(commit["hash"])
     print(f"notify_publish: sent publish summary for {short} ({count} files)")
     return 0
 
