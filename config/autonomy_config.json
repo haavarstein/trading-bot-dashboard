@@ -114,7 +114,14 @@
     "sol_chart_path": "./data/charts/{symbol}.png",
     "sol_chart_fresh_seconds": 3600,
     "comment_sol": "GPT-5.6 Sol chart-vision validator: advisory third senior read on escalated trades (chart_gen.py + OpenAI vision). Currently DISABLED (cost cut) until its reads are reviewed in the consensus log. Set sol_chart_validator_enabled=true to re-enable. Weaker than text seniors - logged, never blocks a valid trade.",
-    "comment_sol_fresh": "sol_chart_fresh_seconds: reuse a PNG rendered within this many seconds instead of regenerating every cycle (mplfinance + yfinance cost)."
+    "comment_sol_fresh": "sol_chart_fresh_seconds: reuse a PNG rendered within this many seconds instead of regenerating every cycle (mplfinance + yfinance cost).",
+    "senior_max_tokens": 550,
+    "desk_no_change_skip": {
+      "enabled": true,
+      "price_move_pct_threshold": 0.5,
+      "stop_target_buffer_pct": 1.0,
+      "comment": "Conservative no-change desk gate (API cost): if the candidate evidence is unchanged AND no held position moved more than 0.5% AND none is within 1% of its stop/target, skip the 4-junior + 3-senior LLM desk this cycle. The deterministic risk gate still runs first. Delete data/.desk_skip_state.json (or set enabled=false) to force a desk run."
+    }
   },
   "telegram": {
     "enabled": true,

@@ -35,6 +35,114 @@ except ImportError:
 RR_EPSILON = 1e-6
 
 
+# ---------------------------------------------------------------------------
+# Conservative no-change desk gate (API-cost control).
+# Pure helpers so the skip logic is unit-testable without a broker/network.
+# ---------------------------------------------------------------------------
+_DESK_SKIP_STATE = "data/.desk_skip_state.json"
+
+
+def candidate_signature(candidate_records) -> str:
+    """Deterministic fingerprint of the candidate evidence fed to the desk.
+
+    Any change to a candidate's symbol / rank / catalyst / sentiment / rsi /
+    price flips the signature, which forces a fresh desk run next cycle.
+    """
+    items = []
+    for c in candidate_records or []:
+        sym = c.get("symbol")
+        if not sym:
+            continue
+        items.append({
+            "symbol": sym,
+            "rank_score": c.get("rank_score"),
+            "catalyst_score": c.get("catalyst_score"),
+            "sentiment": c.get("sentiment"),
+            "rsi": c.get("rsi"),
+            "price": c.get("price"),
+            "catalyst": c.get("catalyst"),
+        })
+    items.sort(key=lambda x: str(x.get("symbol") or ""))
+    return json.dumps(items, sort_keys=True, default=str)
+
+
+def position_prices_map(broker_snapshot) -> dict:
+    """Map held symbol -> {price, stop_loss, take_profit} from a broker snapshot."""
+    out = {}
+    for p in (broker_snapshot or {}).get("positions") or []:
+        sym = str(p.get("symbol") or "")
+        if not sym:
+            continue
+        px = p.get("current_price")
+        if px is None:
+            px = p.get("last")
+        if px is None:
+            px = p.get("last_price")
+        out[sym] = {
+            "price": px,
+            "stop_loss": p.get("stop_loss"),
+            "take_profit": p.get("take_profit"),
+        }
+    return out
+
+
+def build_desk_state(candidates_sig: str, positions: dict) -> dict:
+    """Snapshot to persist so the next cycle can diff against it."""
+    return {
+        "candidates_sig": candidates_sig,
+        "positions": positions,
+        "updated_at": datetime.now(timezone.utc).isoformat(),
+    }
+
+
+def evaluate_desk_skip(prev_state: dict, candidates_sig: str, positions: dict, gate_cfg: dict) -> tuple:
+    """Return (skip: bool, reason: str) for the conservative no-change desk gate.
+
+    Skips ONLY when all hold: gate enabled, there was a prior state, the
+    candidate evidence is identical, the held-position set is unchanged, no
+    held price moved beyond `price_move_pct_threshold`%, and no held price is
+    within `stop_target_buffer_pct`% of its stop or target. A stop/target cross
+    itself is handled earlier by the deterministic risk gate.
+    """
+    if not gate_cfg.get("enabled", True):
+        return False, "gate_disabled"
+    if not prev_state:
+        return False, "no_prior_state"
+    threshold = float(gate_cfg.get("price_move_pct_threshold", 0.5))
+    buffer = float(gate_cfg.get("stop_target_buffer_pct", 1.0))
+    if prev_state.get("candidates_sig") != candidates_sig:
+        return False, "candidates_changed"
+    prev_pos = prev_state.get("positions") or {}
+    if set(prev_pos.keys()) != set(positions.keys()):
+        return False, "positions_changed"
+    for sym, cur in positions.items():
+        prev_px = prev_pos[sym].get("price")
+        cur_px = cur.get("price")
+        if prev_px is None or cur_px is None:
+            return False, f"missing_price_{sym}"
+        try:
+            prev_px, cur_px = float(prev_px), float(cur_px)
+        except (TypeError, ValueError):
+            return False, f"bad_price_{sym}"
+        if prev_px == 0:
+            return False, f"zero_price_{sym}"
+        move = abs(cur_px - prev_px) / prev_px * 100.0
+        if move > threshold:
+            return False, f"moved_{sym}_{move:.2f}pct"
+        for level_key in ("stop_loss", "take_profit"):
+            lvl = cur.get(level_key)
+            if lvl is None:
+                continue
+            try:
+                lvl = float(lvl)
+            except (TypeError, ValueError):
+                continue
+            dist = abs(cur_px - lvl) / cur_px * 100.0 if cur_px else 999.0
+            if dist <= buffer:
+                return False, f"near_{level_key}_{sym}"
+    return True, "no_change"
+
+
 class DryRunAutoTrader:
     def __init__(self, config_path: str = "./config/autonomy_config.json"):
         self.root = Path(__file__).resolve().parent.parent
@@ -95,6 +203,26 @@ class DryRunAutoTrader:
         entry["timestamp"] = entry.get("timestamp") or datetime.now(timezone.utc).isoformat()
         with open(ledger_path, "a", encoding="utf-8") as f:
             f.write(json.dumps(entry) + "\n")
+
+    def _desk_skip_state_path(self) -> Path:
+        return self.root / _DESK_SKIP_STATE
+
+    def _load_desk_skip_state(self) -> dict:
+        p = self._desk_skip_state_path()
+        if p.exists():
+            try:
+                return json.loads(p.read_text(encoding="utf-8"))
+            except Exception:
+                pass
+        return {}
+
+    def _save_desk_skip_state(self, state: dict) -> None:
+        p = self._desk_skip_state_path()
+        try:
+            p.parent.mkdir(parents=True, exist_ok=True)
+            p.write_text(json.dumps(state), encoding="utf-8")
+        except Exception:
+            pass
 
     def get_broker_snapshot(self) -> Dict:
         # snapshot() already sets buying_power = settled_cash and cash = total.
@@ -903,6 +1031,23 @@ class DryRunAutoTrader:
             max_to_llm = int(self.config.get("consensus_rules", {}).get("max_candidates_to_llm") or 0)
             if max_to_llm > 0:
                 candidate_records = candidate_records[:max_to_llm]
+
+            # Conservative no-change desk skip (API cost). Runs BEFORE the desk
+            # and before per-candidate quote() fetches. Only skips the LLM desk,
+            # never the deterministic risk gate (which already returned earlier
+            # in this cycle if a stop/target was crossed). Delete
+            # data/.desk_skip_state.json (or set enabled=false) to force a run.
+            gate_cfg = (self.config.get("consensus_rules") or {}).get("desk_no_change_skip") or {}
+            if gate_cfg.get("enabled", True):
+                sig = candidate_signature(candidate_records)
+                pos_map = position_prices_map(broker_snapshot)
+                prev = self._load_desk_skip_state()
+                do_skip, reason = evaluate_desk_skip(prev, sig, pos_map, gate_cfg)
+                self._save_desk_skip_state(build_desk_state(sig, pos_map))
+                if do_skip:
+                    print(f"  DESK SKIP (no change): {reason}")
+                    return
+
             for candidate in candidate_records:
                 sym = candidate.get("symbol")
                 if not sym:
@@ -947,6 +1092,7 @@ class DryRunAutoTrader:
             "model_2": cr.get("model_2", model2_name),
             "model_3": cr.get("model_3", model3_name),
             "model_3_effort": cr.get("model_3_effort", cr.get("model_1_effort") or "medium"),
+            "senior_max_tokens": cr.get("senior_max_tokens", 550),
             "min_confidence": cr.get("min_confidence", 70),
             "junior_hold_min_confidence": cr.get("junior_hold_min_confidence", 55),
             "borderline_confidence_band": cr.get("borderline_confidence_band", 5),

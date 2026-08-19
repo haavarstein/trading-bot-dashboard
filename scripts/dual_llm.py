@@ -240,7 +240,7 @@ def _xai_model_candidates(model: str) -> list[str]:
     return ordered
 
 
-def call_xai_grok(model: str, prompt: str, effort: str | None = None) -> dict:
+def call_xai_grok(model: str, prompt: str, effort: str | None = None, max_tokens: int | None = None) -> dict:
     key = os.environ.get("XAI_API_KEY") or os.environ.get("GROK_API_KEY")
     if not key:
         raise RuntimeError("XAI_API_KEY/GROK_API_KEY not set")
@@ -256,6 +256,8 @@ def call_xai_grok(model: str, prompt: str, effort: str | None = None) -> dict:
         }
         if effort:
             payload["messages"][0]["content"] += f" Effort setting: {effort}."
+        if max_tokens:
+            payload["max_tokens"] = max_tokens
         try:
             data = _http_json(
                 "https://api.x.ai/v1/chat/completions",
@@ -319,12 +321,15 @@ def call_anthropic_claude(
     prompt: str,
     static_system: str | None = None,
     dynamic_user: str | None = None,
+    max_tokens: int | None = None,
 ) -> dict:
     key = os.environ.get("ANTHROPIC_API_KEY")
     if not key:
         raise RuntimeError("ANTHROPIC_API_KEY not set")
     last_err = None
-    use_cache = os.environ.get("ANTHROPIC_PROMPT_CACHE", "0") == "1"
+    # Prompt caching is ON by default (cheaper re-reads of the static block across
+    # the Anthropic calls each cycle). Set ANTHROPIC_PROMPT_CACHE=0 to disable.
+    use_cache = os.environ.get("ANTHROPIC_PROMPT_CACHE", "1") != "0"
 
     # Build messages: cacheable static system block + dynamic user data
     messages: list = []
@@ -346,7 +351,7 @@ def call_anthropic_claude(
     for model_id in _anthropic_model_candidates(model):
         payload = {
             "model": model_id,
-            "max_tokens": 900,
+            "max_tokens": max_tokens if max_tokens else 900,
             "temperature": 0.2,
             "messages": messages,
         }
@@ -405,7 +410,7 @@ def _nous_model_candidates(model: str) -> list[str]:
     return ordered
 
 
-def call_nous_deepseek(model: str, prompt: str, effort: str | None = None) -> dict:
+def call_nous_deepseek(model: str, prompt: str, effort: str | None = None, max_tokens: int | None = None) -> dict:
     """Nous Portal (OpenAI-compatible) DeepSeek call."""
     key = os.environ.get("NOUS_API_KEY")
     if not key:
@@ -423,6 +428,8 @@ def call_nous_deepseek(model: str, prompt: str, effort: str | None = None) -> di
         }
         if effort:
             payload["messages"][0]["content"] += f" Effort setting: {effort}."
+        if max_tokens:
+            payload["max_tokens"] = max_tokens
         try:
             data = _http_json(
                 f"{base}/chat/completions",
@@ -694,6 +701,7 @@ def get_live_or_fallback(
     fallback_fn: Callable[[str, dict, dict], dict],
     effort: str | None = None,
     directive: str | None = None,
+    max_tokens: int | None = None,
 ) -> dict:
     """
     Try live provider for model_name; on any failure use fallback_fn(model_name, broker, market).
@@ -702,20 +710,20 @@ def get_live_or_fallback(
     name = (model_name or "").lower()
     try:
         if "grok" in name or name.startswith("xai"):
-            raw = call_xai_grok(model_name, prompt, effort=effort)
+            raw = call_xai_grok(model_name, prompt, effort=effort, max_tokens=max_tokens)
             out = normalize_decision(raw, model_name, source="live")
             return out
         if "claude" in name or "anthropic" in name or "sonnet" in name or "haiku" in name:
             static, dynamic = build_prompt_parts(model_name, broker, market, rules, directive=directive)
-            raw = call_anthropic_claude(model_name, prompt, static_system=static, dynamic_user=dynamic)
+            raw = call_anthropic_claude(model_name, prompt, static_system=static, dynamic_user=dynamic, max_tokens=max_tokens)
             out = normalize_decision(raw, model_name, source="live")
             return out
         if "deepseek" in name or "nous" in name:
-            raw = call_nous_deepseek(model_name, prompt, effort=effort)
+            raw = call_nous_deepseek(model_name, prompt, effort=effort, max_tokens=max_tokens)
             out = normalize_decision(raw, model_name, source="live")
             return out
         if "gpt-5.6" in name or "sol" in name or name.startswith("gpt") or name == "openai":
-            raw = call_openai_gpt(model_name, prompt, effort=effort)
+            raw = call_openai_gpt(model_name, prompt, effort=effort, max_tokens=max_tokens if max_tokens else 900)
             out = normalize_decision(raw, model_name, source="live")
             return out
         # unknown model family
@@ -897,10 +905,12 @@ def run_junior_senior_consensus(
     effort = cr.get("model_1_effort") or cr.get("senior_model_1_effort") or "medium"
     effort3 = cr.get("model_3_effort") or cr.get("senior_model_3_effort") or "medium"
     hold_floor = int(cr.get("junior_hold_min_confidence") or 55)
+    # Senior output-token cap (cost control). Juniors keep the default (900).
+    senior_max_tokens = int(cr.get("senior_max_tokens") or 550)
 
     if not junior_on:
-        d1 = get_live_or_fallback(s1_name, broker, market, cr, fallback_fn, effort=effort)
-        d2 = get_live_or_fallback(s2_name, broker, market, cr, fallback_fn, effort=None)
+        d1 = get_live_or_fallback(s1_name, broker, market, cr, fallback_fn, effort=effort, max_tokens=senior_max_tokens)
+        d2 = get_live_or_fallback(s2_name, broker, market, cr, fallback_fn, effort=None, max_tokens=senior_max_tokens)
         ok, reason = senior_check_fn(d1, d2)
         return {
             "decision1": d1,
@@ -1013,14 +1023,14 @@ def run_junior_senior_consensus(
         else:
             nom_market = {nom_symbol: nom_payload}
         directive = f"{nom_action} {nom_symbol}"
-        s1 = get_live_or_fallback(s1_name, broker, nom_market, cr, fallback_fn, effort=effort, directive=directive)
-        s2 = get_live_or_fallback(s2_name, broker, nom_market, cr, fallback_fn, effort=None, directive=directive)
-        s3 = get_live_or_fallback(s3_name, broker, nom_market, cr, fallback_fn, effort=effort3, directive=directive)
+        s1 = get_live_or_fallback(s1_name, broker, nom_market, cr, fallback_fn, effort=effort, directive=directive, max_tokens=senior_max_tokens)
+        s2 = get_live_or_fallback(s2_name, broker, nom_market, cr, fallback_fn, effort=None, directive=directive, max_tokens=senior_max_tokens)
+        s3 = get_live_or_fallback(s3_name, broker, nom_market, cr, fallback_fn, effort=effort3, directive=directive, max_tokens=senior_max_tokens)
     else:
         result["junior_nomination"] = None
-        s1 = get_live_or_fallback(s1_name, broker, market, cr, fallback_fn, effort=effort)
-        s2 = get_live_or_fallback(s2_name, broker, market, cr, fallback_fn, effort=None)
-        s3 = get_live_or_fallback(s3_name, broker, market, cr, fallback_fn, effort=effort3)
+        s1 = get_live_or_fallback(s1_name, broker, market, cr, fallback_fn, effort=effort, max_tokens=senior_max_tokens)
+        s2 = get_live_or_fallback(s2_name, broker, market, cr, fallback_fn, effort=None, max_tokens=senior_max_tokens)
+        s3 = get_live_or_fallback(s3_name, broker, market, cr, fallback_fn, effort=effort3, max_tokens=senior_max_tokens)
 
     # GPT-5.6 Sol chart-vision validator (optional third senior read on escalation).
     # Focus on the nominated symbol if present, else the top ranked candidate.
