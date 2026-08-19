@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-19T18:30:41.763927+00:00",
+  "generated_at": "2026-08-19T18:34:04.773699+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1021.84,
+    "portfolio_value": 1021.62,
     "starting_cash": 1000.0,
-    "total_return_pct": 2.18,
-    "total_pnl": 21.84,
+    "total_return_pct": 2.16,
+    "total_pnl": 21.62,
     "realized_pnl": 18.84,
-    "open_pnl": 2.98,
-    "capital_deployed": 398.23,
+    "open_pnl": 2.76,
+    "capital_deployed": 398.01,
     "cash": 623.61,
     "closed_trades": 17,
     "win_rate_pct": 35.29,
-    "vs_spy_pct": 2.11,
-    "spy_return_pct": 0.07,
+    "vs_spy_pct": 2.1,
+    "spy_return_pct": 0.06,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-19T18:30:44.638800+00:00"
+    "updated_at": "2026-08-19T18:34:07.933106+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.07,
-    "price": 769.9400024414062,
+    "return_pct": 0.06,
+    "price": 769.8140258789062,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,10 +38,10 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 360.57,
-      "last": 356.3999938964844,
-      "market_value": 196.02,
-      "open_pnl": -2.29,
-      "open_pnl_pct": -1.16,
+      "last": 356.54998779296875,
+      "market_value": 196.1,
+      "open_pnl": -2.21,
+      "open_pnl_pct": -1.11,
       "stop": 350.0,
       "target": 378.0,
       "thesis": "JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit."
@@ -50,10 +50,10 @@
       "symbol": "TSLA",
       "qty": 0.58,
       "avg_cost": 339.55,
-      "last": 348.6400146484375,
-      "market_value": 202.21,
-      "open_pnl": 5.27,
-      "open_pnl_pct": 2.68,
+      "last": 348.1199951171875,
+      "market_value": 201.91,
+      "open_pnl": 4.97,
+      "open_pnl_pct": 2.52,
       "stop": 328.0,
       "target": 358.5,
       "thesis": "TSLA screens as the top ranked liquid catalyst setup with a Cybercab launch headline and bullish sentiment at a neutral RSI. Adding a small starter within the ~$200 notional cap keeps the book at 5 names without forced rotation. Defined risk below recent support targets a 1.5+ R multiple into a post-event bounce."
@@ -62,20 +62,20 @@
   "latest_candidate": {
     "symbol": "JPM",
     "name": "JPM",
-    "price": 355.8699951171875,
-    "volume": 3493933.0,
-    "avg_volume": 4911573.3,
-    "percent_change": -2.0316599815037852,
+    "price": 356.3999938964844,
+    "volume": 3604151.0,
+    "avg_volume": 4922595.1,
+    "percent_change": -1.8857552934661046,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 17,
-    "liquidity_score": 76.91,
-    "rank_score": 88.66,
+    "liquidity_score": 76.92,
+    "rank_score": 88.55,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (ai, catalyst): JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
     "top_headlines": [
       "JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
-      "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - marketbeat.com",
+      "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - MarketBeat",
       "Here\u2019s How Much You Would Have Made Owning JPMorgan Chase Stock In The Last 5 Years - Sahm"
     ],
     "matched_headlines": [
@@ -87,7 +87,7 @@
         ]
       },
       {
-        "title": "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - marketbeat.com",
+        "title": "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - MarketBeat",
         "keywords": [
           "beat"
         ]
@@ -100,7 +100,7 @@
         ]
       },
       {
-        "title": "Mosley Wealth Management Sells 2,815 Shares of JPMorgan Chase & Co. $JPM - marketbeat.com",
+        "title": "Mosley Wealth Management Sells 2,815 Shares of JPMorgan Chase & Co. $JPM - MarketBeat",
         "keywords": [
           "beat"
         ]
@@ -118,41 +118,41 @@
     "model": "grok-4.5",
     "action": "HOLD",
     "symbol": "CASH",
-    "confidence": 68,
+    "confidence": 62,
     "cache_stats": null,
     "entry_price": 0.0,
     "stop_loss": 0.0,
     "take_profit": 0.0,
     "qty": 0.0,
-    "thesis": "Top-ranked JPM is already held and not at stop or target; TSLA remains constructive but also inside its band. Remaining candidates show only soft secondary headlines (small institutional prints, routine price-target notes) with neutral RSI and no differentiated catalyst edge worth deploying fresh risk. Preserve cash and let existing two names work rather than force a low-quality add.",
+    "thesis": "No clean new edge: top-ranked names are already held (JPM, TSLA) and neither has hit stop or target. Fresh candidates (ANET, PANW, CVX) show only weak institutional-flow headlines without a sharp catalyst or technical trigger worth deploying fresh risk. Cash remains ample and book is light, so patience is preferred over forcing a sub-$200 add on middling setups.",
     "reason_code": "hold",
     "reasoning": {
       "headline": "Hold $CASH",
-      "narrative": "Top-ranked JPM is already held and not at stop or target; TSLA remains constructive but also inside its band. Remaining candidates show only soft secondary headlines (small institutional prints, routine price-target notes) with neutral RSI and no differentiated catalyst edge worth deploying fresh risk. Preserve cash and let existing two names work rather than force a low-quality add.",
+      "narrative": "No clean new edge: top-ranked names are already held (JPM, TSLA) and neither has hit stop or target. Fresh candidates (ANET, PANW, CVX) show only weak institutional-flow headlines without a sharp catalyst or technical trigger worth deploying fresh risk. Cash remains ample and book is light, so patience is preferred over forcing a sub-$200 add on middling setups.",
       "bullets": [
-        "Book already owns #1 rank JPM; no stop/target trigger",
-        "Secondary names lack strong catalysts vs rank noise",
-        "Room exists but R:R setups not clean enough to force ~$200 add"
+        "JPM/TSLA still inside stops and targets; no exit signal",
+        "Candidate catalysts are thin (flow/forecast headlines)",
+        "Preserve cash until R:R>=1.5 setup with clearer catalyst"
       ],
       "risk_map": {
         "stop": 0.0,
         "target": 0.0,
         "horizon_days": 5,
         "rr": 0.0,
-        "confidence_10": 7,
-        "confidence": 68
+        "confidence_10": 6,
+        "confidence": 62
       },
-      "thesis": "Top-ranked JPM is already held and not at stop or target; TSLA remains constructive but also inside its band. Remaining candidates show only soft secondary headlines (small institutional prints, routine price-target notes) with neutral RSI and no differentiated catalyst edge worth deploying fresh risk. Preserve cash and let existing two names work rather than force a low-quality add."
+      "thesis": "No clean new edge: top-ranked names are already held (JPM, TSLA) and neither has hit stop or target. Fresh candidates (ANET, PANW, CVX) show only weak institutional-flow headlines without a sharp catalyst or technical trigger worth deploying fresh risk. Cash remains ample and book is light, so patience is preferred over forcing a sub-$200 add on middling setups."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Book already owns #1 rank JPM; no stop/target trigger",
-      "Secondary names lack strong catalysts vs rank noise",
-      "Room exists but R:R setups not clean enough to force ~$200 add"
+      "JPM/TSLA still inside stops and targets; no exit signal",
+      "Candidate catalysts are thin (flow/forecast headlines)",
+      "Preserve cash until R:R>=1.5 setup with clearer catalyst"
     ],
-    "timestamp": "2026-08-19T18:18:18.467157+00:00"
+    "timestamp": "2026-08-19T18:33:55.171608+00:00"
   },
   "stance": "Holding JPM, TSLA. No new trade right now.",
   "thinking": {
@@ -172,9 +172,9 @@
         "avg_cost": 360.57,
         "stop": 350.0,
         "target": 378.0,
-        "last": 356.3999938964844,
-        "open_pnl": -2.29,
-        "open_pnl_pct": -1.16,
+        "last": 356.54998779296875,
+        "open_pnl": -2.21,
+        "open_pnl_pct": -1.11,
         "line": "Bought near $360.57 \u00b7 Sell safety line $350.00 \u00b7 Profit target $378.00",
         "plan": "stop 350.0 or target 378.0"
       },
@@ -184,14 +184,14 @@
         "avg_cost": 339.55,
         "stop": 328.0,
         "target": 358.5,
-        "last": 348.6400146484375,
-        "open_pnl": 5.27,
-        "open_pnl_pct": 2.68,
+        "last": 348.1199951171875,
+        "open_pnl": 4.97,
+        "open_pnl_pct": 2.52,
         "line": "Bought near $339.55 \u00b7 Sell safety line $328.00 \u00b7 Profit target $358.50",
         "plan": "stop 328.0 or target 358.5"
       }
     ],
-    "last_checked": "2026-08-19T18:30:41.763927+00:00",
+    "last_checked": "2026-08-19T18:34:04.773699+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "HOLD",
@@ -205,7 +205,7 @@
         "model": "grok-4.3",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 60,
+        "confidence": 65,
         "tone": "hold"
       },
       {
@@ -219,16 +219,16 @@
       {
         "prefix": "J",
         "model": "deepseek-v4-flash",
-        "action": "BUY",
-        "symbol": "ANET",
-        "confidence": 74,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "JPM",
+        "confidence": 80,
+        "tone": "hold"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
         "action": "BUY",
-        "symbol": "JPM",
+        "symbol": "ANET",
         "confidence": 75,
         "tone": "buy"
       },
@@ -237,7 +237,7 @@
         "model": "grok-4.5",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 68,
+        "confidence": 62,
         "tone": "hold"
       },
       {
@@ -259,6 +259,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 desks disagreed on focus",
+      "detail": "Desks: HOLD CASH (62%) vs BUY ANET (72%) vs HOLD JPM (80%). No 2-of-3 senior agreement",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "ANET",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "HOLD",
+          "symbol": "JPM",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "ANET",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "ANET",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "JPM",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-08-19T18:33:55.171608+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -797,83 +874,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-08-19T16:48:29.340328+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "PANW",
-      "status": "blocked",
-      "headline": "BUY PANW \u2014 blocked",
-      "detail": "Insufficient buying power: $36.00 < $197.06",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "PANW",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "PANW",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "PANW",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "JPM",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-08-19T16:33:42.848412+00:00"
     },
     {
       "type": "fill",
@@ -10530,20 +10530,20 @@
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 355.8699951171875,
-      "volume": 3493933.0,
-      "avg_volume": 4911573.3,
-      "percent_change": -2.0316599815037852,
+      "price": 356.3999938964844,
+      "volume": 3604151.0,
+      "avg_volume": 4922595.1,
+      "percent_change": -1.8857552934661046,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 17,
-      "liquidity_score": 76.91,
-      "rank_score": 88.66,
+      "liquidity_score": 76.92,
+      "rank_score": 88.55,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
       "top_headlines": [
         "JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
-        "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - marketbeat.com",
+        "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - MarketBeat",
         "Here\u2019s How Much You Would Have Made Owning JPMorgan Chase Stock In The Last 5 Years - Sahm"
       ],
       "matched_headlines": [
@@ -10555,7 +10555,7 @@
           ]
         },
         {
-          "title": "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - marketbeat.com",
+          "title": "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -10568,7 +10568,7 @@
           ]
         },
         {
-          "title": "Mosley Wealth Management Sells 2,815 Shares of JPMorgan Chase & Co. $JPM - marketbeat.com",
+          "title": "Mosley Wealth Management Sells 2,815 Shares of JPMorgan Chase & Co. $JPM - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -10585,25 +10585,25 @@
     {
       "symbol": "ANET",
       "name": "ANET",
-      "price": 187.3699951171875,
-      "volume": 3068653.0,
-      "avg_volume": 6695355.3,
-      "percent_change": -3.0075565684200085,
+      "price": 188.0,
+      "volume": 3151500.0,
+      "avg_volume": 6703640.0,
+      "percent_change": -2.6814333120277936,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 15,
       "liquidity_score": 78.26,
-      "rank_score": 81.65,
+      "rank_score": 81.38,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): Arista Networks, Inc. $ANET Shares Bought by Danske Bank A S - marketbeat.com",
+      "catalyst": "Headline-driven setup (beat): Arista Networks, Inc. $ANET Shares Bought by Danske Bank A S - MarketBeat",
       "top_headlines": [
-        "Arista Networks, Inc. $ANET Shares Bought by Danske Bank A S - marketbeat.com",
+        "Arista Networks, Inc. $ANET Shares Bought by Danske Bank A S - MarketBeat",
         "Arista Networks \u2022 Robinhood Token - ANET - Stock Price & News - The Motley Fool",
         "Arista Networks Inc (ANET) Shares Fall 4.3% -- GF Value Says Sti - GuruFocus"
       ],
       "matched_headlines": [
         {
-          "title": "Arista Networks, Inc. $ANET Shares Bought by Danske Bank A S - marketbeat.com",
+          "title": "Arista Networks, Inc. $ANET Shares Bought by Danske Bank A S - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -10623,13 +10623,13 @@
           ]
         },
         {
-          "title": "Arista Networks, Inc. $ANET Shares Purchased by Wealthfront Advisers LLC - marketbeat.com",
+          "title": "Arista Networks, Inc. $ANET Shares Purchased by Wealthfront Advisers LLC - MarketBeat",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "Arista Networks, Inc. $ANET Shares Sold by GSA Capital Partners LLP - marketbeat.com",
+          "title": "Arista Networks, Inc. $ANET Shares Sold by GSA Capital Partners LLP - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -10639,25 +10639,25 @@
     {
       "symbol": "PANW",
       "name": "PANW",
-      "price": 359.7699890136719,
-      "volume": 2888182.0,
-      "avg_volume": 4972328.2,
-      "percent_change": -3.840814954868832,
+      "price": 360.6004943847656,
+      "volume": 2966911.0,
+      "avg_volume": 4980201.1,
+      "percent_change": -3.6188377969660244,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 14,
       "liquidity_score": 76.97,
-      "rank_score": 76.62,
+      "rank_score": 76.44,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - marketbeat.com",
+      "catalyst": "Headline-driven setup (beat): Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - MarketBeat",
       "top_headlines": [
         "PANW Stock Quote Price and Forecast - CNN",
         "Palo Alto Networks Inc Stock (PANW) Moved Down by 3.79% on Aug 19: Facts Behind the Movement - TradingKey",
-        "Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - marketbeat.com"
+        "Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - MarketBeat"
       ],
       "matched_headlines": [
         {
-          "title": "Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - marketbeat.com",
+          "title": "Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -10688,45 +10688,55 @@
       ]
     },
     {
-      "symbol": "CVX",
-      "name": "CVX",
-      "price": 206.60000610351562,
-      "volume": 4763924.0,
-      "avg_volume": 7600102.4,
-      "percent_change": 0.41800359064350123,
+      "symbol": "TSLA",
+      "name": "TSLA",
+      "price": 348.6499938964844,
+      "volume": 25336700.0,
+      "avg_volume": 30202300.0,
+      "percent_change": 3.49689760146164,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 12,
-      "liquidity_score": 78.81,
-      "rank_score": 66.16,
+      "liquidity_score": 84.8,
+      "rank_score": 71.02,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): 24,867 Shares in Chevron Corporation $CVX Purchased by Investmark Advisory Group LLC - marketbeat.com",
+      "catalyst": "Headline-driven setup (catalyst, launch): Tesla Teases Cybercab Launch Event, But TSLA Stock Isn\u2019t Biting - Barron's",
       "top_headlines": [
-        "Should Chevron\u2019s (CVX) Angola Tie-Back Discovery Reshape How Investors View Its Infrastructure Strategy? - simplywall.st",
-        "The Questions That Decide CVX Stock - Yahoo Finance",
-        "24,867 Shares in Chevron Corporation $CVX Purchased by Investmark Advisory Group LLC - marketbeat.com"
+        "Tesla Teases Cybercab Launch Event, But TSLA Stock Isn\u2019t Biting - Barron's",
+        "Tesla: No One Is Paying Attention (NASDAQ:TSLA) - Seeking Alpha",
+        "Tesla Stock (TSLA) Opinions on Recent Sales Figures and Autonomy Progress - Quiver Quantitative"
       ],
       "matched_headlines": [
         {
-          "title": "24,867 Shares in Chevron Corporation $CVX Purchased by Investmark Advisory Group LLC - marketbeat.com",
+          "title": "Tesla Teases Cybercab Launch Event, But TSLA Stock Isn\u2019t Biting - Barron's",
           "keywords": [
-            "beat"
+            "catalyst",
+            "launch"
           ]
         },
         {
-          "title": "Rayburn West Financial Services LLC Buys New Position in Chevron Corporation $CVX - marketbeat.com",
+          "title": "U.S. Stock Market Moves | Tesla (TSLA.US) Rises Nearly 3%, May Launch CyberCab to the Public by Late August - Moomoo",
           "keywords": [
-            "beat"
+            "catalyst",
+            "launch"
           ]
         },
         {
-          "title": "42,220 Shares in Chevron Corporation $CVX Bought by Compass Wealth Management LLC - marketbeat.com",
+          "title": "TSLA Stock Rises Overnight: JPMorgan Says Tesla-SpaceX Merger Looks \u2018Coherent On Paper\u2019 \u2014 But China Approval Risks Loom - Stocktwits",
           "keywords": [
-            "beat"
+            "approval",
+            "catalyst"
           ]
         },
         {
-          "title": "84,602 Shares in Chevron Corporation $CVX Purchased by Oxbow Advisors LLC - marketbeat.com",
+          "title": "Tesla (TSLA) Eyes Cybercab Launch Following Stock Surge - GuruFocus",
+          "keywords": [
+            "catalyst",
+            "launch"
+          ]
+        },
+        {
+          "title": "Petersen Hastings Wealth Advisors Inc. Boosts Stock Position in Tesla, Inc. $TSLA - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -10734,48 +10744,47 @@
       ]
     },
     {
-      "symbol": "ORCL",
-      "name": "ORCL",
-      "price": 144.45989990234375,
-      "volume": 18673810.0,
-      "avg_volume": 24857901.0,
-      "percent_change": 1.1694843439516516,
+      "symbol": "CVX",
+      "name": "CVX",
+      "price": 206.64500427246094,
+      "volume": 4979913.0,
+      "avg_volume": 7621701.3,
+      "percent_change": 0.4398749660415191,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 10,
-      "liquidity_score": 83.95,
-      "rank_score": 59.53,
-      "news_hits": 7,
-      "catalyst": "Headline-driven setup (ai, catalyst): Is Oracle (ORCL) Fairly Valued On Its Expanded AWS AI Database Tie Up? - Yahoo Finance",
+      "catalyst_score": 13,
+      "liquidity_score": 78.82,
+      "rank_score": 70.17,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (beat): 24,867 Shares in Chevron Corporation $CVX Purchased by Investmark Advisory Group LLC - MarketBeat",
       "top_headlines": [
-        "ORCL Stock: Why The Discount May Not Last - Trefis",
-        "ORCL Looks 25.4% Undervalued on GF Value\u2122 - GuruFocus",
-        "Is Oracle (ORCL) Fairly Valued On Its Expanded AWS AI Database Tie Up? - Yahoo Finance"
+        "Should Chevron\u2019s (CVX) Angola Tie-Back Discovery Reshape How Investors View Its Infrastructure Strategy? - simplywall.st",
+        "The Questions That Decide CVX Stock - Yahoo Finance",
+        "24,867 Shares in Chevron Corporation $CVX Purchased by Investmark Advisory Group LLC - MarketBeat"
       ],
       "matched_headlines": [
         {
-          "title": "Is Oracle (ORCL) Fairly Valued On Its Expanded AWS AI Database Tie Up? - Yahoo Finance",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "ORCL Stock Slides Premarket Ahead Of Q4 Print \u2014 But BofA Sees 20% Upside On Red-Hot AI Demand - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "demand"
-          ]
-        },
-        {
-          "title": "Oracle Corporation $ORCL Shares Acquired by Danica Pension Livsforsikringsaktieselskab - marketbeat.com",
+          "title": "24,867 Shares in Chevron Corporation $CVX Purchased by Investmark Advisory Group LLC - MarketBeat",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "Oracle Corporation $ORCL Shares Purchased by Danske Bank A S - marketbeat.com",
+          "title": "CVX Maintained by Morgan Stanley -- Price Target Raised to $218 - GuruFocus",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "raised"
+          ]
+        },
+        {
+          "title": "Rayburn West Financial Services LLC Buys New Position in Chevron Corporation $CVX - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "42,220 Shares in Chevron Corporation $CVX Bought by Compass Wealth Management LLC - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -10809,10 +10818,10 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 1,
-      "BUY": 3,
+      "HOLD": 2,
+      "BUY": 2,
       "SELL": 0,
-      "live": 4,
+      "live": 3,
       "fallback": 0
     },
     "junior_model_3_enabled": true,
@@ -10831,21 +10840,21 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 83.2
+    "live_share_recent": 82.4
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 282,
     "closed_outcomes": 129,
-    "consensus_events": 259,
+    "consensus_events": 260,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1021.84,
-    "change": 21.84,
-    "change_pct": 2.18,
+    "latest_equity": 1021.62,
+    "change": 21.62,
+    "change_pct": 2.16,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15176,6 +15185,12 @@
       {
         "t": "2026-08-19T18:30:44.638800+00:00",
         "equity": 1021.84,
+        "cash": 623.61,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-19T18:34:07.933106+00:00",
+        "equity": 1021.62,
         "cash": 623.61,
         "event": "mark"
       }
