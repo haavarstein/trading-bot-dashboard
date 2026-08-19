@@ -1,34 +1,34 @@
 {
-  "generated_at": "2026-08-19T15:00:37.154135+00:00",
+  "generated_at": "2026-08-19T15:03:10.767804+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1022.83,
+    "portfolio_value": 1022.48,
     "starting_cash": 1000.0,
-    "total_return_pct": 2.28,
-    "total_pnl": 22.83,
+    "total_return_pct": 2.25,
+    "total_pnl": 22.48,
     "realized_pnl": 18.84,
-    "open_pnl": 3.98,
-    "capital_deployed": 399.22,
+    "open_pnl": 3.62,
+    "capital_deployed": 398.87,
     "cash": 623.61,
     "closed_trades": 17,
     "win_rate_pct": 35.29,
-    "vs_spy_pct": 1.94,
-    "spy_return_pct": 0.34,
+    "vs_spy_pct": 1.9,
+    "spy_return_pct": 0.35,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-19T15:00:40.058728+00:00"
+    "updated_at": "2026-08-19T15:03:14.420979+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.34,
-    "price": 772.0399780273438,
+    "return_pct": 0.35,
+    "price": 772.0499877929688,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 6,
+    "consensus_count_today": 7,
     "validated_count_today": 5,
-    "blocked_count_today": 1,
+    "blocked_count_today": 2,
     "fills_today": 4,
     "simulated_orders_today": 5,
     "top_symbol_today": "TSLA"
@@ -38,10 +38,10 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 360.57,
-      "last": 358.8901062011719,
-      "market_value": 197.39,
-      "open_pnl": -0.92,
-      "open_pnl_pct": -0.47,
+      "last": 359.3900146484375,
+      "market_value": 197.66,
+      "open_pnl": -0.65,
+      "open_pnl_pct": -0.33,
       "stop": 350.0,
       "target": 378.0,
       "thesis": "JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit."
@@ -50,10 +50,10 @@
       "symbol": "TSLA",
       "qty": 0.58,
       "avg_cost": 339.55,
-      "last": 347.989990234375,
-      "market_value": 201.83,
-      "open_pnl": 4.9,
-      "open_pnl_pct": 2.49,
+      "last": 346.91009521484375,
+      "market_value": 201.21,
+      "open_pnl": 4.27,
+      "open_pnl_pct": 2.17,
       "stop": 328.0,
       "target": 358.5,
       "thesis": "TSLA screens as the top ranked liquid catalyst setup with a Cybercab launch headline and bullish sentiment at a neutral RSI. Adding a small starter within the ~$200 notional cap keeps the book at 5 names without forced rotation. Defined risk below recent support targets a 1.5+ R multiple into a post-event bounce."
@@ -62,21 +62,21 @@
   "latest_candidate": {
     "symbol": "PANW",
     "name": "PANW",
-    "price": 353.7900085449219,
-    "volume": 1388153.0,
-    "avg_volume": 4822325.3,
-    "percent_change": -5.439141847107054,
+    "price": 356.2900085449219,
+    "volume": 1549174.0,
+    "avg_volume": 4838427.4,
+    "percent_change": -4.770942803401682,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 17,
-    "liquidity_score": 76.83,
-    "rank_score": 91.38,
+    "catalyst_score": 19,
+    "liquidity_score": 76.85,
+    "rank_score": 98.84,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (beat): Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - MarketBeat",
     "top_headlines": [
       "Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - MarketBeat",
       "$PANW stock is down 3% today. Here's what we see in our data. - Quiver Quantitative",
-      "Palo Alto CEO Says 'Cybersecurity SaaSpocalypse Is Dead' \u2013 PANW Stock Slips Premarket Despite Analyst Upgrades - Stocktwits"
+      "PANW vs. NET: Which Cybersecurity Stock Has an Edge Right Now? - Yahoo Finance"
     ],
     "matched_headlines": [
       {
@@ -110,10 +110,9 @@
         ]
       },
       {
-        "title": "PANW 260814 200.00C (PANW260814C200000) Stock Options Chain | Quotes & News - Moomoo",
+        "title": "Palo Alto Networks (NASDAQ:PANW) Stock Price Down 2.2% - Time to Sell? - MarketBeat",
         "keywords": [
-          "ai",
-          "catalyst"
+          "beat"
         ]
       }
     ]
@@ -122,43 +121,45 @@
     "model": "grok-4.5",
     "action": "BUY",
     "symbol": "PANW",
-    "confidence": 78,
+    "confidence": 82,
     "cache_stats": null,
-    "entry_price": 353.79,
-    "stop_loss": 340.0,
+    "entry_price": 356.29,
+    "stop_loss": 345.0,
     "take_profit": 375.0,
     "qty": 0.56,
-    "thesis": "PANW screens as the top-ranked liquid catalyst setup with a bullish analyst price target raise and solid rank/catalyst scores. Neutral RSI leaves room for continuation on the headline. Position sized to ~$200 notional with a defined 1.5+ R:R plan while book still has capacity and cash.",
+    "thesis": "PANW is the top-ranked liquid catalyst candidate with a strong bullish headline setup from Cantor Fitzgerald\u2019s positive price forecast and solid rank/catalyst scores. RSI is neutral near 50, leaving room for continuation without being overextended. Position sized to ~$200 notional with defined risk and reward:risk above 1.5. Adding as a new entry while book has capacity.",
     "reason_code": "new_entry",
     "reasoning": {
       "headline": "Bought $PANW",
-      "narrative": "PANW screens as the top-ranked liquid catalyst setup with a bullish analyst price target raise and solid rank/catalyst scores. Neutral RSI leaves room for continuation on the headline. Position sized to ~$200 notional with a defined 1.5+ R:R plan while book still has capacity and cash.",
+      "narrative": "PANW is the top-ranked liquid catalyst candidate with a strong bullish headline setup from Cantor Fitzgerald\u2019s positive price forecast and solid rank/catalyst scores. RSI is neutral near 50, leaving room for continuation without being overextended. Position sized to ~$200 notional with defined risk and reward:risk above 1.5. Adding as a new entry while book has capacity.",
       "bullets": [
-        "Rank 91+ with positive Cantor forecast catalyst",
-        "R:R >=1.5 via 340 stop / 375 target",
-        "Notional capped near $200; open slots available"
+        "Rank 98.84 / catalyst 19 bullish analyst headline",
+        "Neutral RSI ~50 supports swing entry",
+        "R:R ~1.66 with stops/targets defined",
+        "Notional capped near $200; open names remain low"
       ],
       "risk_map": {
-        "stop": 340.0,
+        "stop": 345.0,
         "target": 375.0,
         "horizon_days": 5,
-        "rr": 1.54,
+        "rr": 1.66,
         "confidence_10": 8,
-        "confidence": 78
+        "confidence": 82
       },
-      "thesis": "PANW screens as the top-ranked liquid catalyst setup with a bullish analyst price target raise and solid rank/catalyst scores. Neutral RSI leaves room for continuation on the headline. Position sized to ~$200 notional with a defined 1.5+ R:R plan while book still has capacity and cash."
+      "thesis": "PANW is the top-ranked liquid catalyst candidate with a strong bullish headline setup from Cantor Fitzgerald\u2019s positive price forecast and solid rank/catalyst scores. RSI is neutral near 50, leaving room for continuation without being overextended. Position sized to ~$200 notional with defined risk and reward:risk above 1.5. Adding as a new entry while book has capacity."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Rank 91+ with positive Cantor forecast catalyst",
-      "R:R >=1.5 via 340 stop / 375 target",
-      "Notional capped near $200; open slots available"
+      "Rank 98.84 / catalyst 19 bullish analyst headline",
+      "Neutral RSI ~50 supports swing entry",
+      "R:R ~1.66 with stops/targets defined",
+      "Notional capped near $200; open names remain low"
     ],
-    "timestamp": "2026-08-19T14:48:22.940158+00:00"
+    "timestamp": "2026-08-19T15:02:45.222721+00:00"
   },
-  "stance": "Buying pressure on PANW. PANW screens as the top-ranked liquid catalyst setup with a bullish analyst price target raise and solid rank/catalyst scores. Neutral RSI leaves room for continuation on the headline. Position sized to ~$200 notional with a defined 1.5+ R:R plan while book still has capacity and cash.",
+  "stance": "Buying pressure on PANW. PANW is the top-ranked liquid catalyst candidate with a strong bullish headline setup from Cantor Fitzgerald\u2019s positive price forecast and solid rank/catalyst scores. RSI is neutral near 50, leaving room for continuation without being overextended. Position sized to ~$200 notional with defined risk and reward:risk above 1.5. Adding as a new entry while book has capacity.",
   "thinking": {
     "badge": "Looking to buy PANW",
     "headline": "Buying pressure on PANW.",
@@ -177,9 +178,9 @@
         "avg_cost": 360.57,
         "stop": 350.0,
         "target": 378.0,
-        "last": 358.8901062011719,
-        "open_pnl": -0.92,
-        "open_pnl_pct": -0.47,
+        "last": 359.3900146484375,
+        "open_pnl": -0.65,
+        "open_pnl_pct": -0.33,
         "line": "Bought near $360.57 \u00b7 Sell safety line $350.00 \u00b7 Profit target $378.00",
         "plan": "stop 350.0 or target 378.0"
       },
@@ -189,14 +190,14 @@
         "avg_cost": 339.55,
         "stop": 328.0,
         "target": 358.5,
-        "last": 347.989990234375,
-        "open_pnl": 4.9,
-        "open_pnl_pct": 2.49,
+        "last": 346.91009521484375,
+        "open_pnl": 4.27,
+        "open_pnl_pct": 2.17,
         "line": "Bought near $339.55 \u00b7 Sell safety line $328.00 \u00b7 Profit target $358.50",
         "plan": "stop 328.0 or target 358.5"
       }
     ],
-    "last_checked": "2026-08-19T15:00:37.154135+00:00",
+    "last_checked": "2026-08-19T15:03:10.767804+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -210,7 +211,7 @@
         "model": "grok-4.3",
         "action": "BUY",
         "symbol": "PANW",
-        "confidence": 82,
+        "confidence": 85,
         "tone": "buy"
       },
       {
@@ -226,7 +227,7 @@
         "model": "deepseek-v4-flash",
         "action": "BUY",
         "symbol": "PANW",
-        "confidence": 75,
+        "confidence": 78,
         "tone": "buy"
       },
       {
@@ -234,7 +235,7 @@
         "model": "grok-build-0.1",
         "action": "BUY",
         "symbol": "PANW",
-        "confidence": 75,
+        "confidence": 82,
         "tone": "buy"
       },
       {
@@ -242,7 +243,7 @@
         "model": "grok-4.5",
         "action": "BUY",
         "symbol": "PANW",
-        "confidence": 78,
+        "confidence": 82,
         "tone": "buy"
       },
       {
@@ -264,6 +265,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "PANW",
+      "status": "blocked",
+      "headline": "BUY PANW \u2014 blocked",
+      "detail": "Insufficient buying power: $36.00 < $199.52",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 85,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 78,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 82,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 82,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 78,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "JPM",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "PANW",
+      "timestamp": "2026-08-19T15:02:45.222721+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "PANW",
@@ -10246,21 +10324,21 @@
     {
       "symbol": "PANW",
       "name": "PANW",
-      "price": 353.7900085449219,
-      "volume": 1388153.0,
-      "avg_volume": 4822325.3,
-      "percent_change": -5.439141847107054,
+      "price": 356.2900085449219,
+      "volume": 1549174.0,
+      "avg_volume": 4838427.4,
+      "percent_change": -4.770942803401682,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 17,
-      "liquidity_score": 76.83,
-      "rank_score": 91.38,
+      "catalyst_score": 19,
+      "liquidity_score": 76.85,
+      "rank_score": 98.84,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - MarketBeat",
       "top_headlines": [
         "Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - MarketBeat",
         "$PANW stock is down 3% today. Here's what we see in our data. - Quiver Quantitative",
-        "Palo Alto CEO Says 'Cybersecurity SaaSpocalypse Is Dead' \u2013 PANW Stock Slips Premarket Despite Analyst Upgrades - Stocktwits"
+        "PANW vs. NET: Which Cybersecurity Stock Has an Edge Right Now? - Yahoo Finance"
       ],
       "matched_headlines": [
         {
@@ -10294,10 +10372,9 @@
           ]
         },
         {
-          "title": "PANW 260814 200.00C (PANW260814C200000) Stock Options Chain | Quotes & News - Moomoo",
+          "title": "Palo Alto Networks (NASDAQ:PANW) Stock Price Down 2.2% - Time to Sell? - MarketBeat",
           "keywords": [
-            "ai",
-            "catalyst"
+            "beat"
           ]
         }
       ]
@@ -10305,15 +10382,15 @@
     {
       "symbol": "TSLA",
       "name": "TSLA",
-      "price": 347.44000244140625,
-      "volume": 11612451.0,
-      "avg_volume": 28829875.1,
-      "percent_change": 3.1377111281584296,
+      "price": 347.989990234375,
+      "volume": 13682400.0,
+      "avg_volume": 29036870.0,
+      "percent_change": 3.3009752362537275,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 17,
-      "liquidity_score": 84.6,
-      "rank_score": 90.7,
+      "liquidity_score": 84.63,
+      "rank_score": 90.84,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, launch): Tesla Teases Cybercab Launch Event, But TSLA Stock Isn\u2019t Biting - Barron's",
       "top_headlines": [
@@ -10362,15 +10439,15 @@
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 360.05999755859375,
-      "volume": 1516080.0,
-      "avg_volume": 4713788.0,
-      "percent_change": -0.8781837416121816,
+      "price": 358.8901062011719,
+      "volume": 1742178.0,
+      "avg_volume": 4736397.8,
+      "percent_change": -1.2002460561123538,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 17,
-      "liquidity_score": 76.73,
-      "rank_score": 87.71,
+      "liquidity_score": 76.75,
+      "rank_score": 87.97,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
       "top_headlines": [
@@ -10417,15 +10494,15 @@
     {
       "symbol": "ANET",
       "name": "ANET",
-      "price": 187.1750030517578,
-      "volume": 1484938.0,
-      "avg_volume": 6536983.8,
-      "percent_change": -3.108494591415458,
+      "price": 187.47999572753906,
+      "volume": 1674078.0,
+      "avg_volume": 6555897.8,
+      "percent_change": -2.9506145379188586,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 15,
-      "liquidity_score": 78.15,
-      "rank_score": 81.71,
+      "liquidity_score": 78.17,
+      "rank_score": 81.59,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Arista Networks, Inc. $ANET Shares Bought by Danske Bank A S - MarketBeat",
       "top_headlines": [
@@ -10471,21 +10548,21 @@
     {
       "symbol": "MSFT",
       "name": "MSFT",
-      "price": 482.7699890136719,
-      "volume": 4813637.0,
-      "avg_volume": 24631083.7,
-      "percent_change": 0.2366929218076331,
+      "price": 484.2099914550781,
+      "volume": 5212044.0,
+      "avg_volume": 24670924.4,
+      "percent_change": 0.5356781234784932,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
-      "liquidity_score": 83.91,
-      "rank_score": 72.28,
-      "news_hits": 8,
+      "liquidity_score": 83.92,
+      "rank_score": 72.52,
+      "news_hits": 7,
       "catalyst": "Headline-driven setup (beat): Microsoft Corporation $MSFT Stock Position Boosted by Hamilton Wealth LLC - MarketBeat",
       "top_headlines": [
         "Microsoft Corporation $MSFT Stock Position Boosted by Hamilton Wealth LLC - MarketBeat",
-        "MSFT Stock Quote Price and Forecast - CNN",
-        "Microsoft Corporation\u2019s (MSFT) Rich Innovation Legacy Anchors Platform Growth - Yahoo Finance"
+        "Microsoft Corporation\u2019s (MSFT) Rich Innovation Legacy Anchors Platform Growth - Yahoo Finance",
+        "Microsoft (MSFT) Stock Quotes, Company News And Chart Analysis - Investor's Business Daily"
       ],
       "matched_headlines": [
         {
@@ -10572,21 +10649,21 @@
     "last_stage": "entry",
     "last_junior_nomination": "PANW",
     "last_escalate_reason": "junior_nomination",
-    "live_share_recent": 70.4
+    "live_share_recent": 73.5
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 282,
     "closed_outcomes": 129,
-    "consensus_events": 245,
+    "consensus_events": 246,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1022.83,
-    "change": 22.83,
-    "change_pct": 2.28,
+    "latest_equity": 1022.48,
+    "change": 22.48,
+    "change_pct": 2.25,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -14707,6 +14784,12 @@
       {
         "t": "2026-08-19T15:00:40.058728+00:00",
         "equity": 1022.83,
+        "cash": 623.61,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-19T15:03:14.420979+00:00",
+        "equity": 1022.48,
         "cash": 623.61,
         "event": "mark"
       }
