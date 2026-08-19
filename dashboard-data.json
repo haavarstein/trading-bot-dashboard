@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-19T19:18:16.081234+00:00",
+  "generated_at": "2026-08-19T19:33:38.840349+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1022.11,
+    "portfolio_value": 1022.42,
     "starting_cash": 1000.0,
-    "total_return_pct": 2.21,
-    "total_pnl": 22.11,
+    "total_return_pct": 2.24,
+    "total_pnl": 22.42,
     "realized_pnl": 18.84,
-    "open_pnl": 3.24,
-    "capital_deployed": 398.5,
+    "open_pnl": 3.56,
+    "capital_deployed": 398.81,
     "cash": 623.61,
     "closed_trades": 17,
     "win_rate_pct": 35.29,
-    "vs_spy_pct": 2.17,
-    "spy_return_pct": 0.04,
+    "vs_spy_pct": 2.14,
+    "spy_return_pct": 0.1,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-19T19:18:19.170734+00:00"
+    "updated_at": "2026-08-19T19:33:41.760335+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.04,
-    "price": 769.7249755859375,
+    "return_pct": 0.1,
+    "price": 770.1900024414062,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,10 +38,10 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 360.57,
-      "last": 356.80999755859375,
-      "market_value": 196.25,
-      "open_pnl": -2.07,
-      "open_pnl_pct": -1.04,
+      "last": 357.364990234375,
+      "market_value": 196.55,
+      "open_pnl": -1.76,
+      "open_pnl_pct": -0.89,
       "stop": 350.0,
       "target": 378.0,
       "thesis": "JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit."
@@ -50,10 +50,10 @@
       "symbol": "TSLA",
       "qty": 0.58,
       "avg_cost": 339.55,
-      "last": 348.70001220703125,
-      "market_value": 202.25,
-      "open_pnl": 5.31,
-      "open_pnl_pct": 2.69,
+      "last": 348.7200012207031,
+      "market_value": 202.26,
+      "open_pnl": 5.32,
+      "open_pnl_pct": 2.7,
       "stop": 328.0,
       "target": 358.5,
       "thesis": "TSLA screens as the top ranked liquid catalyst setup with a Cybercab launch headline and bullish sentiment at a neutral RSI. Adding a small starter within the ~$200 notional cap keeps the book at 5 names without forced rotation. Defined risk below recent support targets a 1.5+ R multiple into a post-event bounce."
@@ -62,15 +62,15 @@
   "latest_candidate": {
     "symbol": "JPM",
     "name": "JPM",
-    "price": 356.8699951171875,
-    "volume": 3912291.0,
-    "avg_volume": 4953409.1,
-    "percent_change": -1.7563674832243632,
+    "price": 357.0400085449219,
+    "volume": 4078923.0,
+    "avg_volume": 4970072.3,
+    "percent_change": -1.7095640619623191,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 17,
-    "liquidity_score": 76.95,
-    "rank_score": 88.45,
+    "liquidity_score": 76.96,
+    "rank_score": 88.41,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (ai, catalyst): JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
     "top_headlines": [
@@ -116,51 +116,49 @@
   },
   "latest_decision": {
     "model": "grok-4.5",
-    "action": "BUY",
-    "symbol": "JPM",
-    "confidence": 78,
+    "action": "HOLD",
+    "symbol": "CASH",
+    "confidence": 68,
     "cache_stats": null,
-    "entry_price": 356.87,
-    "stop_loss": 350.0,
-    "take_profit": 378.0,
-    "qty": 0.55,
-    "thesis": "JPM remains a high-rank liquid catalyst setup with bullish sentiment around succession dynamics after the Marianne Lake exit headline. Adding a small size keeps notional near the $200 desk limit while the existing 350/378 risk framework still delivers reward:risk well above 1.5 from current levels. RSI is neutral and the name is already held, so this is a controlled add rather than a new name.",
-    "reason_code": "new_entry",
+    "entry_price": 0.0,
+    "stop_loss": 0.0,
+    "take_profit": 0.0,
+    "qty": 0.0,
+    "thesis": "No clean new edge: top-ranked JPM is already held and only modestly red versus stop, while TSLA remains inside its band near target. Candidate headlines are mostly mild ownership/forecast noise rather than high-conviction catalysts, so forcing a sub-$200 add fails the bar versus simply managing the two open names.",
+    "reason_code": "hold",
     "reasoning": {
-      "headline": "Bought $JPM",
-      "narrative": "JPM remains a high-rank liquid catalyst setup with bullish sentiment around succession dynamics after the Marianne Lake exit headline. Adding a small size keeps notional near the $200 desk limit while the existing 350/378 risk framework still delivers reward:risk well above 1.5 from current levels. RSI is neutral and the name is already held, so this is a controlled add rather than a new name.",
+      "headline": "Hold $CASH",
+      "narrative": "No clean new edge: top-ranked JPM is already held and only modestly red versus stop, while TSLA remains inside its band near target. Candidate headlines are mostly mild ownership/forecast noise rather than high-conviction catalysts, so forcing a sub-$200 add fails the bar versus simply managing the two open names.",
       "bullets": [
-        "Rank 88.45 + bullish succession catalyst",
-        "R:R ~3.1 using 350 stop / 378 target",
-        "Add ~$196 notional within $200 cap",
-        "Book has room (2 open names)"
+        "Book has room but catalysts are low-quality filings/targets",
+        "JPM weakest PnL yet still #1 ranked\u2014no rotation",
+        "TSLA/JPM neither stopped nor at target; stay flat new risk"
       ],
       "risk_map": {
-        "stop": 350.0,
-        "target": 378.0,
+        "stop": 0.0,
+        "target": 0.0,
         "horizon_days": 5,
-        "rr": 3.08,
-        "confidence_10": 8,
-        "confidence": 78
+        "rr": 0.0,
+        "confidence_10": 7,
+        "confidence": 68
       },
-      "thesis": "JPM remains a high-rank liquid catalyst setup with bullish sentiment around succession dynamics after the Marianne Lake exit headline. Adding a small size keeps notional near the $200 desk limit while the existing 350/378 risk framework still delivers reward:risk well above 1.5 from current levels. RSI is neutral and the name is already held, so this is a controlled add rather than a new name."
+      "thesis": "No clean new edge: top-ranked JPM is already held and only modestly red versus stop, while TSLA remains inside its band near target. Candidate headlines are mostly mild ownership/forecast noise rather than high-conviction catalysts, so forcing a sub-$200 add fails the bar versus simply managing the two open names."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Rank 88.45 + bullish succession catalyst",
-      "R:R ~3.1 using 350 stop / 378 target",
-      "Add ~$196 notional within $200 cap",
-      "Book has room (2 open names)"
+      "Book has room but catalysts are low-quality filings/targets",
+      "JPM weakest PnL yet still #1 ranked\u2014no rotation",
+      "TSLA/JPM neither stopped nor at target; stay flat new risk"
     ],
-    "timestamp": "2026-08-19T19:18:06.399346+00:00"
+    "timestamp": "2026-08-19T19:33:29.220052+00:00"
   },
-  "stance": "Buying pressure on JPM. JPM remains a high-rank liquid catalyst setup with bullish sentiment around succession dynamics after the Marianne Lake exit headline. Adding a small size keeps notional near the $200 desk limit while the existing 350/378 risk framework still delivers reward:risk well above 1.5 from current levels. RSI is neutral and the name is already held, so this is a controlled add rather than a new name.",
+  "stance": "Holding JPM, TSLA. No new trade right now.",
   "thinking": {
-    "badge": "Looking to buy JPM",
-    "headline": "Buying pressure on JPM.",
-    "plain_english": "Right now Hermes wants exposure to JPM. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
+    "badge": "Holding what it owns",
+    "headline": "Holding JPM, TSLA. No new trade right now.",
+    "plain_english": "Right now Hermes is holding JPM, TSLA and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
     "triggers": [
       "It owns JPM, bought near $360.57. Simple plan: sell if it falls to about $350.00, or take profit near $378.00.",
       "It owns TSLA, bought near $339.55. Simple plan: sell if it falls to about $328.00, or take profit near $358.50.",
@@ -174,9 +172,9 @@
         "avg_cost": 360.57,
         "stop": 350.0,
         "target": 378.0,
-        "last": 356.80999755859375,
-        "open_pnl": -2.07,
-        "open_pnl_pct": -1.04,
+        "last": 357.364990234375,
+        "open_pnl": -1.76,
+        "open_pnl_pct": -0.89,
         "line": "Bought near $360.57 \u00b7 Sell safety line $350.00 \u00b7 Profit target $378.00",
         "plan": "stop 350.0 or target 378.0"
       },
@@ -186,17 +184,17 @@
         "avg_cost": 339.55,
         "stop": 328.0,
         "target": 358.5,
-        "last": 348.70001220703125,
-        "open_pnl": 5.31,
-        "open_pnl_pct": 2.69,
+        "last": 348.7200012207031,
+        "open_pnl": 5.32,
+        "open_pnl_pct": 2.7,
         "line": "Bought near $339.55 \u00b7 Sell safety line $328.00 \u00b7 Profit target $358.50",
         "plan": "stop 328.0 or target 358.5"
       }
     ],
-    "last_checked": "2026-08-19T19:18:16.081234+00:00",
+    "last_checked": "2026-08-19T19:33:38.840349+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "BUY",
+    "action": "HOLD",
     "symbols_held": [
       "JPM",
       "TSLA"
@@ -205,10 +203,10 @@
       {
         "prefix": "J",
         "model": "grok-4.3",
-        "action": "BUY",
-        "symbol": "JPM",
-        "confidence": 82,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 60,
+        "tone": "hold"
       },
       {
         "prefix": "J",
@@ -222,8 +220,8 @@
         "prefix": "J",
         "model": "deepseek-v4-flash",
         "action": "BUY",
-        "symbol": "JPM",
-        "confidence": 75,
+        "symbol": "ANET",
+        "confidence": 74,
         "tone": "buy"
       },
       {
@@ -237,16 +235,16 @@
       {
         "prefix": "S",
         "model": "grok-4.5",
-        "action": "BUY",
-        "symbol": "JPM",
-        "confidence": 78,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 68,
+        "tone": "hold"
       },
       {
         "prefix": "S",
         "model": "claude-sonnet-5",
         "action": "BUY",
-        "symbol": "JPM",
+        "symbol": "ANET",
         "confidence": 72,
         "tone": "buy"
       },
@@ -261,6 +259,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 desks disagreed on focus",
+      "detail": "Desks: HOLD CASH (68%) vs BUY ANET (72%) vs HOLD JPM (80%). No 2-of-3 senior agreement",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "ANET",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "ANET",
+          "confidence": 74,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 68,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "ANET",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "JPM",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-08-19T19:33:29.220052+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "JPM",
@@ -799,83 +874,6 @@
       "stage": "entry",
       "junior_nomination": "ANET",
       "timestamp": "2026-08-19T17:48:31.903622+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "ANET",
-      "status": "blocked",
-      "headline": "BUY ANET \u2014 blocked",
-      "detail": "Insufficient buying power: $36.00 < $197.45",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "ANET",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "ANET",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "ANET",
-          "confidence": 73,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "ANET",
-          "confidence": 74,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "JPM",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-08-19T17:33:23.751351+00:00"
     },
     {
       "type": "fill",
@@ -10532,15 +10530,15 @@
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 356.8699951171875,
-      "volume": 3912291.0,
-      "avg_volume": 4953409.1,
-      "percent_change": -1.7563674832243632,
+      "price": 357.0400085449219,
+      "volume": 4078923.0,
+      "avg_volume": 4970072.3,
+      "percent_change": -1.7095640619623191,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 17,
-      "liquidity_score": 76.95,
-      "rank_score": 88.45,
+      "liquidity_score": 76.96,
+      "rank_score": 88.41,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
       "top_headlines": [
@@ -10587,15 +10585,15 @@
     {
       "symbol": "ANET",
       "name": "ANET",
-      "price": 187.0500030517578,
-      "volume": 3680627.0,
-      "avg_volume": 6756552.7,
-      "percent_change": -3.17320108522395,
+      "price": 187.47000122070312,
+      "volume": 3833644.0,
+      "avg_volume": 6771854.4,
+      "percent_change": -2.9557882138764464,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 15,
-      "liquidity_score": 78.3,
-      "rank_score": 81.78,
+      "liquidity_score": 78.31,
+      "rank_score": 81.61,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Arista Networks, Inc. $ANET Shares Bought by Danske Bank A S - MarketBeat",
       "top_headlines": [
@@ -10641,15 +10639,15 @@
     {
       "symbol": "PANW",
       "name": "PANW",
-      "price": 359.79620361328125,
-      "volume": 3216891.0,
-      "avg_volume": 5005199.1,
-      "percent_change": -3.8338083267127905,
+      "price": 359.9549865722656,
+      "volume": 3333197.0,
+      "avg_volume": 5016829.7,
+      "percent_change": -3.791368878172763,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 14,
-      "liquidity_score": 76.99,
-      "rank_score": 76.62,
+      "liquidity_score": 77.0,
+      "rank_score": 76.58,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - MarketBeat",
       "top_headlines": [
@@ -10692,20 +10690,20 @@
     {
       "symbol": "CVX",
       "name": "CVX",
-      "price": 206.4199981689453,
-      "volume": 5561223.0,
-      "avg_volume": 7679832.3,
-      "percent_change": 0.3305106725117899,
+      "price": 205.8498992919922,
+      "volume": 5728322.0,
+      "avg_volume": 7696542.2,
+      "percent_change": 0.05341391848644446,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
-      "liquidity_score": 78.85,
-      "rank_score": 70.09,
+      "liquidity_score": 78.86,
+      "rank_score": 69.87,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): 24,867 Shares in Chevron Corporation $CVX Purchased by Investmark Advisory Group LLC - MarketBeat",
       "top_headlines": [
         "Should Chevron\u2019s (CVX) Angola Tie-Back Discovery Reshape How Investors View Its Infrastructure Strategy? - simplywall.st",
-        "The Questions That Decide CVX Stock - Yahoo Finance",
+        "The Questions That Decide CVX Stock - finance.yahoo.com",
         "24,867 Shares in Chevron Corporation $CVX Purchased by Investmark Advisory Group LLC - MarketBeat"
       ],
       "matched_headlines": [
@@ -10740,25 +10738,25 @@
     {
       "symbol": "XOM",
       "name": "XOM",
-      "price": 165.75999450683594,
-      "volume": 6646301.0,
-      "avg_volume": 13628450.1,
-      "percent_change": 0.12080028460462261,
+      "price": 165.42999267578125,
+      "volume": 6889879.0,
+      "avg_volume": 13652807.9,
+      "percent_change": -0.0785243324049275,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
-      "liquidity_score": 81.34,
-      "rank_score": 62.3,
+      "liquidity_score": 81.35,
+      "rank_score": 62.27,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (catalyst, contract): ExxonMobil Holdings (XOM) Awards Rovuma LNG Contracts, Does It Look Fully Valued? - Yahoo Finance",
+      "catalyst": "Headline-driven setup (catalyst, contract): ExxonMobil Holdings (XOM) Awards Rovuma LNG Contracts, Does It Look Fully Valued? - finance.yahoo.com",
       "top_headlines": [
-        "ExxonMobil Holdings (XOM) Awards Rovuma LNG Contracts, Does It Look Fully Valued? - Yahoo Finance",
+        "ExxonMobil Holdings (XOM) Awards Rovuma LNG Contracts, Does It Look Fully Valued? - finance.yahoo.com",
         "XOM Maintained by Morgan Stanley -- Price Target Raised to $177 - GuruFocus",
         "Great Lakes Advisors LLC Has $197.06 Million Stake in ExxonMobil Corporation $XOM - MarketBeat"
       ],
       "matched_headlines": [
         {
-          "title": "ExxonMobil Holdings (XOM) Awards Rovuma LNG Contracts, Does It Look Fully Valued? - Yahoo Finance",
+          "title": "ExxonMobil Holdings (XOM) Awards Rovuma LNG Contracts, Does It Look Fully Valued? - finance.yahoo.com",
           "keywords": [
             "catalyst",
             "contract"
@@ -10814,8 +10812,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 0,
-      "BUY": 4,
+      "HOLD": 1,
+      "BUY": 3,
       "SELL": 0,
       "live": 4,
       "fallback": 0
@@ -10834,23 +10832,23 @@
     "decision_mode": "live_dual_llm",
     "last_tier": "senior_escalated",
     "last_stage": "entry",
-    "last_junior_nomination": "JPM",
-    "last_escalate_reason": "junior_nomination",
-    "live_share_recent": 84.4
+    "last_junior_nomination": null,
+    "last_escalate_reason": "junior_trade_or_split",
+    "live_share_recent": 85.7
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 282,
     "closed_outcomes": 129,
-    "consensus_events": 263,
+    "consensus_events": 264,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1022.11,
-    "change": 22.11,
-    "change_pct": 2.21,
+    "latest_equity": 1022.42,
+    "change": 22.42,
+    "change_pct": 2.24,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15217,6 +15215,12 @@
       {
         "t": "2026-08-19T19:18:19.170734+00:00",
         "equity": 1022.11,
+        "cash": 623.61,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-19T19:33:41.760335+00:00",
+        "equity": 1022.42,
         "cash": 623.61,
         "event": "mark"
       }
