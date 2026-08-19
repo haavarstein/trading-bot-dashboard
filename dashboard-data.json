@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-08-19T17:10:47.182065+00:00",
+  "generated_at": "2026-08-19T17:18:34.579669+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1021.47,
+    "portfolio_value": 1021.62,
     "starting_cash": 1000.0,
-    "total_return_pct": 2.15,
-    "total_pnl": 21.47,
+    "total_return_pct": 2.16,
+    "total_pnl": 21.62,
     "realized_pnl": 18.84,
-    "open_pnl": 2.6,
-    "capital_deployed": 397.86,
+    "open_pnl": 2.76,
+    "capital_deployed": 398.01,
     "cash": 623.61,
     "closed_trades": 17,
     "win_rate_pct": 35.29,
-    "vs_spy_pct": 2.11,
-    "spy_return_pct": 0.04,
+    "vs_spy_pct": 2.13,
+    "spy_return_pct": 0.03,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-19T17:10:50.079418+00:00"
+    "updated_at": "2026-08-19T17:18:37.687484+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.04,
-    "price": 769.7100219726562,
+    "return_pct": 0.03,
+    "price": 769.6400146484375,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 13,
-    "validated_count_today": 5,
+    "consensus_count_today": 14,
+    "validated_count_today": 6,
     "blocked_count_today": 8,
     "fills_today": 4,
-    "simulated_orders_today": 5,
+    "simulated_orders_today": 6,
     "top_symbol_today": "TSLA"
   },
   "holdings": [
@@ -38,10 +38,10 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 360.57,
-      "last": 357.81500244140625,
-      "market_value": 196.8,
-      "open_pnl": -1.52,
-      "open_pnl_pct": -0.76,
+      "last": 357.95001220703125,
+      "market_value": 196.87,
+      "open_pnl": -1.44,
+      "open_pnl_pct": -0.73,
       "stop": 350.0,
       "target": 378.0,
       "thesis": "JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit."
@@ -50,10 +50,10 @@
       "symbol": "TSLA",
       "qty": 0.58,
       "avg_cost": 339.55,
-      "last": 346.6600036621094,
-      "market_value": 201.06,
-      "open_pnl": 4.12,
-      "open_pnl_pct": 2.09,
+      "last": 346.79998779296875,
+      "market_value": 201.14,
+      "open_pnl": 4.2,
+      "open_pnl_pct": 2.14,
       "stop": 328.0,
       "target": 358.5,
       "thesis": "TSLA screens as the top ranked liquid catalyst setup with a Cybercab launch headline and bullish sentiment at a neutral RSI. Adding a small starter within the ~$200 notional cap keeps the book at 5 names without forced rotation. Defined risk below recent support targets a 1.5+ R multiple into a post-event bounce."
@@ -62,15 +62,15 @@
   "latest_candidate": {
     "symbol": "TSLA",
     "name": "TSLA",
-    "price": 347.5150146484375,
-    "volume": 21765613.0,
-    "avg_volume": 29845191.3,
-    "percent_change": 3.159978533424118,
+    "price": 346.8599853515625,
+    "volume": 22265378.0,
+    "avg_volume": 29895167.8,
+    "percent_change": 2.9655328106321153,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 18,
-    "liquidity_score": 84.75,
-    "rank_score": 94.74,
+    "liquidity_score": 84.76,
+    "rank_score": 94.59,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (catalyst, launch): Tesla Teases Cybercab Launch Event, But TSLA Stock Isn\u2019t Biting - Barron's",
     "top_headlines": [
@@ -116,44 +116,44 @@
     ]
   },
   "latest_decision": {
-    "model": "grok-4.5",
+    "model": "grok-4.3",
     "action": "HOLD",
     "symbol": "CASH",
-    "confidence": 68,
+    "confidence": 65,
     "cache_stats": null,
     "entry_price": 0.0,
     "stop_loss": 0.0,
     "take_profit": 0.0,
     "qty": 0.0,
-    "thesis": "Top-ranked names TSLA and JPM are already held; TSLA is working toward target on Cybercab headlines while JPM is only mildly red with stop intact. Fresh candidates (ANET, PANW, GOOGL) carry weaker institutional/PT-style catalysts and do not present a clearly superior liquid setup versus current book risk. With two open names, intact stops, and no forced rotation edge, stay in cash and let existing positions work.",
+    "thesis": "TSLA leads candidates with strong catalyst score and is already held at positive open P/L near target. JPM also held with minor loss but no rotation edge over current book. No new names justify $200 notional entry with required R:R while maintaining max 5 names policy.",
     "reason_code": "hold",
     "reasoning": {
       "headline": "Hold $CASH",
-      "narrative": "Top-ranked names TSLA and JPM are already held; TSLA is working toward target on Cybercab headlines while JPM is only mildly red with stop intact. Fresh candidates (ANET, PANW, GOOGL) carry weaker institutional/PT-style catalysts and do not present a clearly superior liquid setup versus current book risk. With two open names, intact stops, and no forced rotation edge, stay in cash and let existing positions work.",
+      "narrative": "TSLA leads candidates with strong catalyst score and is already held at positive open P/L near target. JPM also held with minor loss but no rotation edge over current book. No new names justify $200 notional entry with required R:R while maintaining max 5 names policy.",
       "bullets": [
-        "TSLA lead name already owned and green vs stops/targets",
-        "Non-held catalysts are secondary (flow/PT), not high-conviction",
-        "Book not full but R:R edge to deploy fresh $200 is unclear"
+        "TSLA rank 94.59 top catalyst but position already active",
+        "Cash $623 allows but no clean new setup meets rules",
+        "Current 2 positions sufficient no rotation needed"
       ],
       "risk_map": {
         "stop": 0.0,
         "target": 0.0,
         "horizon_days": 5,
         "rr": 0.0,
-        "confidence_10": 7,
-        "confidence": 68
+        "confidence_10": 6,
+        "confidence": 65
       },
-      "thesis": "Top-ranked names TSLA and JPM are already held; TSLA is working toward target on Cybercab headlines while JPM is only mildly red with stop intact. Fresh candidates (ANET, PANW, GOOGL) carry weaker institutional/PT-style catalysts and do not present a clearly superior liquid setup versus current book risk. With two open names, intact stops, and no forced rotation edge, stay in cash and let existing positions work."
+      "thesis": "TSLA leads candidates with strong catalyst score and is already held at positive open P/L near target. JPM also held with minor loss but no rotation edge over current book. No new names justify $200 notional entry with required R:R while maintaining max 5 names policy."
     },
     "source": "live",
     "provider": "xai",
-    "provider_model_id": "grok-4.5",
+    "provider_model_id": "grok-4.3",
     "bullets": [
-      "TSLA lead name already owned and green vs stops/targets",
-      "Non-held catalysts are secondary (flow/PT), not high-conviction",
-      "Book not full but R:R edge to deploy fresh $200 is unclear"
+      "TSLA rank 94.59 top catalyst but position already active",
+      "Cash $623 allows but no clean new setup meets rules",
+      "Current 2 positions sufficient no rotation needed"
     ],
-    "timestamp": "2026-08-19T17:03:22.936014+00:00"
+    "timestamp": "2026-08-19T17:18:17.936131+00:00"
   },
   "stance": "Holding JPM, TSLA. No new trade right now.",
   "thinking": {
@@ -173,9 +173,9 @@
         "avg_cost": 360.57,
         "stop": 350.0,
         "target": 378.0,
-        "last": 357.81500244140625,
-        "open_pnl": -1.52,
-        "open_pnl_pct": -0.76,
+        "last": 357.95001220703125,
+        "open_pnl": -1.44,
+        "open_pnl_pct": -0.73,
         "line": "Bought near $360.57 \u00b7 Sell safety line $350.00 \u00b7 Profit target $378.00",
         "plan": "stop 350.0 or target 378.0"
       },
@@ -185,14 +185,14 @@
         "avg_cost": 339.55,
         "stop": 328.0,
         "target": 358.5,
-        "last": 346.6600036621094,
-        "open_pnl": 4.12,
-        "open_pnl_pct": 2.09,
+        "last": 346.79998779296875,
+        "open_pnl": 4.2,
+        "open_pnl_pct": 2.14,
         "line": "Bought near $339.55 \u00b7 Sell safety line $328.00 \u00b7 Profit target $358.50",
         "plan": "stop 328.0 or target 358.5"
       }
     ],
-    "last_checked": "2026-08-19T17:10:47.182065+00:00",
+    "last_checked": "2026-08-19T17:18:34.579669+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "HOLD",
@@ -220,46 +220,99 @@
       {
         "prefix": "J",
         "model": "deepseek-v4-flash",
-        "action": "BUY",
-        "symbol": "ANET",
-        "confidence": 72,
-        "tone": "buy"
-      },
-      {
-        "prefix": "J",
-        "model": "grok-build-0.1",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 65,
-        "tone": "hold"
-      },
-      {
-        "prefix": "S",
-        "model": "grok-4.5",
         "action": "HOLD",
         "symbol": "CASH",
         "confidence": 68,
         "tone": "hold"
       },
       {
-        "prefix": "S",
-        "model": "claude-sonnet-5",
-        "action": "BUY",
-        "symbol": "ANET",
-        "confidence": 73,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "claude-opus-5",
+        "prefix": "J",
+        "model": "grok-build-0.1",
         "action": "HOLD",
-        "symbol": "JPM",
-        "confidence": 80,
+        "symbol": "CASH",
+        "confidence": 60,
         "tone": "hold"
       }
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 no new trade",
+      "detail": "TSLA leads candidates with strong catalyst score and is already held at positive open P/L near target. JPM also held with minor loss but no rotation edge over current book. No new names justify $200 notional entry with required R:R while maintaining max 5 names policy.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 68,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        }
+      ],
+      "tier": "junior_only",
+      "escalate_reason": "",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-08-19T17:18:17.937129+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -798,83 +851,6 @@
       "stage": "entry",
       "junior_nomination": "PANW",
       "timestamp": "2026-08-19T15:32:48.915719+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "PANW",
-      "status": "blocked",
-      "headline": "BUY PANW \u2014 blocked",
-      "detail": "Insufficient buying power: $36.00 < $197.22",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "PANW",
-          "confidence": 82,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "PANW",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "PANW",
-          "confidence": 73,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "PANW",
-          "confidence": 75,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "PANW",
-          "confidence": 74,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "PANW",
-          "confidence": 78,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "JPM",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "entry",
-      "junior_nomination": "PANW",
-      "timestamp": "2026-08-19T15:17:25.948964+00:00"
     },
     {
       "type": "fill",
@@ -10531,15 +10507,15 @@
     {
       "symbol": "TSLA",
       "name": "TSLA",
-      "price": 347.5150146484375,
-      "volume": 21765613.0,
-      "avg_volume": 29845191.3,
-      "percent_change": 3.159978533424118,
+      "price": 346.8599853515625,
+      "volume": 22265378.0,
+      "avg_volume": 29895167.8,
+      "percent_change": 2.9655328106321153,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 18,
-      "liquidity_score": 84.75,
-      "rank_score": 94.74,
+      "liquidity_score": 84.76,
+      "rank_score": 94.59,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, launch): Tesla Teases Cybercab Launch Event, But TSLA Stock Isn\u2019t Biting - Barron's",
       "top_headlines": [
@@ -10587,15 +10563,15 @@
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 357.4599914550781,
-      "volume": 2937102.0,
-      "avg_volume": 4855890.2,
-      "percent_change": -1.5939459173907433,
+      "price": 357.839599609375,
+      "volume": 3031489.0,
+      "avg_volume": 4865328.9,
+      "percent_change": -1.4894426402271164,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 17,
-      "liquidity_score": 76.86,
-      "rank_score": 88.3,
+      "liquidity_score": 76.87,
+      "rank_score": 88.22,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
       "top_headlines": [
@@ -10642,15 +10618,15 @@
     {
       "symbol": "ANET",
       "name": "ANET",
-      "price": 188.14500427246094,
-      "volume": 2644263.0,
-      "avg_volume": 6652916.3,
-      "percent_change": -2.606371567562205,
+      "price": 188.2949981689453,
+      "volume": 2730762.0,
+      "avg_volume": 6661566.2,
+      "percent_change": -2.5287269344887826,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 15,
-      "liquidity_score": 78.23,
-      "rank_score": 81.32,
+      "liquidity_score": 78.24,
+      "rank_score": 81.26,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Arista Networks, Inc. $ANET Shares Purchased by Wealthfront Advisers LLC - marketbeat.com",
       "top_headlines": [
@@ -10696,15 +10672,15 @@
     {
       "symbol": "PANW",
       "name": "PANW",
-      "price": 357.7300109863281,
-      "volume": 2447868.0,
-      "avg_volume": 4928296.8,
-      "percent_change": -4.386059501689258,
+      "price": 357.7699890136719,
+      "volume": 2537413.0,
+      "avg_volume": 4937251.3,
+      "percent_change": -4.3753741898331295,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 14,
       "liquidity_score": 76.93,
-      "rank_score": 77.05,
+      "rank_score": 77.04,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - marketbeat.com",
       "top_headlines": [
@@ -10720,7 +10696,7 @@
           ]
         },
         {
-          "title": "PANW Maintained by Truist Securities -- Price Target Raised to $435 - GuruFocus",
+          "title": "PANW Maintained by Stifel -- Price Target Raised to $415 - GuruFocus",
           "keywords": [
             "ai",
             "catalyst",
@@ -10747,15 +10723,15 @@
     {
       "symbol": "GOOGL",
       "name": "GOOGL",
-      "price": 344.32000732421875,
-      "volume": 9385610.0,
-      "avg_volume": 20073321.0,
-      "percent_change": 0.03486203164784454,
+      "price": 344.6600036621094,
+      "volume": 9633380.0,
+      "avg_volume": 20098098.0,
+      "percent_change": 0.13364074339470008,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 12,
       "liquidity_score": 83.03,
-      "rank_score": 67.98,
+      "rank_score": 68.06,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Alphabet (GOOGL) Stock May Be 23% Undervalued Following $25b AI Bond Raise - simplywall.st",
       "top_headlines": [
@@ -10826,8 +10802,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 3,
-      "BUY": 1,
+      "HOLD": 4,
+      "BUY": 0,
       "SELL": 0,
       "live": 4,
       "fallback": 0
@@ -10844,25 +10820,25 @@
     "max_candidates_to_llm": 8,
     "log_all_disagreements": true,
     "decision_mode": "live_dual_llm",
-    "last_tier": "senior_escalated",
+    "last_tier": "junior_only",
     "last_stage": "entry",
     "last_junior_nomination": null,
-    "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 81.1
+    "last_escalate_reason": "",
+    "live_share_recent": 82.5
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 282,
     "closed_outcomes": 129,
-    "consensus_events": 254,
+    "consensus_events": 255,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1021.47,
-    "change": 21.47,
-    "change_pct": 2.15,
+    "latest_equity": 1021.62,
+    "change": 21.62,
+    "change_pct": 2.16,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15115,6 +15091,12 @@
       {
         "t": "2026-08-19T17:10:50.079418+00:00",
         "equity": 1021.47,
+        "cash": 623.61,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-19T17:18:37.687484+00:00",
+        "equity": 1021.62,
         "cash": 623.61,
         "event": "mark"
       }
