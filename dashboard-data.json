@@ -1,46 +1,46 @@
 {
-  "generated_at": "2026-08-19T13:30:47.801861+00:00",
+  "generated_at": "2026-08-19T13:34:16.275411+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1034.25,
+    "portfolio_value": 1033.2,
     "starting_cash": 1000.0,
-    "total_return_pct": 3.42,
-    "total_pnl": 34.25,
+    "total_return_pct": 3.32,
+    "total_pnl": 33.2,
     "realized_pnl": 29.54,
-    "open_pnl": 4.7,
-    "capital_deployed": 801.31,
-    "cash": 232.94,
+    "open_pnl": 3.66,
+    "capital_deployed": 997.2,
+    "cash": 36.0,
     "closed_trades": 14,
     "win_rate_pct": 35.71,
-    "vs_spy_pct": 3.28,
-    "spy_return_pct": 0.14,
+    "vs_spy_pct": 3.23,
+    "spy_return_pct": 0.09,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-19T13:30:50.864663+00:00"
+    "updated_at": "2026-08-19T13:34:19.437770+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.14,
-    "price": 770.4500122070312,
+    "return_pct": 0.09,
+    "price": 770.0900268554688,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 0,
-    "validated_count_today": 0,
+    "consensus_count_today": 1,
+    "validated_count_today": 1,
     "blocked_count_today": 0,
-    "fills_today": 0,
-    "simulated_orders_today": 0,
-    "top_symbol_today": "JPM"
+    "fills_today": 1,
+    "simulated_orders_today": 1,
+    "top_symbol_today": "TSLA"
   },
   "holdings": [
     {
       "symbol": "CVX",
       "qty": 1.01,
       "avg_cost": 197.26,
-      "last": 204.50999450683594,
-      "market_value": 206.56,
-      "open_pnl": 7.32,
+      "last": 204.52499389648438,
+      "market_value": 206.57,
+      "open_pnl": 7.34,
       "open_pnl_pct": 3.68,
       "stop": 191.0,
       "target": 207.0,
@@ -50,10 +50,10 @@
       "symbol": "PANW",
       "qty": 0.53,
       "avg_cost": 375.76,
-      "last": 371.0,
-      "market_value": 196.63,
-      "open_pnl": -2.52,
-      "open_pnl_pct": -1.27,
+      "last": 373.3299865722656,
+      "market_value": 197.86,
+      "open_pnl": -1.29,
+      "open_pnl_pct": -0.65,
       "stop": 365.0,
       "target": 392.0,
       "thesis": "PANW is the sole ranked liquid catalyst candidate with a bullish institutional accumulation headline and solid rank/catalyst scores. Book has room for one more name under the 5-position cap and cash supports a sub-$200 notional add. Neutral RSI leaves room for continuation if the flow follows through."
@@ -62,10 +62,10 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 360.57,
-      "last": 361.07000732421875,
-      "market_value": 198.59,
-      "open_pnl": 0.28,
-      "open_pnl_pct": 0.14,
+      "last": 360.5299987792969,
+      "market_value": 198.29,
+      "open_pnl": -0.02,
+      "open_pnl_pct": -0.01,
       "stop": 350.0,
       "target": 378.0,
       "thesis": "JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit."
@@ -74,65 +74,78 @@
       "symbol": "ANET",
       "qty": 1.03,
       "avg_cost": 194.09,
-      "last": 193.72000122070312,
-      "market_value": 199.53,
-      "open_pnl": -0.38,
-      "open_pnl_pct": -0.19,
+      "last": 191.74000549316406,
+      "market_value": 197.49,
+      "open_pnl": -2.42,
+      "open_pnl_pct": -1.21,
       "stop": 187.5,
       "target": 204.5,
       "thesis": "ANET screens as a high-rank liquid catalyst setup on institutional accumulation headlines with bullish sentiment and neutral RSI offering room to run. Deutsche Bank share acquisition provides a clean near-term demand signal while the name remains liquid enough for a small paper allocation. Risk is defined below recent support with a 1.5+ R:R target into the next resistance zone. Adding as a fifth name fits book limits and uses available cash within the $200 notional cap."
+    },
+    {
+      "symbol": "TSLA",
+      "qty": 0.58,
+      "avg_cost": 339.55,
+      "last": 339.6358947753906,
+      "market_value": 196.99,
+      "open_pnl": 0.05,
+      "open_pnl_pct": 0.03,
+      "stop": 328.0,
+      "target": 358.5,
+      "thesis": "TSLA screens as the top ranked liquid catalyst setup with a Cybercab launch headline and bullish sentiment at a neutral RSI. Adding a small starter within the ~$200 notional cap keeps the book at 5 names without forced rotation. Defined risk below recent support targets a 1.5+ R multiple into a post-event bounce."
     }
   ],
   "latest_candidate": {
-    "symbol": "JPM",
-    "name": "JPM",
-    "price": 362.4599914550781,
-    "volume": 3241537.0,
-    "avg_volume": 4861203.7,
-    "percent_change": 0.4155585204757178,
+    "symbol": "TSLA",
+    "name": "TSLA",
+    "price": 339.55499267578125,
+    "volume": 920591.0,
+    "avg_volume": 27760689.1,
+    "percent_change": 0.7970426566663249,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 16,
-    "liquidity_score": 76.87,
-    "rank_score": 83.36,
+    "catalyst_score": 17,
+    "liquidity_score": 84.43,
+    "rank_score": 88.8,
     "news_hits": 8,
-    "catalyst": "Headline-driven setup (buyback, catalyst): JPM, GS, MS Stocks Edge Higher After-Hours \u2014 Banks Lift Dividends And Announce Buybacks After Fed Stress Test - Stocktwits",
+    "catalyst": "Headline-driven setup (catalyst, launch): Tesla Teases Cybercab Launch Event, But TSLA Stock Isn\u2019t Biting - Barron's",
     "top_headlines": [
-      "JPM, GS, MS Stocks Edge Higher After-Hours \u2014 Banks Lift Dividends And Announce Buybacks After Fed Stress Test - Stocktwits",
-      "JPMorgan Chase & Co. (NYSE:JPM) Stock Sold Sen. John Boozman - MarketBeat",
-      "Hemnet jumps as JPM upgrades stock on improving listings, attractive valuation - Investing.com"
+      "Tesla Teases Cybercab Launch Event, But TSLA Stock Isn\u2019t Biting - Barron's",
+      "TSLA Stock Rises Overnight: JPMorgan Says Tesla-SpaceX Merger Looks \u2018Coherent On Paper\u2019 \u2014 But China Approval Risks Loom - Stocktwits",
+      "Petersen Hastings Wealth Advisors Inc. Boosts Stock Position in Tesla, Inc. $TSLA - MarketBeat"
     ],
     "matched_headlines": [
       {
-        "title": "JPM, GS, MS Stocks Edge Higher After-Hours \u2014 Banks Lift Dividends And Announce Buybacks After Fed Stress Test - Stocktwits",
+        "title": "Tesla Teases Cybercab Launch Event, But TSLA Stock Isn\u2019t Biting - Barron's",
         "keywords": [
-          "buyback",
+          "catalyst",
+          "launch"
+        ]
+      },
+      {
+        "title": "TSLA Stock Rises Overnight: JPMorgan Says Tesla-SpaceX Merger Looks \u2018Coherent On Paper\u2019 \u2014 But China Approval Risks Loom - Stocktwits",
+        "keywords": [
+          "approval",
           "catalyst"
         ]
       },
       {
-        "title": "JPMorgan Chase & Co. (NYSE:JPM) Stock Sold Sen. John Boozman - MarketBeat",
+        "title": "Petersen Hastings Wealth Advisors Inc. Boosts Stock Position in Tesla, Inc. $TSLA - MarketBeat",
         "keywords": [
           "beat"
         ]
       },
       {
-        "title": "Hemnet jumps as JPM upgrades stock on improving listings, attractive valuation - Investing.com",
-        "keywords": [
-          "catalyst",
-          "upgrade",
-          "upgrades"
-        ]
-      },
-      {
-        "title": "Is JPMorgan Chase (JPM) Stock A Bargain Or Fully Priced? - simplywall.st",
+        "title": "Tesla Wins Over Another Skeptic: JPMorgan Raises TSLA Stock Price Target By More Than 200% - Stocktwits",
         "keywords": [
           "ai",
-          "catalyst"
+          "catalyst",
+          "raises",
+          "wins"
         ]
       },
       {
-        "title": "Owen LaRue LLC Lowers Stock Holdings in JPMorgan Chase & Co. $JPM - MarketBeat",
+        "title": "OFI Invest Asset Management Lowers Stock Holdings in Tesla, Inc. $TSLA - MarketBeat",
         "keywords": [
           "beat"
         ]
@@ -140,56 +153,59 @@
     ]
   },
   "latest_decision": {
-    "model": "grok-4.3",
-    "action": "HOLD",
-    "symbol": "CASH",
-    "confidence": 65,
+    "model": "grok-4.5",
+    "action": "BUY",
+    "symbol": "TSLA",
+    "confidence": 78,
     "cache_stats": null,
-    "entry_price": 0.0,
-    "stop_loss": 0.0,
-    "take_profit": 0.0,
-    "qty": 0.0,
-    "thesis": "No new catalyst edge justifies adding exposure or rotating. Top candidates JPM and ANET are already held with acceptable setups. Weakest positions show minimal downside and no material rotation opportunity exists within $200 notional limit.",
-    "reason_code": "hold",
+    "entry_price": 339.55,
+    "stop_loss": 328.0,
+    "take_profit": 358.5,
+    "qty": 0.58,
+    "thesis": "TSLA screens as the top ranked liquid catalyst setup with a Cybercab launch headline and bullish sentiment at a neutral RSI. Adding a small starter within the ~$200 notional cap keeps the book at 5 names without forced rotation. Defined risk below recent support targets a 1.5+ R multiple into a post-event bounce.",
+    "reason_code": "new_entry",
     "reasoning": {
-      "headline": "Hold $CASH",
-      "narrative": "No new catalyst edge justifies adding exposure or rotating. Top candidates JPM and ANET are already held with acceptable setups. Weakest positions show minimal downside and no material rotation opportunity exists within $200 notional limit.",
+      "headline": "Bought $TSLA",
+      "narrative": "TSLA screens as the top ranked liquid catalyst setup with a Cybercab launch headline and bullish sentiment at a neutral RSI. Adding a small starter within the ~$200 notional cap keeps the book at 5 names without forced rotation. Defined risk below recent support targets a 1.5+ R multiple into a post-event bounce.",
       "bullets": [
-        "JPM/ANET already positioned with positive or flat P/L",
-        "Reward:risk not met for new names like CRWD/HOOD",
-        "Book at 4 names; no rotation candidate materially superior"
+        "Rank 88.8 + Cybercab catalyst",
+        "Neutral RSI 50 leaves room for upside",
+        "Size ~$197 notional inside cash/risk limits",
+        "Stop/target set for R:R >=1.5"
       ],
       "risk_map": {
-        "stop": 0.0,
-        "target": 0.0,
+        "stop": 328.0,
+        "target": 358.5,
         "horizon_days": 5,
-        "rr": 0.0,
-        "confidence_10": 6,
-        "confidence": 65
+        "rr": 1.64,
+        "confidence_10": 8,
+        "confidence": 78
       },
-      "thesis": "No new catalyst edge justifies adding exposure or rotating. Top candidates JPM and ANET are already held with acceptable setups. Weakest positions show minimal downside and no material rotation opportunity exists within $200 notional limit."
+      "thesis": "TSLA screens as the top ranked liquid catalyst setup with a Cybercab launch headline and bullish sentiment at a neutral RSI. Adding a small starter within the ~$200 notional cap keeps the book at 5 names without forced rotation. Defined risk below recent support targets a 1.5+ R multiple into a post-event bounce."
     },
     "source": "live",
     "provider": "xai",
-    "provider_model_id": "grok-4.3",
+    "provider_model_id": "grok-4.5",
     "bullets": [
-      "JPM/ANET already positioned with positive or flat P/L",
-      "Reward:risk not met for new names like CRWD/HOOD",
-      "Book at 4 names; no rotation candidate materially superior"
+      "Rank 88.8 + Cybercab catalyst",
+      "Neutral RSI 50 leaves room for upside",
+      "Size ~$197 notional inside cash/risk limits",
+      "Stop/target set for R:R >=1.5"
     ],
-    "timestamp": "2026-08-18T19:48:04.494246+00:00"
+    "timestamp": "2026-08-19T13:33:49.449765+00:00"
   },
-  "stance": "Holding CVX, PANW, JPM, ANET. No new trade right now.",
+  "stance": "Buying pressure on TSLA. TSLA screens as the top ranked liquid catalyst setup with a Cybercab launch headline and bullish sentiment at a neutral RSI. Adding a small starter within the ~$200 notional cap keeps the book at 5 names without forced rotation. Defined risk below recent support targets a 1.5+ R multiple into a post-event bounce.",
   "thinking": {
-    "badge": "Holding what it owns",
-    "headline": "Holding CVX, PANW, JPM, ANET. No new trade right now.",
-    "plain_english": "Right now Hermes is holding CVX, PANW, JPM, ANET and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
+    "badge": "Looking to buy TSLA",
+    "headline": "Buying pressure on TSLA.",
+    "plain_english": "Right now Hermes wants exposure to TSLA. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
     "triggers": [
       "It owns CVX, bought near $197.26. Simple plan: sell if it falls to about $191.00, or take profit near $207.00.",
       "It owns PANW, bought near $375.76. Simple plan: sell if it falls to about $365.00, or take profit near $392.00.",
       "It owns JPM, bought near $360.57. Simple plan: sell if it falls to about $350.00, or take profit near $378.00.",
       "It owns ANET, bought near $194.09. Simple plan: sell if it falls to about $187.50, or take profit near $204.50.",
-      "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
+      "It owns TSLA, bought near $339.55. Simple plan: sell if it falls to about $328.00, or take profit near $358.50.",
+      "Book is at max open names (5). A new buy needs a free slot, enough cash, or a gated rotation.",
       "If nothing looks clean, do nothing. Sitting in cash or holdings is allowed."
     ],
     "owned": [
@@ -199,8 +215,8 @@
         "avg_cost": 197.26,
         "stop": 191.0,
         "target": 207.0,
-        "last": 204.50999450683594,
-        "open_pnl": 7.32,
+        "last": 204.52499389648438,
+        "open_pnl": 7.34,
         "open_pnl_pct": 3.68,
         "line": "Bought near $197.26 \u00b7 Sell safety line $191.00 \u00b7 Profit target $207.00",
         "plan": "stop 191.0 or target 207.0"
@@ -211,9 +227,9 @@
         "avg_cost": 375.76,
         "stop": 365.0,
         "target": 392.0,
-        "last": 371.0,
-        "open_pnl": -2.52,
-        "open_pnl_pct": -1.27,
+        "last": 373.3299865722656,
+        "open_pnl": -1.29,
+        "open_pnl_pct": -0.65,
         "line": "Bought near $375.76 \u00b7 Sell safety line $365.00 \u00b7 Profit target $392.00",
         "plan": "stop 365.0 or target 392.0"
       },
@@ -223,9 +239,9 @@
         "avg_cost": 360.57,
         "stop": 350.0,
         "target": 378.0,
-        "last": 361.07000732421875,
-        "open_pnl": 0.28,
-        "open_pnl_pct": 0.14,
+        "last": 360.5299987792969,
+        "open_pnl": -0.02,
+        "open_pnl_pct": -0.01,
         "line": "Bought near $360.57 \u00b7 Sell safety line $350.00 \u00b7 Profit target $378.00",
         "plan": "stop 350.0 or target 378.0"
       },
@@ -235,60 +251,195 @@
         "avg_cost": 194.09,
         "stop": 187.5,
         "target": 204.5,
-        "last": 193.72000122070312,
-        "open_pnl": -0.38,
-        "open_pnl_pct": -0.19,
+        "last": 191.74000549316406,
+        "open_pnl": -2.42,
+        "open_pnl_pct": -1.21,
         "line": "Bought near $194.09 \u00b7 Sell safety line $187.50 \u00b7 Profit target $204.50",
         "plan": "stop 187.5 or target 204.5"
+      },
+      {
+        "symbol": "TSLA",
+        "qty": 0.58,
+        "avg_cost": 339.55,
+        "stop": 328.0,
+        "target": 358.5,
+        "last": 339.6358947753906,
+        "open_pnl": 0.05,
+        "open_pnl_pct": 0.03,
+        "line": "Bought near $339.55 \u00b7 Sell safety line $328.00 \u00b7 Profit target $358.50",
+        "plan": "stop 328.0 or target 358.5"
       }
     ],
-    "last_checked": "2026-08-19T13:30:47.801861+00:00",
+    "last_checked": "2026-08-19T13:34:16.275411+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "HOLD",
+    "action": "BUY",
     "symbols_held": [
       "CVX",
       "PANW",
       "JPM",
-      "ANET"
+      "ANET",
+      "TSLA"
     ],
     "model_chips": [
       {
         "prefix": "J",
         "model": "grok-4.3",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 65,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "TSLA",
+        "confidence": 82,
+        "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "claude-haiku-4-5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 62,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "TSLA",
+        "confidence": 72,
+        "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "deepseek-v4-flash",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 70,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "TSLA",
+        "confidence": 72,
+        "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 65,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "TSLA",
+        "confidence": 82,
+        "tone": "buy"
+      },
+      {
+        "prefix": "S",
+        "model": "grok-4.5",
+        "action": "BUY",
+        "symbol": "TSLA",
+        "confidence": 78,
+        "tone": "buy"
+      },
+      {
+        "prefix": "S",
+        "model": "claude-sonnet-5",
+        "action": "BUY",
+        "symbol": "TSLA",
+        "confidence": 72,
+        "tone": "buy"
+      },
+      {
+        "prefix": "S",
+        "model": "claude-opus-5",
+        "action": "BUY",
+        "symbol": "TSLA",
+        "confidence": 90,
+        "tone": "buy"
       }
     ]
   },
-  "activity": [],
+  "activity": [
+    {
+      "type": "fill",
+      "symbol": "TSLA",
+      "status": "filled_paper",
+      "headline": "BUY TSLA @ $339.55",
+      "detail": "TSLA screens as the top ranked liquid catalyst setup with a Cybercab launch headline and bullish sentiment at a neutral RSI. Adding a small starter within the ~$200 notional cap keeps the book at 5 names without forced rotation. Defined risk below recent support targets a 1.5+ R multiple into a post-event bounce.",
+      "timestamp": "2026-08-19T13:33:49.451766+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "TSLA",
+      "status": "validated",
+      "headline": "BUY TSLA \u2014 validated",
+      "detail": "TSLA screens as the top ranked liquid catalyst setup with a Cybercab launch headline and bullish sentiment at a neutral RSI. Adding a small starter within the ~$200 notional cap keeps the book at 5 names without forced rotation. Defined risk below recent support targets a 1.5+ R multiple into a post-event bounce.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "TSLA",
+          "confidence": 82,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "TSLA",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "TSLA",
+          "confidence": 72,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "TSLA",
+          "confidence": 82,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "TSLA",
+          "confidence": 78,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "TSLA",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "BUY",
+          "symbol": "TSLA",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "TSLA",
+      "timestamp": "2026-08-19T13:33:49.449765+00:00"
+    }
+  ],
   "recent_trades": [
+    {
+      "timestamp": "2026-08-19T13:33:49.451766+00:00",
+      "action": "BUY",
+      "symbol": "TSLA",
+      "qty": 0.58,
+      "price": 339.55,
+      "notional": 196.94,
+      "realized_pnl": null,
+      "reason": null,
+      "thesis": "TSLA screens as the top ranked liquid catalyst setup with a Cybercab launch headline and bullish sentiment at a neutral RSI. Adding a small starter within the ~$200 notional cap keeps the book at 5 names without forced rotation. Defined risk below recent support targets a 1.5+ R multiple into a post-event bounce.",
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-08-18T16:18:34.818579+00:00",
       "action": "SELL",
@@ -396,21 +547,37 @@
       "reason": "rotation",
       "thesis": "",
       "status": "FILLED_PAPER"
-    },
-    {
-      "timestamp": "2026-08-18T15:18:00.710912+00:00",
-      "action": "BUY",
-      "symbol": "MSFT",
-      "qty": 0.4,
-      "price": 500.0,
-      "notional": 200.0,
-      "realized_pnl": null,
-      "reason": null,
-      "thesis": "",
-      "status": "FILLED_PAPER"
     }
   ],
   "trade_reasoning": [
+    {
+      "timestamp": "2026-08-19T13:33:49.451766+00:00",
+      "action": "BUY",
+      "symbol": "TSLA",
+      "qty": 0.58,
+      "price": 339.55,
+      "notional": 196.94,
+      "headline": "Bought $TSLA",
+      "side_label": "buy",
+      "narrative": "TSLA screens as the top ranked liquid catalyst setup with a Cybercab launch headline and bullish sentiment at a neutral RSI. Adding a small starter within the ~$200 notional cap keeps the book at 5 names without forced rotation. Defined risk below recent support targets a 1.5+ R multiple into a post-event bounce.",
+      "bullets": [
+        "Rank 88.8 + Cybercab catalyst",
+        "Neutral RSI 50 leaves room for upside",
+        "Size ~$197 notional inside cash/risk limits",
+        "Stop/target set for R:R >=1.5"
+      ],
+      "risk_map": {
+        "stop": 328.0,
+        "target": 358.5,
+        "horizon_days": 5,
+        "rr": 1.64,
+        "confidence_10": 8,
+        "confidence": 78
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-08-18T16:18:34.818579+00:00",
       "action": "SELL",
@@ -9715,44 +9882,152 @@
   ],
   "top_candidates": [
     {
-      "symbol": "JPM",
-      "name": "JPM",
-      "price": 362.4599914550781,
-      "volume": 3241537.0,
-      "avg_volume": 4861203.7,
-      "percent_change": 0.4155585204757178,
+      "symbol": "TSLA",
+      "name": "TSLA",
+      "price": 339.55499267578125,
+      "volume": 920591.0,
+      "avg_volume": 27760689.1,
+      "percent_change": 0.7970426566663249,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 16,
-      "liquidity_score": 76.87,
-      "rank_score": 83.36,
+      "catalyst_score": 17,
+      "liquidity_score": 84.43,
+      "rank_score": 88.8,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (buyback, catalyst): JPM, GS, MS Stocks Edge Higher After-Hours \u2014 Banks Lift Dividends And Announce Buybacks After Fed Stress Test - Stocktwits",
+      "catalyst": "Headline-driven setup (catalyst, launch): Tesla Teases Cybercab Launch Event, But TSLA Stock Isn\u2019t Biting - Barron's",
       "top_headlines": [
-        "JPM, GS, MS Stocks Edge Higher After-Hours \u2014 Banks Lift Dividends And Announce Buybacks After Fed Stress Test - Stocktwits",
-        "JPMorgan Chase & Co. (NYSE:JPM) Stock Sold Sen. John Boozman - MarketBeat",
-        "Hemnet jumps as JPM upgrades stock on improving listings, attractive valuation - Investing.com"
+        "Tesla Teases Cybercab Launch Event, But TSLA Stock Isn\u2019t Biting - Barron's",
+        "TSLA Stock Rises Overnight: JPMorgan Says Tesla-SpaceX Merger Looks \u2018Coherent On Paper\u2019 \u2014 But China Approval Risks Loom - Stocktwits",
+        "Petersen Hastings Wealth Advisors Inc. Boosts Stock Position in Tesla, Inc. $TSLA - MarketBeat"
       ],
       "matched_headlines": [
         {
-          "title": "JPM, GS, MS Stocks Edge Higher After-Hours \u2014 Banks Lift Dividends And Announce Buybacks After Fed Stress Test - Stocktwits",
+          "title": "Tesla Teases Cybercab Launch Event, But TSLA Stock Isn\u2019t Biting - Barron's",
           "keywords": [
-            "buyback",
+            "catalyst",
+            "launch"
+          ]
+        },
+        {
+          "title": "TSLA Stock Rises Overnight: JPMorgan Says Tesla-SpaceX Merger Looks \u2018Coherent On Paper\u2019 \u2014 But China Approval Risks Loom - Stocktwits",
+          "keywords": [
+            "approval",
             "catalyst"
           ]
         },
         {
-          "title": "JPMorgan Chase & Co. (NYSE:JPM) Stock Sold Sen. John Boozman - MarketBeat",
+          "title": "Petersen Hastings Wealth Advisors Inc. Boosts Stock Position in Tesla, Inc. $TSLA - MarketBeat",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "Hemnet jumps as JPM upgrades stock on improving listings, attractive valuation - Investing.com",
+          "title": "Tesla Wins Over Another Skeptic: JPMorgan Raises TSLA Stock Price Target By More Than 200% - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "raises",
+            "wins"
+          ]
+        },
+        {
+          "title": "OFI Invest Asset Management Lowers Stock Holdings in Tesla, Inc. $TSLA - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "PANW",
+      "name": "PANW",
+      "price": 371.0,
+      "volume": 149898.0,
+      "avg_volume": 4698499.8,
+      "percent_change": -0.8392619141227196,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 17,
+      "liquidity_score": 76.72,
+      "rank_score": 87.68,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (beat): Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - MarketBeat",
+      "top_headlines": [
+        "Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - MarketBeat",
+        "$PANW stock is down 3% today. Here's what we see in our data. - Quiver Quantitative",
+        "PANW Price Targets Raised By Citi, Goldman Sachs On AI-Driven Security Demand - Stocktwits"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "PANW Price Targets Raised By Citi, Goldman Sachs On AI-Driven Security Demand - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "demand",
+            "raised"
+          ]
+        },
+        {
+          "title": "Get Paid 15% A Year To Wait For PANW Stock To Go On Sale - Trefis",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Palo Alto CEO Says 'Cybersecurity SaaSpocalypse Is Dead' \u2013 PANW Stock Slips Premarket Despite Analyst Upgrades - Stocktwits",
           "keywords": [
             "catalyst",
             "upgrade",
             "upgrades"
+          ]
+        },
+        {
+          "title": "PANW 260814 200.00C (PANW260814C200000) Stock Options Chain | Quotes & News - Moomoo",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "JPM",
+      "name": "JPM",
+      "price": 361.32501220703125,
+      "volume": 194948.0,
+      "avg_volume": 4581674.8,
+      "percent_change": -0.5299346986837578,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 17,
+      "liquidity_score": 76.61,
+      "rank_score": 87.42,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst): JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
+      "top_headlines": [
+        "JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
+        "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - MarketBeat",
+        "Here\u2019s How Much You Would Have Made Owning JPMorgan Chase Stock In The Last 5 Years - Sahm"
+      ],
+      "matched_headlines": [
+        {
+          "title": "JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - MarketBeat",
+          "keywords": [
+            "beat"
           ]
         },
         {
@@ -9763,9 +10038,16 @@
           ]
         },
         {
-          "title": "Owen LaRue LLC Lowers Stock Holdings in JPMorgan Chase & Co. $JPM - MarketBeat",
+          "title": "Mosley Wealth Management Sells 2,815 Shares of JPMorgan Chase & Co. $JPM - MarketBeat",
           "keywords": [
             "beat"
+          ]
+        },
+        {
+          "title": "JPM, GS, MS Stocks Edge Higher After-Hours \u2014 Banks Lift Dividends And Announce Buybacks After Fed Stress Test - Stocktwits",
+          "keywords": [
+            "buyback",
+            "catalyst"
           ]
         }
       ]
@@ -9773,25 +10055,37 @@
     {
       "symbol": "ANET",
       "name": "ANET",
-      "price": 193.19000244140625,
-      "volume": 6060636.0,
-      "avg_volume": 8128983.6,
-      "percent_change": -4.266600832579404,
+      "price": 194.34120178222656,
+      "volume": 140735.0,
+      "avg_volume": 6402563.5,
+      "percent_change": 0.6011021588525466,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 15,
-      "liquidity_score": 79.1,
-      "rank_score": 82.78,
+      "liquidity_score": 78.06,
+      "rank_score": 79.69,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): Deutsche Bank AG Acquires 388,354 Shares of Arista Networks, Inc. $ANET - MarketBeat",
+      "catalyst": "Headline-driven setup (beat): Arista Networks, Inc. $ANET Shares Bought by Danske Bank A S - MarketBeat",
       "top_headlines": [
-        "Arista Networks Inc Stock (ANET) Moved Down by 5.06% on Aug 18: What Investors Need To Know - TradingKey",
-        "Deutsche Bank AG Acquires 388,354 Shares of Arista Networks, Inc. $ANET - MarketBeat",
-        "The Bull Case For Arista Networks (ANET) Could Change Following Its Upbeat AI Networking Revenue Outlook - simplywall.st"
+        "Arista Networks, Inc. $ANET Shares Bought by Danske Bank A S - MarketBeat",
+        "Arista Networks \u2022 Robinhood Token - ANET - Stock Price & News - The Motley Fool",
+        "Arista Networks Inc (ANET) Shares Fall 4.3% -- GF Value Says Sti - GuruFocus"
       ],
       "matched_headlines": [
         {
-          "title": "Deutsche Bank AG Acquires 388,354 Shares of Arista Networks, Inc. $ANET - MarketBeat",
+          "title": "Arista Networks, Inc. $ANET Shares Bought by Danske Bank A S - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Arista Networks Inc (ANET) Shares Fall 4.3% -- GF Value Says Sti - GuruFocus",
+          "keywords": [
+            "fall"
+          ]
+        },
+        {
+          "title": "Arista Networks, Inc. $ANET Shares Purchased by Wealthfront Advisers LLC - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -9805,21 +10099,7 @@
           ]
         },
         {
-          "title": "Pallas Capital Advisors LLC Cuts Stock Holdings in Arista Networks, Inc. $ANET - MarketBeat",
-          "keywords": [
-            "beat",
-            "cut",
-            "cuts"
-          ]
-        },
-        {
-          "title": "Private Advisory Group LLC Purchases 13,888 Shares of Arista Networks, Inc. $ANET - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Arista Networks, Inc. $ANET Shares Sold by ABN AMRO Bank N.V. - MarketBeat",
+          "title": "Arista Networks, Inc. $ANET Shares Sold by GSA Capital Partners LLP - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -9827,162 +10107,55 @@
       ]
     },
     {
-      "symbol": "PANW",
-      "name": "PANW",
-      "price": 374.4800109863281,
-      "volume": 3134912.0,
-      "avg_volume": 5063341.2,
-      "percent_change": -0.340642629878378,
+      "symbol": "MSFT",
+      "name": "MSFT",
+      "price": 480.1600036621094,
+      "volume": 750926.0,
+      "avg_volume": 24224812.6,
+      "percent_change": -0.30521379602601745,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 12,
-      "liquidity_score": 77.04,
-      "rank_score": 67.33,
+      "catalyst_score": 14,
+      "liquidity_score": 83.84,
+      "rank_score": 76.32,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): PANW Stock Rises Overnight On Anthropic Integration, New AI Gateway Buy \u2014 But Retail Is Still Not Sold - Stocktwits",
+      "catalyst": "Headline-driven setup (beat): Microsoft Corporation $MSFT Stock Position Boosted by Hamilton Wealth LLC - MarketBeat",
       "top_headlines": [
-        "$PANW stock is down 3% today. Here's what we see in our data. - Quiver Quantitative",
-        "PANW Stock Rises Overnight On Anthropic Integration, New AI Gateway Buy \u2014 But Retail Is Still Not Sold - Stocktwits",
-        "PANW vs. NET: Which Cybersecurity Stock Has an Edge Right Now? - Yahoo Finance"
+        "Microsoft Corporation $MSFT Stock Position Boosted by Hamilton Wealth LLC - MarketBeat",
+        "Microsoft Corporation\u2019s (MSFT) Rich Innovation Legacy Anchors Platform Growth - Yahoo Finance",
+        "Microsoft (MSFT) Stock Quotes, Company News And Chart Analysis - Investor's Business Daily"
       ],
       "matched_headlines": [
         {
-          "title": "PANW Stock Rises Overnight On Anthropic Integration, New AI Gateway Buy \u2014 But Retail Is Still Not Sold - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "3,563 Shares in Palo Alto Networks, Inc. $PANW Purchased by Focused Wealth Management Inc - MarketBeat",
+          "title": "Microsoft Corporation $MSFT Stock Position Boosted by Hamilton Wealth LLC - MarketBeat",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "PANW 260814 200.00C (PANW260814C200000) Stock Options Chain | Quotes & News - Moomoo",
+          "title": "Microsoft Corporation\u2019s (MSFT) Rich Innovation Legacy Anchors Platform Growth - Yahoo Finance",
           "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "PANW Looks 75.7% Overvalued on GF Value\u2122 as Earnings Approach - GuruFocus",
-          "keywords": [
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Palo Alto Networks (NASDAQ:PANW) Stock Price Down 2.2% - Time to Sell? - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "TSLA",
-      "name": "TSLA",
-      "price": 336.95001220703125,
-      "volume": 23288779.0,
-      "avg_volume": 29986607.9,
-      "percent_change": -0.6925952462371996,
-      "exchange": "",
-      "sentiment": "bearish",
-      "catalyst_score": -11,
-      "liquidity_score": 84.77,
-      "rank_score": 63.27,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (delay, delays): TSLA Stock Slips Premarket: Musk Joins Trump\u2019s China Trip As FSD Delays Threaten Tesla\u2019s Biggest Factory - Stocktwits",
-      "top_headlines": [
-        "TSLA Stock Slips Premarket: Musk Joins Trump\u2019s China Trip As FSD Delays Threaten Tesla\u2019s Biggest Factory - Stocktwits",
-        "Tesla (TSLA) Stock Looks Expensive Given Its Current Sales Premium - simplywall.st",
-        "Tesla: Back Into Negative Free Cash Flow Territory (NASDAQ:TSLA) - Seeking Alpha"
-      ],
-      "matched_headlines": [
-        {
-          "title": "TSLA Stock Slips Premarket: Musk Joins Trump\u2019s China Trip As FSD Delays Threaten Tesla\u2019s Biggest Factory - Stocktwits",
-          "keywords": [
-            "delay",
-            "delays"
-          ]
-        },
-        {
-          "title": "Tesla Stock Drops 1.38% in Tuesday Premarket - Tesla (NASDAQ:TSLA) - Benzinga",
-          "keywords": [
-            "drop",
-            "drops"
-          ]
-        },
-        {
-          "title": "TSLA Stock Weakens As Elon Musk\u2019s Optimus Faces New Challengers - Stocktwits",
-          "keywords": [
-            "weak"
-          ]
-        },
-        {
-          "title": "TSLA Stock In Focus: Could Optimus Be The Missing Link Between Tesla And SpaceX? - Stocktwits",
-          "keywords": [
-            "miss"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "CRWD",
-      "name": "CRWD",
-      "price": 213.10000610351562,
-      "volume": 4285735.0,
-      "avg_volume": 6482993.5,
-      "percent_change": -0.37400084889946245,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 10,
-      "liquidity_score": 78.12,
-      "rank_score": 59.52,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (catalyst, downgrade, downgrades): SA analyst upgrades/downgrades: GOOG, CRWD, PLTR, PYPL - Seeking Alpha",
-      "top_headlines": [
-        "CrowdStrike (CRWD) Stock Looks Overvalued Following Its 4.6x Three Year Run - simplywall.st",
-        "CRWD vs. FTNT: Which Cybersecurity Stock Should You Buy Right Now? - Zacks Investment Research",
-        "SA analyst upgrades/downgrades: GOOG, CRWD, PLTR, PYPL - Seeking Alpha"
-      ],
-      "matched_headlines": [
-        {
-          "title": "SA analyst upgrades/downgrades: GOOG, CRWD, PLTR, PYPL - Seeking Alpha",
-          "keywords": [
-            "catalyst",
-            "downgrade",
-            "downgrades",
-            "upgrade",
-            "upgrades"
-          ]
-        },
-        {
-          "title": "CRWD Could Beat Q2 Expectations Across The Board, Says Benchmark \u2014 Firm Sees Multiple Growth Catalysts - TradingView",
-          "keywords": [
-            "beat",
             "growth"
           ]
         },
         {
-          "title": "Renaissance Technologies Has Taken a New Position in CrowdStrike. What This Means for CRWD Stock. - Barchart.com",
+          "title": "Microsoft (MSFT) Stock Quotes, Company News And Chart Analysis - Investor's Business Daily",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "CRWD Maintained by Barclays -- Price Target Raised to $235 - GuruFocus",
+          "title": "Microsoft Corporation $MSFT Stock Holdings Lessened by BSN CAPITAL PARTNERS Ltd - MarketBeat",
           "keywords": [
-            "ai",
-            "catalyst",
-            "raised"
+            "beat"
           ]
         },
         {
-          "title": "CrowdStrike hits 52-week high: Is CRWD stock a buy before Q2 earnings? - Investing.com",
+          "title": "Microsoft Corporation $MSFT Shares Sold by Cedar Mountain Advisors LLC - MarketBeat",
           "keywords": [
+            "ai",
+            "beat",
             "catalyst"
           ]
         }
@@ -10015,8 +10188,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 4,
-      "BUY": 0,
+      "HOLD": 0,
+      "BUY": 4,
       "SELL": 0,
       "live": 4,
       "fallback": 0
@@ -10033,25 +10206,25 @@
     "max_candidates_to_llm": 8,
     "log_all_disagreements": true,
     "decision_mode": "live_dual_llm",
-    "last_tier": "junior_only",
+    "last_tier": "senior_escalated",
     "last_stage": "entry",
-    "last_junior_nomination": null,
-    "last_escalate_reason": "",
-    "live_share_recent": 80.7
+    "last_junior_nomination": "TSLA",
+    "last_escalate_reason": "junior_nomination",
+    "live_share_recent": 85.7
   },
   "learning": {
     "candidate_signals_logged": 8,
-    "fills_logged": 278,
+    "fills_logged": 279,
     "closed_outcomes": 126,
-    "consensus_events": 239,
+    "consensus_events": 240,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1034.25,
-    "change": 34.25,
-    "change_pct": 3.43,
+    "latest_equity": 1033.2,
+    "change": 33.2,
+    "change_pct": 3.32,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -14059,6 +14232,18 @@
         "t": "2026-08-19T13:30:50.864663+00:00",
         "equity": 1034.25,
         "cash": 232.94,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-19T13:33:49.451766+00:00",
+        "equity": 1034.25,
+        "cash": 36.0,
+        "event": "BUY TSLA"
+      },
+      {
+        "t": "2026-08-19T13:34:19.437770+00:00",
+        "equity": 1033.2,
+        "cash": 36.0,
         "event": "mark"
       }
     ],
