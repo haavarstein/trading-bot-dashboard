@@ -1,34 +1,34 @@
 {
-  "generated_at": "2026-08-19T16:30:40.656416+00:00",
+  "generated_at": "2026-08-19T16:33:52.118698+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1021.86,
+    "portfolio_value": 1021.73,
     "starting_cash": 1000.0,
-    "total_return_pct": 2.19,
-    "total_pnl": 21.86,
+    "total_return_pct": 2.17,
+    "total_pnl": 21.73,
     "realized_pnl": 18.84,
-    "open_pnl": 3.0,
-    "capital_deployed": 398.25,
+    "open_pnl": 2.87,
+    "capital_deployed": 398.12,
     "cash": 623.61,
     "closed_trades": 17,
     "win_rate_pct": 35.29,
-    "vs_spy_pct": 2.05,
-    "spy_return_pct": 0.14,
+    "vs_spy_pct": 2.01,
+    "spy_return_pct": 0.16,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-19T16:30:43.537759+00:00"
+    "updated_at": "2026-08-19T16:33:55.012462+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.14,
-    "price": 770.4450073242188,
+    "return_pct": 0.16,
+    "price": 770.6500244140625,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 12,
+    "consensus_count_today": 13,
     "validated_count_today": 5,
-    "blocked_count_today": 7,
+    "blocked_count_today": 8,
     "fills_today": 4,
     "simulated_orders_today": 5,
     "top_symbol_today": "TSLA"
@@ -38,10 +38,10 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 360.57,
-      "last": 357.4200134277344,
-      "market_value": 196.58,
-      "open_pnl": -1.73,
-      "open_pnl_pct": -0.87,
+      "last": 357.56500244140625,
+      "market_value": 196.66,
+      "open_pnl": -1.65,
+      "open_pnl_pct": -0.83,
       "stop": 350.0,
       "target": 378.0,
       "thesis": "JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit."
@@ -50,10 +50,10 @@
       "symbol": "TSLA",
       "qty": 0.58,
       "avg_cost": 339.55,
-      "last": 347.69989013671875,
-      "market_value": 201.67,
-      "open_pnl": 4.73,
-      "open_pnl_pct": 2.4,
+      "last": 347.3399963378906,
+      "market_value": 201.46,
+      "open_pnl": 4.52,
+      "open_pnl_pct": 2.29,
       "stop": 328.0,
       "target": 358.5,
       "thesis": "TSLA screens as the top ranked liquid catalyst setup with a Cybercab launch headline and bullish sentiment at a neutral RSI. Adding a small starter within the ~$200 notional cap keeps the book at 5 names without forced rotation. Defined risk below recent support targets a 1.5+ R multiple into a post-event bounce."
@@ -62,15 +62,15 @@
   "latest_candidate": {
     "symbol": "TSLA",
     "name": "TSLA",
-    "price": 348.1400146484375,
-    "volume": 19457910.0,
-    "avg_volume": 29614421.0,
-    "percent_change": 3.345510046785105,
+    "price": 347.71148681640625,
+    "volume": 20498948.0,
+    "avg_volume": 29718524.8,
+    "percent_change": 3.218301379274608,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 18,
-    "liquidity_score": 84.72,
-    "rank_score": 94.88,
+    "liquidity_score": 84.73,
+    "rank_score": 94.78,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (catalyst, launch): Tesla Teases Cybercab Launch Event, But TSLA Stock Isn\u2019t Biting - Barron's",
     "top_headlines": [
@@ -108,7 +108,7 @@
         ]
       },
       {
-        "title": "Petersen Hastings Wealth Advisors Inc. Boosts Stock Position in Tesla, Inc. $TSLA - MarketBeat",
+        "title": "Petersen Hastings Wealth Advisors Inc. Boosts Stock Position in Tesla, Inc. $TSLA - marketbeat.com",
         "keywords": [
           "beat"
         ]
@@ -121,43 +121,43 @@
     "symbol": "PANW",
     "confidence": 72,
     "cache_stats": null,
-    "entry_price": 358.97,
+    "entry_price": 358.29,
     "stop_loss": 348.0,
-    "take_profit": 376.5,
+    "take_profit": 375.0,
     "qty": 0.55,
-    "thesis": "PANW is the strongest unowned liquid name on the board with a fresh positive Cantor price-target catalyst and solid rank/catalyst scores. Adding a small starter keeps the book under five names and deploys only ~$200 notional while TSLA/JPM already capture the top two ranks. Defined risk to 348 offers roughly 1.6:1 reward to the 376.5 target if the bullish analyst follow-through continues.",
+    "thesis": "PANW is the strongest unowned catalyst name with a fresh positive price-target stance from Cantor and solid rank/sentiment support. Book already holds the top two names (TSLA/JPM), so a small third-leg add diversifies into cybersecurity without exceeding notional or name limits. Defined risk under prior support with ~1.6R upside to the analyst-driven extension keeps the plan disciplined.",
     "reason_code": "new_entry",
     "reasoning": {
       "headline": "Bought $PANW",
-      "narrative": "PANW is the strongest unowned liquid name on the board with a fresh positive Cantor price-target catalyst and solid rank/catalyst scores. Adding a small starter keeps the book under five names and deploys only ~$200 notional while TSLA/JPM already capture the top two ranks. Defined risk to 348 offers roughly 1.6:1 reward to the 376.5 target if the bullish analyst follow-through continues.",
+      "narrative": "PANW is the strongest unowned catalyst name with a fresh positive price-target stance from Cantor and solid rank/sentiment support. Book already holds the top two names (TSLA/JPM), so a small third-leg add diversifies into cybersecurity without exceeding notional or name limits. Defined risk under prior support with ~1.6R upside to the analyst-driven extension keeps the plan disciplined.",
       "bullets": [
-        "Highest-ranked non-held name with bullish analyst catalyst",
-        "~$197 notional respects $200 new-buy cap",
-        "Stop 348 / target 376.5 gives R:R >=1.5",
-        "Book still only 3 names after add; cash remains ample"
+        "Cantor positive forecast catalyst; rank ~77 bullish",
+        "~0.55 sh (~$197) fits $200 new-buy cap",
+        "Stop 348 / target 375 gives R:R ~1.6",
+        "Adds non-overlap sector vs JPM+TSLA book"
       ],
       "risk_map": {
         "stop": 348.0,
-        "target": 376.5,
+        "target": 375.0,
         "horizon_days": 5,
-        "rr": 1.6,
+        "rr": 1.62,
         "confidence_10": 7,
         "confidence": 72
       },
-      "thesis": "PANW is the strongest unowned liquid name on the board with a fresh positive Cantor price-target catalyst and solid rank/catalyst scores. Adding a small starter keeps the book under five names and deploys only ~$200 notional while TSLA/JPM already capture the top two ranks. Defined risk to 348 offers roughly 1.6:1 reward to the 376.5 target if the bullish analyst follow-through continues."
+      "thesis": "PANW is the strongest unowned catalyst name with a fresh positive price-target stance from Cantor and solid rank/sentiment support. Book already holds the top two names (TSLA/JPM), so a small third-leg add diversifies into cybersecurity without exceeding notional or name limits. Defined risk under prior support with ~1.6R upside to the analyst-driven extension keeps the plan disciplined."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Highest-ranked non-held name with bullish analyst catalyst",
-      "~$197 notional respects $200 new-buy cap",
-      "Stop 348 / target 376.5 gives R:R >=1.5",
-      "Book still only 3 names after add; cash remains ample"
+      "Cantor positive forecast catalyst; rank ~77 bullish",
+      "~0.55 sh (~$197) fits $200 new-buy cap",
+      "Stop 348 / target 375 gives R:R ~1.6",
+      "Adds non-overlap sector vs JPM+TSLA book"
     ],
-    "timestamp": "2026-08-19T16:18:10.984750+00:00"
+    "timestamp": "2026-08-19T16:33:42.848412+00:00"
   },
-  "stance": "Buying pressure on PANW. PANW is the strongest unowned liquid name on the board with a fresh positive Cantor price-target catalyst and solid rank/catalyst scores. Adding a small starter keeps the book under five names and deploys only ~$200 notional while TSLA/JPM already capture the top two ranks. Defined risk to 348 offers roughly 1.6:1 reward to the 376.5 target if the bullish analyst follow-through continues.",
+  "stance": "Buying pressure on PANW. PANW is the strongest unowned catalyst name with a fresh positive price-target stance from Cantor and solid rank/sentiment support. Book already holds the top two names (TSLA/JPM), so a small third-leg add diversifies into cybersecurity without exceeding notional or name limits. Defined risk under prior support with ~1.6R upside to the analyst-driven extension keeps the plan disciplined.",
   "thinking": {
     "badge": "Looking to buy PANW",
     "headline": "Buying pressure on PANW.",
@@ -175,9 +175,9 @@
         "avg_cost": 360.57,
         "stop": 350.0,
         "target": 378.0,
-        "last": 357.4200134277344,
-        "open_pnl": -1.73,
-        "open_pnl_pct": -0.87,
+        "last": 357.56500244140625,
+        "open_pnl": -1.65,
+        "open_pnl_pct": -0.83,
         "line": "Bought near $360.57 \u00b7 Sell safety line $350.00 \u00b7 Profit target $378.00",
         "plan": "stop 350.0 or target 378.0"
       },
@@ -187,14 +187,14 @@
         "avg_cost": 339.55,
         "stop": 328.0,
         "target": 358.5,
-        "last": 347.69989013671875,
-        "open_pnl": 4.73,
-        "open_pnl_pct": 2.4,
+        "last": 347.3399963378906,
+        "open_pnl": 4.52,
+        "open_pnl_pct": 2.29,
         "line": "Bought near $339.55 \u00b7 Sell safety line $328.00 \u00b7 Profit target $358.50",
         "plan": "stop 328.0 or target 358.5"
       }
     ],
-    "last_checked": "2026-08-19T16:30:40.656416+00:00",
+    "last_checked": "2026-08-19T16:33:52.118698+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -208,7 +208,7 @@
         "model": "grok-4.3",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 60,
+        "confidence": 65,
         "tone": "hold"
       },
       {
@@ -224,16 +224,16 @@
         "model": "deepseek-v4-flash",
         "action": "BUY",
         "symbol": "PANW",
-        "confidence": 74,
+        "confidence": 72,
         "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "BUY",
-        "symbol": "TSLA",
-        "confidence": 72,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 65,
+        "tone": "hold"
       },
       {
         "prefix": "S",
@@ -262,6 +262,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "PANW",
+      "status": "blocked",
+      "headline": "BUY PANW \u2014 blocked",
+      "detail": "Insufficient buying power: $36.00 < $197.06",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 72,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "JPM",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-08-19T16:33:42.848412+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "PANW",
@@ -808,38 +885,6 @@
       "headline": "SELL ANET @ $185.68",
       "detail": "HERMES AUTO-TRADE: Exiting full ANET position on stop-loss. Price $185.68 tagged invalidation at $187.50. Realized path $-8.66.",
       "timestamp": "2026-08-19T14:31:07.807886+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "ANET",
-      "status": "validated",
-      "headline": "SELL ANET \u2014 validated",
-      "detail": "deterministic stop_loss exit",
-      "agents": [
-        {
-          "model": "risk-gate",
-          "action": "SELL",
-          "symbol": "ANET",
-          "confidence": 95,
-          "source": null,
-          "provider": null,
-          "tier": "senior"
-        },
-        {
-          "model": "risk-gate",
-          "action": "SELL",
-          "symbol": "ANET",
-          "confidence": 95,
-          "source": null,
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "risk_exit",
-      "escalate_reason": "stop_loss",
-      "stage": "exit",
-      "junior_nomination": null,
-      "timestamp": "2026-08-19T14:31:07.805686+00:00"
     },
     {
       "type": "fill",
@@ -10488,15 +10533,15 @@
     {
       "symbol": "TSLA",
       "name": "TSLA",
-      "price": 348.1400146484375,
-      "volume": 19457910.0,
-      "avg_volume": 29614421.0,
-      "percent_change": 3.345510046785105,
+      "price": 347.71148681640625,
+      "volume": 20498948.0,
+      "avg_volume": 29718524.8,
+      "percent_change": 3.218301379274608,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 18,
-      "liquidity_score": 84.72,
-      "rank_score": 94.88,
+      "liquidity_score": 84.73,
+      "rank_score": 94.78,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, launch): Tesla Teases Cybercab Launch Event, But TSLA Stock Isn\u2019t Biting - Barron's",
       "top_headlines": [
@@ -10534,7 +10579,7 @@
           ]
         },
         {
-          "title": "Petersen Hastings Wealth Advisors Inc. Boosts Stock Position in Tesla, Inc. $TSLA - MarketBeat",
+          "title": "Petersen Hastings Wealth Advisors Inc. Boosts Stock Position in Tesla, Inc. $TSLA - marketbeat.com",
           "keywords": [
             "beat"
           ]
@@ -10544,21 +10589,21 @@
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 358.9649963378906,
-      "volume": 2562194.0,
-      "avg_volume": 4818399.4,
-      "percent_change": -1.1796293632785617,
+      "price": 357.5,
+      "volume": 2690964.0,
+      "avg_volume": 4831276.4,
+      "percent_change": -1.5829318651066757,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 17,
-      "liquidity_score": 76.83,
-      "rank_score": 87.97,
+      "liquidity_score": 76.84,
+      "rank_score": 88.29,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
       "top_headlines": [
         "JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
-        "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - MarketBeat",
-        "Here\u2019s How Much You Would Have Made Owning JPMorgan Chase Stock In The Last 5 Years - Sahm"
+        "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - marketbeat.com",
+        "Here\u2019s How Much You Would Have Made Owning JPMorgan Chase Stock In The Last 5 Years - sahmcapital.com"
       ],
       "matched_headlines": [
         {
@@ -10569,7 +10614,7 @@
           ]
         },
         {
-          "title": "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - MarketBeat",
+          "title": "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - marketbeat.com",
           "keywords": [
             "beat"
           ]
@@ -10582,7 +10627,7 @@
           ]
         },
         {
-          "title": "Mosley Wealth Management Sells 2,815 Shares of JPMorgan Chase & Co. $JPM - MarketBeat",
+          "title": "Mosley Wealth Management Sells 2,815 Shares of JPMorgan Chase & Co. $JPM - marketbeat.com",
           "keywords": [
             "beat"
           ]
@@ -10599,25 +10644,25 @@
     {
       "symbol": "PANW",
       "name": "PANW",
-      "price": 358.9649963378906,
-      "volume": 2189738.0,
-      "avg_volume": 4902483.8,
-      "percent_change": -4.055973089327576,
+      "price": 358.2900085449219,
+      "volume": 2276552.0,
+      "avg_volume": 4911165.2,
+      "percent_change": -4.236383568437383,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 14,
-      "liquidity_score": 76.9,
-      "rank_score": 76.78,
+      "liquidity_score": 76.91,
+      "rank_score": 76.93,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - MarketBeat",
+      "catalyst": "Headline-driven setup (beat): Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - marketbeat.com",
       "top_headlines": [
         "PANW Stock Quote Price and Forecast - CNN",
-        "Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - MarketBeat",
-        "$PANW stock is down 3% today. Here's what we see in our data. - Quiver Quantitative"
+        "Palo Alto Networks Inc Stock (PANW) Moved Down by 3.79% on Aug 19: Facts Behind the Movement - TradingKey",
+        "Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - marketbeat.com"
       ],
       "matched_headlines": [
         {
-          "title": "Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - MarketBeat",
+          "title": "Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - marketbeat.com",
           "keywords": [
             "beat"
           ]
@@ -10650,25 +10695,25 @@
     {
       "symbol": "ANET",
       "name": "ANET",
-      "price": 187.8699951171875,
-      "volume": 2331005.0,
-      "avg_volume": 6621590.5,
-      "percent_change": -2.74873059318604,
+      "price": 188.08999633789062,
+      "volume": 2415769.0,
+      "avg_volume": 6630066.9,
+      "percent_change": -2.6348465321837398,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 12,
-      "liquidity_score": 78.21,
-      "rank_score": 69.43,
+      "liquidity_score": 78.22,
+      "rank_score": 69.34,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): Arista Networks, Inc. $ANET Shares Purchased by Wealthfront Advisers LLC - MarketBeat",
+      "catalyst": "Headline-driven setup (beat): Arista Networks, Inc. $ANET Shares Purchased by Wealthfront Advisers LLC - marketbeat.com",
       "top_headlines": [
-        "Arista Networks, Inc. $ANET Shares Purchased by Wealthfront Advisers LLC - MarketBeat",
+        "Arista Networks, Inc. $ANET Shares Purchased by Wealthfront Advisers LLC - marketbeat.com",
         "Arista Networks \u2022 Robinhood Token - ANET - Stock Price & News - The Motley Fool",
         "Arista Networks Inc (ANET) Shares Fall 4.3% -- GF Value Says Sti - GuruFocus"
       ],
       "matched_headlines": [
         {
-          "title": "Arista Networks, Inc. $ANET Shares Purchased by Wealthfront Advisers LLC - MarketBeat",
+          "title": "Arista Networks, Inc. $ANET Shares Purchased by Wealthfront Advisers LLC - marketbeat.com",
           "keywords": [
             "beat"
           ]
@@ -10680,7 +10725,7 @@
           ]
         },
         {
-          "title": "Arista Networks, Inc. $ANET Shares Bought by Danske Bank A S - MarketBeat",
+          "title": "Arista Networks, Inc. $ANET Shares Bought by Danske Bank A S - marketbeat.com",
           "keywords": [
             "beat"
           ]
@@ -10694,7 +10739,7 @@
           ]
         },
         {
-          "title": "Arista Networks, Inc. $ANET Shares Sold by GSA Capital Partners LLP - MarketBeat",
+          "title": "Arista Networks, Inc. $ANET Shares Sold by GSA Capital Partners LLP - marketbeat.com",
           "keywords": [
             "beat"
           ]
@@ -10704,15 +10749,15 @@
     {
       "symbol": "GOOGL",
       "name": "GOOGL",
-      "price": 346.4200134277344,
-      "volume": 8068956.0,
-      "avg_volume": 19941655.6,
-      "percent_change": 0.6449741841867881,
+      "price": 345.7900085449219,
+      "volume": 8637761.0,
+      "avg_volume": 19998536.1,
+      "percent_change": 0.46193965180171626,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 12,
-      "liquidity_score": 83.0,
-      "rank_score": 68.47,
+      "liquidity_score": 83.01,
+      "rank_score": 68.32,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Alphabet (GOOGL) Stock May Be 23% Undervalued Following $25b AI Bond Raise - simplywall.st",
       "top_headlines": [
@@ -10729,7 +10774,7 @@
           ]
         },
         {
-          "title": "Alphabet Inc. $GOOGL Shares Purchased by Nolet Wealth Management LLC - MarketBeat",
+          "title": "Alphabet Inc. $GOOGL Shares Purchased by Nolet Wealth Management LLC - marketbeat.com",
           "keywords": [
             "beat"
           ]
@@ -10742,7 +10787,7 @@
           ]
         },
         {
-          "title": "Alphabet Inc. $GOOGL Shares Acquired by Generali Investments Management Co LLC - MarketBeat",
+          "title": "Alphabet Inc. $GOOGL Shares Acquired by Generali Investments Management Co LLC - marketbeat.com",
           "keywords": [
             "beat"
           ]
@@ -10783,8 +10828,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 2,
-      "BUY": 2,
+      "HOLD": 3,
+      "BUY": 1,
       "SELL": 0,
       "live": 4,
       "fallback": 0
@@ -10805,21 +10850,21 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 79.7
+    "live_share_recent": 80.3
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 282,
     "closed_outcomes": 129,
-    "consensus_events": 251,
+    "consensus_events": 252,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1021.86,
-    "change": 21.86,
-    "change_pct": 2.19,
+    "latest_equity": 1021.73,
+    "change": 21.73,
+    "change_pct": 2.17,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15030,6 +15075,12 @@
       {
         "t": "2026-08-19T16:30:43.537759+00:00",
         "equity": 1021.86,
+        "cash": 623.61,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-19T16:33:55.012462+00:00",
+        "equity": 1021.73,
         "cash": 623.61,
         "event": "mark"
       }
