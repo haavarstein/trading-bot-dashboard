@@ -1,34 +1,34 @@
 {
-  "generated_at": "2026-08-19T15:10:38.751673+00:00",
+  "generated_at": "2026-08-19T15:17:37.195985+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1021.66,
+    "portfolio_value": 1022.15,
     "starting_cash": 1000.0,
-    "total_return_pct": 2.17,
-    "total_pnl": 21.66,
+    "total_return_pct": 2.21,
+    "total_pnl": 22.15,
     "realized_pnl": 18.84,
-    "open_pnl": 2.79,
-    "capital_deployed": 398.05,
+    "open_pnl": 3.29,
+    "capital_deployed": 398.54,
     "cash": 623.61,
     "closed_trades": 17,
     "win_rate_pct": 35.29,
-    "vs_spy_pct": 1.88,
+    "vs_spy_pct": 1.92,
     "spy_return_pct": 0.29,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-19T15:10:41.672294+00:00"
+    "updated_at": "2026-08-19T15:17:40.138686+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
     "return_pct": 0.29,
-    "price": 771.5999755859375,
+    "price": 771.6500244140625,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 7,
+    "consensus_count_today": 8,
     "validated_count_today": 5,
-    "blocked_count_today": 2,
+    "blocked_count_today": 3,
     "fills_today": 4,
     "simulated_orders_today": 5,
     "top_symbol_today": "TSLA"
@@ -38,10 +38,10 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 360.57,
-      "last": 358.2850036621094,
-      "market_value": 197.06,
-      "open_pnl": -1.26,
-      "open_pnl_pct": -0.63,
+      "last": 358.7799987792969,
+      "market_value": 197.33,
+      "open_pnl": -0.98,
+      "open_pnl_pct": -0.5,
       "stop": 350.0,
       "target": 378.0,
       "thesis": "JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit."
@@ -50,10 +50,10 @@
       "symbol": "TSLA",
       "qty": 0.58,
       "avg_cost": 339.55,
-      "last": 346.5400085449219,
-      "market_value": 200.99,
-      "open_pnl": 4.05,
-      "open_pnl_pct": 2.06,
+      "last": 346.9100036621094,
+      "market_value": 201.21,
+      "open_pnl": 4.27,
+      "open_pnl_pct": 2.17,
       "stop": 328.0,
       "target": 358.5,
       "thesis": "TSLA screens as the top ranked liquid catalyst setup with a Cybercab launch headline and bullish sentiment at a neutral RSI. Adding a small starter within the ~$200 notional cap keeps the book at 5 names without forced rotation. Defined risk below recent support targets a 1.5+ R multiple into a post-event bounce."
@@ -62,27 +62,35 @@
   "latest_candidate": {
     "symbol": "PANW",
     "name": "PANW",
-    "price": 356.2900085449219,
-    "volume": 1549174.0,
-    "avg_volume": 4838427.4,
-    "percent_change": -4.770942803401682,
+    "price": 358.5899963378906,
+    "volume": 1691025.0,
+    "avg_volume": 4852612.5,
+    "percent_change": -4.156202945883382,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 19,
-    "liquidity_score": 76.85,
-    "rank_score": 98.84,
+    "catalyst_score": 20,
+    "liquidity_score": 76.86,
+    "rank_score": 102.35,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (beat): Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - MarketBeat",
     "top_headlines": [
       "Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - MarketBeat",
       "$PANW stock is down 3% today. Here's what we see in our data. - Quiver Quantitative",
-      "PANW vs. NET: Which Cybersecurity Stock Has an Edge Right Now? - Yahoo Finance"
+      "PANW Maintained by Truist Securities -- Price Target Raised to $435 - GuruFocus"
     ],
     "matched_headlines": [
       {
         "title": "Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - MarketBeat",
         "keywords": [
           "beat"
+        ]
+      },
+      {
+        "title": "PANW Maintained by Truist Securities -- Price Target Raised to $435 - GuruFocus",
+        "keywords": [
+          "ai",
+          "catalyst",
+          "raised"
         ]
       },
       {
@@ -108,12 +116,6 @@
           "demand",
           "raised"
         ]
-      },
-      {
-        "title": "Palo Alto Networks (NASDAQ:PANW) Stock Price Down 2.2% - Time to Sell? - MarketBeat",
-        "keywords": [
-          "beat"
-        ]
       }
     ]
   },
@@ -121,45 +123,45 @@
     "model": "grok-4.5",
     "action": "BUY",
     "symbol": "PANW",
-    "confidence": 82,
+    "confidence": 74,
     "cache_stats": null,
-    "entry_price": 356.29,
-    "stop_loss": 345.0,
-    "take_profit": 375.0,
-    "qty": 0.56,
-    "thesis": "PANW is the top-ranked liquid catalyst candidate with a strong bullish headline setup from Cantor Fitzgerald\u2019s positive price forecast and solid rank/catalyst scores. RSI is neutral near 50, leaving room for continuation without being overextended. Position sized to ~$200 notional with defined risk and reward:risk above 1.5. Adding as a new entry while book has capacity.",
+    "entry_price": 358.59,
+    "stop_loss": 348.0,
+    "take_profit": 375.5,
+    "qty": 0.55,
+    "thesis": "PANW is the sole ranked catalyst candidate with a bullish analyst price-target headline and neutral RSI near 50, offering a clean momentum entry. Position size is capped near $200 notional to respect desk risk limits while book has room under the five-name cap. Stop and target are set for roughly 1.6:1 reward-to-risk on the long side.",
     "reason_code": "new_entry",
     "reasoning": {
       "headline": "Bought $PANW",
-      "narrative": "PANW is the top-ranked liquid catalyst candidate with a strong bullish headline setup from Cantor Fitzgerald\u2019s positive price forecast and solid rank/catalyst scores. RSI is neutral near 50, leaving room for continuation without being overextended. Position sized to ~$200 notional with defined risk and reward:risk above 1.5. Adding as a new entry while book has capacity.",
+      "narrative": "PANW is the sole ranked catalyst candidate with a bullish analyst price-target headline and neutral RSI near 50, offering a clean momentum entry. Position size is capped near $200 notional to respect desk risk limits while book has room under the five-name cap. Stop and target are set for roughly 1.6:1 reward-to-risk on the long side.",
       "bullets": [
-        "Rank 98.84 / catalyst 19 bullish analyst headline",
-        "Neutral RSI ~50 supports swing entry",
-        "R:R ~1.66 with stops/targets defined",
-        "Notional capped near $200; open names remain low"
+        "Cantor positive forecast catalyst",
+        "RSI neutral ~50, liquid name",
+        "~0.55 sh keeps notional ~$197",
+        "R:R ~1.6 with 348 stop / 375.5 target"
       ],
       "risk_map": {
-        "stop": 345.0,
-        "target": 375.0,
+        "stop": 348.0,
+        "target": 375.5,
         "horizon_days": 5,
-        "rr": 1.66,
-        "confidence_10": 8,
-        "confidence": 82
+        "rr": 1.6,
+        "confidence_10": 7,
+        "confidence": 74
       },
-      "thesis": "PANW is the top-ranked liquid catalyst candidate with a strong bullish headline setup from Cantor Fitzgerald\u2019s positive price forecast and solid rank/catalyst scores. RSI is neutral near 50, leaving room for continuation without being overextended. Position sized to ~$200 notional with defined risk and reward:risk above 1.5. Adding as a new entry while book has capacity."
+      "thesis": "PANW is the sole ranked catalyst candidate with a bullish analyst price-target headline and neutral RSI near 50, offering a clean momentum entry. Position size is capped near $200 notional to respect desk risk limits while book has room under the five-name cap. Stop and target are set for roughly 1.6:1 reward-to-risk on the long side."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Rank 98.84 / catalyst 19 bullish analyst headline",
-      "Neutral RSI ~50 supports swing entry",
-      "R:R ~1.66 with stops/targets defined",
-      "Notional capped near $200; open names remain low"
+      "Cantor positive forecast catalyst",
+      "RSI neutral ~50, liquid name",
+      "~0.55 sh keeps notional ~$197",
+      "R:R ~1.6 with 348 stop / 375.5 target"
     ],
-    "timestamp": "2026-08-19T15:02:45.222721+00:00"
+    "timestamp": "2026-08-19T15:17:25.948964+00:00"
   },
-  "stance": "Buying pressure on PANW. PANW is the top-ranked liquid catalyst candidate with a strong bullish headline setup from Cantor Fitzgerald\u2019s positive price forecast and solid rank/catalyst scores. RSI is neutral near 50, leaving room for continuation without being overextended. Position sized to ~$200 notional with defined risk and reward:risk above 1.5. Adding as a new entry while book has capacity.",
+  "stance": "Buying pressure on PANW. PANW is the sole ranked catalyst candidate with a bullish analyst price-target headline and neutral RSI near 50, offering a clean momentum entry. Position size is capped near $200 notional to respect desk risk limits while book has room under the five-name cap. Stop and target are set for roughly 1.6:1 reward-to-risk on the long side.",
   "thinking": {
     "badge": "Looking to buy PANW",
     "headline": "Buying pressure on PANW.",
@@ -178,9 +180,9 @@
         "avg_cost": 360.57,
         "stop": 350.0,
         "target": 378.0,
-        "last": 358.2850036621094,
-        "open_pnl": -1.26,
-        "open_pnl_pct": -0.63,
+        "last": 358.7799987792969,
+        "open_pnl": -0.98,
+        "open_pnl_pct": -0.5,
         "line": "Bought near $360.57 \u00b7 Sell safety line $350.00 \u00b7 Profit target $378.00",
         "plan": "stop 350.0 or target 378.0"
       },
@@ -190,14 +192,14 @@
         "avg_cost": 339.55,
         "stop": 328.0,
         "target": 358.5,
-        "last": 346.5400085449219,
-        "open_pnl": 4.05,
-        "open_pnl_pct": 2.06,
+        "last": 346.9100036621094,
+        "open_pnl": 4.27,
+        "open_pnl_pct": 2.17,
         "line": "Bought near $339.55 \u00b7 Sell safety line $328.00 \u00b7 Profit target $358.50",
         "plan": "stop 328.0 or target 358.5"
       }
     ],
-    "last_checked": "2026-08-19T15:10:38.751673+00:00",
+    "last_checked": "2026-08-19T15:17:37.195985+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -211,7 +213,7 @@
         "model": "grok-4.3",
         "action": "BUY",
         "symbol": "PANW",
-        "confidence": 85,
+        "confidence": 82,
         "tone": "buy"
       },
       {
@@ -227,7 +229,7 @@
         "model": "deepseek-v4-flash",
         "action": "BUY",
         "symbol": "PANW",
-        "confidence": 78,
+        "confidence": 73,
         "tone": "buy"
       },
       {
@@ -235,7 +237,7 @@
         "model": "grok-build-0.1",
         "action": "BUY",
         "symbol": "PANW",
-        "confidence": 82,
+        "confidence": 75,
         "tone": "buy"
       },
       {
@@ -243,7 +245,7 @@
         "model": "grok-4.5",
         "action": "BUY",
         "symbol": "PANW",
-        "confidence": 82,
+        "confidence": 74,
         "tone": "buy"
       },
       {
@@ -265,6 +267,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "PANW",
+      "status": "blocked",
+      "headline": "BUY PANW \u2014 blocked",
+      "detail": "Insufficient buying power: $36.00 < $197.22",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 82,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 73,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 74,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 78,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "JPM",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "PANW",
+      "timestamp": "2026-08-19T15:17:25.948964+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "PANW",
@@ -10324,27 +10403,35 @@
     {
       "symbol": "PANW",
       "name": "PANW",
-      "price": 356.2900085449219,
-      "volume": 1549174.0,
-      "avg_volume": 4838427.4,
-      "percent_change": -4.770942803401682,
+      "price": 358.5899963378906,
+      "volume": 1691025.0,
+      "avg_volume": 4852612.5,
+      "percent_change": -4.156202945883382,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 19,
-      "liquidity_score": 76.85,
-      "rank_score": 98.84,
+      "catalyst_score": 20,
+      "liquidity_score": 76.86,
+      "rank_score": 102.35,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - MarketBeat",
       "top_headlines": [
         "Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - MarketBeat",
         "$PANW stock is down 3% today. Here's what we see in our data. - Quiver Quantitative",
-        "PANW vs. NET: Which Cybersecurity Stock Has an Edge Right Now? - Yahoo Finance"
+        "PANW Maintained by Truist Securities -- Price Target Raised to $435 - GuruFocus"
       ],
       "matched_headlines": [
         {
           "title": "Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - MarketBeat",
           "keywords": [
             "beat"
+          ]
+        },
+        {
+          "title": "PANW Maintained by Truist Securities -- Price Target Raised to $435 - GuruFocus",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "raised"
           ]
         },
         {
@@ -10370,90 +10457,27 @@
             "demand",
             "raised"
           ]
-        },
-        {
-          "title": "Palo Alto Networks (NASDAQ:PANW) Stock Price Down 2.2% - Time to Sell? - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "TSLA",
-      "name": "TSLA",
-      "price": 347.989990234375,
-      "volume": 13682400.0,
-      "avg_volume": 29036870.0,
-      "percent_change": 3.3009752362537275,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 17,
-      "liquidity_score": 84.63,
-      "rank_score": 90.84,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (catalyst, launch): Tesla Teases Cybercab Launch Event, But TSLA Stock Isn\u2019t Biting - Barron's",
-      "top_headlines": [
-        "Tesla Teases Cybercab Launch Event, But TSLA Stock Isn\u2019t Biting - Barron's",
-        "Tesla Stock (TSLA) Opinions on Recent Sales Figures and Autonomy Progress - Quiver Quantitative",
-        "TSLA Stock Rises Overnight: JPMorgan Says Tesla-SpaceX Merger Looks \u2018Coherent On Paper\u2019 \u2014 But China Approval Risks Loom - Stocktwits"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Tesla Teases Cybercab Launch Event, But TSLA Stock Isn\u2019t Biting - Barron's",
-          "keywords": [
-            "catalyst",
-            "launch"
-          ]
-        },
-        {
-          "title": "TSLA Stock Rises Overnight: JPMorgan Says Tesla-SpaceX Merger Looks \u2018Coherent On Paper\u2019 \u2014 But China Approval Risks Loom - Stocktwits",
-          "keywords": [
-            "approval",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Petersen Hastings Wealth Advisors Inc. Boosts Stock Position in Tesla, Inc. $TSLA - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Tesla Wins Over Another Skeptic: JPMorgan Raises TSLA Stock Price Target By More Than 200% - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "raises",
-            "wins"
-          ]
-        },
-        {
-          "title": "OFI Invest Asset Management Lowers Stock Holdings in Tesla, Inc. $TSLA - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
         }
       ]
     },
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 358.8901062011719,
-      "volume": 1742178.0,
-      "avg_volume": 4736397.8,
-      "percent_change": -1.2002460561123538,
+      "price": 359.19500732421875,
+      "volume": 1935003.0,
+      "avg_volume": 4755680.3,
+      "percent_change": -1.116309064220578,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 17,
-      "liquidity_score": 76.75,
-      "rank_score": 87.97,
+      "liquidity_score": 76.77,
+      "rank_score": 87.91,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
       "top_headlines": [
         "JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
         "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - MarketBeat",
-        "Is JPMorgan Chase (JPM) Stock A Bargain Or Fully Priced? - simplywall.st"
+        "Here\u2019s How Much You Would Have Made Owning JPMorgan Chase Stock In The Last 5 Years - Sahm"
       ],
       "matched_headlines": [
         {
@@ -10494,15 +10518,15 @@
     {
       "symbol": "ANET",
       "name": "ANET",
-      "price": 187.47999572753906,
-      "volume": 1674078.0,
-      "avg_volume": 6555897.8,
-      "percent_change": -2.9506145379188586,
+      "price": 188.05999755859375,
+      "volume": 1814357.0,
+      "avg_volume": 6569925.7,
+      "percent_change": -2.6503754587984245,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 15,
-      "liquidity_score": 78.17,
-      "rank_score": 81.59,
+      "liquidity_score": 78.18,
+      "rank_score": 81.35,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Arista Networks, Inc. $ANET Shares Bought by Danske Bank A S - MarketBeat",
       "top_headlines": [
@@ -10546,56 +10570,103 @@
       ]
     },
     {
-      "symbol": "MSFT",
-      "name": "MSFT",
-      "price": 484.2099914550781,
-      "volume": 5212044.0,
-      "avg_volume": 24670924.4,
-      "percent_change": 0.5356781234784932,
+      "symbol": "TSLA",
+      "name": "TSLA",
+      "price": 346.4750061035156,
+      "volume": 15287287.0,
+      "avg_volume": 29197358.7,
+      "percent_change": 2.8512515586277773,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 13,
-      "liquidity_score": 83.92,
-      "rank_score": 72.52,
+      "catalyst_score": 11,
+      "liquidity_score": 84.65,
+      "rank_score": 64.98,
       "news_hits": 7,
-      "catalyst": "Headline-driven setup (beat): Microsoft Corporation $MSFT Stock Position Boosted by Hamilton Wealth LLC - MarketBeat",
+      "catalyst": "Headline-driven setup (catalyst, launch): Tesla Teases Cybercab Launch Event, But TSLA Stock Isn\u2019t Biting - Barron's",
       "top_headlines": [
-        "Microsoft Corporation $MSFT Stock Position Boosted by Hamilton Wealth LLC - MarketBeat",
-        "Microsoft Corporation\u2019s (MSFT) Rich Innovation Legacy Anchors Platform Growth - Yahoo Finance",
-        "Microsoft (MSFT) Stock Quotes, Company News And Chart Analysis - Investor's Business Daily"
+        "Tesla Teases Cybercab Launch Event, But TSLA Stock Isn\u2019t Biting - Barron's",
+        "Tesla Stock (TSLA) Opinions on Recent Sales Figures and Autonomy Progress - Quiver Quantitative",
+        "TSLA Stock Rises Overnight: JPMorgan Says Tesla-SpaceX Merger Looks \u2018Coherent On Paper\u2019 \u2014 But China Approval Risks Loom - Stocktwits"
       ],
       "matched_headlines": [
         {
-          "title": "Microsoft Corporation $MSFT Stock Position Boosted by Hamilton Wealth LLC - MarketBeat",
+          "title": "Tesla Teases Cybercab Launch Event, But TSLA Stock Isn\u2019t Biting - Barron's",
+          "keywords": [
+            "catalyst",
+            "launch"
+          ]
+        },
+        {
+          "title": "TSLA Stock Rises Overnight: JPMorgan Says Tesla-SpaceX Merger Looks \u2018Coherent On Paper\u2019 \u2014 But China Approval Risks Loom - Stocktwits",
+          "keywords": [
+            "approval",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Petersen Hastings Wealth Advisors Inc. Boosts Stock Position in Tesla, Inc. $TSLA - MarketBeat",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "Microsoft Corporation\u2019s (MSFT) Rich Innovation Legacy Anchors Platform Growth - Yahoo Finance",
+          "title": "OFI Invest Asset Management Lowers Stock Holdings in Tesla, Inc. $TSLA - MarketBeat",
           "keywords": [
-            "growth"
+            "beat"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "GOOGL",
+      "price": 344.625,
+      "volume": 6432320.0,
+      "avg_volume": 19777992.0,
+      "percent_change": 0.12347117312509742,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 11,
+      "liquidity_score": 82.96,
+      "rank_score": 64.04,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (beat): Alphabet Inc. $GOOGL Shares Purchased by Nolet Wealth Management LLC - MarketBeat",
+      "top_headlines": [
+        "GOOGL Stock Rises Overnight: Cathie Wood's ARK Buys $96M While Trimming AMD, BIDU Stakes - Stocktwits",
+        "GOOGL Stock: Should You Buy the Best-Performing Magnificent Seven Stock Right Now? - TradingKey",
+        "Alphabet Inc. $GOOGL Shares Purchased by Nolet Wealth Management LLC - MarketBeat"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Alphabet Inc. $GOOGL Shares Purchased by Nolet Wealth Management LLC - MarketBeat",
+          "keywords": [
+            "beat"
           ]
         },
         {
-          "title": "Microsoft (MSFT) Stock Quotes, Company News And Chart Analysis - Investor's Business Daily",
+          "title": "GOOGL Stock Dips Premarket After Breakout Week: Analyst Says Google Developing Next-Gen AI Chip With MediaTek - Stocktwits",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "Microsoft Corporation $MSFT Stock Holdings Lessened by BSN CAPITAL PARTNERS Ltd - MarketBeat",
+          "title": "Alphabet Inc. $GOOGL Shares Acquired by Generali Investments Management Co LLC - MarketBeat",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "Microsoft Corporation $MSFT Shares Sold by Cedar Mountain Advisors LLC - MarketBeat",
+          "title": "GOOGL Is Already Borrowing Billions For AI \u2013 Now It\u2019s Reportedly Eyeing Australia\u2019s Bond Market - Stocktwits",
           "keywords": [
             "ai",
-            "beat",
             "catalyst"
+          ]
+        },
+        {
+          "title": "Spinnaker Investment Group LLC Grows Stock Position in Alphabet Inc. $GOOGL - MarketBeat",
+          "keywords": [
+            "beat"
           ]
         }
       ]
@@ -10649,21 +10720,21 @@
     "last_stage": "entry",
     "last_junior_nomination": "PANW",
     "last_escalate_reason": "junior_nomination",
-    "live_share_recent": 73.5
+    "live_share_recent": 75.6
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 282,
     "closed_outcomes": 129,
-    "consensus_events": 246,
+    "consensus_events": 247,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1021.66,
-    "change": 21.66,
-    "change_pct": 2.17,
+    "latest_equity": 1022.15,
+    "change": 22.15,
+    "change_pct": 2.21,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -14796,6 +14867,12 @@
       {
         "t": "2026-08-19T15:10:41.672294+00:00",
         "equity": 1021.66,
+        "cash": 623.61,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-19T15:17:40.138686+00:00",
+        "equity": 1022.15,
         "cash": 623.61,
         "event": "mark"
       }
