@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-08-19T14:30:45.531624+00:00",
+  "generated_at": "2026-08-19T14:31:22.429733+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1020.77,
+    "portfolio_value": 1020.82,
     "starting_cash": 1000.0,
     "total_return_pct": 2.08,
-    "total_pnl": 20.77,
-    "realized_pnl": 27.5,
-    "open_pnl": -6.75,
-    "capital_deployed": 588.42,
-    "cash": 432.35,
-    "closed_trades": 16,
-    "win_rate_pct": 37.5,
-    "vs_spy_pct": 2.01,
-    "spy_return_pct": 0.07,
+    "total_pnl": 20.82,
+    "realized_pnl": 18.84,
+    "open_pnl": 1.96,
+    "capital_deployed": 397.21,
+    "cash": 623.61,
+    "closed_trades": 17,
+    "win_rate_pct": 35.29,
+    "vs_spy_pct": 2.0,
+    "spy_return_pct": 0.08,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-19T14:30:48.663370+00:00"
+    "updated_at": "2026-08-19T14:31:25.172580+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.07,
-    "price": 769.9199829101562,
+    "return_pct": 0.08,
+    "price": 770.010009765625,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 4,
-    "validated_count_today": 4,
+    "consensus_count_today": 5,
+    "validated_count_today": 5,
     "blocked_count_today": 0,
-    "fills_today": 3,
-    "simulated_orders_today": 4,
+    "fills_today": 4,
+    "simulated_orders_today": 5,
     "top_symbol_today": "TSLA"
   },
   "holdings": [
@@ -38,34 +38,22 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 360.57,
-      "last": 360.5,
-      "market_value": 198.28,
-      "open_pnl": -0.04,
-      "open_pnl_pct": -0.02,
+      "last": 360.3299865722656,
+      "market_value": 198.18,
+      "open_pnl": -0.13,
+      "open_pnl_pct": -0.07,
       "stop": 350.0,
       "target": 378.0,
       "thesis": "JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit."
     },
     {
-      "symbol": "ANET",
-      "qty": 1.03,
-      "avg_cost": 194.09,
-      "last": 185.52999877929688,
-      "market_value": 191.1,
-      "open_pnl": -8.82,
-      "open_pnl_pct": -4.41,
-      "stop": 187.5,
-      "target": 204.5,
-      "thesis": "ANET screens as a high-rank liquid catalyst setup on institutional accumulation headlines with bullish sentiment and neutral RSI offering room to run. Deutsche Bank share acquisition provides a clean near-term demand signal while the name remains liquid enough for a small paper allocation. Risk is defined below recent support with a 1.5+ R:R target into the next resistance zone. Adding as a fifth name fits book limits and uses available cash within the $200 notional cap."
-    },
-    {
       "symbol": "TSLA",
       "qty": 0.58,
       "avg_cost": 339.55,
-      "last": 343.17999267578125,
-      "market_value": 199.04,
-      "open_pnl": 2.11,
-      "open_pnl_pct": 1.07,
+      "last": 343.1499938964844,
+      "market_value": 199.03,
+      "open_pnl": 2.09,
+      "open_pnl_pct": 1.06,
       "stop": 328.0,
       "target": 358.5,
       "thesis": "TSLA screens as the top ranked liquid catalyst setup with a Cybercab launch headline and bullish sentiment at a neutral RSI. Adding a small starter within the ~$200 notional cap keeps the book at 5 names without forced rotation. Defined risk below recent support targets a 1.5+ R multiple into a post-event bounce."
@@ -74,15 +62,15 @@
   "latest_candidate": {
     "symbol": "PANW",
     "name": "PANW",
-    "price": 353.4649963378906,
-    "volume": 980385.0,
-    "avg_volume": 4781548.5,
-    "percent_change": -5.526010985479395,
+    "price": 353.7666015625,
+    "volume": 1204877.0,
+    "avg_volume": 4803997.7,
+    "percent_change": -5.4453980564151845,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 17,
-    "liquidity_score": 76.8,
-    "rank_score": 91.44,
+    "liquidity_score": 76.82,
+    "rank_score": 91.38,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (beat): Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - MarketBeat",
     "top_headlines": [
@@ -122,7 +110,7 @@
         ]
       },
       {
-        "title": "PANW 260814 200.00C (PANW260814C200000) Stock Options Chain | Quotes & News - moomoo.com",
+        "title": "PANW 260814 200.00C (PANW260814C200000) Stock Options Chain | Quotes & News - Moomoo",
         "keywords": [
           "ai",
           "catalyst"
@@ -133,42 +121,41 @@
   "latest_decision": {
     "model": "risk-gate",
     "action": "SELL",
-    "symbol": "PANW",
+    "symbol": "ANET",
     "confidence": 95,
-    "entry_price": 353.3500061035156,
-    "stop_loss": 365.0,
-    "take_profit": 392.0,
-    "qty": 0.53,
-    "thesis": "HERMES AUTO-TRADE: Exiting full PANW position on stop-loss. Price $353.35 tagged invalidation at $365.00. Realized path $-11.88.",
+    "entry_price": 185.68499755859375,
+    "stop_loss": 187.5,
+    "take_profit": 204.5,
+    "qty": 1.03,
+    "thesis": "HERMES AUTO-TRADE: Exiting full ANET position on stop-loss. Price $185.68 tagged invalidation at $187.50. Realized path $-8.66.",
     "reason_code": "stop_loss",
     "reasoning": {
-      "headline": "Sold $PANW",
-      "narrative": "HERMES AUTO-TRADE: Exiting full PANW position on stop-loss. Price $353.35 tagged invalidation at $365.00. Realized path $-11.88.",
+      "headline": "Sold $ANET",
+      "narrative": "HERMES AUTO-TRADE: Exiting full ANET position on stop-loss. Price $185.68 tagged invalidation at $187.50. Realized path $-8.66.",
       "bullets": [
         "Hard stop hit; capital preservation over thesis hope.",
         "Position closed in full; no scale-out remaining."
       ],
       "risk_map": {
-        "stop": 365.0,
-        "target": 392.0,
+        "stop": 187.5,
+        "target": 204.5,
         "horizon_days": 5,
-        "rr": 1.51,
+        "rr": 1.58,
         "confidence_10": 10,
         "confidence": 95
       },
-      "thesis": "HERMES AUTO-TRADE: Exiting full PANW position on stop-loss. Price $353.35 tagged invalidation at $365.00. Realized path $-11.88."
+      "thesis": "HERMES AUTO-TRADE: Exiting full ANET position on stop-loss. Price $185.68 tagged invalidation at $187.50. Realized path $-8.66."
     },
     "stage": "exit",
-    "timestamp": "2026-08-19T14:16:06.079019+00:00"
+    "timestamp": "2026-08-19T14:31:07.805686+00:00"
   },
-  "stance": "Holding JPM, ANET, TSLA. No new trade right now. HERMES AUTO-TRADE: Exiting full PANW position on stop-loss. Price $353.35 tagged invalidation at $365.00. Realized path $-11.88.",
+  "stance": "Holding JPM, TSLA. No new trade right now. HERMES AUTO-TRADE: Exiting full ANET position on stop-loss. Price $185.68 tagged invalidation at $187.50. Realized path $-8.66.",
   "thinking": {
     "badge": "Holding what it owns",
-    "headline": "Holding JPM, ANET, TSLA. No new trade right now.",
-    "plain_english": "Right now Hermes is holding JPM, ANET, TSLA and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
+    "headline": "Holding JPM, TSLA. No new trade right now.",
+    "plain_english": "Right now Hermes is holding JPM, TSLA and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
     "triggers": [
       "It owns JPM, bought near $360.57. Simple plan: sell if it falls to about $350.00, or take profit near $378.00.",
-      "It owns ANET, bought near $194.09. Simple plan: sell if it falls to about $187.50, or take profit near $204.50.",
       "It owns TSLA, bought near $339.55. Simple plan: sell if it falls to about $328.00, or take profit near $358.50.",
       "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
       "Top scanner name right now is PANW, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
@@ -181,23 +168,11 @@
         "avg_cost": 360.57,
         "stop": 350.0,
         "target": 378.0,
-        "last": 360.5,
-        "open_pnl": -0.04,
-        "open_pnl_pct": -0.02,
+        "last": 360.3299865722656,
+        "open_pnl": -0.13,
+        "open_pnl_pct": -0.07,
         "line": "Bought near $360.57 \u00b7 Sell safety line $350.00 \u00b7 Profit target $378.00",
         "plan": "stop 350.0 or target 378.0"
-      },
-      {
-        "symbol": "ANET",
-        "qty": 1.03,
-        "avg_cost": 194.09,
-        "stop": 187.5,
-        "target": 204.5,
-        "last": 185.52999877929688,
-        "open_pnl": -8.82,
-        "open_pnl_pct": -4.41,
-        "line": "Bought near $194.09 \u00b7 Sell safety line $187.50 \u00b7 Profit target $204.50",
-        "plan": "stop 187.5 or target 204.5"
       },
       {
         "symbol": "TSLA",
@@ -205,25 +180,64 @@
         "avg_cost": 339.55,
         "stop": 328.0,
         "target": 358.5,
-        "last": 343.17999267578125,
-        "open_pnl": 2.11,
-        "open_pnl_pct": 1.07,
+        "last": 343.1499938964844,
+        "open_pnl": 2.09,
+        "open_pnl_pct": 1.06,
         "line": "Bought near $339.55 \u00b7 Sell safety line $328.00 \u00b7 Profit target $358.50",
         "plan": "stop 328.0 or target 358.5"
       }
     ],
-    "last_checked": "2026-08-19T14:30:45.531624+00:00",
+    "last_checked": "2026-08-19T14:31:22.429733+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "SELL",
     "symbols_held": [
       "JPM",
-      "ANET",
       "TSLA"
     ],
     "model_chips": []
   },
   "activity": [
+    {
+      "type": "fill",
+      "symbol": "ANET",
+      "status": "filled_paper",
+      "headline": "SELL ANET @ $185.68",
+      "detail": "HERMES AUTO-TRADE: Exiting full ANET position on stop-loss. Price $185.68 tagged invalidation at $187.50. Realized path $-8.66.",
+      "timestamp": "2026-08-19T14:31:07.807886+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "ANET",
+      "status": "validated",
+      "headline": "SELL ANET \u2014 validated",
+      "detail": "deterministic stop_loss exit",
+      "agents": [
+        {
+          "model": "risk-gate",
+          "action": "SELL",
+          "symbol": "ANET",
+          "confidence": 95,
+          "source": null,
+          "provider": null,
+          "tier": "senior"
+        },
+        {
+          "model": "risk-gate",
+          "action": "SELL",
+          "symbol": "ANET",
+          "confidence": 95,
+          "source": null,
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "risk_exit",
+      "escalate_reason": "stop_loss",
+      "stage": "exit",
+      "junior_nomination": null,
+      "timestamp": "2026-08-19T14:31:07.805686+00:00"
+    },
     {
       "type": "fill",
       "symbol": "PANW",
@@ -469,6 +483,18 @@
   ],
   "recent_trades": [
     {
+      "timestamp": "2026-08-19T14:31:07.807886+00:00",
+      "action": "SELL",
+      "symbol": "ANET",
+      "qty": 1.03,
+      "price": 185.68499755859375,
+      "notional": 191.26,
+      "realized_pnl": -8.66,
+      "reason": "stop_loss",
+      "thesis": "HERMES AUTO-TRADE: Exiting full ANET position on stop-loss. Price $185.68 tagged invalidation at $187.50. Realized path $-8.66.",
+      "status": "FILLED_PAPER"
+    },
+    {
       "timestamp": "2026-08-19T14:16:06.080991+00:00",
       "action": "SELL",
       "symbol": "PANW",
@@ -575,21 +601,35 @@
       "reason": null,
       "thesis": "",
       "status": "FILLED_PAPER"
-    },
-    {
-      "timestamp": "2026-08-18T15:18:17.172700+00:00",
-      "action": "SELL",
-      "symbol": "MSFT",
-      "qty": 0.4,
-      "price": 505.0,
-      "notional": 202.0,
-      "realized_pnl": 2.0,
-      "reason": "rotation",
-      "thesis": "",
-      "status": "FILLED_PAPER"
     }
   ],
   "trade_reasoning": [
+    {
+      "timestamp": "2026-08-19T14:31:07.807886+00:00",
+      "action": "SELL",
+      "symbol": "ANET",
+      "qty": 1.03,
+      "price": 185.68499755859375,
+      "notional": 191.26,
+      "headline": "Sold $ANET",
+      "side_label": "sell",
+      "narrative": "HERMES AUTO-TRADE: Exiting full ANET position on stop-loss. Price $185.68 tagged invalidation at $187.50. Realized path $-8.66.",
+      "bullets": [
+        "Hard stop hit; capital preservation over thesis hope.",
+        "Position closed in full; no scale-out remaining."
+      ],
+      "risk_map": {
+        "stop": 187.5,
+        "target": 204.5,
+        "horizon_days": 5,
+        "rr": 1.58,
+        "confidence_10": 10,
+        "confidence": 95
+      },
+      "reason_code": "stop_loss",
+      "realized_pnl": -8.66,
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-08-19T14:16:06.080991+00:00",
       "action": "SELL",
@@ -8001,6 +8041,20 @@
   ],
   "closed_trades": [
     {
+      "timestamp": "2026-08-19T14:31:07.806912+00:00",
+      "symbol": "ANET",
+      "qty": 1.03,
+      "avg_cost": 194.09,
+      "exit_price": 185.68499755859375,
+      "proceeds": 191.26,
+      "realized_pnl": -8.66,
+      "realized_pnl_pct": -4.33,
+      "reason": "stop_loss",
+      "thesis": "HERMES AUTO-TRADE: Exiting full ANET position on stop-loss. Price $185.68 tagged invalidation at $187.50. Realized path $-8.66.",
+      "opened_at": "2026-08-18T14:32:38.562652+00:00",
+      "hold_seconds": 86309
+    },
+    {
       "timestamp": "2026-08-19T14:16:06.080010+00:00",
       "symbol": "PANW",
       "qty": 0.53,
@@ -8265,23 +8319,23 @@
       "thesis": "",
       "opened_at": "2026-08-18T00:49:52.036734+00:00",
       "hold_seconds": 0
-    },
-    {
-      "timestamp": "2026-08-18T00:49:47.966585+00:00",
-      "symbol": "MSFT",
-      "qty": 0.4,
-      "avg_cost": 500.0,
-      "exit_price": 505.0,
-      "proceeds": 202.0,
-      "realized_pnl": 2.0,
-      "realized_pnl_pct": 1.0,
-      "reason": "rotation",
-      "thesis": "",
-      "opened_at": "2026-08-18T00:49:47.963581+00:00",
-      "hold_seconds": 0
     }
   ],
   "closed_results": [
+    {
+      "timestamp": "2026-08-19T14:31:07.806912+00:00",
+      "symbol": "ANET",
+      "qty": 1.03,
+      "avg_cost": 194.09,
+      "exit_price": 185.68499755859375,
+      "proceeds": 191.26,
+      "realized_pnl": -8.66,
+      "realized_pnl_pct": -4.33,
+      "reason": "stop_loss",
+      "thesis": "HERMES AUTO-TRADE: Exiting full ANET position on stop-loss. Price $185.68 tagged invalidation at $187.50. Realized path $-8.66.",
+      "opened_at": "2026-08-18T14:32:38.562652+00:00",
+      "hold_seconds": 86309
+    },
     {
       "timestamp": "2026-08-19T14:16:06.080010+00:00",
       "symbol": "PANW",
@@ -9985,6 +10039,21 @@
       "hold_seconds": 172674
     },
     {
+      "symbol": "ANET",
+      "timestamp": "2026-08-19T14:31:07.806912+00:00",
+      "opened_at": "2026-08-18T14:32:38.562652+00:00",
+      "qty": 1.03,
+      "entry_price": 194.09,
+      "exit_price": 185.68499755859375,
+      "entry_value": 199.91,
+      "exit_value": 191.26,
+      "realized_pnl": -8.66,
+      "realized_pnl_pct": -4.33,
+      "reason": "stop_loss",
+      "stop_loss_hit": true,
+      "hold_seconds": 86309
+    },
+    {
       "symbol": "JPM",
       "timestamp": "2026-08-14T17:03:34.240261+00:00",
       "opened_at": "2026-08-11T21:33:24.290095+00:00",
@@ -10034,15 +10103,15 @@
     {
       "symbol": "PANW",
       "name": "PANW",
-      "price": 353.4649963378906,
-      "volume": 980385.0,
-      "avg_volume": 4781548.5,
-      "percent_change": -5.526010985479395,
+      "price": 353.7666015625,
+      "volume": 1204877.0,
+      "avg_volume": 4803997.7,
+      "percent_change": -5.4453980564151845,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 17,
-      "liquidity_score": 76.8,
-      "rank_score": 91.44,
+      "liquidity_score": 76.82,
+      "rank_score": 91.38,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - MarketBeat",
       "top_headlines": [
@@ -10082,7 +10151,7 @@
           ]
         },
         {
-          "title": "PANW 260814 200.00C (PANW260814C200000) Stock Options Chain | Quotes & News - moomoo.com",
+          "title": "PANW 260814 200.00C (PANW260814C200000) Stock Options Chain | Quotes & News - Moomoo",
           "keywords": [
             "ai",
             "catalyst"
@@ -10093,15 +10162,15 @@
     {
       "symbol": "TSLA",
       "name": "TSLA",
-      "price": 338.44500732421875,
-      "volume": 6718272.0,
-      "avg_volume": 28340457.2,
-      "percent_change": 0.4675430373320568,
+      "price": 343.0249938964844,
+      "volume": 8632820.0,
+      "avg_volume": 28531912.0,
+      "percent_change": 1.82711398121276,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 17,
-      "liquidity_score": 84.52,
-      "rank_score": 88.55,
+      "liquidity_score": 84.55,
+      "rank_score": 89.64,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, launch): Tesla Teases Cybercab Launch Event, But TSLA Stock Isn\u2019t Biting - Barron's",
       "top_headlines": [
@@ -10150,21 +10219,21 @@
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 360.32000732421875,
-      "volume": 1183406.0,
-      "avg_volume": 4680520.6,
-      "percent_change": -0.8066050036562284,
+      "price": 360.364990234375,
+      "volume": 1330724.0,
+      "avg_volume": 4695252.4,
+      "percent_change": -0.7942215459394356,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 17,
-      "liquidity_score": 76.7,
-      "rank_score": 87.65,
+      "liquidity_score": 76.72,
+      "rank_score": 87.64,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
       "top_headlines": [
         "JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
         "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - MarketBeat",
-        "Here\u2019s How Much You Would Have Made Owning JPMorgan Chase Stock In The Last 5 Years - Sahm"
+        "Is JPMorgan Chase (JPM) Stock A Bargain Or Fully Priced? - simplywall.st"
       ],
       "matched_headlines": [
         {
@@ -10205,15 +10274,15 @@
     {
       "symbol": "ANET",
       "name": "ANET",
-      "price": 185.5500030517578,
-      "volume": 810326.0,
-      "avg_volume": 6469522.6,
-      "percent_change": -3.949679010925856,
+      "price": 185.52999877929688,
+      "volume": 1168114.0,
+      "avg_volume": 6505301.4,
+      "percent_change": -3.9600342615829525,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 15,
-      "liquidity_score": 78.11,
-      "rank_score": 82.38,
+      "liquidity_score": 78.13,
+      "rank_score": 82.39,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Arista Networks, Inc. $ANET Shares Bought by Danske Bank A S - MarketBeat",
       "top_headlines": [
@@ -10259,21 +10328,21 @@
     {
       "symbol": "MSFT",
       "name": "MSFT",
-      "price": 483.9100036621094,
-      "volume": 3772397.0,
-      "avg_volume": 24526959.7,
-      "percent_change": 0.47339217992691957,
+      "price": 482.1000061035156,
+      "volume": 4418086.0,
+      "avg_volume": 24591528.6,
+      "percent_change": 0.09758553577190089,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
-      "liquidity_score": 83.9,
-      "rank_score": 72.46,
-      "news_hits": 7,
+      "liquidity_score": 83.91,
+      "rank_score": 72.16,
+      "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Microsoft Corporation $MSFT Stock Position Boosted by Hamilton Wealth LLC - MarketBeat",
       "top_headlines": [
         "Microsoft Corporation $MSFT Stock Position Boosted by Hamilton Wealth LLC - MarketBeat",
-        "Microsoft Corporation\u2019s (MSFT) Rich Innovation Legacy Anchors Platform Growth - Yahoo Finance",
-        "Microsoft (MSFT) Stock Quotes, Company News And Chart Analysis - Investor's Business Daily"
+        "MSFT Stock Quote Price and Forecast - CNN",
+        "Microsoft Corporation\u2019s (MSFT) Rich Innovation Legacy Anchors Platform Growth - Yahoo Finance"
       ],
       "matched_headlines": [
         {
@@ -10354,20 +10423,20 @@
     "last_stage": "exit",
     "last_junior_nomination": null,
     "last_escalate_reason": "stop_loss",
-    "live_share_recent": 72.2
+    "live_share_recent": 65.0
   },
   "learning": {
     "candidate_signals_logged": 8,
-    "fills_logged": 281,
-    "closed_outcomes": 128,
-    "consensus_events": 243,
+    "fills_logged": 282,
+    "closed_outcomes": 129,
+    "consensus_events": 244,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1020.77,
-    "change": 20.77,
+    "latest_equity": 1020.82,
+    "change": 20.82,
     "change_pct": 2.08,
     "points": [
       {
@@ -14454,6 +14523,18 @@
         "t": "2026-08-19T14:30:48.663370+00:00",
         "equity": 1020.77,
         "cash": 432.35,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-19T14:31:07.807886+00:00",
+        "equity": 1020.77,
+        "cash": 623.61,
+        "event": "SELL ANET"
+      },
+      {
+        "t": "2026-08-19T14:31:25.172580+00:00",
+        "equity": 1020.82,
+        "cash": 623.61,
         "event": "mark"
       }
     ],
