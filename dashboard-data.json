@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-19T16:20:39.801580+00:00",
+  "generated_at": "2026-08-19T16:30:40.656416+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1023.06,
+    "portfolio_value": 1021.86,
     "starting_cash": 1000.0,
-    "total_return_pct": 2.31,
-    "total_pnl": 23.06,
+    "total_return_pct": 2.19,
+    "total_pnl": 21.86,
     "realized_pnl": 18.84,
-    "open_pnl": 4.19,
-    "capital_deployed": 399.45,
+    "open_pnl": 3.0,
+    "capital_deployed": 398.25,
     "cash": 623.61,
     "closed_trades": 17,
     "win_rate_pct": 35.29,
-    "vs_spy_pct": 2.0,
-    "spy_return_pct": 0.31,
+    "vs_spy_pct": 2.05,
+    "spy_return_pct": 0.14,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-19T16:20:42.695876+00:00"
+    "updated_at": "2026-08-19T16:30:43.537759+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.31,
-    "price": 771.739990234375,
+    "return_pct": 0.14,
+    "price": 770.4450073242188,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,10 +38,10 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 360.57,
-      "last": 358.32000732421875,
-      "market_value": 197.08,
-      "open_pnl": -1.24,
-      "open_pnl_pct": -0.62,
+      "last": 357.4200134277344,
+      "market_value": 196.58,
+      "open_pnl": -1.73,
+      "open_pnl_pct": -0.87,
       "stop": 350.0,
       "target": 378.0,
       "thesis": "JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit."
@@ -50,10 +50,10 @@
       "symbol": "TSLA",
       "qty": 0.58,
       "avg_cost": 339.55,
-      "last": 348.9200134277344,
-      "market_value": 202.37,
-      "open_pnl": 5.43,
-      "open_pnl_pct": 2.76,
+      "last": 347.69989013671875,
+      "market_value": 201.67,
+      "open_pnl": 4.73,
+      "open_pnl_pct": 2.4,
       "stop": 328.0,
       "target": 358.5,
       "thesis": "TSLA screens as the top ranked liquid catalyst setup with a Cybercab launch headline and bullish sentiment at a neutral RSI. Adding a small starter within the ~$200 notional cap keeps the book at 5 names without forced rotation. Defined risk below recent support targets a 1.5+ R multiple into a post-event bounce."
@@ -175,9 +175,9 @@
         "avg_cost": 360.57,
         "stop": 350.0,
         "target": 378.0,
-        "last": 358.32000732421875,
-        "open_pnl": -1.24,
-        "open_pnl_pct": -0.62,
+        "last": 357.4200134277344,
+        "open_pnl": -1.73,
+        "open_pnl_pct": -0.87,
         "line": "Bought near $360.57 \u00b7 Sell safety line $350.00 \u00b7 Profit target $378.00",
         "plan": "stop 350.0 or target 378.0"
       },
@@ -187,14 +187,14 @@
         "avg_cost": 339.55,
         "stop": 328.0,
         "target": 358.5,
-        "last": 348.9200134277344,
-        "open_pnl": 5.43,
-        "open_pnl_pct": 2.76,
+        "last": 347.69989013671875,
+        "open_pnl": 4.73,
+        "open_pnl_pct": 2.4,
         "line": "Bought near $339.55 \u00b7 Sell safety line $328.00 \u00b7 Profit target $358.50",
         "plan": "stop 328.0 or target 358.5"
       }
     ],
-    "last_checked": "2026-08-19T16:20:39.801580+00:00",
+    "last_checked": "2026-08-19T16:30:40.656416+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -10817,9 +10817,9 @@
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1023.06,
-    "change": 23.06,
-    "change_pct": 2.31,
+    "latest_equity": 1021.86,
+    "change": 21.86,
+    "change_pct": 2.19,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15024,6 +15024,12 @@
       {
         "t": "2026-08-19T16:20:42.695876+00:00",
         "equity": 1023.06,
+        "cash": 623.61,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-19T16:30:43.537759+00:00",
+        "equity": 1021.86,
         "cash": 623.61,
         "event": "mark"
       }
