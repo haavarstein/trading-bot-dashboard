@@ -1,34 +1,34 @@
 {
-  "generated_at": "2026-08-19T17:40:45.492800+00:00",
+  "generated_at": "2026-08-19T17:48:42.463355+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1021.04,
+    "portfolio_value": 1021.13,
     "starting_cash": 1000.0,
-    "total_return_pct": 2.1,
-    "total_pnl": 21.04,
+    "total_return_pct": 2.11,
+    "total_pnl": 21.13,
     "realized_pnl": 18.84,
-    "open_pnl": 2.18,
-    "capital_deployed": 397.43,
+    "open_pnl": 2.27,
+    "capital_deployed": 397.52,
     "cash": 623.61,
     "closed_trades": 17,
     "win_rate_pct": 35.29,
-    "vs_spy_pct": 2.1,
-    "spy_return_pct": 0.0,
+    "vs_spy_pct": 2.07,
+    "spy_return_pct": 0.04,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-19T17:40:48.604642+00:00"
+    "updated_at": "2026-08-19T17:48:45.707631+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.0,
-    "price": 769.4099731445312,
+    "return_pct": 0.04,
+    "price": 769.6799926757812,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 15,
+    "consensus_count_today": 16,
     "validated_count_today": 6,
-    "blocked_count_today": 9,
+    "blocked_count_today": 10,
     "fills_today": 4,
     "simulated_orders_today": 6,
     "top_symbol_today": "TSLA"
@@ -38,10 +38,10 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 360.57,
-      "last": 356.9100036621094,
-      "market_value": 196.3,
-      "open_pnl": -2.01,
-      "open_pnl_pct": -1.02,
+      "last": 356.7449951171875,
+      "market_value": 196.21,
+      "open_pnl": -2.1,
+      "open_pnl_pct": -1.06,
       "stop": 350.0,
       "target": 378.0,
       "thesis": "JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit."
@@ -50,10 +50,10 @@
       "symbol": "TSLA",
       "qty": 0.58,
       "avg_cost": 339.55,
-      "last": 346.7749938964844,
-      "market_value": 201.13,
-      "open_pnl": 4.19,
-      "open_pnl_pct": 2.13,
+      "last": 347.0899963378906,
+      "market_value": 201.31,
+      "open_pnl": 4.37,
+      "open_pnl_pct": 2.22,
       "stop": 328.0,
       "target": 358.5,
       "thesis": "TSLA screens as the top ranked liquid catalyst setup with a Cybercab launch headline and bullish sentiment at a neutral RSI. Adding a small starter within the ~$200 notional cap keeps the book at 5 names without forced rotation. Defined risk below recent support targets a 1.5+ R multiple into a post-event bounce."
@@ -62,20 +62,20 @@
   "latest_candidate": {
     "symbol": "JPM",
     "name": "JPM",
-    "price": 357.260009765625,
-    "volume": 3130095.0,
-    "avg_volume": 4875189.5,
-    "percent_change": -1.6489993762904336,
+    "price": 356.8900146484375,
+    "volume": 3233675.0,
+    "avg_volume": 4885547.5,
+    "percent_change": -1.7508562564521677,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 17,
-    "liquidity_score": 76.88,
-    "rank_score": 88.35,
+    "liquidity_score": 76.89,
+    "rank_score": 88.43,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (ai, catalyst): JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
     "top_headlines": [
       "JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
-      "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - marketbeat.com",
+      "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - MarketBeat",
       "Here\u2019s How Much You Would Have Made Owning JPMorgan Chase Stock In The Last 5 Years - Sahm"
     ],
     "matched_headlines": [
@@ -87,7 +87,7 @@
         ]
       },
       {
-        "title": "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - marketbeat.com",
+        "title": "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - MarketBeat",
         "keywords": [
           "beat"
         ]
@@ -100,7 +100,7 @@
         ]
       },
       {
-        "title": "Mosley Wealth Management Sells 2,815 Shares of JPMorgan Chase & Co. $JPM - marketbeat.com",
+        "title": "Mosley Wealth Management Sells 2,815 Shares of JPMorgan Chase & Co. $JPM - MarketBeat",
         "keywords": [
           "beat"
         ]
@@ -118,45 +118,45 @@
     "model": "grok-4.5",
     "action": "BUY",
     "symbol": "ANET",
-    "confidence": 73,
+    "confidence": 78,
     "cache_stats": null,
     "entry_price": 188.05,
     "stop_loss": 180.0,
     "take_profit": 200.5,
-    "qty": 1.05,
-    "thesis": "ANET ranks as the strongest unowned catalyst name with bullish institutional accumulation and solid networking/AI infrastructure exposure. Entry keeps notional near the $200 desk cap while stops sit under recent support. Reward-to-risk clears 1.5 toward a clean extension into the low 200s without crowding the book past five names.",
+    "qty": 1.06,
+    "thesis": "ANET screens as the top ranked liquid catalyst candidate with bullish sentiment and institutional accumulation headlines providing a clean entry setup. RSI near 50 leaves room for upside continuation without being overbought. Book has capacity and cash supports a sub-$200 notional add with defined risk. Reward-to-risk is structured above 1.5 with stops below recent support and targets into the next resistance zone.",
     "reason_code": "new_entry",
     "reasoning": {
       "headline": "Bought $ANET",
-      "narrative": "ANET ranks as the strongest unowned catalyst name with bullish institutional accumulation and solid networking/AI infrastructure exposure. Entry keeps notional near the $200 desk cap while stops sit under recent support. Reward-to-risk clears 1.5 toward a clean extension into the low 200s without crowding the book past five names.",
+      "narrative": "ANET screens as the top ranked liquid catalyst candidate with bullish sentiment and institutional accumulation headlines providing a clean entry setup. RSI near 50 leaves room for upside continuation without being overbought. Book has capacity and cash supports a sub-$200 notional add with defined risk. Reward-to-risk is structured above 1.5 with stops below recent support and targets into the next resistance zone.",
       "bullets": [
-        "Top unowned rank/catalyst setup vs held book",
-        "Notional ~$197 within $200 new-buy cap",
-        "R:R ~1.55 with stop 180 / target 200.5",
-        "Book only 2 names; room to add liquid leader"
+        "Rank 81+ catalyst/institutional buy headline",
+        "Neutral RSI 50 allows upside room",
+        "Notional capped near $200 with R:R>=1.5",
+        "Open slots available; no rotation needed"
       ],
       "risk_map": {
         "stop": 180.0,
         "target": 200.5,
         "horizon_days": 5,
         "rr": 1.55,
-        "confidence_10": 7,
-        "confidence": 73
+        "confidence_10": 8,
+        "confidence": 78
       },
-      "thesis": "ANET ranks as the strongest unowned catalyst name with bullish institutional accumulation and solid networking/AI infrastructure exposure. Entry keeps notional near the $200 desk cap while stops sit under recent support. Reward-to-risk clears 1.5 toward a clean extension into the low 200s without crowding the book past five names."
+      "thesis": "ANET screens as the top ranked liquid catalyst candidate with bullish sentiment and institutional accumulation headlines providing a clean entry setup. RSI near 50 leaves room for upside continuation without being overbought. Book has capacity and cash supports a sub-$200 notional add with defined risk. Reward-to-risk is structured above 1.5 with stops below recent support and targets into the next resistance zone."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Top unowned rank/catalyst setup vs held book",
-      "Notional ~$197 within $200 new-buy cap",
-      "R:R ~1.55 with stop 180 / target 200.5",
-      "Book only 2 names; room to add liquid leader"
+      "Rank 81+ catalyst/institutional buy headline",
+      "Neutral RSI 50 allows upside room",
+      "Notional capped near $200 with R:R>=1.5",
+      "Open slots available; no rotation needed"
     ],
-    "timestamp": "2026-08-19T17:33:23.751351+00:00"
+    "timestamp": "2026-08-19T17:48:31.902624+00:00"
   },
-  "stance": "Buying pressure on ANET. ANET ranks as the strongest unowned catalyst name with bullish institutional accumulation and solid networking/AI infrastructure exposure. Entry keeps notional near the $200 desk cap while stops sit under recent support. Reward-to-risk clears 1.5 toward a clean extension into the low 200s without crowding the book past five names.",
+  "stance": "Buying pressure on ANET. ANET screens as the top ranked liquid catalyst candidate with bullish sentiment and institutional accumulation headlines providing a clean entry setup. RSI near 50 leaves room for upside continuation without being overbought. Book has capacity and cash supports a sub-$200 notional add with defined risk. Reward-to-risk is structured above 1.5 with stops below recent support and targets into the next resistance zone.",
   "thinking": {
     "badge": "Looking to buy ANET",
     "headline": "Buying pressure on ANET.",
@@ -174,9 +174,9 @@
         "avg_cost": 360.57,
         "stop": 350.0,
         "target": 378.0,
-        "last": 356.9100036621094,
-        "open_pnl": -2.01,
-        "open_pnl_pct": -1.02,
+        "last": 356.7449951171875,
+        "open_pnl": -2.1,
+        "open_pnl_pct": -1.06,
         "line": "Bought near $360.57 \u00b7 Sell safety line $350.00 \u00b7 Profit target $378.00",
         "plan": "stop 350.0 or target 378.0"
       },
@@ -186,14 +186,14 @@
         "avg_cost": 339.55,
         "stop": 328.0,
         "target": 358.5,
-        "last": 346.7749938964844,
-        "open_pnl": 4.19,
-        "open_pnl_pct": 2.13,
+        "last": 347.0899963378906,
+        "open_pnl": 4.37,
+        "open_pnl_pct": 2.22,
         "line": "Bought near $339.55 \u00b7 Sell safety line $328.00 \u00b7 Profit target $358.50",
         "plan": "stop 328.0 or target 358.5"
       }
     ],
-    "last_checked": "2026-08-19T17:40:45.492800+00:00",
+    "last_checked": "2026-08-19T17:48:42.463355+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -205,10 +205,10 @@
       {
         "prefix": "J",
         "model": "grok-4.3",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 65,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "ANET",
+        "confidence": 75,
+        "tone": "buy"
       },
       {
         "prefix": "J",
@@ -223,23 +223,23 @@
         "model": "deepseek-v4-flash",
         "action": "BUY",
         "symbol": "ANET",
-        "confidence": 72,
+        "confidence": 74,
         "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 60,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "JPM",
+        "confidence": 82,
+        "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
         "action": "BUY",
         "symbol": "ANET",
-        "confidence": 73,
+        "confidence": 78,
         "tone": "buy"
       },
       {
@@ -247,7 +247,7 @@
         "model": "claude-sonnet-5",
         "action": "BUY",
         "symbol": "ANET",
-        "confidence": 74,
+        "confidence": 72,
         "tone": "buy"
       },
       {
@@ -261,6 +261,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "ANET",
+      "status": "blocked",
+      "headline": "BUY ANET \u2014 blocked",
+      "detail": "Insufficient buying power: $36.00 < $199.33",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "ANET",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "ANET",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "ANET",
+          "confidence": 74,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 82,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "ANET",
+          "confidence": 78,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "ANET",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "JPM",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "ANET",
+      "timestamp": "2026-08-19T17:48:31.903622+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "ANET",
@@ -799,83 +876,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-08-19T16:04:01.284622+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "PANW",
-      "status": "blocked",
-      "headline": "BUY PANW \u2014 blocked",
-      "detail": "Insufficient buying power: $36.00 < $197.47",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "PANW",
-          "confidence": 78,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "PANW",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "PANW",
-          "confidence": 74,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "PANW",
-          "confidence": 75,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "PANW",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "PANW",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "JPM",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "entry",
-      "junior_nomination": "PANW",
-      "timestamp": "2026-08-19T15:47:38.829810+00:00"
     },
     {
       "type": "fill",
@@ -10532,20 +10532,20 @@
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 357.260009765625,
-      "volume": 3130095.0,
-      "avg_volume": 4875189.5,
-      "percent_change": -1.6489993762904336,
+      "price": 356.8900146484375,
+      "volume": 3233675.0,
+      "avg_volume": 4885547.5,
+      "percent_change": -1.7508562564521677,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 17,
-      "liquidity_score": 76.88,
-      "rank_score": 88.35,
+      "liquidity_score": 76.89,
+      "rank_score": 88.43,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
       "top_headlines": [
         "JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
-        "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - marketbeat.com",
+        "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - MarketBeat",
         "Here\u2019s How Much You Would Have Made Owning JPMorgan Chase Stock In The Last 5 Years - Sahm"
       ],
       "matched_headlines": [
@@ -10557,7 +10557,7 @@
           ]
         },
         {
-          "title": "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - marketbeat.com",
+          "title": "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -10570,7 +10570,7 @@
           ]
         },
         {
-          "title": "Mosley Wealth Management Sells 2,815 Shares of JPMorgan Chase & Co. $JPM - marketbeat.com",
+          "title": "Mosley Wealth Management Sells 2,815 Shares of JPMorgan Chase & Co. $JPM - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -10587,25 +10587,25 @@
     {
       "symbol": "ANET",
       "name": "ANET",
-      "price": 188.0449981689453,
-      "volume": 2803719.0,
-      "avg_volume": 6668861.9,
-      "percent_change": -2.6581399221057667,
+      "price": 188.0500030517578,
+      "volume": 2876633.0,
+      "avg_volume": 6676153.3,
+      "percent_change": -2.6555491347560127,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 15,
-      "liquidity_score": 78.24,
+      "liquidity_score": 78.25,
       "rank_score": 81.36,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): Arista Networks, Inc. $ANET Shares Purchased by Wealthfront Advisers LLC - marketbeat.com",
+      "catalyst": "Headline-driven setup (beat): Arista Networks, Inc. $ANET Shares Purchased by Wealthfront Advisers LLC - MarketBeat",
       "top_headlines": [
-        "Arista Networks, Inc. $ANET Shares Purchased by Wealthfront Advisers LLC - marketbeat.com",
+        "Arista Networks, Inc. $ANET Shares Purchased by Wealthfront Advisers LLC - MarketBeat",
         "Arista Networks \u2022 Robinhood Token - ANET - Stock Price & News - The Motley Fool",
         "Arista Networks Inc (ANET) Shares Fall 4.3% -- GF Value Says Sti - GuruFocus"
       ],
       "matched_headlines": [
         {
-          "title": "Arista Networks, Inc. $ANET Shares Purchased by Wealthfront Advisers LLC - marketbeat.com",
+          "title": "Arista Networks, Inc. $ANET Shares Purchased by Wealthfront Advisers LLC - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -10617,12 +10617,6 @@
           ]
         },
         {
-          "title": "Arista Networks, Inc. $ANET Shares Bought by Danske Bank A S - marketbeat.com",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
           "title": "The Bull Case For Arista Networks (ANET) Could Change Following Its Upbeat AI Networking Revenue Outlook - simplywall.st",
           "keywords": [
             "ai",
@@ -10631,7 +10625,13 @@
           ]
         },
         {
-          "title": "Arista Networks, Inc. $ANET Shares Sold by GSA Capital Partners LLP - marketbeat.com",
+          "title": "Arista Networks, Inc. $ANET Shares Bought by Danske Bank A S - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Arista Networks, Inc. $ANET Shares Sold by GSA Capital Partners LLP - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -10641,25 +10641,25 @@
     {
       "symbol": "PANW",
       "name": "PANW",
-      "price": 357.7250061035156,
-      "volume": 2616985.0,
-      "avg_volume": 4945208.5,
-      "percent_change": -4.387397204852926,
+      "price": 358.5799865722656,
+      "volume": 2721675.0,
+      "avg_volume": 4955677.5,
+      "percent_change": -4.158878352210717,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 14,
-      "liquidity_score": 76.94,
-      "rank_score": 77.05,
+      "liquidity_score": 76.95,
+      "rank_score": 76.87,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - marketbeat.com",
+      "catalyst": "Headline-driven setup (beat): Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - MarketBeat",
       "top_headlines": [
         "PANW Stock Quote Price and Forecast - CNN",
         "Palo Alto Networks Inc Stock (PANW) Moved Down by 3.79% on Aug 19: Facts Behind the Movement - TradingKey",
-        "Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - marketbeat.com"
+        "Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - MarketBeat"
       ],
       "matched_headlines": [
         {
-          "title": "Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - marketbeat.com",
+          "title": "Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -10690,73 +10690,17 @@
       ]
     },
     {
-      "symbol": "TSLA",
-      "name": "TSLA",
-      "price": 346.7900085449219,
-      "volume": 22725272.0,
-      "avg_volume": 29941157.2,
-      "percent_change": 2.9447601660941887,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 12,
-      "liquidity_score": 84.76,
-      "rank_score": 70.57,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (catalyst, launch): Tesla Teases Cybercab Launch Event, But TSLA Stock Isn\u2019t Biting - Barron's",
-      "top_headlines": [
-        "Tesla Teases Cybercab Launch Event, But TSLA Stock Isn\u2019t Biting - Barron's",
-        "Tesla Stock (TSLA) Opinions on Recent Sales Figures and Autonomy Progress - Quiver Quantitative",
-        "U.S. Stock Market Moves | Tesla (TSLA.US) Rises Nearly 3%, May Launch CyberCab to the Public by Late August - Moomoo"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Tesla Teases Cybercab Launch Event, But TSLA Stock Isn\u2019t Biting - Barron's",
-          "keywords": [
-            "catalyst",
-            "launch"
-          ]
-        },
-        {
-          "title": "U.S. Stock Market Moves | Tesla (TSLA.US) Rises Nearly 3%, May Launch CyberCab to the Public by Late August - Moomoo",
-          "keywords": [
-            "catalyst",
-            "launch"
-          ]
-        },
-        {
-          "title": "TSLA Stock Rises Overnight: JPMorgan Says Tesla-SpaceX Merger Looks \u2018Coherent On Paper\u2019 \u2014 But China Approval Risks Loom - Stocktwits",
-          "keywords": [
-            "approval",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Tesla (TSLA) Eyes Cybercab Launch Following Stock Surge - GuruFocus",
-          "keywords": [
-            "catalyst",
-            "launch"
-          ]
-        },
-        {
-          "title": "Petersen Hastings Wealth Advisors Inc. Boosts Stock Position in Tesla, Inc. $TSLA - marketbeat.com",
-          "keywords": [
-            "beat"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "GOOGL",
       "name": "GOOGL",
-      "price": 343.9849853515625,
-      "volume": 10366096.0,
-      "avg_volume": 20171369.6,
-      "percent_change": -0.062471483975257536,
+      "price": 344.0199890136719,
+      "volume": 10610364.0,
+      "avg_volume": 20195796.4,
+      "percent_change": -0.05230191370565486,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 12,
       "liquidity_score": 83.05,
-      "rank_score": 68.01,
+      "rank_score": 68.0,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Alphabet (GOOGL) Stock May Be 23% Undervalued Following $25b AI Bond Raise - simplywall.st",
       "top_headlines": [
@@ -10773,7 +10717,7 @@
           ]
         },
         {
-          "title": "Alphabet Inc. $GOOGL Shares Purchased by Nolet Wealth Management LLC - marketbeat.com",
+          "title": "Alphabet Inc. $GOOGL Shares Acquired by Generali Investments Management Co LLC - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -10786,7 +10730,7 @@
           ]
         },
         {
-          "title": "Alphabet Inc. $GOOGL Shares Acquired by Generali Investments Management Co LLC - marketbeat.com",
+          "title": "Alphabet Inc. $GOOGL Shares Purchased by Nolet Wealth Management LLC - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -10796,6 +10740,52 @@
           "keywords": [
             "ai",
             "catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "CVX",
+      "name": "CVX",
+      "price": 206.46499633789062,
+      "volume": 4458185.0,
+      "avg_volume": 7569528.5,
+      "percent_change": 0.35238204790980776,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 12,
+      "liquidity_score": 78.79,
+      "rank_score": 66.1,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (beat): 24,867 Shares in Chevron Corporation $CVX Purchased by Investmark Advisory Group LLC - MarketBeat",
+      "top_headlines": [
+        "Should Chevron\u2019s (CVX) Angola Tie-Back Discovery Reshape How Investors View Its Infrastructure Strategy? - simplywall.st",
+        "24,867 Shares in Chevron Corporation $CVX Purchased by Investmark Advisory Group LLC - MarketBeat",
+        "The Questions That Decide CVX Stock - Yahoo Finance"
+      ],
+      "matched_headlines": [
+        {
+          "title": "24,867 Shares in Chevron Corporation $CVX Purchased by Investmark Advisory Group LLC - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Rayburn West Financial Services LLC Buys New Position in Chevron Corporation $CVX - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "42,220 Shares in Chevron Corporation $CVX Bought by Compass Wealth Management LLC - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "84,602 Shares in Chevron Corporation $CVX Purchased by Oxbow Advisors LLC - MarketBeat",
+          "keywords": [
+            "beat"
           ]
         }
       ]
@@ -10827,8 +10817,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 2,
-      "BUY": 2,
+      "HOLD": 0,
+      "BUY": 4,
       "SELL": 0,
       "live": 4,
       "fallback": 0
@@ -10847,23 +10837,23 @@
     "decision_mode": "live_dual_llm",
     "last_tier": "senior_escalated",
     "last_stage": "entry",
-    "last_junior_nomination": null,
-    "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 82.7
+    "last_junior_nomination": "ANET",
+    "last_escalate_reason": "junior_nomination",
+    "live_share_recent": 82.9
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 282,
     "closed_outcomes": 129,
-    "consensus_events": 256,
+    "consensus_events": 257,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1021.04,
-    "change": 21.04,
-    "change_pct": 2.1,
+    "latest_equity": 1021.13,
+    "change": 21.13,
+    "change_pct": 2.11,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15146,6 +15136,12 @@
       {
         "t": "2026-08-19T17:40:48.604642+00:00",
         "equity": 1021.04,
+        "cash": 623.61,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-19T17:48:45.707631+00:00",
+        "equity": 1021.13,
         "cash": 623.61,
         "event": "mark"
       }
