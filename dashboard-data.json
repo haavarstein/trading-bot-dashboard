@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-08-21T19:00:30.803873+00:00",
+  "generated_at": "2026-08-21T19:03:16.977046+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1028.85,
+    "portfolio_value": 1028.68,
     "starting_cash": 1000.0,
-    "total_return_pct": 2.88,
-    "total_pnl": 28.85,
+    "total_return_pct": 2.87,
+    "total_pnl": 28.68,
     "realized_pnl": 33.22,
-    "open_pnl": -4.4,
-    "capital_deployed": 393.34,
-    "cash": 635.51,
+    "open_pnl": -4.58,
+    "capital_deployed": 592.98,
+    "cash": 435.7,
     "closed_trades": 18,
     "win_rate_pct": 38.89,
     "vs_spy_pct": 3.29,
-    "spy_return_pct": -0.41,
+    "spy_return_pct": -0.42,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-21T19:00:33.558025+00:00"
+    "updated_at": "2026-08-21T19:03:19.675294+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.41,
-    "price": 766.25,
+    "return_pct": -0.42,
+    "price": 766.1799926757812,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 2,
-    "validated_count_today": 2,
+    "consensus_count_today": 3,
+    "validated_count_today": 3,
     "blocked_count_today": 0,
-    "fills_today": 2,
-    "simulated_orders_today": 2,
+    "fills_today": 3,
+    "simulated_orders_today": 3,
     "top_symbol_today": "TSLA"
   },
   "holdings": [
@@ -38,10 +38,10 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 360.57,
-      "last": 352.19500732421875,
-      "market_value": 193.71,
-      "open_pnl": -4.61,
-      "open_pnl_pct": -2.32,
+      "last": 352.0849914550781,
+      "market_value": 193.65,
+      "open_pnl": -4.67,
+      "open_pnl_pct": -2.35,
       "stop": 350.0,
       "target": 378.0,
       "thesis": "JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit."
@@ -50,27 +50,39 @@
       "symbol": "CVX",
       "qty": 0.97,
       "avg_cost": 205.59,
-      "last": 205.80499267578125,
-      "market_value": 199.63,
-      "open_pnl": 0.21,
-      "open_pnl_pct": 0.1,
+      "last": 205.63499450683594,
+      "market_value": 199.47,
+      "open_pnl": 0.04,
+      "open_pnl_pct": 0.02,
       "stop": 199.5,
       "target": 216.0,
       "thesis": "CVX shows a ranked bullish catalyst setup with institutional buying interest and neutral RSI offering room to run. Liquid large-cap energy name fits desk preference for catalyst-driven entries under $200 notional. Risk defined below recent support with 1.7 R:R to target."
+    },
+    {
+      "symbol": "ORCL",
+      "qty": 1.36,
+      "avg_cost": 146.92,
+      "last": 146.9550018310547,
+      "market_value": 199.86,
+      "open_pnl": 0.05,
+      "open_pnl_pct": 0.02,
+      "stop": 140.0,
+      "target": 157.5,
+      "thesis": "ORCL sold off hard despite an earnings beat, creating a headline-driven dip-buy setup with Street calls for aggressive buying on weakness. Rank and catalyst scores support a tactical long while RSI is neutral and not overbought. Risk is defined under the post-print washout with a clear 1.5R+ upside target on mean-reversion/continuation."
     }
   ],
   "latest_candidate": {
     "symbol": "CVX",
     "name": "CVX",
-    "price": 205.58999633789062,
-    "volume": 4097421.0,
-    "avg_volume": 7793892.1,
-    "percent_change": -0.0874801627218529,
+    "price": 205.8699951171875,
+    "volume": 4209608.0,
+    "avg_volume": 7805110.8,
+    "percent_change": 0.04859349888245334,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 16,
     "liquidity_score": 78.92,
-    "rank_score": 83.41,
+    "rank_score": 83.38,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (beat): 6,972 Shares in Chevron Corporation $CVX Purchased by Oxford Financial Group LTD. LLC - MarketBeat",
     "top_headlines": [
@@ -115,53 +127,54 @@
   "latest_decision": {
     "model": "grok-4.5",
     "action": "BUY",
-    "symbol": "CVX",
-    "confidence": 78,
+    "symbol": "ORCL",
+    "confidence": 74,
     "cache_stats": null,
-    "entry_price": 205.59,
-    "stop_loss": 199.5,
-    "take_profit": 216.0,
-    "qty": 0.97,
-    "thesis": "CVX shows a ranked bullish catalyst setup with institutional buying interest and neutral RSI offering room to run. Liquid large-cap energy name fits desk preference for catalyst-driven entries under $200 notional. Risk defined below recent support with 1.7 R:R to target.",
+    "entry_price": 146.92,
+    "stop_loss": 140.0,
+    "take_profit": 157.5,
+    "qty": 1.36,
+    "thesis": "ORCL sold off hard despite an earnings beat, creating a headline-driven dip-buy setup with Street calls for aggressive buying on weakness. Rank and catalyst scores support a tactical long while RSI is neutral and not overbought. Risk is defined under the post-print washout with a clear 1.5R+ upside target on mean-reversion/continuation.",
     "reason_code": "new_entry",
     "reasoning": {
-      "headline": "Bought $CVX",
-      "narrative": "CVX shows a ranked bullish catalyst setup with institutional buying interest and neutral RSI offering room to run. Liquid large-cap energy name fits desk preference for catalyst-driven entries under $200 notional. Risk defined below recent support with 1.7 R:R to target.",
+      "headline": "Bought $ORCL",
+      "narrative": "ORCL sold off hard despite an earnings beat, creating a headline-driven dip-buy setup with Street calls for aggressive buying on weakness. Rank and catalyst scores support a tactical long while RSI is neutral and not overbought. Risk is defined under the post-print washout with a clear 1.5R+ upside target on mean-reversion/continuation.",
       "bullets": [
-        "rank_score 83+ with bullish sentiment and buy headline",
-        "notional capped near $200 at 0.97 sh",
-        "R:R ~1.7 via 199.5 stop / 216 target",
-        "book has room (1 open name)"
+        "Earnings-beat selloff + bullish Street tone",
+        "Rank 78.8 / catalyst 14 supports entry",
+        "~1.36 sh keeps notional ~$200",
+        "R:R >=1.5 vs 140 stop / 157.5 target"
       ],
       "risk_map": {
-        "stop": 199.5,
-        "target": 216.0,
+        "stop": 140.0,
+        "target": 157.5,
         "horizon_days": 5,
-        "rr": 1.71,
-        "confidence_10": 8,
-        "confidence": 78
+        "rr": 1.53,
+        "confidence_10": 7,
+        "confidence": 74
       },
-      "thesis": "CVX shows a ranked bullish catalyst setup with institutional buying interest and neutral RSI offering room to run. Liquid large-cap energy name fits desk preference for catalyst-driven entries under $200 notional. Risk defined below recent support with 1.7 R:R to target."
+      "thesis": "ORCL sold off hard despite an earnings beat, creating a headline-driven dip-buy setup with Street calls for aggressive buying on weakness. Rank and catalyst scores support a tactical long while RSI is neutral and not overbought. Risk is defined under the post-print washout with a clear 1.5R+ upside target on mean-reversion/continuation."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "rank_score 83+ with bullish sentiment and buy headline",
-      "notional capped near $200 at 0.97 sh",
-      "R:R ~1.7 via 199.5 stop / 216 target",
-      "book has room (1 open name)"
+      "Earnings-beat selloff + bullish Street tone",
+      "Rank 78.8 / catalyst 14 supports entry",
+      "~1.36 sh keeps notional ~$200",
+      "R:R >=1.5 vs 140 stop / 157.5 target"
     ],
-    "timestamp": "2026-08-21T18:47:29.569333+00:00"
+    "timestamp": "2026-08-21T19:03:02.342810+00:00"
   },
-  "stance": "Buying pressure on CVX. CVX shows a ranked bullish catalyst setup with institutional buying interest and neutral RSI offering room to run. Liquid large-cap energy name fits desk preference for catalyst-driven entries under $200 notional. Risk defined below recent support with 1.7 R:R to target.",
+  "stance": "Buying pressure on ORCL. ORCL sold off hard despite an earnings beat, creating a headline-driven dip-buy setup with Street calls for aggressive buying on weakness. Rank and catalyst scores support a tactical long while RSI is neutral and not overbought. Risk is defined under the post-print washout with a clear 1.5R+ upside target on mean-reversion/continuation.",
   "thinking": {
-    "badge": "Looking to buy CVX",
-    "headline": "Buying pressure on CVX.",
-    "plain_english": "Right now Hermes wants exposure to CVX. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
+    "badge": "Looking to buy ORCL",
+    "headline": "Buying pressure on ORCL.",
+    "plain_english": "Right now Hermes wants exposure to ORCL. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
     "triggers": [
       "It owns JPM, bought near $360.57. Simple plan: sell if it falls to about $350.00, or take profit near $378.00.",
       "It owns CVX, bought near $205.59. Simple plan: sell if it falls to about $199.50, or take profit near $216.00.",
+      "It owns ORCL, bought near $146.92. Simple plan: sell if it falls to about $140.00, or take profit near $157.50.",
       "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
       "If nothing looks clean, do nothing. Sitting in cash or holdings is allowed."
     ],
@@ -172,9 +185,9 @@
         "avg_cost": 360.57,
         "stop": 350.0,
         "target": 378.0,
-        "last": 352.19500732421875,
-        "open_pnl": -4.61,
-        "open_pnl_pct": -2.32,
+        "last": 352.0849914550781,
+        "open_pnl": -4.67,
+        "open_pnl_pct": -2.35,
         "line": "Bought near $360.57 \u00b7 Sell safety line $350.00 \u00b7 Profit target $378.00",
         "plan": "stop 350.0 or target 378.0"
       },
@@ -184,35 +197,48 @@
         "avg_cost": 205.59,
         "stop": 199.5,
         "target": 216.0,
-        "last": 205.80499267578125,
-        "open_pnl": 0.21,
-        "open_pnl_pct": 0.1,
+        "last": 205.63499450683594,
+        "open_pnl": 0.04,
+        "open_pnl_pct": 0.02,
         "line": "Bought near $205.59 \u00b7 Sell safety line $199.50 \u00b7 Profit target $216.00",
         "plan": "stop 199.5 or target 216.0"
+      },
+      {
+        "symbol": "ORCL",
+        "qty": 1.36,
+        "avg_cost": 146.92,
+        "stop": 140.0,
+        "target": 157.5,
+        "last": 146.9550018310547,
+        "open_pnl": 0.05,
+        "open_pnl_pct": 0.02,
+        "line": "Bought near $146.92 \u00b7 Sell safety line $140.00 \u00b7 Profit target $157.50",
+        "plan": "stop 140.0 or target 157.5"
       }
     ],
-    "last_checked": "2026-08-21T19:00:30.803873+00:00",
+    "last_checked": "2026-08-21T19:03:16.977046+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
     "symbols_held": [
       "JPM",
-      "CVX"
+      "CVX",
+      "ORCL"
     ],
     "model_chips": [
       {
         "prefix": "J",
         "model": "grok-4.3",
         "action": "BUY",
-        "symbol": "CVX",
-        "confidence": 82,
+        "symbol": "ORCL",
+        "confidence": 78,
         "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "claude-haiku-4-5",
         "action": "BUY",
-        "symbol": "CVX",
+        "symbol": "ORCL",
         "confidence": 72,
         "tone": "buy"
       },
@@ -220,31 +246,31 @@
         "prefix": "J",
         "model": "deepseek-v4-flash",
         "action": "BUY",
-        "symbol": "CVX",
-        "confidence": 78,
+        "symbol": "ORCL",
+        "confidence": 72,
         "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
         "action": "BUY",
-        "symbol": "CVX",
-        "confidence": 75,
+        "symbol": "ORCL",
+        "confidence": 78,
         "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
         "action": "BUY",
-        "symbol": "CVX",
-        "confidence": 78,
+        "symbol": "ORCL",
+        "confidence": 74,
         "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "claude-sonnet-5",
         "action": "BUY",
-        "symbol": "CVX",
+        "symbol": "ORCL",
         "confidence": 72,
         "tone": "buy"
       },
@@ -252,13 +278,98 @@
         "prefix": "S",
         "model": "claude-opus-5",
         "action": "BUY",
-        "symbol": "CVX",
+        "symbol": "ORCL",
         "confidence": 90,
         "tone": "buy"
       }
     ]
   },
   "activity": [
+    {
+      "type": "fill",
+      "symbol": "ORCL",
+      "status": "filled_paper",
+      "headline": "BUY ORCL @ $146.92",
+      "detail": "ORCL sold off hard despite an earnings beat, creating a headline-driven dip-buy setup with Street calls for aggressive buying on weakness. Rank and catalyst scores support a tactical long while RSI is neutral and not overbought. Risk is defined under the post-print washout with a clear 1.5R+ upside target on mean-reversion/continuation.",
+      "timestamp": "2026-08-21T19:03:02.343995+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "ORCL",
+      "status": "validated",
+      "headline": "BUY ORCL \u2014 validated",
+      "detail": "ORCL sold off hard despite an earnings beat, creating a headline-driven dip-buy setup with Street calls for aggressive buying on weakness. Rank and catalyst scores support a tactical long while RSI is neutral and not overbought. Risk is defined under the post-print washout with a clear 1.5R+ upside target on mean-reversion/continuation.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "ORCL",
+          "confidence": 78,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "ORCL",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "ORCL",
+          "confidence": 72,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "ORCL",
+          "confidence": 78,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "ORCL",
+          "confidence": 74,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "ORCL",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "BUY",
+          "symbol": "ORCL",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "ORCL",
+      "timestamp": "2026-08-21T19:03:02.342810+00:00"
+    },
     {
       "type": "fill",
       "symbol": "CVX",
@@ -387,6 +498,18 @@
   ],
   "recent_trades": [
     {
+      "timestamp": "2026-08-21T19:03:02.343995+00:00",
+      "action": "BUY",
+      "symbol": "ORCL",
+      "qty": 1.36,
+      "price": 146.92,
+      "notional": 199.81,
+      "realized_pnl": null,
+      "reason": null,
+      "thesis": "ORCL sold off hard despite an earnings beat, creating a headline-driven dip-buy setup with Street calls for aggressive buying on weakness. Rank and catalyst scores support a tactical long while RSI is neutral and not overbought. Risk is defined under the post-print washout with a clear 1.5R+ upside target on mean-reversion/continuation.",
+      "status": "FILLED_PAPER"
+    },
+    {
       "timestamp": "2026-08-21T18:47:29.571333+00:00",
       "action": "BUY",
       "symbol": "CVX",
@@ -493,21 +616,37 @@
       "reason": null,
       "thesis": "",
       "status": "FILLED_PAPER"
-    },
-    {
-      "timestamp": "2026-08-19T22:55:01.646536+00:00",
-      "action": "SELL",
-      "symbol": "MSFT",
-      "qty": 0.4,
-      "price": 505.0,
-      "notional": 202.0,
-      "realized_pnl": 2.0,
-      "reason": "rotation",
-      "thesis": "",
-      "status": "FILLED_PAPER"
     }
   ],
   "trade_reasoning": [
+    {
+      "timestamp": "2026-08-21T19:03:02.343995+00:00",
+      "action": "BUY",
+      "symbol": "ORCL",
+      "qty": 1.36,
+      "price": 146.92,
+      "notional": 199.81,
+      "headline": "Bought $ORCL",
+      "side_label": "buy",
+      "narrative": "ORCL sold off hard despite an earnings beat, creating a headline-driven dip-buy setup with Street calls for aggressive buying on weakness. Rank and catalyst scores support a tactical long while RSI is neutral and not overbought. Risk is defined under the post-print washout with a clear 1.5R+ upside target on mean-reversion/continuation.",
+      "bullets": [
+        "Earnings-beat selloff + bullish Street tone",
+        "Rank 78.8 / catalyst 14 supports entry",
+        "~1.36 sh keeps notional ~$200",
+        "R:R >=1.5 vs 140 stop / 157.5 target"
+      ],
+      "risk_map": {
+        "stop": 140.0,
+        "target": 157.5,
+        "horizon_days": 5,
+        "rr": 1.53,
+        "confidence_10": 7,
+        "confidence": 74
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-08-21T18:47:29.571333+00:00",
       "action": "BUY",
@@ -10864,15 +11003,15 @@
     {
       "symbol": "CVX",
       "name": "CVX",
-      "price": 205.58999633789062,
-      "volume": 4097421.0,
-      "avg_volume": 7793892.1,
-      "percent_change": -0.0874801627218529,
+      "price": 205.8699951171875,
+      "volume": 4209608.0,
+      "avg_volume": 7805110.8,
+      "percent_change": 0.04859349888245334,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 16,
       "liquidity_score": 78.92,
-      "rank_score": 83.41,
+      "rank_score": 83.38,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): 6,972 Shares in Chevron Corporation $CVX Purchased by Oxford Financial Group LTD. LLC - MarketBeat",
       "top_headlines": [
@@ -10917,21 +11056,21 @@
     {
       "symbol": "ORCL",
       "name": "ORCL",
-      "price": 146.375,
-      "volume": 13666614.0,
-      "avg_volume": 23941031.4,
-      "percent_change": 3.0301910704887924,
+      "price": 146.9199981689453,
+      "volume": 13929090.0,
+      "avg_volume": 23967279.0,
+      "percent_change": 3.4138034734230507,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 14,
-      "liquidity_score": 83.79,
-      "rank_score": 78.49,
+      "liquidity_score": 83.8,
+      "rank_score": 78.8,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat, catalyst): ORCL Stock Tumbles 10% Despite Earnings Beat, But Wall Street Recommends 'Aggressive' Buying On Selloff - Stocktwits",
       "top_headlines": [
         "VTI is up 0.6% today, on ORCL stock price movement - Quiver Quantitative",
         "ORCL Stock Tumbles 10% Despite Earnings Beat, But Wall Street Recommends 'Aggressive' Buying On Selloff - Stocktwits",
-        "Oracle Corporation (ORCL) vs. Amazon.com (AMZN): Which AI Infrastructure Giant Is Better Positioned for Long-Term Growth? - Yahoo Finance"
+        "Oracle Corp Stock (ORCL) Opened Up by 3.41% on Aug 21: Facts Behind the Movement - TradingKey"
       ],
       "matched_headlines": [
         {
@@ -10973,15 +11112,15 @@
     {
       "symbol": "BAC",
       "name": "BAC",
-      "price": 61.82500076293945,
-      "volume": 18277279.0,
-      "avg_volume": 25623277.9,
-      "percent_change": -0.0565791255525021,
+      "price": 61.839900970458984,
+      "volume": 20377340.0,
+      "avg_volume": 25833284.0,
+      "percent_change": -0.03249214305570938,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 10,
-      "liquidity_score": 84.09,
-      "rank_score": 60.16,
+      "liquidity_score": 84.12,
+      "rank_score": 60.14,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Simplicity Wealth LLC Invests $5.97 Million in Bank of America Corporation $BAC - MarketBeat",
       "top_headlines": [
@@ -11025,71 +11164,18 @@
       ]
     },
     {
-      "symbol": "GOOGL",
-      "name": "GOOGL",
-      "price": 344.9549865722656,
-      "volume": 12073881.0,
-      "avg_volume": 19664568.1,
-      "percent_change": 1.2578075485473312,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 8,
-      "liquidity_score": 82.94,
-      "rank_score": 52.95,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (growth): Alphabet (NASDAQ:GOOGL): Strong Growth and a Technical Setup Point to a Potential Breakout - ChartMill",
-      "top_headlines": [
-        "Alphabet (NASDAQ:GOOGL): Strong Growth and a Technical Setup Point to a Potential Breakout - ChartMill",
-        "Why Is Alphabet (GOOGL) Up 7.2% Since Last Earnings Report? - Yahoo Finance Singapore",
-        "ASTS Stock Hits 2026 Low: Analyst Warns GOOGL Stake Could Shrink To Near Zero With SpaceX IPO - Stocktwits"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Alphabet (NASDAQ:GOOGL): Strong Growth and a Technical Setup Point to a Potential Breakout - ChartMill",
-          "keywords": [
-            "growth"
-          ]
-        },
-        {
-          "title": "Why Is Alphabet (GOOGL) Up 7.2% Since Last Earnings Report? - Yahoo Finance Singapore",
-          "keywords": [
-            "catalyst"
-          ]
-        },
-        {
-          "title": "ASTS Stock Hits 2026 Low: Analyst Warns GOOGL Stake Could Shrink To Near Zero With SpaceX IPO - Stocktwits",
-          "keywords": [
-            "warns"
-          ]
-        },
-        {
-          "title": "Alphabet Inc. $GOOGL Shares Sold by Elevated Capital Advisors LLC - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Alphabet (GOOGL) Stock Quotes, Company News And Chart Analysis - Investor's Business Daily",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "AAPL",
       "name": "AAPL",
-      "price": 308.45001220703125,
-      "volume": 31166070.0,
-      "avg_volume": 40668627.0,
-      "percent_change": -0.9155077731107677,
+      "price": 308.7850036621094,
+      "volume": 31942726.0,
+      "avg_volume": 40746292.6,
+      "percent_change": -0.807897278984789,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
-      "liquidity_score": 86.09,
-      "rank_score": 49.15,
-      "news_hits": 8,
+      "liquidity_score": 86.1,
+      "rank_score": 49.06,
+      "news_hits": 7,
       "catalyst": "Headline-driven setup (record): AAPL Stock Hits Fresh Record As July Rally Nears Best Month In Nearly 4 Years \u2014 HSBC Sees Another 10% Upside - Stocktwits",
       "top_headlines": [
         "AAPL Stock Hits Fresh Record As July Rally Nears Best Month In Nearly 4 Years \u2014 HSBC Sees Another 10% Upside - Stocktwits",
@@ -11131,6 +11217,63 @@
           "keywords": [
             "ai",
             "catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "JPM",
+      "name": "JPM",
+      "price": 352.19500732421875,
+      "volume": 4578368.0,
+      "avg_volume": 5330946.8,
+      "percent_change": 0.18347875228198227,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 7,
+      "liquidity_score": 77.27,
+      "rank_score": 47.24,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst): JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
+      "top_headlines": [
+        "JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
+        "JPMorgan Chase & Co. (JPM) Stock Drops Despite Market Gains: Important Facts to Note - Yahoo Finance",
+        "JPMorgan's Q2 Trading Revenues Surge 35%: Can the Momentum Continue? - TradingView"
+      ],
+      "matched_headlines": [
+        {
+          "title": "JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "JPMorgan Chase & Co. (JPM) Stock Drops Despite Market Gains: Important Facts to Note - Yahoo Finance",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "drop",
+            "drops"
+          ]
+        },
+        {
+          "title": "JPMorgan Chase & Co. (NYSE:JPM) Stock Price Down 1.3% - Should You Sell? - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "AVAII WEALTH MANAGEMENT, LLC's JPMorgan Chase & Co(JPM) Holding History - GuruFocus",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - MarketBeat",
+          "keywords": [
+            "beat"
           ]
         }
       ]
@@ -11182,23 +11325,23 @@
     "decision_mode": "live_dual_llm",
     "last_tier": "senior_escalated",
     "last_stage": "entry",
-    "last_junior_nomination": "CVX",
+    "last_junior_nomination": "ORCL",
     "last_escalate_reason": "junior_nomination",
-    "live_share_recent": 66.7
+    "live_share_recent": 75.0
   },
   "learning": {
     "candidate_signals_logged": 8,
-    "fills_logged": 308,
+    "fills_logged": 309,
     "closed_outcomes": 140,
-    "consensus_events": 267,
+    "consensus_events": 268,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1028.85,
-    "change": 28.85,
-    "change_pct": 2.89,
+    "latest_equity": 1028.68,
+    "change": 28.68,
+    "change_pct": 2.87,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15638,6 +15781,18 @@
         "t": "2026-08-21T19:00:33.558025+00:00",
         "equity": 1028.85,
         "cash": 635.51,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-21T19:03:02.343995+00:00",
+        "equity": 1028.85,
+        "cash": 435.7,
+        "event": "BUY ORCL"
+      },
+      {
+        "t": "2026-08-21T19:03:19.675294+00:00",
+        "equity": 1028.68,
+        "cash": 435.7,
         "event": "mark"
       }
     ],
