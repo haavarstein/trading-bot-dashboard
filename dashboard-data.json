@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-21T18:50:30.620536+00:00",
+  "generated_at": "2026-08-21T19:00:30.803873+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1028.71,
+    "portfolio_value": 1028.85,
     "starting_cash": 1000.0,
-    "total_return_pct": 2.87,
-    "total_pnl": 28.71,
+    "total_return_pct": 2.88,
+    "total_pnl": 28.85,
     "realized_pnl": 33.22,
-    "open_pnl": -4.53,
-    "capital_deployed": 393.2,
+    "open_pnl": -4.4,
+    "capital_deployed": 393.34,
     "cash": 635.51,
     "closed_trades": 18,
     "win_rate_pct": 38.89,
-    "vs_spy_pct": 3.34,
-    "spy_return_pct": -0.47,
+    "vs_spy_pct": 3.29,
+    "spy_return_pct": -0.41,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-21T18:50:33.462049+00:00"
+    "updated_at": "2026-08-21T19:00:33.558025+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.47,
-    "price": 765.760009765625,
+    "return_pct": -0.41,
+    "price": 766.25,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,10 +38,10 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 360.57,
-      "last": 352.0400085449219,
-      "market_value": 193.62,
-      "open_pnl": -4.69,
-      "open_pnl_pct": -2.37,
+      "last": 352.19500732421875,
+      "market_value": 193.71,
+      "open_pnl": -4.61,
+      "open_pnl_pct": -2.32,
       "stop": 350.0,
       "target": 378.0,
       "thesis": "JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit."
@@ -50,10 +50,10 @@
       "symbol": "CVX",
       "qty": 0.97,
       "avg_cost": 205.59,
-      "last": 205.75,
-      "market_value": 199.58,
-      "open_pnl": 0.16,
-      "open_pnl_pct": 0.08,
+      "last": 205.80499267578125,
+      "market_value": 199.63,
+      "open_pnl": 0.21,
+      "open_pnl_pct": 0.1,
       "stop": 199.5,
       "target": 216.0,
       "thesis": "CVX shows a ranked bullish catalyst setup with institutional buying interest and neutral RSI offering room to run. Liquid large-cap energy name fits desk preference for catalyst-driven entries under $200 notional. Risk defined below recent support with 1.7 R:R to target."
@@ -172,9 +172,9 @@
         "avg_cost": 360.57,
         "stop": 350.0,
         "target": 378.0,
-        "last": 352.0400085449219,
-        "open_pnl": -4.69,
-        "open_pnl_pct": -2.37,
+        "last": 352.19500732421875,
+        "open_pnl": -4.61,
+        "open_pnl_pct": -2.32,
         "line": "Bought near $360.57 \u00b7 Sell safety line $350.00 \u00b7 Profit target $378.00",
         "plan": "stop 350.0 or target 378.0"
       },
@@ -184,14 +184,14 @@
         "avg_cost": 205.59,
         "stop": 199.5,
         "target": 216.0,
-        "last": 205.75,
-        "open_pnl": 0.16,
-        "open_pnl_pct": 0.08,
+        "last": 205.80499267578125,
+        "open_pnl": 0.21,
+        "open_pnl_pct": 0.1,
         "line": "Bought near $205.59 \u00b7 Sell safety line $199.50 \u00b7 Profit target $216.00",
         "plan": "stop 199.5 or target 216.0"
       }
     ],
-    "last_checked": "2026-08-21T18:50:30.620536+00:00",
+    "last_checked": "2026-08-21T19:00:30.803873+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -11196,9 +11196,9 @@
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1028.71,
-    "change": 28.71,
-    "change_pct": 2.87,
+    "latest_equity": 1028.85,
+    "change": 28.85,
+    "change_pct": 2.89,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15631,6 +15631,12 @@
       {
         "t": "2026-08-21T18:50:33.462049+00:00",
         "equity": 1028.71,
+        "cash": 635.51,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-21T19:00:33.558025+00:00",
+        "equity": 1028.85,
         "cash": 635.51,
         "event": "mark"
       }
