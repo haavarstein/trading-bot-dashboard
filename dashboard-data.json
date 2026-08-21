@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-21T19:40:52.687414+00:00",
+  "generated_at": "2026-08-21T19:50:40.483889+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1028.26,
+    "portfolio_value": 1027.86,
     "starting_cash": 1000.0,
-    "total_return_pct": 2.83,
-    "total_pnl": 28.26,
+    "total_return_pct": 2.79,
+    "total_pnl": 27.86,
     "realized_pnl": 33.22,
-    "open_pnl": -4.99,
-    "capital_deployed": 592.56,
+    "open_pnl": -5.38,
+    "capital_deployed": 592.16,
     "cash": 435.7,
     "closed_trades": 18,
     "win_rate_pct": 38.89,
-    "vs_spy_pct": 3.25,
-    "spy_return_pct": -0.42,
+    "vs_spy_pct": 3.19,
+    "spy_return_pct": -0.4,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-21T19:41:09.363976+00:00"
+    "updated_at": "2026-08-21T19:50:43.207475+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.42,
-    "price": 766.1300048828125,
+    "return_pct": -0.4,
+    "price": 766.3026733398438,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,10 +38,10 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 360.57,
-      "last": 352.1199951171875,
-      "market_value": 193.67,
-      "open_pnl": -4.65,
-      "open_pnl_pct": -2.34,
+      "last": 351.57000732421875,
+      "market_value": 193.36,
+      "open_pnl": -4.95,
+      "open_pnl_pct": -2.5,
       "stop": 350.0,
       "target": 378.0,
       "thesis": "JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit."
@@ -50,10 +50,10 @@
       "symbol": "CVX",
       "qty": 0.97,
       "avg_cost": 205.59,
-      "last": 205.35499572753906,
-      "market_value": 199.19,
-      "open_pnl": -0.23,
-      "open_pnl_pct": -0.11,
+      "last": 205.38009643554688,
+      "market_value": 199.22,
+      "open_pnl": -0.2,
+      "open_pnl_pct": -0.1,
       "stop": 199.5,
       "target": 216.0,
       "thesis": "CVX shows a ranked bullish catalyst setup with institutional buying interest and neutral RSI offering room to run. Liquid large-cap energy name fits desk preference for catalyst-driven entries under $200 notional. Risk defined below recent support with 1.7 R:R to target."
@@ -62,10 +62,10 @@
       "symbol": "ORCL",
       "qty": 1.36,
       "avg_cost": 146.92,
-      "last": 146.83999633789062,
-      "market_value": 199.7,
-      "open_pnl": -0.11,
-      "open_pnl_pct": -0.05,
+      "last": 146.75,
+      "market_value": 199.58,
+      "open_pnl": -0.23,
+      "open_pnl_pct": -0.12,
       "stop": 140.0,
       "target": 157.5,
       "thesis": "ORCL sold off hard despite an earnings beat, creating a headline-driven dip-buy setup with Street calls for aggressive buying on weakness. Rank and catalyst scores support a tactical long while RSI is neutral and not overbought. Risk is defined under the post-print washout with a clear 1.5R+ upside target on mean-reversion/continuation."
@@ -74,15 +74,15 @@
   "latest_candidate": {
     "symbol": "CVX",
     "name": "CVX",
-    "price": 205.22999572753906,
-    "volume": 4472683.0,
-    "avg_volume": 7832528.3,
-    "percent_change": -0.26243307270716065,
+    "price": 205.63999938964844,
+    "volume": 4773551.0,
+    "avg_volume": 7862615.1,
+    "percent_change": -0.0631797055514272,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 16,
-    "liquidity_score": 78.94,
-    "rank_score": 83.55,
+    "liquidity_score": 78.96,
+    "rank_score": 83.39,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (beat): 6,972 Shares in Chevron Corporation $CVX Purchased by Oxford Financial Group LTD. LLC - MarketBeat",
     "top_headlines": [
@@ -125,52 +125,52 @@
     ]
   },
   "latest_decision": {
-    "model": "grok-4.3",
-    "action": "HOLD",
-    "symbol": "CASH",
-    "confidence": 65,
+    "model": "grok-4.5",
+    "action": "BUY",
+    "symbol": "GOOGL",
+    "confidence": 72,
     "cache_stats": null,
-    "entry_price": 0.0,
-    "stop_loss": 0.0,
-    "take_profit": 0.0,
-    "qty": 0.0,
-    "thesis": "No material rotation candidate exceeds current holdings in rank or catalyst strength. CVX and ORCL remain top-ranked and are already positioned with defined stops and targets. Weakest hold JPM shows negative P/L but lacks a superior replacement from candidates.",
-    "reason_code": "hold",
+    "entry_price": 345.88,
+    "stop_loss": 334.0,
+    "take_profit": 364.5,
+    "qty": 0.57,
+    "thesis": "GOOGL is the strongest non-held liquid catalyst name, with post-earnings momentum and a solid rank score versus other fresh candidates. Mega-cap liquidity fits the small notional sleeve while existing book names are already covered. Defined risk below recent support keeps reward:risk above 1.5 into a measured upside target.",
+    "reason_code": "new_entry",
     "reasoning": {
-      "headline": "Hold $CASH",
-      "narrative": "No material rotation candidate exceeds current holdings in rank or catalyst strength. CVX and ORCL remain top-ranked and are already positioned with defined stops and targets. Weakest hold JPM shows negative P/L but lacks a superior replacement from candidates.",
+      "headline": "Bought $GOOGL",
+      "narrative": "GOOGL is the strongest non-held liquid catalyst name, with post-earnings momentum and a solid rank score versus other fresh candidates. Mega-cap liquidity fits the small notional sleeve while existing book names are already covered. Defined risk below recent support keeps reward:risk above 1.5 into a measured upside target.",
       "bullets": [
-        "CVX/ORCL hold top catalyst scores; no upgrade available",
-        "BAC rank insufficient for new entry or rotation",
-        "Reward:risk and notional limits preclude marginal adds",
-        "3 open names within policy; no edge to expand"
+        "Top new candidate after already-held CVX/ORCL",
+        "Post-earnings momentum catalyst, liquid name",
+        "R:R ~1.56 with stop 334 / target 364.5",
+        "Notional ~$197 within $200 new-buy cap"
       ],
       "risk_map": {
-        "stop": 0.0,
-        "target": 0.0,
+        "stop": 334.0,
+        "target": 364.5,
         "horizon_days": 5,
-        "rr": 0.0,
-        "confidence_10": 6,
-        "confidence": 65
+        "rr": 1.57,
+        "confidence_10": 7,
+        "confidence": 72
       },
-      "thesis": "No material rotation candidate exceeds current holdings in rank or catalyst strength. CVX and ORCL remain top-ranked and are already positioned with defined stops and targets. Weakest hold JPM shows negative P/L but lacks a superior replacement from candidates."
+      "thesis": "GOOGL is the strongest non-held liquid catalyst name, with post-earnings momentum and a solid rank score versus other fresh candidates. Mega-cap liquidity fits the small notional sleeve while existing book names are already covered. Defined risk below recent support keeps reward:risk above 1.5 into a measured upside target."
     },
     "source": "live",
     "provider": "xai",
-    "provider_model_id": "grok-4.3",
+    "provider_model_id": "grok-4.5",
     "bullets": [
-      "CVX/ORCL hold top catalyst scores; no upgrade available",
-      "BAC rank insufficient for new entry or rotation",
-      "Reward:risk and notional limits preclude marginal adds",
-      "3 open names within policy; no edge to expand"
+      "Top new candidate after already-held CVX/ORCL",
+      "Post-earnings momentum catalyst, liquid name",
+      "R:R ~1.56 with stop 334 / target 364.5",
+      "Notional ~$197 within $200 new-buy cap"
     ],
-    "timestamp": "2026-08-21T19:33:04.004266+00:00"
+    "timestamp": "2026-08-21T19:50:31.780961+00:00"
   },
-  "stance": "Holding JPM, CVX, ORCL. No new trade right now.",
+  "stance": "Buying pressure on GOOGL. GOOGL is the strongest non-held liquid catalyst name, with post-earnings momentum and a solid rank score versus other fresh candidates. Mega-cap liquidity fits the small notional sleeve while existing book names are already covered. Defined risk below recent support keeps reward:risk above 1.5 into a measured upside target.",
   "thinking": {
-    "badge": "Holding what it owns",
-    "headline": "Holding JPM, CVX, ORCL. No new trade right now.",
-    "plain_english": "Right now Hermes is holding JPM, CVX, ORCL and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
+    "badge": "Looking to buy GOOGL",
+    "headline": "Buying pressure on GOOGL.",
+    "plain_english": "Right now Hermes wants exposure to GOOGL. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
     "triggers": [
       "It owns JPM, bought near $360.57. Simple plan: sell if it falls to about $350.00, or take profit near $378.00.",
       "It owns CVX, bought near $205.59. Simple plan: sell if it falls to about $199.50, or take profit near $216.00.",
@@ -185,9 +185,9 @@
         "avg_cost": 360.57,
         "stop": 350.0,
         "target": 378.0,
-        "last": 352.1199951171875,
-        "open_pnl": -4.65,
-        "open_pnl_pct": -2.34,
+        "last": 351.57000732421875,
+        "open_pnl": -4.95,
+        "open_pnl_pct": -2.5,
         "line": "Bought near $360.57 \u00b7 Sell safety line $350.00 \u00b7 Profit target $378.00",
         "plan": "stop 350.0 or target 378.0"
       },
@@ -197,9 +197,9 @@
         "avg_cost": 205.59,
         "stop": 199.5,
         "target": 216.0,
-        "last": 205.35499572753906,
-        "open_pnl": -0.23,
-        "open_pnl_pct": -0.11,
+        "last": 205.38009643554688,
+        "open_pnl": -0.2,
+        "open_pnl_pct": -0.1,
         "line": "Bought near $205.59 \u00b7 Sell safety line $199.50 \u00b7 Profit target $216.00",
         "plan": "stop 199.5 or target 216.0"
       },
@@ -209,17 +209,17 @@
         "avg_cost": 146.92,
         "stop": 140.0,
         "target": 157.5,
-        "last": 146.83999633789062,
-        "open_pnl": -0.11,
-        "open_pnl_pct": -0.05,
+        "last": 146.75,
+        "open_pnl": -0.23,
+        "open_pnl_pct": -0.12,
         "line": "Bought near $146.92 \u00b7 Sell safety line $140.00 \u00b7 Profit target $157.50",
         "plan": "stop 140.0 or target 157.5"
       }
     ],
-    "last_checked": "2026-08-21T19:40:52.687414+00:00",
+    "last_checked": "2026-08-21T19:50:40.483889+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "HOLD",
+    "action": "BUY",
     "symbols_held": [
       "JPM",
       "CVX",
@@ -245,22 +245,123 @@
       {
         "prefix": "J",
         "model": "deepseek-v4-flash",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 65,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "GOOGL",
+        "confidence": 72,
+        "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 60,
+        "confidence": 65,
         "tone": "hold"
+      },
+      {
+        "prefix": "S",
+        "model": "grok-4.5",
+        "action": "BUY",
+        "symbol": "GOOGL",
+        "confidence": 72,
+        "tone": "buy"
+      },
+      {
+        "prefix": "S",
+        "model": "claude-sonnet-5",
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 65,
+        "tone": "hold"
+      },
+      {
+        "prefix": "S",
+        "model": "claude-opus-5",
+        "action": "BUY",
+        "symbol": "GOOGL",
+        "confidence": 90,
+        "tone": "buy"
       }
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "GOOGL",
+      "status": "no_consensus",
+      "headline": "BUY GOOGL \u2014 no consensus",
+      "detail": "Desks: BUY GOOGL (72%) vs HOLD CASH (65%) vs BUY GOOGL (90%). No 2-of-3 senior agreement",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "GOOGL",
+          "confidence": 72,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "GOOGL",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "BUY",
+          "symbol": "GOOGL",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-08-21T19:50:31.780961+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -11133,15 +11234,15 @@
     {
       "symbol": "CVX",
       "name": "CVX",
-      "price": 205.22999572753906,
-      "volume": 4472683.0,
-      "avg_volume": 7832528.3,
-      "percent_change": -0.26243307270716065,
+      "price": 205.63999938964844,
+      "volume": 4773551.0,
+      "avg_volume": 7862615.1,
+      "percent_change": -0.0631797055514272,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 16,
-      "liquidity_score": 78.94,
-      "rank_score": 83.55,
+      "liquidity_score": 78.96,
+      "rank_score": 83.39,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): 6,972 Shares in Chevron Corporation $CVX Purchased by Oxford Financial Group LTD. LLC - MarketBeat",
       "top_headlines": [
@@ -11184,17 +11285,71 @@
       ]
     },
     {
+      "symbol": "GOOGL",
+      "name": "GOOGL",
+      "price": 345.8800048828125,
+      "volume": 13571767.0,
+      "avg_volume": 19817596.7,
+      "percent_change": 1.529336674706566,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 13,
+      "liquidity_score": 82.97,
+      "rank_score": 73.17,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (catalyst): Why Is Alphabet (GOOGL) Up 7.2% Since Last Earnings Report? - Yahoo Finance",
+      "top_headlines": [
+        "Why Is Alphabet (GOOGL) Up 7.2% Since Last Earnings Report? - Yahoo Finance",
+        "Alphabet (NASDAQ:GOOGL): Strong Growth and a Technical Setup Point to a Potential Breakout - ChartMill",
+        "Alphabet (GOOGL) Stock Quotes, Company News And Chart Analysis - Investor's Business Daily"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Why Is Alphabet (GOOGL) Up 7.2% Since Last Earnings Report? - Yahoo Finance",
+          "keywords": [
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Alphabet (NASDAQ:GOOGL): Strong Growth and a Technical Setup Point to a Potential Breakout - ChartMill",
+          "keywords": [
+            "growth"
+          ]
+        },
+        {
+          "title": "Alphabet (GOOGL) Stock Quotes, Company News And Chart Analysis - Investor's Business Daily",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Alphabet Inc. $GOOGL Shares Sold by Elevated Capital Advisors LLC - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Alphabet (GOOGL) Stock May Be 23% Undervalued Following $25b AI Bond Raise - simplywall.st",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
       "symbol": "ORCL",
       "name": "ORCL",
-      "price": 146.92999267578125,
-      "volume": 14953920.0,
-      "avg_volume": 24074322.0,
-      "percent_change": 3.420838390239187,
+      "price": 147.02999877929688,
+      "volume": 15366426.0,
+      "avg_volume": 24115572.6,
+      "percent_change": 3.4912305197246183,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
       "liquidity_score": 83.82,
-      "rank_score": 66.81,
+      "rank_score": 66.87,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat, catalyst): ORCL Stock Tumbles 10% Despite Earnings Beat, But Wall Street Recommends 'Aggressive' Buying On Selloff - Stocktwits",
       "top_headlines": [
@@ -11242,15 +11397,15 @@
     {
       "symbol": "BAC",
       "name": "BAC",
-      "price": 61.779998779296875,
-      "volume": 24100814.0,
-      "avg_volume": 26212101.4,
-      "percent_change": -0.12932723935553941,
+      "price": 61.744998931884766,
+      "volume": 24893925.0,
+      "avg_volume": 26291412.5,
+      "percent_change": -0.1859063649080415,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 10,
-      "liquidity_score": 84.19,
-      "rank_score": 60.23,
+      "liquidity_score": 84.2,
+      "rank_score": 60.28,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Bank of America Preferreds: Better Propositions Available Than Series GG (NYSE:BAC.PR.B) - Seeking Alpha",
       "top_headlines": [
@@ -11294,116 +11449,46 @@
       ]
     },
     {
-      "symbol": "AAPL",
-      "name": "AAPL",
-      "price": 309.97900390625,
-      "volume": 33624615.0,
-      "avg_volume": 40920891.5,
-      "percent_change": -0.4243443426015408,
+      "symbol": "NVDA",
+      "name": "NVDA",
+      "price": 215.30999755859375,
+      "volume": 76358231.0,
+      "avg_volume": 96287083.1,
+      "percent_change": -0.710172239601753,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 7,
-      "liquidity_score": 86.12,
-      "rank_score": 48.76,
-      "news_hits": 7,
-      "catalyst": "Headline-driven setup (record): AAPL Stock Hits Fresh Record As July Rally Nears Best Month In Nearly 4 Years \u2014 HSBC Sees Another 10% Upside - Stocktwits",
+      "catalyst_score": 9,
+      "liquidity_score": 89.84,
+      "rank_score": 54.54,
+      "news_hits": 6,
+      "catalyst": "Headline-driven setup (ai, beat, beats): Space Exploration Technologies (SPCX) vs. NVIDIA Corporation (NVDA): SpaceX Beats on Revenue, But AI Spending Steals the Show - Yahoo Finance",
       "top_headlines": [
-        "AAPL Stock Hits Fresh Record As July Rally Nears Best Month In Nearly 4 Years \u2014 HSBC Sees Another 10% Upside - Stocktwits",
-        "SA analyst upgrades/downgrades: AAPL, AAP, AMD, LOW - Seeking Alpha",
-        "Apple (AAPL) Opens Houston Manufacturing Center, Is The Stock Fully Valued? - simplywall.st"
+        "Space Exploration Technologies (SPCX) vs. NVIDIA Corporation (NVDA): SpaceX Beats on Revenue, But AI Spending Steals the Show - Yahoo Finance",
+        "Why Is NVDA Stock Rising In Premarket? - Stocktwits",
+        "Nvidia: 500 Billion Reasons Why This Is A Strong Buy (NASDAQ:NVDA) - Seeking Alpha"
       ],
       "matched_headlines": [
         {
-          "title": "AAPL Stock Hits Fresh Record As July Rally Nears Best Month In Nearly 4 Years \u2014 HSBC Sees Another 10% Upside - Stocktwits",
-          "keywords": [
-            "record"
-          ]
-        },
-        {
-          "title": "SA analyst upgrades/downgrades: AAPL, AAP, AMD, LOW - Seeking Alpha",
-          "keywords": [
-            "catalyst",
-            "downgrade",
-            "downgrades",
-            "upgrade",
-            "upgrades"
-          ]
-        },
-        {
-          "title": "AAPL 260821 225.00P (AAPL260821P225000) Stock Options Chain | Quotes & News - Moomoo",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Sanders Morris Harris LLC Lowers Stock Position in Apple Inc. $AAPL - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Apple's next era under Ternus could place focus on AI, potentially higher investments: BofA (AAPL:NASDAQ) - Seeking Alpha",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "COST",
-      "name": "COST",
-      "price": 947.3099975585938,
-      "volume": 1428254.0,
-      "avg_volume": 1574465.4,
-      "percent_change": 1.4782902859749187,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 7,
-      "liquidity_score": 71.97,
-      "rank_score": 47.48,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (catalyst): COST Stock Draws Price Target Hikes From Wall Street Post Earnings \u2013 A Look At What Keeps Analysts Happy And A Bit Worried - Stocktwits",
-      "top_headlines": [
-        "COST Stock Draws Price Target Hikes From Wall Street Post Earnings \u2013 A Look At What Keeps Analysts Happy And A Bit Worried - Stocktwits",
-        "Is Xerox Stock Worth Buying as Cost Savings Clash With Print Decline? - TradingView",
-        "Buc-ee's vs. Costco Stock: What the Brisket Counter Knows That the Membership Moat Doesn't - 24/7 Wall St."
-      ],
-      "matched_headlines": [
-        {
-          "title": "COST Stock Draws Price Target Hikes From Wall Street Post Earnings \u2013 A Look At What Keeps Analysts Happy And A Bit Worried - Stocktwits",
-          "keywords": [
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Is Xerox Stock Worth Buying as Cost Savings Clash With Print Decline? - TradingView",
-          "keywords": [
-            "decline"
-          ]
-        },
-        {
-          "title": "Costco Wholesale Corporation $COST Shares Sold by AIA Group Ltd - MarketBeat",
+          "title": "Space Exploration Technologies (SPCX) vs. NVIDIA Corporation (NVDA): SpaceX Beats on Revenue, But AI Spending Steals the Show - Yahoo Finance",
           "keywords": [
             "ai",
             "beat",
+            "beats",
             "catalyst"
           ]
         },
         {
-          "title": "Operto Launches Hotelier Assessment Detailing the Cost of Predatory OTAs - LODGING Magazine",
+          "title": "NVDA Stock Gains Premarket: AI Chipmaker Denies Reports Of New Bespoke AI Chip For China Market - TradingView",
           "keywords": [
             "ai",
-            "catalyst",
-            "launch"
+            "catalyst"
           ]
         },
         {
-          "title": "As Costco Launches Medicare Advantage Plans, Here\u2019s How You Should Play COST Stock - Barchart.com",
+          "title": "Nvidia (NVDA) Stock Quotes, Company News And Chart Analysis - Investor's Business Daily",
           "keywords": [
-            "catalyst",
-            "launch"
+            "ai",
+            "catalyst"
           ]
         }
       ]
@@ -11435,8 +11520,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 4,
-      "BUY": 0,
+      "HOLD": 3,
+      "BUY": 1,
       "SELL": 0,
       "live": 4,
       "fallback": 0
@@ -11453,25 +11538,25 @@
     "max_candidates_to_llm": 8,
     "log_all_disagreements": true,
     "decision_mode": "live_dual_llm",
-    "last_tier": "junior_only",
+    "last_tier": "senior_escalated",
     "last_stage": "entry",
     "last_junior_nomination": null,
-    "last_escalate_reason": "",
-    "live_share_recent": 83.3
+    "last_escalate_reason": "junior_trade_or_split",
+    "live_share_recent": 83.8
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 309,
     "closed_outcomes": 140,
-    "consensus_events": 270,
+    "consensus_events": 271,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1028.26,
-    "change": 28.26,
-    "change_pct": 2.83,
+    "latest_equity": 1027.86,
+    "change": 27.86,
+    "change_pct": 2.79,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15958,6 +16043,12 @@
       {
         "t": "2026-08-21T19:41:09.363976+00:00",
         "equity": 1028.26,
+        "cash": 435.7,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-21T19:50:43.207475+00:00",
+        "equity": 1027.86,
         "cash": 435.7,
         "event": "mark"
       }
