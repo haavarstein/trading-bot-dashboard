@@ -1,113 +1,99 @@
 {
-  "generated_at": "2026-08-21T18:35:37.387240+00:00",
+  "generated_at": "2026-08-21T18:38:24.181727+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1028.56,
+    "portfolio_value": 1028.53,
     "starting_cash": 1000.0,
-    "total_return_pct": 2.86,
-    "total_pnl": 28.56,
-    "realized_pnl": 18.84,
-    "open_pnl": 9.69,
-    "capital_deployed": 404.95,
-    "cash": 623.61,
-    "closed_trades": 17,
-    "win_rate_pct": 35.29,
-    "vs_spy_pct": 3.39,
+    "total_return_pct": 2.85,
+    "total_pnl": 28.53,
+    "realized_pnl": 33.22,
+    "open_pnl": -4.72,
+    "capital_deployed": 193.6,
+    "cash": 834.93,
+    "closed_trades": 18,
+    "win_rate_pct": 38.89,
+    "vs_spy_pct": 3.38,
     "spy_return_pct": -0.53,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-21T18:35:39.991601+00:00"
+    "updated_at": "2026-08-21T18:38:27.715450+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
     "return_pct": -0.53,
-    "price": 765.2899169921875,
+    "price": 765.280029296875,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 0,
-    "validated_count_today": 0,
+    "consensus_count_today": 1,
+    "validated_count_today": 1,
     "blocked_count_today": 0,
-    "fills_today": 0,
-    "simulated_orders_today": 0,
-    "top_symbol_today": "JPM"
+    "fills_today": 1,
+    "simulated_orders_today": 1,
+    "top_symbol_today": "TSLA"
   },
   "holdings": [
     {
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 360.57,
-      "last": 352.0299987792969,
-      "market_value": 193.62,
-      "open_pnl": -4.7,
-      "open_pnl_pct": -2.37,
+      "last": 351.9949951171875,
+      "market_value": 193.6,
+      "open_pnl": -4.72,
+      "open_pnl_pct": -2.38,
       "stop": 350.0,
       "target": 378.0,
       "thesis": "JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit."
-    },
-    {
-      "symbol": "TSLA",
-      "qty": 0.58,
-      "avg_cost": 339.55,
-      "last": 364.3550109863281,
-      "market_value": 211.33,
-      "open_pnl": 14.39,
-      "open_pnl_pct": 7.31,
-      "stop": 328.0,
-      "target": 358.5,
-      "thesis": "TSLA screens as the top ranked liquid catalyst setup with a Cybercab launch headline and bullish sentiment at a neutral RSI. Adding a small starter within the ~$200 notional cap keeps the book at 5 names without forced rotation. Defined risk below recent support targets a 1.5+ R multiple into a post-event bounce."
     }
   ],
   "latest_candidate": {
-    "symbol": "JPM",
-    "name": "JPM",
-    "price": 356.7200012207031,
-    "volume": 4298430.0,
-    "avg_volume": 4992453.0,
-    "percent_change": -1.797659677714212,
+    "symbol": "CVX",
+    "name": "CVX",
+    "price": 205.65499877929688,
+    "volume": 4023743.0,
+    "avg_volume": 7786524.3,
+    "percent_change": -0.055890309946139305,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 17,
-    "liquidity_score": 76.98,
-    "rank_score": 88.49,
+    "catalyst_score": 16,
+    "liquidity_score": 78.91,
+    "rank_score": 83.38,
     "news_hits": 8,
-    "catalyst": "Headline-driven setup (ai, catalyst): JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
+    "catalyst": "Headline-driven setup (beat): 6,972 Shares in Chevron Corporation $CVX Purchased by Oxford Financial Group LTD. LLC - MarketBeat",
     "top_headlines": [
-      "JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
-      "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - MarketBeat",
-      "Is JPMorgan Chase (JPM) Stock A Bargain Or Fully Priced? - simplywall.st"
+      "6,972 Shares in Chevron Corporation $CVX Purchased by Oxford Financial Group LTD. LLC - MarketBeat",
+      "CVX Looks 29.8% Overvalued on GF Value\u2122 as Dividend Sustainabili - GuruFocus",
+      "Chevron (NYSE: CVX) president sells 16,800 shares after exercising options - Stock Titan"
     ],
     "matched_headlines": [
       {
-        "title": "JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
-        "keywords": [
-          "ai",
-          "catalyst"
-        ]
-      },
-      {
-        "title": "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - MarketBeat",
+        "title": "6,972 Shares in Chevron Corporation $CVX Purchased by Oxford Financial Group LTD. LLC - MarketBeat",
         "keywords": [
           "beat"
         ]
       },
       {
-        "title": "Is JPMorgan Chase (JPM) Stock A Bargain Or Fully Priced? - simplywall.st",
+        "title": "CVX Looks 29.8% Overvalued on GF Value\u2122 as Dividend Sustainabili - GuruFocus",
         "keywords": [
           "ai",
           "catalyst"
         ]
       },
       {
-        "title": "JPM, GS, MS Stocks Edge Higher After-Hours \u2014 Banks Lift Dividends And Announce Buybacks After Fed Stress Test - Stocktwits",
+        "title": "LaSalle St. Investment Advisors LLC Buys New Shares in Chevron Corporation $CVX - MarketBeat",
         "keywords": [
-          "buyback",
-          "catalyst"
+          "beat"
         ]
       },
       {
-        "title": "Mosley Wealth Management Sells 2,815 Shares of JPMorgan Chase & Co. $JPM - MarketBeat",
+        "title": "163,690 Shares in Chevron Corporation $CVX Acquired by Vise Technologies Inc. - MarketBeat",
+        "keywords": [
+          "beat"
+        ]
+      },
+      {
+        "title": "Mystic Asset Management Inc. Purchases Shares of 23,673 Chevron Corporation $CVX - MarketBeat",
         "keywords": [
           "beat"
         ]
@@ -115,56 +101,45 @@
     ]
   },
   "latest_decision": {
-    "model": "grok-4.5",
-    "action": "BUY",
-    "symbol": "ANET",
-    "confidence": 78,
-    "cache_stats": null,
-    "entry_price": 186.87,
-    "stop_loss": 179.5,
-    "take_profit": 198.0,
-    "qty": 1.07,
-    "thesis": "ANET screens as the sole ranked liquid catalyst candidate with bullish sentiment and institutional accumulation headline support at a neutral RSI 50 base. Entry near 186.87 allows a defined risk to 179.5 while targeting 198 for ~1.5 R:R on the beat-driven setup. Position sized to ~$200 notional keeps risk contained with ample cash and only two open names.",
-    "reason_code": "new_entry",
+    "model": "risk-gate",
+    "action": "SELL",
+    "symbol": "TSLA",
+    "confidence": 90,
+    "entry_price": 364.3500061035156,
+    "stop_loss": 328.0,
+    "take_profit": 358.5,
+    "qty": 0.58,
+    "thesis": "HERMES AUTO-TRADE: Exiting full TSLA position on take-profit. Price $364.35 reached target $358.50. Realized path $+14.38.",
+    "reason_code": "take_profit",
     "reasoning": {
-      "headline": "Bought $ANET",
-      "narrative": "ANET screens as the sole ranked liquid catalyst candidate with bullish sentiment and institutional accumulation headline support at a neutral RSI 50 base. Entry near 186.87 allows a defined risk to 179.5 while targeting 198 for ~1.5 R:R on the beat-driven setup. Position sized to ~$200 notional keeps risk contained with ample cash and only two open names.",
+      "headline": "Sold $TSLA",
+      "narrative": "HERMES AUTO-TRADE: Exiting full TSLA position on take-profit. Price $364.35 reached target $358.50. Realized path $+14.38.",
       "bullets": [
-        "Rank 81.86 sole candidate with catalyst_score 15",
-        "Bullish sentiment + Danske Bank accumulation headline",
-        "RSI 50 neutral base supports defined long risk",
-        "~1.5 R:R to 198 with stop 179.5; qty capped ~$200"
+        "Target zone filled; lock gains and free risk budget.",
+        "No trail extension in current paper rules."
       ],
       "risk_map": {
-        "stop": 179.5,
-        "target": 198.0,
+        "stop": 328.0,
+        "target": 358.5,
         "horizon_days": 5,
-        "rr": 1.51,
-        "confidence_10": 8,
-        "confidence": 78
+        "rr": 1.64,
+        "confidence_10": 9,
+        "confidence": 90
       },
-      "thesis": "ANET screens as the sole ranked liquid catalyst candidate with bullish sentiment and institutional accumulation headline support at a neutral RSI 50 base. Entry near 186.87 allows a defined risk to 179.5 while targeting 198 for ~1.5 R:R on the beat-driven setup. Position sized to ~$200 notional keeps risk contained with ample cash and only two open names."
+      "thesis": "HERMES AUTO-TRADE: Exiting full TSLA position on take-profit. Price $364.35 reached target $358.50. Realized path $+14.38."
     },
-    "source": "live",
-    "provider": "xai",
-    "provider_model_id": "grok-4.5",
-    "bullets": [
-      "Rank 81.86 sole candidate with catalyst_score 15",
-      "Bullish sentiment + Danske Bank accumulation headline",
-      "RSI 50 neutral base supports defined long risk",
-      "~1.5 R:R to 198 with stop 179.5; qty capped ~$200"
-    ],
-    "timestamp": "2026-08-19T19:48:29.794258+00:00"
+    "stage": "exit",
+    "timestamp": "2026-08-21T18:38:07.885678+00:00"
   },
-  "stance": "Buying pressure on ANET. ANET screens as the sole ranked liquid catalyst candidate with bullish sentiment and institutional accumulation headline support at a neutral RSI 50 base. Entry near 186.87 allows a defined risk to 179.5 while targeting 198 for ~1.5 R:R on the beat-driven setup. Position sized to ~$200 notional keeps risk contained with ample cash and only two open names.",
+  "stance": "Holding JPM. No new trade right now. HERMES AUTO-TRADE: Exiting full TSLA position on take-profit. Price $364.35 reached target $358.50. Realized path $+14.38.",
   "thinking": {
-    "badge": "Looking to buy ANET",
-    "headline": "Buying pressure on ANET.",
-    "plain_english": "Right now Hermes wants exposure to ANET. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
+    "badge": "Holding what it owns",
+    "headline": "Holding JPM. No new trade right now.",
+    "plain_english": "Right now Hermes is holding JPM and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
     "triggers": [
       "It owns JPM, bought near $360.57. Simple plan: sell if it falls to about $350.00, or take profit near $378.00.",
-      "It owns TSLA, bought near $339.55. Simple plan: sell if it falls to about $328.00, or take profit near $358.50.",
       "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
+      "Top scanner name right now is CVX, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
       "If nothing looks clean, do nothing. Sitting in cash or holdings is allowed."
     ],
     "owned": [
@@ -174,94 +149,77 @@
         "avg_cost": 360.57,
         "stop": 350.0,
         "target": 378.0,
-        "last": 352.0299987792969,
-        "open_pnl": -4.7,
-        "open_pnl_pct": -2.37,
+        "last": 351.9949951171875,
+        "open_pnl": -4.72,
+        "open_pnl_pct": -2.38,
         "line": "Bought near $360.57 \u00b7 Sell safety line $350.00 \u00b7 Profit target $378.00",
         "plan": "stop 350.0 or target 378.0"
-      },
-      {
-        "symbol": "TSLA",
-        "qty": 0.58,
-        "avg_cost": 339.55,
-        "stop": 328.0,
-        "target": 358.5,
-        "last": 364.3550109863281,
-        "open_pnl": 14.39,
-        "open_pnl_pct": 7.31,
-        "line": "Bought near $339.55 \u00b7 Sell safety line $328.00 \u00b7 Profit target $358.50",
-        "plan": "stop 328.0 or target 358.5"
       }
     ],
-    "last_checked": "2026-08-21T18:35:37.387240+00:00",
+    "last_checked": "2026-08-21T18:38:24.181727+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "BUY",
+    "action": "SELL",
     "symbols_held": [
-      "JPM",
-      "TSLA"
+      "JPM"
     ],
-    "model_chips": [
-      {
-        "prefix": "J",
-        "model": "grok-4.3",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 60,
-        "tone": "hold"
-      },
-      {
-        "prefix": "J",
-        "model": "claude-haiku-4-5",
-        "action": "BUY",
-        "symbol": "ANET",
-        "confidence": 72,
-        "tone": "buy"
-      },
-      {
-        "prefix": "J",
-        "model": "deepseek-v4-flash",
-        "action": "BUY",
-        "symbol": "ANET",
-        "confidence": 72,
-        "tone": "buy"
-      },
-      {
-        "prefix": "J",
-        "model": "grok-build-0.1",
-        "action": "BUY",
-        "symbol": "ANET",
-        "confidence": 75,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "grok-4.5",
-        "action": "BUY",
-        "symbol": "ANET",
-        "confidence": 78,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "claude-sonnet-5",
-        "action": "BUY",
-        "symbol": "ANET",
-        "confidence": 72,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "claude-opus-5",
-        "action": "HOLD",
-        "symbol": "JPM",
-        "confidence": 80,
-        "tone": "hold"
-      }
-    ]
+    "model_chips": []
   },
-  "activity": [],
+  "activity": [
+    {
+      "type": "fill",
+      "symbol": "TSLA",
+      "status": "filled_paper",
+      "headline": "SELL TSLA @ $364.35",
+      "detail": "HERMES AUTO-TRADE: Exiting full TSLA position on take-profit. Price $364.35 reached target $358.50. Realized path $+14.38.",
+      "timestamp": "2026-08-21T18:38:07.885678+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "TSLA",
+      "status": "validated",
+      "headline": "SELL TSLA \u2014 validated",
+      "detail": "deterministic take_profit exit",
+      "agents": [
+        {
+          "model": "risk-gate",
+          "action": "SELL",
+          "symbol": "TSLA",
+          "confidence": 90,
+          "source": null,
+          "provider": null,
+          "tier": "senior"
+        },
+        {
+          "model": "risk-gate",
+          "action": "SELL",
+          "symbol": "TSLA",
+          "confidence": 90,
+          "source": null,
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "risk_exit",
+      "escalate_reason": "take_profit",
+      "stage": "exit",
+      "junior_nomination": null,
+      "timestamp": "2026-08-21T18:38:07.885678+00:00"
+    }
+  ],
   "recent_trades": [
+    {
+      "timestamp": "2026-08-21T18:38:07.885678+00:00",
+      "action": "SELL",
+      "symbol": "TSLA",
+      "qty": 0.58,
+      "price": 364.3500061035156,
+      "notional": 211.32,
+      "realized_pnl": 14.38,
+      "reason": "take_profit",
+      "thesis": "HERMES AUTO-TRADE: Exiting full TSLA position on take-profit. Price $364.35 reached target $358.50. Realized path $+14.38.",
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-08-19T22:55:26.421152+00:00",
       "action": "SELL",
@@ -369,21 +327,35 @@
       "reason": null,
       "thesis": "",
       "status": "FILLED_PAPER"
-    },
-    {
-      "timestamp": "2026-08-19T22:54:59.558858+00:00",
-      "action": "BUY",
-      "symbol": "AAPL",
-      "qty": 0.25,
-      "price": 400.0,
-      "notional": 100.0,
-      "realized_pnl": null,
-      "reason": null,
-      "thesis": "",
-      "status": "FILLED_PAPER"
     }
   ],
   "trade_reasoning": [
+    {
+      "timestamp": "2026-08-21T18:38:07.885678+00:00",
+      "action": "SELL",
+      "symbol": "TSLA",
+      "qty": 0.58,
+      "price": 364.3500061035156,
+      "notional": 211.32,
+      "headline": "Sold $TSLA",
+      "side_label": "sell",
+      "narrative": "HERMES AUTO-TRADE: Exiting full TSLA position on take-profit. Price $364.35 reached target $358.50. Realized path $+14.38.",
+      "bullets": [
+        "Target zone filled; lock gains and free risk budget.",
+        "No trail extension in current paper rules."
+      ],
+      "risk_map": {
+        "stop": 328.0,
+        "target": 358.5,
+        "horizon_days": 5,
+        "rr": 1.64,
+        "confidence_10": 9,
+        "confidence": 90
+      },
+      "reason_code": "take_profit",
+      "realized_pnl": 14.38,
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-08-19T22:55:26.421152+00:00",
       "action": "SELL",
@@ -8455,6 +8427,20 @@
   ],
   "closed_trades": [
     {
+      "timestamp": "2026-08-21T18:38:07.885678+00:00",
+      "symbol": "TSLA",
+      "qty": 0.58,
+      "avg_cost": 339.55,
+      "exit_price": 364.3500061035156,
+      "proceeds": 211.32,
+      "realized_pnl": 14.38,
+      "realized_pnl_pct": 7.3,
+      "reason": "take_profit",
+      "thesis": "HERMES AUTO-TRADE: Exiting full TSLA position on take-profit. Price $364.35 reached target $358.50. Realized path $+14.38.",
+      "opened_at": "2026-08-19T13:33:49.451766+00:00",
+      "hold_seconds": 191058
+    },
+    {
       "timestamp": "2026-08-19T22:55:26.420152+00:00",
       "symbol": "MSFT",
       "qty": 0.4,
@@ -8719,23 +8705,23 @@
       "thesis": "",
       "opened_at": "2026-08-18T15:17:56.582956+00:00",
       "hold_seconds": 0
-    },
-    {
-      "timestamp": "2026-08-18T15:16:38.910038+00:00",
-      "symbol": "MSFT",
-      "qty": 0.4,
-      "avg_cost": 500.0,
-      "exit_price": 505.0,
-      "proceeds": 202.0,
-      "realized_pnl": 2.0,
-      "realized_pnl_pct": 1.0,
-      "reason": "rotation",
-      "thesis": "",
-      "opened_at": "2026-08-18T15:16:38.906038+00:00",
-      "hold_seconds": 0
     }
   ],
   "closed_results": [
+    {
+      "timestamp": "2026-08-21T18:38:07.885678+00:00",
+      "symbol": "TSLA",
+      "qty": 0.58,
+      "avg_cost": 339.55,
+      "exit_price": 364.3500061035156,
+      "proceeds": 211.32,
+      "realized_pnl": 14.38,
+      "realized_pnl_pct": 7.3,
+      "reason": "take_profit",
+      "thesis": "HERMES AUTO-TRADE: Exiting full TSLA position on take-profit. Price $364.35 reached target $358.50. Realized path $+14.38.",
+      "opened_at": "2026-08-19T13:33:49.451766+00:00",
+      "hold_seconds": 191058
+    },
     {
       "timestamp": "2026-08-19T22:55:26.420152+00:00",
       "symbol": "MSFT",
@@ -10531,6 +10517,21 @@
   ],
   "top_take_profits": [
     {
+      "symbol": "TSLA",
+      "timestamp": "2026-08-21T18:38:07.885678+00:00",
+      "opened_at": "2026-08-19T13:33:49.451766+00:00",
+      "qty": 0.58,
+      "entry_price": 339.55,
+      "exit_price": 364.3500061035156,
+      "entry_value": 196.94,
+      "exit_value": 211.32,
+      "realized_pnl": 14.38,
+      "realized_pnl_pct": 7.3,
+      "reason": "take_profit",
+      "take_profit_hit": true,
+      "hold_seconds": 191058
+    },
+    {
       "symbol": "XOM",
       "timestamp": "2026-08-17T17:31:09.775715+00:00",
       "opened_at": "2026-08-06T18:15:51.839510+00:00",
@@ -10655,54 +10656,52 @@
   ],
   "top_candidates": [
     {
-      "symbol": "JPM",
-      "name": "JPM",
-      "price": 356.7200012207031,
-      "volume": 4298430.0,
-      "avg_volume": 4992453.0,
-      "percent_change": -1.797659677714212,
+      "symbol": "CVX",
+      "name": "CVX",
+      "price": 205.65499877929688,
+      "volume": 4023743.0,
+      "avg_volume": 7786524.3,
+      "percent_change": -0.055890309946139305,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 17,
-      "liquidity_score": 76.98,
-      "rank_score": 88.49,
+      "catalyst_score": 16,
+      "liquidity_score": 78.91,
+      "rank_score": 83.38,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
+      "catalyst": "Headline-driven setup (beat): 6,972 Shares in Chevron Corporation $CVX Purchased by Oxford Financial Group LTD. LLC - MarketBeat",
       "top_headlines": [
-        "JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
-        "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - MarketBeat",
-        "Is JPMorgan Chase (JPM) Stock A Bargain Or Fully Priced? - simplywall.st"
+        "6,972 Shares in Chevron Corporation $CVX Purchased by Oxford Financial Group LTD. LLC - MarketBeat",
+        "CVX Looks 29.8% Overvalued on GF Value\u2122 as Dividend Sustainabili - GuruFocus",
+        "Chevron (NYSE: CVX) president sells 16,800 shares after exercising options - Stock Titan"
       ],
       "matched_headlines": [
         {
-          "title": "JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "JPMorgan Chase & Co. $JPM Stock Holdings Increased by Alecta Tjanstepension Omsesidigt - MarketBeat",
+          "title": "6,972 Shares in Chevron Corporation $CVX Purchased by Oxford Financial Group LTD. LLC - MarketBeat",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "Is JPMorgan Chase (JPM) Stock A Bargain Or Fully Priced? - simplywall.st",
+          "title": "CVX Looks 29.8% Overvalued on GF Value\u2122 as Dividend Sustainabili - GuruFocus",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "JPM, GS, MS Stocks Edge Higher After-Hours \u2014 Banks Lift Dividends And Announce Buybacks After Fed Stress Test - Stocktwits",
+          "title": "LaSalle St. Investment Advisors LLC Buys New Shares in Chevron Corporation $CVX - MarketBeat",
           "keywords": [
-            "buyback",
-            "catalyst"
+            "beat"
           ]
         },
         {
-          "title": "Mosley Wealth Management Sells 2,815 Shares of JPMorgan Chase & Co. $JPM - MarketBeat",
+          "title": "163,690 Shares in Chevron Corporation $CVX Acquired by Vise Technologies Inc. - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Mystic Asset Management Inc. Purchases Shares of 23,673 Chevron Corporation $CVX - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -10710,53 +10709,55 @@
       ]
     },
     {
-      "symbol": "ANET",
-      "name": "ANET",
-      "price": 186.8699951171875,
-      "volume": 4053244.0,
-      "avg_volume": 6794234.4,
-      "percent_change": -3.266382543653977,
+      "symbol": "ORCL",
+      "name": "ORCL",
+      "price": 145.94000244140625,
+      "volume": 13485800.0,
+      "avg_volume": 23922950.0,
+      "percent_change": 2.7240057138561014,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 15,
-      "liquidity_score": 78.32,
-      "rank_score": 81.86,
+      "catalyst_score": 14,
+      "liquidity_score": 83.79,
+      "rank_score": 78.25,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): Arista Networks, Inc. $ANET Shares Bought by Danske Bank A S - MarketBeat",
+      "catalyst": "Headline-driven setup (beat, catalyst): ORCL Stock Tumbles 10% Despite Earnings Beat, But Wall Street Recommends 'Aggressive' Buying On Selloff - Stocktwits",
       "top_headlines": [
-        "Arista Networks, Inc. $ANET Shares Bought by Danske Bank A S - MarketBeat",
-        "Arista Networks \u2022 Robinhood Token - ANET - Stock Price & News - fool.com",
-        "Arista Networks Inc (ANET) Shares Fall 4.3% -- GF Value Says Sti - GuruFocus"
+        "VTI is up 0.6% today, on ORCL stock price movement - Quiver Quantitative",
+        "ORCL Stock Tumbles 10% Despite Earnings Beat, But Wall Street Recommends 'Aggressive' Buying On Selloff - Stocktwits",
+        "Oracle Corporation (ORCL) vs. Amazon.com (AMZN): Which AI Infrastructure Giant Is Better Positioned for Long-Term Growth? - Yahoo Finance"
       ],
       "matched_headlines": [
         {
-          "title": "Arista Networks, Inc. $ANET Shares Bought by Danske Bank A S - MarketBeat",
+          "title": "ORCL Stock Tumbles 10% Despite Earnings Beat, But Wall Street Recommends 'Aggressive' Buying On Selloff - Stocktwits",
           "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Arista Networks Inc (ANET) Shares Fall 4.3% -- GF Value Says Sti - GuruFocus",
-          "keywords": [
-            "fall"
-          ]
-        },
-        {
-          "title": "The Bull Case For Arista Networks (ANET) Could Change Following Its Upbeat AI Networking Revenue Outlook - simplywall.st",
-          "keywords": [
-            "ai",
             "beat",
             "catalyst"
           ]
         },
         {
-          "title": "Arista Networks, Inc. $ANET Shares Purchased by Wealthfront Advisers LLC - MarketBeat",
+          "title": "Oracle Corporation (ORCL) vs. Amazon.com (AMZN): Which AI Infrastructure Giant Is Better Positioned for Long-Term Growth? - Yahoo Finance",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "growth"
+          ]
+        },
+        {
+          "title": "ORCL Looks 25.9% Undervalued on GF Value\u2122 After $17B VA Contract Boost - GuruFocus",
+          "keywords": [
+            "catalyst",
+            "contract"
+          ]
+        },
+        {
+          "title": "TrinityBridge Ltd Has $3.22 Million Stock Position in Oracle Corporation $ORCL - MarketBeat",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "Arista Networks, Inc. $ANET Shares Sold by GSA Capital Partners LLP - MarketBeat",
+          "title": "Oracle Corporation $ORCL Stake Boosted by Vise Technologies Inc. - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -10764,49 +10765,52 @@
       ]
     },
     {
-      "symbol": "PANW",
-      "name": "PANW",
-      "price": 358.4862060546875,
-      "volume": 3469604.0,
-      "avg_volume": 5030660.4,
-      "percent_change": -4.183943973076277,
+      "symbol": "BAC",
+      "name": "BAC",
+      "price": 61.814998626708984,
+      "volume": 17234471.0,
+      "avg_volume": 25518997.1,
+      "percent_change": -0.0727481138030373,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 14,
-      "liquidity_score": 77.02,
-      "rank_score": 76.9,
+      "catalyst_score": 10,
+      "liquidity_score": 84.07,
+      "rank_score": 60.17,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - MarketBeat",
+      "catalyst": "Headline-driven setup (ai, catalyst): Bank of America Preferreds: Better Propositions Available Than Series GG (NYSE:BAC.PR.B) - Seeking Alpha",
       "top_headlines": [
-        "PANW Stock Quote Price and Forecast - CNN",
-        "Palo Alto Networks Inc Stock (PANW) Moved Down by 3.79% on Aug 19: Facts Behind the Movement - TradingKey",
-        "Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - MarketBeat"
+        "Bank of America Preferreds: Better Propositions Available Than Series GG (NYSE:BAC.PR.B) - Seeking Alpha",
+        "Simplicity Wealth LLC Invests $5.97 Million in Bank of America Corporation $BAC - MarketBeat",
+        "Bank of America (BAC) Wins Digital Mortgage Honors, But Is The Valuation Opportunity Priced In? - simplywall.st"
       ],
       "matched_headlines": [
         {
-          "title": "Cantor Fitzgerald Issues Positive Forecast for Palo Alto Networks (NASDAQ:PANW) Stock Price - MarketBeat",
+          "title": "Bank of America Preferreds: Better Propositions Available Than Series GG (NYSE:BAC.PR.B) - Seeking Alpha",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Simplicity Wealth LLC Invests $5.97 Million in Bank of America Corporation $BAC - MarketBeat",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "PANW Maintained by Stifel -- Price Target Raised to $415 - GuruFocus",
+          "title": "Bank of America (BAC) Wins Digital Mortgage Honors, But Is The Valuation Opportunity Priced In? - simplywall.st",
           "keywords": [
-            "ai",
-            "catalyst",
-            "raised"
+            "wins"
           ]
         },
         {
-          "title": "Palo Alto CEO Says 'Cybersecurity SaaSpocalypse Is Dead' \u2013 PANW Stock Slips Premarket Despite Analyst Upgrades - Stocktwits",
+          "title": "Trivium Point Advisory LLC Takes Position in Bank of America Corporation $BAC - MarketBeat",
           "keywords": [
-            "catalyst",
-            "upgrade",
-            "upgrades"
+            "beat"
           ]
         },
         {
-          "title": "Get Paid 15% A Year To Wait For PANW Stock To Go On Sale - Trefis",
+          "title": "Bank of America Preferreds: Better Propositions Available Than Series GG (NYSE:BAC.PR.B) - Seeking Alpha",
           "keywords": [
             "ai",
             "catalyst"
@@ -10815,99 +10819,112 @@
       ]
     },
     {
-      "symbol": "CVX",
-      "name": "CVX",
-      "price": 205.44500732421875,
-      "volume": 6167375.0,
-      "avg_volume": 7741037.5,
-      "percent_change": -0.14338396085787708,
+      "symbol": "AAPL",
+      "name": "AAPL",
+      "price": 308.6400146484375,
+      "volume": 30760207.0,
+      "avg_volume": 40628040.7,
+      "percent_change": -0.8544726144673912,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 13,
-      "liquidity_score": 78.89,
-      "rank_score": 69.95,
+      "catalyst_score": 7,
+      "liquidity_score": 86.09,
+      "rank_score": 49.1,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): 24,867 Shares in Chevron Corporation $CVX Purchased by Investmark Advisory Group LLC - MarketBeat",
+      "catalyst": "Headline-driven setup (record): AAPL Stock Hits Fresh Record As July Rally Nears Best Month In Nearly 4 Years \u2014 HSBC Sees Another 10% Upside - Stocktwits",
       "top_headlines": [
-        "Should Chevron\u2019s (CVX) Angola Tie-Back Discovery Reshape How Investors View Its Infrastructure Strategy? - simplywall.st",
-        "The Questions That Decide CVX Stock - Yahoo Finance",
-        "24,867 Shares in Chevron Corporation $CVX Purchased by Investmark Advisory Group LLC - MarketBeat"
+        "AAPL Stock Hits Fresh Record As July Rally Nears Best Month In Nearly 4 Years \u2014 HSBC Sees Another 10% Upside - Stocktwits",
+        "Apple (AAPL) Opens Houston Manufacturing Center, Is The Stock Fully Valued? - simplywall.st",
+        "SA analyst upgrades/downgrades: AAPL, AAP, AMD, LOW - Seeking Alpha"
       ],
       "matched_headlines": [
         {
-          "title": "24,867 Shares in Chevron Corporation $CVX Purchased by Investmark Advisory Group LLC - MarketBeat",
+          "title": "AAPL Stock Hits Fresh Record As July Rally Nears Best Month In Nearly 4 Years \u2014 HSBC Sees Another 10% Upside - Stocktwits",
           "keywords": [
-            "beat"
+            "record"
           ]
         },
         {
-          "title": "CVX Maintained by Morgan Stanley -- Price Target Raised to $218 - GuruFocus",
+          "title": "SA analyst upgrades/downgrades: AAPL, AAP, AMD, LOW - Seeking Alpha",
+          "keywords": [
+            "catalyst",
+            "downgrade",
+            "downgrades",
+            "upgrade",
+            "upgrades"
+          ]
+        },
+        {
+          "title": "AAPL 260821 225.00P (AAPL260821P225000) Stock Options Chain | Quotes & News - Moomoo",
           "keywords": [
             "ai",
-            "catalyst",
-            "raised"
+            "catalyst"
           ]
         },
         {
-          "title": "Rayburn West Financial Services LLC Buys New Position in Chevron Corporation $CVX - MarketBeat",
+          "title": "Sanders Morris Harris LLC Lowers Stock Position in Apple Inc. $AAPL - MarketBeat",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "42,220 Shares in Chevron Corporation $CVX Bought by Compass Wealth Management LLC - MarketBeat",
+          "title": "Apple's next era under Ternus could place focus on AI, potentially higher investments: BofA (AAPL:NASDAQ) - Seeking Alpha",
           "keywords": [
-            "beat"
+            "ai",
+            "catalyst"
           ]
         }
       ]
     },
     {
-      "symbol": "XOM",
-      "name": "XOM",
-      "price": 164.9250030517578,
-      "volume": 7293267.0,
-      "avg_volume": 13693806.7,
-      "percent_change": -0.3835434381491852,
+      "symbol": "GOOGL",
+      "name": "GOOGL",
+      "price": 344.5400085449219,
+      "volume": 11931413.0,
+      "avg_volume": 19650321.3,
+      "percent_change": 1.1359952342880433,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 11,
-      "liquidity_score": 81.37,
-      "rank_score": 62.51,
+      "catalyst_score": 7,
+      "liquidity_score": 82.93,
+      "rank_score": 48.85,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (catalyst, contract): ExxonMobil Holdings (XOM) Awards Rovuma LNG Contracts, Does It Look Fully Valued? - Yahoo Finance",
+      "catalyst": "Headline-driven setup (growth): Alphabet (NASDAQ:GOOGL): Strong Growth and a Technical Setup Point to a Potential Breakout - ChartMill",
       "top_headlines": [
-        "ExxonMobil Holdings (XOM) Awards Rovuma LNG Contracts, Does It Look Fully Valued? - Yahoo Finance",
-        "XOM Maintained by Morgan Stanley -- Price Target Raised to $177 - GuruFocus",
-        "Great Lakes Advisors LLC Has $197.06 Million Stake in ExxonMobil Corporation $XOM - MarketBeat"
+        "Alphabet (NASDAQ:GOOGL): Strong Growth and a Technical Setup Point to a Potential Breakout - ChartMill",
+        "Why Is Alphabet (GOOGL) Up 7.2% Since Last Earnings Report? - Yahoo Finance Singapore",
+        "ASTS Stock Hits 2026 Low: Analyst Warns GOOGL Stake Could Shrink To Near Zero With SpaceX IPO - Stocktwits"
       ],
       "matched_headlines": [
         {
-          "title": "ExxonMobil Holdings (XOM) Awards Rovuma LNG Contracts, Does It Look Fully Valued? - Yahoo Finance",
+          "title": "Alphabet (NASDAQ:GOOGL): Strong Growth and a Technical Setup Point to a Potential Breakout - ChartMill",
           "keywords": [
-            "catalyst",
-            "contract"
+            "growth"
           ]
         },
         {
-          "title": "XOM Maintained by Morgan Stanley -- Price Target Raised to $177 - GuruFocus",
+          "title": "Why Is Alphabet (GOOGL) Up 7.2% Since Last Earnings Report? - Yahoo Finance Singapore",
           "keywords": [
-            "ai",
-            "catalyst",
-            "raised"
+            "catalyst"
           ]
         },
         {
-          "title": "Great Lakes Advisors LLC Has $197.06 Million Stake in ExxonMobil Corporation $XOM - MarketBeat",
+          "title": "ASTS Stock Hits 2026 Low: Analyst Warns GOOGL Stake Could Shrink To Near Zero With SpaceX IPO - Stocktwits",
+          "keywords": [
+            "warns"
+          ]
+        },
+        {
+          "title": "Alphabet Inc. $GOOGL Shares Sold by Elevated Capital Advisors LLC - MarketBeat",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "Exxon awards $1.1B in contracts for Mozambique's Rovuma LNG project (XOM:NYSE) - Seeking Alpha",
+          "title": "Alphabet (GOOGL) Stock Quotes, Company News And Chart Analysis - Investor's Business Daily",
           "keywords": [
-            "catalyst",
-            "contract"
+            "ai",
+            "catalyst"
           ]
         }
       ]
@@ -10938,13 +10955,7 @@
       "grok-build-0.1"
     ],
     "junior_min_agree": 3,
-    "junior_votes": {
-      "HOLD": 1,
-      "BUY": 3,
-      "SELL": 0,
-      "live": 4,
-      "fallback": 0
-    },
+    "junior_votes": null,
     "junior_model_3_enabled": true,
     "model_1": "grok-4.5",
     "model_1_effort": "medium",
@@ -10956,26 +10967,26 @@
     "min_confidence": 70,
     "max_candidates_to_llm": 8,
     "log_all_disagreements": true,
-    "decision_mode": "live_dual_llm",
-    "last_tier": "senior_escalated",
-    "last_stage": "entry",
-    "last_junior_nomination": "ANET",
-    "last_escalate_reason": "junior_nomination",
-    "live_share_recent": 85.7
+    "decision_mode": "fallback_deterministic",
+    "last_tier": "risk_exit",
+    "last_stage": "exit",
+    "last_junior_nomination": null,
+    "last_escalate_reason": "take_profit",
+    "live_share_recent": 0.0
   },
   "learning": {
     "candidate_signals_logged": 8,
-    "fills_logged": 306,
-    "closed_outcomes": 139,
-    "consensus_events": 265,
+    "fills_logged": 307,
+    "closed_outcomes": 140,
+    "consensus_events": 266,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1028.56,
-    "change": 28.56,
-    "change_pct": 2.86,
+    "latest_equity": 1028.53,
+    "change": 28.53,
+    "change_pct": 2.85,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15373,6 +15384,18 @@
         "t": "2026-08-21T18:35:39.991601+00:00",
         "equity": 1028.56,
         "cash": 623.61,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-21T18:38:07.885678+00:00",
+        "equity": 1028.56,
+        "cash": 834.93,
+        "event": "SELL TSLA"
+      },
+      {
+        "t": "2026-08-21T18:38:27.715450+00:00",
+        "equity": 1028.53,
+        "cash": 834.93,
         "event": "mark"
       }
     ],
