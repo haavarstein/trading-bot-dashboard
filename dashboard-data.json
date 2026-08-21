@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-21T18:38:24.181727+00:00",
+  "generated_at": "2026-08-21T18:40:33.521098+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1028.53,
+    "portfolio_value": 1028.52,
     "starting_cash": 1000.0,
     "total_return_pct": 2.85,
-    "total_pnl": 28.53,
+    "total_pnl": 28.52,
     "realized_pnl": 33.22,
     "open_pnl": -4.72,
-    "capital_deployed": 193.6,
+    "capital_deployed": 193.59,
     "cash": 834.93,
     "closed_trades": 18,
     "win_rate_pct": 38.89,
-    "vs_spy_pct": 3.38,
-    "spy_return_pct": -0.53,
+    "vs_spy_pct": 3.37,
+    "spy_return_pct": -0.52,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-21T18:38:27.715450+00:00"
+    "updated_at": "2026-08-21T18:40:37.238612+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.53,
-    "price": 765.280029296875,
+    "return_pct": -0.52,
+    "price": 765.39501953125,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,8 +38,8 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 360.57,
-      "last": 351.9949951171875,
-      "market_value": 193.6,
+      "last": 351.9800109863281,
+      "market_value": 193.59,
       "open_pnl": -4.72,
       "open_pnl_pct": -2.38,
       "stop": 350.0,
@@ -149,14 +149,14 @@
         "avg_cost": 360.57,
         "stop": 350.0,
         "target": 378.0,
-        "last": 351.9949951171875,
+        "last": 351.9800109863281,
         "open_pnl": -4.72,
         "open_pnl_pct": -2.38,
         "line": "Bought near $360.57 \u00b7 Sell safety line $350.00 \u00b7 Profit target $378.00",
         "plan": "stop 350.0 or target 378.0"
       }
     ],
-    "last_checked": "2026-08-21T18:38:24.181727+00:00",
+    "last_checked": "2026-08-21T18:40:33.521098+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "SELL",
@@ -10984,8 +10984,8 @@
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1028.53,
-    "change": 28.53,
+    "latest_equity": 1028.52,
+    "change": 28.52,
     "change_pct": 2.85,
     "points": [
       {
@@ -15395,6 +15395,12 @@
       {
         "t": "2026-08-21T18:38:27.715450+00:00",
         "equity": 1028.53,
+        "cash": 834.93,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-21T18:40:37.238612+00:00",
+        "equity": 1028.52,
         "cash": 834.93,
         "event": "mark"
       }
