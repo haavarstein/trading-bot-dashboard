@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-21T19:50:40.483889+00:00",
+  "generated_at": "2026-08-21T19:50:42.795259+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1027.86,
+    "portfolio_value": 1027.91,
     "starting_cash": 1000.0,
     "total_return_pct": 2.79,
-    "total_pnl": 27.86,
+    "total_pnl": 27.91,
     "realized_pnl": 33.22,
-    "open_pnl": -5.38,
-    "capital_deployed": 592.16,
+    "open_pnl": -5.33,
+    "capital_deployed": 592.21,
     "cash": 435.7,
     "closed_trades": 18,
     "win_rate_pct": 38.89,
     "vs_spy_pct": 3.19,
     "spy_return_pct": -0.4,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-21T19:50:43.207475+00:00"
+    "updated_at": "2026-08-21T19:50:45.541885+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
     "return_pct": -0.4,
-    "price": 766.3026733398438,
+    "price": 766.2999877929688,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -50,10 +50,10 @@
       "symbol": "CVX",
       "qty": 0.97,
       "avg_cost": 205.59,
-      "last": 205.38009643554688,
-      "market_value": 199.22,
-      "open_pnl": -0.2,
-      "open_pnl_pct": -0.1,
+      "last": 205.43499755859375,
+      "market_value": 199.27,
+      "open_pnl": -0.15,
+      "open_pnl_pct": -0.08,
       "stop": 199.5,
       "target": 216.0,
       "thesis": "CVX shows a ranked bullish catalyst setup with institutional buying interest and neutral RSI offering room to run. Liquid large-cap energy name fits desk preference for catalyst-driven entries under $200 notional. Risk defined below recent support with 1.7 R:R to target."
@@ -197,9 +197,9 @@
         "avg_cost": 205.59,
         "stop": 199.5,
         "target": 216.0,
-        "last": 205.38009643554688,
-        "open_pnl": -0.2,
-        "open_pnl_pct": -0.1,
+        "last": 205.43499755859375,
+        "open_pnl": -0.15,
+        "open_pnl_pct": -0.08,
         "line": "Bought near $205.59 \u00b7 Sell safety line $199.50 \u00b7 Profit target $216.00",
         "plan": "stop 199.5 or target 216.0"
       },
@@ -216,7 +216,7 @@
         "plan": "stop 140.0 or target 157.5"
       }
     ],
-    "last_checked": "2026-08-21T19:50:40.483889+00:00",
+    "last_checked": "2026-08-21T19:50:42.795259+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -11554,8 +11554,8 @@
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1027.86,
-    "change": 27.86,
+    "latest_equity": 1027.91,
+    "change": 27.91,
     "change_pct": 2.79,
     "points": [
       {
@@ -16049,6 +16049,12 @@
       {
         "t": "2026-08-21T19:50:43.207475+00:00",
         "equity": 1027.86,
+        "cash": 435.7,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-21T19:50:45.541885+00:00",
+        "equity": 1027.91,
         "cash": 435.7,
         "event": "mark"
       }
