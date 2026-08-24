@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-08-24T14:20:18.411053+00:00",
+  "generated_at": "2026-08-24T14:30:16.782955+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1024.06,
+    "portfolio_value": 1022.96,
     "starting_cash": 1000.0,
-    "total_return_pct": 2.41,
-    "total_pnl": 24.06,
+    "total_return_pct": 2.3,
+    "total_pnl": 22.96,
     "realized_pnl": 33.22,
-    "open_pnl": -9.2,
-    "capital_deployed": 588.36,
+    "open_pnl": -10.3,
+    "capital_deployed": 587.26,
     "cash": 435.7,
     "closed_trades": 18,
     "win_rate_pct": 38.89,
-    "vs_spy_pct": 3.24,
+    "vs_spy_pct": 3.13,
     "spy_return_pct": -0.83,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-24T14:20:21.571770+00:00"
+    "updated_at": "2026-08-24T14:30:19.457395+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
@@ -38,10 +38,10 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 360.57,
-      "last": 357.875,
-      "market_value": 196.83,
-      "open_pnl": -1.48,
-      "open_pnl_pct": -0.75,
+      "last": 357.15618896484375,
+      "market_value": 196.44,
+      "open_pnl": -1.88,
+      "open_pnl_pct": -0.95,
       "stop": 350.0,
       "target": 378.0,
       "thesis": "JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit."
@@ -50,10 +50,10 @@
       "symbol": "CVX",
       "qty": 0.97,
       "avg_cost": 205.59,
-      "last": 204.3990020751953,
-      "market_value": 198.27,
-      "open_pnl": -1.16,
-      "open_pnl_pct": -0.58,
+      "last": 203.87010192871094,
+      "market_value": 197.75,
+      "open_pnl": -1.67,
+      "open_pnl_pct": -0.84,
       "stop": 199.5,
       "target": 216.0,
       "thesis": "CVX shows a ranked bullish catalyst setup with institutional buying interest and neutral RSI offering room to run. Liquid large-cap energy name fits desk preference for catalyst-driven entries under $200 notional. Risk defined below recent support with 1.7 R:R to target."
@@ -62,10 +62,10 @@
       "symbol": "ORCL",
       "qty": 1.36,
       "avg_cost": 146.92,
-      "last": 142.0998992919922,
-      "market_value": 193.26,
-      "open_pnl": -6.56,
-      "open_pnl_pct": -3.28,
+      "last": 141.9600067138672,
+      "market_value": 193.07,
+      "open_pnl": -6.75,
+      "open_pnl_pct": -3.38,
       "stop": 140.0,
       "target": 157.5,
       "thesis": "ORCL sold off hard despite an earnings beat, creating a headline-driven dip-buy setup with Street calls for aggressive buying on weakness. Rank and catalyst scores support a tactical long while RSI is neutral and not overbought. Risk is defined under the post-print washout with a clear 1.5R+ upside target on mean-reversion/continuation."
@@ -186,9 +186,9 @@
         "avg_cost": 360.57,
         "stop": 350.0,
         "target": 378.0,
-        "last": 357.875,
-        "open_pnl": -1.48,
-        "open_pnl_pct": -0.75,
+        "last": 357.15618896484375,
+        "open_pnl": -1.88,
+        "open_pnl_pct": -0.95,
         "line": "Bought near $360.57 \u00b7 Sell safety line $350.00 \u00b7 Profit target $378.00",
         "plan": "stop 350.0 or target 378.0"
       },
@@ -198,9 +198,9 @@
         "avg_cost": 205.59,
         "stop": 199.5,
         "target": 216.0,
-        "last": 204.3990020751953,
-        "open_pnl": -1.16,
-        "open_pnl_pct": -0.58,
+        "last": 203.87010192871094,
+        "open_pnl": -1.67,
+        "open_pnl_pct": -0.84,
         "line": "Bought near $205.59 \u00b7 Sell safety line $199.50 \u00b7 Profit target $216.00",
         "plan": "stop 199.5 or target 216.0"
       },
@@ -210,14 +210,14 @@
         "avg_cost": 146.92,
         "stop": 140.0,
         "target": 157.5,
-        "last": 142.0998992919922,
-        "open_pnl": -6.56,
-        "open_pnl_pct": -3.28,
+        "last": 141.9600067138672,
+        "open_pnl": -6.75,
+        "open_pnl_pct": -3.38,
         "line": "Bought near $146.92 \u00b7 Sell safety line $140.00 \u00b7 Profit target $157.50",
         "plan": "stop 140.0 or target 157.5"
       }
     ],
-    "last_checked": "2026-08-24T14:20:18.411053+00:00",
+    "last_checked": "2026-08-24T14:30:16.782955+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -11283,9 +11283,9 @@
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1024.06,
-    "change": 24.06,
-    "change_pct": 2.41,
+    "latest_equity": 1022.96,
+    "change": 22.96,
+    "change_pct": 2.3,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15826,6 +15826,12 @@
       {
         "t": "2026-08-24T14:20:21.571770+00:00",
         "equity": 1024.06,
+        "cash": 435.7,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-24T14:30:19.457395+00:00",
+        "equity": 1022.96,
         "cash": 435.7,
         "event": "mark"
       }
