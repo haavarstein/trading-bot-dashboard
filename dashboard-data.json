@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-08-21T19:50:42.795259+00:00",
+  "generated_at": "2026-08-24T13:30:23.719326+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1027.91,
+    "portfolio_value": 1024.49,
     "starting_cash": 1000.0,
-    "total_return_pct": 2.79,
-    "total_pnl": 27.91,
+    "total_return_pct": 2.45,
+    "total_pnl": 24.49,
     "realized_pnl": 33.22,
-    "open_pnl": -5.33,
-    "capital_deployed": 592.21,
+    "open_pnl": -8.76,
+    "capital_deployed": 588.79,
     "cash": 435.7,
     "closed_trades": 18,
     "win_rate_pct": 38.89,
-    "vs_spy_pct": 3.19,
-    "spy_return_pct": -0.4,
+    "vs_spy_pct": 3.13,
+    "spy_return_pct": -0.68,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-21T19:50:45.541885+00:00"
+    "updated_at": "2026-08-24T13:30:28.185462+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.4,
-    "price": 766.2999877929688,
+    "return_pct": -0.68,
+    "price": 764.1400146484375,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 5,
-    "validated_count_today": 5,
+    "consensus_count_today": 0,
+    "validated_count_today": 0,
     "blocked_count_today": 0,
-    "fills_today": 3,
-    "simulated_orders_today": 5,
-    "top_symbol_today": "TSLA"
+    "fills_today": 0,
+    "simulated_orders_today": 0,
+    "top_symbol_today": "CVX"
   },
   "holdings": [
     {
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 360.57,
-      "last": 351.57000732421875,
-      "market_value": 193.36,
-      "open_pnl": -4.95,
-      "open_pnl_pct": -2.5,
+      "last": 353.30499267578125,
+      "market_value": 194.32,
+      "open_pnl": -4.0,
+      "open_pnl_pct": -2.01,
       "stop": 350.0,
       "target": 378.0,
       "thesis": "JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit."
@@ -50,10 +50,10 @@
       "symbol": "CVX",
       "qty": 0.97,
       "avg_cost": 205.59,
-      "last": 205.43499755859375,
-      "market_value": 199.27,
-      "open_pnl": -0.15,
-      "open_pnl_pct": -0.08,
+      "last": 204.00999450683594,
+      "market_value": 197.89,
+      "open_pnl": -1.53,
+      "open_pnl_pct": -0.77,
       "stop": 199.5,
       "target": 216.0,
       "thesis": "CVX shows a ranked bullish catalyst setup with institutional buying interest and neutral RSI offering room to run. Liquid large-cap energy name fits desk preference for catalyst-driven entries under $200 notional. Risk defined below recent support with 1.7 R:R to target."
@@ -62,10 +62,10 @@
       "symbol": "ORCL",
       "qty": 1.36,
       "avg_cost": 146.92,
-      "last": 146.75,
-      "market_value": 199.58,
-      "open_pnl": -0.23,
-      "open_pnl_pct": -0.12,
+      "last": 144.5449981689453,
+      "market_value": 196.58,
+      "open_pnl": -3.23,
+      "open_pnl_pct": -1.62,
       "stop": 140.0,
       "target": 157.5,
       "thesis": "ORCL sold off hard despite an earnings beat, creating a headline-driven dip-buy setup with Street calls for aggressive buying on weakness. Rank and catalyst scores support a tactical long while RSI is neutral and not overbought. Risk is defined under the post-print washout with a clear 1.5R+ upside target on mean-reversion/continuation."
@@ -185,9 +185,9 @@
         "avg_cost": 360.57,
         "stop": 350.0,
         "target": 378.0,
-        "last": 351.57000732421875,
-        "open_pnl": -4.95,
-        "open_pnl_pct": -2.5,
+        "last": 353.30499267578125,
+        "open_pnl": -4.0,
+        "open_pnl_pct": -2.01,
         "line": "Bought near $360.57 \u00b7 Sell safety line $350.00 \u00b7 Profit target $378.00",
         "plan": "stop 350.0 or target 378.0"
       },
@@ -197,9 +197,9 @@
         "avg_cost": 205.59,
         "stop": 199.5,
         "target": 216.0,
-        "last": 205.43499755859375,
-        "open_pnl": -0.15,
-        "open_pnl_pct": -0.08,
+        "last": 204.00999450683594,
+        "open_pnl": -1.53,
+        "open_pnl_pct": -0.77,
         "line": "Bought near $205.59 \u00b7 Sell safety line $199.50 \u00b7 Profit target $216.00",
         "plan": "stop 199.5 or target 216.0"
       },
@@ -209,14 +209,14 @@
         "avg_cost": 146.92,
         "stop": 140.0,
         "target": 157.5,
-        "last": 146.75,
-        "open_pnl": -0.23,
-        "open_pnl_pct": -0.12,
+        "last": 144.5449981689453,
+        "open_pnl": -3.23,
+        "open_pnl_pct": -1.62,
         "line": "Bought near $146.92 \u00b7 Sell safety line $140.00 \u00b7 Profit target $157.50",
         "plan": "stop 140.0 or target 157.5"
       }
     ],
-    "last_checked": "2026-08-21T19:50:42.795259+00:00",
+    "last_checked": "2026-08-24T13:30:23.719326+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -284,449 +284,7 @@
       }
     ]
   },
-  "activity": [
-    {
-      "type": "consensus",
-      "symbol": "GOOGL",
-      "status": "no_consensus",
-      "headline": "BUY GOOGL \u2014 no consensus",
-      "detail": "Desks: BUY GOOGL (72%) vs HOLD CASH (65%) vs BUY GOOGL (90%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "GOOGL",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "GOOGL",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "BUY",
-          "symbol": "GOOGL",
-          "confidence": 90,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-08-21T19:50:31.780961+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CASH",
-      "status": "hold",
-      "headline": "HOLD \u2014 no new trade",
-      "detail": "No material rotation candidate exceeds current holdings in rank or catalyst strength. CVX and ORCL remain top-ranked and are already positioned with defined stops and targets. Weakest hold JPM shows negative P/L but lacks a superior replacement from candidates.",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        }
-      ],
-      "tier": "junior_only",
-      "escalate_reason": "",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-08-21T19:33:04.004266+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CASH",
-      "status": "hold",
-      "headline": "HOLD \u2014 no new trade",
-      "detail": "Top candidates CVX and ORCL are already held with stable theses and no material deterioration. No new name offers sufficient rank or catalyst edge to justify a fresh $200 buy or rotation. JPM remains the weakest hold but lacks a clear replacement candidate meeting reward:risk criteria.",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "BAC",
-          "confidence": 90,
-          "source": "fallback",
-          "provider": null,
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        }
-      ],
-      "tier": "junior_only",
-      "escalate_reason": "",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-08-21T19:18:06.538709+00:00"
-    },
-    {
-      "type": "fill",
-      "symbol": "ORCL",
-      "status": "filled_paper",
-      "headline": "BUY ORCL @ $146.92",
-      "detail": "ORCL sold off hard despite an earnings beat, creating a headline-driven dip-buy setup with Street calls for aggressive buying on weakness. Rank and catalyst scores support a tactical long while RSI is neutral and not overbought. Risk is defined under the post-print washout with a clear 1.5R+ upside target on mean-reversion/continuation.",
-      "timestamp": "2026-08-21T19:03:02.343995+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "ORCL",
-      "status": "validated",
-      "headline": "BUY ORCL \u2014 validated",
-      "detail": "ORCL sold off hard despite an earnings beat, creating a headline-driven dip-buy setup with Street calls for aggressive buying on weakness. Rank and catalyst scores support a tactical long while RSI is neutral and not overbought. Risk is defined under the post-print washout with a clear 1.5R+ upside target on mean-reversion/continuation.",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "ORCL",
-          "confidence": 78,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "ORCL",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "ORCL",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "ORCL",
-          "confidence": 78,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "ORCL",
-          "confidence": 74,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "ORCL",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "BUY",
-          "symbol": "ORCL",
-          "confidence": 90,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "entry",
-      "junior_nomination": "ORCL",
-      "timestamp": "2026-08-21T19:03:02.342810+00:00"
-    },
-    {
-      "type": "fill",
-      "symbol": "CVX",
-      "status": "filled_paper",
-      "headline": "BUY CVX @ $205.59",
-      "detail": "CVX shows a ranked bullish catalyst setup with institutional buying interest and neutral RSI offering room to run. Liquid large-cap energy name fits desk preference for catalyst-driven entries under $200 notional. Risk defined below recent support with 1.7 R:R to target.",
-      "timestamp": "2026-08-21T18:47:29.571333+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CVX",
-      "status": "validated",
-      "headline": "BUY CVX \u2014 validated",
-      "detail": "CVX shows a ranked bullish catalyst setup with institutional buying interest and neutral RSI offering room to run. Liquid large-cap energy name fits desk preference for catalyst-driven entries under $200 notional. Risk defined below recent support with 1.7 R:R to target.",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "CVX",
-          "confidence": 82,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "CVX",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "CVX",
-          "confidence": 78,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "CVX",
-          "confidence": 75,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "CVX",
-          "confidence": 78,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "CVX",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "BUY",
-          "symbol": "CVX",
-          "confidence": 90,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "entry",
-      "junior_nomination": "CVX",
-      "timestamp": "2026-08-21T18:47:29.569333+00:00"
-    },
-    {
-      "type": "fill",
-      "symbol": "TSLA",
-      "status": "filled_paper",
-      "headline": "SELL TSLA @ $364.35",
-      "detail": "HERMES AUTO-TRADE: Exiting full TSLA position on take-profit. Price $364.35 reached target $358.50. Realized path $+14.38.",
-      "timestamp": "2026-08-21T18:38:07.885678+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "TSLA",
-      "status": "validated",
-      "headline": "SELL TSLA \u2014 validated",
-      "detail": "deterministic take_profit exit",
-      "agents": [
-        {
-          "model": "risk-gate",
-          "action": "SELL",
-          "symbol": "TSLA",
-          "confidence": 90,
-          "source": null,
-          "provider": null,
-          "tier": "senior"
-        },
-        {
-          "model": "risk-gate",
-          "action": "SELL",
-          "symbol": "TSLA",
-          "confidence": 90,
-          "source": null,
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "risk_exit",
-      "escalate_reason": "take_profit",
-      "stage": "exit",
-      "junior_nomination": null,
-      "timestamp": "2026-08-21T18:38:07.885678+00:00"
-    }
-  ],
+  "activity": [],
   "recent_trades": [
     {
       "timestamp": "2026-08-21T19:03:02.343995+00:00",
@@ -11542,7 +11100,7 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 83.8
+    "live_share_recent": 85.2
   },
   "learning": {
     "candidate_signals_logged": 8,
@@ -11554,9 +11112,9 @@
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1027.91,
-    "change": 27.91,
-    "change_pct": 2.79,
+    "latest_equity": 1024.49,
+    "change": 24.49,
+    "change_pct": 2.45,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -16053,8 +15611,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-21T19:50:45.541885+00:00",
-        "equity": 1027.91,
+        "t": "2026-08-24T13:30:28.185462+00:00",
+        "equity": 1024.49,
         "cash": 435.7,
         "event": "mark"
       }
