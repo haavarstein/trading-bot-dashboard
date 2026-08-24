@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-08-24T16:10:15.064540+00:00",
+  "generated_at": "2026-08-24T16:20:21.652898+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1023.36,
+    "portfolio_value": 1023.89,
     "starting_cash": 1000.0,
-    "total_return_pct": 2.34,
-    "total_pnl": 23.36,
+    "total_return_pct": 2.39,
+    "total_pnl": 23.89,
     "realized_pnl": 33.22,
-    "open_pnl": -9.88,
-    "capital_deployed": 587.66,
-    "cash": 435.7,
+    "open_pnl": -9.36,
+    "capital_deployed": 788.0,
+    "cash": 235.89,
     "closed_trades": 18,
     "win_rate_pct": 38.89,
-    "vs_spy_pct": 2.98,
-    "spy_return_pct": -0.64,
+    "vs_spy_pct": 2.96,
+    "spy_return_pct": -0.57,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-24T16:10:17.738440+00:00"
+    "updated_at": "2026-08-24T16:20:24.314566+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.64,
-    "price": 764.47998046875,
+    "return_pct": -0.57,
+    "price": 765.02099609375,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 1,
-    "validated_count_today": 0,
+    "consensus_count_today": 2,
+    "validated_count_today": 1,
     "blocked_count_today": 1,
-    "fills_today": 0,
-    "simulated_orders_today": 0,
+    "fills_today": 1,
+    "simulated_orders_today": 1,
     "top_symbol_today": "PANW"
   },
   "holdings": [
@@ -38,10 +38,10 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 360.57,
-      "last": 356.6889953613281,
-      "market_value": 196.18,
-      "open_pnl": -2.13,
-      "open_pnl_pct": -1.08,
+      "last": 356.8699951171875,
+      "market_value": 196.28,
+      "open_pnl": -2.04,
+      "open_pnl_pct": -1.03,
       "stop": 350.0,
       "target": 378.0,
       "thesis": "JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit."
@@ -50,10 +50,10 @@
       "symbol": "CVX",
       "qty": 0.97,
       "avg_cost": 205.59,
-      "last": 202.19000244140625,
-      "market_value": 196.12,
-      "open_pnl": -3.3,
-      "open_pnl_pct": -1.65,
+      "last": 202.58999633789062,
+      "market_value": 196.51,
+      "open_pnl": -2.91,
+      "open_pnl_pct": -1.46,
       "stop": 199.5,
       "target": 216.0,
       "thesis": "CVX shows a ranked bullish catalyst setup with institutional buying interest and neutral RSI offering room to run. Liquid large-cap energy name fits desk preference for catalyst-driven entries under $200 notional. Risk defined below recent support with 1.7 R:R to target."
@@ -62,27 +62,39 @@
       "symbol": "ORCL",
       "qty": 1.36,
       "avg_cost": 146.92,
-      "last": 143.64500427246094,
-      "market_value": 195.36,
-      "open_pnl": -4.45,
-      "open_pnl_pct": -2.23,
+      "last": 144.05499267578125,
+      "market_value": 195.91,
+      "open_pnl": -3.9,
+      "open_pnl_pct": -1.95,
       "stop": 140.0,
       "target": 157.5,
       "thesis": "ORCL sold off hard despite an earnings beat, creating a headline-driven dip-buy setup with Street calls for aggressive buying on weakness. Rank and catalyst scores support a tactical long while RSI is neutral and not overbought. Risk is defined under the post-print washout with a clear 1.5R+ upside target on mean-reversion/continuation."
+    },
+    {
+      "symbol": "PANW",
+      "qty": 0.57,
+      "avg_cost": 350.55,
+      "last": 349.6499938964844,
+      "market_value": 199.3,
+      "open_pnl": -0.51,
+      "open_pnl_pct": -0.26,
+      "stop": 340.0,
+      "target": 368.0,
+      "thesis": "PANW shows a clean headline catalyst with a revenue forecast beat driven by AI-related cybersecurity demand, supporting a bullish setup at neutral RSI. Liquid name with rank_score leadership and positive sentiment fits desk preference for catalyst entries. Risk defined below recent support with 1.65 R:R to the upside target while keeping notional under $200. Adding as fourth name leaves capacity and cash buffer intact."
     }
   ],
   "latest_candidate": {
     "symbol": "PANW",
     "name": "PANW",
-    "price": 351.0950012207031,
-    "volume": 2340837.0,
-    "avg_volume": 4801273.7,
-    "percent_change": -1.8931438759669825,
+    "price": 350.54998779296875,
+    "volume": 2372879.0,
+    "avg_volume": 4804477.9,
+    "percent_change": -2.0454375678580576,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 20,
-    "liquidity_score": 76.81,
-    "rank_score": 100.54,
+    "liquidity_score": 76.82,
+    "rank_score": 100.66,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (ai, beat, catalyst): PANW Stock Gains After Revenue Forecast Beat As AI Usage Drives Cybersecurity Demand - Stocktwits",
     "top_headlines": [
@@ -139,43 +151,43 @@
     "symbol": "PANW",
     "confidence": 78,
     "cache_stats": null,
-    "entry_price": 351.1,
-    "stop_loss": 338.0,
-    "take_profit": 372.0,
+    "entry_price": 350.55,
+    "stop_loss": 340.0,
+    "take_profit": 368.0,
     "qty": 0.57,
-    "thesis": "PANW shows a clean catalyst-driven setup after a revenue forecast beat tied to rising AI-driven cybersecurity demand. Rank and catalyst scores lead the board with neutral RSI leaving room for continuation. Risk is defined below recent support while targeting a measured extension that clears 1.5R. Position sized to ~$200 notional to stay within desk limits.",
+    "thesis": "PANW shows a clean headline catalyst with a revenue forecast beat driven by AI-related cybersecurity demand, supporting a bullish setup at neutral RSI. Liquid name with rank_score leadership and positive sentiment fits desk preference for catalyst entries. Risk defined below recent support with 1.65 R:R to the upside target while keeping notional under $200. Adding as fourth name leaves capacity and cash buffer intact.",
     "reason_code": "new_entry",
     "reasoning": {
       "headline": "Bought $PANW",
-      "narrative": "PANW shows a clean catalyst-driven setup after a revenue forecast beat tied to rising AI-driven cybersecurity demand. Rank and catalyst scores lead the board with neutral RSI leaving room for continuation. Risk is defined below recent support while targeting a measured extension that clears 1.5R. Position sized to ~$200 notional to stay within desk limits.",
+      "narrative": "PANW shows a clean headline catalyst with a revenue forecast beat driven by AI-related cybersecurity demand, supporting a bullish setup at neutral RSI. Liquid name with rank_score leadership and positive sentiment fits desk preference for catalyst entries. Risk defined below recent support with 1.65 R:R to the upside target while keeping notional under $200. Adding as fourth name leaves capacity and cash buffer intact.",
       "bullets": [
-        "Headline beat + AI cyber demand catalyst",
-        "Rank score 100+ leads candidates",
-        "R:R ~1.6 with stop under 338",
-        "Adds 4th name under max-5 cap"
+        "AI/cyber revenue beat catalyst, rank 100+",
+        "RSI 50 neutral, room for continuation",
+        "R:R ~1.65 with stop 340 / target 368",
+        "Notional ~$200, open names stay at 4"
       ],
       "risk_map": {
-        "stop": 338.0,
-        "target": 372.0,
+        "stop": 340.0,
+        "target": 368.0,
         "horizon_days": 5,
-        "rr": 1.6,
+        "rr": 1.65,
         "confidence_10": 8,
         "confidence": 78
       },
-      "thesis": "PANW shows a clean catalyst-driven setup after a revenue forecast beat tied to rising AI-driven cybersecurity demand. Rank and catalyst scores lead the board with neutral RSI leaving room for continuation. Risk is defined below recent support while targeting a measured extension that clears 1.5R. Position sized to ~$200 notional to stay within desk limits."
+      "thesis": "PANW shows a clean headline catalyst with a revenue forecast beat driven by AI-related cybersecurity demand, supporting a bullish setup at neutral RSI. Liquid name with rank_score leadership and positive sentiment fits desk preference for catalyst entries. Risk defined below recent support with 1.65 R:R to the upside target while keeping notional under $200. Adding as fourth name leaves capacity and cash buffer intact."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Headline beat + AI cyber demand catalyst",
-      "Rank score 100+ leads candidates",
-      "R:R ~1.6 with stop under 338",
-      "Adds 4th name under max-5 cap"
+      "AI/cyber revenue beat catalyst, rank 100+",
+      "RSI 50 neutral, room for continuation",
+      "R:R ~1.65 with stop 340 / target 368",
+      "Notional ~$200, open names stay at 4"
     ],
-    "timestamp": "2026-08-24T16:05:23.192158+00:00"
+    "timestamp": "2026-08-24T16:17:07.781370+00:00"
   },
-  "stance": "Buying pressure on PANW. PANW shows a clean catalyst-driven setup after a revenue forecast beat tied to rising AI-driven cybersecurity demand. Rank and catalyst scores lead the board with neutral RSI leaving room for continuation. Risk is defined below recent support while targeting a measured extension that clears 1.5R. Position sized to ~$200 notional to stay within desk limits.",
+  "stance": "Buying pressure on PANW. PANW shows a clean headline catalyst with a revenue forecast beat driven by AI-related cybersecurity demand, supporting a bullish setup at neutral RSI. Liquid name with rank_score leadership and positive sentiment fits desk preference for catalyst entries. Risk defined below recent support with 1.65 R:R to the upside target while keeping notional under $200. Adding as fourth name leaves capacity and cash buffer intact.",
   "thinking": {
     "badge": "Looking to buy PANW",
     "headline": "Buying pressure on PANW.",
@@ -184,8 +196,8 @@
       "It owns JPM, bought near $360.57. Simple plan: sell if it falls to about $350.00, or take profit near $378.00.",
       "It owns CVX, bought near $205.59. Simple plan: sell if it falls to about $199.50, or take profit near $216.00.",
       "It owns ORCL, bought near $146.92. Simple plan: sell if it falls to about $140.00, or take profit near $157.50.",
+      "It owns PANW, bought near $350.55. Simple plan: sell if it falls to about $340.00, or take profit near $368.00.",
       "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
-      "Top scanner name right now is PANW, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
       "If nothing looks clean, do nothing. Sitting in cash or holdings is allowed."
     ],
     "owned": [
@@ -195,9 +207,9 @@
         "avg_cost": 360.57,
         "stop": 350.0,
         "target": 378.0,
-        "last": 356.6889953613281,
-        "open_pnl": -2.13,
-        "open_pnl_pct": -1.08,
+        "last": 356.8699951171875,
+        "open_pnl": -2.04,
+        "open_pnl_pct": -1.03,
         "line": "Bought near $360.57 \u00b7 Sell safety line $350.00 \u00b7 Profit target $378.00",
         "plan": "stop 350.0 or target 378.0"
       },
@@ -207,9 +219,9 @@
         "avg_cost": 205.59,
         "stop": 199.5,
         "target": 216.0,
-        "last": 202.19000244140625,
-        "open_pnl": -3.3,
-        "open_pnl_pct": -1.65,
+        "last": 202.58999633789062,
+        "open_pnl": -2.91,
+        "open_pnl_pct": -1.46,
         "line": "Bought near $205.59 \u00b7 Sell safety line $199.50 \u00b7 Profit target $216.00",
         "plan": "stop 199.5 or target 216.0"
       },
@@ -219,21 +231,34 @@
         "avg_cost": 146.92,
         "stop": 140.0,
         "target": 157.5,
-        "last": 143.64500427246094,
-        "open_pnl": -4.45,
-        "open_pnl_pct": -2.23,
+        "last": 144.05499267578125,
+        "open_pnl": -3.9,
+        "open_pnl_pct": -1.95,
         "line": "Bought near $146.92 \u00b7 Sell safety line $140.00 \u00b7 Profit target $157.50",
         "plan": "stop 140.0 or target 157.5"
+      },
+      {
+        "symbol": "PANW",
+        "qty": 0.57,
+        "avg_cost": 350.55,
+        "stop": 340.0,
+        "target": 368.0,
+        "last": 349.6499938964844,
+        "open_pnl": -0.51,
+        "open_pnl_pct": -0.26,
+        "line": "Bought near $350.55 \u00b7 Sell safety line $340.00 \u00b7 Profit target $368.00",
+        "plan": "stop 340.0 or target 368.0"
       }
     ],
-    "last_checked": "2026-08-24T16:10:15.064540+00:00",
+    "last_checked": "2026-08-24T16:20:21.652898+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
     "symbols_held": [
       "JPM",
       "CVX",
-      "ORCL"
+      "ORCL",
+      "PANW"
     ],
     "model_chips": [
       {
@@ -241,7 +266,7 @@
         "model": "grok-4.3",
         "action": "BUY",
         "symbol": "PANW",
-        "confidence": 80,
+        "confidence": 82,
         "tone": "buy"
       },
       {
@@ -257,7 +282,7 @@
         "model": "deepseek-v4-flash",
         "action": "BUY",
         "symbol": "PANW",
-        "confidence": 78,
+        "confidence": 75,
         "tone": "buy"
       },
       {
@@ -295,6 +320,91 @@
     ]
   },
   "activity": [
+    {
+      "type": "fill",
+      "symbol": "PANW",
+      "status": "filled_paper",
+      "headline": "BUY PANW @ $350.55",
+      "detail": "PANW shows a clean headline catalyst with a revenue forecast beat driven by AI-related cybersecurity demand, supporting a bullish setup at neutral RSI. Liquid name with rank_score leadership and positive sentiment fits desk preference for catalyst entries. Risk defined below recent support with 1.65 R:R to the upside target while keeping notional under $200. Adding as fourth name leaves capacity and cash buffer intact.",
+      "timestamp": "2026-08-24T16:17:07.782369+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "PANW",
+      "status": "validated",
+      "headline": "BUY PANW \u2014 validated",
+      "detail": "PANW shows a clean headline catalyst with a revenue forecast beat driven by AI-related cybersecurity demand, supporting a bullish setup at neutral RSI. Liquid name with rank_score leadership and positive sentiment fits desk preference for catalyst entries. Risk defined below recent support with 1.65 R:R to the upside target while keeping notional under $200. Adding as fourth name leaves capacity and cash buffer intact.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 82,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 75,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 78,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 78,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "PANW",
+      "timestamp": "2026-08-24T16:17:07.781370+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "PANW",
@@ -606,6 +716,18 @@
   ],
   "recent_trades": [
     {
+      "timestamp": "2026-08-24T16:17:07.782369+00:00",
+      "action": "BUY",
+      "symbol": "PANW",
+      "qty": 0.57,
+      "price": 350.55,
+      "notional": 199.81,
+      "realized_pnl": null,
+      "reason": null,
+      "thesis": "PANW shows a clean headline catalyst with a revenue forecast beat driven by AI-related cybersecurity demand, supporting a bullish setup at neutral RSI. Liquid name with rank_score leadership and positive sentiment fits desk preference for catalyst entries. Risk defined below recent support with 1.65 R:R to the upside target while keeping notional under $200. Adding as fourth name leaves capacity and cash buffer intact.",
+      "status": "FILLED_PAPER"
+    },
+    {
       "timestamp": "2026-08-21T19:03:02.343995+00:00",
       "action": "BUY",
       "symbol": "ORCL",
@@ -712,21 +834,37 @@
       "reason": "rotation",
       "thesis": "",
       "status": "FILLED_PAPER"
-    },
-    {
-      "timestamp": "2026-08-19T22:55:18.238719+00:00",
-      "action": "BUY",
-      "symbol": "MSFT",
-      "qty": 0.4,
-      "price": 500.0,
-      "notional": 200.0,
-      "realized_pnl": null,
-      "reason": null,
-      "thesis": "",
-      "status": "FILLED_PAPER"
     }
   ],
   "trade_reasoning": [
+    {
+      "timestamp": "2026-08-24T16:17:07.782369+00:00",
+      "action": "BUY",
+      "symbol": "PANW",
+      "qty": 0.57,
+      "price": 350.55,
+      "notional": 199.81,
+      "headline": "Bought $PANW",
+      "side_label": "buy",
+      "narrative": "PANW shows a clean headline catalyst with a revenue forecast beat driven by AI-related cybersecurity demand, supporting a bullish setup at neutral RSI. Liquid name with rank_score leadership and positive sentiment fits desk preference for catalyst entries. Risk defined below recent support with 1.65 R:R to the upside target while keeping notional under $200. Adding as fourth name leaves capacity and cash buffer intact.",
+      "bullets": [
+        "AI/cyber revenue beat catalyst, rank 100+",
+        "RSI 50 neutral, room for continuation",
+        "R:R ~1.65 with stop 340 / target 368",
+        "Notional ~$200, open names stay at 4"
+      ],
+      "risk_map": {
+        "stop": 340.0,
+        "target": 368.0,
+        "horizon_days": 5,
+        "rr": 1.65,
+        "confidence_10": 8,
+        "confidence": 78
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-08-21T19:03:02.343995+00:00",
       "action": "BUY",
@@ -11111,15 +11249,15 @@
     {
       "symbol": "PANW",
       "name": "PANW",
-      "price": 351.0950012207031,
-      "volume": 2340837.0,
-      "avg_volume": 4801273.7,
-      "percent_change": -1.8931438759669825,
+      "price": 350.54998779296875,
+      "volume": 2372879.0,
+      "avg_volume": 4804477.9,
+      "percent_change": -2.0454375678580576,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 20,
-      "liquidity_score": 76.81,
-      "rank_score": 100.54,
+      "liquidity_score": 76.82,
+      "rank_score": 100.66,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, beat, catalyst): PANW Stock Gains After Revenue Forecast Beat As AI Usage Drives Cybersecurity Demand - Stocktwits",
       "top_headlines": [
@@ -11171,17 +11309,71 @@
       ]
     },
     {
-      "symbol": "UBER",
-      "name": "UBER",
-      "price": 78.83999633789062,
-      "volume": 4379354.0,
-      "avg_volume": 14904395.4,
-      "percent_change": 0.05075289921821946,
+      "symbol": "BAC",
+      "name": "BAC",
+      "price": 62.21500015258789,
+      "volume": 9802312.0,
+      "avg_volume": 25577571.2,
+      "percent_change": 0.8510318326569135,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 14,
-      "liquidity_score": 81.73,
-      "rank_score": 75.8,
+      "liquidity_score": 84.08,
+      "rank_score": 76.79,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (beat): Tocqueville Asset Management L.P. Takes Position in Bank of America Corporation $BAC - MarketBeat",
+      "top_headlines": [
+        "Tocqueville Asset Management L.P. Takes Position in Bank of America Corporation $BAC - MarketBeat",
+        "BAC 260821 70.00C (BAC260821C70000) Stock Options Chain | Quotes & News - Moomoo",
+        "Bank of America (BAC) Q2 2026: $9.1B Profit, 50% IB Fee Jump, Trading Up 33%; What\u2019s Stopping $63? - TradingKey"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Tocqueville Asset Management L.P. Takes Position in Bank of America Corporation $BAC - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "BAC 260821 70.00C (BAC260821C70000) Stock Options Chain | Quotes & News - Moomoo",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "11,619 Shares in Bank of America Corporation $BAC Purchased by SGL Investment Advisors Inc. - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "BAC 260821 49.00C (BAC260821C49000) Stock Options Chain | Quotes & News - Moomoo",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Csenge Advisory Group Buys Shares of 31,896 Bank of America Corporation $BAC - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "UBER",
+      "name": "UBER",
+      "price": 78.75,
+      "volume": 4775302.0,
+      "avg_volume": 14943990.2,
+      "percent_change": -0.06345564698134497,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 14,
+      "liquidity_score": 81.74,
+      "rank_score": 75.81,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, deal): Uber Stock Slides Nearly 5% After Report Says Alphabet\u2019s Waymo Could Walk Away From Their Robotaxi Deal - Stocktwits",
       "top_headlines": [
@@ -11229,76 +11421,23 @@
       ]
     },
     {
-      "symbol": "BAC",
-      "name": "BAC",
-      "price": 62.375,
-      "volume": 9365148.0,
-      "avg_volume": 25533854.8,
-      "percent_change": 1.1103929138271063,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 13,
-      "liquidity_score": 84.07,
-      "rank_score": 73.0,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): Tocqueville Asset Management L.P. Takes Position in Bank of America Corporation $BAC - MarketBeat",
-      "top_headlines": [
-        "Tocqueville Asset Management L.P. Takes Position in Bank of America Corporation $BAC - MarketBeat",
-        "\ud83e\uddee Math Vs Market The BAC Stock Equation That Could Beat Wall Street In 2026 Mille E Una Cover Sanremo (bRoEXq7UGf) - Mshale",
-        "Bank of America (BAC) Q2 2026: $9.1B Profit, 50% IB Fee Jump, Trading Up 33%; What\u2019s Stopping $63? - TradingKey"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Tocqueville Asset Management L.P. Takes Position in Bank of America Corporation $BAC - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "\ud83e\uddee Math Vs Market The BAC Stock Equation That Could Beat Wall Street In 2026 Mille E Una Cover Sanremo (bRoEXq7UGf) - Mshale",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "BAC 260821 49.00C (BAC260821C49000) Stock Options Chain | Quotes & News - Moomoo",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "11,619 Shares in Bank of America Corporation $BAC Purchased by SGL Investment Advisors Inc. - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Csenge Advisory Group Buys Shares of 31,896 Bank of America Corporation $BAC - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "WMT",
       "name": "WMT",
-      "price": 104.83989715576172,
-      "volume": 15483731.0,
-      "avg_volume": 28698923.1,
-      "percent_change": 1.0992287763407245,
+      "price": 104.98999786376953,
+      "volume": 16110935.0,
+      "avg_volume": 28761643.5,
+      "percent_change": 1.243973918505704,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 12,
-      "liquidity_score": 84.58,
-      "rank_score": 69.07,
+      "liquidity_score": 84.59,
+      "rank_score": 69.18,
       "news_hits": 7,
       "catalyst": "Headline-driven setup (ai, catalyst): Walmart Earnings Ahead: Can WMT Stock Sustain Momentum Under New CEO? - Stocktwits",
       "top_headlines": [
         "Walmart Earnings Ahead: Can WMT Stock Sustain Momentum Under New CEO? - Stocktwits",
         "Shepherd Financial Partners LLC Acquires Shares of 49,701 Walmart Inc. $WMT - MarketBeat",
-        "WMT Stock Heads For Worst Week In 3 Months Despite Earnings Beat \u2014 Here\u2019s Why This Analyst Still Sees 10% Upside - Stocktwits"
+        "WMT Stock Heads For Fourth Month In Red: Walmart Reportedly Bets On Under-$25 Fashion Line To Take On Amazon - Stocktwits"
       ],
       "matched_headlines": [
         {
@@ -11315,13 +11454,6 @@
           ]
         },
         {
-          "title": "WMT Stock Heads For Worst Week In 3 Months Despite Earnings Beat \u2014 Here\u2019s Why This Analyst Still Sees 10% Upside - Stocktwits",
-          "keywords": [
-            "beat",
-            "catalyst"
-          ]
-        },
-        {
           "title": "Walmart (WMT) Stock Fair Value Falls After Softer U.S. Comps Prompt Analyst Resets - Yahoo Finance",
           "keywords": [
             "ai",
@@ -11335,21 +11467,29 @@
           "keywords": [
             "beat"
           ]
+        },
+        {
+          "title": "Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "record"
+          ]
         }
       ]
     },
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 356.8900146484375,
-      "volume": 1485649.0,
-      "avg_volume": 5296724.9,
-      "percent_change": 1.5103328627838217,
+      "price": 356.8210144042969,
+      "volume": 1558280.0,
+      "avg_volume": 5303988.0,
+      "percent_change": 1.4907071028498322,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 10,
-      "liquidity_score": 77.24,
-      "rank_score": 60.29,
+      "liquidity_score": 77.25,
+      "rank_score": 60.28,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
       "top_headlines": [
@@ -11442,21 +11582,21 @@
     "last_stage": "entry",
     "last_junior_nomination": "PANW",
     "last_escalate_reason": "junior_nomination",
-    "live_share_recent": 64.3
+    "live_share_recent": 68.6
   },
   "learning": {
     "candidate_signals_logged": 8,
-    "fills_logged": 309,
+    "fills_logged": 310,
     "closed_outcomes": 140,
-    "consensus_events": 275,
+    "consensus_events": 276,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1023.36,
-    "change": 23.36,
-    "change_pct": 2.34,
+    "latest_equity": 1023.89,
+    "change": 23.89,
+    "change_pct": 2.39,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -16052,6 +16192,18 @@
         "t": "2026-08-24T16:10:17.738440+00:00",
         "equity": 1023.36,
         "cash": 435.7,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-24T16:17:07.782369+00:00",
+        "equity": 1023.36,
+        "cash": 235.89,
+        "event": "BUY PANW"
+      },
+      {
+        "t": "2026-08-24T16:20:24.314566+00:00",
+        "equity": 1023.89,
+        "cash": 235.89,
         "event": "mark"
       }
     ],
