@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-08-24T19:30:18.007494+00:00",
+  "generated_at": "2026-08-24T19:33:38.391007+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1024.26,
+    "portfolio_value": 1024.73,
     "starting_cash": 1000.0,
-    "total_return_pct": 2.43,
-    "total_pnl": 24.26,
+    "total_return_pct": 2.47,
+    "total_pnl": 24.73,
     "realized_pnl": 28.54,
-    "open_pnl": -4.3,
-    "capital_deployed": 792.9,
+    "open_pnl": -3.85,
+    "capital_deployed": 793.37,
     "cash": 231.36,
     "closed_trades": 19,
     "win_rate_pct": 36.84,
-    "vs_spy_pct": 3.13,
-    "spy_return_pct": -0.7,
+    "vs_spy_pct": 3.18,
+    "spy_return_pct": -0.71,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-24T19:30:21.000603+00:00"
+    "updated_at": "2026-08-24T19:33:41.103902+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.7,
-    "price": 763.969970703125,
+    "return_pct": -0.71,
+    "price": 763.9099731445312,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 9,
-    "validated_count_today": 6,
+    "consensus_count_today": 10,
+    "validated_count_today": 7,
     "blocked_count_today": 3,
     "fills_today": 3,
-    "simulated_orders_today": 6,
+    "simulated_orders_today": 7,
     "top_symbol_today": "PANW"
   },
   "holdings": [
@@ -38,10 +38,10 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 360.57,
-      "last": 355.8800048828125,
-      "market_value": 195.73,
-      "open_pnl": -2.58,
-      "open_pnl_pct": -1.3,
+      "last": 356.1499938964844,
+      "market_value": 195.88,
+      "open_pnl": -2.43,
+      "open_pnl_pct": -1.23,
       "stop": 350.0,
       "target": 378.0,
       "thesis": "JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit."
@@ -50,10 +50,10 @@
       "symbol": "CVX",
       "qty": 0.97,
       "avg_cost": 205.59,
-      "last": 203.32000732421875,
-      "market_value": 197.22,
-      "open_pnl": -2.2,
-      "open_pnl_pct": -1.1,
+      "last": 203.49000549316406,
+      "market_value": 197.39,
+      "open_pnl": -2.04,
+      "open_pnl_pct": -1.02,
       "stop": 199.5,
       "target": 216.0,
       "thesis": "CVX shows a ranked bullish catalyst setup with institutional buying interest and neutral RSI offering room to run. Liquid large-cap energy name fits desk preference for catalyst-driven entries under $200 notional. Risk defined below recent support with 1.7 R:R to target."
@@ -62,10 +62,10 @@
       "symbol": "PANW",
       "qty": 0.57,
       "avg_cost": 350.55,
-      "last": 350.4549865722656,
-      "market_value": 199.76,
-      "open_pnl": -0.05,
-      "open_pnl_pct": -0.03,
+      "last": 350.260009765625,
+      "market_value": 199.65,
+      "open_pnl": -0.17,
+      "open_pnl_pct": -0.08,
       "stop": 340.0,
       "target": 368.0,
       "thesis": "PANW shows a clean headline catalyst with a revenue forecast beat driven by AI-related cybersecurity demand, supporting a bullish setup at neutral RSI. Liquid name with rank_score leadership and positive sentiment fits desk preference for catalyst entries. Risk defined below recent support with 1.65 R:R to the upside target while keeping notional under $200. Adding as fourth name leaves capacity and cash buffer intact."
@@ -74,10 +74,10 @@
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 62.3650016784668,
-      "market_value": 200.19,
-      "open_pnl": 0.53,
-      "open_pnl_pct": 0.27,
+      "last": 62.44499969482422,
+      "market_value": 200.45,
+      "open_pnl": 0.79,
+      "open_pnl_pct": 0.39,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
@@ -147,22 +147,22 @@
     "model": "grok-4.5",
     "action": "HOLD",
     "symbol": "CASH",
-    "confidence": 68,
+    "confidence": 66,
     "cache_stats": null,
     "entry_price": 0.0,
     "stop_loss": 0.0,
     "take_profit": 0.0,
     "qty": 0.0,
-    "thesis": "No clean new edge worth deploying cash. Top-ranked PANW and BAC are already held and sitting near flat with intact stops; UBER\u2019s headline is deal-risk negative despite rank. Remaining names are milder institutional-flow headlines without a fresh catalyst edge that clears the bar versus current book risk.",
+    "thesis": "Book already holds four liquid names with defined stops and no position at stop or target. Top-ranked PANW and BAC are already owned; UBER\u2019s headline is deal-break risk after a sharp slide, so it is not a clean long catalyst. Remaining candidates lack a clearly superior risk/reward edge versus current holds within the ~$200 new-buy cap, so cash is preserved.",
     "reason_code": "hold",
     "reasoning": {
       "headline": "Hold $CASH",
-      "narrative": "No clean new edge worth deploying cash. Top-ranked PANW and BAC are already held and sitting near flat with intact stops; UBER\u2019s headline is deal-risk negative despite rank. Remaining names are milder institutional-flow headlines without a fresh catalyst edge that clears the bar versus current book risk.",
+      "narrative": "Book already holds four liquid names with defined stops and no position at stop or target. Top-ranked PANW and BAC are already owned; UBER\u2019s headline is deal-break risk after a sharp slide, so it is not a clean long catalyst. Remaining candidates lack a clearly superior risk/reward edge versus current holds within the ~$200 new-buy cap, so cash is preserved.",
       "bullets": [
-        "4 open names; none at stop or target",
-        "UBER catalyst is Waymo walk-away risk, not a long setup",
-        "Mild add-on headlines (XOM/LRCX) do not justify forcing a 5th name",
-        "Preserve ~$231 cash until clearer R:R setup"
+        "No clean unowned long: UBER catalyst is negative deal risk",
+        "PANW/BAC already held; adds not required",
+        "Stops intact; weakest names not at invalidation",
+        "Prefer patience over forced 5th name"
       ],
       "risk_map": {
         "stop": 0.0,
@@ -170,20 +170,20 @@
         "horizon_days": 5,
         "rr": 0.0,
         "confidence_10": 7,
-        "confidence": 68
+        "confidence": 66
       },
-      "thesis": "No clean new edge worth deploying cash. Top-ranked PANW and BAC are already held and sitting near flat with intact stops; UBER\u2019s headline is deal-risk negative despite rank. Remaining names are milder institutional-flow headlines without a fresh catalyst edge that clears the bar versus current book risk."
+      "thesis": "Book already holds four liquid names with defined stops and no position at stop or target. Top-ranked PANW and BAC are already owned; UBER\u2019s headline is deal-break risk after a sharp slide, so it is not a clean long catalyst. Remaining candidates lack a clearly superior risk/reward edge versus current holds within the ~$200 new-buy cap, so cash is preserved."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "4 open names; none at stop or target",
-      "UBER catalyst is Waymo walk-away risk, not a long setup",
-      "Mild add-on headlines (XOM/LRCX) do not justify forcing a 5th name",
-      "Preserve ~$231 cash until clearer R:R setup"
+      "No clean unowned long: UBER catalyst is negative deal risk",
+      "PANW/BAC already held; adds not required",
+      "Stops intact; weakest names not at invalidation",
+      "Prefer patience over forced 5th name"
     ],
-    "timestamp": "2026-08-24T19:17:45.586040+00:00"
+    "timestamp": "2026-08-24T19:33:21.806068+00:00"
   },
   "stance": "Holding JPM, CVX, PANW, BAC. No new trade right now.",
   "thinking": {
@@ -205,9 +205,9 @@
         "avg_cost": 360.57,
         "stop": 350.0,
         "target": 378.0,
-        "last": 355.8800048828125,
-        "open_pnl": -2.58,
-        "open_pnl_pct": -1.3,
+        "last": 356.1499938964844,
+        "open_pnl": -2.43,
+        "open_pnl_pct": -1.23,
         "line": "Bought near $360.57 \u00b7 Sell safety line $350.00 \u00b7 Profit target $378.00",
         "plan": "stop 350.0 or target 378.0"
       },
@@ -217,9 +217,9 @@
         "avg_cost": 205.59,
         "stop": 199.5,
         "target": 216.0,
-        "last": 203.32000732421875,
-        "open_pnl": -2.2,
-        "open_pnl_pct": -1.1,
+        "last": 203.49000549316406,
+        "open_pnl": -2.04,
+        "open_pnl_pct": -1.02,
         "line": "Bought near $205.59 \u00b7 Sell safety line $199.50 \u00b7 Profit target $216.00",
         "plan": "stop 199.5 or target 216.0"
       },
@@ -229,9 +229,9 @@
         "avg_cost": 350.55,
         "stop": 340.0,
         "target": 368.0,
-        "last": 350.4549865722656,
-        "open_pnl": -0.05,
-        "open_pnl_pct": -0.03,
+        "last": 350.260009765625,
+        "open_pnl": -0.17,
+        "open_pnl_pct": -0.08,
         "line": "Bought near $350.55 \u00b7 Sell safety line $340.00 \u00b7 Profit target $368.00",
         "plan": "stop 340.0 or target 368.0"
       },
@@ -241,14 +241,14 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 62.3650016784668,
-        "open_pnl": 0.53,
-        "open_pnl_pct": 0.27,
+        "last": 62.44499969482422,
+        "open_pnl": 0.79,
+        "open_pnl_pct": 0.39,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
       }
     ],
-    "last_checked": "2026-08-24T19:30:18.007494+00:00",
+    "last_checked": "2026-08-24T19:33:38.391007+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "HOLD",
@@ -278,25 +278,25 @@
       {
         "prefix": "J",
         "model": "deepseek-v4-flash",
-        "action": "BUY",
-        "symbol": "UBER",
-        "confidence": 72,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "JPM",
+        "confidence": 80,
+        "tone": "hold"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "BUY",
-        "symbol": "PANW",
-        "confidence": 75,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 60,
+        "tone": "hold"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 68,
+        "confidence": 66,
         "tone": "hold"
       },
       {
@@ -318,6 +318,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 no new trade",
+      "detail": "Book already holds four liquid names with defined stops and no position at stop or target. Top-ranked PANW and BAC are already owned; UBER\u2019s headline is deal-break risk after a sharp slide, so it is not a clean long catalyst. Remaining candidates lack a clearly superior risk/reward edge versus current holds within the ~$200 new-buy cap, so cash is preserved.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "UBER",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "HOLD",
+          "symbol": "JPM",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 66,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "JPM",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-08-24T19:33:21.806068+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -864,83 +941,6 @@
       "headline": "SELL ORCL @ $143.48",
       "detail": "Confirming the escalated SELL on ORCL. It is the weakest open name by P/L and is trading below cost with no fresh catalyst support in the candidate set. Exiting the full lot frees risk and respects the desk directive rather than waiting for the 140 stop.",
       "timestamp": "2026-08-24T17:33:24.707353+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "ORCL",
-      "status": "validated",
-      "headline": "SELL ORCL \u2014 validated",
-      "detail": "Confirming the escalated SELL on ORCL. It is the weakest open name by P/L and is trading below cost with no fresh catalyst support in the candidate set. Exiting the full lot frees risk and respects the desk directive rather than waiting for the 140 stop.",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "SELL",
-          "symbol": "ORCL",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "SELL",
-          "symbol": "ORCL",
-          "confidence": 78,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "SELL",
-          "symbol": "ORCL",
-          "confidence": 75,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "JPM",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "exit",
-      "junior_nomination": "ORCL",
-      "timestamp": "2026-08-24T17:33:24.704350+00:00"
     },
     {
       "type": "fill",
@@ -11872,10 +11872,10 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 1,
-      "BUY": 3,
+      "HOLD": 3,
+      "BUY": 1,
       "SELL": 0,
-      "live": 4,
+      "live": 3,
       "fallback": 0
     },
     "junior_model_3_enabled": true,
@@ -11894,21 +11894,21 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 79.8
+    "live_share_recent": 79.4
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 312,
     "closed_outcomes": 141,
-    "consensus_events": 288,
+    "consensus_events": 289,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1024.26,
-    "change": 24.26,
-    "change_pct": 2.43,
+    "latest_equity": 1024.73,
+    "change": 24.73,
+    "change_pct": 2.47,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -14313,6 +14313,12 @@
       {
         "t": "2026-08-24T19:30:21.000603+00:00",
         "equity": 1024.26,
+        "cash": 231.36,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-24T19:33:41.103902+00:00",
+        "equity": 1024.73,
         "cash": 231.36,
         "event": "mark"
       }
