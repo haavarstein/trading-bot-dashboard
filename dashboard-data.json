@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-08-25T17:40:42.817728+00:00",
+  "generated_at": "2026-08-25T17:48:25.427427+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1016.58,
+    "portfolio_value": 1016.66,
     "starting_cash": 1000.0,
-    "total_return_pct": 1.66,
-    "total_pnl": 16.58,
-    "realized_pnl": 24.21,
-    "open_pnl": -7.67,
-    "capital_deployed": 789.13,
-    "cash": 227.45,
-    "closed_trades": 20,
-    "win_rate_pct": 35.0,
-    "vs_spy_pct": 2.25,
-    "spy_return_pct": -0.59,
+    "total_return_pct": 1.67,
+    "total_pnl": 16.66,
+    "realized_pnl": 17.38,
+    "open_pnl": -0.75,
+    "capital_deployed": 596.23,
+    "cash": 420.43,
+    "closed_trades": 21,
+    "win_rate_pct": 33.33,
+    "vs_spy_pct": 2.24,
+    "spy_return_pct": -0.57,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-25T17:40:45.497995+00:00"
+    "updated_at": "2026-08-25T17:48:28.147930+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.59,
-    "price": 764.8499755859375,
+    "return_pct": -0.57,
+    "price": 764.9710083007812,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 12,
-    "validated_count_today": 2,
+    "consensus_count_today": 13,
+    "validated_count_today": 3,
     "blocked_count_today": 10,
-    "fills_today": 2,
-    "simulated_orders_today": 2,
+    "fills_today": 3,
+    "simulated_orders_today": 3,
     "top_symbol_today": "AMD"
   },
   "holdings": [
@@ -38,34 +38,22 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 360.57,
-      "last": 355.614990234375,
-      "market_value": 195.59,
-      "open_pnl": -2.73,
-      "open_pnl_pct": -1.37,
+      "last": 355.7200012207031,
+      "market_value": 195.65,
+      "open_pnl": -2.67,
+      "open_pnl_pct": -1.35,
       "stop": 350.0,
       "target": 378.0,
       "thesis": "JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit."
     },
     {
-      "symbol": "PANW",
-      "qty": 0.57,
-      "avg_cost": 350.55,
-      "last": 339.20001220703125,
-      "market_value": 193.34,
-      "open_pnl": -6.47,
-      "open_pnl_pct": -3.24,
-      "stop": 340.0,
-      "target": 368.0,
-      "thesis": "PANW shows a clean headline catalyst with a revenue forecast beat driven by AI-related cybersecurity demand, supporting a bullish setup at neutral RSI. Liquid name with rank_score leadership and positive sentiment fits desk preference for catalyst entries. Risk defined below recent support with 1.65 R:R to the upside target while keeping notional under $200. Adding as fourth name leaves capacity and cash buffer intact."
-    },
-    {
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 62.3203010559082,
-      "market_value": 200.05,
-      "open_pnl": 0.39,
-      "open_pnl_pct": 0.19,
+      "last": 62.380001068115234,
+      "market_value": 200.24,
+      "open_pnl": 0.58,
+      "open_pnl_pct": 0.29,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
@@ -74,10 +62,10 @@
       "symbol": "AMD",
       "qty": 0.42,
       "avg_cost": 473.82,
-      "last": 476.5400085449219,
-      "market_value": 200.15,
-      "open_pnl": 1.14,
-      "open_pnl_pct": 0.57,
+      "last": 477.010009765625,
+      "market_value": 200.34,
+      "open_pnl": 1.34,
+      "open_pnl_pct": 0.67,
       "stop": 458.0,
       "target": 498.0,
       "thesis": "AMD screens as the top ranked liquid catalyst name with a fresh Seeking Alpha upgrade framing an AI tipping point and bullish sentiment. RSI near mid-range leaves room for continuation without extreme overbought risk. Book has cash and an open slot under the five-name cap, so a small sized new entry fits risk limits. Stop and target set for roughly 1.5:1 reward-to-risk on the breakout thesis."
@@ -86,15 +74,15 @@
   "latest_candidate": {
     "symbol": "LRCX",
     "name": "LRCX",
-    "price": 311.5799865722656,
-    "volume": 2206267.0,
-    "avg_volume": 7753426.7,
-    "percent_change": 0.4545807407200424,
+    "price": 312.0199890136719,
+    "volume": 2253290.0,
+    "avg_volume": 7758129.0,
+    "percent_change": 0.5964392126412055,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 18,
-    "liquidity_score": 78.89,
-    "rank_score": 91.7,
+    "liquidity_score": 78.9,
+    "rank_score": 91.81,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (beat): Lam Research (NASDAQ:LRCX) Given New $365.00 Price Target at Mizuho - MarketBeat",
     "top_headlines": [
@@ -140,55 +128,43 @@
     ]
   },
   "latest_decision": {
-    "model": "grok-4.5",
-    "action": "BUY",
-    "symbol": "LRCX",
-    "confidence": 78,
-    "cache_stats": null,
-    "entry_price": 311.58,
-    "stop_loss": 299.0,
-    "take_profit": 340.0,
-    "qty": 0.64,
-    "thesis": "LRCX shows a high-rank bullish catalyst with a fresh Mizuho $365 price target following a beat-driven setup. RSI is neutral at 50, leaving room for upside continuation in a liquid name. Position sized within the $200 notional cap with clear R:R above 1.5 toward the analyst target zone. Adding as the fifth name while cash and open-slot capacity allow.",
-    "reason_code": "new_entry",
+    "model": "risk-gate",
+    "action": "SELL",
+    "symbol": "PANW",
+    "confidence": 95,
+    "entry_price": 338.56500244140625,
+    "stop_loss": 340.0,
+    "take_profit": 368.0,
+    "qty": 0.57,
+    "thesis": "HERMES AUTO-TRADE: Exiting full PANW position on stop-loss. Price $338.57 tagged invalidation at $340.00. Realized path $-6.83.",
+    "reason_code": "stop_loss",
     "reasoning": {
-      "headline": "Bought $LRCX",
-      "narrative": "LRCX shows a high-rank bullish catalyst with a fresh Mizuho $365 price target following a beat-driven setup. RSI is neutral at 50, leaving room for upside continuation in a liquid name. Position sized within the $200 notional cap with clear R:R above 1.5 toward the analyst target zone. Adding as the fifth name while cash and open-slot capacity allow.",
+      "headline": "Sold $PANW",
+      "narrative": "HERMES AUTO-TRADE: Exiting full PANW position on stop-loss. Price $338.57 tagged invalidation at $340.00. Realized path $-6.83.",
       "bullets": [
-        "Rank 91.7 + catalyst score 18 on new $365 PT",
-        "Neutral RSI 50 supports entry without overbought risk",
-        "R:R ~2.25 from 311.58 stop 299 to TP 340",
-        "Notional ~$200 fits cash and desk limits"
+        "Hard stop hit; capital preservation over thesis hope.",
+        "Position closed in full; no scale-out remaining."
       ],
       "risk_map": {
-        "stop": 299.0,
-        "target": 340.0,
+        "stop": 340.0,
+        "target": 368.0,
         "horizon_days": 5,
-        "rr": 2.26,
-        "confidence_10": 8,
-        "confidence": 78
+        "rr": 1.65,
+        "confidence_10": 10,
+        "confidence": 95
       },
-      "thesis": "LRCX shows a high-rank bullish catalyst with a fresh Mizuho $365 price target following a beat-driven setup. RSI is neutral at 50, leaving room for upside continuation in a liquid name. Position sized within the $200 notional cap with clear R:R above 1.5 toward the analyst target zone. Adding as the fifth name while cash and open-slot capacity allow."
+      "thesis": "HERMES AUTO-TRADE: Exiting full PANW position on stop-loss. Price $338.57 tagged invalidation at $340.00. Realized path $-6.83."
     },
-    "source": "live",
-    "provider": "xai",
-    "provider_model_id": "grok-4.5",
-    "bullets": [
-      "Rank 91.7 + catalyst score 18 on new $365 PT",
-      "Neutral RSI 50 supports entry without overbought risk",
-      "R:R ~2.25 from 311.58 stop 299 to TP 340",
-      "Notional ~$200 fits cash and desk limits"
-    ],
-    "timestamp": "2026-08-25T17:33:16.423048+00:00"
+    "stage": "exit",
+    "timestamp": "2026-08-25T17:48:11.725958+00:00"
   },
-  "stance": "Buying pressure on LRCX. LRCX shows a high-rank bullish catalyst with a fresh Mizuho $365 price target following a beat-driven setup. RSI is neutral at 50, leaving room for upside continuation in a liquid name. Position sized within the $200 notional cap with clear R:R above 1.5 toward the analyst target zone. Adding as the fifth name while cash and open-slot capacity allow.",
+  "stance": "Holding JPM, BAC, AMD. No new trade right now. HERMES AUTO-TRADE: Exiting full PANW position on stop-loss. Price $338.57 tagged invalidation at $340.00. Realized path $-6.83.",
   "thinking": {
-    "badge": "Looking to buy LRCX",
-    "headline": "Buying pressure on LRCX.",
-    "plain_english": "Right now Hermes wants exposure to LRCX. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
+    "badge": "Holding what it owns",
+    "headline": "Holding JPM, BAC, AMD. No new trade right now.",
+    "plain_english": "Right now Hermes is holding JPM, BAC, AMD and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
     "triggers": [
       "It owns JPM, bought near $360.57. Simple plan: sell if it falls to about $350.00, or take profit near $378.00.",
-      "It owns PANW, bought near $350.55. Simple plan: sell if it falls to about $340.00, or take profit near $368.00.",
       "It owns BAC, bought near $62.20. Simple plan: sell if it falls to about $60.00, or take profit near $65.50.",
       "It owns AMD, bought near $473.82. Simple plan: sell if it falls to about $458.00, or take profit near $498.00.",
       "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
@@ -202,23 +178,11 @@
         "avg_cost": 360.57,
         "stop": 350.0,
         "target": 378.0,
-        "last": 355.614990234375,
-        "open_pnl": -2.73,
-        "open_pnl_pct": -1.37,
+        "last": 355.7200012207031,
+        "open_pnl": -2.67,
+        "open_pnl_pct": -1.35,
         "line": "Bought near $360.57 \u00b7 Sell safety line $350.00 \u00b7 Profit target $378.00",
         "plan": "stop 350.0 or target 378.0"
-      },
-      {
-        "symbol": "PANW",
-        "qty": 0.57,
-        "avg_cost": 350.55,
-        "stop": 340.0,
-        "target": 368.0,
-        "last": 339.20001220703125,
-        "open_pnl": -6.47,
-        "open_pnl_pct": -3.24,
-        "line": "Bought near $350.55 \u00b7 Sell safety line $340.00 \u00b7 Profit target $368.00",
-        "plan": "stop 340.0 or target 368.0"
       },
       {
         "symbol": "BAC",
@@ -226,9 +190,9 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 62.3203010559082,
-        "open_pnl": 0.39,
-        "open_pnl_pct": 0.19,
+        "last": 62.380001068115234,
+        "open_pnl": 0.58,
+        "open_pnl_pct": 0.29,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
       },
@@ -238,83 +202,65 @@
         "avg_cost": 473.82,
         "stop": 458.0,
         "target": 498.0,
-        "last": 476.5400085449219,
-        "open_pnl": 1.14,
-        "open_pnl_pct": 0.57,
+        "last": 477.010009765625,
+        "open_pnl": 1.34,
+        "open_pnl_pct": 0.67,
         "line": "Bought near $473.82 \u00b7 Sell safety line $458.00 \u00b7 Profit target $498.00",
         "plan": "stop 458.0 or target 498.0"
       }
     ],
-    "last_checked": "2026-08-25T17:40:42.817728+00:00",
+    "last_checked": "2026-08-25T17:48:25.427427+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "BUY",
+    "action": "SELL",
     "symbols_held": [
       "JPM",
-      "PANW",
       "BAC",
       "AMD"
     ],
-    "model_chips": [
-      {
-        "prefix": "J",
-        "model": "grok-4.3",
-        "action": "BUY",
-        "symbol": "LRCX",
-        "confidence": 85,
-        "tone": "buy"
-      },
-      {
-        "prefix": "J",
-        "model": "claude-haiku-4-5",
-        "action": "BUY",
-        "symbol": "LRCX",
-        "confidence": 72,
-        "tone": "buy"
-      },
-      {
-        "prefix": "J",
-        "model": "deepseek-v4-flash",
-        "action": "BUY",
-        "symbol": "LRCX",
-        "confidence": 80,
-        "tone": "buy"
-      },
-      {
-        "prefix": "J",
-        "model": "grok-build-0.1",
-        "action": "BUY",
-        "symbol": "LRCX",
-        "confidence": 80,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "grok-4.5",
-        "action": "BUY",
-        "symbol": "LRCX",
-        "confidence": 78,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "claude-sonnet-5",
-        "action": "BUY",
-        "symbol": "LRCX",
-        "confidence": 78,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "claude-opus-5",
-        "action": "HOLD",
-        "symbol": "JPM",
-        "confidence": 80,
-        "tone": "hold"
-      }
-    ]
+    "model_chips": []
   },
   "activity": [
+    {
+      "type": "fill",
+      "symbol": "PANW",
+      "status": "filled_paper",
+      "headline": "SELL PANW @ $338.57",
+      "detail": "HERMES AUTO-TRADE: Exiting full PANW position on stop-loss. Price $338.57 tagged invalidation at $340.00. Realized path $-6.83.",
+      "timestamp": "2026-08-25T17:48:11.728958+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "PANW",
+      "status": "validated",
+      "headline": "SELL PANW \u2014 validated",
+      "detail": "deterministic stop_loss exit",
+      "agents": [
+        {
+          "model": "risk-gate",
+          "action": "SELL",
+          "symbol": "PANW",
+          "confidence": 95,
+          "source": null,
+          "provider": null,
+          "tier": "senior"
+        },
+        {
+          "model": "risk-gate",
+          "action": "SELL",
+          "symbol": "PANW",
+          "confidence": 95,
+          "source": null,
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "risk_exit",
+      "escalate_reason": "stop_loss",
+      "stage": "exit",
+      "junior_nomination": null,
+      "timestamp": "2026-08-25T17:48:11.726960+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "LRCX",
@@ -855,83 +801,6 @@
       "timestamp": "2026-08-25T16:02:22.160276+00:00"
     },
     {
-      "type": "consensus",
-      "symbol": "LRCX",
-      "status": "blocked",
-      "headline": "BUY LRCX \u2014 blocked",
-      "detail": "Insufficient buying power: $32.36 < $197.48",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "LRCX",
-          "confidence": 85,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "LRCX",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "LRCX",
-          "confidence": 80,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "LRCX",
-          "confidence": 80,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "LRCX",
-          "confidence": 78,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "LRCX",
-          "confidence": 78,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "JPM",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "entry",
-      "junior_nomination": "LRCX",
-      "timestamp": "2026-08-25T15:47:18.217312+00:00"
-    },
-    {
       "type": "fill",
       "symbol": "CVX",
       "status": "filled_paper",
@@ -949,6 +818,18 @@
     }
   ],
   "recent_trades": [
+    {
+      "timestamp": "2026-08-25T17:48:11.728958+00:00",
+      "action": "SELL",
+      "symbol": "PANW",
+      "qty": 0.57,
+      "price": 338.56500244140625,
+      "notional": 192.98,
+      "realized_pnl": -6.83,
+      "reason": "stop_loss",
+      "thesis": "HERMES AUTO-TRADE: Exiting full PANW position on stop-loss. Price $338.57 tagged invalidation at $340.00. Realized path $-6.83.",
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-08-25T14:18:25.587764+00:00",
       "action": "SELL",
@@ -1056,21 +937,35 @@
       "reason": "rotation",
       "thesis": "",
       "status": "FILLED_PAPER"
-    },
-    {
-      "timestamp": "2026-08-19T22:55:26.417153+00:00",
-      "action": "BUY",
-      "symbol": "MSFT",
-      "qty": 0.4,
-      "price": 500.0,
-      "notional": 200.0,
-      "realized_pnl": null,
-      "reason": null,
-      "thesis": "",
-      "status": "FILLED_PAPER"
     }
   ],
   "trade_reasoning": [
+    {
+      "timestamp": "2026-08-25T17:48:11.728958+00:00",
+      "action": "SELL",
+      "symbol": "PANW",
+      "qty": 0.57,
+      "price": 338.56500244140625,
+      "notional": 192.98,
+      "headline": "Sold $PANW",
+      "side_label": "sell",
+      "narrative": "HERMES AUTO-TRADE: Exiting full PANW position on stop-loss. Price $338.57 tagged invalidation at $340.00. Realized path $-6.83.",
+      "bullets": [
+        "Hard stop hit; capital preservation over thesis hope.",
+        "Position closed in full; no scale-out remaining."
+      ],
+      "risk_map": {
+        "stop": 340.0,
+        "target": 368.0,
+        "horizon_days": 5,
+        "rr": 1.65,
+        "confidence_10": 10,
+        "confidence": 95
+      },
+      "reason_code": "stop_loss",
+      "realized_pnl": -6.83,
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-08-25T14:18:25.587764+00:00",
       "action": "SELL",
@@ -9364,6 +9259,20 @@
   ],
   "closed_trades": [
     {
+      "timestamp": "2026-08-25T17:48:11.726960+00:00",
+      "symbol": "PANW",
+      "qty": 0.57,
+      "avg_cost": 350.55,
+      "exit_price": 338.56500244140625,
+      "proceeds": 192.98,
+      "realized_pnl": -6.83,
+      "realized_pnl_pct": -3.42,
+      "reason": "stop_loss",
+      "thesis": "HERMES AUTO-TRADE: Exiting full PANW position on stop-loss. Price $338.57 tagged invalidation at $340.00. Realized path $-6.83.",
+      "opened_at": "2026-08-24T16:17:07.782369+00:00",
+      "hold_seconds": 91863
+    },
+    {
       "timestamp": "2026-08-25T14:18:25.586764+00:00",
       "symbol": "CVX",
       "qty": 0.97,
@@ -9628,23 +9537,23 @@
       "thesis": "",
       "opened_at": "2026-08-18T15:18:21.267485+00:00",
       "hold_seconds": 0
-    },
-    {
-      "timestamp": "2026-08-18T15:18:17.164700+00:00",
-      "symbol": "MSFT",
-      "qty": 0.4,
-      "avg_cost": 500.0,
-      "exit_price": 505.0,
-      "proceeds": 202.0,
-      "realized_pnl": 2.0,
-      "realized_pnl_pct": 1.0,
-      "reason": "rotation",
-      "thesis": "",
-      "opened_at": "2026-08-18T15:18:17.161701+00:00",
-      "hold_seconds": 0
     }
   ],
   "closed_results": [
+    {
+      "timestamp": "2026-08-25T17:48:11.726960+00:00",
+      "symbol": "PANW",
+      "qty": 0.57,
+      "avg_cost": 350.55,
+      "exit_price": 338.56500244140625,
+      "proceeds": 192.98,
+      "realized_pnl": -6.83,
+      "realized_pnl_pct": -3.42,
+      "reason": "stop_loss",
+      "thesis": "HERMES AUTO-TRADE: Exiting full PANW position on stop-loss. Price $338.57 tagged invalidation at $340.00. Realized path $-6.83.",
+      "opened_at": "2026-08-24T16:17:07.782369+00:00",
+      "hold_seconds": 91863
+    },
     {
       "timestamp": "2026-08-25T14:18:25.586764+00:00",
       "symbol": "CVX",
@@ -11623,15 +11532,15 @@
     {
       "symbol": "LRCX",
       "name": "LRCX",
-      "price": 311.5799865722656,
-      "volume": 2206267.0,
-      "avg_volume": 7753426.7,
-      "percent_change": 0.4545807407200424,
+      "price": 312.0199890136719,
+      "volume": 2253290.0,
+      "avg_volume": 7758129.0,
+      "percent_change": 0.5964392126412055,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 18,
-      "liquidity_score": 78.89,
-      "rank_score": 91.7,
+      "liquidity_score": 78.9,
+      "rank_score": 91.81,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Lam Research (NASDAQ:LRCX) Given New $365.00 Price Target at Mizuho - MarketBeat",
       "top_headlines": [
@@ -11679,30 +11588,23 @@
     {
       "symbol": "PANW",
       "name": "PANW",
-      "price": 341.4100036621094,
-      "volume": 2147275.0,
-      "avg_volume": 4724337.5,
-      "percent_change": -2.7044714731954516,
+      "price": 339.010009765625,
+      "volume": 2374701.0,
+      "avg_volume": 4747080.1,
+      "percent_change": -3.3884252885928876,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
-      "liquidity_score": 76.74,
-      "rank_score": 73.17,
+      "liquidity_score": 76.76,
+      "rank_score": 73.72,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (demand, growth): Can Rising Network Security Demand Boost PANW's Long-Term Growth? - TradingView",
+      "catalyst": "Headline-driven setup (ai, beat, catalyst): PANW Stock Gains After Revenue Forecast Beat As AI Usage Drives Cybersecurity Demand - Stocktwits",
       "top_headlines": [
-        "Can Rising Network Security Demand Boost PANW's Long-Term Growth? - TradingView",
         "PANW Stock Gains After Revenue Forecast Beat As AI Usage Drives Cybersecurity Demand - Stocktwits",
+        "Can Rising Network Security Demand Boost PANW's Long-Term Growth? - TradingView",
         "PANW Maintains Overweight Rating by JP Morgan -- Price Target Ra - GuruFocus"
       ],
       "matched_headlines": [
-        {
-          "title": "Can Rising Network Security Demand Boost PANW's Long-Term Growth? - TradingView",
-          "keywords": [
-            "demand",
-            "growth"
-          ]
-        },
         {
           "title": "PANW Stock Gains After Revenue Forecast Beat As AI Usage Drives Cybersecurity Demand - Stocktwits",
           "keywords": [
@@ -11710,6 +11612,13 @@
             "beat",
             "catalyst",
             "demand"
+          ]
+        },
+        {
+          "title": "Can Rising Network Security Demand Boost PANW's Long-Term Growth? - TradingView",
+          "keywords": [
+            "demand",
+            "growth"
           ]
         },
         {
@@ -11738,15 +11647,15 @@
     {
       "symbol": "NFLX",
       "name": "NFLX",
-      "price": 82.13999938964844,
-      "volume": 14770656.0,
-      "avg_volume": 27404295.6,
-      "percent_change": 2.6621637252193677,
+      "price": 82.22000122070312,
+      "volume": 15437423.0,
+      "avg_volume": 27470972.3,
+      "percent_change": 2.7621535126442835,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 12,
-      "liquidity_score": 84.38,
-      "rank_score": 70.29,
+      "liquidity_score": 84.39,
+      "rank_score": 70.37,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): NFLX Stock Reverses Course Overnight: Retail Shrugs Off Outgoing Chairman\u2019s Sale As \u2018Routine\u2019 - Stocktwits",
       "top_headlines": [
@@ -11794,15 +11703,15 @@
     {
       "symbol": "UBER",
       "name": "UBER",
-      "price": 79.79499816894531,
-      "volume": 6786700.0,
-      "avg_volume": 14485490.0,
-      "percent_change": 0.6368990384499734,
+      "price": 79.83499908447266,
+      "volume": 7033404.0,
+      "avg_volume": 14510160.4,
+      "percent_change": 0.6873479160706953,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 12,
-      "liquidity_score": 81.61,
-      "rank_score": 68.25,
+      "liquidity_score": 81.62,
+      "rank_score": 68.29,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, launch): Uber launches live video streaming for teen rides, letting parents watch trips in real time - ABC News - Breaking News, Latest News and Videos",
       "top_headlines": [
@@ -11850,48 +11759,27 @@
       ]
     },
     {
-      "symbol": "AMZN",
-      "name": "AMZN",
-      "price": 260.17999267578125,
-      "volume": 10876707.0,
-      "avg_volume": 30519070.7,
-      "percent_change": -0.7211869331156529,
+      "symbol": "AVGO",
+      "name": "AVGO",
+      "price": 357.3699951171875,
+      "volume": 9565323.0,
+      "avg_volume": 20357002.3,
+      "percent_change": -0.38744971864216005,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 10,
-      "liquidity_score": 84.85,
-      "rank_score": 60.8,
+      "catalyst_score": 9,
+      "liquidity_score": 83.09,
+      "rank_score": 56.27,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (catalyst, fall, falls): AMZN Falls After Hours: Earnings Crush Expectations, CapEx Fears Don\u2019t - Stocktwits",
+      "catalyst": "Headline-driven setup (ai, catalyst, growth): Can Broadcom (AVGO) Balance Google AI Chip Competition Against Rising Leverage For Custom Growth? - simplywall.st",
       "top_headlines": [
-        "Amazon (AMZN) Stock Could Be 39% Undervalued After Chip Push - simplywall.st",
-        "AMZN Falls After Hours: Earnings Crush Expectations, CapEx Fears Don\u2019t - Stocktwits",
-        "Amazon: AI Revenue Too Dependent On OpenAI And Anthropic (NASDAQ:AMZN) - Seeking Alpha"
+        "Can Broadcom (AVGO) Balance Google AI Chip Competition Against Rising Leverage For Custom Growth? - simplywall.st",
+        "AVGO Stock Quote Price and Forecast - CNN",
+        "MRVL Vs AVGO: Which Custom AI Chipmaker Has Bigger Upside Potential? - Stocktwits"
       ],
       "matched_headlines": [
         {
-          "title": "AMZN Falls After Hours: Earnings Crush Expectations, CapEx Fears Don\u2019t - Stocktwits",
-          "keywords": [
-            "catalyst",
-            "fall",
-            "falls"
-          ]
-        },
-        {
-          "title": "Amazon: AI Revenue Too Dependent On OpenAI And Anthropic (NASDAQ:AMZN) - Seeking Alpha",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Hyperion Asset Management Ltd Trims Stock Position in Amazon.com, Inc. $AMZN - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Amazon Stock (AMZN) Opinions on Recent Earnings and AI Growth - Quiver Quantitative",
+          "title": "Can Broadcom (AVGO) Balance Google AI Chip Competition Against Rising Leverage For Custom Growth? - simplywall.st",
           "keywords": [
             "ai",
             "catalyst",
@@ -11899,7 +11787,28 @@
           ]
         },
         {
-          "title": "AMZN 260824 240.00P (AMZN260824P240000) Stock Options Chain | Quotes & News - Moomoo",
+          "title": "MRVL Vs AVGO: Which Custom AI Chipmaker Has Bigger Upside Potential? - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "AVGO Stock Slips Nearly 3% \u2014 Broadcom\u2019s AI Spending Is Pushing Credit Risks Higher - Yahoo Finance",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "AVGO 260824 500.00C (AVGO260824C500000) Stock Options Chain | Quotes & News - Moomoo",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Analysts\u2019 Top Technology Picks: Broadcom (AVGO), Zscaler (ZS) - The Globe and Mail",
           "keywords": [
             "ai",
             "catalyst"
@@ -11933,13 +11842,7 @@
       "grok-build-0.1"
     ],
     "junior_min_agree": 3,
-    "junior_votes": {
-      "HOLD": 0,
-      "BUY": 4,
-      "SELL": 0,
-      "live": 4,
-      "fallback": 0
-    },
+    "junior_votes": null,
     "junior_model_3_enabled": true,
     "model_1": "grok-4.5",
     "model_1_effort": "medium",
@@ -11952,25 +11855,25 @@
     "max_candidates_to_llm": 8,
     "log_all_disagreements": true,
     "decision_mode": "live_dual_llm",
-    "last_tier": "senior_escalated",
-    "last_stage": "entry",
-    "last_junior_nomination": "LRCX",
-    "last_escalate_reason": "junior_nomination",
-    "live_share_recent": 85.7
+    "last_tier": "risk_exit",
+    "last_stage": "exit",
+    "last_junior_nomination": null,
+    "last_escalate_reason": "stop_loss",
+    "live_share_recent": 84.1
   },
   "learning": {
     "candidate_signals_logged": 8,
-    "fills_logged": 314,
-    "closed_outcomes": 142,
-    "consensus_events": 305,
+    "fills_logged": 315,
+    "closed_outcomes": 143,
+    "consensus_events": 306,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1016.58,
-    "change": 16.58,
-    "change_pct": 1.66,
+    "latest_equity": 1016.66,
+    "change": 16.66,
+    "change_pct": 1.67,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -14517,9 +14420,15 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-25T17:40:45.497995+00:00",
+        "t": "2026-08-25T17:48:11.728958+00:00",
         "equity": 1016.58,
-        "cash": 227.45,
+        "cash": 420.43,
+        "event": "SELL PANW"
+      },
+      {
+        "t": "2026-08-25T17:48:28.147930+00:00",
+        "equity": 1016.66,
+        "cash": 420.43,
         "event": "mark"
       }
     ],
