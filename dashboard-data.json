@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-25T16:10:15.616726+00:00",
+  "generated_at": "2026-08-25T16:17:26.272115+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1020.8,
+    "portfolio_value": 1019.94,
     "starting_cash": 1000.0,
-    "total_return_pct": 2.08,
-    "total_pnl": 20.8,
+    "total_return_pct": 1.99,
+    "total_pnl": 19.94,
     "realized_pnl": 24.21,
-    "open_pnl": -3.45,
-    "capital_deployed": 793.35,
+    "open_pnl": -4.32,
+    "capital_deployed": 792.49,
     "cash": 227.45,
     "closed_trades": 20,
     "win_rate_pct": 35.0,
-    "vs_spy_pct": 2.59,
+    "vs_spy_pct": 2.5,
     "spy_return_pct": -0.51,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-25T16:10:18.331322+00:00"
+    "updated_at": "2026-08-25T16:17:29.024252+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
     "return_pct": -0.51,
-    "price": 765.4299926757812,
+    "price": 765.4749755859375,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,10 +38,10 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 360.57,
-      "last": 355.6700134277344,
-      "market_value": 195.62,
-      "open_pnl": -2.69,
-      "open_pnl_pct": -1.36,
+      "last": 355.45001220703125,
+      "market_value": 195.5,
+      "open_pnl": -2.82,
+      "open_pnl_pct": -1.42,
       "stop": 350.0,
       "target": 378.0,
       "thesis": "JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit."
@@ -50,10 +50,10 @@
       "symbol": "PANW",
       "qty": 0.57,
       "avg_cost": 350.55,
-      "last": 345.3800048828125,
-      "market_value": 196.87,
-      "open_pnl": -2.95,
-      "open_pnl_pct": -1.47,
+      "last": 344.0299987792969,
+      "market_value": 196.1,
+      "open_pnl": -3.72,
+      "open_pnl_pct": -1.86,
       "stop": 340.0,
       "target": 368.0,
       "thesis": "PANW shows a clean headline catalyst with a revenue forecast beat driven by AI-related cybersecurity demand, supporting a bullish setup at neutral RSI. Liquid name with rank_score leadership and positive sentiment fits desk preference for catalyst entries. Risk defined below recent support with 1.65 R:R to the upside target while keeping notional under $200. Adding as fourth name leaves capacity and cash buffer intact."
@@ -62,10 +62,10 @@
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 62.30929946899414,
-      "market_value": 200.01,
-      "open_pnl": 0.35,
-      "open_pnl_pct": 0.18,
+      "last": 62.2401008605957,
+      "market_value": 199.79,
+      "open_pnl": 0.13,
+      "open_pnl_pct": 0.06,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
@@ -74,10 +74,10 @@
       "symbol": "AMD",
       "qty": 0.42,
       "avg_cost": 473.82,
-      "last": 478.2099914550781,
-      "market_value": 200.85,
-      "open_pnl": 1.84,
-      "open_pnl_pct": 0.93,
+      "last": 478.80499267578125,
+      "market_value": 201.1,
+      "open_pnl": 2.09,
+      "open_pnl_pct": 1.05,
       "stop": 458.0,
       "target": 498.0,
       "thesis": "AMD screens as the top ranked liquid catalyst name with a fresh Seeking Alpha upgrade framing an AI tipping point and bullish sentiment. RSI near mid-range leaves room for continuation without extreme overbought risk. Book has cash and an open slot under the five-name cap, so a small sized new entry fits risk limits. Stop and target set for roughly 1.5:1 reward-to-risk on the breakout thesis."
@@ -86,15 +86,15 @@
   "latest_candidate": {
     "symbol": "LRCX",
     "name": "LRCX",
-    "price": 313.3699951171875,
-    "volume": 1809102.0,
-    "avg_volume": 7713710.2,
-    "percent_change": 1.0316863497182263,
+    "price": 314.3999938964844,
+    "volume": 1871705.0,
+    "avg_volume": 7719970.5,
+    "percent_change": 1.363761900128212,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 18,
-    "liquidity_score": 78.87,
-    "rank_score": 92.16,
+    "liquidity_score": 78.88,
+    "rank_score": 92.42,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (beat): Lam Research (NASDAQ:LRCX) Given New $365.00 Price Target at Mizuho - MarketBeat",
     "top_headlines": [
@@ -143,45 +143,45 @@
     "model": "grok-4.5",
     "action": "BUY",
     "symbol": "LRCX",
-    "confidence": 78,
+    "confidence": 82,
     "cache_stats": null,
-    "entry_price": 313.37,
+    "entry_price": 314.4,
     "stop_loss": 300.0,
     "take_profit": 350.0,
     "qty": 0.63,
-    "thesis": "LRCX is the top-ranked liquid catalyst name with a fresh Mizuho $365 price target and bullish sentiment after the beat-driven headline. RSI near 50 leaves room for continuation without being overbought. Book has room for one more name and cash supports a ~$200 notional entry with clean R:R to the analyst target zone.",
+    "thesis": "LRCX shows a high-rank liquid catalyst setup with Mizuho lifting the price target to $365 after a beat, supporting a bullish continuation from neutral RSI. Portfolio has room for a fifth name and cash covers a sub-$200 notional add without forced rotation. Risk defined below recent support with asymmetric upside toward the new Street target yields R:R well above 1.5.",
     "reason_code": "new_entry",
     "reasoning": {
       "headline": "Bought $LRCX",
-      "narrative": "LRCX is the top-ranked liquid catalyst name with a fresh Mizuho $365 price target and bullish sentiment after the beat-driven headline. RSI near 50 leaves room for continuation without being overbought. Book has room for one more name and cash supports a ~$200 notional entry with clean R:R to the analyst target zone.",
+      "narrative": "LRCX shows a high-rank liquid catalyst setup with Mizuho lifting the price target to $365 after a beat, supporting a bullish continuation from neutral RSI. Portfolio has room for a fifth name and cash covers a sub-$200 notional add without forced rotation. Risk defined below recent support with asymmetric upside toward the new Street target yields R:R well above 1.5.",
       "bullets": [
-        "Rank 92 / catalyst PT $365 from Mizuho",
-        "Neutral RSI 50 with bullish sentiment",
-        "R:R >1.5 via 300 stop / 350 target",
-        "Notional capped near $200 within cash"
+        "Mizuho $365 PT catalyst + rank 92",
+        "RSI 50 neutral, room to run",
+        "Notional ~$198 within $200 cap",
+        "R:R ~2.5 to 350 target"
       ],
       "risk_map": {
         "stop": 300.0,
         "target": 350.0,
         "horizon_days": 5,
-        "rr": 2.74,
+        "rr": 2.47,
         "confidence_10": 8,
-        "confidence": 78
+        "confidence": 82
       },
-      "thesis": "LRCX is the top-ranked liquid catalyst name with a fresh Mizuho $365 price target and bullish sentiment after the beat-driven headline. RSI near 50 leaves room for continuation without being overbought. Book has room for one more name and cash supports a ~$200 notional entry with clean R:R to the analyst target zone."
+      "thesis": "LRCX shows a high-rank liquid catalyst setup with Mizuho lifting the price target to $365 after a beat, supporting a bullish continuation from neutral RSI. Portfolio has room for a fifth name and cash covers a sub-$200 notional add without forced rotation. Risk defined below recent support with asymmetric upside toward the new Street target yields R:R well above 1.5."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Rank 92 / catalyst PT $365 from Mizuho",
-      "Neutral RSI 50 with bullish sentiment",
-      "R:R >1.5 via 300 stop / 350 target",
-      "Notional capped near $200 within cash"
+      "Mizuho $365 PT catalyst + rank 92",
+      "RSI 50 neutral, room to run",
+      "Notional ~$198 within $200 cap",
+      "R:R ~2.5 to 350 target"
     ],
-    "timestamp": "2026-08-25T16:02:22.160276+00:00"
+    "timestamp": "2026-08-25T16:17:16.772662+00:00"
   },
-  "stance": "Buying pressure on LRCX. LRCX is the top-ranked liquid catalyst name with a fresh Mizuho $365 price target and bullish sentiment after the beat-driven headline. RSI near 50 leaves room for continuation without being overbought. Book has room for one more name and cash supports a ~$200 notional entry with clean R:R to the analyst target zone.",
+  "stance": "Buying pressure on LRCX. LRCX shows a high-rank liquid catalyst setup with Mizuho lifting the price target to $365 after a beat, supporting a bullish continuation from neutral RSI. Portfolio has room for a fifth name and cash covers a sub-$200 notional add without forced rotation. Risk defined below recent support with asymmetric upside toward the new Street target yields R:R well above 1.5.",
   "thinking": {
     "badge": "Looking to buy LRCX",
     "headline": "Buying pressure on LRCX.",
@@ -202,9 +202,9 @@
         "avg_cost": 360.57,
         "stop": 350.0,
         "target": 378.0,
-        "last": 355.6700134277344,
-        "open_pnl": -2.69,
-        "open_pnl_pct": -1.36,
+        "last": 355.45001220703125,
+        "open_pnl": -2.82,
+        "open_pnl_pct": -1.42,
         "line": "Bought near $360.57 \u00b7 Sell safety line $350.00 \u00b7 Profit target $378.00",
         "plan": "stop 350.0 or target 378.0"
       },
@@ -214,9 +214,9 @@
         "avg_cost": 350.55,
         "stop": 340.0,
         "target": 368.0,
-        "last": 345.3800048828125,
-        "open_pnl": -2.95,
-        "open_pnl_pct": -1.47,
+        "last": 344.0299987792969,
+        "open_pnl": -3.72,
+        "open_pnl_pct": -1.86,
         "line": "Bought near $350.55 \u00b7 Sell safety line $340.00 \u00b7 Profit target $368.00",
         "plan": "stop 340.0 or target 368.0"
       },
@@ -226,9 +226,9 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 62.30929946899414,
-        "open_pnl": 0.35,
-        "open_pnl_pct": 0.18,
+        "last": 62.2401008605957,
+        "open_pnl": 0.13,
+        "open_pnl_pct": 0.06,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
       },
@@ -238,14 +238,14 @@
         "avg_cost": 473.82,
         "stop": 458.0,
         "target": 498.0,
-        "last": 478.2099914550781,
-        "open_pnl": 1.84,
-        "open_pnl_pct": 0.93,
+        "last": 478.80499267578125,
+        "open_pnl": 2.09,
+        "open_pnl_pct": 1.05,
         "line": "Bought near $473.82 \u00b7 Sell safety line $458.00 \u00b7 Profit target $498.00",
         "plan": "stop 458.0 or target 498.0"
       }
     ],
-    "last_checked": "2026-08-25T16:10:15.616726+00:00",
+    "last_checked": "2026-08-25T16:17:26.272115+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -261,7 +261,7 @@
         "model": "grok-4.3",
         "action": "BUY",
         "symbol": "LRCX",
-        "confidence": 82,
+        "confidence": 85,
         "tone": "buy"
       },
       {
@@ -285,7 +285,7 @@
         "model": "grok-build-0.1",
         "action": "BUY",
         "symbol": "LRCX",
-        "confidence": 80,
+        "confidence": 75,
         "tone": "buy"
       },
       {
@@ -293,7 +293,7 @@
         "model": "grok-4.5",
         "action": "BUY",
         "symbol": "LRCX",
-        "confidence": 78,
+        "confidence": 82,
         "tone": "buy"
       },
       {
@@ -315,6 +315,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "LRCX",
+      "status": "no_consensus",
+      "headline": "BUY LRCX \u2014 no consensus",
+      "detail": "Take profit mismatch: $350.0 vs $330.0",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "LRCX",
+          "confidence": 85,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "LRCX",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "LRCX",
+          "confidence": 80,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "LRCX",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "LRCX",
+          "confidence": 82,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "LRCX",
+          "confidence": 78,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "JPM",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "LRCX",
+      "timestamp": "2026-08-25T16:17:16.773672+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "LRCX",
@@ -861,83 +938,6 @@
       "headline": "SELL CVX @ $201.12",
       "detail": "CVX is the weakest open position with the largest unrealized loss and price drifting toward the stop. Juniors escalated an explicit SELL on CVX; confirming the exit to free risk and cash given no offsetting catalyst strength in the candidate set. Reward-to-risk on the original plan no longer justifies holding into further downside.",
       "timestamp": "2026-08-25T14:18:25.587764+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CVX",
-      "status": "validated",
-      "headline": "SELL CVX \u2014 validated",
-      "detail": "CVX is the weakest open position with the largest unrealized loss and price drifting toward the stop. Juniors escalated an explicit SELL on CVX; confirming the exit to free risk and cash given no offsetting catalyst strength in the candidate set. Reward-to-risk on the original plan no longer justifies holding into further downside.",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "SELL",
-          "symbol": "CVX",
-          "confidence": 75,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "LRCX",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "SELL",
-          "symbol": "CVX",
-          "confidence": 78,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "SELL",
-          "symbol": "CVX",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "SELL",
-          "symbol": "CVX",
-          "confidence": 78,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "SELL",
-          "symbol": "CVX",
-          "confidence": 75,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "JPM",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "exit",
-      "junior_nomination": "CVX",
-      "timestamp": "2026-08-25T14:18:25.584778+00:00"
     },
     {
       "type": "fill",
@@ -11623,15 +11623,15 @@
     {
       "symbol": "LRCX",
       "name": "LRCX",
-      "price": 313.3699951171875,
-      "volume": 1809102.0,
-      "avg_volume": 7713710.2,
-      "percent_change": 1.0316863497182263,
+      "price": 314.3999938964844,
+      "volume": 1871705.0,
+      "avg_volume": 7719970.5,
+      "percent_change": 1.363761900128212,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 18,
-      "liquidity_score": 78.87,
-      "rank_score": 92.16,
+      "liquidity_score": 78.88,
+      "rank_score": 92.42,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Lam Research (NASDAQ:LRCX) Given New $365.00 Price Target at Mizuho - MarketBeat",
       "top_headlines": [
@@ -11679,15 +11679,15 @@
     {
       "symbol": "PANW",
       "name": "PANW",
-      "price": 345.635009765625,
-      "volume": 1539608.0,
-      "avg_volume": 4663570.8,
-      "percent_change": -1.5004229759013752,
+      "price": 344.1300048828125,
+      "volume": 1729609.0,
+      "avg_volume": 4682570.9,
+      "percent_change": -1.9293214965597931,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
-      "liquidity_score": 76.69,
-      "rank_score": 72.2,
+      "liquidity_score": 76.7,
+      "rank_score": 72.55,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (demand, growth): Can Rising Network Security Demand Boost PANW's Long-Term Growth? - TradingView",
       "top_headlines": [
@@ -11738,15 +11738,15 @@
     {
       "symbol": "AMD",
       "name": "AMD",
-      "price": 477.510009765625,
-      "volume": 10276508.0,
-      "avg_volume": 18230530.8,
-      "percent_change": 4.5451581314997265,
+      "price": 480.1499938964844,
+      "volume": 10754008.0,
+      "avg_volume": 18278280.8,
+      "percent_change": 5.123151373067187,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
-      "liquidity_score": 82.61,
-      "rank_score": 67.53,
+      "liquidity_score": 82.62,
+      "rank_score": 67.99,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst, upgrade): AMD Stock Upgraded To Strong Buy. Here\u2019s Why. - Investor's Business Daily",
       "top_headlines": [
@@ -11797,15 +11797,15 @@
     {
       "symbol": "NFLX",
       "name": "NFLX",
-      "price": 81.7300033569336,
-      "volume": 10510713.0,
-      "avg_volume": 26978301.3,
-      "percent_change": 2.1497327518808635,
+      "price": 81.94499969482422,
+      "volume": 11176207.0,
+      "avg_volume": 27044850.7,
+      "percent_change": 2.418444578090489,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
-      "liquidity_score": 84.31,
-      "rank_score": 65.87,
+      "liquidity_score": 84.32,
+      "rank_score": 66.08,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): NFLX Stock Reverses Course Overnight: Retail Shrugs Off Outgoing Chairman\u2019s Sale As \u2018Routine\u2019 - Stocktwits",
       "top_headlines": [
@@ -11851,15 +11851,15 @@
     {
       "symbol": "UBER",
       "name": "UBER",
-      "price": 79.81999969482422,
-      "volume": 5467084.0,
-      "avg_volume": 14353528.4,
-      "percent_change": 0.6684307897303674,
+      "price": 79.57050323486328,
+      "volume": 5673975.0,
+      "avg_volume": 14374217.5,
+      "percent_change": 0.35376758241530903,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
-      "liquidity_score": 81.57,
-      "rank_score": 64.27,
+      "liquidity_score": 81.58,
+      "rank_score": 64.02,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, deal): Uber Stock Slides Nearly 5% After Report Says Alphabet\u2019s Waymo Could Walk Away From Their Robotaxi Deal - Stocktwits",
       "top_headlines": [
@@ -11961,15 +11961,15 @@
     "candidate_signals_logged": 8,
     "fills_logged": 314,
     "closed_outcomes": 142,
-    "consensus_events": 299,
+    "consensus_events": 300,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1020.8,
-    "change": 20.8,
-    "change_pct": 2.08,
+    "latest_equity": 1019.94,
+    "change": 19.94,
+    "change_pct": 1.99,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -14470,6 +14470,12 @@
       {
         "t": "2026-08-25T16:10:18.331322+00:00",
         "equity": 1020.8,
+        "cash": 227.45,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-25T16:17:29.024252+00:00",
+        "equity": 1019.94,
         "cash": 227.45,
         "event": "mark"
       }
