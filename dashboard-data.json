@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-08-26T14:30:12.247618+00:00",
+  "generated_at": "2026-08-26T14:32:15.975477+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1018.34,
+    "portfolio_value": 1018.18,
     "starting_cash": 1000.0,
-    "total_return_pct": 1.83,
-    "total_pnl": 18.34,
+    "total_return_pct": 1.82,
+    "total_pnl": 18.18,
     "realized_pnl": 17.38,
-    "open_pnl": 0.93,
-    "capital_deployed": 796.07,
+    "open_pnl": 0.77,
+    "capital_deployed": 795.91,
     "cash": 222.27,
     "closed_trades": 21,
     "win_rate_pct": 33.33,
     "vs_spy_pct": 2.39,
-    "spy_return_pct": -0.56,
+    "spy_return_pct": -0.57,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-26T14:30:14.932855+00:00"
+    "updated_at": "2026-08-26T14:32:19.101421+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.56,
-    "price": 765.0800170898438,
+    "return_pct": -0.57,
+    "price": 765.0150146484375,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 1,
-    "validated_count_today": 1,
+    "consensus_count_today": 2,
+    "validated_count_today": 2,
     "blocked_count_today": 0,
     "fills_today": 1,
-    "simulated_orders_today": 1,
+    "simulated_orders_today": 2,
     "top_symbol_today": "UNH"
   },
   "holdings": [
@@ -38,10 +38,10 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 360.57,
-      "last": 355.8810119628906,
-      "market_value": 195.73,
-      "open_pnl": -2.58,
-      "open_pnl_pct": -1.3,
+      "last": 355.80999755859375,
+      "market_value": 195.7,
+      "open_pnl": -2.62,
+      "open_pnl_pct": -1.32,
       "stop": 350.0,
       "target": 378.0,
       "thesis": "JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit."
@@ -50,10 +50,10 @@
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 62.1349983215332,
-      "market_value": 199.45,
-      "open_pnl": -0.21,
-      "open_pnl_pct": -0.1,
+      "last": 62.160099029541016,
+      "market_value": 199.53,
+      "open_pnl": -0.13,
+      "open_pnl_pct": -0.06,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
@@ -62,10 +62,10 @@
       "symbol": "AMD",
       "qty": 0.42,
       "avg_cost": 473.82,
-      "last": 483.86981201171875,
-      "market_value": 203.23,
-      "open_pnl": 4.22,
-      "open_pnl_pct": 2.12,
+      "last": 483.9800109863281,
+      "market_value": 203.27,
+      "open_pnl": 4.27,
+      "open_pnl_pct": 2.14,
       "stop": 458.0,
       "target": 498.0,
       "thesis": "AMD screens as the top ranked liquid catalyst name with a fresh Seeking Alpha upgrade framing an AI tipping point and bullish sentiment. RSI near mid-range leaves room for continuation without extreme overbought risk. Book has cash and an open slot under the five-name cap, so a small sized new entry fits risk limits. Stop and target set for roughly 1.5:1 reward-to-risk on the breakout thesis."
@@ -74,10 +74,10 @@
       "symbol": "UNH",
       "qty": 0.49,
       "avg_cost": 404.41,
-      "last": 403.3900146484375,
-      "market_value": 197.66,
-      "open_pnl": -0.5,
-      "open_pnl_pct": -0.25,
+      "last": 402.8699951171875,
+      "market_value": 197.41,
+      "open_pnl": -0.75,
+      "open_pnl_pct": -0.38,
       "stop": 392.0,
       "target": 426.5,
       "thesis": "UNH is the strongest fresh catalyst name not already in the book after beating and raising guidance, with bullish follow-through after an 8% jump. Liquidity and rank support a small starter versus weaker held names. Risk is defined under the post-gap zone with asymmetric upside if guidance momentum continues. Position sized within the ~$200 new-buy notional cap while leaving room under the 5-name limit."
@@ -86,15 +86,15 @@
   "latest_candidate": {
     "symbol": "AMD",
     "name": "AMD",
-    "price": 482.8599853515625,
-    "volume": 4640519.0,
-    "avg_volume": 17704011.9,
-    "percent_change": 0.7679771134082336,
+    "price": 483.6050109863281,
+    "volume": 5319947.0,
+    "avg_volume": 17771954.7,
+    "percent_change": 0.9234564001383283,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 12,
-    "liquidity_score": 82.48,
-    "rank_score": 68.49,
+    "catalyst_score": 11,
+    "liquidity_score": 82.5,
+    "rank_score": 64.61,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (catalyst, upgrade): AMD Stock Gets a \u2018Strong Buy\u2019 Upgrade: Why It Could Outperform Nvidia - Barron's",
     "top_headlines": [
@@ -133,7 +133,7 @@
         ]
       },
       {
-        "title": "AMD vs. Broadcom: Which AI Stock Has the Bigger Upside Potential? - The Globe and Mail",
+        "title": "AI Stock Picks Today: AMD, NVDA, MU Trade Ideas for August 26 - StartupHub.ai",
         "keywords": [
           "ai",
           "catalyst"
@@ -142,52 +142,50 @@
     ]
   },
   "latest_decision": {
-    "model": "grok-4.5",
-    "action": "BUY",
-    "symbol": "UNH",
-    "confidence": 73,
+    "model": "grok-4.3",
+    "action": "HOLD",
+    "symbol": "CASH",
+    "confidence": 60,
     "cache_stats": null,
-    "entry_price": 404.41,
-    "stop_loss": 392.0,
-    "take_profit": 426.5,
-    "qty": 0.49,
-    "thesis": "UNH is the strongest fresh catalyst name not already in the book after beating and raising guidance, with bullish follow-through after an 8% jump. Liquidity and rank support a small starter versus weaker held names. Risk is defined under the post-gap zone with asymmetric upside if guidance momentum continues. Position sized within the ~$200 new-buy notional cap while leaving room under the 5-name limit.",
-    "reason_code": "new_entry",
+    "entry_price": 0.0,
+    "stop_loss": 0.0,
+    "take_profit": 0.0,
+    "qty": 0.0,
+    "thesis": "No new candidate offers a materially superior setup to justify adding a fifth name or rotating out of current holdings. AMD and UNH remain the strongest catalysts but are already positioned with appropriate stops and targets. Weakest hold JPM shows no rotation signal from candidates.",
+    "reason_code": "hold",
     "reasoning": {
-      "headline": "Bought $UNH",
-      "narrative": "UNH is the strongest fresh catalyst name not already in the book after beating and raising guidance, with bullish follow-through after an 8% jump. Liquidity and rank support a small starter versus weaker held names. Risk is defined under the post-gap zone with asymmetric upside if guidance momentum continues. Position sized within the ~$200 new-buy notional cap while leaving room under the 5-name limit.",
+      "headline": "Hold $CASH",
+      "narrative": "No new candidate offers a materially superior setup to justify adding a fifth name or rotating out of current holdings. AMD and UNH remain the strongest catalysts but are already positioned with appropriate stops and targets. Weakest hold JPM shows no rotation signal from candidates.",
       "bullets": [
-        "Q1 beat + raised guidance catalyst, rank 62.5",
-        "R:R ~1.78 with stop 392 / target 426.5",
-        "~$198 notional; book has room (3/5)",
-        "Prefer UNH over adding AMD or rotating weak JPM"
+        "Top candidates AMD/UNH already held with positive/near-flat P&L",
+        "New names like AAPL lack sufficient rank edge for $200 notional entry",
+        "R:R requirement and book limit favor patience over expansion"
       ],
       "risk_map": {
-        "stop": 392.0,
-        "target": 426.5,
+        "stop": 0.0,
+        "target": 0.0,
         "horizon_days": 5,
-        "rr": 1.78,
-        "confidence_10": 7,
-        "confidence": 73
+        "rr": 0.0,
+        "confidence_10": 6,
+        "confidence": 60
       },
-      "thesis": "UNH is the strongest fresh catalyst name not already in the book after beating and raising guidance, with bullish follow-through after an 8% jump. Liquidity and rank support a small starter versus weaker held names. Risk is defined under the post-gap zone with asymmetric upside if guidance momentum continues. Position sized within the ~$200 new-buy notional cap while leaving room under the 5-name limit."
+      "thesis": "No new candidate offers a materially superior setup to justify adding a fifth name or rotating out of current holdings. AMD and UNH remain the strongest catalysts but are already positioned with appropriate stops and targets. Weakest hold JPM shows no rotation signal from candidates."
     },
     "source": "live",
     "provider": "xai",
-    "provider_model_id": "grok-4.5",
+    "provider_model_id": "grok-4.3",
     "bullets": [
-      "Q1 beat + raised guidance catalyst, rank 62.5",
-      "R:R ~1.78 with stop 392 / target 426.5",
-      "~$198 notional; book has room (3/5)",
-      "Prefer UNH over adding AMD or rotating weak JPM"
+      "Top candidates AMD/UNH already held with positive/near-flat P&L",
+      "New names like AAPL lack sufficient rank edge for $200 notional entry",
+      "R:R requirement and book limit favor patience over expansion"
     ],
-    "timestamp": "2026-08-26T14:17:34.790996+00:00"
+    "timestamp": "2026-08-26T14:32:00.156844+00:00"
   },
-  "stance": "Buying pressure on UNH. UNH is the strongest fresh catalyst name not already in the book after beating and raising guidance, with bullish follow-through after an 8% jump. Liquidity and rank support a small starter versus weaker held names. Risk is defined under the post-gap zone with asymmetric upside if guidance momentum continues. Position sized within the ~$200 new-buy notional cap while leaving room under the 5-name limit.",
+  "stance": "Holding JPM, BAC, AMD, UNH. No new trade right now.",
   "thinking": {
-    "badge": "Looking to buy UNH",
-    "headline": "Buying pressure on UNH.",
-    "plain_english": "Right now Hermes wants exposure to UNH. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
+    "badge": "Holding what it owns",
+    "headline": "Holding JPM, BAC, AMD, UNH. No new trade right now.",
+    "plain_english": "Right now Hermes is holding JPM, BAC, AMD, UNH and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
     "triggers": [
       "It owns JPM, bought near $360.57. Simple plan: sell if it falls to about $350.00, or take profit near $378.00.",
       "It owns BAC, bought near $62.20. Simple plan: sell if it falls to about $60.00, or take profit near $65.50.",
@@ -203,9 +201,9 @@
         "avg_cost": 360.57,
         "stop": 350.0,
         "target": 378.0,
-        "last": 355.8810119628906,
-        "open_pnl": -2.58,
-        "open_pnl_pct": -1.3,
+        "last": 355.80999755859375,
+        "open_pnl": -2.62,
+        "open_pnl_pct": -1.32,
         "line": "Bought near $360.57 \u00b7 Sell safety line $350.00 \u00b7 Profit target $378.00",
         "plan": "stop 350.0 or target 378.0"
       },
@@ -215,9 +213,9 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 62.1349983215332,
-        "open_pnl": -0.21,
-        "open_pnl_pct": -0.1,
+        "last": 62.160099029541016,
+        "open_pnl": -0.13,
+        "open_pnl_pct": -0.06,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
       },
@@ -227,9 +225,9 @@
         "avg_cost": 473.82,
         "stop": 458.0,
         "target": 498.0,
-        "last": 483.86981201171875,
-        "open_pnl": 4.22,
-        "open_pnl_pct": 2.12,
+        "last": 483.9800109863281,
+        "open_pnl": 4.27,
+        "open_pnl_pct": 2.14,
         "line": "Bought near $473.82 \u00b7 Sell safety line $458.00 \u00b7 Profit target $498.00",
         "plan": "stop 458.0 or target 498.0"
       },
@@ -239,17 +237,17 @@
         "avg_cost": 404.41,
         "stop": 392.0,
         "target": 426.5,
-        "last": 403.3900146484375,
-        "open_pnl": -0.5,
-        "open_pnl_pct": -0.25,
+        "last": 402.8699951171875,
+        "open_pnl": -0.75,
+        "open_pnl_pct": -0.38,
         "line": "Bought near $404.41 \u00b7 Sell safety line $392.00 \u00b7 Profit target $426.50",
         "plan": "stop 392.0 or target 426.5"
       }
     ],
-    "last_checked": "2026-08-26T14:30:12.247618+00:00",
+    "last_checked": "2026-08-26T14:32:15.975477+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "BUY",
+    "action": "HOLD",
     "symbols_held": [
       "JPM",
       "BAC",
@@ -262,60 +260,113 @@
         "model": "grok-4.3",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 65,
+        "confidence": 60,
         "tone": "hold"
       },
       {
         "prefix": "J",
         "model": "claude-haiku-4-5",
-        "action": "BUY",
-        "symbol": "UNH",
-        "confidence": 72,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 62,
+        "tone": "hold"
       },
       {
         "prefix": "J",
         "model": "deepseek-v4-flash",
         "action": "BUY",
-        "symbol": "UNH",
-        "confidence": 72,
+        "symbol": "AAPL",
+        "confidence": 90,
         "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "BUY",
-        "symbol": "AMD",
-        "confidence": 72,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "grok-4.5",
-        "action": "BUY",
-        "symbol": "UNH",
-        "confidence": 73,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "claude-sonnet-5",
-        "action": "BUY",
-        "symbol": "UNH",
-        "confidence": 78,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "claude-opus-5",
-        "action": "BUY",
-        "symbol": "UNH",
-        "confidence": 90,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 60,
+        "tone": "hold"
       }
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 no new trade",
+      "detail": "No new candidate offers a materially superior setup to justify adding a fifth name or rotating out of current holdings. AMD and UNH remain the strongest catalysts but are already positioned with appropriate stops and targets. Weakest hold JPM shows no rotation signal from candidates.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "AAPL",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        }
+      ],
+      "tier": "junior_only",
+      "escalate_reason": "",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-08-26T14:32:00.156844+00:00"
+    },
     {
       "type": "fill",
       "symbol": "UNH",
@@ -11222,15 +11273,15 @@
     {
       "symbol": "AMD",
       "name": "AMD",
-      "price": 482.8599853515625,
-      "volume": 4640519.0,
-      "avg_volume": 17704011.9,
-      "percent_change": 0.7679771134082336,
+      "price": 483.6050109863281,
+      "volume": 5319947.0,
+      "avg_volume": 17771954.7,
+      "percent_change": 0.9234564001383283,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 12,
-      "liquidity_score": 82.48,
-      "rank_score": 68.49,
+      "catalyst_score": 11,
+      "liquidity_score": 82.5,
+      "rank_score": 64.61,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, upgrade): AMD Stock Gets a \u2018Strong Buy\u2019 Upgrade: Why It Could Outperform Nvidia - Barron's",
       "top_headlines": [
@@ -11269,7 +11320,7 @@
           ]
         },
         {
-          "title": "AMD vs. Broadcom: Which AI Stock Has the Bigger Upside Potential? - The Globe and Mail",
+          "title": "AI Stock Picks Today: AMD, NVDA, MU Trade Ideas for August 26 - StartupHub.ai",
           "keywords": [
             "ai",
             "catalyst"
@@ -11280,15 +11331,15 @@
     {
       "symbol": "UNH",
       "name": "UNH",
-      "price": 404.4100036621094,
-      "volume": 694876.0,
-      "avg_volume": 3922587.6,
-      "percent_change": 1.9718115425070337,
+      "price": 403.3900146484375,
+      "volume": 897524.0,
+      "avg_volume": 3942852.4,
+      "percent_change": 1.7146217436995885,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 12,
-      "liquidity_score": 75.94,
-      "rank_score": 62.47,
+      "liquidity_score": 75.96,
+      "rank_score": 62.27,
       "news_hits": 6,
       "catalyst": "Headline-driven setup (ai, beat, beats): UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
       "top_headlines": [
@@ -11313,15 +11364,15 @@
     {
       "symbol": "AAPL",
       "name": "AAPL",
-      "price": 312.94000244140625,
-      "volume": 4687697.0,
-      "avg_volume": 36371739.7,
-      "percent_change": 0.9809643771523682,
+      "price": 311.75,
+      "volume": 5631748.0,
+      "avg_volume": 36466144.8,
+      "percent_change": 0.5969687447407892,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 10,
-      "liquidity_score": 85.61,
-      "rank_score": 59.63,
+      "liquidity_score": 85.62,
+      "rank_score": 59.32,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): AAPL Stock Unmoved After-Hours \u2014 Apple Sues OpenAI Over Alleged 'Rotten' Campaign To Steal AI Hardware Secrets - Stocktwits",
       "top_headlines": [
@@ -11365,15 +11416,15 @@
     {
       "symbol": "WMT",
       "name": "WMT",
-      "price": 105.02999877929688,
-      "volume": 5240719.0,
-      "avg_volume": 30037491.9,
-      "percent_change": -0.33212989489781153,
+      "price": 104.77999877929688,
+      "volume": 6234733.0,
+      "avg_volume": 30136893.3,
+      "percent_change": -0.5693665683803507,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 84.78,
-      "rank_score": 56.48,
+      "liquidity_score": 84.79,
+      "rank_score": 56.67,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, deal): WMT Stock Rises Premarket: Analyst Says Walmart's Vibe.co Deal Strengthens Advertising Push - Stocktwits",
       "top_headlines": [
@@ -11419,21 +11470,21 @@
     {
       "symbol": "AVGO",
       "name": "AVGO",
-      "price": 352.2795104980469,
-      "volume": 3590394.0,
-      "avg_volume": 19976389.4,
-      "percent_change": -1.2503447492381299,
+      "price": 351.5899963378906,
+      "volume": 4576793.0,
+      "avg_volume": 20075029.3,
+      "percent_change": -1.443626741454154,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 83.01,
-      "rank_score": 55.45,
+      "liquidity_score": 83.03,
+      "rank_score": 55.61,
       "news_hits": 6,
       "catalyst": "Headline-driven setup (catalyst, contract): Broadcom Q3 Earnings Preview: I See Continued Margin Contraction (NASDAQ:AVGO) - Seeking Alpha",
       "top_headlines": [
-        "Broadcom Q3 Earnings Preview: I See Continued Margin Contraction (NASDAQ:AVGO) - Seeking Alpha",
         "AVGO Stock Headed For $319B Market Cap Wipeout, But Analysts Eye Buying Opportunity - Stocktwits",
-        "AVGO Stock Quote Price and Forecast - CNN"
+        "AVGO Stock Quote Price and Forecast - CNN",
+        "Broadcom Q3 Earnings Preview: I See Continued Margin Contraction (NASDAQ:AVGO) - Seeking Alpha"
       ],
       "matched_headlines": [
         {
@@ -11495,10 +11546,10 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 1,
-      "BUY": 3,
+      "HOLD": 3,
+      "BUY": 1,
       "SELL": 0,
-      "live": 4,
+      "live": 3,
       "fallback": 0
     },
     "junior_model_3_enabled": true,
@@ -11513,25 +11564,25 @@
     "max_candidates_to_llm": 8,
     "log_all_disagreements": true,
     "decision_mode": "live_dual_llm",
-    "last_tier": "senior_escalated",
+    "last_tier": "junior_only",
     "last_stage": "entry",
     "last_junior_nomination": null,
-    "last_escalate_reason": "junior_trade_or_split",
+    "last_escalate_reason": "",
     "live_share_recent": 85.7
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 316,
     "closed_outcomes": 143,
-    "consensus_events": 316,
+    "consensus_events": 317,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1018.34,
-    "change": 18.34,
-    "change_pct": 1.83,
+    "latest_equity": 1018.18,
+    "change": 18.18,
+    "change_pct": 1.82,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -14176,6 +14227,12 @@
       {
         "t": "2026-08-26T14:30:14.932855+00:00",
         "equity": 1018.34,
+        "cash": 222.27,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-26T14:32:19.101421+00:00",
+        "equity": 1018.18,
         "cash": 222.27,
         "event": "mark"
       }
