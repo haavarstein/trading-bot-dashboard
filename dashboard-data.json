@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-26T13:30:17.531914+00:00",
+  "generated_at": "2026-08-26T13:40:14.047243+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1016.32,
+    "portfolio_value": 1021.19,
     "starting_cash": 1000.0,
-    "total_return_pct": 1.63,
-    "total_pnl": 16.32,
+    "total_return_pct": 2.12,
+    "total_pnl": 21.19,
     "realized_pnl": 17.38,
-    "open_pnl": -1.09,
-    "capital_deployed": 595.89,
+    "open_pnl": 3.79,
+    "capital_deployed": 600.76,
     "cash": 420.43,
     "closed_trades": 21,
     "win_rate_pct": 33.33,
-    "vs_spy_pct": 2.19,
-    "spy_return_pct": -0.56,
+    "vs_spy_pct": 2.63,
+    "spy_return_pct": -0.51,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-26T13:30:20.313792+00:00"
+    "updated_at": "2026-08-26T13:40:16.895766+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.56,
-    "price": 765.0700073242188,
+    "return_pct": -0.51,
+    "price": 765.489990234375,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,10 +38,10 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 360.57,
-      "last": 356.2550048828125,
-      "market_value": 195.94,
-      "open_pnl": -2.37,
-      "open_pnl_pct": -1.2,
+      "last": 357.07000732421875,
+      "market_value": 196.39,
+      "open_pnl": -1.92,
+      "open_pnl_pct": -0.97,
       "stop": 350.0,
       "target": 378.0,
       "thesis": "JPM ranks as the top catalyst setup after banks lifted dividends and announced buybacks following the Fed stress test, with bullish headline momentum. RSI is neutral near 50, leaving room for continuation on the capital-return news. Position sized to ~$200 notional with clear R:R above 1.5 while keeping open names under the desk limit."
@@ -50,10 +50,10 @@
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 62.369998931884766,
-      "market_value": 200.21,
-      "open_pnl": 0.55,
-      "open_pnl_pct": 0.27,
+      "last": 62.45000076293945,
+      "market_value": 200.46,
+      "open_pnl": 0.8,
+      "open_pnl_pct": 0.4,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
@@ -62,10 +62,10 @@
       "symbol": "AMD",
       "qty": 0.42,
       "avg_cost": 473.82,
-      "last": 475.56500244140625,
-      "market_value": 199.74,
-      "open_pnl": 0.73,
-      "open_pnl_pct": 0.37,
+      "last": 485.5,
+      "market_value": 203.91,
+      "open_pnl": 4.91,
+      "open_pnl_pct": 2.47,
       "stop": 458.0,
       "target": 498.0,
       "thesis": "AMD screens as the top ranked liquid catalyst name with a fresh Seeking Alpha upgrade framing an AI tipping point and bullish sentiment. RSI near mid-range leaves room for continuation without extreme overbought risk. Book has cash and an open slot under the five-name cap, so a small sized new entry fits risk limits. Stop and target set for roughly 1.5:1 reward-to-risk on the breakout thesis."
@@ -189,9 +189,9 @@
         "avg_cost": 360.57,
         "stop": 350.0,
         "target": 378.0,
-        "last": 356.2550048828125,
-        "open_pnl": -2.37,
-        "open_pnl_pct": -1.2,
+        "last": 357.07000732421875,
+        "open_pnl": -1.92,
+        "open_pnl_pct": -0.97,
         "line": "Bought near $360.57 \u00b7 Sell safety line $350.00 \u00b7 Profit target $378.00",
         "plan": "stop 350.0 or target 378.0"
       },
@@ -201,9 +201,9 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 62.369998931884766,
-        "open_pnl": 0.55,
-        "open_pnl_pct": 0.27,
+        "last": 62.45000076293945,
+        "open_pnl": 0.8,
+        "open_pnl_pct": 0.4,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
       },
@@ -213,14 +213,14 @@
         "avg_cost": 473.82,
         "stop": 458.0,
         "target": 498.0,
-        "last": 475.56500244140625,
-        "open_pnl": 0.73,
-        "open_pnl_pct": 0.37,
+        "last": 485.5,
+        "open_pnl": 4.91,
+        "open_pnl_pct": 2.47,
         "line": "Bought near $473.82 \u00b7 Sell safety line $458.00 \u00b7 Profit target $498.00",
         "plan": "stop 458.0 or target 498.0"
       }
     ],
-    "last_checked": "2026-08-26T13:30:17.531914+00:00",
+    "last_checked": "2026-08-26T13:40:14.047243+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -11348,9 +11348,9 @@
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1016.32,
-    "change": 16.32,
-    "change_pct": 1.63,
+    "latest_equity": 1021.19,
+    "change": 21.19,
+    "change_pct": 2.12,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -13969,8 +13969,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-26T13:30:20.313792+00:00",
-        "equity": 1016.32,
+        "t": "2026-08-26T13:40:16.895766+00:00",
+        "equity": 1021.19,
         "cash": 420.43,
         "event": "mark"
       }
