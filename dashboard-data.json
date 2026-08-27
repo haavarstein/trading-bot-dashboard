@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-27T17:18:03.846443+00:00",
+  "generated_at": "2026-08-27T17:20:18.296927+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1022.69,
+    "portfolio_value": 1022.65,
     "starting_cash": 1000.0,
     "total_return_pct": 2.27,
-    "total_pnl": 22.69,
+    "total_pnl": 22.65,
     "realized_pnl": 21.68,
-    "open_pnl": 1.0,
-    "capital_deployed": 599.66,
+    "open_pnl": 0.95,
+    "capital_deployed": 599.62,
     "cash": 423.03,
     "closed_trades": 24,
     "win_rate_pct": 33.33,
-    "vs_spy_pct": 1.92,
-    "spy_return_pct": 0.35,
+    "vs_spy_pct": 1.91,
+    "spy_return_pct": 0.36,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-27T17:18:06.517547+00:00"
+    "updated_at": "2026-08-27T17:20:20.985069+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.35,
-    "price": 772.1099853515625,
+    "return_pct": 0.36,
+    "price": 772.1400146484375,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,7 +38,7 @@
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 61.620201110839844,
+      "last": 61.619998931884766,
       "market_value": 197.8,
       "open_pnl": -1.86,
       "open_pnl_pct": -0.93,
@@ -50,10 +50,10 @@
       "symbol": "AMD",
       "qty": 0.42,
       "avg_cost": 473.82,
-      "last": 475.0299987792969,
-      "market_value": 199.51,
-      "open_pnl": 0.51,
-      "open_pnl_pct": 0.26,
+      "last": 475.10009765625,
+      "market_value": 199.54,
+      "open_pnl": 0.54,
+      "open_pnl_pct": 0.27,
       "stop": 458.0,
       "target": 498.0,
       "thesis": "AMD screens as the top ranked liquid catalyst name with a fresh Seeking Alpha upgrade framing an AI tipping point and bullish sentiment. RSI near mid-range leaves room for continuation without extreme overbought risk. Book has cash and an open slot under the five-name cap, so a small sized new entry fits risk limits. Stop and target set for roughly 1.5:1 reward-to-risk on the breakout thesis."
@@ -62,10 +62,10 @@
       "symbol": "LRCX",
       "qty": 0.64,
       "avg_cost": 312.51,
-      "last": 316.17498779296875,
-      "market_value": 202.35,
-      "open_pnl": 2.35,
-      "open_pnl_pct": 1.17,
+      "last": 316.05499267578125,
+      "market_value": 202.28,
+      "open_pnl": 2.27,
+      "open_pnl_pct": 1.13,
       "stop": 300.0,
       "target": 335.0,
       "thesis": "LRCX ranks highest among candidates with bullish sentiment and a headline catalyst setup at neutral RSI. Liquid semi name fits the book with room for one more position under the 5-name cap and ~$200 notional limit. Reward-to-risk exceeds 1.5 from entry to target versus stop. Adding as new_entry while cash supports the size."
@@ -187,7 +187,7 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 61.620201110839844,
+        "last": 61.619998931884766,
         "open_pnl": -1.86,
         "open_pnl_pct": -0.93,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
@@ -199,9 +199,9 @@
         "avg_cost": 473.82,
         "stop": 458.0,
         "target": 498.0,
-        "last": 475.0299987792969,
-        "open_pnl": 0.51,
-        "open_pnl_pct": 0.26,
+        "last": 475.10009765625,
+        "open_pnl": 0.54,
+        "open_pnl_pct": 0.27,
         "line": "Bought near $473.82 \u00b7 Sell safety line $458.00 \u00b7 Profit target $498.00",
         "plan": "stop 458.0 or target 498.0"
       },
@@ -211,14 +211,14 @@
         "avg_cost": 312.51,
         "stop": 300.0,
         "target": 335.0,
-        "last": 316.17498779296875,
-        "open_pnl": 2.35,
-        "open_pnl_pct": 1.17,
+        "last": 316.05499267578125,
+        "open_pnl": 2.27,
+        "open_pnl_pct": 1.13,
         "line": "Bought near $312.51 \u00b7 Sell safety line $300.00 \u00b7 Profit target $335.00",
         "plan": "stop 300.0 or target 335.0"
       }
     ],
-    "last_checked": "2026-08-27T17:18:03.846443+00:00",
+    "last_checked": "2026-08-27T17:20:18.296927+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -12141,8 +12141,8 @@
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1022.69,
-    "change": 22.69,
+    "latest_equity": 1022.65,
+    "change": 22.65,
     "change_pct": 2.27,
     "points": [
       {
@@ -15064,6 +15064,12 @@
       {
         "t": "2026-08-27T17:18:06.517547+00:00",
         "equity": 1022.69,
+        "cash": 423.03,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-27T17:20:20.985069+00:00",
+        "equity": 1022.65,
         "cash": 423.03,
         "event": "mark"
       }
