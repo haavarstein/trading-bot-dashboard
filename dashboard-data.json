@@ -1,34 +1,34 @@
 {
-  "generated_at": "2026-08-27T18:21:23.743175+00:00",
+  "generated_at": "2026-08-27T18:23:32.729657+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1020.12,
+    "portfolio_value": 1020.01,
     "starting_cash": 1000.0,
-    "total_return_pct": 2.01,
-    "total_pnl": 20.12,
+    "total_return_pct": 2.0,
+    "total_pnl": 20.01,
     "realized_pnl": 21.68,
-    "open_pnl": -1.59,
-    "capital_deployed": 597.09,
+    "open_pnl": -1.69,
+    "capital_deployed": 596.98,
     "cash": 423.03,
     "closed_trades": 24,
     "win_rate_pct": 33.33,
     "vs_spy_pct": 1.89,
-    "spy_return_pct": 0.12,
+    "spy_return_pct": 0.11,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-27T18:21:26.628262+00:00"
+    "updated_at": "2026-08-27T18:23:35.378785+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.12,
-    "price": 770.280029296875,
+    "return_pct": 0.11,
+    "price": 770.1998901367188,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 12,
+    "consensus_count_today": 13,
     "validated_count_today": 4,
-    "blocked_count_today": 8,
+    "blocked_count_today": 9,
     "fills_today": 3,
     "simulated_orders_today": 4,
     "top_symbol_today": "LRCX"
@@ -38,10 +38,10 @@
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 61.529998779296875,
-      "market_value": 197.51,
-      "open_pnl": -2.15,
-      "open_pnl_pct": -1.08,
+      "last": 61.4900016784668,
+      "market_value": 197.38,
+      "open_pnl": -2.28,
+      "open_pnl_pct": -1.14,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
@@ -50,10 +50,10 @@
       "symbol": "AMD",
       "qty": 0.42,
       "avg_cost": 473.82,
-      "last": 471.6099853515625,
-      "market_value": 198.08,
-      "open_pnl": -0.93,
-      "open_pnl_pct": -0.47,
+      "last": 471.6400146484375,
+      "market_value": 198.09,
+      "open_pnl": -0.92,
+      "open_pnl_pct": -0.46,
       "stop": 458.0,
       "target": 498.0,
       "thesis": "AMD screens as the top ranked liquid catalyst name with a fresh Seeking Alpha upgrade framing an AI tipping point and bullish sentiment. RSI near mid-range leaves room for continuation without extreme overbought risk. Book has cash and an open slot under the five-name cap, so a small sized new entry fits risk limits. Stop and target set for roughly 1.5:1 reward-to-risk on the breakout thesis."
@@ -62,9 +62,9 @@
       "symbol": "LRCX",
       "qty": 0.64,
       "avg_cost": 312.51,
-      "last": 314.8399963378906,
-      "market_value": 201.5,
-      "open_pnl": 1.49,
+      "last": 314.864990234375,
+      "market_value": 201.51,
+      "open_pnl": 1.51,
       "open_pnl_pct": 0.75,
       "stop": 300.0,
       "target": 335.0,
@@ -74,27 +74,34 @@
   "latest_candidate": {
     "symbol": "CRWD",
     "name": "CRWD",
-    "price": 225.94000244140625,
-    "volume": 16645547.0,
-    "avg_volume": 9357254.7,
-    "percent_change": 19.43123543123543,
+    "price": 225.8300018310547,
+    "volume": 17266039.0,
+    "avg_volume": 9419303.9,
+    "percent_change": 19.37308942499254,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 15,
-    "liquidity_score": 79.71,
-    "rank_score": 85.96,
-    "news_hits": 5,
+    "catalyst_score": 20,
+    "liquidity_score": 79.74,
+    "rank_score": 107.46,
+    "news_hits": 7,
     "catalyst": "Headline-driven setup (beat): CrowdStrike (CRWD) Stock Price, News & Analysis - MarketBeat",
     "top_headlines": [
       "CrowdStrike (CRWD) Stock Price, News & Analysis - MarketBeat",
-      "CRWD Q2 Deep Dive: AI Security Demand Drives Growth and Platform Consolidation - StockStory",
-      "CRWD Stock Sees Biggest Single-Day Surge In Over A Year: Wall Street Sees \u2018Mythos Moment\u2019 Boosting Cybersecurity Demand, But One Analyst Is Skeptical - TradingView"
+      "QQQ is up 1.0% today, on CRWD stock price movement - Quiver Quantitative",
+      "CRWD Stock Jumps After Q2 Beat As Analysts See Cybersecurity Demand Inflection \u2014 But KeyBanc Pushes Back - Stocktwits"
     ],
     "matched_headlines": [
       {
         "title": "CrowdStrike (CRWD) Stock Price, News & Analysis - MarketBeat",
         "keywords": [
           "beat"
+        ]
+      },
+      {
+        "title": "CRWD Stock Jumps After Q2 Beat As Analysts See Cybersecurity Demand Inflection \u2014 But KeyBanc Pushes Back - Stocktwits",
+        "keywords": [
+          "beat",
+          "demand"
         ]
       },
       {
@@ -129,43 +136,43 @@
     "symbol": "CRWD",
     "confidence": 78,
     "cache_stats": null,
-    "entry_price": 225.81,
-    "stop_loss": 217.5,
-    "take_profit": 238.5,
+    "entry_price": 225.83,
+    "stop_loss": 218.0,
+    "take_profit": 238.0,
     "qty": 0.88,
-    "thesis": "CRWD is the sole ranked catalyst candidate with a strong 85.95 rank score and bullish beat-driven headline setup. RSI at 50 leaves room for upside continuation without being overbought. Position sized under the $200 new-buy notional cap while maintaining open names under the desk limit. Reward-to-risk is set above 1.5 with a clear invalidation below recent support.",
+    "thesis": "CRWD screens as a ranked liquid catalyst setup with a headline-driven beat and bullish sentiment at neutral RSI. Adding a small starter keeps notional near the $200 desk cap while book has room under the 5-name limit. Defined risk to 218 offers clear invalidation versus upside toward 238 for solid R:R.",
     "reason_code": "new_entry",
     "reasoning": {
       "headline": "Bought $CRWD",
-      "narrative": "CRWD is the sole ranked catalyst candidate with a strong 85.95 rank score and bullish beat-driven headline setup. RSI at 50 leaves room for upside continuation without being overbought. Position sized under the $200 new-buy notional cap while maintaining open names under the desk limit. Reward-to-risk is set above 1.5 with a clear invalidation below recent support.",
+      "narrative": "CRWD screens as a ranked liquid catalyst setup with a headline-driven beat and bullish sentiment at neutral RSI. Adding a small starter keeps notional near the $200 desk cap while book has room under the 5-name limit. Defined risk to 218 offers clear invalidation versus upside toward 238 for solid R:R.",
       "bullets": [
-        "Catalyst beat headline + rank 85.95",
-        "RSI 50 neutral-bullish room to run",
-        "Notional ~$199 within $200 cap",
-        "R:R >1.5 with stop 217.5 / target 238.5"
+        "Catalyst beat + bullish rank score support entry",
+        "Notional ~$199 within $200 new-buy cap",
+        "R:R ~1.55 with stop 218 / target 238",
+        "Book at 3 names; room to add without rotation"
       ],
       "risk_map": {
-        "stop": 217.5,
-        "target": 238.5,
+        "stop": 218.0,
+        "target": 238.0,
         "horizon_days": 5,
-        "rr": 1.53,
+        "rr": 1.55,
         "confidence_10": 8,
         "confidence": 78
       },
-      "thesis": "CRWD is the sole ranked catalyst candidate with a strong 85.95 rank score and bullish beat-driven headline setup. RSI at 50 leaves room for upside continuation without being overbought. Position sized under the $200 new-buy notional cap while maintaining open names under the desk limit. Reward-to-risk is set above 1.5 with a clear invalidation below recent support."
+      "thesis": "CRWD screens as a ranked liquid catalyst setup with a headline-driven beat and bullish sentiment at neutral RSI. Adding a small starter keeps notional near the $200 desk cap while book has room under the 5-name limit. Defined risk to 218 offers clear invalidation versus upside toward 238 for solid R:R."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Catalyst beat headline + rank 85.95",
-      "RSI 50 neutral-bullish room to run",
-      "Notional ~$199 within $200 cap",
-      "R:R >1.5 with stop 217.5 / target 238.5"
+      "Catalyst beat + bullish rank score support entry",
+      "Notional ~$199 within $200 new-buy cap",
+      "R:R ~1.55 with stop 218 / target 238",
+      "Book at 3 names; room to add without rotation"
     ],
-    "timestamp": "2026-08-27T17:49:39.901202+00:00"
+    "timestamp": "2026-08-27T18:23:24.148078+00:00"
   },
-  "stance": "Buying pressure on CRWD. CRWD is the sole ranked catalyst candidate with a strong 85.95 rank score and bullish beat-driven headline setup. RSI at 50 leaves room for upside continuation without being overbought. Position sized under the $200 new-buy notional cap while maintaining open names under the desk limit. Reward-to-risk is set above 1.5 with a clear invalidation below recent support.",
+  "stance": "Buying pressure on CRWD. CRWD screens as a ranked liquid catalyst setup with a headline-driven beat and bullish sentiment at neutral RSI. Adding a small starter keeps notional near the $200 desk cap while book has room under the 5-name limit. Defined risk to 218 offers clear invalidation versus upside toward 238 for solid R:R.",
   "thinking": {
     "badge": "Looking to buy CRWD",
     "headline": "Buying pressure on CRWD.",
@@ -185,9 +192,9 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 61.529998779296875,
-        "open_pnl": -2.15,
-        "open_pnl_pct": -1.08,
+        "last": 61.4900016784668,
+        "open_pnl": -2.28,
+        "open_pnl_pct": -1.14,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
       },
@@ -197,9 +204,9 @@
         "avg_cost": 473.82,
         "stop": 458.0,
         "target": 498.0,
-        "last": 471.6099853515625,
-        "open_pnl": -0.93,
-        "open_pnl_pct": -0.47,
+        "last": 471.6400146484375,
+        "open_pnl": -0.92,
+        "open_pnl_pct": -0.46,
         "line": "Bought near $473.82 \u00b7 Sell safety line $458.00 \u00b7 Profit target $498.00",
         "plan": "stop 458.0 or target 498.0"
       },
@@ -209,14 +216,14 @@
         "avg_cost": 312.51,
         "stop": 300.0,
         "target": 335.0,
-        "last": 314.8399963378906,
-        "open_pnl": 1.49,
+        "last": 314.864990234375,
+        "open_pnl": 1.51,
         "open_pnl_pct": 0.75,
         "line": "Bought near $312.51 \u00b7 Sell safety line $300.00 \u00b7 Profit target $335.00",
         "plan": "stop 300.0 or target 335.0"
       }
     ],
-    "last_checked": "2026-08-27T18:21:23.743175+00:00",
+    "last_checked": "2026-08-27T18:23:32.729657+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -231,7 +238,7 @@
         "model": "grok-4.3",
         "action": "BUY",
         "symbol": "CRWD",
-        "confidence": 80,
+        "confidence": 75,
         "tone": "buy"
       },
       {
@@ -245,10 +252,10 @@
       {
         "prefix": "J",
         "model": "deepseek-v4-flash",
-        "action": "HOLD",
-        "symbol": "BAC",
-        "confidence": 80,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "CRWD",
+        "confidence": 72,
+        "tone": "buy"
       },
       {
         "prefix": "J",
@@ -285,6 +292,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CRWD",
+      "status": "blocked",
+      "headline": "BUY CRWD \u2014 blocked",
+      "detail": "Insufficient buying power: $21.48 < $198.73",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "CRWD",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "CRWD",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "CRWD",
+          "confidence": 72,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "CRWD",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "CRWD",
+          "confidence": 78,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "CRWD",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "BAC",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "CRWD",
+      "timestamp": "2026-08-27T18:23:24.149066+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CRWD",
@@ -786,83 +870,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-08-27T16:17:39.932995+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CRWD",
-      "status": "blocked",
-      "headline": "BUY CRWD \u2014 blocked",
-      "detail": "Insufficient buying power: $21.48 < $200.16",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "CRWD",
-          "confidence": 82,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "CRWD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "CRWD",
-          "confidence": 75,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "CRWD",
-          "confidence": 75,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "CRWD",
-          "confidence": 78,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "CRWD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "BAC",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "entry",
-      "junior_nomination": "CRWD",
-      "timestamp": "2026-08-27T16:03:05.171271+00:00"
     },
     {
       "type": "fill",
@@ -11819,27 +11826,34 @@
     {
       "symbol": "CRWD",
       "name": "CRWD",
-      "price": 225.94000244140625,
-      "volume": 16645547.0,
-      "avg_volume": 9357254.7,
-      "percent_change": 19.43123543123543,
+      "price": 225.8300018310547,
+      "volume": 17266039.0,
+      "avg_volume": 9419303.9,
+      "percent_change": 19.37308942499254,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 15,
-      "liquidity_score": 79.71,
-      "rank_score": 85.96,
-      "news_hits": 5,
+      "catalyst_score": 20,
+      "liquidity_score": 79.74,
+      "rank_score": 107.46,
+      "news_hits": 7,
       "catalyst": "Headline-driven setup (beat): CrowdStrike (CRWD) Stock Price, News & Analysis - MarketBeat",
       "top_headlines": [
         "CrowdStrike (CRWD) Stock Price, News & Analysis - MarketBeat",
-        "CRWD Q2 Deep Dive: AI Security Demand Drives Growth and Platform Consolidation - StockStory",
-        "CRWD Stock Sees Biggest Single-Day Surge In Over A Year: Wall Street Sees \u2018Mythos Moment\u2019 Boosting Cybersecurity Demand, But One Analyst Is Skeptical - TradingView"
+        "QQQ is up 1.0% today, on CRWD stock price movement - Quiver Quantitative",
+        "CRWD Stock Jumps After Q2 Beat As Analysts See Cybersecurity Demand Inflection \u2014 But KeyBanc Pushes Back - Stocktwits"
       ],
       "matched_headlines": [
         {
           "title": "CrowdStrike (CRWD) Stock Price, News & Analysis - MarketBeat",
           "keywords": [
             "beat"
+          ]
+        },
+        {
+          "title": "CRWD Stock Jumps After Q2 Beat As Analysts See Cybersecurity Demand Inflection \u2014 But KeyBanc Pushes Back - Stocktwits",
+          "keywords": [
+            "beat",
+            "demand"
           ]
         },
         {
@@ -11871,16 +11885,16 @@
     {
       "symbol": "LRCX",
       "name": "LRCX",
-      "price": 315.6700134277344,
-      "volume": 2468927.0,
-      "avg_volume": 6993822.7,
-      "percent_change": 0.8917183908785918,
+      "price": 314.8399963378906,
+      "volume": 2645653.0,
+      "avg_volume": 7011495.3,
+      "percent_change": 0.6264355102564733,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 16,
-      "liquidity_score": 78.45,
-      "rank_score": 83.98,
-      "news_hits": 6,
+      "liquidity_score": 78.46,
+      "rank_score": 83.77,
+      "news_hits": 7,
       "catalyst": "Headline-driven setup (beat): Pure Financial Advisors LLC Increases Stock Holdings in Lam Research Corporation $LRCX - MarketBeat",
       "top_headlines": [
         "Pure Financial Advisors LLC Increases Stock Holdings in Lam Research Corporation $LRCX - MarketBeat",
@@ -11926,15 +11940,15 @@
     {
       "symbol": "BAC",
       "name": "BAC",
-      "price": 61.6150016784668,
-      "volume": 16239253.0,
-      "avg_volume": 25996555.3,
-      "percent_change": -0.9882658979486638,
+      "price": 61.529998779296875,
+      "volume": 16929211.0,
+      "avg_volume": 26065551.1,
+      "percent_change": -1.1248606268498416,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
-      "liquidity_score": 84.15,
-      "rank_score": 63.41,
+      "liquidity_score": 84.16,
+      "rank_score": 63.52,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst, expansion): Should You Buy BAC Stock as AI-Led Branch Expansion Boosts Efficiency? - Zacks Investment Research",
       "top_headlines": [
@@ -11975,23 +11989,30 @@
     {
       "symbol": "PANW",
       "name": "PANW",
-      "price": 385.8699951171875,
-      "volume": 4363895.0,
-      "avg_volume": 4867989.5,
-      "percent_change": 13.721964543810278,
+      "price": 386.25,
+      "volume": 4538397.0,
+      "avg_volume": 4885439.7,
+      "percent_change": 13.833957967389516,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 8,
-      "liquidity_score": 76.87,
-      "rank_score": 54.53,
+      "catalyst_score": 9,
+      "liquidity_score": 76.89,
+      "rank_score": 60.03,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (catalyst, record): PANW Stock Eyes Records after CRWD Q2, but Can Palo Alto Earnings Justify Next Week? - FXLeaders",
+      "catalyst": "Headline-driven setup (ai, catalyst): Palo Alto Networks (PANW) Stock Trades Up, Here Is Why - The Globe and Mail",
       "top_headlines": [
         "Palo Alto Networks Inc Stock (PANW) Opened Up by 10.00% on Aug 27: Drivers Behind the Movement - TradingKey",
-        "Is PANW Stock Gearing Up For A Massive Volatility Shock? - Trefis",
-        "Palo Alto Networks (PANW) Stock Trades Up, Here Is Why - TradingView"
+        "Palo Alto Networks Stock (PANW) Opinions on Software Sector Rally - Quiver Quantitative",
+        "Is PANW Stock Gearing Up For A Massive Volatility Shock? - Trefis"
       ],
       "matched_headlines": [
+        {
+          "title": "Palo Alto Networks (PANW) Stock Trades Up, Here Is Why - The Globe and Mail",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
         {
           "title": "PANW Stock Eyes Records after CRWD Q2, but Can Palo Alto Earnings Justify Next Week? - FXLeaders",
           "keywords": [
@@ -12010,53 +12031,58 @@
       ]
     },
     {
-      "symbol": "AAPL",
-      "name": "AAPL",
-      "price": 314.7799987792969,
-      "volume": 16873666.0,
-      "avg_volume": 36947966.6,
-      "percent_change": 0.424305796927894,
+      "symbol": "GOOGL",
+      "name": "GOOGL",
+      "price": 340.96990966796875,
+      "volume": 11537380.0,
+      "avg_volume": 19332038.0,
+      "percent_change": -0.30119600351790937,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 8,
-      "liquidity_score": 85.68,
-      "rank_score": 51.19,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst, launch): Apple (AAPL) Stock Could Trade At A Premium Following New AI Mac Launches - Yahoo Finance",
+      "catalyst_score": 9,
+      "liquidity_score": 82.86,
+      "rank_score": 56.17,
+      "news_hits": 6,
+      "catalyst": "Headline-driven setup (beat): GOOGL Rides on Strong Advertising Revenues: Can It Beat RDDT and META? - Yahoo Finance",
       "top_headlines": [
-        "Apple (AAPL) Stock Could Trade At A Premium Following New AI Mac Launches - Yahoo Finance",
-        "AAPL Stock Gains \u2014 Apple Reportedly Eyes Foldable iPhone, Camera-Equipped AirPods Launches In 2027 - Stocktwits",
-        "Apple | AAPL Stock Price, Company Overview & News - Forbes"
+        "GOOGL Rides on Strong Advertising Revenues: Can It Beat RDDT and META? - Yahoo Finance",
+        "NFLX vs. GOOGL: Which Streaming & Ad Stock Has an Edge Right Now? - Zacks Investment Research",
+        "Dan Ives Sees MSFT, AMZN, GOOGL Leading The Next Trade After Nvidia Earnings Keep AI 'Jenga Puzzle' Intact - Stocktwits"
       ],
       "matched_headlines": [
         {
-          "title": "Apple (AAPL) Stock Could Trade At A Premium Following New AI Mac Launches - Yahoo Finance",
+          "title": "GOOGL Rides on Strong Advertising Revenues: Can It Beat RDDT and META? - Yahoo Finance",
           "keywords": [
-            "ai",
-            "catalyst",
-            "launch"
+            "beat"
           ]
         },
         {
-          "title": "AAPL Stock Gains \u2014 Apple Reportedly Eyes Foldable iPhone, Camera-Equipped AirPods Launches In 2027 - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "launch"
-          ]
-        },
-        {
-          "title": "AAPL Stock Gains 1%; Apple Is Expected To Ship 10M Foldable iPhones In The First Year, IDC Predicts - TradingView",
+          "title": "Dan Ives Sees MSFT, AMZN, GOOGL Leading The Next Trade After Nvidia Earnings Keep AI 'Jenga Puzzle' Intact - Stocktwits",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "Apple (AAPL) Stock Looks Fully Priced After New AI Push - simplywall.st",
+          "title": "Alphabet's Hidden AI Goldmine: Why TPU Sales Could Supercharge ROIC (NASDAQ:GOOGL) - Seeking Alpha",
           "keywords": [
             "ai",
             "catalyst"
+          ]
+        },
+        {
+          "title": "Nvidia Earnings Keep AI \u2018Jenga Puzzle\u2019 Intact: Dan Ives Says MSFT, GOOGL, AMZN Could Lead Next Trade - TradingView",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Alphabet (GOOGL) Stock May Be 22% Below Fair Value Despite Gemini Enterprise Expansion - simplywall.st",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "expansion"
           ]
         }
       ]
@@ -12088,10 +12114,10 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 1,
-      "BUY": 3,
+      "HOLD": 0,
+      "BUY": 4,
       "SELL": 0,
-      "live": 3,
+      "live": 4,
       "fallback": 0
     },
     "junior_model_3_enabled": true,
@@ -12110,21 +12136,21 @@
     "last_stage": "entry",
     "last_junior_nomination": "CRWD",
     "last_escalate_reason": "junior_nomination",
-    "live_share_recent": 84.1
+    "live_share_recent": 84.2
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 321,
     "closed_outcomes": 146,
-    "consensus_events": 354,
+    "consensus_events": 355,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1020.12,
-    "change": 20.12,
-    "change_pct": 2.01,
+    "latest_equity": 1020.01,
+    "change": 20.01,
+    "change_pct": 2.0,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15069,6 +15095,12 @@
       {
         "t": "2026-08-27T18:21:26.628262+00:00",
         "equity": 1020.12,
+        "cash": 423.03,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-27T18:23:35.378785+00:00",
+        "equity": 1020.01,
         "cash": 423.03,
         "event": "mark"
       }
