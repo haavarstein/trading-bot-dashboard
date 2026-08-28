@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-28T15:00:13.063914+00:00",
+  "generated_at": "2026-08-28T15:02:47.632234+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1025.77,
+    "portfolio_value": 1024.73,
     "starting_cash": 1000.0,
-    "total_return_pct": 2.58,
-    "total_pnl": 25.77,
+    "total_return_pct": 2.47,
+    "total_pnl": 24.73,
     "realized_pnl": 21.68,
-    "open_pnl": 4.08,
-    "capital_deployed": 602.74,
+    "open_pnl": 3.01,
+    "capital_deployed": 601.7,
     "cash": 423.03,
     "closed_trades": 24,
     "win_rate_pct": 33.33,
-    "vs_spy_pct": 1.85,
+    "vs_spy_pct": 1.74,
     "spy_return_pct": 0.73,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-28T15:00:15.876789+00:00"
+    "updated_at": "2026-08-28T15:02:55.537210+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
     "return_pct": 0.73,
-    "price": 775.0399780273438,
+    "price": 775.0,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,10 +38,10 @@
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 62.30500030517578,
-      "market_value": 200.0,
-      "open_pnl": 0.34,
-      "open_pnl_pct": 0.17,
+      "last": 62.29499816894531,
+      "market_value": 199.97,
+      "open_pnl": 0.3,
+      "open_pnl_pct": 0.15,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
@@ -50,10 +50,10 @@
       "symbol": "AMD",
       "qty": 0.42,
       "avg_cost": 473.82,
-      "last": 478.414794921875,
-      "market_value": 200.93,
-      "open_pnl": 1.93,
-      "open_pnl_pct": 0.97,
+      "last": 476.8999938964844,
+      "market_value": 200.3,
+      "open_pnl": 1.29,
+      "open_pnl_pct": 0.65,
       "stop": 458.0,
       "target": 498.0,
       "thesis": "AMD screens as the top ranked liquid catalyst name with a fresh Seeking Alpha upgrade framing an AI tipping point and bullish sentiment. RSI near mid-range leaves room for continuation without extreme overbought risk. Book has cash and an open slot under the five-name cap, so a small sized new entry fits risk limits. Stop and target set for roughly 1.5:1 reward-to-risk on the breakout thesis."
@@ -62,10 +62,10 @@
       "symbol": "LRCX",
       "qty": 0.64,
       "avg_cost": 312.51,
-      "last": 315.3349914550781,
-      "market_value": 201.81,
-      "open_pnl": 1.81,
-      "open_pnl_pct": 0.9,
+      "last": 314.7300109863281,
+      "market_value": 201.43,
+      "open_pnl": 1.42,
+      "open_pnl_pct": 0.71,
       "stop": 300.0,
       "target": 335.0,
       "thesis": "LRCX ranks highest among candidates with bullish sentiment and a headline catalyst setup at neutral RSI. Liquid semi name fits the book with room for one more position under the 5-name cap and ~$200 notional limit. Reward-to-risk exceeds 1.5 from entry to target versus stop. Adding as new_entry while cash supports the size."
@@ -74,15 +74,15 @@
   "latest_candidate": {
     "symbol": "BAC",
     "name": "BAC",
-    "price": 61.91999816894531,
-    "volume": 10181989.0,
-    "avg_volume": 28148838.9,
-    "percent_change": 1.22609125788851,
+    "price": 62.29499816894531,
+    "volume": 11363755.0,
+    "avg_volume": 28267015.5,
+    "percent_change": 1.8391368868327647,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 13,
-    "liquidity_score": 84.49,
-    "rank_score": 73.15,
+    "liquidity_score": 84.51,
+    "rank_score": 73.65,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (ai, catalyst): Bank of America (BAC) Stock Still Looks Undervalued As Earnings And Fair Value Align - simplywall.st",
     "top_headlines": [
@@ -121,60 +121,60 @@
         ]
       },
       {
-        "title": "BAC Stock Analysis: Why Insiders Are Selling Before Earnings! Boeing (qskC3UcJad) - Mshale",
+        "title": "EFG International AG Invests $104.31 Million in Bank of America Corporation $BAC - MarketBeat",
         "keywords": [
-          "catalyst"
+          "beat"
         ]
       }
     ]
   },
   "latest_decision": {
     "model": "grok-4.5",
-    "action": "HOLD",
-    "symbol": "CASH",
-    "confidence": 68,
+    "action": "BUY",
+    "symbol": "JPM",
+    "confidence": 72,
     "cache_stats": null,
-    "entry_price": 0.0,
-    "stop_loss": 0.0,
-    "take_profit": 0.0,
-    "qty": 0.0,
-    "thesis": "Top three ranked catalyst names (BAC, LRCX, AMD) are already held and remain the strongest setups; no stop or target has been breached. Lower-ranked candidates such as JPM lack a materially cleaner edge or higher catalyst score to justify deploying fresh capital or rotating the weakest hold. Preserve cash and let existing liquid positions work.",
-    "reason_code": "hold",
+    "entry_price": 357.36,
+    "stop_loss": 348.0,
+    "take_profit": 372.0,
+    "qty": 0.56,
+    "thesis": "JPM is the strongest unowned liquid name on the ranked list with a bullish fair-value/discount catalyst and solid rank score while the book still has room under the 5-name cap. Existing BAC/AMD/LRCX holds are modestly green and not at stops or targets, so no forced exit is required. A sub-$200 add keeps risk contained with clear invalidation below recent support and a 1.5x+ reward target into the next resistance zone.",
+    "reason_code": "new_entry",
     "reasoning": {
-      "headline": "Hold $CASH",
-      "narrative": "Top three ranked catalyst names (BAC, LRCX, AMD) are already held and remain the strongest setups; no stop or target has been breached. Lower-ranked candidates such as JPM lack a materially cleaner edge or higher catalyst score to justify deploying fresh capital or rotating the weakest hold. Preserve cash and let existing liquid positions work.",
+      "headline": "Bought $JPM",
+      "narrative": "JPM is the strongest unowned liquid name on the ranked list with a bullish fair-value/discount catalyst and solid rank score while the book still has room under the 5-name cap. Existing BAC/AMD/LRCX holds are modestly green and not at stops or targets, so no forced exit is required. A sub-$200 add keeps risk contained with clear invalidation below recent support and a 1.5x+ reward target into the next resistance zone.",
       "bullets": [
-        "Held names still top rank_score/catalyst list",
-        "No stop_loss or take_profit triggered",
-        "JPM/XOM/others not clearly superior for new risk",
-        "Book at 3 names with ample cash buffer"
+        "Top new candidate after already-held BAC/LRCX/AMD",
+        "Fair-value discount headline + bullish sentiment",
+        "R:R ~1.56 with stop 348 / target 372",
+        "Notional capped ~$200; book has open slots"
       ],
       "risk_map": {
-        "stop": 0.0,
-        "target": 0.0,
+        "stop": 348.0,
+        "target": 372.0,
         "horizon_days": 5,
-        "rr": 0.0,
+        "rr": 1.56,
         "confidence_10": 7,
-        "confidence": 68
+        "confidence": 72
       },
-      "thesis": "Top three ranked catalyst names (BAC, LRCX, AMD) are already held and remain the strongest setups; no stop or target has been breached. Lower-ranked candidates such as JPM lack a materially cleaner edge or higher catalyst score to justify deploying fresh capital or rotating the weakest hold. Preserve cash and let existing liquid positions work."
+      "thesis": "JPM is the strongest unowned liquid name on the ranked list with a bullish fair-value/discount catalyst and solid rank score while the book still has room under the 5-name cap. Existing BAC/AMD/LRCX holds are modestly green and not at stops or targets, so no forced exit is required. A sub-$200 add keeps risk contained with clear invalidation below recent support and a 1.5x+ reward target into the next resistance zone."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Held names still top rank_score/catalyst list",
-      "No stop_loss or take_profit triggered",
-      "JPM/XOM/others not clearly superior for new risk",
-      "Book at 3 names with ample cash buffer"
+      "Top new candidate after already-held BAC/LRCX/AMD",
+      "Fair-value discount headline + bullish sentiment",
+      "R:R ~1.56 with stop 348 / target 372",
+      "Notional capped ~$200; book has open slots"
     ],
-    "timestamp": "2026-08-28T14:47:18.475958+00:00"
+    "timestamp": "2026-08-28T15:02:39.174801+00:00"
   },
-  "stance": "Holding BAC, AMD, LRCX. No new trade right now.",
+  "stance": "Buying pressure on JPM. JPM is the strongest unowned liquid name on the ranked list with a bullish fair-value/discount catalyst and solid rank score while the book still has room under the 5-name cap. Existing BAC/AMD/LRCX holds are modestly green and not at stops or targets, so no forced exit is required. A sub-$200 add keeps risk contained with clear invalidation below recent support and a 1.5x+ reward target into the next resistance zone.",
   "thinking": {
-    "badge": "Holding what it owns",
-    "headline": "Holding BAC, AMD, LRCX. No new trade right now.",
-    "plain_english": "Right now Hermes is holding BAC, AMD, LRCX and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
+    "badge": "Looking to buy JPM",
+    "headline": "Buying pressure on JPM.",
+    "plain_english": "Right now Hermes wants exposure to JPM. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
     "triggers": [
       "It owns BAC, bought near $62.20. Simple plan: sell if it falls to about $60.00, or take profit near $65.50.",
       "It owns AMD, bought near $473.82. Simple plan: sell if it falls to about $458.00, or take profit near $498.00.",
@@ -189,9 +189,9 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 62.30500030517578,
-        "open_pnl": 0.34,
-        "open_pnl_pct": 0.17,
+        "last": 62.29499816894531,
+        "open_pnl": 0.3,
+        "open_pnl_pct": 0.15,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
       },
@@ -201,9 +201,9 @@
         "avg_cost": 473.82,
         "stop": 458.0,
         "target": 498.0,
-        "last": 478.414794921875,
-        "open_pnl": 1.93,
-        "open_pnl_pct": 0.97,
+        "last": 476.8999938964844,
+        "open_pnl": 1.29,
+        "open_pnl_pct": 0.65,
         "line": "Bought near $473.82 \u00b7 Sell safety line $458.00 \u00b7 Profit target $498.00",
         "plan": "stop 458.0 or target 498.0"
       },
@@ -213,17 +213,17 @@
         "avg_cost": 312.51,
         "stop": 300.0,
         "target": 335.0,
-        "last": 315.3349914550781,
-        "open_pnl": 1.81,
-        "open_pnl_pct": 0.9,
+        "last": 314.7300109863281,
+        "open_pnl": 1.42,
+        "open_pnl_pct": 0.71,
         "line": "Bought near $312.51 \u00b7 Sell safety line $300.00 \u00b7 Profit target $335.00",
         "plan": "stop 300.0 or target 335.0"
       }
     ],
-    "last_checked": "2026-08-28T15:00:13.063914+00:00",
+    "last_checked": "2026-08-28T15:02:47.632234+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "HOLD",
+    "action": "BUY",
     "symbols_held": [
       "BAC",
       "AMD",
@@ -235,7 +235,7 @@
         "model": "grok-4.3",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 62,
+        "confidence": 65,
         "tone": "hold"
       },
       {
@@ -251,7 +251,7 @@
         "model": "deepseek-v4-flash",
         "action": "BUY",
         "symbol": "JPM",
-        "confidence": 70,
+        "confidence": 72,
         "tone": "buy"
       },
       {
@@ -259,16 +259,16 @@
         "model": "grok-build-0.1",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 60,
+        "confidence": 65,
         "tone": "hold"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 68,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "JPM",
+        "confidence": 72,
+        "tone": "buy"
       },
       {
         "prefix": "S",
@@ -289,6 +289,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "JPM",
+      "status": "no_consensus",
+      "headline": "BUY JPM \u2014 no consensus",
+      "detail": "Desks: BUY JPM (72%) vs HOLD CASH (65%) vs BUY JPM (90%). No 2-of-3 senior agreement",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 72,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-08-28T15:02:39.174801+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -11536,15 +11613,15 @@
     {
       "symbol": "BAC",
       "name": "BAC",
-      "price": 61.91999816894531,
-      "volume": 10181989.0,
-      "avg_volume": 28148838.9,
-      "percent_change": 1.22609125788851,
+      "price": 62.29499816894531,
+      "volume": 11363755.0,
+      "avg_volume": 28267015.5,
+      "percent_change": 1.8391368868327647,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
-      "liquidity_score": 84.49,
-      "rank_score": 73.15,
+      "liquidity_score": 84.51,
+      "rank_score": 73.65,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Bank of America (BAC) Stock Still Looks Undervalued As Earnings And Fair Value Align - simplywall.st",
       "top_headlines": [
@@ -11583,9 +11660,9 @@
           ]
         },
         {
-          "title": "BAC Stock Analysis: Why Insiders Are Selling Before Earnings! Boeing (qskC3UcJad) - Mshale",
+          "title": "EFG International AG Invests $104.31 Million in Bank of America Corporation $BAC - MarketBeat",
           "keywords": [
-            "catalyst"
+            "beat"
           ]
         }
       ]
@@ -11593,15 +11670,15 @@
     {
       "symbol": "LRCX",
       "name": "LRCX",
-      "price": 315.0899963378906,
-      "volume": 894879.0,
-      "avg_volume": 6751107.9,
-      "percent_change": -1.0954832009145503,
+      "price": 315.3581848144531,
+      "volume": 997186.0,
+      "avg_volume": 6761338.6,
+      "percent_change": -1.011300738780613,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
-      "liquidity_score": 78.29,
-      "rank_score": 72.12,
+      "liquidity_score": 78.3,
+      "rank_score": 72.05,
       "news_hits": 7,
       "catalyst": "Headline-driven setup (beat): Lam Research Corporation (NASDAQ:LRCX) Declares Dividend Increase - $0.33 Per Share - MarketBeat",
       "top_headlines": [
@@ -11648,15 +11725,15 @@
     {
       "symbol": "AMD",
       "name": "AMD",
-      "price": 476.364990234375,
-      "volume": 3962471.0,
-      "avg_volume": 16282807.1,
-      "percent_change": -0.06399043043760043,
+      "price": 478.3299865722656,
+      "volume": 4401186.0,
+      "avg_volume": 16326678.6,
+      "percent_change": 0.3482436691568622,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
-      "liquidity_score": 82.12,
-      "rank_score": 70.37,
+      "liquidity_score": 82.13,
+      "rank_score": 70.6,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): NVIDIA vs. AMD: Only One AI Stock Is a Solid Buy Now - Yahoo Finance",
       "top_headlines": [
@@ -11680,14 +11757,6 @@
           ]
         },
         {
-          "title": "AMD Stock Upgraded To Strong Buy. Here\u2019s Why. - Investor's Business Daily",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "upgrade"
-          ]
-        },
-        {
           "title": "Advanced Micro Devices, Inc. $AMD Stock Position Raised by Elefante Mark B - MarketBeat",
           "keywords": [
             "ai",
@@ -11695,21 +11764,29 @@
             "catalyst",
             "raised"
           ]
+        },
+        {
+          "title": "AMD Stock Upgraded To Strong Buy. Here\u2019s Why. - Investor's Business Daily",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "upgrade"
+          ]
         }
       ]
     },
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 355.6499938964844,
-      "volume": 468269.0,
-      "avg_volume": 5258276.9,
-      "percent_change": 0.40370184372797946,
+      "price": 357.3599853515625,
+      "volume": 592148.0,
+      "avg_volume": 5270664.8,
+      "percent_change": 0.886450262559553,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
-      "liquidity_score": 77.21,
-      "rank_score": 63.4,
+      "liquidity_score": 77.22,
+      "rank_score": 63.79,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): JPMorgan (JPM) Stock Trades At A Fair Earnings Premium With A 27% Intrinsic Discount - Yahoo Finance",
       "top_headlines": [
@@ -11753,54 +11830,47 @@
       ]
     },
     {
-      "symbol": "XOM",
-      "name": "XOM",
-      "price": 155.77000427246094,
-      "volume": 2229340.0,
-      "avg_volume": 13330104.0,
-      "percent_change": -0.4282780353421796,
+      "symbol": "AMZN",
+      "name": "AMZN",
+      "price": 265.2349853515625,
+      "volume": 13516117.0,
+      "avg_volume": 30144541.7,
+      "percent_change": 3.5022926886430694,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 9,
-      "liquidity_score": 81.25,
-      "rank_score": 56.03,
-      "news_hits": 6,
-      "catalyst": "Headline-driven setup (catalyst, contract): ExxonMobil (XOM) Stock Could Trade At A Discount Despite Mozambique LNG Contracts - Yahoo Finance",
+      "catalyst_score": 8,
+      "liquidity_score": 84.79,
+      "rank_score": 53.52,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (demand): AMZN Stock Jumps Overnight: AWS Sticks With Nvidia Bet Even Amid Surging Demand For In-House Chips - Stocktwits",
       "top_headlines": [
-        "ExxonMobil (XOM) Stock Could Trade At A Discount Despite Mozambique LNG Contracts - Yahoo Finance",
-        "XOM Or CVX? Wall Street Sees More Upside In One Oil Major - Stocktwits",
-        "Kahn Brothers Group Inc. Invests $2.41 Million in ExxonMobil Corporation $XOM - MarketBeat"
+        "AMZN Stock Quote Price and Forecast - CNN",
+        "AMZN Stock Jumps Overnight: AWS Sticks With Nvidia Bet Even Amid Surging Demand For In-House Chips - Stocktwits",
+        "Amazon.com, Inc. $AMZN Stock Holdings Reduced by SlateStone Wealth LLC - MarketBeat"
       ],
       "matched_headlines": [
         {
-          "title": "ExxonMobil (XOM) Stock Could Trade At A Discount Despite Mozambique LNG Contracts - Yahoo Finance",
+          "title": "AMZN Stock Jumps Overnight: AWS Sticks With Nvidia Bet Even Amid Surging Demand For In-House Chips - Stocktwits",
           "keywords": [
-            "catalyst",
-            "contract"
+            "demand"
           ]
         },
         {
-          "title": "Kahn Brothers Group Inc. Invests $2.41 Million in ExxonMobil Corporation $XOM - MarketBeat",
+          "title": "Amazon.com, Inc. $AMZN Stock Holdings Reduced by SlateStone Wealth LLC - MarketBeat",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "Morgan Stanley Sees ExxonMobil (XOM) Breaking its Record High. Can the Oil Giant Deliver? - Yahoo Finance",
+          "title": "Amazon.com, Inc. $AMZN Stock Position Lowered by Fulcrum Capital LLC - MarketBeat",
           "keywords": [
-            "record"
+            "beat"
           ]
         },
         {
-          "title": "ExxonMobil (XOM) Stock Looks Reasonable On Cash Flow While Earnings Look Rich - Sahm",
+          "title": "Amazon (AMZN) Stock Still Looks Undervalued On Cash Flow And Earnings - Yahoo Finance",
           "keywords": [
             "catalyst"
-          ]
-        },
-        {
-          "title": "XOM vs EPD: Which Stock Offers the Better Growth Opportunity? - Zacks Investment Research",
-          "keywords": [
-            "growth"
           ]
         }
       ]
@@ -11854,21 +11924,21 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 89.3
+    "live_share_recent": 88.6
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 321,
     "closed_outcomes": 146,
-    "consensus_events": 362,
+    "consensus_events": 363,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1025.77,
-    "change": 25.77,
-    "change_pct": 2.58,
+    "latest_equity": 1024.73,
+    "change": 24.73,
+    "change_pct": 2.47,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -14879,6 +14949,12 @@
       {
         "t": "2026-08-28T15:00:15.876789+00:00",
         "equity": 1025.77,
+        "cash": 423.03,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-28T15:02:55.537210+00:00",
+        "equity": 1024.73,
         "cash": 423.03,
         "event": "mark"
       }
