@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-08-28T16:00:06.571669+00:00",
+  "generated_at": "2026-08-28T16:03:40.318533+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1015.88,
+    "portfolio_value": 1015.55,
     "starting_cash": 1000.0,
-    "total_return_pct": 1.59,
-    "total_pnl": 15.88,
+    "total_return_pct": 1.55,
+    "total_pnl": 15.55,
     "realized_pnl": 21.68,
-    "open_pnl": -5.84,
-    "capital_deployed": 592.85,
-    "cash": 423.03,
+    "open_pnl": -6.15,
+    "capital_deployed": 791.57,
+    "cash": 223.98,
     "closed_trades": 24,
     "win_rate_pct": 33.33,
-    "vs_spy_pct": 1.37,
-    "spy_return_pct": 0.22,
+    "vs_spy_pct": 1.32,
+    "spy_return_pct": 0.23,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-28T16:00:09.270598+00:00"
+    "updated_at": "2026-08-28T16:03:42.981402+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.22,
-    "price": 771.0900268554688,
+    "return_pct": 0.23,
+    "price": 771.1300048828125,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 4,
-    "validated_count_today": 3,
+    "consensus_count_today": 5,
+    "validated_count_today": 4,
     "blocked_count_today": 1,
-    "fills_today": 0,
-    "simulated_orders_today": 3,
-    "top_symbol_today": "BAC"
+    "fills_today": 1,
+    "simulated_orders_today": 4,
+    "top_symbol_today": "PANW"
   },
   "holdings": [
     {
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 62.334999084472656,
-      "market_value": 200.1,
-      "open_pnl": 0.43,
-      "open_pnl_pct": 0.22,
+      "last": 62.404998779296875,
+      "market_value": 200.32,
+      "open_pnl": 0.66,
+      "open_pnl_pct": 0.33,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
@@ -50,10 +50,10 @@
       "symbol": "AMD",
       "qty": 0.42,
       "avg_cost": 473.82,
-      "last": 468.0899963378906,
-      "market_value": 196.6,
-      "open_pnl": -2.41,
-      "open_pnl_pct": -1.21,
+      "last": 467.32501220703125,
+      "market_value": 196.28,
+      "open_pnl": -2.73,
+      "open_pnl_pct": -1.37,
       "stop": 458.0,
       "target": 498.0,
       "thesis": "AMD screens as the top ranked liquid catalyst name with a fresh Seeking Alpha upgrade framing an AI tipping point and bullish sentiment. RSI near mid-range leaves room for continuation without extreme overbought risk. Book has cash and an open slot under the five-name cap, so a small sized new entry fits risk limits. Stop and target set for roughly 1.5:1 reward-to-risk on the breakout thesis."
@@ -62,27 +62,39 @@
       "symbol": "LRCX",
       "qty": 0.64,
       "avg_cost": 312.51,
-      "last": 306.4849853515625,
-      "market_value": 196.15,
-      "open_pnl": -3.86,
-      "open_pnl_pct": -1.93,
+      "last": 306.5050048828125,
+      "market_value": 196.16,
+      "open_pnl": -3.84,
+      "open_pnl_pct": -1.92,
       "stop": 300.0,
       "target": 335.0,
       "thesis": "LRCX ranks highest among candidates with bullish sentiment and a headline catalyst setup at neutral RSI. Liquid semi name fits the book with room for one more position under the 5-name cap and ~$200 notional limit. Reward-to-risk exceeds 1.5 from entry to target versus stop. Adding as new_entry while cash supports the size."
+    },
+    {
+      "symbol": "PANW",
+      "qty": 0.54,
+      "avg_cost": 368.61,
+      "last": 368.1600036621094,
+      "market_value": 198.81,
+      "open_pnl": -0.24,
+      "open_pnl_pct": -0.12,
+      "stop": 352.0,
+      "target": 405.0,
+      "thesis": "PANW is the strongest non-held catalyst name with a fresh Jefferies PT raise to $450 and solid rank/sentiment support. Room remains under the 5-name cap and ~$200 notional keeps size disciplined versus cash. Setup offers clear upside toward the raised target with a defined invalidation below recent support and reward:risk above 1.5. Existing BAC/AMD leads are already held; no forced rotation required."
     }
   ],
   "latest_candidate": {
     "symbol": "BAC",
     "name": "BAC",
-    "price": 62.2599983215332,
-    "volume": 13484257.0,
-    "avg_volume": 28479065.7,
-    "percent_change": 1.7819195442468725,
+    "price": 62.334999084472656,
+    "volume": 13897214.0,
+    "avg_volume": 28520361.4,
+    "percent_change": 1.9045299172802486,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 13,
     "liquidity_score": 84.55,
-    "rank_score": 73.61,
+    "rank_score": 73.71,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (ai, catalyst): Bank of America (BAC) Stock Still Looks Undervalued As Earnings And Fair Value Align - simplywall.st",
     "top_headlines": [
@@ -134,43 +146,43 @@
     "symbol": "PANW",
     "confidence": 72,
     "cache_stats": null,
-    "entry_price": 370.55,
-    "stop_loss": 355.0,
-    "take_profit": 400.0,
+    "entry_price": 368.61,
+    "stop_loss": 352.0,
+    "take_profit": 405.0,
     "qty": 0.54,
-    "thesis": "PANW shows a clean catalyst setup with Jefferies maintaining and raising PT to $450 on AI-related strength, supporting near-term upside from current levels. RSI at 50 leaves room to run without being overbought, and rank/catalyst scores justify a starter position within notional limits. Risk is defined tightly below recent support with R:R above 1.5 toward a conservative intermediate target.",
+    "thesis": "PANW is the strongest non-held catalyst name with a fresh Jefferies PT raise to $450 and solid rank/sentiment support. Room remains under the 5-name cap and ~$200 notional keeps size disciplined versus cash. Setup offers clear upside toward the raised target with a defined invalidation below recent support and reward:risk above 1.5. Existing BAC/AMD leads are already held; no forced rotation required.",
     "reason_code": "new_entry",
     "reasoning": {
       "headline": "Bought $PANW",
-      "narrative": "PANW shows a clean catalyst setup with Jefferies maintaining and raising PT to $450 on AI-related strength, supporting near-term upside from current levels. RSI at 50 leaves room to run without being overbought, and rank/catalyst scores justify a starter position within notional limits. Risk is defined tightly below recent support with R:R above 1.5 toward a conservative intermediate target.",
+      "narrative": "PANW is the strongest non-held catalyst name with a fresh Jefferies PT raise to $450 and solid rank/sentiment support. Room remains under the 5-name cap and ~$200 notional keeps size disciplined versus cash. Setup offers clear upside toward the raised target with a defined invalidation below recent support and reward:risk above 1.5. Existing BAC/AMD leads are already held; no forced rotation required.",
       "bullets": [
-        "Jefferies PT raise to $450 on AI catalyst",
-        "RSI neutral at 50 with bullish sentiment",
-        "Room in book (3 open) and ~$200 notional",
-        "R:R ~1.9 with stop 355 / target 400"
+        "Jefferies PT raised to $450 supports bullish skew",
+        "Liquid large-cap; fits ~$200 max notional",
+        "R:R >1.5 with stop 352 / target 405",
+        "Book at 3 names\u2014add without rotation"
       ],
       "risk_map": {
-        "stop": 355.0,
-        "target": 400.0,
+        "stop": 352.0,
+        "target": 405.0,
         "horizon_days": 5,
-        "rr": 1.89,
+        "rr": 2.19,
         "confidence_10": 7,
         "confidence": 72
       },
-      "thesis": "PANW shows a clean catalyst setup with Jefferies maintaining and raising PT to $450 on AI-related strength, supporting near-term upside from current levels. RSI at 50 leaves room to run without being overbought, and rank/catalyst scores justify a starter position within notional limits. Risk is defined tightly below recent support with R:R above 1.5 toward a conservative intermediate target."
+      "thesis": "PANW is the strongest non-held catalyst name with a fresh Jefferies PT raise to $450 and solid rank/sentiment support. Room remains under the 5-name cap and ~$200 notional keeps size disciplined versus cash. Setup offers clear upside toward the raised target with a defined invalidation below recent support and reward:risk above 1.5. Existing BAC/AMD leads are already held; no forced rotation required."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Jefferies PT raise to $450 on AI catalyst",
-      "RSI neutral at 50 with bullish sentiment",
-      "Room in book (3 open) and ~$200 notional",
-      "R:R ~1.9 with stop 355 / target 400"
+      "Jefferies PT raised to $450 supports bullish skew",
+      "Liquid large-cap; fits ~$200 max notional",
+      "R:R >1.5 with stop 352 / target 405",
+      "Book at 3 names\u2014add without rotation"
     ],
-    "timestamp": "2026-08-28T15:48:13.754491+00:00"
+    "timestamp": "2026-08-28T16:03:18.042016+00:00"
   },
-  "stance": "Buying pressure on PANW. PANW shows a clean catalyst setup with Jefferies maintaining and raising PT to $450 on AI-related strength, supporting near-term upside from current levels. RSI at 50 leaves room to run without being overbought, and rank/catalyst scores justify a starter position within notional limits. Risk is defined tightly below recent support with R:R above 1.5 toward a conservative intermediate target.",
+  "stance": "Buying pressure on PANW. PANW is the strongest non-held catalyst name with a fresh Jefferies PT raise to $450 and solid rank/sentiment support. Room remains under the 5-name cap and ~$200 notional keeps size disciplined versus cash. Setup offers clear upside toward the raised target with a defined invalidation below recent support and reward:risk above 1.5. Existing BAC/AMD leads are already held; no forced rotation required.",
   "thinking": {
     "badge": "Looking to buy PANW",
     "headline": "Buying pressure on PANW.",
@@ -179,6 +191,7 @@
       "It owns BAC, bought near $62.20. Simple plan: sell if it falls to about $60.00, or take profit near $65.50.",
       "It owns AMD, bought near $473.82. Simple plan: sell if it falls to about $458.00, or take profit near $498.00.",
       "It owns LRCX, bought near $312.51. Simple plan: sell if it falls to about $300.00, or take profit near $335.00.",
+      "It owns PANW, bought near $368.61. Simple plan: sell if it falls to about $352.00, or take profit near $405.00.",
       "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
       "If nothing looks clean, do nothing. Sitting in cash or holdings is allowed."
     ],
@@ -189,9 +202,9 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 62.334999084472656,
-        "open_pnl": 0.43,
-        "open_pnl_pct": 0.22,
+        "last": 62.404998779296875,
+        "open_pnl": 0.66,
+        "open_pnl_pct": 0.33,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
       },
@@ -201,9 +214,9 @@
         "avg_cost": 473.82,
         "stop": 458.0,
         "target": 498.0,
-        "last": 468.0899963378906,
-        "open_pnl": -2.41,
-        "open_pnl_pct": -1.21,
+        "last": 467.32501220703125,
+        "open_pnl": -2.73,
+        "open_pnl_pct": -1.37,
         "line": "Bought near $473.82 \u00b7 Sell safety line $458.00 \u00b7 Profit target $498.00",
         "plan": "stop 458.0 or target 498.0"
       },
@@ -213,30 +226,43 @@
         "avg_cost": 312.51,
         "stop": 300.0,
         "target": 335.0,
-        "last": 306.4849853515625,
-        "open_pnl": -3.86,
-        "open_pnl_pct": -1.93,
+        "last": 306.5050048828125,
+        "open_pnl": -3.84,
+        "open_pnl_pct": -1.92,
         "line": "Bought near $312.51 \u00b7 Sell safety line $300.00 \u00b7 Profit target $335.00",
         "plan": "stop 300.0 or target 335.0"
+      },
+      {
+        "symbol": "PANW",
+        "qty": 0.54,
+        "avg_cost": 368.61,
+        "stop": 352.0,
+        "target": 405.0,
+        "last": 368.1600036621094,
+        "open_pnl": -0.24,
+        "open_pnl_pct": -0.12,
+        "line": "Bought near $368.61 \u00b7 Sell safety line $352.00 \u00b7 Profit target $405.00",
+        "plan": "stop 352.0 or target 405.0"
       }
     ],
-    "last_checked": "2026-08-28T16:00:06.571669+00:00",
+    "last_checked": "2026-08-28T16:03:40.318533+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
     "symbols_held": [
       "BAC",
       "AMD",
-      "LRCX"
+      "LRCX",
+      "PANW"
     ],
     "model_chips": [
       {
         "prefix": "J",
         "model": "grok-4.3",
-        "action": "BUY",
-        "symbol": "PANW",
-        "confidence": 72,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 60,
+        "tone": "hold"
       },
       {
         "prefix": "J",
@@ -257,10 +283,10 @@
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "BUY",
-        "symbol": "PANW",
-        "confidence": 72,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 65,
+        "tone": "hold"
       },
       {
         "prefix": "S",
@@ -275,7 +301,7 @@
         "model": "claude-sonnet-5",
         "action": "BUY",
         "symbol": "PANW",
-        "confidence": 72,
+        "confidence": 74,
         "tone": "buy"
       },
       {
@@ -289,6 +315,91 @@
     ]
   },
   "activity": [
+    {
+      "type": "fill",
+      "symbol": "PANW",
+      "status": "filled_paper",
+      "headline": "BUY PANW @ $368.61",
+      "detail": "PANW is the strongest non-held catalyst name with a fresh Jefferies PT raise to $450 and solid rank/sentiment support. Room remains under the 5-name cap and ~$200 notional keeps size disciplined versus cash. Setup offers clear upside toward the raised target with a defined invalidation below recent support and reward:risk above 1.5. Existing BAC/AMD leads are already held; no forced rotation required.",
+      "timestamp": "2026-08-28T16:03:18.044020+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "PANW",
+      "status": "validated",
+      "headline": "BUY PANW \u2014 validated",
+      "detail": "PANW is the strongest non-held catalyst name with a fresh Jefferies PT raise to $450 and solid rank/sentiment support. Room remains under the 5-name cap and ~$200 notional keeps size disciplined versus cash. Setup offers clear upside toward the raised target with a defined invalidation below recent support and reward:risk above 1.5. Existing BAC/AMD leads are already held; no forced rotation required.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 72,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 74,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-08-28T16:03:18.042016+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "PANW",
@@ -827,86 +938,21 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-08-28T14:18:23.982172+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "JPM",
-      "status": "no_consensus",
-      "headline": "BUY JPM \u2014 no consensus",
-      "detail": "Desks: BUY JPM (72%) vs HOLD CASH (65%) vs BUY JPM (90%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "BAC",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "JPM",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "BUY",
-          "symbol": "JPM",
-          "confidence": 90,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-08-28T14:05:33.380353+00:00"
     }
   ],
   "recent_trades": [
+    {
+      "timestamp": "2026-08-28T16:03:18.044020+00:00",
+      "action": "BUY",
+      "symbol": "PANW",
+      "qty": 0.54,
+      "price": 368.61,
+      "notional": 199.05,
+      "realized_pnl": null,
+      "reason": null,
+      "thesis": "PANW is the strongest non-held catalyst name with a fresh Jefferies PT raise to $450 and solid rank/sentiment support. Room remains under the 5-name cap and ~$200 notional keeps size disciplined versus cash. Setup offers clear upside toward the raised target with a defined invalidation below recent support and reward:risk above 1.5. Existing BAC/AMD leads are already held; no forced rotation required.",
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-08-27T17:00:33.521310+00:00",
       "action": "SELL",
@@ -1014,21 +1060,37 @@
       "reason": null,
       "thesis": "AMD screens as the top ranked liquid catalyst name with a fresh Seeking Alpha upgrade framing an AI tipping point and bullish sentiment. RSI near mid-range leaves room for continuation without extreme overbought risk. Book has cash and an open slot under the five-name cap, so a small sized new entry fits risk limits. Stop and target set for roughly 1.5:1 reward-to-risk on the breakout thesis.",
       "status": "FILLED_PAPER"
-    },
-    {
-      "timestamp": "2026-08-24T17:33:24.707353+00:00",
-      "action": "SELL",
-      "symbol": "ORCL",
-      "qty": 1.36,
-      "price": 143.48,
-      "notional": 195.13,
-      "realized_pnl": -4.68,
-      "reason": "rotation",
-      "thesis": "Confirming the escalated SELL on ORCL. It is the weakest open name by P/L and is trading below cost with no fresh catalyst support in the candidate set. Exiting the full lot frees risk and respects the desk directive rather than waiting for the 140 stop.",
-      "status": "FILLED_PAPER"
     }
   ],
   "trade_reasoning": [
+    {
+      "timestamp": "2026-08-28T16:03:18.044020+00:00",
+      "action": "BUY",
+      "symbol": "PANW",
+      "qty": 0.54,
+      "price": 368.61,
+      "notional": 199.05,
+      "headline": "Bought $PANW",
+      "side_label": "buy",
+      "narrative": "PANW is the strongest non-held catalyst name with a fresh Jefferies PT raise to $450 and solid rank/sentiment support. Room remains under the 5-name cap and ~$200 notional keeps size disciplined versus cash. Setup offers clear upside toward the raised target with a defined invalidation below recent support and reward:risk above 1.5. Existing BAC/AMD leads are already held; no forced rotation required.",
+      "bullets": [
+        "Jefferies PT raised to $450 supports bullish skew",
+        "Liquid large-cap; fits ~$200 max notional",
+        "R:R >1.5 with stop 352 / target 405",
+        "Book at 3 names\u2014add without rotation"
+      ],
+      "risk_map": {
+        "stop": 352.0,
+        "target": 405.0,
+        "horizon_days": 5,
+        "rr": 2.19,
+        "confidence_10": 7,
+        "confidence": 72
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-08-27T17:00:33.521310+00:00",
       "action": "SELL",
@@ -11844,15 +11906,15 @@
     {
       "symbol": "BAC",
       "name": "BAC",
-      "price": 62.2599983215332,
-      "volume": 13484257.0,
-      "avg_volume": 28479065.7,
-      "percent_change": 1.7819195442468725,
+      "price": 62.334999084472656,
+      "volume": 13897214.0,
+      "avg_volume": 28520361.4,
+      "percent_change": 1.9045299172802486,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
       "liquidity_score": 84.55,
-      "rank_score": 73.61,
+      "rank_score": 73.71,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Bank of America (BAC) Stock Still Looks Undervalued As Earnings And Fair Value Align - simplywall.st",
       "top_headlines": [
@@ -11901,15 +11963,15 @@
     {
       "symbol": "AMD",
       "name": "AMD",
-      "price": 471.625,
-      "volume": 5641997.0,
-      "avg_volume": 16450759.7,
-      "percent_change": -1.0583869942763298,
+      "price": 467.6549987792969,
+      "volume": 6259832.0,
+      "avg_volume": 16512543.2,
+      "percent_change": -1.8912485355666753,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
-      "liquidity_score": 82.16,
-      "rank_score": 71.17,
+      "liquidity_score": 82.18,
+      "rank_score": 71.84,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): NVIDIA vs. AMD: Only One AI Stock Is a Solid Buy Now - Yahoo Finance",
       "top_headlines": [
@@ -11954,15 +12016,15 @@
     {
       "symbol": "PANW",
       "name": "PANW",
-      "price": 370.54998779296875,
-      "volume": 2863517.0,
-      "avg_volume": 5013511.7,
-      "percent_change": -3.212751237940734,
+      "price": 368.6099853515625,
+      "volume": 3017137.0,
+      "avg_volume": 5028873.7,
+      "percent_change": -3.719477739306313,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 12,
-      "liquidity_score": 77.0,
-      "rank_score": 66.62,
+      "liquidity_score": 77.01,
+      "rank_score": 67.03,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst, raised): PANW Maintained by Jefferies -- Price Target Raised to $450 - GuruFocus",
       "top_headlines": [
@@ -11999,15 +12061,15 @@
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 357.3800048828125,
-      "volume": 978808.0,
-      "avg_volume": 5309330.8,
-      "percent_change": 0.8921019849865784,
+      "price": 357.7850036621094,
+      "volume": 1073652.0,
+      "avg_volume": 5318815.2,
+      "percent_change": 1.006437363536965,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
-      "liquidity_score": 77.25,
-      "rank_score": 63.8,
+      "liquidity_score": 77.26,
+      "rank_score": 63.89,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): JPMorgan (JPM) Stock Trades At A Fair Earnings Premium With A 27% Intrinsic Discount - Yahoo Finance",
       "top_headlines": [
@@ -12053,15 +12115,15 @@
     {
       "symbol": "META",
       "name": "META",
-      "price": 580.5701293945312,
-      "volume": 7281675.0,
-      "avg_volume": 16566157.5,
-      "percent_change": 1.6582304698713313,
+      "price": 575.58251953125,
+      "volume": 7809640.0,
+      "avg_volume": 16618954.0,
+      "percent_change": 0.7848965394742833,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
-      "liquidity_score": 82.19,
-      "rank_score": 63.66,
+      "liquidity_score": 82.21,
+      "rank_score": 62.96,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst): Meta (META) Stock Still Looks Reasonable On Earnings With Cash Flow Support - Yahoo Finance",
       "top_headlines": [
@@ -12127,8 +12189,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 1,
-      "BUY": 3,
+      "HOLD": 3,
+      "BUY": 1,
       "SELL": 0,
       "live": 4,
       "fallback": 0
@@ -12147,23 +12209,23 @@
     "decision_mode": "live_dual_llm",
     "last_tier": "senior_escalated",
     "last_stage": "entry",
-    "last_junior_nomination": "PANW",
-    "last_escalate_reason": "junior_nomination",
-    "live_share_recent": 89.3
+    "last_junior_nomination": null,
+    "last_escalate_reason": "junior_trade_or_split",
+    "live_share_recent": 88.9
   },
   "learning": {
     "candidate_signals_logged": 8,
-    "fills_logged": 321,
+    "fills_logged": 322,
     "closed_outcomes": 146,
-    "consensus_events": 366,
+    "consensus_events": 367,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1015.88,
-    "change": 15.88,
-    "change_pct": 1.59,
+    "latest_equity": 1015.55,
+    "change": 15.55,
+    "change_pct": 1.56,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15202,9 +15264,15 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-28T16:00:09.270598+00:00",
+        "t": "2026-08-28T16:03:18.044020+00:00",
         "equity": 1015.88,
-        "cash": 423.03,
+        "cash": 223.98,
+        "event": "BUY PANW"
+      },
+      {
+        "t": "2026-08-28T16:03:42.981402+00:00",
+        "equity": 1015.55,
+        "cash": 223.98,
         "event": "mark"
       }
     ],
