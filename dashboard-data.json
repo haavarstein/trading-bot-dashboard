@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-08-28T18:30:50.418592+00:00",
+  "generated_at": "2026-08-28T18:32:33.388550+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1016.23,
+    "portfolio_value": 1017.11,
     "starting_cash": 1000.0,
-    "total_return_pct": 1.62,
-    "total_pnl": 16.23,
+    "total_return_pct": 1.71,
+    "total_pnl": 17.11,
     "realized_pnl": 21.68,
-    "open_pnl": -5.48,
-    "capital_deployed": 991.29,
+    "open_pnl": -4.6,
+    "capital_deployed": 992.17,
     "cash": 24.94,
     "closed_trades": 24,
     "win_rate_pct": 33.33,
-    "vs_spy_pct": 1.66,
-    "spy_return_pct": -0.04,
+    "vs_spy_pct": 1.74,
+    "spy_return_pct": -0.03,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-28T18:30:53.362883+00:00"
+    "updated_at": "2026-08-28T18:32:36.201218+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.04,
-    "price": 769.0499877929688,
+    "return_pct": -0.03,
+    "price": 769.1799926757812,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 8,
-    "validated_count_today": 7,
+    "consensus_count_today": 9,
+    "validated_count_today": 8,
     "blocked_count_today": 1,
     "fills_today": 2,
-    "simulated_orders_today": 7,
+    "simulated_orders_today": 8,
     "top_symbol_today": "PANW"
   },
   "holdings": [
@@ -50,10 +50,10 @@
       "symbol": "AMD",
       "qty": 0.42,
       "avg_cost": 473.82,
-      "last": 469.69000244140625,
-      "market_value": 197.27,
-      "open_pnl": -1.73,
-      "open_pnl_pct": -0.87,
+      "last": 470.1000061035156,
+      "market_value": 197.44,
+      "open_pnl": -1.56,
+      "open_pnl_pct": -0.79,
       "stop": 458.0,
       "target": 498.0,
       "thesis": "AMD screens as the top ranked liquid catalyst name with a fresh Seeking Alpha upgrade framing an AI tipping point and bullish sentiment. RSI near mid-range leaves room for continuation without extreme overbought risk. Book has cash and an open slot under the five-name cap, so a small sized new entry fits risk limits. Stop and target set for roughly 1.5:1 reward-to-risk on the breakout thesis."
@@ -62,10 +62,10 @@
       "symbol": "LRCX",
       "qty": 0.64,
       "avg_cost": 312.51,
-      "last": 305.20001220703125,
-      "market_value": 195.33,
-      "open_pnl": -4.68,
-      "open_pnl_pct": -2.34,
+      "last": 305.7900085449219,
+      "market_value": 195.71,
+      "open_pnl": -4.3,
+      "open_pnl_pct": -2.15,
       "stop": 300.0,
       "target": 335.0,
       "thesis": "LRCX ranks highest among candidates with bullish sentiment and a headline catalyst setup at neutral RSI. Liquid semi name fits the book with room for one more position under the 5-name cap and ~$200 notional limit. Reward-to-risk exceeds 1.5 from entry to target versus stop. Adding as new_entry while cash supports the size."
@@ -74,10 +74,10 @@
       "symbol": "PANW",
       "qty": 0.54,
       "avg_cost": 368.61,
-      "last": 369.5150146484375,
-      "market_value": 199.54,
-      "open_pnl": 0.49,
-      "open_pnl_pct": 0.25,
+      "last": 370.05999755859375,
+      "market_value": 199.83,
+      "open_pnl": 0.78,
+      "open_pnl_pct": 0.39,
       "stop": 352.0,
       "target": 405.0,
       "thesis": "PANW is the strongest non-held catalyst name with a fresh Jefferies PT raise to $450 and solid rank/sentiment support. Room remains under the 5-name cap and ~$200 notional keeps size disciplined versus cash. Setup offers clear upside toward the raised target with a defined invalidation below recent support and reward:risk above 1.5. Existing BAC/AMD leads are already held; no forced rotation required."
@@ -86,10 +86,10 @@
       "symbol": "AMZN",
       "qty": 0.75,
       "avg_cost": 265.39,
-      "last": 265.3999938964844,
-      "market_value": 199.05,
-      "open_pnl": 0.01,
-      "open_pnl_pct": 0.0,
+      "last": 265.45001220703125,
+      "market_value": 199.09,
+      "open_pnl": 0.05,
+      "open_pnl_pct": 0.02,
       "stop": 255.0,
       "target": 282.0,
       "thesis": "AMZN shows a clean headline-driven catalyst around agentic AI potentially accelerating retail growth, with Evercore commentary supporting the move and rank_score at 75. Sentiment is bullish and RSI sits neutral at 50, allowing room for continuation. Portfolio has cash and slot capacity under the 5-name limit, so a sized new entry fits risk limits with R:R above 1.5."
@@ -98,15 +98,15 @@
   "latest_candidate": {
     "symbol": "BAC",
     "name": "BAC",
-    "price": 62.349998474121094,
-    "volume": 18176243.0,
-    "avg_volume": 28948264.3,
-    "percent_change": 1.9290507446423986,
+    "price": 62.34000015258789,
+    "volume": 18635410.0,
+    "avg_volume": 28994181.0,
+    "percent_change": 1.9127056051418405,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 15,
     "liquidity_score": 84.62,
-    "rank_score": 81.74,
+    "rank_score": 81.72,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (ai, catalyst): Bank of America (BAC) Stock Still Looks Undervalued As Earnings And Fair Value Align - simplywall.st",
     "top_headlines": [
@@ -163,15 +163,16 @@
     "stop_loss": 0.0,
     "take_profit": 0.0,
     "qty": 0.0,
-    "thesis": "Top candidates BAC, AMZN and AMD are already held with no material edge to add. New candidates like JPM, COST and NVDA show lower rank scores than current holdings. Book is full at 5 names with limited cash, precluding new entries without rotation into a clearly superior setup.",
+    "thesis": "Portfolio already at max 5 names with limited cash. Top candidate BAC is already held with positive P/L and strong rank. No new candidate offers materially better setup to justify rotation from weakest hold LRCX. Reward:risk and notional constraints prevent new entries.",
     "reason_code": "hold",
     "reasoning": {
       "headline": "Hold $CASH",
-      "narrative": "Top candidates BAC, AMZN and AMD are already held with no material edge to add. New candidates like JPM, COST and NVDA show lower rank scores than current holdings. Book is full at 5 names with limited cash, precluding new entries without rotation into a clearly superior setup.",
+      "narrative": "Portfolio already at max 5 names with limited cash. Top candidate BAC is already held with positive P/L and strong rank. No new candidate offers materially better setup to justify rotation from weakest hold LRCX. Reward:risk and notional constraints prevent new entries.",
       "bullets": [
-        "No rotation candidate beats weakest hold on catalyst/rank",
-        "LRCX weakest P/L but not in candidates",
-        "Reward:risk not applicable on HOLD"
+        "Book full at 5 positions, cash only $24.94",
+        "BAC already held, highest rank_score 81.72",
+        "LRCX weakest P/L but rotation not justified vs candidates",
+        "No clean edge meeting R:R >=1.5 or $200 notional"
       ],
       "risk_map": {
         "stop": 0.0,
@@ -181,17 +182,18 @@
         "confidence_10": 6,
         "confidence": 65
       },
-      "thesis": "Top candidates BAC, AMZN and AMD are already held with no material edge to add. New candidates like JPM, COST and NVDA show lower rank scores than current holdings. Book is full at 5 names with limited cash, precluding new entries without rotation into a clearly superior setup."
+      "thesis": "Portfolio already at max 5 names with limited cash. Top candidate BAC is already held with positive P/L and strong rank. No new candidate offers materially better setup to justify rotation from weakest hold LRCX. Reward:risk and notional constraints prevent new entries."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.3",
     "bullets": [
-      "No rotation candidate beats weakest hold on catalyst/rank",
-      "LRCX weakest P/L but not in candidates",
-      "Reward:risk not applicable on HOLD"
+      "Book full at 5 positions, cash only $24.94",
+      "BAC already held, highest rank_score 81.72",
+      "LRCX weakest P/L but rotation not justified vs candidates",
+      "No clean edge meeting R:R >=1.5 or $200 notional"
     ],
-    "timestamp": "2026-08-28T18:17:25.682648+00:00"
+    "timestamp": "2026-08-28T18:32:19.508149+00:00"
   },
   "stance": "Holding BAC, AMD, LRCX, PANW, AMZN. No new trade right now.",
   "thinking": {
@@ -226,9 +228,9 @@
         "avg_cost": 473.82,
         "stop": 458.0,
         "target": 498.0,
-        "last": 469.69000244140625,
-        "open_pnl": -1.73,
-        "open_pnl_pct": -0.87,
+        "last": 470.1000061035156,
+        "open_pnl": -1.56,
+        "open_pnl_pct": -0.79,
         "line": "Bought near $473.82 \u00b7 Sell safety line $458.00 \u00b7 Profit target $498.00",
         "plan": "stop 458.0 or target 498.0"
       },
@@ -238,9 +240,9 @@
         "avg_cost": 312.51,
         "stop": 300.0,
         "target": 335.0,
-        "last": 305.20001220703125,
-        "open_pnl": -4.68,
-        "open_pnl_pct": -2.34,
+        "last": 305.7900085449219,
+        "open_pnl": -4.3,
+        "open_pnl_pct": -2.15,
         "line": "Bought near $312.51 \u00b7 Sell safety line $300.00 \u00b7 Profit target $335.00",
         "plan": "stop 300.0 or target 335.0"
       },
@@ -250,9 +252,9 @@
         "avg_cost": 368.61,
         "stop": 352.0,
         "target": 405.0,
-        "last": 369.5150146484375,
-        "open_pnl": 0.49,
-        "open_pnl_pct": 0.25,
+        "last": 370.05999755859375,
+        "open_pnl": 0.78,
+        "open_pnl_pct": 0.39,
         "line": "Bought near $368.61 \u00b7 Sell safety line $352.00 \u00b7 Profit target $405.00",
         "plan": "stop 352.0 or target 405.0"
       },
@@ -262,14 +264,14 @@
         "avg_cost": 265.39,
         "stop": 255.0,
         "target": 282.0,
-        "last": 265.3999938964844,
-        "open_pnl": 0.01,
-        "open_pnl_pct": 0.0,
+        "last": 265.45001220703125,
+        "open_pnl": 0.05,
+        "open_pnl_pct": 0.02,
         "line": "Bought near $265.39 \u00b7 Sell safety line $255.00 \u00b7 Profit target $282.00",
         "plan": "stop 255.0 or target 282.0"
       }
     ],
-    "last_checked": "2026-08-28T18:30:50.418592+00:00",
+    "last_checked": "2026-08-28T18:32:33.388550+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "HOLD",
@@ -302,7 +304,7 @@
         "model": "deepseek-v4-flash",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 60,
+        "confidence": 65,
         "tone": "hold"
       },
       {
@@ -310,12 +312,89 @@
         "model": "grok-build-0.1",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 65,
+        "confidence": 60,
         "tone": "hold"
       }
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 no new trade",
+      "detail": "Portfolio already at max 5 names with limited cash. Top candidate BAC is already held with positive P/L and strong rank. No new candidate offers materially better setup to justify rotation from weakest hold LRCX. Reward:risk and notional constraints prevent new entries.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        }
+      ],
+      "tier": "junior_only",
+      "escalate_reason": "",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-08-28T18:32:19.508149+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -862,83 +941,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-08-28T16:48:07.680206+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "JPM",
-      "status": "no_consensus",
-      "headline": "BUY JPM \u2014 no consensus",
-      "detail": "Desks: BUY JPM (72%) vs HOLD CASH (65%) vs BUY JPM (90%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "JPM",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "JPM",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "BUY",
-          "symbol": "JPM",
-          "confidence": 90,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-08-28T16:35:27.238164+00:00"
     },
     {
       "type": "fill",
@@ -11943,15 +11945,15 @@
     {
       "symbol": "BAC",
       "name": "BAC",
-      "price": 62.349998474121094,
-      "volume": 18176243.0,
-      "avg_volume": 28948264.3,
-      "percent_change": 1.9290507446423986,
+      "price": 62.34000015258789,
+      "volume": 18635410.0,
+      "avg_volume": 28994181.0,
+      "percent_change": 1.9127056051418405,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 15,
       "liquidity_score": 84.62,
-      "rank_score": 81.74,
+      "rank_score": 81.72,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Bank of America (BAC) Stock Still Looks Undervalued As Earnings And Fair Value Align - simplywall.st",
       "top_headlines": [
@@ -11999,74 +12001,17 @@
       ]
     },
     {
-      "symbol": "AMZN",
-      "name": "AMZN",
-      "price": 265.1300048828125,
-      "volume": 32718687.0,
-      "avg_volume": 32064798.7,
-      "percent_change": 3.4613263010877056,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 13,
-      "liquidity_score": 85.06,
-      "rank_score": 75.03,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst, growth): AMZN Stock Rallies 4% After Evercore Says Agentic AI Could Supercharge Amazon\u2019s Retail Growth - Stocktwits",
-      "top_headlines": [
-        "Why Amazon (AMZN) Stock Is Up Today - Quiver Quantitative",
-        "Amazon.com Inc Stock (AMZN) Moved Up by 3.69% on Aug 28: A Full Analysis - TradingKey",
-        "AMZN Stock Rallies 4% After Evercore Says Agentic AI Could Supercharge Amazon\u2019s Retail Growth - Stocktwits"
-      ],
-      "matched_headlines": [
-        {
-          "title": "AMZN Stock Rallies 4% After Evercore Says Agentic AI Could Supercharge Amazon\u2019s Retail Growth - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "growth"
-          ]
-        },
-        {
-          "title": "3 Reasons Why Growth Investors Shouldn't Overlook Amazon (AMZN) - Yahoo Finance",
-          "keywords": [
-            "growth"
-          ]
-        },
-        {
-          "title": "US Stock Market Moves | Amazon (AMZN.US) Surges Over 4%, Leading the Magnificent Seven as AI Computing Power Expansion Continues - Moomoo",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "expansion"
-          ]
-        },
-        {
-          "title": "Amazon Takes on Waymo and Tesla With Massive Robotaxi Launch in San Francisco. What That Means for AMZN Stock. - Barchart.com",
-          "keywords": [
-            "catalyst",
-            "launch"
-          ]
-        },
-        {
-          "title": "Amazon.com, Inc. $AMZN Stock Position Lowered by Fulcrum Capital LLC - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "AMD",
       "name": "AMD",
-      "price": 470.5799865722656,
-      "volume": 9234462.0,
-      "avg_volume": 16810006.2,
-      "percent_change": -1.2776190412472903,
+      "price": 469.7200012207031,
+      "volume": 9730585.0,
+      "avg_volume": 16859618.5,
+      "percent_change": -1.458034281840745,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
-      "liquidity_score": 82.26,
-      "rank_score": 71.36,
+      "liquidity_score": 82.27,
+      "rank_score": 71.51,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Cathie Wood Trims AMD After a 120% Rally \u2014 Is the AI Trade Getting Too Crowded? - TradingView",
       "top_headlines": [
@@ -12109,17 +12054,67 @@
       ]
     },
     {
-      "symbol": "JPM",
-      "name": "JPM",
-      "price": 355.94000244140625,
-      "volume": 1843633.0,
-      "avg_volume": 5395813.3,
-      "percent_change": 0.48557428004508624,
+      "symbol": "AMZN",
+      "name": "AMZN",
+      "price": 265.3699951171875,
+      "volume": 33411787.0,
+      "avg_volume": 32134108.7,
+      "percent_change": 3.5549773684526422,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
-      "liquidity_score": 77.32,
-      "rank_score": 63.49,
+      "liquidity_score": 85.07,
+      "rank_score": 65.6,
+      "news_hits": 7,
+      "catalyst": "Headline-driven setup (ai, catalyst, growth): AMZN Stock Rallies 4% After Evercore Says Agentic AI Could Supercharge Amazon\u2019s Retail Growth - Stocktwits",
+      "top_headlines": [
+        "Why Amazon (AMZN) Stock Is Up Today - Quiver Quantitative",
+        "Amazon.com Inc Stock (AMZN) Moved Up by 3.69% on Aug 28: A Full Analysis - TradingKey",
+        "AMZN Stock Rallies 4% After Evercore Says Agentic AI Could Supercharge Amazon\u2019s Retail Growth - Stocktwits"
+      ],
+      "matched_headlines": [
+        {
+          "title": "AMZN Stock Rallies 4% After Evercore Says Agentic AI Could Supercharge Amazon\u2019s Retail Growth - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "growth"
+          ]
+        },
+        {
+          "title": "3 Reasons Why Growth Investors Shouldn't Overlook Amazon (AMZN) - Yahoo Finance",
+          "keywords": [
+            "growth"
+          ]
+        },
+        {
+          "title": "US Stock Market Moves | Amazon (AMZN.US) Surges Over 4%, Leading the Magnificent Seven as AI Computing Power Expansion Continues - Moomoo",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "expansion"
+          ]
+        },
+        {
+          "title": "Amazon.com, Inc. $AMZN Stock Position Lowered by Fulcrum Capital LLC - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "JPM",
+      "name": "JPM",
+      "price": 356.04998779296875,
+      "volume": 1914357.0,
+      "avg_volume": 5402885.7,
+      "percent_change": 0.5166242916716097,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 11,
+      "liquidity_score": 77.33,
+      "rank_score": 63.51,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): JPMorgan (JPM) Stock Trades At A Fair Earnings Premium With A 27% Intrinsic Discount - Yahoo Finance",
       "top_headlines": [
@@ -12165,15 +12160,15 @@
     {
       "symbol": "COST",
       "name": "COST",
-      "price": 947.0604248046875,
-      "volume": 872815.0,
-      "avg_volume": 1749821.5,
-      "percent_change": 1.3267340012899755,
+      "price": 945.8001098632812,
+      "volume": 893385.0,
+      "avg_volume": 1751878.5,
+      "percent_change": 1.1918919220720008,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
-      "liquidity_score": 72.43,
-      "rank_score": 63.43,
+      "liquidity_score": 72.44,
+      "rank_score": 63.32,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst, drop): Costco (COST) Stock Drops Despite Market Gains: Important Facts to Note - Yahoo Finance",
       "top_headlines": [
@@ -12268,21 +12263,21 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "",
-    "live_share_recent": 88.1
+    "live_share_recent": 88.7
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 323,
     "closed_outcomes": 146,
-    "consensus_events": 376,
+    "consensus_events": 377,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1016.23,
-    "change": 16.23,
-    "change_pct": 1.62,
+    "latest_equity": 1017.11,
+    "change": 17.11,
+    "change_pct": 1.71,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15399,8 +15394,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-28T18:30:53.362883+00:00",
-        "equity": 1016.23,
+        "t": "2026-08-28T18:32:36.201218+00:00",
+        "equity": 1017.11,
         "cash": 24.94,
         "event": "mark"
       }
