@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-28T17:00:23.284611+00:00",
+  "generated_at": "2026-08-28T17:03:26.055538+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1016.96,
+    "portfolio_value": 1015.81,
     "starting_cash": 1000.0,
-    "total_return_pct": 1.7,
-    "total_pnl": 16.96,
+    "total_return_pct": 1.58,
+    "total_pnl": 15.81,
     "realized_pnl": 21.68,
-    "open_pnl": -4.75,
-    "capital_deployed": 792.98,
+    "open_pnl": -5.89,
+    "capital_deployed": 791.83,
     "cash": 223.98,
     "closed_trades": 24,
     "win_rate_pct": 33.33,
-    "vs_spy_pct": 1.72,
-    "spy_return_pct": -0.02,
+    "vs_spy_pct": 1.61,
+    "spy_return_pct": -0.03,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-28T17:00:25.956991+00:00"
+    "updated_at": "2026-08-28T17:03:33.472325+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.02,
-    "price": 769.27001953125,
+    "return_pct": -0.03,
+    "price": 769.1400146484375,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,10 +38,10 @@
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 62.3650016784668,
-      "market_value": 200.19,
-      "open_pnl": 0.53,
-      "open_pnl_pct": 0.27,
+      "last": 62.31999969482422,
+      "market_value": 200.05,
+      "open_pnl": 0.39,
+      "open_pnl_pct": 0.19,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
@@ -50,10 +50,10 @@
       "symbol": "AMD",
       "qty": 0.42,
       "avg_cost": 473.82,
-      "last": 470.760009765625,
-      "market_value": 197.72,
-      "open_pnl": -1.29,
-      "open_pnl_pct": -0.65,
+      "last": 470.6919860839844,
+      "market_value": 197.69,
+      "open_pnl": -1.31,
+      "open_pnl_pct": -0.66,
       "stop": 458.0,
       "target": 498.0,
       "thesis": "AMD screens as the top ranked liquid catalyst name with a fresh Seeking Alpha upgrade framing an AI tipping point and bullish sentiment. RSI near mid-range leaves room for continuation without extreme overbought risk. Book has cash and an open slot under the five-name cap, so a small sized new entry fits risk limits. Stop and target set for roughly 1.5:1 reward-to-risk on the breakout thesis."
@@ -62,10 +62,10 @@
       "symbol": "LRCX",
       "qty": 0.64,
       "avg_cost": 312.51,
-      "last": 305.0400085449219,
-      "market_value": 195.23,
-      "open_pnl": -4.78,
-      "open_pnl_pct": -2.39,
+      "last": 304.05999755859375,
+      "market_value": 194.6,
+      "open_pnl": -5.41,
+      "open_pnl_pct": -2.7,
       "stop": 300.0,
       "target": 335.0,
       "thesis": "LRCX ranks highest among candidates with bullish sentiment and a headline catalyst setup at neutral RSI. Liquid semi name fits the book with room for one more position under the 5-name cap and ~$200 notional limit. Reward-to-risk exceeds 1.5 from entry to target versus stop. Adding as new_entry while cash supports the size."
@@ -74,10 +74,10 @@
       "symbol": "PANW",
       "qty": 0.54,
       "avg_cost": 368.61,
-      "last": 370.07000732421875,
-      "market_value": 199.84,
-      "open_pnl": 0.79,
-      "open_pnl_pct": 0.4,
+      "last": 369.42999267578125,
+      "market_value": 199.49,
+      "open_pnl": 0.44,
+      "open_pnl_pct": 0.22,
       "stop": 352.0,
       "target": 405.0,
       "thesis": "PANW is the strongest non-held catalyst name with a fresh Jefferies PT raise to $450 and solid rank/sentiment support. Room remains under the 5-name cap and ~$200 notional keeps size disciplined versus cash. Setup offers clear upside toward the raised target with a defined invalidation below recent support and reward:risk above 1.5. Existing BAC/AMD leads are already held; no forced rotation required."
@@ -86,15 +86,15 @@
   "latest_candidate": {
     "symbol": "BAC",
     "name": "BAC",
-    "price": 62.44919967651367,
-    "volume": 15593118.0,
-    "avg_volume": 28689951.8,
-    "percent_change": 2.091223714009824,
+    "price": 62.369998931884766,
+    "volume": 15964029.0,
+    "avg_volume": 28727042.9,
+    "percent_change": 1.9617472598661405,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 15,
     "liquidity_score": 84.58,
-    "rank_score": 81.86,
+    "rank_score": 81.76,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (ai, catalyst): Bank of America (BAC) Stock Still Looks Undervalued As Earnings And Fair Value Align - simplywall.st",
     "top_headlines": [
@@ -144,50 +144,50 @@
   "latest_decision": {
     "model": "grok-4.5",
     "action": "BUY",
-    "symbol": "JPM",
+    "symbol": "AMZN",
     "confidence": 72,
     "cache_stats": null,
-    "entry_price": 357.2,
-    "stop_loss": 345.0,
-    "take_profit": 376.0,
-    "qty": 0.55,
-    "thesis": "JPM screens as the cleanest new liquid catalyst vs an already full-ish book of held names, with a fair-value/discount narrative and bullish bank sentiment alongside BAC. Room remains for a fifth name under desk limits and ~$200 notional caps. Defined risk to 345 offers \u22651.5 R:R toward 376 while keeping size small on residual cash.",
+    "entry_price": 265.02,
+    "stop_loss": 255.0,
+    "take_profit": 282.0,
+    "qty": 0.75,
+    "thesis": "Amazon is showing Mag7 leadership on AI computing-power expansion headlines after a sharp upside move, with a solid rank/catalyst score among non-held names. Portfolio has cash and an open slot under the five-name cap, so a small starter fits desk notional limits. Defined stop below the recent impulse keeps risk contained while targeting continuation for about 1.7R.",
     "reason_code": "new_entry",
     "reasoning": {
-      "headline": "Bought $JPM",
-      "narrative": "JPM screens as the cleanest new liquid catalyst vs an already full-ish book of held names, with a fair-value/discount narrative and bullish bank sentiment alongside BAC. Room remains for a fifth name under desk limits and ~$200 notional caps. Defined risk to 345 offers \u22651.5 R:R toward 376 while keeping size small on residual cash.",
+      "headline": "Bought $AMZN",
+      "narrative": "Amazon is showing Mag7 leadership on AI computing-power expansion headlines after a sharp upside move, with a solid rank/catalyst score among non-held names. Portfolio has cash and an open slot under the five-name cap, so a small starter fits desk notional limits. Defined stop below the recent impulse keeps risk contained while targeting continuation for about 1.7R.",
       "bullets": [
-        "Ranked new candidate with undervaluation/earnings premium catalyst",
-        "Banks tape constructive; pairs thematically with existing BAC",
-        "R:R \u22651.5 with stop 345 / target 376; qty sized to ~$200",
-        "Book at 4 names\u2014add allowed without forced rotation"
+        "AI/cloud expansion catalyst and >4% leadership tape",
+        "Liquid name; ~$199 notional within ~$200 new-buy cap",
+        "R:R ~1.7 vs pullback stop and extension target",
+        "Adds diversification vs existing bank/semi/cyber holds"
       ],
       "risk_map": {
-        "stop": 345.0,
-        "target": 376.0,
+        "stop": 255.0,
+        "target": 282.0,
         "horizon_days": 5,
-        "rr": 1.54,
+        "rr": 1.69,
         "confidence_10": 7,
         "confidence": 72
       },
-      "thesis": "JPM screens as the cleanest new liquid catalyst vs an already full-ish book of held names, with a fair-value/discount narrative and bullish bank sentiment alongside BAC. Room remains for a fifth name under desk limits and ~$200 notional caps. Defined risk to 345 offers \u22651.5 R:R toward 376 while keeping size small on residual cash."
+      "thesis": "Amazon is showing Mag7 leadership on AI computing-power expansion headlines after a sharp upside move, with a solid rank/catalyst score among non-held names. Portfolio has cash and an open slot under the five-name cap, so a small starter fits desk notional limits. Defined stop below the recent impulse keeps risk contained while targeting continuation for about 1.7R."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Ranked new candidate with undervaluation/earnings premium catalyst",
-      "Banks tape constructive; pairs thematically with existing BAC",
-      "R:R \u22651.5 with stop 345 / target 376; qty sized to ~$200",
-      "Book at 4 names\u2014add allowed without forced rotation"
+      "AI/cloud expansion catalyst and >4% leadership tape",
+      "Liquid name; ~$199 notional within ~$200 new-buy cap",
+      "R:R ~1.7 vs pullback stop and extension target",
+      "Adds diversification vs existing bank/semi/cyber holds"
     ],
-    "timestamp": "2026-08-28T16:48:07.680206+00:00"
+    "timestamp": "2026-08-28T17:03:17.268536+00:00"
   },
-  "stance": "Buying pressure on JPM. JPM screens as the cleanest new liquid catalyst vs an already full-ish book of held names, with a fair-value/discount narrative and bullish bank sentiment alongside BAC. Room remains for a fifth name under desk limits and ~$200 notional caps. Defined risk to 345 offers \u22651.5 R:R toward 376 while keeping size small on residual cash.",
+  "stance": "Buying pressure on AMZN. Amazon is showing Mag7 leadership on AI computing-power expansion headlines after a sharp upside move, with a solid rank/catalyst score among non-held names. Portfolio has cash and an open slot under the five-name cap, so a small starter fits desk notional limits. Defined stop below the recent impulse keeps risk contained while targeting continuation for about 1.7R.",
   "thinking": {
-    "badge": "Looking to buy JPM",
-    "headline": "Buying pressure on JPM.",
-    "plain_english": "Right now Hermes wants exposure to JPM. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
+    "badge": "Looking to buy AMZN",
+    "headline": "Buying pressure on AMZN.",
+    "plain_english": "Right now Hermes wants exposure to AMZN. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
     "triggers": [
       "It owns BAC, bought near $62.20. Simple plan: sell if it falls to about $60.00, or take profit near $65.50.",
       "It owns AMD, bought near $473.82. Simple plan: sell if it falls to about $458.00, or take profit near $498.00.",
@@ -203,9 +203,9 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 62.3650016784668,
-        "open_pnl": 0.53,
-        "open_pnl_pct": 0.27,
+        "last": 62.31999969482422,
+        "open_pnl": 0.39,
+        "open_pnl_pct": 0.19,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
       },
@@ -215,9 +215,9 @@
         "avg_cost": 473.82,
         "stop": 458.0,
         "target": 498.0,
-        "last": 470.760009765625,
-        "open_pnl": -1.29,
-        "open_pnl_pct": -0.65,
+        "last": 470.6919860839844,
+        "open_pnl": -1.31,
+        "open_pnl_pct": -0.66,
         "line": "Bought near $473.82 \u00b7 Sell safety line $458.00 \u00b7 Profit target $498.00",
         "plan": "stop 458.0 or target 498.0"
       },
@@ -227,9 +227,9 @@
         "avg_cost": 312.51,
         "stop": 300.0,
         "target": 335.0,
-        "last": 305.0400085449219,
-        "open_pnl": -4.78,
-        "open_pnl_pct": -2.39,
+        "last": 304.05999755859375,
+        "open_pnl": -5.41,
+        "open_pnl_pct": -2.7,
         "line": "Bought near $312.51 \u00b7 Sell safety line $300.00 \u00b7 Profit target $335.00",
         "plan": "stop 300.0 or target 335.0"
       },
@@ -239,14 +239,14 @@
         "avg_cost": 368.61,
         "stop": 352.0,
         "target": 405.0,
-        "last": 370.07000732421875,
-        "open_pnl": 0.79,
-        "open_pnl_pct": 0.4,
+        "last": 369.42999267578125,
+        "open_pnl": 0.44,
+        "open_pnl_pct": 0.22,
         "line": "Bought near $368.61 \u00b7 Sell safety line $352.00 \u00b7 Profit target $405.00",
         "plan": "stop 352.0 or target 405.0"
       }
     ],
-    "last_checked": "2026-08-28T17:00:23.284611+00:00",
+    "last_checked": "2026-08-28T17:03:26.055538+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -262,7 +262,7 @@
         "model": "grok-4.3",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 65,
+        "confidence": 60,
         "tone": "hold"
       },
       {
@@ -278,7 +278,7 @@
         "model": "deepseek-v4-flash",
         "action": "BUY",
         "symbol": "JPM",
-        "confidence": 90,
+        "confidence": 72,
         "tone": "buy"
       },
       {
@@ -286,14 +286,14 @@
         "model": "grok-build-0.1",
         "action": "BUY",
         "symbol": "BAC",
-        "confidence": 72,
+        "confidence": 75,
         "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
         "action": "BUY",
-        "symbol": "JPM",
+        "symbol": "AMZN",
         "confidence": 72,
         "tone": "buy"
       },
@@ -309,13 +309,90 @@
         "prefix": "S",
         "model": "claude-opus-5",
         "action": "BUY",
-        "symbol": "JPM",
+        "symbol": "AMZN",
         "confidence": 90,
         "tone": "buy"
       }
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "AMZN",
+      "status": "no_consensus",
+      "headline": "BUY AMZN \u2014 no consensus",
+      "detail": "Desks: BUY AMZN (72%) vs HOLD CASH (65%) vs BUY AMZN (90%). No 2-of-3 senior agreement",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 72,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "BAC",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "AMZN",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "BUY",
+          "symbol": "AMZN",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-08-28T17:03:17.268536+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "JPM",
@@ -862,83 +939,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-08-28T15:20:05.486256+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "JPM",
-      "status": "no_consensus",
-      "headline": "BUY JPM \u2014 no consensus",
-      "detail": "Desks: BUY JPM (72%) vs HOLD CASH (65%) vs BUY JPM (90%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "JPM",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "JPM",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "BUY",
-          "symbol": "JPM",
-          "confidence": 90,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-08-28T15:02:39.174801+00:00"
     }
   ],
   "recent_trades": [
@@ -11907,15 +11907,15 @@
     {
       "symbol": "BAC",
       "name": "BAC",
-      "price": 62.44919967651367,
-      "volume": 15593118.0,
-      "avg_volume": 28689951.8,
-      "percent_change": 2.091223714009824,
+      "price": 62.369998931884766,
+      "volume": 15964029.0,
+      "avg_volume": 28727042.9,
+      "percent_change": 1.9617472598661405,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 15,
       "liquidity_score": 84.58,
-      "rank_score": 81.86,
+      "rank_score": 81.76,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Bank of America (BAC) Stock Still Looks Undervalued As Earnings And Fair Value Align - simplywall.st",
       "top_headlines": [
@@ -11963,78 +11963,23 @@
       ]
     },
     {
-      "symbol": "LRCX",
-      "name": "LRCX",
-      "price": 304.20001220703125,
-      "volume": 2299235.0,
-      "avg_volume": 6891543.5,
-      "percent_change": -4.51377204197743,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 13,
-      "liquidity_score": 78.38,
-      "rank_score": 74.87,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): Lam Research Corporation (NASDAQ:LRCX) Declares Dividend Increase - $0.33 Per Share - MarketBeat",
-      "top_headlines": [
-        "Lam Research Corp Stock (LRCX) Moved Down by 3.84% on Aug 28: Drivers Behind the Movement - TradingKey",
-        "Lam Research Corporation (NASDAQ:LRCX) Declares Dividend Increase - $0.33 Per Share - MarketBeat",
-        "Top After-Hours Gainers Today Beyond Micron: QCOM, AMAT, LRCX Surge - Stocktwits"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Lam Research Corporation (NASDAQ:LRCX) Declares Dividend Increase - $0.33 Per Share - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Top After-Hours Gainers Today Beyond Micron: QCOM, AMAT, LRCX Surge - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Lam Research Corporation $LRCX Shares Purchased by Jefferies Financial Group Inc. - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Is Lam Research (LRCX) Fairly Valued On Its $3b R And D Expansion Plan? - simplywall.st",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "expansion"
-          ]
-        },
-        {
-          "title": "Lam Research Corporation $LRCX Shares Sold by Empowered Funds LLC - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "AMD",
       "name": "AMD",
-      "price": 468.4100036621094,
-      "volume": 7484074.0,
-      "avg_volume": 16634967.4,
-      "percent_change": -1.7328570149037201,
+      "price": 470.7349853515625,
+      "volume": 7990272.0,
+      "avg_volume": 16685587.2,
+      "percent_change": -1.2451020431289739,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
-      "liquidity_score": 82.21,
-      "rank_score": 71.72,
+      "liquidity_score": 82.22,
+      "rank_score": 71.33,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): NVIDIA vs. AMD: Only One AI Stock Is a Solid Buy Now - Yahoo Finance",
       "top_headlines": [
         "Cathie Wood\u2019s ARK Just Dumped AMD Stock. What She\u2019s Buying Instead. - Barron's",
         "NVIDIA vs. AMD: Only One AI Stock Is a Solid Buy Now - Yahoo Finance",
-        "What AMD Stock Was Telling You About Its AI Ramp - Trefis"
+        "Cathie Wood Just Sold Another $18 Million of AMD Stock - GuruFocus"
       ],
       "matched_headlines": [
         {
@@ -12045,10 +11990,12 @@
           ]
         },
         {
-          "title": "What AMD Stock Was Telling You About Its AI Ramp - Trefis",
+          "title": "Advanced Micro Devices, Inc. $AMD Stock Position Raised by Elefante Mark B - MarketBeat",
           "keywords": [
             "ai",
-            "catalyst"
+            "beat",
+            "catalyst",
+            "raised"
           ]
         },
         {
@@ -12060,12 +12007,10 @@
           ]
         },
         {
-          "title": "Advanced Micro Devices, Inc. $AMD Stock Position Raised by Elefante Mark B - MarketBeat",
+          "title": "What AMD Stock Was Telling You About Its AI Ramp - Trefis",
           "keywords": [
             "ai",
-            "beat",
-            "catalyst",
-            "raised"
+            "catalyst"
           ]
         }
       ]
@@ -12073,15 +12018,15 @@
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 357.2001037597656,
-      "volume": 1394934.0,
-      "avg_volume": 5350943.4,
-      "percent_change": 0.8413140220181112,
+      "price": 356.981201171875,
+      "volume": 1459936.0,
+      "avg_volume": 5357443.6,
+      "percent_change": 0.7795155388335793,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
-      "liquidity_score": 77.28,
-      "rank_score": 63.77,
+      "liquidity_score": 77.29,
+      "rank_score": 63.72,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): JPMorgan (JPM) Stock Trades At A Fair Earnings Premium With A 27% Intrinsic Discount - Yahoo Finance",
       "top_headlines": [
@@ -12127,15 +12072,15 @@
     {
       "symbol": "AMZN",
       "name": "AMZN",
-      "price": 265.8900146484375,
-      "volume": 26758563.0,
-      "avg_volume": 31468786.3,
-      "percent_change": 3.7579038928547948,
+      "price": 265.0199890136719,
+      "volume": 27658784.0,
+      "avg_volume": 31558808.4,
+      "percent_change": 3.4183949559897147,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 10,
-      "liquidity_score": 84.98,
-      "rank_score": 61.75,
+      "liquidity_score": 84.99,
+      "rank_score": 61.48,
       "news_hits": 7,
       "catalyst": "Headline-driven setup (ai, catalyst, expansion): US Stock Market Moves | Amazon (AMZN.US) Surges Over 4%, Leading the Magnificent Seven as AI Computing Power Expansion Continues - Moomoo",
       "top_headlines": [
@@ -12166,9 +12111,58 @@
           ]
         },
         {
-          "title": "Amazon.com, Inc. $AMZN Stock Position Lowered by Fulcrum Capital LLC - MarketBeat",
+          "title": "Amazon.com, Inc. $AMZN Stock Holdings Reduced by SlateStone Wealth LLC - MarketBeat",
           "keywords": [
             "beat"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "LRCX",
+      "name": "LRCX",
+      "price": 305.2699890136719,
+      "volume": 2430833.0,
+      "avg_volume": 6904703.3,
+      "percent_change": -4.177913905327682,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 10,
+      "liquidity_score": 78.39,
+      "rank_score": 61.1,
+      "news_hits": 7,
+      "catalyst": "Headline-driven setup (beat): Lam Research Corporation (NASDAQ:LRCX) Declares Dividend Increase - $0.33 Per Share - MarketBeat",
+      "top_headlines": [
+        "Lam Research Corp Stock (LRCX) Moved Down by 3.84% on Aug 28: Drivers Behind the Movement - TradingKey",
+        "Lam Research Corporation (NASDAQ:LRCX) Declares Dividend Increase - $0.33 Per Share - MarketBeat",
+        "Top After-Hours Gainers Today Beyond Micron: QCOM, AMAT, LRCX Surge - Stocktwits"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Lam Research Corporation (NASDAQ:LRCX) Declares Dividend Increase - $0.33 Per Share - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Top After-Hours Gainers Today Beyond Micron: QCOM, AMAT, LRCX Surge - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Lam Research Corporation $LRCX Shares Purchased by Jefferies Financial Group Inc. - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Is Lam Research (LRCX) Fairly Valued On Its $3b R And D Expansion Plan? - simplywall.st",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "expansion"
           ]
         }
       ]
@@ -12203,7 +12197,7 @@
       "HOLD": 2,
       "BUY": 2,
       "SELL": 0,
-      "live": 3,
+      "live": 4,
       "fallback": 0
     },
     "junior_model_3_enabled": true,
@@ -12222,21 +12216,21 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 88.1
+    "live_share_recent": 87.9
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 322,
     "closed_outcomes": 146,
-    "consensus_events": 370,
+    "consensus_events": 371,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1016.96,
-    "change": 16.96,
-    "change_pct": 1.7,
+    "latest_equity": 1015.81,
+    "change": 15.81,
+    "change_pct": 1.58,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15307,6 +15301,12 @@
       {
         "t": "2026-08-28T17:00:25.956991+00:00",
         "equity": 1016.96,
+        "cash": 223.98,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-28T17:03:33.472325+00:00",
+        "equity": 1015.81,
         "cash": 223.98,
         "event": "mark"
       }
