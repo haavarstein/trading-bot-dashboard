@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-31T17:50:50.909026+00:00",
+  "generated_at": "2026-08-31T17:51:27.500646+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1014.08,
+    "portfolio_value": 1014.09,
     "starting_cash": 1000.0,
     "total_return_pct": 1.41,
-    "total_pnl": 14.08,
+    "total_pnl": 14.09,
     "realized_pnl": 13.86,
     "open_pnl": 0.2,
-    "capital_deployed": 796.95,
+    "capital_deployed": 796.96,
     "cash": 217.13,
     "closed_trades": 25,
     "win_rate_pct": 32.0,
-    "vs_spy_pct": 1.77,
-    "spy_return_pct": -0.36,
+    "vs_spy_pct": 1.76,
+    "spy_return_pct": -0.35,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-31T17:50:54.046432+00:00"
+    "updated_at": "2026-08-31T17:51:30.267919+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.36,
-    "price": 766.6300048828125,
+    "return_pct": -0.35,
+    "price": 766.6749877929688,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -50,9 +50,9 @@
       "symbol": "AMD",
       "qty": 0.42,
       "avg_cost": 473.82,
-      "last": 469.14990234375,
+      "last": 469.139892578125,
       "market_value": 197.04,
-      "open_pnl": -1.96,
+      "open_pnl": -1.97,
       "open_pnl_pct": -0.99,
       "stop": 458.0,
       "target": 498.0,
@@ -62,7 +62,7 @@
       "symbol": "PANW",
       "qty": 0.54,
       "avg_cost": 368.61,
-      "last": 378.3900146484375,
+      "last": 378.3800048828125,
       "market_value": 204.33,
       "open_pnl": 5.28,
       "open_pnl_pct": 2.65,
@@ -74,9 +74,9 @@
       "symbol": "AMZN",
       "qty": 0.75,
       "avg_cost": 265.39,
-      "last": 261.29998779296875,
-      "market_value": 195.97,
-      "open_pnl": -3.07,
+      "last": 261.30999755859375,
+      "market_value": 195.98,
+      "open_pnl": -3.06,
       "open_pnl_pct": -1.54,
       "stop": 255.0,
       "target": 282.0,
@@ -133,50 +133,50 @@
   "latest_decision": {
     "model": "grok-4.5",
     "action": "BUY",
-    "symbol": "WMT",
-    "confidence": 78,
+    "symbol": "UNH",
+    "confidence": 73,
     "cache_stats": null,
-    "entry_price": 104.4,
-    "stop_loss": 100.0,
-    "take_profit": 111.0,
-    "qty": 1.91,
-    "thesis": "WMT shows a clean ranked catalyst setup with institutional accumulation headlines and neutral RSI near 50, supporting a tactical long. Liquidity and rank_score above 80 favor adding within the $200 notional cap while book has room for a fifth name. Risk defined below recent support with 1.5 R:R to the upside target.",
+    "entry_price": 390.79,
+    "stop_loss": 374.0,
+    "take_profit": 418.0,
+    "qty": 0.51,
+    "thesis": "UNH posts a clean earnings beat with raised guidance and an 8% jump, giving the strongest fundamental catalyst on the board versus mere fund-flow headlines. Liquid mega-cap setup fits the residual cash sleeve without forcing a rotation while open names sit at 4. Reward-to-risk is structured above 1.5 with room to the upside if guidance momentum continues.",
     "reason_code": "new_entry",
     "reasoning": {
-      "headline": "Bought $WMT",
-      "narrative": "WMT shows a clean ranked catalyst setup with institutional accumulation headlines and neutral RSI near 50, supporting a tactical long. Liquidity and rank_score above 80 favor adding within the $200 notional cap while book has room for a fifth name. Risk defined below recent support with 1.5 R:R to the upside target.",
+      "headline": "Bought $UNH",
+      "narrative": "UNH posts a clean earnings beat with raised guidance and an 8% jump, giving the strongest fundamental catalyst on the board versus mere fund-flow headlines. Liquid mega-cap setup fits the residual cash sleeve without forcing a rotation while open names sit at 4. Reward-to-risk is structured above 1.5 with room to the upside if guidance momentum continues.",
       "bullets": [
-        "Institutional buy headline catalyst",
-        "Rank 81+ liquid large-cap",
-        "R:R 1.5 with stop under 100",
-        "Fits cash and max-names limits"
+        "Q1 beat + guidance raise is highest-quality catalyst",
+        "Notional capped near $200; adds 5th name cleanly",
+        "R:R ~1.55 with stop under post-gap support",
+        "Social corroboration on UNH without overriding rank"
       ],
       "risk_map": {
-        "stop": 100.0,
-        "target": 111.0,
+        "stop": 374.0,
+        "target": 418.0,
         "horizon_days": 5,
-        "rr": 1.5,
-        "confidence_10": 8,
-        "confidence": 78
+        "rr": 1.62,
+        "confidence_10": 7,
+        "confidence": 73
       },
-      "thesis": "WMT shows a clean ranked catalyst setup with institutional accumulation headlines and neutral RSI near 50, supporting a tactical long. Liquidity and rank_score above 80 favor adding within the $200 notional cap while book has room for a fifth name. Risk defined below recent support with 1.5 R:R to the upside target."
+      "thesis": "UNH posts a clean earnings beat with raised guidance and an 8% jump, giving the strongest fundamental catalyst on the board versus mere fund-flow headlines. Liquid mega-cap setup fits the residual cash sleeve without forcing a rotation while open names sit at 4. Reward-to-risk is structured above 1.5 with room to the upside if guidance momentum continues."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Institutional buy headline catalyst",
-      "Rank 81+ liquid large-cap",
-      "R:R 1.5 with stop under 100",
-      "Fits cash and max-names limits"
+      "Q1 beat + guidance raise is highest-quality catalyst",
+      "Notional capped near $200; adds 5th name cleanly",
+      "R:R ~1.55 with stop under post-gap support",
+      "Social corroboration on UNH without overriding rank"
     ],
-    "timestamp": "2026-08-31T17:33:01.773562+00:00"
+    "timestamp": "2026-08-31T17:51:18.320981+00:00"
   },
-  "stance": "Buying pressure on WMT. WMT shows a clean ranked catalyst setup with institutional accumulation headlines and neutral RSI near 50, supporting a tactical long. Liquidity and rank_score above 80 favor adding within the $200 notional cap while book has room for a fifth name. Risk defined below recent support with 1.5 R:R to the upside target.",
+  "stance": "Buying pressure on UNH. UNH posts a clean earnings beat with raised guidance and an 8% jump, giving the strongest fundamental catalyst on the board versus mere fund-flow headlines. Liquid mega-cap setup fits the residual cash sleeve without forcing a rotation while open names sit at 4. Reward-to-risk is structured above 1.5 with room to the upside if guidance momentum continues.",
   "thinking": {
-    "badge": "Looking to buy WMT",
-    "headline": "Buying pressure on WMT.",
-    "plain_english": "Right now Hermes wants exposure to WMT. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
+    "badge": "Looking to buy UNH",
+    "headline": "Buying pressure on UNH.",
+    "plain_english": "Right now Hermes wants exposure to UNH. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
     "triggers": [
       "It owns BAC, bought near $62.20. Simple plan: sell if it falls to about $60.00, or take profit near $65.50.",
       "It owns AMD, bought near $473.82. Simple plan: sell if it falls to about $458.00, or take profit near $498.00.",
@@ -204,8 +204,8 @@
         "avg_cost": 473.82,
         "stop": 458.0,
         "target": 498.0,
-        "last": 469.14990234375,
-        "open_pnl": -1.96,
+        "last": 469.139892578125,
+        "open_pnl": -1.97,
         "open_pnl_pct": -0.99,
         "line": "Bought near $473.82 \u00b7 Sell safety line $458.00 \u00b7 Profit target $498.00",
         "plan": "stop 458.0 or target 498.0"
@@ -216,7 +216,7 @@
         "avg_cost": 368.61,
         "stop": 352.0,
         "target": 405.0,
-        "last": 378.3900146484375,
+        "last": 378.3800048828125,
         "open_pnl": 5.28,
         "open_pnl_pct": 2.65,
         "line": "Bought near $368.61 \u00b7 Sell safety line $352.00 \u00b7 Profit target $405.00",
@@ -228,14 +228,14 @@
         "avg_cost": 265.39,
         "stop": 255.0,
         "target": 282.0,
-        "last": 261.29998779296875,
-        "open_pnl": -3.07,
+        "last": 261.30999755859375,
+        "open_pnl": -3.06,
         "open_pnl_pct": -1.54,
         "line": "Bought near $265.39 \u00b7 Sell safety line $255.00 \u00b7 Profit target $282.00",
         "plan": "stop 255.0 or target 282.0"
       }
     ],
-    "last_checked": "2026-08-31T17:50:50.909026+00:00",
+    "last_checked": "2026-08-31T17:51:27.500646+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -251,14 +251,14 @@
         "model": "grok-4.3",
         "action": "BUY",
         "symbol": "WMT",
-        "confidence": 78,
+        "confidence": 75,
         "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "claude-haiku-4-5",
         "action": "BUY",
-        "symbol": "WMT",
+        "symbol": "UNH",
         "confidence": 72,
         "tone": "buy"
       },
@@ -266,8 +266,8 @@
         "prefix": "J",
         "model": "deepseek-v4-flash",
         "action": "BUY",
-        "symbol": "WMT",
-        "confidence": 72,
+        "symbol": "UNH",
+        "confidence": 76,
         "tone": "buy"
       },
       {
@@ -275,24 +275,24 @@
         "model": "grok-build-0.1",
         "action": "BUY",
         "symbol": "WMT",
-        "confidence": 75,
+        "confidence": 72,
         "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
         "action": "BUY",
-        "symbol": "WMT",
-        "confidence": 78,
+        "symbol": "UNH",
+        "confidence": 73,
         "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "claude-sonnet-5",
-        "action": "BUY",
-        "symbol": "WMT",
+        "action": "SELL",
+        "symbol": "AMZN",
         "confidence": 72,
-        "tone": "buy"
+        "tone": "sell"
       },
       {
         "prefix": "S",
@@ -305,6 +305,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "UNH",
+      "status": "no_consensus",
+      "headline": "BUY UNH \u2014 no consensus",
+      "detail": "Desks: BUY UNH (73%) vs SELL AMZN (72%) vs HOLD BAC (80%). No 2-of-3 senior agreement",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "WMT",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "UNH",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "UNH",
+          "confidence": 76,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "WMT",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "UNH",
+          "confidence": 73,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "SELL",
+          "symbol": "AMZN",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "BAC",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-08-31T17:51:18.320981+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "WMT",
@@ -843,83 +920,6 @@
       "stage": "entry",
       "junior_nomination": "WMT",
       "timestamp": "2026-08-31T16:02:36.293231+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "WMT",
-      "status": "blocked",
-      "headline": "BUY WMT \u2014 blocked",
-      "detail": "Insufficient buying power: $24.94 < $198.49",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "WMT",
-          "confidence": 75,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "WMT",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "WMT",
-          "confidence": 75,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "WMT",
-          "confidence": 78,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "WMT",
-          "confidence": 78,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "WMT",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "BAC",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "entry",
-      "junior_nomination": "WMT",
-      "timestamp": "2026-08-31T15:47:40.108131+00:00"
     },
     {
       "type": "fill",
@@ -12252,22 +12252,22 @@
     "decision_mode": "live_dual_llm",
     "last_tier": "senior_escalated",
     "last_stage": "entry",
-    "last_junior_nomination": "WMT",
-    "last_escalate_reason": "junior_nomination",
+    "last_junior_nomination": null,
+    "last_escalate_reason": "junior_trade_or_split",
     "live_share_recent": 85.7
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 324,
     "closed_outcomes": 147,
-    "consensus_events": 397,
+    "consensus_events": 398,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1014.08,
-    "change": 14.08,
+    "latest_equity": 1014.09,
+    "change": 14.09,
     "change_pct": 1.41,
     "points": [
       {
@@ -15553,8 +15553,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-31T17:50:54.046432+00:00",
-        "equity": 1014.08,
+        "t": "2026-08-31T17:51:30.267919+00:00",
+        "equity": 1014.09,
         "cash": 217.13,
         "event": "mark"
       }
