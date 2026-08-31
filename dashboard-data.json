@@ -1,34 +1,34 @@
 {
-  "generated_at": "2026-08-31T14:10:42.552470+00:00",
+  "generated_at": "2026-08-31T14:18:08.480276+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1012.08,
+    "portfolio_value": 1011.42,
     "starting_cash": 1000.0,
-    "total_return_pct": 1.21,
-    "total_pnl": 12.08,
+    "total_return_pct": 1.14,
+    "total_pnl": 11.42,
     "realized_pnl": 13.86,
-    "open_pnl": -1.8,
-    "capital_deployed": 794.95,
+    "open_pnl": -2.46,
+    "capital_deployed": 794.29,
     "cash": 217.13,
     "closed_trades": 25,
     "win_rate_pct": 32.0,
-    "vs_spy_pct": 1.73,
-    "spy_return_pct": -0.52,
+    "vs_spy_pct": 1.6,
+    "spy_return_pct": -0.46,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-08-31T14:10:45.234003+00:00"
+    "updated_at": "2026-08-31T14:18:11.100148+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.52,
-    "price": 765.3900146484375,
+    "return_pct": -0.46,
+    "price": 765.8790283203125,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 1,
+    "consensus_count_today": 2,
     "validated_count_today": 1,
-    "blocked_count_today": 0,
+    "blocked_count_today": 1,
     "fills_today": 1,
     "simulated_orders_today": 1,
     "top_symbol_today": "LRCX"
@@ -38,10 +38,10 @@
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 62.32500076293945,
-      "market_value": 200.06,
-      "open_pnl": 0.4,
-      "open_pnl_pct": 0.2,
+      "last": 62.23500061035156,
+      "market_value": 199.77,
+      "open_pnl": 0.11,
+      "open_pnl_pct": 0.06,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
@@ -50,10 +50,10 @@
       "symbol": "AMD",
       "qty": 0.42,
       "avg_cost": 473.82,
-      "last": 468.5,
-      "market_value": 196.77,
-      "open_pnl": -2.23,
-      "open_pnl_pct": -1.12,
+      "last": 470.33990478515625,
+      "market_value": 197.54,
+      "open_pnl": -1.46,
+      "open_pnl_pct": -0.73,
       "stop": 458.0,
       "target": 498.0,
       "thesis": "AMD screens as the top ranked liquid catalyst name with a fresh Seeking Alpha upgrade framing an AI tipping point and bullish sentiment. RSI near mid-range leaves room for continuation without extreme overbought risk. Book has cash and an open slot under the five-name cap, so a small sized new entry fits risk limits. Stop and target set for roughly 1.5:1 reward-to-risk on the breakout thesis."
@@ -62,10 +62,10 @@
       "symbol": "PANW",
       "qty": 0.54,
       "avg_cost": 368.61,
-      "last": 375.43499755859375,
-      "market_value": 202.73,
-      "open_pnl": 3.69,
-      "open_pnl_pct": 1.85,
+      "last": 373.79998779296875,
+      "market_value": 201.85,
+      "open_pnl": 2.8,
+      "open_pnl_pct": 1.41,
       "stop": 352.0,
       "target": 405.0,
       "thesis": "PANW is the strongest non-held catalyst name with a fresh Jefferies PT raise to $450 and solid rank/sentiment support. Room remains under the 5-name cap and ~$200 notional keeps size disciplined versus cash. Setup offers clear upside toward the raised target with a defined invalidation below recent support and reward:risk above 1.5. Existing BAC/AMD leads are already held; no forced rotation required."
@@ -74,10 +74,10 @@
       "symbol": "AMZN",
       "qty": 0.75,
       "avg_cost": 265.39,
-      "last": 260.5150146484375,
-      "market_value": 195.39,
-      "open_pnl": -3.66,
-      "open_pnl_pct": -1.84,
+      "last": 260.17498779296875,
+      "market_value": 195.13,
+      "open_pnl": -3.91,
+      "open_pnl_pct": -1.97,
       "stop": 255.0,
       "target": 282.0,
       "thesis": "AMZN shows a clean headline-driven catalyst around agentic AI potentially accelerating retail growth, with Evercore commentary supporting the move and rank_score at 75. Sentiment is bullish and RSI sits neutral at 50, allowing room for continuation. Portfolio has cash and slot capacity under the 5-name limit, so a sized new entry fits risk limits with R:R above 1.5."
@@ -86,25 +86,25 @@
   "latest_candidate": {
     "symbol": "WMT",
     "name": "WMT",
-    "price": 104.36509704589844,
-    "volume": 3923134.0,
-    "avg_volume": 32723963.4,
-    "percent_change": 1.236881126495055,
+    "price": 104.52999877929688,
+    "volume": 4818026.0,
+    "avg_volume": 32813452.6,
+    "percent_change": 1.396840132466838,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 14,
-    "liquidity_score": 85.15,
-    "rank_score": 77.26,
+    "liquidity_score": 85.16,
+    "rank_score": 77.39,
     "news_hits": 8,
-    "catalyst": "Headline-driven setup (beat): Old North State Trust LLC Invests $1.41 Million in Walmart Inc. $WMT - MarketBeat",
+    "catalyst": "Headline-driven setup (beat): 61,208 Shares in Walmart Inc. $WMT Bought by MASTERINVEST Kapitalanlage GmbH - MarketBeat",
     "top_headlines": [
       "WMT Stock Sinks To Near Eight-Month Low \u2014 Cleveland Research Flags Slowing Sales - Stocktwits",
       "Walmart (WMT), Why Is There Fresh Attention On The Story Now? - simplywall.st",
-      "Old North State Trust LLC Invests $1.41 Million in Walmart Inc. $WMT - MarketBeat"
+      "61,208 Shares in Walmart Inc. $WMT Bought by MASTERINVEST Kapitalanlage GmbH - MarketBeat"
     ],
     "matched_headlines": [
       {
-        "title": "Old North State Trust LLC Invests $1.41 Million in Walmart Inc. $WMT - MarketBeat",
+        "title": "61,208 Shares in Walmart Inc. $WMT Bought by MASTERINVEST Kapitalanlage GmbH - MarketBeat",
         "keywords": [
           "beat"
         ]
@@ -123,7 +123,7 @@
         ]
       },
       {
-        "title": "61,208 Shares in Walmart Inc. $WMT Bought by MASTERINVEST Kapitalanlage GmbH - MarketBeat",
+        "title": "Old North State Trust LLC Invests $1.41 Million in Walmart Inc. $WMT - MarketBeat",
         "keywords": [
           "beat"
         ]
@@ -139,51 +139,51 @@
   },
   "latest_decision": {
     "model": "grok-4.5",
-    "action": "SELL",
-    "symbol": "LRCX",
+    "action": "BUY",
+    "symbol": "WMT",
     "confidence": 78,
     "cache_stats": null,
-    "entry_price": 300.29,
-    "stop_loss": 295.0,
-    "take_profit": 285.0,
-    "qty": 0.64,
-    "thesis": "LRCX is the weakest open position with the largest unrealized loss and price sitting on the hard stop. Juniors escalated an explicit SELL; confirming exit to free risk and enforce discipline rather than hope for a bounce. Reward-to-risk on the protective plan meets desk minimum while cutting the laggard.",
-    "reason_code": "stop_loss",
+    "entry_price": 104.53,
+    "stop_loss": 100.5,
+    "take_profit": 112.5,
+    "qty": 1.91,
+    "thesis": "WMT shows a liquid headline-driven institutional buy catalyst with bullish sentiment and neutral RSI near 50, offering a clean mean-reversion/continuation setup. Rank score is solid at 77+ and fits the desk preference for catalyst names within the $200 notional limit. Risk is defined tightly below recent support while targeting a measured upside move for >=1.5 R:R. Adding as fifth name keeps book within limits without forced rotation.",
+    "reason_code": "new_entry",
     "reasoning": {
-      "headline": "Sold $LRCX",
-      "narrative": "LRCX is the weakest open position with the largest unrealized loss and price sitting on the hard stop. Juniors escalated an explicit SELL; confirming exit to free risk and enforce discipline rather than hope for a bounce. Reward-to-risk on the protective plan meets desk minimum while cutting the laggard.",
+      "headline": "Bought $WMT",
+      "narrative": "WMT shows a liquid headline-driven institutional buy catalyst with bullish sentiment and neutral RSI near 50, offering a clean mean-reversion/continuation setup. Rank score is solid at 77+ and fits the desk preference for catalyst names within the $200 notional limit. Risk is defined tightly below recent support while targeting a measured upside move for >=1.5 R:R. Adding as fifth name keeps book within limits without forced rotation.",
       "bullets": [
-        "Price at/near 300 stop with -7.82 open PnL",
-        "Worst hold among 5 open names",
-        "Directive confirms SELL LRCX exactly",
-        "Frees slot and capital under book-full policy"
+        "Institutional accumulation headline catalyst",
+        "RSI neutral, room for upside continuation",
+        "Notional sized under $200 with R:R>1.5",
+        "Book has room for one more liquid name"
       ],
       "risk_map": {
-        "stop": 295.0,
-        "target": 285.0,
+        "stop": 100.5,
+        "target": 112.5,
         "horizon_days": 5,
-        "rr": 2.89,
+        "rr": 1.98,
         "confidence_10": 8,
         "confidence": 78
       },
-      "thesis": "LRCX is the weakest open position with the largest unrealized loss and price sitting on the hard stop. Juniors escalated an explicit SELL; confirming exit to free risk and enforce discipline rather than hope for a bounce. Reward-to-risk on the protective plan meets desk minimum while cutting the laggard."
+      "thesis": "WMT shows a liquid headline-driven institutional buy catalyst with bullish sentiment and neutral RSI near 50, offering a clean mean-reversion/continuation setup. Rank score is solid at 77+ and fits the desk preference for catalyst names within the $200 notional limit. Risk is defined tightly below recent support while targeting a measured upside move for >=1.5 R:R. Adding as fifth name keeps book within limits without forced rotation."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Price at/near 300 stop with -7.82 open PnL",
-      "Worst hold among 5 open names",
-      "Directive confirms SELL LRCX exactly",
-      "Frees slot and capital under book-full policy"
+      "Institutional accumulation headline catalyst",
+      "RSI neutral, room for upside continuation",
+      "Notional sized under $200 with R:R>1.5",
+      "Book has room for one more liquid name"
     ],
-    "timestamp": "2026-08-31T14:05:51.065027+00:00"
+    "timestamp": "2026-08-31T14:17:59.627920+00:00"
   },
-  "stance": "Holding BAC, AMD, PANW, AMZN. No new trade right now. LRCX is the weakest open position with the largest unrealized loss and price sitting on the hard stop. Juniors escalated an explicit SELL; confirming exit to free risk and enforce discipline rather than hope for a bounce. Reward-to-risk on the protective plan meets desk minimum while cutting the laggard.",
+  "stance": "Buying pressure on WMT. WMT shows a liquid headline-driven institutional buy catalyst with bullish sentiment and neutral RSI near 50, offering a clean mean-reversion/continuation setup. Rank score is solid at 77+ and fits the desk preference for catalyst names within the $200 notional limit. Risk is defined tightly below recent support while targeting a measured upside move for >=1.5 R:R. Adding as fifth name keeps book within limits without forced rotation.",
   "thinking": {
-    "badge": "Holding what it owns",
-    "headline": "Holding BAC, AMD, PANW, AMZN. No new trade right now.",
-    "plain_english": "Right now Hermes is holding BAC, AMD, PANW, AMZN and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
+    "badge": "Looking to buy WMT",
+    "headline": "Buying pressure on WMT.",
+    "plain_english": "Right now Hermes wants exposure to WMT. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
     "triggers": [
       "It owns BAC, bought near $62.20. Simple plan: sell if it falls to about $60.00, or take profit near $65.50.",
       "It owns AMD, bought near $473.82. Simple plan: sell if it falls to about $458.00, or take profit near $498.00.",
@@ -200,9 +200,9 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 62.32500076293945,
-        "open_pnl": 0.4,
-        "open_pnl_pct": 0.2,
+        "last": 62.23500061035156,
+        "open_pnl": 0.11,
+        "open_pnl_pct": 0.06,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
       },
@@ -212,9 +212,9 @@
         "avg_cost": 473.82,
         "stop": 458.0,
         "target": 498.0,
-        "last": 468.5,
-        "open_pnl": -2.23,
-        "open_pnl_pct": -1.12,
+        "last": 470.33990478515625,
+        "open_pnl": -1.46,
+        "open_pnl_pct": -0.73,
         "line": "Bought near $473.82 \u00b7 Sell safety line $458.00 \u00b7 Profit target $498.00",
         "plan": "stop 458.0 or target 498.0"
       },
@@ -224,9 +224,9 @@
         "avg_cost": 368.61,
         "stop": 352.0,
         "target": 405.0,
-        "last": 375.43499755859375,
-        "open_pnl": 3.69,
-        "open_pnl_pct": 1.85,
+        "last": 373.79998779296875,
+        "open_pnl": 2.8,
+        "open_pnl_pct": 1.41,
         "line": "Bought near $368.61 \u00b7 Sell safety line $352.00 \u00b7 Profit target $405.00",
         "plan": "stop 352.0 or target 405.0"
       },
@@ -236,17 +236,17 @@
         "avg_cost": 265.39,
         "stop": 255.0,
         "target": 282.0,
-        "last": 260.5150146484375,
-        "open_pnl": -3.66,
-        "open_pnl_pct": -1.84,
+        "last": 260.17498779296875,
+        "open_pnl": -3.91,
+        "open_pnl_pct": -1.97,
         "line": "Bought near $265.39 \u00b7 Sell safety line $255.00 \u00b7 Profit target $282.00",
         "plan": "stop 255.0 or target 282.0"
       }
     ],
-    "last_checked": "2026-08-31T14:10:42.552470+00:00",
+    "last_checked": "2026-08-31T14:18:08.480276+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "SELL",
+    "action": "BUY",
     "symbols_held": [
       "BAC",
       "AMD",
@@ -257,10 +257,10 @@
       {
         "prefix": "J",
         "model": "grok-4.3",
-        "action": "SELL",
-        "symbol": "LRCX",
-        "confidence": 72,
-        "tone": "sell"
+        "action": "BUY",
+        "symbol": "WMT",
+        "confidence": 78,
+        "tone": "buy"
       },
       {
         "prefix": "J",
@@ -273,34 +273,34 @@
       {
         "prefix": "J",
         "model": "deepseek-v4-flash",
-        "action": "SELL",
-        "symbol": "LRCX",
+        "action": "BUY",
+        "symbol": "WMT",
         "confidence": 74,
-        "tone": "sell"
+        "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "SELL",
-        "symbol": "LRCX",
-        "confidence": 72,
-        "tone": "sell"
+        "action": "BUY",
+        "symbol": "WMT",
+        "confidence": 75,
+        "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
-        "action": "SELL",
-        "symbol": "LRCX",
+        "action": "BUY",
+        "symbol": "WMT",
         "confidence": 78,
-        "tone": "sell"
+        "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "claude-sonnet-5",
-        "action": "SELL",
-        "symbol": "LRCX",
-        "confidence": 78,
-        "tone": "sell"
+        "action": "BUY",
+        "symbol": "WMT",
+        "confidence": 72,
+        "tone": "buy"
       },
       {
         "prefix": "S",
@@ -313,6 +313,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "WMT",
+      "status": "blocked",
+      "headline": "BUY WMT \u2014 blocked",
+      "detail": "Insufficient buying power: $24.94 < $199.65",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "WMT",
+          "confidence": 78,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "WMT",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "WMT",
+          "confidence": 74,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "WMT",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "WMT",
+          "confidence": 78,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "WMT",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "BAC",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "WMT",
+      "timestamp": "2026-08-31T14:17:59.628941+00:00"
+    },
     {
       "type": "fill",
       "symbol": "LRCX",
@@ -11435,25 +11512,25 @@
     {
       "symbol": "WMT",
       "name": "WMT",
-      "price": 104.36509704589844,
-      "volume": 3923134.0,
-      "avg_volume": 32723963.4,
-      "percent_change": 1.236881126495055,
+      "price": 104.52999877929688,
+      "volume": 4818026.0,
+      "avg_volume": 32813452.6,
+      "percent_change": 1.396840132466838,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 14,
-      "liquidity_score": 85.15,
-      "rank_score": 77.26,
+      "liquidity_score": 85.16,
+      "rank_score": 77.39,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): Old North State Trust LLC Invests $1.41 Million in Walmart Inc. $WMT - MarketBeat",
+      "catalyst": "Headline-driven setup (beat): 61,208 Shares in Walmart Inc. $WMT Bought by MASTERINVEST Kapitalanlage GmbH - MarketBeat",
       "top_headlines": [
         "WMT Stock Sinks To Near Eight-Month Low \u2014 Cleveland Research Flags Slowing Sales - Stocktwits",
         "Walmart (WMT), Why Is There Fresh Attention On The Story Now? - simplywall.st",
-        "Old North State Trust LLC Invests $1.41 Million in Walmart Inc. $WMT - MarketBeat"
+        "61,208 Shares in Walmart Inc. $WMT Bought by MASTERINVEST Kapitalanlage GmbH - MarketBeat"
       ],
       "matched_headlines": [
         {
-          "title": "Old North State Trust LLC Invests $1.41 Million in Walmart Inc. $WMT - MarketBeat",
+          "title": "61,208 Shares in Walmart Inc. $WMT Bought by MASTERINVEST Kapitalanlage GmbH - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -11472,7 +11549,7 @@
           ]
         },
         {
-          "title": "61,208 Shares in Walmart Inc. $WMT Bought by MASTERINVEST Kapitalanlage GmbH - MarketBeat",
+          "title": "Old North State Trust LLC Invests $1.41 Million in Walmart Inc. $WMT - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -11487,72 +11564,17 @@
       ]
     },
     {
-      "symbol": "JPM",
-      "name": "JPM",
-      "price": 356.7900085449219,
-      "volume": 735096.0,
-      "avg_volume": 5148149.6,
-      "percent_change": -0.23208617627592357,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 12,
-      "liquidity_score": 77.12,
-      "rank_score": 67.25,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): JPM Stock Gains 20.6% in 3 Months: Key Factors to Watch Before Buying - Zacks Investment Research",
-      "top_headlines": [
-        "JPM Stock Gains 20.6% in 3 Months: Key Factors to Watch Before Buying - Zacks Investment Research",
-        "JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
-        "JPMorgan Chase & Co. $JPM Shares Acquired by Tokio Marine Asset Management Co. Ltd. - MarketBeat"
-      ],
-      "matched_headlines": [
-        {
-          "title": "JPM Stock Gains 20.6% in 3 Months: Key Factors to Watch Before Buying - Zacks Investment Research",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "JPMorgan Chase & Co. $JPM Shares Acquired by Tokio Marine Asset Management Co. Ltd. - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Assetmark Inc. Boosts Stock Holdings in JPMorgan Chase & Co. $JPM - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "JPM, BofA Eye Payments Deal \u2014 Why JPMorgan, Bank Of America And Other Banks Want Fiserv\u2019s Debit Network - Stocktwits",
-          "keywords": [
-            "catalyst",
-            "deal"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "UNH",
       "name": "UNH",
-      "price": 390.95001220703125,
-      "volume": 213834.0,
-      "avg_volume": 3548383.4,
-      "percent_change": -0.5089705911362262,
+      "price": 391.2799987792969,
+      "volume": 297799.0,
+      "avg_volume": 3556779.9,
+      "percent_change": -0.42499386075970014,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
-      "liquidity_score": 75.5,
-      "rank_score": 66.73,
+      "liquidity_score": 75.51,
+      "rank_score": 66.67,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, beat, beats): UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
       "top_headlines": [
@@ -11584,15 +11606,15 @@
     {
       "symbol": "TSLA",
       "name": "TSLA",
-      "price": 360.260009765625,
-      "volume": 8663368.0,
-      "avg_volume": 32401336.8,
-      "percent_change": 3.3003612231182795,
+      "price": 360.8949890136719,
+      "volume": 11577760.0,
+      "avg_volume": 32692776.0,
+      "percent_change": 3.48243412578405,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
-      "liquidity_score": 85.11,
-      "rank_score": 65.41,
+      "liquidity_score": 85.14,
+      "rank_score": 65.56,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): TSLA Stock Rises Overnight: Analyst Sees Q2 Delivery Beat, Says SPCX Merger Buzz Is Limiting Downside Risk - Stocktwits",
       "top_headlines": [
@@ -11633,15 +11655,15 @@
     {
       "symbol": "LRCX",
       "name": "LRCX",
-      "price": 301.2049865722656,
-      "volume": 755401.0,
-      "avg_volume": 6692360.1,
-      "percent_change": -0.23021110906582348,
+      "price": 299.625,
+      "volume": 992885.0,
+      "avg_volume": 6716108.5,
+      "percent_change": -0.7535587752494046,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
-      "liquidity_score": 78.26,
-      "rank_score": 63.42,
+      "liquidity_score": 78.27,
+      "rank_score": 63.84,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Two Sigma Securities LLC Grows Stock Position in Lam Research Corporation $LRCX - MarketBeat",
       "top_headlines": [
@@ -11683,6 +11705,61 @@
           ]
         }
       ]
+    },
+    {
+      "symbol": "JPM",
+      "name": "JPM",
+      "price": 357.239990234375,
+      "volume": 863276.0,
+      "avg_volume": 5160967.6,
+      "percent_change": -0.1062594060737508,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 11,
+      "liquidity_score": 77.13,
+      "rank_score": 63.15,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst): JPM Stock Gains 20.6% in 3 Months: Key Factors to Watch Before Buying - Yahoo Finance",
+      "top_headlines": [
+        "JPM Stock Gains 20.6% in 3 Months: Key Factors to Watch Before Buying - Yahoo Finance",
+        "JPM Stock Gains 20.6% in 3 Months: Key Factors to Watch Before Buying - Zacks Investment Research",
+        "JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits"
+      ],
+      "matched_headlines": [
+        {
+          "title": "JPM Stock Gains 20.6% in 3 Months: Key Factors to Watch Before Buying - Yahoo Finance",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "JPM Stock Gains 20.6% in 3 Months: Key Factors to Watch Before Buying - Zacks Investment Research",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "JPMorgan Chase & Co. $JPM Shares Acquired by Tokio Marine Asset Management Co. Ltd. - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Assetmark Inc. Boosts Stock Holdings in JPMorgan Chase & Co. $JPM - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        }
+      ]
     }
   ],
   "limits": {
@@ -11712,8 +11789,8 @@
     "junior_min_agree": 3,
     "junior_votes": {
       "HOLD": 0,
-      "BUY": 1,
-      "SELL": 3,
+      "BUY": 4,
+      "SELL": 0,
       "live": 4,
       "fallback": 0
     },
@@ -11730,8 +11807,8 @@
     "log_all_disagreements": true,
     "decision_mode": "live_dual_llm",
     "last_tier": "senior_escalated",
-    "last_stage": "exit",
-    "last_junior_nomination": "LRCX",
+    "last_stage": "entry",
+    "last_junior_nomination": "WMT",
     "last_escalate_reason": "junior_nomination",
     "live_share_recent": 85.7
   },
@@ -11739,15 +11816,15 @@
     "candidate_signals_logged": 8,
     "fills_logged": 324,
     "closed_outcomes": 147,
-    "consensus_events": 383,
+    "consensus_events": 384,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1012.08,
-    "change": 12.08,
-    "change_pct": 1.21,
+    "latest_equity": 1011.42,
+    "change": 11.42,
+    "change_pct": 1.14,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -14926,6 +15003,12 @@
       {
         "t": "2026-08-31T14:10:45.234003+00:00",
         "equity": 1012.08,
+        "cash": 217.13,
+        "event": "mark"
+      },
+      {
+        "t": "2026-08-31T14:18:11.100148+00:00",
+        "equity": 1011.42,
         "cash": 217.13,
         "event": "mark"
       }
