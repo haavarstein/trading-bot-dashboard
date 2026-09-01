@@ -1,37 +1,37 @@
 {
-  "generated_at": "2026-09-01T18:20:25.354090+00:00",
+  "generated_at": "2026-09-01T18:20:51.574582+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 993.36,
+    "portfolio_value": 993.34,
     "starting_cash": 1000.0,
-    "total_return_pct": -0.66,
-    "total_pnl": -6.64,
-    "realized_pnl": 13.86,
-    "open_pnl": -20.52,
-    "capital_deployed": 776.23,
-    "cash": 217.13,
-    "closed_trades": 25,
-    "win_rate_pct": 32.0,
-    "vs_spy_pct": 0.34,
-    "spy_return_pct": -1.0,
+    "total_return_pct": -0.67,
+    "total_pnl": -6.66,
+    "realized_pnl": 5.87,
+    "open_pnl": -12.56,
+    "capital_deployed": 585.19,
+    "cash": 408.15,
+    "closed_trades": 26,
+    "win_rate_pct": 30.77,
+    "vs_spy_pct": 0.32,
+    "spy_return_pct": -0.99,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-01T18:20:28.745776+00:00"
+    "updated_at": "2026-09-01T18:20:55.212846+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -1.0,
-    "price": 761.72998046875,
+    "return_pct": -0.99,
+    "price": 761.780029296875,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 0,
-    "validated_count_today": 0,
+    "consensus_count_today": 1,
+    "validated_count_today": 1,
     "blocked_count_today": 0,
-    "fills_today": 0,
-    "simulated_orders_today": 0,
-    "top_symbol_today": "HOOD"
+    "fills_today": 1,
+    "simulated_orders_today": 1,
+    "top_symbol_today": "AMD"
   },
   "holdings": [
     {
@@ -47,24 +47,12 @@
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
     },
     {
-      "symbol": "AMD",
-      "qty": 0.42,
-      "avg_cost": 473.82,
-      "last": 454.8349914550781,
-      "market_value": 191.03,
-      "open_pnl": -7.97,
-      "open_pnl_pct": -4.01,
-      "stop": 458.0,
-      "target": 498.0,
-      "thesis": "AMD screens as the top ranked liquid catalyst name with a fresh Seeking Alpha upgrade framing an AI tipping point and bullish sentiment. RSI near mid-range leaves room for continuation without extreme overbought risk. Book has cash and an open slot under the five-name cap, so a small sized new entry fits risk limits. Stop and target set for roughly 1.5:1 reward-to-risk on the breakout thesis."
-    },
-    {
       "symbol": "PANW",
       "qty": 0.54,
       "avg_cost": 368.61,
-      "last": 361.0799865722656,
-      "market_value": 194.98,
-      "open_pnl": -4.07,
+      "last": 361.0849914550781,
+      "market_value": 194.99,
+      "open_pnl": -4.06,
       "open_pnl_pct": -2.04,
       "stop": 352.0,
       "target": 405.0,
@@ -74,10 +62,10 @@
       "symbol": "AMZN",
       "qty": 0.75,
       "avg_cost": 265.39,
-      "last": 255.0800018310547,
-      "market_value": 191.31,
-      "open_pnl": -7.73,
-      "open_pnl_pct": -3.88,
+      "last": 255.05999755859375,
+      "market_value": 191.29,
+      "open_pnl": -7.75,
+      "open_pnl_pct": -3.89,
       "stop": 255.0,
       "target": 282.0,
       "thesis": "AMZN shows a clean headline-driven catalyst around agentic AI potentially accelerating retail growth, with Evercore commentary supporting the move and rank_score at 75. Sentiment is bullish and RSI sits neutral at 50, allowing room for continuation. Portfolio has cash and slot capacity under the 5-name limit, so a sized new entry fits risk limits with R:R above 1.5."
@@ -143,55 +131,43 @@
     ]
   },
   "latest_decision": {
-    "model": "grok-4.5",
-    "action": "BUY",
-    "symbol": "WMT",
-    "confidence": 78,
-    "cache_stats": null,
-    "entry_price": 104.78,
-    "stop_loss": 100.5,
-    "take_profit": 111.5,
-    "qty": 1.9,
-    "thesis": "WMT shows a clean ranked catalyst setup with analyst PT raise and bullish sentiment at neutral RSI. Liquid name fits residual cash under the $200 notional cap while book has room for one more name. Reward-to-risk clears 1.5 with defined levels below recent support and above the raised target zone.",
-    "reason_code": "new_entry",
+    "model": "risk-gate",
+    "action": "SELL",
+    "symbol": "AMD",
+    "confidence": 95,
+    "entry_price": 454.79998779296875,
+    "stop_loss": 458.0,
+    "take_profit": 498.0,
+    "qty": 0.42,
+    "thesis": "HERMES AUTO-TRADE: Exiting full AMD position on stop-loss. Price $454.80 tagged invalidation at $458.00. Realized path $-7.99.",
+    "reason_code": "stop_loss",
     "reasoning": {
-      "headline": "Bought $WMT",
-      "narrative": "WMT shows a clean ranked catalyst setup with analyst PT raise and bullish sentiment at neutral RSI. Liquid name fits residual cash under the $200 notional cap while book has room for one more name. Reward-to-risk clears 1.5 with defined levels below recent support and above the raised target zone.",
+      "headline": "Sold $AMD",
+      "narrative": "HERMES AUTO-TRADE: Exiting full AMD position on stop-loss. Price $454.80 tagged invalidation at $458.00. Realized path $-7.99.",
       "bullets": [
-        "Rank 86 + PT-raise catalyst",
-        "Neutral RSI 50 leaves room",
-        "Notional ~$199 inside cash/limits",
-        "R:R >1.5 to 111.50 vs 100.50 stop"
+        "Hard stop hit; capital preservation over thesis hope.",
+        "Position closed in full; no scale-out remaining."
       ],
       "risk_map": {
-        "stop": 100.5,
-        "target": 111.5,
+        "stop": 458.0,
+        "target": 498.0,
         "horizon_days": 5,
-        "rr": 1.57,
-        "confidence_10": 8,
-        "confidence": 78
+        "rr": 1.53,
+        "confidence_10": 10,
+        "confidence": 95
       },
-      "thesis": "WMT shows a clean ranked catalyst setup with analyst PT raise and bullish sentiment at neutral RSI. Liquid name fits residual cash under the $200 notional cap while book has room for one more name. Reward-to-risk clears 1.5 with defined levels below recent support and above the raised target zone."
+      "thesis": "HERMES AUTO-TRADE: Exiting full AMD position on stop-loss. Price $454.80 tagged invalidation at $458.00. Realized path $-7.99."
     },
-    "source": "live",
-    "provider": "xai",
-    "provider_model_id": "grok-4.5",
-    "bullets": [
-      "Rank 86 + PT-raise catalyst",
-      "Neutral RSI 50 leaves room",
-      "Notional ~$199 inside cash/limits",
-      "R:R >1.5 to 111.50 vs 100.50 stop"
-    ],
-    "timestamp": "2026-08-31T19:47:38.460883+00:00"
+    "stage": "exit",
+    "timestamp": "2026-09-01T18:20:37.714160+00:00"
   },
-  "stance": "Buying pressure on WMT. WMT shows a clean ranked catalyst setup with analyst PT raise and bullish sentiment at neutral RSI. Liquid name fits residual cash under the $200 notional cap while book has room for one more name. Reward-to-risk clears 1.5 with defined levels below recent support and above the raised target zone.",
+  "stance": "Holding BAC, PANW, AMZN. No new trade right now. HERMES AUTO-TRADE: Exiting full AMD position on stop-loss. Price $454.80 tagged invalidation at $458.00. Realized path $-7.99.",
   "thinking": {
-    "badge": "Looking to buy WMT",
-    "headline": "Buying pressure on WMT.",
-    "plain_english": "Right now Hermes wants exposure to WMT. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
+    "badge": "Holding what it owns",
+    "headline": "Holding BAC, PANW, AMZN. No new trade right now.",
+    "plain_english": "Right now Hermes is holding BAC, PANW, AMZN and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
     "triggers": [
       "It owns BAC, bought near $62.20. Simple plan: sell if it falls to about $60.00, or take profit near $65.50.",
-      "It owns AMD, bought near $473.82. Simple plan: sell if it falls to about $458.00, or take profit near $498.00.",
       "It owns PANW, bought near $368.61. Simple plan: sell if it falls to about $352.00, or take profit near $405.00.",
       "It owns AMZN, bought near $265.39. Simple plan: sell if it falls to about $255.00, or take profit near $282.00.",
       "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
@@ -212,25 +188,13 @@
         "plan": "stop 60.0 or target 65.5"
       },
       {
-        "symbol": "AMD",
-        "qty": 0.42,
-        "avg_cost": 473.82,
-        "stop": 458.0,
-        "target": 498.0,
-        "last": 454.8349914550781,
-        "open_pnl": -7.97,
-        "open_pnl_pct": -4.01,
-        "line": "Bought near $473.82 \u00b7 Sell safety line $458.00 \u00b7 Profit target $498.00",
-        "plan": "stop 458.0 or target 498.0"
-      },
-      {
         "symbol": "PANW",
         "qty": 0.54,
         "avg_cost": 368.61,
         "stop": 352.0,
         "target": 405.0,
-        "last": 361.0799865722656,
-        "open_pnl": -4.07,
+        "last": 361.0849914550781,
+        "open_pnl": -4.06,
         "open_pnl_pct": -2.04,
         "line": "Bought near $368.61 \u00b7 Sell safety line $352.00 \u00b7 Profit target $405.00",
         "plan": "stop 352.0 or target 405.0"
@@ -241,84 +205,79 @@
         "avg_cost": 265.39,
         "stop": 255.0,
         "target": 282.0,
-        "last": 255.0800018310547,
-        "open_pnl": -7.73,
-        "open_pnl_pct": -3.88,
+        "last": 255.05999755859375,
+        "open_pnl": -7.75,
+        "open_pnl_pct": -3.89,
         "line": "Bought near $265.39 \u00b7 Sell safety line $255.00 \u00b7 Profit target $282.00",
         "plan": "stop 255.0 or target 282.0"
       }
     ],
-    "last_checked": "2026-09-01T18:20:25.354090+00:00",
+    "last_checked": "2026-09-01T18:20:51.574582+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "BUY",
+    "action": "SELL",
     "symbols_held": [
       "BAC",
-      "AMD",
       "PANW",
       "AMZN"
     ],
-    "model_chips": [
-      {
-        "prefix": "J",
-        "model": "grok-4.3",
-        "action": "BUY",
-        "symbol": "WMT",
-        "confidence": 82,
-        "tone": "buy"
-      },
-      {
-        "prefix": "J",
-        "model": "claude-haiku-4-5",
-        "action": "BUY",
-        "symbol": "WMT",
-        "confidence": 72,
-        "tone": "buy"
-      },
-      {
-        "prefix": "J",
-        "model": "deepseek-v4-flash",
-        "action": "BUY",
-        "symbol": "WMT",
-        "confidence": 74,
-        "tone": "buy"
-      },
-      {
-        "prefix": "J",
-        "model": "grok-build-0.1",
-        "action": "BUY",
-        "symbol": "WMT",
-        "confidence": 80,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "grok-4.5",
-        "action": "BUY",
-        "symbol": "WMT",
-        "confidence": 78,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "claude-sonnet-5",
-        "action": "BUY",
-        "symbol": "WMT",
-        "confidence": 72,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "claude-opus-5",
-        "action": "HOLD",
-        "symbol": "BAC",
-        "confidence": 80,
-        "tone": "hold"
-      }
-    ]
+    "model_chips": []
   },
-  "activity": [],
+  "activity": [
+    {
+      "type": "fill",
+      "symbol": "AMD",
+      "status": "filled_paper",
+      "headline": "SELL AMD @ $454.80",
+      "detail": "HERMES AUTO-TRADE: Exiting full AMD position on stop-loss. Price $454.80 tagged invalidation at $458.00. Realized path $-7.99.",
+      "timestamp": "2026-09-01T18:20:37.716639+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "AMD",
+      "status": "validated",
+      "headline": "SELL AMD \u2014 validated",
+      "detail": "deterministic stop_loss exit",
+      "agents": [
+        {
+          "model": "risk-gate",
+          "action": "SELL",
+          "symbol": "AMD",
+          "confidence": 95,
+          "source": null,
+          "provider": null,
+          "tier": "senior"
+        },
+        {
+          "model": "risk-gate",
+          "action": "SELL",
+          "symbol": "AMD",
+          "confidence": 95,
+          "source": null,
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "risk_exit",
+      "escalate_reason": "stop_loss",
+      "stage": "exit",
+      "junior_nomination": null,
+      "timestamp": "2026-09-01T18:20:37.714160+00:00"
+    }
+  ],
   "recent_trades": [
+    {
+      "timestamp": "2026-09-01T18:20:37.716639+00:00",
+      "action": "SELL",
+      "symbol": "AMD",
+      "qty": 0.42,
+      "price": 454.79998779296875,
+      "notional": 191.02,
+      "realized_pnl": -7.99,
+      "reason": "stop_loss",
+      "thesis": "HERMES AUTO-TRADE: Exiting full AMD position on stop-loss. Price $454.80 tagged invalidation at $458.00. Realized path $-7.99.",
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-08-31T14:05:51.067032+00:00",
       "action": "SELL",
@@ -426,21 +385,35 @@
       "reason": null,
       "thesis": "UNH is the strongest fresh catalyst name not already in the book after beating and raising guidance, with bullish follow-through after an 8% jump. Liquidity and rank support a small starter versus weaker held names. Risk is defined under the post-gap zone with asymmetric upside if guidance momentum continues. Position sized within the ~$200 new-buy notional cap while leaving room under the 5-name limit.",
       "status": "FILLED_PAPER"
-    },
-    {
-      "timestamp": "2026-08-25T17:48:11.728958+00:00",
-      "action": "SELL",
-      "symbol": "PANW",
-      "qty": 0.57,
-      "price": 338.56500244140625,
-      "notional": 192.98,
-      "realized_pnl": -6.83,
-      "reason": "stop_loss",
-      "thesis": "HERMES AUTO-TRADE: Exiting full PANW position on stop-loss. Price $338.57 tagged invalidation at $340.00. Realized path $-6.83.",
-      "status": "FILLED_PAPER"
     }
   ],
   "trade_reasoning": [
+    {
+      "timestamp": "2026-09-01T18:20:37.716639+00:00",
+      "action": "SELL",
+      "symbol": "AMD",
+      "qty": 0.42,
+      "price": 454.79998779296875,
+      "notional": 191.02,
+      "headline": "Sold $AMD",
+      "side_label": "sell",
+      "narrative": "HERMES AUTO-TRADE: Exiting full AMD position on stop-loss. Price $454.80 tagged invalidation at $458.00. Realized path $-7.99.",
+      "bullets": [
+        "Hard stop hit; capital preservation over thesis hope.",
+        "Position closed in full; no scale-out remaining."
+      ],
+      "risk_map": {
+        "stop": 458.0,
+        "target": 498.0,
+        "horizon_days": 5,
+        "rr": 1.53,
+        "confidence_10": 10,
+        "confidence": 95
+      },
+      "reason_code": "stop_loss",
+      "realized_pnl": -7.99,
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-08-31T14:05:51.067032+00:00",
       "action": "SELL",
@@ -9010,6 +8983,20 @@
   ],
   "closed_trades": [
     {
+      "timestamp": "2026-09-01T18:20:37.715630+00:00",
+      "symbol": "AMD",
+      "qty": 0.42,
+      "avg_cost": 473.82,
+      "exit_price": 454.79998779296875,
+      "proceeds": 191.02,
+      "realized_pnl": -7.99,
+      "realized_pnl_pct": -4.01,
+      "reason": "stop_loss",
+      "thesis": "HERMES AUTO-TRADE: Exiting full AMD position on stop-loss. Price $454.80 tagged invalidation at $458.00. Realized path $-7.99.",
+      "opened_at": "2026-08-25T14:05:14.583956+00:00",
+      "hold_seconds": 620123
+    },
+    {
       "timestamp": "2026-08-31T14:05:51.066027+00:00",
       "symbol": "LRCX",
       "qty": 0.64,
@@ -9274,23 +9261,23 @@
       "thesis": "HERMES AUTO-TRADE: Exiting full ANET position on stop-loss. Price $185.68 tagged invalidation at $187.50. Realized path $-8.66.",
       "opened_at": "2026-08-18T14:32:38.562652+00:00",
       "hold_seconds": 86309
-    },
-    {
-      "timestamp": "2026-08-19T14:16:06.080010+00:00",
-      "symbol": "PANW",
-      "qty": 0.53,
-      "avg_cost": 375.76,
-      "exit_price": 353.3500061035156,
-      "proceeds": 187.28,
-      "realized_pnl": -11.88,
-      "realized_pnl_pct": -5.97,
-      "reason": "stop_loss",
-      "thesis": "HERMES AUTO-TRADE: Exiting full PANW position on stop-loss. Price $353.35 tagged invalidation at $365.00. Realized path $-11.88.",
-      "opened_at": "2026-08-17T14:18:11.775126+00:00",
-      "hold_seconds": 172674
     }
   ],
   "closed_results": [
+    {
+      "timestamp": "2026-09-01T18:20:37.715630+00:00",
+      "symbol": "AMD",
+      "qty": 0.42,
+      "avg_cost": 473.82,
+      "exit_price": 454.79998779296875,
+      "proceeds": 191.02,
+      "realized_pnl": -7.99,
+      "realized_pnl_pct": -4.01,
+      "reason": "stop_loss",
+      "thesis": "HERMES AUTO-TRADE: Exiting full AMD position on stop-loss. Price $454.80 tagged invalidation at $458.00. Realized path $-7.99.",
+      "opened_at": "2026-08-25T14:05:14.583956+00:00",
+      "hold_seconds": 620123
+    },
     {
       "timestamp": "2026-08-31T14:05:51.066027+00:00",
       "symbol": "LRCX",
@@ -11305,6 +11292,21 @@
       "hold_seconds": 86309
     },
     {
+      "symbol": "AMD",
+      "timestamp": "2026-09-01T18:20:37.715630+00:00",
+      "opened_at": "2026-08-25T14:05:14.583956+00:00",
+      "qty": 0.42,
+      "entry_price": 473.82,
+      "exit_price": 454.79998779296875,
+      "entry_value": 199.0,
+      "exit_value": 191.02,
+      "realized_pnl": -7.99,
+      "realized_pnl_pct": -4.01,
+      "reason": "stop_loss",
+      "stop_loss_hit": true,
+      "hold_seconds": 620123
+    },
+    {
       "symbol": "JPM",
       "timestamp": "2026-08-26T17:03:55.600822+00:00",
       "opened_at": "2026-08-18T13:35:00.113558+00:00",
@@ -11333,21 +11335,6 @@
       "reason": "rotation",
       "stop_loss_hit": false,
       "hold_seconds": 345673
-    },
-    {
-      "symbol": "MSFT",
-      "timestamp": "2026-08-17T14:33:33.547779+00:00",
-      "opened_at": "2026-08-13T17:03:31.378733+00:00",
-      "qty": 0.404,
-      "entry_price": 494.46,
-      "exit_price": 482.44,
-      "entry_value": 199.76,
-      "exit_value": 194.91,
-      "realized_pnl": -4.86,
-      "realized_pnl_pct": -2.43,
-      "reason": "rotation",
-      "stop_loss_hit": false,
-      "hold_seconds": 336602
     }
   ],
   "top_candidates": [
@@ -11653,13 +11640,7 @@
       "grok-build-0.1"
     ],
     "junior_min_agree": 3,
-    "junior_votes": {
-      "HOLD": 0,
-      "BUY": 4,
-      "SELL": 0,
-      "live": 4,
-      "fallback": 0
-    },
+    "junior_votes": null,
     "junior_model_3_enabled": true,
     "model_1": "grok-4.5",
     "model_1_effort": "medium",
@@ -11671,26 +11652,26 @@
     "min_confidence": 70,
     "max_candidates_to_llm": 8,
     "log_all_disagreements": true,
-    "decision_mode": "live_dual_llm",
-    "last_tier": "senior_escalated",
-    "last_stage": "entry",
-    "last_junior_nomination": "WMT",
-    "last_escalate_reason": "junior_nomination",
-    "live_share_recent": 85.7
+    "decision_mode": "fallback_deterministic",
+    "last_tier": "risk_exit",
+    "last_stage": "exit",
+    "last_junior_nomination": null,
+    "last_escalate_reason": "stop_loss",
+    "live_share_recent": 0.0
   },
   "learning": {
     "candidate_signals_logged": 8,
-    "fills_logged": 324,
-    "closed_outcomes": 147,
-    "consensus_events": 406,
+    "fills_logged": 325,
+    "closed_outcomes": 148,
+    "consensus_events": 407,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 993.36,
-    "change": -6.64,
-    "change_pct": -0.66,
+    "latest_equity": 993.34,
+    "change": -6.66,
+    "change_pct": -0.67,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15044,6 +15025,12 @@
         "t": "2026-09-01T18:20:28.745776+00:00",
         "equity": 993.36,
         "cash": 217.13,
+        "event": "mark"
+      },
+      {
+        "t": "2026-09-01T18:20:55.212846+00:00",
+        "equity": 993.34,
+        "cash": 408.15,
         "event": "mark"
       }
     ],
