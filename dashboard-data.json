@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-09-01T19:01:03.603668+00:00",
+  "generated_at": "2026-09-01T19:03:21.591172+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 992.04,
+    "portfolio_value": 992.15,
     "starting_cash": 1000.0,
-    "total_return_pct": -0.8,
-    "total_pnl": -7.96,
+    "total_return_pct": -0.79,
+    "total_pnl": -7.85,
     "realized_pnl": -1.97,
-    "open_pnl": -6.03,
-    "capital_deployed": 392.69,
+    "open_pnl": -5.91,
+    "capital_deployed": 392.8,
     "cash": 599.35,
     "closed_trades": 27,
     "win_rate_pct": 29.63,
-    "vs_spy_pct": 0.31,
+    "vs_spy_pct": 0.32,
     "spy_return_pct": -1.11,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-01T19:01:06.193663+00:00"
+    "updated_at": "2026-09-01T19:03:24.241531+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
@@ -26,9 +26,9 @@
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 2,
+    "consensus_count_today": 3,
     "validated_count_today": 2,
-    "blocked_count_today": 0,
+    "blocked_count_today": 1,
     "fills_today": 2,
     "simulated_orders_today": 2,
     "top_symbol_today": "AMD"
@@ -38,10 +38,10 @@
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 61.904998779296875,
-      "market_value": 198.72,
-      "open_pnl": -0.95,
-      "open_pnl_pct": -0.47,
+      "last": 61.91999816894531,
+      "market_value": 198.76,
+      "open_pnl": -0.9,
+      "open_pnl_pct": -0.45,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
@@ -50,10 +50,10 @@
       "symbol": "PANW",
       "qty": 0.54,
       "avg_cost": 368.61,
-      "last": 359.2099914550781,
-      "market_value": 193.97,
-      "open_pnl": -5.08,
-      "open_pnl_pct": -2.55,
+      "last": 359.3399963378906,
+      "market_value": 194.04,
+      "open_pnl": -5.01,
+      "open_pnl_pct": -2.51,
       "stop": 352.0,
       "target": 405.0,
       "thesis": "PANW is the strongest non-held catalyst name with a fresh Jefferies PT raise to $450 and solid rank/sentiment support. Room remains under the 5-name cap and ~$200 notional keeps size disciplined versus cash. Setup offers clear upside toward the raised target with a defined invalidation below recent support and reward:risk above 1.5. Existing BAC/AMD leads are already held; no forced rotation required."
@@ -62,15 +62,15 @@
   "latest_candidate": {
     "symbol": "HOOD",
     "name": "HOOD",
-    "price": 102.44999694824219,
-    "volume": 18343690.0,
-    "avg_volume": 22587789.0,
-    "percent_change": -2.2516941754837942,
+    "price": 103.4000015258789,
+    "volume": 18738369.0,
+    "avg_volume": 22627256.9,
+    "percent_change": -1.3452877259410194,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 26,
-    "liquidity_score": 83.54,
-    "rank_score": 125.83,
+    "catalyst_score": 20,
+    "liquidity_score": 83.55,
+    "rank_score": 101.11,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (growth): HOOD Stock Clocks Best Rally In Six Months: Morgan Stanley Turns Bullish On \u2018Evidence\u2019 Of Growth Beyond Crypto - Stocktwits",
     "top_headlines": [
@@ -103,12 +103,11 @@
         ]
       },
       {
-        "title": "Robinhood raised to Overweight at Morgan Stanley on long growth runway (HOOD:NASDAQ) - Seeking Alpha",
+        "title": "Robinhood Stock Rises as Morgan Stanley Upgrades Target to $150 - Benzinga",
         "keywords": [
-          "ai",
           "catalyst",
-          "growth",
-          "raised"
+          "upgrade",
+          "upgrades"
         ]
       },
       {
@@ -125,43 +124,43 @@
     "symbol": "HOOD",
     "confidence": 78,
     "cache_stats": null,
-    "entry_price": 102.45,
-    "stop_loss": 97.0,
-    "take_profit": 110.65,
-    "qty": 1.95,
-    "thesis": "HOOD is the sole ranked catalyst candidate with a fresh Morgan Stanley bullish turn citing evidence of growth beyond crypto and its strongest rally in six months. RSI is neutral at 50, leaving room for continuation on the headline. Position sized to ~$200 notional with clear 1.5+ R:R versus the stop. Book has room and cash for the new entry.",
+    "entry_price": 103.4,
+    "stop_loss": 98.0,
+    "take_profit": 111.5,
+    "qty": 1.93,
+    "thesis": "HOOD shows a ranked catalyst setup with Morgan Stanley turning bullish on evidence of growth beyond crypto, supporting a headline-driven long. RSI at 50 leaves room for continuation without overbought risk. Position sized to ~$200 notional with defined 1.5 R:R parameters fits cash and open-slot limits.",
     "reason_code": "new_entry",
     "reasoning": {
       "headline": "Bought $HOOD",
-      "narrative": "HOOD is the sole ranked catalyst candidate with a fresh Morgan Stanley bullish turn citing evidence of growth beyond crypto and its strongest rally in six months. RSI is neutral at 50, leaving room for continuation on the headline. Position sized to ~$200 notional with clear 1.5+ R:R versus the stop. Book has room and cash for the new entry.",
+      "narrative": "HOOD shows a ranked catalyst setup with Morgan Stanley turning bullish on evidence of growth beyond crypto, supporting a headline-driven long. RSI at 50 leaves room for continuation without overbought risk. Position sized to ~$200 notional with defined 1.5 R:R parameters fits cash and open-slot limits.",
       "bullets": [
-        "MS upgrade + growth-beyond-crypto catalyst",
-        "rank_score 125.8 / catalyst 26 leader",
-        "R:R >=1.5 with stop 97 / target 110.65",
-        "~$200 notional fits cash and limits"
+        "MS bullish catalyst on non-crypto growth",
+        "rank_score 101 with sentiment bullish",
+        "R:R 1.5 via 98 stop / 111.5 target",
+        "qty capped near $200 notional"
       ],
       "risk_map": {
-        "stop": 97.0,
-        "target": 110.65,
+        "stop": 98.0,
+        "target": 111.5,
         "horizon_days": 5,
         "rr": 1.5,
         "confidence_10": 8,
         "confidence": 78
       },
-      "thesis": "HOOD is the sole ranked catalyst candidate with a fresh Morgan Stanley bullish turn citing evidence of growth beyond crypto and its strongest rally in six months. RSI is neutral at 50, leaving room for continuation on the headline. Position sized to ~$200 notional with clear 1.5+ R:R versus the stop. Book has room and cash for the new entry."
+      "thesis": "HOOD shows a ranked catalyst setup with Morgan Stanley turning bullish on evidence of growth beyond crypto, supporting a headline-driven long. RSI at 50 leaves room for continuation without overbought risk. Position sized to ~$200 notional with defined 1.5 R:R parameters fits cash and open-slot limits."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "MS upgrade + growth-beyond-crypto catalyst",
-      "rank_score 125.8 / catalyst 26 leader",
-      "R:R >=1.5 with stop 97 / target 110.65",
-      "~$200 notional fits cash and limits"
+      "MS bullish catalyst on non-crypto growth",
+      "rank_score 101 with sentiment bullish",
+      "R:R 1.5 via 98 stop / 111.5 target",
+      "qty capped near $200 notional"
     ],
-    "timestamp": "2026-09-01T18:47:58.422689+00:00"
+    "timestamp": "2026-09-01T19:03:12.956243+00:00"
   },
-  "stance": "Buying pressure on HOOD. HOOD is the sole ranked catalyst candidate with a fresh Morgan Stanley bullish turn citing evidence of growth beyond crypto and its strongest rally in six months. RSI is neutral at 50, leaving room for continuation on the headline. Position sized to ~$200 notional with clear 1.5+ R:R versus the stop. Book has room and cash for the new entry.",
+  "stance": "Buying pressure on HOOD. HOOD shows a ranked catalyst setup with Morgan Stanley turning bullish on evidence of growth beyond crypto, supporting a headline-driven long. RSI at 50 leaves room for continuation without overbought risk. Position sized to ~$200 notional with defined 1.5 R:R parameters fits cash and open-slot limits.",
   "thinking": {
     "badge": "Looking to buy HOOD",
     "headline": "Buying pressure on HOOD.",
@@ -180,9 +179,9 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 61.904998779296875,
-        "open_pnl": -0.95,
-        "open_pnl_pct": -0.47,
+        "last": 61.91999816894531,
+        "open_pnl": -0.9,
+        "open_pnl_pct": -0.45,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
       },
@@ -192,14 +191,14 @@
         "avg_cost": 368.61,
         "stop": 352.0,
         "target": 405.0,
-        "last": 359.2099914550781,
-        "open_pnl": -5.08,
-        "open_pnl_pct": -2.55,
+        "last": 359.3399963378906,
+        "open_pnl": -5.01,
+        "open_pnl_pct": -2.51,
         "line": "Bought near $368.61 \u00b7 Sell safety line $352.00 \u00b7 Profit target $405.00",
         "plan": "stop 352.0 or target 405.0"
       }
     ],
-    "last_checked": "2026-09-01T19:01:03.603668+00:00",
+    "last_checked": "2026-09-01T19:03:21.591172+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -213,7 +212,7 @@
         "model": "grok-4.3",
         "action": "BUY",
         "symbol": "HOOD",
-        "confidence": 75,
+        "confidence": 80,
         "tone": "buy"
       },
       {
@@ -229,7 +228,7 @@
         "model": "deepseek-v4-flash",
         "action": "BUY",
         "symbol": "HOOD",
-        "confidence": 78,
+        "confidence": 76,
         "tone": "buy"
       },
       {
@@ -251,10 +250,10 @@
       {
         "prefix": "S",
         "model": "claude-sonnet-5",
-        "action": "SELL",
+        "action": "BUY",
         "symbol": "HOOD",
-        "confidence": 75,
-        "tone": "sell"
+        "confidence": 72,
+        "tone": "buy"
       },
       {
         "prefix": "S",
@@ -267,6 +266,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "HOOD",
+      "status": "blocked",
+      "headline": "BUY HOOD \u2014 blocked",
+      "detail": "Stop too wide: 5.22%",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "HOOD",
+          "confidence": 80,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "HOOD",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "HOOD",
+          "confidence": 76,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "HOOD",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "HOOD",
+          "confidence": 78,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "HOOD",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "BUY",
+          "symbol": "HOOD",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "HOOD",
+      "timestamp": "2026-09-01T19:03:12.956243+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "HOOD",
@@ -11541,15 +11617,15 @@
     {
       "symbol": "HOOD",
       "name": "HOOD",
-      "price": 102.44999694824219,
-      "volume": 18343690.0,
-      "avg_volume": 22587789.0,
-      "percent_change": -2.2516941754837942,
+      "price": 103.4000015258789,
+      "volume": 18738369.0,
+      "avg_volume": 22627256.9,
+      "percent_change": -1.3452877259410194,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 26,
-      "liquidity_score": 83.54,
-      "rank_score": 125.83,
+      "catalyst_score": 20,
+      "liquidity_score": 83.55,
+      "rank_score": 101.11,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (growth): HOOD Stock Clocks Best Rally In Six Months: Morgan Stanley Turns Bullish On \u2018Evidence\u2019 Of Growth Beyond Crypto - Stocktwits",
       "top_headlines": [
@@ -11582,12 +11658,11 @@
           ]
         },
         {
-          "title": "Robinhood raised to Overweight at Morgan Stanley on long growth runway (HOOD:NASDAQ) - Seeking Alpha",
+          "title": "Robinhood Stock Rises as Morgan Stanley Upgrades Target to $150 - Benzinga",
           "keywords": [
-            "ai",
             "catalyst",
-            "growth",
-            "raised"
+            "upgrade",
+            "upgrades"
           ]
         },
         {
@@ -11599,17 +11674,73 @@
       ]
     },
     {
-      "symbol": "BAC",
-      "name": "BAC",
-      "price": 61.845001220703125,
-      "volume": 13733614.0,
-      "avg_volume": 30267401.555555556,
-      "percent_change": -0.15337004861491196,
+      "symbol": "LRCX",
+      "name": "LRCX",
+      "price": 287.92999267578125,
+      "volume": 4326404.0,
+      "avg_volume": 6575144.888888889,
+      "percent_change": -4.497660949888372,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 12,
-      "liquidity_score": 84.81,
-      "rank_score": 66.84,
+      "liquidity_score": 78.18,
+      "rank_score": 70.83,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (beat): Lam Research (NASDAQ:LRCX) Insider Sells $1,512,300.00 in Stock - MarketBeat",
+      "top_headlines": [
+        "Pre-set sale by Lam Research (NASDAQ: LRCX) legal chief totals 5,000 shares - Stock Titan",
+        "Lam Research (NASDAQ:LRCX) Insider Sells $1,512,300.00 in Stock - MarketBeat",
+        "Lam Research Corp Stock (LRCX) Opened Down by 3.30% on Sep 1: What Signal Does It Send? - TradingKey"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Lam Research (NASDAQ:LRCX) Insider Sells $1,512,300.00 in Stock - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Lam Research Stock: Buy The Summer Pullback (Rating Upgrade) (NASDAQ:LRCX) - Seeking Alpha",
+          "keywords": [
+            "catalyst",
+            "upgrade"
+          ]
+        },
+        {
+          "title": "LRCX Maintained by UBS -- Price Target Lowered to $425 - GuruFocus",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Is Lam\u2019s US$3 Billion AI Lab Bet and Higher Dividend Altering The Investment Case For Lam Research (LRCX)? - simplywall.st",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Top After-Hours Gainers Today Beyond Micron: QCOM, AMAT, LRCX Surge - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "BAC",
+      "name": "BAC",
+      "price": 61.904998779296875,
+      "volume": 14319724.0,
+      "avg_volume": 30332524.888888888,
+      "percent_change": -0.05650605132079739,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 12,
+      "liquidity_score": 84.82,
+      "rank_score": 66.77,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, deal): Are Bank of America\u2019s (BAC) New Bond Deals Quietly Redefining Its Tech\u2011Driven Funding Strategy? - simplywall.st",
       "top_headlines": [
@@ -11647,71 +11778,17 @@
       ]
     },
     {
-      "symbol": "LRCX",
-      "name": "LRCX",
-      "price": 286.6199951171875,
-      "volume": 4140956.0,
-      "avg_volume": 6554539.555555556,
-      "percent_change": -4.932168761433084,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 9,
-      "liquidity_score": 78.17,
-      "rank_score": 59.17,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): Lam Research (NASDAQ:LRCX) Insider Sells $1,512,300.00 in Stock - MarketBeat",
-      "top_headlines": [
-        "Lam Research Corp Stock (LRCX) Opened Down by 3.30% on Sep 1: What Signal Does It Send? - TradingKey",
-        "Pre-set sale by Lam Research (NASDAQ: LRCX) legal chief totals 5,000 shares - Stock Titan",
-        "Lam Research (NASDAQ:LRCX) Insider Sells $1,512,300.00 in Stock - MarketBeat"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Lam Research (NASDAQ:LRCX) Insider Sells $1,512,300.00 in Stock - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Lam Research Stock: Buy The Summer Pullback (Rating Upgrade) (NASDAQ:LRCX) - Seeking Alpha",
-          "keywords": [
-            "catalyst",
-            "upgrade"
-          ]
-        },
-        {
-          "title": "Is Lam\u2019s US$3 Billion AI Lab Bet and Higher Dividend Altering The Investment Case For Lam Research (LRCX)? - simplywall.st",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "NS Partners Ltd Makes New Investment in Lam Research Corporation $LRCX - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Lam Research: Chinese Exposure Is Falling, But So Might The Share Price (NASDAQ:LRCX) - Seeking Alpha",
-          "keywords": [
-            "fall"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "TSLA",
       "name": "TSLA",
-      "price": 353.1000061035156,
-      "volume": 26191709.0,
-      "avg_volume": 37517520.9,
-      "percent_change": -4.035875964357925,
+      "price": 354.1199951171875,
+      "volume": 27072632.0,
+      "avg_volume": 37605613.2,
+      "percent_change": -3.7586673817154637,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 85.74,
-      "rank_score": 52.59,
+      "liquidity_score": 85.75,
+      "rank_score": 52.37,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, launch): U.S. Stock Market Movement | Tesla (TSLA.US) rises over 4% as it launches a lower-priced Model 3 variant in Hong Kong and Macau - Moomoo",
       "top_headlines": [
@@ -11747,15 +11824,15 @@
     {
       "symbol": "XOM",
       "name": "XOM",
-      "price": 164.47500610351562,
-      "volume": 5785722.0,
-      "avg_volume": 13712224.666666666,
-      "percent_change": 2.1901268854369715,
+      "price": 164.50999450683594,
+      "volume": 5985819.0,
+      "avg_volume": 13734457.666666666,
+      "percent_change": 2.211865564519745,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 81.37,
-      "rank_score": 51.96,
+      "liquidity_score": 81.38,
+      "rank_score": 51.98,
       "news_hits": 7,
       "catalyst": "Headline-driven setup (beat): NS Partners Ltd Has $23.39 Million Stock Position in ExxonMobil Corporation $XOM - MarketBeat",
       "top_headlines": [
@@ -11841,21 +11918,21 @@
     "last_stage": "entry",
     "last_junior_nomination": "HOOD",
     "last_escalate_reason": "junior_nomination",
-    "live_share_recent": 54.5
+    "live_share_recent": 66.7
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 326,
     "closed_outcomes": 149,
-    "consensus_events": 409,
+    "consensus_events": 410,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 992.04,
-    "change": -7.96,
-    "change_pct": -0.8,
+    "latest_equity": 992.15,
+    "change": -7.85,
+    "change_pct": -0.78,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15232,6 +15309,12 @@
       {
         "t": "2026-09-01T19:01:06.193663+00:00",
         "equity": 992.04,
+        "cash": 599.35,
+        "event": "mark"
+      },
+      {
+        "t": "2026-09-01T19:03:24.241531+00:00",
+        "equity": 992.15,
         "cash": 599.35,
         "event": "mark"
       }
