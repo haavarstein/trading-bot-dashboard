@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-01T18:48:07.484105+00:00",
+  "generated_at": "2026-09-01T18:50:55.537485+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 991.8,
+    "portfolio_value": 991.94,
     "starting_cash": 1000.0,
-    "total_return_pct": -0.82,
-    "total_pnl": -8.2,
+    "total_return_pct": -0.81,
+    "total_pnl": -8.06,
     "realized_pnl": -1.97,
-    "open_pnl": -6.26,
-    "capital_deployed": 392.45,
+    "open_pnl": -6.12,
+    "capital_deployed": 392.59,
     "cash": 599.35,
     "closed_trades": 27,
     "win_rate_pct": 29.63,
-    "vs_spy_pct": 0.41,
-    "spy_return_pct": -1.23,
+    "vs_spy_pct": 0.4,
+    "spy_return_pct": -1.21,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-01T18:48:10.271323+00:00"
+    "updated_at": "2026-09-01T18:50:58.250047+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -1.23,
-    "price": 759.9000244140625,
+    "return_pct": -1.21,
+    "price": 760.10498046875,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,10 +38,10 @@
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 61.875,
-      "market_value": 198.62,
-      "open_pnl": -1.04,
-      "open_pnl_pct": -0.52,
+      "last": 61.915000915527344,
+      "market_value": 198.75,
+      "open_pnl": -0.91,
+      "open_pnl_pct": -0.46,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
@@ -50,9 +50,9 @@
       "symbol": "PANW",
       "qty": 0.54,
       "avg_cost": 368.61,
-      "last": 358.94500732421875,
-      "market_value": 193.83,
-      "open_pnl": -5.22,
+      "last": 358.9649963378906,
+      "market_value": 193.84,
+      "open_pnl": -5.21,
       "open_pnl_pct": -2.62,
       "stop": 352.0,
       "target": 405.0,
@@ -180,9 +180,9 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 61.875,
-        "open_pnl": -1.04,
-        "open_pnl_pct": -0.52,
+        "last": 61.915000915527344,
+        "open_pnl": -0.91,
+        "open_pnl_pct": -0.46,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
       },
@@ -192,14 +192,14 @@
         "avg_cost": 368.61,
         "stop": 352.0,
         "target": 405.0,
-        "last": 358.94500732421875,
-        "open_pnl": -5.22,
+        "last": 358.9649963378906,
+        "open_pnl": -5.21,
         "open_pnl_pct": -2.62,
         "line": "Bought near $368.61 \u00b7 Sell safety line $352.00 \u00b7 Profit target $405.00",
         "plan": "stop 352.0 or target 405.0"
       }
     ],
-    "last_checked": "2026-09-01T18:48:07.484105+00:00",
+    "last_checked": "2026-09-01T18:50:55.537485+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -11853,9 +11853,9 @@
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 991.8,
-    "change": -8.2,
-    "change_pct": -0.82,
+    "latest_equity": 991.94,
+    "change": -8.06,
+    "change_pct": -0.81,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15226,6 +15226,12 @@
       {
         "t": "2026-09-01T18:48:10.271323+00:00",
         "equity": 991.8,
+        "cash": 599.35,
+        "event": "mark"
+      },
+      {
+        "t": "2026-09-01T18:50:58.250047+00:00",
+        "equity": 991.94,
         "cash": 599.35,
         "event": "mark"
       }
