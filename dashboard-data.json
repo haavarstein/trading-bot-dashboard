@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-02T17:30:15.227947+00:00",
+  "generated_at": "2026-09-02T17:32:45.209908+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 975.54,
+    "portfolio_value": 975.1,
     "starting_cash": 1000.0,
-    "total_return_pct": -2.45,
-    "total_pnl": -24.46,
+    "total_return_pct": -2.49,
+    "total_pnl": -24.9,
     "realized_pnl": -23.35,
-    "open_pnl": -1.14,
-    "capital_deployed": 398.44,
+    "open_pnl": -1.58,
+    "capital_deployed": 398.0,
     "cash": 577.1,
     "closed_trades": 28,
     "win_rate_pct": 28.57,
-    "vs_spy_pct": -1.84,
-    "spy_return_pct": -0.61,
+    "vs_spy_pct": -1.87,
+    "spy_return_pct": -0.62,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-02T17:30:17.936496+00:00"
+    "updated_at": "2026-09-02T17:32:47.823769+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.61,
-    "price": 764.7127075195312,
+    "return_pct": -0.62,
+    "price": 764.6099243164062,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,9 +38,9 @@
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 62.345001220703125,
-      "market_value": 200.13,
-      "open_pnl": 0.47,
+      "last": 62.34000015258789,
+      "market_value": 200.11,
+      "open_pnl": 0.45,
       "open_pnl_pct": 0.23,
       "stop": 60.0,
       "target": 65.5,
@@ -50,10 +50,10 @@
       "symbol": "HOOD",
       "qty": 1.88,
       "avg_cost": 106.34,
-      "last": 105.48500061035156,
-      "market_value": 198.31,
-      "open_pnl": -1.61,
-      "open_pnl_pct": -0.8,
+      "last": 105.26000213623047,
+      "market_value": 197.89,
+      "open_pnl": -2.03,
+      "open_pnl_pct": -1.02,
       "stop": 101.5,
       "target": 116.0,
       "thesis": "HOOD shows a high-rank catalyst setup with Piper Sandler raising the price target on football prediction market strength and AI-related momentum. Sentiment is bullish and RSI is neutral at 50, supporting a clean long entry within risk limits. Position sized to ~$200 notional with defined R:R >1.5."
@@ -62,29 +62,23 @@
   "latest_candidate": {
     "symbol": "UBER",
     "name": "UBER",
-    "price": 76.87999725341797,
-    "volume": 6819598.0,
-    "avg_volume": 13562210.888888888,
-    "percent_change": 2.1796909040558994,
+    "price": 76.87000274658203,
+    "volume": 7046304.0,
+    "avg_volume": 13587400.444444444,
+    "percent_change": 2.1664074017702752,
     "exchange": "",
     "sentiment": "bearish",
-    "catalyst_score": -18,
-    "liquidity_score": 81.32,
-    "rank_score": 93.44,
+    "catalyst_score": -20,
+    "liquidity_score": 81.33,
+    "rank_score": 101.43,
     "news_hits": 8,
-    "catalyst": "Headline-driven setup (cut): Uber to Cut 10% of Jobs, or 3,300 Roles, to Slash Bureaucracy - Bloomberg.com",
+    "catalyst": "Headline-driven setup (ai, catalyst, cut): Uber stock gains 2% as tech giant cuts 3,300 jobs in major restructuring - Investing.com",
     "top_headlines": [
-      "Uber to Cut 10% of Jobs, or 3,300 Roles, to Slash Bureaucracy - Bloomberg.com",
       "Uber stock gains 2% as tech giant cuts 3,300 jobs in major restructuring - Investing.com",
+      "Uber to Cut 10% of Jobs, or 3,300 Roles, to Slash Bureaucracy - Bloomberg.com",
       "Uber Stock Rises After Major Restructuring - TradingView"
     ],
     "matched_headlines": [
-      {
-        "title": "Uber to Cut 10% of Jobs, or 3,300 Roles, to Slash Bureaucracy - Bloomberg.com",
-        "keywords": [
-          "cut"
-        ]
-      },
       {
         "title": "Uber stock gains 2% as tech giant cuts 3,300 jobs in major restructuring - Investing.com",
         "keywords": [
@@ -95,72 +89,81 @@
         ]
       },
       {
-        "title": "Uber Shares Rise 2.4% as Company Plans 3,300 Job Cuts in Restructuring - Yahoo Finance",
-        "keywords": [
-          "cut",
-          "cuts"
-        ]
-      },
-      {
-        "title": "Uber Cuts 10% Of Staff In Company\u2019s Largest Layoffs Since Pandemic - Forbes",
-        "keywords": [
-          "cut",
-          "cuts"
-        ]
-      },
-      {
-        "title": "Uber to cut 10% of workforce in bid to move 'simpler and faster' - CNBC",
+        "title": "Uber to Cut 10% of Jobs, or 3,300 Roles, to Slash Bureaucracy - Bloomberg.com",
         "keywords": [
           "cut"
+        ]
+      },
+      {
+        "title": "Uber lays off 3,300 employees in largest cuts since the pandemic - Al Jazeera",
+        "keywords": [
+          "cut",
+          "cuts"
+        ]
+      },
+      {
+        "title": "Uber Shares Rise 2.4% as Company Plans 3,300 Job Cuts in Restructuring - finance.yahoo.com",
+        "keywords": [
+          "cut",
+          "cuts"
+        ]
+      },
+      {
+        "title": "Dell, Credo, Palo Alto, MongoDB, Uber, GitLab, and More Stocks That Explain Today\u2019s Market - Barron's",
+        "keywords": [
+          "ai",
+          "catalyst"
         ]
       }
     ]
   },
   "latest_decision": {
     "model": "grok-4.5",
-    "action": "HOLD",
-    "symbol": "CASH",
-    "confidence": 62,
+    "action": "BUY",
+    "symbol": "NFLX",
+    "confidence": 72,
     "cache_stats": null,
-    "entry_price": 0.0,
-    "stop_loss": 0.0,
-    "take_profit": 0.0,
-    "qty": 0.0,
-    "thesis": "No clean long edge: top-ranked UBER carries a clearly bearish job-cut catalyst and negative sentiment, so it is not a buy. Existing BAC and HOOD positions remain inside stops with intact bullish headlines and do not require exit. Remaining candidates lack sufficiently strong, actionable catalysts relative to size/liquidity constraints for a fresh <$200 entry.",
-    "reason_code": "hold",
+    "entry_price": 82.27,
+    "stop_loss": 78.5,
+    "take_profit": 88.5,
+    "qty": 2.43,
+    "thesis": "NFLX offers a liquid bullish partnership catalyst at a manageable price while the book has only two names and ample cash for a starter risk. Neutral RSI leaves room for follow-through without chase, and the setup clears desk R:R and notional limits. Higher-ranked UBER is skipped due to clearly bearish catalyst/sentiment, and existing HOOD/BAC holds remain intact.",
+    "reason_code": "new_entry",
     "reasoning": {
-      "headline": "Hold $CASH",
-      "narrative": "No clean long edge: top-ranked UBER carries a clearly bearish job-cut catalyst and negative sentiment, so it is not a buy. Existing BAC and HOOD positions remain inside stops with intact bullish headlines and do not require exit. Remaining candidates lack sufficiently strong, actionable catalysts relative to size/liquidity constraints for a fresh <$200 entry.",
+      "headline": "Bought $NFLX",
+      "narrative": "NFLX offers a liquid bullish partnership catalyst at a manageable price while the book has only two names and ample cash for a starter risk. Neutral RSI leaves room for follow-through without chase, and the setup clears desk R:R and notional limits. Higher-ranked UBER is skipped due to clearly bearish catalyst/sentiment, and existing HOOD/BAC holds remain intact.",
       "bullets": [
-        "UBER rank high but catalyst_score -18 / job cuts = avoid",
-        "BAC/HOOD still valid; HOOD only mild red, stops intact",
-        "AMD/NFLX/etc. catalysts too soft or notional-awkward for forced add"
+        "Partnership headline + bullish sentiment",
+        "~$200 notional; R:R ~1.65",
+        "Room in book (2/5); skip bearish UBER",
+        "HOOD/BAC theses still valid\u2014no rotation"
       ],
       "risk_map": {
-        "stop": 0.0,
-        "target": 0.0,
+        "stop": 78.5,
+        "target": 88.5,
         "horizon_days": 5,
-        "rr": 0.0,
-        "confidence_10": 6,
-        "confidence": 62
+        "rr": 1.65,
+        "confidence_10": 7,
+        "confidence": 72
       },
-      "thesis": "No clean long edge: top-ranked UBER carries a clearly bearish job-cut catalyst and negative sentiment, so it is not a buy. Existing BAC and HOOD positions remain inside stops with intact bullish headlines and do not require exit. Remaining candidates lack sufficiently strong, actionable catalysts relative to size/liquidity constraints for a fresh <$200 entry."
+      "thesis": "NFLX offers a liquid bullish partnership catalyst at a manageable price while the book has only two names and ample cash for a starter risk. Neutral RSI leaves room for follow-through without chase, and the setup clears desk R:R and notional limits. Higher-ranked UBER is skipped due to clearly bearish catalyst/sentiment, and existing HOOD/BAC holds remain intact."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "UBER rank high but catalyst_score -18 / job cuts = avoid",
-      "BAC/HOOD still valid; HOOD only mild red, stops intact",
-      "AMD/NFLX/etc. catalysts too soft or notional-awkward for forced add"
+      "Partnership headline + bullish sentiment",
+      "~$200 notional; R:R ~1.65",
+      "Room in book (2/5); skip bearish UBER",
+      "HOOD/BAC theses still valid\u2014no rotation"
     ],
-    "timestamp": "2026-09-02T17:17:55.332700+00:00"
+    "timestamp": "2026-09-02T17:32:36.715520+00:00"
   },
-  "stance": "Holding BAC, HOOD. No new trade right now.",
+  "stance": "Buying pressure on NFLX. NFLX offers a liquid bullish partnership catalyst at a manageable price while the book has only two names and ample cash for a starter risk. Neutral RSI leaves room for follow-through without chase, and the setup clears desk R:R and notional limits. Higher-ranked UBER is skipped due to clearly bearish catalyst/sentiment, and existing HOOD/BAC holds remain intact.",
   "thinking": {
-    "badge": "Holding what it owns",
-    "headline": "Holding BAC, HOOD. No new trade right now.",
-    "plain_english": "Right now Hermes is holding BAC, HOOD and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
+    "badge": "Looking to buy NFLX",
+    "headline": "Buying pressure on NFLX.",
+    "plain_english": "Right now Hermes wants exposure to NFLX. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
     "triggers": [
       "It owns BAC, bought near $62.20. Simple plan: sell if it falls to about $60.00, or take profit near $65.50.",
       "It owns HOOD, bought near $106.34. Simple plan: sell if it falls to about $101.50, or take profit near $116.00.",
@@ -175,8 +178,8 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 62.345001220703125,
-        "open_pnl": 0.47,
+        "last": 62.34000015258789,
+        "open_pnl": 0.45,
         "open_pnl_pct": 0.23,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
@@ -187,17 +190,17 @@
         "avg_cost": 106.34,
         "stop": 101.5,
         "target": 116.0,
-        "last": 105.48500061035156,
-        "open_pnl": -1.61,
-        "open_pnl_pct": -0.8,
+        "last": 105.26000213623047,
+        "open_pnl": -2.03,
+        "open_pnl_pct": -1.02,
         "line": "Bought near $106.34 \u00b7 Sell safety line $101.50 \u00b7 Profit target $116.00",
         "plan": "stop 101.5 or target 116.0"
       }
     ],
-    "last_checked": "2026-09-02T17:30:15.227947+00:00",
+    "last_checked": "2026-09-02T17:32:45.209908+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "HOLD",
+    "action": "BUY",
     "symbols_held": [
       "BAC",
       "HOOD"
@@ -223,7 +226,7 @@
         "prefix": "J",
         "model": "deepseek-v4-flash",
         "action": "BUY",
-        "symbol": "AMD",
+        "symbol": "HOOD",
         "confidence": 72,
         "tone": "buy"
       },
@@ -238,10 +241,10 @@
       {
         "prefix": "S",
         "model": "grok-4.5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 62,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "NFLX",
+        "confidence": 72,
+        "tone": "buy"
       },
       {
         "prefix": "S",
@@ -255,13 +258,90 @@
         "prefix": "S",
         "model": "claude-opus-5",
         "action": "BUY",
-        "symbol": "AMD",
+        "symbol": "UBER",
         "confidence": 90,
         "tone": "buy"
       }
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "NFLX",
+      "status": "no_consensus",
+      "headline": "BUY NFLX \u2014 no consensus",
+      "detail": "Desks: BUY NFLX (72%) vs HOLD CASH (65%) vs BUY UBER (90%). No 2-of-3 senior agreement",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "HOOD",
+          "confidence": 72,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "NFLX",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "BUY",
+          "symbol": "UBER",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-02T17:32:36.715520+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -800,83 +880,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-09-02T15:47:47.751903+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CASH",
-      "status": "hold",
-      "headline": "HOLD \u2014 no new trade",
-      "detail": "No material edge for new entry or rotation. UBER leads candidates but carries bearish sentiment and negative catalyst score. BAC and HOOD remain held with positive catalysts and no clear superior replacement. Weakest position HOOD shows only modest loss with intact thesis.",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 70,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        }
-      ],
-      "tier": "junior_only",
-      "escalate_reason": "",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-02T15:32:01.196568+00:00"
     },
     {
       "type": "fill",
@@ -12079,29 +12082,23 @@
     {
       "symbol": "UBER",
       "name": "UBER",
-      "price": 76.87999725341797,
-      "volume": 6819598.0,
-      "avg_volume": 13562210.888888888,
-      "percent_change": 2.1796909040558994,
+      "price": 76.87000274658203,
+      "volume": 7046304.0,
+      "avg_volume": 13587400.444444444,
+      "percent_change": 2.1664074017702752,
       "exchange": "",
       "sentiment": "bearish",
-      "catalyst_score": -18,
-      "liquidity_score": 81.32,
-      "rank_score": 93.44,
+      "catalyst_score": -20,
+      "liquidity_score": 81.33,
+      "rank_score": 101.43,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (cut): Uber to Cut 10% of Jobs, or 3,300 Roles, to Slash Bureaucracy - Bloomberg.com",
+      "catalyst": "Headline-driven setup (ai, catalyst, cut): Uber stock gains 2% as tech giant cuts 3,300 jobs in major restructuring - Investing.com",
       "top_headlines": [
-        "Uber to Cut 10% of Jobs, or 3,300 Roles, to Slash Bureaucracy - Bloomberg.com",
         "Uber stock gains 2% as tech giant cuts 3,300 jobs in major restructuring - Investing.com",
+        "Uber to Cut 10% of Jobs, or 3,300 Roles, to Slash Bureaucracy - Bloomberg.com",
         "Uber Stock Rises After Major Restructuring - TradingView"
       ],
       "matched_headlines": [
-        {
-          "title": "Uber to Cut 10% of Jobs, or 3,300 Roles, to Slash Bureaucracy - Bloomberg.com",
-          "keywords": [
-            "cut"
-          ]
-        },
         {
           "title": "Uber stock gains 2% as tech giant cuts 3,300 jobs in major restructuring - Investing.com",
           "keywords": [
@@ -12112,23 +12109,94 @@
           ]
         },
         {
-          "title": "Uber Shares Rise 2.4% as Company Plans 3,300 Job Cuts in Restructuring - Yahoo Finance",
-          "keywords": [
-            "cut",
-            "cuts"
-          ]
-        },
-        {
-          "title": "Uber Cuts 10% Of Staff In Company\u2019s Largest Layoffs Since Pandemic - Forbes",
-          "keywords": [
-            "cut",
-            "cuts"
-          ]
-        },
-        {
-          "title": "Uber to cut 10% of workforce in bid to move 'simpler and faster' - CNBC",
+          "title": "Uber to Cut 10% of Jobs, or 3,300 Roles, to Slash Bureaucracy - Bloomberg.com",
           "keywords": [
             "cut"
+          ]
+        },
+        {
+          "title": "Uber lays off 3,300 employees in largest cuts since the pandemic - Al Jazeera",
+          "keywords": [
+            "cut",
+            "cuts"
+          ]
+        },
+        {
+          "title": "Uber Shares Rise 2.4% as Company Plans 3,300 Job Cuts in Restructuring - finance.yahoo.com",
+          "keywords": [
+            "cut",
+            "cuts"
+          ]
+        },
+        {
+          "title": "Dell, Credo, Palo Alto, MongoDB, Uber, GitLab, and More Stocks That Explain Today\u2019s Market - Barron's",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "HOOD",
+      "name": "HOOD",
+      "price": 105.51000213623047,
+      "volume": 10652097.0,
+      "avg_volume": 21553419.7,
+      "percent_change": 1.9321804257793191,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 16,
+      "liquidity_score": 83.34,
+      "rank_score": 85.55,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst, record): HOOD Stock Price Target Hiked On Football Prediction Market Boom \u2013 Robinhood Chain\u2019s CASHCAT Hits Record High - finance.yahoo.com",
+      "top_headlines": [
+        "HOOD Stock Price Target Hiked On Football Prediction Market Boom \u2013 Robinhood Chain\u2019s CASHCAT Hits Record High - finance.yahoo.com",
+        "HOOD Stock Price Target Raised At Piper Sandler Citing Football Prediction Market Boom - Stocktwits",
+        "Stocks making the biggest moves premarket: Nvidia, Robinhood, Novartis & more - CNBC"
+      ],
+      "matched_headlines": [
+        {
+          "title": "HOOD Stock Price Target Hiked On Football Prediction Market Boom \u2013 Robinhood Chain\u2019s CASHCAT Hits Record High - finance.yahoo.com",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "record"
+          ]
+        },
+        {
+          "title": "HOOD Stock Price Target Raised At Piper Sandler Citing Football Prediction Market Boom - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "raised"
+          ]
+        },
+        {
+          "title": "SA analyst upgrades/downgrades: SNPS, NIO, HOOD, GPRO - Seeking Alpha",
+          "keywords": [
+            "catalyst",
+            "downgrade",
+            "downgrades",
+            "upgrade",
+            "upgrades"
+          ]
+        },
+        {
+          "title": "Analyst Raises Robinhood Stock Price Target to $145 But HOOD Retreats - Cryptonews.net",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "raises"
+          ]
+        },
+        {
+          "title": "Analyst Raises Robinhood Stock Price Target to $145 But HOOD Retreats - CoinGape",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "raises"
           ]
         }
       ]
@@ -12136,19 +12204,19 @@
     {
       "symbol": "BAC",
       "name": "BAC",
-      "price": 62.44499969482422,
-      "volume": 14130499.0,
-      "avg_volume": 30419399.888888888,
-      "percent_change": 0.7339861333081277,
+      "price": 62.332000732421875,
+      "volume": 14458831.0,
+      "avg_volume": 30455881.222222224,
+      "percent_change": 0.5517003463380722,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 16,
-      "liquidity_score": 84.83,
-      "rank_score": 84.81,
+      "catalyst_score": 13,
+      "liquidity_score": 84.84,
+      "rank_score": 72.67,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): 27,157 Shares in Bank of America Corporation $BAC Acquired by Proficio Capital Partners LLC - MarketBeat",
       "top_headlines": [
-        "Bank of America (BAC) Stock May Be 31% Undervalued Despite Stablecoin Plans - sg.finance.yahoo.com",
+        "Bank of America (BAC) Stock May Be 31% Undervalued Despite Stablecoin Plans - Yahoo Finance Singapore",
         "27,157 Shares in Bank of America Corporation $BAC Acquired by Proficio Capital Partners LLC - MarketBeat",
         "Why Did Banking Stocks GS, JPM, BAC Surge To 52-Week Highs Today? - Stocktwits"
       ],
@@ -12180,125 +12248,10 @@
           ]
         },
         {
-          "title": "Bank Of America Corp (BAC) Stock Analysis: Share Buybacks, Earnings Growth & Analyst Sentiment Rocket Launch Today (O6bFq8YGgC) - Mshale",
+          "title": "BAC Records 9% Y/Y Growth in NII in 1H26: Will the Uptrend Continue? - finance.yahoo.com",
           "keywords": [
-            "buyback",
-            "catalyst",
             "growth",
-            "launch"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "HOOD",
-      "name": "HOOD",
-      "price": 105.66500091552734,
-      "volume": 10360392.0,
-      "avg_volume": 21524249.2,
-      "percent_change": 2.0819232294678742,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 15,
-      "liquidity_score": 83.33,
-      "rank_score": 81.67,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst, record): HOOD Stock Price Target Hiked On Football Prediction Market Boom \u2013 Robinhood Chain\u2019s CASHCAT Hits Record High - Yahoo Finance",
-      "top_headlines": [
-        "HOOD Stock Price Target Hiked On Football Prediction Market Boom \u2013 Robinhood Chain\u2019s CASHCAT Hits Record High - Yahoo Finance",
-        "HOOD Stock Price Target Raised At Piper Sandler Citing Football Prediction Market Boom - Stocktwits",
-        "Stocks making the biggest moves premarket: Nvidia, Robinhood, Novartis & more - CNBC"
-      ],
-      "matched_headlines": [
-        {
-          "title": "HOOD Stock Price Target Hiked On Football Prediction Market Boom \u2013 Robinhood Chain\u2019s CASHCAT Hits Record High - Yahoo Finance",
-          "keywords": [
-            "ai",
-            "catalyst",
             "record"
-          ]
-        },
-        {
-          "title": "HOOD Stock Price Target Raised At Piper Sandler Citing Football Prediction Market Boom - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "raised"
-          ]
-        },
-        {
-          "title": "Analyst Raises Robinhood Stock Price Target to $145 But HOOD Retreats - CoinGape",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "raises"
-          ]
-        },
-        {
-          "title": "Analysts Offer Insights on Financial Companies: Aon (AON) and Robinhood (HOOD) - The Globe and Mail",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Robinhood Markets (NASDAQ:HOOD) Stock Price Down 1.2% - What's Next? - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "AMD",
-      "name": "AMD",
-      "price": 457.2200012207031,
-      "volume": 7324199.0,
-      "avg_volume": 14726099.9,
-      "percent_change": -0.5200026559543176,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 13,
-      "liquidity_score": 81.68,
-      "rank_score": 72.17,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (catalyst): AMD: Buy This Post-Earnings Pullback - Seeking Alpha",
-      "top_headlines": [
-        "AMD: Buy This Post-Earnings Pullback - Seeking Alpha",
-        "INTC, AMD, AVGO, Other Chip Stocks Rebound Premarket: Cathie Wood Trims AMD Holding Further - Stocktwits",
-        "Advanced Micro Devices, Inc. $AMD Shares Bought by Navellier & Associates Inc. - MarketBeat"
-      ],
-      "matched_headlines": [
-        {
-          "title": "AMD: Buy This Post-Earnings Pullback - Seeking Alpha",
-          "keywords": [
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Advanced Micro Devices, Inc. $AMD Shares Bought by Navellier & Associates Inc. - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "AMD Stock Alert: Advanced Micro Devices Teams Up With Cisco on AI Infrastructure - Yahoo Finance",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Advanced Micro Devices, Inc. $AMD Shares Sold by Sheets Smith Wealth Management - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "AMD vs. Alphabet: One Stock Could Be the Surprise AI Winner - Yahoo Finance",
-          "keywords": [
-            "ai",
-            "catalyst"
           ]
         }
       ]
@@ -12306,25 +12259,25 @@
     {
       "symbol": "NFLX",
       "name": "NFLX",
-      "price": 81.9749984741211,
-      "volume": 9933200.0,
-      "avg_volume": 24239590.0,
-      "percent_change": 1.4416544372280475,
+      "price": 82.2699966430664,
+      "volume": 10698979.0,
+      "avg_volume": 24316167.9,
+      "percent_change": 1.8067060123520478,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 10,
-      "liquidity_score": 83.85,
-      "rank_score": 59.73,
+      "liquidity_score": 83.86,
+      "rank_score": 60.02,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst, partnership): Netflix (NFLX) Unveils New Partnership, Is It Still Below Fair Value? - Yahoo Finance",
+      "catalyst": "Headline-driven setup (ai, catalyst, partnership): Netflix (NFLX) Unveils New Partnership, Is It Still Below Fair Value? - finance.yahoo.com",
       "top_headlines": [
-        "Netflix (NFLX) Unveils New Partnership, Is It Still Below Fair Value? - Yahoo Finance",
+        "Netflix (NFLX) Unveils New Partnership, Is It Still Below Fair Value? - finance.yahoo.com",
         "Nasdaq, S&P 500 Futures Sink As AI Stocks Extend Selloff: Why NFLX, NBIS, SPCX, TSLA, DJT, SLS Are In Focus - Stocktwits",
         "Reed Hastings plans fresh Netflix (NASDAQ: NFLX) stock sale after cashing in options - Stock Titan"
       ],
       "matched_headlines": [
         {
-          "title": "Netflix (NFLX) Unveils New Partnership, Is It Still Below Fair Value? - Yahoo Finance",
+          "title": "Netflix (NFLX) Unveils New Partnership, Is It Still Below Fair Value? - finance.yahoo.com",
           "keywords": [
             "ai",
             "catalyst",
@@ -12350,6 +12303,65 @@
             "ai",
             "catalyst",
             "partnership"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "CVX",
+      "name": "CVX",
+      "price": 212.0,
+      "volume": 4048184.0,
+      "avg_volume": 7453388.4,
+      "percent_change": 0.4501288483796945,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 10,
+      "liquidity_score": 78.72,
+      "rank_score": 59.67,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst, deal): CVX Stock Extends Gains Overnight: Chevron Reportedly Nears Deal For Giant Venezuelan Oil Fields - finance.yahoo.com",
+      "top_headlines": [
+        "CVX Stock Quote Price and Forecast - CNN",
+        "CVX Stock Extends Gains Overnight: Chevron Reportedly Nears Deal For Giant Venezuelan Oil Fields - finance.yahoo.com",
+        "4 stocks to watch on Wednesday: NVDA, PANW, CVX, and VRT (SPX:) - Seeking Alpha"
+      ],
+      "matched_headlines": [
+        {
+          "title": "CVX Stock Extends Gains Overnight: Chevron Reportedly Nears Deal For Giant Venezuelan Oil Fields - finance.yahoo.com",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "deal"
+          ]
+        },
+        {
+          "title": "CVX Stock Extends Gains Overnight: Chevron Reportedly Nears Deal For Giant Venezuelan Oil Fields - TradingView",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "deal"
+          ]
+        },
+        {
+          "title": "Chevron (CVX) Stock Looks Reasonable On Earnings But Stretched On Its 5 Year Run - simplywall.st",
+          "keywords": [
+            "catalyst"
+          ]
+        },
+        {
+          "title": "CVX Looks 31.7% Overvalued on GF Value\u2122 as Dividend Sustainabili - GuruFocus",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "CVX Stock Extends Gains Overnight: Chevron Reportedly Nears Deal For Giant Venezuelan Oil Fields - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "deal"
           ]
         }
       ]
@@ -12403,21 +12415,21 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 87.1
+    "live_share_recent": 87.0
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 328,
     "closed_outcomes": 150,
-    "consensus_events": 427,
+    "consensus_events": 428,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 975.54,
-    "change": -24.46,
-    "change_pct": -2.45,
+    "latest_equity": 975.1,
+    "change": -24.9,
+    "change_pct": -2.49,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15942,8 +15954,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-02T17:30:17.936496+00:00",
-        "equity": 975.54,
+        "t": "2026-09-02T17:32:47.823769+00:00",
+        "equity": 975.1,
         "cash": 577.1,
         "event": "mark"
       }
