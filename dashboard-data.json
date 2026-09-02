@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-09-02T15:10:25.655829+00:00",
+  "generated_at": "2026-09-02T15:20:10.721431+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 978.82,
+    "portfolio_value": 979.88,
     "starting_cash": 1000.0,
-    "total_return_pct": -2.12,
-    "total_pnl": -21.18,
+    "total_return_pct": -2.01,
+    "total_pnl": -20.12,
     "realized_pnl": -23.35,
-    "open_pnl": 2.14,
-    "capital_deployed": 401.72,
+    "open_pnl": 3.19,
+    "capital_deployed": 402.78,
     "cash": 577.1,
     "closed_trades": 28,
     "win_rate_pct": 28.57,
-    "vs_spy_pct": -1.59,
-    "spy_return_pct": -0.53,
+    "vs_spy_pct": -1.57,
+    "spy_return_pct": -0.44,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-02T15:10:28.408567+00:00"
+    "updated_at": "2026-09-02T15:20:13.610120+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.53,
-    "price": 765.2899780273438,
+    "return_pct": -0.44,
+    "price": 766.0,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 4,
-    "validated_count_today": 4,
+    "consensus_count_today": 5,
+    "validated_count_today": 5,
     "blocked_count_today": 0,
     "fills_today": 2,
-    "simulated_orders_today": 4,
+    "simulated_orders_today": 5,
     "top_symbol_today": "PANW"
   },
   "holdings": [
@@ -38,10 +38,10 @@
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 63.25,
-      "market_value": 203.03,
-      "open_pnl": 3.37,
-      "open_pnl_pct": 1.69,
+      "last": 63.14500045776367,
+      "market_value": 202.7,
+      "open_pnl": 3.03,
+      "open_pnl_pct": 1.52,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
@@ -50,10 +50,10 @@
       "symbol": "HOOD",
       "qty": 1.88,
       "avg_cost": 106.34,
-      "last": 105.68499755859375,
-      "market_value": 198.69,
-      "open_pnl": -1.23,
-      "open_pnl_pct": -0.62,
+      "last": 106.42500305175781,
+      "market_value": 200.08,
+      "open_pnl": 0.16,
+      "open_pnl_pct": 0.08,
       "stop": 101.5,
       "target": 116.0,
       "thesis": "HOOD shows a high-rank catalyst setup with Piper Sandler raising the price target on football prediction market strength and AI-related momentum. Sentiment is bullish and RSI is neutral at 50, supporting a clean long entry within risk limits. Position sized to ~$200 notional with defined R:R >1.5."
@@ -62,35 +62,23 @@
   "latest_candidate": {
     "symbol": "UBER",
     "name": "UBER",
-    "price": 76.3949966430664,
-    "volume": 3942426.0,
-    "avg_volume": 13242525.111111112,
-    "percent_change": 1.535086140470299,
+    "price": 76.26000213623047,
+    "volume": 4142441.0,
+    "avg_volume": 13264749.0,
+    "percent_change": 1.3556675989116451,
     "exchange": "",
     "sentiment": "bearish",
-    "catalyst_score": -21,
-    "liquidity_score": 81.22,
-    "rank_score": 104.91,
+    "catalyst_score": -17,
+    "liquidity_score": 81.23,
+    "rank_score": 88.77,
     "news_hits": 8,
-    "catalyst": "Headline-driven setup (cut): Uber Stock Rises After CEO Announces 10% Global Workforce Cut - Barron's",
+    "catalyst": "Headline-driven setup (ai, catalyst, cut): Uber stock gains 2% as tech giant cuts 3,300 jobs in major restructuring - Investing.com",
     "top_headlines": [
-      "Uber Stock Rises After CEO Announces 10% Global Workforce Cut - Barron's",
-      "Uber to Cut 10% of Jobs, or 3,300 Roles, to Slash Bureaucracy - Bloomberg.com",
-      "Uber stock gains 2% as tech giant cuts 3,300 jobs in major restructuring - Investing.com"
+      "Uber stock gains 2% as tech giant cuts 3,300 jobs in major restructuring - Investing.com",
+      "Uber cutting 3,300 jobs in company-wide restructuring - qz.com",
+      "Uber Slashes 3,300 Jobs to Flatten Hierarchy and Fund Robotaxi Push - Barron's"
     ],
     "matched_headlines": [
-      {
-        "title": "Uber Stock Rises After CEO Announces 10% Global Workforce Cut - Barron's",
-        "keywords": [
-          "cut"
-        ]
-      },
-      {
-        "title": "Uber to Cut 10% of Jobs, or 3,300 Roles, to Slash Bureaucracy - Bloomberg.com",
-        "keywords": [
-          "cut"
-        ]
-      },
       {
         "title": "Uber stock gains 2% as tech giant cuts 3,300 jobs in major restructuring - Investing.com",
         "keywords": [
@@ -112,6 +100,19 @@
           "cut",
           "cuts"
         ]
+      },
+      {
+        "title": "Uber to lay off 10% of staff in biggest cuts since COVID - Reuters",
+        "keywords": [
+          "cut",
+          "cuts"
+        ]
+      },
+      {
+        "title": "Uber to cut 10% of its global workforce - ft.com",
+        "keywords": [
+          "cut"
+        ]
       }
     ]
   },
@@ -125,16 +126,15 @@
     "stop_loss": 0.0,
     "take_profit": 0.0,
     "qty": 0.0,
-    "thesis": "No clean new edge meeting desk criteria. Top-ranked UBER carries a negative catalyst score and bearish sentiment on the workforce-cut headline despite the pop, so it is skipped. Best positive fresh catalysts (XOM/NFLX) are only moderate institutional or partnership noise; existing BAC and HOOD positions remain green and within stops/targets with HOOD already reflecting the strongest bullish catalyst on the list.",
+    "thesis": "No clean high-edge new entry under the $200 notional and R:R constraints. Top-ranked UBER carries bearish sentiment and a negative catalyst score, while remaining candidates offer only mild headline flow. Existing BAC and HOOD positions remain within stops with intact theses, so cash is preferred over forcing a marginal add or rotation.",
     "reason_code": "hold",
     "reasoning": {
       "headline": "Hold $CASH",
-      "narrative": "No clean new edge meeting desk criteria. Top-ranked UBER carries a negative catalyst score and bearish sentiment on the workforce-cut headline despite the pop, so it is skipped. Best positive fresh catalysts (XOM/NFLX) are only moderate institutional or partnership noise; existing BAC and HOOD positions remain green and within stops/targets with HOOD already reflecting the strongest bullish catalyst on the list.",
+      "narrative": "No clean high-edge new entry under the $200 notional and R:R constraints. Top-ranked UBER carries bearish sentiment and a negative catalyst score, while remaining candidates offer only mild headline flow. Existing BAC and HOOD positions remain within stops with intact theses, so cash is preferred over forcing a marginal add or rotation.",
       "bullets": [
-        "UBER rank leader but catalyst_score -21 bearish \u2014 avoid",
-        "HOOD/BAC already held and not at exit levels",
-        "Remaining candidates lack standout R:R catalyst edge under $200 notional",
-        "Preserve cash until clearer setup"
+        "UBER top rank but bearish/negative catalyst",
+        "XOM/NFLX catalysts too weak for fresh risk",
+        "BAC/HOOD still valid; book not full but no edge"
       ],
       "risk_map": {
         "stop": 0.0,
@@ -144,18 +144,17 @@
         "confidence_10": 6,
         "confidence": 62
       },
-      "thesis": "No clean new edge meeting desk criteria. Top-ranked UBER carries a negative catalyst score and bearish sentiment on the workforce-cut headline despite the pop, so it is skipped. Best positive fresh catalysts (XOM/NFLX) are only moderate institutional or partnership noise; existing BAC and HOOD positions remain green and within stops/targets with HOOD already reflecting the strongest bullish catalyst on the list."
+      "thesis": "No clean high-edge new entry under the $200 notional and R:R constraints. Top-ranked UBER carries bearish sentiment and a negative catalyst score, while remaining candidates offer only mild headline flow. Existing BAC and HOOD positions remain within stops with intact theses, so cash is preferred over forcing a marginal add or rotation."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "UBER rank leader but catalyst_score -21 bearish \u2014 avoid",
-      "HOOD/BAC already held and not at exit levels",
-      "Remaining candidates lack standout R:R catalyst edge under $200 notional",
-      "Preserve cash until clearer setup"
+      "UBER top rank but bearish/negative catalyst",
+      "XOM/NFLX catalysts too weak for fresh risk",
+      "BAC/HOOD still valid; book not full but no edge"
     ],
-    "timestamp": "2026-09-02T15:02:44.408982+00:00"
+    "timestamp": "2026-09-02T15:19:55.986358+00:00"
   },
   "stance": "Holding BAC, HOOD. No new trade right now.",
   "thinking": {
@@ -176,9 +175,9 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 63.25,
-        "open_pnl": 3.37,
-        "open_pnl_pct": 1.69,
+        "last": 63.14500045776367,
+        "open_pnl": 3.03,
+        "open_pnl_pct": 1.52,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
       },
@@ -188,14 +187,14 @@
         "avg_cost": 106.34,
         "stop": 101.5,
         "target": 116.0,
-        "last": 105.68499755859375,
-        "open_pnl": -1.23,
-        "open_pnl_pct": -0.62,
+        "last": 106.42500305175781,
+        "open_pnl": 0.16,
+        "open_pnl_pct": 0.08,
         "line": "Bought near $106.34 \u00b7 Sell safety line $101.50 \u00b7 Profit target $116.00",
         "plan": "stop 101.5 or target 116.0"
       }
     ],
-    "last_checked": "2026-09-02T15:10:25.655829+00:00",
+    "last_checked": "2026-09-02T15:20:10.721431+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "HOLD",
@@ -223,18 +222,18 @@
       {
         "prefix": "J",
         "model": "deepseek-v4-flash",
-        "action": "HOLD",
-        "symbol": "CASH",
+        "action": "BUY",
+        "symbol": "XOM",
         "confidence": 72,
-        "tone": "hold"
+        "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "BUY",
-        "symbol": "HOOD",
-        "confidence": 75,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 60,
+        "tone": "hold"
       },
       {
         "prefix": "S",
@@ -263,6 +262,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 no new trade",
+      "detail": "No clean high-edge new entry under the $200 notional and R:R constraints. Top-ranked UBER carries bearish sentiment and a negative catalyst score, while remaining candidates offer only mild headline flow. Existing BAC and HOOD positions remain within stops with intact theses, so cash is preferred over forcing a marginal add or rotation.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "XOM",
+          "confidence": 72,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "BUY",
+          "symbol": "XOM",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-02T15:19:55.986358+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -11804,35 +11880,23 @@
     {
       "symbol": "UBER",
       "name": "UBER",
-      "price": 76.3949966430664,
-      "volume": 3942426.0,
-      "avg_volume": 13242525.111111112,
-      "percent_change": 1.535086140470299,
+      "price": 76.26000213623047,
+      "volume": 4142441.0,
+      "avg_volume": 13264749.0,
+      "percent_change": 1.3556675989116451,
       "exchange": "",
       "sentiment": "bearish",
-      "catalyst_score": -21,
-      "liquidity_score": 81.22,
-      "rank_score": 104.91,
+      "catalyst_score": -17,
+      "liquidity_score": 81.23,
+      "rank_score": 88.77,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (cut): Uber Stock Rises After CEO Announces 10% Global Workforce Cut - Barron's",
+      "catalyst": "Headline-driven setup (ai, catalyst, cut): Uber stock gains 2% as tech giant cuts 3,300 jobs in major restructuring - Investing.com",
       "top_headlines": [
-        "Uber Stock Rises After CEO Announces 10% Global Workforce Cut - Barron's",
-        "Uber to Cut 10% of Jobs, or 3,300 Roles, to Slash Bureaucracy - Bloomberg.com",
-        "Uber stock gains 2% as tech giant cuts 3,300 jobs in major restructuring - Investing.com"
+        "Uber stock gains 2% as tech giant cuts 3,300 jobs in major restructuring - Investing.com",
+        "Uber cutting 3,300 jobs in company-wide restructuring - qz.com",
+        "Uber Slashes 3,300 Jobs to Flatten Hierarchy and Fund Robotaxi Push - Barron's"
       ],
       "matched_headlines": [
-        {
-          "title": "Uber Stock Rises After CEO Announces 10% Global Workforce Cut - Barron's",
-          "keywords": [
-            "cut"
-          ]
-        },
-        {
-          "title": "Uber to Cut 10% of Jobs, or 3,300 Roles, to Slash Bureaucracy - Bloomberg.com",
-          "keywords": [
-            "cut"
-          ]
-        },
         {
           "title": "Uber stock gains 2% as tech giant cuts 3,300 jobs in major restructuring - Investing.com",
           "keywords": [
@@ -11854,29 +11918,107 @@
             "cut",
             "cuts"
           ]
+        },
+        {
+          "title": "Uber to lay off 10% of staff in biggest cuts since COVID - Reuters",
+          "keywords": [
+            "cut",
+            "cuts"
+          ]
+        },
+        {
+          "title": "Uber to cut 10% of its global workforce - ft.com",
+          "keywords": [
+            "cut"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "BAC",
+      "name": "BAC",
+      "price": 63.154998779296875,
+      "volume": 8174120.0,
+      "avg_volume": 29757580.0,
+      "percent_change": 1.8793306489532782,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 16,
+      "liquidity_score": 84.74,
+      "rank_score": 85.71,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (beat): Bank of America Corporation $BAC Stock Position Reduced by Royal London Asset Management Ltd. - MarketBeat",
+      "top_headlines": [
+        "Bank of America (BAC) Stock May Be 31% Undervalued Despite Stablecoin Plans - Yahoo Finance Singapore",
+        "Why Did Banking Stocks GS, JPM, BAC Surge To 52-Week Highs Today? - Stocktwits",
+        "Bank of America Corporation $BAC Stock Position Reduced by Royal London Asset Management Ltd. - MarketBeat"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Bank of America Corporation $BAC Stock Position Reduced by Royal London Asset Management Ltd. - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Are Bank of America\u2019s (BAC) New Bond Deals Quietly Redefining Its Tech\u2011Driven Funding Strategy? - simplywall.st",
+          "keywords": [
+            "catalyst",
+            "deal"
+          ]
+        },
+        {
+          "title": "BAC Stock: Is $49.38 A Trap Or A Massive Discount? | 2026 Fair Value Analysis \ud83d\ude80 \u200b#BAC #BankofAmerica Corinaldo (Min2xoQfKz) - Mshale",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Montanova Capital LLC Lowers Stock Position in Bank of America Corporation $BAC - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Bank Of America Corp (BAC) Stock Analysis: Share Buybacks, Earnings Growth & Analyst Sentiment Rocket Launch Today (O6bFq8YGgC) - Mshale",
+          "keywords": [
+            "buyback",
+            "catalyst",
+            "growth",
+            "launch"
+          ]
         }
       ]
     },
     {
       "symbol": "HOOD",
       "name": "HOOD",
-      "price": 106.5,
-      "volume": 6552348.0,
-      "avg_volume": 21143444.8,
-      "percent_change": 2.8886076727487335,
+      "price": 105.72000122070312,
+      "volume": 7109664.0,
+      "avg_volume": 21199176.4,
+      "percent_change": 2.135058486004141,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 18,
-      "liquidity_score": 83.25,
-      "rank_score": 94.3,
+      "catalyst_score": 15,
+      "liquidity_score": 83.26,
+      "rank_score": 81.7,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst, raised): HOOD Stock Price Target Raised At Piper Sandler Citing Football Prediction Market Boom - Stocktwits",
+      "catalyst": "Headline-driven setup (ai, catalyst, record): HOOD Stock Price Target Hiked On Football Prediction Market Boom \u2013 Robinhood Chain\u2019s CASHCAT Hits Record High - Yahoo Finance",
       "top_headlines": [
+        "HOOD Stock Price Target Hiked On Football Prediction Market Boom \u2013 Robinhood Chain\u2019s CASHCAT Hits Record High - Yahoo Finance",
         "HOOD Stock Price Target Raised At Piper Sandler Citing Football Prediction Market Boom - Stocktwits",
-        "Stocks making the biggest moves premarket: Nvidia, Robinhood, Novartis & more - CNBC",
-        "Analyst Raises Robinhood Stock Price Target to $145 But HOOD Retreats - CoinGape"
+        "Stocks making the biggest moves premarket: Nvidia, Robinhood, Novartis & more - CNBC"
       ],
       "matched_headlines": [
+        {
+          "title": "HOOD Stock Price Target Hiked On Football Prediction Market Boom \u2013 Robinhood Chain\u2019s CASHCAT Hits Record High - Yahoo Finance",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "record"
+          ]
+        },
         {
           "title": "HOOD Stock Price Target Raised At Piper Sandler Citing Football Prediction Market Boom - Stocktwits",
           "keywords": [
@@ -11905,93 +12047,27 @@
           "keywords": [
             "beat"
           ]
-        },
-        {
-          "title": "Robinhood raised to Overweight at Morgan Stanley on long growth runway (HOOD:NASDAQ) - Seeking Alpha",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "growth",
-            "raised"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "BAC",
-      "name": "BAC",
-      "price": 63.505001068115234,
-      "volume": 7396857.0,
-      "avg_volume": 29671217.444444444,
-      "percent_change": 2.443941520612503,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 16,
-      "liquidity_score": 84.72,
-      "rank_score": 86.16,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (catalyst, deal): Are Bank of America\u2019s (BAC) New Bond Deals Quietly Redefining Its Tech\u2011Driven Funding Strategy? - simplywall.st",
-      "top_headlines": [
-        "Bank of America (BAC) Stock May Be 31% Undervalued Despite Stablecoin Plans - Yahoo Finance Singapore",
-        "Why Did Banking Stocks GS, JPM, BAC Surge To 52-Week Highs Today? - Stocktwits",
-        "Are Bank of America\u2019s (BAC) New Bond Deals Quietly Redefining Its Tech\u2011Driven Funding Strategy? - simplywall.st"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Are Bank of America\u2019s (BAC) New Bond Deals Quietly Redefining Its Tech\u2011Driven Funding Strategy? - simplywall.st",
-          "keywords": [
-            "catalyst",
-            "deal"
-          ]
-        },
-        {
-          "title": "Bank of America Corporation $BAC Stock Position Reduced by Royal London Asset Management Ltd. - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "BAC Stock: Is $49.38 A Trap Or A Massive Discount? | 2026 Fair Value Analysis \ud83d\ude80 \u200b#BAC #BankofAmerica Corinaldo (Min2xoQfKz) - Mshale",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Montanova Capital LLC Lowers Stock Position in Bank of America Corporation $BAC - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Bank Of America Corp (BAC) Stock Analysis: Share Buybacks, Earnings Growth & Analyst Sentiment Rocket Launch Today (O6bFq8YGgC) - Mshale",
-          "keywords": [
-            "buyback",
-            "catalyst",
-            "growth",
-            "launch"
-          ]
         }
       ]
     },
     {
       "symbol": "XOM",
       "name": "XOM",
-      "price": 163.4199981689453,
-      "volume": 2740352.0,
-      "avg_volume": 13121950.222222222,
-      "percent_change": -0.6867243159254555,
+      "price": 163.1199951171875,
+      "volume": 2940202.0,
+      "avg_volume": 13144155.777777778,
+      "percent_change": -0.8690415728041739,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 15,
-      "liquidity_score": 81.18,
-      "rank_score": 80.23,
+      "liquidity_score": 81.19,
+      "rank_score": 80.37,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): 11,008 Shares in ExxonMobil Corporation $XOM Acquired by Alyeska Investment Group L.P. - MarketBeat",
       "top_headlines": [
+        "XOM|Exxon Mobil Corp|Price:163.005|Chg%:-1.545 - TradingKey",
         "11,008 Shares in ExxonMobil Corporation $XOM Acquired by Alyeska Investment Group L.P. - MarketBeat",
-        "ExxonMobil Holdings (XOM) Eyes Shell Chemicals Deal As Fair Value Stays In Focus - simplywall.st",
-        "Why Are XOM, CVX, GEV Stocks Rising Overnight? - Stocktwits"
+        "ExxonMobil Holdings (XOM) Eyes Shell Chemicals Deal As Fair Value Stays In Focus - simplywall.st"
       ],
       "matched_headlines": [
         {
@@ -12009,7 +12085,7 @@
           ]
         },
         {
-          "title": "Investing in ExxonMobil Holdings Corporation (XOM): A Case for Long-Term Growth and Returns - Yahoo Finance Singapore",
+          "title": "Investing in ExxonMobil Holdings Corporation (XOM): A Case for Long-Term Growth and Returns - Yahoo Finance",
           "keywords": [
             "growth"
           ]
@@ -12032,15 +12108,15 @@
     {
       "symbol": "TSLA",
       "name": "TSLA",
-      "price": 351.05499267578125,
-      "volume": 13754627.0,
-      "avg_volume": 36228162.7,
-      "percent_change": -1.4139694217446381,
+      "price": 354.4599914550781,
+      "volume": 15296139.0,
+      "avg_volume": 36382313.9,
+      "percent_change": -0.4577508213024336,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
-      "liquidity_score": 85.59,
-      "rank_score": 63.97,
+      "liquidity_score": 85.61,
+      "rank_score": 63.21,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst, launch): Tesla\u2019s Much-Awaited Cybercab Launch Is Here \u2014 Morgan Stanley Says One Thing Could Decide TSLA Stock Reaction - TradingView",
       "top_headlines": [
@@ -12129,21 +12205,21 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 80.0
+    "live_share_recent": 81.1
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 328,
     "closed_outcomes": 150,
-    "consensus_events": 418,
+    "consensus_events": 419,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 978.82,
-    "change": -21.18,
-    "change_pct": -2.12,
+    "latest_equity": 979.88,
+    "change": -20.12,
+    "change_pct": -2.01,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15602,8 +15678,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-02T15:10:28.408567+00:00",
-        "equity": 978.82,
+        "t": "2026-09-02T15:20:13.610120+00:00",
+        "equity": 979.88,
         "cash": 577.1,
         "event": "mark"
       }
