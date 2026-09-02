@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-09-02T18:10:28.439797+00:00",
+  "generated_at": "2026-09-02T18:18:12.099761+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 976.47,
+    "portfolio_value": 975.99,
     "starting_cash": 1000.0,
-    "total_return_pct": -2.35,
-    "total_pnl": -23.53,
+    "total_return_pct": -2.4,
+    "total_pnl": -24.01,
     "realized_pnl": -23.35,
-    "open_pnl": -0.21,
-    "capital_deployed": 399.37,
+    "open_pnl": -0.69,
+    "capital_deployed": 398.89,
     "cash": 577.1,
     "closed_trades": 28,
     "win_rate_pct": 28.57,
-    "vs_spy_pct": -1.8,
-    "spy_return_pct": -0.55,
+    "vs_spy_pct": -1.86,
+    "spy_return_pct": -0.54,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-02T18:10:31.037323+00:00"
+    "updated_at": "2026-09-02T18:18:14.771156+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.55,
-    "price": 765.1599731445312,
+    "return_pct": -0.54,
+    "price": 765.219970703125,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 14,
-    "validated_count_today": 13,
+    "consensus_count_today": 15,
+    "validated_count_today": 14,
     "blocked_count_today": 1,
     "fills_today": 2,
-    "simulated_orders_today": 13,
+    "simulated_orders_today": 14,
     "top_symbol_today": "PANW"
   },
   "holdings": [
@@ -38,10 +38,10 @@
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 62.41999816894531,
-      "market_value": 200.37,
-      "open_pnl": 0.71,
-      "open_pnl_pct": 0.35,
+      "last": 62.375,
+      "market_value": 200.22,
+      "open_pnl": 0.56,
+      "open_pnl_pct": 0.28,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
@@ -50,10 +50,10 @@
       "symbol": "HOOD",
       "qty": 1.88,
       "avg_cost": 106.34,
-      "last": 105.8499984741211,
-      "market_value": 199.0,
-      "open_pnl": -0.92,
-      "open_pnl_pct": -0.46,
+      "last": 105.67500305175781,
+      "market_value": 198.67,
+      "open_pnl": -1.25,
+      "open_pnl_pct": -0.63,
       "stop": 101.5,
       "target": 116.0,
       "thesis": "HOOD shows a high-rank catalyst setup with Piper Sandler raising the price target on football prediction market strength and AI-related momentum. Sentiment is bullish and RSI is neutral at 50, supporting a clean long entry within risk limits. Position sized to ~$200 notional with defined R:R >1.5."
@@ -62,21 +62,21 @@
   "latest_candidate": {
     "symbol": "UBER",
     "name": "UBER",
-    "price": 76.77999877929688,
-    "volume": 7485338.0,
-    "avg_volume": 13636182.0,
-    "percent_change": 2.0467849006530923,
+    "price": 76.83499908447266,
+    "volume": 7705211.0,
+    "avg_volume": 13660612.333333334,
+    "percent_change": 2.119884723536348,
     "exchange": "",
     "sentiment": "bearish",
-    "catalyst_score": -16,
+    "catalyst_score": -21,
     "liquidity_score": 81.35,
-    "rank_score": 85.34,
+    "rank_score": 105.4,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (cut): Uber to Cut 10% of Jobs, or 3,300 Roles, to Slash Bureaucracy - Bloomberg.com",
     "top_headlines": [
       "Uber to Cut 10% of Jobs, or 3,300 Roles, to Slash Bureaucracy - Bloomberg.com",
       "Uber stock gains 2% as tech giant cuts 3,300 jobs in major restructuring - Investing.com",
-      "Uber Stock Rises After Major Restructuring - tradingview.com"
+      "Uber Stock Rises After Major Restructuring - TradingView"
     ],
     "matched_headlines": [
       {
@@ -95,24 +95,24 @@
         ]
       },
       {
-        "title": "Uber Shares Rise 2.4% as Company Plans 3,300 Job Cuts in Restructuring - Yahoo Finance",
+        "title": "Uber Shares Rise 2.4% as Company Plans 3,300 Job Cuts in Restructuring - finance.yahoo.com",
         "keywords": [
           "cut",
           "cuts"
         ]
       },
       {
-        "title": "Uber to Lay off 10% of Staff in Biggest Cuts Since COVID - GV Wire",
+        "title": "Uber Cuts 10% Of Staff In Company\u2019s Largest Layoffs Since Pandemic - Forbes",
         "keywords": [
           "cut",
           "cuts"
         ]
       },
       {
-        "title": "Dell, Credo, Palo Alto, MongoDB, Uber, GitLab, and More Stocks That Explain Today\u2019s Market - Barron's",
+        "title": "Uber to Lay off 10% of Staff in Biggest Cuts Since COVID - gvwire.com",
         "keywords": [
-          "ai",
-          "catalyst"
+          "cut",
+          "cuts"
         ]
       }
     ]
@@ -121,21 +121,21 @@
     "model": "grok-4.3",
     "action": "HOLD",
     "symbol": "CASH",
-    "confidence": 65,
+    "confidence": 60,
     "cache_stats": null,
     "entry_price": 0.0,
     "stop_loss": 0.0,
     "take_profit": 0.0,
     "qty": 0.0,
-    "thesis": "No high-conviction liquid catalyst setup meets reward:risk >=1.5 criteria within $200 notional. UBER leads candidates but carries bearish job-cut headline. Held names BAC and HOOD show modest P/L with no rotation edge to new names.",
+    "thesis": "No high-conviction liquid catalyst setup meets reward:risk >=1.5 criteria within $200 notional limit. Top candidate UBER shows negative catalyst and bearish sentiment while held names BAC and HOOD carry positive headlines and remain within tolerance. Rotation not justified as no materially superior candidate exists.",
     "reason_code": "hold",
     "reasoning": {
       "headline": "Hold $CASH",
-      "narrative": "No high-conviction liquid catalyst setup meets reward:risk >=1.5 criteria within $200 notional. UBER leads candidates but carries bearish job-cut headline. Held names BAC and HOOD show modest P/L with no rotation edge to new names.",
+      "narrative": "No high-conviction liquid catalyst setup meets reward:risk >=1.5 criteria within $200 notional limit. Top candidate UBER shows negative catalyst and bearish sentiment while held names BAC and HOOD carry positive headlines and remain within tolerance. Rotation not justified as no materially superior candidate exists.",
       "bullets": [
-        "UBER bearish catalyst dominates top rank",
-        "BAC/HOOD already positioned, no clear upgrade",
-        "Max 5 names policy not binding but edge absent"
+        "Cash $577 available but no edge",
+        "Current positions show stable theses",
+        "Avoid forcing trades below thresholds"
       ],
       "risk_map": {
         "stop": 0.0,
@@ -143,19 +143,19 @@
         "horizon_days": 5,
         "rr": 0.0,
         "confidence_10": 6,
-        "confidence": 65
+        "confidence": 60
       },
-      "thesis": "No high-conviction liquid catalyst setup meets reward:risk >=1.5 criteria within $200 notional. UBER leads candidates but carries bearish job-cut headline. Held names BAC and HOOD show modest P/L with no rotation edge to new names."
+      "thesis": "No high-conviction liquid catalyst setup meets reward:risk >=1.5 criteria within $200 notional limit. Top candidate UBER shows negative catalyst and bearish sentiment while held names BAC and HOOD carry positive headlines and remain within tolerance. Rotation not justified as no materially superior candidate exists."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.3",
     "bullets": [
-      "UBER bearish catalyst dominates top rank",
-      "BAC/HOOD already positioned, no clear upgrade",
-      "Max 5 names policy not binding but edge absent"
+      "Cash $577 available but no edge",
+      "Current positions show stable theses",
+      "Avoid forcing trades below thresholds"
     ],
-    "timestamp": "2026-09-02T18:02:19.865169+00:00"
+    "timestamp": "2026-09-02T18:17:50.719298+00:00"
   },
   "stance": "Holding BAC, HOOD. No new trade right now.",
   "thinking": {
@@ -176,9 +176,9 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 62.41999816894531,
-        "open_pnl": 0.71,
-        "open_pnl_pct": 0.35,
+        "last": 62.375,
+        "open_pnl": 0.56,
+        "open_pnl_pct": 0.28,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
       },
@@ -188,14 +188,14 @@
         "avg_cost": 106.34,
         "stop": 101.5,
         "target": 116.0,
-        "last": 105.8499984741211,
-        "open_pnl": -0.92,
-        "open_pnl_pct": -0.46,
+        "last": 105.67500305175781,
+        "open_pnl": -1.25,
+        "open_pnl_pct": -0.63,
         "line": "Bought near $106.34 \u00b7 Sell safety line $101.50 \u00b7 Profit target $116.00",
         "plan": "stop 101.5 or target 116.0"
       }
     ],
-    "last_checked": "2026-09-02T18:10:28.439797+00:00",
+    "last_checked": "2026-09-02T18:18:12.099761+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "HOLD",
@@ -209,7 +209,7 @@
         "model": "grok-4.3",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 65,
+        "confidence": 60,
         "tone": "hold"
       },
       {
@@ -233,12 +233,89 @@
         "model": "grok-build-0.1",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 65,
+        "confidence": 60,
         "tone": "hold"
       }
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 no new trade",
+      "detail": "No high-conviction liquid catalyst setup meets reward:risk >=1.5 criteria within $200 notional limit. Top candidate UBER shows negative catalyst and bearish sentiment while held names BAC and HOOD carry positive headlines and remain within tolerance. Rotation not justified as no materially superior candidate exists.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        }
+      ],
+      "tier": "junior_only",
+      "escalate_reason": "",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-02T18:17:50.719298+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -777,83 +854,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-09-02T16:35:24.264279+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CASH",
-      "status": "hold",
-      "headline": "HOLD \u2014 no new trade",
-      "detail": "No material edge for new entry or rotation. UBER leads rank but carries bearish job-cut catalyst with negative score. Held names BAC and HOOD show mixed P/L with no rotation trigger to a clearly superior candidate. Cash preserved pending better setups.",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        }
-      ],
-      "tier": "junior_only",
-      "escalate_reason": "",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-02T16:17:38.309374+00:00"
     },
     {
       "type": "fill",
@@ -12056,21 +12056,21 @@
     {
       "symbol": "UBER",
       "name": "UBER",
-      "price": 76.77999877929688,
-      "volume": 7485338.0,
-      "avg_volume": 13636182.0,
-      "percent_change": 2.0467849006530923,
+      "price": 76.83499908447266,
+      "volume": 7705211.0,
+      "avg_volume": 13660612.333333334,
+      "percent_change": 2.119884723536348,
       "exchange": "",
       "sentiment": "bearish",
-      "catalyst_score": -16,
+      "catalyst_score": -21,
       "liquidity_score": 81.35,
-      "rank_score": 85.34,
+      "rank_score": 105.4,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (cut): Uber to Cut 10% of Jobs, or 3,300 Roles, to Slash Bureaucracy - Bloomberg.com",
       "top_headlines": [
         "Uber to Cut 10% of Jobs, or 3,300 Roles, to Slash Bureaucracy - Bloomberg.com",
         "Uber stock gains 2% as tech giant cuts 3,300 jobs in major restructuring - Investing.com",
-        "Uber Stock Rises After Major Restructuring - tradingview.com"
+        "Uber Stock Rises After Major Restructuring - TradingView"
       ],
       "matched_headlines": [
         {
@@ -12089,24 +12089,24 @@
           ]
         },
         {
-          "title": "Uber Shares Rise 2.4% as Company Plans 3,300 Job Cuts in Restructuring - Yahoo Finance",
+          "title": "Uber Shares Rise 2.4% as Company Plans 3,300 Job Cuts in Restructuring - finance.yahoo.com",
           "keywords": [
             "cut",
             "cuts"
           ]
         },
         {
-          "title": "Uber to Lay off 10% of Staff in Biggest Cuts Since COVID - GV Wire",
+          "title": "Uber Cuts 10% Of Staff In Company\u2019s Largest Layoffs Since Pandemic - Forbes",
           "keywords": [
             "cut",
             "cuts"
           ]
         },
         {
-          "title": "Dell, Credo, Palo Alto, MongoDB, Uber, GitLab, and More Stocks That Explain Today\u2019s Market - Barron's",
+          "title": "Uber to Lay off 10% of Staff in Biggest Cuts Since COVID - gvwire.com",
           "keywords": [
-            "ai",
-            "catalyst"
+            "cut",
+            "cuts"
           ]
         }
       ]
@@ -12114,15 +12114,15 @@
     {
       "symbol": "BAC",
       "name": "BAC",
-      "price": 62.42499923706055,
-      "volume": 15340853.0,
-      "avg_volume": 30553883.666666668,
-      "percent_change": 0.701722127465038,
+      "price": 62.37919998168945,
+      "volume": 15868572.0,
+      "avg_volume": 30612519.111111112,
+      "percent_change": 0.6278404463374138,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 16,
-      "liquidity_score": 84.85,
-      "rank_score": 84.79,
+      "catalyst_score": 15,
+      "liquidity_score": 84.86,
+      "rank_score": 79.23,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): 27,157 Shares in Bank of America Corporation $BAC Acquired by Proficio Capital Partners LLC - MarketBeat",
       "top_headlines": [
@@ -12145,19 +12145,6 @@
           ]
         },
         {
-          "title": "BAC Stock: Is $49.38 A Trap Or A Massive Discount? | 2026 Fair Value Analysis \ud83d\ude80 \u200b#BAC #BankofAmerica Corinaldo (Min2xoQfKz) - Mshale",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Bank of America Corporation $BAC Stock Position Reduced by Royal London Asset Management Ltd. - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
           "title": "Bank Of America Corp (BAC) Stock Analysis: Share Buybacks, Earnings Growth & Analyst Sentiment Rocket Launch Today (O6bFq8YGgC) - Mshale",
           "keywords": [
             "buyback",
@@ -12165,31 +12152,37 @@
             "growth",
             "launch"
           ]
+        },
+        {
+          "title": "Bank of America Corporation $BAC Stock Position Reduced by Royal London Asset Management Ltd. - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
         }
       ]
     },
     {
       "symbol": "HOOD",
       "name": "HOOD",
-      "price": 105.91999816894531,
-      "volume": 11240729.0,
-      "avg_volume": 21612282.9,
-      "percent_change": 2.3282735803087182,
+      "price": 105.80999755859375,
+      "volume": 11482011.0,
+      "avg_volume": 21636411.1,
+      "percent_change": 2.2220030672361846,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 12,
       "liquidity_score": 83.35,
-      "rank_score": 69.87,
+      "rank_score": 69.78,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst, record): HOOD Stock Price Target Hiked On Football Prediction Market Boom \u2013 Robinhood Chain\u2019s CASHCAT Hits Record High - Yahoo Finance",
+      "catalyst": "Headline-driven setup (ai, catalyst, record): HOOD Stock Price Target Hiked On Football Prediction Market Boom \u2013 Robinhood Chain\u2019s CASHCAT Hits Record High - finance.yahoo.com",
       "top_headlines": [
-        "HOOD Stock Price Target Hiked On Football Prediction Market Boom \u2013 Robinhood Chain\u2019s CASHCAT Hits Record High - Yahoo Finance",
+        "HOOD Stock Price Target Hiked On Football Prediction Market Boom \u2013 Robinhood Chain\u2019s CASHCAT Hits Record High - finance.yahoo.com",
         "HOOD Stock Price Target Raised At Piper Sandler Citing Football Prediction Market Boom - Stocktwits",
         "Stocks making the biggest moves premarket: Nvidia, Robinhood, Novartis & more - CNBC"
       ],
       "matched_headlines": [
         {
-          "title": "HOOD Stock Price Target Hiked On Football Prediction Market Boom \u2013 Robinhood Chain\u2019s CASHCAT Hits Record High - Yahoo Finance",
+          "title": "HOOD Stock Price Target Hiked On Football Prediction Market Boom \u2013 Robinhood Chain\u2019s CASHCAT Hits Record High - finance.yahoo.com",
           "keywords": [
             "ai",
             "catalyst",
@@ -12215,7 +12208,7 @@
           ]
         },
         {
-          "title": "Analyst Raises Robinhood Stock Price Target to $145 But HOOD Retreats - CoinGape",
+          "title": "Analyst Raises Robinhood Stock Price Target to $145 But HOOD Retreats - coingape.com",
           "keywords": [
             "ai",
             "catalyst",
@@ -12223,7 +12216,7 @@
           ]
         },
         {
-          "title": "Analysts Offer Insights on Financial Companies: Aon (AON) and Robinhood (HOOD) - theglobeandmail.com",
+          "title": "Analysts Offer Insights on Financial Companies: Aon (AON) and Robinhood (HOOD) - The Globe and Mail",
           "keywords": [
             "ai",
             "catalyst"
@@ -12232,37 +12225,86 @@
       ]
     },
     {
+      "symbol": "ORCL",
+      "name": "ORCL",
+      "price": 145.89999389648438,
+      "volume": 12842550.0,
+      "avg_volume": 18313575.0,
+      "percent_change": 3.2408621107400193,
+      "exchange": "",
+      "sentiment": "bearish",
+      "catalyst_score": -11,
+      "liquidity_score": 82.63,
+      "rank_score": 64.99,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst, cut): ORCL Stock Extends Fall Overnight After Analyst Cuts Price Target, Flags Analyst Day As Key Catalyst: Retail Watches Cautiously - Stocktwits",
+      "top_headlines": [
+        "ORCL Stock Could Be Near A Turning Point, Says Jefferies As \u2018Peak-Negative\u2019 Investor Sentiment Sets In - finance.yahoo.com",
+        "ORCL Stock Could Be Near A Turning Point, Says Jefferies As \u2018Peak-Negative\u2019 Investor Sentiment Sets In - TradingView",
+        "Oracle (ORCL) Was Flagged As A Potential Recession Risk - simplywall.st"
+      ],
+      "matched_headlines": [
+        {
+          "title": "ORCL Stock Extends Fall Overnight After Analyst Cuts Price Target, Flags Analyst Day As Key Catalyst: Retail Watches Cautiously - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "cut",
+            "cuts",
+            "fall"
+          ]
+        },
+        {
+          "title": "ORCL Stock Heads to $115 after Failing at $150 as Oracle Layoffs and $70 Billion Spending Raise Concerns - FXLeaders",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "ORCL Stock Extends Fall Overnight After Analyst Cuts Price Target, Flags Analyst Day As Key Catalyst: Retail Watches Cautiously - TradingView",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "cut",
+            "cuts",
+            "fall"
+          ]
+        },
+        {
+          "title": "US Market Moves | Major Tech Stocks Decline Broadly; Oracle (ORCL.US) Drops Over 3% - Moomoo",
+          "keywords": [
+            "decline",
+            "drop",
+            "drops"
+          ]
+        }
+      ]
+    },
+    {
       "symbol": "PANW",
       "name": "PANW",
-      "price": 323.1099853515625,
-      "volume": 8799187.0,
-      "avg_volume": 6529409.666666667,
-      "percent_change": -10.765282493458683,
+      "price": 324.3900146484375,
+      "volume": 9072774.0,
+      "avg_volume": 6559808.222222222,
+      "percent_change": -10.411771126168514,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 11,
-      "liquidity_score": 78.15,
-      "rank_score": 68.22,
-      "news_hits": 4,
+      "catalyst_score": 10,
+      "liquidity_score": 78.17,
+      "rank_score": 64.23,
+      "news_hits": 5,
       "catalyst": "Headline-driven setup (catalyst): Palo Alto Networks Stock (PANW) Opinions on Post-Earnings Selloff - Quiver Quantitative",
       "top_headlines": [
         "Palo Alto Networks Stock (PANW) Opinions on Post-Earnings Selloff - Quiver Quantitative",
-        "PANW Stock In Focus \u2014 Palo Alto Networks Tops Q4 Estimates, Issues Upbeat FY27 Guidance - Stocktwits",
-        "Palo Alto Networks slips even as Wall Street praises results, guidance (PANW:NASDAQ) - Seeking Alpha"
+        "Palo Alto Networks slips even as Wall Street praises results, guidance (PANW:NASDAQ) - Seeking Alpha",
+        "PANW Reiterated by Piper Sandler -- Price Target Raised to $410 - GuruFocus"
       ],
       "matched_headlines": [
         {
           "title": "Palo Alto Networks Stock (PANW) Opinions on Post-Earnings Selloff - Quiver Quantitative",
           "keywords": [
             "catalyst"
-          ]
-        },
-        {
-          "title": "PANW Stock In Focus \u2014 Palo Alto Networks Tops Q4 Estimates, Issues Upbeat FY27 Guidance - Stocktwits",
-          "keywords": [
-            "beat",
-            "catalyst",
-            "guidance"
           ]
         },
         {
@@ -12273,60 +12315,13 @@
             "guidance",
             "raises"
           ]
-        }
-      ]
-    },
-    {
-      "symbol": "NVDA",
-      "name": "NVDA",
-      "price": 224.67999267578125,
-      "volume": 109303755.0,
-      "avg_volume": 146623965.5,
-      "percent_change": 3.3296496289020996,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 10,
-      "liquidity_score": 91.66,
-      "rank_score": 63.91,
-      "news_hits": 5,
-      "catalyst": "Headline-driven setup (catalyst, partnership): NVIDIA (NVDA) Stock Rebounds 5% as Inference Partnership Boosts Outlook - FXLeaders",
-      "top_headlines": [
-        "NVIDIA (NVDA) Stock Rebounds 5% as Inference Partnership Boosts Outlook - FXLeaders",
-        "NVIDIA (NASDAQ:NVDA) Screens as High-Growth Trend Template Stock - ChartMill",
-        "Dan Ives Says NVDA's Recent Underperformance Is A Bump Than Anything Else \u2014 'There's One Chip In The World Fueling The AI Revolution' - Stocktwits"
-      ],
-      "matched_headlines": [
-        {
-          "title": "NVIDIA (NVDA) Stock Rebounds 5% as Inference Partnership Boosts Outlook - FXLeaders",
-          "keywords": [
-            "catalyst",
-            "partnership"
-          ]
         },
         {
-          "title": "NVIDIA (NASDAQ:NVDA) Screens as High-Growth Trend Template Stock - ChartMill",
-          "keywords": [
-            "growth"
-          ]
-        },
-        {
-          "title": "Dan Ives Says NVDA's Recent Underperformance Is A Bump Than Anything Else \u2014 'There's One Chip In The World Fueling The AI Revolution' - Stocktwits",
+          "title": "PANW Reiterated by Piper Sandler -- Price Target Raised to $410 - GuruFocus",
           "keywords": [
             "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Nvidia: Stock Price To Catch Up To Earnings Growth (NASDAQ:NVDA) - Seeking Alpha",
-          "keywords": [
             "catalyst",
-            "growth"
-          ]
-        },
-        {
-          "title": "NVIDIA Corporation $NVDA Shares Purchased by Coastwise Capital Group LLC - MarketBeat",
-          "keywords": [
-            "beat"
+            "raised"
           ]
         }
       ]
@@ -12380,21 +12375,21 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "",
-    "live_share_recent": 87.7
+    "live_share_recent": 88.4
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 328,
     "closed_outcomes": 150,
-    "consensus_events": 430,
+    "consensus_events": 431,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 976.47,
-    "change": -23.53,
-    "change_pct": -2.35,
+    "latest_equity": 975.99,
+    "change": -24.01,
+    "change_pct": -2.4,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15939,6 +15934,12 @@
       {
         "t": "2026-09-02T18:10:31.037323+00:00",
         "equity": 976.47,
+        "cash": 577.1,
+        "event": "mark"
+      },
+      {
+        "t": "2026-09-02T18:18:14.771156+00:00",
+        "equity": 975.99,
         "cash": 577.1,
         "event": "mark"
       }
