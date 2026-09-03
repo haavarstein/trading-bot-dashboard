@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-09-03T17:00:31.347617+00:00",
+  "generated_at": "2026-09-03T17:02:36.187869+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1008.08,
+    "portfolio_value": 1008.49,
     "starting_cash": 1000.0,
-    "total_return_pct": 0.81,
-    "total_pnl": 8.08,
+    "total_return_pct": 0.85,
+    "total_pnl": 8.49,
     "realized_pnl": 1.45,
-    "open_pnl": 6.59,
-    "capital_deployed": 605.23,
+    "open_pnl": 7.01,
+    "capital_deployed": 605.64,
     "cash": 402.85,
     "closed_trades": 29,
     "win_rate_pct": 31.03,
-    "vs_spy_pct": 0.36,
-    "spy_return_pct": 0.45,
+    "vs_spy_pct": 0.42,
+    "spy_return_pct": 0.43,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-03T17:00:33.994345+00:00"
+    "updated_at": "2026-09-03T17:02:38.917272+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.45,
-    "price": 772.8300170898438,
+    "return_pct": 0.43,
+    "price": 772.6799926757812,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 9,
-    "validated_count_today": 9,
+    "consensus_count_today": 10,
+    "validated_count_today": 10,
     "blocked_count_today": 0,
     "fills_today": 3,
-    "simulated_orders_today": 9,
+    "simulated_orders_today": 10,
     "top_symbol_today": "HOOD"
   },
   "holdings": [
@@ -38,10 +38,10 @@
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 63.060001373291016,
-      "market_value": 202.42,
-      "open_pnl": 2.76,
-      "open_pnl_pct": 1.38,
+      "last": 63.064998626708984,
+      "market_value": 202.44,
+      "open_pnl": 2.78,
+      "open_pnl_pct": 1.39,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
@@ -50,10 +50,10 @@
       "symbol": "HOOD",
       "qty": 1.65,
       "avg_cost": 120.77,
-      "last": 123.0199966430664,
-      "market_value": 202.98,
-      "open_pnl": 3.71,
-      "open_pnl_pct": 1.86,
+      "last": 123.15499877929688,
+      "market_value": 203.21,
+      "open_pnl": 3.94,
+      "open_pnl_pct": 1.97,
       "stop": 115.0,
       "target": 129.5,
       "thesis": "HOOD shows top-ranked catalyst with Wall Street optimism and improving retail sentiment per Yahoo Finance headline. Current RSI at 50.0 leaves room for upside without overbought conditions. Book has ample cash and only one open name, allowing small new entry under $200 notional. Reward-to-risk exceeds 1.5 with defined levels."
@@ -62,10 +62,10 @@
       "symbol": "CVX",
       "qty": 0.94,
       "avg_cost": 212.45,
-      "last": 212.58009338378906,
-      "market_value": 199.83,
-      "open_pnl": 0.12,
-      "open_pnl_pct": 0.06,
+      "last": 212.7550048828125,
+      "market_value": 199.99,
+      "open_pnl": 0.29,
+      "open_pnl_pct": 0.14,
       "stop": 206.0,
       "target": 222.5,
       "thesis": "CVX shows a headline-driven bullish catalyst as Chevron reportedly nears a deal for giant Venezuelan oil fields, supporting further upside extension. RSI at 50 leaves room for continuation without being overbought. Liquid large-cap energy name fits the desk preference for catalyst setups with defined risk. Position sized to ~$200 notional with R:R above 1.5."
@@ -129,25 +129,24 @@
     ]
   },
   "latest_decision": {
-    "model": "grok-4.5",
+    "model": "grok-4.3",
     "action": "HOLD",
     "symbol": "CASH",
-    "confidence": 62,
+    "confidence": 65,
     "cache_stats": null,
     "entry_price": 0.0,
     "stop_loss": 0.0,
     "take_profit": 0.0,
     "qty": 0.0,
-    "thesis": "No clean new edge: top-ranked names BAC/CVX/HOOD are already held and remain inside stops/targets with modest open gains. Fresh candidates (JPM/META/NVDA/TSLA) lack superior rank/catalyst vs existing book and several have weak or mixed headlines; JPM\u2019s primary print is an institutional sale. With 3/5 slots filled and no stop/target hit, stand aside rather than force a sub-$200 add or rotation.",
+    "thesis": "No new candidate offers a materially better setup than current holdings. BAC and CVX remain top-ranked but already owned with positive or flat P/L. XOM and PLTR lack sufficient catalyst strength or risk-reward to justify new capital deployment under $200 notional limit.",
     "reason_code": "hold",
     "reasoning": {
       "headline": "Hold $CASH",
-      "narrative": "No clean new edge: top-ranked names BAC/CVX/HOOD are already held and remain inside stops/targets with modest open gains. Fresh candidates (JPM/META/NVDA/TSLA) lack superior rank/catalyst vs existing book and several have weak or mixed headlines; JPM\u2019s primary print is an institutional sale. With 3/5 slots filled and no stop/target hit, stand aside rather than force a sub-$200 add or rotation.",
+      "narrative": "No new candidate offers a materially better setup than current holdings. BAC and CVX remain top-ranked but already owned with positive or flat P/L. XOM and PLTR lack sufficient catalyst strength or risk-reward to justify new capital deployment under $200 notional limit.",
       "bullets": [
-        "Held BAC/HOOD/CVX still valid vs stops; none at target",
-        "New candidates not materially better than CVX (weakest hold)",
-        "JPM catalyst is a sell print; size/liquidity vs $200 cap awkward for META/TSLA/COST",
-        "Preserve cash ~$403 until clearer catalyst edge"
+        "Top candidates already held or lower conviction",
+        "Open positions showing stability with no rotation trigger",
+        "Require clean edge and 1.5:1 R:R for new entries"
       ],
       "risk_map": {
         "stop": 0.0,
@@ -155,20 +154,19 @@
         "horizon_days": 5,
         "rr": 0.0,
         "confidence_10": 6,
-        "confidence": 62
+        "confidence": 65
       },
-      "thesis": "No clean new edge: top-ranked names BAC/CVX/HOOD are already held and remain inside stops/targets with modest open gains. Fresh candidates (JPM/META/NVDA/TSLA) lack superior rank/catalyst vs existing book and several have weak or mixed headlines; JPM\u2019s primary print is an institutional sale. With 3/5 slots filled and no stop/target hit, stand aside rather than force a sub-$200 add or rotation."
+      "thesis": "No new candidate offers a materially better setup than current holdings. BAC and CVX remain top-ranked but already owned with positive or flat P/L. XOM and PLTR lack sufficient catalyst strength or risk-reward to justify new capital deployment under $200 notional limit."
     },
     "source": "live",
     "provider": "xai",
-    "provider_model_id": "grok-4.5",
+    "provider_model_id": "grok-4.3",
     "bullets": [
-      "Held BAC/HOOD/CVX still valid vs stops; none at target",
-      "New candidates not materially better than CVX (weakest hold)",
-      "JPM catalyst is a sell print; size/liquidity vs $200 cap awkward for META/TSLA/COST",
-      "Preserve cash ~$403 until clearer catalyst edge"
+      "Top candidates already held or lower conviction",
+      "Open positions showing stability with no rotation trigger",
+      "Require clean edge and 1.5:1 R:R for new entries"
     ],
-    "timestamp": "2026-09-03T16:48:13.196667+00:00"
+    "timestamp": "2026-09-03T17:02:22.122971+00:00"
   },
   "stance": "Holding BAC, HOOD, CVX. No new trade right now.",
   "thinking": {
@@ -189,9 +187,9 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 63.060001373291016,
-        "open_pnl": 2.76,
-        "open_pnl_pct": 1.38,
+        "last": 63.064998626708984,
+        "open_pnl": 2.78,
+        "open_pnl_pct": 1.39,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
       },
@@ -201,9 +199,9 @@
         "avg_cost": 120.77,
         "stop": 115.0,
         "target": 129.5,
-        "last": 123.0199966430664,
-        "open_pnl": 3.71,
-        "open_pnl_pct": 1.86,
+        "last": 123.15499877929688,
+        "open_pnl": 3.94,
+        "open_pnl_pct": 1.97,
         "line": "Bought near $120.77 \u00b7 Sell safety line $115.00 \u00b7 Profit target $129.50",
         "plan": "stop 115.0 or target 129.5"
       },
@@ -213,14 +211,14 @@
         "avg_cost": 212.45,
         "stop": 206.0,
         "target": 222.5,
-        "last": 212.58009338378906,
-        "open_pnl": 0.12,
-        "open_pnl_pct": 0.06,
+        "last": 212.7550048828125,
+        "open_pnl": 0.29,
+        "open_pnl_pct": 0.14,
         "line": "Bought near $212.45 \u00b7 Sell safety line $206.00 \u00b7 Profit target $222.50",
         "plan": "stop 206.0 or target 222.5"
       }
     ],
-    "last_checked": "2026-09-03T17:00:31.347617+00:00",
+    "last_checked": "2026-09-03T17:02:36.187869+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "HOLD",
@@ -249,46 +247,99 @@
       {
         "prefix": "J",
         "model": "deepseek-v4-flash",
-        "action": "BUY",
-        "symbol": "JPM",
-        "confidence": 72,
-        "tone": "buy"
-      },
-      {
-        "prefix": "J",
-        "model": "grok-build-0.1",
-        "action": "BUY",
-        "symbol": "BAC",
-        "confidence": 75,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "grok-4.5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 62,
-        "tone": "hold"
-      },
-      {
-        "prefix": "S",
-        "model": "claude-sonnet-5",
         "action": "HOLD",
         "symbol": "CASH",
         "confidence": 65,
         "tone": "hold"
       },
       {
-        "prefix": "S",
-        "model": "claude-opus-5",
-        "action": "BUY",
-        "symbol": "JPM",
-        "confidence": 90,
-        "tone": "buy"
+        "prefix": "J",
+        "model": "grok-build-0.1",
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 65,
+        "tone": "hold"
       }
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 no new trade",
+      "detail": "No new candidate offers a materially better setup than current holdings. BAC and CVX remain top-ranked but already owned with positive or flat P/L. XOM and PLTR lack sufficient catalyst strength or risk-reward to justify new capital deployment under $200 notional limit.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        }
+      ],
+      "tier": "junior_only",
+      "escalate_reason": "",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-03T17:02:22.123973+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -835,83 +886,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-09-03T15:20:30.895128+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CASH",
-      "status": "hold",
-      "headline": "HOLD \u2014 desks disagreed on focus",
-      "detail": "Desks: HOLD CASH (65%) vs BUY JPM (72%) vs BUY JPM (90%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "HOOD",
-          "confidence": 80,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "JPM",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "HOOD",
-          "confidence": 80,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "JPM",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "BUY",
-          "symbol": "JPM",
-          "confidence": 90,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-03T15:03:49.669007+00:00"
     },
     {
       "type": "fill",
@@ -12457,8 +12431,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 2,
-      "BUY": 2,
+      "HOLD": 4,
+      "BUY": 0,
       "SELL": 0,
       "live": 4,
       "fallback": 0
@@ -12475,25 +12449,25 @@
     "max_candidates_to_llm": 8,
     "log_all_disagreements": true,
     "decision_mode": "live_dual_llm",
-    "last_tier": "senior_escalated",
+    "last_tier": "junior_only",
     "last_stage": "entry",
     "last_junior_nomination": null,
-    "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 83.5
+    "last_escalate_reason": "",
+    "live_share_recent": 84.9
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 331,
     "closed_outcomes": 151,
-    "consensus_events": 449,
+    "consensus_events": 450,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1008.08,
-    "change": 8.08,
-    "change_pct": 0.81,
+    "latest_equity": 1008.49,
+    "change": 8.49,
+    "change_pct": 0.85,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -14964,6 +14938,12 @@
       {
         "t": "2026-09-03T17:00:33.994345+00:00",
         "equity": 1008.08,
+        "cash": 402.85,
+        "event": "mark"
+      },
+      {
+        "t": "2026-09-03T17:02:38.917272+00:00",
+        "equity": 1008.49,
         "cash": 402.85,
         "event": "mark"
       }
