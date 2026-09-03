@@ -1,34 +1,34 @@
 {
-  "generated_at": "2026-09-03T18:30:53.253033+00:00",
+  "generated_at": "2026-09-03T18:33:20.539114+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1008.33,
+    "portfolio_value": 1008.28,
     "starting_cash": 1000.0,
     "total_return_pct": 0.83,
-    "total_pnl": 8.33,
+    "total_pnl": 8.28,
     "realized_pnl": 1.45,
-    "open_pnl": 6.84,
-    "capital_deployed": 605.48,
+    "open_pnl": 6.8,
+    "capital_deployed": 605.43,
     "cash": 402.85,
     "closed_trades": 29,
     "win_rate_pct": 31.03,
-    "vs_spy_pct": 0.27,
-    "spy_return_pct": 0.56,
+    "vs_spy_pct": 0.26,
+    "spy_return_pct": 0.57,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-03T18:30:55.930884+00:00"
+    "updated_at": "2026-09-03T18:33:23.361096+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.56,
-    "price": 773.72998046875,
+    "return_pct": 0.57,
+    "price": 773.760009765625,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 15,
+    "consensus_count_today": 16,
     "validated_count_today": 11,
-    "blocked_count_today": 4,
+    "blocked_count_today": 5,
     "fills_today": 3,
     "simulated_orders_today": 11,
     "top_symbol_today": "HOOD"
@@ -38,10 +38,10 @@
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 62.994998931884766,
-      "market_value": 202.21,
-      "open_pnl": 2.55,
-      "open_pnl_pct": 1.28,
+      "last": 63.0,
+      "market_value": 202.23,
+      "open_pnl": 2.57,
+      "open_pnl_pct": 1.29,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
@@ -50,10 +50,10 @@
       "symbol": "HOOD",
       "qty": 1.65,
       "avg_cost": 120.77,
-      "last": 123.94000244140625,
-      "market_value": 204.5,
-      "open_pnl": 5.23,
-      "open_pnl_pct": 2.62,
+      "last": 123.79000091552734,
+      "market_value": 204.25,
+      "open_pnl": 4.98,
+      "open_pnl_pct": 2.5,
       "stop": 115.0,
       "target": 129.5,
       "thesis": "HOOD shows top-ranked catalyst with Wall Street optimism and improving retail sentiment per Yahoo Finance headline. Current RSI at 50.0 leaves room for upside without overbought conditions. Book has ample cash and only one open name, allowing small new entry under $200 notional. Reward-to-risk exceeds 1.5 with defined levels."
@@ -62,10 +62,10 @@
       "symbol": "CVX",
       "qty": 0.94,
       "avg_cost": 212.45,
-      "last": 211.4550018310547,
-      "market_value": 198.77,
-      "open_pnl": -0.94,
-      "open_pnl_pct": -0.47,
+      "last": 211.64999389648438,
+      "market_value": 198.95,
+      "open_pnl": -0.75,
+      "open_pnl_pct": -0.38,
       "stop": 206.0,
       "target": 222.5,
       "thesis": "CVX shows a headline-driven bullish catalyst as Chevron reportedly nears a deal for giant Venezuelan oil fields, supporting further upside extension. RSI at 50 leaves room for continuation without being overbought. Liquid large-cap energy name fits the desk preference for catalyst setups with defined risk. Position sized to ~$200 notional with R:R above 1.5."
@@ -74,15 +74,15 @@
   "latest_candidate": {
     "symbol": "JPM",
     "name": "JPM",
-    "price": 361.7449951171875,
-    "volume": 2610368.0,
-    "avg_volume": 5422729.777777778,
-    "percent_change": 1.5510060854391094,
+    "price": 361.44000244140625,
+    "volume": 2668923.0,
+    "avg_volume": 5429235.888888889,
+    "percent_change": 1.465386896528859,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 16,
-    "liquidity_score": 77.34,
-    "rank_score": 82.84,
+    "liquidity_score": 77.35,
+    "rank_score": 82.77,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (beat): Solidarity Wealth LLC Sells 4,951 Shares of JPMorgan Chase & Co. $JPM - marketbeat.com",
     "top_headlines": [
@@ -126,43 +126,43 @@
     "symbol": "JPM",
     "confidence": 72,
     "cache_stats": null,
-    "entry_price": 361.74,
-    "stop_loss": 354.5,
-    "take_profit": 373.5,
+    "entry_price": 361.44,
+    "stop_loss": 352.0,
+    "take_profit": 376.0,
     "qty": 0.55,
-    "thesis": "JPM screens as the top ranked liquid candidate with bullish sentiment and acceptable RSI at midpoint. Room exists under the 5-name cap and ~$200 notional limit for a starter size. Catalyst is mixed (institutional trim headline) but rank_score supports a defined-risk entry with 1.5+ R:R.",
+    "thesis": "JPM screens as the top-ranked liquid candidate with bullish sentiment and acceptable catalyst score for a small add. Position sizing stays inside the $200 new-buy notional cap while leaving room under the 5-name limit. Defined stop and target deliver reward:risk above 1.5 from the current print.",
     "reason_code": "new_entry",
     "reasoning": {
       "headline": "Bought $JPM",
-      "narrative": "JPM screens as the top ranked liquid candidate with bullish sentiment and acceptable RSI at midpoint. Room exists under the 5-name cap and ~$200 notional limit for a starter size. Catalyst is mixed (institutional trim headline) but rank_score supports a defined-risk entry with 1.5+ R:R.",
+      "narrative": "JPM screens as the top-ranked liquid candidate with bullish sentiment and acceptable catalyst score for a small add. Position sizing stays inside the $200 new-buy notional cap while leaving room under the 5-name limit. Defined stop and target deliver reward:risk above 1.5 from the current print.",
       "bullets": [
-        "top rank_score 82.8 in candidates",
-        "notional capped near $200 for 0.55 sh",
-        "RR set >=1.5 via 354.5/373.5 levels",
-        "open names 3/5 allows add"
+        "Rank 82.77 leader in candidate list",
+        "Notional ~$199 keeps risk small",
+        "R:R 1.55 with stops at 352 / 376",
+        "Open slots available (3/5)"
       ],
       "risk_map": {
-        "stop": 354.5,
-        "target": 373.5,
+        "stop": 352.0,
+        "target": 376.0,
         "horizon_days": 5,
-        "rr": 1.62,
+        "rr": 1.54,
         "confidence_10": 7,
         "confidence": 72
       },
-      "thesis": "JPM screens as the top ranked liquid candidate with bullish sentiment and acceptable RSI at midpoint. Room exists under the 5-name cap and ~$200 notional limit for a starter size. Catalyst is mixed (institutional trim headline) but rank_score supports a defined-risk entry with 1.5+ R:R."
+      "thesis": "JPM screens as the top-ranked liquid candidate with bullish sentiment and acceptable catalyst score for a small add. Position sizing stays inside the $200 new-buy notional cap while leaving room under the 5-name limit. Defined stop and target deliver reward:risk above 1.5 from the current print."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "top rank_score 82.8 in candidates",
-      "notional capped near $200 for 0.55 sh",
-      "RR set >=1.5 via 354.5/373.5 levels",
-      "open names 3/5 allows add"
+      "Rank 82.77 leader in candidate list",
+      "Notional ~$199 keeps risk small",
+      "R:R 1.55 with stops at 352 / 376",
+      "Open slots available (3/5)"
     ],
-    "timestamp": "2026-09-03T18:17:56.365391+00:00"
+    "timestamp": "2026-09-03T18:33:12.286688+00:00"
   },
-  "stance": "Buying pressure on JPM. JPM screens as the top ranked liquid candidate with bullish sentiment and acceptable RSI at midpoint. Room exists under the 5-name cap and ~$200 notional limit for a starter size. Catalyst is mixed (institutional trim headline) but rank_score supports a defined-risk entry with 1.5+ R:R.",
+  "stance": "Buying pressure on JPM. JPM screens as the top-ranked liquid candidate with bullish sentiment and acceptable catalyst score for a small add. Position sizing stays inside the $200 new-buy notional cap while leaving room under the 5-name limit. Defined stop and target deliver reward:risk above 1.5 from the current print.",
   "thinking": {
     "badge": "Looking to buy JPM",
     "headline": "Buying pressure on JPM.",
@@ -182,9 +182,9 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 62.994998931884766,
-        "open_pnl": 2.55,
-        "open_pnl_pct": 1.28,
+        "last": 63.0,
+        "open_pnl": 2.57,
+        "open_pnl_pct": 1.29,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
       },
@@ -194,9 +194,9 @@
         "avg_cost": 120.77,
         "stop": 115.0,
         "target": 129.5,
-        "last": 123.94000244140625,
-        "open_pnl": 5.23,
-        "open_pnl_pct": 2.62,
+        "last": 123.79000091552734,
+        "open_pnl": 4.98,
+        "open_pnl_pct": 2.5,
         "line": "Bought near $120.77 \u00b7 Sell safety line $115.00 \u00b7 Profit target $129.50",
         "plan": "stop 115.0 or target 129.5"
       },
@@ -206,14 +206,14 @@
         "avg_cost": 212.45,
         "stop": 206.0,
         "target": 222.5,
-        "last": 211.4550018310547,
-        "open_pnl": -0.94,
-        "open_pnl_pct": -0.47,
+        "last": 211.64999389648438,
+        "open_pnl": -0.75,
+        "open_pnl_pct": -0.38,
         "line": "Bought near $212.45 \u00b7 Sell safety line $206.00 \u00b7 Profit target $222.50",
         "plan": "stop 206.0 or target 222.5"
       }
     ],
-    "last_checked": "2026-09-03T18:30:53.253033+00:00",
+    "last_checked": "2026-09-03T18:33:20.539114+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -244,7 +244,7 @@
         "model": "deepseek-v4-flash",
         "action": "BUY",
         "symbol": "JPM",
-        "confidence": 75,
+        "confidence": 73,
         "tone": "buy"
       },
       {
@@ -282,6 +282,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "JPM",
+      "status": "blocked",
+      "headline": "BUY JPM \u2014 blocked",
+      "detail": "Insufficient buying power: $178.13 < $198.79",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 80,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 73,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "JPM",
+      "timestamp": "2026-09-03T18:33:12.286688+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "JPM",
@@ -820,83 +897,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-09-03T16:48:13.196667+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CASH",
-      "status": "hold",
-      "headline": "HOLD \u2014 no new trade",
-      "detail": "No new candidate offers a clean edge meeting reward:risk >=1.5 within the $200 notional limit. Top-ranked BAC is already held but existing stop/target levels yield sub-1.5 R:R. Lower-ranked names like JPM and META exceed practical size constraints or lack superior catalyst strength over current holdings.",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        }
-      ],
-      "tier": "junior_only",
-      "escalate_reason": "",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-03T16:33:56.691193+00:00"
     },
     {
       "type": "fill",
@@ -12203,15 +12203,15 @@
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 361.7449951171875,
-      "volume": 2610368.0,
-      "avg_volume": 5422729.777777778,
-      "percent_change": 1.5510060854391094,
+      "price": 361.44000244140625,
+      "volume": 2668923.0,
+      "avg_volume": 5429235.888888889,
+      "percent_change": 1.465386896528859,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 16,
-      "liquidity_score": 77.34,
-      "rank_score": 82.84,
+      "liquidity_score": 77.35,
+      "rank_score": 82.77,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Solidarity Wealth LLC Sells 4,951 Shares of JPMorgan Chase & Co. $JPM - marketbeat.com",
       "top_headlines": [
@@ -12250,17 +12250,74 @@
       ]
     },
     {
+      "symbol": "XOM",
+      "name": "XOM",
+      "price": 162.9149932861328,
+      "volume": 6995424.0,
+      "avg_volume": 13315180.444444444,
+      "percent_change": -0.7523610455510427,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 15,
+      "liquidity_score": 81.24,
+      "rank_score": 80.29,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, beat, catalyst): Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits",
+      "top_headlines": [
+        "ExxonMobil (XOM) Stock May Trade At A Discount Despite Iran Oil Shock - simplywall.st",
+        "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits",
+        "XOM Maintained by Piper Sandler -- Price Target Raised to $185 - GuruFocus"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits",
+          "keywords": [
+            "ai",
+            "beat",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "XOM Maintained by Piper Sandler -- Price Target Raised to $185 - GuruFocus",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "raised"
+          ]
+        },
+        {
+          "title": "Investing in ExxonMobil Holdings Corporation (XOM): A Case for Long-Term Growth and Returns - Yahoo Finance",
+          "keywords": [
+            "growth"
+          ]
+        },
+        {
+          "title": "NS Partners Ltd Has $23.39 Million Stock Position in ExxonMobil Corporation $XOM - marketbeat.com",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Exxon 'going in' to Venezuela, Trump says in touting oil deals (XOM:NYSE) - Seeking Alpha",
+          "keywords": [
+            "catalyst",
+            "deal"
+          ]
+        }
+      ]
+    },
+    {
       "symbol": "BAC",
       "name": "BAC",
-      "price": 63.06999969482422,
-      "volume": 13807661.0,
-      "avg_volume": 29656229.0,
-      "percent_change": 0.7508006903505341,
+      "price": 62.98500061035156,
+      "volume": 14102921.0,
+      "avg_volume": 29689035.666666668,
+      "percent_change": 0.6150194019407669,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 14,
-      "liquidity_score": 84.72,
-      "rank_score": 76.81,
+      "liquidity_score": 84.73,
+      "rank_score": 76.7,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Bank of America (NYSE:BAC) Stock Price Up 1% - Time to Buy? - marketbeat.com",
       "top_headlines": [
@@ -12304,66 +12361,16 @@
       ]
     },
     {
-      "symbol": "XOM",
-      "name": "XOM",
-      "price": 163.1300048828125,
-      "volume": 6830014.0,
-      "avg_volume": 13296801.555555556,
-      "percent_change": -0.6213762117561189,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 13,
-      "liquidity_score": 81.24,
-      "rank_score": 70.68,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, beat, catalyst): Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits",
-      "top_headlines": [
-        "ExxonMobil (XOM) Stock May Trade At A Discount Despite Iran Oil Shock - simplywall.st",
-        "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits",
-        "XOM Maintained by Piper Sandler -- Price Target Raised to $185 - GuruFocus"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits",
-          "keywords": [
-            "ai",
-            "beat",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "XOM Maintained by Piper Sandler -- Price Target Raised to $185 - GuruFocus",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "raised"
-          ]
-        },
-        {
-          "title": "Investing in ExxonMobil Holdings Corporation (XOM): A Case for Long-Term Growth and Returns - Yahoo Finance",
-          "keywords": [
-            "growth"
-          ]
-        },
-        {
-          "title": "NS Partners Ltd Has $23.39 Million Stock Position in ExxonMobil Corporation $XOM - marketbeat.com",
-          "keywords": [
-            "beat"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "HOOD",
       "name": "HOOD",
-      "price": 124.04000091552734,
-      "volume": 40127367.0,
-      "avg_volume": 23652356.7,
-      "percent_change": 15.93607196204228,
+      "price": 123.97989654541016,
+      "volume": 40695902.0,
+      "avg_volume": 23709210.2,
+      "percent_change": 15.879894402160733,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
-      "liquidity_score": 83.74,
+      "liquidity_score": 83.75,
       "rank_score": 69.06,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Robinhood Rallies 11% on Price Target Hikes, Webull Climbs 7%, Interactive Brokers Gains 4% - Yahoo Finance",
@@ -12402,15 +12409,15 @@
     {
       "symbol": "CVX",
       "name": "CVX",
-      "price": 211.85000610351562,
-      "volume": 3494632.0,
-      "avg_volume": 7337503.2,
-      "percent_change": 0.03305662698190258,
+      "price": 211.39999389648438,
+      "volume": 3624132.0,
+      "avg_volume": 7350453.2,
+      "percent_change": -0.17943379214413727,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
       "liquidity_score": 78.66,
-      "rank_score": 63.33,
+      "rank_score": 63.44,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst, deal): Chevron Stock Is A Bargain Amid Venezuela Deal (NYSE:CVX) - Seeking Alpha",
       "top_headlines": [
@@ -12507,20 +12514,20 @@
     "last_stage": "entry",
     "last_junior_nomination": "JPM",
     "last_escalate_reason": "junior_nomination",
-    "live_share_recent": 85.1
+    "live_share_recent": 85.2
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 331,
     "closed_outcomes": 151,
-    "consensus_events": 455,
+    "consensus_events": 456,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1008.33,
-    "change": 8.33,
+    "latest_equity": 1008.28,
+    "change": 8.28,
     "change_pct": 0.83,
     "points": [
       {
@@ -15020,8 +15027,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-03T18:30:55.930884+00:00",
-        "equity": 1008.33,
+        "t": "2026-09-03T18:33:23.361096+00:00",
+        "equity": 1008.28,
         "cash": 402.85,
         "event": "mark"
       }
