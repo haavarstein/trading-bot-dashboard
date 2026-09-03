@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-09-03T15:10:43.296882+00:00",
+  "generated_at": "2026-09-03T15:20:44.741482+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1007.76,
+    "portfolio_value": 1008.18,
     "starting_cash": 1000.0,
-    "total_return_pct": 0.78,
-    "total_pnl": 7.76,
+    "total_return_pct": 0.82,
+    "total_pnl": 8.18,
     "realized_pnl": 1.45,
-    "open_pnl": 6.28,
-    "capital_deployed": 405.21,
+    "open_pnl": 6.7,
+    "capital_deployed": 405.63,
     "cash": 602.55,
     "closed_trades": 29,
     "win_rate_pct": 31.03,
-    "vs_spy_pct": 0.57,
-    "spy_return_pct": 0.21,
+    "vs_spy_pct": 0.53,
+    "spy_return_pct": 0.29,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-03T15:10:45.984354+00:00"
+    "updated_at": "2026-09-03T15:20:47.451790+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.21,
-    "price": 770.9924926757812,
+    "return_pct": 0.29,
+    "price": 771.6300048828125,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 3,
-    "validated_count_today": 3,
+    "consensus_count_today": 4,
+    "validated_count_today": 4,
     "blocked_count_today": 0,
     "fills_today": 2,
-    "simulated_orders_today": 3,
+    "simulated_orders_today": 4,
     "top_symbol_today": "HOOD"
   },
   "holdings": [
@@ -38,10 +38,10 @@
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 62.90999984741211,
-      "market_value": 201.94,
-      "open_pnl": 2.28,
-      "open_pnl_pct": 1.14,
+      "last": 63.04499816894531,
+      "market_value": 202.37,
+      "open_pnl": 2.71,
+      "open_pnl_pct": 1.36,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
@@ -50,10 +50,10 @@
       "symbol": "HOOD",
       "qty": 1.65,
       "avg_cost": 120.77,
-      "last": 123.19629669189453,
-      "market_value": 203.27,
-      "open_pnl": 4.0,
-      "open_pnl_pct": 2.01,
+      "last": 123.19000244140625,
+      "market_value": 203.26,
+      "open_pnl": 3.99,
+      "open_pnl_pct": 2.0,
       "stop": 115.0,
       "target": 129.5,
       "thesis": "HOOD shows top-ranked catalyst with Wall Street optimism and improving retail sentiment per Yahoo Finance headline. Current RSI at 50.0 leaves room for upside without overbought conditions. Book has ample cash and only one open name, allowing small new entry under $200 notional. Reward-to-risk exceeds 1.5 with defined levels."
@@ -62,21 +62,21 @@
   "latest_candidate": {
     "symbol": "HOOD",
     "name": "HOOD",
-    "price": 123.41999816894531,
-    "volume": 26460720.0,
-    "avg_volume": 22285692.0,
-    "percent_change": 15.35657597273356,
+    "price": 123.12999725341797,
+    "volume": 28020696.0,
+    "avg_volume": 22441689.6,
+    "percent_change": 15.08552174213473,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 13,
-    "liquidity_score": 83.48,
-    "rank_score": 80.02,
+    "catalyst_score": 20,
+    "liquidity_score": 83.51,
+    "rank_score": 108.03,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (ai, catalyst): HOOD Stock Rallies On Wall Street Optimism: Retail Sentiment Improves As Investors Eye A Bigger Pop - Yahoo Finance",
     "top_headlines": [
       "HOOD Stock Rallies On Wall Street Optimism: Retail Sentiment Improves As Investors Eye A Bigger Pop - Yahoo Finance",
       "Stocks making the biggest moves premarket: Nvidia, Robinhood, Novartis & more - CNBC",
-      "Wellington Management Group LLP Grows Stock Holdings in Robinhood Markets, Inc. $HOOD - marketbeat.com"
+      "Wellington Management Group LLP Grows Stock Holdings in Robinhood Markets, Inc. $HOOD - MarketBeat"
     ],
     "matched_headlines": [
       {
@@ -87,15 +87,17 @@
         ]
       },
       {
-        "title": "Wellington Management Group LLP Grows Stock Holdings in Robinhood Markets, Inc. $HOOD - marketbeat.com",
+        "title": "Wellington Management Group LLP Grows Stock Holdings in Robinhood Markets, Inc. $HOOD - MarketBeat",
         "keywords": [
           "beat"
         ]
       },
       {
-        "title": "HOOD Stock Gets A New $105 Price Target \u2014 Here's What Bulls Think The Market Is Missing - Stocktwits",
+        "title": "HOOD Stock Price Target Raised At Piper Sandler Citing Football Prediction Market Boom - Stocktwits",
         "keywords": [
-          "miss"
+          "ai",
+          "catalyst",
+          "raised"
         ]
       },
       {
@@ -121,21 +123,22 @@
     "model": "grok-4.5",
     "action": "HOLD",
     "symbol": "CASH",
-    "confidence": 65,
+    "confidence": 62,
     "cache_stats": null,
     "entry_price": 0.0,
     "stop_loss": 0.0,
     "take_profit": 0.0,
     "qty": 0.0,
-    "thesis": "No new candidate offers a materially better setup than current holdings. HOOD remains the strongest catalyst name and is already positioned with positive P/L. BAC shows modest gain but no rotation trigger exists given max names and notional limits.",
+    "thesis": "Both open names remain inside plan with modest unrealized gains and intact stops/targets; HOOD still ranks first on catalyst but is already held at workable size. Fresh candidates lack clean, liquid edge under the ~$200 notional cap with credible R:R\u2014CVX/JPM headlines are mixed or non-actionable and higher-priced names force tiny odd lots. No stop/target hit and no materially stronger rotation candidate, so stay in cash and let winners work.",
     "reason_code": "hold",
     "reasoning": {
       "headline": "Hold $CASH",
-      "narrative": "No new candidate offers a materially better setup than current holdings. HOOD remains the strongest catalyst name and is already positioned with positive P/L. BAC shows modest gain but no rotation trigger exists given max names and notional limits.",
+      "narrative": "Both open names remain inside plan with modest unrealized gains and intact stops/targets; HOOD still ranks first on catalyst but is already held at workable size. Fresh candidates lack clean, liquid edge under the ~$200 notional cap with credible R:R\u2014CVX/JPM headlines are mixed or non-actionable and higher-priced names force tiny odd lots. No stop/target hit and no materially stronger rotation candidate, so stay in cash and let winners work.",
       "bullets": [
-        "HOOD top-ranked with strong headline catalyst, already held",
-        "JPM second but insufficient edge for rotation or new $200 buy",
-        "Current book of 2 names within policy, no clean BUY/SELL edge"
+        "HOOD/BAC both green and not at stop or target",
+        "Top catalyst already owned; no add forced",
+        "New names weak R:R or weak/odd catalysts under $200 cap",
+        "Book only 2 names\u2014patience preferred over forced entry"
       ],
       "risk_map": {
         "stop": 0.0,
@@ -143,19 +146,20 @@
         "horizon_days": 5,
         "rr": 0.0,
         "confidence_10": 6,
-        "confidence": 65
+        "confidence": 62
       },
-      "thesis": "No new candidate offers a materially better setup than current holdings. HOOD remains the strongest catalyst name and is already positioned with positive P/L. BAC shows modest gain but no rotation trigger exists given max names and notional limits."
+      "thesis": "Both open names remain inside plan with modest unrealized gains and intact stops/targets; HOOD still ranks first on catalyst but is already held at workable size. Fresh candidates lack clean, liquid edge under the ~$200 notional cap with credible R:R\u2014CVX/JPM headlines are mixed or non-actionable and higher-priced names force tiny odd lots. No stop/target hit and no materially stronger rotation candidate, so stay in cash and let winners work."
     },
     "source": "live",
     "provider": "xai",
-    "provider_model_id": "grok-4-latest",
+    "provider_model_id": "grok-4.5",
     "bullets": [
-      "HOOD top-ranked with strong headline catalyst, already held",
-      "JPM second but insufficient edge for rotation or new $200 buy",
-      "Current book of 2 names within policy, no clean BUY/SELL edge"
+      "HOOD/BAC both green and not at stop or target",
+      "Top catalyst already owned; no add forced",
+      "New names weak R:R or weak/odd catalysts under $200 cap",
+      "Book only 2 names\u2014patience preferred over forced entry"
     ],
-    "timestamp": "2026-09-03T15:03:49.669007+00:00"
+    "timestamp": "2026-09-03T15:20:30.895128+00:00"
   },
   "stance": "Holding BAC, HOOD. No new trade right now.",
   "thinking": {
@@ -175,9 +179,9 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 62.90999984741211,
-        "open_pnl": 2.28,
-        "open_pnl_pct": 1.14,
+        "last": 63.04499816894531,
+        "open_pnl": 2.71,
+        "open_pnl_pct": 1.36,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
       },
@@ -187,14 +191,14 @@
         "avg_cost": 120.77,
         "stop": 115.0,
         "target": 129.5,
-        "last": 123.19629669189453,
-        "open_pnl": 4.0,
-        "open_pnl_pct": 2.01,
+        "last": 123.19000244140625,
+        "open_pnl": 3.99,
+        "open_pnl_pct": 2.0,
         "line": "Bought near $120.77 \u00b7 Sell safety line $115.00 \u00b7 Profit target $129.50",
         "plan": "stop 115.0 or target 129.5"
       }
     ],
-    "last_checked": "2026-09-03T15:10:43.296882+00:00",
+    "last_checked": "2026-09-03T15:20:44.741482+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "HOLD",
@@ -208,7 +212,7 @@
         "model": "grok-4.3",
         "action": "BUY",
         "symbol": "HOOD",
-        "confidence": 80,
+        "confidence": 82,
         "tone": "buy"
       },
       {
@@ -223,7 +227,7 @@
         "prefix": "J",
         "model": "deepseek-v4-flash",
         "action": "BUY",
-        "symbol": "JPM",
+        "symbol": "CVX",
         "confidence": 72,
         "tone": "buy"
       },
@@ -232,7 +236,7 @@
         "model": "grok-build-0.1",
         "action": "BUY",
         "symbol": "HOOD",
-        "confidence": 80,
+        "confidence": 75,
         "tone": "buy"
       },
       {
@@ -240,16 +244,16 @@
         "model": "grok-4.5",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 65,
+        "confidence": 62,
         "tone": "hold"
       },
       {
         "prefix": "S",
         "model": "claude-sonnet-5",
-        "action": "BUY",
-        "symbol": "JPM",
-        "confidence": 72,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 65,
+        "tone": "hold"
       },
       {
         "prefix": "S",
@@ -262,6 +266,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 no new trade",
+      "detail": "Both open names remain inside plan with modest unrealized gains and intact stops/targets; HOOD still ranks first on catalyst but is already held at workable size. Fresh candidates lack clean, liquid edge under the ~$200 notional cap with credible R:R\u2014CVX/JPM headlines are mixed or non-actionable and higher-priced names force tiny odd lots. No stop/target hit and no materially stronger rotation candidate, so stay in cash and let winners work.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "HOOD",
+          "confidence": 82,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "CVX",
+          "confidence": 72,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "HOOD",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-03T15:20:30.895128+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -11871,21 +11952,21 @@
     {
       "symbol": "HOOD",
       "name": "HOOD",
-      "price": 123.41999816894531,
-      "volume": 26460720.0,
-      "avg_volume": 22285692.0,
-      "percent_change": 15.35657597273356,
+      "price": 123.12999725341797,
+      "volume": 28020696.0,
+      "avg_volume": 22441689.6,
+      "percent_change": 15.08552174213473,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 13,
-      "liquidity_score": 83.48,
-      "rank_score": 80.02,
+      "catalyst_score": 20,
+      "liquidity_score": 83.51,
+      "rank_score": 108.03,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): HOOD Stock Rallies On Wall Street Optimism: Retail Sentiment Improves As Investors Eye A Bigger Pop - Yahoo Finance",
       "top_headlines": [
         "HOOD Stock Rallies On Wall Street Optimism: Retail Sentiment Improves As Investors Eye A Bigger Pop - Yahoo Finance",
         "Stocks making the biggest moves premarket: Nvidia, Robinhood, Novartis & more - CNBC",
-        "Wellington Management Group LLP Grows Stock Holdings in Robinhood Markets, Inc. $HOOD - marketbeat.com"
+        "Wellington Management Group LLP Grows Stock Holdings in Robinhood Markets, Inc. $HOOD - MarketBeat"
       ],
       "matched_headlines": [
         {
@@ -11896,15 +11977,17 @@
           ]
         },
         {
-          "title": "Wellington Management Group LLP Grows Stock Holdings in Robinhood Markets, Inc. $HOOD - marketbeat.com",
+          "title": "Wellington Management Group LLP Grows Stock Holdings in Robinhood Markets, Inc. $HOOD - MarketBeat",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "HOOD Stock Gets A New $105 Price Target \u2014 Here's What Bulls Think The Market Is Missing - Stocktwits",
+          "title": "HOOD Stock Price Target Raised At Piper Sandler Citing Football Prediction Market Boom - Stocktwits",
           "keywords": [
-            "miss"
+            "ai",
+            "catalyst",
+            "raised"
           ]
         },
         {
@@ -11927,27 +12010,84 @@
       ]
     },
     {
-      "symbol": "JPM",
-      "name": "JPM",
-      "price": 360.2300109863281,
-      "volume": 1480899.0,
-      "avg_volume": 5297233.222222222,
-      "percent_change": 1.1257115692222233,
+      "symbol": "CVX",
+      "name": "CVX",
+      "price": 212.9199981689453,
+      "volume": 1562351.0,
+      "avg_volume": 7144275.1,
+      "percent_change": 0.5382941714134533,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 14,
-      "liquidity_score": 77.24,
-      "rank_score": 74.49,
+      "catalyst_score": 13,
+      "liquidity_score": 78.54,
+      "rank_score": 71.71,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): Solidarity Wealth LLC Sells 4,951 Shares of JPMorgan Chase & Co. $JPM - marketbeat.com",
+      "catalyst": "Headline-driven setup (ai, beat, catalyst): Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits",
+      "top_headlines": [
+        "CVX Stock Quote Price and Forecast - CNN",
+        "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits",
+        "Chevron Just Committed $7 Billion to Venezuela. Here's What It Means for CVX Stock. - The Motley Fool"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits",
+          "keywords": [
+            "ai",
+            "beat",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Chevron: Hess And Production Growth Strengthen The Long-Term Outlook (CVX) - Seeking Alpha",
+          "keywords": [
+            "growth"
+          ]
+        },
+        {
+          "title": "CVX Stock Extends Gains Overnight: Chevron Reportedly Nears Deal For Giant Venezuelan Oil Fields - Yahoo Finance",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "deal"
+          ]
+        },
+        {
+          "title": "Chevron (CVX) Stock Looks Reasonable On Earnings But Stretched On Its 5 Year Run - simplywall.st",
+          "keywords": [
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Chevron Just Committed $7 Billion to Venezuela. Here's What It Means for CVX Stock. - The Globe and Mail",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "JPM",
+      "name": "JPM",
+      "price": 360.760009765625,
+      "volume": 1603819.0,
+      "avg_volume": 5310891.0,
+      "percent_change": 1.2744956850721652,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 13,
+      "liquidity_score": 77.25,
+      "rank_score": 69.11,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (beat): Solidarity Wealth LLC Sells 4,951 Shares of JPMorgan Chase & Co. $JPM - MarketBeat",
       "top_headlines": [
         "JPM Stock Slips Premarket: Morningstar Says JPMorgan Is Becoming Increasingly Attractive At Current Levels - Stocktwits",
-        "Solidarity Wealth LLC Sells 4,951 Shares of JPMorgan Chase & Co. $JPM - marketbeat.com",
+        "Solidarity Wealth LLC Sells 4,951 Shares of JPMorgan Chase & Co. $JPM - MarketBeat",
         "JPMorgan Chase (JPM) Raised Buybacks And Its Dividend, Is The Stock Fully Priced? - Yahoo Finance"
       ],
       "matched_headlines": [
         {
-          "title": "Solidarity Wealth LLC Sells 4,951 Shares of JPMorgan Chase & Co. $JPM - marketbeat.com",
+          "title": "Solidarity Wealth LLC Sells 4,951 Shares of JPMorgan Chase & Co. $JPM - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -11962,65 +12102,55 @@
           ]
         },
         {
-          "title": "JPMorgan Chase & Co. $JPM Stake Lifted by Baron Silver Stevens Financial Advisors LLC - marketbeat.com",
+          "title": "JPMorgan Chase & Co. $JPM Stake Lifted by Baron Silver Stevens Financial Advisors LLC - MarketBeat",
           "keywords": [
             "beat"
-          ]
-        },
-        {
-          "title": "JPM Stock Gains 20.6% in 3 Months: Key Factors to Watch Before Buying - The Globe and Mail",
-          "keywords": [
-            "ai",
-            "catalyst"
           ]
         }
       ]
     },
     {
-      "symbol": "AMD",
-      "name": "AMD",
-      "price": 454.9200134277344,
-      "volume": 5857490.0,
-      "avg_volume": 14254409.0,
-      "percent_change": -0.4682063935348084,
+      "symbol": "BAC",
+      "name": "BAC",
+      "price": 62.915000915527344,
+      "volume": 8982897.0,
+      "avg_volume": 29120144.111111112,
+      "percent_change": 0.5031988004543999,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 9,
-      "liquidity_score": 81.54,
-      "rank_score": 54.61,
+      "catalyst_score": 12,
+      "liquidity_score": 84.64,
+      "rank_score": 67.1,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): Better AI Infrastructure Stock: Nvidia vs. AMD - The Globe and Mail",
+      "catalyst": "Headline-driven setup (catalyst, deal): Are Bank of America\u2019s (BAC) New Bond Deals Quietly Redefining Its Tech\u2011Driven Funding Strategy? - simplywall.st",
       "top_headlines": [
-        "Prediction: Nvidia Stock Will Outperform AMD Through 2028 - Yahoo Finance",
-        "AMD is Quietly Eating Intel\u2019s Lunch - 24/7 Wall St.",
-        "Better AI Infrastructure Stock: Nvidia vs. AMD - The Globe and Mail"
+        "Bank of America (BAC) Stock May Be 31% Undervalued Despite Stablecoin Plans - Yahoo Finance Singapore",
+        "Are Bank of America\u2019s (BAC) New Bond Deals Quietly Redefining Its Tech\u2011Driven Funding Strategy? - simplywall.st",
+        "27,157 Shares in Bank of America Corporation $BAC Acquired by Proficio Capital Partners LLC - MarketBeat"
       ],
       "matched_headlines": [
         {
-          "title": "Better AI Infrastructure Stock: Nvidia vs. AMD - The Globe and Mail",
+          "title": "Are Bank of America\u2019s (BAC) New Bond Deals Quietly Redefining Its Tech\u2011Driven Funding Strategy? - simplywall.st",
           "keywords": [
-            "ai",
-            "catalyst"
+            "catalyst",
+            "deal"
           ]
         },
         {
-          "title": "Benjamin Edwards Inc. Sells 6,641 Shares of Advanced Micro Devices, Inc. $AMD - marketbeat.com",
+          "title": "27,157 Shares in Bank of America Corporation $BAC Acquired by Proficio Capital Partners LLC - MarketBeat",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "Prediction: AMD Will Join the $2 Trillion Club in 2030 Amid Historic Growth in This Market - The Motley Fool",
+          "title": "Montanova Capital LLC Lowers Stock Position in Bank of America Corporation $BAC - MarketBeat",
           "keywords": [
-            "growth"
+            "beat"
           ]
         },
         {
-          "title": "AMD Faces Major Executive and Fund Selling Despite Record AI Growth - Kavout",
+          "title": "BAC Records 9% Y/Y Growth in NII in 1H26: Will the Uptrend Continue? - Yahoo Finance",
           "keywords": [
-            "ai",
-            "catalyst",
-            "cut",
             "growth",
             "record"
           ]
@@ -12028,110 +12158,55 @@
       ]
     },
     {
-      "symbol": "GOOGL",
-      "name": "GOOGL",
-      "price": 341.1700134277344,
-      "volume": 6225062.0,
-      "avg_volume": 22258336.2,
-      "percent_change": 1.2013580829398842,
+      "symbol": "AAPL",
+      "name": "AAPL",
+      "price": 330.7149963378906,
+      "volume": 12059025.0,
+      "avg_volume": 35272912.5,
+      "percent_change": 1.7709887475818884,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 7,
-      "liquidity_score": 83.47,
-      "rank_score": 48.98,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): GOOGL Stock Price Today - Alphabet Inc Class A News, Charts, Retail Sentiment - Stocktwits",
+      "catalyst_score": 10,
+      "liquidity_score": 85.47,
+      "rank_score": 61.74,
+      "news_hits": 7,
+      "catalyst": "Headline-driven setup (catalyst, launch): AAPL Stock Price Target Hiked Ahead Of iPhone Launch \u2013 But Analyst Still Sees Downside Amid CEO Transition - Yahoo Finance",
       "top_headlines": [
-        "GOOGL Stock Price Today - Alphabet Inc Class A News, Charts, Retail Sentiment - Stocktwits",
-        "Alphabet Stock's Business Is Just Getting Started (NASDAQ:GOOGL) - Seeking Alpha",
-        "The $277 Billion That GOOGL Stock Quietly Paid Its Owners - Trefis"
+        "AAPL Stock Price Target Hiked Ahead Of iPhone Launch \u2013 But Analyst Still Sees Downside Amid CEO Transition - Yahoo Finance",
+        "Apple\u2019s WWDC 2026 \u2018Key Catalyst\u2019 For AAPL Stock, Will Decide AI Positioning: Morgan Stanley - Stocktwits",
+        "AAPL Stock Sees Best Day In Over A Month \u2013 CEO John Ternus Reportedly Touts 'Phenomenal' iPhone Launch In First Memo To Employees - TradingView"
       ],
       "matched_headlines": [
         {
-          "title": "GOOGL Stock Price Today - Alphabet Inc Class A News, Charts, Retail Sentiment - Stocktwits",
+          "title": "AAPL Stock Price Target Hiked Ahead Of iPhone Launch \u2013 But Analyst Still Sees Downside Amid CEO Transition - Yahoo Finance",
+          "keywords": [
+            "catalyst",
+            "launch"
+          ]
+        },
+        {
+          "title": "Apple\u2019s WWDC 2026 \u2018Key Catalyst\u2019 For AAPL Stock, Will Decide AI Positioning: Morgan Stanley - Stocktwits",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "The $277 Billion That GOOGL Stock Quietly Paid Its Owners - Trefis",
+          "title": "AAPL Stock Sees Best Day In Over A Month \u2013 CEO John Ternus Reportedly Touts 'Phenomenal' iPhone Launch In First Memo To Employees - TradingView",
           "keywords": [
-            "ai",
-            "catalyst"
+            "catalyst",
+            "launch"
           ]
         },
         {
-          "title": "Alphabet (GOOGL) Stock Quotes, Company News And Chart Analysis - Investor's Business Daily",
+          "title": "Apple CEO Ternus calls upcoming launch \u2018phenomenal\u2019 in first-day memo (AAPL:NASDAQ) - Seeking Alpha",
           "keywords": [
-            "ai",
-            "catalyst"
+            "catalyst",
+            "launch"
           ]
         },
         {
-          "title": "What\u2019s Bugging Palantir\u2019s Stock? Analyst Says Google\u2019s New AI Tools for Government - Benzinga",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "GOOGL Wins Big In Antitrust Fight \u2014 Judge Blocks DOJ\u2019s Push To Break Up Google\u2019s Ad Business - Yahoo Finance",
-          "keywords": [
-            "wins"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "CRWD",
-      "name": "CRWD",
-      "price": 211.81500244140625,
-      "volume": 3815249.0,
-      "avg_volume": 12332464.9,
-      "percent_change": 4.126931642919729,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 6,
-      "liquidity_score": 80.91,
-      "rank_score": 46.94,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (growth): CRWD Looks 49.4% Overvalued on GF Value\u2122 as Growth Optimism Meets Premium Valuation - GuruFocus",
-      "top_headlines": [
-        "CRWD Looks 49.4% Overvalued on GF Value\u2122 as Growth Optimism Meets Premium Valuation - GuruFocus",
-        "CrowdStrike Holdings Inc Stock (CRWD) Moved Down by 7.14% on Sep 1: Drivers Behind the Movement - TradingKey",
-        "DELL, NOW, ORCL, CRWD and More | Options Income Daily - moomoo.com"
-      ],
-      "matched_headlines": [
-        {
-          "title": "CRWD Looks 49.4% Overvalued on GF Value\u2122 as Growth Optimism Meets Premium Valuation - GuruFocus",
-          "keywords": [
-            "growth"
-          ]
-        },
-        {
-          "title": "DELL, NOW, ORCL, CRWD and More | Options Income Daily - moomoo.com",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "How CrowdStrike (CRWD) is Defending Against Evolving Threats - Yahoo Finance",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "\u200b\u200bPANW Vs CRWD Vs OKTA Vs ZS: AI Threats Are Fueling Cybersecurity Stocks \u2014 Which Has The Biggest Wall Street Upside? - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "CrowdStrike (CRWD) Stock Looks Above Fair Value As Its 4x Run Continues - webull.com",
+          "title": "AAPL Reiterated by Morgan Stanley -- Price Target Maintained at $360 - GuruFocus",
           "keywords": [
             "ai",
             "catalyst"
@@ -12188,21 +12263,21 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 80.0
+    "live_share_recent": 81.1
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 330,
     "closed_outcomes": 151,
-    "consensus_events": 442,
+    "consensus_events": 443,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1007.76,
-    "change": 7.76,
-    "change_pct": 0.78,
+    "latest_equity": 1008.18,
+    "change": 8.18,
+    "change_pct": 0.82,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -14637,6 +14712,12 @@
       {
         "t": "2026-09-03T15:10:45.984354+00:00",
         "equity": 1007.76,
+        "cash": 602.55,
+        "event": "mark"
+      },
+      {
+        "t": "2026-09-03T15:20:47.451790+00:00",
+        "equity": 1008.18,
         "cash": 602.55,
         "event": "mark"
       }
