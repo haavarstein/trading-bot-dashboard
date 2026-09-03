@@ -1,170 +1,150 @@
 {
-  "generated_at": "2026-09-03T14:00:36.089143+00:00",
+  "generated_at": "2026-09-03T14:03:38.945585+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1002.88,
+    "portfolio_value": 1002.83,
     "starting_cash": 1000.0,
-    "total_return_pct": 0.29,
-    "total_pnl": 2.88,
-    "realized_pnl": -23.35,
-    "open_pnl": 26.2,
-    "capital_deployed": 425.78,
-    "cash": 577.1,
-    "closed_trades": 28,
-    "win_rate_pct": 28.57,
-    "vs_spy_pct": 0.31,
-    "spy_return_pct": -0.02,
+    "total_return_pct": 0.28,
+    "total_pnl": 2.83,
+    "realized_pnl": 1.45,
+    "open_pnl": 1.35,
+    "capital_deployed": 201.01,
+    "cash": 801.82,
+    "closed_trades": 29,
+    "win_rate_pct": 31.03,
+    "vs_spy_pct": 0.41,
+    "spy_return_pct": -0.13,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-03T14:00:38.687144+00:00"
+    "updated_at": "2026-09-03T14:03:42.390788+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.02,
-    "price": 769.219970703125,
+    "return_pct": -0.13,
+    "price": 768.364990234375,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 0,
-    "validated_count_today": 0,
+    "consensus_count_today": 1,
+    "validated_count_today": 1,
     "blocked_count_today": 0,
-    "fills_today": 0,
-    "simulated_orders_today": 0,
-    "top_symbol_today": "BAC"
+    "fills_today": 1,
+    "simulated_orders_today": 1,
+    "top_symbol_today": "HOOD"
   },
   "holdings": [
     {
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 62.72999954223633,
-      "market_value": 201.36,
-      "open_pnl": 1.7,
-      "open_pnl_pct": 0.85,
+      "last": 62.619998931884766,
+      "market_value": 201.01,
+      "open_pnl": 1.35,
+      "open_pnl_pct": 0.68,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
-    },
-    {
-      "symbol": "HOOD",
-      "qty": 1.88,
-      "avg_cost": 106.34,
-      "last": 119.37000274658203,
-      "market_value": 224.42,
-      "open_pnl": 24.5,
-      "open_pnl_pct": 12.25,
-      "stop": 101.5,
-      "target": 116.0,
-      "thesis": "HOOD shows a high-rank catalyst setup with Piper Sandler raising the price target on football prediction market strength and AI-related momentum. Sentiment is bullish and RSI is neutral at 50, supporting a clean long entry within risk limits. Position sized to ~$200 notional with defined R:R >1.5."
     }
   ],
   "latest_candidate": {
-    "symbol": "BAC",
-    "name": "BAC",
-    "price": 62.630001068115234,
-    "volume": 20043145.0,
-    "avg_volume": 31076360.555555556,
-    "percent_change": 1.032423572059285,
+    "symbol": "HOOD",
+    "name": "HOOD",
+    "price": 119.58999633789062,
+    "volume": 14981209.0,
+    "avg_volume": 21137740.9,
+    "percent_change": 11.776800379194965,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 19,
-    "liquidity_score": 84.92,
-    "rank_score": 97.06,
+    "catalyst_score": 13,
+    "liquidity_score": 83.25,
+    "rank_score": 79.99,
     "news_hits": 8,
-    "catalyst": "Headline-driven setup (beat): 27,157 Shares in Bank of America Corporation $BAC Acquired by Proficio Capital Partners LLC - MarketBeat",
+    "catalyst": "Headline-driven setup (ai, catalyst): HOOD Stock Rallies On Wall Street Optimism: Retail Sentiment Improves As Investors Eye A Bigger Pop - Yahoo Finance",
     "top_headlines": [
-      "Bank of America (BAC) Stock May Be 31% Undervalued Despite Stablecoin Plans - Yahoo Finance Singapore",
-      "27,157 Shares in Bank of America Corporation $BAC Acquired by Proficio Capital Partners LLC - MarketBeat",
-      "Are Bank of America\u2019s (BAC) New Bond Deals Quietly Redefining Its Tech\u2011Driven Funding Strategy? - simplywall.st"
+      "HOOD Stock Rallies On Wall Street Optimism: Retail Sentiment Improves As Investors Eye A Bigger Pop - Yahoo Finance",
+      "Stocks making the biggest moves premarket: Nvidia, Robinhood, Novartis & more - CNBC",
+      "Wellington Management Group LLP Grows Stock Holdings in Robinhood Markets, Inc. $HOOD - marketbeat.com"
     ],
     "matched_headlines": [
       {
-        "title": "27,157 Shares in Bank of America Corporation $BAC Acquired by Proficio Capital Partners LLC - MarketBeat",
+        "title": "HOOD Stock Rallies On Wall Street Optimism: Retail Sentiment Improves As Investors Eye A Bigger Pop - Yahoo Finance",
+        "keywords": [
+          "ai",
+          "catalyst"
+        ]
+      },
+      {
+        "title": "Wellington Management Group LLP Grows Stock Holdings in Robinhood Markets, Inc. $HOOD - marketbeat.com",
         "keywords": [
           "beat"
         ]
       },
       {
-        "title": "Are Bank of America\u2019s (BAC) New Bond Deals Quietly Redefining Its Tech\u2011Driven Funding Strategy? - simplywall.st",
+        "title": "HOOD Stock Gets A New $105 Price Target \u2014 Here's What Bulls Think The Market Is Missing - Stocktwits",
         "keywords": [
+          "miss"
+        ]
+      },
+      {
+        "title": "HOOD stock recovers as Robinhood chain hits record fees - AMBCrypto",
+        "keywords": [
+          "ai",
           "catalyst",
-          "deal"
-        ]
-      },
-      {
-        "title": "Bank Of America Corp (BAC) Stock Analysis: Share Buybacks, Earnings Growth & Analyst Sentiment Rocket Launch Today (O6bFq8YGgC) - Mshale",
-        "keywords": [
-          "buyback",
-          "catalyst",
-          "growth",
-          "launch"
-        ]
-      },
-      {
-        "title": "Bank of America Corporation $BAC Stock Position Reduced by Royal London Asset Management Ltd. - MarketBeat",
-        "keywords": [
-          "beat"
-        ]
-      },
-      {
-        "title": "BAC Records 9% Y/Y Growth in NII in 1H26: Will the Uptrend Continue? - Yahoo Finance",
-        "keywords": [
-          "growth",
           "record"
+        ]
+      },
+      {
+        "title": "Robinhood raised to Overweight at Morgan Stanley on long growth runway (HOOD:NASDAQ) - Seeking Alpha",
+        "keywords": [
+          "ai",
+          "catalyst",
+          "growth",
+          "raised"
         ]
       }
     ]
   },
   "latest_decision": {
-    "model": "grok-4.3",
-    "action": "HOLD",
-    "symbol": "CASH",
-    "confidence": 65,
-    "cache_stats": null,
-    "entry_price": 0.0,
-    "stop_loss": 0.0,
-    "take_profit": 0.0,
-    "qty": 0.0,
-    "thesis": "No new catalyst edge justifies deploying cash. BAC remains the strongest ranked name but is already held with positive P/L. UBER's bearish job-cut headline and lower-ranked names lack sufficient reward:risk to initiate new positions under desk limits.",
-    "reason_code": "hold",
+    "model": "risk-gate",
+    "action": "SELL",
+    "symbol": "HOOD",
+    "confidence": 90,
+    "entry_price": 119.52999877929688,
+    "stop_loss": 101.5,
+    "take_profit": 116.0,
+    "qty": 1.88,
+    "thesis": "HERMES AUTO-TRADE: Exiting full HOOD position on take-profit. Price $119.53 reached target $116.00. Realized path $+24.80.",
+    "reason_code": "take_profit",
     "reasoning": {
-      "headline": "Hold $CASH",
-      "narrative": "No new catalyst edge justifies deploying cash. BAC remains the strongest ranked name but is already held with positive P/L. UBER's bearish job-cut headline and lower-ranked names lack sufficient reward:risk to initiate new positions under desk limits.",
+      "headline": "Sold $HOOD",
+      "narrative": "HERMES AUTO-TRADE: Exiting full HOOD position on take-profit. Price $119.53 reached target $116.00. Realized path $+24.80.",
       "bullets": [
-        "BAC and HOOD both positive open P/L; no rotation candidate beats them",
-        "Max new notional $200 constraint and R:R >=1.5 requirement not met by candidates",
-        "Current open names at 2 of 5 max; prefer waiting for cleaner setups"
+        "Target zone filled; lock gains and free risk budget.",
+        "No trail extension in current paper rules."
       ],
       "risk_map": {
-        "stop": 0.0,
-        "target": 0.0,
+        "stop": 101.5,
+        "target": 116.0,
         "horizon_days": 5,
-        "rr": 0.0,
-        "confidence_10": 6,
-        "confidence": 65
+        "rr": 2.0,
+        "confidence_10": 9,
+        "confidence": 90
       },
-      "thesis": "No new catalyst edge justifies deploying cash. BAC remains the strongest ranked name but is already held with positive P/L. UBER's bearish job-cut headline and lower-ranked names lack sufficient reward:risk to initiate new positions under desk limits."
+      "thesis": "HERMES AUTO-TRADE: Exiting full HOOD position on take-profit. Price $119.53 reached target $116.00. Realized path $+24.80."
     },
-    "source": "live",
-    "provider": "xai",
-    "provider_model_id": "grok-4.3",
-    "bullets": [
-      "BAC and HOOD both positive open P/L; no rotation candidate beats them",
-      "Max new notional $200 constraint and R:R >=1.5 requirement not met by candidates",
-      "Current open names at 2 of 5 max; prefer waiting for cleaner setups"
-    ],
-    "timestamp": "2026-09-02T19:48:34.560158+00:00"
+    "stage": "exit",
+    "timestamp": "2026-09-03T14:03:25.407089+00:00"
   },
-  "stance": "Holding BAC, HOOD. No new trade right now.",
+  "stance": "Holding BAC. No new trade right now. HERMES AUTO-TRADE: Exiting full HOOD position on take-profit. Price $119.53 reached target $116.00. Realized path $+24.80.",
   "thinking": {
     "badge": "Holding what it owns",
-    "headline": "Holding BAC, HOOD. No new trade right now.",
-    "plain_english": "Right now Hermes is holding BAC, HOOD and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
+    "headline": "Holding BAC. No new trade right now.",
+    "plain_english": "Right now Hermes is holding BAC and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
     "triggers": [
       "It owns BAC, bought near $62.20. Simple plan: sell if it falls to about $60.00, or take profit near $65.50.",
-      "It owns HOOD, bought near $106.34. Simple plan: sell if it falls to about $101.50, or take profit near $116.00.",
       "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
+      "Top scanner name right now is HOOD, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
       "If nothing looks clean, do nothing. Sitting in cash or holdings is allowed."
     ],
     "owned": [
@@ -174,70 +154,77 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 62.72999954223633,
-        "open_pnl": 1.7,
-        "open_pnl_pct": 0.85,
+        "last": 62.619998931884766,
+        "open_pnl": 1.35,
+        "open_pnl_pct": 0.68,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
-      },
-      {
-        "symbol": "HOOD",
-        "qty": 1.88,
-        "avg_cost": 106.34,
-        "stop": 101.5,
-        "target": 116.0,
-        "last": 119.37000274658203,
-        "open_pnl": 24.5,
-        "open_pnl_pct": 12.25,
-        "line": "Bought near $106.34 \u00b7 Sell safety line $101.50 \u00b7 Profit target $116.00",
-        "plan": "stop 101.5 or target 116.0"
       }
     ],
-    "last_checked": "2026-09-03T14:00:36.089143+00:00",
+    "last_checked": "2026-09-03T14:03:38.945585+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "HOLD",
+    "action": "SELL",
     "symbols_held": [
-      "BAC",
-      "HOOD"
+      "BAC"
     ],
-    "model_chips": [
-      {
-        "prefix": "J",
-        "model": "grok-4.3",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 65,
-        "tone": "hold"
-      },
-      {
-        "prefix": "J",
-        "model": "claude-haiku-4-5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 62,
-        "tone": "hold"
-      },
-      {
-        "prefix": "J",
-        "model": "deepseek-v4-flash",
-        "action": "BUY",
-        "symbol": "GOOGL",
-        "confidence": 90,
-        "tone": "buy"
-      },
-      {
-        "prefix": "J",
-        "model": "grok-build-0.1",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 65,
-        "tone": "hold"
-      }
-    ]
+    "model_chips": []
   },
-  "activity": [],
+  "activity": [
+    {
+      "type": "fill",
+      "symbol": "HOOD",
+      "status": "filled_paper",
+      "headline": "SELL HOOD @ $119.53",
+      "detail": "HERMES AUTO-TRADE: Exiting full HOOD position on take-profit. Price $119.53 reached target $116.00. Realized path $+24.80.",
+      "timestamp": "2026-09-03T14:03:25.409085+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "HOOD",
+      "status": "validated",
+      "headline": "SELL HOOD \u2014 validated",
+      "detail": "deterministic take_profit exit",
+      "agents": [
+        {
+          "model": "risk-gate",
+          "action": "SELL",
+          "symbol": "HOOD",
+          "confidence": 90,
+          "source": null,
+          "provider": null,
+          "tier": "senior"
+        },
+        {
+          "model": "risk-gate",
+          "action": "SELL",
+          "symbol": "HOOD",
+          "confidence": 90,
+          "source": null,
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "risk_exit",
+      "escalate_reason": "take_profit",
+      "stage": "exit",
+      "junior_nomination": null,
+      "timestamp": "2026-09-03T14:03:25.407089+00:00"
+    }
+  ],
   "recent_trades": [
+    {
+      "timestamp": "2026-09-03T14:03:25.409085+00:00",
+      "action": "SELL",
+      "symbol": "HOOD",
+      "qty": 1.88,
+      "price": 119.52999877929688,
+      "notional": 224.72,
+      "realized_pnl": 24.8,
+      "reason": "take_profit",
+      "thesis": "HERMES AUTO-TRADE: Exiting full HOOD position on take-profit. Price $119.53 reached target $116.00. Realized path $+24.80.",
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-09-02T14:16:47.323540+00:00",
       "action": "BUY",
@@ -345,21 +332,35 @@
       "reason": "rotation",
       "thesis": "UNH is the weakest open position with the largest unrealized loss and price sitting just above the existing stop. Juniors escalated an explicit exit; confirming the SELL to cut the laggard and free risk capital. No offsetting catalyst strength appears in the candidate data to justify continued holding.",
       "status": "FILLED_PAPER"
-    },
-    {
-      "timestamp": "2026-08-27T14:04:37.628192+00:00",
-      "action": "BUY",
-      "symbol": "LRCX",
-      "qty": 0.64,
-      "price": 312.51,
-      "notional": 200.01,
-      "realized_pnl": null,
-      "reason": null,
-      "thesis": "LRCX ranks highest among candidates with bullish sentiment and a headline catalyst setup at neutral RSI. Liquid semi name fits the book with room for one more position under the 5-name cap and ~$200 notional limit. Reward-to-risk exceeds 1.5 from entry to target versus stop. Adding as new_entry while cash supports the size.",
-      "status": "FILLED_PAPER"
     }
   ],
   "trade_reasoning": [
+    {
+      "timestamp": "2026-09-03T14:03:25.409085+00:00",
+      "action": "SELL",
+      "symbol": "HOOD",
+      "qty": 1.88,
+      "price": 119.52999877929688,
+      "notional": 224.72,
+      "headline": "Sold $HOOD",
+      "side_label": "sell",
+      "narrative": "HERMES AUTO-TRADE: Exiting full HOOD position on take-profit. Price $119.53 reached target $116.00. Realized path $+24.80.",
+      "bullets": [
+        "Target zone filled; lock gains and free risk budget.",
+        "No trail extension in current paper rules."
+      ],
+      "risk_map": {
+        "stop": 101.5,
+        "target": 116.0,
+        "horizon_days": 5,
+        "rr": 2.0,
+        "confidence_10": 9,
+        "confidence": 90
+      },
+      "reason_code": "take_profit",
+      "realized_pnl": 24.8,
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-09-02T14:16:47.323540+00:00",
       "action": "BUY",
@@ -9035,6 +9036,20 @@
   ],
   "closed_trades": [
     {
+      "timestamp": "2026-09-03T14:03:25.408083+00:00",
+      "symbol": "HOOD",
+      "qty": 1.88,
+      "avg_cost": 106.34,
+      "exit_price": 119.52999877929688,
+      "proceeds": 224.72,
+      "realized_pnl": 24.8,
+      "realized_pnl_pct": 12.41,
+      "reason": "take_profit",
+      "thesis": "HERMES AUTO-TRADE: Exiting full HOOD position on take-profit. Price $119.53 reached target $116.00. Realized path $+24.80.",
+      "opened_at": "2026-09-02T14:16:47.323540+00:00",
+      "hold_seconds": 85598
+    },
+    {
       "timestamp": "2026-09-02T14:03:32.617555+00:00",
       "symbol": "PANW",
       "qty": 0.54,
@@ -9299,23 +9314,23 @@
       "thesis": "",
       "opened_at": "2026-08-19T22:52:35.093396+00:00",
       "hold_seconds": 0
-    },
-    {
-      "timestamp": "2026-08-19T22:52:18.582092+00:00",
-      "symbol": "MSFT",
-      "qty": 0.4,
-      "avg_cost": 500.0,
-      "exit_price": 505.0,
-      "proceeds": 202.0,
-      "realized_pnl": 2.0,
-      "realized_pnl_pct": 1.0,
-      "reason": "rotation",
-      "thesis": "",
-      "opened_at": "2026-08-19T22:52:18.580079+00:00",
-      "hold_seconds": 0
     }
   ],
   "closed_results": [
+    {
+      "timestamp": "2026-09-03T14:03:25.408083+00:00",
+      "symbol": "HOOD",
+      "qty": 1.88,
+      "avg_cost": 106.34,
+      "exit_price": 119.52999877929688,
+      "proceeds": 224.72,
+      "realized_pnl": 24.8,
+      "realized_pnl_pct": 12.41,
+      "reason": "take_profit",
+      "thesis": "HERMES AUTO-TRADE: Exiting full HOOD position on take-profit. Price $119.53 reached target $116.00. Realized path $+24.80.",
+      "opened_at": "2026-09-02T14:16:47.323540+00:00",
+      "hold_seconds": 85598
+    },
     {
       "timestamp": "2026-09-02T14:03:32.617555+00:00",
       "symbol": "PANW",
@@ -11265,6 +11280,21 @@
   ],
   "top_take_profits": [
     {
+      "symbol": "HOOD",
+      "timestamp": "2026-09-03T14:03:25.408083+00:00",
+      "opened_at": "2026-09-02T14:16:47.323540+00:00",
+      "qty": 1.88,
+      "entry_price": 106.34,
+      "exit_price": 119.52999877929688,
+      "entry_value": 199.92,
+      "exit_value": 224.72,
+      "realized_pnl": 24.8,
+      "realized_pnl_pct": 12.41,
+      "reason": "take_profit",
+      "take_profit_hit": true,
+      "hold_seconds": 85598
+    },
+    {
       "symbol": "TSLA",
       "timestamp": "2026-08-21T18:38:07.885678+00:00",
       "opened_at": "2026-08-19T13:33:49.451766+00:00",
@@ -11323,21 +11353,6 @@
       "reason": "take_profit",
       "take_profit_hit": true,
       "hold_seconds": 588493
-    },
-    {
-      "symbol": "MSFT",
-      "timestamp": "2026-08-14T15:12:32.032070+00:00",
-      "opened_at": "2026-08-14T15:12:32.027565+00:00",
-      "qty": 0.4,
-      "entry_price": 500.0,
-      "exit_price": 505.0,
-      "entry_value": 200.0,
-      "exit_value": 202.0,
-      "realized_pnl": 2.0,
-      "realized_pnl_pct": 1.0,
-      "reason": "rotation",
-      "take_profit_hit": false,
-      "hold_seconds": 0
     }
   ],
   "top_stop_losses": [
@@ -11419,140 +11434,46 @@
   ],
   "top_candidates": [
     {
-      "symbol": "BAC",
-      "name": "BAC",
-      "price": 62.630001068115234,
-      "volume": 20043145.0,
-      "avg_volume": 31076360.555555556,
-      "percent_change": 1.032423572059285,
+      "symbol": "HOOD",
+      "name": "HOOD",
+      "price": 119.58999633789062,
+      "volume": 14981209.0,
+      "avg_volume": 21137740.9,
+      "percent_change": 11.776800379194965,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 19,
-      "liquidity_score": 84.92,
-      "rank_score": 97.06,
+      "catalyst_score": 13,
+      "liquidity_score": 83.25,
+      "rank_score": 79.99,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): 27,157 Shares in Bank of America Corporation $BAC Acquired by Proficio Capital Partners LLC - MarketBeat",
+      "catalyst": "Headline-driven setup (ai, catalyst): HOOD Stock Rallies On Wall Street Optimism: Retail Sentiment Improves As Investors Eye A Bigger Pop - Yahoo Finance",
       "top_headlines": [
-        "Bank of America (BAC) Stock May Be 31% Undervalued Despite Stablecoin Plans - Yahoo Finance Singapore",
-        "27,157 Shares in Bank of America Corporation $BAC Acquired by Proficio Capital Partners LLC - MarketBeat",
-        "Are Bank of America\u2019s (BAC) New Bond Deals Quietly Redefining Its Tech\u2011Driven Funding Strategy? - simplywall.st"
+        "HOOD Stock Rallies On Wall Street Optimism: Retail Sentiment Improves As Investors Eye A Bigger Pop - Yahoo Finance",
+        "Stocks making the biggest moves premarket: Nvidia, Robinhood, Novartis & more - CNBC",
+        "Wellington Management Group LLP Grows Stock Holdings in Robinhood Markets, Inc. $HOOD - marketbeat.com"
       ],
       "matched_headlines": [
         {
-          "title": "27,157 Shares in Bank of America Corporation $BAC Acquired by Proficio Capital Partners LLC - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Are Bank of America\u2019s (BAC) New Bond Deals Quietly Redefining Its Tech\u2011Driven Funding Strategy? - simplywall.st",
-          "keywords": [
-            "catalyst",
-            "deal"
-          ]
-        },
-        {
-          "title": "Bank Of America Corp (BAC) Stock Analysis: Share Buybacks, Earnings Growth & Analyst Sentiment Rocket Launch Today (O6bFq8YGgC) - Mshale",
-          "keywords": [
-            "buyback",
-            "catalyst",
-            "growth",
-            "launch"
-          ]
-        },
-        {
-          "title": "Bank of America Corporation $BAC Stock Position Reduced by Royal London Asset Management Ltd. - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "BAC Records 9% Y/Y Growth in NII in 1H26: Will the Uptrend Continue? - Yahoo Finance",
-          "keywords": [
-            "growth",
-            "record"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "UBER",
-      "name": "UBER",
-      "price": 76.63999938964844,
-      "volume": 9393503.0,
-      "avg_volume": 13849555.888888888,
-      "percent_change": 1.8607144678735457,
-      "exchange": "",
-      "sentiment": "bearish",
-      "catalyst_score": -17,
-      "liquidity_score": 81.41,
-      "rank_score": 89.2,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (cut): Uber to Cut 10% of Jobs, or 3,300 Roles, to Slash Bureaucracy - Bloomberg.com",
-      "top_headlines": [
-        "Uber to Cut 10% of Jobs, or 3,300 Roles, to Slash Bureaucracy - Bloomberg.com",
-        "Uber Plans Layoffs For 10% Of Workforce In Restructuring. Stock Rises. - Investor's Business Daily",
-        "Uber Slashes 3,300 Jobs to Flatten Hierarchy and Fund Robo-Taxi Push - Barron's"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Uber to Cut 10% of Jobs, or 3,300 Roles, to Slash Bureaucracy - Bloomberg.com",
-          "keywords": [
-            "cut"
-          ]
-        },
-        {
-          "title": "Uber Plans Layoffs For 10% Of Workforce In Restructuring. Stock Rises. - Investor's Business Daily",
+          "title": "HOOD Stock Rallies On Wall Street Optimism: Retail Sentiment Improves As Investors Eye A Bigger Pop - Yahoo Finance",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "Uber lays off 3,300 employees in largest cuts since the pandemic - Al Jazeera",
+          "title": "Wellington Management Group LLP Grows Stock Holdings in Robinhood Markets, Inc. $HOOD - marketbeat.com",
           "keywords": [
-            "cut",
-            "cuts"
+            "beat"
           ]
         },
         {
-          "title": "Uber Cuts 10% Of Staff In Company\u2019s Largest Layoffs Since Pandemic - Forbes",
+          "title": "HOOD Stock Gets A New $105 Price Target \u2014 Here's What Bulls Think The Market Is Missing - Stocktwits",
           "keywords": [
-            "cut",
-            "cuts"
+            "miss"
           ]
         },
         {
-          "title": "Uber Shares Rise 2.4% as Company Plans 3,300 Job Cuts in Restructuring - Yahoo Finance",
-          "keywords": [
-            "cut",
-            "cuts"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "HOOD",
-      "name": "HOOD",
-      "price": 107.13999938964844,
-      "volume": 13900302.0,
-      "avg_volume": 21882690.2,
-      "percent_change": 3.5069048193434447,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 15,
-      "liquidity_score": 83.4,
-      "rank_score": 82.82,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst, record): HOOD Stock Price Target Hiked On Football Prediction Market Boom \u2013 Robinhood Chain\u2019s CASHCAT Hits Record High - Yahoo Finance",
-      "top_headlines": [
-        "HOOD Stock Price Target Hiked On Football Prediction Market Boom \u2013 Robinhood Chain\u2019s CASHCAT Hits Record High - Yahoo Finance",
-        "HOOD Stock Price Target Raised At Piper Sandler Citing Football Prediction Market Boom - Stocktwits",
-        "SA analyst upgrades/downgrades: SNPS, NIO, HOOD, GPRO - Seeking Alpha"
-      ],
-      "matched_headlines": [
-        {
-          "title": "HOOD Stock Price Target Hiked On Football Prediction Market Boom \u2013 Robinhood Chain\u2019s CASHCAT Hits Record High - Yahoo Finance",
+          "title": "HOOD stock recovers as Robinhood chain hits record fees - AMBCrypto",
           "keywords": [
             "ai",
             "catalyst",
@@ -11560,150 +11481,237 @@
           ]
         },
         {
-          "title": "HOOD Stock Price Target Raised At Piper Sandler Citing Football Prediction Market Boom - Stocktwits",
+          "title": "Robinhood raised to Overweight at Morgan Stanley on long growth runway (HOOD:NASDAQ) - Seeking Alpha",
           "keywords": [
             "ai",
             "catalyst",
+            "growth",
             "raised"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "name": "AAPL",
+      "price": 326.3800048828125,
+      "volume": 3976856.0,
+      "avg_volume": 34464695.6,
+      "percent_change": 0.436981002299994,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 12,
+      "liquidity_score": 85.37,
+      "rank_score": 68.66,
+      "news_hits": 7,
+      "catalyst": "Headline-driven setup (catalyst, launch): AAPL Stock Price Target Hiked Ahead Of iPhone Launch \u2013 But Analyst Still Sees Downside Amid CEO Transition - Yahoo Finance",
+      "top_headlines": [
+        "AAPL Stock Price Target Hiked Ahead Of iPhone Launch \u2013 But Analyst Still Sees Downside Amid CEO Transition - Yahoo Finance",
+        "Apple\u2019s WWDC 2026 \u2018Key Catalyst\u2019 For AAPL Stock, Will Decide AI Positioning: Morgan Stanley - Stocktwits",
+        "AAPL Stock Sees Best Day In Over A Month \u2013 CEO John Ternus Reportedly Touts 'Phenomenal' iPhone Launch In First Memo To Employees - TradingView"
+      ],
+      "matched_headlines": [
         {
-          "title": "SA analyst upgrades/downgrades: SNPS, NIO, HOOD, GPRO - Seeking Alpha",
+          "title": "AAPL Stock Price Target Hiked Ahead Of iPhone Launch \u2013 But Analyst Still Sees Downside Amid CEO Transition - Yahoo Finance",
           "keywords": [
             "catalyst",
-            "downgrade",
-            "downgrades",
-            "upgrade",
-            "upgrades"
+            "launch"
           ]
         },
         {
-          "title": "Analyst Raises Robinhood Stock Price Target to $145 But HOOD Retreats - coingape.com",
+          "title": "Apple\u2019s WWDC 2026 \u2018Key Catalyst\u2019 For AAPL Stock, Will Decide AI Positioning: Morgan Stanley - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "AAPL Stock Sees Best Day In Over A Month \u2013 CEO John Ternus Reportedly Touts 'Phenomenal' iPhone Launch In First Memo To Employees - TradingView",
+          "keywords": [
+            "catalyst",
+            "launch"
+          ]
+        },
+        {
+          "title": "Apple (AAPL) Stock Could Be 28% Overvalued On Fresh AI Mac Launches - simplywall.st",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "launch"
+          ]
+        },
+        {
+          "title": "AAPL Reiterated by Morgan Stanley -- Price Target Maintained at $360 - GuruFocus",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "PLTR",
+      "name": "PLTR",
+      "price": 183.06500244140625,
+      "volume": 9953894.0,
+      "avg_volume": 29466799.4,
+      "percent_change": 8.028440451150852,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 9,
+      "liquidity_score": 84.69,
+      "rank_score": 61.13,
+      "news_hits": 6,
+      "catalyst": "Headline-driven setup (catalyst): Why Is Palantir Technologies (PLTR) Up 10.6% Since Last Earnings Report? - Yahoo Finance",
+      "top_headlines": [
+        "Palantir Technologies Inc Stock (PLTR) Moved Down by 3.13% on Sep 2: What Investors Need To Know - TradingKey",
+        "Why Is Palantir Technologies (PLTR) Up 10.6% Since Last Earnings Report? - Yahoo Finance",
+        "PLTR Looks 2.9% Undervalued on GF Value\u2122 as Partnership Boosts G - GuruFocus"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Why Is Palantir Technologies (PLTR) Up 10.6% Since Last Earnings Report? - Yahoo Finance",
+          "keywords": [
+            "catalyst"
+          ]
+        },
+        {
+          "title": "PLTR Looks 2.9% Undervalued on GF Value\u2122 as Partnership Boosts G - GuruFocus",
+          "keywords": [
+            "catalyst",
+            "partnership"
+          ]
+        },
+        {
+          "title": "Palantir Technologies (PLTR) Is Up 7.9% After Maven AI Defense Revenue Surges And Guidance Rises - simplywall.st",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "guidance"
+          ]
+        },
+        {
+          "title": "Why Is Palantir (NASDAQ:PLTR) Stock Down 6% Today? Google\u2019s Cyber AI Push Raises Competition Fears - Stocks Down Under",
           "keywords": [
             "ai",
             "catalyst",
             "raises"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "symbol": "META",
+      "name": "META",
+      "price": 613.9299926757812,
+      "volume": 4558846.0,
+      "avg_volume": 14951464.6,
+      "percent_change": 3.555708519513646,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 9,
+      "liquidity_score": 81.75,
+      "rank_score": 58.61,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst): Meta (META) Stock Looks Like A Bargain As Its 100% Run Continues - simplywall.st",
+      "top_headlines": [
+        "Meta (META) Stock Looks Like A Bargain As Its 100% Run Continues - simplywall.st",
+        "Meta Vs. Google: Analyst Says AI Boost Puts Facebook Parent On Track For Ad Crown - Investor's Business Daily",
+        "Meta's stock could hit $1,000 by 2027 driven by AI growth and strong ad revenue. - Pluang"
+      ],
+      "matched_headlines": [
         {
-          "title": "Analysts Offer Insights on Financial Companies: Aon (AON) and Robinhood (HOOD) - The Globe and Mail",
+          "title": "Meta (META) Stock Looks Like A Bargain As Its 100% Run Continues - simplywall.st",
           "keywords": [
             "ai",
             "catalyst"
+          ]
+        },
+        {
+          "title": "Meta Vs. Google: Analyst Says AI Boost Puts Facebook Parent On Track For Ad Crown - Investor's Business Daily",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Meta's stock could hit $1,000 by 2027 driven by AI growth and strong ad revenue. - Pluang",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "growth"
+          ]
+        },
+        {
+          "title": "Meta Rises 2.5% Despite 55% Cost Surge Pressuring AI Recovery - TechStock\u00b2",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Meta settlement could clear the way for new AI product launches, Morgan Stanley says - CNBC",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "launch"
           ]
         }
       ]
     },
     {
-      "symbol": "NFLX",
-      "name": "NFLX",
-      "price": 82.68499755859375,
-      "volume": 15593595.0,
-      "avg_volume": 24808079.5,
-      "percent_change": 2.3202574639857825,
+      "symbol": "CVX",
+      "name": "CVX",
+      "price": 212.44000244140625,
+      "volume": 739590.0,
+      "avg_volume": 7061999.0,
+      "percent_change": 0.3116458900338304,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 10,
-      "liquidity_score": 83.95,
-      "rank_score": 61.95,
+      "catalyst_score": 9,
+      "liquidity_score": 78.49,
+      "rank_score": 55.52,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (catalyst): NFLX Stock Slips Overnight: Why This Analyst Sees 60% Upside Amid Post-Earnings Gloom - Stocktwits",
+      "catalyst": "Headline-driven setup (ai, catalyst, deal): Chevron Stock Is A Bargain Amid Venezuela Deal (NYSE:CVX) - Seeking Alpha",
       "top_headlines": [
-        "NFLX Stock Slips Overnight: Why This Analyst Sees 60% Upside Amid Post-Earnings Gloom - Stocktwits",
-        "Netflix (NFLX) Unveils New Partnership, Is It Still Below Fair Value? - Yahoo Finance",
-        "Independence Bank of Kentucky Boosts Stock Position in Netflix, Inc. $NFLX - MarketBeat"
+        "CVX Stock Quote Price and Forecast - CNN",
+        "Chevron Just Committed $7 Billion to Venezuela. Here's What It Means for CVX Stock. - The Motley Fool",
+        "Chevron Stock Is A Bargain Amid Venezuela Deal (NYSE:CVX) - Seeking Alpha"
       ],
       "matched_headlines": [
         {
-          "title": "NFLX Stock Slips Overnight: Why This Analyst Sees 60% Upside Amid Post-Earnings Gloom - Stocktwits",
-          "keywords": [
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Netflix (NFLX) Unveils New Partnership, Is It Still Below Fair Value? - Yahoo Finance",
+          "title": "Chevron Stock Is A Bargain Amid Venezuela Deal (NYSE:CVX) - Seeking Alpha",
           "keywords": [
             "ai",
             "catalyst",
-            "partnership"
+            "deal"
           ]
         },
         {
-          "title": "Independence Bank of Kentucky Boosts Stock Position in Netflix, Inc. $NFLX - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Netflix (NFLX) Unveils New Partnership, Is It Still Below Fair Value? - Yahoo Finance UK",
+          "title": "CVX Stock Extends Gains Overnight: Chevron Reportedly Nears Deal For Giant Venezuelan Oil Fields - Yahoo Finance",
           "keywords": [
             "ai",
             "catalyst",
-            "partnership"
+            "deal"
           ]
         },
         {
-          "title": "Nasdaq, S&P 500 Futures Sink As AI Stocks Extend Selloff: Why NFLX, NBIS, SPCX, TSLA, DJT, SLS Are In Focus - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "GOOGL",
-      "name": "GOOGL",
-      "price": 337.239990234375,
-      "volume": 15292533.0,
-      "avg_volume": 22769583.3,
-      "percent_change": 0.6626473922463559,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 10,
-      "liquidity_score": 83.57,
-      "rank_score": 60.57,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): The $277 billion That GOOGL Stock Quietly Paid Its Owners - Trefis",
-      "top_headlines": [
-        "The $277 billion That GOOGL Stock Quietly Paid Its Owners - Trefis",
-        "Google Could Release New 3.8 Flash AI Model As Soon As Wednesday, Says Report \u2014 GOOGL Stock Gains After-Hours - Stocktwits",
-        "Alphabet (GOOGL) Stock Quotes, Company News And Chart Analysis - Investor's Business Daily"
-      ],
-      "matched_headlines": [
-        {
-          "title": "The $277 billion That GOOGL Stock Quietly Paid Its Owners - Trefis",
+          "title": "Chevron Just Committed $7 Billion to Venezuela. Here's What It Means for CVX Stock. - The Globe and Mail",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "Google Could Release New 3.8 Flash AI Model As Soon As Wednesday, Says Report \u2014 GOOGL Stock Gains After-Hours - Stocktwits",
+          "title": "Chevron (CVX) Stock Looks Reasonable On Earnings But Stretched On Its 5 Year Run - simplywall.st",
           "keywords": [
-            "ai",
             "catalyst"
           ]
         },
         {
-          "title": "Alphabet (GOOGL) Stock Quotes, Company News And Chart Analysis - Investor's Business Daily",
+          "title": "Chevron Stock (CVX): The Record Quarter Was Built on $104 Oil \u2014 Brent Is Now $91. What Changes? - top1markets.com",
           "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "GOOGL Wins Big In Antitrust Fight \u2014 Judge Blocks DOJ\u2019s Push To Break Up Google\u2019s Ad Business - Stocktwits",
-          "keywords": [
-            "wins"
-          ]
-        },
-        {
-          "title": "Direxion Daily GOOGL Bull 2X Shares (NASDAQ:GGLL) Shares Down 4.8% - Here's What Happened - MarketBeat",
-          "keywords": [
-            "ai",
-            "beat",
-            "catalyst"
+            "record"
           ]
         }
       ]
@@ -11734,13 +11742,7 @@
       "grok-build-0.1"
     ],
     "junior_min_agree": 3,
-    "junior_votes": {
-      "HOLD": 3,
-      "BUY": 1,
-      "SELL": 0,
-      "live": 3,
-      "fallback": 0
-    },
+    "junior_votes": null,
     "junior_model_3_enabled": true,
     "model_1": "grok-4.5",
     "model_1_effort": "medium",
@@ -11752,26 +11754,26 @@
     "min_confidence": 70,
     "max_candidates_to_llm": 8,
     "log_all_disagreements": true,
-    "decision_mode": "live_dual_llm",
-    "last_tier": "junior_only",
-    "last_stage": "entry",
+    "decision_mode": "fallback_deterministic",
+    "last_tier": "risk_exit",
+    "last_stage": "exit",
     "last_junior_nomination": null,
-    "last_escalate_reason": "",
-    "live_share_recent": 89.3
+    "last_escalate_reason": "take_profit",
+    "live_share_recent": 0.0
   },
   "learning": {
     "candidate_signals_logged": 8,
-    "fills_logged": 328,
-    "closed_outcomes": 150,
-    "consensus_events": 437,
+    "fills_logged": 329,
+    "closed_outcomes": 151,
+    "consensus_events": 438,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1002.88,
-    "change": 2.88,
-    "change_pct": 0.29,
+    "latest_equity": 1002.83,
+    "change": 2.83,
+    "change_pct": 0.28,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -14180,9 +14182,9 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-03T14:00:38.687144+00:00",
-        "equity": 1002.88,
-        "cash": 577.1,
+        "t": "2026-09-03T14:03:42.390788+00:00",
+        "equity": 1002.83,
+        "cash": 801.82,
         "event": "mark"
       }
     ],
