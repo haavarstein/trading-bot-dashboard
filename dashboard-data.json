@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-09-03T19:10:12.562651+00:00",
+  "generated_at": "2026-09-03T19:17:26.097692+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1007.04,
+    "portfolio_value": 1007.25,
     "starting_cash": 1000.0,
-    "total_return_pct": 0.7,
-    "total_pnl": 7.04,
+    "total_return_pct": 0.72,
+    "total_pnl": 7.25,
     "realized_pnl": 1.45,
-    "open_pnl": 5.55,
-    "capital_deployed": 604.19,
+    "open_pnl": 5.77,
+    "capital_deployed": 604.4,
     "cash": 402.85,
     "closed_trades": 29,
     "win_rate_pct": 31.03,
-    "vs_spy_pct": 0.15,
-    "spy_return_pct": 0.55,
+    "vs_spy_pct": 0.2,
+    "spy_return_pct": 0.52,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-03T19:10:15.228369+00:00"
+    "updated_at": "2026-09-03T19:17:28.743286+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.55,
-    "price": 773.5999755859375,
+    "return_pct": 0.52,
+    "price": 773.3571166992188,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 17,
-    "validated_count_today": 11,
+    "consensus_count_today": 18,
+    "validated_count_today": 12,
     "blocked_count_today": 6,
     "fills_today": 3,
-    "simulated_orders_today": 11,
+    "simulated_orders_today": 12,
     "top_symbol_today": "HOOD"
   },
   "holdings": [
@@ -38,10 +38,10 @@
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 63.080299377441406,
-      "market_value": 202.49,
-      "open_pnl": 2.83,
-      "open_pnl_pct": 1.42,
+      "last": 63.1349983215332,
+      "market_value": 202.66,
+      "open_pnl": 3.0,
+      "open_pnl_pct": 1.5,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
@@ -50,10 +50,10 @@
       "symbol": "HOOD",
       "qty": 1.65,
       "avg_cost": 120.77,
-      "last": 122.92009735107422,
-      "market_value": 202.82,
-      "open_pnl": 3.55,
-      "open_pnl_pct": 1.78,
+      "last": 122.87999725341797,
+      "market_value": 202.75,
+      "open_pnl": 3.48,
+      "open_pnl_pct": 1.75,
       "stop": 115.0,
       "target": 129.5,
       "thesis": "HOOD shows top-ranked catalyst with Wall Street optimism and improving retail sentiment per Yahoo Finance headline. Current RSI at 50.0 leaves room for upside without overbought conditions. Book has ample cash and only one open name, allowing small new entry under $200 notional. Reward-to-risk exceeds 1.5 with defined levels."
@@ -62,10 +62,10 @@
       "symbol": "CVX",
       "qty": 0.94,
       "avg_cost": 212.45,
-      "last": 211.57000732421875,
-      "market_value": 198.88,
-      "open_pnl": -0.83,
-      "open_pnl_pct": -0.41,
+      "last": 211.69000244140625,
+      "market_value": 198.99,
+      "open_pnl": -0.71,
+      "open_pnl_pct": -0.36,
       "stop": 206.0,
       "target": 222.5,
       "thesis": "CVX shows a headline-driven bullish catalyst as Chevron reportedly nears a deal for giant Venezuelan oil fields, supporting further upside extension. RSI at 50 leaves room for continuation without being overbought. Liquid large-cap energy name fits the desk preference for catalyst setups with defined risk. Position sized to ~$200 notional with R:R above 1.5."
@@ -74,15 +74,15 @@
   "latest_candidate": {
     "symbol": "BAC",
     "name": "BAC",
-    "price": 63.01499938964844,
-    "volume": 14792841.0,
-    "avg_volume": 30140094.1,
-    "percent_change": 0.6629407757875674,
+    "price": 63.095001220703125,
+    "volume": 15307518.0,
+    "avg_volume": 30191561.8,
+    "percent_change": 0.7907392310667003,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 14,
-    "liquidity_score": 84.79,
-    "rank_score": 76.75,
+    "liquidity_score": 84.8,
+    "rank_score": 76.85,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (beat): Bank of America (NYSE:BAC) Stock Price Up 1% - Time to Buy? - marketbeat.com",
     "top_headlines": [
@@ -126,52 +126,52 @@
     ]
   },
   "latest_decision": {
-    "model": "grok-4.5",
-    "action": "BUY",
-    "symbol": "XOM",
-    "confidence": 72,
+    "model": "grok-4.3",
+    "action": "HOLD",
+    "symbol": "CASH",
+    "confidence": 65,
     "cache_stats": null,
-    "entry_price": 163.04,
-    "stop_loss": 158.0,
-    "take_profit": 171.0,
-    "qty": 1.22,
-    "thesis": "XOM ranks as the strongest new liquid catalyst name with bullish oil-rally backdrop and solid rank_score above held energy exposure. Adding a starter size keeps notional under $200 while diversifying the book without exceeding name limits. Defined stop under recent support and target above offer a clean \u22651.5 R:R skim on the headline momentum.",
-    "reason_code": "new_entry",
+    "entry_price": 0.0,
+    "stop_loss": 0.0,
+    "take_profit": 0.0,
+    "qty": 0.0,
+    "thesis": "No new candidate offers a materially superior setup to justify rotation or fresh entry within $200 notional limit. Held positions in BAC and HOOD remain constructive with positive P/L while CVX weakness is modest. Prefer to maintain current book and cash buffer.",
+    "reason_code": "hold",
     "reasoning": {
-      "headline": "Bought $XOM",
-      "narrative": "XOM ranks as the strongest new liquid catalyst name with bullish oil-rally backdrop and solid rank_score above held energy exposure. Adding a starter size keeps notional under $200 while diversifying the book without exceeding name limits. Defined stop under recent support and target above offer a clean \u22651.5 R:R skim on the headline momentum.",
+      "headline": "Hold $CASH",
+      "narrative": "No new candidate offers a materially superior setup to justify rotation or fresh entry within $200 notional limit. Held positions in BAC and HOOD remain constructive with positive P/L while CVX weakness is modest. Prefer to maintain current book and cash buffer.",
       "bullets": [
-        "Top non-held rank 70.72 + oil-rally catalyst",
-        "Starter ~$199 notional fits cash and $200 cap",
-        "R:R ~1.58 with stop 158 / target 171",
-        "Book at 3 names; room to add without rotation"
+        "BAC and HOOD already held with positive open P/L and top-ranked catalysts",
+        "CVX is weakest hold but not yet at stop; no rotation trigger met",
+        "New names like XOM/JPM lack sufficient edge vs current allocation",
+        "R:R and liquidity criteria not satisfied for new BUY"
       ],
       "risk_map": {
-        "stop": 158.0,
-        "target": 171.0,
+        "stop": 0.0,
+        "target": 0.0,
         "horizon_days": 5,
-        "rr": 1.58,
-        "confidence_10": 7,
-        "confidence": 72
+        "rr": 0.0,
+        "confidence_10": 6,
+        "confidence": 65
       },
-      "thesis": "XOM ranks as the strongest new liquid catalyst name with bullish oil-rally backdrop and solid rank_score above held energy exposure. Adding a starter size keeps notional under $200 while diversifying the book without exceeding name limits. Defined stop under recent support and target above offer a clean \u22651.5 R:R skim on the headline momentum."
+      "thesis": "No new candidate offers a materially superior setup to justify rotation or fresh entry within $200 notional limit. Held positions in BAC and HOOD remain constructive with positive P/L while CVX weakness is modest. Prefer to maintain current book and cash buffer."
     },
     "source": "live",
     "provider": "xai",
-    "provider_model_id": "grok-4.5",
+    "provider_model_id": "grok-4.3",
     "bullets": [
-      "Top non-held rank 70.72 + oil-rally catalyst",
-      "Starter ~$199 notional fits cash and $200 cap",
-      "R:R ~1.58 with stop 158 / target 171",
-      "Book at 3 names; room to add without rotation"
+      "BAC and HOOD already held with positive open P/L and top-ranked catalysts",
+      "CVX is weakest hold but not yet at stop; no rotation trigger met",
+      "New names like XOM/JPM lack sufficient edge vs current allocation",
+      "R:R and liquidity criteria not satisfied for new BUY"
     ],
-    "timestamp": "2026-09-03T19:04:44.955062+00:00"
+    "timestamp": "2026-09-03T19:17:12.516968+00:00"
   },
-  "stance": "Buying pressure on XOM. XOM ranks as the strongest new liquid catalyst name with bullish oil-rally backdrop and solid rank_score above held energy exposure. Adding a starter size keeps notional under $200 while diversifying the book without exceeding name limits. Defined stop under recent support and target above offer a clean \u22651.5 R:R skim on the headline momentum.",
+  "stance": "Holding BAC, HOOD, CVX. No new trade right now.",
   "thinking": {
-    "badge": "Looking to buy XOM",
-    "headline": "Buying pressure on XOM.",
-    "plain_english": "Right now Hermes wants exposure to XOM. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
+    "badge": "Holding what it owns",
+    "headline": "Holding BAC, HOOD, CVX. No new trade right now.",
+    "plain_english": "Right now Hermes is holding BAC, HOOD, CVX and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
     "triggers": [
       "It owns BAC, bought near $62.20. Simple plan: sell if it falls to about $60.00, or take profit near $65.50.",
       "It owns HOOD, bought near $120.77. Simple plan: sell if it falls to about $115.00, or take profit near $129.50.",
@@ -186,9 +186,9 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 63.080299377441406,
-        "open_pnl": 2.83,
-        "open_pnl_pct": 1.42,
+        "last": 63.1349983215332,
+        "open_pnl": 3.0,
+        "open_pnl_pct": 1.5,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
       },
@@ -198,9 +198,9 @@
         "avg_cost": 120.77,
         "stop": 115.0,
         "target": 129.5,
-        "last": 122.92009735107422,
-        "open_pnl": 3.55,
-        "open_pnl_pct": 1.78,
+        "last": 122.87999725341797,
+        "open_pnl": 3.48,
+        "open_pnl_pct": 1.75,
         "line": "Bought near $120.77 \u00b7 Sell safety line $115.00 \u00b7 Profit target $129.50",
         "plan": "stop 115.0 or target 129.5"
       },
@@ -210,17 +210,17 @@
         "avg_cost": 212.45,
         "stop": 206.0,
         "target": 222.5,
-        "last": 211.57000732421875,
-        "open_pnl": -0.83,
-        "open_pnl_pct": -0.41,
+        "last": 211.69000244140625,
+        "open_pnl": -0.71,
+        "open_pnl_pct": -0.36,
         "line": "Bought near $212.45 \u00b7 Sell safety line $206.00 \u00b7 Profit target $222.50",
         "plan": "stop 206.0 or target 222.5"
       }
     ],
-    "last_checked": "2026-09-03T19:10:12.562651+00:00",
+    "last_checked": "2026-09-03T19:17:26.097692+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "BUY",
+    "action": "HOLD",
     "symbols_held": [
       "BAC",
       "HOOD",
@@ -238,10 +238,10 @@
       {
         "prefix": "J",
         "model": "claude-haiku-4-5",
-        "action": "BUY",
-        "symbol": "XOM",
-        "confidence": 72,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 62,
+        "tone": "hold"
       },
       {
         "prefix": "J",
@@ -254,38 +254,91 @@
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "BUY",
-        "symbol": "XOM",
-        "confidence": 72,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "grok-4.5",
-        "action": "BUY",
-        "symbol": "XOM",
-        "confidence": 72,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "claude-sonnet-5",
         "action": "HOLD",
         "symbol": "CASH",
         "confidence": 65,
         "tone": "hold"
-      },
-      {
-        "prefix": "S",
-        "model": "claude-opus-5",
-        "action": "BUY",
-        "symbol": "XOM",
-        "confidence": 90,
-        "tone": "buy"
       }
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 no new trade",
+      "detail": "No new candidate offers a materially superior setup to justify rotation or fresh entry within $200 notional limit. Held positions in BAC and HOOD remain constructive with positive P/L while CVX weakness is modest. Prefer to maintain current book and cash buffer.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "XOM",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        }
+      ],
+      "tier": "junior_only",
+      "escalate_reason": "",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-03T19:17:12.516968+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "XOM",
@@ -824,83 +877,6 @@
       "stage": "entry",
       "junior_nomination": "JPM",
       "timestamp": "2026-09-03T17:32:43.584025+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "JPM",
-      "status": "blocked",
-      "headline": "BUY JPM \u2014 blocked",
-      "detail": "Insufficient buying power: $178.13 < $198.72",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "JPM",
-          "confidence": 75,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "JPM",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "JPM",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "JPM",
-          "confidence": 75,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "JPM",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "JPM",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "BUY",
-          "symbol": "JPM",
-          "confidence": 90,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "entry",
-      "junior_nomination": "JPM",
-      "timestamp": "2026-09-03T17:17:23.940022+00:00"
     },
     {
       "type": "fill",
@@ -12207,15 +12183,15 @@
     {
       "symbol": "BAC",
       "name": "BAC",
-      "price": 63.01499938964844,
-      "volume": 14792841.0,
-      "avg_volume": 30140094.1,
-      "percent_change": 0.6629407757875674,
+      "price": 63.095001220703125,
+      "volume": 15307518.0,
+      "avg_volume": 30191561.8,
+      "percent_change": 0.7907392310667003,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 14,
-      "liquidity_score": 84.79,
-      "rank_score": 76.75,
+      "liquidity_score": 84.8,
+      "rank_score": 76.85,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Bank of America (NYSE:BAC) Stock Price Up 1% - Time to Buy? - marketbeat.com",
       "top_headlines": [
@@ -12259,27 +12235,126 @@
       ]
     },
     {
+      "symbol": "UBER",
+      "name": "UBER",
+      "price": 75.79000091552734,
+      "volume": 10465147.0,
+      "avg_volume": 13183384.7,
+      "percent_change": -0.8633041975942408,
+      "exchange": "",
+      "sentiment": "bearish",
+      "catalyst_score": -14,
+      "liquidity_score": 81.2,
+      "rank_score": 76.37,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (cut): Uber Is Cutting 10% of Its Workforce and Betting $10 Billion on Robotaxis Instead - 24/7 Wall St.",
+      "top_headlines": [
+        "Down 6% in 2026, Uber Is Slashing Another 10% of Its Workforce - Yahoo Finance",
+        "Uber Is Cutting 10% of Its Workforce and Betting $10 Billion on Robotaxis Instead - 24/7 Wall St.",
+        "Uber is cutting 3,300 jobs despite double-digit growth as it makes room for its robotaxi future - Fortune"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Uber Is Cutting 10% of Its Workforce and Betting $10 Billion on Robotaxis Instead - 24/7 Wall St.",
+          "keywords": [
+            "cut"
+          ]
+        },
+        {
+          "title": "Uber is cutting 3,300 jobs despite double-digit growth as it makes room for its robotaxi future - Fortune",
+          "keywords": [
+            "cut",
+            "growth"
+          ]
+        },
+        {
+          "title": "Uber to Cut 10% of Jobs, or 3,300 Roles, to Slash Bureaucracy - Bloomberg.com",
+          "keywords": [
+            "cut"
+          ]
+        },
+        {
+          "title": "Uber is cutting 10% of staff \u2014 here\u2019s why, according to the CEO - NewsNation",
+          "keywords": [
+            "cut"
+          ]
+        },
+        {
+          "title": "Mizuho reiterates Outperform on Uber stock after workforce cuts - Investing.com",
+          "keywords": [
+            "cut",
+            "cuts"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "HOOD",
+      "name": "HOOD",
+      "price": 122.8550033569336,
+      "volume": 43030177.0,
+      "avg_volume": 23942637.7,
+      "percent_change": 14.828494074151669,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 12,
+      "liquidity_score": 83.79,
+      "rank_score": 73.07,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (growth): Robinhood (HOOD) Positioned with Multiple Long Term Growth Drivers - Yahoo Finance",
+      "top_headlines": [
+        "Robinhood (HOOD) Positioned with Multiple Long Term Growth Drivers - Yahoo Finance",
+        "Robinhood Markets Stock (HOOD) Opinions on Analyst Upgrades and Blockchain Growth - Quiver Quantitative",
+        "Robinhood (NASDAQ:HOOD) Stock Soars 15% as Analysts Bet on Its Prediction-Markets Boom - Stocks Down Under"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Robinhood (HOOD) Positioned with Multiple Long Term Growth Drivers - Yahoo Finance",
+          "keywords": [
+            "growth"
+          ]
+        },
+        {
+          "title": "Robinhood Markets Stock (HOOD) Opinions on Analyst Upgrades and Blockchain Growth - Quiver Quantitative",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "growth",
+            "upgrade",
+            "upgrades"
+          ]
+        },
+        {
+          "title": "Robinhood Rallies 11% on Price Target Hikes, Webull Climbs 7%, Interactive Brokers Gains 4% - 24/7 Wall St.",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
       "symbol": "XOM",
       "name": "XOM",
-      "price": 163.04100036621094,
-      "volume": 7386196.0,
-      "avg_volume": 13157999.6,
-      "percent_change": -0.6755976676872657,
+      "price": 163.0399932861328,
+      "volume": 7575654.0,
+      "avg_volume": 13176945.4,
+      "percent_change": -0.6762111797893497,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
-      "liquidity_score": 81.19,
+      "liquidity_score": 81.2,
       "rank_score": 70.72,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, beat, catalyst): Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - stocktwits.com",
+      "catalyst": "Headline-driven setup (ai, beat, catalyst): Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits",
       "top_headlines": [
         "ExxonMobil (XOM) Stock May Trade At A Discount Despite Iran Oil Shock - simplywall.st",
-        "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - stocktwits.com",
+        "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits",
         "XOM Maintained by Piper Sandler -- Price Target Raised to $185 - GuruFocus"
       ],
       "matched_headlines": [
         {
-          "title": "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - stocktwits.com",
+          "title": "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits",
           "keywords": [
             "ai",
             "beat",
@@ -12311,19 +12386,19 @@
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 361.80999755859375,
-      "volume": 2826548.0,
-      "avg_volume": 5293524.8,
-      "percent_change": 1.5692539213785563,
+      "price": 362.125,
+      "volume": 2912325.0,
+      "avg_volume": 5302102.5,
+      "percent_change": 1.6576831056822992,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
       "liquidity_score": 77.24,
-      "rank_score": 69.34,
+      "rank_score": 69.41,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Solidarity Wealth LLC Sells 4,951 Shares of JPMorgan Chase & Co. $JPM - marketbeat.com",
       "top_headlines": [
-        "JPM Stock Slips Premarket: Morningstar Says JPMorgan Is Becoming Increasingly Attractive At Current Levels - stocktwits.com",
+        "JPM Stock Slips Premarket: Morningstar Says JPMorgan Is Becoming Increasingly Attractive At Current Levels - Stocktwits",
         "Solidarity Wealth LLC Sells 4,951 Shares of JPMorgan Chase & Co. $JPM - marketbeat.com",
         "JPMorgan Chase (JPM) Raised Buybacks And Its Dividend, Is The Stock Fully Priced? - Yahoo Finance"
       ],
@@ -12347,111 +12422,6 @@
           "title": "JPMorgan Chase & Co. $JPM Stake Lifted by Baron Silver Stevens Financial Advisors LLC - marketbeat.com",
           "keywords": [
             "beat"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "HOOD",
-      "name": "HOOD",
-      "price": 122.97000122070312,
-      "volume": 42097680.0,
-      "avg_volume": 23849388.0,
-      "percent_change": 14.935978760632324,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 11,
-      "liquidity_score": 83.77,
-      "rank_score": 69.07,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): Robinhood Rallies 11% on Price Target Hikes, Webull Climbs 7%, Interactive Brokers Gains 4% - Yahoo Finance",
-      "top_headlines": [
-        "Robinhood Rallies 11% on Price Target Hikes, Webull Climbs 7%, Interactive Brokers Gains 4% - Yahoo Finance",
-        "Robinhood Markets Stock (HOOD) Opinions on Analyst Upgrades and Blockchain Growth - Quiver Quantitative",
-        "Why is Robinhood Markets stock rallying today? - Investing.com"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Robinhood Rallies 11% on Price Target Hikes, Webull Climbs 7%, Interactive Brokers Gains 4% - Yahoo Finance",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Robinhood Markets Stock (HOOD) Opinions on Analyst Upgrades and Blockchain Growth - Quiver Quantitative",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "growth",
-            "upgrade",
-            "upgrades"
-          ]
-        },
-        {
-          "title": "Robinhood Rallies 11% on Price Target Hikes, Webull Climbs 7%, Interactive Brokers Gains 4% - 24/7 Wall St.",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "CVX",
-      "name": "CVX",
-      "price": 211.5800018310547,
-      "volume": 3802002.0,
-      "avg_volume": 7368240.2,
-      "percent_change": -0.09443618348992962,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 11,
-      "liquidity_score": 78.67,
-      "rank_score": 63.38,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst, deal): Chevron Stock Is A Bargain Amid Venezuela Deal (NYSE:CVX) - Seeking Alpha",
-      "top_headlines": [
-        "CVX Stock Quote Price and Forecast - CNN",
-        "Chevron Stock Is A Bargain Amid Venezuela Deal (NYSE:CVX) - Seeking Alpha",
-        "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - stocktwits.com"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Chevron Stock Is A Bargain Amid Venezuela Deal (NYSE:CVX) - Seeking Alpha",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "deal"
-          ]
-        },
-        {
-          "title": "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - stocktwits.com",
-          "keywords": [
-            "ai",
-            "beat",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "CVX Stock Extends Gains Overnight: Chevron Reportedly Nears Deal For Giant Venezuelan Oil Fields - Yahoo Finance",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "deal"
-          ]
-        },
-        {
-          "title": "Chevron (CVX) Stock Looks Reasonable On Earnings But Stretched On Its 5 Year Run - simplywall.st",
-          "keywords": [
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Chevron Just Committed $7 Billion to Venezuela. Here's What It Means for CVX Stock. - The Globe and Mail",
-          "keywords": [
-            "ai",
-            "catalyst"
           ]
         }
       ]
@@ -12483,8 +12453,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 1,
-      "BUY": 3,
+      "HOLD": 3,
+      "BUY": 1,
       "SELL": 0,
       "live": 3,
       "fallback": 0
@@ -12501,25 +12471,25 @@
     "max_candidates_to_llm": 8,
     "log_all_disagreements": true,
     "decision_mode": "live_dual_llm",
-    "last_tier": "senior_escalated",
+    "last_tier": "junior_only",
     "last_stage": "entry",
     "last_junior_nomination": null,
-    "last_escalate_reason": "junior_trade_or_split",
+    "last_escalate_reason": "",
     "live_share_recent": 85.7
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 331,
     "closed_outcomes": 151,
-    "consensus_events": 458,
+    "consensus_events": 459,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1007.04,
-    "change": 7.04,
-    "change_pct": 0.7,
+    "latest_equity": 1007.25,
+    "change": 7.25,
+    "change_pct": 0.73,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15032,6 +15002,12 @@
       {
         "t": "2026-09-03T19:10:15.228369+00:00",
         "equity": 1007.04,
+        "cash": 402.85,
+        "event": "mark"
+      },
+      {
+        "t": "2026-09-03T19:17:28.743286+00:00",
+        "equity": 1007.25,
         "cash": 402.85,
         "event": "mark"
       }
