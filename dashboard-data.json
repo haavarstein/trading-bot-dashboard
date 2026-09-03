@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-03T14:17:31.123091+00:00",
+  "generated_at": "2026-09-03T14:20:41.027311+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1002.54,
+    "portfolio_value": 1004.43,
     "starting_cash": 1000.0,
-    "total_return_pct": 0.25,
-    "total_pnl": 2.54,
+    "total_return_pct": 0.44,
+    "total_pnl": 4.43,
     "realized_pnl": 1.45,
-    "open_pnl": 1.06,
-    "capital_deployed": 399.99,
+    "open_pnl": 2.94,
+    "capital_deployed": 401.88,
     "cash": 602.55,
     "closed_trades": 29,
     "win_rate_pct": 31.03,
-    "vs_spy_pct": 0.37,
-    "spy_return_pct": -0.12,
+    "vs_spy_pct": 0.5,
+    "spy_return_pct": -0.06,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-03T14:17:33.768370+00:00"
+    "updated_at": "2026-09-03T14:20:43.623660+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.12,
-    "price": 768.4400024414062,
+    "return_pct": -0.06,
+    "price": 768.9299926757812,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,10 +38,10 @@
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 62.54499816894531,
-      "market_value": 200.77,
-      "open_pnl": 1.11,
-      "open_pnl_pct": 0.55,
+      "last": 62.53499984741211,
+      "market_value": 200.74,
+      "open_pnl": 1.08,
+      "open_pnl_pct": 0.54,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
@@ -50,10 +50,10 @@
       "symbol": "HOOD",
       "qty": 1.65,
       "avg_cost": 120.77,
-      "last": 120.73999786376953,
-      "market_value": 199.22,
-      "open_pnl": -0.05,
-      "open_pnl_pct": -0.02,
+      "last": 121.9000015258789,
+      "market_value": 201.14,
+      "open_pnl": 1.86,
+      "open_pnl_pct": 0.94,
       "stop": 115.0,
       "target": 129.5,
       "thesis": "HOOD shows top-ranked catalyst with Wall Street optimism and improving retail sentiment per Yahoo Finance headline. Current RSI at 50.0 leaves room for upside without overbought conditions. Book has ample cash and only one open name, allowing small new entry under $200 notional. Reward-to-risk exceeds 1.5 with defined levels."
@@ -177,9 +177,9 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 62.54499816894531,
-        "open_pnl": 1.11,
-        "open_pnl_pct": 0.55,
+        "last": 62.53499984741211,
+        "open_pnl": 1.08,
+        "open_pnl_pct": 0.54,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
       },
@@ -189,14 +189,14 @@
         "avg_cost": 120.77,
         "stop": 115.0,
         "target": 129.5,
-        "last": 120.73999786376953,
-        "open_pnl": -0.05,
-        "open_pnl_pct": -0.02,
+        "last": 121.9000015258789,
+        "open_pnl": 1.86,
+        "open_pnl_pct": 0.94,
         "line": "Bought near $120.77 \u00b7 Sell safety line $115.00 \u00b7 Profit target $129.50",
         "plan": "stop 115.0 or target 129.5"
       }
     ],
-    "last_checked": "2026-09-03T14:17:31.123091+00:00",
+    "last_checked": "2026-09-03T14:20:41.027311+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -11964,9 +11964,9 @@
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1002.54,
-    "change": 2.54,
-    "change_pct": 0.25,
+    "latest_equity": 1004.43,
+    "change": 4.43,
+    "change_pct": 0.44,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -14383,6 +14383,12 @@
       {
         "t": "2026-09-03T14:17:33.768370+00:00",
         "equity": 1002.54,
+        "cash": 602.55,
+        "event": "mark"
+      },
+      {
+        "t": "2026-09-03T14:20:43.623660+00:00",
+        "equity": 1004.43,
         "cash": 602.55,
         "event": "mark"
       }
