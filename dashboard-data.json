@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-04T15:10:41.246124+00:00",
+  "generated_at": "2026-09-04T15:20:38.418674+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1001.91,
+    "portfolio_value": 1001.27,
     "starting_cash": 1000.0,
-    "total_return_pct": 0.19,
-    "total_pnl": 1.91,
+    "total_return_pct": 0.13,
+    "total_pnl": 1.27,
     "realized_pnl": 1.45,
-    "open_pnl": 0.42,
-    "capital_deployed": 798.71,
+    "open_pnl": -0.22,
+    "capital_deployed": 798.07,
     "cash": 203.2,
     "closed_trades": 29,
     "win_rate_pct": 31.03,
-    "vs_spy_pct": 0.17,
-    "spy_return_pct": 0.02,
+    "vs_spy_pct": 0.14,
+    "spy_return_pct": -0.01,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-04T15:10:43.987022+00:00"
+    "updated_at": "2026-09-04T15:20:41.075729+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.02,
-    "price": 769.5399780273438,
+    "return_pct": -0.01,
+    "price": 769.280029296875,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,10 +38,10 @@
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 62.185001373291016,
-      "market_value": 199.61,
-      "open_pnl": -0.05,
-      "open_pnl_pct": -0.02,
+      "last": 62.01499938964844,
+      "market_value": 199.07,
+      "open_pnl": -0.59,
+      "open_pnl_pct": -0.3,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
@@ -50,10 +50,10 @@
       "symbol": "HOOD",
       "qty": 1.65,
       "avg_cost": 120.77,
-      "last": 122.37000274658203,
-      "market_value": 201.91,
-      "open_pnl": 2.64,
-      "open_pnl_pct": 1.32,
+      "last": 122.5,
+      "market_value": 202.12,
+      "open_pnl": 2.85,
+      "open_pnl_pct": 1.43,
       "stop": 115.0,
       "target": 129.5,
       "thesis": "HOOD shows top-ranked catalyst with Wall Street optimism and improving retail sentiment per Yahoo Finance headline. Current RSI at 50.0 leaves room for upside without overbought conditions. Book has ample cash and only one open name, allowing small new entry under $200 notional. Reward-to-risk exceeds 1.5 with defined levels."
@@ -62,10 +62,10 @@
       "symbol": "CVX",
       "qty": 0.94,
       "avg_cost": 212.45,
-      "last": 208.72000122070312,
-      "market_value": 196.2,
-      "open_pnl": -3.51,
-      "open_pnl_pct": -1.76,
+      "last": 208.6649932861328,
+      "market_value": 196.15,
+      "open_pnl": -3.56,
+      "open_pnl_pct": -1.78,
       "stop": 206.0,
       "target": 222.5,
       "thesis": "CVX shows a headline-driven bullish catalyst as Chevron reportedly nears a deal for giant Venezuelan oil fields, supporting further upside extension. RSI at 50 leaves room for continuation without being overbought. Liquid large-cap energy name fits the desk preference for catalyst setups with defined risk. Position sized to ~$200 notional with R:R above 1.5."
@@ -74,10 +74,10 @@
       "symbol": "XOM",
       "qty": 1.25,
       "avg_cost": 159.72,
-      "last": 160.7899932861328,
-      "market_value": 200.99,
-      "open_pnl": 1.34,
-      "open_pnl_pct": 0.67,
+      "last": 160.5800018310547,
+      "market_value": 200.73,
+      "open_pnl": 1.08,
+      "open_pnl_pct": 0.54,
       "stop": 154.5,
       "target": 168.5,
       "thesis": "XOM is the sole ranked catalyst candidate with bullish sentiment and a positive holdings increase headline, offering a liquid energy setup. Portfolio has room under the 5-name cap and sufficient cash for a ~$200 notional add without forced rotation. Technicals are neutral-to-constructive at RSI 50 with clear R:R geometry above 1.5. Adding as a fresh energy sleeve alongside existing CVX exposure."
@@ -86,15 +86,15 @@
   "latest_candidate": {
     "symbol": "XOM",
     "name": "XOM",
-    "price": 161.23890686035156,
-    "volume": 2399970.0,
-    "avg_volume": 12603457.0,
-    "percent_change": -0.5986682777398631,
+    "price": 160.66000366210938,
+    "volume": 2561953.0,
+    "avg_volume": 12619655.3,
+    "percent_change": -0.9555532874688575,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 20,
-    "liquidity_score": 81.0,
-    "rank_score": 100.13,
+    "liquidity_score": 81.01,
+    "rank_score": 100.42,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (ai, beat, catalyst): NEOS Investment Management LLC Raises Stock Holdings in ExxonMobil Corporation $XOM - MarketBeat",
     "top_headlines": [
@@ -143,25 +143,25 @@
     ]
   },
   "latest_decision": {
-    "model": "grok-4.3",
+    "model": "grok-4.5",
     "action": "HOLD",
     "symbol": "CASH",
-    "confidence": 65,
+    "confidence": 62,
     "cache_stats": null,
     "entry_price": 0.0,
     "stop_loss": 0.0,
     "take_profit": 0.0,
     "qty": 0.0,
-    "thesis": "No new edge meets criteria. Top candidates XOM and BAC already held with positive P/L. CVX weakest but no rotation catalyst superior to current book. Cash preserved for better setups.",
+    "thesis": "Book already holds four liquid names with XOM and BAC topping the candidate ranks; no unheld name offers a clearly superior catalyst versus existing exposure. CVX is the weakest P/L but remains above stop with a still-bullish energy tape, so forced rotation lacks edge. Cash ~$203 is preserved for a cleaner setup rather than forcing a sub-$200 add into middling headlines.",
     "reason_code": "hold",
     "reasoning": {
       "headline": "Hold $CASH",
-      "narrative": "No new edge meets criteria. Top candidates XOM and BAC already held with positive P/L. CVX weakest but no rotation catalyst superior to current book. Cash preserved for better setups.",
+      "narrative": "Book already holds four liquid names with XOM and BAC topping the candidate ranks; no unheld name offers a clearly superior catalyst versus existing exposure. CVX is the weakest P/L but remains above stop with a still-bullish energy tape, so forced rotation lacks edge. Cash ~$203 is preserved for a cleaner setup rather than forcing a sub-$200 add into middling headlines.",
       "bullets": [
-        "XOM/BAC top ranked but already positioned",
-        "CVX negative P/L but rank insufficient for rotation",
-        "Reward:risk not met for new names like ORCL",
-        "Book at 4 names, no material upgrade available"
+        "Top ranks XOM/BAC already owned; no material upgrade",
+        "CVX soft but not stopped; rotation not justified",
+        "JPM/WMT catalysts mild or mixed; R:R edge unclear",
+        "Preserve cash; max names policy not binding yet"
       ],
       "risk_map": {
         "stop": 0.0,
@@ -169,20 +169,20 @@
         "horizon_days": 5,
         "rr": 0.0,
         "confidence_10": 6,
-        "confidence": 65
+        "confidence": 62
       },
-      "thesis": "No new edge meets criteria. Top candidates XOM and BAC already held with positive P/L. CVX weakest but no rotation catalyst superior to current book. Cash preserved for better setups."
+      "thesis": "Book already holds four liquid names with XOM and BAC topping the candidate ranks; no unheld name offers a clearly superior catalyst versus existing exposure. CVX is the weakest P/L but remains above stop with a still-bullish energy tape, so forced rotation lacks edge. Cash ~$203 is preserved for a cleaner setup rather than forcing a sub-$200 add into middling headlines."
     },
     "source": "live",
     "provider": "xai",
-    "provider_model_id": "grok-4.3",
+    "provider_model_id": "grok-4.5",
     "bullets": [
-      "XOM/BAC top ranked but already positioned",
-      "CVX negative P/L but rank insufficient for rotation",
-      "Reward:risk not met for new names like ORCL",
-      "Book at 4 names, no material upgrade available"
+      "Top ranks XOM/BAC already owned; no material upgrade",
+      "CVX soft but not stopped; rotation not justified",
+      "JPM/WMT catalysts mild or mixed; R:R edge unclear",
+      "Preserve cash; max names policy not binding yet"
     ],
-    "timestamp": "2026-09-04T15:02:56.014133+00:00"
+    "timestamp": "2026-09-04T15:20:30.123329+00:00"
   },
   "stance": "Holding BAC, HOOD, CVX, XOM. No new trade right now.",
   "thinking": {
@@ -204,9 +204,9 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 62.185001373291016,
-        "open_pnl": -0.05,
-        "open_pnl_pct": -0.02,
+        "last": 62.01499938964844,
+        "open_pnl": -0.59,
+        "open_pnl_pct": -0.3,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
       },
@@ -216,9 +216,9 @@
         "avg_cost": 120.77,
         "stop": 115.0,
         "target": 129.5,
-        "last": 122.37000274658203,
-        "open_pnl": 2.64,
-        "open_pnl_pct": 1.32,
+        "last": 122.5,
+        "open_pnl": 2.85,
+        "open_pnl_pct": 1.43,
         "line": "Bought near $120.77 \u00b7 Sell safety line $115.00 \u00b7 Profit target $129.50",
         "plan": "stop 115.0 or target 129.5"
       },
@@ -228,9 +228,9 @@
         "avg_cost": 212.45,
         "stop": 206.0,
         "target": 222.5,
-        "last": 208.72000122070312,
-        "open_pnl": -3.51,
-        "open_pnl_pct": -1.76,
+        "last": 208.6649932861328,
+        "open_pnl": -3.56,
+        "open_pnl_pct": -1.78,
         "line": "Bought near $212.45 \u00b7 Sell safety line $206.00 \u00b7 Profit target $222.50",
         "plan": "stop 206.0 or target 222.5"
       },
@@ -240,14 +240,14 @@
         "avg_cost": 159.72,
         "stop": 154.5,
         "target": 168.5,
-        "last": 160.7899932861328,
-        "open_pnl": 1.34,
-        "open_pnl_pct": 0.67,
+        "last": 160.5800018310547,
+        "open_pnl": 1.08,
+        "open_pnl_pct": 0.54,
         "line": "Bought near $159.72 \u00b7 Sell safety line $154.50 \u00b7 Profit target $168.50",
         "plan": "stop 154.5 or target 168.5"
       }
     ],
-    "last_checked": "2026-09-04T15:10:41.246124+00:00",
+    "last_checked": "2026-09-04T15:20:38.418674+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "HOLD",
@@ -277,22 +277,123 @@
       {
         "prefix": "J",
         "model": "deepseek-v4-flash",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 70,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "JPM",
+        "confidence": 90,
+        "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
+        "action": "BUY",
+        "symbol": "XOM",
+        "confidence": 75,
+        "tone": "buy"
+      },
+      {
+        "prefix": "S",
+        "model": "grok-4.5",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 65,
+        "confidence": 62,
         "tone": "hold"
+      },
+      {
+        "prefix": "S",
+        "model": "claude-sonnet-5",
+        "action": "SELL",
+        "symbol": "CVX",
+        "confidence": 72,
+        "tone": "sell"
+      },
+      {
+        "prefix": "S",
+        "model": "claude-opus-5",
+        "action": "BUY",
+        "symbol": "JPM",
+        "confidence": 90,
+        "tone": "buy"
       }
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 desks disagreed on focus",
+      "detail": "Desks: HOLD CASH (62%) vs SELL CVX (72%) vs BUY JPM (90%). No 2-of-3 senior agreement",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "XOM",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "SELL",
+          "symbol": "CVX",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-04T15:20:30.123329+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -11995,15 +12096,15 @@
     {
       "symbol": "XOM",
       "name": "XOM",
-      "price": 161.23890686035156,
-      "volume": 2399970.0,
-      "avg_volume": 12603457.0,
-      "percent_change": -0.5986682777398631,
+      "price": 160.66000366210938,
+      "volume": 2561953.0,
+      "avg_volume": 12619655.3,
+      "percent_change": -0.9555532874688575,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 20,
-      "liquidity_score": 81.0,
-      "rank_score": 100.13,
+      "liquidity_score": 81.01,
+      "rank_score": 100.42,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, beat, catalyst): NEOS Investment Management LLC Raises Stock Holdings in ExxonMobil Corporation $XOM - MarketBeat",
       "top_headlines": [
@@ -12054,15 +12155,15 @@
     {
       "symbol": "BAC",
       "name": "BAC",
-      "price": 62.2400016784668,
-      "volume": 8231384.0,
-      "avg_volume": 29134668.4,
-      "percent_change": -1.2690343043181962,
+      "price": 62.060001373291016,
+      "volume": 9198268.0,
+      "avg_volume": 29231356.8,
+      "percent_change": -1.5545677791939008,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
-      "liquidity_score": 84.64,
-      "rank_score": 73.21,
+      "liquidity_score": 84.66,
+      "rank_score": 73.44,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Bank of America (BAC) Stock Still Looks Like A Bargain After 141% Returns - simplywall.st",
       "top_headlines": [
@@ -12085,18 +12186,18 @@
           ]
         },
         {
+          "title": "Bank Of America (BAC) Stock Analysis: Q4 Earnings Review And Market Reaction | January 15, 2026 Falkirk Vs Hibernian (fjrLG6bXIF) - Mshale",
+          "keywords": [
+            "catalyst"
+          ]
+        },
+        {
           "title": "Kinh Bac raises $27M in bonds to restructure debt as chairman-linked shareholder buys in - Dealroom",
           "keywords": [
             "ai",
             "catalyst",
             "deal",
             "raises"
-          ]
-        },
-        {
-          "title": "Bank Of America (BAC) Stock Analysis: Q4 Earnings Review And Market Reaction | January 15, 2026 Falkirk Vs Hibernian (fjrLG6bXIF) - Mshale",
-          "keywords": [
-            "catalyst"
           ]
         },
         {
@@ -12108,73 +12209,17 @@
       ]
     },
     {
-      "symbol": "ORCL",
-      "name": "ORCL",
-      "price": 158.68499755859375,
-      "volume": 10855241.0,
-      "avg_volume": 19332354.1,
-      "percent_change": 3.0154534373633317,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 12,
-      "liquidity_score": 82.86,
-      "rank_score": 70.34,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): Oracle (ORCL) Stock Gets Fair Value Trim As Analysts Split On AI And Capex - Yahoo Finance",
-      "top_headlines": [
-        "Oracle (ORCL) Stock Gets Fair Value Trim As Analysts Split On AI And Capex - Yahoo Finance",
-        "ORCL Stock Slides Premarket Ahead Of Q4 Print \u2014 But BofA Sees 20% Upside On Red-Hot AI Demand - Stocktwits",
-        "Why I Really Like Oracle Ahead Of Q1 Earnings (NYSE:ORCL) - Seeking Alpha"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Oracle (ORCL) Stock Gets Fair Value Trim As Analysts Split On AI And Capex - Yahoo Finance",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "ORCL Stock Slides Premarket Ahead Of Q4 Print \u2014 But BofA Sees 20% Upside On Red-Hot AI Demand - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "demand"
-          ]
-        },
-        {
-          "title": "Why I Really Like Oracle Ahead Of Q1 Earnings (NYSE:ORCL) - Seeking Alpha",
-          "keywords": [
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Oracle (ORCL) Stock May Be A Bargain As AI Risk Fears Grow - simplywall.st",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Oracle (ORCL) Stock Forecast and Price Target 2026 $ORCL - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 356.7300109863281,
-      "volume": 1128695.0,
-      "avg_volume": 4853949.5,
-      "percent_change": -1.472127992102483,
+      "price": 355.67498779296875,
+      "volume": 1347308.0,
+      "avg_volume": 4875810.8,
+      "percent_change": -1.7635225677179889,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
-      "liquidity_score": 76.86,
-      "rank_score": 69.21,
+      "liquidity_score": 76.88,
+      "rank_score": 69.44,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): JPMorgan Chase & Co. $JPM Shares Purchased by Smith Group Asset Management LLC - MarketBeat",
       "top_headlines": [
@@ -12209,15 +12254,15 @@
     {
       "symbol": "WMT",
       "name": "WMT",
-      "price": 107.56500244140625,
-      "volume": 5511186.0,
-      "avg_volume": 25276258.6,
-      "percent_change": -0.7885959619799722,
+      "price": 107.44999694824219,
+      "volume": 5909855.0,
+      "avg_volume": 25316125.5,
+      "percent_change": -0.8946700212922176,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 12,
       "liquidity_score": 84.03,
-      "rank_score": 68.74,
+      "rank_score": 68.82,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst, record): Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
       "top_headlines": [
@@ -12260,6 +12305,64 @@
           ]
         }
       ]
+    },
+    {
+      "symbol": "CVX",
+      "name": "CVX",
+      "price": 208.8000030517578,
+      "volume": 1519189.0,
+      "avg_volume": 7070868.9,
+      "percent_change": -1.1925062394090347,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 12,
+      "liquidity_score": 78.49,
+      "rank_score": 68.23,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst): Chevron Corp. (CVX): Here\u2019s Why Gabelli Remains Bullish on the Energy Stock - Yahoo Finance",
+      "top_headlines": [
+        "Chevron Corp. (CVX): Here\u2019s Why Gabelli Remains Bullish on the Energy Stock - Yahoo Finance",
+        "Chevron Stock (CVX) Opinions on Rising Oil Prices - moomoo.com",
+        "Wells Fargo Sticks to Their Buy Rating for Chevron (CVX) - theglobeandmail.com"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Chevron Corp. (CVX): Here\u2019s Why Gabelli Remains Bullish on the Energy Stock - Yahoo Finance",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Wells Fargo Sticks to Their Buy Rating for Chevron (CVX) - theglobeandmail.com",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Chevron Stock Is A Bargain Amid Venezuela Deal (NYSE:CVX) - Seeking Alpha",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "deal"
+          ]
+        },
+        {
+          "title": "CVX Stock Extends Gains Overnight: Chevron Reportedly Nears Deal For Giant Venezuelan Oil Fields - TradingView",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "deal"
+          ]
+        },
+        {
+          "title": "Chevron (CVX) Stock Looks Reasonable On Earnings But Stretched On Its 5 Year Run - simplywall.st",
+          "keywords": [
+            "catalyst"
+          ]
+        }
+      ]
     }
   ],
   "limits": {
@@ -12288,10 +12391,10 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 4,
-      "BUY": 0,
+      "HOLD": 2,
+      "BUY": 2,
       "SELL": 0,
-      "live": 4,
+      "live": 3,
       "fallback": 0
     },
     "junior_model_3_enabled": true,
@@ -12306,25 +12409,25 @@
     "max_candidates_to_llm": 8,
     "log_all_disagreements": true,
     "decision_mode": "live_dual_llm",
-    "last_tier": "junior_only",
+    "last_tier": "senior_escalated",
     "last_stage": "entry",
     "last_junior_nomination": null,
-    "last_escalate_reason": "",
-    "live_share_recent": 85.7
+    "last_escalate_reason": "junior_trade_or_split",
+    "live_share_recent": 83.3
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 332,
     "closed_outcomes": 151,
-    "consensus_events": 466,
+    "consensus_events": 467,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1001.91,
-    "change": 1.91,
-    "change_pct": 0.19,
+    "latest_equity": 1001.27,
+    "change": 1.27,
+    "change_pct": 0.13,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -14885,6 +14988,12 @@
       {
         "t": "2026-09-04T15:10:43.987022+00:00",
         "equity": 1001.91,
+        "cash": 203.2,
+        "event": "mark"
+      },
+      {
+        "t": "2026-09-04T15:20:41.075729+00:00",
+        "equity": 1001.27,
         "cash": 203.2,
         "event": "mark"
       }
