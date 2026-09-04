@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-04T18:33:17.740782+00:00",
+  "generated_at": "2026-09-04T18:40:49.238702+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1004.97,
+    "portfolio_value": 1004.39,
     "starting_cash": 1000.0,
-    "total_return_pct": 0.5,
-    "total_pnl": 4.97,
+    "total_return_pct": 0.44,
+    "total_pnl": 4.39,
     "realized_pnl": -2.04,
-    "open_pnl": 6.98,
-    "capital_deployed": 802.33,
+    "open_pnl": 6.39,
+    "capital_deployed": 801.75,
     "cash": 202.64,
     "closed_trades": 30,
     "win_rate_pct": 30.0,
-    "vs_spy_pct": 0.42,
-    "spy_return_pct": 0.08,
+    "vs_spy_pct": 0.37,
+    "spy_return_pct": 0.07,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-04T18:33:20.434547+00:00"
+    "updated_at": "2026-09-04T18:40:52.014469+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.08,
-    "price": 770.0,
+    "return_pct": 0.07,
+    "price": 769.9400024414062,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -50,10 +50,10 @@
       "symbol": "HOOD",
       "qty": 1.65,
       "avg_cost": 120.77,
-      "last": 123.13710021972656,
-      "market_value": 203.18,
-      "open_pnl": 3.91,
-      "open_pnl_pct": 1.96,
+      "last": 122.97010040283203,
+      "market_value": 202.9,
+      "open_pnl": 3.63,
+      "open_pnl_pct": 1.82,
       "stop": 115.0,
       "target": 129.5,
       "thesis": "HOOD shows top-ranked catalyst with Wall Street optimism and improving retail sentiment per Yahoo Finance headline. Current RSI at 50.0 leaves room for upside without overbought conditions. Book has ample cash and only one open name, allowing small new entry under $200 notional. Reward-to-risk exceeds 1.5 with defined levels."
@@ -62,10 +62,10 @@
       "symbol": "XOM",
       "qty": 1.25,
       "avg_cost": 159.72,
-      "last": 159.95989990234375,
-      "market_value": 199.95,
-      "open_pnl": 0.3,
-      "open_pnl_pct": 0.15,
+      "last": 159.86000061035156,
+      "market_value": 199.83,
+      "open_pnl": 0.18,
+      "open_pnl_pct": 0.09,
       "stop": 154.5,
       "target": 168.5,
       "thesis": "XOM is the sole ranked catalyst candidate with bullish sentiment and a positive holdings increase headline, offering a liquid energy setup. Portfolio has room under the 5-name cap and sufficient cash for a ~$200 notional add without forced rotation. Technicals are neutral-to-constructive at RSI 50 with clear R:R geometry above 1.5. Adding as a fresh energy sleeve alongside existing CVX exposure."
@@ -74,10 +74,10 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 357.78,
-      "last": 359.3900146484375,
-      "market_value": 197.66,
-      "open_pnl": 0.89,
-      "open_pnl_pct": 0.45,
+      "last": 359.05999755859375,
+      "market_value": 197.48,
+      "open_pnl": 0.7,
+      "open_pnl_pct": 0.36,
       "stop": 348.0,
       "target": 375.0,
       "thesis": "JPM screens as the top-ranked liquid catalyst candidate with bullish sentiment and institutional buying headline support while RSI sits neutral at 50. Book has room for one more name under the 5-position cap and cash supports a full ~$200 notional add. Reward-to-risk from 357.78 entry to 348 stop versus 375 target clears the 1.5 threshold cleanly. Confirming the junior escalation for a new entry."
@@ -214,9 +214,9 @@
         "avg_cost": 120.77,
         "stop": 115.0,
         "target": 129.5,
-        "last": 123.13710021972656,
-        "open_pnl": 3.91,
-        "open_pnl_pct": 1.96,
+        "last": 122.97010040283203,
+        "open_pnl": 3.63,
+        "open_pnl_pct": 1.82,
         "line": "Bought near $120.77 \u00b7 Sell safety line $115.00 \u00b7 Profit target $129.50",
         "plan": "stop 115.0 or target 129.5"
       },
@@ -226,9 +226,9 @@
         "avg_cost": 159.72,
         "stop": 154.5,
         "target": 168.5,
-        "last": 159.95989990234375,
-        "open_pnl": 0.3,
-        "open_pnl_pct": 0.15,
+        "last": 159.86000061035156,
+        "open_pnl": 0.18,
+        "open_pnl_pct": 0.09,
         "line": "Bought near $159.72 \u00b7 Sell safety line $154.50 \u00b7 Profit target $168.50",
         "plan": "stop 154.5 or target 168.5"
       },
@@ -238,14 +238,14 @@
         "avg_cost": 357.78,
         "stop": 348.0,
         "target": 375.0,
-        "last": 359.3900146484375,
-        "open_pnl": 0.89,
-        "open_pnl_pct": 0.45,
+        "last": 359.05999755859375,
+        "open_pnl": 0.7,
+        "open_pnl_pct": 0.36,
         "line": "Bought near $357.78 \u00b7 Sell safety line $348.00 \u00b7 Profit target $375.00",
         "plan": "stop 348.0 or target 375.0"
       }
     ],
-    "last_checked": "2026-09-04T18:33:17.740782+00:00",
+    "last_checked": "2026-09-04T18:40:49.238702+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "HOLD",
@@ -12677,9 +12677,9 @@
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1004.97,
-    "change": 4.97,
-    "change_pct": 0.5,
+    "latest_equity": 1004.39,
+    "change": 4.39,
+    "change_pct": 0.44,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15310,8 +15310,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-04T18:33:20.434547+00:00",
-        "equity": 1004.97,
+        "t": "2026-09-04T18:40:52.014469+00:00",
+        "equity": 1004.39,
         "cash": 202.64,
         "event": "mark"
       }
