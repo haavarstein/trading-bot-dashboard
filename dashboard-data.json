@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-09-04T19:40:08.334487+00:00",
+  "generated_at": "2026-09-04T19:48:00.262688+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1001.78,
+    "portfolio_value": 1002.09,
     "starting_cash": 1000.0,
-    "total_return_pct": 0.18,
-    "total_pnl": 1.78,
+    "total_return_pct": 0.21,
+    "total_pnl": 2.09,
     "realized_pnl": -2.04,
-    "open_pnl": 3.78,
-    "capital_deployed": 799.14,
+    "open_pnl": 4.09,
+    "capital_deployed": 799.45,
     "cash": 202.64,
     "closed_trades": 30,
     "win_rate_pct": 30.0,
-    "vs_spy_pct": 0.14,
-    "spy_return_pct": 0.04,
+    "vs_spy_pct": 0.12,
+    "spy_return_pct": 0.09,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-04T19:40:10.988882+00:00"
+    "updated_at": "2026-09-04T19:48:02.939429+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.04,
-    "price": 769.6649780273438,
+    "return_pct": 0.09,
+    "price": 770.114990234375,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 16,
-    "validated_count_today": 16,
+    "consensus_count_today": 17,
+    "validated_count_today": 17,
     "blocked_count_today": 0,
     "fills_today": 3,
-    "simulated_orders_today": 16,
+    "simulated_orders_today": 17,
     "top_symbol_today": "XOM"
   },
   "holdings": [
@@ -38,10 +38,10 @@
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 62.55500030517578,
-      "market_value": 200.8,
-      "open_pnl": 1.14,
-      "open_pnl_pct": 0.57,
+      "last": 62.685001373291016,
+      "market_value": 201.22,
+      "open_pnl": 1.56,
+      "open_pnl_pct": 0.78,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
@@ -50,10 +50,10 @@
       "symbol": "HOOD",
       "qty": 1.65,
       "avg_cost": 120.77,
-      "last": 122.37999725341797,
-      "market_value": 201.93,
-      "open_pnl": 2.66,
-      "open_pnl_pct": 1.33,
+      "last": 122.3499984741211,
+      "market_value": 201.88,
+      "open_pnl": 2.61,
+      "open_pnl_pct": 1.31,
       "stop": 115.0,
       "target": 129.5,
       "thesis": "HOOD shows top-ranked catalyst with Wall Street optimism and improving retail sentiment per Yahoo Finance headline. Current RSI at 50.0 leaves room for upside without overbought conditions. Book has ample cash and only one open name, allowing small new entry under $200 notional. Reward-to-risk exceeds 1.5 with defined levels."
@@ -62,10 +62,10 @@
       "symbol": "XOM",
       "qty": 1.25,
       "avg_cost": 159.72,
-      "last": 159.74000549316406,
-      "market_value": 199.68,
-      "open_pnl": 0.03,
-      "open_pnl_pct": 0.01,
+      "last": 159.5850067138672,
+      "market_value": 199.48,
+      "open_pnl": -0.17,
+      "open_pnl_pct": -0.08,
       "stop": 154.5,
       "target": 168.5,
       "thesis": "XOM is the sole ranked catalyst candidate with bullish sentiment and a positive holdings increase headline, offering a liquid energy setup. Portfolio has room under the 5-name cap and sufficient cash for a ~$200 notional add without forced rotation. Technicals are neutral-to-constructive at RSI 50 with clear R:R geometry above 1.5. Adding as a fresh energy sleeve alongside existing CVX exposure."
@@ -74,10 +74,10 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 357.78,
-      "last": 357.68499755859375,
-      "market_value": 196.73,
-      "open_pnl": -0.05,
-      "open_pnl_pct": -0.03,
+      "last": 357.95001220703125,
+      "market_value": 196.87,
+      "open_pnl": 0.09,
+      "open_pnl_pct": 0.05,
       "stop": 348.0,
       "target": 375.0,
       "thesis": "JPM screens as the top-ranked liquid catalyst candidate with bullish sentiment and institutional buying headline support while RSI sits neutral at 50. Book has room for one more name under the 5-position cap and cash supports a full ~$200 notional add. Reward-to-risk from 357.78 entry to 348 stop versus 375 target clears the 1.5 threshold cleanly. Confirming the junior escalation for a new entry."
@@ -86,23 +86,29 @@
   "latest_candidate": {
     "symbol": "XOM",
     "name": "XOM",
-    "price": 159.77000427246094,
-    "volume": 7009009.0,
-    "avg_volume": 13064360.9,
-    "percent_change": -1.5042243637350496,
+    "price": 159.69500732421875,
+    "volume": 7454859.0,
+    "avg_volume": 13108945.9,
+    "percent_change": -1.5504588407328095,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 20,
-    "liquidity_score": 81.16,
-    "rank_score": 100.88,
-    "news_hits": 6,
-    "catalyst": "Headline-driven setup (ai, beat, catalyst): NEOS Investment Management LLC Raises Stock Holdings in ExxonMobil Corporation $XOM - MarketBeat",
+    "liquidity_score": 81.18,
+    "rank_score": 100.92,
+    "news_hits": 7,
+    "catalyst": "Headline-driven setup (catalyst): Nasdaq Futures Lead US Premarket Rally As Iran Ceasefire Reports Ease Fears Ahead Of Big Tech Earnings: Why NVDA, ORCL, SPCX, XOM, OTLK Are In Focus - Stocktwits",
     "top_headlines": [
+      "Nasdaq Futures Lead US Premarket Rally As Iran Ceasefire Reports Ease Fears Ahead Of Big Tech Earnings: Why NVDA, ORCL, SPCX, XOM, OTLK Are In Focus - Stocktwits",
       "NEOS Investment Management LLC Raises Stock Holdings in ExxonMobil Corporation $XOM - MarketBeat",
-      "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits",
       "ExxonMobil (XOM) Stock May Trade At A Discount Despite Iran Oil Shock - simplywall.st"
     ],
     "matched_headlines": [
+      {
+        "title": "Nasdaq Futures Lead US Premarket Rally As Iran Ceasefire Reports Ease Fears Ahead Of Big Tech Earnings: Why NVDA, ORCL, SPCX, XOM, OTLK Are In Focus - Stocktwits",
+        "keywords": [
+          "catalyst"
+        ]
+      },
       {
         "title": "NEOS Investment Management LLC Raises Stock Holdings in ExxonMobil Corporation $XOM - MarketBeat",
         "keywords": [
@@ -121,7 +127,7 @@
         ]
       },
       {
-        "title": "Why Is ExxonMobil (NYSE:XOM) Shares Hovering Near Records As Energy Names Lead The Broader Tape? - kalkinemedia.com",
+        "title": "Why Is ExxonMobil (NYSE:XOM) Shares Hovering Near Records As Energy Names Lead The Broader Tape? - Kalkine Media",
         "keywords": [
           "record"
         ]
@@ -131,14 +137,6 @@
         "keywords": [
           "beat"
         ]
-      },
-      {
-        "title": "XOM Maintained by Piper Sandler -- Price Target Raised to $185 - GuruFocus",
-        "keywords": [
-          "ai",
-          "catalyst",
-          "raised"
-        ]
       }
     ]
   },
@@ -146,43 +144,43 @@
     "model": "grok-4.5",
     "action": "HOLD",
     "symbol": "CASH",
-    "confidence": 65,
+    "confidence": 68,
     "cache_stats": null,
     "entry_price": 0.0,
     "stop_loss": 0.0,
     "take_profit": 0.0,
     "qty": 0.0,
-    "thesis": "Top-ranked liquid names XOM and BAC are already held with stops intact and modest open gains; no fresh candidate offers a clearly superior catalyst or cleaner R:R versus the existing book. WMT headline is mixed (family selling into strength) and CVX overlaps energy exposure already covered by XOM. Cash ~$203 is preserved for a higher-conviction setup rather than forcing a fifth name.",
+    "thesis": "No clean new edge within the ~$200 notional cap. Top-ranked names XOM and BAC are already held; remaining candidates either carry negative headline risk (CRWD drop, WMT insider/family selling) or are too expensive/ill-fitting versus reward:risk. Book is healthy at 4 names with stops intact, so stand aside in cash.",
     "reason_code": "hold",
     "reasoning": {
       "headline": "Hold $CASH",
-      "narrative": "Top-ranked liquid names XOM and BAC are already held with stops intact and modest open gains; no fresh candidate offers a clearly superior catalyst or cleaner R:R versus the existing book. WMT headline is mixed (family selling into strength) and CVX overlaps energy exposure already covered by XOM. Cash ~$203 is preserved for a higher-conviction setup rather than forcing a fifth name.",
+      "narrative": "No clean new edge within the ~$200 notional cap. Top-ranked names XOM and BAC are already held; remaining candidates either carry negative headline risk (CRWD drop, WMT insider/family selling) or are too expensive/ill-fitting versus reward:risk. Book is healthy at 4 names with stops intact, so stand aside in cash.",
       "bullets": [
-        "XOM/BAC already own the highest rank_scores",
-        "WMT/CVX catalysts not materially better",
-        "HOOD social noise ignored per weak-signal rule",
-        "No stop/target hit; rotation not justified"
+        "Top catalysts already owned (XOM/BAC)",
+        "CRWD/WMT headlines skewed negative",
+        "CVX/AMZN/MSFT size or edge weak vs $200 cap",
+        "Hold cash; no forced rotation"
       ],
       "risk_map": {
         "stop": 0.0,
         "target": 0.0,
         "horizon_days": 5,
         "rr": 0.0,
-        "confidence_10": 6,
-        "confidence": 65
+        "confidence_10": 7,
+        "confidence": 68
       },
-      "thesis": "Top-ranked liquid names XOM and BAC are already held with stops intact and modest open gains; no fresh candidate offers a clearly superior catalyst or cleaner R:R versus the existing book. WMT headline is mixed (family selling into strength) and CVX overlaps energy exposure already covered by XOM. Cash ~$203 is preserved for a higher-conviction setup rather than forcing a fifth name."
+      "thesis": "No clean new edge within the ~$200 notional cap. Top-ranked names XOM and BAC are already held; remaining candidates either carry negative headline risk (CRWD drop, WMT insider/family selling) or are too expensive/ill-fitting versus reward:risk. Book is healthy at 4 names with stops intact, so stand aside in cash."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "XOM/BAC already own the highest rank_scores",
-      "WMT/CVX catalysts not materially better",
-      "HOOD social noise ignored per weak-signal rule",
-      "No stop/target hit; rotation not justified"
+      "Top catalysts already owned (XOM/BAC)",
+      "CRWD/WMT headlines skewed negative",
+      "CVX/AMZN/MSFT size or edge weak vs $200 cap",
+      "Hold cash; no forced rotation"
     ],
-    "timestamp": "2026-09-04T19:33:03.605435+00:00"
+    "timestamp": "2026-09-04T19:47:46.268349+00:00"
   },
   "stance": "Holding BAC, HOOD, XOM, JPM. No new trade right now.",
   "thinking": {
@@ -204,9 +202,9 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 62.55500030517578,
-        "open_pnl": 1.14,
-        "open_pnl_pct": 0.57,
+        "last": 62.685001373291016,
+        "open_pnl": 1.56,
+        "open_pnl_pct": 0.78,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
       },
@@ -216,9 +214,9 @@
         "avg_cost": 120.77,
         "stop": 115.0,
         "target": 129.5,
-        "last": 122.37999725341797,
-        "open_pnl": 2.66,
-        "open_pnl_pct": 1.33,
+        "last": 122.3499984741211,
+        "open_pnl": 2.61,
+        "open_pnl_pct": 1.31,
         "line": "Bought near $120.77 \u00b7 Sell safety line $115.00 \u00b7 Profit target $129.50",
         "plan": "stop 115.0 or target 129.5"
       },
@@ -228,9 +226,9 @@
         "avg_cost": 159.72,
         "stop": 154.5,
         "target": 168.5,
-        "last": 159.74000549316406,
-        "open_pnl": 0.03,
-        "open_pnl_pct": 0.01,
+        "last": 159.5850067138672,
+        "open_pnl": -0.17,
+        "open_pnl_pct": -0.08,
         "line": "Bought near $159.72 \u00b7 Sell safety line $154.50 \u00b7 Profit target $168.50",
         "plan": "stop 154.5 or target 168.5"
       },
@@ -240,14 +238,14 @@
         "avg_cost": 357.78,
         "stop": 348.0,
         "target": 375.0,
-        "last": 357.68499755859375,
-        "open_pnl": -0.05,
-        "open_pnl_pct": -0.03,
+        "last": 357.95001220703125,
+        "open_pnl": 0.09,
+        "open_pnl_pct": 0.05,
         "line": "Bought near $357.78 \u00b7 Sell safety line $348.00 \u00b7 Profit target $375.00",
         "plan": "stop 348.0 or target 375.0"
       }
     ],
-    "last_checked": "2026-09-04T19:40:08.334487+00:00",
+    "last_checked": "2026-09-04T19:48:00.262688+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "HOLD",
@@ -261,10 +259,10 @@
       {
         "prefix": "J",
         "model": "grok-4.3",
-        "action": "BUY",
-        "symbol": "WMT",
-        "confidence": 72,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 65,
+        "tone": "hold"
       },
       {
         "prefix": "J",
@@ -277,25 +275,25 @@
       {
         "prefix": "J",
         "model": "deepseek-v4-flash",
-        "action": "BUY",
-        "symbol": "XOM",
-        "confidence": 76,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "BAC",
+        "confidence": 80,
+        "tone": "hold"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 60,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "XOM",
+        "confidence": 75,
+        "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 65,
+        "confidence": 68,
         "tone": "hold"
       },
       {
@@ -317,6 +315,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 no new trade",
+      "detail": "No clean new edge within the ~$200 notional cap. Top-ranked names XOM and BAC are already held; remaining candidates either carry negative headline risk (CRWD drop, WMT insider/family selling) or are too expensive/ill-fitting versus reward:risk. Book is healthy at 4 names with stops intact, so stand aside in cash.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "HOLD",
+          "symbol": "BAC",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "XOM",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 68,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "BAC",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-04T19:47:46.268349+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -863,83 +938,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-09-04T18:03:07.828023+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CASH",
-      "status": "hold",
-      "headline": "HOLD \u2014 no new trade",
-      "detail": "Portfolio at max 5 names with no materially superior catalyst outside held universe. Top candidates XOM/JPM/BAC already positioned with positive open P/L. CVX weakest by P/L but rotation not justified by new names like CRWD given negative headline risk.",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        }
-      ],
-      "tier": "junior_only",
-      "escalate_reason": "",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-04T17:49:39.917422+00:00"
     },
     {
       "type": "fill",
@@ -12335,23 +12333,29 @@
     {
       "symbol": "XOM",
       "name": "XOM",
-      "price": 159.77000427246094,
-      "volume": 7009009.0,
-      "avg_volume": 13064360.9,
-      "percent_change": -1.5042243637350496,
+      "price": 159.69500732421875,
+      "volume": 7454859.0,
+      "avg_volume": 13108945.9,
+      "percent_change": -1.5504588407328095,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 20,
-      "liquidity_score": 81.16,
-      "rank_score": 100.88,
-      "news_hits": 6,
-      "catalyst": "Headline-driven setup (ai, beat, catalyst): NEOS Investment Management LLC Raises Stock Holdings in ExxonMobil Corporation $XOM - MarketBeat",
+      "liquidity_score": 81.18,
+      "rank_score": 100.92,
+      "news_hits": 7,
+      "catalyst": "Headline-driven setup (catalyst): Nasdaq Futures Lead US Premarket Rally As Iran Ceasefire Reports Ease Fears Ahead Of Big Tech Earnings: Why NVDA, ORCL, SPCX, XOM, OTLK Are In Focus - Stocktwits",
       "top_headlines": [
+        "Nasdaq Futures Lead US Premarket Rally As Iran Ceasefire Reports Ease Fears Ahead Of Big Tech Earnings: Why NVDA, ORCL, SPCX, XOM, OTLK Are In Focus - Stocktwits",
         "NEOS Investment Management LLC Raises Stock Holdings in ExxonMobil Corporation $XOM - MarketBeat",
-        "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits",
         "ExxonMobil (XOM) Stock May Trade At A Discount Despite Iran Oil Shock - simplywall.st"
       ],
       "matched_headlines": [
+        {
+          "title": "Nasdaq Futures Lead US Premarket Rally As Iran Ceasefire Reports Ease Fears Ahead Of Big Tech Earnings: Why NVDA, ORCL, SPCX, XOM, OTLK Are In Focus - Stocktwits",
+          "keywords": [
+            "catalyst"
+          ]
+        },
         {
           "title": "NEOS Investment Management LLC Raises Stock Holdings in ExxonMobil Corporation $XOM - MarketBeat",
           "keywords": [
@@ -12370,7 +12374,7 @@
           ]
         },
         {
-          "title": "Why Is ExxonMobil (NYSE:XOM) Shares Hovering Near Records As Energy Names Lead The Broader Tape? - kalkinemedia.com",
+          "title": "Why Is ExxonMobil (NYSE:XOM) Shares Hovering Near Records As Energy Names Lead The Broader Tape? - Kalkine Media",
           "keywords": [
             "record"
           ]
@@ -12380,29 +12384,21 @@
           "keywords": [
             "beat"
           ]
-        },
-        {
-          "title": "XOM Maintained by Piper Sandler -- Price Target Raised to $185 - GuruFocus",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "raised"
-          ]
         }
       ]
     },
     {
       "symbol": "BAC",
       "name": "BAC",
-      "price": 62.6349983215332,
-      "volume": 18213902.0,
-      "avg_volume": 30132920.2,
-      "percent_change": -0.6424533440867776,
+      "price": 62.650001525878906,
+      "volume": 19159068.0,
+      "avg_volume": 30227436.8,
+      "percent_change": -0.6186538451530653,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 14,
-      "liquidity_score": 84.79,
-      "rank_score": 76.73,
+      "liquidity_score": 84.8,
+      "rank_score": 76.71,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Bank of America (BAC) Stock Still Looks Like A Bargain After 141% Returns - simplywall.st",
       "top_headlines": [
@@ -12449,17 +12445,75 @@
       ]
     },
     {
+      "symbol": "CRWD",
+      "name": "CRWD",
+      "price": 212.75999450683594,
+      "volume": 5519381.0,
+      "avg_volume": 12892318.1,
+      "percent_change": -1.0280535429677191,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 13,
+      "liquidity_score": 81.1,
+      "rank_score": 72.49,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (beat, drop): CrowdStrike's Q1 Beat Wasn't Big Enough For Some Bulls \u2014 CRWD Stock Heads For Worst Drop In 22 Months - Stocktwits",
+      "top_headlines": [
+        "CRWD Stock Quote Price and Forecast - CNN",
+        "CrowdStrike's Q1 Beat Wasn't Big Enough For Some Bulls \u2014 CRWD Stock Heads For Worst Drop In 22 Months - Stocktwits",
+        "New Buy Rating for CrowdStrike Holdings (CRWD), the Technology Giant - The Globe and Mail"
+      ],
+      "matched_headlines": [
+        {
+          "title": "CrowdStrike's Q1 Beat Wasn't Big Enough For Some Bulls \u2014 CRWD Stock Heads For Worst Drop In 22 Months - Stocktwits",
+          "keywords": [
+            "beat",
+            "drop"
+          ]
+        },
+        {
+          "title": "New Buy Rating for CrowdStrike Holdings (CRWD), the Technology Giant - The Globe and Mail",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "CRWD Maintained by Roth Capital -- Price Target Raised to $220 - GuruFocus",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "raised"
+          ]
+        },
+        {
+          "title": "CRWD Stock Jumps After Q2 Beat As Analysts See Cybersecurity Demand Inflection \u2014 But KeyBanc Pushes Back - Stocktwits",
+          "keywords": [
+            "beat",
+            "demand"
+          ]
+        },
+        {
+          "title": "CrowdStrike Holdings (CRWD): New Buy Recommendation for This Technology Giant - The Globe and Mail",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
       "symbol": "WMT",
       "name": "WMT",
-      "price": 107.44499969482422,
-      "volume": 11673337.0,
-      "avg_volume": 25895523.7,
-      "percent_change": -0.8992791833493705,
+      "price": 107.18000030517578,
+      "volume": 12160363.0,
+      "avg_volume": 25944226.3,
+      "percent_change": -1.1436984732625677,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 12,
-      "liquidity_score": 84.13,
-      "rank_score": 68.84,
+      "liquidity_score": 84.14,
+      "rank_score": 69.04,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst, record): Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
       "top_headlines": [
@@ -12491,7 +12545,7 @@
           ]
         },
         {
-          "title": "Why Is Walmart (NYSE:WMT) Stock Steadying After Sharp Slide As eCommerce And Delivery Expansion Draw Attention? - kalkinemedia.com",
+          "title": "Why Is Walmart (NYSE:WMT) Stock Steadying After Sharp Slide As eCommerce And Delivery Expansion Draw Attention? - Kalkine Media",
           "keywords": [
             "expansion"
           ]
@@ -12507,21 +12561,21 @@
     {
       "symbol": "CVX",
       "name": "CVX",
-      "price": 208.5,
-      "volume": 3375225.0,
-      "avg_volume": 7256472.5,
-      "percent_change": -1.3344724713605276,
+      "price": 208.5749969482422,
+      "volume": 3579015.0,
+      "avg_volume": 7276851.5,
+      "percent_change": -1.2989827185482807,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 12,
-      "liquidity_score": 78.61,
-      "rank_score": 68.36,
+      "liquidity_score": 78.62,
+      "rank_score": 68.33,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Chevron Corp. (CVX): Here\u2019s Why Gabelli Remains Bullish on the Energy Stock - finance.yahoo.com",
       "top_headlines": [
         "Chevron Corp. (CVX): Here\u2019s Why Gabelli Remains Bullish on the Energy Stock - finance.yahoo.com",
-        "Chevron Stock (CVX) Opinions on Rising Oil Prices - Moomoo",
-        "Wells Fargo Sticks to Their Buy Rating for Chevron (CVX) - The Globe and Mail"
+        "Wells Fargo Sticks to Their Buy Rating for Chevron (CVX) - The Globe and Mail",
+        "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits"
       ],
       "matched_headlines": [
         {
@@ -12555,60 +12609,11 @@
           ]
         },
         {
-          "title": "CVX Stock Extends Gains Overnight: Chevron Reportedly Nears Deal For Giant Venezuelan Oil Fields - es.tradingview.com",
+          "title": "CVX Stock Extends Gains Overnight: Chevron Reportedly Nears Deal For Giant Venezuelan Oil Fields - TradingView",
           "keywords": [
             "ai",
             "catalyst",
             "deal"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "HOOD",
-      "name": "HOOD",
-      "price": 122.63500213623047,
-      "volume": 19990290.0,
-      "avg_volume": 21774909.0,
-      "percent_change": -1.6717439577177882,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 7,
-      "liquidity_score": 83.38,
-      "rank_score": 47.84,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): AMC CEO Slams Robinhood Over 'Inexcusable, Vile' Stock Token Trading - Investor's Business Daily",
-      "top_headlines": [
-        "AMC CEO Slams Robinhood Over 'Inexcusable, Vile' Stock Token Trading - Investor's Business Daily",
-        "HOOD Stock Rises Overnight: Robinhood Trust Accounts Now Have Over $150M Since Launch In August, Says CEO - es.tradingview.com",
-        "Is It Worth Investing in Robinhood Markets (HOOD) Based on Wall Street's Bullish Views? - finance.yahoo.com"
-      ],
-      "matched_headlines": [
-        {
-          "title": "AMC CEO Slams Robinhood Over 'Inexcusable, Vile' Stock Token Trading - Investor's Business Daily",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "HOOD Stock Rises Overnight: Robinhood Trust Accounts Now Have Over $150M Since Launch In August, Says CEO - es.tradingview.com",
-          "keywords": [
-            "catalyst",
-            "launch"
-          ]
-        },
-        {
-          "title": "HOOD Stock Rises Overnight: Robinhood Trust Accounts Now Have Over $150M Since Launch In August, Says CEO - Stocktwits",
-          "keywords": [
-            "catalyst",
-            "launch"
-          ]
-        },
-        {
-          "title": "Robinhood Stock Surges 17% As Deutsche Bank Highlights Prediction Market Growth - TIKR.com",
-          "keywords": [
-            "growth"
           ]
         }
       ]
@@ -12640,10 +12645,10 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 2,
-      "BUY": 2,
+      "HOLD": 3,
+      "BUY": 1,
       "SELL": 0,
-      "live": 4,
+      "live": 3,
       "fallback": 0
     },
     "junior_model_3_enabled": true,
@@ -12662,21 +12667,21 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 88.6
+    "live_share_recent": 87.9
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 334,
     "closed_outcomes": 152,
-    "consensus_events": 484,
+    "consensus_events": 485,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1001.78,
-    "change": 1.78,
-    "change_pct": 0.18,
+    "latest_equity": 1002.09,
+    "change": 2.09,
+    "change_pct": 0.21,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15331,8 +15336,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-04T19:40:10.988882+00:00",
-        "equity": 1001.78,
+        "t": "2026-09-04T19:48:02.939429+00:00",
+        "equity": 1002.09,
         "cash": 202.64,
         "event": "mark"
       }
