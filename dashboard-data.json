@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T16:10:33.847521+00:00",
+  "generated_at": "2026-09-07T16:20:37.504678+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
@@ -16,7 +16,7 @@
     "vs_spy_pct": 0.09,
     "spy_return_pct": 0.1,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-07T16:10:36.633469+00:00"
+    "updated_at": "2026-09-07T16:20:40.215326+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
@@ -148,51 +148,51 @@
   },
   "latest_decision": {
     "model": "grok-4.5",
-    "action": "HOLD",
-    "symbol": "CASH",
-    "confidence": 68,
+    "action": "SELL",
+    "symbol": "XOM",
+    "confidence": 78,
     "cache_stats": null,
-    "entry_price": 0.0,
-    "stop_loss": 0.0,
-    "take_profit": 0.0,
-    "qty": 0.0,
-    "thesis": "Book is at max 5 names with only ~$2.67 cash, so no new BUY is feasible without a rotation. Top-ranked candidates are largely already held (XOM/HOOD/LRCX/BAC) and open P/L is stable with no stop or target breaches. WMT/UNH offer decent catalysts but are not materially superior enough versus current holdings to force a rotation today.",
-    "reason_code": "hold",
+    "entry_price": 159.47,
+    "stop_loss": 154.5,
+    "take_profit": 168.5,
+    "qty": 1.25,
+    "thesis": "Junior desk escalation to exit XOM is confirmed as it is the weakest open name with negative open P/L while the book is already at max 5 positions and cash is near zero. Price is flat-to-soft versus entry with no immediate catalyst force requiring hold; freeing the slot and capital is cleaner risk management than forcing a hold. Reward-to-risk on the existing plan remains intact on exit at market.",
+    "reason_code": "rotation",
     "reasoning": {
-      "headline": "Hold $CASH",
-      "narrative": "Book is at max 5 names with only ~$2.67 cash, so no new BUY is feasible without a rotation. Top-ranked candidates are largely already held (XOM/HOOD/LRCX/BAC) and open P/L is stable with no stop or target breaches. WMT/UNH offer decent catalysts but are not materially superior enough versus current holdings to force a rotation today.",
+      "headline": "Sold $XOM",
+      "narrative": "Junior desk escalation to exit XOM is confirmed as it is the weakest open name with negative open P/L while the book is already at max 5 positions and cash is near zero. Price is flat-to-soft versus entry with no immediate catalyst force requiring hold; freeing the slot and capital is cleaner risk management than forcing a hold. Reward-to-risk on the existing plan remains intact on exit at market.",
       "bullets": [
-        "Max open names reached; cash insufficient for ~$200 notional add",
-        "No stop_loss or take_profit triggered on BAC/HOOD/XOM/JPM/LRCX",
-        "WMT earnings setup interesting but rank edge vs held names is marginal",
-        "Prefer hold over forced rotation until clearer relative weakness"
+        "weakest P/L name in full 5-position book",
+        "directive confirm SELL XOM exactly",
+        "flat price action vs bullish-but-stale thesis",
+        "free capital/slot per desk rotation policy"
       ],
       "risk_map": {
-        "stop": 0.0,
-        "target": 0.0,
+        "stop": 154.5,
+        "target": 168.5,
         "horizon_days": 5,
-        "rr": 0.0,
-        "confidence_10": 7,
-        "confidence": 68
+        "rr": 1.82,
+        "confidence_10": 8,
+        "confidence": 78
       },
-      "thesis": "Book is at max 5 names with only ~$2.67 cash, so no new BUY is feasible without a rotation. Top-ranked candidates are largely already held (XOM/HOOD/LRCX/BAC) and open P/L is stable with no stop or target breaches. WMT/UNH offer decent catalysts but are not materially superior enough versus current holdings to force a rotation today."
+      "thesis": "Junior desk escalation to exit XOM is confirmed as it is the weakest open name with negative open P/L while the book is already at max 5 positions and cash is near zero. Price is flat-to-soft versus entry with no immediate catalyst force requiring hold; freeing the slot and capital is cleaner risk management than forcing a hold. Reward-to-risk on the existing plan remains intact on exit at market."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Max open names reached; cash insufficient for ~$200 notional add",
-      "No stop_loss or take_profit triggered on BAC/HOOD/XOM/JPM/LRCX",
-      "WMT earnings setup interesting but rank edge vs held names is marginal",
-      "Prefer hold over forced rotation until clearer relative weakness"
+      "weakest P/L name in full 5-position book",
+      "directive confirm SELL XOM exactly",
+      "flat price action vs bullish-but-stale thesis",
+      "free capital/slot per desk rotation policy"
     ],
-    "timestamp": "2026-09-07T16:03:07.504644+00:00"
+    "timestamp": "2026-09-07T16:20:34.618548+00:00"
   },
-  "stance": "Holding BAC, HOOD, XOM, JPM, LRCX. No new trade right now.",
+  "stance": "Selling XOM. Junior desk escalation to exit XOM is confirmed as it is the weakest open name with negative open P/L while the book is already at max 5 positions and cash is near zero. Price is flat-to-soft versus entry with no immediate catalyst force requiring hold; freeing the slot and capital is cleaner risk management than forcing a hold. Reward-to-risk on the existing plan remains intact on exit at market.",
   "thinking": {
-    "badge": "Holding what it owns",
-    "headline": "Holding BAC, HOOD, XOM, JPM, LRCX. No new trade right now.",
-    "plain_english": "Right now Hermes is holding BAC, HOOD, XOM, JPM, LRCX and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
+    "badge": "Exiting XOM",
+    "headline": "Selling XOM.",
+    "plain_english": "Right now Hermes is exiting XOM. That can be stop, target, or gated rotation when a stronger setup needs risk budget.",
     "triggers": [
       "It owns BAC, bought near $62.20. Simple plan: sell if it falls to about $60.00, or take profit near $65.50.",
       "It owns HOOD, bought near $120.77. Simple plan: sell if it falls to about $115.00, or take profit near $129.50.",
@@ -264,10 +264,10 @@
         "plan": "stop 295.0 or target 330.0"
       }
     ],
-    "last_checked": "2026-09-07T16:10:33.847521+00:00",
+    "last_checked": "2026-09-07T16:20:37.504678+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "HOLD",
+    "action": "SELL",
     "symbols_held": [
       "BAC",
       "HOOD",
@@ -279,10 +279,10 @@
       {
         "prefix": "J",
         "model": "grok-4.3",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 65,
-        "tone": "hold"
+        "action": "SELL",
+        "symbol": "XOM",
+        "confidence": 75,
+        "tone": "sell"
       },
       {
         "prefix": "J",
@@ -305,36 +305,113 @@
         "model": "grok-build-0.1",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 65,
+        "confidence": 60,
         "tone": "hold"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 68,
-        "tone": "hold"
-      },
-      {
-        "prefix": "S",
-        "model": "claude-sonnet-5",
-        "action": "SELL",
-        "symbol": "XOM",
-        "confidence": 72,
-        "tone": "sell"
-      },
-      {
-        "prefix": "S",
-        "model": "claude-opus-5",
         "action": "SELL",
         "symbol": "XOM",
         "confidence": 78,
         "tone": "sell"
+      },
+      {
+        "prefix": "S",
+        "model": "claude-sonnet-5",
+        "action": "HOLD",
+        "symbol": "XOM",
+        "confidence": 65,
+        "tone": "hold"
+      },
+      {
+        "prefix": "S",
+        "model": "claude-opus-5",
+        "action": "HOLD",
+        "symbol": "BAC",
+        "confidence": 80,
+        "tone": "hold"
       }
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "XOM",
+      "status": "no_consensus",
+      "headline": "SELL XOM \u2014 no consensus",
+      "detail": "Desks: SELL XOM (78%) vs HOLD XOM (65%) vs HOLD BAC (80%). No 2-of-3 senior agreement",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "SELL",
+          "symbol": "XOM",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "WMT",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "SELL",
+          "symbol": "XOM",
+          "confidence": 78,
+          "source": "fallback",
+          "provider": null,
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "SELL",
+          "symbol": "XOM",
+          "confidence": 78,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "XOM",
+          "confidence": 65,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "BAC",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "exit",
+      "junior_nomination": "XOM",
+      "timestamp": "2026-09-07T16:20:34.618548+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -12407,9 +12484,9 @@
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): HOOD Stock Slides Overnight: Robinhood\u2019s $2B Capital Raise Tests Bulls As Volumes Boom, Agentic Trading Gains Traction - Stocktwits",
       "top_headlines": [
+        "Robinhood Markets, Inc. (HOOD) Is Up 17.12% in One Week: What You Should Know - Yahoo Finance Singapore",
         "HOOD Stock Slides Overnight: Robinhood\u2019s $2B Capital Raise Tests Bulls As Volumes Boom, Agentic Trading Gains Traction - Stocktwits",
-        "Here's How Much $1000 Invested In Robinhood Markets 5 Years Ago Would Be Worth Today - Benzinga",
-        "TD Waterhouse Canada Inc. Grows Stake in Robinhood Markets, Inc. $HOOD - MarketBeat"
+        "Here's How Much $1000 Invested In Robinhood Markets 5 Years Ago Would Be Worth Today - Benzinga"
       ],
       "matched_headlines": [
         {
@@ -12443,6 +12520,64 @@
           "keywords": [
             "ai",
             "catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "NFLX",
+      "name": "NFLX",
+      "price": 78.25,
+      "volume": 40066200.0,
+      "avg_volume": 26774540.0,
+      "percent_change": -5.346556510032281,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 14,
+      "liquidity_score": 84.28,
+      "rank_score": 80.42,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (catalyst, partnership): Netflix Stock (NFLX) Opinions on Recent Recovery and Partnerships - Quiver Quantitative",
+      "top_headlines": [
+        "Investors Heavily Search Netflix, Inc. (NFLX): Here is What You Need to Know - Yahoo Finance",
+        "Netflix Stock (NFLX) Opinions on Recent Recovery and Partnerships - Quiver Quantitative",
+        "NFLX Stock Reverses Course Overnight: Retail Shrugs Off Outgoing Chairman\u2019s Sale As \u2018Routine\u2019 - Stocktwits"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Netflix Stock (NFLX) Opinions on Recent Recovery and Partnerships - Quiver Quantitative",
+          "keywords": [
+            "catalyst",
+            "partnership"
+          ]
+        },
+        {
+          "title": "NFLX Stock Reverses Course Overnight: Retail Shrugs Off Outgoing Chairman\u2019s Sale As \u2018Routine\u2019 - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Netflix, Inc. $NFLX Shares Bought by Groupe la Francaise - MarketBeat",
+          "keywords": [
+            "ai",
+            "beat",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "NFLX Stock Tumbles Overnight After Guidance Dismay \u2013 CFO Says Global Growth Story Is Far From Over - Stocktwits",
+          "keywords": [
+            "catalyst",
+            "growth",
+            "guidance"
+          ]
+        },
+        {
+          "title": "Formuepleje A S Invests $2.06 Million in Netflix, Inc. $NFLX - MarketBeat",
+          "keywords": [
+            "beat"
           ]
         }
       ]
@@ -12499,53 +12634,6 @@
           ]
         }
       ]
-    },
-    {
-      "symbol": "UNH",
-      "name": "UNH",
-      "price": 397.1400146484375,
-      "volume": 5565400.0,
-      "avg_volume": 4080340.0,
-      "percent_change": -0.9477696837007635,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 14,
-      "liquidity_score": 76.11,
-      "rank_score": 72.67,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): Did Berkshire Sell UNH Stock Too Early? Retail Traders Think So \u2013 Call Its Exit \u2018Way Overblown\u2019 - Stocktwits",
-      "top_headlines": [
-        "Did Berkshire Sell UNH Stock Too Early? Retail Traders Think So \u2013 Call Its Exit \u2018Way Overblown\u2019 - Stocktwits",
-        "UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
-        "UnitedHealth Group Inc (UNH) Stock Price, Quote, News & History - Benzinga"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Did Berkshire Sell UNH Stock Too Early? Retail Traders Think So \u2013 Call Its Exit \u2018Way Overblown\u2019 - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
-          "keywords": [
-            "ai",
-            "beat",
-            "beats",
-            "catalyst",
-            "guidance",
-            "raises"
-          ]
-        },
-        {
-          "title": "UNH Stock Becomes Dow\u2019s Biggest Driver Back To 50,000 \u2014 Will Trump Tailwinds Spark Another Leg Higher? - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        }
-      ]
     }
   ],
   "limits": {
@@ -12574,9 +12662,9 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 2,
+      "HOLD": 1,
       "BUY": 1,
-      "SELL": 1,
+      "SELL": 2,
       "live": 3,
       "fallback": 0
     },
@@ -12593,16 +12681,16 @@
     "log_all_disagreements": true,
     "decision_mode": "live_dual_llm",
     "last_tier": "senior_escalated",
-    "last_stage": "entry",
-    "last_junior_nomination": null,
-    "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 81.6
+    "last_stage": "exit",
+    "last_junior_nomination": "XOM",
+    "last_escalate_reason": "junior_nomination",
+    "live_share_recent": 80.4
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 335,
     "closed_outcomes": 152,
-    "consensus_events": 492,
+    "consensus_events": 493,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
@@ -15314,6 +15402,12 @@
       },
       {
         "t": "2026-09-07T16:10:36.633469+00:00",
+        "equity": 1001.91,
+        "cash": 2.67,
+        "event": "mark"
+      },
+      {
+        "t": "2026-09-07T16:20:40.215326+00:00",
         "equity": 1001.91,
         "cash": 2.67,
         "event": "mark"
