@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T18:00:16.249423+00:00",
+  "generated_at": "2026-09-07T18:02:47.941696+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
@@ -16,7 +16,7 @@
     "vs_spy_pct": 0.09,
     "spy_return_pct": 0.1,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-07T18:00:19.055865+00:00"
+    "updated_at": "2026-09-07T18:02:50.601621+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
@@ -26,9 +26,9 @@
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 9,
+    "consensus_count_today": 10,
     "validated_count_today": 8,
-    "blocked_count_today": 1,
+    "blocked_count_today": 2,
     "fills_today": 2,
     "simulated_orders_today": 8,
     "top_symbol_today": "LRCX"
@@ -84,63 +84,58 @@
     }
   ],
   "latest_candidate": {
-    "symbol": "PANW",
-    "name": "PANW",
-    "price": 333.260009765625,
-    "volume": 5636200.0,
-    "avg_volume": 7176350.0,
-    "percent_change": 0.3976644316774555,
+    "symbol": "XOM",
+    "name": "XOM",
+    "price": 159.47000122070312,
+    "volume": 16192900.0,
+    "avg_volume": 13982750.0,
+    "percent_change": -1.6891716785372786,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 19,
-    "liquidity_score": 78.56,
-    "rank_score": 95.6,
+    "catalyst_score": 17,
+    "liquidity_score": 81.46,
+    "rank_score": 89.07,
     "news_hits": 8,
-    "catalyst": "Headline-driven setup (ai, beat, catalyst): PANW Stock Gains After Revenue Forecast Beat As AI Usage Drives Cybersecurity Demand - Stocktwits",
+    "catalyst": "Headline-driven setup (ai, beat, catalyst): ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
     "top_headlines": [
-      "PANW Stock Gains After Revenue Forecast Beat As AI Usage Drives Cybersecurity Demand - Stocktwits",
-      "PANW Surges 102% in 6 Months: Should You Buy, Sell or Hold the Stock? - TradingView",
-      "Palo Alto Networks Stock Delivers Strong FCF Margins - Is PANW Stock Set to Rise? - Barchart.com"
+      "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
+      "Exxon Mobil Stock (XOM) Opinions on Stock Momentum and Trading Activity - Moomoo",
+      "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits"
     ],
     "matched_headlines": [
       {
-        "title": "PANW Stock Gains After Revenue Forecast Beat As AI Usage Drives Cybersecurity Demand - Stocktwits",
+        "title": "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
         "keywords": [
           "ai",
           "beat",
           "catalyst",
-          "demand"
-        ]
-      },
-      {
-        "title": "PANW Stock Forecast: Plunges 9% Despite Earnings Beat, Can It Break $400? - TradingKey",
-        "keywords": [
-          "beat",
-          "catalyst"
-        ]
-      },
-      {
-        "title": "PANW Price Targets Raised By Citi, Goldman Sachs On AI-Driven Security Demand - Stocktwits",
-        "keywords": [
-          "ai",
-          "catalyst",
-          "demand",
           "raised"
         ]
       },
       {
-        "title": "Palo Alto Networks (PANW) Is Down 10.3% After AI-Led Growth Accompanies Surprise Quarterly Loss \u2013 What's Changed - simplywall.st",
+        "title": "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits",
         "keywords": [
           "ai",
-          "catalyst",
-          "growth"
+          "beat",
+          "catalyst"
         ]
       },
       {
-        "title": "AI Agents Sound Cybersecurity Alarm: Which Has More Upside Potential Among PANW, CRWD, OKTA, and ZS? - TradingKey",
+        "title": "70,895 Shares in ExxonMobil Corporation $XOM Purchased by Planning Project LLC - MarketBeat",
         "keywords": [
-          "ai",
+          "beat"
+        ]
+      },
+      {
+        "title": "Nasdaq Futures Lead US Premarket Rally As Iran Ceasefire Reports Ease Fears Ahead Of Big Tech Earnings: Why NVDA, ORCL, SPCX, XOM, OTLK Are In Focus - Stocktwits",
+        "keywords": [
           "catalyst"
+        ]
+      },
+      {
+        "title": "ExxonMobil Corporation $XOM Shares Sold by HighTower Advisors LLC - MarketBeat",
+        "keywords": [
+          "beat"
         ]
       }
     ]
@@ -148,57 +143,57 @@
   "latest_decision": {
     "model": "grok-4.5",
     "action": "BUY",
-    "symbol": "PANW",
+    "symbol": "XOM",
     "confidence": 78,
     "cache_stats": null,
-    "entry_price": 333.26,
-    "stop_loss": 320.0,
-    "take_profit": 353.5,
-    "qty": 0.6,
-    "thesis": "PANW shows a clean headline catalyst with revenue forecast beat tied to AI-driven cybersecurity demand, ranking highest among candidates. Liquid name with neutral RSI leaves room for continuation on the beat narrative. Position sized to cash limit with defined 1.5+ R:R. Adding as fifth name while book still has capacity.",
+    "entry_price": 159.47,
+    "stop_loss": 154.5,
+    "take_profit": 167.5,
+    "qty": 1.25,
+    "thesis": "XOM ranks as the top liquid catalyst candidate with strong score and bullish sentiment on institutional position increase headlines. Adding within cash and position-count limits keeps book at five names with defined risk. Reward-to-risk exceeds 1.5 from entry to target versus stop. Setup aligns with desk preference for catalyst-driven liquid names.",
     "reason_code": "new_entry",
     "reasoning": {
-      "headline": "Bought $PANW",
-      "narrative": "PANW shows a clean headline catalyst with revenue forecast beat tied to AI-driven cybersecurity demand, ranking highest among candidates. Liquid name with neutral RSI leaves room for continuation on the beat narrative. Position sized to cash limit with defined 1.5+ R:R. Adding as fifth name while book still has capacity.",
+      "headline": "Bought $XOM",
+      "narrative": "XOM ranks as the top liquid catalyst candidate with strong score and bullish sentiment on institutional position increase headlines. Adding within cash and position-count limits keeps book at five names with defined risk. Reward-to-risk exceeds 1.5 from entry to target versus stop. Setup aligns with desk preference for catalyst-driven liquid names.",
       "bullets": [
-        "AI/cyber revenue beat catalyst, rank 95.6",
-        "RSI 50 neutral, room to run",
-        "~0.6 sh keeps notional under $200",
-        "stop 320 / target 353.5 for >=1.5 R:R"
+        "Top-ranked candidate score 89 with bullish catalyst",
+        "Notional ~$200 fits cash and max-names policy",
+        "R:R >1.5 with stop 154.5 target 167.5",
+        "Confirming directed BUY XOM new_entry"
       ],
       "risk_map": {
-        "stop": 320.0,
-        "target": 353.5,
+        "stop": 154.5,
+        "target": 167.5,
         "horizon_days": 5,
-        "rr": 1.53,
+        "rr": 1.62,
         "confidence_10": 8,
         "confidence": 78
       },
-      "thesis": "PANW shows a clean headline catalyst with revenue forecast beat tied to AI-driven cybersecurity demand, ranking highest among candidates. Liquid name with neutral RSI leaves room for continuation on the beat narrative. Position sized to cash limit with defined 1.5+ R:R. Adding as fifth name while book still has capacity."
+      "thesis": "XOM ranks as the top liquid catalyst candidate with strong score and bullish sentiment on institutional position increase headlines. Adding within cash and position-count limits keeps book at five names with defined risk. Reward-to-risk exceeds 1.5 from entry to target versus stop. Setup aligns with desk preference for catalyst-driven liquid names."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "AI/cyber revenue beat catalyst, rank 95.6",
-      "RSI 50 neutral, room to run",
-      "~0.6 sh keeps notional under $200",
-      "stop 320 / target 353.5 for >=1.5 R:R"
+      "Top-ranked candidate score 89 with bullish catalyst",
+      "Notional ~$200 fits cash and max-names policy",
+      "R:R >1.5 with stop 154.5 target 167.5",
+      "Confirming directed BUY XOM new_entry"
     ],
-    "timestamp": "2026-09-07T17:47:36.284507+00:00"
+    "timestamp": "2026-09-07T18:02:39.892292+00:00"
   },
-  "stance": "Buying pressure on PANW. PANW shows a clean headline catalyst with revenue forecast beat tied to AI-driven cybersecurity demand, ranking highest among candidates. Liquid name with neutral RSI leaves room for continuation on the beat narrative. Position sized to cash limit with defined 1.5+ R:R. Adding as fifth name while book still has capacity.",
+  "stance": "Buying pressure on XOM. XOM ranks as the top liquid catalyst candidate with strong score and bullish sentiment on institutional position increase headlines. Adding within cash and position-count limits keeps book at five names with defined risk. Reward-to-risk exceeds 1.5 from entry to target versus stop. Setup aligns with desk preference for catalyst-driven liquid names.",
   "thinking": {
-    "badge": "Looking to buy PANW",
-    "headline": "Buying pressure on PANW.",
-    "plain_english": "Right now Hermes wants exposure to PANW. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
+    "badge": "Looking to buy XOM",
+    "headline": "Buying pressure on XOM.",
+    "plain_english": "Right now Hermes wants exposure to XOM. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
     "triggers": [
       "It owns BAC, bought near $62.20. Simple plan: sell if it falls to about $60.00, or take profit near $65.50.",
       "It owns HOOD, bought near $120.77. Simple plan: sell if it falls to about $115.00, or take profit near $129.50.",
       "It owns JPM, bought near $357.78. Simple plan: sell if it falls to about $348.00, or take profit near $375.00.",
       "It owns LRCX, bought near $307.65. Simple plan: sell if it falls to about $295.00, or take profit near $330.00.",
       "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
-      "Top scanner name right now is PANW, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
+      "Top scanner name right now is XOM, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
       "If nothing looks clean, do nothing. Sitting in cash or holdings is allowed."
     ],
     "owned": [
@@ -251,7 +246,7 @@
         "plan": "stop 295.0 or target 330.0"
       }
     ],
-    "last_checked": "2026-09-07T18:00:16.249423+00:00",
+    "last_checked": "2026-09-07T18:02:47.941696+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -266,7 +261,7 @@
         "prefix": "J",
         "model": "grok-4.3",
         "action": "BUY",
-        "symbol": "PANW",
+        "symbol": "XOM",
         "confidence": 82,
         "tone": "buy"
       },
@@ -274,7 +269,7 @@
         "prefix": "J",
         "model": "claude-haiku-4-5",
         "action": "BUY",
-        "symbol": "PANW",
+        "symbol": "XOM",
         "confidence": 72,
         "tone": "buy"
       },
@@ -282,23 +277,23 @@
         "prefix": "J",
         "model": "deepseek-v4-flash",
         "action": "BUY",
-        "symbol": "PANW",
-        "confidence": 82,
+        "symbol": "XOM",
+        "confidence": 72,
         "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
         "action": "BUY",
-        "symbol": "PANW",
-        "confidence": 80,
+        "symbol": "XOM",
+        "confidence": 78,
         "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
         "action": "BUY",
-        "symbol": "PANW",
+        "symbol": "XOM",
         "confidence": 78,
         "tone": "buy"
       },
@@ -306,8 +301,8 @@
         "prefix": "S",
         "model": "claude-sonnet-5",
         "action": "BUY",
-        "symbol": "PANW",
-        "confidence": 78,
+        "symbol": "XOM",
+        "confidence": 72,
         "tone": "buy"
       },
       {
@@ -321,6 +316,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "XOM",
+      "status": "blocked",
+      "headline": "BUY XOM \u2014 blocked",
+      "detail": "Insufficient buying power: $2.67 < $199.34",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "XOM",
+          "confidence": 82,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "XOM",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "XOM",
+          "confidence": 72,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "XOM",
+          "confidence": 78,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "XOM",
+          "confidence": 78,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "XOM",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "BAC",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "XOM",
+      "timestamp": "2026-09-07T18:02:39.892292+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "PANW",
@@ -867,83 +939,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-09-07T16:03:07.504644+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CASH",
-      "status": "hold",
-      "headline": "HOLD \u2014 no new trade",
-      "detail": "Book is at max 5 names with minimal cash. XOM ranks highest among candidates but is already held with slight negative P/L. No new candidate offers clear rotation edge exceeding current weakest holdings after reward:risk and notional constraints.",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "SELL",
-          "symbol": "XOM",
-          "confidence": 78,
-          "source": "fallback",
-          "provider": null,
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        }
-      ],
-      "tier": "junior_only",
-      "escalate_reason": "",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-07T15:47:55.183975+00:00"
     },
     {
       "type": "fill",
@@ -12399,68 +12394,6 @@
   ],
   "top_candidates": [
     {
-      "symbol": "PANW",
-      "name": "PANW",
-      "price": 333.260009765625,
-      "volume": 5636200.0,
-      "avg_volume": 7176350.0,
-      "percent_change": 0.3976644316774555,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 19,
-      "liquidity_score": 78.56,
-      "rank_score": 95.6,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, beat, catalyst): PANW Stock Gains After Revenue Forecast Beat As AI Usage Drives Cybersecurity Demand - Stocktwits",
-      "top_headlines": [
-        "PANW Stock Gains After Revenue Forecast Beat As AI Usage Drives Cybersecurity Demand - Stocktwits",
-        "PANW Surges 102% in 6 Months: Should You Buy, Sell or Hold the Stock? - TradingView",
-        "Palo Alto Networks Stock Delivers Strong FCF Margins - Is PANW Stock Set to Rise? - Barchart.com"
-      ],
-      "matched_headlines": [
-        {
-          "title": "PANW Stock Gains After Revenue Forecast Beat As AI Usage Drives Cybersecurity Demand - Stocktwits",
-          "keywords": [
-            "ai",
-            "beat",
-            "catalyst",
-            "demand"
-          ]
-        },
-        {
-          "title": "PANW Stock Forecast: Plunges 9% Despite Earnings Beat, Can It Break $400? - TradingKey",
-          "keywords": [
-            "beat",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "PANW Price Targets Raised By Citi, Goldman Sachs On AI-Driven Security Demand - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "demand",
-            "raised"
-          ]
-        },
-        {
-          "title": "Palo Alto Networks (PANW) Is Down 10.3% After AI-Led Growth Accompanies Surprise Quarterly Loss \u2013 What's Changed - simplywall.st",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "growth"
-          ]
-        },
-        {
-          "title": "AI Agents Sound Cybersecurity Alarm: Which Has More Upside Potential Among PANW, CRWD, OKTA, and ZS? - TradingKey",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "XOM",
       "name": "XOM",
       "price": 159.47000122070312,
@@ -12588,7 +12521,7 @@
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): HOOD Stock Slides Overnight: Robinhood\u2019s $2B Capital Raise Tests Bulls As Volumes Boom, Agentic Trading Gains Traction - Stocktwits",
       "top_headlines": [
-        "Robinhood Markets, Inc. (HOOD) Is Up 17.12% in One Week: What You Should Know - Yahoo Finance Singapore",
+        "Robinhood Markets, Inc. (HOOD) Is Up 17.12% in One Week: What You Should Know - Yahoo Finance",
         "HOOD Stock Slides Overnight: Robinhood\u2019s $2B Capital Raise Tests Bulls As Volumes Boom, Agentic Trading Gains Traction - Stocktwits",
         "Here's How Much $1000 Invested In Robinhood Markets 5 Years Ago Would Be Worth Today - Benzinga"
       ],
@@ -12682,6 +12615,53 @@
           ]
         }
       ]
+    },
+    {
+      "symbol": "UNH",
+      "name": "UNH",
+      "price": 397.1400146484375,
+      "volume": 5565400.0,
+      "avg_volume": 4080340.0,
+      "percent_change": -0.9477696837007635,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 14,
+      "liquidity_score": 76.11,
+      "rank_score": 72.67,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst): Did Berkshire Sell UNH Stock Too Early? Retail Traders Think So \u2013 Call Its Exit \u2018Way Overblown\u2019 - Stocktwits",
+      "top_headlines": [
+        "Did Berkshire Sell UNH Stock Too Early? Retail Traders Think So \u2013 Call Its Exit \u2018Way Overblown\u2019 - Stocktwits",
+        "UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
+        "Is UNH Stock Set For Another 12% Rally? Analyst Says Medical Cost Trends, Supportive Data Points Leading Toward Favorable Q2 - Stocktwits"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Did Berkshire Sell UNH Stock Too Early? Retail Traders Think So \u2013 Call Its Exit \u2018Way Overblown\u2019 - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
+          "keywords": [
+            "ai",
+            "beat",
+            "beats",
+            "catalyst",
+            "guidance",
+            "raises"
+          ]
+        },
+        {
+          "title": "UNH Stock Becomes Dow\u2019s Biggest Driver Back To 50,000 \u2014 Will Trump Tailwinds Spark Another Leg Higher? - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        }
+      ]
     }
   ],
   "limits": {
@@ -12730,15 +12710,15 @@
     "decision_mode": "live_dual_llm",
     "last_tier": "senior_escalated",
     "last_stage": "entry",
-    "last_junior_nomination": "PANW",
+    "last_junior_nomination": "XOM",
     "last_escalate_reason": "junior_nomination",
-    "live_share_recent": 81.3
+    "live_share_recent": 81.6
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 336,
     "closed_outcomes": 153,
-    "consensus_events": 498,
+    "consensus_events": 499,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
@@ -15486,6 +15466,12 @@
       },
       {
         "t": "2026-09-07T18:00:19.055865+00:00",
+        "equity": 1001.91,
+        "cash": 202.01,
+        "event": "mark"
+      },
+      {
+        "t": "2026-09-07T18:02:50.601621+00:00",
         "equity": 1001.91,
         "cash": 202.01,
         "event": "mark"
