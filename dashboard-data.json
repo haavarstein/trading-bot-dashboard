@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T17:00:52.986405+00:00",
+  "generated_at": "2026-09-07T17:03:12.207787+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
@@ -16,7 +16,7 @@
     "vs_spy_pct": 0.09,
     "spy_return_pct": 0.1,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-07T17:00:55.787089+00:00"
+    "updated_at": "2026-09-07T17:03:14.971558+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
@@ -26,11 +26,11 @@
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 6,
-    "validated_count_today": 6,
+    "consensus_count_today": 7,
+    "validated_count_today": 7,
     "blocked_count_today": 0,
     "fills_today": 1,
-    "simulated_orders_today": 6,
+    "simulated_orders_today": 7,
     "top_symbol_today": "LRCX"
   },
   "holdings": [
@@ -156,16 +156,15 @@
     "stop_loss": 0.0,
     "take_profit": 0.0,
     "qty": 0.0,
-    "thesis": "Portfolio already at max 5 names with minimal cash. No materially superior new candidate justifies rotation from weakest hold (XOM). XOM remains top-ranked and held despite minor loss.",
+    "thesis": "Book is at max 5 names with limited cash. Top candidates XOM and HOOD already held with positive or flat P/L. WMT ranks high but not materially superior to current holdings to justify rotation under policy.",
     "reason_code": "hold",
     "reasoning": {
       "headline": "Hold $CASH",
-      "narrative": "Portfolio already at max 5 names with minimal cash. No materially superior new candidate justifies rotation from weakest hold (XOM). XOM remains top-ranked and held despite minor loss.",
+      "narrative": "Book is at max 5 names with limited cash. Top candidates XOM and HOOD already held with positive or flat P/L. WMT ranks high but not materially superior to current holdings to justify rotation under policy.",
       "bullets": [
-        "5 open positions, cash <$3 limits new buys",
-        "WMT strong but not enough edge over held XOM to rotate",
-        "Reward:risk and notional rules prevent forced action",
-        "Monitor for clearer catalyst or PnL deterioration"
+        "XOM weakest P/L but still top-ranked catalyst",
+        "No new name offers clear R:R edge above 1.5 without exceeding notional limits",
+        "Social signals lack ticker specificity and do not override scores"
       ],
       "risk_map": {
         "stop": 0.0,
@@ -175,18 +174,17 @@
         "confidence_10": 6,
         "confidence": 60
       },
-      "thesis": "Portfolio already at max 5 names with minimal cash. No materially superior new candidate justifies rotation from weakest hold (XOM). XOM remains top-ranked and held despite minor loss."
+      "thesis": "Book is at max 5 names with limited cash. Top candidates XOM and HOOD already held with positive or flat P/L. WMT ranks high but not materially superior to current holdings to justify rotation under policy."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.3",
     "bullets": [
-      "5 open positions, cash <$3 limits new buys",
-      "WMT strong but not enough edge over held XOM to rotate",
-      "Reward:risk and notional rules prevent forced action",
-      "Monitor for clearer catalyst or PnL deterioration"
+      "XOM weakest P/L but still top-ranked catalyst",
+      "No new name offers clear R:R edge above 1.5 without exceeding notional limits",
+      "Social signals lack ticker specificity and do not override scores"
     ],
-    "timestamp": "2026-09-07T16:33:15.254600+00:00"
+    "timestamp": "2026-09-07T17:02:58.392136+00:00"
   },
   "stance": "Holding BAC, HOOD, XOM, JPM, LRCX. No new trade right now.",
   "thinking": {
@@ -264,7 +262,7 @@
         "plan": "stop 295.0 or target 330.0"
       }
     ],
-    "last_checked": "2026-09-07T17:00:52.986405+00:00",
+    "last_checked": "2026-09-07T17:03:12.207787+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "HOLD",
@@ -295,10 +293,10 @@
       {
         "prefix": "J",
         "model": "deepseek-v4-flash",
-        "action": "SELL",
-        "symbol": "XOM",
-        "confidence": 78,
-        "tone": "sell"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 68,
+        "tone": "hold"
       },
       {
         "prefix": "J",
@@ -311,6 +309,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 no new trade",
+      "detail": "Book is at max 5 names with limited cash. Top candidates XOM and HOOD already held with positive or flat P/L. WMT ranks high but not materially superior to current holdings to justify rotation under policy.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 68,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        }
+      ],
+      "tier": "junior_only",
+      "escalate_reason": "",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-07T17:02:58.392136+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -849,83 +924,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-09-07T14:34:11.204225+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CASH",
-      "status": "hold",
-      "headline": "HOLD \u2014 desks disagreed on focus",
-      "detail": "Desks: HOLD CASH (68%) vs SELL XOM (72%) vs SELL XOM (78%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "WMT",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "SELL",
-          "symbol": "XOM",
-          "confidence": 78,
-          "source": "fallback",
-          "provider": null,
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 68,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "SELL",
-          "symbol": "XOM",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "SELL",
-          "symbol": "XOM",
-          "confidence": 78,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-07T14:18:41.344057+00:00"
     },
     {
       "type": "fill",
@@ -12454,13 +12452,13 @@
       "percent_change": -2.0926880891645716,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 15,
+      "catalyst_score": 14,
       "liquidity_score": 83.45,
-      "rank_score": 81.69,
+      "rank_score": 77.69,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): HOOD Stock Slides Overnight: Robinhood\u2019s $2B Capital Raise Tests Bulls As Volumes Boom, Agentic Trading Gains Traction - Stocktwits",
       "top_headlines": [
-        "Robinhood Markets, Inc. (HOOD) Is Up 17.12% in One Week: What You Should Know - Yahoo Finance Singapore",
+        "Robinhood Markets, Inc. (HOOD) Is Up 17.12% in One Week: What You Should Know - Yahoo Finance",
         "HOOD Stock Slides Overnight: Robinhood\u2019s $2B Capital Raise Tests Bulls As Volumes Boom, Agentic Trading Gains Traction - Stocktwits",
         "Here's How Much $1000 Invested In Robinhood Markets 5 Years Ago Would Be Worth Today - Benzinga"
       ],
@@ -12485,17 +12483,19 @@
           ]
         },
         {
-          "title": "AMC CEO Slams Robinhood Over 'Inexcusable, Vile' Stock Token Trading - Investor's Business Daily",
+          "title": "HOOD Stock Rallies On Wall Street Optimism: Retail Sentiment Improves As Investors Eye A Bigger Pop - Stocktwits",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "HOOD Stock Rallies On Wall Street Optimism: Retail Sentiment Improves As Investors Eye A Bigger Pop - Stocktwits",
+          "title": "Saudi Central Bank Raises Position in Robinhood Markets, Inc. $HOOD - MarketBeat",
           "keywords": [
             "ai",
-            "catalyst"
+            "beat",
+            "catalyst",
+            "raises"
           ]
         }
       ]
@@ -12570,7 +12570,7 @@
       "top_headlines": [
         "Did Berkshire Sell UNH Stock Too Early? Retail Traders Think So \u2013 Call Its Exit \u2018Way Overblown\u2019 - Stocktwits",
         "UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
-        "UnitedHealth Group Inc (UNH) Stock Price, Quote, News & History - Benzinga"
+        "Is UNH Stock Set For Another 12% Rally? Analyst Says Medical Cost Trends, Supportive Data Points Leading Toward Favorable Q2 - Stocktwits"
       ],
       "matched_headlines": [
         {
@@ -12627,10 +12627,10 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 3,
+      "HOLD": 4,
       "BUY": 0,
-      "SELL": 1,
-      "live": 3,
+      "SELL": 0,
+      "live": 4,
       "fallback": 0
     },
     "junior_model_3_enabled": true,
@@ -12649,13 +12649,13 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "",
-    "live_share_recent": 81.0
+    "live_share_recent": 82.9
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 335,
     "closed_outcomes": 152,
-    "consensus_events": 494,
+    "consensus_events": 495,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
@@ -15384,7 +15384,7 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-07T17:00:55.787089+00:00",
+        "t": "2026-09-07T17:03:14.971558+00:00",
         "equity": 1001.91,
         "cash": 2.67,
         "event": "mark"
