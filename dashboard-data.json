@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T18:40:30.243472+00:00",
+  "generated_at": "2026-09-07T18:49:44.981871+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
@@ -16,7 +16,7 @@
     "vs_spy_pct": 0.09,
     "spy_return_pct": 0.1,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-07T18:40:32.940708+00:00"
+    "updated_at": "2026-09-07T18:49:47.676378+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
@@ -26,9 +26,9 @@
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 12,
+    "consensus_count_today": 13,
     "validated_count_today": 8,
-    "blocked_count_today": 4,
+    "blocked_count_today": 5,
     "fills_today": 2,
     "simulated_orders_today": 8,
     "top_symbol_today": "LRCX"
@@ -84,57 +84,63 @@
     }
   ],
   "latest_candidate": {
-    "symbol": "WMT",
-    "name": "WMT",
-    "price": 107.13999938964844,
-    "volume": 20527200.0,
-    "avg_volume": 26780910.0,
-    "percent_change": -1.1805928803857004,
+    "symbol": "PANW",
+    "name": "PANW",
+    "price": 333.260009765625,
+    "volume": 5636200.0,
+    "avg_volume": 7176350.0,
+    "percent_change": 0.3976644316774555,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 16,
-    "liquidity_score": 84.28,
-    "rank_score": 85.09,
+    "catalyst_score": 19,
+    "liquidity_score": 78.56,
+    "rank_score": 95.6,
     "news_hits": 8,
-    "catalyst": "Headline-driven setup (ai, catalyst): Walmart Earnings Ahead: Can WMT Stock Sustain Momentum Under New CEO? - Stocktwits",
+    "catalyst": "Headline-driven setup (ai, beat, catalyst): PANW Stock Gains After Revenue Forecast Beat As AI Usage Drives Cybersecurity Demand - Stocktwits",
     "top_headlines": [
-      "Walmart Earnings Ahead: Can WMT Stock Sustain Momentum Under New CEO? - Stocktwits",
-      "WMT Stock Sinks To Near Eight-Month Low \u2014 Cleveland Research Flags Slowing Sales - Stocktwits",
-      "14,114 Shares in Walmart Inc. $WMT Bought by Planning Project LLC - MarketBeat"
+      "PANW Stock Gains After Revenue Forecast Beat As AI Usage Drives Cybersecurity Demand - Stocktwits",
+      "PANW Surges 102% in 6 Months: Should You Buy, Sell or Hold the Stock? - TradingView",
+      "Palo Alto Networks Stock Delivers Strong FCF Margins - Is PANW Stock Set to Rise? - Barchart.com"
     ],
     "matched_headlines": [
       {
-        "title": "Walmart Earnings Ahead: Can WMT Stock Sustain Momentum Under New CEO? - Stocktwits",
+        "title": "PANW Stock Gains After Revenue Forecast Beat As AI Usage Drives Cybersecurity Demand - Stocktwits",
         "keywords": [
           "ai",
+          "beat",
+          "catalyst",
+          "demand"
+        ]
+      },
+      {
+        "title": "PANW Stock Forecast: Plunges 9% Despite Earnings Beat, Can It Break $400? - TradingKey",
+        "keywords": [
+          "beat",
           "catalyst"
         ]
       },
       {
-        "title": "14,114 Shares in Walmart Inc. $WMT Bought by Planning Project LLC - MarketBeat",
-        "keywords": [
-          "beat"
-        ]
-      },
-      {
-        "title": "Walmart (WMT) Stock Seems Fairly Priced After Its $1.3B Automation Push - simplywall.st",
-        "keywords": [
-          "ai",
-          "catalyst"
-        ]
-      },
-      {
-        "title": "VIRGINIA RETIREMENT SYSTEMS ET Al Acquires Shares of 700,251 Walmart Inc. $WMT - MarketBeat",
-        "keywords": [
-          "beat"
-        ]
-      },
-      {
-        "title": "Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
+        "title": "PANW Price Targets Raised By Citi, Goldman Sachs On AI-Driven Security Demand - Stocktwits",
         "keywords": [
           "ai",
           "catalyst",
-          "record"
+          "demand",
+          "raised"
+        ]
+      },
+      {
+        "title": "Palo Alto Networks (PANW) Is Down 10.3% After AI-Led Growth Accompanies Surprise Quarterly Loss \u2013 What's Changed - simplywall.st",
+        "keywords": [
+          "ai",
+          "catalyst",
+          "growth"
+        ]
+      },
+      {
+        "title": "AI Agents Sound Cybersecurity Alarm: Which Has More Upside Potential Among PANW, CRWD, OKTA, and ZS? - TradingKey",
+        "keywords": [
+          "ai",
+          "catalyst"
         ]
       }
     ]
@@ -142,57 +148,57 @@
   "latest_decision": {
     "model": "grok-4.5",
     "action": "BUY",
-    "symbol": "WMT",
+    "symbol": "PANW",
     "confidence": 78,
     "cache_stats": null,
-    "entry_price": 107.14,
-    "stop_loss": 103.5,
-    "take_profit": 113.0,
-    "qty": 1.85,
-    "thesis": "WMT ranks as the top liquid catalyst setup with earnings ahead and bullish sentiment under the new CEO narrative. RSI is neutral at 50, leaving room for a momentum continuation into the print. Position sized within the ~$200 new-buy notional limit while keeping book at 5 names. Reward-to-risk is structured above 1.5 with a clear invalidation below recent support.",
+    "entry_price": 333.26,
+    "stop_loss": 318.0,
+    "take_profit": 358.0,
+    "qty": 0.6,
+    "thesis": "PANW shows a high-conviction catalyst setup with revenue forecast beat driven by AI cybersecurity demand, ranking at the top of the candidate list. RSI is neutral at 50 leaving room for upside continuation on the headline momentum. Position size fits remaining cash under the $200 new-buy notional cap while keeping open names at the desk limit. Reward-to-risk is structured above 1.5 with a clear invalidation level below recent support.",
     "reason_code": "new_entry",
     "reasoning": {
-      "headline": "Bought $WMT",
-      "narrative": "WMT ranks as the top liquid catalyst setup with earnings ahead and bullish sentiment under the new CEO narrative. RSI is neutral at 50, leaving room for a momentum continuation into the print. Position sized within the ~$200 new-buy notional limit while keeping book at 5 names. Reward-to-risk is structured above 1.5 with a clear invalidation below recent support.",
+      "headline": "Bought $PANW",
+      "narrative": "PANW shows a high-conviction catalyst setup with revenue forecast beat driven by AI cybersecurity demand, ranking at the top of the candidate list. RSI is neutral at 50 leaving room for upside continuation on the headline momentum. Position size fits remaining cash under the $200 new-buy notional cap while keeping open names at the desk limit. Reward-to-risk is structured above 1.5 with a clear invalidation level below recent support.",
       "bullets": [
-        "Rank 85 catalyst: earnings + new CEO momentum",
+        "AI-driven revenue beat catalyst, rank_score 95.6",
         "Neutral RSI 50 supports continuation entry",
-        "R:R ~1.55 with stop 103.5 / target 113",
-        "Fits cash and max-names constraints"
+        "Notional ~$200 fits cash and 5-name limit",
+        "R:R >1.5 with stop 318 / target 358"
       ],
       "risk_map": {
-        "stop": 103.5,
-        "target": 113.0,
+        "stop": 318.0,
+        "target": 358.0,
         "horizon_days": 5,
-        "rr": 1.61,
+        "rr": 1.62,
         "confidence_10": 8,
         "confidence": 78
       },
-      "thesis": "WMT ranks as the top liquid catalyst setup with earnings ahead and bullish sentiment under the new CEO narrative. RSI is neutral at 50, leaving room for a momentum continuation into the print. Position sized within the ~$200 new-buy notional limit while keeping book at 5 names. Reward-to-risk is structured above 1.5 with a clear invalidation below recent support."
+      "thesis": "PANW shows a high-conviction catalyst setup with revenue forecast beat driven by AI cybersecurity demand, ranking at the top of the candidate list. RSI is neutral at 50 leaving room for upside continuation on the headline momentum. Position size fits remaining cash under the $200 new-buy notional cap while keeping open names at the desk limit. Reward-to-risk is structured above 1.5 with a clear invalidation level below recent support."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Rank 85 catalyst: earnings + new CEO momentum",
+      "AI-driven revenue beat catalyst, rank_score 95.6",
       "Neutral RSI 50 supports continuation entry",
-      "R:R ~1.55 with stop 103.5 / target 113",
-      "Fits cash and max-names constraints"
+      "Notional ~$200 fits cash and 5-name limit",
+      "R:R >1.5 with stop 318 / target 358"
     ],
-    "timestamp": "2026-09-07T18:32:26.618075+00:00"
+    "timestamp": "2026-09-07T18:49:36.465759+00:00"
   },
-  "stance": "Buying pressure on WMT. WMT ranks as the top liquid catalyst setup with earnings ahead and bullish sentiment under the new CEO narrative. RSI is neutral at 50, leaving room for a momentum continuation into the print. Position sized within the ~$200 new-buy notional limit while keeping book at 5 names. Reward-to-risk is structured above 1.5 with a clear invalidation below recent support.",
+  "stance": "Buying pressure on PANW. PANW shows a high-conviction catalyst setup with revenue forecast beat driven by AI cybersecurity demand, ranking at the top of the candidate list. RSI is neutral at 50 leaving room for upside continuation on the headline momentum. Position size fits remaining cash under the $200 new-buy notional cap while keeping open names at the desk limit. Reward-to-risk is structured above 1.5 with a clear invalidation level below recent support.",
   "thinking": {
-    "badge": "Looking to buy WMT",
-    "headline": "Buying pressure on WMT.",
-    "plain_english": "Right now Hermes wants exposure to WMT. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
+    "badge": "Looking to buy PANW",
+    "headline": "Buying pressure on PANW.",
+    "plain_english": "Right now Hermes wants exposure to PANW. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
     "triggers": [
       "It owns BAC, bought near $62.20. Simple plan: sell if it falls to about $60.00, or take profit near $65.50.",
       "It owns HOOD, bought near $120.77. Simple plan: sell if it falls to about $115.00, or take profit near $129.50.",
       "It owns JPM, bought near $357.78. Simple plan: sell if it falls to about $348.00, or take profit near $375.00.",
       "It owns LRCX, bought near $307.65. Simple plan: sell if it falls to about $295.00, or take profit near $330.00.",
       "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
-      "Top scanner name right now is WMT, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
+      "Top scanner name right now is PANW, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
       "If nothing looks clean, do nothing. Sitting in cash or holdings is allowed."
     ],
     "owned": [
@@ -245,7 +251,7 @@
         "plan": "stop 295.0 or target 330.0"
       }
     ],
-    "last_checked": "2026-09-07T18:40:30.243472+00:00",
+    "last_checked": "2026-09-07T18:49:44.981871+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -260,15 +266,15 @@
         "prefix": "J",
         "model": "grok-4.3",
         "action": "BUY",
-        "symbol": "WMT",
-        "confidence": 82,
+        "symbol": "PANW",
+        "confidence": 85,
         "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "claude-haiku-4-5",
         "action": "BUY",
-        "symbol": "WMT",
+        "symbol": "PANW",
         "confidence": 72,
         "tone": "buy"
       },
@@ -276,15 +282,15 @@
         "prefix": "J",
         "model": "deepseek-v4-flash",
         "action": "BUY",
-        "symbol": "WMT",
-        "confidence": 78,
+        "symbol": "PANW",
+        "confidence": 80,
         "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
         "action": "BUY",
-        "symbol": "WMT",
+        "symbol": "PANW",
         "confidence": 80,
         "tone": "buy"
       },
@@ -292,7 +298,7 @@
         "prefix": "S",
         "model": "grok-4.5",
         "action": "BUY",
-        "symbol": "WMT",
+        "symbol": "PANW",
         "confidence": 78,
         "tone": "buy"
       },
@@ -300,8 +306,8 @@
         "prefix": "S",
         "model": "claude-sonnet-5",
         "action": "BUY",
-        "symbol": "WMT",
-        "confidence": 72,
+        "symbol": "PANW",
+        "confidence": 82,
         "tone": "buy"
       },
       {
@@ -315,6 +321,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "PANW",
+      "status": "blocked",
+      "headline": "BUY PANW \u2014 blocked",
+      "detail": "Insufficient buying power: $2.67 < $199.96",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 85,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 80,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 80,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 78,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 82,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "BAC",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "PANW",
+      "timestamp": "2026-09-07T18:49:36.465759+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "WMT",
@@ -861,83 +944,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-09-07T17:02:58.392136+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CASH",
-      "status": "hold",
-      "headline": "HOLD \u2014 no new trade",
-      "detail": "Portfolio already at max 5 names with minimal cash. No materially superior new candidate justifies rotation from weakest hold (XOM). XOM remains top-ranked and held despite minor loss.",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "SELL",
-          "symbol": "XOM",
-          "confidence": 78,
-          "source": "fallback",
-          "provider": null,
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        }
-      ],
-      "tier": "junior_only",
-      "escalate_reason": "",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-07T16:33:15.255581+00:00"
     },
     {
       "type": "fill",
@@ -12393,6 +12399,68 @@
   ],
   "top_candidates": [
     {
+      "symbol": "PANW",
+      "name": "PANW",
+      "price": 333.260009765625,
+      "volume": 5636200.0,
+      "avg_volume": 7176350.0,
+      "percent_change": 0.3976644316774555,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 19,
+      "liquidity_score": 78.56,
+      "rank_score": 95.6,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, beat, catalyst): PANW Stock Gains After Revenue Forecast Beat As AI Usage Drives Cybersecurity Demand - Stocktwits",
+      "top_headlines": [
+        "PANW Stock Gains After Revenue Forecast Beat As AI Usage Drives Cybersecurity Demand - Stocktwits",
+        "PANW Surges 102% in 6 Months: Should You Buy, Sell or Hold the Stock? - TradingView",
+        "Palo Alto Networks Stock Delivers Strong FCF Margins - Is PANW Stock Set to Rise? - Barchart.com"
+      ],
+      "matched_headlines": [
+        {
+          "title": "PANW Stock Gains After Revenue Forecast Beat As AI Usage Drives Cybersecurity Demand - Stocktwits",
+          "keywords": [
+            "ai",
+            "beat",
+            "catalyst",
+            "demand"
+          ]
+        },
+        {
+          "title": "PANW Stock Forecast: Plunges 9% Despite Earnings Beat, Can It Break $400? - TradingKey",
+          "keywords": [
+            "beat",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "PANW Price Targets Raised By Citi, Goldman Sachs On AI-Driven Security Demand - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "demand",
+            "raised"
+          ]
+        },
+        {
+          "title": "Palo Alto Networks (PANW) Is Down 10.3% After AI-Led Growth Accompanies Surprise Quarterly Loss \u2013 What's Changed - simplywall.st",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "growth"
+          ]
+        },
+        {
+          "title": "AI Agents Sound Cybersecurity Alarm: Which Has More Upside Potential Among PANW, CRWD, OKTA, and ZS? - TradingKey",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
       "symbol": "WMT",
       "name": "WMT",
       "price": 107.13999938964844,
@@ -12602,53 +12670,6 @@
           ]
         }
       ]
-    },
-    {
-      "symbol": "UNH",
-      "name": "UNH",
-      "price": 397.1400146484375,
-      "volume": 5565400.0,
-      "avg_volume": 4080340.0,
-      "percent_change": -0.9477696837007635,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 14,
-      "liquidity_score": 76.11,
-      "rank_score": 72.67,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): Did Berkshire Sell UNH Stock Too Early? Retail Traders Think So \u2013 Call Its Exit \u2018Way Overblown\u2019 - Stocktwits",
-      "top_headlines": [
-        "Did Berkshire Sell UNH Stock Too Early? Retail Traders Think So \u2013 Call Its Exit \u2018Way Overblown\u2019 - Stocktwits",
-        "UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
-        "Is UNH Stock Set For Another 12% Rally? Analyst Says Medical Cost Trends, Supportive Data Points Leading Toward Favorable Q2 - Stocktwits"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Did Berkshire Sell UNH Stock Too Early? Retail Traders Think So \u2013 Call Its Exit \u2018Way Overblown\u2019 - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
-          "keywords": [
-            "ai",
-            "beat",
-            "beats",
-            "catalyst",
-            "guidance",
-            "raises"
-          ]
-        },
-        {
-          "title": "UNH Stock Becomes Dow\u2019s Biggest Driver Back To 50,000 \u2014 Will Trump Tailwinds Spark Another Leg Higher? - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        }
-      ]
     }
   ],
   "limits": {
@@ -12697,15 +12718,15 @@
     "decision_mode": "live_dual_llm",
     "last_tier": "senior_escalated",
     "last_stage": "entry",
-    "last_junior_nomination": "WMT",
+    "last_junior_nomination": "PANW",
     "last_escalate_reason": "junior_nomination",
-    "live_share_recent": 82.1
+    "live_share_recent": 82.4
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 336,
     "closed_outcomes": 153,
-    "consensus_events": 501,
+    "consensus_events": 502,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
@@ -15470,7 +15491,7 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-07T18:40:32.940708+00:00",
+        "t": "2026-09-07T18:49:47.676378+00:00",
         "equity": 1001.91,
         "cash": 202.01,
         "event": "mark"
