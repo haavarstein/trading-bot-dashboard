@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T14:00:37.505326+00:00",
+  "generated_at": "2026-09-07T14:05:20.475485+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
@@ -9,14 +9,14 @@
     "total_pnl": 1.91,
     "realized_pnl": -2.04,
     "open_pnl": 3.91,
-    "capital_deployed": 799.27,
-    "cash": 202.64,
+    "capital_deployed": 999.24,
+    "cash": 2.67,
     "closed_trades": 30,
     "win_rate_pct": 30.0,
     "vs_spy_pct": 0.09,
     "spy_return_pct": 0.1,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-07T14:00:40.133559+00:00"
+    "updated_at": "2026-09-07T14:05:23.322599+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
@@ -26,12 +26,12 @@
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 0,
-    "validated_count_today": 0,
+    "consensus_count_today": 1,
+    "validated_count_today": 1,
     "blocked_count_today": 0,
-    "fills_today": 0,
-    "simulated_orders_today": 0,
-    "top_symbol_today": "XOM"
+    "fills_today": 1,
+    "simulated_orders_today": 1,
+    "top_symbol_today": "LRCX"
   },
   "holdings": [
     {
@@ -81,41 +81,47 @@
       "stop": 348.0,
       "target": 375.0,
       "thesis": "JPM screens as the top-ranked liquid catalyst candidate with bullish sentiment and institutional buying headline support while RSI sits neutral at 50. Book has room for one more name under the 5-position cap and cash supports a full ~$200 notional add. Reward-to-risk from 357.78 entry to 348 stop versus 375 target clears the 1.5 threshold cleanly. Confirming the junior escalation for a new entry."
+    },
+    {
+      "symbol": "LRCX",
+      "qty": 0.65,
+      "avg_cost": 307.65,
+      "last": 307.6499938964844,
+      "market_value": 199.97,
+      "open_pnl": 0.0,
+      "open_pnl_pct": 0.0,
+      "stop": 295.0,
+      "target": 330.0,
+      "thesis": "LRCX presents a liquid high-rank catalyst setup with institutional buying headline and neutral RSI supporting a bullish continuation entry. Portfolio has room for one more name under the 5-position limit and cash covers a sub-$200 notional slice. Defined stop below recent support yields reward:risk above 1.5 toward the upside target."
     }
   ],
   "latest_candidate": {
     "symbol": "XOM",
     "name": "XOM",
-    "price": 159.69500732421875,
-    "volume": 7454859.0,
-    "avg_volume": 13108945.9,
-    "percent_change": -1.5504588407328095,
+    "price": 159.47000122070312,
+    "volume": 16192900.0,
+    "avg_volume": 13982750.0,
+    "percent_change": -1.6891716785372786,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 20,
-    "liquidity_score": 81.18,
-    "rank_score": 100.92,
-    "news_hits": 7,
-    "catalyst": "Headline-driven setup (catalyst): Nasdaq Futures Lead US Premarket Rally As Iran Ceasefire Reports Ease Fears Ahead Of Big Tech Earnings: Why NVDA, ORCL, SPCX, XOM, OTLK Are In Focus - Stocktwits",
+    "catalyst_score": 17,
+    "liquidity_score": 81.46,
+    "rank_score": 87.57,
+    "news_hits": 8,
+    "catalyst": "Headline-driven setup (ai, beat, catalyst): ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
     "top_headlines": [
-      "Nasdaq Futures Lead US Premarket Rally As Iran Ceasefire Reports Ease Fears Ahead Of Big Tech Earnings: Why NVDA, ORCL, SPCX, XOM, OTLK Are In Focus - Stocktwits",
-      "NEOS Investment Management LLC Raises Stock Holdings in ExxonMobil Corporation $XOM - MarketBeat",
-      "ExxonMobil (XOM) Stock May Trade At A Discount Despite Iran Oil Shock - simplywall.st"
+      "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
+      "Exxon Mobil Stock (XOM) Opinions on Stock Momentum and Trading Activity - Moomoo",
+      "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits"
     ],
     "matched_headlines": [
       {
-        "title": "Nasdaq Futures Lead US Premarket Rally As Iran Ceasefire Reports Ease Fears Ahead Of Big Tech Earnings: Why NVDA, ORCL, SPCX, XOM, OTLK Are In Focus - Stocktwits",
-        "keywords": [
-          "catalyst"
-        ]
-      },
-      {
-        "title": "NEOS Investment Management LLC Raises Stock Holdings in ExxonMobil Corporation $XOM - MarketBeat",
+        "title": "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
         "keywords": [
           "ai",
           "beat",
           "catalyst",
-          "raises"
+          "raised"
         ]
       },
       {
@@ -127,13 +133,13 @@
         ]
       },
       {
-        "title": "Why Is ExxonMobil (NYSE:XOM) Shares Hovering Near Records As Energy Names Lead The Broader Tape? - Kalkine Media",
+        "title": "70,895 Shares in ExxonMobil Corporation $XOM Purchased by Planning Project LLC - MarketBeat",
         "keywords": [
-          "record"
+          "beat"
         ]
       },
       {
-        "title": "TD Waterhouse Canada Inc. Has $129.40 Million Position in ExxonMobil Corporation $XOM - MarketBeat",
+        "title": "ExxonMobil Corporation $XOM Shares Sold by HighTower Advisors LLC - MarketBeat",
         "keywords": [
           "beat"
         ]
@@ -142,57 +148,58 @@
   },
   "latest_decision": {
     "model": "grok-4.5",
-    "action": "HOLD",
-    "symbol": "CASH",
-    "confidence": 68,
+    "action": "BUY",
+    "symbol": "LRCX",
+    "confidence": 78,
     "cache_stats": null,
-    "entry_price": 0.0,
-    "stop_loss": 0.0,
-    "take_profit": 0.0,
-    "qty": 0.0,
-    "thesis": "No clean new edge within the ~$200 notional cap. Top-ranked names XOM and BAC are already held; remaining candidates either carry negative headline risk (CRWD drop, WMT insider/family selling) or are too expensive/ill-fitting versus reward:risk. Book is healthy at 4 names with stops intact, so stand aside in cash.",
-    "reason_code": "hold",
+    "entry_price": 307.65,
+    "stop_loss": 295.0,
+    "take_profit": 330.0,
+    "qty": 0.65,
+    "thesis": "LRCX presents a liquid high-rank catalyst setup with institutional buying headline and neutral RSI supporting a bullish continuation entry. Portfolio has room for one more name under the 5-position limit and cash covers a sub-$200 notional slice. Defined stop below recent support yields reward:risk above 1.5 toward the upside target.",
+    "reason_code": "new_entry",
     "reasoning": {
-      "headline": "Hold $CASH",
-      "narrative": "No clean new edge within the ~$200 notional cap. Top-ranked names XOM and BAC are already held; remaining candidates either carry negative headline risk (CRWD drop, WMT insider/family selling) or are too expensive/ill-fitting versus reward:risk. Book is healthy at 4 names with stops intact, so stand aside in cash.",
+      "headline": "Bought $LRCX",
+      "narrative": "LRCX presents a liquid high-rank catalyst setup with institutional buying headline and neutral RSI supporting a bullish continuation entry. Portfolio has room for one more name under the 5-position limit and cash covers a sub-$200 notional slice. Defined stop below recent support yields reward:risk above 1.5 toward the upside target.",
       "bullets": [
-        "Top catalysts already owned (XOM/BAC)",
-        "CRWD/WMT headlines skewed negative",
-        "CVX/AMZN/MSFT size or edge weak vs $200 cap",
-        "Hold cash; no forced rotation"
+        "rank_score 87+ with catalyst buy headline",
+        "RSI 50 neutral-bullish room to run",
+        "notional capped near $200 for size control",
+        "R:R >1.5 on 295 stop / 330 target"
       ],
       "risk_map": {
-        "stop": 0.0,
-        "target": 0.0,
+        "stop": 295.0,
+        "target": 330.0,
         "horizon_days": 5,
-        "rr": 0.0,
-        "confidence_10": 7,
-        "confidence": 68
+        "rr": 1.77,
+        "confidence_10": 8,
+        "confidence": 78
       },
-      "thesis": "No clean new edge within the ~$200 notional cap. Top-ranked names XOM and BAC are already held; remaining candidates either carry negative headline risk (CRWD drop, WMT insider/family selling) or are too expensive/ill-fitting versus reward:risk. Book is healthy at 4 names with stops intact, so stand aside in cash."
+      "thesis": "LRCX presents a liquid high-rank catalyst setup with institutional buying headline and neutral RSI supporting a bullish continuation entry. Portfolio has room for one more name under the 5-position limit and cash covers a sub-$200 notional slice. Defined stop below recent support yields reward:risk above 1.5 toward the upside target."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Top catalysts already owned (XOM/BAC)",
-      "CRWD/WMT headlines skewed negative",
-      "CVX/AMZN/MSFT size or edge weak vs $200 cap",
-      "Hold cash; no forced rotation"
+      "rank_score 87+ with catalyst buy headline",
+      "RSI 50 neutral-bullish room to run",
+      "notional capped near $200 for size control",
+      "R:R >1.5 on 295 stop / 330 target"
     ],
-    "timestamp": "2026-09-04T19:47:46.268349+00:00"
+    "timestamp": "2026-09-07T14:05:06.082414+00:00"
   },
-  "stance": "Holding BAC, HOOD, XOM, JPM. No new trade right now.",
+  "stance": "Buying pressure on LRCX. LRCX presents a liquid high-rank catalyst setup with institutional buying headline and neutral RSI supporting a bullish continuation entry. Portfolio has room for one more name under the 5-position limit and cash covers a sub-$200 notional slice. Defined stop below recent support yields reward:risk above 1.5 toward the upside target.",
   "thinking": {
-    "badge": "Holding what it owns",
-    "headline": "Holding BAC, HOOD, XOM, JPM. No new trade right now.",
-    "plain_english": "Right now Hermes is holding BAC, HOOD, XOM, JPM and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
+    "badge": "Looking to buy LRCX",
+    "headline": "Buying pressure on LRCX.",
+    "plain_english": "Right now Hermes wants exposure to LRCX. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
     "triggers": [
       "It owns BAC, bought near $62.20. Simple plan: sell if it falls to about $60.00, or take profit near $65.50.",
       "It owns HOOD, bought near $120.77. Simple plan: sell if it falls to about $115.00, or take profit near $129.50.",
       "It owns XOM, bought near $159.72. Simple plan: sell if it falls to about $154.50, or take profit near $168.50.",
       "It owns JPM, bought near $357.78. Simple plan: sell if it falls to about $348.00, or take profit near $375.00.",
-      "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
+      "It owns LRCX, bought near $307.65. Simple plan: sell if it falls to about $295.00, or take profit near $330.00.",
+      "Book is at max open names (5). A new buy needs a free slot, enough cash, or a gated rotation.",
       "If nothing looks clean, do nothing. Sitting in cash or holdings is allowed."
     ],
     "owned": [
@@ -243,79 +250,190 @@
         "open_pnl_pct": 0.24,
         "line": "Bought near $357.78 \u00b7 Sell safety line $348.00 \u00b7 Profit target $375.00",
         "plan": "stop 348.0 or target 375.0"
+      },
+      {
+        "symbol": "LRCX",
+        "qty": 0.65,
+        "avg_cost": 307.65,
+        "stop": 295.0,
+        "target": 330.0,
+        "last": 307.6499938964844,
+        "open_pnl": 0.0,
+        "open_pnl_pct": 0.0,
+        "line": "Bought near $307.65 \u00b7 Sell safety line $295.00 \u00b7 Profit target $330.00",
+        "plan": "stop 295.0 or target 330.0"
       }
     ],
-    "last_checked": "2026-09-07T14:00:37.505326+00:00",
+    "last_checked": "2026-09-07T14:05:20.475485+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "HOLD",
+    "action": "BUY",
     "symbols_held": [
       "BAC",
       "HOOD",
       "XOM",
-      "JPM"
+      "JPM",
+      "LRCX"
     ],
     "model_chips": [
       {
         "prefix": "J",
         "model": "grok-4.3",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 65,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "LRCX",
+        "confidence": 82,
+        "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "claude-haiku-4-5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 62,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "LRCX",
+        "confidence": 72,
+        "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "deepseek-v4-flash",
-        "action": "HOLD",
-        "symbol": "BAC",
-        "confidence": 80,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "LRCX",
+        "confidence": 72,
+        "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "BUY",
-        "symbol": "XOM",
-        "confidence": 75,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 60,
+        "tone": "hold"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 68,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "LRCX",
+        "confidence": 78,
+        "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "claude-sonnet-5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 65,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "LRCX",
+        "confidence": 72,
+        "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "claude-opus-5",
-        "action": "HOLD",
-        "symbol": "BAC",
-        "confidence": 80,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "LRCX",
+        "confidence": 90,
+        "tone": "buy"
       }
     ]
   },
-  "activity": [],
+  "activity": [
+    {
+      "type": "fill",
+      "symbol": "LRCX",
+      "status": "filled_paper",
+      "headline": "BUY LRCX @ $307.65",
+      "detail": "LRCX presents a liquid high-rank catalyst setup with institutional buying headline and neutral RSI supporting a bullish continuation entry. Portfolio has room for one more name under the 5-position limit and cash covers a sub-$200 notional slice. Defined stop below recent support yields reward:risk above 1.5 toward the upside target.",
+      "timestamp": "2026-09-07T14:05:06.083413+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "LRCX",
+      "status": "validated",
+      "headline": "BUY LRCX \u2014 validated",
+      "detail": "LRCX presents a liquid high-rank catalyst setup with institutional buying headline and neutral RSI supporting a bullish continuation entry. Portfolio has room for one more name under the 5-position limit and cash covers a sub-$200 notional slice. Defined stop below recent support yields reward:risk above 1.5 toward the upside target.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "LRCX",
+          "confidence": 82,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "LRCX",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "LRCX",
+          "confidence": 72,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "LRCX",
+          "confidence": 78,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "LRCX",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "BUY",
+          "symbol": "LRCX",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "LRCX",
+      "timestamp": "2026-09-07T14:05:06.082414+00:00"
+    }
+  ],
   "recent_trades": [
+    {
+      "timestamp": "2026-09-07T14:05:06.083413+00:00",
+      "action": "BUY",
+      "symbol": "LRCX",
+      "qty": 0.65,
+      "price": 307.65,
+      "notional": 199.97,
+      "realized_pnl": null,
+      "reason": null,
+      "thesis": "LRCX presents a liquid high-rank catalyst setup with institutional buying headline and neutral RSI supporting a bullish continuation entry. Portfolio has room for one more name under the 5-position limit and cash covers a sub-$200 notional slice. Defined stop below recent support yields reward:risk above 1.5 toward the upside target.",
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-09-04T18:18:13.965932+00:00",
       "action": "SELL",
@@ -423,21 +541,37 @@
       "reason": "stop_loss",
       "thesis": "HERMES AUTO-TRADE: Exiting full AMZN position on stop-loss. Price $254.93 tagged invalidation at $255.00. Realized path $-7.84.",
       "status": "FILLED_PAPER"
-    },
-    {
-      "timestamp": "2026-09-01T18:20:37.716639+00:00",
-      "action": "SELL",
-      "symbol": "AMD",
-      "qty": 0.42,
-      "price": 454.79998779296875,
-      "notional": 191.02,
-      "realized_pnl": -7.99,
-      "reason": "stop_loss",
-      "thesis": "HERMES AUTO-TRADE: Exiting full AMD position on stop-loss. Price $454.80 tagged invalidation at $458.00. Realized path $-7.99.",
-      "status": "FILLED_PAPER"
     }
   ],
   "trade_reasoning": [
+    {
+      "timestamp": "2026-09-07T14:05:06.083413+00:00",
+      "action": "BUY",
+      "symbol": "LRCX",
+      "qty": 0.65,
+      "price": 307.65,
+      "notional": 199.97,
+      "headline": "Bought $LRCX",
+      "side_label": "buy",
+      "narrative": "LRCX presents a liquid high-rank catalyst setup with institutional buying headline and neutral RSI supporting a bullish continuation entry. Portfolio has room for one more name under the 5-position limit and cash covers a sub-$200 notional slice. Defined stop below recent support yields reward:risk above 1.5 toward the upside target.",
+      "bullets": [
+        "rank_score 87+ with catalyst buy headline",
+        "RSI 50 neutral-bullish room to run",
+        "notional capped near $200 for size control",
+        "R:R >1.5 on 295 stop / 330 target"
+      ],
+      "risk_map": {
+        "stop": 295.0,
+        "target": 330.0,
+        "horizon_days": 5,
+        "rr": 1.77,
+        "confidence_10": 8,
+        "confidence": 78
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-09-04T18:18:13.965932+00:00",
       "action": "SELL",
@@ -11692,36 +11826,30 @@
     {
       "symbol": "XOM",
       "name": "XOM",
-      "price": 159.69500732421875,
-      "volume": 7454859.0,
-      "avg_volume": 13108945.9,
-      "percent_change": -1.5504588407328095,
+      "price": 159.47000122070312,
+      "volume": 16192900.0,
+      "avg_volume": 13982750.0,
+      "percent_change": -1.6891716785372786,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 20,
-      "liquidity_score": 81.18,
-      "rank_score": 100.92,
-      "news_hits": 7,
-      "catalyst": "Headline-driven setup (catalyst): Nasdaq Futures Lead US Premarket Rally As Iran Ceasefire Reports Ease Fears Ahead Of Big Tech Earnings: Why NVDA, ORCL, SPCX, XOM, OTLK Are In Focus - Stocktwits",
+      "catalyst_score": 17,
+      "liquidity_score": 81.46,
+      "rank_score": 87.57,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, beat, catalyst): ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
       "top_headlines": [
-        "Nasdaq Futures Lead US Premarket Rally As Iran Ceasefire Reports Ease Fears Ahead Of Big Tech Earnings: Why NVDA, ORCL, SPCX, XOM, OTLK Are In Focus - Stocktwits",
-        "NEOS Investment Management LLC Raises Stock Holdings in ExxonMobil Corporation $XOM - MarketBeat",
-        "ExxonMobil (XOM) Stock May Trade At A Discount Despite Iran Oil Shock - simplywall.st"
+        "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
+        "Exxon Mobil Stock (XOM) Opinions on Stock Momentum and Trading Activity - Moomoo",
+        "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits"
       ],
       "matched_headlines": [
         {
-          "title": "Nasdaq Futures Lead US Premarket Rally As Iran Ceasefire Reports Ease Fears Ahead Of Big Tech Earnings: Why NVDA, ORCL, SPCX, XOM, OTLK Are In Focus - Stocktwits",
-          "keywords": [
-            "catalyst"
-          ]
-        },
-        {
-          "title": "NEOS Investment Management LLC Raises Stock Holdings in ExxonMobil Corporation $XOM - MarketBeat",
+          "title": "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
           "keywords": [
             "ai",
             "beat",
             "catalyst",
-            "raises"
+            "raised"
           ]
         },
         {
@@ -11733,13 +11861,13 @@
           ]
         },
         {
-          "title": "Why Is ExxonMobil (NYSE:XOM) Shares Hovering Near Records As Energy Names Lead The Broader Tape? - Kalkine Media",
+          "title": "70,895 Shares in ExxonMobil Corporation $XOM Purchased by Planning Project LLC - MarketBeat",
           "keywords": [
-            "record"
+            "beat"
           ]
         },
         {
-          "title": "TD Waterhouse Canada Inc. Has $129.40 Million Position in ExxonMobil Corporation $XOM - MarketBeat",
+          "title": "ExxonMobil Corporation $XOM Shares Sold by HighTower Advisors LLC - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -11747,116 +11875,54 @@
       ]
     },
     {
-      "symbol": "BAC",
-      "name": "BAC",
-      "price": 62.650001525878906,
-      "volume": 19159068.0,
-      "avg_volume": 30227436.8,
-      "percent_change": -0.6186538451530653,
+      "symbol": "LRCX",
+      "name": "LRCX",
+      "price": 307.6499938964844,
+      "volume": 8355500.0,
+      "avg_volume": 6795590.0,
+      "percent_change": 5.121981154514606,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 14,
-      "liquidity_score": 84.8,
-      "rank_score": 76.71,
+      "catalyst_score": 16,
+      "liquidity_score": 78.32,
+      "rank_score": 87.35,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): Bank of America (BAC) Stock Still Looks Like A Bargain After 141% Returns - simplywall.st",
+      "catalyst": "Headline-driven setup (beat): Vancity Investment Management Ltd Purchases Shares of 7,209 Lam Research Corporation $LRCX - MarketBeat",
       "top_headlines": [
-        "Bank of America (BAC) Stock Still Looks Like A Bargain After 141% Returns - simplywall.st",
-        "Bank of America (BAC) Stock May Be 31% Undervalued Despite Stablecoin Plans - finance.yahoo.com",
-        "Analysts Offer Insights on Financial Companies: Bank of America (BAC) and CNO Financial (CNO) - The Globe and Mail"
+        "Lam Research Corp (LRCX) Stock Price, Quote, News & History - Benzinga",
+        "Vancity Investment Management Ltd Purchases Shares of 7,209 Lam Research Corporation $LRCX - MarketBeat",
+        "Amundi Sells 721,326 Shares of Lam Research Corporation $LRCX - MarketBeat"
       ],
       "matched_headlines": [
         {
-          "title": "Bank of America (BAC) Stock Still Looks Like A Bargain After 141% Returns - simplywall.st",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Analysts Offer Insights on Financial Companies: Bank of America (BAC) and CNO Financial (CNO) - The Globe and Mail",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Syon Capital LLC Increases Stock Holdings in Bank of America Corporation $BAC - MarketBeat",
+          "title": "Vancity Investment Management Ltd Purchases Shares of 7,209 Lam Research Corporation $LRCX - MarketBeat",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "Kinh Bac raises $27M in bonds to restructure debt as chairman-linked shareholder buys in - Dealroom",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "deal",
-            "raises"
-          ]
-        },
-        {
-          "title": "Tudor Financial Inc. Boosts Stake in Bank of America Corporation $BAC - MarketBeat",
+          "title": "Amundi Sells 721,326 Shares of Lam Research Corporation $LRCX - MarketBeat",
           "keywords": [
             "beat"
           ]
-        }
-      ]
-    },
-    {
-      "symbol": "CRWD",
-      "name": "CRWD",
-      "price": 212.75999450683594,
-      "volume": 5519381.0,
-      "avg_volume": 12892318.1,
-      "percent_change": -1.0280535429677191,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 13,
-      "liquidity_score": 81.1,
-      "rank_score": 72.49,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat, drop): CrowdStrike's Q1 Beat Wasn't Big Enough For Some Bulls \u2014 CRWD Stock Heads For Worst Drop In 22 Months - Stocktwits",
-      "top_headlines": [
-        "CRWD Stock Quote Price and Forecast - CNN",
-        "CrowdStrike's Q1 Beat Wasn't Big Enough For Some Bulls \u2014 CRWD Stock Heads For Worst Drop In 22 Months - Stocktwits",
-        "New Buy Rating for CrowdStrike Holdings (CRWD), the Technology Giant - The Globe and Mail"
-      ],
-      "matched_headlines": [
-        {
-          "title": "CrowdStrike's Q1 Beat Wasn't Big Enough For Some Bulls \u2014 CRWD Stock Heads For Worst Drop In 22 Months - Stocktwits",
-          "keywords": [
-            "beat",
-            "drop"
-          ]
         },
         {
-          "title": "New Buy Rating for CrowdStrike Holdings (CRWD), the Technology Giant - The Globe and Mail",
+          "title": "A Look at Lam Research Corp (LRCX) After 5.1% Gain -- GF Value $151.28 vs Price $307.65 - GuruFocus",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "CRWD Maintained by Roth Capital -- Price Target Raised to $220 - GuruFocus",
+          "title": "Lam Research Corporation $LRCX Shares Sold by Greenland Capital Management LP - MarketBeat",
           "keywords": [
-            "ai",
-            "catalyst",
-            "raised"
+            "beat"
           ]
         },
         {
-          "title": "CRWD Stock Jumps After Q2 Beat As Analysts See Cybersecurity Demand Inflection \u2014 But KeyBanc Pushes Back - Stocktwits",
+          "title": "California State Teachers Retirement System Grows Holdings in Lam Research Corporation $LRCX - MarketBeat",
           "keywords": [
-            "beat",
-            "demand"
-          ]
-        },
-        {
-          "title": "CrowdStrike Holdings (CRWD): New Buy Recommendation for This Technology Giant - The Globe and Mail",
-          "keywords": [
-            "ai",
-            "catalyst"
+            "beat"
           ]
         }
       ]
@@ -11864,23 +11930,43 @@
     {
       "symbol": "WMT",
       "name": "WMT",
-      "price": 107.18000030517578,
-      "volume": 12160363.0,
-      "avg_volume": 25944226.3,
-      "percent_change": -1.1436984732625677,
+      "price": 107.13999938964844,
+      "volume": 20527200.0,
+      "avg_volume": 26780910.0,
+      "percent_change": -1.1805928803857004,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 12,
-      "liquidity_score": 84.14,
-      "rank_score": 69.04,
+      "catalyst_score": 16,
+      "liquidity_score": 84.28,
+      "rank_score": 85.09,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst, record): Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
+      "catalyst": "Headline-driven setup (ai, catalyst): Walmart Earnings Ahead: Can WMT Stock Sustain Momentum Under New CEO? - Stocktwits",
       "top_headlines": [
-        "Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
-        "Price-Driven Insight from (WMT) for Rule-Based Strategy - Stock Traders Daily",
-        "Large-format Grocery & General Merchandise Retailer Stocks Q2 Results: Benchmarking Walmart (NASDAQ:WMT) - finance.yahoo.com"
+        "Walmart Earnings Ahead: Can WMT Stock Sustain Momentum Under New CEO? - Stocktwits",
+        "14,114 Shares in Walmart Inc. $WMT Bought by Planning Project LLC - MarketBeat",
+        "Walmart (WMT) Stock Seems Fairly Priced After Its $1.3B Automation Push - simplywall.st"
       ],
       "matched_headlines": [
+        {
+          "title": "Walmart Earnings Ahead: Can WMT Stock Sustain Momentum Under New CEO? - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "14,114 Shares in Walmart Inc. $WMT Bought by Planning Project LLC - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Walmart (WMT) Stock Seems Fairly Priced After Its $1.3B Automation Push - simplywall.st",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
         {
           "title": "Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
           "keywords": [
@@ -11890,27 +11976,7 @@
           ]
         },
         {
-          "title": "Price-Driven Insight from (WMT) for Rule-Based Strategy - Stock Traders Daily",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Large-format Grocery & General Merchandise Retailer Stocks Q2 Results: Benchmarking Walmart (NASDAQ:WMT) - finance.yahoo.com",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Why Is Walmart (NYSE:WMT) Stock Steadying After Sharp Slide As eCommerce And Delivery Expansion Draw Attention? - Kalkine Media",
-          "keywords": [
-            "expansion"
-          ]
-        },
-        {
-          "title": "Walmart Inc. $WMT Shares Acquired by Continuum Advisory LLC - MarketBeat",
+          "title": "VIRGINIA RETIREMENT SYSTEMS ET Al Acquires Shares of 700,251 Walmart Inc. $WMT - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -11918,61 +11984,101 @@
       ]
     },
     {
-      "symbol": "CVX",
-      "name": "CVX",
-      "price": 208.5749969482422,
-      "volume": 3579015.0,
-      "avg_volume": 7276851.5,
-      "percent_change": -1.2989827185482807,
+      "symbol": "PANW",
+      "name": "PANW",
+      "price": 333.260009765625,
+      "volume": 5636200.0,
+      "avg_volume": 7176350.0,
+      "percent_change": 0.3976644316774555,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 12,
-      "liquidity_score": 78.62,
-      "rank_score": 68.33,
+      "catalyst_score": 14,
+      "liquidity_score": 78.56,
+      "rank_score": 75.6,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): Chevron Corp. (CVX): Here\u2019s Why Gabelli Remains Bullish on the Energy Stock - finance.yahoo.com",
+      "catalyst": "Headline-driven setup (ai, beat, catalyst): PANW Stock Gains After Revenue Forecast Beat As AI Usage Drives Cybersecurity Demand - Stocktwits",
       "top_headlines": [
-        "Chevron Corp. (CVX): Here\u2019s Why Gabelli Remains Bullish on the Energy Stock - finance.yahoo.com",
-        "Wells Fargo Sticks to Their Buy Rating for Chevron (CVX) - The Globe and Mail",
-        "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits"
+        "PANW Surges 102% in 6 Months: Should You Buy, Sell or Hold the Stock? - Yahoo Finance",
+        "Palo Alto Networks Stock Delivers Strong FCF Margins - Is PANW Stock Set to Rise? - Barchart.com",
+        "PANW Stock Gains After Revenue Forecast Beat As AI Usage Drives Cybersecurity Demand - Stocktwits"
       ],
       "matched_headlines": [
         {
-          "title": "Chevron Corp. (CVX): Here\u2019s Why Gabelli Remains Bullish on the Energy Stock - finance.yahoo.com",
+          "title": "PANW Stock Gains After Revenue Forecast Beat As AI Usage Drives Cybersecurity Demand - Stocktwits",
           "keywords": [
             "ai",
-            "catalyst"
+            "beat",
+            "catalyst",
+            "demand"
           ]
         },
         {
-          "title": "Wells Fargo Sticks to Their Buy Rating for Chevron (CVX) - The Globe and Mail",
+          "title": "PANW Stock Forecast: Plunges 9% Despite Earnings Beat, Can It Break $400? - TradingKey",
           "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits",
-          "keywords": [
-            "ai",
             "beat",
             "catalyst"
           ]
         },
         {
-          "title": "Chevron Stock Is A Bargain Amid Venezuela Deal (NYSE:CVX) - Seeking Alpha",
+          "title": "Palo Alto Networks (PANW) Is Down 10.3% After AI-Led Growth Accompanies Surprise Quarterly Loss \u2013 What's Changed - simplywall.st",
           "keywords": [
             "ai",
             "catalyst",
-            "deal"
+            "growth"
           ]
         },
         {
-          "title": "CVX Stock Extends Gains Overnight: Chevron Reportedly Nears Deal For Giant Venezuelan Oil Fields - TradingView",
+          "title": "Palo Alto Networks (PANW) Sinks After Q4 Loss, Is The Stock A Bargain? - Yahoo Finance",
           "keywords": [
             "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "AI Agents Sound Cybersecurity Alarm: Which Has More Upside Potential Among PANW, CRWD, OKTA, and ZS? - TradingKey",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "UNH",
+      "name": "UNH",
+      "price": 397.1400146484375,
+      "volume": 5565400.0,
+      "avg_volume": 4080340.0,
+      "percent_change": -0.9477696837007635,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 13,
+      "liquidity_score": 76.11,
+      "rank_score": 67.17,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, beat, beats): UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
+      "top_headlines": [
+        "Is UNH Stock Set For Another 12% Rally? Analyst Says Medical Cost Trends, Supportive Data Points Leading Toward Favorable Q2 - Stocktwits",
+        "UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
+        "UnitedHealth Group Inc (UNH) Stock Price, Quote, News & History - Benzinga"
+      ],
+      "matched_headlines": [
+        {
+          "title": "UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
+          "keywords": [
+            "ai",
+            "beat",
+            "beats",
             "catalyst",
-            "deal"
+            "guidance",
+            "raises"
+          ]
+        },
+        {
+          "title": "UNH Stock Becomes Dow\u2019s Biggest Driver Back To 50,000 \u2014 Will Trump Tailwinds Spark Another Leg Higher? - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
           ]
         }
       ]
@@ -12004,10 +12110,10 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 3,
-      "BUY": 1,
+      "HOLD": 1,
+      "BUY": 3,
       "SELL": 0,
-      "live": 3,
+      "live": 4,
       "fallback": 0
     },
     "junior_model_3_enabled": true,
@@ -12024,15 +12130,15 @@
     "decision_mode": "live_dual_llm",
     "last_tier": "senior_escalated",
     "last_stage": "entry",
-    "last_junior_nomination": null,
-    "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 87.9
+    "last_junior_nomination": "LRCX",
+    "last_escalate_reason": "junior_nomination",
+    "live_share_recent": 85.7
   },
   "learning": {
     "candidate_signals_logged": 8,
-    "fills_logged": 334,
+    "fills_logged": 335,
     "closed_outcomes": 152,
-    "consensus_events": 485,
+    "consensus_events": 486,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
@@ -14707,9 +14813,9 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-07T14:00:40.133559+00:00",
+        "t": "2026-09-07T14:05:23.322599+00:00",
         "equity": 1001.91,
-        "cash": 202.64,
+        "cash": 2.67,
         "event": "mark"
       }
     ],
