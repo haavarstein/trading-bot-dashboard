@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T14:30:39.237239+00:00",
+  "generated_at": "2026-09-07T14:34:24.998965+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
@@ -16,7 +16,7 @@
     "vs_spy_pct": 0.09,
     "spy_return_pct": 0.1,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-07T14:30:41.917613+00:00"
+    "updated_at": "2026-09-07T14:34:27.687952+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
@@ -26,11 +26,11 @@
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 1,
-    "validated_count_today": 1,
+    "consensus_count_today": 2,
+    "validated_count_today": 2,
     "blocked_count_today": 0,
     "fills_today": 1,
-    "simulated_orders_today": 1,
+    "simulated_orders_today": 2,
     "top_symbol_today": "LRCX"
   },
   "holdings": [
@@ -108,15 +108,15 @@
     "liquidity_score": 81.46,
     "rank_score": 87.57,
     "news_hits": 8,
-    "catalyst": "Headline-driven setup (ai, beat, catalyst): ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
+    "catalyst": "Headline-driven setup (ai, beat, catalyst): ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - marketbeat.com",
     "top_headlines": [
-      "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
+      "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - marketbeat.com",
       "Exxon Mobil Stock (XOM) Opinions on Stock Momentum and Trading Activity - Moomoo",
       "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits"
     ],
     "matched_headlines": [
       {
-        "title": "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
+        "title": "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - marketbeat.com",
         "keywords": [
           "ai",
           "beat",
@@ -133,13 +133,13 @@
         ]
       },
       {
-        "title": "70,895 Shares in ExxonMobil Corporation $XOM Purchased by Planning Project LLC - MarketBeat",
+        "title": "70,895 Shares in ExxonMobil Corporation $XOM Purchased by Planning Project LLC - marketbeat.com",
         "keywords": [
           "beat"
         ]
       },
       {
-        "title": "ExxonMobil Corporation $XOM Shares Sold by HighTower Advisors LLC - MarketBeat",
+        "title": "ExxonMobil Corporation $XOM Shares Sold by HighTower Advisors LLC - marketbeat.com",
         "keywords": [
           "beat"
         ]
@@ -150,41 +150,43 @@
     "model": "grok-4.5",
     "action": "HOLD",
     "symbol": "CASH",
-    "confidence": 68,
+    "confidence": 62,
     "cache_stats": null,
     "entry_price": 0.0,
     "stop_loss": 0.0,
     "take_profit": 0.0,
     "qty": 0.0,
-    "thesis": "Book is full at 5 names with only $2.67 cash, so any new entry requires a rotation. Top-ranked catalysts are largely names already held (XOM, LRCX, BAC), and WMT/PANW/UNH are not clearly superior enough on rank/catalyst vs the weakest hold to force a sell. No stop or target is hit; stand aside until cash frees or a cleaner dislocation appears.",
+    "thesis": "Book is full at 5 names with only $2.67 cash, so no new BUY is possible without a rotation. Top-ranked catalysts are already held (XOM, HOOD); WMT/PANW/UNH are interesting but not materially stronger than the current book to force a sale. No position has hit stop or target, so the cleanest desk action is to stay flat and wait.",
     "reason_code": "hold",
     "reasoning": {
       "headline": "Hold $CASH",
-      "narrative": "Book is full at 5 names with only $2.67 cash, so any new entry requires a rotation. Top-ranked catalysts are largely names already held (XOM, LRCX, BAC), and WMT/PANW/UNH are not clearly superior enough on rank/catalyst vs the weakest hold to force a sell. No stop or target is hit; stand aside until cash frees or a cleaner dislocation appears.",
+      "narrative": "Book is full at 5 names with only $2.67 cash, so no new BUY is possible without a rotation. Top-ranked catalysts are already held (XOM, HOOD); WMT/PANW/UNH are interesting but not materially stronger than the current book to force a sale. No position has hit stop or target, so the cleanest desk action is to stay flat and wait.",
       "bullets": [
-        "Max positions reached; cash too low for ~$200 add",
-        "XOM/LRCX/BAC already capture top of ranked list",
-        "No held name at stop or target; rotation edge not material"
+        "Max positions reached; cash insufficient for ~$200 add",
+        "XOM/HOOD still top rank/catalyst scores among names we own",
+        "No stop_loss or take_profit triggered on open book",
+        "New names (WMT etc.) lack clear edge vs weakest hold to justify rotation"
       ],
       "risk_map": {
         "stop": 0.0,
         "target": 0.0,
         "horizon_days": 5,
         "rr": 0.0,
-        "confidence_10": 7,
-        "confidence": 68
+        "confidence_10": 6,
+        "confidence": 62
       },
-      "thesis": "Book is full at 5 names with only $2.67 cash, so any new entry requires a rotation. Top-ranked catalysts are largely names already held (XOM, LRCX, BAC), and WMT/PANW/UNH are not clearly superior enough on rank/catalyst vs the weakest hold to force a sell. No stop or target is hit; stand aside until cash frees or a cleaner dislocation appears."
+      "thesis": "Book is full at 5 names with only $2.67 cash, so no new BUY is possible without a rotation. Top-ranked catalysts are already held (XOM, HOOD); WMT/PANW/UNH are interesting but not materially stronger than the current book to force a sale. No position has hit stop or target, so the cleanest desk action is to stay flat and wait."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Max positions reached; cash too low for ~$200 add",
-      "XOM/LRCX/BAC already capture top of ranked list",
-      "No held name at stop or target; rotation edge not material"
+      "Max positions reached; cash insufficient for ~$200 add",
+      "XOM/HOOD still top rank/catalyst scores among names we own",
+      "No stop_loss or take_profit triggered on open book",
+      "New names (WMT etc.) lack clear edge vs weakest hold to justify rotation"
     ],
-    "timestamp": "2026-09-07T14:18:41.344057+00:00"
+    "timestamp": "2026-09-07T14:34:11.204225+00:00"
   },
   "stance": "Holding BAC, HOOD, XOM, JPM, LRCX. No new trade right now.",
   "thinking": {
@@ -262,7 +264,7 @@
         "plan": "stop 295.0 or target 330.0"
       }
     ],
-    "last_checked": "2026-09-07T14:30:39.237239+00:00",
+    "last_checked": "2026-09-07T14:34:24.998965+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "HOLD",
@@ -279,7 +281,7 @@
         "model": "grok-4.3",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 60,
+        "confidence": 65,
         "tone": "hold"
       },
       {
@@ -303,7 +305,7 @@
         "model": "grok-build-0.1",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 65,
+        "confidence": 60,
         "tone": "hold"
       },
       {
@@ -311,16 +313,16 @@
         "model": "grok-4.5",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 68,
+        "confidence": 62,
         "tone": "hold"
       },
       {
         "prefix": "S",
         "model": "claude-sonnet-5",
-        "action": "SELL",
-        "symbol": "XOM",
-        "confidence": 72,
-        "tone": "sell"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 65,
+        "tone": "hold"
       },
       {
         "prefix": "S",
@@ -333,6 +335,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 no new trade",
+      "detail": "Book is full at 5 names with only $2.67 cash, so no new BUY is possible without a rotation. Top-ranked catalysts are already held (XOM, HOOD); WMT/PANW/UNH are interesting but not materially stronger than the current book to force a sale. No position has hit stop or target, so the cleanest desk action is to stay flat and wait.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "WMT",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "SELL",
+          "symbol": "XOM",
+          "confidence": 78,
+          "source": "fallback",
+          "provider": null,
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "SELL",
+          "symbol": "XOM",
+          "confidence": 78,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-07T14:34:11.204225+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -11911,15 +11990,15 @@
       "liquidity_score": 81.46,
       "rank_score": 87.57,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, beat, catalyst): ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
+      "catalyst": "Headline-driven setup (ai, beat, catalyst): ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - marketbeat.com",
       "top_headlines": [
-        "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
+        "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - marketbeat.com",
         "Exxon Mobil Stock (XOM) Opinions on Stock Momentum and Trading Activity - Moomoo",
         "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits"
       ],
       "matched_headlines": [
         {
-          "title": "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
+          "title": "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - marketbeat.com",
           "keywords": [
             "ai",
             "beat",
@@ -11936,15 +12015,70 @@
           ]
         },
         {
-          "title": "70,895 Shares in ExxonMobil Corporation $XOM Purchased by Planning Project LLC - MarketBeat",
+          "title": "70,895 Shares in ExxonMobil Corporation $XOM Purchased by Planning Project LLC - marketbeat.com",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "ExxonMobil Corporation $XOM Shares Sold by HighTower Advisors LLC - MarketBeat",
+          "title": "ExxonMobil Corporation $XOM Shares Sold by HighTower Advisors LLC - marketbeat.com",
           "keywords": [
             "beat"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "HOOD",
+      "name": "HOOD",
+      "price": 122.11000061035156,
+      "volume": 23675800.0,
+      "avg_volume": 22143460.0,
+      "percent_change": -2.0926880891645716,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 15,
+      "liquidity_score": 83.45,
+      "rank_score": 81.69,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst): HOOD Stock Slides Overnight: Robinhood\u2019s $2B Capital Raise Tests Bulls As Volumes Boom, Agentic Trading Gains Traction - Stocktwits",
+      "top_headlines": [
+        "HOOD Stock Slides Overnight: Robinhood\u2019s $2B Capital Raise Tests Bulls As Volumes Boom, Agentic Trading Gains Traction - Stocktwits",
+        "Here's How Much $1000 Invested In Robinhood Markets 5 Years Ago Would Be Worth Today - Benzinga",
+        "TD Waterhouse Canada Inc. Grows Stake in Robinhood Markets, Inc. $HOOD - marketbeat.com"
+      ],
+      "matched_headlines": [
+        {
+          "title": "HOOD Stock Slides Overnight: Robinhood\u2019s $2B Capital Raise Tests Bulls As Volumes Boom, Agentic Trading Gains Traction - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "TD Waterhouse Canada Inc. Grows Stake in Robinhood Markets, Inc. $HOOD - marketbeat.com",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Robinhood (HOOD) Jumps 9% on Record Trading Volume \u2014 Can the Rally Continue Above $105? - TradingKey",
+          "keywords": [
+            "record"
+          ]
+        },
+        {
+          "title": "HOOD Stock Rallies On Wall Street Optimism: Retail Sentiment Improves As Investors Eye A Bigger Pop - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "AMC CEO Slams Robinhood Over 'Inexcusable, Vile' Stock Token Trading - Investor's Business Daily",
+          "keywords": [
+            "ai",
+            "catalyst"
           ]
         }
       ]
@@ -11958,14 +12092,14 @@
       "percent_change": -1.1805928803857004,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 16,
+      "catalyst_score": 15,
       "liquidity_score": 84.28,
-      "rank_score": 85.09,
+      "rank_score": 81.09,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Walmart Earnings Ahead: Can WMT Stock Sustain Momentum Under New CEO? - Stocktwits",
       "top_headlines": [
         "Walmart Earnings Ahead: Can WMT Stock Sustain Momentum Under New CEO? - Stocktwits",
-        "14,114 Shares in Walmart Inc. $WMT Bought by Planning Project LLC - MarketBeat",
+        "14,114 Shares in Walmart Inc. $WMT Bought by Planning Project LLC - marketbeat.com",
         "Walmart (WMT) Stock Seems Fairly Priced After Its $1.3B Automation Push - simplywall.st"
       ],
       "matched_headlines": [
@@ -11977,7 +12111,7 @@
           ]
         },
         {
-          "title": "14,114 Shares in Walmart Inc. $WMT Bought by Planning Project LLC - MarketBeat",
+          "title": "14,114 Shares in Walmart Inc. $WMT Bought by Planning Project LLC - marketbeat.com",
           "keywords": [
             "beat"
           ]
@@ -11990,15 +12124,14 @@
           ]
         },
         {
-          "title": "Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
+          "title": "WMT Stock Rises Premarket: Analyst Says Walmart's Vibe.co Deal Strengthens Advertising Push - Stocktwits",
           "keywords": [
-            "ai",
             "catalyst",
-            "record"
+            "deal"
           ]
         },
         {
-          "title": "VIRGINIA RETIREMENT SYSTEMS ET Al Acquires Shares of 700,251 Walmart Inc. $WMT - MarketBeat",
+          "title": "VIRGINIA RETIREMENT SYSTEMS ET Al Acquires Shares of 700,251 Walmart Inc. $WMT - marketbeat.com",
           "keywords": [
             "beat"
           ]
@@ -12018,21 +12151,21 @@
       "liquidity_score": 78.32,
       "rank_score": 75.35,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): Vancity Investment Management Ltd Purchases Shares of 7,209 Lam Research Corporation $LRCX - MarketBeat",
+      "catalyst": "Headline-driven setup (beat): Vancity Investment Management Ltd Purchases Shares of 7,209 Lam Research Corporation $LRCX - marketbeat.com",
       "top_headlines": [
         "Lam Research (NASDAQ:LRCX) Stock Has Nearly Tripled in a Year. Is It Still a Buy? - Stocks Down Under",
         "Lam Research Corp (LRCX) Stock Price, Quote, News & History - Benzinga",
-        "Vancity Investment Management Ltd Purchases Shares of 7,209 Lam Research Corporation $LRCX - MarketBeat"
+        "Vancity Investment Management Ltd Purchases Shares of 7,209 Lam Research Corporation $LRCX - marketbeat.com"
       ],
       "matched_headlines": [
         {
-          "title": "Vancity Investment Management Ltd Purchases Shares of 7,209 Lam Research Corporation $LRCX - MarketBeat",
+          "title": "Vancity Investment Management Ltd Purchases Shares of 7,209 Lam Research Corporation $LRCX - marketbeat.com",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "Amundi Sells 721,326 Shares of Lam Research Corporation $LRCX - MarketBeat",
+          "title": "Amundi Sells 721,326 Shares of Lam Research Corporation $LRCX - marketbeat.com",
           "keywords": [
             "beat"
           ]
@@ -12045,13 +12178,13 @@
           ]
         },
         {
-          "title": "Lam Research Corporation $LRCX Shares Sold by Greenland Capital Management LP - MarketBeat",
+          "title": "Lam Research Corporation $LRCX Shares Sold by Greenland Capital Management LP - marketbeat.com",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "California State Teachers Retirement System Grows Holdings in Lam Research Corporation $LRCX - MarketBeat",
+          "title": "California State Teachers Retirement System Grows Holdings in Lam Research Corporation $LRCX - marketbeat.com",
           "keywords": [
             "beat"
           ]
@@ -12059,94 +12192,52 @@
       ]
     },
     {
-      "symbol": "PANW",
-      "name": "PANW",
-      "price": 333.260009765625,
-      "volume": 5636200.0,
-      "avg_volume": 7176350.0,
-      "percent_change": 0.3976644316774555,
+      "symbol": "BAC",
+      "name": "BAC",
+      "price": 62.68000030517578,
+      "volume": 26587200.0,
+      "avg_volume": 30970250.0,
+      "percent_change": -0.5710669497514093,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
-      "liquidity_score": 78.56,
-      "rank_score": 70.1,
+      "liquidity_score": 84.91,
+      "rank_score": 71.19,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, beat, catalyst): PANW Stock Gains After Revenue Forecast Beat As AI Usage Drives Cybersecurity Demand - Stocktwits",
+      "catalyst": "Headline-driven setup (ai, beat, catalyst): HighTower Advisors LLC Raises Stock Holdings in Bank of America Corporation $BAC - marketbeat.com",
       "top_headlines": [
-        "PANW Surges 102% in 6 Months: Should You Buy, Sell or Hold the Stock? - Yahoo Finance",
-        "Palo Alto Networks Stock Delivers Strong FCF Margins - Is PANW Stock Set to Rise? - Barchart.com",
-        "PANW Stock Gains After Revenue Forecast Beat As AI Usage Drives Cybersecurity Demand - Stocktwits"
+        "HighTower Advisors LLC Raises Stock Holdings in Bank of America Corporation $BAC - marketbeat.com",
+        "Bank of America (BAC) Joins Stablecoin Push, Is The Stock Still Undervalued? - simplywall.st",
+        "Should I Buy BAC (Bank of America Corporation) | AI Analysis, Technical & News Insights - Kavout"
       ],
       "matched_headlines": [
         {
-          "title": "PANW Stock Gains After Revenue Forecast Beat As AI Usage Drives Cybersecurity Demand - Stocktwits",
+          "title": "HighTower Advisors LLC Raises Stock Holdings in Bank of America Corporation $BAC - marketbeat.com",
           "keywords": [
             "ai",
             "beat",
             "catalyst",
-            "demand"
-          ]
-        },
-        {
-          "title": "PANW Stock Forecast: Plunges 9% Despite Earnings Beat, Can It Break $400? - TradingKey",
-          "keywords": [
-            "beat",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Palo Alto Networks (PANW) Is Down 10.3% After AI-Led Growth Accompanies Surprise Quarterly Loss \u2013 What's Changed - simplywall.st",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "growth"
-          ]
-        },
-        {
-          "title": "Palo Alto Networks (PANW) Sinks After Q4 Loss, Is The Stock A Bargain? - Yahoo Finance",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "UNH",
-      "name": "UNH",
-      "price": 397.1400146484375,
-      "volume": 5565400.0,
-      "avg_volume": 4080340.0,
-      "percent_change": -0.9477696837007635,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 13,
-      "liquidity_score": 76.11,
-      "rank_score": 67.17,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, beat, beats): UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
-      "top_headlines": [
-        "Is UNH Stock Set For Another 12% Rally? Analyst Says Medical Cost Trends, Supportive Data Points Leading Toward Favorable Q2 - Stocktwits",
-        "UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
-        "UnitedHealth Group Inc (UNH) Stock Price, Quote, News & History - Benzinga"
-      ],
-      "matched_headlines": [
-        {
-          "title": "UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
-          "keywords": [
-            "ai",
-            "beat",
-            "beats",
-            "catalyst",
-            "guidance",
             "raises"
           ]
         },
         {
-          "title": "UNH Stock Becomes Dow\u2019s Biggest Driver Back To 50,000 \u2014 Will Trump Tailwinds Spark Another Leg Higher? - Stocktwits",
+          "title": "Should I Buy BAC (Bank of America Corporation) | AI Analysis, Technical & News Insights - Kavout",
           "keywords": [
             "ai",
             "catalyst"
+          ]
+        },
+        {
+          "title": "Bank of America Corp (BAC) Futures: Prices, Contracts & Specs - Stocktwits",
+          "keywords": [
+            "catalyst",
+            "contract"
+          ]
+        },
+        {
+          "title": "30,227 Shares in Bank of America Corporation $BAC Bought by Compass Financial Management LLC - marketbeat.com",
+          "keywords": [
+            "beat"
           ]
         }
       ]
@@ -12200,13 +12291,13 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 78.6
+    "live_share_recent": 76.2
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 335,
     "closed_outcomes": 152,
-    "consensus_events": 487,
+    "consensus_events": 488,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
@@ -14893,7 +14984,7 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-07T14:30:41.917613+00:00",
+        "t": "2026-09-07T14:34:27.687952+00:00",
         "equity": 1001.91,
         "cash": 2.67,
         "event": "mark"
