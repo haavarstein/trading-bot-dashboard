@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T18:30:26.931725+00:00",
+  "generated_at": "2026-09-07T18:32:34.570125+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
@@ -16,7 +16,7 @@
     "vs_spy_pct": 0.09,
     "spy_return_pct": 0.1,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-07T18:30:29.636234+00:00"
+    "updated_at": "2026-09-07T18:32:37.338521+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
@@ -26,9 +26,9 @@
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 11,
+    "consensus_count_today": 12,
     "validated_count_today": 8,
-    "blocked_count_today": 3,
+    "blocked_count_today": 4,
     "fills_today": 2,
     "simulated_orders_today": 8,
     "top_symbol_today": "LRCX"
@@ -84,58 +84,57 @@
     }
   ],
   "latest_candidate": {
-    "symbol": "XOM",
-    "name": "XOM",
-    "price": 159.47000122070312,
-    "volume": 16192900.0,
-    "avg_volume": 13982750.0,
-    "percent_change": -1.6891716785372786,
+    "symbol": "WMT",
+    "name": "WMT",
+    "price": 107.13999938964844,
+    "volume": 20527200.0,
+    "avg_volume": 26780910.0,
+    "percent_change": -1.1805928803857004,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 17,
-    "liquidity_score": 81.46,
-    "rank_score": 89.07,
+    "catalyst_score": 16,
+    "liquidity_score": 84.28,
+    "rank_score": 85.09,
     "news_hits": 8,
-    "catalyst": "Headline-driven setup (ai, beat, catalyst): ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
+    "catalyst": "Headline-driven setup (ai, catalyst): Walmart Earnings Ahead: Can WMT Stock Sustain Momentum Under New CEO? - Stocktwits",
     "top_headlines": [
-      "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
-      "Exxon Mobil Stock (XOM) Opinions on Stock Momentum and Trading Activity - Moomoo",
-      "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits"
+      "Walmart Earnings Ahead: Can WMT Stock Sustain Momentum Under New CEO? - Stocktwits",
+      "WMT Stock Sinks To Near Eight-Month Low \u2014 Cleveland Research Flags Slowing Sales - Stocktwits",
+      "14,114 Shares in Walmart Inc. $WMT Bought by Planning Project LLC - MarketBeat"
     ],
     "matched_headlines": [
       {
-        "title": "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
+        "title": "Walmart Earnings Ahead: Can WMT Stock Sustain Momentum Under New CEO? - Stocktwits",
         "keywords": [
           "ai",
-          "beat",
+          "catalyst"
+        ]
+      },
+      {
+        "title": "14,114 Shares in Walmart Inc. $WMT Bought by Planning Project LLC - MarketBeat",
+        "keywords": [
+          "beat"
+        ]
+      },
+      {
+        "title": "Walmart (WMT) Stock Seems Fairly Priced After Its $1.3B Automation Push - simplywall.st",
+        "keywords": [
+          "ai",
+          "catalyst"
+        ]
+      },
+      {
+        "title": "VIRGINIA RETIREMENT SYSTEMS ET Al Acquires Shares of 700,251 Walmart Inc. $WMT - MarketBeat",
+        "keywords": [
+          "beat"
+        ]
+      },
+      {
+        "title": "Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
+        "keywords": [
+          "ai",
           "catalyst",
-          "raised"
-        ]
-      },
-      {
-        "title": "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits",
-        "keywords": [
-          "ai",
-          "beat",
-          "catalyst"
-        ]
-      },
-      {
-        "title": "70,895 Shares in ExxonMobil Corporation $XOM Purchased by Planning Project LLC - MarketBeat",
-        "keywords": [
-          "beat"
-        ]
-      },
-      {
-        "title": "Nasdaq Futures Lead US Premarket Rally As Iran Ceasefire Reports Ease Fears Ahead Of Big Tech Earnings: Why NVDA, ORCL, SPCX, XOM, OTLK Are In Focus - Stocktwits",
-        "keywords": [
-          "catalyst"
-        ]
-      },
-      {
-        "title": "ExxonMobil Corporation $XOM Shares Sold by HighTower Advisors LLC - MarketBeat",
-        "keywords": [
-          "beat"
+          "record"
         ]
       }
     ]
@@ -143,57 +142,57 @@
   "latest_decision": {
     "model": "grok-4.5",
     "action": "BUY",
-    "symbol": "XOM",
+    "symbol": "WMT",
     "confidence": 78,
     "cache_stats": null,
-    "entry_price": 159.47,
-    "stop_loss": 154.0,
-    "take_profit": 168.5,
-    "qty": 1.25,
-    "thesis": "XOM screens as a high-rank liquid catalyst setup with bullish sentiment and institutional position-raising headline support. RSI near mid-range leaves room for continuation without extreme overbought risk. Risk defined below recent support with asymmetric upside to the stated target meeting desk R:R requirements. Position sized inside remaining cash and max-notional limits while keeping open names under the soft cap.",
+    "entry_price": 107.14,
+    "stop_loss": 103.5,
+    "take_profit": 113.0,
+    "qty": 1.85,
+    "thesis": "WMT ranks as the top liquid catalyst setup with earnings ahead and bullish sentiment under the new CEO narrative. RSI is neutral at 50, leaving room for a momentum continuation into the print. Position sized within the ~$200 new-buy notional limit while keeping book at 5 names. Reward-to-risk is structured above 1.5 with a clear invalidation below recent support.",
     "reason_code": "new_entry",
     "reasoning": {
-      "headline": "Bought $XOM",
-      "narrative": "XOM screens as a high-rank liquid catalyst setup with bullish sentiment and institutional position-raising headline support. RSI near mid-range leaves room for continuation without extreme overbought risk. Risk defined below recent support with asymmetric upside to the stated target meeting desk R:R requirements. Position sized inside remaining cash and max-notional limits while keeping open names under the soft cap.",
+      "headline": "Bought $WMT",
+      "narrative": "WMT ranks as the top liquid catalyst setup with earnings ahead and bullish sentiment under the new CEO narrative. RSI is neutral at 50, leaving room for a momentum continuation into the print. Position sized within the ~$200 new-buy notional limit while keeping book at 5 names. Reward-to-risk is structured above 1.5 with a clear invalidation below recent support.",
       "bullets": [
-        "Rank 89 / catalyst 17 bullish institutional add headline",
-        "R:R ~1.65 with stop 154 / target 168.5",
-        "Notional ~$199 inside $200 new-buy cap",
-        "Open names 4\u21925 still within desk limit"
+        "Rank 85 catalyst: earnings + new CEO momentum",
+        "Neutral RSI 50 supports continuation entry",
+        "R:R ~1.55 with stop 103.5 / target 113",
+        "Fits cash and max-names constraints"
       ],
       "risk_map": {
-        "stop": 154.0,
-        "target": 168.5,
+        "stop": 103.5,
+        "target": 113.0,
         "horizon_days": 5,
-        "rr": 1.65,
+        "rr": 1.61,
         "confidence_10": 8,
         "confidence": 78
       },
-      "thesis": "XOM screens as a high-rank liquid catalyst setup with bullish sentiment and institutional position-raising headline support. RSI near mid-range leaves room for continuation without extreme overbought risk. Risk defined below recent support with asymmetric upside to the stated target meeting desk R:R requirements. Position sized inside remaining cash and max-notional limits while keeping open names under the soft cap."
+      "thesis": "WMT ranks as the top liquid catalyst setup with earnings ahead and bullish sentiment under the new CEO narrative. RSI is neutral at 50, leaving room for a momentum continuation into the print. Position sized within the ~$200 new-buy notional limit while keeping book at 5 names. Reward-to-risk is structured above 1.5 with a clear invalidation below recent support."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Rank 89 / catalyst 17 bullish institutional add headline",
-      "R:R ~1.65 with stop 154 / target 168.5",
-      "Notional ~$199 inside $200 new-buy cap",
-      "Open names 4\u21925 still within desk limit"
+      "Rank 85 catalyst: earnings + new CEO momentum",
+      "Neutral RSI 50 supports continuation entry",
+      "R:R ~1.55 with stop 103.5 / target 113",
+      "Fits cash and max-names constraints"
     ],
-    "timestamp": "2026-09-07T18:17:09.291122+00:00"
+    "timestamp": "2026-09-07T18:32:26.618075+00:00"
   },
-  "stance": "Buying pressure on XOM. XOM screens as a high-rank liquid catalyst setup with bullish sentiment and institutional position-raising headline support. RSI near mid-range leaves room for continuation without extreme overbought risk. Risk defined below recent support with asymmetric upside to the stated target meeting desk R:R requirements. Position sized inside remaining cash and max-notional limits while keeping open names under the soft cap.",
+  "stance": "Buying pressure on WMT. WMT ranks as the top liquid catalyst setup with earnings ahead and bullish sentiment under the new CEO narrative. RSI is neutral at 50, leaving room for a momentum continuation into the print. Position sized within the ~$200 new-buy notional limit while keeping book at 5 names. Reward-to-risk is structured above 1.5 with a clear invalidation below recent support.",
   "thinking": {
-    "badge": "Looking to buy XOM",
-    "headline": "Buying pressure on XOM.",
-    "plain_english": "Right now Hermes wants exposure to XOM. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
+    "badge": "Looking to buy WMT",
+    "headline": "Buying pressure on WMT.",
+    "plain_english": "Right now Hermes wants exposure to WMT. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
     "triggers": [
       "It owns BAC, bought near $62.20. Simple plan: sell if it falls to about $60.00, or take profit near $65.50.",
       "It owns HOOD, bought near $120.77. Simple plan: sell if it falls to about $115.00, or take profit near $129.50.",
       "It owns JPM, bought near $357.78. Simple plan: sell if it falls to about $348.00, or take profit near $375.00.",
       "It owns LRCX, bought near $307.65. Simple plan: sell if it falls to about $295.00, or take profit near $330.00.",
       "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
-      "Top scanner name right now is XOM, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
+      "Top scanner name right now is WMT, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
       "If nothing looks clean, do nothing. Sitting in cash or holdings is allowed."
     ],
     "owned": [
@@ -246,7 +245,7 @@
         "plan": "stop 295.0 or target 330.0"
       }
     ],
-    "last_checked": "2026-09-07T18:30:26.931725+00:00",
+    "last_checked": "2026-09-07T18:32:34.570125+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -261,7 +260,7 @@
         "prefix": "J",
         "model": "grok-4.3",
         "action": "BUY",
-        "symbol": "XOM",
+        "symbol": "WMT",
         "confidence": 82,
         "tone": "buy"
       },
@@ -269,7 +268,7 @@
         "prefix": "J",
         "model": "claude-haiku-4-5",
         "action": "BUY",
-        "symbol": "XOM",
+        "symbol": "WMT",
         "confidence": 72,
         "tone": "buy"
       },
@@ -277,23 +276,23 @@
         "prefix": "J",
         "model": "deepseek-v4-flash",
         "action": "BUY",
-        "symbol": "XOM",
-        "confidence": 73,
+        "symbol": "WMT",
+        "confidence": 78,
         "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
         "action": "BUY",
-        "symbol": "XOM",
-        "confidence": 75,
+        "symbol": "WMT",
+        "confidence": 80,
         "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
         "action": "BUY",
-        "symbol": "XOM",
+        "symbol": "WMT",
         "confidence": 78,
         "tone": "buy"
       },
@@ -301,7 +300,7 @@
         "prefix": "S",
         "model": "claude-sonnet-5",
         "action": "BUY",
-        "symbol": "XOM",
+        "symbol": "WMT",
         "confidence": 72,
         "tone": "buy"
       },
@@ -316,6 +315,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "WMT",
+      "status": "blocked",
+      "headline": "BUY WMT \u2014 blocked",
+      "detail": "Insufficient buying power: $2.67 < $198.21",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "WMT",
+          "confidence": 82,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "WMT",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "WMT",
+          "confidence": 78,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "WMT",
+          "confidence": 80,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "WMT",
+          "confidence": 78,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "WMT",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "BAC",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "WMT",
+      "timestamp": "2026-09-07T18:32:26.618075+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "XOM",
@@ -862,83 +938,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-09-07T16:33:15.255581+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "XOM",
-      "status": "no_consensus",
-      "headline": "SELL XOM \u2014 no consensus",
-      "detail": "Desks: SELL XOM (78%) vs HOLD XOM (65%) vs HOLD BAC (80%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "SELL",
-          "symbol": "XOM",
-          "confidence": 75,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "WMT",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "SELL",
-          "symbol": "XOM",
-          "confidence": 78,
-          "source": "fallback",
-          "provider": null,
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "SELL",
-          "symbol": "XOM",
-          "confidence": 78,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "HOLD",
-          "symbol": "XOM",
-          "confidence": 65,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "BAC",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "exit",
-      "junior_nomination": "XOM",
-      "timestamp": "2026-09-07T16:20:34.618548+00:00"
     },
     {
       "type": "fill",
@@ -12394,63 +12393,6 @@
   ],
   "top_candidates": [
     {
-      "symbol": "XOM",
-      "name": "XOM",
-      "price": 159.47000122070312,
-      "volume": 16192900.0,
-      "avg_volume": 13982750.0,
-      "percent_change": -1.6891716785372786,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 17,
-      "liquidity_score": 81.46,
-      "rank_score": 89.07,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, beat, catalyst): ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
-      "top_headlines": [
-        "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
-        "Exxon Mobil Stock (XOM) Opinions on Stock Momentum and Trading Activity - Moomoo",
-        "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits"
-      ],
-      "matched_headlines": [
-        {
-          "title": "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
-          "keywords": [
-            "ai",
-            "beat",
-            "catalyst",
-            "raised"
-          ]
-        },
-        {
-          "title": "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits",
-          "keywords": [
-            "ai",
-            "beat",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "70,895 Shares in ExxonMobil Corporation $XOM Purchased by Planning Project LLC - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Nasdaq Futures Lead US Premarket Rally As Iran Ceasefire Reports Ease Fears Ahead Of Big Tech Earnings: Why NVDA, ORCL, SPCX, XOM, OTLK Are In Focus - Stocktwits",
-          "keywords": [
-            "catalyst"
-          ]
-        },
-        {
-          "title": "ExxonMobil Corporation $XOM Shares Sold by HighTower Advisors LLC - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "WMT",
       "name": "WMT",
       "price": 107.13999938964844,
@@ -12617,6 +12559,51 @@
       ]
     },
     {
+      "symbol": "XOM",
+      "name": "XOM",
+      "price": 159.47000122070312,
+      "volume": 16192900.0,
+      "avg_volume": 13982750.0,
+      "percent_change": -1.6891716785372786,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 14,
+      "liquidity_score": 81.46,
+      "rank_score": 74.07,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, beat, catalyst): ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
+      "top_headlines": [
+        "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
+        "Exxon Mobil Stock (XOM) Opinions on Stock Momentum and Trading Activity - Moomoo",
+        "XOM, CVX Are Already Up More Than 25% This Year \u2014 One Analyst Thinks There's Still More To Come For Big Oil - Stocktwits"
+      ],
+      "matched_headlines": [
+        {
+          "title": "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
+          "keywords": [
+            "ai",
+            "beat",
+            "catalyst",
+            "raised"
+          ]
+        },
+        {
+          "title": "70,895 Shares in ExxonMobil Corporation $XOM Purchased by Planning Project LLC - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits",
+          "keywords": [
+            "ai",
+            "beat",
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
       "symbol": "UNH",
       "name": "UNH",
       "price": 397.1400146484375,
@@ -12710,15 +12697,15 @@
     "decision_mode": "live_dual_llm",
     "last_tier": "senior_escalated",
     "last_stage": "entry",
-    "last_junior_nomination": "XOM",
+    "last_junior_nomination": "WMT",
     "last_escalate_reason": "junior_nomination",
-    "live_share_recent": 81.9
+    "live_share_recent": 82.1
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 336,
     "closed_outcomes": 153,
-    "consensus_events": 500,
+    "consensus_events": 501,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
@@ -15477,7 +15464,7 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-07T18:30:29.636234+00:00",
+        "t": "2026-09-07T18:32:37.338521+00:00",
         "equity": 1001.91,
         "cash": 202.01,
         "event": "mark"
