@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T15:40:22.874616+00:00",
+  "generated_at": "2026-09-07T15:48:09.926812+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
@@ -16,7 +16,7 @@
     "vs_spy_pct": 0.09,
     "spy_return_pct": 0.1,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-07T15:40:26.222889+00:00"
+    "updated_at": "2026-09-07T15:48:12.643643+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
@@ -26,11 +26,11 @@
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 4,
-    "validated_count_today": 4,
+    "consensus_count_today": 5,
+    "validated_count_today": 5,
     "blocked_count_today": 0,
     "fills_today": 1,
-    "simulated_orders_today": 4,
+    "simulated_orders_today": 5,
     "top_symbol_today": "LRCX"
   },
   "holdings": [
@@ -108,15 +108,15 @@
     "liquidity_score": 81.46,
     "rank_score": 87.57,
     "news_hits": 8,
-    "catalyst": "Headline-driven setup (ai, beat, catalyst): ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - marketbeat.com",
+    "catalyst": "Headline-driven setup (ai, beat, catalyst): ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
     "top_headlines": [
-      "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - marketbeat.com",
+      "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
       "Exxon Mobil Stock (XOM) Opinions on Stock Momentum and Trading Activity - Moomoo",
       "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits"
     ],
     "matched_headlines": [
       {
-        "title": "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - marketbeat.com",
+        "title": "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
         "keywords": [
           "ai",
           "beat",
@@ -133,13 +133,13 @@
         ]
       },
       {
-        "title": "70,895 Shares in ExxonMobil Corporation $XOM Purchased by Planning Project LLC - marketbeat.com",
+        "title": "70,895 Shares in ExxonMobil Corporation $XOM Purchased by Planning Project LLC - MarketBeat",
         "keywords": [
           "beat"
         ]
       },
       {
-        "title": "ExxonMobil Corporation $XOM Shares Sold by HighTower Advisors LLC - marketbeat.com",
+        "title": "ExxonMobil Corporation $XOM Shares Sold by HighTower Advisors LLC - MarketBeat",
         "keywords": [
           "beat"
         ]
@@ -150,21 +150,22 @@
     "model": "grok-4.3",
     "action": "HOLD",
     "symbol": "CASH",
-    "confidence": 65,
+    "confidence": 60,
     "cache_stats": null,
     "entry_price": 0.0,
     "stop_loss": 0.0,
     "take_profit": 0.0,
     "qty": 0.0,
-    "thesis": "Book is at max 5 names with minimal cash. Top candidate XOM is already held with negative P/L. No new liquid catalyst setups available for rotation without violating notional or position limits.",
+    "thesis": "Book is at max 5 names with minimal cash. XOM ranks highest among candidates but is already held with slight negative P/L. No new candidate offers clear rotation edge exceeding current weakest holdings after reward:risk and notional constraints.",
     "reason_code": "hold",
     "reasoning": {
       "headline": "Hold $CASH",
-      "narrative": "Book is at max 5 names with minimal cash. Top candidate XOM is already held with negative P/L. No new liquid catalyst setups available for rotation without violating notional or position limits.",
+      "narrative": "Book is at max 5 names with minimal cash. XOM ranks highest among candidates but is already held with slight negative P/L. No new candidate offers clear rotation edge exceeding current weakest holdings after reward:risk and notional constraints.",
       "bullets": [
-        "Cash insufficient for new buys under $200 limit",
-        "XOM already positioned despite top rank",
-        "Weakest hold XOM not warranting exit at current levels"
+        "5 positions open",
+        "cash under $3",
+        "XOM already held top candidate",
+        "no rotation justified"
       ],
       "risk_map": {
         "stop": 0.0,
@@ -172,19 +173,20 @@
         "horizon_days": 5,
         "rr": 0.0,
         "confidence_10": 6,
-        "confidence": 65
+        "confidence": 60
       },
-      "thesis": "Book is at max 5 names with minimal cash. Top candidate XOM is already held with negative P/L. No new liquid catalyst setups available for rotation without violating notional or position limits."
+      "thesis": "Book is at max 5 names with minimal cash. XOM ranks highest among candidates but is already held with slight negative P/L. No new candidate offers clear rotation edge exceeding current weakest holdings after reward:risk and notional constraints."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.3",
     "bullets": [
-      "Cash insufficient for new buys under $200 limit",
-      "XOM already positioned despite top rank",
-      "Weakest hold XOM not warranting exit at current levels"
+      "5 positions open",
+      "cash under $3",
+      "XOM already held top candidate",
+      "no rotation justified"
     ],
-    "timestamp": "2026-09-07T15:32:41.810349+00:00"
+    "timestamp": "2026-09-07T15:47:55.183975+00:00"
   },
   "stance": "Holding BAC, HOOD, XOM, JPM, LRCX. No new trade right now.",
   "thinking": {
@@ -262,7 +264,7 @@
         "plan": "stop 295.0 or target 330.0"
       }
     ],
-    "last_checked": "2026-09-07T15:40:22.874616+00:00",
+    "last_checked": "2026-09-07T15:48:09.926812+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "HOLD",
@@ -279,7 +281,7 @@
         "model": "grok-4.3",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 65,
+        "confidence": 60,
         "tone": "hold"
       },
       {
@@ -293,10 +295,10 @@
       {
         "prefix": "J",
         "model": "deepseek-v4-flash",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 65,
-        "tone": "hold"
+        "action": "SELL",
+        "symbol": "XOM",
+        "confidence": 78,
+        "tone": "sell"
       },
       {
         "prefix": "J",
@@ -309,6 +311,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 no new trade",
+      "detail": "Book is at max 5 names with minimal cash. XOM ranks highest among candidates but is already held with slight negative P/L. No new candidate offers clear rotation edge exceeding current weakest holdings after reward:risk and notional constraints.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "SELL",
+          "symbol": "XOM",
+          "confidence": 78,
+          "source": "fallback",
+          "provider": null,
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        }
+      ],
+      "tier": "junior_only",
+      "escalate_reason": "",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-07T15:47:55.183975+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -12118,15 +12197,15 @@
       "liquidity_score": 81.46,
       "rank_score": 87.57,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, beat, catalyst): ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - marketbeat.com",
+      "catalyst": "Headline-driven setup (ai, beat, catalyst): ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
       "top_headlines": [
-        "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - marketbeat.com",
+        "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
         "Exxon Mobil Stock (XOM) Opinions on Stock Momentum and Trading Activity - Moomoo",
         "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits"
       ],
       "matched_headlines": [
         {
-          "title": "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - marketbeat.com",
+          "title": "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
           "keywords": [
             "ai",
             "beat",
@@ -12143,13 +12222,13 @@
           ]
         },
         {
-          "title": "70,895 Shares in ExxonMobil Corporation $XOM Purchased by Planning Project LLC - marketbeat.com",
+          "title": "70,895 Shares in ExxonMobil Corporation $XOM Purchased by Planning Project LLC - MarketBeat",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "ExxonMobil Corporation $XOM Shares Sold by HighTower Advisors LLC - marketbeat.com",
+          "title": "ExxonMobil Corporation $XOM Shares Sold by HighTower Advisors LLC - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -12173,7 +12252,7 @@
       "top_headlines": [
         "Walmart Earnings Ahead: Can WMT Stock Sustain Momentum Under New CEO? - Stocktwits",
         "WMT Stock Sinks To Near Eight-Month Low \u2014 Cleveland Research Flags Slowing Sales - Stocktwits",
-        "14,114 Shares in Walmart Inc. $WMT Bought by Planning Project LLC - marketbeat.com"
+        "14,114 Shares in Walmart Inc. $WMT Bought by Planning Project LLC - MarketBeat"
       ],
       "matched_headlines": [
         {
@@ -12184,7 +12263,7 @@
           ]
         },
         {
-          "title": "14,114 Shares in Walmart Inc. $WMT Bought by Planning Project LLC - marketbeat.com",
+          "title": "14,114 Shares in Walmart Inc. $WMT Bought by Planning Project LLC - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -12197,17 +12276,16 @@
           ]
         },
         {
-          "title": "VIRGINIA RETIREMENT SYSTEMS ET Al Acquires Shares of 700,251 Walmart Inc. $WMT - marketbeat.com",
+          "title": "VIRGINIA RETIREMENT SYSTEMS ET Al Acquires Shares of 700,251 Walmart Inc. $WMT - MarketBeat",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
+          "title": "WMT Stock Rises Premarket: Analyst Says Walmart's Vibe.co Deal Strengthens Advertising Push - Stocktwits",
           "keywords": [
-            "ai",
             "catalyst",
-            "record"
+            "deal"
           ]
         }
       ]
@@ -12229,7 +12307,7 @@
       "top_headlines": [
         "HOOD Stock Slides Overnight: Robinhood\u2019s $2B Capital Raise Tests Bulls As Volumes Boom, Agentic Trading Gains Traction - Stocktwits",
         "Here's How Much $1000 Invested In Robinhood Markets 5 Years Ago Would Be Worth Today - Benzinga",
-        "TD Waterhouse Canada Inc. Grows Stake in Robinhood Markets, Inc. $HOOD - marketbeat.com"
+        "TD Waterhouse Canada Inc. Grows Stake in Robinhood Markets, Inc. $HOOD - MarketBeat"
       ],
       "matched_headlines": [
         {
@@ -12240,7 +12318,7 @@
           ]
         },
         {
-          "title": "TD Waterhouse Canada Inc. Grows Stake in Robinhood Markets, Inc. $HOOD - marketbeat.com",
+          "title": "TD Waterhouse Canada Inc. Grows Stake in Robinhood Markets, Inc. $HOOD - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -12280,21 +12358,21 @@
       "liquidity_score": 78.32,
       "rank_score": 75.35,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): Vancity Investment Management Ltd Purchases Shares of 7,209 Lam Research Corporation $LRCX - marketbeat.com",
+      "catalyst": "Headline-driven setup (beat): Vancity Investment Management Ltd Purchases Shares of 7,209 Lam Research Corporation $LRCX - MarketBeat",
       "top_headlines": [
         "Lam Research (NASDAQ:LRCX) Stock Has Nearly Tripled in a Year. Is It Still a Buy? - Stocks Down Under",
         "Lam Research Corp (LRCX) Stock Price, Quote, News & History - Benzinga",
-        "Vancity Investment Management Ltd Purchases Shares of 7,209 Lam Research Corporation $LRCX - marketbeat.com"
+        "Vancity Investment Management Ltd Purchases Shares of 7,209 Lam Research Corporation $LRCX - MarketBeat"
       ],
       "matched_headlines": [
         {
-          "title": "Vancity Investment Management Ltd Purchases Shares of 7,209 Lam Research Corporation $LRCX - marketbeat.com",
+          "title": "Vancity Investment Management Ltd Purchases Shares of 7,209 Lam Research Corporation $LRCX - MarketBeat",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "Amundi Sells 721,326 Shares of Lam Research Corporation $LRCX - marketbeat.com",
+          "title": "Amundi Sells 721,326 Shares of Lam Research Corporation $LRCX - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -12307,13 +12385,13 @@
           ]
         },
         {
-          "title": "Lam Research Corporation $LRCX Shares Sold by Greenland Capital Management LP - marketbeat.com",
+          "title": "Lam Research Corporation $LRCX Shares Sold by Greenland Capital Management LP - MarketBeat",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "California State Teachers Retirement System Grows Holdings in Lam Research Corporation $LRCX - marketbeat.com",
+          "title": "California State Teachers Retirement System Grows Holdings in Lam Research Corporation $LRCX - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -12321,48 +12399,60 @@
       ]
     },
     {
-      "symbol": "UNH",
-      "name": "UNH",
-      "price": 397.1400146484375,
-      "volume": 5565400.0,
-      "avg_volume": 4080340.0,
-      "percent_change": -0.9477696837007635,
+      "symbol": "NFLX",
+      "name": "NFLX",
+      "price": 78.25,
+      "volume": 40066200.0,
+      "avg_volume": 26774540.0,
+      "percent_change": -5.346556510032281,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 14,
-      "liquidity_score": 76.11,
-      "rank_score": 72.67,
+      "catalyst_score": 12,
+      "liquidity_score": 84.28,
+      "rank_score": 72.42,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): Did Berkshire Sell UNH Stock Too Early? Retail Traders Think So \u2013 Call Its Exit \u2018Way Overblown\u2019 - Stocktwits",
+      "catalyst": "Headline-driven setup (catalyst, partnership): Netflix Stock (NFLX) Opinions on Recent Recovery and Partnerships - Quiver Quantitative",
       "top_headlines": [
-        "Did Berkshire Sell UNH Stock Too Early? Retail Traders Think So \u2013 Call Its Exit \u2018Way Overblown\u2019 - Stocktwits",
-        "UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
-        "UnitedHealth Group Inc (UNH) Stock Price, Quote, News & History - Benzinga"
+        "Investors Heavily Search Netflix, Inc. (NFLX): Here is What You Need to Know - Yahoo Finance",
+        "Netflix Stock (NFLX) Opinions on Recent Recovery and Partnerships - Quiver Quantitative",
+        "NFLX Stock Reverses Course Overnight: Retail Shrugs Off Outgoing Chairman\u2019s Sale As \u2018Routine\u2019 - Stocktwits"
       ],
       "matched_headlines": [
         {
-          "title": "Did Berkshire Sell UNH Stock Too Early? Retail Traders Think So \u2013 Call Its Exit \u2018Way Overblown\u2019 - Stocktwits",
+          "title": "Netflix Stock (NFLX) Opinions on Recent Recovery and Partnerships - Quiver Quantitative",
+          "keywords": [
+            "catalyst",
+            "partnership"
+          ]
+        },
+        {
+          "title": "NFLX Stock Reverses Course Overnight: Retail Shrugs Off Outgoing Chairman\u2019s Sale As \u2018Routine\u2019 - Stocktwits",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
+          "title": "Netflix, Inc. $NFLX Shares Bought by Groupe la Francaise - MarketBeat",
           "keywords": [
             "ai",
             "beat",
-            "beats",
-            "catalyst",
-            "guidance",
-            "raises"
+            "catalyst"
           ]
         },
         {
-          "title": "UNH Stock Becomes Dow\u2019s Biggest Driver Back To 50,000 \u2014 Will Trump Tailwinds Spark Another Leg Higher? - Stocktwits",
+          "title": "Netflix (NFLX) Stock Quotes, Company News And Chart Analysis - Investor's Business Daily",
           "keywords": [
             "ai",
             "catalyst"
+          ]
+        },
+        {
+          "title": "NFLX Stock Tumbles Overnight After Guidance Dismay \u2013 CFO Says Global Growth Story Is Far From Over - Stocktwits",
+          "keywords": [
+            "catalyst",
+            "growth",
+            "guidance"
           ]
         }
       ]
@@ -12394,10 +12484,10 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 4,
+      "HOLD": 3,
       "BUY": 0,
-      "SELL": 0,
-      "live": 4,
+      "SELL": 1,
+      "live": 3,
       "fallback": 0
     },
     "junior_model_3_enabled": true,
@@ -12416,13 +12506,13 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "",
-    "live_share_recent": 82.9
+    "live_share_recent": 83.3
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 335,
     "closed_outcomes": 152,
-    "consensus_events": 490,
+    "consensus_events": 491,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
@@ -15127,7 +15217,7 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-07T15:40:26.222889+00:00",
+        "t": "2026-09-07T15:48:12.643643+00:00",
         "equity": 1001.91,
         "cash": 2.67,
         "event": "mark"
