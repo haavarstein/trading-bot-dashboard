@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T17:10:56.128540+00:00",
+  "generated_at": "2026-09-07T17:19:04.303504+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
@@ -16,7 +16,7 @@
     "vs_spy_pct": 0.09,
     "spy_return_pct": 0.1,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-07T17:10:58.833392+00:00"
+    "updated_at": "2026-09-07T17:19:07.071282+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
@@ -112,7 +112,7 @@
     "top_headlines": [
       "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
       "Exxon Mobil Stock (XOM) Opinions on Stock Momentum and Trading Activity - Moomoo",
-      "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits"
+      "XOM, CVX Are Already Up More Than 25% This Year \u2014 One Analyst Thinks There's Still More To Come For Big Oil - Stocktwits"
     ],
     "matched_headlines": [
       {
@@ -125,17 +125,17 @@
         ]
       },
       {
+        "title": "70,895 Shares in ExxonMobil Corporation $XOM Purchased by Planning Project LLC - MarketBeat",
+        "keywords": [
+          "beat"
+        ]
+      },
+      {
         "title": "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits",
         "keywords": [
           "ai",
           "beat",
           "catalyst"
-        ]
-      },
-      {
-        "title": "70,895 Shares in ExxonMobil Corporation $XOM Purchased by Planning Project LLC - MarketBeat",
-        "keywords": [
-          "beat"
         ]
       },
       {
@@ -147,24 +147,25 @@
     ]
   },
   "latest_decision": {
-    "model": "grok-4.3",
+    "model": "grok-4.5",
     "action": "HOLD",
     "symbol": "CASH",
-    "confidence": 60,
+    "confidence": 62,
     "cache_stats": null,
     "entry_price": 0.0,
     "stop_loss": 0.0,
     "take_profit": 0.0,
     "qty": 0.0,
-    "thesis": "Book is at max 5 names with limited cash. Top candidates XOM and HOOD already held with positive or flat P/L. WMT ranks high but not materially superior to current holdings to justify rotation under policy.",
+    "thesis": "Reject SELL XOM: position is only marginally red, well above stop 154.5 and below target 168.5, with no stop or target trigger. Sole ranked candidate is XOM itself at high rank_score 87.57, bullish sentiment, and a positive ownership catalyst, so liquidating lacks edge. Cash is already minimal and book is full with no superior rotation target presented.",
     "reason_code": "hold",
     "reasoning": {
       "headline": "Hold $CASH",
-      "narrative": "Book is at max 5 names with limited cash. Top candidates XOM and HOOD already held with positive or flat P/L. WMT ranks high but not materially superior to current holdings to justify rotation under policy.",
+      "narrative": "Reject SELL XOM: position is only marginally red, well above stop 154.5 and below target 168.5, with no stop or target trigger. Sole ranked candidate is XOM itself at high rank_score 87.57, bullish sentiment, and a positive ownership catalyst, so liquidating lacks edge. Cash is already minimal and book is full with no superior rotation target presented.",
       "bullets": [
-        "XOM weakest P/L but still top-ranked catalyst",
-        "No new name offers clear R:R edge above 1.5 without exceeding notional limits",
-        "Social signals lack ticker specificity and do not override scores"
+        "XOM not at stop/target; pnl only -0.31",
+        "Candidate list ranks XOM bullish 87.57",
+        "No better name to rotate into",
+        "Reject junior SELL directive"
       ],
       "risk_map": {
         "stop": 0.0,
@@ -172,19 +173,20 @@
         "horizon_days": 5,
         "rr": 0.0,
         "confidence_10": 6,
-        "confidence": 60
+        "confidence": 62
       },
-      "thesis": "Book is at max 5 names with limited cash. Top candidates XOM and HOOD already held with positive or flat P/L. WMT ranks high but not materially superior to current holdings to justify rotation under policy."
+      "thesis": "Reject SELL XOM: position is only marginally red, well above stop 154.5 and below target 168.5, with no stop or target trigger. Sole ranked candidate is XOM itself at high rank_score 87.57, bullish sentiment, and a positive ownership catalyst, so liquidating lacks edge. Cash is already minimal and book is full with no superior rotation target presented."
     },
     "source": "live",
     "provider": "xai",
-    "provider_model_id": "grok-4.3",
+    "provider_model_id": "grok-4.5",
     "bullets": [
-      "XOM weakest P/L but still top-ranked catalyst",
-      "No new name offers clear R:R edge above 1.5 without exceeding notional limits",
-      "Social signals lack ticker specificity and do not override scores"
+      "XOM not at stop/target; pnl only -0.31",
+      "Candidate list ranks XOM bullish 87.57",
+      "No better name to rotate into",
+      "Reject junior SELL directive"
     ],
-    "timestamp": "2026-09-07T17:02:58.392136+00:00"
+    "timestamp": "2026-09-07T17:18:55.029558+00:00"
   },
   "stance": "Holding BAC, HOOD, XOM, JPM, LRCX. No new trade right now.",
   "thinking": {
@@ -262,7 +264,7 @@
         "plan": "stop 295.0 or target 330.0"
       }
     ],
-    "last_checked": "2026-09-07T17:10:56.128540+00:00",
+    "last_checked": "2026-09-07T17:19:04.303504+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "HOLD",
@@ -279,36 +281,137 @@
         "model": "grok-4.3",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 60,
+        "confidence": 65,
         "tone": "hold"
       },
       {
         "prefix": "J",
         "model": "claude-haiku-4-5",
+        "action": "BUY",
+        "symbol": "WMT",
+        "confidence": 72,
+        "tone": "buy"
+      },
+      {
+        "prefix": "J",
+        "model": "deepseek-v4-flash",
+        "action": "SELL",
+        "symbol": "XOM",
+        "confidence": 78,
+        "tone": "sell"
+      },
+      {
+        "prefix": "J",
+        "model": "grok-build-0.1",
+        "action": "SELL",
+        "symbol": "XOM",
+        "confidence": 75,
+        "tone": "sell"
+      },
+      {
+        "prefix": "S",
+        "model": "grok-4.5",
         "action": "HOLD",
         "symbol": "CASH",
         "confidence": 62,
         "tone": "hold"
       },
       {
-        "prefix": "J",
-        "model": "deepseek-v4-flash",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 68,
-        "tone": "hold"
+        "prefix": "S",
+        "model": "claude-sonnet-5",
+        "action": "SELL",
+        "symbol": "XOM",
+        "confidence": 72,
+        "tone": "sell"
       },
       {
-        "prefix": "J",
-        "model": "grok-build-0.1",
+        "prefix": "S",
+        "model": "claude-opus-5",
         "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 60,
+        "symbol": "BAC",
+        "confidence": 80,
         "tone": "hold"
       }
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 desks disagreed on focus",
+      "detail": "Desks: HOLD CASH (62%) vs SELL XOM (72%) vs HOLD BAC (80%). No 2-of-3 senior agreement",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "WMT",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "SELL",
+          "symbol": "XOM",
+          "confidence": 78,
+          "source": "fallback",
+          "provider": null,
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "SELL",
+          "symbol": "XOM",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "SELL",
+          "symbol": "XOM",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "BAC",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "exit",
+      "junior_nomination": "XOM",
+      "timestamp": "2026-09-07T17:18:55.029558+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -847,83 +950,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-09-07T14:48:03.393702+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CASH",
-      "status": "hold",
-      "headline": "HOLD \u2014 no new trade",
-      "detail": "Book is full at 5 names with only $2.67 cash, so no new BUY is possible without a rotation. Top-ranked catalysts are already held (XOM, HOOD); WMT/PANW/UNH are interesting but not materially stronger than the current book to force a sale. No position has hit stop or target, so the cleanest desk action is to stay flat and wait.",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "WMT",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "SELL",
-          "symbol": "XOM",
-          "confidence": 78,
-          "source": "fallback",
-          "provider": null,
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "SELL",
-          "symbol": "XOM",
-          "confidence": 78,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-07T14:34:11.204225+00:00"
     },
     {
       "type": "fill",
@@ -12353,7 +12379,7 @@
       "top_headlines": [
         "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
         "Exxon Mobil Stock (XOM) Opinions on Stock Momentum and Trading Activity - Moomoo",
-        "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits"
+        "XOM, CVX Are Already Up More Than 25% This Year \u2014 One Analyst Thinks There's Still More To Come For Big Oil - Stocktwits"
       ],
       "matched_headlines": [
         {
@@ -12366,17 +12392,17 @@
           ]
         },
         {
+          "title": "70,895 Shares in ExxonMobil Corporation $XOM Purchased by Planning Project LLC - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
           "title": "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits",
           "keywords": [
             "ai",
             "beat",
             "catalyst"
-          ]
-        },
-        {
-          "title": "70,895 Shares in ExxonMobil Corporation $XOM Purchased by Planning Project LLC - MarketBeat",
-          "keywords": [
-            "beat"
           ]
         },
         {
@@ -12627,10 +12653,10 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 4,
-      "BUY": 0,
-      "SELL": 0,
-      "live": 4,
+      "HOLD": 1,
+      "BUY": 1,
+      "SELL": 2,
+      "live": 3,
       "fallback": 0
     },
     "junior_model_3_enabled": true,
@@ -12645,17 +12671,17 @@
     "max_candidates_to_llm": 8,
     "log_all_disagreements": true,
     "decision_mode": "live_dual_llm",
-    "last_tier": "junior_only",
-    "last_stage": "entry",
-    "last_junior_nomination": null,
-    "last_escalate_reason": "",
-    "live_share_recent": 82.9
+    "last_tier": "senior_escalated",
+    "last_stage": "exit",
+    "last_junior_nomination": "XOM",
+    "last_escalate_reason": "junior_nomination",
+    "live_share_recent": 81.8
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 335,
     "closed_outcomes": 152,
-    "consensus_events": 495,
+    "consensus_events": 496,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
@@ -15385,6 +15411,12 @@
       },
       {
         "t": "2026-09-07T17:10:58.833392+00:00",
+        "equity": 1001.91,
+        "cash": 2.67,
+        "event": "mark"
+      },
+      {
+        "t": "2026-09-07T17:19:07.071282+00:00",
         "equity": 1001.91,
         "cash": 2.67,
         "event": "mark"
