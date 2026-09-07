@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T17:40:07.494098+00:00",
+  "generated_at": "2026-09-07T17:47:52.530297+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
@@ -16,7 +16,7 @@
     "vs_spy_pct": 0.09,
     "spy_return_pct": 0.1,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-07T17:40:10.209852+00:00"
+    "updated_at": "2026-09-07T17:47:59.468910+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
@@ -26,9 +26,9 @@
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 8,
+    "consensus_count_today": 9,
     "validated_count_today": 8,
-    "blocked_count_today": 0,
+    "blocked_count_today": 1,
     "fills_today": 2,
     "simulated_orders_today": 8,
     "top_symbol_today": "LRCX"
@@ -147,51 +147,51 @@
   },
   "latest_decision": {
     "model": "grok-4.5",
-    "action": "SELL",
-    "symbol": "XOM",
-    "confidence": 72,
+    "action": "BUY",
+    "symbol": "PANW",
+    "confidence": 78,
     "cache_stats": null,
-    "entry_price": 159.47,
-    "stop_loss": 154.5,
-    "take_profit": 168.5,
-    "qty": 1.25,
-    "thesis": "Junior desk escalation directs an immediate exit of the XOM long. Position shows minor open loss and is the weakest name by P/L while the book is already at max open names. Closing frees risk capacity and follows the explicit SELL directive without waiting for stop or target.",
-    "reason_code": "rotation",
+    "entry_price": 333.26,
+    "stop_loss": 320.0,
+    "take_profit": 353.5,
+    "qty": 0.6,
+    "thesis": "PANW shows a clean headline catalyst with revenue forecast beat tied to AI-driven cybersecurity demand, ranking highest among candidates. Liquid name with neutral RSI leaves room for continuation on the beat narrative. Position sized to cash limit with defined 1.5+ R:R. Adding as fifth name while book still has capacity.",
+    "reason_code": "new_entry",
     "reasoning": {
-      "headline": "Sold $XOM",
-      "narrative": "Junior desk escalation directs an immediate exit of the XOM long. Position shows minor open loss and is the weakest name by P/L while the book is already at max open names. Closing frees risk capacity and follows the explicit SELL directive without waiting for stop or target.",
+      "headline": "Bought $PANW",
+      "narrative": "PANW shows a clean headline catalyst with revenue forecast beat tied to AI-driven cybersecurity demand, ranking highest among candidates. Liquid name with neutral RSI leaves room for continuation on the beat narrative. Position sized to cash limit with defined 1.5+ R:R. Adding as fifth name while book still has capacity.",
       "bullets": [
-        "explicit junior directive to SELL XOM",
-        "weakest open P/L among 5 holds",
-        "book at max names; exit frees slot",
-        "stop/target not yet triggered but rotation authorized"
+        "AI/cyber revenue beat catalyst, rank 95.6",
+        "RSI 50 neutral, room to run",
+        "~0.6 sh keeps notional under $200",
+        "stop 320 / target 353.5 for >=1.5 R:R"
       ],
       "risk_map": {
-        "stop": 154.5,
-        "target": 168.5,
+        "stop": 320.0,
+        "target": 353.5,
         "horizon_days": 5,
-        "rr": 1.82,
-        "confidence_10": 7,
-        "confidence": 72
+        "rr": 1.53,
+        "confidence_10": 8,
+        "confidence": 78
       },
-      "thesis": "Junior desk escalation directs an immediate exit of the XOM long. Position shows minor open loss and is the weakest name by P/L while the book is already at max open names. Closing frees risk capacity and follows the explicit SELL directive without waiting for stop or target."
+      "thesis": "PANW shows a clean headline catalyst with revenue forecast beat tied to AI-driven cybersecurity demand, ranking highest among candidates. Liquid name with neutral RSI leaves room for continuation on the beat narrative. Position sized to cash limit with defined 1.5+ R:R. Adding as fifth name while book still has capacity."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "explicit junior directive to SELL XOM",
-      "weakest open P/L among 5 holds",
-      "book at max names; exit frees slot",
-      "stop/target not yet triggered but rotation authorized"
+      "AI/cyber revenue beat catalyst, rank 95.6",
+      "RSI 50 neutral, room to run",
+      "~0.6 sh keeps notional under $200",
+      "stop 320 / target 353.5 for >=1.5 R:R"
     ],
-    "timestamp": "2026-09-07T17:36:14.149966+00:00"
+    "timestamp": "2026-09-07T17:47:36.284507+00:00"
   },
-  "stance": "Holding BAC, HOOD, JPM, LRCX. No new trade right now. Junior desk escalation directs an immediate exit of the XOM long. Position shows minor open loss and is the weakest name by P/L while the book is already at max open names. Closing frees risk capacity and follows the explicit SELL directive without waiting for stop or target.",
+  "stance": "Buying pressure on PANW. PANW shows a clean headline catalyst with revenue forecast beat tied to AI-driven cybersecurity demand, ranking highest among candidates. Liquid name with neutral RSI leaves room for continuation on the beat narrative. Position sized to cash limit with defined 1.5+ R:R. Adding as fifth name while book still has capacity.",
   "thinking": {
-    "badge": "Holding what it owns",
-    "headline": "Holding BAC, HOOD, JPM, LRCX. No new trade right now.",
-    "plain_english": "Right now Hermes is holding BAC, HOOD, JPM, LRCX and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
+    "badge": "Looking to buy PANW",
+    "headline": "Buying pressure on PANW.",
+    "plain_english": "Right now Hermes wants exposure to PANW. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
     "triggers": [
       "It owns BAC, bought near $62.20. Simple plan: sell if it falls to about $60.00, or take profit near $65.50.",
       "It owns HOOD, bought near $120.77. Simple plan: sell if it falls to about $115.00, or take profit near $129.50.",
@@ -251,10 +251,10 @@
         "plan": "stop 295.0 or target 330.0"
       }
     ],
-    "last_checked": "2026-09-07T17:40:07.494098+00:00",
+    "last_checked": "2026-09-07T17:47:52.530297+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "SELL",
+    "action": "BUY",
     "symbols_held": [
       "BAC",
       "HOOD",
@@ -265,10 +265,10 @@
       {
         "prefix": "J",
         "model": "grok-4.3",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 60,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "PANW",
+        "confidence": 82,
+        "tone": "buy"
       },
       {
         "prefix": "J",
@@ -281,34 +281,34 @@
       {
         "prefix": "J",
         "model": "deepseek-v4-flash",
-        "action": "SELL",
-        "symbol": "XOM",
-        "confidence": 78,
-        "tone": "sell"
+        "action": "BUY",
+        "symbol": "PANW",
+        "confidence": 82,
+        "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "SELL",
-        "symbol": "XOM",
+        "action": "BUY",
+        "symbol": "PANW",
         "confidence": 80,
-        "tone": "sell"
+        "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
-        "action": "SELL",
-        "symbol": "XOM",
-        "confidence": 72,
-        "tone": "sell"
+        "action": "BUY",
+        "symbol": "PANW",
+        "confidence": 78,
+        "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "claude-sonnet-5",
-        "action": "SELL",
-        "symbol": "XOM",
-        "confidence": 72,
-        "tone": "sell"
+        "action": "BUY",
+        "symbol": "PANW",
+        "confidence": 78,
+        "tone": "buy"
       },
       {
         "prefix": "S",
@@ -321,6 +321,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "PANW",
+      "status": "blocked",
+      "headline": "BUY PANW \u2014 blocked",
+      "detail": "Insufficient buying power: $2.67 < $199.96",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 82,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 82,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 80,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 78,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 78,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "BAC",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "PANW",
+      "timestamp": "2026-09-07T17:47:36.284507+00:00"
+    },
     {
       "type": "fill",
       "symbol": "XOM",
@@ -867,83 +944,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-09-07T15:47:55.183975+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CASH",
-      "status": "hold",
-      "headline": "HOLD \u2014 no new trade",
-      "detail": "Book is at max 5 names with minimal cash. Top candidate XOM is already held with negative P/L. No new liquid catalyst setups available for rotation without violating notional or position limits.",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        }
-      ],
-      "tier": "junior_only",
-      "escalate_reason": "",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-07T15:32:41.810349+00:00"
     },
     {
       "type": "fill",
@@ -12471,13 +12471,13 @@
       "sentiment": "bullish",
       "catalyst_score": 17,
       "liquidity_score": 81.46,
-      "rank_score": 87.57,
+      "rank_score": 89.07,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, beat, catalyst): ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
       "top_headlines": [
         "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
         "Exxon Mobil Stock (XOM) Opinions on Stock Momentum and Trading Activity - Moomoo",
-        "XOM, CVX Are Already Up More Than 25% This Year \u2014 One Analyst Thinks There's Still More To Come For Big Oil - Stocktwits"
+        "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits"
       ],
       "matched_headlines": [
         {
@@ -12490,16 +12490,22 @@
           ]
         },
         {
+          "title": "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits",
+          "keywords": [
+            "ai",
+            "beat",
+            "catalyst"
+          ]
+        },
+        {
           "title": "70,895 Shares in ExxonMobil Corporation $XOM Purchased by Planning Project LLC - MarketBeat",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits",
+          "title": "Nasdaq Futures Lead US Premarket Rally As Iran Ceasefire Reports Ease Fears Ahead Of Big Tech Earnings: Why NVDA, ORCL, SPCX, XOM, OTLK Are In Focus - Stocktwits",
           "keywords": [
-            "ai",
-            "beat",
             "catalyst"
           ]
         },
@@ -12576,9 +12582,9 @@
       "percent_change": -2.0926880891645716,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 15,
+      "catalyst_score": 14,
       "liquidity_score": 83.45,
-      "rank_score": 81.69,
+      "rank_score": 77.69,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): HOOD Stock Slides Overnight: Robinhood\u2019s $2B Capital Raise Tests Bulls As Volumes Boom, Agentic Trading Gains Traction - Stocktwits",
       "top_headlines": [
@@ -12607,17 +12613,19 @@
           ]
         },
         {
-          "title": "AMC CEO Slams Robinhood Over 'Inexcusable, Vile' Stock Token Trading - Investor's Business Daily",
+          "title": "HOOD Stock Rallies On Wall Street Optimism: Retail Sentiment Improves As Investors Eye A Bigger Pop - Stocktwits",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "HOOD Stock Rallies On Wall Street Optimism: Retail Sentiment Improves As Investors Eye A Bigger Pop - Stocktwits",
+          "title": "Saudi Central Bank Raises Position in Robinhood Markets, Inc. $HOOD - MarketBeat",
           "keywords": [
             "ai",
-            "catalyst"
+            "beat",
+            "catalyst",
+            "raises"
           ]
         }
       ]
@@ -12702,10 +12710,10 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 1,
-      "BUY": 1,
-      "SELL": 2,
-      "live": 3,
+      "HOLD": 0,
+      "BUY": 4,
+      "SELL": 0,
+      "live": 4,
       "fallback": 0
     },
     "junior_model_3_enabled": true,
@@ -12721,16 +12729,16 @@
     "log_all_disagreements": true,
     "decision_mode": "live_dual_llm",
     "last_tier": "senior_escalated",
-    "last_stage": "exit",
-    "last_junior_nomination": "XOM",
+    "last_stage": "entry",
+    "last_junior_nomination": "PANW",
     "last_escalate_reason": "junior_nomination",
-    "live_share_recent": 81.0
+    "live_share_recent": 81.3
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 336,
     "closed_outcomes": 153,
-    "consensus_events": 497,
+    "consensus_events": 498,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
@@ -15472,6 +15480,12 @@
       },
       {
         "t": "2026-09-07T17:40:10.209852+00:00",
+        "equity": 1001.91,
+        "cash": 202.01,
+        "event": "mark"
+      },
+      {
+        "t": "2026-09-07T17:47:59.468910+00:00",
         "equity": 1001.91,
         "cash": 202.01,
         "event": "mark"
