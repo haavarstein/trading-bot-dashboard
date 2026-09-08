@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-09-08T14:00:54.432146+00:00",
+  "generated_at": "2026-09-08T14:06:11.847778+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1006.96,
+    "portfolio_value": 1005.49,
     "starting_cash": 1000.0,
-    "total_return_pct": 0.7,
-    "total_pnl": 6.96,
+    "total_return_pct": 0.55,
+    "total_pnl": 5.49,
     "realized_pnl": -2.35,
-    "open_pnl": 9.27,
-    "capital_deployed": 804.95,
-    "cash": 202.01,
+    "open_pnl": 7.8,
+    "capital_deployed": 1002.85,
+    "cash": 2.64,
     "closed_trades": 31,
     "win_rate_pct": 29.03,
-    "vs_spy_pct": 0.95,
-    "spy_return_pct": -0.25,
+    "vs_spy_pct": 0.89,
+    "spy_return_pct": -0.34,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-08T14:00:57.596448+00:00"
+    "updated_at": "2026-09-08T14:06:14.499174+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.25,
-    "price": 767.4799194335938,
+    "return_pct": -0.34,
+    "price": 766.7899780273438,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 0,
-    "validated_count_today": 0,
+    "consensus_count_today": 1,
+    "validated_count_today": 1,
     "blocked_count_today": 0,
-    "fills_today": 0,
-    "simulated_orders_today": 0,
-    "top_symbol_today": "WMT"
+    "fills_today": 1,
+    "simulated_orders_today": 1,
+    "top_symbol_today": "XOM"
   },
   "holdings": [
     {
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 62.35499954223633,
-      "market_value": 200.16,
-      "open_pnl": 0.5,
-      "open_pnl_pct": 0.25,
+      "last": 62.165000915527344,
+      "market_value": 199.55,
+      "open_pnl": -0.11,
+      "open_pnl_pct": -0.06,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
@@ -50,10 +50,10 @@
       "symbol": "HOOD",
       "qty": 1.65,
       "avg_cost": 120.77,
-      "last": 123.59989929199219,
-      "market_value": 203.94,
-      "open_pnl": 4.67,
-      "open_pnl_pct": 2.34,
+      "last": 123.27999877929688,
+      "market_value": 203.41,
+      "open_pnl": 4.14,
+      "open_pnl_pct": 2.08,
       "stop": 115.0,
       "target": 129.5,
       "thesis": "HOOD shows top-ranked catalyst with Wall Street optimism and improving retail sentiment per Yahoo Finance headline. Current RSI at 50.0 leaves room for upside without overbought conditions. Book has ample cash and only one open name, allowing small new entry under $200 notional. Reward-to-risk exceeds 1.5 with defined levels."
@@ -62,10 +62,10 @@
       "symbol": "JPM",
       "qty": 0.55,
       "avg_cost": 357.78,
-      "last": 356.6650085449219,
-      "market_value": 196.17,
-      "open_pnl": -0.61,
-      "open_pnl_pct": -0.31,
+      "last": 355.5350036621094,
+      "market_value": 195.54,
+      "open_pnl": -1.23,
+      "open_pnl_pct": -0.63,
       "stop": 348.0,
       "target": 375.0,
       "thesis": "JPM screens as the top-ranked liquid catalyst candidate with bullish sentiment and institutional buying headline support while RSI sits neutral at 50. Book has room for one more name under the 5-position cap and cash supports a full ~$200 notional add. Reward-to-risk from 357.78 entry to 348 stop versus 375 target clears the 1.5 threshold cleanly. Confirming the junior escalation for a new entry."
@@ -74,67 +74,68 @@
       "symbol": "LRCX",
       "qty": 0.65,
       "avg_cost": 307.65,
-      "last": 314.8900146484375,
-      "market_value": 204.68,
-      "open_pnl": 4.71,
-      "open_pnl_pct": 2.35,
+      "last": 314.0849914550781,
+      "market_value": 204.16,
+      "open_pnl": 4.18,
+      "open_pnl_pct": 2.09,
       "stop": 295.0,
       "target": 330.0,
       "thesis": "LRCX presents a liquid high-rank catalyst setup with institutional buying headline and neutral RSI supporting a bullish continuation entry. Portfolio has room for one more name under the 5-position limit and cash covers a sub-$200 notional slice. Defined stop below recent support yields reward:risk above 1.5 toward the upside target."
+    },
+    {
+      "symbol": "XOM",
+      "qty": 1.24,
+      "avg_cost": 160.78,
+      "last": 161.44000244140625,
+      "market_value": 200.19,
+      "open_pnl": 0.82,
+      "open_pnl_pct": 0.41,
+      "stop": 155.0,
+      "target": 169.5,
+      "thesis": "XOM appears on the ranked candidate list with a bullish sentiment and positive catalyst score driven by institutional share purchases. Neutral RSI leaves room for upside continuation on the headline flow. Cash allows a full ~$200 notional add without exceeding position limits, and the setup clears the required reward-to-risk threshold."
     }
   ],
   "latest_candidate": {
-    "symbol": "WMT",
-    "name": "WMT",
-    "price": 107.13999938964844,
-    "volume": 20527200.0,
-    "avg_volume": 26780910.0,
-    "percent_change": -1.1805928803857004,
+    "symbol": "XOM",
+    "name": "XOM",
+    "price": 160.77999877929688,
+    "volume": 1721347.0,
+    "avg_volume": 13070634.7,
+    "percent_change": 0.8214695858569293,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 16,
-    "liquidity_score": 84.28,
-    "rank_score": 85.09,
+    "catalyst_score": 14,
+    "liquidity_score": 81.16,
+    "rank_score": 73.33,
     "news_hits": 8,
-    "catalyst": "Headline-driven setup (ai, catalyst): Walmart Earnings Ahead: Can WMT Stock Sustain Momentum Under New CEO? - Stocktwits",
+    "catalyst": "Headline-driven setup (beat): ExxonMobil Corporation $XOM Shares Purchased by Ameritas Advisory Services LLC - MarketBeat",
     "top_headlines": [
-      "Walmart Earnings Ahead: Can WMT Stock Sustain Momentum Under New CEO? - Stocktwits",
-      "WMT Stock Sinks To Near Eight-Month Low \u2014 Cleveland Research Flags Slowing Sales - Stocktwits",
-      "14,114 Shares in Walmart Inc. $WMT Bought by Planning Project LLC - MarketBeat"
+      "ExxonMobil Corporation $XOM Shares Purchased by Ameritas Advisory Services LLC - MarketBeat",
+      "ExxonMobil: Profits Ahead Amid Higher Oil, Cost Savings, Lower Debt (NYSE:XOM) - Seeking Alpha",
+      "XOM, CVX Are Already Up More Than 25% This Year \u2014 One Analyst Thinks There's Still More To Come For Big Oil - Stocktwits"
     ],
     "matched_headlines": [
       {
-        "title": "Walmart Earnings Ahead: Can WMT Stock Sustain Momentum Under New CEO? - Stocktwits",
-        "keywords": [
-          "ai",
-          "catalyst"
-        ]
-      },
-      {
-        "title": "14,114 Shares in Walmart Inc. $WMT Bought by Planning Project LLC - MarketBeat",
+        "title": "ExxonMobil Corporation $XOM Shares Purchased by Ameritas Advisory Services LLC - MarketBeat",
         "keywords": [
           "beat"
         ]
       },
       {
-        "title": "Walmart (WMT) Stock Seems Fairly Priced After Its $1.3B Automation Push - simplywall.st",
+        "title": "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
         "keywords": [
           "ai",
-          "catalyst"
-        ]
-      },
-      {
-        "title": "VIRGINIA RETIREMENT SYSTEMS ET Al Acquires Shares of 700,251 Walmart Inc. $WMT - MarketBeat",
-        "keywords": [
-          "beat"
-        ]
-      },
-      {
-        "title": "Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
-        "keywords": [
-          "ai",
+          "beat",
           "catalyst",
-          "record"
+          "raised"
+        ]
+      },
+      {
+        "title": "Two Utility Dividend Plays Are Quietly Beating XOM, CVX On Yield Amid Iran-Driven Oil Rally \u2014 Does Retail Know? - Stocktwits",
+        "keywords": [
+          "ai",
+          "beat",
+          "catalyst"
         ]
       }
     ]
@@ -142,57 +143,57 @@
   "latest_decision": {
     "model": "grok-4.5",
     "action": "BUY",
-    "symbol": "WMT",
-    "confidence": 78,
+    "symbol": "XOM",
+    "confidence": 72,
     "cache_stats": null,
-    "entry_price": 107.14,
-    "stop_loss": 103.0,
-    "take_profit": 114.5,
-    "qty": 1.85,
-    "thesis": "WMT shows a clean liquid catalyst setup into earnings with bullish sentiment and solid rank score under the new CEO narrative. RSI near neutral leaves room for continuation if results sustain momentum. Risk is defined tightly below recent support while targeting a 1.5+ R multiple on the upside. Position sized to ~$198 notional within cash and desk limits.",
+    "entry_price": 160.78,
+    "stop_loss": 155.0,
+    "take_profit": 169.5,
+    "qty": 1.24,
+    "thesis": "XOM appears on the ranked candidate list with a bullish sentiment and positive catalyst score driven by institutional share purchases. Neutral RSI leaves room for upside continuation on the headline flow. Cash allows a full ~$200 notional add without exceeding position limits, and the setup clears the required reward-to-risk threshold.",
     "reason_code": "new_entry",
     "reasoning": {
-      "headline": "Bought $WMT",
-      "narrative": "WMT shows a clean liquid catalyst setup into earnings with bullish sentiment and solid rank score under the new CEO narrative. RSI near neutral leaves room for continuation if results sustain momentum. Risk is defined tightly below recent support while targeting a 1.5+ R multiple on the upside. Position sized to ~$198 notional within cash and desk limits.",
+      "headline": "Bought $XOM",
+      "narrative": "XOM appears on the ranked candidate list with a bullish sentiment and positive catalyst score driven by institutional share purchases. Neutral RSI leaves room for upside continuation on the headline flow. Cash allows a full ~$200 notional add without exceeding position limits, and the setup clears the required reward-to-risk threshold.",
       "bullets": [
-        "Earnings catalyst + new CEO momentum headline",
-        "Rank 85 / bullish / RSI 50 neutral-to-constructive",
-        "R:R >1.5 with stop 103 / target 114.5",
-        "Adds 5th name; cash supports ~1.85 sh"
+        "candidate rank 73 with bullish flow",
+        "institutional buy catalyst noted",
+        "R:R >1.5 to 169.5 vs 155 stop",
+        "fits cash and max-names limits"
       ],
       "risk_map": {
-        "stop": 103.0,
-        "target": 114.5,
+        "stop": 155.0,
+        "target": 169.5,
         "horizon_days": 5,
-        "rr": 1.78,
-        "confidence_10": 8,
-        "confidence": 78
+        "rr": 1.51,
+        "confidence_10": 7,
+        "confidence": 72
       },
-      "thesis": "WMT shows a clean liquid catalyst setup into earnings with bullish sentiment and solid rank score under the new CEO narrative. RSI near neutral leaves room for continuation if results sustain momentum. Risk is defined tightly below recent support while targeting a 1.5+ R multiple on the upside. Position sized to ~$198 notional within cash and desk limits."
+      "thesis": "XOM appears on the ranked candidate list with a bullish sentiment and positive catalyst score driven by institutional share purchases. Neutral RSI leaves room for upside continuation on the headline flow. Cash allows a full ~$200 notional add without exceeding position limits, and the setup clears the required reward-to-risk threshold."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Earnings catalyst + new CEO momentum headline",
-      "Rank 85 / bullish / RSI 50 neutral-to-constructive",
-      "R:R >1.5 with stop 103 / target 114.5",
-      "Adds 5th name; cash supports ~1.85 sh"
+      "candidate rank 73 with bullish flow",
+      "institutional buy catalyst noted",
+      "R:R >1.5 to 169.5 vs 155 stop",
+      "fits cash and max-names limits"
     ],
-    "timestamp": "2026-09-07T19:48:09.240601+00:00"
+    "timestamp": "2026-09-08T14:05:55.954229+00:00"
   },
-  "stance": "Buying pressure on WMT. WMT shows a clean liquid catalyst setup into earnings with bullish sentiment and solid rank score under the new CEO narrative. RSI near neutral leaves room for continuation if results sustain momentum. Risk is defined tightly below recent support while targeting a 1.5+ R multiple on the upside. Position sized to ~$198 notional within cash and desk limits.",
+  "stance": "Buying pressure on XOM. XOM appears on the ranked candidate list with a bullish sentiment and positive catalyst score driven by institutional share purchases. Neutral RSI leaves room for upside continuation on the headline flow. Cash allows a full ~$200 notional add without exceeding position limits, and the setup clears the required reward-to-risk threshold.",
   "thinking": {
-    "badge": "Looking to buy WMT",
-    "headline": "Buying pressure on WMT.",
-    "plain_english": "Right now Hermes wants exposure to WMT. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
+    "badge": "Looking to buy XOM",
+    "headline": "Buying pressure on XOM.",
+    "plain_english": "Right now Hermes wants exposure to XOM. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
     "triggers": [
       "It owns BAC, bought near $62.20. Simple plan: sell if it falls to about $60.00, or take profit near $65.50.",
       "It owns HOOD, bought near $120.77. Simple plan: sell if it falls to about $115.00, or take profit near $129.50.",
       "It owns JPM, bought near $357.78. Simple plan: sell if it falls to about $348.00, or take profit near $375.00.",
       "It owns LRCX, bought near $307.65. Simple plan: sell if it falls to about $295.00, or take profit near $330.00.",
-      "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
-      "Top scanner name right now is WMT, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
+      "It owns XOM, bought near $160.78. Simple plan: sell if it falls to about $155.00, or take profit near $169.50.",
+      "Book is at max open names (5). A new buy needs a free slot, enough cash, or a gated rotation.",
       "If nothing looks clean, do nothing. Sitting in cash or holdings is allowed."
     ],
     "owned": [
@@ -202,9 +203,9 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 62.35499954223633,
-        "open_pnl": 0.5,
-        "open_pnl_pct": 0.25,
+        "last": 62.165000915527344,
+        "open_pnl": -0.11,
+        "open_pnl_pct": -0.06,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
       },
@@ -214,9 +215,9 @@
         "avg_cost": 120.77,
         "stop": 115.0,
         "target": 129.5,
-        "last": 123.59989929199219,
-        "open_pnl": 4.67,
-        "open_pnl_pct": 2.34,
+        "last": 123.27999877929688,
+        "open_pnl": 4.14,
+        "open_pnl_pct": 2.08,
         "line": "Bought near $120.77 \u00b7 Sell safety line $115.00 \u00b7 Profit target $129.50",
         "plan": "stop 115.0 or target 129.5"
       },
@@ -226,9 +227,9 @@
         "avg_cost": 357.78,
         "stop": 348.0,
         "target": 375.0,
-        "last": 356.6650085449219,
-        "open_pnl": -0.61,
-        "open_pnl_pct": -0.31,
+        "last": 355.5350036621094,
+        "open_pnl": -1.23,
+        "open_pnl_pct": -0.63,
         "line": "Bought near $357.78 \u00b7 Sell safety line $348.00 \u00b7 Profit target $375.00",
         "plan": "stop 348.0 or target 375.0"
       },
@@ -238,14 +239,26 @@
         "avg_cost": 307.65,
         "stop": 295.0,
         "target": 330.0,
-        "last": 314.8900146484375,
-        "open_pnl": 4.71,
-        "open_pnl_pct": 2.35,
+        "last": 314.0849914550781,
+        "open_pnl": 4.18,
+        "open_pnl_pct": 2.09,
         "line": "Bought near $307.65 \u00b7 Sell safety line $295.00 \u00b7 Profit target $330.00",
         "plan": "stop 295.0 or target 330.0"
+      },
+      {
+        "symbol": "XOM",
+        "qty": 1.24,
+        "avg_cost": 160.78,
+        "stop": 155.0,
+        "target": 169.5,
+        "last": 161.44000244140625,
+        "open_pnl": 0.82,
+        "open_pnl_pct": 0.41,
+        "line": "Bought near $160.78 \u00b7 Sell safety line $155.00 \u00b7 Profit target $169.50",
+        "plan": "stop 155.0 or target 169.5"
       }
     ],
-    "last_checked": "2026-09-08T14:00:54.432146+00:00",
+    "last_checked": "2026-09-08T14:06:11.847778+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -253,22 +266,23 @@
       "BAC",
       "HOOD",
       "JPM",
-      "LRCX"
+      "LRCX",
+      "XOM"
     ],
     "model_chips": [
       {
         "prefix": "J",
         "model": "grok-4.3",
         "action": "BUY",
-        "symbol": "WMT",
-        "confidence": 82,
+        "symbol": "XOM",
+        "confidence": 73,
         "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "claude-haiku-4-5",
         "action": "BUY",
-        "symbol": "WMT",
+        "symbol": "XOM",
         "confidence": 72,
         "tone": "buy"
       },
@@ -276,15 +290,15 @@
         "prefix": "J",
         "model": "deepseek-v4-flash",
         "action": "BUY",
-        "symbol": "WMT",
-        "confidence": 72,
+        "symbol": "XOM",
+        "confidence": 73,
         "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
         "action": "BUY",
-        "symbol": "WMT",
+        "symbol": "XOM",
         "confidence": 75,
         "tone": "buy"
       },
@@ -292,30 +306,128 @@
         "prefix": "S",
         "model": "grok-4.5",
         "action": "BUY",
-        "symbol": "WMT",
-        "confidence": 78,
+        "symbol": "XOM",
+        "confidence": 72,
         "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "claude-sonnet-5",
         "action": "BUY",
-        "symbol": "WMT",
+        "symbol": "XOM",
         "confidence": 72,
         "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "claude-opus-5",
-        "action": "HOLD",
-        "symbol": "BAC",
-        "confidence": 80,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "XOM",
+        "confidence": 90,
+        "tone": "buy"
       }
     ]
   },
-  "activity": [],
+  "activity": [
+    {
+      "type": "fill",
+      "symbol": "XOM",
+      "status": "filled_paper",
+      "headline": "BUY XOM @ $160.78",
+      "detail": "XOM appears on the ranked candidate list with a bullish sentiment and positive catalyst score driven by institutional share purchases. Neutral RSI leaves room for upside continuation on the headline flow. Cash allows a full ~$200 notional add without exceeding position limits, and the setup clears the required reward-to-risk threshold.",
+      "timestamp": "2026-09-08T14:05:55.955258+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "XOM",
+      "status": "validated",
+      "headline": "BUY XOM \u2014 validated",
+      "detail": "XOM appears on the ranked candidate list with a bullish sentiment and positive catalyst score driven by institutional share purchases. Neutral RSI leaves room for upside continuation on the headline flow. Cash allows a full ~$200 notional add without exceeding position limits, and the setup clears the required reward-to-risk threshold.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "XOM",
+          "confidence": 73,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "XOM",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "XOM",
+          "confidence": 73,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "XOM",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "XOM",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "XOM",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "BUY",
+          "symbol": "XOM",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "XOM",
+      "timestamp": "2026-09-08T14:05:55.954229+00:00"
+    }
+  ],
   "recent_trades": [
+    {
+      "timestamp": "2026-09-08T14:05:55.955258+00:00",
+      "action": "BUY",
+      "symbol": "XOM",
+      "qty": 1.24,
+      "price": 160.78,
+      "notional": 199.37,
+      "realized_pnl": null,
+      "reason": null,
+      "thesis": "XOM appears on the ranked candidate list with a bullish sentiment and positive catalyst score driven by institutional share purchases. Neutral RSI leaves room for upside continuation on the headline flow. Cash allows a full ~$200 notional add without exceeding position limits, and the setup clears the required reward-to-risk threshold.",
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-09-07T17:36:14.153974+00:00",
       "action": "SELL",
@@ -423,21 +535,37 @@
       "reason": null,
       "thesis": "HOOD shows a high-rank catalyst setup with Piper Sandler raising the price target on football prediction market strength and AI-related momentum. Sentiment is bullish and RSI is neutral at 50, supporting a clean long entry within risk limits. Position sized to ~$200 notional with defined R:R >1.5.",
       "status": "FILLED_PAPER"
-    },
-    {
-      "timestamp": "2026-09-02T14:03:32.618540+00:00",
-      "action": "SELL",
-      "symbol": "PANW",
-      "qty": 0.54,
-      "price": 329.0249938964844,
-      "notional": 177.67,
-      "realized_pnl": -21.38,
-      "reason": "stop_loss",
-      "thesis": "HERMES AUTO-TRADE: Exiting full PANW position on stop-loss. Price $329.02 tagged invalidation at $352.00. Realized path $-21.38.",
-      "status": "FILLED_PAPER"
     }
   ],
   "trade_reasoning": [
+    {
+      "timestamp": "2026-09-08T14:05:55.955258+00:00",
+      "action": "BUY",
+      "symbol": "XOM",
+      "qty": 1.24,
+      "price": 160.78,
+      "notional": 199.37,
+      "headline": "Bought $XOM",
+      "side_label": "buy",
+      "narrative": "XOM appears on the ranked candidate list with a bullish sentiment and positive catalyst score driven by institutional share purchases. Neutral RSI leaves room for upside continuation on the headline flow. Cash allows a full ~$200 notional add without exceeding position limits, and the setup clears the required reward-to-risk threshold.",
+      "bullets": [
+        "candidate rank 73 with bullish flow",
+        "institutional buy catalyst noted",
+        "R:R >1.5 to 169.5 vs 155 stop",
+        "fits cash and max-names limits"
+      ],
+      "risk_map": {
+        "stop": 155.0,
+        "target": 169.5,
+        "horizon_days": 5,
+        "rr": 1.51,
+        "confidence_10": 7,
+        "confidence": 72
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-09-07T17:36:14.153974+00:00",
       "action": "SELL",
@@ -11760,194 +11888,31 @@
   ],
   "top_candidates": [
     {
-      "symbol": "WMT",
-      "name": "WMT",
-      "price": 107.13999938964844,
-      "volume": 20527200.0,
-      "avg_volume": 26780910.0,
-      "percent_change": -1.1805928803857004,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 16,
-      "liquidity_score": 84.28,
-      "rank_score": 85.09,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): Walmart Earnings Ahead: Can WMT Stock Sustain Momentum Under New CEO? - Stocktwits",
-      "top_headlines": [
-        "Walmart Earnings Ahead: Can WMT Stock Sustain Momentum Under New CEO? - Stocktwits",
-        "WMT Stock Sinks To Near Eight-Month Low \u2014 Cleveland Research Flags Slowing Sales - Stocktwits",
-        "14,114 Shares in Walmart Inc. $WMT Bought by Planning Project LLC - MarketBeat"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Walmart Earnings Ahead: Can WMT Stock Sustain Momentum Under New CEO? - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "14,114 Shares in Walmart Inc. $WMT Bought by Planning Project LLC - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Walmart (WMT) Stock Seems Fairly Priced After Its $1.3B Automation Push - simplywall.st",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "VIRGINIA RETIREMENT SYSTEMS ET Al Acquires Shares of 700,251 Walmart Inc. $WMT - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "record"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "NVDA",
-      "name": "NVDA",
-      "price": 230.36000061035156,
-      "volume": 134946800.0,
-      "avg_volume": 159261450.0,
-      "percent_change": 0.8360707759353164,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 14,
-      "liquidity_score": 92.02,
-      "rank_score": 77.97,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat, beats): NVDA, AAPL Stocks In Focus: Foxconn Beats Q2 Revenue Estimates But Sounds Caution On Geopolitics - Stocktwits",
-      "top_headlines": [
-        "Nvidia\u2019s (NVDA) Strong Results Reinforce Long Term Outlook - Yahoo Finance",
-        "NVDA, AAPL Stocks In Focus: Foxconn Beats Q2 Revenue Estimates But Sounds Caution On Geopolitics - Stocktwits",
-        "AI predicts Nvidia (NVDA) price for September 30, 2026 - Finbold"
-      ],
-      "matched_headlines": [
-        {
-          "title": "NVDA, AAPL Stocks In Focus: Foxconn Beats Q2 Revenue Estimates But Sounds Caution On Geopolitics - Stocktwits",
-          "keywords": [
-            "beat",
-            "beats"
-          ]
-        },
-        {
-          "title": "AI predicts Nvidia (NVDA) price for September 30, 2026 - Finbold",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Nvidia: Building An AI Ecosystem (NASDAQ:NVDA) - seekingalpha.com",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "NVIDIA Corporation $NVDA Shares Sold by Aspiriant LLC - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "NVDA Stock Slips After-Hours On Report Nvidia Hit Pause On Cloud Revenue-Share Deals - Stocktwits",
-          "keywords": [
-            "catalyst",
-            "deal"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "HOOD",
-      "name": "HOOD",
-      "price": 122.11000061035156,
-      "volume": 23675800.0,
-      "avg_volume": 22143460.0,
-      "percent_change": -2.0926880891645716,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 14,
-      "liquidity_score": 83.45,
-      "rank_score": 77.69,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): HOOD Stock Slides Overnight: Robinhood\u2019s $2B Capital Raise Tests Bulls As Volumes Boom, Agentic Trading Gains Traction - Stocktwits",
-      "top_headlines": [
-        "Robinhood Markets, Inc. (HOOD) Is Up 17.12% in One Week: What You Should Know - Yahoo Finance",
-        "HOOD Stock Slides Overnight: Robinhood\u2019s $2B Capital Raise Tests Bulls As Volumes Boom, Agentic Trading Gains Traction - Stocktwits",
-        "Here's How Much $1000 Invested In Robinhood Markets 5 Years Ago Would Be Worth Today - Benzinga"
-      ],
-      "matched_headlines": [
-        {
-          "title": "HOOD Stock Slides Overnight: Robinhood\u2019s $2B Capital Raise Tests Bulls As Volumes Boom, Agentic Trading Gains Traction - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Robinhood (HOOD) Jumps 9% on Record Trading Volume \u2014 Can the Rally Continue Above $105? - TradingKey",
-          "keywords": [
-            "record"
-          ]
-        },
-        {
-          "title": "TD Waterhouse Canada Inc. Grows Stake in Robinhood Markets, Inc. $HOOD - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "HOOD Stock Rallies On Wall Street Optimism: Retail Sentiment Improves As Investors Eye A Bigger Pop - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Saudi Central Bank Raises Position in Robinhood Markets, Inc. $HOOD - MarketBeat",
-          "keywords": [
-            "ai",
-            "beat",
-            "catalyst",
-            "raises"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "XOM",
       "name": "XOM",
-      "price": 159.47000122070312,
-      "volume": 16192900.0,
-      "avg_volume": 13982750.0,
-      "percent_change": -1.6891716785372786,
+      "price": 160.77999877929688,
+      "volume": 1721347.0,
+      "avg_volume": 13070634.7,
+      "percent_change": 0.8214695858569293,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 14,
-      "liquidity_score": 81.46,
-      "rank_score": 75.57,
+      "liquidity_score": 81.16,
+      "rank_score": 73.33,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, beat, catalyst): ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
+      "catalyst": "Headline-driven setup (beat): ExxonMobil Corporation $XOM Shares Purchased by Ameritas Advisory Services LLC - MarketBeat",
       "top_headlines": [
-        "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
-        "Exxon Mobil Stock (XOM) Opinions on Stock Momentum and Trading Activity - Moomoo",
-        "\ud83d\udc40 \ufeffXOM Stock News Today: (Exxon Mobil Stock) XOM STOCK PREDICTIONS XOM STOCK Analysis Johnny Gaudreau (9KKNep3fSV) - Mshale"
+        "ExxonMobil Corporation $XOM Shares Purchased by Ameritas Advisory Services LLC - MarketBeat",
+        "ExxonMobil: Profits Ahead Amid Higher Oil, Cost Savings, Lower Debt (NYSE:XOM) - Seeking Alpha",
+        "XOM, CVX Are Already Up More Than 25% This Year \u2014 One Analyst Thinks There's Still More To Come For Big Oil - Stocktwits"
       ],
       "matched_headlines": [
+        {
+          "title": "ExxonMobil Corporation $XOM Shares Purchased by Ameritas Advisory Services LLC - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
         {
           "title": "ExxonMobil Corporation $XOM Stock Position Raised by Wedmont Private Capital - MarketBeat",
           "keywords": [
@@ -11964,64 +11929,227 @@
             "beat",
             "catalyst"
           ]
+        }
+      ]
+    },
+    {
+      "symbol": "WMT",
+      "name": "WMT",
+      "price": 106.12999725341797,
+      "volume": 2370603.0,
+      "avg_volume": 23456340.3,
+      "percent_change": -0.9426938043533836,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 13,
+      "liquidity_score": 83.7,
+      "rank_score": 72.81,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst): Jim Cramer Says Buy Walmart (WMT) as Target\u2019s (TGT) Turnaround Gains Momentum - Yahoo Finance UK",
+      "top_headlines": [
+        "Jim Cramer Says Buy Walmart (WMT) as Target\u2019s (TGT) Turnaround Gains Momentum - Yahoo Finance UK",
+        "WMT Stock Rises Premarket: Analyst Says Walmart's Vibe.co Deal Strengthens Advertising Push - Stocktwits",
+        "Walmart (WMT) Stock Seems Fairly Priced After Its $1.3B Automation Push - simplywall.st"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Jim Cramer Says Buy Walmart (WMT) as Target\u2019s (TGT) Turnaround Gains Momentum - Yahoo Finance UK",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
         },
         {
-          "title": "ExxonMobil Corporation $XOM Shares Sold by HighTower Advisors LLC - MarketBeat",
+          "title": "WMT Stock Rises Premarket: Analyst Says Walmart's Vibe.co Deal Strengthens Advertising Push - Stocktwits",
+          "keywords": [
+            "catalyst",
+            "deal"
+          ]
+        },
+        {
+          "title": "Walmart (WMT) Stock Seems Fairly Priced After Its $1.3B Automation Push - simplywall.st",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "14,114 Shares in Walmart Inc. $WMT Bought by Planning Project LLC - MarketBeat",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "Nasdaq Futures Lead US Premarket Rally As Iran Ceasefire Reports Ease Fears Ahead Of Big Tech Earnings: Why NVDA, ORCL, SPCX, XOM, OTLK Are In Focus - Stocktwits",
+          "title": "WMT Stock Climbs Premarket: Trump's Price-Cut Claim Sparks 'White House Funding' Speculation, Retail Buzz Soars - Stocktwits",
           "keywords": [
-            "catalyst"
+            "ai",
+            "catalyst",
+            "cut"
           ]
         }
       ]
     },
     {
-      "symbol": "UNH",
-      "name": "UNH",
-      "price": 397.1400146484375,
-      "volume": 5565400.0,
-      "avg_volume": 4080340.0,
-      "percent_change": -0.9477696837007635,
+      "symbol": "BAC",
+      "name": "BAC",
+      "price": 62.369998931884766,
+      "volume": 2987102.0,
+      "avg_volume": 28533990.2,
+      "percent_change": -0.49457781075571783,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 14,
-      "liquidity_score": 76.11,
-      "rank_score": 72.67,
+      "catalyst_score": 13,
+      "liquidity_score": 84.55,
+      "rank_score": 71.08,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): Did Berkshire Sell UNH Stock Too Early? Retail Traders Think So \u2013 Call Its Exit \u2018Way Overblown\u2019 - Stocktwits",
+      "catalyst": "Headline-driven setup (ai, catalyst): How Bank Of America Corporation (BAC) Affects Rotational Strategy Timing - Stock Traders Daily",
       "top_headlines": [
-        "Did Berkshire Sell UNH Stock Too Early? Retail Traders Think So \u2013 Call Its Exit \u2018Way Overblown\u2019 - Stocktwits",
-        "UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
-        "Is UNH Stock Set For Another 12% Rally? Analyst Says Medical Cost Trends, Supportive Data Points Leading Toward Favorable Q2 - Stocktwits"
+        "How Bank Of America Corporation (BAC) Affects Rotational Strategy Timing - Stock Traders Daily",
+        "Bank of America (BAC) Joins Stablecoin Push, Is The Stock Still Undervalued? - simplywall.st",
+        "HighTower Advisors LLC Raises Stock Holdings in Bank of America Corporation $BAC - MarketBeat"
       ],
       "matched_headlines": [
         {
-          "title": "Did Berkshire Sell UNH Stock Too Early? Retail Traders Think So \u2013 Call Its Exit \u2018Way Overblown\u2019 - Stocktwits",
+          "title": "How Bank Of America Corporation (BAC) Affects Rotational Strategy Timing - Stock Traders Daily",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
+          "title": "HighTower Advisors LLC Raises Stock Holdings in Bank of America Corporation $BAC - MarketBeat",
           "keywords": [
             "ai",
             "beat",
-            "beats",
             "catalyst",
-            "guidance",
             "raises"
           ]
         },
         {
-          "title": "UNH Stock Becomes Dow\u2019s Biggest Driver Back To 50,000 \u2014 Will Trump Tailwinds Spark Another Leg Higher? - Stocktwits",
+          "title": "Bank of America Corp (BAC) Futures: Prices, Contracts & Specs - Stocktwits",
+          "keywords": [
+            "catalyst",
+            "contract"
+          ]
+        },
+        {
+          "title": "30,227 Shares in Bank of America Corporation $BAC Bought by Compass Financial Management LLC - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "AMD",
+      "name": "AMD",
+      "price": 490.68011474609375,
+      "volume": 5253175.0,
+      "avg_volume": 14555297.5,
+      "percent_change": 2.745169759577185,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 11,
+      "liquidity_score": 81.63,
+      "rank_score": 65.94,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst): AMD Stock Jumps After Unveiling $100,000-Plus AI Workstation for 2027 - Yahoo Finance",
+      "top_headlines": [
+        "AMD Stock Jumps After Unveiling $100,000-Plus AI Workstation for 2027 - Yahoo Finance",
+        "AMD Just Put 300 Billion-Parameter AI Models on a Desktop - 24/7 Wall St.",
+        "INTC, AMD, NVDA, AVGO: Chip Stocks Slide As Fresh US-Iran Strikes Test Peace Deal - Stocktwits"
+      ],
+      "matched_headlines": [
+        {
+          "title": "AMD Stock Jumps After Unveiling $100,000-Plus AI Workstation for 2027 - Yahoo Finance",
           "keywords": [
             "ai",
             "catalyst"
+          ]
+        },
+        {
+          "title": "AMD Just Put 300 Billion-Parameter AI Models on a Desktop - 24/7 Wall St.",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "INTC, AMD, NVDA, AVGO: Chip Stocks Slide As Fresh US-Iran Strikes Test Peace Deal - Stocktwits",
+          "keywords": [
+            "catalyst",
+            "deal"
+          ]
+        },
+        {
+          "title": "Forget AMD: This AI Hardware Stock Is the Smarter Bet Right Now - The Motley Fool",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "What AMD's AI Workstation Launch Means For Shareholders - simplywall.st",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "launch"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "AAPL",
+      "name": "AAPL",
+      "price": 317.1300048828125,
+      "volume": 5292560.0,
+      "avg_volume": 34121956.0,
+      "percent_change": -0.887582063023372,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 10,
+      "liquidity_score": 85.33,
+      "rank_score": 61.01,
+      "news_hits": 7,
+      "catalyst": "Headline-driven setup (demand): Apple: Negatively Impacted By Hyperscaler Demand (NASDAQ:AAPL) - Seeking Alpha",
+      "top_headlines": [
+        "Apple: Negatively Impacted By Hyperscaler Demand (NASDAQ:AAPL) - Seeking Alpha",
+        "AAPL: Apple Stock 5% Under Record as $2,000 Foldable iPhone Takes Center Stage - TradingView",
+        "AAPL Stock Gains \u2014 Apple Reportedly Eyes Foldable iPhone, Camera-Equipped AirPods Launches In 2027 - Stocktwits"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Apple: Negatively Impacted By Hyperscaler Demand (NASDAQ:AAPL) - Seeking Alpha",
+          "keywords": [
+            "demand"
+          ]
+        },
+        {
+          "title": "AAPL: Apple Stock 5% Under Record as $2,000 Foldable iPhone Takes Center Stage - TradingView",
+          "keywords": [
+            "record"
+          ]
+        },
+        {
+          "title": "AAPL Stock Gains \u2014 Apple Reportedly Eyes Foldable iPhone, Camera-Equipped AirPods Launches In 2027 - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "launch"
+          ]
+        },
+        {
+          "title": "\u2018AI Laggard\u2019 Apple Is Sitting Pretty, But AAPL Stock Might Be Running Out of Room to Outperform - barchart.com",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Apple Stock (AAPL) Opinions on iPhone Launch and CEO Transition - Quiver Quantitative",
+          "keywords": [
+            "catalyst",
+            "launch"
           ]
         }
       ]
@@ -12073,23 +12201,23 @@
     "decision_mode": "live_dual_llm",
     "last_tier": "senior_escalated",
     "last_stage": "entry",
-    "last_junior_nomination": "WMT",
+    "last_junior_nomination": "XOM",
     "last_escalate_reason": "junior_nomination",
-    "live_share_recent": 82.9
+    "live_share_recent": 85.7
   },
   "learning": {
     "candidate_signals_logged": 8,
-    "fills_logged": 336,
+    "fills_logged": 337,
     "closed_outcomes": 153,
-    "consensus_events": 505,
+    "consensus_events": 506,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1006.96,
-    "change": 6.96,
-    "change_pct": 0.7,
+    "latest_equity": 1005.49,
+    "change": 5.49,
+    "change_pct": 0.55,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -14876,9 +15004,15 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-08T14:00:57.596448+00:00",
+        "t": "2026-09-08T14:05:55.955258+00:00",
         "equity": 1006.96,
-        "cash": 202.01,
+        "cash": 2.64,
+        "event": "BUY XOM"
+      },
+      {
+        "t": "2026-09-08T14:06:14.499174+00:00",
+        "equity": 1005.49,
+        "cash": 2.64,
         "event": "mark"
       }
     ],
