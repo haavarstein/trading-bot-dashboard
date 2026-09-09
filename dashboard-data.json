@@ -1,34 +1,34 @@
 {
-  "generated_at": "2026-09-09T19:40:41.714569+00:00",
+  "generated_at": "2026-09-09T19:47:32.570561+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1000.27,
+    "portfolio_value": 999.6,
     "starting_cash": 1000.0,
-    "total_return_pct": 0.03,
-    "total_pnl": 0.27,
+    "total_return_pct": -0.04,
+    "total_pnl": -0.4,
     "realized_pnl": -10.93,
-    "open_pnl": 11.16,
-    "capital_deployed": 806.13,
+    "open_pnl": 10.48,
+    "capital_deployed": 805.46,
     "cash": 194.14,
     "closed_trades": 33,
     "win_rate_pct": 27.27,
-    "vs_spy_pct": 0.89,
-    "spy_return_pct": -0.86,
+    "vs_spy_pct": 0.83,
+    "spy_return_pct": -0.87,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-09T19:40:44.397550+00:00"
+    "updated_at": "2026-09-09T19:47:35.173287+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.86,
-    "price": 762.780029296875,
+    "return_pct": -0.87,
+    "price": 762.719970703125,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 6,
+    "consensus_count_today": 7,
     "validated_count_today": 3,
-    "blocked_count_today": 3,
+    "blocked_count_today": 4,
     "fills_today": 2,
     "simulated_orders_today": 3,
     "top_symbol_today": "WMT"
@@ -38,10 +38,10 @@
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 62.85499954223633,
-      "market_value": 201.76,
-      "open_pnl": 2.1,
-      "open_pnl_pct": 1.05,
+      "last": 62.775001525878906,
+      "market_value": 201.51,
+      "open_pnl": 1.85,
+      "open_pnl_pct": 0.92,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
@@ -50,10 +50,10 @@
       "symbol": "LRCX",
       "qty": 0.65,
       "avg_cost": 307.65,
-      "last": 314.9200134277344,
-      "market_value": 204.7,
-      "open_pnl": 4.73,
-      "open_pnl_pct": 2.36,
+      "last": 314.6400146484375,
+      "market_value": 204.52,
+      "open_pnl": 4.54,
+      "open_pnl_pct": 2.27,
       "stop": 295.0,
       "target": 330.0,
       "thesis": "LRCX presents a liquid high-rank catalyst setup with institutional buying headline and neutral RSI supporting a bullish continuation entry. Portfolio has room for one more name under the 5-position limit and cash covers a sub-$200 notional slice. Defined stop below recent support yields reward:risk above 1.5 toward the upside target."
@@ -62,10 +62,10 @@
       "symbol": "XOM",
       "qty": 1.24,
       "avg_cost": 160.78,
-      "last": 164.14999389648438,
-      "market_value": 203.55,
-      "open_pnl": 4.18,
-      "open_pnl_pct": 2.1,
+      "last": 164.0800018310547,
+      "market_value": 203.46,
+      "open_pnl": 4.09,
+      "open_pnl_pct": 2.05,
       "stop": 155.0,
       "target": 169.5,
       "thesis": "XOM appears on the ranked candidate list with a bullish sentiment and positive catalyst score driven by institutional share purchases. Neutral RSI leaves room for upside continuation on the headline flow. Cash allows a full ~$200 notional add without exceeding position limits, and the setup clears the required reward-to-risk threshold."
@@ -74,10 +74,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 106.01000213623047,
-      "market_value": 196.12,
-      "open_pnl": 0.15,
-      "open_pnl_pct": 0.08,
+      "last": 105.93000030517578,
+      "market_value": 195.97,
+      "open_pnl": 0.0,
+      "open_pnl_pct": 0.0,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -86,21 +86,21 @@
   "latest_candidate": {
     "symbol": "BAC",
     "name": "BAC",
-    "price": 62.80500030517578,
-    "volume": 20844341.0,
-    "avg_volume": 30814824.1,
-    "percent_change": 0.665172174366457,
+    "price": 62.755001068115234,
+    "volume": 22416065.0,
+    "avg_volume": 30971996.5,
+    "percent_change": 0.5850323481929011,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 10,
-    "liquidity_score": 84.89,
-    "rank_score": 60.77,
+    "liquidity_score": 84.91,
+    "rank_score": 60.7,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (ai, catalyst): BAC Looks 16.3% Overvalued on GF Value\u2122 as Dividend Sustainabili - GuruFocus",
     "top_headlines": [
       "Capital Return Plan Might Change The Case For Investing In Bank of America (BAC) - simplywall.st",
       "BAC Looks 16.3% Overvalued on GF Value\u2122 as Dividend Sustainabili - GuruFocus",
-      "Bank of America: The Valuation Still Works (NYSE:BAC) - Seeking Alpha"
+      "Stock To Buy Asap: Bank Of America BAC Stock Price Target $200 Elliot Watt (ikKE7zk7H6) - Mshale"
     ],
     "matched_headlines": [
       {
@@ -117,7 +117,7 @@
         ]
       },
       {
-        "title": "Bank of America Corporation $BAC Position Increased by Bank OZK - marketbeat.com",
+        "title": "Bank of America Corporation $BAC Position Increased by Bank OZK - MarketBeat",
         "keywords": [
           "beat"
         ]
@@ -130,7 +130,7 @@
         ]
       },
       {
-        "title": "Waverly Advisors LLC Has $34.32 Million Holdings in Bank of America Corporation $BAC - marketbeat.com",
+        "title": "Waverly Advisors LLC Has $34.32 Million Holdings in Bank of America Corporation $BAC - MarketBeat",
         "keywords": [
           "beat"
         ]
@@ -141,45 +141,45 @@
     "model": "grok-4.5",
     "action": "BUY",
     "symbol": "ANET",
-    "confidence": 74,
+    "confidence": 78,
     "cache_stats": null,
-    "entry_price": 192.64,
+    "entry_price": 192.38,
     "stop_loss": 185.0,
-    "take_profit": 208.0,
+    "take_profit": 205.0,
     "qty": 1.0,
-    "thesis": "ANET shows a clear headline catalyst with raised revenue outlook tied to AI networking demand, supporting a bullish setup at neutral RSI. Liquid name fits the book with room for a fifth position and available cash under the $200 notional cap. Risk-defined entry offers asymmetric upside on continued AI infrastructure strength.",
+    "thesis": "ANET shows a clean headline catalyst with raised revenue outlook tied to AI networking demand, supporting a bullish setup at neutral RSI. Rank and catalyst scores justify a small starter given available cash and open slot under the 5-name cap. Defined risk to 185 leaves room for 1.5+ R:R toward 205 on continued momentum.",
     "reason_code": "new_entry",
     "reasoning": {
       "headline": "Bought $ANET",
-      "narrative": "ANET shows a clear headline catalyst with raised revenue outlook tied to AI networking demand, supporting a bullish setup at neutral RSI. Liquid name fits the book with room for a fifth position and available cash under the $200 notional cap. Risk-defined entry offers asymmetric upside on continued AI infrastructure strength.",
+      "narrative": "ANET shows a clean headline catalyst with raised revenue outlook tied to AI networking demand, supporting a bullish setup at neutral RSI. Rank and catalyst scores justify a small starter given available cash and open slot under the 5-name cap. Defined risk to 185 leaves room for 1.5+ R:R toward 205 on continued momentum.",
       "bullets": [
-        "Catalyst score 9 on raised revenue outlook",
-        "Neutral RSI 50 leaves room for upside",
-        "Fits max 5 names and ~$200 buy limit",
-        "R:R >1.5 to 208 target vs 185 stop"
+        "Catalyst: revenue outlook raised / AI networking",
+        "Neutral RSI 50 with bullish sentiment",
+        "Notional ~$192 within $200 new-buy limit",
+        "R:R 1.7 vs stop 185 / target 205"
       ],
       "risk_map": {
         "stop": 185.0,
-        "target": 208.0,
+        "target": 205.0,
         "horizon_days": 5,
-        "rr": 2.01,
-        "confidence_10": 7,
-        "confidence": 74
+        "rr": 1.71,
+        "confidence_10": 8,
+        "confidence": 78
       },
-      "thesis": "ANET shows a clear headline catalyst with raised revenue outlook tied to AI networking demand, supporting a bullish setup at neutral RSI. Liquid name fits the book with room for a fifth position and available cash under the $200 notional cap. Risk-defined entry offers asymmetric upside on continued AI infrastructure strength."
+      "thesis": "ANET shows a clean headline catalyst with raised revenue outlook tied to AI networking demand, supporting a bullish setup at neutral RSI. Rank and catalyst scores justify a small starter given available cash and open slot under the 5-name cap. Defined risk to 185 leaves room for 1.5+ R:R toward 205 on continued momentum."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Catalyst score 9 on raised revenue outlook",
-      "Neutral RSI 50 leaves room for upside",
-      "Fits max 5 names and ~$200 buy limit",
-      "R:R >1.5 to 208 target vs 185 stop"
+      "Catalyst: revenue outlook raised / AI networking",
+      "Neutral RSI 50 with bullish sentiment",
+      "Notional ~$192 within $200 new-buy limit",
+      "R:R 1.7 vs stop 185 / target 205"
     ],
-    "timestamp": "2026-09-09T19:32:21.792412+00:00"
+    "timestamp": "2026-09-09T19:47:23.851229+00:00"
   },
-  "stance": "Buying pressure on ANET. ANET shows a clear headline catalyst with raised revenue outlook tied to AI networking demand, supporting a bullish setup at neutral RSI. Liquid name fits the book with room for a fifth position and available cash under the $200 notional cap. Risk-defined entry offers asymmetric upside on continued AI infrastructure strength.",
+  "stance": "Buying pressure on ANET. ANET shows a clean headline catalyst with raised revenue outlook tied to AI networking demand, supporting a bullish setup at neutral RSI. Rank and catalyst scores justify a small starter given available cash and open slot under the 5-name cap. Defined risk to 185 leaves room for 1.5+ R:R toward 205 on continued momentum.",
   "thinking": {
     "badge": "Looking to buy ANET",
     "headline": "Buying pressure on ANET.",
@@ -199,9 +199,9 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 62.85499954223633,
-        "open_pnl": 2.1,
-        "open_pnl_pct": 1.05,
+        "last": 62.775001525878906,
+        "open_pnl": 1.85,
+        "open_pnl_pct": 0.92,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
       },
@@ -211,9 +211,9 @@
         "avg_cost": 307.65,
         "stop": 295.0,
         "target": 330.0,
-        "last": 314.9200134277344,
-        "open_pnl": 4.73,
-        "open_pnl_pct": 2.36,
+        "last": 314.6400146484375,
+        "open_pnl": 4.54,
+        "open_pnl_pct": 2.27,
         "line": "Bought near $307.65 \u00b7 Sell safety line $295.00 \u00b7 Profit target $330.00",
         "plan": "stop 295.0 or target 330.0"
       },
@@ -223,9 +223,9 @@
         "avg_cost": 160.78,
         "stop": 155.0,
         "target": 169.5,
-        "last": 164.14999389648438,
-        "open_pnl": 4.18,
-        "open_pnl_pct": 2.1,
+        "last": 164.0800018310547,
+        "open_pnl": 4.09,
+        "open_pnl_pct": 2.05,
         "line": "Bought near $160.78 \u00b7 Sell safety line $155.00 \u00b7 Profit target $169.50",
         "plan": "stop 155.0 or target 169.5"
       },
@@ -235,14 +235,14 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 106.01000213623047,
-        "open_pnl": 0.15,
-        "open_pnl_pct": 0.08,
+        "last": 105.93000030517578,
+        "open_pnl": 0.0,
+        "open_pnl_pct": 0.0,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       }
     ],
-    "last_checked": "2026-09-09T19:40:41.714569+00:00",
+    "last_checked": "2026-09-09T19:47:32.570561+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -258,7 +258,7 @@
         "model": "grok-4.3",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 60,
+        "confidence": 65,
         "tone": "hold"
       },
       {
@@ -282,7 +282,7 @@
         "model": "grok-build-0.1",
         "action": "BUY",
         "symbol": "ANET",
-        "confidence": 75,
+        "confidence": 72,
         "tone": "buy"
       },
       {
@@ -290,7 +290,7 @@
         "model": "grok-4.5",
         "action": "BUY",
         "symbol": "ANET",
-        "confidence": 74,
+        "confidence": 78,
         "tone": "buy"
       },
       {
@@ -312,6 +312,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "ANET",
+      "status": "blocked",
+      "headline": "BUY ANET \u2014 blocked",
+      "detail": "Insufficient buying power: $2.26 < $192.38",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "ANET",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "ANET",
+          "confidence": 72,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "ANET",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "ANET",
+          "confidence": 78,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "ANET",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "BAC",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "ANET",
+      "timestamp": "2026-09-09T19:47:23.851229+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "ANET",
@@ -850,83 +927,6 @@
       "stage": "entry",
       "junior_nomination": "ANET",
       "timestamp": "2026-09-09T18:02:57.724936+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "ORCL",
-      "status": "blocked",
-      "headline": "BUY ORCL \u2014 blocked",
-      "detail": "Insufficient buying power: $2.26 < $188.20",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "ORCL",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "ORCL",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "ORCL",
-          "confidence": 78,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "BAC",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-09T17:50:23.741947+00:00"
     },
     {
       "type": "fill",
@@ -12532,21 +12532,21 @@
     {
       "symbol": "BAC",
       "name": "BAC",
-      "price": 62.80500030517578,
-      "volume": 20844341.0,
-      "avg_volume": 30814824.1,
-      "percent_change": 0.665172174366457,
+      "price": 62.755001068115234,
+      "volume": 22416065.0,
+      "avg_volume": 30971996.5,
+      "percent_change": 0.5850323481929011,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 10,
-      "liquidity_score": 84.89,
-      "rank_score": 60.77,
+      "liquidity_score": 84.91,
+      "rank_score": 60.7,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): BAC Looks 16.3% Overvalued on GF Value\u2122 as Dividend Sustainabili - GuruFocus",
       "top_headlines": [
         "Capital Return Plan Might Change The Case For Investing In Bank of America (BAC) - simplywall.st",
         "BAC Looks 16.3% Overvalued on GF Value\u2122 as Dividend Sustainabili - GuruFocus",
-        "Bank of America: The Valuation Still Works (NYSE:BAC) - Seeking Alpha"
+        "Stock To Buy Asap: Bank Of America BAC Stock Price Target $200 Elliot Watt (ikKE7zk7H6) - Mshale"
       ],
       "matched_headlines": [
         {
@@ -12563,7 +12563,7 @@
           ]
         },
         {
-          "title": "Bank of America Corporation $BAC Position Increased by Bank OZK - marketbeat.com",
+          "title": "Bank of America Corporation $BAC Position Increased by Bank OZK - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -12576,7 +12576,7 @@
           ]
         },
         {
-          "title": "Waverly Advisors LLC Has $34.32 Million Holdings in Bank of America Corporation $BAC - marketbeat.com",
+          "title": "Waverly Advisors LLC Has $34.32 Million Holdings in Bank of America Corporation $BAC - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -12586,15 +12586,15 @@
     {
       "symbol": "ANET",
       "name": "ANET",
-      "price": 192.63999938964844,
-      "volume": 2179096.0,
-      "avg_volume": 4440829.6,
-      "percent_change": -1.1899914055828413,
+      "price": 192.38499450683594,
+      "volume": 2321416.0,
+      "avg_volume": 4455061.6,
+      "percent_change": -1.3207899663290756,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 76.47,
-      "rank_score": 55.92,
+      "liquidity_score": 76.49,
+      "rank_score": 56.03,
       "news_hits": 7,
       "catalyst": "Headline-driven setup (ai, catalyst, raised): Revenue Outlook Raised Could Be A Game Changer For Arista Networks Stock (ANET) - simplywall.st",
       "top_headlines": [
@@ -12643,15 +12643,15 @@
     {
       "symbol": "META",
       "name": "META",
-      "price": 655.72998046875,
-      "volume": 28529841.0,
-      "avg_volume": 19151764.1,
-      "percent_change": 6.886940298804448,
+      "price": 653.8400268554688,
+      "volume": 29701537.0,
+      "avg_volume": 19268933.7,
+      "percent_change": 6.5788693472736135,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
-      "liquidity_score": 82.82,
-      "rank_score": 53.43,
+      "liquidity_score": 82.85,
+      "rank_score": 53.19,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Meta stock surges with Wall Street bullish on new AI agent - Yahoo Finance",
       "top_headlines": [
@@ -12699,27 +12699,82 @@
       ]
     },
     {
-      "symbol": "WMT",
-      "name": "WMT",
-      "price": 106.05999755859375,
-      "volume": 8999560.0,
-      "avg_volume": 23682086.0,
-      "percent_change": 0.009424334321857276,
+      "symbol": "ORCL",
+      "name": "ORCL",
+      "price": 162.16000366210938,
+      "volume": 19958881.0,
+      "avg_volume": 23902398.1,
+      "percent_change": -0.22151156835316715,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 7,
-      "liquidity_score": 83.74,
-      "rank_score": 46.57,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, beat, catalyst): Walmart Inc. $WMT Shares Sold by Baird Financial Group Inc. - marketbeat.com",
+      "catalyst_score": 8,
+      "liquidity_score": 83.78,
+      "rank_score": 52.24,
+      "news_hits": 7,
+      "catalyst": "Headline-driven setup (catalyst): Ahead of Oracle Earnings, Here's What Barchart Data Says Comes Next for ORCL Stock - Barchart.com",
       "top_headlines": [
-        "WMT Stock Quote Price and Forecast - CNN",
-        "Will Opioid Settlement Change Walmart (WMT) Narrative - simplywall.st",
-        "Walmart Inc. $WMT Shares Sold by Baird Financial Group Inc. - marketbeat.com"
+        "Ahead of Oracle Earnings, Here's What Barchart Data Says Comes Next for ORCL Stock - Barchart.com",
+        "ORCL Stock Quote Price and Forecast - CNN",
+        "Oracle earnings: Options traders eye $175 strike on heavy call bias (ORCL:NYSE) - Seeking Alpha"
       ],
       "matched_headlines": [
         {
-          "title": "Walmart Inc. $WMT Shares Sold by Baird Financial Group Inc. - marketbeat.com",
+          "title": "Ahead of Oracle Earnings, Here's What Barchart Data Says Comes Next for ORCL Stock - Barchart.com",
+          "keywords": [
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Oracle earnings: Options traders eye $175 strike on heavy call bias (ORCL:NYSE) - Seeking Alpha",
+          "keywords": [
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Oracle Corporation Stock (ORCL) Opinions on Upcoming Earnings and Analyst Upgrades - Moomoo",
+          "keywords": [
+            "catalyst",
+            "upgrade",
+            "upgrades"
+          ]
+        },
+        {
+          "title": "Is Oracle (ORCL) A Bargain On Its Kahuna Workforce Software Tie Up? - simplywall.st",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Oracle Stock ORCL Faces Major Earnings Test With Heavy Debt and Negative Free Cash Flow - FXLeaders",
+          "keywords": [
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "WMT",
+      "name": "WMT",
+      "price": 105.91000366210938,
+      "volume": 9455560.0,
+      "avg_volume": 23727686.0,
+      "percent_change": -0.13201262198937483,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 7,
+      "liquidity_score": 83.75,
+      "rank_score": 46.67,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, beat, catalyst): Walmart Inc. $WMT Shares Sold by Baird Financial Group Inc. - MarketBeat",
+      "top_headlines": [
+        "WMT Stock Quote Price and Forecast - CNN",
+        "Will Opioid Settlement Change Walmart (WMT) Narrative - simplywall.st",
+        "Walmart Inc. $WMT Shares Sold by Baird Financial Group Inc. - MarketBeat"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Walmart Inc. $WMT Shares Sold by Baird Financial Group Inc. - MarketBeat",
           "keywords": [
             "ai",
             "beat",
@@ -12742,51 +12797,9 @@
           ]
         },
         {
-          "title": "Walmart Inc. $WMT Shares Acquired by IFP Advisors Inc - marketbeat.com",
+          "title": "Walmart Inc. $WMT Shares Acquired by IFP Advisors Inc - MarketBeat",
           "keywords": [
             "beat"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "JPM",
-      "name": "JPM",
-      "price": 355.2691955566406,
-      "volume": 3188577.0,
-      "avg_volume": 5241187.7,
-      "percent_change": 0.4976339403181128,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 7,
-      "liquidity_score": 77.19,
-      "rank_score": 44.48,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): JPMorgan Chase & Co. $JPM Shares Purchased by KBC Group NV - marketbeat.com",
-      "top_headlines": [
-        "Stocks to Consider Before the Fed's September Decision: JPM, EOG, BE - Yahoo Finance",
-        "JPMorgan Chase & Co. $JPM Shares Purchased by KBC Group NV - marketbeat.com",
-        "JPM Looks 11.2% Overvalued on GF Value\u2122 - GuruFocus"
-      ],
-      "matched_headlines": [
-        {
-          "title": "JPMorgan Chase & Co. $JPM Shares Purchased by KBC Group NV - marketbeat.com",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "JPMorgan Chase (JPM) Stock Looks Reasonable On Earnings And Stretched On Price - simplywall.st",
-          "keywords": [
-            "catalyst"
-          ]
-        },
-        {
-          "title": "JPMorgan Chase & Co. $JPM Shares Bought by Mosaic Family Wealth Partners LLC - marketbeat.com",
-          "keywords": [
-            "ai",
-            "beat",
-            "catalyst"
           ]
         }
       ]
@@ -12846,15 +12859,15 @@
     "candidate_signals_logged": 8,
     "fills_logged": 340,
     "closed_outcomes": 155,
-    "consensus_events": 552,
+    "consensus_events": 553,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1000.27,
-    "change": 0.27,
-    "change_pct": 0.03,
+    "latest_equity": 999.6,
+    "change": -0.4,
+    "change_pct": -0.04,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15883,6 +15896,12 @@
       {
         "t": "2026-09-09T19:40:44.397550+00:00",
         "equity": 1000.27,
+        "cash": 194.14,
+        "event": "mark"
+      },
+      {
+        "t": "2026-09-09T19:47:35.173287+00:00",
+        "equity": 999.6,
         "cash": 194.14,
         "event": "mark"
       }
