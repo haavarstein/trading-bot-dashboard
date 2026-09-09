@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-09T16:00:26.181713+00:00",
+  "generated_at": "2026-09-09T16:03:03.539912+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 999.39,
+    "portfolio_value": 1000.41,
     "starting_cash": 1000.0,
-    "total_return_pct": -0.06,
-    "total_pnl": -0.61,
+    "total_return_pct": 0.04,
+    "total_pnl": 0.41,
     "realized_pnl": -3.54,
-    "open_pnl": 2.89,
-    "capital_deployed": 801.16,
+    "open_pnl": 3.9,
+    "capital_deployed": 802.18,
     "cash": 198.23,
     "closed_trades": 32,
     "win_rate_pct": 28.12,
-    "vs_spy_pct": 0.88,
-    "spy_return_pct": -0.94,
+    "vs_spy_pct": 0.96,
+    "spy_return_pct": -0.92,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-09T16:00:28.774524+00:00"
+    "updated_at": "2026-09-09T16:03:06.229972+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.94,
-    "price": 762.155029296875,
+    "return_pct": -0.92,
+    "price": 762.3397827148438,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,10 +38,10 @@
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 62.70500183105469,
-      "market_value": 201.28,
-      "open_pnl": 1.62,
-      "open_pnl_pct": 0.81,
+      "last": 62.71500015258789,
+      "market_value": 201.32,
+      "open_pnl": 1.65,
+      "open_pnl_pct": 0.83,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
@@ -50,10 +50,10 @@
       "symbol": "HOOD",
       "qty": 1.65,
       "avg_cost": 120.77,
-      "last": 116.4000015258789,
-      "market_value": 192.06,
-      "open_pnl": -7.21,
-      "open_pnl_pct": -3.62,
+      "last": 116.88999938964844,
+      "market_value": 192.87,
+      "open_pnl": -6.4,
+      "open_pnl_pct": -3.21,
       "stop": 115.0,
       "target": 129.5,
       "thesis": "HOOD shows top-ranked catalyst with Wall Street optimism and improving retail sentiment per Yahoo Finance headline. Current RSI at 50.0 leaves room for upside without overbought conditions. Book has ample cash and only one open name, allowing small new entry under $200 notional. Reward-to-risk exceeds 1.5 with defined levels."
@@ -62,10 +62,10 @@
       "symbol": "LRCX",
       "qty": 0.65,
       "avg_cost": 307.65,
-      "last": 315.5400085449219,
-      "market_value": 205.1,
-      "open_pnl": 5.13,
-      "open_pnl_pct": 2.56,
+      "last": 315.67999267578125,
+      "market_value": 205.19,
+      "open_pnl": 5.22,
+      "open_pnl_pct": 2.61,
       "stop": 295.0,
       "target": 330.0,
       "thesis": "LRCX presents a liquid high-rank catalyst setup with institutional buying headline and neutral RSI supporting a bullish continuation entry. Portfolio has room for one more name under the 5-position limit and cash covers a sub-$200 notional slice. Defined stop below recent support yields reward:risk above 1.5 toward the upside target."
@@ -74,10 +74,10 @@
       "symbol": "XOM",
       "qty": 1.24,
       "avg_cost": 160.78,
-      "last": 163.47999572753906,
-      "market_value": 202.72,
-      "open_pnl": 3.35,
-      "open_pnl_pct": 1.68,
+      "last": 163.5500030517578,
+      "market_value": 202.8,
+      "open_pnl": 3.43,
+      "open_pnl_pct": 1.72,
       "stop": 155.0,
       "target": 169.5,
       "thesis": "XOM appears on the ranked candidate list with a bullish sentiment and positive catalyst score driven by institutional share purchases. Neutral RSI leaves room for upside continuation on the headline flow. Cash allows a full ~$200 notional add without exceeding position limits, and the setup clears the required reward-to-risk threshold."
@@ -86,15 +86,15 @@
   "latest_candidate": {
     "symbol": "BAC",
     "name": "BAC",
-    "price": 62.834999084472656,
-    "volume": 13968462.0,
-    "avg_volume": 30127236.2,
-    "percent_change": 0.7132548472152281,
+    "price": 62.70500183105469,
+    "volume": 14427195.0,
+    "avg_volume": 30173109.5,
+    "percent_change": 0.5048925220193451,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 13,
-    "liquidity_score": 84.79,
-    "rank_score": 71.29,
+    "liquidity_score": 84.8,
+    "rank_score": 71.12,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (beat): Bank of America Corporation $BAC Position Increased by Bank OZK - MarketBeat",
     "top_headlines": [
@@ -134,50 +134,52 @@
     ]
   },
   "latest_decision": {
-    "model": "grok-4.3",
-    "action": "HOLD",
-    "symbol": "CASH",
-    "confidence": 60,
+    "model": "grok-4.5",
+    "action": "BUY",
+    "symbol": "ORCL",
+    "confidence": 73,
     "cache_stats": null,
-    "entry_price": 0.0,
-    "stop_loss": 0.0,
-    "take_profit": 0.0,
-    "qty": 0.0,
-    "thesis": "No new candidate offers a materially better risk-reward setup than existing holdings. BAC remains the strongest name but is already positioned. Weakest holding HOOD shows negative P/L with no rotation catalyst strong enough to justify a switch under current policy.",
-    "reason_code": "hold",
+    "entry_price": 161.41,
+    "stop_loss": 155.0,
+    "take_profit": 171.5,
+    "qty": 1.2,
+    "thesis": "ORCL sold off hard despite an earnings beat, creating a headline-driven dip-buy setup with Wall Street calling for aggressive buying. Rank and catalyst scores support a tactical long while RSI sits neutral near 50. Position size kept inside cash and ~$200 notional limits with defined risk. Reward-to-risk clears the 1.5 threshold on a clean bounce toward the recovery target.",
+    "reason_code": "new_entry",
     "reasoning": {
-      "headline": "Hold $CASH",
-      "narrative": "No new candidate offers a materially better risk-reward setup than existing holdings. BAC remains the strongest name but is already positioned. Weakest holding HOOD shows negative P/L with no rotation catalyst strong enough to justify a switch under current policy.",
+      "headline": "Bought $ORCL",
+      "narrative": "ORCL sold off hard despite an earnings beat, creating a headline-driven dip-buy setup with Wall Street calling for aggressive buying. Rank and catalyst scores support a tactical long while RSI sits neutral near 50. Position size kept inside cash and ~$200 notional limits with defined risk. Reward-to-risk clears the 1.5 threshold on a clean bounce toward the recovery target.",
       "bullets": [
-        "Top candidate BAC already held with positive open P/L",
-        "No new name meets reward:risk >=1.5 threshold within $200 notional",
-        "4 open positions near max; prefer patience over marginal adds"
+        "Earnings-beat selloff + WS aggressive-buy catalyst",
+        "Neutral RSI 50 leaves room for mean-reversion bounce",
+        "Sized to ~$194 notional inside cash/max-buy rules",
+        "R:R ~1.57 with 155 stop / 171.5 target"
       ],
       "risk_map": {
-        "stop": 0.0,
-        "target": 0.0,
+        "stop": 155.0,
+        "target": 171.5,
         "horizon_days": 5,
-        "rr": 0.0,
-        "confidence_10": 6,
-        "confidence": 60
+        "rr": 1.57,
+        "confidence_10": 7,
+        "confidence": 73
       },
-      "thesis": "No new candidate offers a materially better risk-reward setup than existing holdings. BAC remains the strongest name but is already positioned. Weakest holding HOOD shows negative P/L with no rotation catalyst strong enough to justify a switch under current policy."
+      "thesis": "ORCL sold off hard despite an earnings beat, creating a headline-driven dip-buy setup with Wall Street calling for aggressive buying. Rank and catalyst scores support a tactical long while RSI sits neutral near 50. Position size kept inside cash and ~$200 notional limits with defined risk. Reward-to-risk clears the 1.5 threshold on a clean bounce toward the recovery target."
     },
     "source": "live",
     "provider": "xai",
-    "provider_model_id": "grok-4.3",
+    "provider_model_id": "grok-4.5",
     "bullets": [
-      "Top candidate BAC already held with positive open P/L",
-      "No new name meets reward:risk >=1.5 threshold within $200 notional",
-      "4 open positions near max; prefer patience over marginal adds"
+      "Earnings-beat selloff + WS aggressive-buy catalyst",
+      "Neutral RSI 50 leaves room for mean-reversion bounce",
+      "Sized to ~$194 notional inside cash/max-buy rules",
+      "R:R ~1.57 with 155 stop / 171.5 target"
     ],
-    "timestamp": "2026-09-09T15:48:00.815191+00:00"
+    "timestamp": "2026-09-09T16:02:55.340480+00:00"
   },
-  "stance": "Holding BAC, HOOD, LRCX, XOM. No new trade right now.",
+  "stance": "Buying pressure on ORCL. ORCL sold off hard despite an earnings beat, creating a headline-driven dip-buy setup with Wall Street calling for aggressive buying. Rank and catalyst scores support a tactical long while RSI sits neutral near 50. Position size kept inside cash and ~$200 notional limits with defined risk. Reward-to-risk clears the 1.5 threshold on a clean bounce toward the recovery target.",
   "thinking": {
-    "badge": "Holding what it owns",
-    "headline": "Holding BAC, HOOD, LRCX, XOM. No new trade right now.",
-    "plain_english": "Right now Hermes is holding BAC, HOOD, LRCX, XOM and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
+    "badge": "Looking to buy ORCL",
+    "headline": "Buying pressure on ORCL.",
+    "plain_english": "Right now Hermes wants exposure to ORCL. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
     "triggers": [
       "It owns BAC, bought near $62.20. Simple plan: sell if it falls to about $60.00, or take profit near $65.50.",
       "It owns HOOD, bought near $120.77. Simple plan: sell if it falls to about $115.00, or take profit near $129.50.",
@@ -193,9 +195,9 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 62.70500183105469,
-        "open_pnl": 1.62,
-        "open_pnl_pct": 0.81,
+        "last": 62.71500015258789,
+        "open_pnl": 1.65,
+        "open_pnl_pct": 0.83,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
       },
@@ -205,9 +207,9 @@
         "avg_cost": 120.77,
         "stop": 115.0,
         "target": 129.5,
-        "last": 116.4000015258789,
-        "open_pnl": -7.21,
-        "open_pnl_pct": -3.62,
+        "last": 116.88999938964844,
+        "open_pnl": -6.4,
+        "open_pnl_pct": -3.21,
         "line": "Bought near $120.77 \u00b7 Sell safety line $115.00 \u00b7 Profit target $129.50",
         "plan": "stop 115.0 or target 129.5"
       },
@@ -217,9 +219,9 @@
         "avg_cost": 307.65,
         "stop": 295.0,
         "target": 330.0,
-        "last": 315.5400085449219,
-        "open_pnl": 5.13,
-        "open_pnl_pct": 2.56,
+        "last": 315.67999267578125,
+        "open_pnl": 5.22,
+        "open_pnl_pct": 2.61,
         "line": "Bought near $307.65 \u00b7 Sell safety line $295.00 \u00b7 Profit target $330.00",
         "plan": "stop 295.0 or target 330.0"
       },
@@ -229,17 +231,17 @@
         "avg_cost": 160.78,
         "stop": 155.0,
         "target": 169.5,
-        "last": 163.47999572753906,
-        "open_pnl": 3.35,
-        "open_pnl_pct": 1.68,
+        "last": 163.5500030517578,
+        "open_pnl": 3.43,
+        "open_pnl_pct": 1.72,
         "line": "Bought near $160.78 \u00b7 Sell safety line $155.00 \u00b7 Profit target $169.50",
         "plan": "stop 155.0 or target 169.5"
       }
     ],
-    "last_checked": "2026-09-09T16:00:26.181713+00:00",
+    "last_checked": "2026-09-09T16:03:03.539912+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "HOLD",
+    "action": "BUY",
     "symbols_held": [
       "BAC",
       "HOOD",
@@ -252,36 +254,137 @@
         "model": "grok-4.3",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 60,
-        "tone": "hold"
-      },
-      {
-        "prefix": "J",
-        "model": "claude-haiku-4-5",
-        "action": "HOLD",
-        "symbol": "CASH",
         "confidence": 62,
         "tone": "hold"
       },
       {
         "prefix": "J",
+        "model": "claude-haiku-4-5",
+        "action": "BUY",
+        "symbol": "ORCL",
+        "confidence": 72,
+        "tone": "buy"
+      },
+      {
+        "prefix": "J",
         "model": "deepseek-v4-flash",
         "action": "BUY",
-        "symbol": "AMZN",
-        "confidence": 90,
+        "symbol": "ORCL",
+        "confidence": 72,
         "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
+        "action": "BUY",
+        "symbol": "ORCL",
+        "confidence": 75,
+        "tone": "buy"
+      },
+      {
+        "prefix": "S",
+        "model": "grok-4.5",
+        "action": "BUY",
+        "symbol": "ORCL",
+        "confidence": 73,
+        "tone": "buy"
+      },
+      {
+        "prefix": "S",
+        "model": "claude-sonnet-5",
         "action": "HOLD",
         "symbol": "CASH",
         "confidence": 65,
         "tone": "hold"
+      },
+      {
+        "prefix": "S",
+        "model": "claude-opus-5",
+        "action": "BUY",
+        "symbol": "ORCL",
+        "confidence": 90,
+        "tone": "buy"
       }
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "ORCL",
+      "status": "no_consensus",
+      "headline": "BUY ORCL \u2014 no consensus",
+      "detail": "Desks: BUY ORCL (73%) vs HOLD CASH (65%) vs BUY ORCL (90%). No 2-of-3 senior agreement",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "ORCL",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "ORCL",
+          "confidence": 72,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "ORCL",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "ORCL",
+          "confidence": 73,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "BUY",
+          "symbol": "ORCL",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "ORCL",
+      "timestamp": "2026-09-09T16:02:55.340480+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -820,83 +923,6 @@
       "stage": "entry",
       "junior_nomination": "ORCL",
       "timestamp": "2026-09-09T14:17:50.817893+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "ORCL",
-      "status": "no_consensus",
-      "headline": "BUY ORCL \u2014 no consensus",
-      "detail": "Desks: BUY ORCL (74%) vs SELL HOOD (78%) vs BUY ORCL (90%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "ORCL",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "ORCL",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "ORCL",
-          "confidence": 90,
-          "source": "fallback",
-          "provider": null,
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "BAC",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "ORCL",
-          "confidence": 74,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "SELL",
-          "symbol": "HOOD",
-          "confidence": 78,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "BUY",
-          "symbol": "ORCL",
-          "confidence": 90,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-09T14:05:29.292773+00:00"
     }
   ],
   "recent_trades": [
@@ -12416,15 +12442,15 @@
     {
       "symbol": "BAC",
       "name": "BAC",
-      "price": 62.834999084472656,
-      "volume": 13968462.0,
-      "avg_volume": 30127236.2,
-      "percent_change": 0.7132548472152281,
+      "price": 62.70500183105469,
+      "volume": 14427195.0,
+      "avg_volume": 30173109.5,
+      "percent_change": 0.5048925220193451,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
-      "liquidity_score": 84.79,
-      "rank_score": 71.29,
+      "liquidity_score": 84.8,
+      "rank_score": 71.12,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Bank of America Corporation $BAC Position Increased by Bank OZK - MarketBeat",
       "top_headlines": [
@@ -12464,17 +12490,74 @@
       ]
     },
     {
+      "symbol": "ORCL",
+      "name": "ORCL",
+      "price": 161.41000366210938,
+      "volume": 9684555.0,
+      "avg_volume": 22874965.5,
+      "percent_change": -0.6829932200165789,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 11,
+      "liquidity_score": 83.59,
+      "rank_score": 64.58,
+      "news_hits": 6,
+      "catalyst": "Headline-driven setup (beat, catalyst): ORCL Stock Tumbles 10% Despite Earnings Beat, But Wall Street Recommends 'Aggressive' Buying On Selloff - Stocktwits",
+      "top_headlines": [
+        "ORCL Stock Tumbles 10% Despite Earnings Beat, But Wall Street Recommends 'Aggressive' Buying On Selloff - Stocktwits",
+        "Oracle earnings: Options traders eye $175 strike on heavy call bias (ORCL:NYSE) - Seeking Alpha",
+        "Oracle Corporation Stock (ORCL) Opinions on Upcoming Earnings and Analyst Upgrades - Moomoo"
+      ],
+      "matched_headlines": [
+        {
+          "title": "ORCL Stock Tumbles 10% Despite Earnings Beat, But Wall Street Recommends 'Aggressive' Buying On Selloff - Stocktwits",
+          "keywords": [
+            "beat",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Oracle earnings: Options traders eye $175 strike on heavy call bias (ORCL:NYSE) - Seeking Alpha",
+          "keywords": [
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Oracle Corporation Stock (ORCL) Opinions on Upcoming Earnings and Analyst Upgrades - Moomoo",
+          "keywords": [
+            "catalyst",
+            "upgrade",
+            "upgrades"
+          ]
+        },
+        {
+          "title": "Is Oracle (ORCL) A Bargain On Its Kahuna Workforce Software Tie Up? - simplywall.st",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Analysts Offer Insights on Technology Companies: TSMC (TSM) and Oracle (ORCL) - The Globe and Mail",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
       "symbol": "UBER",
       "name": "UBER",
-      "price": 71.38009643554688,
-      "volume": 7492506.0,
-      "avg_volume": 14451080.6,
-      "percent_change": -2.392863234777855,
+      "price": 71.29000091552734,
+      "volume": 8448332.0,
+      "avg_volume": 14546663.2,
+      "percent_change": -2.5160623642777815,
       "exchange": "",
       "sentiment": "bearish",
       "catalyst_score": -11,
-      "liquidity_score": 81.6,
-      "rank_score": 64.15,
+      "liquidity_score": 81.63,
+      "rank_score": 64.26,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst, fall): Uber Stock Falls As Wall Street Sizes Up Tesla's Cybercab Rollout - Investor's Business Daily",
       "top_headlines": [
@@ -12516,55 +12599,56 @@
       ]
     },
     {
-      "symbol": "ORCL",
-      "name": "ORCL",
-      "price": 161.2801055908203,
-      "volume": 9197755.0,
-      "avg_volume": 22826285.5,
-      "percent_change": -0.7629206553317365,
+      "symbol": "META",
+      "name": "META",
+      "price": 651.6798706054688,
+      "volume": 19852064.0,
+      "avg_volume": 18283986.4,
+      "percent_change": 6.226754148934223,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 9,
-      "liquidity_score": 83.58,
-      "rank_score": 56.65,
-      "news_hits": 6,
-      "catalyst": "Headline-driven setup (catalyst): Oracle earnings: Options traders eye $175 strike on heavy call bias (ORCL:NYSE) - Seeking Alpha",
+      "catalyst_score": 8,
+      "liquidity_score": 82.62,
+      "rank_score": 56.87,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst): Meta stock surges with Wall Street bullish on new AI agent - Yahoo Finance",
       "top_headlines": [
-        "Oracle earnings: Options traders eye $175 strike on heavy call bias (ORCL:NYSE) - Seeking Alpha",
-        "Oracle Corporation Stock (ORCL) Opinions on Upcoming Earnings and Analyst Upgrades - Moomoo",
-        "Is Oracle (ORCL) A Bargain On Its Kahuna Workforce Software Tie Up? - simplywall.st"
+        "Meta stock surges with Wall Street bullish on new AI agent - Yahoo Finance",
+        "Meta Stock Jumps As Tech Giant Touts Early Interest In Muse AI Agent - Investor's Business Daily",
+        "Meta\u2019s stock jumps as new personal AI agent Muse addresses a major investor concern - MarketWatch"
       ],
       "matched_headlines": [
         {
-          "title": "Oracle earnings: Options traders eye $175 strike on heavy call bias (ORCL:NYSE) - Seeking Alpha",
+          "title": "Meta stock surges with Wall Street bullish on new AI agent - Yahoo Finance",
           "keywords": [
+            "ai",
             "catalyst"
           ]
         },
         {
-          "title": "Oracle Corporation Stock (ORCL) Opinions on Upcoming Earnings and Analyst Upgrades - Moomoo",
+          "title": "Meta Stock Jumps As Tech Giant Touts Early Interest In Muse AI Agent - Investor's Business Daily",
           "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Meta\u2019s stock jumps as new personal AI agent Muse addresses a major investor concern - MarketWatch",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Why Meta\u2019s Stock Is Rising After Muse AI Launch - Forbes",
+          "keywords": [
+            "ai",
             "catalyst",
-            "upgrade",
-            "upgrades"
+            "launch"
           ]
         },
         {
-          "title": "Is Oracle (ORCL) A Bargain On Its Kahuna Workforce Software Tie Up? - simplywall.st",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Analysts Offer Insights on Technology Companies: TSMC (TSM) and Oracle (ORCL) - The Globe and Mail",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "ORCL Stock Rallies Into Earnings Week: OpenAI GPT-6 Astra Buzz, Morgan Stanley\u2019s Big Target Give Bulls A Boost - Stocktwits",
+          "title": "Meta stock jumps 5% premarket: Analysts bullish on new Muse AI agent - Investing.com",
           "keywords": [
             "ai",
             "catalyst"
@@ -12575,15 +12659,15 @@
     {
       "symbol": "AMZN",
       "name": "AMZN",
-      "price": 251.5,
-      "volume": 13903425.0,
-      "avg_volume": 30970022.5,
-      "percent_change": -2.1286536150984876,
+      "price": 251.57000732421875,
+      "volume": 14560138.0,
+      "avg_volume": 31035693.8,
+      "percent_change": -2.101410231090164,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 84.91,
-      "rank_score": 53.94,
+      "liquidity_score": 84.92,
+      "rank_score": 53.92,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Spotting Winners: Amazon (NASDAQ:AMZN) And Online Retail Stocks In Q2 - Yahoo Finance",
       "top_headlines": [
@@ -12614,73 +12698,15 @@
           ]
         },
         {
-          "title": "10,278 Shares in Amazon.com, Inc. $AMZN Purchased by Phillips Financial Management LLC - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
           "title": "26,754 Shares in Amazon.com, Inc. $AMZN Bought by Stoneridge Investment Partners LLC - MarketBeat",
           "keywords": [
             "beat"
           ]
-        }
-      ]
-    },
-    {
-      "symbol": "META",
-      "name": "META",
-      "price": 651.5650024414062,
-      "volume": 19204561.0,
-      "avg_volume": 18219236.1,
-      "percent_change": 6.208030120812762,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 7,
-      "liquidity_score": 82.61,
-      "rank_score": 52.86,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): Meta stock surges with Wall Street bullish on new AI agent - Yahoo Finance",
-      "top_headlines": [
-        "Meta stock surges with Wall Street bullish on new AI agent - Yahoo Finance",
-        "Meta\u2019s stock jumps as new personal AI agent Muse addresses a major investor concern - marketwatch.com",
-        "Meta Stock Jumps As Tech Giant Touts Early Interest In Muse AI Agent - Investor's Business Daily"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Meta stock surges with Wall Street bullish on new AI agent - Yahoo Finance",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
         },
         {
-          "title": "Meta\u2019s stock jumps as new personal AI agent Muse addresses a major investor concern - marketwatch.com",
+          "title": "10,278 Shares in Amazon.com, Inc. $AMZN Purchased by Phillips Financial Management LLC - MarketBeat",
           "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Meta Stock Jumps As Tech Giant Touts Early Interest In Muse AI Agent - Investor's Business Daily",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Why Meta\u2019s Stock Is Rising After Muse AI Launch - forbes.com",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "launch"
-          ]
-        },
-        {
-          "title": "Meta stock jumps 5% premarket: Analysts bullish on new Muse AI agent - Investing.com",
-          "keywords": [
-            "ai",
-            "catalyst"
+            "beat"
           ]
         }
       ]
@@ -12712,10 +12738,10 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 3,
-      "BUY": 1,
+      "HOLD": 1,
+      "BUY": 3,
       "SELL": 0,
-      "live": 3,
+      "live": 4,
       "fallback": 0
     },
     "junior_model_3_enabled": true,
@@ -12730,25 +12756,25 @@
     "max_candidates_to_llm": 8,
     "log_all_disagreements": true,
     "decision_mode": "live_dual_llm",
-    "last_tier": "junior_only",
+    "last_tier": "senior_escalated",
     "last_stage": "entry",
-    "last_junior_nomination": null,
-    "last_escalate_reason": "",
-    "live_share_recent": 80.4
+    "last_junior_nomination": "ORCL",
+    "last_escalate_reason": "junior_nomination",
+    "live_share_recent": 81.0
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 338,
     "closed_outcomes": 154,
-    "consensus_events": 537,
+    "consensus_events": 538,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 999.39,
-    "change": -0.61,
-    "change_pct": -0.06,
+    "latest_equity": 1000.41,
+    "change": 0.41,
+    "change_pct": 0.04,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15703,8 +15729,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-09T16:00:28.774524+00:00",
-        "equity": 999.39,
+        "t": "2026-09-09T16:03:06.229972+00:00",
+        "equity": 1000.41,
         "cash": 198.23,
         "event": "mark"
       }
