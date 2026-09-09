@@ -1,34 +1,34 @@
 {
-  "generated_at": "2026-09-09T19:30:39.901422+00:00",
+  "generated_at": "2026-09-09T19:32:30.481992+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1000.75,
+    "portfolio_value": 1000.38,
     "starting_cash": 1000.0,
-    "total_return_pct": 0.08,
-    "total_pnl": 0.75,
+    "total_return_pct": 0.04,
+    "total_pnl": 0.38,
     "realized_pnl": -10.93,
-    "open_pnl": 11.64,
-    "capital_deployed": 806.61,
+    "open_pnl": 11.26,
+    "capital_deployed": 806.24,
     "cash": 194.14,
     "closed_trades": 33,
     "win_rate_pct": 27.27,
-    "vs_spy_pct": 0.89,
-    "spy_return_pct": -0.81,
+    "vs_spy_pct": 0.87,
+    "spy_return_pct": -0.83,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-09T19:30:42.486500+00:00"
+    "updated_at": "2026-09-09T19:32:33.096518+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.81,
-    "price": 763.1500244140625,
+    "return_pct": -0.83,
+    "price": 763.030029296875,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 5,
+    "consensus_count_today": 6,
     "validated_count_today": 3,
-    "blocked_count_today": 2,
+    "blocked_count_today": 3,
     "fills_today": 2,
     "simulated_orders_today": 3,
     "top_symbol_today": "WMT"
@@ -38,10 +38,10 @@
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 62.80500030517578,
-      "market_value": 201.6,
-      "open_pnl": 1.94,
-      "open_pnl_pct": 0.97,
+      "last": 62.814998626708984,
+      "market_value": 201.64,
+      "open_pnl": 1.97,
+      "open_pnl_pct": 0.99,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
@@ -50,10 +50,10 @@
       "symbol": "LRCX",
       "qty": 0.65,
       "avg_cost": 307.65,
-      "last": 314.989990234375,
-      "market_value": 204.74,
-      "open_pnl": 4.77,
-      "open_pnl_pct": 2.39,
+      "last": 314.739990234375,
+      "market_value": 204.58,
+      "open_pnl": 4.61,
+      "open_pnl_pct": 2.3,
       "stop": 295.0,
       "target": 330.0,
       "thesis": "LRCX presents a liquid high-rank catalyst setup with institutional buying headline and neutral RSI supporting a bullish continuation entry. Portfolio has room for one more name under the 5-position limit and cash covers a sub-$200 notional slice. Defined stop below recent support yields reward:risk above 1.5 toward the upside target."
@@ -62,10 +62,10 @@
       "symbol": "XOM",
       "qty": 1.24,
       "avg_cost": 160.78,
-      "last": 164.5449981689453,
-      "market_value": 204.04,
-      "open_pnl": 4.67,
-      "open_pnl_pct": 2.34,
+      "last": 164.40499877929688,
+      "market_value": 203.86,
+      "open_pnl": 4.49,
+      "open_pnl_pct": 2.25,
       "stop": 155.0,
       "target": 169.5,
       "thesis": "XOM appears on the ranked candidate list with a bullish sentiment and positive catalyst score driven by institutional share purchases. Neutral RSI leaves room for upside continuation on the headline flow. Cash allows a full ~$200 notional add without exceeding position limits, and the setup clears the required reward-to-risk threshold."
@@ -74,10 +74,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 106.06999969482422,
-      "market_value": 196.23,
-      "open_pnl": 0.26,
-      "open_pnl_pct": 0.13,
+      "last": 106.03500366210938,
+      "market_value": 196.16,
+      "open_pnl": 0.19,
+      "open_pnl_pct": 0.1,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -86,21 +86,21 @@
   "latest_candidate": {
     "symbol": "BAC",
     "name": "BAC",
-    "price": 62.845001220703125,
-    "volume": 20165171.0,
-    "avg_volume": 30746907.1,
-    "percent_change": 0.7292864810160264,
+    "price": 62.80500030517578,
+    "volume": 20844341.0,
+    "avg_volume": 30814824.1,
+    "percent_change": 0.665172174366457,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 10,
-    "liquidity_score": 84.88,
-    "rank_score": 60.82,
+    "liquidity_score": 84.89,
+    "rank_score": 60.77,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (ai, catalyst): BAC Looks 16.3% Overvalued on GF Value\u2122 as Dividend Sustainabili - GuruFocus",
     "top_headlines": [
       "Capital Return Plan Might Change The Case For Investing In Bank of America (BAC) - simplywall.st",
       "BAC Looks 16.3% Overvalued on GF Value\u2122 as Dividend Sustainabili - GuruFocus",
-      "Stock To Buy Asap: Bank Of America BAC Stock Price Target $200 Elliot Watt (ikKE7zk7H6) - Mshale"
+      "Bank of America: The Valuation Still Works (NYSE:BAC) - Seeking Alpha"
     ],
     "matched_headlines": [
       {
@@ -141,45 +141,45 @@
     "model": "grok-4.5",
     "action": "BUY",
     "symbol": "ANET",
-    "confidence": 72,
+    "confidence": 74,
     "cache_stats": null,
-    "entry_price": 192.31,
-    "stop_loss": 184.5,
-    "take_profit": 205.0,
+    "entry_price": 192.64,
+    "stop_loss": 185.0,
+    "take_profit": 208.0,
     "qty": 1.0,
-    "thesis": "ANET shows a clean headline catalyst with revenue outlook raised, supporting the AI networking narrative and bullish sentiment. Rank and catalyst scores justify a starter position sized to remaining cash. RSI near 50 leaves room for continuation without extreme overbought risk. Reward-to-risk meets desk minimum on the planned levels.",
+    "thesis": "ANET shows a clear headline catalyst with raised revenue outlook tied to AI networking demand, supporting a bullish setup at neutral RSI. Liquid name fits the book with room for a fifth position and available cash under the $200 notional cap. Risk-defined entry offers asymmetric upside on continued AI infrastructure strength.",
     "reason_code": "new_entry",
     "reasoning": {
       "headline": "Bought $ANET",
-      "narrative": "ANET shows a clean headline catalyst with revenue outlook raised, supporting the AI networking narrative and bullish sentiment. Rank and catalyst scores justify a starter position sized to remaining cash. RSI near 50 leaves room for continuation without extreme overbought risk. Reward-to-risk meets desk minimum on the planned levels.",
+      "narrative": "ANET shows a clear headline catalyst with raised revenue outlook tied to AI networking demand, supporting a bullish setup at neutral RSI. Liquid name fits the book with room for a fifth position and available cash under the $200 notional cap. Risk-defined entry offers asymmetric upside on continued AI infrastructure strength.",
       "bullets": [
-        "Catalyst: revenue outlook raised (AI/networking)",
-        "Position count 4/5 allows add without forced rotation",
-        "Notional ~$192 inside ~$200 and cash limit",
-        "R:R >1.5 with stop 184.5 / target 205"
+        "Catalyst score 9 on raised revenue outlook",
+        "Neutral RSI 50 leaves room for upside",
+        "Fits max 5 names and ~$200 buy limit",
+        "R:R >1.5 to 208 target vs 185 stop"
       ],
       "risk_map": {
-        "stop": 184.5,
-        "target": 205.0,
+        "stop": 185.0,
+        "target": 208.0,
         "horizon_days": 5,
-        "rr": 1.62,
+        "rr": 2.01,
         "confidence_10": 7,
-        "confidence": 72
+        "confidence": 74
       },
-      "thesis": "ANET shows a clean headline catalyst with revenue outlook raised, supporting the AI networking narrative and bullish sentiment. Rank and catalyst scores justify a starter position sized to remaining cash. RSI near 50 leaves room for continuation without extreme overbought risk. Reward-to-risk meets desk minimum on the planned levels."
+      "thesis": "ANET shows a clear headline catalyst with raised revenue outlook tied to AI networking demand, supporting a bullish setup at neutral RSI. Liquid name fits the book with room for a fifth position and available cash under the $200 notional cap. Risk-defined entry offers asymmetric upside on continued AI infrastructure strength."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Catalyst: revenue outlook raised (AI/networking)",
-      "Position count 4/5 allows add without forced rotation",
-      "Notional ~$192 inside ~$200 and cash limit",
-      "R:R >1.5 with stop 184.5 / target 205"
+      "Catalyst score 9 on raised revenue outlook",
+      "Neutral RSI 50 leaves room for upside",
+      "Fits max 5 names and ~$200 buy limit",
+      "R:R >1.5 to 208 target vs 185 stop"
     ],
-    "timestamp": "2026-09-09T19:17:54.120179+00:00"
+    "timestamp": "2026-09-09T19:32:21.792412+00:00"
   },
-  "stance": "Buying pressure on ANET. ANET shows a clean headline catalyst with revenue outlook raised, supporting the AI networking narrative and bullish sentiment. Rank and catalyst scores justify a starter position sized to remaining cash. RSI near 50 leaves room for continuation without extreme overbought risk. Reward-to-risk meets desk minimum on the planned levels.",
+  "stance": "Buying pressure on ANET. ANET shows a clear headline catalyst with raised revenue outlook tied to AI networking demand, supporting a bullish setup at neutral RSI. Liquid name fits the book with room for a fifth position and available cash under the $200 notional cap. Risk-defined entry offers asymmetric upside on continued AI infrastructure strength.",
   "thinking": {
     "badge": "Looking to buy ANET",
     "headline": "Buying pressure on ANET.",
@@ -199,9 +199,9 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 62.80500030517578,
-        "open_pnl": 1.94,
-        "open_pnl_pct": 0.97,
+        "last": 62.814998626708984,
+        "open_pnl": 1.97,
+        "open_pnl_pct": 0.99,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
       },
@@ -211,9 +211,9 @@
         "avg_cost": 307.65,
         "stop": 295.0,
         "target": 330.0,
-        "last": 314.989990234375,
-        "open_pnl": 4.77,
-        "open_pnl_pct": 2.39,
+        "last": 314.739990234375,
+        "open_pnl": 4.61,
+        "open_pnl_pct": 2.3,
         "line": "Bought near $307.65 \u00b7 Sell safety line $295.00 \u00b7 Profit target $330.00",
         "plan": "stop 295.0 or target 330.0"
       },
@@ -223,9 +223,9 @@
         "avg_cost": 160.78,
         "stop": 155.0,
         "target": 169.5,
-        "last": 164.5449981689453,
-        "open_pnl": 4.67,
-        "open_pnl_pct": 2.34,
+        "last": 164.40499877929688,
+        "open_pnl": 4.49,
+        "open_pnl_pct": 2.25,
         "line": "Bought near $160.78 \u00b7 Sell safety line $155.00 \u00b7 Profit target $169.50",
         "plan": "stop 155.0 or target 169.5"
       },
@@ -235,14 +235,14 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 106.06999969482422,
-        "open_pnl": 0.26,
-        "open_pnl_pct": 0.13,
+        "last": 106.03500366210938,
+        "open_pnl": 0.19,
+        "open_pnl_pct": 0.1,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       }
     ],
-    "last_checked": "2026-09-09T19:30:39.901422+00:00",
+    "last_checked": "2026-09-09T19:32:30.481992+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -282,7 +282,7 @@
         "model": "grok-build-0.1",
         "action": "BUY",
         "symbol": "ANET",
-        "confidence": 72,
+        "confidence": 75,
         "tone": "buy"
       },
       {
@@ -290,16 +290,16 @@
         "model": "grok-4.5",
         "action": "BUY",
         "symbol": "ANET",
-        "confidence": 72,
+        "confidence": 74,
         "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "claude-sonnet-5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 65,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "ANET",
+        "confidence": 72,
+        "tone": "buy"
       },
       {
         "prefix": "S",
@@ -312,6 +312,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "ANET",
+      "status": "blocked",
+      "headline": "BUY ANET \u2014 blocked",
+      "detail": "Insufficient buying power: $2.26 < $192.64",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "ANET",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "ANET",
+          "confidence": 72,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "ANET",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "ANET",
+          "confidence": 74,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "ANET",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "BAC",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "ANET",
+      "timestamp": "2026-09-09T19:32:21.792412+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "ANET",
@@ -850,83 +927,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-09-09T17:50:23.741947+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "ORCL",
-      "status": "no_consensus",
-      "headline": "BUY ORCL \u2014 no consensus",
-      "detail": "Desks: BUY ORCL (74%) vs HOLD CASH (65%) vs HOLD BAC (80%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "ORCL",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "ORCL",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "ANET",
-          "confidence": 74,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "ORCL",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "ORCL",
-          "confidence": 74,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "BAC",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "entry",
-      "junior_nomination": "ORCL",
-      "timestamp": "2026-09-09T17:33:06.134493+00:00"
     },
     {
       "type": "fill",
@@ -12532,21 +12532,21 @@
     {
       "symbol": "BAC",
       "name": "BAC",
-      "price": 62.845001220703125,
-      "volume": 20165171.0,
-      "avg_volume": 30746907.1,
-      "percent_change": 0.7292864810160264,
+      "price": 62.80500030517578,
+      "volume": 20844341.0,
+      "avg_volume": 30814824.1,
+      "percent_change": 0.665172174366457,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 10,
-      "liquidity_score": 84.88,
-      "rank_score": 60.82,
+      "liquidity_score": 84.89,
+      "rank_score": 60.77,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): BAC Looks 16.3% Overvalued on GF Value\u2122 as Dividend Sustainabili - GuruFocus",
       "top_headlines": [
         "Capital Return Plan Might Change The Case For Investing In Bank of America (BAC) - simplywall.st",
         "BAC Looks 16.3% Overvalued on GF Value\u2122 as Dividend Sustainabili - GuruFocus",
-        "Stock To Buy Asap: Bank Of America BAC Stock Price Target $200 Elliot Watt (ikKE7zk7H6) - Mshale"
+        "Bank of America: The Valuation Still Works (NYSE:BAC) - Seeking Alpha"
       ],
       "matched_headlines": [
         {
@@ -12586,15 +12586,15 @@
     {
       "symbol": "ANET",
       "name": "ANET",
-      "price": 192.30999755859375,
-      "volume": 2086018.0,
-      "avg_volume": 4431521.8,
-      "percent_change": -1.3592578293058433,
+      "price": 192.63999938964844,
+      "volume": 2179096.0,
+      "avg_volume": 4440829.6,
+      "percent_change": -1.1899914055828413,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
       "liquidity_score": 76.47,
-      "rank_score": 56.06,
+      "rank_score": 55.92,
       "news_hits": 7,
       "catalyst": "Headline-driven setup (ai, catalyst, raised): Revenue Outlook Raised Could Be A Game Changer For Arista Networks Stock (ANET) - simplywall.st",
       "top_headlines": [
@@ -12643,15 +12643,15 @@
     {
       "symbol": "META",
       "name": "META",
-      "price": 654.969970703125,
-      "volume": 27741749.0,
-      "avg_volume": 19072954.9,
-      "percent_change": 6.763055283837165,
+      "price": 655.72998046875,
+      "volume": 28529841.0,
+      "avg_volume": 19151764.1,
+      "percent_change": 6.886940298804448,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
-      "liquidity_score": 82.8,
-      "rank_score": 53.33,
+      "liquidity_score": 82.82,
+      "rank_score": 53.43,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Meta stock surges with Wall Street bullish on new AI agent - Yahoo Finance",
       "top_headlines": [
@@ -12701,15 +12701,15 @@
     {
       "symbol": "WMT",
       "name": "WMT",
-      "price": 106.0199966430664,
-      "volume": 8668979.0,
-      "avg_volume": 23649027.9,
-      "percent_change": -0.028294585410583717,
+      "price": 106.05999755859375,
+      "volume": 8999560.0,
+      "avg_volume": 23682086.0,
+      "percent_change": 0.009424334321857276,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
       "liquidity_score": 83.74,
-      "rank_score": 46.58,
+      "rank_score": 46.57,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, beat, catalyst): Walmart Inc. $WMT Shares Sold by Baird Financial Group Inc. - marketbeat.com",
       "top_headlines": [
@@ -12752,15 +12752,15 @@
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 355.5151062011719,
-      "volume": 3068976.0,
-      "avg_volume": 5229227.6,
-      "percent_change": 0.5671965093368196,
+      "price": 355.2691955566406,
+      "volume": 3188577.0,
+      "avg_volume": 5241187.7,
+      "percent_change": 0.4976339403181128,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
-      "liquidity_score": 77.18,
-      "rank_score": 44.53,
+      "liquidity_score": 77.19,
+      "rank_score": 44.48,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): JPMorgan Chase & Co. $JPM Shares Purchased by KBC Group NV - marketbeat.com",
       "top_headlines": [
@@ -12840,21 +12840,21 @@
     "last_stage": "entry",
     "last_junior_nomination": "ANET",
     "last_escalate_reason": "junior_nomination",
-    "live_share_recent": 82.9
+    "live_share_recent": 83.6
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 340,
     "closed_outcomes": 155,
-    "consensus_events": 551,
+    "consensus_events": 552,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1000.75,
-    "change": 0.75,
-    "change_pct": 0.07,
+    "latest_equity": 1000.38,
+    "change": 0.38,
+    "change_pct": 0.04,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15881,8 +15881,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-09T19:30:42.486500+00:00",
-        "equity": 1000.75,
+        "t": "2026-09-09T19:32:33.096518+00:00",
+        "equity": 1000.38,
         "cash": 194.14,
         "event": "mark"
       }
