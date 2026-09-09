@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-09-08T19:50:16.943112+00:00",
+  "generated_at": "2026-09-09T13:30:16.138319+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1000.55,
+    "portfolio_value": 1006.21,
     "starting_cash": 1000.0,
-    "total_return_pct": 0.06,
-    "total_pnl": 0.55,
+    "total_return_pct": 0.62,
+    "total_pnl": 6.21,
     "realized_pnl": -3.54,
-    "open_pnl": 4.05,
-    "capital_deployed": 802.32,
+    "open_pnl": 9.71,
+    "capital_deployed": 807.98,
     "cash": 198.23,
     "closed_trades": 32,
     "win_rate_pct": 28.12,
-    "vs_spy_pct": 0.49,
-    "spy_return_pct": -0.43,
+    "vs_spy_pct": 1.35,
+    "spy_return_pct": -0.73,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-08T19:50:19.666478+00:00"
+    "updated_at": "2026-09-09T13:30:18.855029+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.43,
-    "price": 766.1099853515625,
+    "return_pct": -0.73,
+    "price": 763.8099975585938,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 12,
-    "validated_count_today": 2,
-    "blocked_count_today": 10,
-    "fills_today": 2,
-    "simulated_orders_today": 2,
-    "top_symbol_today": "XOM"
+    "consensus_count_today": 0,
+    "validated_count_today": 0,
+    "blocked_count_today": 0,
+    "fills_today": 0,
+    "simulated_orders_today": 0,
+    "top_symbol_today": "BAC"
   },
   "holdings": [
     {
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 62.40999984741211,
-      "market_value": 200.34,
-      "open_pnl": 0.67,
-      "open_pnl_pct": 0.34,
+      "last": 61.81999969482422,
+      "market_value": 198.44,
+      "open_pnl": -1.22,
+      "open_pnl_pct": -0.61,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
@@ -50,10 +50,10 @@
       "symbol": "HOOD",
       "qty": 1.65,
       "avg_cost": 120.77,
-      "last": 117.80000305175781,
-      "market_value": 194.37,
-      "open_pnl": -4.9,
-      "open_pnl_pct": -2.46,
+      "last": 120.83999633789062,
+      "market_value": 199.39,
+      "open_pnl": 0.12,
+      "open_pnl_pct": 0.06,
       "stop": 115.0,
       "target": 129.5,
       "thesis": "HOOD shows top-ranked catalyst with Wall Street optimism and improving retail sentiment per Yahoo Finance headline. Current RSI at 50.0 leaves room for upside without overbought conditions. Book has ample cash and only one open name, allowing small new entry under $200 notional. Reward-to-risk exceeds 1.5 with defined levels."
@@ -62,10 +62,10 @@
       "symbol": "LRCX",
       "qty": 0.65,
       "avg_cost": 307.65,
-      "last": 320.4200134277344,
-      "market_value": 208.27,
-      "open_pnl": 8.3,
-      "open_pnl_pct": 4.15,
+      "last": 320.2799987792969,
+      "market_value": 208.18,
+      "open_pnl": 8.21,
+      "open_pnl_pct": 4.11,
       "stop": 295.0,
       "target": 330.0,
       "thesis": "LRCX presents a liquid high-rank catalyst setup with institutional buying headline and neutral RSI supporting a bullish continuation entry. Portfolio has room for one more name under the 5-position limit and cash covers a sub-$200 notional slice. Defined stop below recent support yields reward:risk above 1.5 toward the upside target."
@@ -74,10 +74,10 @@
       "symbol": "XOM",
       "qty": 1.24,
       "avg_cost": 160.78,
-      "last": 160.75999450683594,
-      "market_value": 199.34,
-      "open_pnl": -0.02,
-      "open_pnl_pct": -0.01,
+      "last": 162.875,
+      "market_value": 201.97,
+      "open_pnl": 2.6,
+      "open_pnl_pct": 1.3,
       "stop": 155.0,
       "target": 169.5,
       "thesis": "XOM appears on the ranked candidate list with a bullish sentiment and positive catalyst score driven by institutional share purchases. Neutral RSI leaves room for upside continuation on the headline flow. Cash allows a full ~$200 notional add without exceeding position limits, and the setup clears the required reward-to-risk threshold."
@@ -196,9 +196,9 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 62.40999984741211,
-        "open_pnl": 0.67,
-        "open_pnl_pct": 0.34,
+        "last": 61.81999969482422,
+        "open_pnl": -1.22,
+        "open_pnl_pct": -0.61,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
       },
@@ -208,9 +208,9 @@
         "avg_cost": 120.77,
         "stop": 115.0,
         "target": 129.5,
-        "last": 117.80000305175781,
-        "open_pnl": -4.9,
-        "open_pnl_pct": -2.46,
+        "last": 120.83999633789062,
+        "open_pnl": 0.12,
+        "open_pnl_pct": 0.06,
         "line": "Bought near $120.77 \u00b7 Sell safety line $115.00 \u00b7 Profit target $129.50",
         "plan": "stop 115.0 or target 129.5"
       },
@@ -220,9 +220,9 @@
         "avg_cost": 307.65,
         "stop": 295.0,
         "target": 330.0,
-        "last": 320.4200134277344,
-        "open_pnl": 8.3,
-        "open_pnl_pct": 4.15,
+        "last": 320.2799987792969,
+        "open_pnl": 8.21,
+        "open_pnl_pct": 4.11,
         "line": "Bought near $307.65 \u00b7 Sell safety line $295.00 \u00b7 Profit target $330.00",
         "plan": "stop 295.0 or target 330.0"
       },
@@ -232,14 +232,14 @@
         "avg_cost": 160.78,
         "stop": 155.0,
         "target": 169.5,
-        "last": 160.75999450683594,
-        "open_pnl": -0.02,
-        "open_pnl_pct": -0.01,
+        "last": 162.875,
+        "open_pnl": 2.6,
+        "open_pnl_pct": 1.3,
         "line": "Bought near $160.78 \u00b7 Sell safety line $155.00 \u00b7 Profit target $169.50",
         "plan": "stop 155.0 or target 169.5"
       }
     ],
-    "last_checked": "2026-09-08T19:50:16.943112+00:00",
+    "last_checked": "2026-09-09T13:30:16.138319+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -308,640 +308,7 @@
       }
     ]
   },
-  "activity": [
-    {
-      "type": "consensus",
-      "symbol": "AMD",
-      "status": "no_consensus",
-      "headline": "BUY AMD \u2014 no consensus",
-      "detail": "Desks: BUY AMD (72%) vs SELL HOOD (78%) vs HOLD BAC (80%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "SELL",
-          "symbol": "HOOD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "SELL",
-          "symbol": "HOOD",
-          "confidence": 78,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "BAC",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-08T19:48:18.633813+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CRWD",
-      "status": "no_consensus",
-      "headline": "BUY CRWD \u2014 no consensus",
-      "detail": "Desks: BUY CRWD (72%) vs HOLD CASH (65%) vs HOLD BAC (80%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "CRWD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "CRWD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "HOLD",
-          "symbol": "BAC",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "CRWD",
-          "confidence": 75,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "CRWD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "BAC",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "entry",
-      "junior_nomination": "CRWD",
-      "timestamp": "2026-09-08T19:33:11.116174+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CRWD",
-      "status": "no_consensus",
-      "headline": "BUY CRWD \u2014 no consensus",
-      "detail": "Desks: BUY CRWD (72%) vs HOLD CASH (65%) vs HOLD BAC (80%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "CRWD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "CRWD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "CRWD",
-          "confidence": 75,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "CRWD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "BAC",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "entry",
-      "junior_nomination": "CRWD",
-      "timestamp": "2026-09-08T19:18:33.753359+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "AMD",
-      "status": "no_consensus",
-      "headline": "BUY AMD \u2014 no consensus",
-      "detail": "Desks: BUY AMD (72%) vs HOLD CASH (65%) vs HOLD BAC (80%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "BAC",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "entry",
-      "junior_nomination": "AMD",
-      "timestamp": "2026-09-08T19:05:50.993472+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "AMD",
-      "status": "no_consensus",
-      "headline": "BUY AMD \u2014 no consensus",
-      "detail": "Desks: BUY AMD (72%) vs SELL HOOD (72%) vs HOLD BAC (80%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "HOLD",
-          "symbol": "BAC",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "SELL",
-          "symbol": "HOOD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "BAC",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-08T18:48:35.610944+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "AMD",
-      "status": "blocked",
-      "headline": "BUY AMD \u2014 blocked",
-      "detail": "Insufficient buying power: $2.64 < $198.01",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 73,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 78,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "BAC",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-08T18:33:36.274130+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "AMD",
-      "status": "no_consensus",
-      "headline": "BUY AMD \u2014 no consensus",
-      "detail": "Desks: BUY AMD (78%) vs HOLD CASH (65%) vs HOLD BAC (80%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 80,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 74,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 75,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 78,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "BAC",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "entry",
-      "junior_nomination": "AMD",
-      "timestamp": "2026-09-08T18:18:03.063837+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "AMD",
-      "status": "no_consensus",
-      "headline": "BUY AMD \u2014 no consensus",
-      "detail": "Desks: BUY AMD (74%) vs HOLD CASH (65%) vs HOLD BAC (80%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 78,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 75,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 74,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "BAC",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "entry",
-      "junior_nomination": "AMD",
-      "timestamp": "2026-09-08T18:02:47.752788+00:00"
-    },
-    {
-      "type": "fill",
-      "symbol": "JPM",
-      "status": "filled_paper",
-      "headline": "SELL JPM @ $355.62",
-      "detail": "JPM is the weakest open position with negative P/L and no fresh catalyst support in the ranked list. Juniors escalated an explicit SELL; confirming exit of the full lot to free risk and cash rather than hold a lagging name. Reward-to-risk on the original plan no longer justifies staying long given stalled price action near mid-range RSI.",
-      "timestamp": "2026-09-08T14:18:57.261387+00:00"
-    },
-    {
-      "type": "fill",
-      "symbol": "XOM",
-      "status": "filled_paper",
-      "headline": "BUY XOM @ $160.78",
-      "detail": "XOM appears on the ranked candidate list with a bullish sentiment and positive catalyst score driven by institutional share purchases. Neutral RSI leaves room for upside continuation on the headline flow. Cash allows a full ~$200 notional add without exceeding position limits, and the setup clears the required reward-to-risk threshold.",
-      "timestamp": "2026-09-08T14:05:55.955258+00:00"
-    }
-  ],
+  "activity": [],
   "recent_trades": [
     {
       "timestamp": "2026-09-08T14:18:57.261387+00:00",
@@ -12792,9 +12159,9 @@
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1000.55,
-    "change": 0.55,
-    "change_pct": 0.06,
+    "latest_equity": 1006.21,
+    "change": 6.21,
+    "change_pct": 0.62,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15701,8 +15068,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-08T19:50:19.666478+00:00",
-        "equity": 1000.55,
+        "t": "2026-09-09T13:30:18.855029+00:00",
+        "equity": 1006.21,
         "cash": 198.23,
         "event": "mark"
       }
