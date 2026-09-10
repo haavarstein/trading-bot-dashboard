@@ -1,34 +1,34 @@
 {
-  "generated_at": "2026-09-10T15:11:00.426713+00:00",
+  "generated_at": "2026-09-10T15:20:30.578573+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 993.73,
+    "portfolio_value": 993.62,
     "starting_cash": 1000.0,
-    "total_return_pct": -0.63,
-    "total_pnl": -6.27,
+    "total_return_pct": -0.64,
+    "total_pnl": -6.38,
     "realized_pnl": -14.35,
-    "open_pnl": 8.03,
-    "capital_deployed": 796.44,
+    "open_pnl": 7.92,
+    "capital_deployed": 796.33,
     "cash": 197.29,
     "closed_trades": 34,
     "win_rate_pct": 26.47,
-    "vs_spy_pct": 0.66,
-    "spy_return_pct": -1.29,
+    "vs_spy_pct": 0.71,
+    "spy_return_pct": -1.35,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-10T15:11:03.119318+00:00"
+    "updated_at": "2026-09-10T15:20:33.413608+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -1.29,
-    "price": 759.4400024414062,
+    "return_pct": -1.35,
+    "price": 758.97998046875,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 3,
+    "consensus_count_today": 4,
     "validated_count_today": 3,
-    "blocked_count_today": 0,
+    "blocked_count_today": 1,
     "fills_today": 2,
     "simulated_orders_today": 3,
     "top_symbol_today": "META"
@@ -38,10 +38,10 @@
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 62.46500015258789,
-      "market_value": 200.51,
-      "open_pnl": 0.85,
-      "open_pnl_pct": 0.43,
+      "last": 62.36000061035156,
+      "market_value": 200.18,
+      "open_pnl": 0.51,
+      "open_pnl_pct": 0.26,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
@@ -50,10 +50,10 @@
       "symbol": "XOM",
       "qty": 1.24,
       "avg_cost": 160.78,
-      "last": 163.8300018310547,
-      "market_value": 203.15,
-      "open_pnl": 3.78,
-      "open_pnl_pct": 1.9,
+      "last": 164.44000244140625,
+      "market_value": 203.91,
+      "open_pnl": 4.54,
+      "open_pnl_pct": 2.28,
       "stop": 155.0,
       "target": 169.5,
       "thesis": "XOM appears on the ranked candidate list with a bullish sentiment and positive catalyst score driven by institutional share purchases. Neutral RSI leaves room for upside continuation on the headline flow. Cash allows a full ~$200 notional add without exceeding position limits, and the setup clears the required reward-to-risk threshold."
@@ -62,10 +62,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 105.95999908447266,
-      "market_value": 196.03,
-      "open_pnl": 0.06,
-      "open_pnl_pct": 0.03,
+      "last": 105.97000122070312,
+      "market_value": 196.04,
+      "open_pnl": 0.07,
+      "open_pnl_pct": 0.04,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -74,10 +74,10 @@
       "symbol": "META",
       "qty": 0.3,
       "avg_cost": 644.68,
-      "last": 655.8200073242188,
-      "market_value": 196.75,
-      "open_pnl": 3.34,
-      "open_pnl_pct": 1.73,
+      "last": 654.010009765625,
+      "market_value": 196.2,
+      "open_pnl": 2.8,
+      "open_pnl_pct": 1.45,
       "stop": 628.0,
       "target": 680.0,
       "thesis": "META ranks second with a clear bullish AI-agent catalyst and supportive Street tone while remaining highly liquid. Small size fits residual cash under the ~$200 new-notional cap without exceeding the five-name limit. Technical RSI is neutral, leaving room for continuation if the AI narrative holds; defined stop below recent support keeps reward:risk above 1.5."
@@ -86,41 +86,48 @@
   "latest_candidate": {
     "symbol": "META",
     "name": "META",
-    "price": 658.4099731445312,
-    "volume": 8648969.0,
-    "avg_volume": 17610236.9,
-    "percent_change": 0.7220503121505328,
+    "price": 654.4349975585938,
+    "volume": 9168574.0,
+    "avg_volume": 17662197.4,
+    "percent_change": 0.1139676474177495,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 18,
-    "liquidity_score": 82.46,
-    "rank_score": 92.45,
+    "catalyst_score": 16,
+    "liquidity_score": 82.47,
+    "rank_score": 83.96,
     "news_hits": 8,
-    "catalyst": "Headline-driven setup (ai, catalyst, growth): Meta Stock Gets Stunning JPMorgan Upgrade on AI Growth - Yahoo Finance",
+    "catalyst": "Headline-driven setup (ai, catalyst): Meta stock surges with Wall Street bullish on new AI agent - Yahoo Finance",
     "top_headlines": [
-      "Meta Stock Gets Stunning JPMorgan Upgrade on AI Growth - Yahoo Finance",
+      "Meta stock surges with Wall Street bullish on new AI agent - Yahoo Finance",
       "Meta shares are still cheap and worth buying. Here's why - CNBC",
-      "Meta Stock Jumped 6.5% on the Muse Launch. The Street\u2019s Targets Say There\u2019s More Room. - tikr.com"
+      "Meta Stock Scores Wall Street Upgrade After Muse AI App Launch - Investor's Business Daily"
     ],
     "matched_headlines": [
       {
-        "title": "Meta Stock Gets Stunning JPMorgan Upgrade on AI Growth - Yahoo Finance",
+        "title": "Meta stock surges with Wall Street bullish on new AI agent - Yahoo Finance",
+        "keywords": [
+          "ai",
+          "catalyst"
+        ]
+      },
+      {
+        "title": "Meta Stock Scores Wall Street Upgrade After Muse AI App Launch - Investor's Business Daily",
         "keywords": [
           "ai",
           "catalyst",
-          "growth",
+          "launch",
           "upgrade"
         ]
       },
       {
-        "title": "Meta Stock Jumped 6.5% on the Muse Launch. The Street\u2019s Targets Say There\u2019s More Room. - tikr.com",
+        "title": "Meta Stock Jumped 6.5% on the Muse Launch. The Street\u2019s Targets Say There\u2019s More Room. - TIKR.com",
         "keywords": [
           "catalyst",
           "launch"
         ]
       },
       {
-        "title": "Why Meta\u2019s Stock Is Rising After Muse AI Launch - Forbes",
+        "title": "Why Meta\u2019s Stock Is Rising After Muse AI Launch - forbes.com",
         "keywords": [
           "ai",
           "catalyst",
@@ -134,63 +141,56 @@
           "catalyst",
           "launch"
         ]
-      },
-      {
-        "title": "Meta Stock Jumps As Tech Giant Touts Early Interest In Muse AI Agent - Investor's Business Daily",
-        "keywords": [
-          "ai",
-          "catalyst"
-        ]
       }
     ]
   },
   "latest_decision": {
     "model": "grok-4.5",
-    "action": "HOLD",
-    "symbol": "CASH",
-    "confidence": 62,
+    "action": "BUY",
+    "symbol": "META",
+    "confidence": 78,
     "cache_stats": null,
-    "entry_price": 0.0,
-    "stop_loss": 0.0,
-    "take_profit": 0.0,
-    "qty": 0.0,
-    "thesis": "Book has four open names with room for one more, but no clean new liquid catalyst setup fits the ~$200 notional cap with solid R:R. Top-ranked META is already held and working; COST is too expensive per share and its listed catalyst appears mismatched, while PANW/LRCX and lower names lack sufficient edge versus existing holds. Weakest names (WMT/BAC) are only modestly green and do not justify a forced rotation.",
-    "reason_code": "hold",
+    "entry_price": 654.43,
+    "stop_loss": 635.0,
+    "take_profit": 690.0,
+    "qty": 0.3,
+    "thesis": "META shows a strong headline-driven AI agent catalyst with Wall Street bullish sentiment and rank_score 83.96. RSI neutral at 50 leaves room for continuation. Adding a small size fits cash limits while aligning with the existing long thesis and favorable reward:risk.",
+    "reason_code": "new_entry",
     "reasoning": {
-      "headline": "Hold $CASH",
-      "narrative": "Book has four open names with room for one more, but no clean new liquid catalyst setup fits the ~$200 notional cap with solid R:R. Top-ranked META is already held and working; COST is too expensive per share and its listed catalyst appears mismatched, while PANW/LRCX and lower names lack sufficient edge versus existing holds. Weakest names (WMT/BAC) are only modestly green and do not justify a forced rotation.",
+      "headline": "Bought $META",
+      "narrative": "META shows a strong headline-driven AI agent catalyst with Wall Street bullish sentiment and rank_score 83.96. RSI neutral at 50 leaves room for continuation. Adding a small size fits cash limits while aligning with the existing long thesis and favorable reward:risk.",
       "bullets": [
-        "No additive setup under ~$200 with clear catalyst + R:R>=1.5",
-        "META already captures top AI upgrade theme",
-        "COST/PANW flawed or weak vs current book",
-        "Hold cash; reassess on cleaner entry"
+        "AI agent catalyst + bullish Street tone",
+        "Rank 84 liquid name, RSI 50 room to run",
+        "R:R >1.5 with stop under recent structure",
+        "Small add within $200 notional and 5-name cap"
       ],
       "risk_map": {
-        "stop": 0.0,
-        "target": 0.0,
+        "stop": 635.0,
+        "target": 690.0,
         "horizon_days": 5,
-        "rr": 0.0,
-        "confidence_10": 6,
-        "confidence": 62
+        "rr": 1.83,
+        "confidence_10": 8,
+        "confidence": 78
       },
-      "thesis": "Book has four open names with room for one more, but no clean new liquid catalyst setup fits the ~$200 notional cap with solid R:R. Top-ranked META is already held and working; COST is too expensive per share and its listed catalyst appears mismatched, while PANW/LRCX and lower names lack sufficient edge versus existing holds. Weakest names (WMT/BAC) are only modestly green and do not justify a forced rotation."
+      "thesis": "META shows a strong headline-driven AI agent catalyst with Wall Street bullish sentiment and rank_score 83.96. RSI neutral at 50 leaves room for continuation. Adding a small size fits cash limits while aligning with the existing long thesis and favorable reward:risk."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "No additive setup under ~$200 with clear catalyst + R:R>=1.5",
-      "META already captures top AI upgrade theme",
-      "COST/PANW flawed or weak vs current book",
-      "Hold cash; reassess on cleaner entry"
+      "AI agent catalyst + bullish Street tone",
+      "Rank 84 liquid name, RSI 50 room to run",
+      "R:R >1.5 with stop under recent structure",
+      "Small add within $200 notional and 5-name cap"
     ],
-    "timestamp": "2026-09-10T15:03:35.141497+00:00"
+    "timestamp": "2026-09-10T15:20:21.820171+00:00"
   },
-  "stance": "Holding BAC, XOM, WMT, META. No new trade right now.",
+  "stance": "Buying pressure on META. META shows a strong headline-driven AI agent catalyst with Wall Street bullish sentiment and rank_score 83.96. RSI neutral at 50 leaves room for continuation. Adding a small size fits cash limits while aligning with the existing long thesis and favorable reward:risk.",
   "thinking": {
-    "badge": "Holding what it owns",
-    "headline": "Holding BAC, XOM, WMT, META. No new trade right now.",
-    "plain_english": "Right now Hermes is holding BAC, XOM, WMT, META and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
+    "badge": "Looking to buy META",
+    "headline": "Buying pressure on META.",
+    "plain_english": "Right now Hermes wants exposure to META. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
     "triggers": [
       "It owns BAC, bought near $62.20. Simple plan: sell if it falls to about $60.00, or take profit near $65.50.",
       "It owns XOM, bought near $160.78. Simple plan: sell if it falls to about $155.00, or take profit near $169.50.",
@@ -206,9 +206,9 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 62.46500015258789,
-        "open_pnl": 0.85,
-        "open_pnl_pct": 0.43,
+        "last": 62.36000061035156,
+        "open_pnl": 0.51,
+        "open_pnl_pct": 0.26,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
       },
@@ -218,9 +218,9 @@
         "avg_cost": 160.78,
         "stop": 155.0,
         "target": 169.5,
-        "last": 163.8300018310547,
-        "open_pnl": 3.78,
-        "open_pnl_pct": 1.9,
+        "last": 164.44000244140625,
+        "open_pnl": 4.54,
+        "open_pnl_pct": 2.28,
         "line": "Bought near $160.78 \u00b7 Sell safety line $155.00 \u00b7 Profit target $169.50",
         "plan": "stop 155.0 or target 169.5"
       },
@@ -230,9 +230,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 105.95999908447266,
-        "open_pnl": 0.06,
-        "open_pnl_pct": 0.03,
+        "last": 105.97000122070312,
+        "open_pnl": 0.07,
+        "open_pnl_pct": 0.04,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -242,17 +242,17 @@
         "avg_cost": 644.68,
         "stop": 628.0,
         "target": 680.0,
-        "last": 655.8200073242188,
-        "open_pnl": 3.34,
-        "open_pnl_pct": 1.73,
+        "last": 654.010009765625,
+        "open_pnl": 2.8,
+        "open_pnl_pct": 1.45,
         "line": "Bought near $644.68 \u00b7 Sell safety line $628.00 \u00b7 Profit target $680.00",
         "plan": "stop 628.0 or target 680.0"
       }
     ],
-    "last_checked": "2026-09-10T15:11:00.426713+00:00",
+    "last_checked": "2026-09-10T15:20:30.578573+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "HOLD",
+    "action": "BUY",
     "symbols_held": [
       "BAC",
       "XOM",
@@ -263,17 +263,17 @@
       {
         "prefix": "J",
         "model": "grok-4.3",
-        "action": "BUY",
-        "symbol": "META",
-        "confidence": 85,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 60,
+        "tone": "hold"
       },
       {
         "prefix": "J",
         "model": "claude-haiku-4-5",
         "action": "BUY",
-        "symbol": "COST",
-        "confidence": 72,
+        "symbol": "META",
+        "confidence": 78,
         "tone": "buy"
       },
       {
@@ -281,30 +281,30 @@
         "model": "deepseek-v4-flash",
         "action": "BUY",
         "symbol": "META",
-        "confidence": 76,
+        "confidence": 75,
         "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 60,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "META",
+        "confidence": 75,
+        "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 62,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "META",
+        "confidence": 78,
+        "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "claude-sonnet-5",
         "action": "BUY",
-        "symbol": "COST",
+        "symbol": "META",
         "confidence": 78,
         "tone": "buy"
       },
@@ -319,6 +319,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "META",
+      "status": "blocked",
+      "headline": "BUY META \u2014 blocked",
+      "detail": "Insufficient buying power: $0.74 < $196.33",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "META",
+          "confidence": 78,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "META",
+          "confidence": 75,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "META",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "META",
+          "confidence": 78,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "META",
+          "confidence": 78,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "BAC",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "META",
+      "timestamp": "2026-09-10T15:20:21.821181+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -12378,41 +12455,48 @@
     {
       "symbol": "META",
       "name": "META",
-      "price": 658.4099731445312,
-      "volume": 8648969.0,
-      "avg_volume": 17610236.9,
-      "percent_change": 0.7220503121505328,
+      "price": 654.4349975585938,
+      "volume": 9168574.0,
+      "avg_volume": 17662197.4,
+      "percent_change": 0.1139676474177495,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 18,
-      "liquidity_score": 82.46,
-      "rank_score": 92.45,
+      "catalyst_score": 16,
+      "liquidity_score": 82.47,
+      "rank_score": 83.96,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst, growth): Meta Stock Gets Stunning JPMorgan Upgrade on AI Growth - Yahoo Finance",
+      "catalyst": "Headline-driven setup (ai, catalyst): Meta stock surges with Wall Street bullish on new AI agent - Yahoo Finance",
       "top_headlines": [
-        "Meta Stock Gets Stunning JPMorgan Upgrade on AI Growth - Yahoo Finance",
+        "Meta stock surges with Wall Street bullish on new AI agent - Yahoo Finance",
         "Meta shares are still cheap and worth buying. Here's why - CNBC",
-        "Meta Stock Jumped 6.5% on the Muse Launch. The Street\u2019s Targets Say There\u2019s More Room. - tikr.com"
+        "Meta Stock Scores Wall Street Upgrade After Muse AI App Launch - Investor's Business Daily"
       ],
       "matched_headlines": [
         {
-          "title": "Meta Stock Gets Stunning JPMorgan Upgrade on AI Growth - Yahoo Finance",
+          "title": "Meta stock surges with Wall Street bullish on new AI agent - Yahoo Finance",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Meta Stock Scores Wall Street Upgrade After Muse AI App Launch - Investor's Business Daily",
           "keywords": [
             "ai",
             "catalyst",
-            "growth",
+            "launch",
             "upgrade"
           ]
         },
         {
-          "title": "Meta Stock Jumped 6.5% on the Muse Launch. The Street\u2019s Targets Say There\u2019s More Room. - tikr.com",
+          "title": "Meta Stock Jumped 6.5% on the Muse Launch. The Street\u2019s Targets Say There\u2019s More Room. - TIKR.com",
           "keywords": [
             "catalyst",
             "launch"
           ]
         },
         {
-          "title": "Why Meta\u2019s Stock Is Rising After Muse AI Launch - Forbes",
+          "title": "Why Meta\u2019s Stock Is Rising After Muse AI Launch - forbes.com",
           "keywords": [
             "ai",
             "catalyst",
@@ -12426,9 +12510,150 @@
             "catalyst",
             "launch"
           ]
+        }
+      ]
+    },
+    {
+      "symbol": "PANW",
+      "name": "PANW",
+      "price": 339.9800109863281,
+      "volume": 1203486.0,
+      "avg_volume": 6872058.6,
+      "percent_change": 1.4562831375493976,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 10,
+      "liquidity_score": 78.37,
+      "rank_score": 57.42,
+      "news_hits": 7,
+      "catalyst": "Headline-driven setup (catalyst, upgrade, upgrades): Palo Alto CEO Says 'Cybersecurity SaaSpocalypse Is Dead' \u2013 PANW Stock Slips Premarket Despite Analyst Upgrades - Stocktwits",
+      "top_headlines": [
+        "Palo Alto CEO Says 'Cybersecurity SaaSpocalypse Is Dead' \u2013 PANW Stock Slips Premarket Despite Analyst Upgrades - Stocktwits",
+        "Palo Alto Networks (PANW) Stock Forecast and Price Target 2026 - MarketBeat",
+        "Palo Alto Networks, Inc. (PANW) Is a Trending Stock: Facts to Know Before Betting on It - Yahoo Finance"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Palo Alto CEO Says 'Cybersecurity SaaSpocalypse Is Dead' \u2013 PANW Stock Slips Premarket Despite Analyst Upgrades - Stocktwits",
+          "keywords": [
+            "catalyst",
+            "upgrade",
+            "upgrades"
+          ]
         },
         {
-          "title": "Meta Stock Jumps As Tech Giant Touts Early Interest In Muse AI Agent - Investor's Business Daily",
+          "title": "Palo Alto Networks (PANW) Stock Forecast and Price Target 2026 - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Analysts Offer Insights on Technology Companies: Palo Alto Networks (PANW) and Broadcom (AVGO) - theglobeandmail.com",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "LRCX",
+      "name": "LRCX",
+      "price": 304.2099914550781,
+      "volume": 1675301.0,
+      "avg_volume": 6640850.1,
+      "percent_change": -3.682245762937046,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 8,
+      "liquidity_score": 78.22,
+      "rank_score": 54.18,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (expansion): Lam Research (LRCX) Benefits From Memory Expansion - Yahoo Finance",
+      "top_headlines": [
+        "Lam Research (LRCX) Benefits From Memory Expansion - Yahoo Finance",
+        "Lam Research Corp Stock (LRCX) Opened Down by 3.98% on Sep 10: What Signal Does It Send? - TradingKey",
+        "Lam Research (LRCX) Stock Looks Pricey On Earnings While AI Demand Stays Strong - simplywall.st"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Lam Research (LRCX) Benefits From Memory Expansion - Yahoo Finance",
+          "keywords": [
+            "expansion"
+          ]
+        },
+        {
+          "title": "Lam Research (LRCX) Stock Looks Pricey On Earnings While AI Demand Stays Strong - simplywall.st",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "demand"
+          ]
+        },
+        {
+          "title": "Top After-Hours Gainers Today Beyond Micron: QCOM, AMAT, LRCX Surge - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Rench Wealth Management Inc. Trims Stake in Lam Research Corporation $LRCX - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Lam Research (LRCX) Suffers a Larger Drop Than the General Market: Key Insights - Yahoo Finance",
+          "keywords": [
+            "drop"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "BAC",
+      "name": "BAC",
+      "price": 62.35499954223633,
+      "volume": 9794785.0,
+      "avg_volume": 31057678.5,
+      "percent_change": -0.5026306620590819,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 8,
+      "liquidity_score": 84.92,
+      "rank_score": 51.14,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (beat): Bank of America Corporation $BAC Stock Holdings Boosted by Sequoia Financial Advisors LLC - MarketBeat",
+      "top_headlines": [
+        "BAC Stock Quote Price and Forecast - CNN",
+        "Bank of America Corporation $BAC Stock Holdings Boosted by Sequoia Financial Advisors LLC - MarketBeat",
+        "BAC Stock Hits Record High After Q2 Earnings \u2013 Bank Of America CEO Says It\u2019s A \u2018Good Environment\u2019 For AI Buildout - Stocktwits"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Bank of America Corporation $BAC Stock Holdings Boosted by Sequoia Financial Advisors LLC - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "BAC Stock Hits Record High After Q2 Earnings \u2013 Bank Of America CEO Says It\u2019s A \u2018Good Environment\u2019 For AI Buildout - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "record"
+          ]
+        },
+        {
+          "title": "Goldman Sachs Sticks to Their Buy Rating for Bank of America (BAC) - theglobeandmail.com",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "BAC Looks 16.3% Overvalued on GF Value\u2122 as Dividend Sustainabili - GuruFocus",
           "keywords": [
             "ai",
             "catalyst"
@@ -12439,15 +12664,15 @@
     {
       "symbol": "COST",
       "name": "COST",
-      "price": 901.5599975585938,
-      "volume": 489931.0,
-      "avg_volume": 1874403.1,
-      "percent_change": -0.11522025874957854,
+      "price": 901.7249755859375,
+      "volume": 530606.0,
+      "avg_volume": 1878470.6,
+      "percent_change": -0.09694216969505007,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 18,
-      "liquidity_score": 72.73,
-      "rank_score": 90.5,
+      "catalyst_score": 8,
+      "liquidity_score": 72.74,
+      "rank_score": 50.49,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, cut, cuts): Keefe Bruyette upgrades Simmons First stock rating on cost cuts - Investing.com",
       "top_headlines": [
@@ -12489,166 +12714,12 @@
           ]
         },
         {
-          "title": "Navan beats quarterly estimates, raises forecast; shares tumble on cost concerns - WTVB",
-          "keywords": [
-            "ai",
-            "beat",
-            "beats",
-            "catalyst",
-            "raises"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "WMT",
-      "name": "WMT",
-      "price": 106.11000061035156,
-      "volume": 4399627.0,
-      "avg_volume": 21927932.7,
-      "percent_change": 0.26457410417875693,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 10,
-      "liquidity_score": 83.41,
-      "rank_score": 60.22,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst, record): Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
-      "top_headlines": [
-        "Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
-        "Walmart creates a stir at a New York Fashion Week event (WMT:NASDAQ) - Seeking Alpha",
-        "Walmart Great Value Berry Recall: 16 States, Lot Code and WMT Stock Impact - TechStock\u00b2"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
+          "title": "CVS Still Sees 'High-Trend' Cost Growth; Oscar, UNH Stock Fall - Investor's Business Daily",
           "keywords": [
             "ai",
             "catalyst",
-            "record"
-          ]
-        },
-        {
-          "title": "Walmart Great Value Berry Recall: 16 States, Lot Code and WMT Stock Impact - TechStock\u00b2",
-          "keywords": [
-            "recall"
-          ]
-        },
-        {
-          "title": "Walmart (NASDAQ:WMT) Receives \"Buy\" Rating from BTIG Research - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Jim Cramer Says Buy Walmart (WMT) as Target\u2019s (TGT) Turnaround Gains Momentum - Yahoo Finance",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Junto Capital Management LP Acquires 919,346 Shares of Walmart Inc. $WMT - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "PANW",
-      "name": "PANW",
-      "price": 340.7900085449219,
-      "volume": 1040391.0,
-      "avg_volume": 6855749.1,
-      "percent_change": 1.6980012944698524,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 10,
-      "liquidity_score": 78.36,
-      "rank_score": 57.61,
-      "news_hits": 7,
-      "catalyst": "Headline-driven setup (catalyst, upgrade, upgrades): Palo Alto CEO Says 'Cybersecurity SaaSpocalypse Is Dead' \u2013 PANW Stock Slips Premarket Despite Analyst Upgrades - Stocktwits",
-      "top_headlines": [
-        "Palo Alto CEO Says 'Cybersecurity SaaSpocalypse Is Dead' \u2013 PANW Stock Slips Premarket Despite Analyst Upgrades - Stocktwits",
-        "Palo Alto Networks (PANW) Stock Forecast and Price Target 2026 - MarketBeat",
-        "Palo Alto Networks Share Price Today (PANW) | Live Chart, News & Stock Market - TechGraph"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Palo Alto CEO Says 'Cybersecurity SaaSpocalypse Is Dead' \u2013 PANW Stock Slips Premarket Despite Analyst Upgrades - Stocktwits",
-          "keywords": [
-            "catalyst",
-            "upgrade",
-            "upgrades"
-          ]
-        },
-        {
-          "title": "Palo Alto Networks (PANW) Stock Forecast and Price Target 2026 - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Analysts Offer Insights on Technology Companies: Palo Alto Networks (PANW) and Broadcom (AVGO) - theglobeandmail.com",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "LRCX",
-      "name": "LRCX",
-      "price": 303.75,
-      "volume": 1528125.0,
-      "avg_volume": 6626132.5,
-      "percent_change": -3.827886422895141,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 8,
-      "liquidity_score": 78.21,
-      "rank_score": 54.29,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (expansion): Lam Research (LRCX) Benefits From Memory Expansion - Yahoo Finance",
-      "top_headlines": [
-        "Lam Research (LRCX) Benefits From Memory Expansion - Yahoo Finance",
-        "Lam Research Corp Stock (LRCX) Opened Down by 3.98% on Sep 10: What Signal Does It Send? - TradingKey",
-        "Lam Research (LRCX) Stock Looks Pricey On Earnings While AI Demand Stays Strong - simplywall.st"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Lam Research (LRCX) Benefits From Memory Expansion - Yahoo Finance",
-          "keywords": [
-            "expansion"
-          ]
-        },
-        {
-          "title": "Lam Research (LRCX) Stock Looks Pricey On Earnings While AI Demand Stays Strong - simplywall.st",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "demand"
-          ]
-        },
-        {
-          "title": "Top After-Hours Gainers Today Beyond Micron: QCOM, AMAT, LRCX Surge - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Rench Wealth Management Inc. Trims Stake in Lam Research Corporation $LRCX - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Lam Research (LRCX) Suffers a Larger Drop Than the General Market: Key Insights - Yahoo Finance",
-          "keywords": [
-            "drop"
+            "fall",
+            "growth"
           ]
         }
       ]
@@ -12700,23 +12771,23 @@
     "decision_mode": "live_dual_llm",
     "last_tier": "senior_escalated",
     "last_stage": "entry",
-    "last_junior_nomination": null,
-    "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 82.9
+    "last_junior_nomination": "META",
+    "last_escalate_reason": "junior_nomination",
+    "live_share_recent": 83.3
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 342,
     "closed_outcomes": 156,
-    "consensus_events": 558,
+    "consensus_events": 559,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 993.73,
-    "change": -6.27,
-    "change_pct": -0.63,
+    "latest_equity": 993.62,
+    "change": -6.38,
+    "change_pct": -0.64,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15785,8 +15856,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-10T15:11:03.119318+00:00",
-        "equity": 993.73,
+        "t": "2026-09-10T15:20:33.413608+00:00",
+        "equity": 993.62,
         "cash": 197.29,
         "event": "mark"
       }
