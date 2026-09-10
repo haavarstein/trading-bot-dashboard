@@ -1,34 +1,34 @@
 {
-  "generated_at": "2026-09-10T15:31:02.400818+00:00",
+  "generated_at": "2026-09-10T15:34:27.153116+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 993.28,
+    "portfolio_value": 993.34,
     "starting_cash": 1000.0,
     "total_return_pct": -0.67,
-    "total_pnl": -6.72,
+    "total_pnl": -6.66,
     "realized_pnl": -14.35,
-    "open_pnl": 7.59,
-    "capital_deployed": 795.99,
+    "open_pnl": 7.64,
+    "capital_deployed": 796.05,
     "cash": 197.29,
     "closed_trades": 34,
     "win_rate_pct": 26.47,
-    "vs_spy_pct": 0.64,
-    "spy_return_pct": -1.31,
+    "vs_spy_pct": 0.61,
+    "spy_return_pct": -1.28,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-10T15:31:05.056638+00:00"
+    "updated_at": "2026-09-10T15:34:29.838775+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -1.31,
-    "price": 759.2949829101562,
+    "return_pct": -1.28,
+    "price": 759.52001953125,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 4,
+    "consensus_count_today": 5,
     "validated_count_today": 3,
-    "blocked_count_today": 1,
+    "blocked_count_today": 2,
     "fills_today": 2,
     "simulated_orders_today": 3,
     "top_symbol_today": "META"
@@ -38,10 +38,10 @@
       "symbol": "BAC",
       "qty": 3.21,
       "avg_cost": 62.2,
-      "last": 62.47999954223633,
-      "market_value": 200.56,
-      "open_pnl": 0.9,
-      "open_pnl_pct": 0.45,
+      "last": 62.470001220703125,
+      "market_value": 200.53,
+      "open_pnl": 0.87,
+      "open_pnl_pct": 0.43,
       "stop": 60.0,
       "target": 65.5,
       "thesis": "BAC shows a clean liquid catalyst setup with institutional accumulation headline and solid rank score of 84.78 plus neutral RSI room to run. Banks remain supported on rate path expectations and the position size fits remaining cash under the $200 notional cap while keeping open names at the desk max of five. Reward-to-risk is set at 1.5 with a tight invalidation below recent support."
@@ -50,10 +50,10 @@
       "symbol": "XOM",
       "qty": 1.24,
       "avg_cost": 160.78,
-      "last": 164.41000366210938,
-      "market_value": 203.87,
-      "open_pnl": 4.5,
-      "open_pnl_pct": 2.26,
+      "last": 164.64500427246094,
+      "market_value": 204.16,
+      "open_pnl": 4.79,
+      "open_pnl_pct": 2.4,
       "stop": 155.0,
       "target": 169.5,
       "thesis": "XOM appears on the ranked candidate list with a bullish sentiment and positive catalyst score driven by institutional share purchases. Neutral RSI leaves room for upside continuation on the headline flow. Cash allows a full ~$200 notional add without exceeding position limits, and the setup clears the required reward-to-risk threshold."
@@ -62,10 +62,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 105.91000366210938,
-      "market_value": 195.93,
-      "open_pnl": -0.04,
-      "open_pnl_pct": -0.02,
+      "last": 105.87000274658203,
+      "market_value": 195.86,
+      "open_pnl": -0.11,
+      "open_pnl_pct": -0.06,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -74,72 +74,75 @@
       "symbol": "META",
       "qty": 0.3,
       "avg_cost": 644.68,
-      "last": 652.10498046875,
-      "market_value": 195.63,
-      "open_pnl": 2.23,
-      "open_pnl_pct": 1.15,
+      "last": 651.6500244140625,
+      "market_value": 195.5,
+      "open_pnl": 2.09,
+      "open_pnl_pct": 1.08,
       "stop": 628.0,
       "target": 680.0,
       "thesis": "META ranks second with a clear bullish AI-agent catalyst and supportive Street tone while remaining highly liquid. Small size fits residual cash under the ~$200 new-notional cap without exceeding the five-name limit. Technical RSI is neutral, leaving room for continuation if the AI narrative holds; defined stop below recent support keeps reward:risk above 1.5."
     }
   ],
   "latest_candidate": {
-    "symbol": "META",
-    "name": "META",
-    "price": 654.4349975585938,
-    "volume": 9168574.0,
-    "avg_volume": 17662197.4,
-    "percent_change": 0.1139676474177495,
+    "symbol": "COST",
+    "name": "COST",
+    "price": 903.27001953125,
+    "volume": 579649.0,
+    "avg_volume": 1883374.9,
+    "percent_change": 0.07423487297100025,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 16,
-    "liquidity_score": 82.47,
-    "rank_score": 83.96,
+    "catalyst_score": 18,
+    "liquidity_score": 72.75,
+    "rank_score": 90.47,
     "news_hits": 8,
-    "catalyst": "Headline-driven setup (ai, catalyst): Meta stock surges with Wall Street bullish on new AI agent - Yahoo Finance",
+    "catalyst": "Headline-driven setup (catalyst, cut, cuts): Keefe Bruyette upgrades Simmons First stock rating on cost cuts - Investing.com",
     "top_headlines": [
-      "Meta stock surges with Wall Street bullish on new AI agent - Yahoo Finance",
-      "Meta shares are still cheap and worth buying. Here's why - CNBC",
-      "Meta Stock Scores Wall Street Upgrade After Muse AI App Launch - Investor's Business Daily"
+      "Costco (COST) Stock Looks Fully Priced On Its 107% Five Year Run - simplywall.st",
+      "Keefe Bruyette upgrades Simmons First stock rating on cost cuts - Investing.com",
+      "Costco Wholesale Corporation $COST Shares Sold by Nan Shan Life Insurance Co. Ltd. - MarketBeat"
     ],
     "matched_headlines": [
       {
-        "title": "Meta stock surges with Wall Street bullish on new AI agent - Yahoo Finance",
+        "title": "Keefe Bruyette upgrades Simmons First stock rating on cost cuts - Investing.com",
         "keywords": [
-          "ai",
-          "catalyst"
+          "catalyst",
+          "cut",
+          "cuts",
+          "upgrade",
+          "upgrades"
         ]
       },
       {
-        "title": "Meta Stock Scores Wall Street Upgrade After Muse AI App Launch - Investor's Business Daily",
+        "title": "Costco Wholesale Corporation $COST Shares Sold by Nan Shan Life Insurance Co. Ltd. - MarketBeat",
         "keywords": [
-          "ai",
-          "catalyst",
-          "launch",
-          "upgrade"
+          "beat"
         ]
       },
       {
-        "title": "Meta Stock Jumped 6.5% on the Muse Launch. The Street\u2019s Targets Say There\u2019s More Room. - TIKR.com",
-        "keywords": [
-          "catalyst",
-          "launch"
-        ]
-      },
-      {
-        "title": "Why Meta\u2019s Stock Is Rising After Muse AI Launch - forbes.com",
+        "title": "Stock movers today: Meta leads AI optimism while ServiceTitan and Navan show the cost of missing expectations - investingLive",
         "keywords": [
           "ai",
           "catalyst",
-          "launch"
+          "miss"
         ]
       },
       {
-        "title": "META Stock Rises After Muse AI Launch, But Oppenheimer Says It\u2019s No \u2018Game Changer\u2019 - Stocktwits",
+        "title": "PYPL Stock In Focus: CEO Reveals Business Model Shift With Venmo, Braintree Growth, $1.5B Cost Savings - Stocktwits",
         "keywords": [
           "ai",
           "catalyst",
-          "launch"
+          "growth"
+        ]
+      },
+      {
+        "title": "Navan beats quarterly estimates, raises forecast; shares tumble on cost concerns - WTVB",
+        "keywords": [
+          "ai",
+          "beat",
+          "beats",
+          "catalyst",
+          "raises"
         ]
       }
     ]
@@ -147,56 +150,57 @@
   "latest_decision": {
     "model": "grok-4.5",
     "action": "BUY",
-    "symbol": "META",
-    "confidence": 78,
+    "symbol": "COST",
+    "confidence": 72,
     "cache_stats": null,
-    "entry_price": 654.43,
-    "stop_loss": 635.0,
-    "take_profit": 690.0,
-    "qty": 0.3,
-    "thesis": "META shows a strong headline-driven AI agent catalyst with Wall Street bullish sentiment and rank_score 83.96. RSI neutral at 50 leaves room for continuation. Adding a small size fits cash limits while aligning with the existing long thesis and favorable reward:risk.",
+    "entry_price": 903.27,
+    "stop_loss": 880.0,
+    "take_profit": 940.0,
+    "qty": 0.218,
+    "thesis": "COST is the top-ranked liquid catalyst candidate with strong bullish sentiment and the highest composite rank score by a wide margin. Fractional sizing fits the ~$200 new-entry notional cap while keeping open names at five. Defined stop under recent levels yields reward:risk above 1.5 toward a swing target on continued relative strength.",
     "reason_code": "new_entry",
     "reasoning": {
-      "headline": "Bought $META",
-      "narrative": "META shows a strong headline-driven AI agent catalyst with Wall Street bullish sentiment and rank_score 83.96. RSI neutral at 50 leaves room for continuation. Adding a small size fits cash limits while aligning with the existing long thesis and favorable reward:risk.",
+      "headline": "Bought $COST",
+      "narrative": "COST is the top-ranked liquid catalyst candidate with strong bullish sentiment and the highest composite rank score by a wide margin. Fractional sizing fits the ~$200 new-entry notional cap while keeping open names at five. Defined stop under recent levels yields reward:risk above 1.5 toward a swing target on continued relative strength.",
       "bullets": [
-        "AI agent catalyst + bullish Street tone",
-        "Rank 84 liquid name, RSI 50 room to run",
-        "R:R >1.5 with stop under recent structure",
-        "Small add within $200 notional and 5-name cap"
+        "Rank score 90.5 leads candidate list; bullish sentiment",
+        "Notional ~$197 fits cash and max new-buy limit",
+        "Stop 880 / target 940 gives R:R ~1.58",
+        "Adds fifth name without forced rotation"
       ],
       "risk_map": {
-        "stop": 635.0,
-        "target": 690.0,
+        "stop": 880.0,
+        "target": 940.0,
         "horizon_days": 5,
-        "rr": 1.83,
-        "confidence_10": 8,
-        "confidence": 78
+        "rr": 1.58,
+        "confidence_10": 7,
+        "confidence": 72
       },
-      "thesis": "META shows a strong headline-driven AI agent catalyst with Wall Street bullish sentiment and rank_score 83.96. RSI neutral at 50 leaves room for continuation. Adding a small size fits cash limits while aligning with the existing long thesis and favorable reward:risk."
+      "thesis": "COST is the top-ranked liquid catalyst candidate with strong bullish sentiment and the highest composite rank score by a wide margin. Fractional sizing fits the ~$200 new-entry notional cap while keeping open names at five. Defined stop under recent levels yields reward:risk above 1.5 toward a swing target on continued relative strength."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "AI agent catalyst + bullish Street tone",
-      "Rank 84 liquid name, RSI 50 room to run",
-      "R:R >1.5 with stop under recent structure",
-      "Small add within $200 notional and 5-name cap"
+      "Rank score 90.5 leads candidate list; bullish sentiment",
+      "Notional ~$197 fits cash and max new-buy limit",
+      "Stop 880 / target 940 gives R:R ~1.58",
+      "Adds fifth name without forced rotation"
     ],
-    "timestamp": "2026-09-10T15:20:21.820171+00:00"
+    "timestamp": "2026-09-10T15:34:18.924624+00:00"
   },
-  "stance": "Buying pressure on META. META shows a strong headline-driven AI agent catalyst with Wall Street bullish sentiment and rank_score 83.96. RSI neutral at 50 leaves room for continuation. Adding a small size fits cash limits while aligning with the existing long thesis and favorable reward:risk.",
+  "stance": "Buying pressure on COST. COST is the top-ranked liquid catalyst candidate with strong bullish sentiment and the highest composite rank score by a wide margin. Fractional sizing fits the ~$200 new-entry notional cap while keeping open names at five. Defined stop under recent levels yields reward:risk above 1.5 toward a swing target on continued relative strength.",
   "thinking": {
-    "badge": "Looking to buy META",
-    "headline": "Buying pressure on META.",
-    "plain_english": "Right now Hermes wants exposure to META. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
+    "badge": "Looking to buy COST",
+    "headline": "Buying pressure on COST.",
+    "plain_english": "Right now Hermes wants exposure to COST. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
     "triggers": [
       "It owns BAC, bought near $62.20. Simple plan: sell if it falls to about $60.00, or take profit near $65.50.",
       "It owns XOM, bought near $160.78. Simple plan: sell if it falls to about $155.00, or take profit near $169.50.",
       "It owns WMT, bought near $105.93. Simple plan: sell if it falls to about $102.50, or take profit near $112.00.",
       "It owns META, bought near $644.68. Simple plan: sell if it falls to about $628.00, or take profit near $680.00.",
       "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
+      "Top scanner name right now is COST, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
       "If nothing looks clean, do nothing. Sitting in cash or holdings is allowed."
     ],
     "owned": [
@@ -206,9 +210,9 @@
         "avg_cost": 62.2,
         "stop": 60.0,
         "target": 65.5,
-        "last": 62.47999954223633,
-        "open_pnl": 0.9,
-        "open_pnl_pct": 0.45,
+        "last": 62.470001220703125,
+        "open_pnl": 0.87,
+        "open_pnl_pct": 0.43,
         "line": "Bought near $62.20 \u00b7 Sell safety line $60.00 \u00b7 Profit target $65.50",
         "plan": "stop 60.0 or target 65.5"
       },
@@ -218,9 +222,9 @@
         "avg_cost": 160.78,
         "stop": 155.0,
         "target": 169.5,
-        "last": 164.41000366210938,
-        "open_pnl": 4.5,
-        "open_pnl_pct": 2.26,
+        "last": 164.64500427246094,
+        "open_pnl": 4.79,
+        "open_pnl_pct": 2.4,
         "line": "Bought near $160.78 \u00b7 Sell safety line $155.00 \u00b7 Profit target $169.50",
         "plan": "stop 155.0 or target 169.5"
       },
@@ -230,9 +234,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 105.91000366210938,
-        "open_pnl": -0.04,
-        "open_pnl_pct": -0.02,
+        "last": 105.87000274658203,
+        "open_pnl": -0.11,
+        "open_pnl_pct": -0.06,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -242,14 +246,14 @@
         "avg_cost": 644.68,
         "stop": 628.0,
         "target": 680.0,
-        "last": 652.10498046875,
-        "open_pnl": 2.23,
-        "open_pnl_pct": 1.15,
+        "last": 651.6500244140625,
+        "open_pnl": 2.09,
+        "open_pnl_pct": 1.08,
         "line": "Bought near $644.68 \u00b7 Sell safety line $628.00 \u00b7 Profit target $680.00",
         "plan": "stop 628.0 or target 680.0"
       }
     ],
-    "last_checked": "2026-09-10T15:31:02.400818+00:00",
+    "last_checked": "2026-09-10T15:34:27.153116+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -272,39 +276,39 @@
         "prefix": "J",
         "model": "claude-haiku-4-5",
         "action": "BUY",
-        "symbol": "META",
-        "confidence": 78,
+        "symbol": "COST",
+        "confidence": 72,
         "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "deepseek-v4-flash",
-        "action": "BUY",
-        "symbol": "META",
-        "confidence": 75,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "BAC",
+        "confidence": 80,
+        "tone": "hold"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "BUY",
-        "symbol": "META",
-        "confidence": 75,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 60,
+        "tone": "hold"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
         "action": "BUY",
-        "symbol": "META",
-        "confidence": 78,
+        "symbol": "COST",
+        "confidence": 72,
         "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "claude-sonnet-5",
         "action": "BUY",
-        "symbol": "META",
+        "symbol": "COST",
         "confidence": 78,
         "tone": "buy"
       },
@@ -319,6 +323,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "COST",
+      "status": "blocked",
+      "headline": "BUY COST \u2014 blocked",
+      "detail": "Insufficient buying power: $0.74 < $196.91",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "COST",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "HOLD",
+          "symbol": "BAC",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "COST",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "COST",
+          "confidence": 78,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "BAC",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-10T15:34:18.924624+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "META",
@@ -12453,23 +12534,87 @@
   ],
   "top_candidates": [
     {
+      "symbol": "COST",
+      "name": "COST",
+      "price": 903.27001953125,
+      "volume": 579649.0,
+      "avg_volume": 1883374.9,
+      "percent_change": 0.07423487297100025,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 18,
+      "liquidity_score": 72.75,
+      "rank_score": 90.47,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (catalyst, cut, cuts): Keefe Bruyette upgrades Simmons First stock rating on cost cuts - Investing.com",
+      "top_headlines": [
+        "Costco (COST) Stock Looks Fully Priced On Its 107% Five Year Run - simplywall.st",
+        "Keefe Bruyette upgrades Simmons First stock rating on cost cuts - Investing.com",
+        "Costco Wholesale Corporation $COST Shares Sold by Nan Shan Life Insurance Co. Ltd. - MarketBeat"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Keefe Bruyette upgrades Simmons First stock rating on cost cuts - Investing.com",
+          "keywords": [
+            "catalyst",
+            "cut",
+            "cuts",
+            "upgrade",
+            "upgrades"
+          ]
+        },
+        {
+          "title": "Costco Wholesale Corporation $COST Shares Sold by Nan Shan Life Insurance Co. Ltd. - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Stock movers today: Meta leads AI optimism while ServiceTitan and Navan show the cost of missing expectations - investingLive",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "miss"
+          ]
+        },
+        {
+          "title": "PYPL Stock In Focus: CEO Reveals Business Model Shift With Venmo, Braintree Growth, $1.5B Cost Savings - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "growth"
+          ]
+        },
+        {
+          "title": "Navan beats quarterly estimates, raises forecast; shares tumble on cost concerns - WTVB",
+          "keywords": [
+            "ai",
+            "beat",
+            "beats",
+            "catalyst",
+            "raises"
+          ]
+        }
+      ]
+    },
+    {
       "symbol": "META",
       "name": "META",
-      "price": 654.4349975585938,
-      "volume": 9168574.0,
-      "avg_volume": 17662197.4,
-      "percent_change": 0.1139676474177495,
+      "price": 651.9500122070312,
+      "volume": 9586664.0,
+      "avg_volume": 17704006.4,
+      "percent_change": -0.2661797224795349,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 16,
-      "liquidity_score": 82.47,
-      "rank_score": 83.96,
+      "liquidity_score": 82.48,
+      "rank_score": 84.08,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Meta stock surges with Wall Street bullish on new AI agent - Yahoo Finance",
       "top_headlines": [
         "Meta stock surges with Wall Street bullish on new AI agent - Yahoo Finance",
-        "Meta shares are still cheap and worth buying. Here's why - CNBC",
-        "Meta Stock Scores Wall Street Upgrade After Muse AI App Launch - Investor's Business Daily"
+        "Meta Stock Scores Wall Street Upgrade After Muse AI App Launch - Investor's Business Daily",
+        "Meta shares are still cheap and worth buying. Here's why - CNBC"
       ],
       "matched_headlines": [
         {
@@ -12489,16 +12634,16 @@
           ]
         },
         {
-          "title": "Meta Stock Jumped 6.5% on the Muse Launch. The Street\u2019s Targets Say There\u2019s More Room. - TIKR.com",
+          "title": "Why Meta\u2019s Stock Is Rising After Muse AI Launch - Forbes",
           "keywords": [
+            "ai",
             "catalyst",
             "launch"
           ]
         },
         {
-          "title": "Why Meta\u2019s Stock Is Rising After Muse AI Launch - forbes.com",
+          "title": "Meta Stock Jumped 6.5% on the Muse Launch. The Street\u2019s Targets Say There\u2019s More Room. - TIKR.com",
           "keywords": [
-            "ai",
             "catalyst",
             "launch"
           ]
@@ -12514,60 +12659,17 @@
       ]
     },
     {
-      "symbol": "PANW",
-      "name": "PANW",
-      "price": 339.9800109863281,
-      "volume": 1203486.0,
-      "avg_volume": 6872058.6,
-      "percent_change": 1.4562831375493976,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 10,
-      "liquidity_score": 78.37,
-      "rank_score": 57.42,
-      "news_hits": 7,
-      "catalyst": "Headline-driven setup (catalyst, upgrade, upgrades): Palo Alto CEO Says 'Cybersecurity SaaSpocalypse Is Dead' \u2013 PANW Stock Slips Premarket Despite Analyst Upgrades - Stocktwits",
-      "top_headlines": [
-        "Palo Alto CEO Says 'Cybersecurity SaaSpocalypse Is Dead' \u2013 PANW Stock Slips Premarket Despite Analyst Upgrades - Stocktwits",
-        "Palo Alto Networks (PANW) Stock Forecast and Price Target 2026 - MarketBeat",
-        "Palo Alto Networks, Inc. (PANW) Is a Trending Stock: Facts to Know Before Betting on It - Yahoo Finance"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Palo Alto CEO Says 'Cybersecurity SaaSpocalypse Is Dead' \u2013 PANW Stock Slips Premarket Despite Analyst Upgrades - Stocktwits",
-          "keywords": [
-            "catalyst",
-            "upgrade",
-            "upgrades"
-          ]
-        },
-        {
-          "title": "Palo Alto Networks (PANW) Stock Forecast and Price Target 2026 - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Analysts Offer Insights on Technology Companies: Palo Alto Networks (PANW) and Broadcom (AVGO) - theglobeandmail.com",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "LRCX",
       "name": "LRCX",
-      "price": 304.2099914550781,
-      "volume": 1675301.0,
-      "avg_volume": 6640850.1,
-      "percent_change": -3.682245762937046,
+      "price": 304.05999755859375,
+      "volume": 1812743.0,
+      "avg_volume": 6654594.3,
+      "percent_change": -3.7297362322327428,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 78.22,
-      "rank_score": 54.18,
+      "liquidity_score": 78.23,
+      "rank_score": 54.22,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (expansion): Lam Research (LRCX) Benefits From Memory Expansion - Yahoo Finance",
       "top_headlines": [
@@ -12614,15 +12716,15 @@
     {
       "symbol": "BAC",
       "name": "BAC",
-      "price": 62.35499954223633,
-      "volume": 9794785.0,
-      "avg_volume": 31057678.5,
-      "percent_change": -0.5026306620590819,
+      "price": 62.47999954223633,
+      "volume": 10296299.0,
+      "avg_volume": 31107829.9,
+      "percent_change": -0.30317318056526427,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 84.92,
-      "rank_score": 51.14,
+      "liquidity_score": 84.93,
+      "rank_score": 50.98,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Bank of America Corporation $BAC Stock Holdings Boosted by Sequoia Financial Advisors LLC - MarketBeat",
       "top_headlines": [
@@ -12646,7 +12748,7 @@
           ]
         },
         {
-          "title": "Goldman Sachs Sticks to Their Buy Rating for Bank of America (BAC) - theglobeandmail.com",
+          "title": "Goldman Sachs Sticks to Their Buy Rating for Bank of America (BAC) - The Globe and Mail",
           "keywords": [
             "ai",
             "catalyst"
@@ -12662,64 +12764,51 @@
       ]
     },
     {
-      "symbol": "COST",
-      "name": "COST",
-      "price": 901.7249755859375,
-      "volume": 530606.0,
-      "avg_volume": 1878470.6,
-      "percent_change": -0.09694216969505007,
+      "symbol": "ANET",
+      "name": "ANET",
+      "price": 191.78500366210938,
+      "volume": 816167.0,
+      "avg_volume": 3905466.7,
+      "percent_change": -0.5934738284036679,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 72.74,
-      "rank_score": 50.49,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (catalyst, cut, cuts): Keefe Bruyette upgrades Simmons First stock rating on cost cuts - Investing.com",
+      "liquidity_score": 75.92,
+      "rank_score": 49.86,
+      "news_hits": 7,
+      "catalyst": "Headline-driven setup (ai, catalyst, raised): Revenue Outlook Raised Could Be A Game Changer For Arista Networks Stock (ANET) - simplywall.st",
       "top_headlines": [
-        "Costco (COST) Stock Looks Fully Priced On Its 107% Five Year Run - simplywall.st",
-        "Keefe Bruyette upgrades Simmons First stock rating on cost cuts - Investing.com",
-        "Costco Wholesale Corporation $COST Shares Sold by Nan Shan Life Insurance Co. Ltd. - MarketBeat"
+        "Revenue Outlook Raised Could Be A Game Changer For Arista Networks Stock (ANET) - simplywall.st",
+        "Here is Why Growth Investors Should Buy Arista Networks (ANET) Now - Yahoo Finance",
+        "(ANET) as a Liquidity Pulse for Institutional Tactics - Stock Traders Daily"
       ],
       "matched_headlines": [
         {
-          "title": "Keefe Bruyette upgrades Simmons First stock rating on cost cuts - Investing.com",
-          "keywords": [
-            "catalyst",
-            "cut",
-            "cuts",
-            "upgrade",
-            "upgrades"
-          ]
-        },
-        {
-          "title": "Costco Wholesale Corporation $COST Shares Sold by Nan Shan Life Insurance Co. Ltd. - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Stock movers today: Meta leads AI optimism while ServiceTitan and Navan show the cost of missing expectations - investingLive",
+          "title": "Revenue Outlook Raised Could Be A Game Changer For Arista Networks Stock (ANET) - simplywall.st",
           "keywords": [
             "ai",
             "catalyst",
-            "miss"
+            "raised"
           ]
         },
         {
-          "title": "PYPL Stock In Focus: CEO Reveals Business Model Shift With Venmo, Braintree Growth, $1.5B Cost Savings - Stocktwits",
+          "title": "Here is Why Growth Investors Should Buy Arista Networks (ANET) Now - Yahoo Finance",
           "keywords": [
-            "ai",
-            "catalyst",
             "growth"
           ]
         },
         {
-          "title": "CVS Still Sees 'High-Trend' Cost Growth; Oscar, UNH Stock Fall - Investor's Business Daily",
+          "title": "(ANET) as a Liquidity Pulse for Institutional Tactics - Stock Traders Daily",
           "keywords": [
             "ai",
-            "catalyst",
-            "fall",
-            "growth"
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Arista Networks (ANET) Stock Looks Pricey Even Near Fair Value - simplywall.st",
+          "keywords": [
+            "ai",
+            "catalyst"
           ]
         }
       ]
@@ -12751,10 +12840,10 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 1,
-      "BUY": 3,
+      "HOLD": 3,
+      "BUY": 1,
       "SELL": 0,
-      "live": 4,
+      "live": 3,
       "fallback": 0
     },
     "junior_model_3_enabled": true,
@@ -12771,22 +12860,22 @@
     "decision_mode": "live_dual_llm",
     "last_tier": "senior_escalated",
     "last_stage": "entry",
-    "last_junior_nomination": "META",
-    "last_escalate_reason": "junior_nomination",
-    "live_share_recent": 83.3
+    "last_junior_nomination": null,
+    "last_escalate_reason": "junior_trade_or_split",
+    "live_share_recent": 81.6
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 342,
     "closed_outcomes": 156,
-    "consensus_events": 559,
+    "consensus_events": 560,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 993.28,
-    "change": -6.72,
+    "latest_equity": 993.34,
+    "change": -6.66,
     "change_pct": -0.67,
     "points": [
       {
@@ -15862,8 +15951,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-10T15:31:05.056638+00:00",
-        "equity": 993.28,
+        "t": "2026-09-10T15:34:29.838775+00:00",
+        "equity": 993.34,
         "cash": 197.29,
         "event": "mark"
       }
