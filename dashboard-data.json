@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-09-10T18:30:19.059265+00:00",
+  "generated_at": "2026-09-10T18:32:12.429887+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 992.84,
+    "portfolio_value": 992.68,
     "starting_cash": 1000.0,
-    "total_return_pct": -0.72,
-    "total_pnl": -7.16,
+    "total_return_pct": -0.73,
+    "total_pnl": -7.32,
     "realized_pnl": -14.35,
-    "open_pnl": 7.16,
-    "capital_deployed": 795.55,
+    "open_pnl": 6.99,
+    "capital_deployed": 795.39,
     "cash": 197.29,
     "closed_trades": 34,
     "win_rate_pct": 26.47,
-    "vs_spy_pct": 0.82,
+    "vs_spy_pct": 0.81,
     "spy_return_pct": -1.54,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-10T18:30:21.882028+00:00"
+    "updated_at": "2026-09-10T18:32:15.193099+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
@@ -26,9 +26,9 @@
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 12,
+    "consensus_count_today": 13,
     "validated_count_today": 4,
-    "blocked_count_today": 8,
+    "blocked_count_today": 9,
     "fills_today": 2,
     "simulated_orders_today": 4,
     "top_symbol_today": "META"
@@ -50,10 +50,10 @@
       "symbol": "XOM",
       "qty": 1.24,
       "avg_cost": 160.78,
-      "last": 165.4550018310547,
-      "market_value": 205.16,
-      "open_pnl": 5.8,
-      "open_pnl_pct": 2.91,
+      "last": 165.43499755859375,
+      "market_value": 205.14,
+      "open_pnl": 5.77,
+      "open_pnl_pct": 2.9,
       "stop": 155.0,
       "target": 169.5,
       "thesis": "XOM appears on the ranked candidate list with a bullish sentiment and positive catalyst score driven by institutional share purchases. Neutral RSI leaves room for upside continuation on the headline flow. Cash allows a full ~$200 notional add without exceeding position limits, and the setup clears the required reward-to-risk threshold."
@@ -62,10 +62,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 105.93000030517578,
-      "market_value": 195.97,
-      "open_pnl": 0.0,
-      "open_pnl_pct": 0.0,
+      "last": 105.88500213623047,
+      "market_value": 195.89,
+      "open_pnl": -0.08,
+      "open_pnl_pct": -0.04,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -74,10 +74,10 @@
       "symbol": "META",
       "qty": 0.3,
       "avg_cost": 644.68,
-      "last": 647.3303833007812,
-      "market_value": 194.2,
-      "open_pnl": 0.8,
-      "open_pnl_pct": 0.41,
+      "last": 647.1475219726562,
+      "market_value": 194.14,
+      "open_pnl": 0.74,
+      "open_pnl_pct": 0.38,
       "stop": 628.0,
       "target": 680.0,
       "thesis": "META ranks second with a clear bullish AI-agent catalyst and supportive Street tone while remaining highly liquid. Small size fits residual cash under the ~$200 new-notional cap without exceeding the five-name limit. Technical RSI is neutral, leaving room for continuation if the AI narrative holds; defined stop below recent support keeps reward:risk above 1.5."
@@ -86,21 +86,21 @@
   "latest_candidate": {
     "symbol": "PANW",
     "name": "PANW",
-    "price": 337.8890075683594,
-    "volume": 2560658.0,
-    "avg_volume": 7007775.8,
-    "percent_change": 0.832289290971305,
+    "price": 337.54998779296875,
+    "volume": 2623560.0,
+    "avg_volume": 7014066.0,
+    "percent_change": 0.7311195597818945,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 14,
     "liquidity_score": 78.46,
-    "rank_score": 74.43,
+    "rank_score": 74.35,
     "news_hits": 7,
     "catalyst": "Headline-driven setup (expansion, growth): Palo Alto (PANW) Reports 63% NGS ARR Growth but a $282M GAAP Net Loss. Can Platform Expansion Absorb Acquisition Costs? - finance.yahoo.com",
     "top_headlines": [
       "Palo Alto (PANW) Reports 63% NGS ARR Growth but a $282M GAAP Net Loss. Can Platform Expansion Absorb Acquisition Costs? - finance.yahoo.com",
       "Palo Alto CEO Says 'Cybersecurity SaaSpocalypse Is Dead' \u2013 PANW Stock Slips Premarket Despite Analyst Upgrades - Stocktwits",
-      "Palo Alto Networks Share Price Today (PANW) | Live Chart, News & Stock Market - TechGraph"
+      "Palo Alto Networks (PANW) Stock Forecast and Price Target 2026 - MarketBeat"
     ],
     "matched_headlines": [
       {
@@ -139,43 +139,43 @@
     "symbol": "PANW",
     "confidence": 74,
     "cache_stats": null,
-    "entry_price": 337.89,
-    "stop_loss": 325.0,
-    "take_profit": 360.0,
+    "entry_price": 337.55,
+    "stop_loss": 320.0,
+    "take_profit": 365.0,
     "qty": 0.58,
-    "thesis": "PANW shows a headline-driven bullish catalyst with 63% NGS ARR growth supporting platform expansion narrative despite GAAP loss from acquisition costs. Rank score 74+ and neutral RSI leave room for continuation if growth absorbs costs. Liquid name fits cash and position limits for a sized new entry.",
+    "thesis": "PANW shows a ranked catalyst setup with bullish sentiment and platform/NGS ARR expansion narrative despite GAAP loss noise from acquisitions. Neutral RSI leaves room for a momentum follow-through if growth absorbs costs. Position sized to cash and ~$200 notional cap with defined 1.5+ R:R. Adding as fifth name fits book limits without forced rotation.",
     "reason_code": "new_entry",
     "reasoning": {
       "headline": "Bought $PANW",
-      "narrative": "PANW shows a headline-driven bullish catalyst with 63% NGS ARR growth supporting platform expansion narrative despite GAAP loss from acquisition costs. Rank score 74+ and neutral RSI leave room for continuation if growth absorbs costs. Liquid name fits cash and position limits for a sized new entry.",
+      "narrative": "PANW shows a ranked catalyst setup with bullish sentiment and platform/NGS ARR expansion narrative despite GAAP loss noise from acquisitions. Neutral RSI leaves room for a momentum follow-through if growth absorbs costs. Position sized to cash and ~$200 notional cap with defined 1.5+ R:R. Adding as fifth name fits book limits without forced rotation.",
       "bullets": [
-        "Catalyst: 63% NGS ARR growth + platform expansion",
-        "Rank 74.43 / bullish sentiment / RSI 50",
-        "Notional ~$196 within $200 cap; R:R >1.5",
-        "Room for 5th name; no rotation required"
+        "Rank 74 catalyst: NGS ARR +63% / platform expansion",
+        "R:R ~1.6 with stop 320 / target 365",
+        "Sized ~$196 within cash and max notional",
+        "Open count 4\u21925; no rotation required"
       ],
       "risk_map": {
-        "stop": 325.0,
-        "target": 360.0,
+        "stop": 320.0,
+        "target": 365.0,
         "horizon_days": 5,
-        "rr": 1.72,
+        "rr": 1.56,
         "confidence_10": 7,
         "confidence": 74
       },
-      "thesis": "PANW shows a headline-driven bullish catalyst with 63% NGS ARR growth supporting platform expansion narrative despite GAAP loss from acquisition costs. Rank score 74+ and neutral RSI leave room for continuation if growth absorbs costs. Liquid name fits cash and position limits for a sized new entry."
+      "thesis": "PANW shows a ranked catalyst setup with bullish sentiment and platform/NGS ARR expansion narrative despite GAAP loss noise from acquisitions. Neutral RSI leaves room for a momentum follow-through if growth absorbs costs. Position sized to cash and ~$200 notional cap with defined 1.5+ R:R. Adding as fifth name fits book limits without forced rotation."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Catalyst: 63% NGS ARR growth + platform expansion",
-      "Rank 74.43 / bullish sentiment / RSI 50",
-      "Notional ~$196 within $200 cap; R:R >1.5",
-      "Room for 5th name; no rotation required"
+      "Rank 74 catalyst: NGS ARR +63% / platform expansion",
+      "R:R ~1.6 with stop 320 / target 365",
+      "Sized ~$196 within cash and max notional",
+      "Open count 4\u21925; no rotation required"
     ],
-    "timestamp": "2026-09-10T18:17:29.652995+00:00"
+    "timestamp": "2026-09-10T18:32:03.399041+00:00"
   },
-  "stance": "Buying pressure on PANW. PANW shows a headline-driven bullish catalyst with 63% NGS ARR growth supporting platform expansion narrative despite GAAP loss from acquisition costs. Rank score 74+ and neutral RSI leave room for continuation if growth absorbs costs. Liquid name fits cash and position limits for a sized new entry.",
+  "stance": "Buying pressure on PANW. PANW shows a ranked catalyst setup with bullish sentiment and platform/NGS ARR expansion narrative despite GAAP loss noise from acquisitions. Neutral RSI leaves room for a momentum follow-through if growth absorbs costs. Position sized to cash and ~$200 notional cap with defined 1.5+ R:R. Adding as fifth name fits book limits without forced rotation.",
   "thinking": {
     "badge": "Looking to buy PANW",
     "headline": "Buying pressure on PANW.",
@@ -208,9 +208,9 @@
         "avg_cost": 160.78,
         "stop": 155.0,
         "target": 169.5,
-        "last": 165.4550018310547,
-        "open_pnl": 5.8,
-        "open_pnl_pct": 2.91,
+        "last": 165.43499755859375,
+        "open_pnl": 5.77,
+        "open_pnl_pct": 2.9,
         "line": "Bought near $160.78 \u00b7 Sell safety line $155.00 \u00b7 Profit target $169.50",
         "plan": "stop 155.0 or target 169.5"
       },
@@ -220,9 +220,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 105.93000030517578,
-        "open_pnl": 0.0,
-        "open_pnl_pct": 0.0,
+        "last": 105.88500213623047,
+        "open_pnl": -0.08,
+        "open_pnl_pct": -0.04,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -232,14 +232,14 @@
         "avg_cost": 644.68,
         "stop": 628.0,
         "target": 680.0,
-        "last": 647.3303833007812,
-        "open_pnl": 0.8,
-        "open_pnl_pct": 0.41,
+        "last": 647.1475219726562,
+        "open_pnl": 0.74,
+        "open_pnl_pct": 0.38,
         "line": "Bought near $644.68 \u00b7 Sell safety line $628.00 \u00b7 Profit target $680.00",
         "plan": "stop 628.0 or target 680.0"
       }
     ],
-    "last_checked": "2026-09-10T18:30:19.059265+00:00",
+    "last_checked": "2026-09-10T18:32:12.429887+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -255,7 +255,7 @@
         "model": "grok-4.3",
         "action": "BUY",
         "symbol": "PANW",
-        "confidence": 75,
+        "confidence": 74,
         "tone": "buy"
       },
       {
@@ -309,6 +309,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "PANW",
+      "status": "blocked",
+      "headline": "BUY PANW \u2014 blocked",
+      "detail": "Insufficient buying power: $0.74 < $195.78",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 74,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 72,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 74,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "BAC",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "PANW",
+      "timestamp": "2026-09-10T18:32:03.399041+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "PANW",
@@ -847,83 +924,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-09-10T16:48:09.016930+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CASH",
-      "status": "hold",
-      "headline": "HOLD \u2014 desks disagreed on focus",
-      "detail": "Desks: HOLD CASH (66%) vs BUY COST (78%) vs HOLD BAC (80%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "COST",
-          "confidence": 75,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "COST",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "META",
-          "confidence": 74,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 66,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "COST",
-          "confidence": 78,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "BAC",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-10T16:35:04.603673+00:00"
     },
     {
       "type": "fill",
@@ -12599,21 +12599,21 @@
     {
       "symbol": "PANW",
       "name": "PANW",
-      "price": 337.8890075683594,
-      "volume": 2560658.0,
-      "avg_volume": 7007775.8,
-      "percent_change": 0.832289290971305,
+      "price": 337.54998779296875,
+      "volume": 2623560.0,
+      "avg_volume": 7014066.0,
+      "percent_change": 0.7311195597818945,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 14,
       "liquidity_score": 78.46,
-      "rank_score": 74.43,
+      "rank_score": 74.35,
       "news_hits": 7,
       "catalyst": "Headline-driven setup (expansion, growth): Palo Alto (PANW) Reports 63% NGS ARR Growth but a $282M GAAP Net Loss. Can Platform Expansion Absorb Acquisition Costs? - finance.yahoo.com",
       "top_headlines": [
         "Palo Alto (PANW) Reports 63% NGS ARR Growth but a $282M GAAP Net Loss. Can Platform Expansion Absorb Acquisition Costs? - finance.yahoo.com",
         "Palo Alto CEO Says 'Cybersecurity SaaSpocalypse Is Dead' \u2013 PANW Stock Slips Premarket Despite Analyst Upgrades - Stocktwits",
-        "Palo Alto Networks Share Price Today (PANW) | Live Chart, News & Stock Market - TechGraph"
+        "Palo Alto Networks (PANW) Stock Forecast and Price Target 2026 - MarketBeat"
       ],
       "matched_headlines": [
         {
@@ -12649,15 +12649,15 @@
     {
       "symbol": "META",
       "name": "META",
-      "price": 646.8900146484375,
-      "volume": 13016199.0,
-      "avg_volume": 18046959.9,
-      "percent_change": -1.0402465645140824,
+      "price": 647.3200073242188,
+      "volume": 13282036.0,
+      "avg_volume": 18073543.6,
+      "percent_change": -0.9744672694085568,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
-      "liquidity_score": 82.56,
-      "rank_score": 72.72,
+      "liquidity_score": 82.57,
+      "rank_score": 72.67,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst, launch): Meta Stock Scores Wall Street Upgrade After Muse AI App Launch - Investor's Business Daily",
       "top_headlines": [
@@ -12691,17 +12691,17 @@
           ]
         },
         {
-          "title": "Meta is winning over Wall Street with its new Muse AI agent - MarketWatch",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
           "title": "Meta Stock Jumped 6.5% on the Muse Launch. The Street\u2019s Targets Say There\u2019s More Room. - TIKR.com",
           "keywords": [
             "catalyst",
             "launch"
+          ]
+        },
+        {
+          "title": "Meta is winning over Wall Street with its new Muse AI agent - MarketWatch",
+          "keywords": [
+            "ai",
+            "catalyst"
           ]
         }
       ]
@@ -12709,10 +12709,10 @@
     {
       "symbol": "LRCX",
       "name": "LRCX",
-      "price": 299.989990234375,
-      "volume": 3290411.0,
-      "avg_volume": 6802361.1,
-      "percent_change": -5.018365719127934,
+      "price": 300.0,
+      "volume": 3385162.0,
+      "avg_volume": 6811836.2,
+      "percent_change": -5.01519646705693,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
@@ -12762,57 +12762,17 @@
       ]
     },
     {
-      "symbol": "AMZN",
-      "name": "AMZN",
-      "price": 251.94000244140625,
-      "volume": 13699583.0,
-      "avg_volume": 32102878.3,
-      "percent_change": -0.18224701513534075,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 9,
-      "liquidity_score": 85.07,
-      "rank_score": 53.41,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): State of Wyoming Acquires Shares of 16,336 Amazon.com, Inc. $AMZN - MarketBeat",
-      "top_headlines": [
-        "AMZN Looks 2.1% Overvalued on GF Value\u2122 Amid Mixed Guru and Insi - GuruFocus",
-        "State of Wyoming Acquires Shares of 16,336 Amazon.com, Inc. $AMZN - MarketBeat",
-        "The Market Marked AMZN Stock Down. The Numbers Push Back - Trefis"
-      ],
-      "matched_headlines": [
-        {
-          "title": "State of Wyoming Acquires Shares of 16,336 Amazon.com, Inc. $AMZN - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "10,095 Shares in Amazon.com, Inc. $AMZN Purchased by Silverlake Wealth Management LLC - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "41,649 Shares in Amazon.com, Inc. $AMZN Bought by J.Safra Asset Management Corp - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "BAC",
       "name": "BAC",
-      "price": 62.34629821777344,
-      "volume": 15133012.0,
-      "avg_volume": 31591501.2,
-      "percent_change": -0.5165150161633116,
+      "price": 62.375,
+      "volume": 15532328.0,
+      "avg_volume": 31631432.8,
+      "percent_change": -0.4707167345849582,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
       "liquidity_score": 85.0,
-      "rank_score": 51.16,
+      "rank_score": 51.13,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Bank of America Corporation $BAC Stock Holdings Boosted by Sequoia Financial Advisors LLC - MarketBeat",
       "top_headlines": [
@@ -12844,6 +12804,63 @@
         },
         {
           "title": "BAC Looks 16.3% Overvalued on GF Value\u2122 as Dividend Sustainabili - GuruFocus",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "AVGO",
+      "name": "AVGO",
+      "price": 362.4599914550781,
+      "volume": 9045496.0,
+      "avg_volume": 27652399.6,
+      "percent_change": -0.5269261216327901,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 6,
+      "liquidity_score": 84.42,
+      "rank_score": 44.58,
+      "news_hits": 6,
+      "catalyst": "Headline-driven setup (ai, catalyst): Broadcom (AVGO) Set A Fair Value Debate, Is The Stock Still Below Fair Value? - simplywall.st",
+      "top_headlines": [
+        "Wall Street sets Broadcom (AVGO) stock price for next 12 months - Finbold",
+        "Broadcom (AVGO) Set A Fair Value Debate, Is The Stock Still Below Fair Value? - simplywall.st",
+        "AVGO Stock Sinks To Near 5-Month Lows Despite Exploding AI Sales \u2014 Wall Street Reactions Are Mixed - Stocktwits"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Broadcom (AVGO) Set A Fair Value Debate, Is The Stock Still Below Fair Value? - simplywall.st",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "AVGO Stock Sinks To Near 5-Month Lows Despite Exploding AI Sales \u2014 Wall Street Reactions Are Mixed - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Why Broadcom Providing 2028 Guidance Is a Big Deal for AVGO Stock Bulls - finance.yahoo.com",
+          "keywords": [
+            "catalyst",
+            "deal",
+            "guidance"
+          ]
+        },
+        {
+          "title": "Broadcom: Wall Street\u2019s Margin Fallacy Expands Bulls' Alpha (NASDAQ:AVGO) - Seeking Alpha",
+          "keywords": [
+            "fall"
+          ]
+        },
+        {
+          "title": "AVGO 260824 350.00P (AVGO260824P350000) Stock Options Chain | Quotes & News - Moomoo",
           "keywords": [
             "ai",
             "catalyst"
@@ -12900,21 +12917,21 @@
     "last_stage": "entry",
     "last_junior_nomination": "PANW",
     "last_escalate_reason": "junior_nomination",
-    "live_share_recent": 84.1
+    "live_share_recent": 84.2
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 342,
     "closed_outcomes": 156,
-    "consensus_events": 571,
+    "consensus_events": 572,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 992.84,
-    "change": -7.16,
-    "change_pct": -0.72,
+    "latest_equity": 992.68,
+    "change": -7.32,
+    "change_pct": -0.73,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -16049,8 +16066,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-10T18:30:21.882028+00:00",
-        "equity": 992.84,
+        "t": "2026-09-10T18:32:15.193099+00:00",
+        "equity": 992.68,
         "cash": 197.29,
         "event": "mark"
       }
