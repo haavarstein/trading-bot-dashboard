@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-09-11T17:10:50.552386+00:00",
+  "generated_at": "2026-09-11T17:17:57.824668+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 995.48,
+    "portfolio_value": 995.2,
     "starting_cash": 1000.0,
-    "total_return_pct": -0.45,
-    "total_pnl": -4.52,
+    "total_return_pct": -0.48,
+    "total_pnl": -4.8,
     "realized_pnl": -14.35,
-    "open_pnl": 9.8,
-    "capital_deployed": 993.74,
+    "open_pnl": 9.5,
+    "capital_deployed": 993.46,
     "cash": 1.74,
     "closed_trades": 34,
     "win_rate_pct": 26.47,
-    "vs_spy_pct": 0.03,
-    "spy_return_pct": -0.48,
+    "vs_spy_pct": -0.01,
+    "spy_return_pct": -0.47,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-11T17:10:53.269803+00:00"
+    "updated_at": "2026-09-11T17:18:00.556781+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.48,
-    "price": 765.6599731445312,
+    "return_pct": -0.47,
+    "price": 765.77001953125,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 13,
-    "validated_count_today": 13,
+    "consensus_count_today": 14,
+    "validated_count_today": 14,
     "blocked_count_today": 0,
     "fills_today": 1,
-    "simulated_orders_today": 13,
+    "simulated_orders_today": 14,
     "top_symbol_today": "BAC"
   },
   "holdings": [
@@ -38,10 +38,10 @@
       "symbol": "BAC",
       "qty": 6.31,
       "avg_cost": 62.6326,
-      "last": 62.935001373291016,
-      "market_value": 397.12,
-      "open_pnl": 1.91,
-      "open_pnl_pct": 0.48,
+      "last": 62.875,
+      "market_value": 396.74,
+      "open_pnl": 1.53,
+      "open_pnl_pct": 0.39,
       "stop": 60.5,
       "target": 67.0,
       "thesis": "BAC is the clear top-ranked catalyst name with fresh post-earnings record-high momentum and CEO commentary on a constructive AI buildout environment. RSI is neutral and the name is already working modestly in the book, so adding within the ~$200 new-notional cap improves exposure without exceeding the 5-name limit. Defined risk to 60.50 keeps reward:risk at or above 1.5 toward 67."
@@ -50,10 +50,10 @@
       "symbol": "XOM",
       "qty": 1.24,
       "avg_cost": 160.78,
-      "last": 165.35000610351562,
-      "market_value": 205.03,
-      "open_pnl": 5.67,
-      "open_pnl_pct": 2.84,
+      "last": 165.2100067138672,
+      "market_value": 204.86,
+      "open_pnl": 5.49,
+      "open_pnl_pct": 2.76,
       "stop": 155.0,
       "target": 169.5,
       "thesis": "XOM appears on the ranked candidate list with a bullish sentiment and positive catalyst score driven by institutional share purchases. Neutral RSI leaves room for upside continuation on the headline flow. Cash allows a full ~$200 notional add without exceeding position limits, and the setup clears the required reward-to-risk threshold."
@@ -62,10 +62,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 106.41999816894531,
-      "market_value": 196.88,
-      "open_pnl": 0.91,
-      "open_pnl_pct": 0.46,
+      "last": 106.50499725341797,
+      "market_value": 197.03,
+      "open_pnl": 1.06,
+      "open_pnl_pct": 0.54,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -74,10 +74,10 @@
       "symbol": "META",
       "qty": 0.3,
       "avg_cost": 644.68,
-      "last": 649.0499877929688,
-      "market_value": 194.71,
-      "open_pnl": 1.31,
-      "open_pnl_pct": 0.68,
+      "last": 649.4299926757812,
+      "market_value": 194.83,
+      "open_pnl": 1.42,
+      "open_pnl_pct": 0.74,
       "stop": 628.0,
       "target": 680.0,
       "thesis": "META ranks second with a clear bullish AI-agent catalyst and supportive Street tone while remaining highly liquid. Small size fits residual cash under the ~$200 new-notional cap without exceeding the five-name limit. Technical RSI is neutral, leaving room for continuation if the AI narrative holds; defined stop below recent support keeps reward:risk above 1.5."
@@ -86,23 +86,31 @@
   "latest_candidate": {
     "symbol": "BAC",
     "name": "BAC",
-    "price": 62.994998931884766,
-    "volume": 10855666.0,
-    "avg_volume": 29156466.6,
-    "percent_change": 0.6953285630512552,
+    "price": 62.90999984741211,
+    "volume": 11260622.0,
+    "avg_volume": 29196962.2,
+    "percent_change": 0.5594604642552325,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 13,
     "liquidity_score": 84.65,
-    "rank_score": 72.75,
+    "rank_score": 72.65,
     "news_hits": 8,
-    "catalyst": "Headline-driven setup (ai, catalyst, growth): Bank Of America (BAC) Says AI Profit Growth Still Supports The Sector - simplywall.st",
+    "catalyst": "Headline-driven setup (ai, catalyst, record): BAC Stock Hits Record High After Q2 Earnings \u2013 Bank Of America CEO Says It\u2019s A \u2018Good Environment\u2019 For AI Buildout - Stocktwits",
     "top_headlines": [
+      "BAC Stock Hits Record High After Q2 Earnings \u2013 Bank Of America CEO Says It\u2019s A \u2018Good Environment\u2019 For AI Buildout - Stocktwits",
       "Bank Of America (BAC) Says AI Profit Growth Still Supports The Sector - simplywall.st",
-      "Bank of America Corporation $BAC Stock Holdings Boosted by Sequoia Financial Advisors LLC - MarketBeat",
-      "Goldman Sachs Sticks to Their Buy Rating for Bank of America (BAC) - theglobeandmail.com"
+      "Bank of America Corporation $BAC Stock Holdings Boosted by Sequoia Financial Advisors LLC - MarketBeat"
     ],
     "matched_headlines": [
+      {
+        "title": "BAC Stock Hits Record High After Q2 Earnings \u2013 Bank Of America CEO Says It\u2019s A \u2018Good Environment\u2019 For AI Buildout - Stocktwits",
+        "keywords": [
+          "ai",
+          "catalyst",
+          "record"
+        ]
+      },
       {
         "title": "Bank Of America (BAC) Says AI Profit Growth Still Supports The Sector - simplywall.st",
         "keywords": [
@@ -130,12 +138,6 @@
           "ai",
           "catalyst"
         ]
-      },
-      {
-        "title": "Bac A Bank expands digital banking to support growth - VnExpress International",
-        "keywords": [
-          "growth"
-        ]
       }
     ]
   },
@@ -149,16 +151,16 @@
     "stop_loss": 0.0,
     "take_profit": 0.0,
     "qty": 0.0,
-    "thesis": "Cash position maintained due to extremely low available cash ($1.74) preventing any new entry. Top candidate BAC is already held with positive open P/L and no rotation candidate offers materially superior risk-reward. No clean edge exists to justify selling any current name.",
+    "thesis": "Cash position too low at $1.74 to initiate any new position under $200 notional limit. Top candidate BAC already held with positive P/L and no rotation target materially superior to current book. No clean edge for new entry or forced sell.",
     "reason_code": "hold",
     "reasoning": {
       "headline": "Hold $CASH",
-      "narrative": "Cash position maintained due to extremely low available cash ($1.74) preventing any new entry. Top candidate BAC is already held with positive open P/L and no rotation candidate offers materially superior risk-reward. No clean edge exists to justify selling any current name.",
+      "narrative": "Cash position too low at $1.74 to initiate any new position under $200 notional limit. Top candidate BAC already held with positive P/L and no rotation target materially superior to current book. No clean edge for new entry or forced sell.",
       "bullets": [
-        "Insufficient cash for new buy notional",
-        "BAC already held as highest-ranked catalyst",
-        "No rotation target exceeds current book quality",
-        "All positions remain within policy limits"
+        "Insufficient cash for new buys",
+        "BAC already positioned at top rank",
+        "All holds showing positive open P/L",
+        "No rotation candidate exceeds current book strength"
       ],
       "risk_map": {
         "stop": 0.0,
@@ -168,18 +170,18 @@
         "confidence_10": 6,
         "confidence": 65
       },
-      "thesis": "Cash position maintained due to extremely low available cash ($1.74) preventing any new entry. Top candidate BAC is already held with positive open P/L and no rotation candidate offers materially superior risk-reward. No clean edge exists to justify selling any current name."
+      "thesis": "Cash position too low at $1.74 to initiate any new position under $200 notional limit. Top candidate BAC already held with positive P/L and no rotation target materially superior to current book. No clean edge for new entry or forced sell."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.3",
     "bullets": [
-      "Insufficient cash for new buy notional",
-      "BAC already held as highest-ranked catalyst",
-      "No rotation target exceeds current book quality",
-      "All positions remain within policy limits"
+      "Insufficient cash for new buys",
+      "BAC already positioned at top rank",
+      "All holds showing positive open P/L",
+      "No rotation candidate exceeds current book strength"
     ],
-    "timestamp": "2026-09-11T17:02:50.825482+00:00"
+    "timestamp": "2026-09-11T17:17:44.010349+00:00"
   },
   "stance": "Holding BAC, XOM, WMT, META. No new trade right now.",
   "thinking": {
@@ -201,9 +203,9 @@
         "avg_cost": 62.6326,
         "stop": 60.5,
         "target": 67.0,
-        "last": 62.935001373291016,
-        "open_pnl": 1.91,
-        "open_pnl_pct": 0.48,
+        "last": 62.875,
+        "open_pnl": 1.53,
+        "open_pnl_pct": 0.39,
         "line": "Bought near $62.63 \u00b7 Sell safety line $60.50 \u00b7 Profit target $67.00",
         "plan": "stop 60.5 or target 67.0"
       },
@@ -213,9 +215,9 @@
         "avg_cost": 160.78,
         "stop": 155.0,
         "target": 169.5,
-        "last": 165.35000610351562,
-        "open_pnl": 5.67,
-        "open_pnl_pct": 2.84,
+        "last": 165.2100067138672,
+        "open_pnl": 5.49,
+        "open_pnl_pct": 2.76,
         "line": "Bought near $160.78 \u00b7 Sell safety line $155.00 \u00b7 Profit target $169.50",
         "plan": "stop 155.0 or target 169.5"
       },
@@ -225,9 +227,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 106.41999816894531,
-        "open_pnl": 0.91,
-        "open_pnl_pct": 0.46,
+        "last": 106.50499725341797,
+        "open_pnl": 1.06,
+        "open_pnl_pct": 0.54,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -237,14 +239,14 @@
         "avg_cost": 644.68,
         "stop": 628.0,
         "target": 680.0,
-        "last": 649.0499877929688,
-        "open_pnl": 1.31,
-        "open_pnl_pct": 0.68,
+        "last": 649.4299926757812,
+        "open_pnl": 1.42,
+        "open_pnl_pct": 0.74,
         "line": "Bought near $644.68 \u00b7 Sell safety line $628.00 \u00b7 Profit target $680.00",
         "plan": "stop 628.0 or target 680.0"
       }
     ],
-    "last_checked": "2026-09-11T17:10:50.552386+00:00",
+    "last_checked": "2026-09-11T17:17:57.824668+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "HOLD",
@@ -284,12 +286,89 @@
         "model": "grok-build-0.1",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 65,
+        "confidence": 60,
         "tone": "hold"
       }
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 no new trade",
+      "detail": "Cash position too low at $1.74 to initiate any new position under $200 notional limit. Top candidate BAC already held with positive P/L and no rotation target materially superior to current book. No clean edge for new entry or forced sell.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        }
+      ],
+      "tier": "junior_only",
+      "escalate_reason": "",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-11T17:17:44.011357+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -828,83 +907,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-09-11T15:32:59.494126+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CASH",
-      "status": "hold",
-      "headline": "HOLD \u2014 no new trade",
-      "detail": "No new edge available with minimal cash. Portfolio already holds top candidate BAC with positive though small P/L. No rotation justified as current names show mixed but stable performance without clear underperformers to exit.",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        }
-      ],
-      "tier": "junior_only",
-      "escalate_reason": "",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-11T15:19:47.385264+00:00"
     },
     {
       "type": "fill",
@@ -12600,23 +12602,31 @@
     {
       "symbol": "BAC",
       "name": "BAC",
-      "price": 62.994998931884766,
-      "volume": 10855666.0,
-      "avg_volume": 29156466.6,
-      "percent_change": 0.6953285630512552,
+      "price": 62.90999984741211,
+      "volume": 11260622.0,
+      "avg_volume": 29196962.2,
+      "percent_change": 0.5594604642552325,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
       "liquidity_score": 84.65,
-      "rank_score": 72.75,
+      "rank_score": 72.65,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst, growth): Bank Of America (BAC) Says AI Profit Growth Still Supports The Sector - simplywall.st",
+      "catalyst": "Headline-driven setup (ai, catalyst, record): BAC Stock Hits Record High After Q2 Earnings \u2013 Bank Of America CEO Says It\u2019s A \u2018Good Environment\u2019 For AI Buildout - Stocktwits",
       "top_headlines": [
+        "BAC Stock Hits Record High After Q2 Earnings \u2013 Bank Of America CEO Says It\u2019s A \u2018Good Environment\u2019 For AI Buildout - Stocktwits",
         "Bank Of America (BAC) Says AI Profit Growth Still Supports The Sector - simplywall.st",
-        "Bank of America Corporation $BAC Stock Holdings Boosted by Sequoia Financial Advisors LLC - MarketBeat",
-        "Goldman Sachs Sticks to Their Buy Rating for Bank of America (BAC) - theglobeandmail.com"
+        "Bank of America Corporation $BAC Stock Holdings Boosted by Sequoia Financial Advisors LLC - MarketBeat"
       ],
       "matched_headlines": [
+        {
+          "title": "BAC Stock Hits Record High After Q2 Earnings \u2013 Bank Of America CEO Says It\u2019s A \u2018Good Environment\u2019 For AI Buildout - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "record"
+          ]
+        },
         {
           "title": "Bank Of America (BAC) Says AI Profit Growth Still Supports The Sector - simplywall.st",
           "keywords": [
@@ -12644,33 +12654,27 @@
             "ai",
             "catalyst"
           ]
-        },
-        {
-          "title": "Bac A Bank expands digital banking to support growth - VnExpress International",
-          "keywords": [
-            "growth"
-          ]
         }
       ]
     },
     {
       "symbol": "HOOD",
       "name": "HOOD",
-      "price": 113.14990234375,
-      "volume": 13101077.0,
-      "avg_volume": 22169587.7,
-      "percent_change": -0.15891598375968316,
+      "price": 112.94000244140625,
+      "volume": 13423902.0,
+      "avg_volume": 22201870.2,
+      "percent_change": -0.3441272243424334,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
       "liquidity_score": 83.46,
-      "rank_score": 56.15,
+      "rank_score": 56.29,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (expansion): HOOD Stock Tokens Draw Fresh Scrutiny: Could Regulation Slow Expansion? - Yahoo! Finance Canada",
       "top_headlines": [
         "HOOD Stock Tokens Draw Fresh Scrutiny: Could Regulation Slow Expansion? - Yahoo! Finance Canada",
         "Cathie Wood's ARK Is Buying CRCL Stock's Slump While Selling HOOD's Gains - Stocktwits",
-        "Responsive Playbooks and the HOOD Inflection - Stock Traders Daily"
+        "AMC Gains 5% on Tokenization Truce Signal, Robinhood Barely Budges; Cinemark Treads Water - 24/7 Wall St."
       ],
       "matched_headlines": [
         {
@@ -12681,6 +12685,13 @@
         },
         {
           "title": "Cathie Wood's ARK Is Buying CRCL Stock's Slump While Selling HOOD's Gains - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "AMC Gains 5% on Tokenization Truce Signal, Robinhood Barely Budges; Cinemark Treads Water - 24/7 Wall St.",
           "keywords": [
             "ai",
             "catalyst"
@@ -12698,80 +12709,26 @@
           "keywords": [
             "beat"
           ]
-        },
-        {
-          "title": "U.S. Stocks Weekly Report Sep 04\u2013Sep 11 | HOOD Surges Nearly 20% in a Single Week, Bitcoin Breaks $81,000\u2014Did You Make Unrealized Gains in This U.S. Stock and Crypto Market Rally? - MEXC",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "JPM",
-      "name": "JPM",
-      "price": 357.42999267578125,
-      "volume": 2210398.0,
-      "avg_volume": 5092969.8,
-      "percent_change": 1.094579461452266,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 9,
-      "liquidity_score": 77.07,
-      "rank_score": 54.44,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): JPMorgan Chase & Co. $JPM Stock Position Lifted by Bank of New York Mellon Corp - MarketBeat",
-      "top_headlines": [
-        "Is JPMorgan Chase & Co. (JPM) a Buy as Wall Street Analysts Look Optimistic? - Yahoo Finance",
-        "JPMorgan Chase & Co. $JPM Stock Position Lifted by Bank of New York Mellon Corp - MarketBeat",
-        "3 Reasons to Sell JPM and 1 Stock to Buy Instead - theglobeandmail.com"
-      ],
-      "matched_headlines": [
-        {
-          "title": "JPMorgan Chase & Co. $JPM Stock Position Lifted by Bank of New York Mellon Corp - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "3 Reasons to Sell JPM and 1 Stock to Buy Instead - theglobeandmail.com",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Can Greece Add Another Growth Lever for JPMorgan in Europe? - TradingView",
-          "keywords": [
-            "growth"
-          ]
-        },
-        {
-          "title": "JPMorgan Chase & Co. $JPM Shares Bought by ABN AMRO Bank N.V. - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
         }
       ]
     },
     {
       "symbol": "LRCX",
       "name": "LRCX",
-      "price": 302.9800109863281,
-      "volume": 2285116.0,
-      "avg_volume": 7105981.6,
-      "percent_change": 1.6677296257974241,
+      "price": 302.2049865722656,
+      "volume": 2369409.0,
+      "avg_volume": 7114410.9,
+      "percent_change": 1.407663054653713,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
       "liquidity_score": 78.52,
-      "rank_score": 52.61,
+      "rank_score": 52.4,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Corient Private Wealth LP Lowers Stock Holdings in Lam Research Corporation $LRCX - MarketBeat",
       "top_headlines": [
         "Corient Private Wealth LP Lowers Stock Holdings in Lam Research Corporation $LRCX - MarketBeat",
-        "Lam Research (LRCX) Benefits From Memory Expansion - Yahoo Finance",
+        "Lam Research (LRCX) Benefits From Memory Expansion - finance.yahoo.com",
         "Lam Research (LRCX) Stock Looks Pricey On Earnings While AI Demand Stays Strong - simplywall.st"
       ],
       "matched_headlines": [
@@ -12782,7 +12739,7 @@
           ]
         },
         {
-          "title": "Lam Research (LRCX) Benefits From Memory Expansion - Yahoo Finance",
+          "title": "Lam Research (LRCX) Benefits From Memory Expansion - finance.yahoo.com",
           "keywords": [
             "expansion"
           ]
@@ -12813,15 +12770,15 @@
     {
       "symbol": "MU",
       "name": "MU",
-      "price": 977.0599975585938,
-      "volume": 13895974.0,
-      "avg_volume": 24447157.4,
-      "percent_change": -0.035806426735298776,
+      "price": 979.27001953125,
+      "volume": 14405794.0,
+      "avg_volume": 24498139.4,
+      "percent_change": 0.19030360215525466,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 83.88,
-      "rank_score": 52.11,
+      "liquidity_score": 83.89,
+      "rank_score": 52.24,
       "news_hits": 7,
       "catalyst": "Headline-driven setup (ai, catalyst, demand): Micron Technology Stock (MU) Opinions on AI Memory Demand and Price Volatility - Quiver Quantitative",
       "top_headlines": [
@@ -12863,6 +12820,62 @@
           "keywords": [
             "ai",
             "catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "name": "AMZN",
+      "price": 256.30999755859375,
+      "volume": 12196966.0,
+      "avg_volume": 30908536.6,
+      "percent_change": 1.7547334867026703,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 7,
+      "liquidity_score": 84.9,
+      "rank_score": 49.64,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst): Jim Cramer Breaks Down Why Amazon (AMZN) Is a \u201cScreaming Buy\u201d on AI Potential - finance.yahoo.com",
+      "top_headlines": [
+        "AMZN Stock Quote Price and Forecast - CNN",
+        "Amazon: Anthropic\u2019s IPO Can Be A Game Changer (NASDAQ:AMZN) - Seeking Alpha",
+        "Jim Cramer Breaks Down Why Amazon (AMZN) Is a \u201cScreaming Buy\u201d on AI Potential - finance.yahoo.com"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Jim Cramer Breaks Down Why Amazon (AMZN) Is a \u201cScreaming Buy\u201d on AI Potential - finance.yahoo.com",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Wealthspan Partners LLC Acquires New Shares in Amazon.com, Inc. $AMZN - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "AMZN Stock Drops For Second Day \u2014 Amazon Reportedly Cuts Jobs In Artificial General Intelligence Unit Amid Strategic Realignment - Stocktwits",
+          "keywords": [
+            "cut",
+            "cuts",
+            "drop",
+            "drops"
+          ]
+        },
+        {
+          "title": "5,357 Shares in Amazon.com, Inc. $AMZN Bought by Gould Asset Management LLC CA - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "OMC Financial Services LTD Buys New Position in Amazon.com, Inc. $AMZN - MarketBeat",
+          "keywords": [
+            "beat"
           ]
         }
       ]
@@ -12916,21 +12929,21 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "",
-    "live_share_recent": 92.3
+    "live_share_recent": 92.9
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 343,
     "closed_outcomes": 156,
-    "consensus_events": 590,
+    "consensus_events": 591,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 995.48,
-    "change": -4.52,
-    "change_pct": -0.45,
+    "latest_equity": 995.2,
+    "change": -4.8,
+    "change_pct": -0.48,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15357,8 +15370,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-11T17:10:53.269803+00:00",
-        "equity": 995.48,
+        "t": "2026-09-11T17:18:00.556781+00:00",
+        "equity": 995.2,
         "cash": 1.74,
         "event": "mark"
       }
