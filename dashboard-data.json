@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-09-11T14:10:35.113312+00:00",
+  "generated_at": "2026-09-11T14:17:46.982650+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 997.68,
+    "portfolio_value": 995.2,
     "starting_cash": 1000.0,
-    "total_return_pct": -0.23,
-    "total_pnl": -2.32,
+    "total_return_pct": -0.48,
+    "total_pnl": -4.8,
     "realized_pnl": -14.35,
-    "open_pnl": 11.99,
-    "capital_deployed": 995.94,
+    "open_pnl": 9.51,
+    "capital_deployed": 993.46,
     "cash": 1.74,
     "closed_trades": 34,
     "win_rate_pct": 26.47,
-    "vs_spy_pct": 0.26,
-    "spy_return_pct": -0.49,
+    "vs_spy_pct": 0.11,
+    "spy_return_pct": -0.59,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-11T14:10:37.851190+00:00"
+    "updated_at": "2026-09-11T14:17:49.604851+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.49,
-    "price": 765.6300048828125,
+    "return_pct": -0.59,
+    "price": 764.8499755859375,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 1,
-    "validated_count_today": 1,
+    "consensus_count_today": 2,
+    "validated_count_today": 2,
     "blocked_count_today": 0,
     "fills_today": 1,
-    "simulated_orders_today": 1,
+    "simulated_orders_today": 2,
     "top_symbol_today": "BAC"
   },
   "holdings": [
@@ -38,10 +38,10 @@
       "symbol": "BAC",
       "qty": 6.31,
       "avg_cost": 62.6326,
-      "last": 63.0099983215332,
-      "market_value": 397.59,
-      "open_pnl": 2.38,
-      "open_pnl_pct": 0.6,
+      "last": 62.6349983215332,
+      "market_value": 395.23,
+      "open_pnl": 0.02,
+      "open_pnl_pct": 0.0,
       "stop": 60.5,
       "target": 67.0,
       "thesis": "BAC is the clear top-ranked catalyst name with fresh post-earnings record-high momentum and CEO commentary on a constructive AI buildout environment. RSI is neutral and the name is already working modestly in the book, so adding within the ~$200 new-notional cap improves exposure without exceeding the 5-name limit. Defined risk to 60.50 keeps reward:risk at or above 1.5 toward 67."
@@ -50,10 +50,10 @@
       "symbol": "XOM",
       "qty": 1.24,
       "avg_cost": 160.78,
-      "last": 166.39500427246094,
-      "market_value": 206.33,
-      "open_pnl": 6.96,
-      "open_pnl_pct": 3.49,
+      "last": 166.21499633789062,
+      "market_value": 206.11,
+      "open_pnl": 6.74,
+      "open_pnl_pct": 3.38,
       "stop": 155.0,
       "target": 169.5,
       "thesis": "XOM appears on the ranked candidate list with a bullish sentiment and positive catalyst score driven by institutional share purchases. Neutral RSI leaves room for upside continuation on the headline flow. Cash allows a full ~$200 notional add without exceeding position limits, and the setup clears the required reward-to-risk threshold."
@@ -62,10 +62,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 105.78500366210938,
-      "market_value": 195.7,
-      "open_pnl": -0.27,
-      "open_pnl_pct": -0.14,
+      "last": 106.22000122070312,
+      "market_value": 196.51,
+      "open_pnl": 0.54,
+      "open_pnl_pct": 0.27,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -74,10 +74,10 @@
       "symbol": "META",
       "qty": 0.3,
       "avg_cost": 644.68,
-      "last": 654.4099731445312,
-      "market_value": 196.32,
-      "open_pnl": 2.92,
-      "open_pnl_pct": 1.51,
+      "last": 652.0499877929688,
+      "market_value": 195.61,
+      "open_pnl": 2.21,
+      "open_pnl_pct": 1.14,
       "stop": 628.0,
       "target": 680.0,
       "thesis": "META ranks second with a clear bullish AI-agent catalyst and supportive Street tone while remaining highly liquid. Small size fits residual cash under the ~$200 new-notional cap without exceeding the five-name limit. Technical RSI is neutral, leaving room for continuation if the AI narrative holds; defined stop below recent support keeps reward:risk above 1.5."
@@ -86,15 +86,15 @@
   "latest_candidate": {
     "symbol": "BAC",
     "name": "BAC",
-    "price": 63.084999084472656,
-    "volume": 3977910.0,
-    "avg_volume": 28468691.0,
-    "percent_change": 0.8391906963828487,
+    "price": 62.654998779296875,
+    "volume": 5382526.0,
+    "avg_volume": 28609152.6,
+    "percent_change": 0.1518500702054284,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 16,
-    "liquidity_score": 84.54,
-    "rank_score": 84.85,
+    "liquidity_score": 84.57,
+    "rank_score": 84.31,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (ai, catalyst, record): BAC Stock Hits Record High After Q2 Earnings \u2013 Bank Of America CEO Says It\u2019s A \u2018Good Environment\u2019 For AI Buildout - Stocktwits",
     "top_headlines": [
@@ -141,52 +141,50 @@
     ]
   },
   "latest_decision": {
-    "model": "grok-4.5",
-    "action": "BUY",
-    "symbol": "BAC",
-    "confidence": 78,
+    "model": "grok-4.3",
+    "action": "HOLD",
+    "symbol": "CASH",
+    "confidence": 60,
     "cache_stats": null,
-    "entry_price": 63.08,
-    "stop_loss": 60.5,
-    "take_profit": 67.0,
-    "qty": 3.1,
-    "thesis": "BAC is the clear top-ranked catalyst name with fresh post-earnings record-high momentum and CEO commentary on a constructive AI buildout environment. RSI is neutral and the name is already working modestly in the book, so adding within the ~$200 new-notional cap improves exposure without exceeding the 5-name limit. Defined risk to 60.50 keeps reward:risk at or above 1.5 toward 67.",
-    "reason_code": "new_entry",
+    "entry_price": 0.0,
+    "stop_loss": 0.0,
+    "take_profit": 0.0,
+    "qty": 0.0,
+    "thesis": "No new edge available with only $1.74 cash. BAC already held and top-ranked but position size limited. No rotation justified as current holdings show positive P/L and no materially superior candidate fits notional or R:R constraints.",
+    "reason_code": "hold",
     "reasoning": {
-      "headline": "Bought $BAC",
-      "narrative": "BAC is the clear top-ranked catalyst name with fresh post-earnings record-high momentum and CEO commentary on a constructive AI buildout environment. RSI is neutral and the name is already working modestly in the book, so adding within the ~$200 new-notional cap improves exposure without exceeding the 5-name limit. Defined risk to 60.50 keeps reward:risk at or above 1.5 toward 67.",
+      "headline": "Hold $CASH",
+      "narrative": "No new edge available with only $1.74 cash. BAC already held and top-ranked but position size limited. No rotation justified as current holdings show positive P/L and no materially superior candidate fits notional or R:R constraints.",
       "bullets": [
-        "Rank 84.85 / catalyst 16 leads all candidates",
-        "Post-Q2 record high + AI buildout CEO tailwind",
-        "Add ~$196 notional; book still at 4\u21925 names",
-        "R:R ~1.55 with stop 60.50 / target 67"
+        "Cash insufficient for new entry under $200 limit",
+        "4 open names near max; no rotation candidate clears hurdle",
+        "BAC and META already positioned with positive open P/L"
       ],
       "risk_map": {
-        "stop": 60.5,
-        "target": 67.0,
+        "stop": 0.0,
+        "target": 0.0,
         "horizon_days": 5,
-        "rr": 1.52,
-        "confidence_10": 8,
-        "confidence": 78
+        "rr": 0.0,
+        "confidence_10": 6,
+        "confidence": 60
       },
-      "thesis": "BAC is the clear top-ranked catalyst name with fresh post-earnings record-high momentum and CEO commentary on a constructive AI buildout environment. RSI is neutral and the name is already working modestly in the book, so adding within the ~$200 new-notional cap improves exposure without exceeding the 5-name limit. Defined risk to 60.50 keeps reward:risk at or above 1.5 toward 67."
+      "thesis": "No new edge available with only $1.74 cash. BAC already held and top-ranked but position size limited. No rotation justified as current holdings show positive P/L and no materially superior candidate fits notional or R:R constraints."
     },
     "source": "live",
     "provider": "xai",
-    "provider_model_id": "grok-4.5",
+    "provider_model_id": "grok-4.3",
     "bullets": [
-      "Rank 84.85 / catalyst 16 leads all candidates",
-      "Post-Q2 record high + AI buildout CEO tailwind",
-      "Add ~$196 notional; book still at 4\u21925 names",
-      "R:R ~1.55 with stop 60.50 / target 67"
+      "Cash insufficient for new entry under $200 limit",
+      "4 open names near max; no rotation candidate clears hurdle",
+      "BAC and META already positioned with positive open P/L"
     ],
-    "timestamp": "2026-09-11T14:05:24.926252+00:00"
+    "timestamp": "2026-09-11T14:17:33.156006+00:00"
   },
-  "stance": "Buying pressure on BAC. BAC is the clear top-ranked catalyst name with fresh post-earnings record-high momentum and CEO commentary on a constructive AI buildout environment. RSI is neutral and the name is already working modestly in the book, so adding within the ~$200 new-notional cap improves exposure without exceeding the 5-name limit. Defined risk to 60.50 keeps reward:risk at or above 1.5 toward 67.",
+  "stance": "Holding BAC, XOM, WMT, META. No new trade right now.",
   "thinking": {
-    "badge": "Looking to buy BAC",
-    "headline": "Buying pressure on BAC.",
-    "plain_english": "Right now Hermes wants exposure to BAC. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
+    "badge": "Holding what it owns",
+    "headline": "Holding BAC, XOM, WMT, META. No new trade right now.",
+    "plain_english": "Right now Hermes is holding BAC, XOM, WMT, META and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
     "triggers": [
       "It owns BAC, bought near $62.63. Simple plan: sell if it falls to about $60.50, or take profit near $67.00.",
       "It owns XOM, bought near $160.78. Simple plan: sell if it falls to about $155.00, or take profit near $169.50.",
@@ -202,9 +200,9 @@
         "avg_cost": 62.6326,
         "stop": 60.5,
         "target": 67.0,
-        "last": 63.0099983215332,
-        "open_pnl": 2.38,
-        "open_pnl_pct": 0.6,
+        "last": 62.6349983215332,
+        "open_pnl": 0.02,
+        "open_pnl_pct": 0.0,
         "line": "Bought near $62.63 \u00b7 Sell safety line $60.50 \u00b7 Profit target $67.00",
         "plan": "stop 60.5 or target 67.0"
       },
@@ -214,9 +212,9 @@
         "avg_cost": 160.78,
         "stop": 155.0,
         "target": 169.5,
-        "last": 166.39500427246094,
-        "open_pnl": 6.96,
-        "open_pnl_pct": 3.49,
+        "last": 166.21499633789062,
+        "open_pnl": 6.74,
+        "open_pnl_pct": 3.38,
         "line": "Bought near $160.78 \u00b7 Sell safety line $155.00 \u00b7 Profit target $169.50",
         "plan": "stop 155.0 or target 169.5"
       },
@@ -226,9 +224,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 105.78500366210938,
-        "open_pnl": -0.27,
-        "open_pnl_pct": -0.14,
+        "last": 106.22000122070312,
+        "open_pnl": 0.54,
+        "open_pnl_pct": 0.27,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -238,17 +236,17 @@
         "avg_cost": 644.68,
         "stop": 628.0,
         "target": 680.0,
-        "last": 654.4099731445312,
-        "open_pnl": 2.92,
-        "open_pnl_pct": 1.51,
+        "last": 652.0499877929688,
+        "open_pnl": 2.21,
+        "open_pnl_pct": 1.14,
         "line": "Bought near $644.68 \u00b7 Sell safety line $628.00 \u00b7 Profit target $680.00",
         "plan": "stop 628.0 or target 680.0"
       }
     ],
-    "last_checked": "2026-09-11T14:10:35.113312+00:00",
+    "last_checked": "2026-09-11T14:17:46.982650+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "BUY",
+    "action": "HOLD",
     "symbols_held": [
       "BAC",
       "XOM",
@@ -261,7 +259,7 @@
         "model": "grok-4.3",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 65,
+        "confidence": 60,
         "tone": "hold"
       },
       {
@@ -275,46 +273,99 @@
       {
         "prefix": "J",
         "model": "deepseek-v4-flash",
-        "action": "BUY",
-        "symbol": "PLTR",
-        "confidence": 72,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 65,
+        "tone": "hold"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "BUY",
-        "symbol": "BAC",
-        "confidence": 75,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "grok-4.5",
-        "action": "BUY",
-        "symbol": "BAC",
-        "confidence": 78,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "claude-sonnet-5",
-        "action": "BUY",
-        "symbol": "BAC",
-        "confidence": 78,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "claude-opus-5",
-        "action": "BUY",
-        "symbol": "HOOD",
-        "confidence": 90,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 60,
+        "tone": "hold"
       }
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 no new trade",
+      "detail": "No new edge available with only $1.74 cash. BAC already held and top-ranked but position size limited. No rotation justified as current holdings show positive P/L and no materially superior candidate fits notional or R:R constraints.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        }
+      ],
+      "tier": "junior_only",
+      "escalate_reason": "",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-11T14:17:33.156006+00:00"
+    },
     {
       "type": "fill",
       "symbol": "BAC",
@@ -12086,15 +12137,15 @@
     {
       "symbol": "BAC",
       "name": "BAC",
-      "price": 63.084999084472656,
-      "volume": 3977910.0,
-      "avg_volume": 28468691.0,
-      "percent_change": 0.8391906963828487,
+      "price": 62.654998779296875,
+      "volume": 5382526.0,
+      "avg_volume": 28609152.6,
+      "percent_change": 0.1518500702054284,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 16,
-      "liquidity_score": 84.54,
-      "rank_score": 84.85,
+      "liquidity_score": 84.57,
+      "rank_score": 84.31,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst, record): BAC Stock Hits Record High After Q2 Earnings \u2013 Bank Of America CEO Says It\u2019s A \u2018Good Environment\u2019 For AI Buildout - Stocktwits",
       "top_headlines": [
@@ -12141,73 +12192,17 @@
       ]
     },
     {
-      "symbol": "HOOD",
-      "name": "HOOD",
-      "price": 114.9800033569336,
-      "volume": 5439548.0,
-      "avg_volume": 21403434.8,
-      "percent_change": 1.4559264971500008,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 9,
-      "liquidity_score": 83.3,
-      "rank_score": 57.16,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): Cathie Wood's ARK Is Buying CRCL Stock's Slump While Selling HOOD's Gains - Stocktwits",
-      "top_headlines": [
-        "Cathie Wood's ARK Is Buying CRCL Stock's Slump While Selling HOOD's Gains - Stocktwits",
-        "HOOD Stock Tokens Draw Fresh Scrutiny: Could Regulation Slow Expansion? - The Globe and Mail",
-        "Robinhood Markets, Inc. (HOOD) Registers a Bigger Fall Than the Market: Important Facts to Note - Yahoo Finance"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Cathie Wood's ARK Is Buying CRCL Stock's Slump While Selling HOOD's Gains - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "HOOD Stock Tokens Draw Fresh Scrutiny: Could Regulation Slow Expansion? - The Globe and Mail",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "expansion"
-          ]
-        },
-        {
-          "title": "Robinhood Markets, Inc. (HOOD) Registers a Bigger Fall Than the Market: Important Facts to Note - Yahoo Finance",
-          "keywords": [
-            "fall"
-          ]
-        },
-        {
-          "title": "National Pension Service Boosts Position in Robinhood Markets, Inc. $HOOD - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "U.S. Stocks Weekly Report Sep 04\u2013Sep 11 | HOOD Surges Nearly 20% in a Single Week, Bitcoin Breaks $81,000\u2014Did You Make Unrealized Gains in This U.S. Stock and Crypto Market Rally? - MEXC",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "AMZN",
       "name": "AMZN",
-      "price": 256.0299987792969,
-      "volume": 4199380.0,
-      "avg_volume": 30108778.0,
-      "percent_change": 1.6435743378776526,
+      "price": 255.9250030517578,
+      "volume": 5391493.0,
+      "avg_volume": 30227989.3,
+      "percent_change": 1.6018911714980915,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
-      "liquidity_score": 84.79,
-      "rank_score": 49.53,
+      "liquidity_score": 84.8,
+      "rank_score": 49.5,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Wealthspan Partners LLC Acquires New Shares in Amazon.com, Inc. $AMZN - MarketBeat",
       "top_headlines": [
@@ -12253,33 +12248,81 @@
       ]
     },
     {
-      "symbol": "PLTR",
-      "name": "PLTR",
-      "price": 168.19500732421875,
-      "volume": 3067857.0,
-      "avg_volume": 25080395.7,
-      "percent_change": 1.4078178616149457,
+      "symbol": "HOOD",
+      "name": "HOOD",
+      "price": 114.94499969482422,
+      "volume": 7270993.0,
+      "avg_volume": 21586579.3,
+      "percent_change": 1.4250400050086205,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
-      "liquidity_score": 83.99,
-      "rank_score": 49.22,
+      "liquidity_score": 83.34,
+      "rank_score": 49.14,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst, wins): PLTR Stock Wins Whether We\u2019re In An AI Bubble Or Not? Wall Street Analyst Explains Why - TradingView",
+      "catalyst": "Headline-driven setup (ai, catalyst): Cathie Wood's ARK Is Buying CRCL Stock's Slump While Selling HOOD's Gains - Stocktwits",
       "top_headlines": [
-        "PLTR Stock Wins Whether We\u2019re In An AI Bubble Or Not? Wall Street Analyst Explains Why - TradingView",
-        "PLTR Stock Wins Whether We\u2019re In An AI Bubble Or Not? Wall Street Analyst Explains Why - Stocktwits",
-        "The Nvidia Experiment That Makes Palantir Harder To Dismiss (NASDAQ:PLTR) - Seeking Alpha"
+        "Cathie Wood's ARK Is Buying CRCL Stock's Slump While Selling HOOD's Gains - Stocktwits",
+        "HOOD Stock Tokens Draw Fresh Scrutiny: Could Regulation Slow Expansion? - The Globe and Mail",
+        "Robinhood Markets, Inc. (HOOD) Registers a Bigger Fall Than the Market: Important Facts to Note - Yahoo Finance"
       ],
       "matched_headlines": [
         {
-          "title": "PLTR Stock Wins Whether We\u2019re In An AI Bubble Or Not? Wall Street Analyst Explains Why - TradingView",
+          "title": "Cathie Wood's ARK Is Buying CRCL Stock's Slump While Selling HOOD's Gains - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "HOOD Stock Tokens Draw Fresh Scrutiny: Could Regulation Slow Expansion? - The Globe and Mail",
           "keywords": [
             "ai",
             "catalyst",
-            "wins"
+            "expansion"
           ]
         },
+        {
+          "title": "Robinhood Markets, Inc. (HOOD) Registers a Bigger Fall Than the Market: Important Facts to Note - Yahoo Finance",
+          "keywords": [
+            "fall"
+          ]
+        },
+        {
+          "title": "Responsive Playbooks and the HOOD Inflection - Stock Traders Daily",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "National Pension Service Boosts Position in Robinhood Markets, Inc. $HOOD - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "PLTR",
+      "name": "PLTR",
+      "price": 167.5800018310547,
+      "volume": 3787967.0,
+      "avg_volume": 25152406.7,
+      "percent_change": 1.0370199049642215,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 6,
+      "liquidity_score": 84.01,
+      "rank_score": 44.93,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst, wins): PLTR Stock Wins Whether We\u2019re In An AI Bubble Or Not? Wall Street Analyst Explains Why - Stocktwits",
+      "top_headlines": [
+        "PLTR Stock Wins Whether We\u2019re In An AI Bubble Or Not? Wall Street Analyst Explains Why - Stocktwits",
+        "The Nvidia Experiment That Makes Palantir Harder To Dismiss (NASDAQ:PLTR) - Seeking Alpha",
+        "PLTR Maintained by Rosenblatt -- Price Target Stays at $225 - GuruFocus"
+      ],
+      "matched_headlines": [
         {
           "title": "PLTR Stock Wins Whether We\u2019re In An AI Bubble Or Not? Wall Street Analyst Explains Why - Stocktwits",
           "keywords": [
@@ -12307,52 +12350,50 @@
             "catalyst",
             "contract"
           ]
+        },
+        {
+          "title": "Palantir Technologies (PLTR) Institutional Ownership 2026 $PLTR - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
         }
       ]
     },
     {
-      "symbol": "AMD",
-      "name": "AMD",
-      "price": 519.1400146484375,
-      "volume": 4044513.0,
-      "avg_volume": 16085771.3,
-      "percent_change": 3.0857840263265617,
+      "symbol": "JPM",
+      "name": "JPM",
+      "price": 356.44500732421875,
+      "volume": 892349.0,
+      "avg_volume": 4961164.9,
+      "percent_change": 0.8159887389825207,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 6,
-      "liquidity_score": 82.06,
-      "rank_score": 44.78,
+      "catalyst_score": 7,
+      "liquidity_score": 76.96,
+      "rank_score": 44.7,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): AMD Stock Rises as CFO Claims Its Addressable Market Could Reach $3 Trillion - Barron's",
+      "catalyst": "Headline-driven setup (beat): JPMorgan Chase & Co. $JPM Stock Position Lifted by Bank of New York Mellon Corp - MarketBeat",
       "top_headlines": [
-        "Why AMD Stock Popped Today? - Yahoo Finance",
-        "AMD Stock Rises as CFO Claims Its Addressable Market Could Reach $3 Trillion - Barron's",
-        "Nvidia Has the AI Hype. AMD Has the Valuation. I\u2019d Buy This Stock. - 24/7 Wall St."
+        "JPMorgan Chase & Co. $JPM Stock Position Lifted by Bank of New York Mellon Corp - MarketBeat",
+        "JPM Stock Slips Premarket: Morningstar Says JPMorgan Is Becoming Increasingly Attractive At Current Levels - Stocktwits",
+        "3 Reasons to Sell JPM and 1 Stock to Buy Instead - The Globe and Mail"
       ],
       "matched_headlines": [
         {
-          "title": "AMD Stock Rises as CFO Claims Its Addressable Market Could Reach $3 Trillion - Barron's",
+          "title": "JPMorgan Chase & Co. $JPM Stock Position Lifted by Bank of New York Mellon Corp - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "3 Reasons to Sell JPM and 1 Stock to Buy Instead - The Globe and Mail",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "Nvidia Has the AI Hype. AMD Has the Valuation. I\u2019d Buy This Stock. - 24/7 Wall St.",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "AI Chip Stocks Diverge Ahead of Nvidia Earnings as AMD and Intel Surge - ChartMill",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Advanced Micro Devices, Inc. $AMD Shares Bought by The Manufacturers Life Insurance Company - MarketBeat",
+          "title": "JPMorgan Chase & Co. $JPM Shares Bought by ABN AMRO Bank N.V. - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -12386,8 +12427,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 2,
-      "BUY": 2,
+      "HOLD": 4,
+      "BUY": 0,
       "SELL": 0,
       "live": 4,
       "fallback": 0
@@ -12404,25 +12445,25 @@
     "max_candidates_to_llm": 8,
     "log_all_disagreements": true,
     "decision_mode": "live_dual_llm",
-    "last_tier": "senior_escalated",
+    "last_tier": "junior_only",
     "last_stage": "entry",
     "last_junior_nomination": null,
-    "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 85.7
+    "last_escalate_reason": "",
+    "live_share_recent": 92.9
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 343,
     "closed_outcomes": 156,
-    "consensus_events": 578,
+    "consensus_events": 579,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 997.68,
-    "change": -2.32,
-    "change_pct": -0.23,
+    "latest_equity": 995.2,
+    "change": -4.8,
+    "change_pct": -0.48,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15599,8 +15640,8 @@
         "event": "BUY BAC"
       },
       {
-        "t": "2026-09-11T14:10:37.851190+00:00",
-        "equity": 997.68,
+        "t": "2026-09-11T14:17:49.604851+00:00",
+        "equity": 995.2,
         "cash": 1.74,
         "event": "mark"
       }
