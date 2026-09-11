@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-09-11T18:10:56.163856+00:00",
+  "generated_at": "2026-09-11T18:17:53.444297+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 996.92,
+    "portfolio_value": 996.54,
     "starting_cash": 1000.0,
-    "total_return_pct": -0.31,
-    "total_pnl": -3.08,
+    "total_return_pct": -0.35,
+    "total_pnl": -3.46,
     "realized_pnl": -14.35,
-    "open_pnl": 11.22,
-    "capital_deployed": 995.18,
+    "open_pnl": 10.86,
+    "capital_deployed": 994.8,
     "cash": 1.74,
     "closed_trades": 34,
     "win_rate_pct": 26.47,
-    "vs_spy_pct": 0.17,
-    "spy_return_pct": -0.48,
+    "vs_spy_pct": 0.14,
+    "spy_return_pct": -0.49,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-11T18:10:58.997052+00:00"
+    "updated_at": "2026-09-11T18:17:56.115650+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.48,
-    "price": 765.7000122070312,
+    "return_pct": -0.49,
+    "price": 765.6300048828125,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 17,
-    "validated_count_today": 17,
+    "consensus_count_today": 18,
+    "validated_count_today": 18,
     "blocked_count_today": 0,
     "fills_today": 1,
-    "simulated_orders_today": 17,
+    "simulated_orders_today": 18,
     "top_symbol_today": "BAC"
   },
   "holdings": [
@@ -38,10 +38,10 @@
       "symbol": "BAC",
       "qty": 6.31,
       "avg_cost": 62.6326,
-      "last": 63.03499984741211,
-      "market_value": 397.75,
-      "open_pnl": 2.54,
-      "open_pnl_pct": 0.64,
+      "last": 62.96500015258789,
+      "market_value": 397.31,
+      "open_pnl": 2.1,
+      "open_pnl_pct": 0.53,
       "stop": 60.5,
       "target": 67.0,
       "thesis": "BAC is the clear top-ranked catalyst name with fresh post-earnings record-high momentum and CEO commentary on a constructive AI buildout environment. RSI is neutral and the name is already working modestly in the book, so adding within the ~$200 new-notional cap improves exposure without exceeding the 5-name limit. Defined risk to 60.50 keeps reward:risk at or above 1.5 toward 67."
@@ -50,10 +50,10 @@
       "symbol": "XOM",
       "qty": 1.24,
       "avg_cost": 160.78,
-      "last": 165.39500427246094,
-      "market_value": 205.09,
-      "open_pnl": 5.72,
-      "open_pnl_pct": 2.87,
+      "last": 165.35000610351562,
+      "market_value": 205.03,
+      "open_pnl": 5.67,
+      "open_pnl_pct": 2.84,
       "stop": 155.0,
       "target": 169.5,
       "thesis": "XOM appears on the ranked candidate list with a bullish sentiment and positive catalyst score driven by institutional share purchases. Neutral RSI leaves room for upside continuation on the headline flow. Cash allows a full ~$200 notional add without exceeding position limits, and the setup clears the required reward-to-risk threshold."
@@ -62,9 +62,9 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 106.91000366210938,
-      "market_value": 197.78,
-      "open_pnl": 1.81,
+      "last": 106.91200256347656,
+      "market_value": 197.79,
+      "open_pnl": 1.82,
       "open_pnl_pct": 0.93,
       "stop": 102.5,
       "target": 112.0,
@@ -74,10 +74,10 @@
       "symbol": "META",
       "qty": 0.3,
       "avg_cost": 644.68,
-      "last": 648.52001953125,
-      "market_value": 194.56,
-      "open_pnl": 1.15,
-      "open_pnl_pct": 0.6,
+      "last": 648.9149780273438,
+      "market_value": 194.67,
+      "open_pnl": 1.27,
+      "open_pnl_pct": 0.66,
       "stop": 628.0,
       "target": 680.0,
       "thesis": "META ranks second with a clear bullish AI-agent catalyst and supportive Street tone while remaining highly liquid. Small size fits residual cash under the ~$200 new-notional cap without exceeding the five-name limit. Technical RSI is neutral, leaving room for continuation if the AI narrative holds; defined stop below recent support keeps reward:risk above 1.5."
@@ -86,15 +86,15 @@
   "latest_candidate": {
     "symbol": "BAC",
     "name": "BAC",
-    "price": 63.0,
-    "volume": 12245511.0,
-    "avg_volume": 29295451.1,
-    "percent_change": 0.703322597586826,
+    "price": 62.9900016784668,
+    "volume": 12562485.0,
+    "avg_volume": 29327148.5,
+    "percent_change": 0.6873406261774203,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 13,
     "liquidity_score": 84.67,
-    "rank_score": 72.76,
+    "rank_score": 72.75,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (ai, catalyst): BAC Looks 17.7% Overvalued on GF Value\u2122 Amid Dividend Sustainabi - GuruFocus",
     "top_headlines": [
@@ -151,15 +151,16 @@
     "stop_loss": 0.0,
     "take_profit": 0.0,
     "qty": 0.0,
-    "thesis": "No material rotation candidate exceeds current holdings in rank or catalyst strength. Cash balance too low for new entry without forced sale. Portfolio already at 4 names with positive open P/L across board.",
+    "thesis": "Portfolio has only $1.74 cash and 4 open positions already. No new buy possible without selling. Top candidate BAC is already held with positive P/L and no rotation edge justifies exiting a stronger name like XOM.",
     "reason_code": "hold",
     "reasoning": {
       "headline": "Hold $CASH",
-      "narrative": "No material rotation candidate exceeds current holdings in rank or catalyst strength. Cash balance too low for new entry without forced sale. Portfolio already at 4 names with positive open P/L across board.",
+      "narrative": "Portfolio has only $1.74 cash and 4 open positions already. No new buy possible without selling. Top candidate BAC is already held with positive P/L and no rotation edge justifies exiting a stronger name like XOM.",
       "bullets": [
-        "BAC remains strongest ranked name but already held",
-        "LRCX rank 52 insufficient to justify rotation sale",
-        "Reward:risk and notional limits preclude new buys"
+        "Cash insufficient for new entry under $200 notional limit",
+        "4 positions at max open names guideline",
+        "BAC already held as top-ranked candidate",
+        "No R:R >=1.5 setup available without forced rotation"
       ],
       "risk_map": {
         "stop": 0.0,
@@ -169,17 +170,18 @@
         "confidence_10": 6,
         "confidence": 65
       },
-      "thesis": "No material rotation candidate exceeds current holdings in rank or catalyst strength. Cash balance too low for new entry without forced sale. Portfolio already at 4 names with positive open P/L across board."
+      "thesis": "Portfolio has only $1.74 cash and 4 open positions already. No new buy possible without selling. Top candidate BAC is already held with positive P/L and no rotation edge justifies exiting a stronger name like XOM."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.3",
     "bullets": [
-      "BAC remains strongest ranked name but already held",
-      "LRCX rank 52 insufficient to justify rotation sale",
-      "Reward:risk and notional limits preclude new buys"
+      "Cash insufficient for new entry under $200 notional limit",
+      "4 positions at max open names guideline",
+      "BAC already held as top-ranked candidate",
+      "No R:R >=1.5 setup available without forced rotation"
     ],
-    "timestamp": "2026-09-11T18:02:56.585205+00:00"
+    "timestamp": "2026-09-11T18:17:41.110929+00:00"
   },
   "stance": "Holding BAC, XOM, WMT, META. No new trade right now.",
   "thinking": {
@@ -201,9 +203,9 @@
         "avg_cost": 62.6326,
         "stop": 60.5,
         "target": 67.0,
-        "last": 63.03499984741211,
-        "open_pnl": 2.54,
-        "open_pnl_pct": 0.64,
+        "last": 62.96500015258789,
+        "open_pnl": 2.1,
+        "open_pnl_pct": 0.53,
         "line": "Bought near $62.63 \u00b7 Sell safety line $60.50 \u00b7 Profit target $67.00",
         "plan": "stop 60.5 or target 67.0"
       },
@@ -213,9 +215,9 @@
         "avg_cost": 160.78,
         "stop": 155.0,
         "target": 169.5,
-        "last": 165.39500427246094,
-        "open_pnl": 5.72,
-        "open_pnl_pct": 2.87,
+        "last": 165.35000610351562,
+        "open_pnl": 5.67,
+        "open_pnl_pct": 2.84,
         "line": "Bought near $160.78 \u00b7 Sell safety line $155.00 \u00b7 Profit target $169.50",
         "plan": "stop 155.0 or target 169.5"
       },
@@ -225,8 +227,8 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 106.91000366210938,
-        "open_pnl": 1.81,
+        "last": 106.91200256347656,
+        "open_pnl": 1.82,
         "open_pnl_pct": 0.93,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
@@ -237,14 +239,14 @@
         "avg_cost": 644.68,
         "stop": 628.0,
         "target": 680.0,
-        "last": 648.52001953125,
-        "open_pnl": 1.15,
-        "open_pnl_pct": 0.6,
+        "last": 648.9149780273438,
+        "open_pnl": 1.27,
+        "open_pnl_pct": 0.66,
         "line": "Bought near $644.68 \u00b7 Sell safety line $628.00 \u00b7 Profit target $680.00",
         "plan": "stop 628.0 or target 680.0"
       }
     ],
-    "last_checked": "2026-09-11T18:10:56.163856+00:00",
+    "last_checked": "2026-09-11T18:17:53.444297+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "HOLD",
@@ -276,7 +278,7 @@
         "model": "deepseek-v4-flash",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 60,
+        "confidence": 64,
         "tone": "hold"
       },
       {
@@ -284,12 +286,89 @@
         "model": "grok-build-0.1",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 65,
+        "confidence": 60,
         "tone": "hold"
       }
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 no new trade",
+      "detail": "Portfolio has only $1.74 cash and 4 open positions already. No new buy possible without selling. Top candidate BAC is already held with positive P/L and no rotation edge justifies exiting a stronger name like XOM.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 64,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        }
+      ],
+      "tier": "junior_only",
+      "escalate_reason": "",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-11T18:17:41.110929+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -828,83 +907,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-09-11T16:34:44.869528+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CASH",
-      "status": "hold",
-      "headline": "HOLD \u2014 no new trade",
-      "detail": "Cash is only $1.74 so no new BUY is feasible without a forced sale. Top-ranked catalysts (BAC, META, XOM) are already held and still constructive near targets, while WMT is flat but not broken. No candidate is materially stronger than the weakest hold enough to justify a rotation under desk policy.",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "BAC",
-          "confidence": 75,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 68,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "BAC",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-11T16:19:19.864647+00:00"
     },
     {
       "type": "fill",
@@ -12600,15 +12602,15 @@
     {
       "symbol": "BAC",
       "name": "BAC",
-      "price": 63.0,
-      "volume": 12245511.0,
-      "avg_volume": 29295451.1,
-      "percent_change": 0.703322597586826,
+      "price": 62.9900016784668,
+      "volume": 12562485.0,
+      "avg_volume": 29327148.5,
+      "percent_change": 0.6873406261774203,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
       "liquidity_score": 84.67,
-      "rank_score": 72.76,
+      "rank_score": 72.75,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): BAC Looks 17.7% Overvalued on GF Value\u2122 Amid Dividend Sustainabi - GuruFocus",
       "top_headlines": [
@@ -12658,15 +12660,15 @@
     {
       "symbol": "LRCX",
       "name": "LRCX",
-      "price": 301.2349853515625,
-      "volume": 2736785.0,
-      "avg_volume": 7151148.5,
-      "percent_change": 1.0821702225619323,
+      "price": 301.17498779296875,
+      "volume": 2806711.0,
+      "avg_volume": 7158141.1,
+      "percent_change": 1.0620374898926719,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 78.54,
-      "rank_score": 52.15,
+      "liquidity_score": 78.55,
+      "rank_score": 52.13,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Corient Private Wealth LP Lowers Stock Holdings in Lam Research Corporation $LRCX - MarketBeat",
       "top_headlines": [
@@ -12713,15 +12715,15 @@
     {
       "symbol": "META",
       "name": "META",
-      "price": 649.3599853515625,
-      "volume": 8935378.0,
-      "avg_volume": 18271237.8,
-      "percent_change": 0.7728328674096061,
+      "price": 648.614990234375,
+      "volume": 9140694.0,
+      "avg_volume": 18291769.4,
+      "percent_change": 0.6572186162624146,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
       "liquidity_score": 82.62,
-      "rank_score": 51.01,
+      "rank_score": 50.92,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Meta stock surges with Wall Street bullish on new AI agent - Yahoo Finance",
       "top_headlines": [
@@ -12746,7 +12748,7 @@
           ]
         },
         {
-          "title": "Why Meta\u2019s Stock Is Rising After Muse AI Launch - forbes.com",
+          "title": "Why Meta\u2019s Stock Is Rising After Muse AI Launch - Forbes",
           "keywords": [
             "ai",
             "catalyst",
@@ -12765,15 +12767,15 @@
     {
       "symbol": "AMZN",
       "name": "AMZN",
-      "price": 256.95001220703125,
-      "volume": 13956413.0,
-      "avg_volume": 31084481.3,
-      "percent_change": 2.008818464267604,
+      "price": 256.4949951171875,
+      "volume": 14387390.0,
+      "avg_volume": 31127579.0,
+      "percent_change": 1.828177275277848,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
       "liquidity_score": 84.93,
-      "rank_score": 49.85,
+      "rank_score": 49.7,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Jim Cramer Breaks Down Why Amazon (AMZN) Is a \u201cScreaming Buy\u201d on AI Potential - Yahoo Finance",
       "top_headlines": [
@@ -12821,21 +12823,21 @@
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 356.8999938964844,
-      "volume": 2473347.0,
-      "avg_volume": 5119264.7,
-      "percent_change": 0.9446759704021958,
+      "price": 357.0899963378906,
+      "volume": 2536803.0,
+      "avg_volume": 5125610.3,
+      "percent_change": 0.9984157720534733,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 77.09,
-      "rank_score": 48.82,
+      "liquidity_score": 77.1,
+      "rank_score": 48.86,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): JPMorgan Chase & Co. $JPM Stock Position Lifted by Bank of New York Mellon Corp - MarketBeat",
       "top_headlines": [
         "3 Reasons to Sell JPM and 1 Stock to Buy Instead - Yahoo Finance",
         "JPMorgan Chase & Co. $JPM Stock Position Lifted by Bank of New York Mellon Corp - MarketBeat",
-        "JPM Stock Slips Premarket: Morningstar Says JPMorgan Is Becoming Increasingly Attractive At Current Levels - Stocktwits"
+        "Can Greece Add Another Growth Lever for JPMorgan in Europe? - TradingView"
       ],
       "matched_headlines": [
         {
@@ -12907,21 +12909,21 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "",
-    "live_share_recent": 92.4
+    "live_share_recent": 92.9
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 343,
     "closed_outcomes": 156,
-    "consensus_events": 594,
+    "consensus_events": 595,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 996.92,
-    "change": -3.08,
-    "change_pct": -0.31,
+    "latest_equity": 996.54,
+    "change": -3.46,
+    "change_pct": -0.35,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15360,8 +15362,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-11T18:10:58.997052+00:00",
-        "equity": 996.92,
+        "t": "2026-09-11T18:17:56.115650+00:00",
+        "equity": 996.54,
         "cash": 1.74,
         "event": "mark"
       }
