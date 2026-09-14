@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-14T18:10:22.972414+00:00",
+  "generated_at": "2026-09-14T18:17:39.557114+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1002.51,
+    "portfolio_value": 1002.46,
     "starting_cash": 1000.0,
     "total_return_pct": 0.25,
-    "total_pnl": 2.51,
+    "total_pnl": 2.46,
     "realized_pnl": -16.51,
-    "open_pnl": 18.97,
-    "capital_deployed": 607.72,
+    "open_pnl": 18.94,
+    "capital_deployed": 607.67,
     "cash": 394.79,
     "closed_trades": 35,
     "win_rate_pct": 25.71,
-    "vs_spy_pct": 1.17,
-    "spy_return_pct": -0.92,
+    "vs_spy_pct": 1.18,
+    "spy_return_pct": -0.93,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-14T18:10:25.722726+00:00"
+    "updated_at": "2026-09-14T18:17:42.205821+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.92,
-    "price": 762.3400268554688,
+    "return_pct": -0.93,
+    "price": 762.2650146484375,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,10 +38,10 @@
       "symbol": "XOM",
       "qty": 1.24,
       "avg_cost": 160.78,
-      "last": 165.39999389648438,
-      "market_value": 205.1,
-      "open_pnl": 5.73,
-      "open_pnl_pct": 2.87,
+      "last": 165.72000122070312,
+      "market_value": 205.49,
+      "open_pnl": 6.13,
+      "open_pnl_pct": 3.07,
       "stop": 155.0,
       "target": 169.5,
       "thesis": "XOM appears on the ranked candidate list with a bullish sentiment and positive catalyst score driven by institutional share purchases. Neutral RSI leaves room for upside continuation on the headline flow. Cash allows a full ~$200 notional add without exceeding position limits, and the setup clears the required reward-to-risk threshold."
@@ -50,10 +50,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 109.34500122070312,
-      "market_value": 202.29,
-      "open_pnl": 6.32,
-      "open_pnl_pct": 3.22,
+      "last": 109.43499755859375,
+      "market_value": 202.45,
+      "open_pnl": 6.48,
+      "open_pnl_pct": 3.31,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -62,10 +62,10 @@
       "symbol": "META",
       "qty": 0.3,
       "avg_cost": 644.68,
-      "last": 667.7570190429688,
-      "market_value": 200.33,
-      "open_pnl": 6.92,
-      "open_pnl_pct": 3.58,
+      "last": 665.7750244140625,
+      "market_value": 199.73,
+      "open_pnl": 6.33,
+      "open_pnl_pct": 3.27,
       "stop": 628.0,
       "target": 680.0,
       "thesis": "META ranks second with a clear bullish AI-agent catalyst and supportive Street tone while remaining highly liquid. Small size fits residual cash under the ~$200 new-notional cap without exceeding the five-name limit. Technical RSI is neutral, leaving room for continuation if the AI narrative holds; defined stop below recent support keeps reward:risk above 1.5."
@@ -74,15 +74,15 @@
   "latest_candidate": {
     "symbol": "ORCL",
     "name": "ORCL",
-    "price": 144.2899932861328,
-    "volume": 27708656.0,
-    "avg_volume": 34426555.6,
-    "percent_change": -3.9858966873968775,
+    "price": 144.18499755859375,
+    "volume": 28661168.0,
+    "avg_volume": 34521806.8,
+    "percent_change": -4.05576342175403,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 11,
-    "liquidity_score": 85.37,
-    "rank_score": 62.99,
+    "liquidity_score": 85.38,
+    "rank_score": 63.05,
     "news_hits": 5,
     "catalyst": "Headline-driven setup (ai, catalyst): ORCL Slides After Worst Week In Nearly 2 Months \u2014 But Larry Ellison Canceling His Stock Sale Is Keeping Retail Bullish - Yahoo Finance",
     "top_headlines": [
@@ -115,45 +115,45 @@
     "model": "grok-4.5",
     "action": "BUY",
     "symbol": "ORCL",
-    "confidence": 74,
+    "confidence": 72,
     "cache_stats": null,
-    "entry_price": 144.29,
+    "entry_price": 144.18,
     "stop_loss": 138.0,
-    "take_profit": 154.0,
+    "take_profit": 153.5,
     "qty": 1.38,
-    "thesis": "ORCL ranks top of the catalyst list after a sharp weekly slide, with Larry Ellison canceling a planned stock sale supporting retail bullish sentiment and a potential bounce. RSI is neutral near 50, leaving room for a mean-reversion move without extreme overbought risk. Liquid name fits the ~$200 new-entry notional cap while book still has room under the 5-name limit. Structured stop/target delivers reward:risk above 1.5.",
+    "thesis": "ORCL presents a liquid bounce setup after a sharp weekly slide, with Ellison canceling his planned sale providing a bullish retail catalyst and sentiment support. RSI near 50 leaves room for mean-reversion upside without extreme overbought conditions. Rank and catalyst scores support a defined-risk entry within notional limits while the book has capacity.",
     "reason_code": "new_entry",
     "reasoning": {
       "headline": "Bought $ORCL",
-      "narrative": "ORCL ranks top of the catalyst list after a sharp weekly slide, with Larry Ellison canceling a planned stock sale supporting retail bullish sentiment and a potential bounce. RSI is neutral near 50, leaving room for a mean-reversion move without extreme overbought risk. Liquid name fits the ~$200 new-entry notional cap while book still has room under the 5-name limit. Structured stop/target delivers reward:risk above 1.5.",
+      "narrative": "ORCL presents a liquid bounce setup after a sharp weekly slide, with Ellison canceling his planned sale providing a bullish retail catalyst and sentiment support. RSI near 50 leaves room for mean-reversion upside without extreme overbought conditions. Rank and catalyst scores support a defined-risk entry within notional limits while the book has capacity.",
       "bullets": [
-        "Top rank/catalyst: Ellison sale cancel after slide",
-        "Neutral RSI ~50 supports bounce setup",
-        "Notional ~$199; R:R ~1.54 with 138/154 levels",
-        "No rotation needed; 3 open < 5 max"
+        "Ellison sale cancel + AI headline support",
+        "RSI 50 post-slide bounce setup",
+        "R:R ~1.5 with stops under recent range",
+        "Notional capped near $200"
       ],
       "risk_map": {
         "stop": 138.0,
-        "target": 154.0,
+        "target": 153.5,
         "horizon_days": 5,
-        "rr": 1.54,
+        "rr": 1.51,
         "confidence_10": 7,
-        "confidence": 74
+        "confidence": 72
       },
-      "thesis": "ORCL ranks top of the catalyst list after a sharp weekly slide, with Larry Ellison canceling a planned stock sale supporting retail bullish sentiment and a potential bounce. RSI is neutral near 50, leaving room for a mean-reversion move without extreme overbought risk. Liquid name fits the ~$200 new-entry notional cap while book still has room under the 5-name limit. Structured stop/target delivers reward:risk above 1.5."
+      "thesis": "ORCL presents a liquid bounce setup after a sharp weekly slide, with Ellison canceling his planned sale providing a bullish retail catalyst and sentiment support. RSI near 50 leaves room for mean-reversion upside without extreme overbought conditions. Rank and catalyst scores support a defined-risk entry within notional limits while the book has capacity."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Top rank/catalyst: Ellison sale cancel after slide",
-      "Neutral RSI ~50 supports bounce setup",
-      "Notional ~$199; R:R ~1.54 with 138/154 levels",
-      "No rotation needed; 3 open < 5 max"
+      "Ellison sale cancel + AI headline support",
+      "RSI 50 post-slide bounce setup",
+      "R:R ~1.5 with stops under recent range",
+      "Notional capped near $200"
     ],
-    "timestamp": "2026-09-14T18:02:55.606086+00:00"
+    "timestamp": "2026-09-14T18:17:31.736620+00:00"
   },
-  "stance": "Buying pressure on ORCL. ORCL ranks top of the catalyst list after a sharp weekly slide, with Larry Ellison canceling a planned stock sale supporting retail bullish sentiment and a potential bounce. RSI is neutral near 50, leaving room for a mean-reversion move without extreme overbought risk. Liquid name fits the ~$200 new-entry notional cap while book still has room under the 5-name limit. Structured stop/target delivers reward:risk above 1.5.",
+  "stance": "Buying pressure on ORCL. ORCL presents a liquid bounce setup after a sharp weekly slide, with Ellison canceling his planned sale providing a bullish retail catalyst and sentiment support. RSI near 50 leaves room for mean-reversion upside without extreme overbought conditions. Rank and catalyst scores support a defined-risk entry within notional limits while the book has capacity.",
   "thinking": {
     "badge": "Looking to buy ORCL",
     "headline": "Buying pressure on ORCL.",
@@ -173,9 +173,9 @@
         "avg_cost": 160.78,
         "stop": 155.0,
         "target": 169.5,
-        "last": 165.39999389648438,
-        "open_pnl": 5.73,
-        "open_pnl_pct": 2.87,
+        "last": 165.72000122070312,
+        "open_pnl": 6.13,
+        "open_pnl_pct": 3.07,
         "line": "Bought near $160.78 \u00b7 Sell safety line $155.00 \u00b7 Profit target $169.50",
         "plan": "stop 155.0 or target 169.5"
       },
@@ -185,9 +185,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 109.34500122070312,
-        "open_pnl": 6.32,
-        "open_pnl_pct": 3.22,
+        "last": 109.43499755859375,
+        "open_pnl": 6.48,
+        "open_pnl_pct": 3.31,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -197,14 +197,14 @@
         "avg_cost": 644.68,
         "stop": 628.0,
         "target": 680.0,
-        "last": 667.7570190429688,
-        "open_pnl": 6.92,
-        "open_pnl_pct": 3.58,
+        "last": 665.7750244140625,
+        "open_pnl": 6.33,
+        "open_pnl_pct": 3.27,
         "line": "Bought near $644.68 \u00b7 Sell safety line $628.00 \u00b7 Profit target $680.00",
         "plan": "stop 628.0 or target 680.0"
       }
     ],
-    "last_checked": "2026-09-14T18:10:22.972414+00:00",
+    "last_checked": "2026-09-14T18:17:39.557114+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -217,25 +217,25 @@
       {
         "prefix": "J",
         "model": "grok-4.3",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 65,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "ORCL",
+        "confidence": 72,
+        "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "claude-haiku-4-5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 62,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "ORCL",
+        "confidence": 72,
+        "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "deepseek-v4-flash",
         "action": "BUY",
         "symbol": "ORCL",
-        "confidence": 72,
+        "confidence": 73,
         "tone": "buy"
       },
       {
@@ -251,7 +251,7 @@
         "model": "grok-4.5",
         "action": "BUY",
         "symbol": "ORCL",
-        "confidence": 74,
+        "confidence": 72,
         "tone": "buy"
       },
       {
@@ -273,6 +273,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "ORCL",
+      "status": "no_consensus",
+      "headline": "BUY ORCL \u2014 no consensus",
+      "detail": "Desks: BUY ORCL (72%) vs HOLD CASH (65%) vs HOLD XOM (80%). No 2-of-3 senior agreement",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "ORCL",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "ORCL",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "ORCL",
+          "confidence": 73,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "ORCL",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "ORCL",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "XOM",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "ORCL",
+      "timestamp": "2026-09-14T18:17:31.736620+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "ORCL",
@@ -811,83 +888,6 @@
       "stage": "entry",
       "junior_nomination": "AMZN",
       "timestamp": "2026-09-14T16:34:25.686302+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "AMZN",
-      "status": "blocked",
-      "headline": "BUY AMZN \u2014 blocked",
-      "detail": "Insufficient buying power: $1.74 < $197.85",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "AMZN",
-          "confidence": 75,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "AMZN",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "ORCL",
-          "confidence": 75,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "AMZN",
-          "confidence": 75,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "AMZN",
-          "confidence": 74,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "AMZN",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "XOM",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "entry",
-      "junior_nomination": "AMZN",
-      "timestamp": "2026-09-14T16:17:12.447519+00:00"
     },
     {
       "type": "fill",
@@ -12625,15 +12625,15 @@
     {
       "symbol": "ORCL",
       "name": "ORCL",
-      "price": 144.2899932861328,
-      "volume": 27708656.0,
-      "avg_volume": 34426555.6,
-      "percent_change": -3.9858966873968775,
+      "price": 144.18499755859375,
+      "volume": 28661168.0,
+      "avg_volume": 34521806.8,
+      "percent_change": -4.05576342175403,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
-      "liquidity_score": 85.37,
-      "rank_score": 62.99,
+      "liquidity_score": 85.38,
+      "rank_score": 63.05,
       "news_hits": 5,
       "catalyst": "Headline-driven setup (ai, catalyst): ORCL Slides After Worst Week In Nearly 2 Months \u2014 But Larry Ellison Canceling His Stock Sale Is Keeping Retail Bullish - Yahoo Finance",
       "top_headlines": [
@@ -12665,15 +12665,15 @@
     {
       "symbol": "GS",
       "name": "GS",
-      "price": 985.97998046875,
-      "volume": 1233608.0,
-      "avg_volume": 1572140.8,
-      "percent_change": -4.1975233669191345,
+      "price": 982.7650146484375,
+      "volume": 1310431.0,
+      "avg_volume": 1579823.1,
+      "percent_change": -4.509904646435796,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 10,
-      "liquidity_score": 71.96,
-      "rank_score": 61.65,
+      "liquidity_score": 71.99,
+      "rank_score": 61.91,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): GS Stock Price Today - Goldman Sachs Group News, Charts, Retail Sentiment - Stocktwits",
       "top_headlines": [
@@ -12718,17 +12718,70 @@
       ]
     },
     {
+      "symbol": "AMZN",
+      "name": "AMZN",
+      "price": 255.4149932861328,
+      "volume": 20744992.0,
+      "avg_volume": 29481029.2,
+      "percent_change": -0.5315855984317878,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 10,
+      "liquidity_score": 84.7,
+      "rank_score": 60.63,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (beat): Danske Bank A S Acquires Shares of 10,467,002 Amazon.com, Inc. $AMZN - MarketBeat",
+      "top_headlines": [
+        "Why AMZN Stock Is Rising Today - Stocktwits",
+        "Amazon's Operating Cash Flow Could Push AMZN Over $314 - What's the Best AMZN Play? - Barchart.com",
+        "Danske Bank A S Acquires Shares of 10,467,002 Amazon.com, Inc. $AMZN - MarketBeat"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Danske Bank A S Acquires Shares of 10,467,002 Amazon.com, Inc. $AMZN - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "AMZN Stock Jumps Overnight: AWS Sticks With Nvidia Bet Even Amid Surging Demand For In-House Chips - Stocktwits",
+          "keywords": [
+            "demand"
+          ]
+        },
+        {
+          "title": "Foster & Motley Inc. Buys Shares of 4,915 Amazon.com, Inc. $AMZN - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "AMZN Stock Jumps \u2014 Amazon Announces Multibillion-Dollar Data Center Expansion In Missouri - Stocktwits",
+          "keywords": [
+            "expansion",
+            "miss"
+          ]
+        },
+        {
+          "title": "Bonfire Financial Buys Shares of 2,183 Amazon.com, Inc. $AMZN - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        }
+      ]
+    },
+    {
       "symbol": "WMT",
       "name": "WMT",
-      "price": 109.31999969482422,
-      "volume": 9862102.0,
-      "avg_volume": 20974770.2,
-      "percent_change": 2.025196582401554,
+      "price": 109.41999816894531,
+      "volume": 10233270.0,
+      "avg_volume": 21011887.0,
+      "percent_change": 2.1185222685397314,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
       "liquidity_score": 83.22,
-      "rank_score": 53.6,
+      "rank_score": 53.68,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, fall, falls): WMT Stock Falls After Q3 Guidance Misses Estimates \u2013 A Look At Some Key Highlights - Stocktwits",
       "top_headlines": [
@@ -12777,104 +12830,49 @@
       ]
     },
     {
-      "symbol": "CRWD",
-      "name": "CRWD",
-      "price": 237.75990295410156,
-      "volume": 18883513.0,
-      "avg_volume": 11127021.3,
-      "percent_change": 15.00430329724606,
+      "symbol": "AAPL",
+      "name": "AAPL",
+      "price": 334.19500732421875,
+      "volume": 22485012.0,
+      "avg_volume": 44929221.2,
+      "percent_change": 0.5793536504037584,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 6,
-      "liquidity_score": 80.46,
-      "rank_score": 50.07,
+      "catalyst_score": 8,
+      "liquidity_score": 86.53,
+      "rank_score": 51.44,
       "news_hits": 7,
-      "catalyst": "Headline-driven setup (ai, catalyst): CrowdStrike, Palo Alto Networks lead cybersecurity stocks higher amid AI worries (CRWD:NASDAQ) - Seeking Alpha",
+      "catalyst": "Headline-driven setup (record): AAPL Stock Hits Fresh Record As July Rally Nears Best Month In Nearly 4 Years \u2014 HSBC Sees Another 10% Upside - Stocktwits",
       "top_headlines": [
-        "3 Reasons CRWD Has Explosive Upside Potential - Yahoo Finance",
-        "Why Is CrowdStrike (CRWD) Stock Rocketing Higher Today - StockStory",
-        "CrowdStrike, Palo Alto Networks lead cybersecurity stocks higher amid AI worries (CRWD:NASDAQ) - Seeking Alpha"
+        "Apple's iPhone Duo Will Elevate EPS And Propel The Stock Price (NASDAQ:AAPL) - Seeking Alpha",
+        "Apple (AAPL) Holds $299 Ahead of FOMC \u2014 Can Warsh\u2019s Decision Trigger a Rally to $317? - TradingKey",
+        "AAPL Stock Hits Fresh Record As July Rally Nears Best Month In Nearly 4 Years \u2014 HSBC Sees Another 10% Upside - Stocktwits"
       ],
       "matched_headlines": [
         {
-          "title": "CrowdStrike, Palo Alto Networks lead cybersecurity stocks higher amid AI worries (CRWD:NASDAQ) - Seeking Alpha",
+          "title": "AAPL Stock Hits Fresh Record As July Rally Nears Best Month In Nearly 4 Years \u2014 HSBC Sees Another 10% Upside - Stocktwits",
           "keywords": [
-            "ai",
-            "catalyst"
+            "record"
           ]
         },
         {
-          "title": "CrowdStrike (CRWD) Stock Could Be Pricey After Fresh AI Security Launches - simplywall.st",
+          "title": "Apple Stock (AAPL) Opinions on Foldable iPhone Launch - Quiver Quantitative",
           "keywords": [
-            "ai",
             "catalyst",
             "launch"
           ]
         },
         {
-          "title": "Cybersecurity Stocks Jump As Anthropic CEO\u2019s AI Slowdown Call Sharpens Focus On Cyber Risks \u2013 CRWD, PANW, FTNT Buck Market Selloff - Stocktwits",
+          "title": "Apple Stock Forecast: Can AAPL Break $329 and Retest Its Record High? - fxleaders.com",
           "keywords": [
-            "ai",
-            "catalyst"
+            "record"
           ]
         },
         {
-          "title": "CRWD Looks 73.4% Overvalued on GF Value\u2122 as Shares Surge Amid AI Concerns - GuruFocus",
+          "title": "Apple: We Don't Need No Fold-A-Phone P2 - The Cost Of A Good iPhone Duo Launch (AAPL) - Seeking Alpha",
           "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "GOOGL",
-      "name": "GOOGL",
-      "price": 349.3599853515625,
-      "volume": 19891985.0,
-      "avg_volume": 24752928.5,
-      "percent_change": 3.208267459841211,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 7,
-      "liquidity_score": 83.94,
-      "rank_score": 49.16,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): Alphabet Stock (GOOGL) Opinions on Berkshire's Increased Investment and AI Momentum - Quiver Quantitative",
-      "top_headlines": [
-        "Alphabet (GOOGL) Stock Price Forecast 2026: Cloud Hit $20B But FCF Collapsed \u2014 Buy or Short? - TradingKey",
-        "Alphabet Stock (GOOGL) Opinions on Berkshire's Increased Investment and AI Momentum - Quiver Quantitative",
-        "Alphabet (GOOGL) Beats Stock Market Upswing: What Investors Need to Know - Yahoo Finance"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Alphabet Stock (GOOGL) Opinions on Berkshire's Increased Investment and AI Momentum - Quiver Quantitative",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Alphabet (GOOGL) Beats Stock Market Upswing: What Investors Need to Know - Yahoo Finance",
-          "keywords": [
-            "beat",
-            "beats"
-          ]
-        },
-        {
-          "title": "GOOGL Stock Falls 5% As Google\u2019s Flagship AI Model Reportedly Runs Behind Schedule \u2014 Why Retail Traders Aren\u2019t Worried - Stocktwits",
-          "keywords": [
-            "ai",
             "catalyst",
-            "fall",
-            "falls"
-          ]
-        },
-        {
-          "title": "GOOGL 260904 455.00P (GOOGL260904P455000) Stock Options Chain | Quotes & News - Moomoo",
-          "keywords": [
-            "ai",
-            "catalyst"
+            "launch"
           ]
         }
       ]
@@ -12906,8 +12904,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 2,
-      "BUY": 2,
+      "HOLD": 0,
+      "BUY": 4,
       "SELL": 0,
       "live": 4,
       "fallback": 0
@@ -12926,22 +12924,22 @@
     "decision_mode": "live_dual_llm",
     "last_tier": "senior_escalated",
     "last_stage": "entry",
-    "last_junior_nomination": null,
-    "last_escalate_reason": "junior_trade_or_split",
+    "last_junior_nomination": "ORCL",
+    "last_escalate_reason": "junior_nomination",
     "live_share_recent": 85.7
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 344,
     "closed_outcomes": 157,
-    "consensus_events": 618,
+    "consensus_events": 619,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1002.51,
-    "change": 2.51,
+    "latest_equity": 1002.46,
+    "change": 2.46,
     "change_pct": 0.25,
     "points": [
       {
@@ -15477,8 +15475,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-14T18:10:25.722726+00:00",
-        "equity": 1002.51,
+        "t": "2026-09-14T18:17:42.205821+00:00",
+        "equity": 1002.46,
         "cash": 394.79,
         "event": "mark"
       }
