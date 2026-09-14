@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-14T14:30:09.552794+00:00",
+  "generated_at": "2026-09-14T14:33:31.370162+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 999.87,
+    "portfolio_value": 999.8,
     "starting_cash": 1000.0,
-    "total_return_pct": -0.01,
-    "total_pnl": -0.13,
+    "total_return_pct": -0.02,
+    "total_pnl": -0.2,
     "realized_pnl": -16.51,
-    "open_pnl": 16.33,
-    "capital_deployed": 605.08,
+    "open_pnl": 16.28,
+    "capital_deployed": 605.01,
     "cash": 394.79,
     "closed_trades": 35,
     "win_rate_pct": 25.71,
-    "vs_spy_pct": 1.36,
-    "spy_return_pct": -1.37,
+    "vs_spy_pct": 1.34,
+    "spy_return_pct": -1.36,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-14T14:30:12.194098+00:00"
+    "updated_at": "2026-09-14T14:33:34.204679+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -1.37,
-    "price": 758.8707275390625,
+    "return_pct": -1.36,
+    "price": 758.9014892578125,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,10 +38,10 @@
       "symbol": "XOM",
       "qty": 1.24,
       "avg_cost": 160.78,
-      "last": 167.2550048828125,
-      "market_value": 207.4,
-      "open_pnl": 8.03,
-      "open_pnl_pct": 4.03,
+      "last": 167.13999938964844,
+      "market_value": 207.25,
+      "open_pnl": 7.89,
+      "open_pnl_pct": 3.96,
       "stop": 155.0,
       "target": 169.5,
       "thesis": "XOM appears on the ranked candidate list with a bullish sentiment and positive catalyst score driven by institutional share purchases. Neutral RSI leaves room for upside continuation on the headline flow. Cash allows a full ~$200 notional add without exceeding position limits, and the setup clears the required reward-to-risk threshold."
@@ -50,10 +50,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 109.12590026855469,
-      "market_value": 201.88,
-      "open_pnl": 5.91,
-      "open_pnl_pct": 3.02,
+      "last": 109.17500305175781,
+      "market_value": 201.97,
+      "open_pnl": 6.0,
+      "open_pnl_pct": 3.06,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -62,8 +62,8 @@
       "symbol": "META",
       "qty": 0.3,
       "avg_cost": 644.68,
-      "last": 652.656494140625,
-      "market_value": 195.8,
+      "last": 652.64501953125,
+      "market_value": 195.79,
       "open_pnl": 2.39,
       "open_pnl_pct": 1.24,
       "stop": 628.0,
@@ -74,15 +74,15 @@
   "latest_candidate": {
     "symbol": "AMZN",
     "name": "AMZN",
-    "price": 252.5,
-    "volume": 7670875.0,
-    "avg_volume": 28173617.5,
-    "percent_change": -1.6667960120116465,
+    "price": 251.86000061035156,
+    "volume": 8800536.0,
+    "avg_volume": 28286583.6,
+    "percent_change": -1.9160363705640737,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 13,
-    "liquidity_score": 84.5,
-    "rank_score": 73.51,
+    "liquidity_score": 84.52,
+    "rank_score": 73.71,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (beat): Danske Bank A S Acquires Shares of 10,467,002 Amazon.com, Inc. $AMZN - MarketBeat",
     "top_headlines": [
@@ -128,45 +128,45 @@
     "model": "grok-4.5",
     "action": "BUY",
     "symbol": "AMZN",
-    "confidence": 74,
+    "confidence": 72,
     "cache_stats": null,
-    "entry_price": 252.5,
+    "entry_price": 251.86,
     "stop_loss": 244.0,
-    "take_profit": 267.0,
+    "take_profit": 265.0,
     "qty": 0.79,
-    "thesis": "AMZN shows a liquid bullish catalyst setup with institutional accumulation headline (Danske Bank large share acquisition) and mid-range RSI near 50 supporting room to run. Rank score is solid at 73.5 with positive sentiment. Portfolio has capacity under the 5-name limit and cash allows a sub-$200 notional entry while maintaining >=1.5 reward/risk.",
+    "thesis": "AMZN shows a liquid bullish setup with institutional accumulation catalyst from Danske Bank share acquisition and solid rank score. RSI at neutral 50 leaves room for upside continuation without overbought risk. Adding a small starter position fits cash and position limits while maintaining favorable reward-to-risk.",
     "reason_code": "new_entry",
     "reasoning": {
       "headline": "Bought $AMZN",
-      "narrative": "AMZN shows a liquid bullish catalyst setup with institutional accumulation headline (Danske Bank large share acquisition) and mid-range RSI near 50 supporting room to run. Rank score is solid at 73.5 with positive sentiment. Portfolio has capacity under the 5-name limit and cash allows a sub-$200 notional entry while maintaining >=1.5 reward/risk.",
+      "narrative": "AMZN shows a liquid bullish setup with institutional accumulation catalyst from Danske Bank share acquisition and solid rank score. RSI at neutral 50 leaves room for upside continuation without overbought risk. Adding a small starter position fits cash and position limits while maintaining favorable reward-to-risk.",
       "bullets": [
-        "Institutional buy headline catalyst",
-        "R:R ~1.7 with stop 244 / target 267",
-        "Notional capped ~$200; open names=3",
-        "Confirming directed BUY on ranked candidate"
+        "Institutional buy catalyst supports near-term bid",
+        "Rank 73.7 and bullish sentiment align",
+        "R:R >1.5 with stop under recent range",
+        "Notional capped near $200 desk limit"
       ],
       "risk_map": {
         "stop": 244.0,
-        "target": 267.0,
+        "target": 265.0,
         "horizon_days": 5,
-        "rr": 1.71,
+        "rr": 1.67,
         "confidence_10": 7,
-        "confidence": 74
+        "confidence": 72
       },
-      "thesis": "AMZN shows a liquid bullish catalyst setup with institutional accumulation headline (Danske Bank large share acquisition) and mid-range RSI near 50 supporting room to run. Rank score is solid at 73.5 with positive sentiment. Portfolio has capacity under the 5-name limit and cash allows a sub-$200 notional entry while maintaining >=1.5 reward/risk."
+      "thesis": "AMZN shows a liquid bullish setup with institutional accumulation catalyst from Danske Bank share acquisition and solid rank score. RSI at neutral 50 leaves room for upside continuation without overbought risk. Adding a small starter position fits cash and position limits while maintaining favorable reward-to-risk."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Institutional buy headline catalyst",
-      "R:R ~1.7 with stop 244 / target 267",
-      "Notional capped ~$200; open names=3",
-      "Confirming directed BUY on ranked candidate"
+      "Institutional buy catalyst supports near-term bid",
+      "Rank 73.7 and bullish sentiment align",
+      "R:R >1.5 with stop under recent range",
+      "Notional capped near $200 desk limit"
     ],
-    "timestamp": "2026-09-14T14:17:48.101053+00:00"
+    "timestamp": "2026-09-14T14:33:22.393063+00:00"
   },
-  "stance": "Buying pressure on AMZN. AMZN shows a liquid bullish catalyst setup with institutional accumulation headline (Danske Bank large share acquisition) and mid-range RSI near 50 supporting room to run. Rank score is solid at 73.5 with positive sentiment. Portfolio has capacity under the 5-name limit and cash allows a sub-$200 notional entry while maintaining >=1.5 reward/risk.",
+  "stance": "Buying pressure on AMZN. AMZN shows a liquid bullish setup with institutional accumulation catalyst from Danske Bank share acquisition and solid rank score. RSI at neutral 50 leaves room for upside continuation without overbought risk. Adding a small starter position fits cash and position limits while maintaining favorable reward-to-risk.",
   "thinking": {
     "badge": "Looking to buy AMZN",
     "headline": "Buying pressure on AMZN.",
@@ -186,9 +186,9 @@
         "avg_cost": 160.78,
         "stop": 155.0,
         "target": 169.5,
-        "last": 167.2550048828125,
-        "open_pnl": 8.03,
-        "open_pnl_pct": 4.03,
+        "last": 167.13999938964844,
+        "open_pnl": 7.89,
+        "open_pnl_pct": 3.96,
         "line": "Bought near $160.78 \u00b7 Sell safety line $155.00 \u00b7 Profit target $169.50",
         "plan": "stop 155.0 or target 169.5"
       },
@@ -198,9 +198,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 109.12590026855469,
-        "open_pnl": 5.91,
-        "open_pnl_pct": 3.02,
+        "last": 109.17500305175781,
+        "open_pnl": 6.0,
+        "open_pnl_pct": 3.06,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -210,14 +210,14 @@
         "avg_cost": 644.68,
         "stop": 628.0,
         "target": 680.0,
-        "last": 652.656494140625,
+        "last": 652.64501953125,
         "open_pnl": 2.39,
         "open_pnl_pct": 1.24,
         "line": "Bought near $644.68 \u00b7 Sell safety line $628.00 \u00b7 Profit target $680.00",
         "plan": "stop 628.0 or target 680.0"
       }
     ],
-    "last_checked": "2026-09-14T14:30:09.552794+00:00",
+    "last_checked": "2026-09-14T14:33:31.370162+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -248,7 +248,7 @@
         "model": "deepseek-v4-flash",
         "action": "BUY",
         "symbol": "AMZN",
-        "confidence": 75,
+        "confidence": 76,
         "tone": "buy"
       },
       {
@@ -256,7 +256,7 @@
         "model": "grok-build-0.1",
         "action": "BUY",
         "symbol": "AMZN",
-        "confidence": 75,
+        "confidence": 72,
         "tone": "buy"
       },
       {
@@ -264,16 +264,16 @@
         "model": "grok-4.5",
         "action": "BUY",
         "symbol": "AMZN",
-        "confidence": 74,
+        "confidence": 72,
         "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "claude-sonnet-5",
-        "action": "BUY",
-        "symbol": "AMZN",
-        "confidence": 72,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 65,
+        "tone": "hold"
       },
       {
         "prefix": "S",
@@ -286,6 +286,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "AMZN",
+      "status": "no_consensus",
+      "headline": "BUY AMZN \u2014 no consensus",
+      "detail": "Desks: BUY AMZN (72%) vs HOLD CASH (65%) vs HOLD XOM (80%). No 2-of-3 senior agreement",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "AMZN",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "AMZN",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "AMZN",
+          "confidence": 76,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "AMZN",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "AMZN",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "XOM",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "AMZN",
+      "timestamp": "2026-09-14T14:33:22.393063+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "AMZN",
@@ -12176,15 +12253,15 @@
     {
       "symbol": "AMZN",
       "name": "AMZN",
-      "price": 252.5,
-      "volume": 7670875.0,
-      "avg_volume": 28173617.5,
-      "percent_change": -1.6667960120116465,
+      "price": 251.86000061035156,
+      "volume": 8800536.0,
+      "avg_volume": 28286583.6,
+      "percent_change": -1.9160363705640737,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
-      "liquidity_score": 84.5,
-      "rank_score": 73.51,
+      "liquidity_score": 84.52,
+      "rank_score": 73.71,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Danske Bank A S Acquires Shares of 10,467,002 Amazon.com, Inc. $AMZN - MarketBeat",
       "top_headlines": [
@@ -12229,15 +12306,15 @@
     {
       "symbol": "PLTR",
       "name": "PLTR",
-      "price": 167.35000610351562,
-      "volume": 5126317.0,
-      "avg_volume": 24323271.7,
-      "percent_change": 0.07176366623371232,
+      "price": 167.1999969482422,
+      "volume": 5706824.0,
+      "avg_volume": 24381322.4,
+      "percent_change": -0.017938635450156188,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 12,
-      "liquidity_score": 83.86,
-      "rank_score": 68.14,
+      "liquidity_score": 83.87,
+      "rank_score": 68.09,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (growth): Palantir (PLTR) Stock Forecast: 85% Revenue Growth, Rule of 40 at 145% - Worth $129? - TradingKey",
       "top_headlines": [
@@ -12287,15 +12364,15 @@
     {
       "symbol": "ORCL",
       "name": "ORCL",
-      "price": 143.23500061035156,
-      "volume": 12458585.0,
-      "avg_volume": 32901548.5,
-      "percent_change": -4.6879147099885765,
+      "price": 142.64999389648438,
+      "volume": 13938405.0,
+      "avg_volume": 33049530.5,
+      "percent_change": -5.0771925371240005,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
-      "liquidity_score": 85.17,
-      "rank_score": 63.53,
+      "liquidity_score": 85.19,
+      "rank_score": 63.84,
       "news_hits": 7,
       "catalyst": "Headline-driven setup (ai, catalyst): ORCL Slides After Worst Week In Nearly 2 Months \u2014 But Larry Ellison Canceling His Stock Sale Is Keeping Retail Bullish - Yahoo Finance",
       "top_headlines": [
@@ -12325,16 +12402,74 @@
       ]
     },
     {
+      "symbol": "NFLX",
+      "name": "NFLX",
+      "price": 79.83039855957031,
+      "volume": 9051037.0,
+      "avg_volume": 24613283.7,
+      "percent_change": 3.140047785242997,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 10,
+      "liquidity_score": 83.91,
+      "rank_score": 62.6,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (catalyst): Netflix Stock (NFLX) Opinions on Recent Earnings and Price Adjustments - Quiver Quantitative",
+      "top_headlines": [
+        "Netflix Stock (NFLX) Opinions on Recent Earnings and Price Adjustments - Quiver Quantitative",
+        "NFLX Stock Bucks Market Pullback On Friday: Founder Reed Hastings Bows Out - Stocktwits",
+        "Most Investors Think Netflix (NFLX) Is Too Expensive. I Think They're Wrong. - Yahoo Finance"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Netflix Stock (NFLX) Opinions on Recent Earnings and Price Adjustments - Quiver Quantitative",
+          "keywords": [
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Netflix price target raised to $110 by Evercore on survey gains, live-event opportunity (NFLX:NASDAQ) - Seeking Alpha",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "raised"
+          ]
+        },
+        {
+          "title": "NFLX Maintains Outperform Rating by Evercore ISI Group -- Price Target Raised to $110 - GuruFocus",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "raised"
+          ]
+        },
+        {
+          "title": "Netflix Stock Will Be Worth More by 2028: My Case for Buying NFLX Now - The Globe and Mail",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "NFLX Stock Reverses Course Overnight: Retail Shrugs Off Outgoing Chairman\u2019s Sale As \u2018Routine\u2019 - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
       "symbol": "PANW",
       "name": "PANW",
-      "price": 364.95001220703125,
-      "volume": 3278127.0,
-      "avg_volume": 6699402.7,
-      "percent_change": 10.37351245839886,
+      "price": 366.3299865722656,
+      "volume": 3859147.0,
+      "avg_volume": 6757504.7,
+      "percent_change": 10.790864459217707,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 78.26,
+      "liquidity_score": 78.3,
       "rank_score": 56.24,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): PANW Stock Rises Overnight On Anthropic Integration, New AI Gateway Buy \u2014 But Retail Is Still Not Sold - Stocktwits",
@@ -12362,56 +12497,6 @@
         },
         {
           "title": "(PANW) Movement as an Input in Quant Signal Sets - Stock Traders Daily",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "GOOGL",
-      "name": "GOOGL",
-      "price": 345.3428039550781,
-      "volume": 9474470.0,
-      "avg_volume": 23711177.0,
-      "percent_change": 2.0215078153849704,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 9,
-      "liquidity_score": 83.75,
-      "rank_score": 56.18,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): GOOGL Stock: Google Loses More AI Talent As Two Experts Reportedly Move To Anthropic - Stocktwits",
-      "top_headlines": [
-        "Alphabet (GOOGL) Stock Price Forecast 2026: Cloud Hit $20B But FCF Collapsed \u2014 Buy or Short? - TradingKey",
-        "GOOGL Stock: Google Loses More AI Talent As Two Experts Reportedly Move To Anthropic - Stocktwits",
-        "Alphabet Stock (GOOGL) Opinions on Berkshire's Increased Investment and AI Momentum - Quiver Quantitative"
-      ],
-      "matched_headlines": [
-        {
-          "title": "GOOGL Stock: Google Loses More AI Talent As Two Experts Reportedly Move To Anthropic - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Alphabet Stock (GOOGL) Opinions on Berkshire's Increased Investment and AI Momentum - Quiver Quantitative",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Alphabet (GOOGL) Beats Stock Market Upswing: What Investors Need to Know - Yahoo Finance",
-          "keywords": [
-            "beat",
-            "beats"
-          ]
-        },
-        {
-          "title": "GOOGL 260904 455.00P (GOOGL260904P455000) Stock Options Chain | Quotes & News - Moomoo",
           "keywords": [
             "ai",
             "catalyst"
@@ -12474,15 +12559,15 @@
     "candidate_signals_logged": 8,
     "fills_logged": 344,
     "closed_outcomes": 157,
-    "consensus_events": 603,
+    "consensus_events": 604,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 999.87,
-    "change": -0.13,
-    "change_pct": -0.01,
+    "latest_equity": 999.8,
+    "change": -0.2,
+    "change_pct": -0.02,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -14963,8 +15048,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-14T14:30:12.194098+00:00",
-        "equity": 999.87,
+        "t": "2026-09-14T14:33:34.204679+00:00",
+        "equity": 999.8,
         "cash": 394.79,
         "event": "mark"
       }
