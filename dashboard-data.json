@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T14:00:11.022379+00:00",
+  "generated_at": "2026-09-15T14:05:32.204754+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
@@ -8,20 +8,20 @@
     "total_return_pct": 0.61,
     "total_pnl": 6.06,
     "realized_pnl": -16.51,
-    "open_pnl": 22.53,
+    "open_pnl": 22.52,
     "capital_deployed": 611.27,
     "cash": 394.79,
     "closed_trades": 35,
     "win_rate_pct": 25.71,
-    "vs_spy_pct": 1.92,
-    "spy_return_pct": -1.31,
+    "vs_spy_pct": 1.97,
+    "spy_return_pct": -1.36,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-15T14:00:13.875650+00:00"
+    "updated_at": "2026-09-15T14:05:34.801215+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -1.31,
-    "price": 759.3400268554688,
+    "return_pct": -1.36,
+    "price": 758.9310302734375,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -31,16 +31,16 @@
     "blocked_count_today": 0,
     "fills_today": 0,
     "simulated_orders_today": 0,
-    "top_symbol_today": "ORCL"
+    "top_symbol_today": "COST"
   },
   "holdings": [
     {
       "symbol": "XOM",
       "qty": 1.24,
       "avg_cost": 160.78,
-      "last": 167.61500549316406,
+      "last": 167.610107421875,
       "market_value": 207.84,
-      "open_pnl": 8.48,
+      "open_pnl": 8.47,
       "open_pnl_pct": 4.25,
       "stop": 155.0,
       "target": 169.5,
@@ -50,10 +50,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 108.55999755859375,
-      "market_value": 200.84,
-      "open_pnl": 4.87,
-      "open_pnl_pct": 2.48,
+      "last": 108.63500213623047,
+      "market_value": 200.97,
+      "open_pnl": 5.0,
+      "open_pnl_pct": 2.55,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -62,115 +62,118 @@
       "symbol": "META",
       "qty": 0.3,
       "avg_cost": 644.68,
-      "last": 675.2899780273438,
-      "market_value": 202.59,
-      "open_pnl": 9.18,
-      "open_pnl_pct": 4.75,
+      "last": 674.85498046875,
+      "market_value": 202.46,
+      "open_pnl": 9.05,
+      "open_pnl_pct": 4.68,
       "stop": 628.0,
       "target": 680.0,
       "thesis": "META ranks second with a clear bullish AI-agent catalyst and supportive Street tone while remaining highly liquid. Small size fits residual cash under the ~$200 new-notional cap without exceeding the five-name limit. Technical RSI is neutral, leaving room for continuation if the AI narrative holds; defined stop below recent support keeps reward:risk above 1.5."
     }
   ],
   "latest_candidate": {
-    "symbol": "ORCL",
-    "name": "ORCL",
-    "price": 143.5,
-    "volume": 35117447.0,
-    "avg_volume": 35167434.7,
-    "percent_change": -4.511577611372002,
+    "symbol": "COST",
+    "name": "COST",
+    "price": 910.27001953125,
+    "volume": 159794.0,
+    "avg_volume": 1809089.4,
+    "percent_change": -0.940239399482751,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 12,
-    "liquidity_score": 85.46,
-    "rank_score": 68.93,
-    "news_hits": 6,
-    "catalyst": "Headline-driven setup (ai, catalyst): ORCL Slides After Worst Week In Nearly 2 Months \u2014 But Larry Ellison Canceling His Stock Sale Is Keeping Retail Bullish - Yahoo Finance",
+    "liquidity_score": 72.57,
+    "rank_score": 65.64,
+    "news_hits": 8,
+    "catalyst": "Headline-driven setup (beat): IFP Advisors Inc Lowers Stock Position in Costco Wholesale Corporation $COST - MarketBeat",
     "top_headlines": [
-      "ORCL Slides After Worst Week In Nearly 2 Months \u2014 But Larry Ellison Canceling His Stock Sale Is Keeping Retail Bullish - Yahoo Finance",
-      "Why Did Oracle (ORCL) Cancel Its $7.5 Billion Stock Sale Plan? - simplywall.st",
-      "ORCL Stock Slips As Macro Headwinds Hit Tech - timothysykes.com"
+      "IFP Advisors Inc Lowers Stock Position in Costco Wholesale Corporation $COST - MarketBeat",
+      "Costco (COST) Gains As Market Dips: What You Should Know - Yahoo Finance",
+      "Costco (COST) exec\u2019s 5-year stock award tied to 2026 goals - Stock Titan"
     ],
     "matched_headlines": [
       {
-        "title": "ORCL Slides After Worst Week In Nearly 2 Months \u2014 But Larry Ellison Canceling His Stock Sale Is Keeping Retail Bullish - Yahoo Finance",
+        "title": "IFP Advisors Inc Lowers Stock Position in Costco Wholesale Corporation $COST - MarketBeat",
+        "keywords": [
+          "beat"
+        ]
+      },
+      {
+        "title": "Costco (COST) Gains As Market Dips: What You Should Know - Yahoo Finance",
         "keywords": [
           "ai",
           "catalyst"
         ]
       },
       {
-        "title": "AVGO, ORCL and MU: comparing three AI infrastructure stocks after a sector selloff - Investing.com",
+        "title": "Connective Capital Management LLC Raises Stock Position in Costco Wholesale Corporation $COST - MarketBeat",
         "keywords": [
           "ai",
-          "catalyst"
-        ]
-      },
-      {
-        "title": "ORCL Stock Soars 7% After-Hours \u2014 Oracle Cloud Surge Powers Q1 Beat As AI Demand Fuels Record Backlog - Stocktwits",
-        "keywords": [
-          "ai",
-          "backlog",
           "beat",
           "catalyst",
-          "demand",
-          "record"
+          "raises"
+        ]
+      },
+      {
+        "title": "Kroger Q2 Earnings Beat on Cost Savings, Sales Outlook Cut - TradingView",
+        "keywords": [
+          "beat",
+          "catalyst",
+          "cut"
         ]
       }
     ]
   },
   "latest_decision": {
     "model": "grok-4.5",
-    "action": "BUY",
-    "symbol": "ORCL",
-    "confidence": 72,
+    "action": "HOLD",
+    "symbol": "CASH",
+    "confidence": 68,
     "cache_stats": null,
-    "entry_price": 143.5,
-    "stop_loss": 138.0,
-    "take_profit": 152.0,
-    "qty": 1.35,
-    "thesis": "ORCL presents a liquid bounce setup after a sharp weekly slide, with Larry Ellison canceling his planned stock sale acting as a near-term retail confidence catalyst. RSI near 50 leaves room for mean-reversion upside without extreme overbought risk. Risk-defined entry keeps notional under the desk limit while targeting a clean 1.5+ R:R extension. Position sizing fits available cash without crowding the book.",
-    "reason_code": "new_entry",
+    "entry_price": 0.0,
+    "stop_loss": 0.0,
+    "take_profit": 0.0,
+    "qty": 0.0,
+    "thesis": "No clean high-edge catalyst setup in the ranked list; headlines are mostly 13F/position-lift noise with mid catalyst scores and flat RSI. Existing book (XOM/WMT/META) remains constructive with positive open P/L and stops intact, and none have tagged stop or full target. Cash is preserved given max notional discipline and lack of materially better rotation candidate.",
+    "reason_code": "hold",
     "reasoning": {
-      "headline": "Bought $ORCL",
-      "narrative": "ORCL presents a liquid bounce setup after a sharp weekly slide, with Larry Ellison canceling his planned stock sale acting as a near-term retail confidence catalyst. RSI near 50 leaves room for mean-reversion upside without extreme overbought risk. Risk-defined entry keeps notional under the desk limit while targeting a clean 1.5+ R:R extension. Position sizing fits available cash without crowding the book.",
+      "headline": "Hold $CASH",
+      "narrative": "No clean high-edge catalyst setup in the ranked list; headlines are mostly 13F/position-lift noise with mid catalyst scores and flat RSI. Existing book (XOM/WMT/META) remains constructive with positive open P/L and stops intact, and none have tagged stop or full target. Cash is preserved given max notional discipline and lack of materially better rotation candidate.",
       "bullets": [
-        "Ellison sale cancel supports retail bid",
-        "RSI 50 neutral post-slide",
-        "R:R >1.5 to 152 vs 138 stop",
-        "Notional ~$194 within $200 cap"
+        "Weak candidate catalysts vs. held names still working",
+        "Room exists but edge threshold not met",
+        "Preserve cash; no forced rotation"
       ],
       "risk_map": {
-        "stop": 138.0,
-        "target": 152.0,
+        "stop": 0.0,
+        "target": 0.0,
         "horizon_days": 5,
-        "rr": 1.55,
+        "rr": 0.0,
         "confidence_10": 7,
-        "confidence": 72
+        "confidence": 68
       },
-      "thesis": "ORCL presents a liquid bounce setup after a sharp weekly slide, with Larry Ellison canceling his planned stock sale acting as a near-term retail confidence catalyst. RSI near 50 leaves room for mean-reversion upside without extreme overbought risk. Risk-defined entry keeps notional under the desk limit while targeting a clean 1.5+ R:R extension. Position sizing fits available cash without crowding the book."
+      "thesis": "No clean high-edge catalyst setup in the ranked list; headlines are mostly 13F/position-lift noise with mid catalyst scores and flat RSI. Existing book (XOM/WMT/META) remains constructive with positive open P/L and stops intact, and none have tagged stop or full target. Cash is preserved given max notional discipline and lack of materially better rotation candidate."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Ellison sale cancel supports retail bid",
-      "RSI 50 neutral post-slide",
-      "R:R >1.5 to 152 vs 138 stop",
-      "Notional ~$194 within $200 cap"
+      "Weak candidate catalysts vs. held names still working",
+      "Room exists but edge threshold not met",
+      "Preserve cash; no forced rotation"
     ],
-    "timestamp": "2026-09-14T19:48:03.404250+00:00"
+    "timestamp": "2026-09-15T14:05:23.500469+00:00"
   },
-  "stance": "Buying pressure on ORCL. ORCL presents a liquid bounce setup after a sharp weekly slide, with Larry Ellison canceling his planned stock sale acting as a near-term retail confidence catalyst. RSI near 50 leaves room for mean-reversion upside without extreme overbought risk. Risk-defined entry keeps notional under the desk limit while targeting a clean 1.5+ R:R extension. Position sizing fits available cash without crowding the book.",
+  "stance": "Holding XOM, WMT, META. No new trade right now.",
   "thinking": {
-    "badge": "Looking to buy ORCL",
-    "headline": "Buying pressure on ORCL.",
-    "plain_english": "Right now Hermes wants exposure to ORCL. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
+    "badge": "Holding what it owns",
+    "headline": "Holding XOM, WMT, META. No new trade right now.",
+    "plain_english": "Right now Hermes is holding XOM, WMT, META and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
     "triggers": [
       "It owns XOM, bought near $160.78. Simple plan: sell if it falls to about $155.00, or take profit near $169.50.",
       "It owns WMT, bought near $105.93. Simple plan: sell if it falls to about $102.50, or take profit near $112.00.",
       "It owns META, bought near $644.68. Simple plan: sell if it falls to about $628.00, or take profit near $680.00.",
       "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
-      "Top scanner name right now is ORCL, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
+      "Top scanner name right now is COST, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
       "If nothing looks clean, do nothing. Sitting in cash or holdings is allowed."
     ],
     "owned": [
@@ -180,8 +183,8 @@
         "avg_cost": 160.78,
         "stop": 155.0,
         "target": 169.5,
-        "last": 167.61500549316406,
-        "open_pnl": 8.48,
+        "last": 167.610107421875,
+        "open_pnl": 8.47,
         "open_pnl_pct": 4.25,
         "line": "Bought near $160.78 \u00b7 Sell safety line $155.00 \u00b7 Profit target $169.50",
         "plan": "stop 155.0 or target 169.5"
@@ -192,9 +195,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 108.55999755859375,
-        "open_pnl": 4.87,
-        "open_pnl_pct": 2.48,
+        "last": 108.63500213623047,
+        "open_pnl": 5.0,
+        "open_pnl_pct": 2.55,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -204,17 +207,17 @@
         "avg_cost": 644.68,
         "stop": 628.0,
         "target": 680.0,
-        "last": 675.2899780273438,
-        "open_pnl": 9.18,
-        "open_pnl_pct": 4.75,
+        "last": 674.85498046875,
+        "open_pnl": 9.05,
+        "open_pnl_pct": 4.68,
         "line": "Bought near $644.68 \u00b7 Sell safety line $628.00 \u00b7 Profit target $680.00",
         "plan": "stop 628.0 or target 680.0"
       }
     ],
-    "last_checked": "2026-09-15T14:00:11.022379+00:00",
+    "last_checked": "2026-09-15T14:05:32.204754+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "BUY",
+    "action": "HOLD",
     "symbols_held": [
       "XOM",
       "WMT",
@@ -224,62 +227,140 @@
       {
         "prefix": "J",
         "model": "grok-4.3",
-        "action": "BUY",
-        "symbol": "ORCL",
-        "confidence": 75,
-        "tone": "buy"
-      },
-      {
-        "prefix": "J",
-        "model": "claude-haiku-4-5",
-        "action": "BUY",
-        "symbol": "ORCL",
-        "confidence": 72,
-        "tone": "buy"
-      },
-      {
-        "prefix": "J",
-        "model": "deepseek-v4-flash",
-        "action": "HOLD",
-        "symbol": "XOM",
-        "confidence": 80,
-        "tone": "hold"
-      },
-      {
-        "prefix": "J",
-        "model": "grok-build-0.1",
-        "action": "BUY",
-        "symbol": "ORCL",
-        "confidence": 72,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "grok-4.5",
-        "action": "BUY",
-        "symbol": "ORCL",
-        "confidence": 72,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "claude-sonnet-5",
         "action": "HOLD",
         "symbol": "CASH",
         "confidence": 65,
         "tone": "hold"
       },
       {
+        "prefix": "J",
+        "model": "claude-haiku-4-5",
+        "action": "BUY",
+        "symbol": "COST",
+        "confidence": 72,
+        "tone": "buy"
+      },
+      {
+        "prefix": "J",
+        "model": "deepseek-v4-flash",
+        "action": "BUY",
+        "symbol": "MSFT",
+        "confidence": 72,
+        "tone": "buy"
+      },
+      {
+        "prefix": "J",
+        "model": "grok-build-0.1",
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 60,
+        "tone": "hold"
+      },
+      {
+        "prefix": "S",
+        "model": "grok-4.5",
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 68,
+        "tone": "hold"
+      },
+      {
+        "prefix": "S",
+        "model": "claude-sonnet-5",
+        "action": "BUY",
+        "symbol": "MSFT",
+        "confidence": 72,
+        "tone": "buy"
+      },
+      {
         "prefix": "S",
         "model": "claude-opus-5",
-        "action": "HOLD",
-        "symbol": "XOM",
-        "confidence": 80,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "COST",
+        "confidence": 90,
+        "tone": "buy"
       }
     ]
   },
-  "activity": [],
+  "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 desks disagreed on focus",
+      "detail": "Desks: HOLD CASH (68%) vs BUY MSFT (72%) vs BUY COST (90%). No 2-of-3 senior agreement",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "COST",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "MSFT",
+          "confidence": 72,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 68,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "MSFT",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "BUY",
+          "symbol": "COST",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-15T14:05:23.500469+00:00"
+    }
+  ],
   "recent_trades": [
     {
       "timestamp": "2026-09-14T14:05:57.277258+00:00",
@@ -12005,48 +12086,53 @@
   ],
   "top_candidates": [
     {
-      "symbol": "ORCL",
-      "name": "ORCL",
-      "price": 143.5,
-      "volume": 35117447.0,
-      "avg_volume": 35167434.7,
-      "percent_change": -4.511577611372002,
+      "symbol": "COST",
+      "name": "COST",
+      "price": 910.27001953125,
+      "volume": 159794.0,
+      "avg_volume": 1809089.4,
+      "percent_change": -0.940239399482751,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 12,
-      "liquidity_score": 85.46,
-      "rank_score": 68.93,
-      "news_hits": 6,
-      "catalyst": "Headline-driven setup (ai, catalyst): ORCL Slides After Worst Week In Nearly 2 Months \u2014 But Larry Ellison Canceling His Stock Sale Is Keeping Retail Bullish - Yahoo Finance",
+      "liquidity_score": 72.57,
+      "rank_score": 65.64,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (beat): IFP Advisors Inc Lowers Stock Position in Costco Wholesale Corporation $COST - MarketBeat",
       "top_headlines": [
-        "ORCL Slides After Worst Week In Nearly 2 Months \u2014 But Larry Ellison Canceling His Stock Sale Is Keeping Retail Bullish - Yahoo Finance",
-        "Why Did Oracle (ORCL) Cancel Its $7.5 Billion Stock Sale Plan? - simplywall.st",
-        "ORCL Stock Slips As Macro Headwinds Hit Tech - timothysykes.com"
+        "IFP Advisors Inc Lowers Stock Position in Costco Wholesale Corporation $COST - MarketBeat",
+        "Costco (COST) Gains As Market Dips: What You Should Know - Yahoo Finance",
+        "Costco (COST) exec\u2019s 5-year stock award tied to 2026 goals - Stock Titan"
       ],
       "matched_headlines": [
         {
-          "title": "ORCL Slides After Worst Week In Nearly 2 Months \u2014 But Larry Ellison Canceling His Stock Sale Is Keeping Retail Bullish - Yahoo Finance",
+          "title": "IFP Advisors Inc Lowers Stock Position in Costco Wholesale Corporation $COST - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Costco (COST) Gains As Market Dips: What You Should Know - Yahoo Finance",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "AVGO, ORCL and MU: comparing three AI infrastructure stocks after a sector selloff - Investing.com",
+          "title": "Connective Capital Management LLC Raises Stock Position in Costco Wholesale Corporation $COST - MarketBeat",
           "keywords": [
             "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "ORCL Stock Soars 7% After-Hours \u2014 Oracle Cloud Surge Powers Q1 Beat As AI Demand Fuels Record Backlog - Stocktwits",
-          "keywords": [
-            "ai",
-            "backlog",
             "beat",
             "catalyst",
-            "demand",
-            "record"
+            "raises"
+          ]
+        },
+        {
+          "title": "Kroger Q2 Earnings Beat on Cost Savings, Sales Outlook Cut - TradingView",
+          "keywords": [
+            "beat",
+            "catalyst",
+            "cut"
           ]
         }
       ]
@@ -12054,23 +12140,30 @@
     {
       "symbol": "MSFT",
       "name": "MSFT",
-      "price": 506.8699951171875,
-      "volume": 16229935.0,
-      "avg_volume": 18437073.5,
-      "percent_change": 2.267818760696823,
+      "price": 501.0101013183594,
+      "volume": 2203549.0,
+      "avg_volume": 16620544.9,
+      "percent_change": -0.8705609924356669,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 11,
-      "liquidity_score": 82.66,
-      "rank_score": 65.71,
+      "catalyst_score": 10,
+      "liquidity_score": 82.21,
+      "rank_score": 60.53,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (catalyst, upgrade): Microsoft Stock (MSFT) Opinions on Bank of America Price Target Upgrade - Quiver Quantitative",
+      "catalyst": "Headline-driven setup (ai, catalyst): MSFT Stock Holds Up Amid US-Iran Geopolitical Jitters: Retail Calls It \u2018Safest Earnings Play\u2019 - Stocktwits",
       "top_headlines": [
+        "MSFT Stock Holds Up Amid US-Iran Geopolitical Jitters: Retail Calls It \u2018Safest Earnings Play\u2019 - Stocktwits",
         "Microsoft Stock (MSFT) Opinions on Bank of America Price Target Upgrade - Quiver Quantitative",
-        "Microsoft (NASDAQ:MSFT) Combines Strong Growth With a Quality Technical Setup - ChartMill",
-        "Microsoft AI Safety Rules Send 3 Cyber Stocks Higher - Microsoft (NASDAQ:MSFT), Palo Alto Networks (NASDA - Benzinga"
+        "Why the Market Dipped But Microsoft (MSFT) Gained Today - Yahoo Finance"
       ],
       "matched_headlines": [
+        {
+          "title": "MSFT Stock Holds Up Amid US-Iran Geopolitical Jitters: Retail Calls It \u2018Safest Earnings Play\u2019 - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
         {
           "title": "Microsoft Stock (MSFT) Opinions on Bank of America Price Target Upgrade - Quiver Quantitative",
           "keywords": [
@@ -12079,188 +12172,154 @@
           ]
         },
         {
-          "title": "Microsoft (NASDAQ:MSFT) Combines Strong Growth With a Quality Technical Setup - ChartMill",
-          "keywords": [
-            "growth"
-          ]
-        },
-        {
-          "title": "Microsoft AI Safety Rules Send 3 Cyber Stocks Higher - Microsoft (NASDAQ:MSFT), Palo Alto Networks (NASDA - Benzinga",
+          "title": "Why the Market Dipped But Microsoft (MSFT) Gained Today - Yahoo Finance",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "MSFT Looks 14.6% Undervalued on GF Value\u2122 Amid AI Caution - GuruFocus",
+          "title": "MSFT Reiterated by Citizens -- Price Target Maintained at $550 - GuruFocus",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "Why Is Microsoft Stock Surging Today? Azure Growth Hits 43% as MSFT Targets $560 Next - TradingKey",
+          "title": "Why Is Microsoft (MSFT) Slowing Advanced AI Development? - simplywall.st",
           "keywords": [
-            "growth"
+            "ai",
+            "catalyst"
           ]
         }
       ]
     },
     {
-      "symbol": "WMT",
-      "name": "WMT",
-      "price": 109.73500061035156,
-      "volume": 12995924.0,
-      "avg_volume": 21288152.4,
-      "percent_change": 2.4125049441537585,
+      "symbol": "TSLA",
+      "name": "TSLA",
+      "price": 359.2749938964844,
+      "volume": 5878987.0,
+      "avg_volume": 38050878.7,
+      "percent_change": 0.0849632768042178,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 10,
-      "liquidity_score": 83.28,
-      "rank_score": 61.92,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (catalyst, fall, falls): WMT Stock Falls After Q3 Guidance Misses Estimates \u2013 A Look At Some Key Highlights - Stocktwits",
+      "liquidity_score": 85.8,
+      "rank_score": 57.44,
+      "news_hits": 7,
+      "catalyst": "Headline-driven setup (beat): 2,759 Shares in Tesla, Inc. $TSLA Acquired by AlphaGrep UK Ltd - MarketBeat",
       "top_headlines": [
-        "WMT Stock Falls After Q3 Guidance Misses Estimates \u2013 A Look At Some Key Highlights - Stocktwits",
-        "65,823,155 Shares in Walmart Inc. $WMT Acquired by Bank of America Corp DE - MarketBeat",
-        "WMT DCF Analysis: Intrinsic Value $36 vs Price $107 - GuruFocus"
+        "TSLA Stock Trims Losses Overnight: Tesla Cybercab Starts Austin Tests Without \u2018Steering Wheel Or Pedals\u2019 - Stocktwits",
+        "2,759 Shares in Tesla, Inc. $TSLA Acquired by AlphaGrep UK Ltd - MarketBeat",
+        "Tesla, Inc. (TSLA) is Attracting Investor Attention: Here is What You Should Know - Yahoo Finance"
       ],
       "matched_headlines": [
         {
-          "title": "WMT Stock Falls After Q3 Guidance Misses Estimates \u2013 A Look At Some Key Highlights - Stocktwits",
-          "keywords": [
-            "catalyst",
-            "fall",
-            "falls",
-            "guidance",
-            "miss",
-            "misses"
-          ]
-        },
-        {
-          "title": "65,823,155 Shares in Walmart Inc. $WMT Acquired by Bank of America Corp DE - MarketBeat",
+          "title": "2,759 Shares in Tesla, Inc. $TSLA Acquired by AlphaGrep UK Ltd - MarketBeat",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "Walmart (WMT) Stock Stays Reasonable On Restaurant Delivery Expansion - simplywall.st",
-          "keywords": [
-            "expansion"
-          ]
-        },
-        {
-          "title": "WMT Stock Heads For Worst Week In 3 Months Despite Earnings Beat \u2014 Here\u2019s Why This Analyst Still Sees 10% Upside - Stocktwits",
-          "keywords": [
-            "beat",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Corient Private Wealth LP Trims Stock Position in Walmart Inc. $WMT - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "GS",
-      "name": "GS",
-      "price": 988.8900146484375,
-      "volume": 1672091.0,
-      "avg_volume": 1615989.1,
-      "percent_change": -3.914770687327772,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 10,
-      "liquidity_score": 72.08,
-      "rank_score": 61.44,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): GS Stock Price Today - Goldman Sachs Group News, Charts, Retail Sentiment - Stocktwits",
-      "top_headlines": [
-        "GS Stock Price Today - Goldman Sachs Group News, Charts, Retail Sentiment - Stocktwits",
-        "Goldman Sachs Group Inc Stock (GS) Moved Down by 3.35% on Sep 14: Drivers Behind the Movement - TradingKey",
-        "GS now sees \"clearer catalyst path\" for Meta shares post settlement & Muse launch - Investing.com"
-      ],
-      "matched_headlines": [
-        {
-          "title": "GS Stock Price Today - Goldman Sachs Group News, Charts, Retail Sentiment - Stocktwits",
+          "title": "Tesla: The Cybercab Failure Is Worse Than You Think (NASDAQ:TSLA) - Seeking Alpha",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "GS now sees \"clearer catalyst path\" for Meta shares post settlement & Muse launch - Investing.com",
-          "keywords": [
-            "catalyst",
-            "launch"
-          ]
-        },
-        {
-          "title": "Bellevue AI Push Might Change The Case For Investing In Goldman Sachs Stock (GS) - simplywall.st",
+          "title": "TSLA Stock Down, SPCX Stock Up Premarket As Merger Buzz Grows \u2014 Analyst Raises Deal Odds To 90% - Stocktwits",
           "keywords": [
             "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Engineers Gate Manager LP Trims Holdings in The Goldman Sachs Group, Inc. $GS - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Bank of America Corp DE Takes $6.76 Billion Position in The Goldman Sachs Group, Inc. $GS - MarketBeat",
-          "keywords": [
-            "beat"
+            "catalyst",
+            "deal",
+            "raises"
           ]
         }
       ]
     },
     {
-      "symbol": "META",
-      "name": "META",
-      "price": 666.364990234375,
-      "volume": 14914939.0,
-      "avg_volume": 18960233.9,
-      "percent_change": 2.829338164682551,
+      "symbol": "AMZN",
+      "name": "AMZN",
+      "price": 252.00999450683594,
+      "volume": 3590142.0,
+      "avg_volume": 26590014.2,
+      "percent_change": -0.60345461063817,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 82.78,
-      "rank_score": 55.18,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): Why Google and Meta Stocks Are the Big Winners From the Latest AI Concerns - Barron's",
+      "liquidity_score": 84.25,
+      "rank_score": 53.62,
+      "news_hits": 7,
+      "catalyst": "Headline-driven setup (beat): Amazon.com (NASDAQ:AMZN) Stock Price Down 1.3% - Here's Why - MarketBeat",
       "top_headlines": [
-        "Why Google and Meta Stocks Are the Big Winners From the Latest AI Concerns - Barron's",
-        "Prediction: Meta Stock Has More Upside Than Its Valuation Suggests - Yahoo Finance",
-        "What's Going On With Meta Stock? - Benzinga"
+        "Amazon.com (NASDAQ:AMZN) Stock Price Down 1.3% - Here's Why - MarketBeat",
+        "Amazon: The Hard Part Starts Now (NASDAQ:AMZN) - Seeking Alpha",
+        "AMZN Looks 2.0% Overvalued on GF Value\u2122 Heading into Prime Big D - GuruFocus"
       ],
       "matched_headlines": [
         {
-          "title": "Why Google and Meta Stocks Are the Big Winners From the Latest AI Concerns - Barron's",
+          "title": "Amazon.com (NASDAQ:AMZN) Stock Price Down 1.3% - Here's Why - MarketBeat",
           "keywords": [
-            "ai",
-            "catalyst"
+            "beat"
           ]
         },
         {
-          "title": "Goldman Sachs reiterates Meta stock Buy rating on AI agent launch - Investing.com",
+          "title": "Knuff & Co LLC Takes Position in Amazon.com, Inc. $AMZN - MarketBeat",
           "keywords": [
-            "ai",
-            "catalyst",
-            "launch"
+            "beat"
           ]
         },
         {
-          "title": "Meta stock jumps 21% on AI launch and legal wins, with further 9% gains expected in 12 months - pluang.com",
+          "title": "18,878 Shares in Amazon.com, Inc. $AMZN Bought by Empirical Asset Management LLC - MarketBeat",
           "keywords": [
-            "ai",
-            "catalyst",
-            "launch",
-            "wins"
+            "beat"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "LRCX",
+      "name": "LRCX",
+      "price": 270.5199890136719,
+      "volume": 735797.0,
+      "avg_volume": 7753419.7,
+      "percent_change": -1.085963408809916,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 8,
+      "liquidity_score": 78.89,
+      "rank_score": 50.7,
+      "news_hits": 7,
+      "catalyst": "Headline-driven setup (beat): Lam Research Corporation $LRCX Stock Position Lifted by Bank of America Corp DE - MarketBeat",
+      "top_headlines": [
+        "LRCX Stock Quote Price and Forecast - CNN",
+        "Lam Research Corporation $LRCX Stock Position Lifted by Bank of America Corp DE - MarketBeat",
+        "$LRCX stock is down 7% today. Here's what we see in our data. - Quiver Quantitative"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Lam Research Corporation $LRCX Stock Position Lifted by Bank of America Corp DE - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Lam Research Corp (LRCX) Shares Fall 8.3% -- GF Value Says Still Overvalued - GuruFocus",
+          "keywords": [
+            "fall"
+          ]
+        },
+        {
+          "title": "Lam Research (NASDAQ:LRCX) Stock Price Down 8.3% - Time to Sell? - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Lam Research (NASDAQ:LRCX) Shares Gap Down - Time to Sell? - MarketBeat",
+          "keywords": [
+            "beat"
           ]
         }
       ]
@@ -12292,10 +12351,10 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 1,
-      "BUY": 3,
+      "HOLD": 2,
+      "BUY": 2,
       "SELL": 0,
-      "live": 3,
+      "live": 4,
       "fallback": 0
     },
     "junior_model_3_enabled": true,
@@ -12312,15 +12371,15 @@
     "decision_mode": "live_dual_llm",
     "last_tier": "senior_escalated",
     "last_stage": "entry",
-    "last_junior_nomination": "ORCL",
-    "last_escalate_reason": "junior_nomination",
-    "live_share_recent": 84.3
+    "last_junior_nomination": null,
+    "last_escalate_reason": "junior_trade_or_split",
+    "live_share_recent": 85.7
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 344,
     "closed_outcomes": 157,
-    "consensus_events": 625,
+    "consensus_events": 626,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
@@ -14894,6 +14953,12 @@
       },
       {
         "t": "2026-09-15T14:00:13.875650+00:00",
+        "equity": 1006.06,
+        "cash": 394.79,
+        "event": "mark"
+      },
+      {
+        "t": "2026-09-15T14:05:34.801215+00:00",
         "equity": 1006.06,
         "cash": 394.79,
         "event": "mark"
