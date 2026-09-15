@@ -1,59 +1,47 @@
 {
-  "generated_at": "2026-09-15T18:00:26.168178+00:00",
+  "generated_at": "2026-09-15T18:01:01.636438+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1006.27,
+    "portfolio_value": 1006.28,
     "starting_cash": 1000.0,
     "total_return_pct": 0.63,
-    "total_pnl": 6.27,
-    "realized_pnl": -16.51,
-    "open_pnl": 22.75,
-    "capital_deployed": 809.33,
-    "cash": 196.94,
-    "closed_trades": 35,
-    "win_rate_pct": 25.71,
-    "vs_spy_pct": 2.2,
-    "spy_return_pct": -1.57,
+    "total_pnl": 6.28,
+    "realized_pnl": -5.68,
+    "open_pnl": 11.93,
+    "capital_deployed": 599.15,
+    "cash": 407.13,
+    "closed_trades": 36,
+    "win_rate_pct": 27.78,
+    "vs_spy_pct": 2.22,
+    "spy_return_pct": -1.59,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-15T18:00:28.865814+00:00"
+    "updated_at": "2026-09-15T18:01:04.517060+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -1.57,
-    "price": 757.3099975585938,
+    "return_pct": -1.59,
+    "price": 757.1934814453125,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 2,
-    "validated_count_today": 2,
+    "consensus_count_today": 3,
+    "validated_count_today": 3,
     "blocked_count_today": 0,
-    "fills_today": 1,
-    "simulated_orders_today": 2,
+    "fills_today": 2,
+    "simulated_orders_today": 3,
     "top_symbol_today": "LRCX"
   },
   "holdings": [
     {
-      "symbol": "XOM",
-      "qty": 1.24,
-      "avg_cost": 160.78,
-      "last": 169.50999450683594,
-      "market_value": 210.19,
-      "open_pnl": 10.83,
-      "open_pnl_pct": 5.43,
-      "stop": 155.0,
-      "target": 169.5,
-      "thesis": "XOM appears on the ranked candidate list with a bullish sentiment and positive catalyst score driven by institutional share purchases. Neutral RSI leaves room for upside continuation on the headline flow. Cash allows a full ~$200 notional add without exceeding position limits, and the setup clears the required reward-to-risk threshold."
-    },
-    {
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 108.61000061035156,
-      "market_value": 200.93,
-      "open_pnl": 4.96,
-      "open_pnl_pct": 2.53,
+      "last": 108.63500213623047,
+      "market_value": 200.97,
+      "open_pnl": 5.0,
+      "open_pnl_pct": 2.55,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -62,10 +50,10 @@
       "symbol": "META",
       "qty": 0.3,
       "avg_cost": 644.68,
-      "last": 667.4598999023438,
-      "market_value": 200.24,
-      "open_pnl": 6.83,
-      "open_pnl_pct": 3.53,
+      "last": 667.0800170898438,
+      "market_value": 200.12,
+      "open_pnl": 6.72,
+      "open_pnl_pct": 3.47,
       "stop": 628.0,
       "target": 680.0,
       "thesis": "META ranks second with a clear bullish AI-agent catalyst and supportive Street tone while remaining highly liquid. Small size fits residual cash under the ~$200 new-notional cap without exceeding the five-name limit. Technical RSI is neutral, leaving room for continuation if the AI narrative holds; defined stop below recent support keeps reward:risk above 1.5."
@@ -74,10 +62,10 @@
       "symbol": "LRCX",
       "qty": 0.74,
       "avg_cost": 267.36,
-      "last": 267.5299987792969,
-      "market_value": 197.97,
-      "open_pnl": 0.13,
-      "open_pnl_pct": 0.06,
+      "last": 267.6449890136719,
+      "market_value": 198.06,
+      "open_pnl": 0.21,
+      "open_pnl_pct": 0.11,
       "stop": 255.0,
       "target": 286.0,
       "thesis": "LRCX ranks top of the candidate list on a fresh institutional-lift/beat headline with bullish sentiment and neutral RSI, offering a liquid semi-equipment catalyst setup. Book has room under the 5-name cap and ~$200 notional can be deployed without forcing a rotation. Risk defined below recent support with target sized for at least 1.5:1 reward-to-risk while existing XOM/WMT/META holds remain constructive."
@@ -86,15 +74,15 @@
   "latest_candidate": {
     "symbol": "TSLA",
     "name": "TSLA",
-    "price": 357.29998779296875,
-    "volume": 21044732.0,
-    "avg_volume": 39567453.2,
-    "percent_change": -0.46522367386003705,
+    "price": 357.5834045410156,
+    "volume": 21712702.0,
+    "avg_volume": 39634250.2,
+    "percent_change": -0.38627090703186306,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 9,
-    "liquidity_score": 85.97,
-    "rank_score": 56.77,
+    "liquidity_score": 85.98,
+    "rank_score": 56.71,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (decline): Tesla (NASDAQ: TSLA) And SpaceX (SPCX) Stock Price Ticks Higher As Musk Declines To Rule Out Merger - foreignpolicyjournal.com",
     "top_headlines": [
@@ -141,54 +129,42 @@
     ]
   },
   "latest_decision": {
-    "model": "grok-4.5",
-    "action": "BUY",
-    "symbol": "TSLA",
-    "confidence": 74,
-    "cache_stats": null,
-    "entry_price": 357.3,
-    "stop_loss": 340.0,
-    "take_profit": 386.0,
-    "qty": 0.55,
-    "thesis": "TSLA ranks top on catalyst score with bullish headline flow around Musk declining to rule out a Tesla-SpaceX combination, supporting a momentum continuation setup. RSI is neutral near 50, leaving room for an upside push without immediate overbought risk. Position sized within cash and ~$200 notional limits while book still has a slot under the 5-name cap.",
-    "reason_code": "new_entry",
+    "model": "risk-gate",
+    "action": "SELL",
+    "symbol": "XOM",
+    "confidence": 90,
+    "entry_price": 169.50999450683594,
+    "stop_loss": 155.0,
+    "take_profit": 169.5,
+    "qty": 1.24,
+    "thesis": "HERMES AUTO-TRADE: Exiting full XOM position on take-profit. Price $169.51 reached target $169.50. Realized path $+10.83.",
+    "reason_code": "take_profit",
     "reasoning": {
-      "headline": "Bought $TSLA",
-      "narrative": "TSLA ranks top on catalyst score with bullish headline flow around Musk declining to rule out a Tesla-SpaceX combination, supporting a momentum continuation setup. RSI is neutral near 50, leaving room for an upside push without immediate overbought risk. Position sized within cash and ~$200 notional limits while book still has a slot under the 5-name cap.",
+      "headline": "Sold $XOM",
+      "narrative": "HERMES AUTO-TRADE: Exiting full XOM position on take-profit. Price $169.51 reached target $169.50. Realized path $+10.83.",
       "bullets": [
-        "Top-ranked candidate: catalyst_score 9, rank 56.77",
-        "Neutral RSI ~50 with bullish sentiment/headline",
-        "R:R ~1.66 with stop 340 / target 386",
-        "Qty 0.55 keeps notional under $200"
+        "Target zone filled; lock gains and free risk budget.",
+        "No trail extension in current paper rules."
       ],
       "risk_map": {
-        "stop": 340.0,
-        "target": 386.0,
+        "stop": 155.0,
+        "target": 169.5,
         "horizon_days": 5,
-        "rr": 1.66,
-        "confidence_10": 7,
-        "confidence": 74
+        "rr": 1.51,
+        "confidence_10": 9,
+        "confidence": 90
       },
-      "thesis": "TSLA ranks top on catalyst score with bullish headline flow around Musk declining to rule out a Tesla-SpaceX combination, supporting a momentum continuation setup. RSI is neutral near 50, leaving room for an upside push without immediate overbought risk. Position sized within cash and ~$200 notional limits while book still has a slot under the 5-name cap."
+      "thesis": "HERMES AUTO-TRADE: Exiting full XOM position on take-profit. Price $169.51 reached target $169.50. Realized path $+10.83."
     },
-    "source": "live",
-    "provider": "xai",
-    "provider_model_id": "grok-4.5",
-    "bullets": [
-      "Top-ranked candidate: catalyst_score 9, rank 56.77",
-      "Neutral RSI ~50 with bullish sentiment/headline",
-      "R:R ~1.66 with stop 340 / target 386",
-      "Qty 0.55 keeps notional under $200"
-    ],
-    "timestamp": "2026-09-15T17:50:02.465620+00:00"
+    "stage": "exit",
+    "timestamp": "2026-09-15T18:00:48.642833+00:00"
   },
-  "stance": "Buying pressure on TSLA. TSLA ranks top on catalyst score with bullish headline flow around Musk declining to rule out a Tesla-SpaceX combination, supporting a momentum continuation setup. RSI is neutral near 50, leaving room for an upside push without immediate overbought risk. Position sized within cash and ~$200 notional limits while book still has a slot under the 5-name cap.",
+  "stance": "Holding WMT, META, LRCX. No new trade right now. HERMES AUTO-TRADE: Exiting full XOM position on take-profit. Price $169.51 reached target $169.50. Realized path $+10.83.",
   "thinking": {
-    "badge": "Looking to buy TSLA",
-    "headline": "Buying pressure on TSLA.",
-    "plain_english": "Right now Hermes wants exposure to TSLA. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
+    "badge": "Holding what it owns",
+    "headline": "Holding WMT, META, LRCX. No new trade right now.",
+    "plain_english": "Right now Hermes is holding WMT, META, LRCX and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
     "triggers": [
-      "It owns XOM, bought near $160.78. Simple plan: sell if it falls to about $155.00, or take profit near $169.50.",
       "It owns WMT, bought near $105.93. Simple plan: sell if it falls to about $102.50, or take profit near $112.00.",
       "It owns META, bought near $644.68. Simple plan: sell if it falls to about $628.00, or take profit near $680.00.",
       "It owns LRCX, bought near $267.36. Simple plan: sell if it falls to about $255.00, or take profit near $286.00.",
@@ -198,26 +174,14 @@
     ],
     "owned": [
       {
-        "symbol": "XOM",
-        "qty": 1.24,
-        "avg_cost": 160.78,
-        "stop": 155.0,
-        "target": 169.5,
-        "last": 169.50999450683594,
-        "open_pnl": 10.83,
-        "open_pnl_pct": 5.43,
-        "line": "Bought near $160.78 \u00b7 Sell safety line $155.00 \u00b7 Profit target $169.50",
-        "plan": "stop 155.0 or target 169.5"
-      },
-      {
         "symbol": "WMT",
         "qty": 1.85,
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 108.61000061035156,
-        "open_pnl": 4.96,
-        "open_pnl_pct": 2.53,
+        "last": 108.63500213623047,
+        "open_pnl": 5.0,
+        "open_pnl_pct": 2.55,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -227,9 +191,9 @@
         "avg_cost": 644.68,
         "stop": 628.0,
         "target": 680.0,
-        "last": 667.4598999023438,
-        "open_pnl": 6.83,
-        "open_pnl_pct": 3.53,
+        "last": 667.0800170898438,
+        "open_pnl": 6.72,
+        "open_pnl_pct": 3.47,
         "line": "Bought near $644.68 \u00b7 Sell safety line $628.00 \u00b7 Profit target $680.00",
         "plan": "stop 628.0 or target 680.0"
       },
@@ -239,83 +203,65 @@
         "avg_cost": 267.36,
         "stop": 255.0,
         "target": 286.0,
-        "last": 267.5299987792969,
-        "open_pnl": 0.13,
-        "open_pnl_pct": 0.06,
+        "last": 267.6449890136719,
+        "open_pnl": 0.21,
+        "open_pnl_pct": 0.11,
         "line": "Bought near $267.36 \u00b7 Sell safety line $255.00 \u00b7 Profit target $286.00",
         "plan": "stop 255.0 or target 286.0"
       }
     ],
-    "last_checked": "2026-09-15T18:00:26.168178+00:00",
+    "last_checked": "2026-09-15T18:01:01.636438+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "BUY",
+    "action": "SELL",
     "symbols_held": [
-      "XOM",
       "WMT",
       "META",
       "LRCX"
     ],
-    "model_chips": [
-      {
-        "prefix": "J",
-        "model": "grok-4.3",
-        "action": "BUY",
-        "symbol": "TSLA",
-        "confidence": 72,
-        "tone": "buy"
-      },
-      {
-        "prefix": "J",
-        "model": "claude-haiku-4-5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 62,
-        "tone": "hold"
-      },
-      {
-        "prefix": "J",
-        "model": "deepseek-v4-flash",
-        "action": "BUY",
-        "symbol": "HOOD",
-        "confidence": 72,
-        "tone": "buy"
-      },
-      {
-        "prefix": "J",
-        "model": "grok-build-0.1",
-        "action": "BUY",
-        "symbol": "TSLA",
-        "confidence": 72,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "grok-4.5",
-        "action": "BUY",
-        "symbol": "TSLA",
-        "confidence": 74,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "claude-sonnet-5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 65,
-        "tone": "hold"
-      },
-      {
-        "prefix": "S",
-        "model": "claude-opus-5",
-        "action": "BUY",
-        "symbol": "TSLA",
-        "confidence": 90,
-        "tone": "buy"
-      }
-    ]
+    "model_chips": []
   },
   "activity": [
+    {
+      "type": "fill",
+      "symbol": "XOM",
+      "status": "filled_paper",
+      "headline": "SELL XOM @ $169.51",
+      "detail": "HERMES AUTO-TRADE: Exiting full XOM position on take-profit. Price $169.51 reached target $169.50. Realized path $+10.83.",
+      "timestamp": "2026-09-15T18:00:48.644847+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "XOM",
+      "status": "validated",
+      "headline": "SELL XOM \u2014 validated",
+      "detail": "deterministic take_profit exit",
+      "agents": [
+        {
+          "model": "risk-gate",
+          "action": "SELL",
+          "symbol": "XOM",
+          "confidence": 90,
+          "source": null,
+          "provider": null,
+          "tier": "senior"
+        },
+        {
+          "model": "risk-gate",
+          "action": "SELL",
+          "symbol": "XOM",
+          "confidence": 90,
+          "source": null,
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "risk_exit",
+      "escalate_reason": "take_profit",
+      "stage": "exit",
+      "junior_nomination": null,
+      "timestamp": "2026-09-15T18:00:48.642833+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "TSLA",
@@ -862,86 +808,21 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-09-15T16:18:05.200643+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CASH",
-      "status": "hold",
-      "headline": "HOLD \u2014 desks disagreed on focus",
-      "detail": "Desks: HOLD CASH (62%) vs BUY MSFT (72%) vs BUY MSFT (90%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "LRCX",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "MSFT",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "MSFT",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "BUY",
-          "symbol": "MSFT",
-          "confidence": 90,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-15T16:02:46.262867+00:00"
     }
   ],
   "recent_trades": [
+    {
+      "timestamp": "2026-09-15T18:00:48.644847+00:00",
+      "action": "SELL",
+      "symbol": "XOM",
+      "qty": 1.24,
+      "price": 169.50999450683594,
+      "notional": 210.19,
+      "realized_pnl": 10.83,
+      "reason": "take_profit",
+      "thesis": "HERMES AUTO-TRADE: Exiting full XOM position on take-profit. Price $169.51 reached target $169.50. Realized path $+10.83.",
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-09-15T16:47:31.980723+00:00",
       "action": "BUY",
@@ -1049,21 +930,35 @@
       "reason": null,
       "thesis": "XOM appears on the ranked candidate list with a bullish sentiment and positive catalyst score driven by institutional share purchases. Neutral RSI leaves room for upside continuation on the headline flow. Cash allows a full ~$200 notional add without exceeding position limits, and the setup clears the required reward-to-risk threshold.",
       "status": "FILLED_PAPER"
-    },
-    {
-      "timestamp": "2026-09-07T17:36:14.153974+00:00",
-      "action": "SELL",
-      "symbol": "XOM",
-      "qty": 1.25,
-      "price": 159.47,
-      "notional": 199.34,
-      "realized_pnl": -0.31,
-      "reason": "rotation",
-      "thesis": "Junior desk escalation directs an immediate exit of the XOM long. Position shows minor open loss and is the weakest name by P/L while the book is already at max open names. Closing frees risk capacity and follows the explicit SELL directive without waiting for stop or target.",
-      "status": "FILLED_PAPER"
     }
   ],
   "trade_reasoning": [
+    {
+      "timestamp": "2026-09-15T18:00:48.644847+00:00",
+      "action": "SELL",
+      "symbol": "XOM",
+      "qty": 1.24,
+      "price": 169.50999450683594,
+      "notional": 210.19,
+      "headline": "Sold $XOM",
+      "side_label": "sell",
+      "narrative": "HERMES AUTO-TRADE: Exiting full XOM position on take-profit. Price $169.51 reached target $169.50. Realized path $+10.83.",
+      "bullets": [
+        "Target zone filled; lock gains and free risk budget.",
+        "No trail extension in current paper rules."
+      ],
+      "risk_map": {
+        "stop": 155.0,
+        "target": 169.5,
+        "horizon_days": 5,
+        "rr": 1.51,
+        "confidence_10": 9,
+        "confidence": 90
+      },
+      "reason_code": "take_profit",
+      "realized_pnl": 10.83,
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-09-15T16:47:31.980723+00:00",
       "action": "BUY",
@@ -10212,6 +10107,20 @@
   ],
   "closed_trades": [
     {
+      "timestamp": "2026-09-15T18:00:48.643835+00:00",
+      "symbol": "XOM",
+      "qty": 1.24,
+      "avg_cost": 160.78,
+      "exit_price": 169.50999450683594,
+      "proceeds": 210.19,
+      "realized_pnl": 10.83,
+      "realized_pnl_pct": 5.43,
+      "reason": "take_profit",
+      "thesis": "HERMES AUTO-TRADE: Exiting full XOM position on take-profit. Price $169.51 reached target $169.50. Realized path $+10.83.",
+      "opened_at": "2026-09-08T14:05:55.955258+00:00",
+      "hold_seconds": 618892
+    },
+    {
       "timestamp": "2026-09-14T14:05:57.276258+00:00",
       "symbol": "BAC",
       "qty": 6.31,
@@ -10476,23 +10385,23 @@
       "thesis": "",
       "opened_at": "2026-08-19T22:55:26.417153+00:00",
       "hold_seconds": 0
-    },
-    {
-      "timestamp": "2026-08-19T22:55:22.309008+00:00",
-      "symbol": "MSFT",
-      "qty": 0.4,
-      "avg_cost": 500.0,
-      "exit_price": 505.0,
-      "proceeds": 202.0,
-      "realized_pnl": 2.0,
-      "realized_pnl_pct": 1.0,
-      "reason": "rotation",
-      "thesis": "",
-      "opened_at": "2026-08-19T22:55:22.306604+00:00",
-      "hold_seconds": 0
     }
   ],
   "closed_results": [
+    {
+      "timestamp": "2026-09-15T18:00:48.643835+00:00",
+      "symbol": "XOM",
+      "qty": 1.24,
+      "avg_cost": 160.78,
+      "exit_price": 169.50999450683594,
+      "proceeds": 210.19,
+      "realized_pnl": 10.83,
+      "realized_pnl_pct": 5.43,
+      "reason": "take_profit",
+      "thesis": "HERMES AUTO-TRADE: Exiting full XOM position on take-profit. Price $169.51 reached target $169.50. Realized path $+10.83.",
+      "opened_at": "2026-09-08T14:05:55.955258+00:00",
+      "hold_seconds": 618892
+    },
     {
       "timestamp": "2026-09-14T14:05:57.276258+00:00",
       "symbol": "BAC",
@@ -12570,6 +12479,21 @@
       "hold_seconds": 191058
     },
     {
+      "symbol": "XOM",
+      "timestamp": "2026-09-15T18:00:48.643835+00:00",
+      "opened_at": "2026-09-08T14:05:55.955258+00:00",
+      "qty": 1.24,
+      "entry_price": 160.78,
+      "exit_price": 169.50999450683594,
+      "entry_value": 199.37,
+      "exit_value": 210.19,
+      "realized_pnl": 10.83,
+      "realized_pnl_pct": 5.43,
+      "reason": "take_profit",
+      "take_profit_hit": true,
+      "hold_seconds": 618892
+    },
+    {
       "symbol": "AVGO",
       "timestamp": "2026-08-27T17:00:33.519310+00:00",
       "opened_at": "2026-08-26T14:47:51.020479+00:00",
@@ -12583,21 +12507,6 @@
       "reason": "take_profit",
       "take_profit_hit": true,
       "hold_seconds": 94362
-    },
-    {
-      "symbol": "XOM",
-      "timestamp": "2026-08-17T17:31:09.775715+00:00",
-      "opened_at": "2026-08-06T18:15:51.839510+00:00",
-      "qty": 1.2993,
-      "entry_price": 153.9263,
-      "exit_price": 161.78500366210938,
-      "entry_value": 200.0,
-      "exit_value": 210.21,
-      "realized_pnl": 10.21,
-      "realized_pnl_pct": 5.11,
-      "reason": "take_profit",
-      "take_profit_hit": true,
-      "hold_seconds": 947717
     },
     {
       "symbol": "CVX",
@@ -12696,15 +12605,15 @@
     {
       "symbol": "TSLA",
       "name": "TSLA",
-      "price": 357.29998779296875,
-      "volume": 21044732.0,
-      "avg_volume": 39567453.2,
-      "percent_change": -0.46522367386003705,
+      "price": 357.5834045410156,
+      "volume": 21712702.0,
+      "avg_volume": 39634250.2,
+      "percent_change": -0.38627090703186306,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 85.97,
-      "rank_score": 56.77,
+      "liquidity_score": 85.98,
+      "rank_score": 56.71,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (decline): Tesla (NASDAQ: TSLA) And SpaceX (SPCX) Stock Price Ticks Higher As Musk Declines To Rule Out Merger - foreignpolicyjournal.com",
       "top_headlines": [
@@ -12753,15 +12662,15 @@
     {
       "symbol": "LRCX",
       "name": "LRCX",
-      "price": 267.0849914550781,
-      "volume": 4439150.0,
-      "avg_volume": 8123755.0,
-      "percent_change": -2.3419499828157986,
+      "price": 267.5299987792969,
+      "volume": 4647052.0,
+      "avg_volume": 8144545.2,
+      "percent_change": -2.179235682435961,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 79.1,
-      "rank_score": 51.74,
+      "liquidity_score": 79.11,
+      "rank_score": 51.61,
       "news_hits": 7,
       "catalyst": "Headline-driven setup (beat): Lam Research Corporation $LRCX Stock Position Lifted by Bank of America Corp DE - MarketBeat",
       "top_headlines": [
@@ -12797,57 +12706,58 @@
       ]
     },
     {
-      "symbol": "HOOD",
-      "name": "HOOD",
-      "price": 110.5,
-      "volume": 14062034.0,
-      "avg_volume": 22698823.4,
-      "percent_change": -3.3499534415422096,
+      "symbol": "NVDA",
+      "name": "NVDA",
+      "price": 211.97000122070312,
+      "volume": 52072540.0,
+      "avg_volume": 112165894.0,
+      "percent_change": 0.4787611275561961,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
-      "liquidity_score": 83.56,
-      "rank_score": 50.71,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (catalyst, upgrade): Robinhood Stock (HOOD) Opinions on Cantor Fitzgerald's Price Target Upgrade - Quiver Quantitative",
+      "liquidity_score": 90.5,
+      "rank_score": 49.46,
+      "news_hits": 7,
+      "catalyst": "Headline-driven setup (ai, catalyst, partnership): CSCO, NVDA Stock Inch Higher \u2014 Cisco And Nvidia Expand Partnership To Bring Agentic AI To Splunk Customers - Stocktwits",
       "top_headlines": [
-        "Robinhood Stock (HOOD) Opinions on Cantor Fitzgerald's Price Target Upgrade - Quiver Quantitative",
-        "Robinhood vs. Schwab: Which Brokerage Stock is the Better Bet? - The Globe and Mail",
-        "Crypto Stocks MSTR, COIN, CRCL, HOOD Tumble 3-5% Ahead of CLARITY Act Senate Vote - Yahoo Finance"
+        "Jim Cramer Tries To Predict NVIDIA Corporation (NASDAQ:NVDA) Share Price Movement Following Anthropic CEO\u2019s Remarks - Yahoo Finance",
+        "CSCO, NVDA Stock Inch Higher \u2014 Cisco And Nvidia Expand Partnership To Bring Agentic AI To Splunk Customers - Stocktwits",
+        "Nvidia: Why The 'AI Slowdown' Could Extend The Boom (NASDAQ:NVDA) - Seeking Alpha"
       ],
       "matched_headlines": [
         {
-          "title": "Robinhood Stock (HOOD) Opinions on Cantor Fitzgerald's Price Target Upgrade - Quiver Quantitative",
+          "title": "CSCO, NVDA Stock Inch Higher \u2014 Cisco And Nvidia Expand Partnership To Bring Agentic AI To Splunk Customers - Stocktwits",
           "keywords": [
+            "ai",
             "catalyst",
-            "upgrade"
+            "partnership"
           ]
         },
         {
-          "title": "Robinhood vs. Schwab: Which Brokerage Stock is the Better Bet? - The Globe and Mail",
+          "title": "Nvidia: Why The 'AI Slowdown' Could Extend The Boom (NASDAQ:NVDA) - Seeking Alpha",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "Robinhood: I'm Expecting Substantial Annualized Returns (Rating Upgrade) (NASDAQ:HOOD) - Seeking Alpha",
-          "keywords": [
-            "catalyst",
-            "upgrade"
-          ]
-        },
-        {
-          "title": "Robinhood and Webull Fall 4% as Imminent Clarity Act Decision Stokes Crypto Uncertainty - 24/7 Wall St.",
+          "title": "NVIDIA Stock Forecast: Can NVDA Reclaim $235 and Push Toward $300? - FXLeaders",
           "keywords": [
             "ai",
-            "catalyst",
-            "fall"
+            "catalyst"
           ]
         },
         {
-          "title": "HOOD Stock Swings As Robinhood\u2019s $1 Trillion Vision Meets Wall Street Caution After Q2 Earnings - Stocktwits",
+          "title": "AI Stock Sell-Off: Nvidia (NVDA) and AMD Under Pressure Amid Mar - GuruFocus",
           "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Analysts Offer Insights on Technology Companies: Intuit (INTU) and Nvidia (NVDA) - The Globe and Mail",
+          "keywords": [
+            "ai",
             "catalyst"
           ]
         }
@@ -12856,15 +12766,15 @@
     {
       "symbol": "MSFT",
       "name": "MSFT",
-      "price": 499.4800109863281,
-      "volume": 7826855.0,
-      "avg_volume": 17182875.5,
-      "percent_change": -1.1733033839483977,
+      "price": 498.70001220703125,
+      "volume": 8048084.0,
+      "avg_volume": 17204998.4,
+      "percent_change": -1.3276332891036469,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
-      "liquidity_score": 82.35,
-      "rank_score": 48.79,
+      "liquidity_score": 82.36,
+      "rank_score": 48.92,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): MSFT Stock Holds Up Amid US-Iran Geopolitical Jitters: Retail Calls It \u2018Safest Earnings Play\u2019 - Stocktwits",
       "top_headlines": [
@@ -12913,21 +12823,21 @@
     {
       "symbol": "AVGO",
       "name": "AVGO",
-      "price": 338.1099853515625,
-      "volume": 13559333.0,
-      "avg_volume": 29897833.3,
-      "percent_change": -1.9175028561538663,
+      "price": 338.95001220703125,
+      "volume": 13994877.0,
+      "avg_volume": 29941387.7,
+      "percent_change": -1.6738190395798078,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
       "liquidity_score": 84.76,
-      "rank_score": 48.25,
+      "rank_score": 48.05,
       "news_hits": 6,
       "catalyst": "Headline-driven setup (growth): Broadcom (NASDAQ:AVGO): Dividend Quality and Growth for Income Investors - ChartMill",
       "top_headlines": [
+        "AVGO Stock Quote Price and Forecast - CNN",
         "Broadcom (NASDAQ:AVGO): Dividend Quality and Growth for Income Investors - ChartMill",
-        "Broadcom\u2019s strong AI growth faces margin, financing risks (AVGO:NASDAQ) - Seeking Alpha",
-        "AVGO Stock Quote Price and Forecast - CNN"
+        "Broadcom\u2019s strong AI growth faces margin, financing risks (AVGO:NASDAQ) - Seeking Alpha"
       ],
       "matched_headlines": [
         {
@@ -12986,13 +12896,7 @@
       "grok-build-0.1"
     ],
     "junior_min_agree": 3,
-    "junior_votes": {
-      "HOLD": 1,
-      "BUY": 3,
-      "SELL": 0,
-      "live": 4,
-      "fallback": 0
-    },
+    "junior_votes": null,
     "junior_model_3_enabled": true,
     "model_1": "grok-4.5",
     "model_1_effort": "medium",
@@ -13005,24 +12909,24 @@
     "max_candidates_to_llm": 8,
     "log_all_disagreements": true,
     "decision_mode": "live_dual_llm",
-    "last_tier": "senior_escalated",
-    "last_stage": "entry",
+    "last_tier": "risk_exit",
+    "last_stage": "exit",
     "last_junior_nomination": null,
-    "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 84.8
+    "last_escalate_reason": "take_profit",
+    "live_share_recent": 83.3
   },
   "learning": {
     "candidate_signals_logged": 8,
-    "fills_logged": 345,
-    "closed_outcomes": 157,
-    "consensus_events": 641,
+    "fills_logged": 346,
+    "closed_outcomes": 158,
+    "consensus_events": 642,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1006.27,
-    "change": 6.27,
+    "latest_equity": 1006.28,
+    "change": 6.28,
     "change_pct": 0.63,
     "points": [
       {
@@ -15648,9 +15552,15 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-15T18:00:28.865814+00:00",
+        "t": "2026-09-15T18:00:48.644847+00:00",
         "equity": 1006.27,
-        "cash": 196.94,
+        "cash": 407.13,
+        "event": "SELL XOM"
+      },
+      {
+        "t": "2026-09-15T18:01:04.517060+00:00",
+        "equity": 1006.28,
+        "cash": 407.13,
         "event": "mark"
       }
     ],
