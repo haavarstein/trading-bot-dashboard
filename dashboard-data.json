@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-09-15T16:40:20.783414+00:00",
+  "generated_at": "2026-09-15T16:47:45.922308+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1004.94,
+    "portfolio_value": 1004.49,
     "starting_cash": 1000.0,
-    "total_return_pct": 0.49,
-    "total_pnl": 4.94,
+    "total_return_pct": 0.45,
+    "total_pnl": 4.49,
     "realized_pnl": -16.51,
-    "open_pnl": 21.4,
-    "capital_deployed": 610.15,
-    "cash": 394.79,
+    "open_pnl": 20.96,
+    "capital_deployed": 807.55,
+    "cash": 196.94,
     "closed_trades": 35,
     "win_rate_pct": 25.71,
-    "vs_spy_pct": 2.03,
+    "vs_spy_pct": 1.99,
     "spy_return_pct": -1.54,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-15T16:40:23.451815+00:00"
+    "updated_at": "2026-09-15T16:47:48.726773+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
     "return_pct": -1.54,
-    "price": 757.510009765625,
+    "price": 757.5650024414062,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 0,
-    "validated_count_today": 0,
+    "consensus_count_today": 1,
+    "validated_count_today": 1,
     "blocked_count_today": 0,
-    "fills_today": 0,
-    "simulated_orders_today": 0,
-    "top_symbol_today": "MSFT"
+    "fills_today": 1,
+    "simulated_orders_today": 1,
+    "top_symbol_today": "LRCX"
   },
   "holdings": [
     {
       "symbol": "XOM",
       "qty": 1.24,
       "avg_cost": 160.78,
-      "last": 168.91000366210938,
-      "market_value": 209.45,
-      "open_pnl": 10.08,
-      "open_pnl_pct": 5.06,
+      "last": 168.85499572753906,
+      "market_value": 209.38,
+      "open_pnl": 10.01,
+      "open_pnl_pct": 5.02,
       "stop": 155.0,
       "target": 169.5,
       "thesis": "XOM appears on the ranked candidate list with a bullish sentiment and positive catalyst score driven by institutional share purchases. Neutral RSI leaves room for upside continuation on the headline flow. Cash allows a full ~$200 notional add without exceeding position limits, and the setup clears the required reward-to-risk threshold."
@@ -50,10 +50,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 108.57499694824219,
-      "market_value": 200.86,
-      "open_pnl": 4.89,
-      "open_pnl_pct": 2.5,
+      "last": 108.48500061035156,
+      "market_value": 200.7,
+      "open_pnl": 4.73,
+      "open_pnl_pct": 2.41,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -62,125 +62,126 @@
       "symbol": "META",
       "qty": 0.3,
       "avg_cost": 644.68,
-      "last": 666.125,
-      "market_value": 199.84,
-      "open_pnl": 6.43,
-      "open_pnl_pct": 3.33,
+      "last": 666.0,
+      "market_value": 199.8,
+      "open_pnl": 6.4,
+      "open_pnl_pct": 3.31,
       "stop": 628.0,
       "target": 680.0,
       "thesis": "META ranks second with a clear bullish AI-agent catalyst and supportive Street tone while remaining highly liquid. Small size fits residual cash under the ~$200 new-notional cap without exceeding the five-name limit. Technical RSI is neutral, leaving room for continuation if the AI narrative holds; defined stop below recent support keeps reward:risk above 1.5."
+    },
+    {
+      "symbol": "LRCX",
+      "qty": 0.74,
+      "avg_cost": 267.36,
+      "last": 267.1199951171875,
+      "market_value": 197.67,
+      "open_pnl": -0.18,
+      "open_pnl_pct": -0.09,
+      "stop": 255.0,
+      "target": 286.0,
+      "thesis": "LRCX ranks top of the candidate list on a fresh institutional-lift/beat headline with bullish sentiment and neutral RSI, offering a liquid semi-equipment catalyst setup. Book has room under the 5-name cap and ~$200 notional can be deployed without forcing a rotation. Risk defined below recent support with target sized for at least 1.5:1 reward-to-risk while existing XOM/WMT/META holds remain constructive."
     }
   ],
   "latest_candidate": {
-    "symbol": "MSFT",
-    "name": "MSFT",
-    "price": 500.19000244140625,
-    "volume": 6639929.0,
-    "avg_volume": 17064182.9,
-    "percent_change": -1.0328250693258823,
+    "symbol": "LRCX",
+    "name": "LRCX",
+    "price": 267.3550109863281,
+    "volume": 3775111.0,
+    "avg_volume": 8057351.1,
+    "percent_change": -2.243218935650746,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 8,
-    "liquidity_score": 82.32,
-    "rank_score": 52.67,
-    "news_hits": 8,
-    "catalyst": "Headline-driven setup (ai, catalyst): MSFT Stock Holds Up Amid US-Iran Geopolitical Jitters: Retail Calls It \u2018Safest Earnings Play\u2019 - Stocktwits",
+    "liquidity_score": 79.06,
+    "rank_score": 51.65,
+    "news_hits": 7,
+    "catalyst": "Headline-driven setup (beat): Lam Research Corporation $LRCX Stock Position Lifted by Bank of America Corp DE - MarketBeat",
     "top_headlines": [
-      "ORCL vs. MSFT: Which Stock Should Value Investors Buy Now? - Yahoo Finance",
-      "MSFT Stock Holds Up Amid US-Iran Geopolitical Jitters: Retail Calls It \u2018Safest Earnings Play\u2019 - Stocktwits",
-      "Microsoft Stock (MSFT) Opinions on Bank of America Price Target Upgrade - Quiver Quantitative"
+      "VTI is down 0.5% today, on LRCX stock price movement - Quiver Quantitative",
+      "Lam Research Corporation $LRCX Stock Position Lifted by Bank of America Corp DE - MarketBeat",
+      "Lam Research Corp (LRCX) Shares Fall 8.3% -- GF Value Says Still Overvalued - GuruFocus"
     ],
     "matched_headlines": [
       {
-        "title": "MSFT Stock Holds Up Amid US-Iran Geopolitical Jitters: Retail Calls It \u2018Safest Earnings Play\u2019 - Stocktwits",
+        "title": "Lam Research Corporation $LRCX Stock Position Lifted by Bank of America Corp DE - MarketBeat",
         "keywords": [
-          "ai",
-          "catalyst"
+          "beat"
         ]
       },
       {
-        "title": "Microsoft Stock (MSFT) Opinions on Bank of America Price Target Upgrade - Quiver Quantitative",
+        "title": "Lam Research Corp (LRCX) Shares Fall 8.3% -- GF Value Says Still Overvalued - GuruFocus",
         "keywords": [
-          "catalyst",
-          "upgrade"
+          "fall"
         ]
       },
       {
-        "title": "Microsoft Is Defying AI Gravity (NASDAQ:MSFT) - Seeking Alpha",
+        "title": "Lam Research (NASDAQ:LRCX) Stock Price Down 8.3% - Time to Sell? - MarketBeat",
         "keywords": [
-          "ai",
-          "catalyst"
+          "beat"
         ]
       },
       {
-        "title": "MSFT Reiterated by Citizens -- Price Target Maintained at $550 - GuruFocus",
+        "title": "Lam Research (NASDAQ:LRCX) Shares Gap Down - Time to Sell? - MarketBeat",
         "keywords": [
-          "ai",
-          "catalyst"
-        ]
-      },
-      {
-        "title": "Analysts\u2019 Opinions Are Mixed on These Technology Stocks: Microsoft (MSFT) and Salesforce (CRM) - The Globe and Mail",
-        "keywords": [
-          "ai",
-          "catalyst"
+          "beat"
         ]
       }
     ]
   },
   "latest_decision": {
     "model": "grok-4.5",
-    "action": "HOLD",
-    "symbol": "CASH",
-    "confidence": 64,
+    "action": "BUY",
+    "symbol": "LRCX",
+    "confidence": 72,
     "cache_stats": null,
-    "entry_price": 0.0,
-    "stop_loss": 0.0,
-    "take_profit": 0.0,
-    "qty": 0.0,
-    "thesis": "Book already holds three liquid names with positive open P/L and XOM is only a fraction from its stated target, so forcing a fourth name is unnecessary. Top candidates (MSFT, LRCX, TSLA) carry only mid-50s rank scores and generic headline catalysts with RSI at neutral 50, offering no clear asymmetric edge versus current holdings. Cash of ~$395 is adequate for a later high-conviction add; until rank/catalyst quality improves or a stop/target is hit, staying flat on new risk is the cleaner desk decision.",
-    "reason_code": "hold",
+    "entry_price": 267.36,
+    "stop_loss": 255.0,
+    "take_profit": 286.0,
+    "qty": 0.74,
+    "thesis": "LRCX ranks top of the candidate list on a fresh institutional-lift/beat headline with bullish sentiment and neutral RSI, offering a liquid semi-equipment catalyst setup. Book has room under the 5-name cap and ~$200 notional can be deployed without forcing a rotation. Risk defined below recent support with target sized for at least 1.5:1 reward-to-risk while existing XOM/WMT/META holds remain constructive.",
+    "reason_code": "new_entry",
     "reasoning": {
-      "headline": "Hold $CASH",
-      "narrative": "Book already holds three liquid names with positive open P/L and XOM is only a fraction from its stated target, so forcing a fourth name is unnecessary. Top candidates (MSFT, LRCX, TSLA) carry only mid-50s rank scores and generic headline catalysts with RSI at neutral 50, offering no clear asymmetric edge versus current holdings. Cash of ~$395 is adequate for a later high-conviction add; until rank/catalyst quality improves or a stop/target is hit, staying flat on new risk is the cleaner desk decision.",
+      "headline": "Bought $LRCX",
+      "narrative": "LRCX ranks top of the candidate list on a fresh institutional-lift/beat headline with bullish sentiment and neutral RSI, offering a liquid semi-equipment catalyst setup. Book has room under the 5-name cap and ~$200 notional can be deployed without forcing a rotation. Risk defined below recent support with target sized for at least 1.5:1 reward-to-risk while existing XOM/WMT/META holds remain constructive.",
       "bullets": [
-        "No candidate rank/catalyst clearly beats existing book risk/reward",
-        "XOM/META still working toward targets; no stop breached",
-        "Max notional and 5-name limits allow patience; avoid marginal entries",
-        "Social chatter mixed/weak and does not override scores"
+        "Top rank_score + catalyst_score 8 institutional lift",
+        "Neutral RSI 50 leaves room for continuation",
+        "~$198 notional fits cash and max-buy rule",
+        "R:R ~1.5 with stop 255 / target 286"
       ],
       "risk_map": {
-        "stop": 0.0,
-        "target": 0.0,
+        "stop": 255.0,
+        "target": 286.0,
         "horizon_days": 5,
-        "rr": 0.0,
-        "confidence_10": 6,
-        "confidence": 64
+        "rr": 1.51,
+        "confidence_10": 7,
+        "confidence": 72
       },
-      "thesis": "Book already holds three liquid names with positive open P/L and XOM is only a fraction from its stated target, so forcing a fourth name is unnecessary. Top candidates (MSFT, LRCX, TSLA) carry only mid-50s rank scores and generic headline catalysts with RSI at neutral 50, offering no clear asymmetric edge versus current holdings. Cash of ~$395 is adequate for a later high-conviction add; until rank/catalyst quality improves or a stop/target is hit, staying flat on new risk is the cleaner desk decision."
+      "thesis": "LRCX ranks top of the candidate list on a fresh institutional-lift/beat headline with bullish sentiment and neutral RSI, offering a liquid semi-equipment catalyst setup. Book has room under the 5-name cap and ~$200 notional can be deployed without forcing a rotation. Risk defined below recent support with target sized for at least 1.5:1 reward-to-risk while existing XOM/WMT/META holds remain constructive."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "No candidate rank/catalyst clearly beats existing book risk/reward",
-      "XOM/META still working toward targets; no stop breached",
-      "Max notional and 5-name limits allow patience; avoid marginal entries",
-      "Social chatter mixed/weak and does not override scores"
+      "Top rank_score + catalyst_score 8 institutional lift",
+      "Neutral RSI 50 leaves room for continuation",
+      "~$198 notional fits cash and max-buy rule",
+      "R:R ~1.5 with stop 255 / target 286"
     ],
-    "timestamp": "2026-09-15T16:35:07.885307+00:00"
+    "timestamp": "2026-09-15T16:47:31.979695+00:00"
   },
-  "stance": "Holding XOM, WMT, META. No new trade right now.",
+  "stance": "Buying pressure on LRCX. LRCX ranks top of the candidate list on a fresh institutional-lift/beat headline with bullish sentiment and neutral RSI, offering a liquid semi-equipment catalyst setup. Book has room under the 5-name cap and ~$200 notional can be deployed without forcing a rotation. Risk defined below recent support with target sized for at least 1.5:1 reward-to-risk while existing XOM/WMT/META holds remain constructive.",
   "thinking": {
-    "badge": "Holding what it owns",
-    "headline": "Holding XOM, WMT, META. No new trade right now.",
-    "plain_english": "Right now Hermes is holding XOM, WMT, META and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
+    "badge": "Looking to buy LRCX",
+    "headline": "Buying pressure on LRCX.",
+    "plain_english": "Right now Hermes wants exposure to LRCX. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
     "triggers": [
       "It owns XOM, bought near $160.78. Simple plan: sell if it falls to about $155.00, or take profit near $169.50.",
       "It owns WMT, bought near $105.93. Simple plan: sell if it falls to about $102.50, or take profit near $112.00.",
       "It owns META, bought near $644.68. Simple plan: sell if it falls to about $628.00, or take profit near $680.00.",
+      "It owns LRCX, bought near $267.36. Simple plan: sell if it falls to about $255.00, or take profit near $286.00.",
       "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
-      "Top scanner name right now is MSFT, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
       "If nothing looks clean, do nothing. Sitting in cash or holdings is allowed."
     ],
     "owned": [
@@ -190,9 +191,9 @@
         "avg_cost": 160.78,
         "stop": 155.0,
         "target": 169.5,
-        "last": 168.91000366210938,
-        "open_pnl": 10.08,
-        "open_pnl_pct": 5.06,
+        "last": 168.85499572753906,
+        "open_pnl": 10.01,
+        "open_pnl_pct": 5.02,
         "line": "Bought near $160.78 \u00b7 Sell safety line $155.00 \u00b7 Profit target $169.50",
         "plan": "stop 155.0 or target 169.5"
       },
@@ -202,9 +203,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 108.57499694824219,
-        "open_pnl": 4.89,
-        "open_pnl_pct": 2.5,
+        "last": 108.48500061035156,
+        "open_pnl": 4.73,
+        "open_pnl_pct": 2.41,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -214,21 +215,34 @@
         "avg_cost": 644.68,
         "stop": 628.0,
         "target": 680.0,
-        "last": 666.125,
-        "open_pnl": 6.43,
-        "open_pnl_pct": 3.33,
+        "last": 666.0,
+        "open_pnl": 6.4,
+        "open_pnl_pct": 3.31,
         "line": "Bought near $644.68 \u00b7 Sell safety line $628.00 \u00b7 Profit target $680.00",
         "plan": "stop 628.0 or target 680.0"
+      },
+      {
+        "symbol": "LRCX",
+        "qty": 0.74,
+        "avg_cost": 267.36,
+        "stop": 255.0,
+        "target": 286.0,
+        "last": 267.1199951171875,
+        "open_pnl": -0.18,
+        "open_pnl_pct": -0.09,
+        "line": "Bought near $267.36 \u00b7 Sell safety line $255.00 \u00b7 Profit target $286.00",
+        "plan": "stop 255.0 or target 286.0"
       }
     ],
-    "last_checked": "2026-09-15T16:40:20.783414+00:00",
+    "last_checked": "2026-09-15T16:47:45.922308+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "HOLD",
+    "action": "BUY",
     "symbols_held": [
       "XOM",
       "WMT",
-      "META"
+      "META",
+      "LRCX"
     ],
     "model_chips": [
       {
@@ -236,46 +250,46 @@
         "model": "grok-4.3",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 62,
+        "confidence": 60,
         "tone": "hold"
       },
       {
         "prefix": "J",
         "model": "claude-haiku-4-5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 62,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "LRCX",
+        "confidence": 72,
+        "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "deepseek-v4-flash",
         "action": "BUY",
-        "symbol": "MSFT",
+        "symbol": "LRCX",
         "confidence": 72,
         "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 62,
+        "tone": "hold"
+      },
+      {
+        "prefix": "S",
+        "model": "grok-4.5",
         "action": "BUY",
-        "symbol": "MSFT",
+        "symbol": "LRCX",
         "confidence": 72,
         "tone": "buy"
       },
       {
         "prefix": "S",
-        "model": "grok-4.5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 64,
-        "tone": "hold"
-      },
-      {
-        "prefix": "S",
         "model": "claude-sonnet-5",
         "action": "BUY",
-        "symbol": "MSFT",
+        "symbol": "LRCX",
         "confidence": 72,
         "tone": "buy"
       },
@@ -290,6 +304,91 @@
     ]
   },
   "activity": [
+    {
+      "type": "fill",
+      "symbol": "LRCX",
+      "status": "filled_paper",
+      "headline": "BUY LRCX @ $267.36",
+      "detail": "LRCX ranks top of the candidate list on a fresh institutional-lift/beat headline with bullish sentiment and neutral RSI, offering a liquid semi-equipment catalyst setup. Book has room under the 5-name cap and ~$200 notional can be deployed without forcing a rotation. Risk defined below recent support with target sized for at least 1.5:1 reward-to-risk while existing XOM/WMT/META holds remain constructive.",
+      "timestamp": "2026-09-15T16:47:31.980723+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "LRCX",
+      "status": "validated",
+      "headline": "BUY LRCX \u2014 validated",
+      "detail": "LRCX ranks top of the candidate list on a fresh institutional-lift/beat headline with bullish sentiment and neutral RSI, offering a liquid semi-equipment catalyst setup. Book has room under the 5-name cap and ~$200 notional can be deployed without forcing a rotation. Risk defined below recent support with target sized for at least 1.5:1 reward-to-risk while existing XOM/WMT/META holds remain constructive.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "LRCX",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "LRCX",
+          "confidence": 72,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "LRCX",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "LRCX",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "BUY",
+          "symbol": "LRCX",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-15T16:47:31.979695+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -828,86 +927,21 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-09-15T15:02:48.458463+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "TSLA",
-      "status": "no_consensus",
-      "headline": "BUY TSLA \u2014 no consensus",
-      "detail": "Desks: BUY TSLA (72%) vs BUY MSFT (75%) vs BUY AMZN (90%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "MSFT",
-          "confidence": 75,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "TSLA",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "TSLA",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "MSFT",
-          "confidence": 75,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "BUY",
-          "symbol": "AMZN",
-          "confidence": 90,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-15T14:47:43.241431+00:00"
     }
   ],
   "recent_trades": [
+    {
+      "timestamp": "2026-09-15T16:47:31.980723+00:00",
+      "action": "BUY",
+      "symbol": "LRCX",
+      "qty": 0.74,
+      "price": 267.36,
+      "notional": 197.85,
+      "realized_pnl": null,
+      "reason": null,
+      "thesis": "LRCX ranks top of the candidate list on a fresh institutional-lift/beat headline with bullish sentiment and neutral RSI, offering a liquid semi-equipment catalyst setup. Book has room under the 5-name cap and ~$200 notional can be deployed without forcing a rotation. Risk defined below recent support with target sized for at least 1.5:1 reward-to-risk while existing XOM/WMT/META holds remain constructive.",
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-09-14T14:05:57.277258+00:00",
       "action": "SELL",
@@ -1015,21 +1049,37 @@
       "reason": "rotation",
       "thesis": "Junior desk escalation directs an immediate exit of the XOM long. Position shows minor open loss and is the weakest name by P/L while the book is already at max open names. Closing frees risk capacity and follows the explicit SELL directive without waiting for stop or target.",
       "status": "FILLED_PAPER"
-    },
-    {
-      "timestamp": "2026-09-07T14:05:06.083413+00:00",
-      "action": "BUY",
-      "symbol": "LRCX",
-      "qty": 0.65,
-      "price": 307.65,
-      "notional": 199.97,
-      "realized_pnl": null,
-      "reason": null,
-      "thesis": "LRCX presents a liquid high-rank catalyst setup with institutional buying headline and neutral RSI supporting a bullish continuation entry. Portfolio has room for one more name under the 5-position limit and cash covers a sub-$200 notional slice. Defined stop below recent support yields reward:risk above 1.5 toward the upside target.",
-      "status": "FILLED_PAPER"
     }
   ],
   "trade_reasoning": [
+    {
+      "timestamp": "2026-09-15T16:47:31.980723+00:00",
+      "action": "BUY",
+      "symbol": "LRCX",
+      "qty": 0.74,
+      "price": 267.36,
+      "notional": 197.85,
+      "headline": "Bought $LRCX",
+      "side_label": "buy",
+      "narrative": "LRCX ranks top of the candidate list on a fresh institutional-lift/beat headline with bullish sentiment and neutral RSI, offering a liquid semi-equipment catalyst setup. Book has room under the 5-name cap and ~$200 notional can be deployed without forcing a rotation. Risk defined below recent support with target sized for at least 1.5:1 reward-to-risk while existing XOM/WMT/META holds remain constructive.",
+      "bullets": [
+        "Top rank_score + catalyst_score 8 institutional lift",
+        "Neutral RSI 50 leaves room for continuation",
+        "~$198 notional fits cash and max-buy rule",
+        "R:R ~1.5 with stop 255 / target 286"
+      ],
+      "risk_map": {
+        "stop": 255.0,
+        "target": 286.0,
+        "horizon_days": 5,
+        "rr": 1.51,
+        "confidence_10": 7,
+        "confidence": 72
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-09-14T14:05:57.277258+00:00",
       "action": "SELL",
@@ -12632,74 +12682,17 @@
   ],
   "top_candidates": [
     {
-      "symbol": "MSFT",
-      "name": "MSFT",
-      "price": 500.19000244140625,
-      "volume": 6639929.0,
-      "avg_volume": 17064182.9,
-      "percent_change": -1.0328250693258823,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 8,
-      "liquidity_score": 82.32,
-      "rank_score": 52.67,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): MSFT Stock Holds Up Amid US-Iran Geopolitical Jitters: Retail Calls It \u2018Safest Earnings Play\u2019 - Stocktwits",
-      "top_headlines": [
-        "ORCL vs. MSFT: Which Stock Should Value Investors Buy Now? - Yahoo Finance",
-        "MSFT Stock Holds Up Amid US-Iran Geopolitical Jitters: Retail Calls It \u2018Safest Earnings Play\u2019 - Stocktwits",
-        "Microsoft Stock (MSFT) Opinions on Bank of America Price Target Upgrade - Quiver Quantitative"
-      ],
-      "matched_headlines": [
-        {
-          "title": "MSFT Stock Holds Up Amid US-Iran Geopolitical Jitters: Retail Calls It \u2018Safest Earnings Play\u2019 - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Microsoft Stock (MSFT) Opinions on Bank of America Price Target Upgrade - Quiver Quantitative",
-          "keywords": [
-            "catalyst",
-            "upgrade"
-          ]
-        },
-        {
-          "title": "Microsoft Is Defying AI Gravity (NASDAQ:MSFT) - Seeking Alpha",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "MSFT Reiterated by Citizens -- Price Target Maintained at $550 - GuruFocus",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Analysts\u2019 Opinions Are Mixed on These Technology Stocks: Microsoft (MSFT) and Salesforce (CRM) - The Globe and Mail",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "LRCX",
       "name": "LRCX",
-      "price": 266.4200134277344,
-      "volume": 3591851.0,
-      "avg_volume": 8039025.1,
-      "percent_change": -2.585095271889771,
+      "price": 267.3550109863281,
+      "volume": 3775111.0,
+      "avg_volume": 8057351.1,
+      "percent_change": -2.243218935650746,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 79.05,
-      "rank_score": 51.93,
+      "liquidity_score": 79.06,
+      "rank_score": 51.65,
       "news_hits": 7,
       "catalyst": "Headline-driven setup (beat): Lam Research Corporation $LRCX Stock Position Lifted by Bank of America Corp DE - MarketBeat",
       "top_headlines": [
@@ -12737,15 +12730,15 @@
     {
       "symbol": "TSLA",
       "name": "TSLA",
-      "price": 361.260009765625,
-      "volume": 15622602.0,
-      "avg_volume": 39025240.2,
-      "percent_change": 0.6379386960287872,
+      "price": 360.010009765625,
+      "volume": 16870672.0,
+      "avg_volume": 39150047.2,
+      "percent_change": 0.2897201831309724,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 85.91,
-      "rank_score": 51.4,
+      "liquidity_score": 85.93,
+      "rank_score": 51.12,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (decline): Tesla (NASDAQ: TSLA) And SpaceX (SPCX) Stock Price Ticks Higher As Musk Declines To Rule Out Merger - foreignpolicyjournal.com",
       "top_headlines": [
@@ -12785,18 +12778,75 @@
       ]
     },
     {
-      "symbol": "AVGO",
-      "name": "AVGO",
-      "price": 339.9100036621094,
-      "volume": 10314746.0,
-      "avg_volume": 29573374.6,
-      "percent_change": -1.3953346314576631,
+      "symbol": "MSFT",
+      "name": "MSFT",
+      "price": 500.5,
+      "volume": 6918112.0,
+      "avg_volume": 17092001.2,
+      "percent_change": -0.9714892120322862,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
-      "liquidity_score": 84.71,
-      "rank_score": 47.82,
-      "news_hits": 5,
+      "liquidity_score": 82.33,
+      "rank_score": 48.63,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst): MSFT Stock Holds Up Amid US-Iran Geopolitical Jitters: Retail Calls It \u2018Safest Earnings Play\u2019 - Stocktwits",
+      "top_headlines": [
+        "ORCL vs. MSFT: Which Stock Should Value Investors Buy Now? - Yahoo Finance",
+        "MSFT Stock Holds Up Amid US-Iran Geopolitical Jitters: Retail Calls It \u2018Safest Earnings Play\u2019 - Stocktwits",
+        "Microsoft Stock (MSFT) Opinions on Bank of America Price Target Upgrade - Quiver Quantitative"
+      ],
+      "matched_headlines": [
+        {
+          "title": "MSFT Stock Holds Up Amid US-Iran Geopolitical Jitters: Retail Calls It \u2018Safest Earnings Play\u2019 - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Microsoft Stock (MSFT) Opinions on Bank of America Price Target Upgrade - Quiver Quantitative",
+          "keywords": [
+            "catalyst",
+            "upgrade"
+          ]
+        },
+        {
+          "title": "Microsoft Is Defying AI Gravity (NASDAQ:MSFT) - Seeking Alpha",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "MSFT Reiterated by Citizens -- Price Target Maintained at $550 - GuruFocus",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Why Is Microsoft (MSFT) Slowing Advanced AI Development? - simplywall.st",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "AVGO",
+      "name": "AVGO",
+      "price": 339.2701110839844,
+      "volume": 10930867.0,
+      "avg_volume": 29634986.7,
+      "percent_change": -1.5809613940067024,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 7,
+      "liquidity_score": 84.72,
+      "rank_score": 47.97,
+      "news_hits": 6,
       "catalyst": "Headline-driven setup (growth): Broadcom (NASDAQ:AVGO): Dividend Quality and Growth for Income Investors - ChartMill",
       "top_headlines": [
         "Broadcom (NASDAQ:AVGO): Dividend Quality and Growth for Income Investors - ChartMill",
@@ -12837,15 +12887,15 @@
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 344.8900146484375,
-      "volume": 3242608.0,
-      "avg_volume": 5504900.8,
-      "percent_change": -1.496584171964585,
+      "price": 344.5299987792969,
+      "volume": 3356348.0,
+      "avg_volume": 5516274.8,
+      "percent_change": -1.599407655847699,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
-      "liquidity_score": 77.41,
-      "rank_score": 46.81,
+      "liquidity_score": 77.42,
+      "rank_score": 46.89,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): JPMorgan Chase & Co. $JPM Stock Position Lifted by Palmer Knight Co - MarketBeat",
       "top_headlines": [
@@ -12929,21 +12979,21 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 84.4
+    "live_share_recent": 84.5
   },
   "learning": {
     "candidate_signals_logged": 8,
-    "fills_logged": 344,
+    "fills_logged": 345,
     "closed_outcomes": 157,
-    "consensus_events": 636,
+    "consensus_events": 637,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1004.94,
-    "change": 4.94,
-    "change_pct": 0.49,
+    "latest_equity": 1004.49,
+    "change": 4.49,
+    "change_pct": 0.45,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15550,9 +15600,9 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-15T16:40:23.451815+00:00",
-        "equity": 1004.94,
-        "cash": 394.79,
+        "t": "2026-09-15T16:47:48.726773+00:00",
+        "equity": 1004.49,
+        "cash": 196.94,
         "event": "mark"
       }
     ],
