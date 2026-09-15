@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-15T14:10:11.145994+00:00",
+  "generated_at": "2026-09-15T14:17:44.088013+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1004.3,
+    "portfolio_value": 1004.8,
     "starting_cash": 1000.0,
-    "total_return_pct": 0.43,
-    "total_pnl": 4.3,
+    "total_return_pct": 0.48,
+    "total_pnl": 4.8,
     "realized_pnl": -16.51,
-    "open_pnl": 20.76,
-    "capital_deployed": 609.51,
+    "open_pnl": 21.26,
+    "capital_deployed": 610.01,
     "cash": 394.79,
     "closed_trades": 35,
     "win_rate_pct": 25.71,
-    "vs_spy_pct": 1.84,
-    "spy_return_pct": -1.41,
+    "vs_spy_pct": 1.94,
+    "spy_return_pct": -1.46,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-15T14:10:13.796367+00:00"
+    "updated_at": "2026-09-15T14:17:46.787780+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -1.41,
-    "price": 758.510009765625,
+    "return_pct": -1.46,
+    "price": 758.1701049804688,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -31,17 +31,17 @@
     "blocked_count_today": 0,
     "fills_today": 0,
     "simulated_orders_today": 0,
-    "top_symbol_today": "COST"
+    "top_symbol_today": "MSFT"
   },
   "holdings": [
     {
       "symbol": "XOM",
       "qty": 1.24,
       "avg_cost": 160.78,
-      "last": 167.90499877929688,
-      "market_value": 208.2,
-      "open_pnl": 8.83,
-      "open_pnl_pct": 4.43,
+      "last": 167.6999969482422,
+      "market_value": 207.95,
+      "open_pnl": 8.58,
+      "open_pnl_pct": 4.3,
       "stop": 155.0,
       "target": 169.5,
       "thesis": "XOM appears on the ranked candidate list with a bullish sentiment and positive catalyst score driven by institutional share purchases. Neutral RSI leaves room for upside continuation on the headline flow. Cash allows a full ~$200 notional add without exceeding position limits, and the setup clears the required reward-to-risk threshold."
@@ -50,10 +50,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 108.83999633789062,
-      "market_value": 201.35,
-      "open_pnl": 5.38,
-      "open_pnl_pct": 2.75,
+      "last": 108.75499725341797,
+      "market_value": 201.2,
+      "open_pnl": 5.23,
+      "open_pnl_pct": 2.67,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -62,63 +62,68 @@
       "symbol": "META",
       "qty": 0.3,
       "avg_cost": 644.68,
-      "last": 666.52001953125,
-      "market_value": 199.96,
-      "open_pnl": 6.55,
-      "open_pnl_pct": 3.39,
+      "last": 669.5250244140625,
+      "market_value": 200.86,
+      "open_pnl": 7.45,
+      "open_pnl_pct": 3.85,
       "stop": 628.0,
       "target": 680.0,
       "thesis": "META ranks second with a clear bullish AI-agent catalyst and supportive Street tone while remaining highly liquid. Small size fits residual cash under the ~$200 new-notional cap without exceeding the five-name limit. Technical RSI is neutral, leaving room for continuation if the AI narrative holds; defined stop below recent support keeps reward:risk above 1.5."
     }
   ],
   "latest_candidate": {
-    "symbol": "COST",
-    "name": "COST",
-    "price": 910.27001953125,
-    "volume": 159794.0,
-    "avg_volume": 1809089.4,
-    "percent_change": -0.940239399482751,
+    "symbol": "MSFT",
+    "name": "MSFT",
+    "price": 499.5199890136719,
+    "volume": 2911658.0,
+    "avg_volume": 16691355.8,
+    "percent_change": -1.1653933649432184,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 12,
-    "liquidity_score": 72.57,
-    "rank_score": 65.64,
+    "catalyst_score": 10,
+    "liquidity_score": 82.22,
+    "rank_score": 60.77,
     "news_hits": 8,
-    "catalyst": "Headline-driven setup (beat): IFP Advisors Inc Lowers Stock Position in Costco Wholesale Corporation $COST - MarketBeat",
+    "catalyst": "Headline-driven setup (ai, catalyst): MSFT Stock Holds Up Amid US-Iran Geopolitical Jitters: Retail Calls It \u2018Safest Earnings Play\u2019 - Stocktwits",
     "top_headlines": [
-      "IFP Advisors Inc Lowers Stock Position in Costco Wholesale Corporation $COST - MarketBeat",
-      "Costco (COST) Gains As Market Dips: What You Should Know - Yahoo Finance",
-      "Costco (COST) exec\u2019s 5-year stock award tied to 2026 goals - Stock Titan"
+      "MSFT Stock Holds Up Amid US-Iran Geopolitical Jitters: Retail Calls It \u2018Safest Earnings Play\u2019 - Stocktwits",
+      "Microsoft Stock (MSFT) Opinions on Bank of America Price Target Upgrade - Quiver Quantitative",
+      "Why the Market Dipped But Microsoft (MSFT) Gained Today - Yahoo Finance"
     ],
     "matched_headlines": [
       {
-        "title": "IFP Advisors Inc Lowers Stock Position in Costco Wholesale Corporation $COST - MarketBeat",
-        "keywords": [
-          "beat"
-        ]
-      },
-      {
-        "title": "Costco (COST) Gains As Market Dips: What You Should Know - Yahoo Finance",
+        "title": "MSFT Stock Holds Up Amid US-Iran Geopolitical Jitters: Retail Calls It \u2018Safest Earnings Play\u2019 - Stocktwits",
         "keywords": [
           "ai",
           "catalyst"
         ]
       },
       {
-        "title": "Connective Capital Management LLC Raises Stock Position in Costco Wholesale Corporation $COST - MarketBeat",
+        "title": "Microsoft Stock (MSFT) Opinions on Bank of America Price Target Upgrade - Quiver Quantitative",
         "keywords": [
-          "ai",
-          "beat",
           "catalyst",
-          "raises"
+          "upgrade"
         ]
       },
       {
-        "title": "Kroger Q2 Earnings Beat on Cost Savings, Sales Outlook Cut - TradingView",
+        "title": "Why the Market Dipped But Microsoft (MSFT) Gained Today - Yahoo Finance",
         "keywords": [
-          "beat",
-          "catalyst",
-          "cut"
+          "ai",
+          "catalyst"
+        ]
+      },
+      {
+        "title": "MSFT Reiterated by Citizens -- Price Target Maintained at $550 - GuruFocus",
+        "keywords": [
+          "ai",
+          "catalyst"
+        ]
+      },
+      {
+        "title": "Why Is Microsoft (MSFT) Slowing Advanced AI Development? - simplywall.st",
+        "keywords": [
+          "ai",
+          "catalyst"
         ]
       }
     ]
@@ -127,41 +132,43 @@
     "model": "grok-4.5",
     "action": "HOLD",
     "symbol": "CASH",
-    "confidence": 68,
+    "confidence": 62,
     "cache_stats": null,
     "entry_price": 0.0,
     "stop_loss": 0.0,
     "take_profit": 0.0,
     "qty": 0.0,
-    "thesis": "No clean high-edge catalyst setup in the ranked list; headlines are mostly 13F/position-lift noise with mid catalyst scores and flat RSI. Existing book (XOM/WMT/META) remains constructive with positive open P/L and stops intact, and none have tagged stop or full target. Cash is preserved given max notional discipline and lack of materially better rotation candidate.",
+    "thesis": "No clean high-edge catalyst setup in the ranked list; headlines are mostly 13F/flow noise and soft sentiment rather than actionable catalysts. Existing book (XOM, WMT, META) is modestly green with stops intact and targets not breached, so forcing a sub-$200 clip into expensive names like MSFT/COST/TSLA does not improve risk-adjusted exposure. Stay in cash until a clearer liquid setup with defined R:R appears.",
     "reason_code": "hold",
     "reasoning": {
       "headline": "Hold $CASH",
-      "narrative": "No clean high-edge catalyst setup in the ranked list; headlines are mostly 13F/position-lift noise with mid catalyst scores and flat RSI. Existing book (XOM/WMT/META) remains constructive with positive open P/L and stops intact, and none have tagged stop or full target. Cash is preserved given max notional discipline and lack of materially better rotation candidate.",
+      "narrative": "No clean high-edge catalyst setup in the ranked list; headlines are mostly 13F/flow noise and soft sentiment rather than actionable catalysts. Existing book (XOM, WMT, META) is modestly green with stops intact and targets not breached, so forcing a sub-$200 clip into expensive names like MSFT/COST/TSLA does not improve risk-adjusted exposure. Stay in cash until a clearer liquid setup with defined R:R appears.",
       "bullets": [
-        "Weak candidate catalysts vs. held names still working",
-        "Room exists but edge threshold not met",
-        "Preserve cash; no forced rotation"
+        "Catalyst scores and headlines are weak/noisy vs true event edge",
+        "Book has 3 open winners with room; no need to force rotation",
+        "Max ~$200 notional poorly fits high-price leaders without tight thesis",
+        "Prefer HOLD/CASH over low-conviction add"
       ],
       "risk_map": {
         "stop": 0.0,
         "target": 0.0,
         "horizon_days": 5,
         "rr": 0.0,
-        "confidence_10": 7,
-        "confidence": 68
+        "confidence_10": 6,
+        "confidence": 62
       },
-      "thesis": "No clean high-edge catalyst setup in the ranked list; headlines are mostly 13F/position-lift noise with mid catalyst scores and flat RSI. Existing book (XOM/WMT/META) remains constructive with positive open P/L and stops intact, and none have tagged stop or full target. Cash is preserved given max notional discipline and lack of materially better rotation candidate."
+      "thesis": "No clean high-edge catalyst setup in the ranked list; headlines are mostly 13F/flow noise and soft sentiment rather than actionable catalysts. Existing book (XOM, WMT, META) is modestly green with stops intact and targets not breached, so forcing a sub-$200 clip into expensive names like MSFT/COST/TSLA does not improve risk-adjusted exposure. Stay in cash until a clearer liquid setup with defined R:R appears."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Weak candidate catalysts vs. held names still working",
-      "Room exists but edge threshold not met",
-      "Preserve cash; no forced rotation"
+      "Catalyst scores and headlines are weak/noisy vs true event edge",
+      "Book has 3 open winners with room; no need to force rotation",
+      "Max ~$200 notional poorly fits high-price leaders without tight thesis",
+      "Prefer HOLD/CASH over low-conviction add"
     ],
-    "timestamp": "2026-09-15T14:05:23.500469+00:00"
+    "timestamp": "2026-09-15T14:17:35.147469+00:00"
   },
   "stance": "Holding XOM, WMT, META. No new trade right now.",
   "thinking": {
@@ -173,7 +180,7 @@
       "It owns WMT, bought near $105.93. Simple plan: sell if it falls to about $102.50, or take profit near $112.00.",
       "It owns META, bought near $644.68. Simple plan: sell if it falls to about $628.00, or take profit near $680.00.",
       "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
-      "Top scanner name right now is COST, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
+      "Top scanner name right now is MSFT, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
       "If nothing looks clean, do nothing. Sitting in cash or holdings is allowed."
     ],
     "owned": [
@@ -183,9 +190,9 @@
         "avg_cost": 160.78,
         "stop": 155.0,
         "target": 169.5,
-        "last": 167.90499877929688,
-        "open_pnl": 8.83,
-        "open_pnl_pct": 4.43,
+        "last": 167.6999969482422,
+        "open_pnl": 8.58,
+        "open_pnl_pct": 4.3,
         "line": "Bought near $160.78 \u00b7 Sell safety line $155.00 \u00b7 Profit target $169.50",
         "plan": "stop 155.0 or target 169.5"
       },
@@ -195,9 +202,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 108.83999633789062,
-        "open_pnl": 5.38,
-        "open_pnl_pct": 2.75,
+        "last": 108.75499725341797,
+        "open_pnl": 5.23,
+        "open_pnl_pct": 2.67,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -207,14 +214,14 @@
         "avg_cost": 644.68,
         "stop": 628.0,
         "target": 680.0,
-        "last": 666.52001953125,
-        "open_pnl": 6.55,
-        "open_pnl_pct": 3.39,
+        "last": 669.5250244140625,
+        "open_pnl": 7.45,
+        "open_pnl_pct": 3.85,
         "line": "Bought near $644.68 \u00b7 Sell safety line $628.00 \u00b7 Profit target $680.00",
         "plan": "stop 628.0 or target 680.0"
       }
     ],
-    "last_checked": "2026-09-15T14:10:11.145994+00:00",
+    "last_checked": "2026-09-15T14:17:44.088013+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "HOLD",
@@ -229,14 +236,14 @@
         "model": "grok-4.3",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 65,
+        "confidence": 62,
         "tone": "hold"
       },
       {
         "prefix": "J",
         "model": "claude-haiku-4-5",
         "action": "BUY",
-        "symbol": "COST",
+        "symbol": "MSFT",
         "confidence": 72,
         "tone": "buy"
       },
@@ -245,7 +252,7 @@
         "model": "deepseek-v4-flash",
         "action": "BUY",
         "symbol": "MSFT",
-        "confidence": 72,
+        "confidence": 73,
         "tone": "buy"
       },
       {
@@ -253,7 +260,7 @@
         "model": "grok-build-0.1",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 60,
+        "confidence": 62,
         "tone": "hold"
       },
       {
@@ -261,7 +268,7 @@
         "model": "grok-4.5",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 68,
+        "confidence": 62,
         "tone": "hold"
       },
       {
@@ -283,6 +290,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 desks disagreed on focus",
+      "detail": "Desks: HOLD CASH (62%) vs BUY MSFT (72%) vs BUY COST (90%). No 2-of-3 senior agreement",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "MSFT",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "MSFT",
+          "confidence": 73,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "MSFT",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "BUY",
+          "symbol": "COST",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-15T14:17:35.147469+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -12086,69 +12170,17 @@
   ],
   "top_candidates": [
     {
-      "symbol": "COST",
-      "name": "COST",
-      "price": 910.27001953125,
-      "volume": 159794.0,
-      "avg_volume": 1809089.4,
-      "percent_change": -0.940239399482751,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 12,
-      "liquidity_score": 72.57,
-      "rank_score": 65.64,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): IFP Advisors Inc Lowers Stock Position in Costco Wholesale Corporation $COST - MarketBeat",
-      "top_headlines": [
-        "IFP Advisors Inc Lowers Stock Position in Costco Wholesale Corporation $COST - MarketBeat",
-        "Costco (COST) Gains As Market Dips: What You Should Know - Yahoo Finance",
-        "Costco (COST) exec\u2019s 5-year stock award tied to 2026 goals - Stock Titan"
-      ],
-      "matched_headlines": [
-        {
-          "title": "IFP Advisors Inc Lowers Stock Position in Costco Wholesale Corporation $COST - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Costco (COST) Gains As Market Dips: What You Should Know - Yahoo Finance",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Connective Capital Management LLC Raises Stock Position in Costco Wholesale Corporation $COST - MarketBeat",
-          "keywords": [
-            "ai",
-            "beat",
-            "catalyst",
-            "raises"
-          ]
-        },
-        {
-          "title": "Kroger Q2 Earnings Beat on Cost Savings, Sales Outlook Cut - TradingView",
-          "keywords": [
-            "beat",
-            "catalyst",
-            "cut"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "MSFT",
       "name": "MSFT",
-      "price": 501.0101013183594,
-      "volume": 2203549.0,
-      "avg_volume": 16620544.9,
-      "percent_change": -0.8705609924356669,
+      "price": 499.5199890136719,
+      "volume": 2911658.0,
+      "avg_volume": 16691355.8,
+      "percent_change": -1.1653933649432184,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 10,
-      "liquidity_score": 82.21,
-      "rank_score": 60.53,
+      "liquidity_score": 82.22,
+      "rank_score": 60.77,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): MSFT Stock Holds Up Amid US-Iran Geopolitical Jitters: Retail Calls It \u2018Safest Earnings Play\u2019 - Stocktwits",
       "top_headlines": [
@@ -12195,17 +12227,61 @@
       ]
     },
     {
+      "symbol": "COST",
+      "name": "COST",
+      "price": 909.1500244140625,
+      "volume": 221909.0,
+      "avg_volume": 1815300.9,
+      "percent_change": -1.0621224076032147,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 11,
+      "liquidity_score": 72.59,
+      "rank_score": 60.24,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (beat): IFP Advisors Inc Lowers Stock Position in Costco Wholesale Corporation $COST - MarketBeat",
+      "top_headlines": [
+        "IFP Advisors Inc Lowers Stock Position in Costco Wholesale Corporation $COST - MarketBeat",
+        "Costco (COST) Gains As Market Dips: What You Should Know - Yahoo Finance",
+        "Costco (COST) exec\u2019s 5-year stock award tied to 2026 goals - Stock Titan"
+      ],
+      "matched_headlines": [
+        {
+          "title": "IFP Advisors Inc Lowers Stock Position in Costco Wholesale Corporation $COST - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Costco (COST) Gains As Market Dips: What You Should Know - Yahoo Finance",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Connective Capital Management LLC Raises Stock Position in Costco Wholesale Corporation $COST - MarketBeat",
+          "keywords": [
+            "ai",
+            "beat",
+            "catalyst",
+            "raises"
+          ]
+        }
+      ]
+    },
+    {
       "symbol": "TSLA",
       "name": "TSLA",
-      "price": 359.2749938964844,
-      "volume": 5878987.0,
-      "avg_volume": 38050878.7,
-      "percent_change": 0.0849632768042178,
+      "price": 359.0299987792969,
+      "volume": 6942317.0,
+      "avg_volume": 38157211.7,
+      "percent_change": 0.016713808504812105,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 10,
-      "liquidity_score": 85.8,
-      "rank_score": 57.44,
+      "liquidity_score": 85.82,
+      "rank_score": 57.39,
       "news_hits": 7,
       "catalyst": "Headline-driven setup (beat): 2,759 Shares in Tesla, Inc. $TSLA Acquired by AlphaGrep UK Ltd - MarketBeat",
       "top_headlines": [
@@ -12241,15 +12317,15 @@
     {
       "symbol": "AMZN",
       "name": "AMZN",
-      "price": 252.00999450683594,
-      "volume": 3590142.0,
-      "avg_volume": 26590014.2,
-      "percent_change": -0.60345461063817,
+      "price": 250.0399932861328,
+      "volume": 5749702.0,
+      "avg_volume": 26805970.2,
+      "percent_change": -1.3804528250697203,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 84.25,
-      "rank_score": 53.62,
+      "liquidity_score": 84.28,
+      "rank_score": 54.25,
       "news_hits": 7,
       "catalyst": "Headline-driven setup (beat): Amazon.com (NASDAQ:AMZN) Stock Price Down 1.3% - Here's Why - MarketBeat",
       "top_headlines": [
@@ -12281,15 +12357,15 @@
     {
       "symbol": "LRCX",
       "name": "LRCX",
-      "price": 270.5199890136719,
-      "volume": 735797.0,
-      "avg_volume": 7753419.7,
-      "percent_change": -1.085963408809916,
+      "price": 270.1600036621094,
+      "volume": 1059366.0,
+      "avg_volume": 7785776.6,
+      "percent_change": -1.217589926933669,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 78.89,
-      "rank_score": 50.7,
+      "liquidity_score": 78.91,
+      "rank_score": 50.81,
       "news_hits": 7,
       "catalyst": "Headline-driven setup (beat): Lam Research Corporation $LRCX Stock Position Lifted by Bank of America Corp DE - MarketBeat",
       "top_headlines": [
@@ -12379,15 +12455,15 @@
     "candidate_signals_logged": 8,
     "fills_logged": 344,
     "closed_outcomes": 157,
-    "consensus_events": 626,
+    "consensus_events": 627,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1004.3,
-    "change": 4.3,
-    "change_pct": 0.43,
+    "latest_equity": 1004.8,
+    "change": 4.8,
+    "change_pct": 0.48,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -14958,8 +15034,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-15T14:10:13.796367+00:00",
-        "equity": 1004.3,
+        "t": "2026-09-15T14:17:46.787780+00:00",
+        "equity": 1004.8,
         "cash": 394.79,
         "event": "mark"
       }
