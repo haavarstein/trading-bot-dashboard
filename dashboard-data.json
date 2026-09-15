@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-15T16:30:20.449096+00:00",
+  "generated_at": "2026-09-15T16:35:16.597615+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1004.18,
+    "portfolio_value": 1004.76,
     "starting_cash": 1000.0,
-    "total_return_pct": 0.42,
-    "total_pnl": 4.18,
+    "total_return_pct": 0.48,
+    "total_pnl": 4.76,
     "realized_pnl": -16.51,
-    "open_pnl": 20.64,
-    "capital_deployed": 609.39,
+    "open_pnl": 21.23,
+    "capital_deployed": 609.97,
     "cash": 394.79,
     "closed_trades": 35,
     "win_rate_pct": 25.71,
-    "vs_spy_pct": 1.97,
-    "spy_return_pct": -1.55,
+    "vs_spy_pct": 2.01,
+    "spy_return_pct": -1.53,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-15T16:30:23.087064+00:00"
+    "updated_at": "2026-09-15T16:35:19.497306+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -1.55,
-    "price": 757.4743041992188,
+    "return_pct": -1.53,
+    "price": 757.60498046875,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,10 +38,10 @@
       "symbol": "XOM",
       "qty": 1.24,
       "avg_cost": 160.78,
-      "last": 168.80499267578125,
-      "market_value": 209.32,
-      "open_pnl": 9.95,
-      "open_pnl_pct": 4.99,
+      "last": 168.7100067138672,
+      "market_value": 209.2,
+      "open_pnl": 9.83,
+      "open_pnl_pct": 4.93,
       "stop": 155.0,
       "target": 169.5,
       "thesis": "XOM appears on the ranked candidate list with a bullish sentiment and positive catalyst score driven by institutional share purchases. Neutral RSI leaves room for upside continuation on the headline flow. Cash allows a full ~$200 notional add without exceeding position limits, and the setup clears the required reward-to-risk threshold."
@@ -50,10 +50,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 108.45999908447266,
-      "market_value": 200.65,
-      "open_pnl": 4.68,
-      "open_pnl_pct": 2.39,
+      "last": 108.54000091552734,
+      "market_value": 200.8,
+      "open_pnl": 4.83,
+      "open_pnl_pct": 2.46,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -62,10 +62,10 @@
       "symbol": "META",
       "qty": 0.3,
       "avg_cost": 644.68,
-      "last": 664.719970703125,
-      "market_value": 199.42,
-      "open_pnl": 6.01,
-      "open_pnl_pct": 3.11,
+      "last": 666.5700073242188,
+      "market_value": 199.97,
+      "open_pnl": 6.57,
+      "open_pnl_pct": 3.4,
       "stop": 628.0,
       "target": 680.0,
       "thesis": "META ranks second with a clear bullish AI-agent catalyst and supportive Street tone while remaining highly liquid. Small size fits residual cash under the ~$200 new-notional cap without exceeding the five-name limit. Technical RSI is neutral, leaving room for continuation if the AI narrative holds; defined stop below recent support keeps reward:risk above 1.5."
@@ -74,15 +74,15 @@
   "latest_candidate": {
     "symbol": "MSFT",
     "name": "MSFT",
-    "price": 499.8999938964844,
-    "volume": 6259251.0,
-    "avg_volume": 17026115.1,
-    "percent_change": -1.0902059171168887,
+    "price": 500.19000244140625,
+    "volume": 6639929.0,
+    "avg_volume": 17064182.9,
+    "percent_change": -1.0328250693258823,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 8,
-    "liquidity_score": 82.31,
-    "rank_score": 52.72,
+    "liquidity_score": 82.32,
+    "rank_score": 52.67,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (ai, catalyst): MSFT Stock Holds Up Amid US-Iran Geopolitical Jitters: Retail Calls It \u2018Safest Earnings Play\u2019 - Stocktwits",
     "top_headlines": [
@@ -130,51 +130,51 @@
   },
   "latest_decision": {
     "model": "grok-4.5",
-    "action": "SELL",
-    "symbol": "XOM",
-    "confidence": 82,
+    "action": "HOLD",
+    "symbol": "CASH",
+    "confidence": 64,
     "cache_stats": null,
-    "entry_price": 169.34,
-    "stop_loss": 166.5,
-    "take_profit": 175.0,
-    "qty": 1.24,
-    "thesis": "XOM has essentially tagged the 169.5 take-profit level (last 169.34) after a clean run from the 160.78 average, locking roughly +5% open P/L. With reward already realized and no fresh upside catalyst in the ranked list stronger than simply banking the winner, exiting restores cash and keeps the book tight. Remaining holds (WMT, META) still have room to targets and do not require rotation capital right now.",
-    "reason_code": "take_profit",
+    "entry_price": 0.0,
+    "stop_loss": 0.0,
+    "take_profit": 0.0,
+    "qty": 0.0,
+    "thesis": "Book already holds three liquid names with positive open P/L and XOM is only a fraction from its stated target, so forcing a fourth name is unnecessary. Top candidates (MSFT, LRCX, TSLA) carry only mid-50s rank scores and generic headline catalysts with RSI at neutral 50, offering no clear asymmetric edge versus current holdings. Cash of ~$395 is adequate for a later high-conviction add; until rank/catalyst quality improves or a stop/target is hit, staying flat on new risk is the cleaner desk decision.",
+    "reason_code": "hold",
     "reasoning": {
-      "headline": "Sold $XOM",
-      "narrative": "XOM has essentially tagged the 169.5 take-profit level (last 169.34) after a clean run from the 160.78 average, locking roughly +5% open P/L. With reward already realized and no fresh upside catalyst in the ranked list stronger than simply banking the winner, exiting restores cash and keeps the book tight. Remaining holds (WMT, META) still have room to targets and do not require rotation capital right now.",
+      "headline": "Hold $CASH",
+      "narrative": "Book already holds three liquid names with positive open P/L and XOM is only a fraction from its stated target, so forcing a fourth name is unnecessary. Top candidates (MSFT, LRCX, TSLA) carry only mid-50s rank scores and generic headline catalysts with RSI at neutral 50, offering no clear asymmetric edge versus current holdings. Cash of ~$395 is adequate for a later high-conviction add; until rank/catalyst quality improves or a stop/target is hit, staying flat on new risk is the cleaner desk decision.",
       "bullets": [
-        "Price at/through 169.5 target \u2192 disciplined exit",
-        "Frees ~$210 notional and reduces open names to 2",
-        "No higher-conviction liquid catalyst demanding immediate rotation",
-        "Keeps R:R discipline and book risk controlled"
+        "No candidate rank/catalyst clearly beats existing book risk/reward",
+        "XOM/META still working toward targets; no stop breached",
+        "Max notional and 5-name limits allow patience; avoid marginal entries",
+        "Social chatter mixed/weak and does not override scores"
       ],
       "risk_map": {
-        "stop": 166.5,
-        "target": 175.0,
+        "stop": 0.0,
+        "target": 0.0,
         "horizon_days": 5,
-        "rr": 1.99,
-        "confidence_10": 8,
-        "confidence": 82
+        "rr": 0.0,
+        "confidence_10": 6,
+        "confidence": 64
       },
-      "thesis": "XOM has essentially tagged the 169.5 take-profit level (last 169.34) after a clean run from the 160.78 average, locking roughly +5% open P/L. With reward already realized and no fresh upside catalyst in the ranked list stronger than simply banking the winner, exiting restores cash and keeps the book tight. Remaining holds (WMT, META) still have room to targets and do not require rotation capital right now."
+      "thesis": "Book already holds three liquid names with positive open P/L and XOM is only a fraction from its stated target, so forcing a fourth name is unnecessary. Top candidates (MSFT, LRCX, TSLA) carry only mid-50s rank scores and generic headline catalysts with RSI at neutral 50, offering no clear asymmetric edge versus current holdings. Cash of ~$395 is adequate for a later high-conviction add; until rank/catalyst quality improves or a stop/target is hit, staying flat on new risk is the cleaner desk decision."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Price at/through 169.5 target \u2192 disciplined exit",
-      "Frees ~$210 notional and reduces open names to 2",
-      "No higher-conviction liquid catalyst demanding immediate rotation",
-      "Keeps R:R discipline and book risk controlled"
+      "No candidate rank/catalyst clearly beats existing book risk/reward",
+      "XOM/META still working toward targets; no stop breached",
+      "Max notional and 5-name limits allow patience; avoid marginal entries",
+      "Social chatter mixed/weak and does not override scores"
     ],
-    "timestamp": "2026-09-15T16:18:05.200643+00:00"
+    "timestamp": "2026-09-15T16:35:07.885307+00:00"
   },
-  "stance": "Selling XOM. XOM has essentially tagged the 169.5 take-profit level (last 169.34) after a clean run from the 160.78 average, locking roughly +5% open P/L. With reward already realized and no fresh upside catalyst in the ranked list stronger than simply banking the winner, exiting restores cash and keeps the book tight. Remaining holds (WMT, META) still have room to targets and do not require rotation capital right now.",
+  "stance": "Holding XOM, WMT, META. No new trade right now.",
   "thinking": {
-    "badge": "Exiting XOM",
-    "headline": "Selling XOM.",
-    "plain_english": "Right now Hermes is exiting XOM. That can be stop, target, or gated rotation when a stronger setup needs risk budget.",
+    "badge": "Holding what it owns",
+    "headline": "Holding XOM, WMT, META. No new trade right now.",
+    "plain_english": "Right now Hermes is holding XOM, WMT, META and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
     "triggers": [
       "It owns XOM, bought near $160.78. Simple plan: sell if it falls to about $155.00, or take profit near $169.50.",
       "It owns WMT, bought near $105.93. Simple plan: sell if it falls to about $102.50, or take profit near $112.00.",
@@ -190,9 +190,9 @@
         "avg_cost": 160.78,
         "stop": 155.0,
         "target": 169.5,
-        "last": 168.80499267578125,
-        "open_pnl": 9.95,
-        "open_pnl_pct": 4.99,
+        "last": 168.7100067138672,
+        "open_pnl": 9.83,
+        "open_pnl_pct": 4.93,
         "line": "Bought near $160.78 \u00b7 Sell safety line $155.00 \u00b7 Profit target $169.50",
         "plan": "stop 155.0 or target 169.5"
       },
@@ -202,9 +202,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 108.45999908447266,
-        "open_pnl": 4.68,
-        "open_pnl_pct": 2.39,
+        "last": 108.54000091552734,
+        "open_pnl": 4.83,
+        "open_pnl_pct": 2.46,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -214,17 +214,17 @@
         "avg_cost": 644.68,
         "stop": 628.0,
         "target": 680.0,
-        "last": 664.719970703125,
-        "open_pnl": 6.01,
-        "open_pnl_pct": 3.11,
+        "last": 666.5700073242188,
+        "open_pnl": 6.57,
+        "open_pnl_pct": 3.4,
         "line": "Bought near $644.68 \u00b7 Sell safety line $628.00 \u00b7 Profit target $680.00",
         "plan": "stop 628.0 or target 680.0"
       }
     ],
-    "last_checked": "2026-09-15T16:30:20.449096+00:00",
+    "last_checked": "2026-09-15T16:35:16.597615+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "SELL",
+    "action": "HOLD",
     "symbols_held": [
       "XOM",
       "WMT",
@@ -236,7 +236,7 @@
         "model": "grok-4.3",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 65,
+        "confidence": 62,
         "tone": "hold"
       },
       {
@@ -258,18 +258,18 @@
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 65,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "MSFT",
+        "confidence": 72,
+        "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
-        "action": "SELL",
-        "symbol": "XOM",
-        "confidence": 82,
-        "tone": "sell"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 64,
+        "tone": "hold"
       },
       {
         "prefix": "S",
@@ -283,13 +283,90 @@
         "prefix": "S",
         "model": "claude-opus-5",
         "action": "BUY",
-        "symbol": "TSLA",
+        "symbol": "LRCX",
         "confidence": 90,
         "tone": "buy"
       }
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 desks disagreed on focus",
+      "detail": "Desks: HOLD CASH (64%) vs BUY MSFT (72%) vs BUY LRCX (90%). No 2-of-3 senior agreement",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "MSFT",
+          "confidence": 72,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "MSFT",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 64,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "MSFT",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "BUY",
+          "symbol": "LRCX",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-15T16:35:07.885307+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "XOM",
@@ -828,83 +905,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-09-15T14:47:43.241431+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CASH",
-      "status": "hold",
-      "headline": "HOLD \u2014 desks disagreed on focus",
-      "detail": "Desks: HOLD CASH (62%) vs BUY MSFT (78%) vs BUY MSFT (90%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "COST",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "MSFT",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "MSFT",
-          "confidence": 78,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "BUY",
-          "symbol": "MSFT",
-          "confidence": 90,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-15T14:33:25.058419+00:00"
     }
   ],
   "recent_trades": [
@@ -12634,15 +12634,15 @@
     {
       "symbol": "MSFT",
       "name": "MSFT",
-      "price": 499.8999938964844,
-      "volume": 6259251.0,
-      "avg_volume": 17026115.1,
-      "percent_change": -1.0902059171168887,
+      "price": 500.19000244140625,
+      "volume": 6639929.0,
+      "avg_volume": 17064182.9,
+      "percent_change": -1.0328250693258823,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 82.31,
-      "rank_score": 52.72,
+      "liquidity_score": 82.32,
+      "rank_score": 52.67,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): MSFT Stock Holds Up Amid US-Iran Geopolitical Jitters: Retail Calls It \u2018Safest Earnings Play\u2019 - Stocktwits",
       "top_headlines": [
@@ -12691,20 +12691,20 @@
     {
       "symbol": "LRCX",
       "name": "LRCX",
-      "price": 265.5899963378906,
-      "volume": 3343112.0,
-      "avg_volume": 8014151.2,
-      "percent_change": -2.888586119628821,
+      "price": 266.4200134277344,
+      "volume": 3591851.0,
+      "avg_volume": 8039025.1,
+      "percent_change": -2.585095271889771,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 79.04,
-      "rank_score": 52.17,
-      "news_hits": 6,
+      "liquidity_score": 79.05,
+      "rank_score": 51.93,
+      "news_hits": 7,
       "catalyst": "Headline-driven setup (beat): Lam Research Corporation $LRCX Stock Position Lifted by Bank of America Corp DE - MarketBeat",
       "top_headlines": [
+        "VTI is down 0.5% today, on LRCX stock price movement - Quiver Quantitative",
         "Lam Research Corporation $LRCX Stock Position Lifted by Bank of America Corp DE - MarketBeat",
-        "$LRCX stock is down 7% today. Here's what we see in our data. - Quiver Quantitative",
         "Lam Research Corp (LRCX) Shares Fall 8.3% -- GF Value Says Still Overvalued - GuruFocus"
       ],
       "matched_headlines": [
@@ -12737,15 +12737,15 @@
     {
       "symbol": "TSLA",
       "name": "TSLA",
-      "price": 360.8840026855469,
-      "volume": 14960282.0,
-      "avg_volume": 38959008.2,
-      "percent_change": 0.5331925950177038,
+      "price": 361.260009765625,
+      "volume": 15622602.0,
+      "avg_volume": 39025240.2,
+      "percent_change": 0.6379386960287872,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
       "liquidity_score": 85.91,
-      "rank_score": 51.31,
+      "rank_score": 51.4,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (decline): Tesla (NASDAQ: TSLA) And SpaceX (SPCX) Stock Price Ticks Higher As Musk Declines To Rule Out Merger - foreignpolicyjournal.com",
       "top_headlines": [
@@ -12787,16 +12787,16 @@
     {
       "symbol": "AVGO",
       "name": "AVGO",
-      "price": 339.5050048828125,
-      "volume": 9780491.0,
-      "avg_volume": 29519949.1,
-      "percent_change": -1.5128209327638582,
+      "price": 339.9100036621094,
+      "volume": 10314746.0,
+      "avg_volume": 29573374.6,
+      "percent_change": -1.3953346314576631,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
-      "liquidity_score": 84.7,
-      "rank_score": 47.92,
-      "news_hits": 6,
+      "liquidity_score": 84.71,
+      "rank_score": 47.82,
+      "news_hits": 5,
       "catalyst": "Headline-driven setup (growth): Broadcom (NASDAQ:AVGO): Dividend Quality and Growth for Income Investors - ChartMill",
       "top_headlines": [
         "Broadcom (NASDAQ:AVGO): Dividend Quality and Growth for Income Investors - ChartMill",
@@ -12837,21 +12837,21 @@
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 344.010009765625,
-      "volume": 3152562.0,
-      "avg_volume": 5495896.2,
-      "percent_change": -1.7479207813782895,
+      "price": 344.8900146484375,
+      "volume": 3242608.0,
+      "avg_volume": 5504900.8,
+      "percent_change": -1.496584171964585,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
-      "liquidity_score": 77.4,
-      "rank_score": 47.01,
+      "liquidity_score": 77.41,
+      "rank_score": 46.81,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): JPMorgan Chase & Co. $JPM Stock Position Lifted by Palmer Knight Co - MarketBeat",
       "top_headlines": [
         "JPM sees this UK bank stock most positively geared and here is why - Investing.com",
         "Should JPMorgan\u2019s Long-Dated Callable Debt Push Require Action From JPMorgan Chase (JPM) Investors? - Yahoo Finance",
-        "JPMorgan Chase & Co. $JPM Stock Position Lifted by Palmer Knight Co - MarketBeat"
+        "JPM Looks 10.4% Overvalued on GF Value\u2122 - GuruFocus"
       ],
       "matched_headlines": [
         {
@@ -12907,8 +12907,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 3,
-      "BUY": 1,
+      "HOLD": 2,
+      "BUY": 2,
       "SELL": 0,
       "live": 4,
       "fallback": 0
@@ -12929,21 +12929,21 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 84.3
+    "live_share_recent": 84.4
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 344,
     "closed_outcomes": 157,
-    "consensus_events": 635,
+    "consensus_events": 636,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1004.18,
-    "change": 4.18,
-    "change_pct": 0.42,
+    "latest_equity": 1004.76,
+    "change": 4.76,
+    "change_pct": 0.48,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15546,6 +15546,12 @@
       {
         "t": "2026-09-15T16:30:23.087064+00:00",
         "equity": 1004.18,
+        "cash": 394.79,
+        "event": "mark"
+      },
+      {
+        "t": "2026-09-15T16:35:19.497306+00:00",
+        "equity": 1004.76,
         "cash": 394.79,
         "event": "mark"
       }
