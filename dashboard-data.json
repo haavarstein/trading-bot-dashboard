@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-15T18:30:28.585081+00:00",
+  "generated_at": "2026-09-15T18:33:19.324220+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1008.01,
+    "portfolio_value": 1007.6,
     "starting_cash": 1000.0,
-    "total_return_pct": 0.8,
-    "total_pnl": 8.01,
+    "total_return_pct": 0.76,
+    "total_pnl": 7.6,
     "realized_pnl": -5.68,
-    "open_pnl": 13.67,
-    "capital_deployed": 600.88,
+    "open_pnl": 13.25,
+    "capital_deployed": 600.47,
     "cash": 407.13,
     "closed_trades": 36,
     "win_rate_pct": 27.78,
     "vs_spy_pct": 2.35,
-    "spy_return_pct": -1.55,
+    "spy_return_pct": -1.59,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-15T18:30:31.319956+00:00"
+    "updated_at": "2026-09-15T18:33:22.111321+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -1.55,
-    "price": 757.4849853515625,
+    "return_pct": -1.59,
+    "price": 757.1699829101562,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,10 +38,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 108.73500061035156,
-      "market_value": 201.16,
-      "open_pnl": 5.19,
-      "open_pnl_pct": 2.65,
+      "last": 108.76000213623047,
+      "market_value": 201.21,
+      "open_pnl": 5.24,
+      "open_pnl_pct": 2.67,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -50,10 +50,10 @@
       "symbol": "META",
       "qty": 0.3,
       "avg_cost": 644.68,
-      "last": 670.1749877929688,
-      "market_value": 201.05,
-      "open_pnl": 7.65,
-      "open_pnl_pct": 3.95,
+      "last": 669.3499755859375,
+      "market_value": 200.8,
+      "open_pnl": 7.4,
+      "open_pnl_pct": 3.83,
       "stop": 628.0,
       "target": 680.0,
       "thesis": "META ranks second with a clear bullish AI-agent catalyst and supportive Street tone while remaining highly liquid. Small size fits residual cash under the ~$200 new-notional cap without exceeding the five-name limit. Technical RSI is neutral, leaving room for continuation if the AI narrative holds; defined stop below recent support keeps reward:risk above 1.5."
@@ -62,10 +62,10 @@
       "symbol": "LRCX",
       "qty": 0.74,
       "avg_cost": 267.36,
-      "last": 268.4750061035156,
-      "market_value": 198.67,
-      "open_pnl": 0.83,
-      "open_pnl_pct": 0.42,
+      "last": 268.18499755859375,
+      "market_value": 198.46,
+      "open_pnl": 0.61,
+      "open_pnl_pct": 0.31,
       "stop": 255.0,
       "target": 286.0,
       "thesis": "LRCX ranks top of the candidate list on a fresh institutional-lift/beat headline with bullish sentiment and neutral RSI, offering a liquid semi-equipment catalyst setup. Book has room under the 5-name cap and ~$200 notional can be deployed without forcing a rotation. Risk defined below recent support with target sized for at least 1.5:1 reward-to-risk while existing XOM/WMT/META holds remain constructive."
@@ -74,15 +74,15 @@
   "latest_candidate": {
     "symbol": "COST",
     "name": "COST",
-    "price": 909.4500122070312,
-    "volume": 853871.0,
-    "avg_volume": 1878497.1,
-    "percent_change": -1.0294763593791234,
+    "price": 908.2550048828125,
+    "volume": 887675.0,
+    "avg_volume": 1881877.5,
+    "percent_change": -1.1595225400870557,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 11,
-    "liquidity_score": 72.74,
-    "rank_score": 61.73,
+    "liquidity_score": 72.75,
+    "rank_score": 61.84,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (ai, catalyst): Meta stock rises on cost-saving AI chip deployment plans - Investing.com",
     "top_headlines": [
@@ -123,49 +123,51 @@
   },
   "latest_decision": {
     "model": "grok-4.5",
-    "action": "HOLD",
-    "symbol": "CASH",
-    "confidence": 62,
+    "action": "BUY",
+    "symbol": "TSLA",
+    "confidence": 72,
     "cache_stats": null,
-    "entry_price": 0.0,
-    "stop_loss": 0.0,
-    "take_profit": 0.0,
-    "qty": 0.0,
-    "thesis": "No clean high-edge new entry presents itself within the $200 notional cap and R:R constraints. Top-ranked COST is ill-suited for sizing at ~$909 and its catalyst text appears mismatched; remaining names show only moderate rank/catalyst scores with generic headline drivers. Existing book (WMT/META working, LRCX flat) has room under the 5-name limit but does not require forced rotation into weaker setups.",
-    "reason_code": "hold",
+    "entry_price": 358.01,
+    "stop_loss": 340.0,
+    "take_profit": 388.0,
+    "qty": 0.55,
+    "thesis": "TSLA is the strongest non-held liquid catalyst candidate with bullish headline flow around Musk declining to rule out a SpaceX-related combination. Book has room (3 open names) and cash supports a sub-$200 notional add with clearly defined risk. Stop and target deliver reward:risk above 1.5 while keeping size disciplined.",
+    "reason_code": "new_entry",
     "reasoning": {
-      "headline": "Hold $CASH",
-      "narrative": "No clean high-edge new entry presents itself within the $200 notional cap and R:R constraints. Top-ranked COST is ill-suited for sizing at ~$909 and its catalyst text appears mismatched; remaining names show only moderate rank/catalyst scores with generic headline drivers. Existing book (WMT/META working, LRCX flat) has room under the 5-name limit but does not require forced rotation into weaker setups.",
+      "headline": "Bought $TSLA",
+      "narrative": "TSLA is the strongest non-held liquid catalyst candidate with bullish headline flow around Musk declining to rule out a SpaceX-related combination. Book has room (3 open names) and cash supports a sub-$200 notional add with clearly defined risk. Stop and target deliver reward:risk above 1.5 while keeping size disciplined.",
       "bullets": [
-        "Ranks/catalysts mid-tier; no standout liquid setup",
-        "COST too expensive for meaningful $200 clip",
-        "Book healthy; preserve cash and let winners run"
+        "Rank 56.6 / catalyst 9, second among candidates and not already held",
+        "Headline merger speculation offers near-term catalyst vs flat RSI tape",
+        "Notional ~$197 stays under $200 cap; R:R ~1.67",
+        "Portfolio capacity available without forced rotation"
       ],
       "risk_map": {
-        "stop": 0.0,
-        "target": 0.0,
+        "stop": 340.0,
+        "target": 388.0,
         "horizon_days": 5,
-        "rr": 0.0,
-        "confidence_10": 6,
-        "confidence": 62
+        "rr": 1.67,
+        "confidence_10": 7,
+        "confidence": 72
       },
-      "thesis": "No clean high-edge new entry presents itself within the $200 notional cap and R:R constraints. Top-ranked COST is ill-suited for sizing at ~$909 and its catalyst text appears mismatched; remaining names show only moderate rank/catalyst scores with generic headline drivers. Existing book (WMT/META working, LRCX flat) has room under the 5-name limit but does not require forced rotation into weaker setups."
+      "thesis": "TSLA is the strongest non-held liquid catalyst candidate with bullish headline flow around Musk declining to rule out a SpaceX-related combination. Book has room (3 open names) and cash supports a sub-$200 notional add with clearly defined risk. Stop and target deliver reward:risk above 1.5 while keeping size disciplined."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Ranks/catalysts mid-tier; no standout liquid setup",
-      "COST too expensive for meaningful $200 clip",
-      "Book healthy; preserve cash and let winners run"
+      "Rank 56.6 / catalyst 9, second among candidates and not already held",
+      "Headline merger speculation offers near-term catalyst vs flat RSI tape",
+      "Notional ~$197 stays under $200 cap; R:R ~1.67",
+      "Portfolio capacity available without forced rotation"
     ],
-    "timestamp": "2026-09-15T18:17:48.647600+00:00"
+    "timestamp": "2026-09-15T18:33:10.134733+00:00"
   },
-  "stance": "Holding WMT, META, LRCX. No new trade right now.",
+  "stance": "Buying pressure on TSLA. TSLA is the strongest non-held liquid catalyst candidate with bullish headline flow around Musk declining to rule out a SpaceX-related combination. Book has room (3 open names) and cash supports a sub-$200 notional add with clearly defined risk. Stop and target deliver reward:risk above 1.5 while keeping size disciplined.",
   "thinking": {
-    "badge": "Holding what it owns",
-    "headline": "Holding WMT, META, LRCX. No new trade right now.",
-    "plain_english": "Right now Hermes is holding WMT, META, LRCX and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
+    "badge": "Looking to buy TSLA",
+    "headline": "Buying pressure on TSLA.",
+    "plain_english": "Right now Hermes wants exposure to TSLA. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
     "triggers": [
       "It owns WMT, bought near $105.93. Simple plan: sell if it falls to about $102.50, or take profit near $112.00.",
       "It owns META, bought near $644.68. Simple plan: sell if it falls to about $628.00, or take profit near $680.00.",
@@ -181,9 +183,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 108.73500061035156,
-        "open_pnl": 5.19,
-        "open_pnl_pct": 2.65,
+        "last": 108.76000213623047,
+        "open_pnl": 5.24,
+        "open_pnl_pct": 2.67,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -193,9 +195,9 @@
         "avg_cost": 644.68,
         "stop": 628.0,
         "target": 680.0,
-        "last": 670.1749877929688,
-        "open_pnl": 7.65,
-        "open_pnl_pct": 3.95,
+        "last": 669.3499755859375,
+        "open_pnl": 7.4,
+        "open_pnl_pct": 3.83,
         "line": "Bought near $644.68 \u00b7 Sell safety line $628.00 \u00b7 Profit target $680.00",
         "plan": "stop 628.0 or target 680.0"
       },
@@ -205,17 +207,17 @@
         "avg_cost": 267.36,
         "stop": 255.0,
         "target": 286.0,
-        "last": 268.4750061035156,
-        "open_pnl": 0.83,
-        "open_pnl_pct": 0.42,
+        "last": 268.18499755859375,
+        "open_pnl": 0.61,
+        "open_pnl_pct": 0.31,
         "line": "Bought near $267.36 \u00b7 Sell safety line $255.00 \u00b7 Profit target $286.00",
         "plan": "stop 255.0 or target 286.0"
       }
     ],
-    "last_checked": "2026-09-15T18:30:28.585081+00:00",
+    "last_checked": "2026-09-15T18:33:19.324220+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "HOLD",
+    "action": "BUY",
     "symbols_held": [
       "WMT",
       "META",
@@ -225,62 +227,139 @@
       {
         "prefix": "J",
         "model": "grok-4.3",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 60,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "COST",
+        "confidence": 72,
+        "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "claude-haiku-4-5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 62,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "COST",
+        "confidence": 72,
+        "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "deepseek-v4-flash",
         "action": "BUY",
-        "symbol": "COST",
+        "symbol": "TSLA",
         "confidence": 72,
         "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "BUY",
-        "symbol": "COST",
-        "confidence": 72,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "grok-4.5",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 62,
+        "confidence": 60,
         "tone": "hold"
       },
       {
         "prefix": "S",
-        "model": "claude-sonnet-5",
+        "model": "grok-4.5",
         "action": "BUY",
-        "symbol": "COST",
+        "symbol": "TSLA",
         "confidence": 72,
         "tone": "buy"
+      },
+      {
+        "prefix": "S",
+        "model": "claude-sonnet-5",
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 65,
+        "tone": "hold"
       },
       {
         "prefix": "S",
         "model": "claude-opus-5",
         "action": "BUY",
-        "symbol": "COST",
+        "symbol": "TSLA",
         "confidence": 90,
         "tone": "buy"
       }
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "TSLA",
+      "status": "no_consensus",
+      "headline": "BUY TSLA \u2014 no consensus",
+      "detail": "Desks: BUY TSLA (72%) vs HOLD CASH (65%) vs BUY TSLA (90%). No 2-of-3 senior agreement",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "COST",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "COST",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "TSLA",
+          "confidence": 72,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "TSLA",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "BUY",
+          "symbol": "TSLA",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-15T18:33:10.134733+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -790,83 +869,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-09-15T16:47:31.979695+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CASH",
-      "status": "hold",
-      "headline": "HOLD \u2014 desks disagreed on focus",
-      "detail": "Desks: HOLD CASH (64%) vs BUY MSFT (72%) vs BUY LRCX (90%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "MSFT",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "MSFT",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 64,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "MSFT",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "BUY",
-          "symbol": "LRCX",
-          "confidence": 90,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-15T16:35:07.885307+00:00"
     }
   ],
   "recent_trades": [
@@ -12664,15 +12666,15 @@
     {
       "symbol": "COST",
       "name": "COST",
-      "price": 909.4500122070312,
-      "volume": 853871.0,
-      "avg_volume": 1878497.1,
-      "percent_change": -1.0294763593791234,
+      "price": 908.2550048828125,
+      "volume": 887675.0,
+      "avg_volume": 1881877.5,
+      "percent_change": -1.1595225400870557,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
-      "liquidity_score": 72.74,
-      "rank_score": 61.73,
+      "liquidity_score": 72.75,
+      "rank_score": 61.84,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Meta stock rises on cost-saving AI chip deployment plans - Investing.com",
       "top_headlines": [
@@ -12714,15 +12716,15 @@
     {
       "symbol": "TSLA",
       "name": "TSLA",
-      "price": 357.3800048828125,
-      "volume": 22329504.0,
-      "avg_volume": 39695930.4,
-      "percent_change": -0.4429329282345959,
+      "price": 358.010009765625,
+      "volume": 22799707.0,
+      "avg_volume": 39742950.7,
+      "percent_change": -0.2674294375055313,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
       "liquidity_score": 85.99,
-      "rank_score": 56.75,
+      "rank_score": 56.61,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (decline): Tesla (NASDAQ: TSLA) And SpaceX (SPCX) Stock Price Ticks Higher As Musk Declines To Rule Out Merger - foreignpolicyjournal.com",
       "top_headlines": [
@@ -12771,21 +12773,21 @@
     {
       "symbol": "META",
       "name": "META",
-      "price": 669.7849731445312,
-      "volume": 11752150.0,
-      "avg_volume": 19237265.0,
-      "percent_change": 0.628755665880191,
+      "price": 670.1900024414062,
+      "volume": 12233708.0,
+      "avg_volume": 19285420.8,
+      "percent_change": 0.689607425455219,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 82.84,
-      "rank_score": 56.43,
+      "liquidity_score": 82.85,
+      "rank_score": 56.48,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Meta stock rises on cost-saving AI chip deployment plans - Investing.com",
       "top_headlines": [
         "Is Meta Stock Still The Self-Funding Ad Business You Bought? - Trefis",
         "Meta stock rises on cost-saving AI chip deployment plans - Investing.com",
-        "Why Google and Meta Stocks Are the Big Winners From the Latest AI Concerns - Barron's"
+        "AI Selloff Is \u2018Panic,\u2019 Meta May Be The Best Stock To Buy, Joseph Carlson Says - Yahoo Finance"
       ],
       "matched_headlines": [
         {
@@ -12796,7 +12798,14 @@
           ]
         },
         {
-          "title": "Why Google and Meta Stocks Are the Big Winners From the Latest AI Concerns - Barron's",
+          "title": "AI Selloff Is \u2018Panic,\u2019 Meta May Be The Best Stock To Buy, Joseph Carlson Says - Yahoo Finance",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Why Google and Meta Stocks Are the Big Winners From the Latest AI Concerns - barrons.com",
           "keywords": [
             "ai",
             "catalyst"
@@ -12817,9 +12826,59 @@
             "catalyst",
             "launch"
           ]
+        }
+      ]
+    },
+    {
+      "symbol": "MSFT",
+      "name": "MSFT",
+      "price": 498.6300048828125,
+      "volume": 8665295.0,
+      "avg_volume": 17266719.5,
+      "percent_change": -1.3414848796363807,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 8,
+      "liquidity_score": 82.37,
+      "rank_score": 52.93,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst): MSFT Stock Holds Up Amid US-Iran Geopolitical Jitters: Retail Calls It \u2018Safest Earnings Play\u2019 - Stocktwits",
+      "top_headlines": [
+        "ORCL vs. MSFT: Which Stock Should Value Investors Buy Now? - Yahoo Finance",
+        "MSFT Stock Holds Up Amid US-Iran Geopolitical Jitters: Retail Calls It \u2018Safest Earnings Play\u2019 - Stocktwits",
+        "Microsoft Stock (MSFT) Opinions on Bank of America Price Target Upgrade - Quiver Quantitative"
+      ],
+      "matched_headlines": [
+        {
+          "title": "MSFT Stock Holds Up Amid US-Iran Geopolitical Jitters: Retail Calls It \u2018Safest Earnings Play\u2019 - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
         },
         {
-          "title": "A Meta AI researcher joins Claritev\u2019s board - Stock Titan",
+          "title": "Microsoft Stock (MSFT) Opinions on Bank of America Price Target Upgrade - Quiver Quantitative",
+          "keywords": [
+            "catalyst",
+            "upgrade"
+          ]
+        },
+        {
+          "title": "Microsoft Is Defying AI Gravity (NASDAQ:MSFT) - Seeking Alpha",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "MSFT Reiterated by Citizens -- Price Target Maintained at $550 - GuruFocus",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Why Is Microsoft (MSFT) Slowing Advanced AI Development? - simplywall.st",
           "keywords": [
             "ai",
             "catalyst"
@@ -12830,15 +12889,15 @@
     {
       "symbol": "LRCX",
       "name": "LRCX",
-      "price": 268.05499267578125,
-      "volume": 4778436.0,
-      "avg_volume": 8157683.6,
-      "percent_change": -1.9872747642193687,
+      "price": 268.5400085449219,
+      "volume": 4939385.0,
+      "avg_volume": 8173778.5,
+      "percent_change": -1.8099315756350345,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
       "liquidity_score": 79.12,
-      "rank_score": 51.46,
+      "rank_score": 51.32,
       "news_hits": 7,
       "catalyst": "Headline-driven setup (beat): Lam Research Corporation $LRCX Stock Position Lifted by Bank of America Corp DE - MarketBeat",
       "top_headlines": [
@@ -12872,64 +12931,6 @@
           ]
         }
       ]
-    },
-    {
-      "symbol": "NVDA",
-      "name": "NVDA",
-      "price": 211.6649932861328,
-      "volume": 53693290.0,
-      "avg_volume": 112327969.0,
-      "percent_change": 0.3341801999569635,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 7,
-      "liquidity_score": 90.5,
-      "rank_score": 49.34,
-      "news_hits": 7,
-      "catalyst": "Headline-driven setup (ai, catalyst, partnership): CSCO, NVDA Stock Inch Higher \u2014 Cisco And Nvidia Expand Partnership To Bring Agentic AI To Splunk Customers - TradingView",
-      "top_headlines": [
-        "Jim Cramer Tries To Predict NVIDIA Corporation (NASDAQ:NVDA) Share Price Movement Following Anthropic CEO\u2019s Remarks - Yahoo Finance",
-        "CSCO, NVDA Stock Inch Higher \u2014 Cisco And Nvidia Expand Partnership To Bring Agentic AI To Splunk Customers - TradingView",
-        "Why Is NVDA Stock Jumping Over 2% In Overnight Trading Today? - Stocktwits"
-      ],
-      "matched_headlines": [
-        {
-          "title": "CSCO, NVDA Stock Inch Higher \u2014 Cisco And Nvidia Expand Partnership To Bring Agentic AI To Splunk Customers - TradingView",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "partnership"
-          ]
-        },
-        {
-          "title": "Nvidia: Why The 'AI Slowdown' Could Extend The Boom (NASDAQ:NVDA) - Seeking Alpha",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "NVIDIA Stock Forecast: Can NVDA Reclaim $235 and Push Toward $300? - FXLeaders",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "AI Stock Sell-Off: Nvidia (NVDA) and AMD Under Pressure Amid Mar - GuruFocus",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Analysts Offer Insights on Technology Companies: Intuit (INTU) and Nvidia (NVDA) - The Globe and Mail",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        }
-      ]
     }
   ],
   "limits": {
@@ -12958,8 +12959,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 2,
-      "BUY": 2,
+      "HOLD": 1,
+      "BUY": 3,
       "SELL": 0,
       "live": 4,
       "fallback": 0
@@ -12980,21 +12981,21 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 83.5
+    "live_share_recent": 83.6
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 346,
     "closed_outcomes": 158,
-    "consensus_events": 643,
+    "consensus_events": 644,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1008.01,
-    "change": 8.01,
-    "change_pct": 0.8,
+    "latest_equity": 1007.6,
+    "change": 7.6,
+    "change_pct": 0.76,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15631,8 +15632,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-15T18:30:31.319956+00:00",
-        "equity": 1008.01,
+        "t": "2026-09-15T18:33:22.111321+00:00",
+        "equity": 1007.6,
         "cash": 407.13,
         "event": "mark"
       }
