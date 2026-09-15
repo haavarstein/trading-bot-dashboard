@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-15T15:40:17.358068+00:00",
+  "generated_at": "2026-09-15T15:47:29.417098+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1005.39,
+    "portfolio_value": 1005.25,
     "starting_cash": 1000.0,
-    "total_return_pct": 0.54,
-    "total_pnl": 5.39,
+    "total_return_pct": 0.52,
+    "total_pnl": 5.25,
     "realized_pnl": -16.51,
-    "open_pnl": 21.86,
-    "capital_deployed": 610.6,
+    "open_pnl": 21.72,
+    "capital_deployed": 610.46,
     "cash": 394.79,
     "closed_trades": 35,
     "win_rate_pct": 25.71,
-    "vs_spy_pct": 2.1,
+    "vs_spy_pct": 2.08,
     "spy_return_pct": -1.56,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-15T15:40:20.383963+00:00"
+    "updated_at": "2026-09-15T15:47:32.093786+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
     "return_pct": -1.56,
-    "price": 757.3800048828125,
+    "price": 757.3900146484375,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -31,17 +31,17 @@
     "blocked_count_today": 0,
     "fills_today": 0,
     "simulated_orders_today": 0,
-    "top_symbol_today": "TSLA"
+    "top_symbol_today": "MSFT"
   },
   "holdings": [
     {
       "symbol": "XOM",
       "qty": 1.24,
       "avg_cost": 160.78,
-      "last": 169.10150146484375,
-      "market_value": 209.69,
-      "open_pnl": 10.32,
-      "open_pnl_pct": 5.18,
+      "last": 169.26499938964844,
+      "market_value": 209.89,
+      "open_pnl": 10.52,
+      "open_pnl_pct": 5.28,
       "stop": 155.0,
       "target": 169.5,
       "thesis": "XOM appears on the ranked candidate list with a bullish sentiment and positive catalyst score driven by institutional share purchases. Neutral RSI leaves room for upside continuation on the headline flow. Cash allows a full ~$200 notional add without exceeding position limits, and the setup clears the required reward-to-risk threshold."
@@ -50,10 +50,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 108.72000122070312,
-      "market_value": 201.13,
-      "open_pnl": 5.16,
-      "open_pnl_pct": 2.63,
+      "last": 108.51499938964844,
+      "market_value": 200.75,
+      "open_pnl": 4.78,
+      "open_pnl_pct": 2.44,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -62,110 +62,125 @@
       "symbol": "META",
       "qty": 0.3,
       "avg_cost": 644.68,
-      "last": 665.9450073242188,
-      "market_value": 199.78,
-      "open_pnl": 6.38,
-      "open_pnl_pct": 3.3,
+      "last": 666.0800170898438,
+      "market_value": 199.82,
+      "open_pnl": 6.42,
+      "open_pnl_pct": 3.32,
       "stop": 628.0,
       "target": 680.0,
       "thesis": "META ranks second with a clear bullish AI-agent catalyst and supportive Street tone while remaining highly liquid. Small size fits residual cash under the ~$200 new-notional cap without exceeding the five-name limit. Technical RSI is neutral, leaving room for continuation if the AI narrative holds; defined stop below recent support keeps reward:risk above 1.5."
     }
   ],
   "latest_candidate": {
-    "symbol": "TSLA",
-    "name": "TSLA",
-    "price": 360.7749938964844,
-    "volume": 12312411.0,
-    "avg_volume": 38694221.1,
-    "percent_change": 0.5028254922815955,
+    "symbol": "MSFT",
+    "name": "MSFT",
+    "price": 499.68499755859375,
+    "volume": 5554844.0,
+    "avg_volume": 16955674.4,
+    "percent_change": -1.1327449124539024,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 10,
-    "liquidity_score": 85.88,
-    "rank_score": 57.78,
+    "catalyst_score": 9,
+    "liquidity_score": 82.29,
+    "rank_score": 56.75,
     "news_hits": 8,
-    "catalyst": "Headline-driven setup (beat): 2,759 Shares in Tesla, Inc. $TSLA Acquired by AlphaGrep UK Ltd - MarketBeat",
+    "catalyst": "Headline-driven setup (ai, catalyst): MSFT Stock Holds Up Amid US-Iran Geopolitical Jitters: Retail Calls It \u2018Safest Earnings Play\u2019 - Stocktwits",
     "top_headlines": [
-      "TSLA Stock Trims Losses Overnight: Tesla Cybercab Starts Austin Tests Without \u2018Steering Wheel Or Pedals\u2019 - Stocktwits",
-      "2,759 Shares in Tesla, Inc. $TSLA Acquired by AlphaGrep UK Ltd - MarketBeat",
-      "Tesla, Inc. (TSLA) is Attracting Investor Attention: Here is What You Should Know - Yahoo Finance"
+      "MSFT Stock Holds Up Amid US-Iran Geopolitical Jitters: Retail Calls It \u2018Safest Earnings Play\u2019 - Stocktwits",
+      "Microsoft Stock (MSFT) Opinions on Bank of America Price Target Upgrade - Quiver Quantitative",
+      "Why the Market Dipped But Microsoft (MSFT) Gained Today - Yahoo Finance"
     ],
     "matched_headlines": [
       {
-        "title": "2,759 Shares in Tesla, Inc. $TSLA Acquired by AlphaGrep UK Ltd - MarketBeat",
-        "keywords": [
-          "beat"
-        ]
-      },
-      {
-        "title": "Tesla: The Cybercab Failure Is Worse Than You Think (NASDAQ:TSLA) - Seeking Alpha",
+        "title": "MSFT Stock Holds Up Amid US-Iran Geopolitical Jitters: Retail Calls It \u2018Safest Earnings Play\u2019 - Stocktwits",
         "keywords": [
           "ai",
           "catalyst"
         ]
       },
       {
-        "title": "TSLA Stock Down, SPCX Stock Up Premarket As Merger Buzz Grows \u2014 Analyst Raises Deal Odds To 90% - Stocktwits",
+        "title": "Microsoft Stock (MSFT) Opinions on Bank of America Price Target Upgrade - Quiver Quantitative",
+        "keywords": [
+          "catalyst",
+          "upgrade"
+        ]
+      },
+      {
+        "title": "Why the Market Dipped But Microsoft (MSFT) Gained Today - Yahoo Finance",
         "keywords": [
           "ai",
-          "catalyst",
-          "deal",
-          "raises"
+          "catalyst"
+        ]
+      },
+      {
+        "title": "Microsoft Is Defying AI Gravity (NASDAQ:MSFT) - Seeking Alpha",
+        "keywords": [
+          "ai",
+          "catalyst"
+        ]
+      },
+      {
+        "title": "MSFT Reiterated by Citizens -- Price Target Maintained at $550 - GuruFocus",
+        "keywords": [
+          "ai",
+          "catalyst"
         ]
       }
     ]
   },
   "latest_decision": {
     "model": "grok-4.5",
-    "action": "HOLD",
-    "symbol": "CASH",
-    "confidence": 62,
+    "action": "BUY",
+    "symbol": "MSFT",
+    "confidence": 78,
     "cache_stats": null,
-    "entry_price": 0.0,
-    "stop_loss": 0.0,
-    "take_profit": 0.0,
-    "qty": 0.0,
-    "thesis": "Ranked candidates lack a clean, liquid catalyst edge: top headlines are minor stake adds or soft narrative pieces, with flat RSI and no compelling technical trigger. The open book is already working (XOM near target, META and WMT green) with only three names, so forcing a sub-$200 clip into high-priced TSLA/MSFT/LRCX does not improve risk-adjusted exposure. Preserve cash until a clearer setup with solid R:R appears.",
-    "reason_code": "hold",
+    "entry_price": 499.68,
+    "stop_loss": 480.0,
+    "take_profit": 535.0,
+    "qty": 0.4,
+    "thesis": "MSFT presents a liquid catalyst-driven long setup with bullish sentiment and a high catalyst score tied to AI resilience amid geopolitical noise, framed as a safest earnings play. Technicals are neutral at RSI 50, supporting a controlled entry with defined risk. Position sized to ~$200 notional respects desk limits while open slots remain available. Reward-to-risk exceeds 1.5 with stop below recent support and target toward extension of the AI narrative.",
+    "reason_code": "new_entry",
     "reasoning": {
-      "headline": "Hold $CASH",
-      "narrative": "Ranked candidates lack a clean, liquid catalyst edge: top headlines are minor stake adds or soft narrative pieces, with flat RSI and no compelling technical trigger. The open book is already working (XOM near target, META and WMT green) with only three names, so forcing a sub-$200 clip into high-priced TSLA/MSFT/LRCX does not improve risk-adjusted exposure. Preserve cash until a clearer setup with solid R:R appears.",
+      "headline": "Bought $MSFT",
+      "narrative": "MSFT presents a liquid catalyst-driven long setup with bullish sentiment and a high catalyst score tied to AI resilience amid geopolitical noise, framed as a safest earnings play. Technicals are neutral at RSI 50, supporting a controlled entry with defined risk. Position sized to ~$200 notional respects desk limits while open slots remain available. Reward-to-risk exceeds 1.5 with stop below recent support and target toward extension of the AI narrative.",
       "bullets": [
-        "Catalysts are weak 13F-style or chatter-driven, not high-conviction",
-        "Book healthy at 3 names; XOM essentially at target zone",
-        "No BUY meets strong edge plus R:R>=1.5 within ~$200 notional"
+        "Catalyst score 9 + bullish retail AI/earnings framing",
+        "RSI neutral 50 allows clean risk definition",
+        "Notional capped near $200; book has room for 4th name",
+        "R:R ~1.8 from 480 stop to 535 target"
       ],
       "risk_map": {
-        "stop": 0.0,
-        "target": 0.0,
+        "stop": 480.0,
+        "target": 535.0,
         "horizon_days": 5,
-        "rr": 0.0,
-        "confidence_10": 6,
-        "confidence": 62
+        "rr": 1.79,
+        "confidence_10": 8,
+        "confidence": 78
       },
-      "thesis": "Ranked candidates lack a clean, liquid catalyst edge: top headlines are minor stake adds or soft narrative pieces, with flat RSI and no compelling technical trigger. The open book is already working (XOM near target, META and WMT green) with only three names, so forcing a sub-$200 clip into high-priced TSLA/MSFT/LRCX does not improve risk-adjusted exposure. Preserve cash until a clearer setup with solid R:R appears."
+      "thesis": "MSFT presents a liquid catalyst-driven long setup with bullish sentiment and a high catalyst score tied to AI resilience amid geopolitical noise, framed as a safest earnings play. Technicals are neutral at RSI 50, supporting a controlled entry with defined risk. Position sized to ~$200 notional respects desk limits while open slots remain available. Reward-to-risk exceeds 1.5 with stop below recent support and target toward extension of the AI narrative."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Catalysts are weak 13F-style or chatter-driven, not high-conviction",
-      "Book healthy at 3 names; XOM essentially at target zone",
-      "No BUY meets strong edge plus R:R>=1.5 within ~$200 notional"
+      "Catalyst score 9 + bullish retail AI/earnings framing",
+      "RSI neutral 50 allows clean risk definition",
+      "Notional capped near $200; book has room for 4th name",
+      "R:R ~1.8 from 480 stop to 535 target"
     ],
-    "timestamp": "2026-09-15T15:32:51.215514+00:00"
+    "timestamp": "2026-09-15T15:47:15.433754+00:00"
   },
-  "stance": "Holding XOM, WMT, META. No new trade right now.",
+  "stance": "Buying pressure on MSFT. MSFT presents a liquid catalyst-driven long setup with bullish sentiment and a high catalyst score tied to AI resilience amid geopolitical noise, framed as a safest earnings play. Technicals are neutral at RSI 50, supporting a controlled entry with defined risk. Position sized to ~$200 notional respects desk limits while open slots remain available. Reward-to-risk exceeds 1.5 with stop below recent support and target toward extension of the AI narrative.",
   "thinking": {
-    "badge": "Holding what it owns",
-    "headline": "Holding XOM, WMT, META. No new trade right now.",
-    "plain_english": "Right now Hermes is holding XOM, WMT, META and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
+    "badge": "Looking to buy MSFT",
+    "headline": "Buying pressure on MSFT.",
+    "plain_english": "Right now Hermes wants exposure to MSFT. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
     "triggers": [
       "It owns XOM, bought near $160.78. Simple plan: sell if it falls to about $155.00, or take profit near $169.50.",
       "It owns WMT, bought near $105.93. Simple plan: sell if it falls to about $102.50, or take profit near $112.00.",
       "It owns META, bought near $644.68. Simple plan: sell if it falls to about $628.00, or take profit near $680.00.",
       "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
-      "Top scanner name right now is TSLA, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
+      "Top scanner name right now is MSFT, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
       "If nothing looks clean, do nothing. Sitting in cash or holdings is allowed."
     ],
     "owned": [
@@ -175,9 +190,9 @@
         "avg_cost": 160.78,
         "stop": 155.0,
         "target": 169.5,
-        "last": 169.10150146484375,
-        "open_pnl": 10.32,
-        "open_pnl_pct": 5.18,
+        "last": 169.26499938964844,
+        "open_pnl": 10.52,
+        "open_pnl_pct": 5.28,
         "line": "Bought near $160.78 \u00b7 Sell safety line $155.00 \u00b7 Profit target $169.50",
         "plan": "stop 155.0 or target 169.5"
       },
@@ -187,9 +202,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 108.72000122070312,
-        "open_pnl": 5.16,
-        "open_pnl_pct": 2.63,
+        "last": 108.51499938964844,
+        "open_pnl": 4.78,
+        "open_pnl_pct": 2.44,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -199,17 +214,17 @@
         "avg_cost": 644.68,
         "stop": 628.0,
         "target": 680.0,
-        "last": 665.9450073242188,
-        "open_pnl": 6.38,
-        "open_pnl_pct": 3.3,
+        "last": 666.0800170898438,
+        "open_pnl": 6.42,
+        "open_pnl_pct": 3.32,
         "line": "Bought near $644.68 \u00b7 Sell safety line $628.00 \u00b7 Profit target $680.00",
         "plan": "stop 628.0 or target 680.0"
       }
     ],
-    "last_checked": "2026-09-15T15:40:17.358068+00:00",
+    "last_checked": "2026-09-15T15:47:29.417098+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "HOLD",
+    "action": "BUY",
     "symbols_held": [
       "XOM",
       "WMT",
@@ -219,10 +234,10 @@
       {
         "prefix": "J",
         "model": "grok-4.3",
-        "action": "BUY",
-        "symbol": "TSLA",
-        "confidence": 75,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 60,
+        "tone": "hold"
       },
       {
         "prefix": "J",
@@ -237,28 +252,12 @@
         "model": "deepseek-v4-flash",
         "action": "BUY",
         "symbol": "MSFT",
-        "confidence": 72,
+        "confidence": 74,
         "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "BUY",
-        "symbol": "TSLA",
-        "confidence": 72,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "grok-4.5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 62,
-        "tone": "hold"
-      },
-      {
-        "prefix": "S",
-        "model": "claude-sonnet-5",
         "action": "BUY",
         "symbol": "MSFT",
         "confidence": 75,
@@ -266,15 +265,108 @@
       },
       {
         "prefix": "S",
+        "model": "grok-4.5",
+        "action": "BUY",
+        "symbol": "MSFT",
+        "confidence": 78,
+        "tone": "buy"
+      },
+      {
+        "prefix": "S",
+        "model": "claude-sonnet-5",
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 65,
+        "tone": "hold"
+      },
+      {
+        "prefix": "S",
         "model": "claude-opus-5",
         "action": "BUY",
-        "symbol": "TSLA",
+        "symbol": "MSFT",
         "confidence": 90,
         "tone": "buy"
       }
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "MSFT",
+      "status": "no_consensus",
+      "headline": "BUY MSFT \u2014 no consensus",
+      "detail": "Desks: BUY MSFT (78%) vs HOLD CASH (65%) vs BUY MSFT (90%). No 2-of-3 senior agreement",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "MSFT",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "MSFT",
+          "confidence": 74,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "MSFT",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "MSFT",
+          "confidence": 78,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "BUY",
+          "symbol": "MSFT",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "MSFT",
+      "timestamp": "2026-09-15T15:47:15.433754+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -12540,61 +12632,17 @@
   ],
   "top_candidates": [
     {
-      "symbol": "TSLA",
-      "name": "TSLA",
-      "price": 360.7749938964844,
-      "volume": 12312411.0,
-      "avg_volume": 38694221.1,
-      "percent_change": 0.5028254922815955,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 10,
-      "liquidity_score": 85.88,
-      "rank_score": 57.78,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): 2,759 Shares in Tesla, Inc. $TSLA Acquired by AlphaGrep UK Ltd - MarketBeat",
-      "top_headlines": [
-        "TSLA Stock Trims Losses Overnight: Tesla Cybercab Starts Austin Tests Without \u2018Steering Wheel Or Pedals\u2019 - Stocktwits",
-        "2,759 Shares in Tesla, Inc. $TSLA Acquired by AlphaGrep UK Ltd - MarketBeat",
-        "Tesla, Inc. (TSLA) is Attracting Investor Attention: Here is What You Should Know - Yahoo Finance"
-      ],
-      "matched_headlines": [
-        {
-          "title": "2,759 Shares in Tesla, Inc. $TSLA Acquired by AlphaGrep UK Ltd - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Tesla: The Cybercab Failure Is Worse Than You Think (NASDAQ:TSLA) - Seeking Alpha",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "TSLA Stock Down, SPCX Stock Up Premarket As Merger Buzz Grows \u2014 Analyst Raises Deal Odds To 90% - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "deal",
-            "raises"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "MSFT",
       "name": "MSFT",
-      "price": 500.0199890136719,
-      "volume": 5020883.0,
-      "avg_volume": 16902278.3,
-      "percent_change": -1.0664637837364574,
+      "price": 499.68499755859375,
+      "volume": 5554844.0,
+      "avg_volume": 16955674.4,
+      "percent_change": -1.1327449124539024,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 82.28,
-      "rank_score": 56.7,
+      "liquidity_score": 82.29,
+      "rank_score": 56.75,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): MSFT Stock Holds Up Amid US-Iran Geopolitical Jitters: Retail Calls It \u2018Safest Earnings Play\u2019 - Stocktwits",
       "top_headlines": [
@@ -12643,15 +12691,15 @@
     {
       "symbol": "LRCX",
       "name": "LRCX",
-      "price": 267.4700012207031,
-      "volume": 2613827.0,
-      "avg_volume": 7941222.7,
-      "percent_change": -2.2011734354565866,
+      "price": 267.739990234375,
+      "volume": 2878464.0,
+      "avg_volume": 7967686.4,
+      "percent_change": -2.1024535468637717,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 79.0,
-      "rank_score": 51.61,
+      "liquidity_score": 79.01,
+      "rank_score": 51.53,
       "news_hits": 6,
       "catalyst": "Headline-driven setup (beat): Lam Research Corporation $LRCX Stock Position Lifted by Bank of America Corp DE - MarketBeat",
       "top_headlines": [
@@ -12687,18 +12735,68 @@
       ]
     },
     {
+      "symbol": "TSLA",
+      "name": "TSLA",
+      "price": 360.7900085449219,
+      "volume": 13073827.0,
+      "avg_volume": 38770362.7,
+      "percent_change": 0.5070081951220673,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 8,
+      "liquidity_score": 85.88,
+      "rank_score": 51.29,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (decline): Tesla (NASDAQ: TSLA) And SpaceX (SPCX) Stock Price Ticks Higher As Musk Declines To Rule Out Merger - foreignpolicyjournal.com",
+      "top_headlines": [
+        "TSLA Stock Trims Losses Overnight: Tesla Cybercab Starts Austin Tests Without \u2018Steering Wheel Or Pedals\u2019 - Stocktwits",
+        "Tesla (NASDAQ: TSLA) And SpaceX (SPCX) Stock Price Ticks Higher As Musk Declines To Rule Out Merger - foreignpolicyjournal.com",
+        "2,759 Shares in Tesla, Inc. $TSLA Acquired by AlphaGrep UK Ltd - MarketBeat"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Tesla (NASDAQ: TSLA) And SpaceX (SPCX) Stock Price Ticks Higher As Musk Declines To Rule Out Merger - foreignpolicyjournal.com",
+          "keywords": [
+            "decline"
+          ]
+        },
+        {
+          "title": "2,759 Shares in Tesla, Inc. $TSLA Acquired by AlphaGrep UK Ltd - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Tesla: The Cybercab Failure Is Worse Than You Think (NASDAQ:TSLA) - Seeking Alpha",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "TSLA Stock Down, SPCX Stock Up Premarket As Merger Buzz Grows \u2014 Analyst Raises Deal Odds To 90% - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "deal",
+            "raises"
+          ]
+        }
+      ]
+    },
+    {
       "symbol": "AVGO",
       "name": "AVGO",
-      "price": 341.1400146484375,
-      "volume": 7494819.0,
-      "avg_volume": 29291381.9,
-      "percent_change": -1.0385201205582437,
+      "price": 340.1199951171875,
+      "volume": 8562920.0,
+      "avg_volume": 29398192.0,
+      "percent_change": -1.3344181037440073,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
-      "liquidity_score": 84.67,
-      "rank_score": 49.03,
-      "news_hits": 7,
+      "liquidity_score": 84.68,
+      "rank_score": 47.77,
+      "news_hits": 6,
       "catalyst": "Headline-driven setup (growth): Broadcom (NASDAQ:AVGO): Dividend Quality and Growth for Income Investors - ChartMill",
       "top_headlines": [
         "Broadcom (NASDAQ:AVGO): Dividend Quality and Growth for Income Investors - ChartMill",
@@ -12733,27 +12831,21 @@
             "ai",
             "catalyst"
           ]
-        },
-        {
-          "title": "PANW vs CRWD vs AVGO: Morningstar Has A 'Top Pick' Trading At A 40% Discount After Earnings - Stocktwits",
-          "keywords": [
-            "catalyst"
-          ]
         }
       ]
     },
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 345.4849853515625,
-      "volume": 2643294.0,
-      "avg_volume": 5444969.4,
-      "percent_change": -1.3266556611749611,
+      "price": 344.6199951171875,
+      "volume": 2831845.0,
+      "avg_volume": 5463824.5,
+      "percent_change": -1.5737039638945496,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
-      "liquidity_score": 77.36,
-      "rank_score": 46.67,
+      "liquidity_score": 77.37,
+      "rank_score": 46.86,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): JPMorgan Chase & Co. $JPM Stock Position Lifted by Palmer Knight Co - MarketBeat",
       "top_headlines": [
@@ -12815,8 +12907,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 0,
-      "BUY": 4,
+      "HOLD": 1,
+      "BUY": 3,
       "SELL": 0,
       "live": 4,
       "fallback": 0
@@ -12835,23 +12927,23 @@
     "decision_mode": "live_dual_llm",
     "last_tier": "senior_escalated",
     "last_stage": "entry",
-    "last_junior_nomination": null,
-    "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 83.7
+    "last_junior_nomination": "MSFT",
+    "last_escalate_reason": "junior_nomination",
+    "live_share_recent": 83.9
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 344,
     "closed_outcomes": 157,
-    "consensus_events": 632,
+    "consensus_events": 633,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1005.39,
-    "change": 5.39,
-    "change_pct": 0.54,
+    "latest_equity": 1005.25,
+    "change": 5.25,
+    "change_pct": 0.53,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15442,6 +15534,12 @@
       {
         "t": "2026-09-15T15:40:20.383963+00:00",
         "equity": 1005.39,
+        "cash": 394.79,
+        "event": "mark"
+      },
+      {
+        "t": "2026-09-15T15:47:32.093786+00:00",
+        "equity": 1005.25,
         "cash": 394.79,
         "event": "mark"
       }
