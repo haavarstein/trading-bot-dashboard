@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-09-15T19:50:34.214171+00:00",
+  "generated_at": "2026-09-16T13:30:40.987939+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1006.94,
+    "portfolio_value": 1017.56,
     "starting_cash": 1000.0,
-    "total_return_pct": 0.69,
-    "total_pnl": 6.94,
+    "total_return_pct": 1.76,
+    "total_pnl": 17.56,
     "realized_pnl": -5.68,
-    "open_pnl": 12.6,
-    "capital_deployed": 796.26,
+    "open_pnl": 23.22,
+    "capital_deployed": 806.88,
     "cash": 210.68,
     "closed_trades": 36,
     "win_rate_pct": 27.78,
-    "vs_spy_pct": 2.33,
-    "spy_return_pct": -1.64,
+    "vs_spy_pct": 3.05,
+    "spy_return_pct": -1.29,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-15T19:50:37.224236+00:00"
+    "updated_at": "2026-09-16T13:30:43.639466+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -1.64,
-    "price": 756.760009765625,
+    "return_pct": -1.29,
+    "price": 759.469970703125,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 7,
-    "validated_count_today": 7,
+    "consensus_count_today": 0,
+    "validated_count_today": 0,
     "blocked_count_today": 0,
-    "fills_today": 3,
-    "simulated_orders_today": 7,
-    "top_symbol_today": "LRCX"
+    "fills_today": 0,
+    "simulated_orders_today": 0,
+    "top_symbol_today": "COST"
   },
   "holdings": [
     {
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 108.05000305175781,
-      "market_value": 199.89,
-      "open_pnl": 3.92,
-      "open_pnl_pct": 2.0,
+      "last": 108.32749938964844,
+      "market_value": 200.41,
+      "open_pnl": 4.44,
+      "open_pnl_pct": 2.26,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -50,10 +50,10 @@
       "symbol": "META",
       "qty": 0.3,
       "avg_cost": 644.68,
-      "last": 671.368408203125,
-      "market_value": 201.41,
-      "open_pnl": 8.01,
-      "open_pnl_pct": 4.14,
+      "last": 684.8300170898438,
+      "market_value": 205.45,
+      "open_pnl": 12.05,
+      "open_pnl_pct": 6.23,
       "stop": 628.0,
       "target": 680.0,
       "thesis": "META ranks second with a clear bullish AI-agent catalyst and supportive Street tone while remaining highly liquid. Small size fits residual cash under the ~$200 new-notional cap without exceeding the five-name limit. Technical RSI is neutral, leaving room for continuation if the AI narrative holds; defined stop below recent support keeps reward:risk above 1.5."
@@ -62,10 +62,10 @@
       "symbol": "LRCX",
       "qty": 0.74,
       "avg_cost": 267.36,
-      "last": 269.989990234375,
-      "market_value": 199.79,
-      "open_pnl": 1.95,
-      "open_pnl_pct": 0.98,
+      "last": 276.4750061035156,
+      "market_value": 204.59,
+      "open_pnl": 6.75,
+      "open_pnl_pct": 3.41,
       "stop": 255.0,
       "target": 286.0,
       "thesis": "LRCX ranks top of the candidate list on a fresh institutional-lift/beat headline with bullish sentiment and neutral RSI, offering a liquid semi-equipment catalyst setup. Book has room under the 5-name cap and ~$200 notional can be deployed without forcing a rotation. Risk defined below recent support with target sized for at least 1.5:1 reward-to-risk while existing XOM/WMT/META holds remain constructive."
@@ -74,10 +74,10 @@
       "symbol": "TSLA",
       "qty": 0.55,
       "avg_cost": 357.18,
-      "last": 354.8500061035156,
-      "market_value": 195.17,
-      "open_pnl": -1.28,
-      "open_pnl_pct": -0.65,
+      "last": 357.1449890136719,
+      "market_value": 196.43,
+      "open_pnl": -0.02,
+      "open_pnl_pct": -0.01,
       "stop": 342.0,
       "target": 380.0,
       "thesis": "TSLA tops the ranked catalyst list on a PG&E grid deal headline with bullish sentiment and neutral RSI, offering a liquid setup while the book still has open slots and cash. Valuation is debated but the rank/catalyst edge is the cleanest available versus held names that are already working. Small notional keeps risk tight with stop/target structured for at least 1.5 R:R."
@@ -203,9 +203,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 108.05000305175781,
-        "open_pnl": 3.92,
-        "open_pnl_pct": 2.0,
+        "last": 108.32749938964844,
+        "open_pnl": 4.44,
+        "open_pnl_pct": 2.26,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -215,9 +215,9 @@
         "avg_cost": 644.68,
         "stop": 628.0,
         "target": 680.0,
-        "last": 671.368408203125,
-        "open_pnl": 8.01,
-        "open_pnl_pct": 4.14,
+        "last": 684.8300170898438,
+        "open_pnl": 12.05,
+        "open_pnl_pct": 6.23,
         "line": "Bought near $644.68 \u00b7 Sell safety line $628.00 \u00b7 Profit target $680.00",
         "plan": "stop 628.0 or target 680.0"
       },
@@ -227,9 +227,9 @@
         "avg_cost": 267.36,
         "stop": 255.0,
         "target": 286.0,
-        "last": 269.989990234375,
-        "open_pnl": 1.95,
-        "open_pnl_pct": 0.98,
+        "last": 276.4750061035156,
+        "open_pnl": 6.75,
+        "open_pnl_pct": 3.41,
         "line": "Bought near $267.36 \u00b7 Sell safety line $255.00 \u00b7 Profit target $286.00",
         "plan": "stop 255.0 or target 286.0"
       },
@@ -239,14 +239,14 @@
         "avg_cost": 357.18,
         "stop": 342.0,
         "target": 380.0,
-        "last": 354.8500061035156,
-        "open_pnl": -1.28,
-        "open_pnl_pct": -0.65,
+        "last": 357.1449890136719,
+        "open_pnl": -0.02,
+        "open_pnl_pct": -0.01,
         "line": "Bought near $357.18 \u00b7 Sell safety line $342.00 \u00b7 Profit target $380.00",
         "plan": "stop 342.0 or target 380.0"
       }
     ],
-    "last_checked": "2026-09-15T19:50:34.214171+00:00",
+    "last_checked": "2026-09-16T13:30:40.987939+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "HOLD",
@@ -315,603 +315,7 @@
       }
     ]
   },
-  "activity": [
-    {
-      "type": "consensus",
-      "symbol": "CASH",
-      "status": "hold",
-      "headline": "HOLD \u2014 no new trade",
-      "detail": "Rejecting the escalated BUY on COST. The sole candidate\u2019s catalyst text is about Meta AI chip cost-saving headlines and does not support a Costco-specific edge; rank_score is only mid-60s with neutral RSI. Cash is ~$211 versus a ~$901 print, so any clip would be a tiny fractional lot with no clean catalyst-driven R:R setup. Book already has four names and no held position warrants rotation into this weak link.",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "COST",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "COST",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "COST",
-          "confidence": 73,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "WMT",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "entry",
-      "junior_nomination": "COST",
-      "timestamp": "2026-09-15T19:47:59.466651+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CASH",
-      "status": "hold",
-      "headline": "HOLD \u2014 no new trade",
-      "detail": "Rejecting the escalated BUY on COST. The sole candidate print is ~$903 with only ~$211 cash and a ~$200 notional cap, but the attached catalyst is a Meta AI-chip headline mis-tagged to COST and does not support a Costco-specific edge. Rank/catalyst scores are mediocre and RSI is neutral, so no clean setup versus holding cash and the existing four names.",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "COST",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "COST",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 70,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "COST",
-          "confidence": 70,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 68,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "WMT",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "entry",
-      "junior_nomination": "COST",
-      "timestamp": "2026-09-15T19:32:55.789678+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CASH",
-      "status": "hold",
-      "headline": "HOLD \u2014 no new trade",
-      "detail": "Book already has four liquid names with defined risk; top-ranked TSLA and META are already held and neither stop nor target is triggered. Remaining cash is only ~$211, while highest new candidates (COST, MSFT, AMD) are expensive single-share tickets or have middling rank/catalyst scores that do not clearly beat existing holds on a risk-adjusted basis. No clean rotation edge versus the weakest name (TSLA, small open loss) and reward:risk setups for fresh $200 notional entries are not compelling enough to force a fifth name.",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "COST",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "WMT",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-15T19:17:58.991498+00:00"
-    },
-    {
-      "type": "fill",
-      "symbol": "TSLA",
-      "status": "filled_paper",
-      "headline": "BUY TSLA @ $357.18",
-      "detail": "TSLA tops the ranked catalyst list on a PG&E grid deal headline with bullish sentiment and neutral RSI, offering a liquid setup while the book still has open slots and cash. Valuation is debated but the rank/catalyst edge is the cleanest available versus held names that are already working. Small notional keeps risk tight with stop/target structured for at least 1.5 R:R.",
-      "timestamp": "2026-09-15T19:05:16.206633+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "TSLA",
-      "status": "validated",
-      "headline": "BUY TSLA \u2014 validated",
-      "detail": "TSLA tops the ranked catalyst list on a PG&E grid deal headline with bullish sentiment and neutral RSI, offering a liquid setup while the book still has open slots and cash. Valuation is debated but the rank/catalyst edge is the cleanest available versus held names that are already working. Small notional keeps risk tight with stop/target structured for at least 1.5 R:R.",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "TSLA",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "TSLA",
-          "confidence": 70,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "TSLA",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "TSLA",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "BUY",
-          "symbol": "TSLA",
-          "confidence": 90,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-15T19:05:16.205625+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "TSLA",
-      "status": "no_consensus",
-      "headline": "BUY TSLA \u2014 no consensus",
-      "detail": "Desks: BUY TSLA (72%) vs HOLD CASH (65%) vs BUY TSLA (90%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "TSLA",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "TSLA",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "TSLA",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "TSLA",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "TSLA",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "BUY",
-          "symbol": "TSLA",
-          "confidence": 90,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "entry",
-      "junior_nomination": "TSLA",
-      "timestamp": "2026-09-15T18:47:41.387160+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "TSLA",
-      "status": "no_consensus",
-      "headline": "BUY TSLA \u2014 no consensus",
-      "detail": "Desks: BUY TSLA (72%) vs HOLD CASH (65%) vs BUY TSLA (90%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "COST",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "COST",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "TSLA",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "TSLA",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "BUY",
-          "symbol": "TSLA",
-          "confidence": 90,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-15T18:33:10.134733+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CASH",
-      "status": "hold",
-      "headline": "HOLD \u2014 desks disagreed on focus",
-      "detail": "Desks: HOLD CASH (62%) vs BUY COST (72%) vs BUY COST (90%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "COST",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "COST",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "COST",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "BUY",
-          "symbol": "COST",
-          "confidence": 90,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-15T18:17:48.647600+00:00"
-    },
-    {
-      "type": "fill",
-      "symbol": "XOM",
-      "status": "filled_paper",
-      "headline": "SELL XOM @ $169.51",
-      "detail": "HERMES AUTO-TRADE: Exiting full XOM position on take-profit. Price $169.51 reached target $169.50. Realized path $+10.83.",
-      "timestamp": "2026-09-15T18:00:48.644847+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "XOM",
-      "status": "validated",
-      "headline": "SELL XOM \u2014 validated",
-      "detail": "deterministic take_profit exit",
-      "agents": [
-        {
-          "model": "risk-gate",
-          "action": "SELL",
-          "symbol": "XOM",
-          "confidence": 90,
-          "source": null,
-          "provider": null,
-          "tier": "senior"
-        },
-        {
-          "model": "risk-gate",
-          "action": "SELL",
-          "symbol": "XOM",
-          "confidence": 90,
-          "source": null,
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "risk_exit",
-      "escalate_reason": "take_profit",
-      "stage": "exit",
-      "junior_nomination": null,
-      "timestamp": "2026-09-15T18:00:48.642833+00:00"
-    },
-    {
-      "type": "fill",
-      "symbol": "LRCX",
-      "status": "filled_paper",
-      "headline": "BUY LRCX @ $267.36",
-      "detail": "LRCX ranks top of the candidate list on a fresh institutional-lift/beat headline with bullish sentiment and neutral RSI, offering a liquid semi-equipment catalyst setup. Book has room under the 5-name cap and ~$200 notional can be deployed without forcing a rotation. Risk defined below recent support with target sized for at least 1.5:1 reward-to-risk while existing XOM/WMT/META holds remain constructive.",
-      "timestamp": "2026-09-15T16:47:31.980723+00:00"
-    }
-  ],
+  "activity": [],
   "recent_trades": [
     {
       "timestamp": "2026-09-15T19:05:16.206633+00:00",
@@ -13070,9 +12474,9 @@
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1006.94,
-    "change": 6.94,
-    "change_pct": 0.69,
+    "latest_equity": 1017.56,
+    "change": 17.56,
+    "change_pct": 1.76,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15729,6 +15133,12 @@
       {
         "t": "2026-09-15T19:50:37.224236+00:00",
         "equity": 1006.94,
+        "cash": 210.68,
+        "event": "mark"
+      },
+      {
+        "t": "2026-09-16T13:30:43.639466+00:00",
+        "equity": 1017.56,
         "cash": 210.68,
         "event": "mark"
       }
