@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-16T16:30:52.998446+00:00",
+  "generated_at": "2026-09-16T16:35:31.250171+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1014.62,
+    "portfolio_value": 1014.05,
     "starting_cash": 1000.0,
-    "total_return_pct": 1.46,
-    "total_pnl": 14.62,
+    "total_return_pct": 1.4,
+    "total_pnl": 14.05,
     "realized_pnl": 5.15,
-    "open_pnl": 9.44,
-    "capital_deployed": 798.35,
+    "open_pnl": 8.87,
+    "capital_deployed": 797.78,
     "cash": 216.27,
     "closed_trades": 37,
     "win_rate_pct": 29.73,
-    "vs_spy_pct": 2.66,
-    "spy_return_pct": -1.2,
+    "vs_spy_pct": 2.65,
+    "spy_return_pct": -1.25,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-16T16:30:55.603219+00:00"
+    "updated_at": "2026-09-16T16:35:33.905679+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -1.2,
-    "price": 760.1699829101562,
+    "return_pct": -1.25,
+    "price": 759.7999877929688,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,10 +38,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 108.19999694824219,
-      "market_value": 200.17,
-      "open_pnl": 4.2,
-      "open_pnl_pct": 2.14,
+      "last": 108.0999984741211,
+      "market_value": 199.98,
+      "open_pnl": 4.01,
+      "open_pnl_pct": 2.05,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -50,10 +50,10 @@
       "symbol": "LRCX",
       "qty": 0.74,
       "avg_cost": 267.36,
-      "last": 272.0899963378906,
-      "market_value": 201.35,
-      "open_pnl": 3.5,
-      "open_pnl_pct": 1.77,
+      "last": 271.6676025390625,
+      "market_value": 201.03,
+      "open_pnl": 3.19,
+      "open_pnl_pct": 1.61,
       "stop": 255.0,
       "target": 286.0,
       "thesis": "LRCX ranks top of the candidate list on a fresh institutional-lift/beat headline with bullish sentiment and neutral RSI, offering a liquid semi-equipment catalyst setup. Book has room under the 5-name cap and ~$200 notional can be deployed without forcing a rotation. Risk defined below recent support with target sized for at least 1.5:1 reward-to-risk while existing XOM/WMT/META holds remain constructive."
@@ -62,10 +62,10 @@
       "symbol": "TSLA",
       "qty": 0.55,
       "avg_cost": 357.18,
-      "last": 360.7900085449219,
-      "market_value": 198.43,
-      "open_pnl": 1.99,
-      "open_pnl_pct": 1.01,
+      "last": 360.81500244140625,
+      "market_value": 198.45,
+      "open_pnl": 2.0,
+      "open_pnl_pct": 1.02,
       "stop": 342.0,
       "target": 380.0,
       "thesis": "TSLA tops the ranked catalyst list on a PG&E grid deal headline with bullish sentiment and neutral RSI, offering a liquid setup while the book still has open slots and cash. Valuation is debated but the rank/catalyst edge is the cleanest available versus held names that are already working. Small notional keeps risk tight with stop/target structured for at least 1.5 R:R."
@@ -74,10 +74,10 @@
       "symbol": "AMZN",
       "qty": 0.8,
       "avg_cost": 248.31,
-      "last": 248.0,
-      "market_value": 198.4,
-      "open_pnl": -0.25,
-      "open_pnl_pct": -0.12,
+      "last": 247.89999389648438,
+      "market_value": 198.32,
+      "open_pnl": -0.33,
+      "open_pnl_pct": -0.17,
       "stop": 240.0,
       "target": 262.0,
       "thesis": "AMZN shows a ranked liquid setup with bullish sentiment and a headline institutional buy catalyst supporting near-term momentum. RSI near 50 leaves room for upside without overbought conditions. Portfolio has capacity for one more name under the 5-position guideline and cash covers a sub-$200 notional entry. Risk defined below recent support with 1.5+ R:R to the target."
@@ -86,15 +86,15 @@
   "latest_candidate": {
     "symbol": "AMD",
     "name": "AMD",
-    "price": 524.989990234375,
-    "volume": 10837725.0,
-    "avg_volume": 18457712.5,
-    "percent_change": 4.123359286791748,
+    "price": 523.530029296875,
+    "volume": 11105688.0,
+    "avg_volume": 18484508.8,
+    "percent_change": 3.8337994093317453,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 9,
-    "liquidity_score": 82.66,
-    "rank_score": 57.7,
+    "liquidity_score": 82.67,
+    "rank_score": 57.47,
     "news_hits": 7,
     "catalyst": "Headline-driven setup (ai, beat, catalyst): AMD rises as upbeat AI demand commentary and chip-sector rebound support shares - quiverquant.com",
     "top_headlines": [
@@ -139,45 +139,45 @@
     "model": "grok-4.5",
     "action": "BUY",
     "symbol": "AMD",
-    "confidence": 73,
+    "confidence": 72,
     "cache_stats": null,
-    "entry_price": 524.99,
-    "stop_loss": 500.0,
-    "take_profit": 562.5,
+    "entry_price": 523.53,
+    "stop_loss": 498.0,
+    "take_profit": 562.0,
     "qty": 0.38,
-    "thesis": "AMD is the top-ranked liquid catalyst name on upbeat AI demand commentary and a chip-sector rebound, with catalyst_score 9 and neutral RSI leaving room for continuation. Book has room for a fifth name and cash supports a sub-$200 notional fractional add without forced rotation. Defined stop below recent support and target at ~1.5R keep risk controlled versus held names that lack fresher catalysts.",
+    "thesis": "AMD is the sole ranked catalyst candidate with bullish AI-demand commentary and a chip-sector rebound supporting the setup. RSI is neutral near 50, leaving room for continuation without extreme overbought risk. Portfolio has cash and an open slot under the 5-name cap, so a small ~$200 notional add fits risk limits with defined R:R above 1.5.",
     "reason_code": "new_entry",
     "reasoning": {
       "headline": "Bought $AMD",
-      "narrative": "AMD is the top-ranked liquid catalyst name on upbeat AI demand commentary and a chip-sector rebound, with catalyst_score 9 and neutral RSI leaving room for continuation. Book has room for a fifth name and cash supports a sub-$200 notional fractional add without forced rotation. Defined stop below recent support and target at ~1.5R keep risk controlled versus held names that lack fresher catalysts.",
+      "narrative": "AMD is the sole ranked catalyst candidate with bullish AI-demand commentary and a chip-sector rebound supporting the setup. RSI is neutral near 50, leaving room for continuation without extreme overbought risk. Portfolio has cash and an open slot under the 5-name cap, so a small ~$200 notional add fits risk limits with defined R:R above 1.5.",
       "bullets": [
-        "Highest rank_score 57.7 and catalyst 9 AI/chip rebound setup",
-        "Neutral RSI 50; fits ~$200 max notional as 0.38 sh",
-        "R:R 1.5 with stop 500 / target 562.5",
-        "No rotation needed; AMZN only mild lag, book not full"
+        "Catalyst score 9 on AI demand/beat headline",
+        "Neutral RSI 50 with sector rebound tailwind",
+        "Notional capped ~$200; R:R ~1.51 vs 498/562",
+        "4 open names; room to add without rotation"
       ],
       "risk_map": {
-        "stop": 500.0,
-        "target": 562.5,
+        "stop": 498.0,
+        "target": 562.0,
         "horizon_days": 5,
-        "rr": 1.5,
+        "rr": 1.51,
         "confidence_10": 7,
-        "confidence": 73
+        "confidence": 72
       },
-      "thesis": "AMD is the top-ranked liquid catalyst name on upbeat AI demand commentary and a chip-sector rebound, with catalyst_score 9 and neutral RSI leaving room for continuation. Book has room for a fifth name and cash supports a sub-$200 notional fractional add without forced rotation. Defined stop below recent support and target at ~1.5R keep risk controlled versus held names that lack fresher catalysts."
+      "thesis": "AMD is the sole ranked catalyst candidate with bullish AI-demand commentary and a chip-sector rebound supporting the setup. RSI is neutral near 50, leaving room for continuation without extreme overbought risk. Portfolio has cash and an open slot under the 5-name cap, so a small ~$200 notional add fits risk limits with defined R:R above 1.5."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Highest rank_score 57.7 and catalyst 9 AI/chip rebound setup",
-      "Neutral RSI 50; fits ~$200 max notional as 0.38 sh",
-      "R:R 1.5 with stop 500 / target 562.5",
-      "No rotation needed; AMZN only mild lag, book not full"
+      "Catalyst score 9 on AI demand/beat headline",
+      "Neutral RSI 50 with sector rebound tailwind",
+      "Notional capped ~$200; R:R ~1.51 vs 498/562",
+      "4 open names; room to add without rotation"
     ],
-    "timestamp": "2026-09-16T16:18:23.999655+00:00"
+    "timestamp": "2026-09-16T16:35:23.266645+00:00"
   },
-  "stance": "Buying pressure on AMD. AMD is the top-ranked liquid catalyst name on upbeat AI demand commentary and a chip-sector rebound, with catalyst_score 9 and neutral RSI leaving room for continuation. Book has room for a fifth name and cash supports a sub-$200 notional fractional add without forced rotation. Defined stop below recent support and target at ~1.5R keep risk controlled versus held names that lack fresher catalysts.",
+  "stance": "Buying pressure on AMD. AMD is the sole ranked catalyst candidate with bullish AI-demand commentary and a chip-sector rebound supporting the setup. RSI is neutral near 50, leaving room for continuation without extreme overbought risk. Portfolio has cash and an open slot under the 5-name cap, so a small ~$200 notional add fits risk limits with defined R:R above 1.5.",
   "thinking": {
     "badge": "Looking to buy AMD",
     "headline": "Buying pressure on AMD.",
@@ -198,9 +198,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 108.19999694824219,
-        "open_pnl": 4.2,
-        "open_pnl_pct": 2.14,
+        "last": 108.0999984741211,
+        "open_pnl": 4.01,
+        "open_pnl_pct": 2.05,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -210,9 +210,9 @@
         "avg_cost": 267.36,
         "stop": 255.0,
         "target": 286.0,
-        "last": 272.0899963378906,
-        "open_pnl": 3.5,
-        "open_pnl_pct": 1.77,
+        "last": 271.6676025390625,
+        "open_pnl": 3.19,
+        "open_pnl_pct": 1.61,
         "line": "Bought near $267.36 \u00b7 Sell safety line $255.00 \u00b7 Profit target $286.00",
         "plan": "stop 255.0 or target 286.0"
       },
@@ -222,9 +222,9 @@
         "avg_cost": 357.18,
         "stop": 342.0,
         "target": 380.0,
-        "last": 360.7900085449219,
-        "open_pnl": 1.99,
-        "open_pnl_pct": 1.01,
+        "last": 360.81500244140625,
+        "open_pnl": 2.0,
+        "open_pnl_pct": 1.02,
         "line": "Bought near $357.18 \u00b7 Sell safety line $342.00 \u00b7 Profit target $380.00",
         "plan": "stop 342.0 or target 380.0"
       },
@@ -234,14 +234,14 @@
         "avg_cost": 248.31,
         "stop": 240.0,
         "target": 262.0,
-        "last": 248.0,
-        "open_pnl": -0.25,
-        "open_pnl_pct": -0.12,
+        "last": 247.89999389648438,
+        "open_pnl": -0.33,
+        "open_pnl_pct": -0.17,
         "line": "Bought near $248.31 \u00b7 Sell safety line $240.00 \u00b7 Profit target $262.00",
         "plan": "stop 240.0 or target 262.0"
       }
     ],
-    "last_checked": "2026-09-16T16:30:52.998446+00:00",
+    "last_checked": "2026-09-16T16:35:31.250171+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -279,26 +279,26 @@
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 62,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "AMD",
+        "confidence": 72,
+        "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
         "action": "BUY",
         "symbol": "AMD",
-        "confidence": 73,
+        "confidence": 72,
         "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "claude-sonnet-5",
-        "action": "BUY",
-        "symbol": "AMD",
-        "confidence": 72,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 65,
+        "tone": "hold"
       },
       {
         "prefix": "S",
@@ -311,6 +311,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "AMD",
+      "status": "no_consensus",
+      "headline": "BUY AMD \u2014 no consensus",
+      "detail": "Desks: BUY AMD (72%) vs HOLD CASH (65%) vs HOLD WMT (80%). No 2-of-3 senior agreement",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "AMD",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "AMD",
+          "confidence": 72,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "AMD",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "AMD",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "WMT",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "AMD",
+      "timestamp": "2026-09-16T16:35:23.266645+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "AMD",
@@ -849,83 +926,6 @@
       "stage": "entry",
       "junior_nomination": "META",
       "timestamp": "2026-09-16T14:48:22.750858+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "META",
-      "status": "no_consensus",
-      "headline": "BUY META \u2014 no consensus",
-      "detail": "Desks: BUY META (74%) vs HOLD CASH (65%) vs HOLD WMT (80%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "META",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "META",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "META",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "META",
-          "confidence": 74,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "WMT",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "entry",
-      "junior_nomination": "META",
-      "timestamp": "2026-09-16T14:33:08.012020+00:00"
     },
     {
       "type": "fill",
@@ -12835,15 +12835,15 @@
     {
       "symbol": "AMD",
       "name": "AMD",
-      "price": 524.989990234375,
-      "volume": 10837725.0,
-      "avg_volume": 18457712.5,
-      "percent_change": 4.123359286791748,
+      "price": 523.530029296875,
+      "volume": 11105688.0,
+      "avg_volume": 18484508.8,
+      "percent_change": 3.8337994093317453,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 82.66,
-      "rank_score": 57.7,
+      "liquidity_score": 82.67,
+      "rank_score": 57.47,
       "news_hits": 7,
       "catalyst": "Headline-driven setup (ai, beat, catalyst): AMD rises as upbeat AI demand commentary and chip-sector rebound support shares - quiverquant.com",
       "top_headlines": [
@@ -12885,17 +12885,72 @@
       ]
     },
     {
-      "symbol": "PANW",
-      "name": "PANW",
-      "price": 379.57000732421875,
-      "volume": 2143146.0,
-      "avg_volume": 6628304.6,
-      "percent_change": 1.1943829561085968,
+      "symbol": "TSLA",
+      "name": "TSLA",
+      "price": 360.7712097167969,
+      "volume": 16276747.0,
+      "avg_volume": 38506114.7,
+      "percent_change": 1.175394947097471,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 78.21,
-      "rank_score": 54.69,
+      "liquidity_score": 85.86,
+      "rank_score": 57.32,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (catalyst, deal): Tesla (TSLA) Lands PGandE Grid Deal But Is The Stock Already Fully Valued - Yahoo Finance",
+      "top_headlines": [
+        "TSLA Stock Quote Price and Forecast - CNN",
+        "Tesla (TSLA) Lands PGandE Grid Deal But Is The Stock Already Fully Valued - Yahoo Finance",
+        "TSLA Stock Heads For Worst Single-Day Fall In Over A Year \u2014 Wall Street Seeks \u2018Tangible\u2019 Robotaxi, Optimus Milestones - Stocktwits"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Tesla (TSLA) Lands PGandE Grid Deal But Is The Stock Already Fully Valued - Yahoo Finance",
+          "keywords": [
+            "catalyst",
+            "deal"
+          ]
+        },
+        {
+          "title": "TSLA Stock Heads For Worst Single-Day Fall In Over A Year \u2014 Wall Street Seeks \u2018Tangible\u2019 Robotaxi, Optimus Milestones - Stocktwits",
+          "keywords": [
+            "fall"
+          ]
+        },
+        {
+          "title": "Tesla, Inc. $TSLA Stock Position Cut by Amundi - MarketBeat",
+          "keywords": [
+            "beat",
+            "cut"
+          ]
+        },
+        {
+          "title": "TSLA Reiterated by Goldman Sachs -- Price Target Maintained at $360 - GuruFocus",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Tesla, Inc. $TSLA Stock Holdings Lifted by Range Advisory LLC - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "PANW",
+      "name": "PANW",
+      "price": 381.0129089355469,
+      "volume": 2238795.0,
+      "avg_volume": 6637869.5,
+      "percent_change": 1.5790643993397093,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 9,
+      "liquidity_score": 78.22,
+      "rank_score": 55.0,
       "news_hits": 7,
       "catalyst": "Headline-driven setup (ai, buyback, catalyst): Palo Alto Networks (PANW) Closes Its Buyback, Is The Stock Above Fair Value? - simplywall.st",
       "top_headlines": [
@@ -12939,16 +12994,16 @@
     {
       "symbol": "XOM",
       "name": "XOM",
-      "price": 164.63999938964844,
-      "volume": 5199071.0,
-      "avg_volume": 12642827.1,
-      "percent_change": -2.764001731708469,
+      "price": 164.47999572753906,
+      "volume": 5394000.0,
+      "avg_volume": 12662320.0,
+      "percent_change": -2.85849952003126,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 81.02,
-      "rank_score": 49.36,
-      "news_hits": 6,
+      "liquidity_score": 81.03,
+      "rank_score": 49.44,
+      "news_hits": 7,
       "catalyst": "Headline-driven setup (approval, catalyst, wins): ExxonMobil (XOM) Wins Approval For Rose Carbon Capture Project In Texas - simplywall.st",
       "top_headlines": [
         "XOM Stock Quote Price and Forecast - CNN",
@@ -12975,15 +13030,15 @@
     {
       "symbol": "META",
       "name": "META",
-      "price": 676.5700073242188,
-      "volume": 6733904.0,
-      "avg_volume": 19107520.4,
-      "percent_change": 0.9444403768910027,
+      "price": 677.125,
+      "volume": 6939972.0,
+      "avg_volume": 19128127.2,
+      "percent_change": 1.0272454443097903,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
-      "liquidity_score": 82.81,
-      "rank_score": 48.68,
+      "liquidity_score": 82.82,
+      "rank_score": 48.74,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Why Meta's Zuckerberg, Nvidia's Huang Say An AI Slowdown Is Not Needed - Investor's Business Daily",
       "top_headlines": [
@@ -13013,7 +13068,7 @@
           ]
         },
         {
-          "title": "Why Google and Meta Stocks Are the Big Winners From the Latest AI Concerns - Barron's",
+          "title": "Why Google and Meta Stocks Are the Big Winners From the Latest AI Concerns - barrons.com",
           "keywords": [
             "ai",
             "catalyst"
@@ -13024,56 +13079,6 @@
           "keywords": [
             "ai",
             "catalyst"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "WMT",
-      "name": "WMT",
-      "price": 108.18499755859375,
-      "volume": 4375194.0,
-      "avg_volume": 19119029.4,
-      "percent_change": 0.08789085384566953,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 7,
-      "liquidity_score": 82.81,
-      "rank_score": 46.49,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst, guidance): WMT Shares Slip After-Hours On Weak Guidance, So Why Did This Analyst Raise Its Price Target? - Stocktwits",
-      "top_headlines": [
-        "WMT Stock Quote Price and Forecast - CNN",
-        "How Investors Are Reacting To Walmart (WMT) Expanding Its Digital Marketplace With ADT Blu And RocketSports - Yahoo Finance",
-        "WMT Shares Slip After-Hours On Weak Guidance, So Why Did This Analyst Raise Its Price Target? - Stocktwits"
-      ],
-      "matched_headlines": [
-        {
-          "title": "WMT Shares Slip After-Hours On Weak Guidance, So Why Did This Analyst Raise Its Price Target? - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "guidance",
-            "weak"
-          ]
-        },
-        {
-          "title": "Walmart Inc. (NASDAQ:WMT) Receives Average Rating of \"Moderate Buy\" from Brokerages - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Responsive Playbooks and the WMT Inflection - news.stocktradersdaily.com",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "WMT Looks 4.8% Overvalued on GF Value\u2122 as Advertising Growth Boo - GuruFocus",
-          "keywords": [
-            "growth"
           ]
         }
       ]
@@ -13105,8 +13110,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 2,
-      "BUY": 2,
+      "HOLD": 1,
+      "BUY": 3,
       "SELL": 0,
       "live": 4,
       "fallback": 0
@@ -13125,23 +13130,23 @@
     "decision_mode": "live_dual_llm",
     "last_tier": "senior_escalated",
     "last_stage": "entry",
-    "last_junior_nomination": null,
-    "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 83.1
+    "last_junior_nomination": "AMD",
+    "last_escalate_reason": "junior_nomination",
+    "live_share_recent": 83.3
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 349,
     "closed_outcomes": 159,
-    "consensus_events": 659,
+    "consensus_events": 660,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1014.62,
-    "change": 14.62,
-    "change_pct": 1.46,
+    "latest_equity": 1014.05,
+    "change": 14.05,
+    "change_pct": 1.41,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15844,8 +15849,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-16T16:30:55.603219+00:00",
-        "equity": 1014.62,
+        "t": "2026-09-16T16:35:33.905679+00:00",
+        "equity": 1014.05,
         "cash": 216.27,
         "event": "mark"
       }
