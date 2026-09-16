@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-16T17:51:00.554361+00:00",
+  "generated_at": "2026-09-16T17:51:20.934294+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1013.89,
+    "portfolio_value": 1013.91,
     "starting_cash": 1000.0,
     "total_return_pct": 1.39,
-    "total_pnl": 13.89,
+    "total_pnl": 13.91,
     "realized_pnl": 5.15,
-    "open_pnl": 8.71,
-    "capital_deployed": 797.62,
+    "open_pnl": 8.72,
+    "capital_deployed": 797.64,
     "cash": 216.27,
     "closed_trades": 37,
     "win_rate_pct": 29.73,
     "vs_spy_pct": 2.66,
     "spy_return_pct": -1.27,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-16T17:51:03.306151+00:00"
+    "updated_at": "2026-09-16T17:51:23.780390+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
     "return_pct": -1.27,
-    "price": 759.6400146484375,
+    "price": 759.6300048828125,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,9 +38,9 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 108.5250015258789,
-      "market_value": 200.77,
-      "open_pnl": 4.8,
+      "last": 108.5199966430664,
+      "market_value": 200.76,
+      "open_pnl": 4.79,
       "open_pnl_pct": 2.45,
       "stop": 102.5,
       "target": 112.0,
@@ -50,10 +50,10 @@
       "symbol": "LRCX",
       "qty": 0.74,
       "avg_cost": 267.36,
-      "last": 270.86749267578125,
-      "market_value": 200.44,
-      "open_pnl": 2.6,
-      "open_pnl_pct": 1.31,
+      "last": 270.9200134277344,
+      "market_value": 200.48,
+      "open_pnl": 2.63,
+      "open_pnl_pct": 1.33,
       "stop": 255.0,
       "target": 286.0,
       "thesis": "LRCX ranks top of the candidate list on a fresh institutional-lift/beat headline with bullish sentiment and neutral RSI, offering a liquid semi-equipment catalyst setup. Book has room under the 5-name cap and ~$200 notional can be deployed without forcing a rotation. Risk defined below recent support with target sized for at least 1.5:1 reward-to-risk while existing XOM/WMT/META holds remain constructive."
@@ -74,9 +74,9 @@
       "symbol": "AMZN",
       "qty": 0.8,
       "avg_cost": 248.31,
-      "last": 247.6479949951172,
-      "market_value": 198.12,
-      "open_pnl": -0.53,
+      "last": 247.63999938964844,
+      "market_value": 198.11,
+      "open_pnl": -0.54,
       "open_pnl_pct": -0.27,
       "stop": 240.0,
       "target": 262.0,
@@ -144,43 +144,43 @@
     "symbol": "XOM",
     "confidence": 72,
     "cache_stats": null,
-    "entry_price": 164.76,
-    "stop_loss": 158.0,
-    "take_profit": 175.5,
-    "qty": 1.2,
-    "thesis": "XOM ranks near the top of the catalyst list on a concrete regulatory win for the Rose carbon capture project in Texas, supporting a constructive energy-transition narrative. With four open names and ~$216 cash, a sub-$200 notional add keeps the book at five names without forced rotation. Setup offers clean R:R above 1.5 versus nearby support while liquidity remains excellent.",
+    "entry_price": 164.64,
+    "stop_loss": 159.0,
+    "take_profit": 173.5,
+    "qty": 1.21,
+    "thesis": "ExxonMobil won approval for the Rose carbon capture project in Texas, a concrete catalyst that supports medium-term upside while core upstream cash generation remains solid. It ranks near the top of the desk candidate list on both rank and catalyst scores with neutral RSI, offering a cleaner fresh setup than already-held names. Position is sized inside the ~$200 new-buy notional limit with reward:risk above 1.5. Book has room for a fifth name so no rotation is required.",
     "reason_code": "new_entry",
     "reasoning": {
       "headline": "Bought $XOM",
-      "narrative": "XOM ranks near the top of the catalyst list on a concrete regulatory win for the Rose carbon capture project in Texas, supporting a constructive energy-transition narrative. With four open names and ~$216 cash, a sub-$200 notional add keeps the book at five names without forced rotation. Setup offers clean R:R above 1.5 versus nearby support while liquidity remains excellent.",
+      "narrative": "ExxonMobil won approval for the Rose carbon capture project in Texas, a concrete catalyst that supports medium-term upside while core upstream cash generation remains solid. It ranks near the top of the desk candidate list on both rank and catalyst scores with neutral RSI, offering a cleaner fresh setup than already-held names. Position is sized inside the ~$200 new-buy notional limit with reward:risk above 1.5. Book has room for a fifth name so no rotation is required.",
       "bullets": [
-        "Catalyst: Texas CCS project approval",
-        "Affordable size vs PANW/AMD/META",
-        "R:R >1.5 to 175.5 from 158 stop",
-        "Book has room for one more name"
+        "XOM Rose CCS approval is a high-catalyst_score liquid setup",
+        "R:R ~1.57 with stop 159 / target 173.5",
+        "Notional ~$199 keeps cash buffer; open names 4\u21925",
+        "Prefer new XOM over adding TSLA/WMT already held"
       ],
       "risk_map": {
-        "stop": 158.0,
-        "target": 175.5,
+        "stop": 159.0,
+        "target": 173.5,
         "horizon_days": 5,
-        "rr": 1.59,
+        "rr": 1.57,
         "confidence_10": 7,
         "confidence": 72
       },
-      "thesis": "XOM ranks near the top of the catalyst list on a concrete regulatory win for the Rose carbon capture project in Texas, supporting a constructive energy-transition narrative. With four open names and ~$216 cash, a sub-$200 notional add keeps the book at five names without forced rotation. Setup offers clean R:R above 1.5 versus nearby support while liquidity remains excellent."
+      "thesis": "ExxonMobil won approval for the Rose carbon capture project in Texas, a concrete catalyst that supports medium-term upside while core upstream cash generation remains solid. It ranks near the top of the desk candidate list on both rank and catalyst scores with neutral RSI, offering a cleaner fresh setup than already-held names. Position is sized inside the ~$200 new-buy notional limit with reward:risk above 1.5. Book has room for a fifth name so no rotation is required."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Catalyst: Texas CCS project approval",
-      "Affordable size vs PANW/AMD/META",
-      "R:R >1.5 to 175.5 from 158 stop",
-      "Book has room for one more name"
+      "XOM Rose CCS approval is a high-catalyst_score liquid setup",
+      "R:R ~1.57 with stop 159 / target 173.5",
+      "Notional ~$199 keeps cash buffer; open names 4\u21925",
+      "Prefer new XOM over adding TSLA/WMT already held"
     ],
-    "timestamp": "2026-09-16T17:33:25.014332+00:00"
+    "timestamp": "2026-09-16T17:51:10.078108+00:00"
   },
-  "stance": "Buying pressure on XOM. XOM ranks near the top of the catalyst list on a concrete regulatory win for the Rose carbon capture project in Texas, supporting a constructive energy-transition narrative. With four open names and ~$216 cash, a sub-$200 notional add keeps the book at five names without forced rotation. Setup offers clean R:R above 1.5 versus nearby support while liquidity remains excellent.",
+  "stance": "Buying pressure on XOM. ExxonMobil won approval for the Rose carbon capture project in Texas, a concrete catalyst that supports medium-term upside while core upstream cash generation remains solid. It ranks near the top of the desk candidate list on both rank and catalyst scores with neutral RSI, offering a cleaner fresh setup than already-held names. Position is sized inside the ~$200 new-buy notional limit with reward:risk above 1.5. Book has room for a fifth name so no rotation is required.",
   "thinking": {
     "badge": "Looking to buy XOM",
     "headline": "Buying pressure on XOM.",
@@ -200,8 +200,8 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 108.5250015258789,
-        "open_pnl": 4.8,
+        "last": 108.5199966430664,
+        "open_pnl": 4.79,
         "open_pnl_pct": 2.45,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
@@ -212,9 +212,9 @@
         "avg_cost": 267.36,
         "stop": 255.0,
         "target": 286.0,
-        "last": 270.86749267578125,
-        "open_pnl": 2.6,
-        "open_pnl_pct": 1.31,
+        "last": 270.9200134277344,
+        "open_pnl": 2.63,
+        "open_pnl_pct": 1.33,
         "line": "Bought near $267.36 \u00b7 Sell safety line $255.00 \u00b7 Profit target $286.00",
         "plan": "stop 255.0 or target 286.0"
       },
@@ -236,14 +236,14 @@
         "avg_cost": 248.31,
         "stop": 240.0,
         "target": 262.0,
-        "last": 247.6479949951172,
-        "open_pnl": -0.53,
+        "last": 247.63999938964844,
+        "open_pnl": -0.54,
         "open_pnl_pct": -0.27,
         "line": "Bought near $248.31 \u00b7 Sell safety line $240.00 \u00b7 Profit target $262.00",
         "plan": "stop 240.0 or target 262.0"
       }
     ],
-    "last_checked": "2026-09-16T17:51:00.554361+00:00",
+    "last_checked": "2026-09-16T17:51:20.934294+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -259,23 +259,23 @@
         "model": "grok-4.3",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 60,
+        "confidence": 65,
         "tone": "hold"
       },
       {
         "prefix": "J",
         "model": "claude-haiku-4-5",
-        "action": "BUY",
-        "symbol": "PANW",
-        "confidence": 72,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 62,
+        "tone": "hold"
       },
       {
         "prefix": "J",
         "model": "deepseek-v4-flash",
         "action": "BUY",
         "symbol": "XOM",
-        "confidence": 72,
+        "confidence": 75,
         "tone": "buy"
       },
       {
@@ -283,7 +283,7 @@
         "model": "grok-build-0.1",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 60,
+        "confidence": 65,
         "tone": "hold"
       },
       {
@@ -313,6 +313,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "XOM",
+      "status": "no_consensus",
+      "headline": "BUY XOM \u2014 no consensus",
+      "detail": "Desks: BUY XOM (72%) vs HOLD CASH (65%) vs HOLD WMT (80%). No 2-of-3 senior agreement",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "XOM",
+          "confidence": 75,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "XOM",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "WMT",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-16T17:51:10.078108+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "XOM",
@@ -851,83 +928,6 @@
       "stage": "entry",
       "junior_nomination": "AMD",
       "timestamp": "2026-09-16T16:03:00.444195+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "AMD",
-      "status": "blocked",
-      "headline": "BUY AMD \u2014 blocked",
-      "detail": "Insufficient buying power: $12.03 < $199.43",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "SELL",
-          "symbol": "AMZN",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 73,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "AMD",
-          "confidence": 73,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "WMT",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-16T15:48:18.840506+00:00"
     },
     {
       "type": "fill",
@@ -13112,8 +13112,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 2,
-      "BUY": 2,
+      "HOLD": 3,
+      "BUY": 1,
       "SELL": 0,
       "live": 4,
       "fallback": 0
@@ -13134,20 +13134,20 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 84.0
+    "live_share_recent": 84.1
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 349,
     "closed_outcomes": 159,
-    "consensus_events": 664,
+    "consensus_events": 665,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1013.89,
-    "change": 13.89,
+    "latest_equity": 1013.91,
+    "change": 13.91,
     "change_pct": 1.39,
     "points": [
       {
@@ -15871,6 +15871,12 @@
       {
         "t": "2026-09-16T17:51:03.306151+00:00",
         "equity": 1013.89,
+        "cash": 216.27,
+        "event": "mark"
+      },
+      {
+        "t": "2026-09-16T17:51:23.780390+00:00",
+        "equity": 1013.91,
         "cash": 216.27,
         "event": "mark"
       }
