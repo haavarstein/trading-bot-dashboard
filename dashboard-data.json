@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-09-16T19:10:06.222021+00:00",
+  "generated_at": "2026-09-16T19:18:03.833350+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1007.0,
+    "portfolio_value": 1005.29,
     "starting_cash": 1000.0,
-    "total_return_pct": 0.7,
-    "total_pnl": 7.0,
+    "total_return_pct": 0.53,
+    "total_pnl": 5.29,
     "realized_pnl": 5.15,
-    "open_pnl": 1.81,
-    "capital_deployed": 790.73,
+    "open_pnl": 0.11,
+    "capital_deployed": 789.02,
     "cash": 216.27,
     "closed_trades": 37,
     "win_rate_pct": 29.73,
-    "vs_spy_pct": 2.81,
-    "spy_return_pct": -2.11,
+    "vs_spy_pct": 2.88,
+    "spy_return_pct": -2.35,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-16T19:10:08.886335+00:00"
+    "updated_at": "2026-09-16T19:18:06.578071+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -2.11,
-    "price": 753.1400146484375,
+    "return_pct": -2.35,
+    "price": 751.280029296875,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 5,
-    "validated_count_today": 3,
+    "consensus_count_today": 6,
+    "validated_count_today": 4,
     "blocked_count_today": 2,
     "fills_today": 2,
-    "simulated_orders_today": 3,
+    "simulated_orders_today": 4,
     "top_symbol_today": "AMZN"
   },
   "holdings": [
@@ -38,10 +38,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 108.26499938964844,
-      "market_value": 200.29,
-      "open_pnl": 4.32,
-      "open_pnl_pct": 2.2,
+      "last": 108.0999984741211,
+      "market_value": 199.98,
+      "open_pnl": 4.01,
+      "open_pnl_pct": 2.05,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -50,10 +50,10 @@
       "symbol": "LRCX",
       "qty": 0.74,
       "avg_cost": 267.36,
-      "last": 266.739990234375,
-      "market_value": 197.39,
-      "open_pnl": -0.46,
-      "open_pnl_pct": -0.23,
+      "last": 266.6499938964844,
+      "market_value": 197.32,
+      "open_pnl": -0.53,
+      "open_pnl_pct": -0.27,
       "stop": 255.0,
       "target": 286.0,
       "thesis": "LRCX ranks top of the candidate list on a fresh institutional-lift/beat headline with bullish sentiment and neutral RSI, offering a liquid semi-equipment catalyst setup. Book has room under the 5-name cap and ~$200 notional can be deployed without forcing a rotation. Risk defined below recent support with target sized for at least 1.5:1 reward-to-risk while existing XOM/WMT/META holds remain constructive."
@@ -62,10 +62,10 @@
       "symbol": "TSLA",
       "qty": 0.55,
       "avg_cost": 357.18,
-      "last": 357.0000915527344,
-      "market_value": 196.35,
-      "open_pnl": -0.1,
-      "open_pnl_pct": -0.05,
+      "last": 355.82281494140625,
+      "market_value": 195.7,
+      "open_pnl": -0.75,
+      "open_pnl_pct": -0.38,
       "stop": 342.0,
       "target": 380.0,
       "thesis": "TSLA tops the ranked catalyst list on a PG&E grid deal headline with bullish sentiment and neutral RSI, offering a liquid setup while the book still has open slots and cash. Valuation is debated but the rank/catalyst edge is the cleanest available versus held names that are already working. Small notional keeps risk tight with stop/target structured for at least 1.5 R:R."
@@ -74,10 +74,10 @@
       "symbol": "AMZN",
       "qty": 0.8,
       "avg_cost": 248.31,
-      "last": 245.86990356445312,
-      "market_value": 196.7,
-      "open_pnl": -1.95,
-      "open_pnl_pct": -0.98,
+      "last": 245.02999877929688,
+      "market_value": 196.02,
+      "open_pnl": -2.62,
+      "open_pnl_pct": -1.32,
       "stop": 240.0,
       "target": 262.0,
       "thesis": "AMZN shows a ranked liquid setup with bullish sentiment and a headline institutional buy catalyst supporting near-term momentum. RSI near 50 leaves room for upside without overbought conditions. Portfolio has capacity for one more name under the 5-position guideline and cash covers a sub-$200 notional entry. Risk defined below recent support with 1.5+ R:R to the target."
@@ -86,15 +86,15 @@
   "latest_candidate": {
     "symbol": "AVGO",
     "name": "AVGO",
-    "price": 337.8450012207031,
-    "volume": 12832032.0,
-    "avg_volume": 30375653.2,
-    "percent_change": -0.42001586910515853,
+    "price": 336.28009033203125,
+    "volume": 13518217.0,
+    "avg_volume": 30444271.7,
+    "percent_change": -0.881274141085358,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 11,
-    "liquidity_score": 84.83,
-    "rank_score": 64.56,
+    "liquidity_score": 84.84,
+    "rank_score": 64.93,
     "news_hits": 5,
     "catalyst": "Headline-driven setup (ai, catalyst, demand): Broadcom (AVGO) Shares Fell As Slower AI Development Raised Demand Concerns - Yahoo Finance",
     "top_headlines": [
@@ -143,51 +143,51 @@
   },
   "latest_decision": {
     "model": "grok-4.5",
-    "action": "BUY",
-    "symbol": "AVGO",
-    "confidence": 72,
+    "action": "HOLD",
+    "symbol": "CASH",
+    "confidence": 62,
     "cache_stats": null,
-    "entry_price": 337.85,
-    "stop_loss": 325.0,
-    "take_profit": 360.0,
-    "qty": 0.59,
-    "thesis": "AVGO is the sole ranked liquid candidate with room for a fifth name and ~$200 notional available. Price near mid-RSI leaves a clean dip-buy structure after the AI-demand headline shakeout, with defined risk below recent support. Reward-to-risk clears 1.5x toward a reclaim of the prior range.",
-    "reason_code": "new_entry",
+    "entry_price": 0.0,
+    "stop_loss": 0.0,
+    "take_profit": 0.0,
+    "qty": 0.0,
+    "thesis": "Rejecting the escalated BUY AVGO. The listed catalyst is a negative headline on slower AI development and demand concerns with only a mid-tier rank_score, so there is no clean long edge versus simply holding cash. Book already has four names and cash is limited; standing aside preserves dry powder until a clearer setup.",
+    "reason_code": "hold",
     "reasoning": {
-      "headline": "Bought $AVGO",
-      "narrative": "AVGO is the sole ranked liquid candidate with room for a fifth name and ~$200 notional available. Price near mid-RSI leaves a clean dip-buy structure after the AI-demand headline shakeout, with defined risk below recent support. Reward-to-risk clears 1.5x toward a reclaim of the prior range.",
+      "headline": "Hold $CASH",
+      "narrative": "Rejecting the escalated BUY AVGO. The listed catalyst is a negative headline on slower AI development and demand concerns with only a mid-tier rank_score, so there is no clean long edge versus simply holding cash. Book already has four names and cash is limited; standing aside preserves dry powder until a clearer setup.",
       "bullets": [
-        "only candidate; book has slot for 5th name",
-        "notional capped ~$200 at 0.59 sh",
-        "stop 325 / target 360 gives R:R >1.5",
-        "catalyst dip after AI demand headline"
+        "AVGO catalyst reads demand-concern / shares-fell, not bullish trigger",
+        "rank_score ~65 and catalyst_score 11 insufficient for forced entry",
+        "4 open positions; no need to force a 5th without edge",
+        "Preserve ~$216 cash for higher-quality liquid setup"
       ],
       "risk_map": {
-        "stop": 325.0,
-        "target": 360.0,
+        "stop": 0.0,
+        "target": 0.0,
         "horizon_days": 5,
-        "rr": 1.72,
-        "confidence_10": 7,
-        "confidence": 72
+        "rr": 0.0,
+        "confidence_10": 6,
+        "confidence": 62
       },
-      "thesis": "AVGO is the sole ranked liquid candidate with room for a fifth name and ~$200 notional available. Price near mid-RSI leaves a clean dip-buy structure after the AI-demand headline shakeout, with defined risk below recent support. Reward-to-risk clears 1.5x toward a reclaim of the prior range."
+      "thesis": "Rejecting the escalated BUY AVGO. The listed catalyst is a negative headline on slower AI development and demand concerns with only a mid-tier rank_score, so there is no clean long edge versus simply holding cash. Book already has four names and cash is limited; standing aside preserves dry powder until a clearer setup."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "only candidate; book has slot for 5th name",
-      "notional capped ~$200 at 0.59 sh",
-      "stop 325 / target 360 gives R:R >1.5",
-      "catalyst dip after AI demand headline"
+      "AVGO catalyst reads demand-concern / shares-fell, not bullish trigger",
+      "rank_score ~65 and catalyst_score 11 insufficient for forced entry",
+      "4 open positions; no need to force a 5th without edge",
+      "Preserve ~$216 cash for higher-quality liquid setup"
     ],
-    "timestamp": "2026-09-16T19:05:37.399883+00:00"
+    "timestamp": "2026-09-16T19:17:50.372941+00:00"
   },
-  "stance": "Buying pressure on AVGO. AVGO is the sole ranked liquid candidate with room for a fifth name and ~$200 notional available. Price near mid-RSI leaves a clean dip-buy structure after the AI-demand headline shakeout, with defined risk below recent support. Reward-to-risk clears 1.5x toward a reclaim of the prior range.",
+  "stance": "Holding WMT, LRCX, TSLA, AMZN. No new trade right now.",
   "thinking": {
-    "badge": "Looking to buy AVGO",
-    "headline": "Buying pressure on AVGO.",
-    "plain_english": "Right now Hermes wants exposure to AVGO. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
+    "badge": "Holding what it owns",
+    "headline": "Holding WMT, LRCX, TSLA, AMZN. No new trade right now.",
+    "plain_english": "Right now Hermes is holding WMT, LRCX, TSLA, AMZN and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
     "triggers": [
       "It owns WMT, bought near $105.93. Simple plan: sell if it falls to about $102.50, or take profit near $112.00.",
       "It owns LRCX, bought near $267.36. Simple plan: sell if it falls to about $255.00, or take profit near $286.00.",
@@ -204,9 +204,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 108.26499938964844,
-        "open_pnl": 4.32,
-        "open_pnl_pct": 2.2,
+        "last": 108.0999984741211,
+        "open_pnl": 4.01,
+        "open_pnl_pct": 2.05,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -216,9 +216,9 @@
         "avg_cost": 267.36,
         "stop": 255.0,
         "target": 286.0,
-        "last": 266.739990234375,
-        "open_pnl": -0.46,
-        "open_pnl_pct": -0.23,
+        "last": 266.6499938964844,
+        "open_pnl": -0.53,
+        "open_pnl_pct": -0.27,
         "line": "Bought near $267.36 \u00b7 Sell safety line $255.00 \u00b7 Profit target $286.00",
         "plan": "stop 255.0 or target 286.0"
       },
@@ -228,9 +228,9 @@
         "avg_cost": 357.18,
         "stop": 342.0,
         "target": 380.0,
-        "last": 357.0000915527344,
-        "open_pnl": -0.1,
-        "open_pnl_pct": -0.05,
+        "last": 355.82281494140625,
+        "open_pnl": -0.75,
+        "open_pnl_pct": -0.38,
         "line": "Bought near $357.18 \u00b7 Sell safety line $342.00 \u00b7 Profit target $380.00",
         "plan": "stop 342.0 or target 380.0"
       },
@@ -240,17 +240,17 @@
         "avg_cost": 248.31,
         "stop": 240.0,
         "target": 262.0,
-        "last": 245.86990356445312,
-        "open_pnl": -1.95,
-        "open_pnl_pct": -0.98,
+        "last": 245.02999877929688,
+        "open_pnl": -2.62,
+        "open_pnl_pct": -1.32,
         "line": "Bought near $248.31 \u00b7 Sell safety line $240.00 \u00b7 Profit target $262.00",
         "plan": "stop 240.0 or target 262.0"
       }
     ],
-    "last_checked": "2026-09-16T19:10:06.222021+00:00",
+    "last_checked": "2026-09-16T19:18:03.833350+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "BUY",
+    "action": "HOLD",
     "symbols_held": [
       "WMT",
       "LRCX",
@@ -263,7 +263,7 @@
         "model": "grok-4.3",
         "action": "BUY",
         "symbol": "AVGO",
-        "confidence": 72,
+        "confidence": 75,
         "tone": "buy"
       },
       {
@@ -278,25 +278,25 @@
         "prefix": "J",
         "model": "deepseek-v4-flash",
         "action": "BUY",
-        "symbol": "AVGO",
+        "symbol": "XOM",
         "confidence": 72,
         "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 60,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "AVGO",
+        "confidence": 75,
+        "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
-        "action": "BUY",
-        "symbol": "AVGO",
-        "confidence": 72,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 62,
+        "tone": "hold"
       },
       {
         "prefix": "S",
@@ -317,6 +317,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 no new trade",
+      "detail": "Rejecting the escalated BUY AVGO. The listed catalyst is a negative headline on slower AI development and demand concerns with only a mid-tier rank_score, so there is no clean long edge versus simply holding cash. Book already has four names and cash is limited; standing aside preserves dry powder until a clearer setup.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "AVGO",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "AVGO",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "XOM",
+          "confidence": 72,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "AVGO",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "WMT",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "AVGO",
+      "timestamp": "2026-09-16T19:17:50.372941+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "AVGO",
@@ -855,83 +932,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-09-16T17:33:25.014332+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CASH",
-      "status": "hold",
-      "headline": "HOLD \u2014 no new trade",
-      "detail": "Book already holds four liquid names with room for one more, but top-ranked candidates are either already owned (TSLA) or carry mixed valuation headlines (PANW fully valued/buyback done, AMD expensive). No setup offers a clearly superior risk-reward catalyst versus existing positions, and AMZN drag is too small to force a rotation. Preserve cash and wait for a cleaner edge.",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "PANW",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "PANW",
-          "confidence": 75,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "WMT",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-16T17:18:54.975102+00:00"
     },
     {
       "type": "fill",
@@ -12841,15 +12841,15 @@
     {
       "symbol": "AVGO",
       "name": "AVGO",
-      "price": 337.8450012207031,
-      "volume": 12832032.0,
-      "avg_volume": 30375653.2,
-      "percent_change": -0.42001586910515853,
+      "price": 336.28009033203125,
+      "volume": 13518217.0,
+      "avg_volume": 30444271.7,
+      "percent_change": -0.881274141085358,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
-      "liquidity_score": 84.83,
-      "rank_score": 64.56,
+      "liquidity_score": 84.84,
+      "rank_score": 64.93,
       "news_hits": 5,
       "catalyst": "Headline-driven setup (ai, catalyst, demand): Broadcom (AVGO) Shares Fell As Slower AI Development Raised Demand Concerns - Yahoo Finance",
       "top_headlines": [
@@ -12899,15 +12899,15 @@
     {
       "symbol": "TSLA",
       "name": "TSLA",
-      "price": 357.30999755859375,
-      "volume": 24344678.0,
-      "avg_volume": 39312907.8,
-      "percent_change": 0.20472573162211913,
+      "price": 355.67498779296875,
+      "volume": 25548219.0,
+      "avg_volume": 39433261.9,
+      "percent_change": -0.2537996560032584,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 85.95,
-      "rank_score": 56.56,
+      "liquidity_score": 85.96,
+      "rank_score": 56.6,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (demand): Tesla Is Expanding Into Vietnam to Capture Growing EV Demand. What This Actually Means for TSLA Stock. - barchart.com",
       "top_headlines": [
@@ -12954,15 +12954,15 @@
     {
       "symbol": "XOM",
       "name": "XOM",
-      "price": 163.6699981689453,
-      "volume": 7296554.0,
-      "avg_volume": 12852575.4,
-      "percent_change": -3.3368821821833725,
+      "price": 163.0399932861328,
+      "volume": 7725903.0,
+      "avg_volume": 12895510.3,
+      "percent_change": -3.7089615913261738,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 81.09,
-      "rank_score": 55.33,
+      "liquidity_score": 81.1,
+      "rank_score": 55.63,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (approval, catalyst, wins): ExxonMobil (XOM) Wins Approval For Rose Carbon Capture Project In Texas - simplywall.st",
       "top_headlines": [
@@ -12997,15 +12997,15 @@
     {
       "symbol": "PANW",
       "name": "PANW",
-      "price": 379.70001220703125,
-      "volume": 3514094.0,
-      "avg_volume": 6765399.4,
-      "percent_change": 1.2290426068808844,
+      "price": 376.4150085449219,
+      "volume": 3673379.0,
+      "avg_volume": 6781327.9,
+      "percent_change": 0.3532518115566178,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 78.3,
-      "rank_score": 54.73,
+      "liquidity_score": 78.31,
+      "rank_score": 54.03,
       "news_hits": 7,
       "catalyst": "Headline-driven setup (ai, buyback, catalyst): Palo Alto Networks (PANW) Closes Its Buyback, Is The Stock Above Fair Value? - simplywall.st",
       "top_headlines": [
@@ -13047,37 +13047,51 @@
       ]
     },
     {
-      "symbol": "AMZN",
-      "name": "AMZN",
-      "price": 246.19000244140625,
-      "volume": 19776969.0,
-      "avg_volume": 28664636.9,
-      "percent_change": -0.8976715819885356,
+      "symbol": "AAPL",
+      "name": "AAPL",
+      "price": 330.80999755859375,
+      "volume": 21658227.0,
+      "avg_volume": 42507642.7,
+      "percent_change": -0.15995617346370647,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 84.57,
-      "rank_score": 48.4,
-      "news_hits": 5,
-      "catalyst": "Headline-driven setup (catalyst, growth, upgrade): Amazon: Incredible Growth Spike Can't Be Ignored (Upgrade) (NASDAQ:AMZN) - Seeking Alpha",
+      "liquidity_score": 86.28,
+      "rank_score": 51.07,
+      "news_hits": 7,
+      "catalyst": "Headline-driven setup (record): AAPL Stock Hits Fresh Record As July Rally Nears Best Month In Nearly 4 Years \u2014 HSBC Sees Another 10% Upside - Stocktwits",
       "top_headlines": [
-        "Amazon: Incredible Growth Spike Can't Be Ignored (Upgrade) (NASDAQ:AMZN) - Seeking Alpha",
-        "Amazon stock outlook: Is AMZN a buy heading into next quarter? - Investing.com",
-        "AMZN Looks 0.3% Undervalued on GF Value\u2122 as Streaming Bundle Lau - GuruFocus"
+        "Large, Unusual Volume in Long-Dated Apple Put Options Shows Investors Bullish in AAPL - barchart.com",
+        "AAPL Stock May Be Approaching a Major Inflection Point - Here's Why Morgan Stanley Is Bullish - FinanceBuzz",
+        "AAPL Stock Hits Fresh Record As July Rally Nears Best Month In Nearly 4 Years \u2014 HSBC Sees Another 10% Upside - Stocktwits"
       ],
       "matched_headlines": [
         {
-          "title": "Amazon: Incredible Growth Spike Can't Be Ignored (Upgrade) (NASDAQ:AMZN) - Seeking Alpha",
+          "title": "AAPL Stock Hits Fresh Record As July Rally Nears Best Month In Nearly 4 Years \u2014 HSBC Sees Another 10% Upside - Stocktwits",
           "keywords": [
-            "catalyst",
-            "growth",
-            "upgrade"
+            "record"
           ]
         },
         {
-          "title": "5,477 Shares in Amazon.com, Inc. $AMZN Bought by Planning Directions Inc. - MarketBeat",
+          "title": "Apple Stock Rises as AAPL Develops AI Servers With Its Own Chips - CryptoRank",
           "keywords": [
-            "beat"
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Apple\u2019s Siri update highlights shift toward AI agents (AAPL:NASDAQ) - Seeking Alpha",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "AAPL Looks 15.8% Overvalued on GF Value\u2122 as Siri AI Upgrade Driv - GuruFocus",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "upgrade"
           ]
         }
       ]
@@ -13109,8 +13123,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 1,
-      "BUY": 3,
+      "HOLD": 0,
+      "BUY": 4,
       "SELL": 0,
       "live": 4,
       "fallback": 0
@@ -13131,21 +13145,21 @@
     "last_stage": "entry",
     "last_junior_nomination": "AVGO",
     "last_escalate_reason": "junior_nomination",
-    "live_share_recent": 84.4
+    "live_share_recent": 85.7
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 349,
     "closed_outcomes": 159,
-    "consensus_events": 670,
+    "consensus_events": 671,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1007.0,
-    "change": 7.0,
-    "change_pct": 0.7,
+    "latest_equity": 1005.29,
+    "change": 5.29,
+    "change_pct": 0.53,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15890,8 +15904,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-16T19:10:08.886335+00:00",
-        "equity": 1007.0,
+        "t": "2026-09-16T19:18:06.578071+00:00",
+        "equity": 1005.29,
         "cash": 216.27,
         "event": "mark"
       }
