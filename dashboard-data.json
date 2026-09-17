@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-09-17T17:30:44.663726+00:00",
+  "generated_at": "2026-09-17T17:33:59.126557+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1015.77,
+    "portfolio_value": 1016.23,
     "starting_cash": 1000.0,
-    "total_return_pct": 1.58,
-    "total_pnl": 15.77,
+    "total_return_pct": 1.62,
+    "total_pnl": 16.23,
     "realized_pnl": 5.15,
-    "open_pnl": 10.58,
-    "capital_deployed": 799.5,
+    "open_pnl": 11.04,
+    "capital_deployed": 799.96,
     "cash": 216.27,
     "closed_trades": 37,
     "win_rate_pct": 29.73,
-    "vs_spy_pct": 2.55,
-    "spy_return_pct": -0.97,
+    "vs_spy_pct": 2.56,
+    "spy_return_pct": -0.94,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-17T17:30:47.380880+00:00"
+    "updated_at": "2026-09-17T17:34:01.869470+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.97,
-    "price": 761.9500122070312,
+    "return_pct": -0.94,
+    "price": 762.1599731445312,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 4,
-    "validated_count_today": 4,
+    "consensus_count_today": 5,
+    "validated_count_today": 5,
     "blocked_count_today": 0,
     "fills_today": 0,
-    "simulated_orders_today": 4,
+    "simulated_orders_today": 5,
     "top_symbol_today": "AMZN"
   },
   "holdings": [
@@ -38,10 +38,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 106.83499908447266,
-      "market_value": 197.64,
-      "open_pnl": 1.67,
-      "open_pnl_pct": 0.85,
+      "last": 106.79000091552734,
+      "market_value": 197.56,
+      "open_pnl": 1.59,
+      "open_pnl_pct": 0.81,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -50,10 +50,10 @@
       "symbol": "LRCX",
       "qty": 0.74,
       "avg_cost": 267.36,
-      "last": 268.4549865722656,
-      "market_value": 198.66,
-      "open_pnl": 0.81,
-      "open_pnl_pct": 0.41,
+      "last": 268.75,
+      "market_value": 198.88,
+      "open_pnl": 1.03,
+      "open_pnl_pct": 0.52,
       "stop": 255.0,
       "target": 286.0,
       "thesis": "LRCX ranks top of the candidate list on a fresh institutional-lift/beat headline with bullish sentiment and neutral RSI, offering a liquid semi-equipment catalyst setup. Book has room under the 5-name cap and ~$200 notional can be deployed without forcing a rotation. Risk defined below recent support with target sized for at least 1.5:1 reward-to-risk while existing XOM/WMT/META holds remain constructive."
@@ -62,10 +62,10 @@
       "symbol": "TSLA",
       "qty": 0.55,
       "avg_cost": 357.18,
-      "last": 367.80499267578125,
-      "market_value": 202.29,
-      "open_pnl": 5.84,
-      "open_pnl_pct": 2.97,
+      "last": 368.2799072265625,
+      "market_value": 202.55,
+      "open_pnl": 6.1,
+      "open_pnl_pct": 3.11,
       "stop": 342.0,
       "target": 380.0,
       "thesis": "TSLA tops the ranked catalyst list on a PG&E grid deal headline with bullish sentiment and neutral RSI, offering a liquid setup while the book still has open slots and cash. Valuation is debated but the rank/catalyst edge is the cleanest available versus held names that are already working. Small notional keeps risk tight with stop/target structured for at least 1.5 R:R."
@@ -74,10 +74,10 @@
       "symbol": "AMZN",
       "qty": 0.8,
       "avg_cost": 248.31,
-      "last": 251.13999938964844,
-      "market_value": 200.91,
-      "open_pnl": 2.26,
-      "open_pnl_pct": 1.14,
+      "last": 251.2100067138672,
+      "market_value": 200.97,
+      "open_pnl": 2.32,
+      "open_pnl_pct": 1.17,
       "stop": 240.0,
       "target": 262.0,
       "thesis": "AMZN shows a ranked liquid setup with bullish sentiment and a headline institutional buy catalyst supporting near-term momentum. RSI near 50 leaves room for upside without overbought conditions. Portfolio has capacity for one more name under the 5-position guideline and cash covers a sub-$200 notional entry. Risk defined below recent support with 1.5+ R:R to the target."
@@ -86,15 +86,15 @@
   "latest_candidate": {
     "symbol": "AMZN",
     "name": "AMZN",
-    "price": 251.44500732421875,
-    "volume": 15570289.0,
-    "avg_volume": 29182078.9,
-    "percent_change": 2.230037591734347,
+    "price": 251.16810607910156,
+    "volume": 15881092.0,
+    "avg_volume": 29213159.2,
+    "percent_change": 2.1174578073959465,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 13,
-    "liquidity_score": 84.65,
-    "rank_score": 73.98,
+    "liquidity_score": 84.66,
+    "rank_score": 73.89,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (ai, catalyst): Amazon calls for rigorous AI testing, strong safeguards (AMZN:NASDAQ) - Seeking Alpha",
     "top_headlines": [
@@ -141,43 +141,43 @@
     "model": "grok-4.5",
     "action": "HOLD",
     "symbol": "CASH",
-    "confidence": 62,
+    "confidence": 68,
     "cache_stats": null,
     "entry_price": 0.0,
     "stop_loss": 0.0,
     "take_profit": 0.0,
     "qty": 0.0,
-    "thesis": "No clean incremental edge versus current book. Top-ranked AMZN is already held and working; remaining candidates show only moderate headline catalysts with neutral RSI and insufficient differentiation to force a new entry or rotation under the $200 notional and R:R constraints. Book is at 4 names, all modestly green with stops intact, so preserving cash and discipline is preferred.",
+    "thesis": "Top-ranked AMZN is already held and working; remaining candidates show only moderate rank/catalyst scores without a clearly superior liquid setup versus the existing book. Cash is limited and open risk is already diversified across four names under the five-name cap, so forcing a marginal new entry fails the clean-edge bar. Stand aside and let current stops/targets manage the book.",
     "reason_code": "hold",
     "reasoning": {
       "headline": "Hold $CASH",
-      "narrative": "No clean incremental edge versus current book. Top-ranked AMZN is already held and working; remaining candidates show only moderate headline catalysts with neutral RSI and insufficient differentiation to force a new entry or rotation under the $200 notional and R:R constraints. Book is at 4 names, all modestly green with stops intact, so preserving cash and discipline is preferred.",
+      "narrative": "Top-ranked AMZN is already held and working; remaining candidates show only moderate rank/catalyst scores without a clearly superior liquid setup versus the existing book. Cash is limited and open risk is already diversified across four names under the five-name cap, so forcing a marginal new entry fails the clean-edge bar. Stand aside and let current stops/targets manage the book.",
       "bullets": [
-        "AMZN already owned and top-ranked; no need to chase add",
-        "Other candidates mid-50s rank, mild catalysts only",
-        "All 4 holds green; LRCX weakest but not broken",
-        "Cash ~$216 kept for clearer setup"
+        "AMZN leads ranks but position already open",
+        "Next names (AMD/JPM) mid-50s rank only",
+        "No rotation needed; book not full and P/L stable",
+        "Preserve ~$216 cash for clearer catalyst"
       ],
       "risk_map": {
         "stop": 0.0,
         "target": 0.0,
         "horizon_days": 5,
         "rr": 0.0,
-        "confidence_10": 6,
-        "confidence": 62
+        "confidence_10": 7,
+        "confidence": 68
       },
-      "thesis": "No clean incremental edge versus current book. Top-ranked AMZN is already held and working; remaining candidates show only moderate headline catalysts with neutral RSI and insufficient differentiation to force a new entry or rotation under the $200 notional and R:R constraints. Book is at 4 names, all modestly green with stops intact, so preserving cash and discipline is preferred."
+      "thesis": "Top-ranked AMZN is already held and working; remaining candidates show only moderate rank/catalyst scores without a clearly superior liquid setup versus the existing book. Cash is limited and open risk is already diversified across four names under the five-name cap, so forcing a marginal new entry fails the clean-edge bar. Stand aside and let current stops/targets manage the book."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "AMZN already owned and top-ranked; no need to chase add",
-      "Other candidates mid-50s rank, mild catalysts only",
-      "All 4 holds green; LRCX weakest but not broken",
-      "Cash ~$216 kept for clearer setup"
+      "AMZN leads ranks but position already open",
+      "Next names (AMD/JPM) mid-50s rank only",
+      "No rotation needed; book not full and P/L stable",
+      "Preserve ~$216 cash for clearer catalyst"
     ],
-    "timestamp": "2026-09-17T17:18:24.816744+00:00"
+    "timestamp": "2026-09-17T17:33:44.833877+00:00"
   },
   "stance": "Holding WMT, LRCX, TSLA, AMZN. No new trade right now.",
   "thinking": {
@@ -199,9 +199,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 106.83499908447266,
-        "open_pnl": 1.67,
-        "open_pnl_pct": 0.85,
+        "last": 106.79000091552734,
+        "open_pnl": 1.59,
+        "open_pnl_pct": 0.81,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -211,9 +211,9 @@
         "avg_cost": 267.36,
         "stop": 255.0,
         "target": 286.0,
-        "last": 268.4549865722656,
-        "open_pnl": 0.81,
-        "open_pnl_pct": 0.41,
+        "last": 268.75,
+        "open_pnl": 1.03,
+        "open_pnl_pct": 0.52,
         "line": "Bought near $267.36 \u00b7 Sell safety line $255.00 \u00b7 Profit target $286.00",
         "plan": "stop 255.0 or target 286.0"
       },
@@ -223,9 +223,9 @@
         "avg_cost": 357.18,
         "stop": 342.0,
         "target": 380.0,
-        "last": 367.80499267578125,
-        "open_pnl": 5.84,
-        "open_pnl_pct": 2.97,
+        "last": 368.2799072265625,
+        "open_pnl": 6.1,
+        "open_pnl_pct": 3.11,
         "line": "Bought near $357.18 \u00b7 Sell safety line $342.00 \u00b7 Profit target $380.00",
         "plan": "stop 342.0 or target 380.0"
       },
@@ -235,14 +235,14 @@
         "avg_cost": 248.31,
         "stop": 240.0,
         "target": 262.0,
-        "last": 251.13999938964844,
-        "open_pnl": 2.26,
-        "open_pnl_pct": 1.14,
+        "last": 251.2100067138672,
+        "open_pnl": 2.32,
+        "open_pnl_pct": 1.17,
         "line": "Bought near $248.31 \u00b7 Sell safety line $240.00 \u00b7 Profit target $262.00",
         "plan": "stop 240.0 or target 262.0"
       }
     ],
-    "last_checked": "2026-09-17T17:30:44.663726+00:00",
+    "last_checked": "2026-09-17T17:33:59.126557+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "HOLD",
@@ -274,23 +274,23 @@
         "model": "deepseek-v4-flash",
         "action": "BUY",
         "symbol": "AMD",
-        "confidence": 76,
+        "confidence": 72,
         "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "BUY",
-        "symbol": "AMZN",
-        "confidence": 75,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 60,
+        "tone": "hold"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 62,
+        "confidence": 68,
         "tone": "hold"
       },
       {
@@ -312,6 +312,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 no new trade",
+      "detail": "Top-ranked AMZN is already held and working; remaining candidates show only moderate rank/catalyst scores without a clearly superior liquid setup versus the existing book. Cash is limited and open risk is already diversified across four names under the five-name cap, so forcing a marginal new entry fails the clean-edge bar. Stand aside and let current stops/targets manage the book.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "AMD",
+          "confidence": 72,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 68,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "BUY",
+          "symbol": "AMD",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-17T17:33:44.833877+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -850,83 +927,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-09-17T15:48:32.629768+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "XOM",
-      "status": "no_consensus",
-      "headline": "BUY XOM \u2014 no consensus",
-      "detail": "Desks: BUY XOM (72%) vs HOLD CASH (65%) vs BUY XOM (90%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "XOM",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "XOM",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "BUY",
-          "symbol": "XOM",
-          "confidence": 90,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-17T15:33:10.270578+00:00"
     }
   ],
   "recent_trades": [
@@ -12820,15 +12820,15 @@
     {
       "symbol": "AMZN",
       "name": "AMZN",
-      "price": 251.44500732421875,
-      "volume": 15570289.0,
-      "avg_volume": 29182078.9,
-      "percent_change": 2.230037591734347,
+      "price": 251.16810607910156,
+      "volume": 15881092.0,
+      "avg_volume": 29213159.2,
+      "percent_change": 2.1174578073959465,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
-      "liquidity_score": 84.65,
-      "rank_score": 73.98,
+      "liquidity_score": 84.66,
+      "rank_score": 73.89,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Amazon calls for rigorous AI testing, strong safeguards (AMZN:NASDAQ) - Seeking Alpha",
       "top_headlines": [
@@ -12874,34 +12874,34 @@
     {
       "symbol": "AMD",
       "name": "AMD",
-      "price": 548.469970703125,
-      "volume": 17840410.0,
-      "avg_volume": 20187581.0,
-      "percent_change": 7.01853086890244,
+      "price": 547.5499877929688,
+      "volume": 18201488.0,
+      "avg_volume": 20223688.8,
+      "percent_change": 6.839022008384147,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 83.05,
-      "rank_score": 57.57,
+      "liquidity_score": 83.06,
+      "rank_score": 57.43,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (growth): AMD Stock: Growth Is Catching Up With The Valuation (NASDAQ:AMD) - Seeking Alpha",
+      "catalyst": "Headline-driven setup (ai, catalyst): AMD Leads Chip Stocks Higher Amid Sector Rebound - Investor's Business Daily",
       "top_headlines": [
-        "AMD Stock: Growth Is Catching Up With The Valuation (NASDAQ:AMD) - Seeking Alpha",
         "AMD Leads Chip Stocks Higher Amid Sector Rebound - Investor's Business Daily",
+        "AMD Stock: Growth Is Catching Up With The Valuation (NASDAQ:AMD) - Seeking Alpha",
         "QQQ is up 1.7% today, on AMD stock price movement - Quiver Quantitative"
       ],
       "matched_headlines": [
-        {
-          "title": "AMD Stock: Growth Is Catching Up With The Valuation (NASDAQ:AMD) - Seeking Alpha",
-          "keywords": [
-            "growth"
-          ]
-        },
         {
           "title": "AMD Leads Chip Stocks Higher Amid Sector Rebound - Investor's Business Daily",
           "keywords": [
             "ai",
             "catalyst"
+          ]
+        },
+        {
+          "title": "AMD Stock: Growth Is Catching Up With The Valuation (NASDAQ:AMD) - Seeking Alpha",
+          "keywords": [
+            "growth"
           ]
         },
         {
@@ -12931,15 +12931,15 @@
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 350.0,
-      "volume": 2760401.0,
-      "avg_volume": 6647630.1,
-      "percent_change": 0.3095226787526487,
+      "price": 349.4700012207031,
+      "volume": 2856913.0,
+      "avg_volume": 6657281.3,
+      "percent_change": 0.15762575140524554,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
       "liquidity_score": 78.23,
-      "rank_score": 55.48,
+      "rank_score": 55.36,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): JPM Stock Gains Nearly 3% \u2014 Jamie Dimon Succession Dynamics Shift After Marianne Lake Exit - Stocktwits",
       "top_headlines": [
@@ -12986,75 +12986,17 @@
       ]
     },
     {
-      "symbol": "PLTR",
-      "name": "PLTR",
-      "price": 174.9700927734375,
-      "volume": 12973108.0,
-      "avg_volume": 24201560.8,
-      "percent_change": 0.36141817642675456,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 7,
-      "liquidity_score": 83.84,
-      "rank_score": 48.37,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): Why the Market Dipped But Palantir Technologies Inc. (PLTR) Gained Today - Yahoo Finance",
-      "top_headlines": [
-        "Palantir Stock Is Flat - But Recent News Suggests Not For Long (NASDAQ:PLTR) - Seeking Alpha",
-        "Why the Market Dipped But Palantir Technologies Inc. (PLTR) Gained Today - Yahoo Finance",
-        "PLTR CEO Alex Karp Calls For AI Accountability \u2014 \u2018First Line Of Defense Is You\u2019re Liable For Your Own Actions\u2019 - Stocktwits"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Why the Market Dipped But Palantir Technologies Inc. (PLTR) Gained Today - Yahoo Finance",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "PLTR CEO Alex Karp Calls For AI Accountability \u2014 \u2018First Line Of Defense Is You\u2019re Liable For Your Own Actions\u2019 - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Analysts Offer Insights on Technology Companies: Palantir Technologies (PLTR), Motorola Solutions (MSI) and Brand Engagement Network (BNAI) - The Globe and Mail",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Palantir Looks Cheap Among AI Software Stocks, UBS Says \u2014 Why PLTR Could Have More Room To Run - TradingView",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Palantir Technologies (NASDAQ:PLTR): Strong Growth Paired With a Promising Technical Setup - ChartMill",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "growth"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "XOM",
       "name": "XOM",
-      "price": 162.67999267578125,
-      "volume": 4775588.0,
-      "avg_volume": 12815558.8,
-      "percent_change": -0.3918776755666923,
+      "price": 162.83909606933594,
+      "volume": 4898038.0,
+      "avg_volume": 12827803.8,
+      "percent_change": -0.29445948647805265,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
       "liquidity_score": 81.08,
-      "rank_score": 47.48,
+      "rank_score": 47.4,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): ExxonMobil (NYSE:XOM) Shares Down 3.6% - Should You Sell? - MarketBeat",
       "top_headlines": [
@@ -13075,6 +13017,52 @@
             "approval",
             "catalyst",
             "wins"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "LRCX",
+      "name": "LRCX",
+      "price": 268.489990234375,
+      "volume": 4275924.0,
+      "avg_volume": 8451132.4,
+      "percent_change": -0.274865624839537,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 7,
+      "liquidity_score": 79.27,
+      "rank_score": 46.11,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (growth): Lam Research (NASDAQ:LRCX): Affordable Growth With Elite Profitability - ChartMill",
+      "top_headlines": [
+        "Lam Research (NASDAQ:LRCX): Affordable Growth With Elite Profitability - ChartMill",
+        "AMAT vs. LRCX: Which WFE Stock is a Safer Bet Right Now? - Yahoo Finance",
+        "WINTON GROUP Ltd Sells 20,828 Shares of Lam Research Corporation $LRCX - MarketBeat"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Lam Research (NASDAQ:LRCX): Affordable Growth With Elite Profitability - ChartMill",
+          "keywords": [
+            "growth"
+          ]
+        },
+        {
+          "title": "WINTON GROUP Ltd Sells 20,828 Shares of Lam Research Corporation $LRCX - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Lam Research Corp (LRCX) Shares Fall 8.3% -- GF Value Says Still Overvalued - GuruFocus",
+          "keywords": [
+            "fall"
+          ]
+        },
+        {
+          "title": "Lam Research (NASDAQ:LRCX) Stock Price Down 8.3% - Time to Sell? - MarketBeat",
+          "keywords": [
+            "beat"
           ]
         }
       ]
@@ -13106,8 +13094,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 2,
-      "BUY": 2,
+      "HOLD": 3,
+      "BUY": 1,
       "SELL": 0,
       "live": 4,
       "fallback": 0
@@ -13134,15 +13122,15 @@
     "candidate_signals_logged": 8,
     "fills_logged": 349,
     "closed_outcomes": 159,
-    "consensus_events": 687,
+    "consensus_events": 688,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1015.77,
-    "change": 15.77,
-    "change_pct": 1.58,
+    "latest_equity": 1016.23,
+    "change": 16.23,
+    "change_pct": 1.62,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15953,8 +15941,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-17T17:30:47.380880+00:00",
-        "equity": 1015.77,
+        "t": "2026-09-17T17:34:01.869470+00:00",
+        "equity": 1016.23,
         "cash": 216.27,
         "event": "mark"
       }
