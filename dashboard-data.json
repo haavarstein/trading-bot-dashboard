@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-09-18T14:40:15.191516+00:00",
+  "generated_at": "2026-09-18T14:48:42.763714+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1025.99,
+    "portfolio_value": 1026.24,
     "starting_cash": 1000.0,
-    "total_return_pct": 2.6,
-    "total_pnl": 25.99,
-    "realized_pnl": 5.15,
-    "open_pnl": 20.81,
-    "capital_deployed": 1006.58,
-    "cash": 19.41,
-    "closed_trades": 37,
-    "win_rate_pct": 29.73,
-    "vs_spy_pct": 3.9,
-    "spy_return_pct": -1.3,
+    "total_return_pct": 2.62,
+    "total_pnl": 26.24,
+    "realized_pnl": 4.31,
+    "open_pnl": 21.89,
+    "capital_deployed": 810.81,
+    "cash": 215.43,
+    "closed_trades": 38,
+    "win_rate_pct": 28.95,
+    "vs_spy_pct": 3.94,
+    "spy_return_pct": -1.32,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-18T14:40:18.432006+00:00"
+    "updated_at": "2026-09-18T14:48:45.374698+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -1.3,
-    "price": 759.4000244140625,
+    "return_pct": -1.32,
+    "price": 759.2299194335938,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 1,
-    "validated_count_today": 1,
+    "consensus_count_today": 2,
+    "validated_count_today": 2,
     "blocked_count_today": 0,
-    "fills_today": 0,
-    "simulated_orders_today": 1,
-    "top_symbol_today": "PLTR"
+    "fills_today": 1,
+    "simulated_orders_today": 2,
+    "top_symbol_today": "AMD"
   },
   "holdings": [
     {
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 107.60649871826172,
-      "market_value": 199.07,
-      "open_pnl": 3.1,
-      "open_pnl_pct": 1.58,
+      "last": 107.41999816894531,
+      "market_value": 198.73,
+      "open_pnl": 2.76,
+      "open_pnl_pct": 1.41,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -50,10 +50,10 @@
       "symbol": "LRCX",
       "qty": 0.74,
       "avg_cost": 267.36,
-      "last": 281.07000732421875,
-      "market_value": 207.99,
-      "open_pnl": 10.15,
-      "open_pnl_pct": 5.13,
+      "last": 281.30999755859375,
+      "market_value": 208.17,
+      "open_pnl": 10.32,
+      "open_pnl_pct": 5.22,
       "stop": 255.0,
       "target": 286.0,
       "thesis": "LRCX ranks top of the candidate list on a fresh institutional-lift/beat headline with bullish sentiment and neutral RSI, offering a liquid semi-equipment catalyst setup. Book has room under the 5-name cap and ~$200 notional can be deployed without forcing a rotation. Risk defined below recent support with target sized for at least 1.5:1 reward-to-risk while existing XOM/WMT/META holds remain constructive."
@@ -62,10 +62,10 @@
       "symbol": "TSLA",
       "qty": 0.55,
       "avg_cost": 357.18,
-      "last": 364.6600036621094,
-      "market_value": 200.56,
-      "open_pnl": 4.11,
-      "open_pnl_pct": 2.09,
+      "last": 366.9800109863281,
+      "market_value": 201.84,
+      "open_pnl": 5.39,
+      "open_pnl_pct": 2.74,
       "stop": 342.0,
       "target": 380.0,
       "thesis": "TSLA tops the ranked catalyst list on a PG&E grid deal headline with bullish sentiment and neutral RSI, offering a liquid setup while the book still has open slots and cash. Valuation is debated but the rank/catalyst edge is the cleanest available versus held names that are already working. Small notional keeps risk tight with stop/target structured for at least 1.5 R:R."
@@ -74,84 +74,67 @@
       "symbol": "AMZN",
       "qty": 0.8,
       "avg_cost": 248.31,
-      "last": 253.0500030517578,
-      "market_value": 202.44,
-      "open_pnl": 3.79,
-      "open_pnl_pct": 1.91,
+      "last": 252.58999633789062,
+      "market_value": 202.07,
+      "open_pnl": 3.42,
+      "open_pnl_pct": 1.72,
       "stop": 240.0,
       "target": 262.0,
       "thesis": "AMZN shows a ranked liquid setup with bullish sentiment and a headline institutional buy catalyst supporting near-term momentum. RSI near 50 leaves room for upside without overbought conditions. Portfolio has capacity for one more name under the 5-position guideline and cash covers a sub-$200 notional entry. Risk defined below recent support with 1.5+ R:R to the target."
-    },
-    {
-      "symbol": "AMD",
-      "qty": 0.36,
-      "avg_cost": 546.84,
-      "last": 545.885009765625,
-      "market_value": 196.52,
-      "open_pnl": -0.34,
-      "open_pnl_pct": -0.17,
-      "stop": 520.0,
-      "target": 590.0,
-      "thesis": "AMD ranks as the top unowned liquid catalyst name with a bullish AI/chip sector rebound headline and constructive rank score. Book has room for a fifth name and ~$200 notional fits a starter size without forcing a rotation. Defined risk to 520 versus 590 target clears the 1.5 R:R hurdle while RSI is neutral and not overextended."
     }
   ],
   "latest_candidate": {
-    "symbol": "PLTR",
-    "name": "PLTR",
-    "price": 174.5449981689453,
-    "volume": 8876343.0,
-    "avg_volume": 22360294.3,
-    "percent_change": -0.9617608212594475,
+    "symbol": "GOOGL",
+    "name": "GOOGL",
+    "price": 351.12921142578125,
+    "volume": 16974097.0,
+    "avg_volume": 24046269.7,
+    "percent_change": 1.0938372730236918,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 14,
-    "liquidity_score": 83.49,
-    "rank_score": 76.79,
-    "news_hits": 7,
-    "catalyst": "Headline-driven setup (ai, catalyst, deal): Palantir Technologies (PLTR) AI Deal Rush Meets A Fair Value Debate - Yahoo Finance",
+    "catalyst_score": 13,
+    "liquidity_score": 83.81,
+    "rank_score": 72.95,
+    "news_hits": 8,
+    "catalyst": "Headline-driven setup (catalyst, deal): Alphabet Stock Stays Flat - Ideal for GOOGL Short Put and Put Credit Spread Plays - barchart.com",
     "top_headlines": [
-      "Palantir Technologies (PLTR) AI Deal Rush Meets A Fair Value Debate - Yahoo Finance",
-      "Palantir (PLTR) Lands First Aviation OperatorOS Deal As UK Hire Raises NHS Focus - simplywall.st",
-      "Palantir (NASDAQ: PLTR) insider sells 16,000 shares under preset plan - Stock Titan"
+      "Alphabet Stock Stays Flat - Ideal for GOOGL Short Put and Put Credit Spread Plays - barchart.com",
+      "GOOGL Stock Draws Bullish Targets As AI Bets Scale Up - StocksToTrade",
+      "Alphabet GOOGL Stock Draws Fresh AI Price Target Hikes - timothysykes.com"
     ],
     "matched_headlines": [
       {
-        "title": "Palantir Technologies (PLTR) AI Deal Rush Meets A Fair Value Debate - Yahoo Finance",
+        "title": "Alphabet Stock Stays Flat - Ideal for GOOGL Short Put and Put Credit Spread Plays - barchart.com",
         "keywords": [
-          "ai",
           "catalyst",
           "deal"
         ]
       },
       {
-        "title": "Palantir (PLTR) Lands First Aviation OperatorOS Deal As UK Hire Raises NHS Focus - simplywall.st",
-        "keywords": [
-          "ai",
-          "catalyst",
-          "deal",
-          "raises"
-        ]
-      },
-      {
-        "title": "Understanding the Setup: (PLTR) and Scalable Risk - Stock Traders Daily",
+        "title": "GOOGL Stock Draws Bullish Targets As AI Bets Scale Up - StocksToTrade",
         "keywords": [
           "ai",
           "catalyst"
         ]
       },
       {
-        "title": "Palantir Looks Cheap Among AI Software Stocks, UBS Says \u2014 Why PLTR Could Have More Room To Run - TradingView",
+        "title": "Alphabet GOOGL Stock Draws Fresh AI Price Target Hikes - timothysykes.com",
         "keywords": [
           "ai",
           "catalyst"
         ]
       },
       {
-        "title": "Palantir Technologies (NASDAQ:PLTR): Strong Growth Paired With a Promising Technical Setup - ChartMill",
+        "title": "Alphabet Inc. - GOOGL 6 1/4 05/15/29 (NASDAQ:GOOGM) Passes the GARP Screen for Growth at a Reasonable Price - ChartMill",
         "keywords": [
-          "ai",
-          "catalyst",
           "growth"
+        ]
+      },
+      {
+        "title": "GOOGL 260925 347.50C (GOOGL260925C347500) Stock Options Chain | Quotes & News - Moomoo",
+        "keywords": [
+          "ai",
+          "catalyst"
         ]
       }
     ]
@@ -162,55 +145,54 @@
     "symbol": "AMD",
     "confidence": 78,
     "cache_stats": null,
-    "entry_price": 548.46,
-    "stop_loss": 560.0,
-    "take_profit": 520.0,
+    "entry_price": 544.51,
+    "stop_loss": 520.0,
+    "take_profit": 590.0,
     "qty": 0.36,
-    "thesis": "Desk directive is to SELL AMD; position is confirmed held and eligible for exit under policy. Open P/L is marginal with no fresh catalyst edge in the ranked candidates to justify continued holding versus freeing risk. Exiting at market reduces name count and preserves dry powder given already full book and tiny cash.",
+    "thesis": "AMD is the weakest open position with a small unrealized loss and no meaningful catalyst or rank support in the candidate set. Book is at max 5 names with limited cash, so exiting the softest hold per desk rotation policy and the explicit SELL directive frees risk capacity. Levels remain the original stop/target frame for reference on the close.",
     "reason_code": "rotation",
     "reasoning": {
       "headline": "Sold $AMD",
-      "narrative": "Desk directive is to SELL AMD; position is confirmed held and eligible for exit under policy. Open P/L is marginal with no fresh catalyst edge in the ranked candidates to justify continued holding versus freeing risk. Exiting at market reduces name count and preserves dry powder given already full book and tiny cash.",
+      "narrative": "AMD is the weakest open position with a small unrealized loss and no meaningful catalyst or rank support in the candidate set. Book is at max 5 names with limited cash, so exiting the softest hold per desk rotation policy and the explicit SELL directive frees risk capacity. Levels remain the original stop/target frame for reference on the close.",
       "bullets": [
-        "Directive explicitly requires SELL AMD",
-        "Held name with weak/no catalyst support",
-        "Book already at max 5 names",
-        "R:R exit plan framed to protective side"
+        "Weakest P/L name in full 5-slot book",
+        "No catalyst/rank edge to justify holding",
+        "Directive to SELL AMD confirmed on held lot",
+        "Slight underwater vs solid green elsewhere"
       ],
       "risk_map": {
-        "stop": 560.0,
-        "target": 520.0,
+        "stop": 520.0,
+        "target": 590.0,
         "horizon_days": 5,
-        "rr": 2.47,
+        "rr": 1.86,
         "confidence_10": 8,
         "confidence": 78
       },
-      "thesis": "Desk directive is to SELL AMD; position is confirmed held and eligible for exit under policy. Open P/L is marginal with no fresh catalyst edge in the ranked candidates to justify continued holding versus freeing risk. Exiting at market reduces name count and preserves dry powder given already full book and tiny cash."
+      "thesis": "AMD is the weakest open position with a small unrealized loss and no meaningful catalyst or rank support in the candidate set. Book is at max 5 names with limited cash, so exiting the softest hold per desk rotation policy and the explicit SELL directive frees risk capacity. Levels remain the original stop/target frame for reference on the close."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Directive explicitly requires SELL AMD",
-      "Held name with weak/no catalyst support",
-      "Book already at max 5 names",
-      "R:R exit plan framed to protective side"
+      "Weakest P/L name in full 5-slot book",
+      "No catalyst/rank edge to justify holding",
+      "Directive to SELL AMD confirmed on held lot",
+      "Slight underwater vs solid green elsewhere"
     ],
-    "timestamp": "2026-09-18T14:33:22.285999+00:00"
+    "timestamp": "2026-09-18T14:48:27.952247+00:00"
   },
-  "stance": "Selling AMD. Desk directive is to SELL AMD; position is confirmed held and eligible for exit under policy. Open P/L is marginal with no fresh catalyst edge in the ranked candidates to justify continued holding versus freeing risk. Exiting at market reduces name count and preserves dry powder given already full book and tiny cash.",
+  "stance": "Holding WMT, LRCX, TSLA, AMZN. No new trade right now. AMD is the weakest open position with a small unrealized loss and no meaningful catalyst or rank support in the candidate set. Book is at max 5 names with limited cash, so exiting the softest hold per desk rotation policy and the explicit SELL directive frees risk capacity. Levels remain the original stop/target frame for reference on the close.",
   "thinking": {
-    "badge": "Exiting AMD",
-    "headline": "Selling AMD.",
-    "plain_english": "Right now Hermes is exiting AMD. That can be stop, target, or gated rotation when a stronger setup needs risk budget.",
+    "badge": "Holding what it owns",
+    "headline": "Holding WMT, LRCX, TSLA, AMZN. No new trade right now.",
+    "plain_english": "Right now Hermes is holding WMT, LRCX, TSLA, AMZN and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
     "triggers": [
       "It owns WMT, bought near $105.93. Simple plan: sell if it falls to about $102.50, or take profit near $112.00.",
       "It owns LRCX, bought near $267.36. Simple plan: sell if it falls to about $255.00, or take profit near $286.00.",
       "It owns TSLA, bought near $357.18. Simple plan: sell if it falls to about $342.00, or take profit near $380.00.",
       "It owns AMZN, bought near $248.31. Simple plan: sell if it falls to about $240.00, or take profit near $262.00.",
-      "It owns AMD, bought near $546.84. Simple plan: sell if it falls to about $520.00, or take profit near $590.00.",
-      "Book is at max open names (5). A new buy needs a free slot, enough cash, or a gated rotation.",
-      "Top scanner name right now is PLTR, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
+      "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
+      "Top scanner name right now is GOOGL, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
       "If nothing looks clean, do nothing. Sitting in cash or holdings is allowed."
     ],
     "owned": [
@@ -220,9 +202,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 107.60649871826172,
-        "open_pnl": 3.1,
-        "open_pnl_pct": 1.58,
+        "last": 107.41999816894531,
+        "open_pnl": 2.76,
+        "open_pnl_pct": 1.41,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -232,9 +214,9 @@
         "avg_cost": 267.36,
         "stop": 255.0,
         "target": 286.0,
-        "last": 281.07000732421875,
-        "open_pnl": 10.15,
-        "open_pnl_pct": 5.13,
+        "last": 281.30999755859375,
+        "open_pnl": 10.32,
+        "open_pnl_pct": 5.22,
         "line": "Bought near $267.36 \u00b7 Sell safety line $255.00 \u00b7 Profit target $286.00",
         "plan": "stop 255.0 or target 286.0"
       },
@@ -244,9 +226,9 @@
         "avg_cost": 357.18,
         "stop": 342.0,
         "target": 380.0,
-        "last": 364.6600036621094,
-        "open_pnl": 4.11,
-        "open_pnl_pct": 2.09,
+        "last": 366.9800109863281,
+        "open_pnl": 5.39,
+        "open_pnl_pct": 2.74,
         "line": "Bought near $357.18 \u00b7 Sell safety line $342.00 \u00b7 Profit target $380.00",
         "plan": "stop 342.0 or target 380.0"
       },
@@ -256,26 +238,14 @@
         "avg_cost": 248.31,
         "stop": 240.0,
         "target": 262.0,
-        "last": 253.0500030517578,
-        "open_pnl": 3.79,
-        "open_pnl_pct": 1.91,
+        "last": 252.58999633789062,
+        "open_pnl": 3.42,
+        "open_pnl_pct": 1.72,
         "line": "Bought near $248.31 \u00b7 Sell safety line $240.00 \u00b7 Profit target $262.00",
         "plan": "stop 240.0 or target 262.0"
-      },
-      {
-        "symbol": "AMD",
-        "qty": 0.36,
-        "avg_cost": 546.84,
-        "stop": 520.0,
-        "target": 590.0,
-        "last": 545.885009765625,
-        "open_pnl": -0.34,
-        "open_pnl_pct": -0.17,
-        "line": "Bought near $546.84 \u00b7 Sell safety line $520.00 \u00b7 Profit target $590.00",
-        "plan": "stop 520.0 or target 590.0"
       }
     ],
-    "last_checked": "2026-09-18T14:40:15.191516+00:00",
+    "last_checked": "2026-09-18T14:48:42.763714+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "SELL",
@@ -283,23 +253,22 @@
       "WMT",
       "LRCX",
       "TSLA",
-      "AMZN",
-      "AMD"
+      "AMZN"
     ],
     "model_chips": [
       {
         "prefix": "J",
         "model": "grok-4.3",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 60,
-        "tone": "hold"
+        "action": "SELL",
+        "symbol": "AMD",
+        "confidence": 72,
+        "tone": "sell"
       },
       {
         "prefix": "J",
         "model": "claude-haiku-4-5",
         "action": "BUY",
-        "symbol": "PLTR",
+        "symbol": "GOOGL",
         "confidence": 72,
         "tone": "buy"
       },
@@ -330,10 +299,10 @@
       {
         "prefix": "S",
         "model": "claude-sonnet-5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 65,
-        "tone": "hold"
+        "action": "SELL",
+        "symbol": "AMD",
+        "confidence": 72,
+        "tone": "sell"
       },
       {
         "prefix": "S",
@@ -346,6 +315,91 @@
     ]
   },
   "activity": [
+    {
+      "type": "fill",
+      "symbol": "AMD",
+      "status": "filled_paper",
+      "headline": "SELL AMD @ $544.51",
+      "detail": "AMD is the weakest open position with a small unrealized loss and no meaningful catalyst or rank support in the candidate set. Book is at max 5 names with limited cash, so exiting the softest hold per desk rotation policy and the explicit SELL directive frees risk capacity. Levels remain the original stop/target frame for reference on the close.",
+      "timestamp": "2026-09-18T14:48:27.955781+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "AMD",
+      "status": "validated",
+      "headline": "SELL AMD \u2014 validated",
+      "detail": "AMD is the weakest open position with a small unrealized loss and no meaningful catalyst or rank support in the candidate set. Book is at max 5 names with limited cash, so exiting the softest hold per desk rotation policy and the explicit SELL directive frees risk capacity. Levels remain the original stop/target frame for reference on the close.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "SELL",
+          "symbol": "AMD",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "GOOGL",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "SELL",
+          "symbol": "AMD",
+          "confidence": 78,
+          "source": "fallback",
+          "provider": null,
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "SELL",
+          "symbol": "AMD",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "SELL",
+          "symbol": "AMD",
+          "confidence": 78,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "SELL",
+          "symbol": "AMD",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "WMT",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "exit",
+      "junior_nomination": "AMD",
+      "timestamp": "2026-09-18T14:48:27.952247+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "AMD",
@@ -580,6 +634,18 @@
   ],
   "recent_trades": [
     {
+      "timestamp": "2026-09-18T14:48:27.955781+00:00",
+      "action": "SELL",
+      "symbol": "AMD",
+      "qty": 0.36,
+      "price": 544.51,
+      "notional": 196.02,
+      "realized_pnl": -0.84,
+      "reason": "rotation",
+      "thesis": "AMD is the weakest open position with a small unrealized loss and no meaningful catalyst or rank support in the candidate set. Book is at max 5 names with limited cash, so exiting the softest hold per desk rotation policy and the explicit SELL directive frees risk capacity. Levels remain the original stop/target frame for reference on the close.",
+      "status": "FILLED_PAPER"
+    },
+    {
       "timestamp": "2026-09-17T17:50:31.205895+00:00",
       "action": "BUY",
       "symbol": "AMD",
@@ -686,21 +752,37 @@
       "reason": "rotation",
       "thesis": "LRCX is the weakest open name with the largest unrealized loss and price drifting lower from the 307.65 average toward the 295 stop. Book is full with only $0.74 cash; exiting the underperformer frees risk and capital even though the memory-expansion headline is mildly bullish. Reward-to-risk on the exit plan exceeds 1.5 by targeting a clean break below recent support while capping any bounce.",
       "status": "FILLED_PAPER"
-    },
-    {
-      "timestamp": "2026-09-10T14:05:35.626931+00:00",
-      "action": "BUY",
-      "symbol": "META",
-      "qty": 0.3,
-      "price": 644.68,
-      "notional": 193.4,
-      "realized_pnl": null,
-      "reason": null,
-      "thesis": "META ranks second with a clear bullish AI-agent catalyst and supportive Street tone while remaining highly liquid. Small size fits residual cash under the ~$200 new-notional cap without exceeding the five-name limit. Technical RSI is neutral, leaving room for continuation if the AI narrative holds; defined stop below recent support keeps reward:risk above 1.5.",
-      "status": "FILLED_PAPER"
     }
   ],
   "trade_reasoning": [
+    {
+      "timestamp": "2026-09-18T14:48:27.955781+00:00",
+      "action": "SELL",
+      "symbol": "AMD",
+      "qty": 0.36,
+      "price": 544.51,
+      "notional": 196.02,
+      "headline": "Sold $AMD",
+      "side_label": "sell",
+      "narrative": "AMD is the weakest open position with a small unrealized loss and no meaningful catalyst or rank support in the candidate set. Book is at max 5 names with limited cash, so exiting the softest hold per desk rotation policy and the explicit SELL directive frees risk capacity. Levels remain the original stop/target frame for reference on the close.",
+      "bullets": [
+        "Weakest P/L name in full 5-slot book",
+        "No catalyst/rank edge to justify holding",
+        "Directive to SELL AMD confirmed on held lot",
+        "Slight underwater vs solid green elsewhere"
+      ],
+      "risk_map": {
+        "stop": 520.0,
+        "target": 590.0,
+        "horizon_days": 5,
+        "rr": 1.86,
+        "confidence_10": 8,
+        "confidence": 78
+      },
+      "reason_code": "rotation",
+      "realized_pnl": -0.84,
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-09-17T17:50:31.205895+00:00",
       "action": "BUY",
@@ -9985,6 +10067,20 @@
   ],
   "closed_trades": [
     {
+      "timestamp": "2026-09-18T14:48:27.954783+00:00",
+      "symbol": "AMD",
+      "qty": 0.36,
+      "avg_cost": 546.84,
+      "exit_price": 544.51,
+      "proceeds": 196.02,
+      "realized_pnl": -0.84,
+      "realized_pnl_pct": -0.43,
+      "reason": "rotation",
+      "thesis": "AMD is the weakest open position with a small unrealized loss and no meaningful catalyst or rank support in the candidate set. Book is at max 5 names with limited cash, so exiting the softest hold per desk rotation policy and the explicit SELL directive frees risk capacity. Levels remain the original stop/target frame for reference on the close.",
+      "opened_at": "2026-09-17T17:50:31.205895+00:00",
+      "hold_seconds": 75476
+    },
+    {
       "timestamp": "2026-09-16T14:16:04.722047+00:00",
       "symbol": "META",
       "qty": 0.3,
@@ -10249,23 +10345,23 @@
       "thesis": "Confirming the escalated SELL on ORCL. It is the weakest open name by P/L and is trading below cost with no fresh catalyst support in the candidate set. Exiting the full lot frees risk and respects the desk directive rather than waiting for the 140 stop.",
       "opened_at": "2026-08-21T19:03:02.343995+00:00",
       "hold_seconds": 253822
-    },
-    {
-      "timestamp": "2026-08-21T18:38:07.885678+00:00",
-      "symbol": "TSLA",
-      "qty": 0.58,
-      "avg_cost": 339.55,
-      "exit_price": 364.3500061035156,
-      "proceeds": 211.32,
-      "realized_pnl": 14.38,
-      "realized_pnl_pct": 7.3,
-      "reason": "take_profit",
-      "thesis": "HERMES AUTO-TRADE: Exiting full TSLA position on take-profit. Price $364.35 reached target $358.50. Realized path $+14.38.",
-      "opened_at": "2026-08-19T13:33:49.451766+00:00",
-      "hold_seconds": 191058
     }
   ],
   "closed_results": [
+    {
+      "timestamp": "2026-09-18T14:48:27.954783+00:00",
+      "symbol": "AMD",
+      "qty": 0.36,
+      "avg_cost": 546.84,
+      "exit_price": 544.51,
+      "proceeds": 196.02,
+      "realized_pnl": -0.84,
+      "realized_pnl_pct": -0.43,
+      "reason": "rotation",
+      "thesis": "AMD is the weakest open position with a small unrealized loss and no meaningful catalyst or rank support in the candidate set. Book is at max 5 names with limited cash, so exiting the softest hold per desk rotation policy and the explicit SELL directive frees risk capacity. Levels remain the original stop/target frame for reference on the close.",
+      "opened_at": "2026-09-17T17:50:31.205895+00:00",
+      "hold_seconds": 75476
+    },
     {
       "timestamp": "2026-09-16T14:16:04.722047+00:00",
       "symbol": "META",
@@ -12495,23 +12591,79 @@
   ],
   "top_candidates": [
     {
-      "symbol": "PLTR",
-      "name": "PLTR",
-      "price": 174.5449981689453,
-      "volume": 8876343.0,
-      "avg_volume": 22360294.3,
-      "percent_change": -0.9617608212594475,
+      "symbol": "GOOGL",
+      "name": "GOOGL",
+      "price": 351.12921142578125,
+      "volume": 16974097.0,
+      "avg_volume": 24046269.7,
+      "percent_change": 1.0938372730236918,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 14,
-      "liquidity_score": 83.49,
-      "rank_score": 76.79,
+      "catalyst_score": 13,
+      "liquidity_score": 83.81,
+      "rank_score": 72.95,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (catalyst, deal): Alphabet Stock Stays Flat - Ideal for GOOGL Short Put and Put Credit Spread Plays - barchart.com",
+      "top_headlines": [
+        "Alphabet Stock Stays Flat - Ideal for GOOGL Short Put and Put Credit Spread Plays - barchart.com",
+        "GOOGL Stock Draws Bullish Targets As AI Bets Scale Up - StocksToTrade",
+        "Alphabet GOOGL Stock Draws Fresh AI Price Target Hikes - timothysykes.com"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Alphabet Stock Stays Flat - Ideal for GOOGL Short Put and Put Credit Spread Plays - barchart.com",
+          "keywords": [
+            "catalyst",
+            "deal"
+          ]
+        },
+        {
+          "title": "GOOGL Stock Draws Bullish Targets As AI Bets Scale Up - StocksToTrade",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Alphabet GOOGL Stock Draws Fresh AI Price Target Hikes - timothysykes.com",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Alphabet Inc. - GOOGL 6 1/4 05/15/29 (NASDAQ:GOOGM) Passes the GARP Screen for Growth at a Reasonable Price - ChartMill",
+          "keywords": [
+            "growth"
+          ]
+        },
+        {
+          "title": "GOOGL 260925 347.50C (GOOGL260925C347500) Stock Options Chain | Quotes & News - Moomoo",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "PLTR",
+      "name": "PLTR",
+      "price": 174.39999389648438,
+      "volume": 9570857.0,
+      "avg_volume": 22429745.7,
+      "percent_change": -1.0440374145080569,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 12,
+      "liquidity_score": 83.51,
+      "rank_score": 68.86,
       "news_hits": 7,
       "catalyst": "Headline-driven setup (ai, catalyst, deal): Palantir Technologies (PLTR) AI Deal Rush Meets A Fair Value Debate - Yahoo Finance",
       "top_headlines": [
         "Palantir Technologies (PLTR) AI Deal Rush Meets A Fair Value Debate - Yahoo Finance",
-        "Palantir (PLTR) Lands First Aviation OperatorOS Deal As UK Hire Raises NHS Focus - simplywall.st",
-        "Palantir (NASDAQ: PLTR) insider sells 16,000 shares under preset plan - Stock Titan"
+        "Palantir (NASDAQ: PLTR) Stock Price Rises As Europe's Sovereign AI Push Tests Its Military Dominance - foreignpolicyjournal.com",
+        "Palantir (PLTR) Lands First Aviation OperatorOS Deal As UK Hire Raises NHS Focus - simplywall.st"
       ],
       "matched_headlines": [
         {
@@ -12520,6 +12672,13 @@
             "ai",
             "catalyst",
             "deal"
+          ]
+        },
+        {
+          "title": "Palantir (NASDAQ: PLTR) Stock Price Rises As Europe's Sovereign AI Push Tests Its Military Dominance - foreignpolicyjournal.com",
+          "keywords": [
+            "ai",
+            "catalyst"
           ]
         },
         {
@@ -12544,87 +12703,21 @@
             "ai",
             "catalyst"
           ]
-        },
-        {
-          "title": "Palantir Technologies (NASDAQ:PLTR): Strong Growth Paired With a Promising Technical Setup - ChartMill",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "growth"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "GOOGL",
-      "name": "GOOGL",
-      "price": 350.510009765625,
-      "volume": 15773537.0,
-      "avg_volume": 23926213.7,
-      "percent_change": 0.9155625244864188,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 12,
-      "liquidity_score": 83.79,
-      "rank_score": 68.8,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (catalyst, deal): Alphabet Stock Stays Flat - Ideal for GOOGL Short Put and Put Credit Spread Plays - barchart.com",
-      "top_headlines": [
-        "Alphabet Stock Stays Flat - Ideal for GOOGL Short Put and Put Credit Spread Plays - barchart.com",
-        "GOOGL Stock Draws Bullish Targets As AI Bets Scale Up - StocksToTrade",
-        "GOOGL Stock Rides AI Wave As Wall Street Lifts Targets - timothysykes.com"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Alphabet Stock Stays Flat - Ideal for GOOGL Short Put and Put Credit Spread Plays - barchart.com",
-          "keywords": [
-            "catalyst",
-            "deal"
-          ]
-        },
-        {
-          "title": "GOOGL Stock Draws Bullish Targets As AI Bets Scale Up - StocksToTrade",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "GOOGL Stock Rides AI Wave As Wall Street Lifts Targets - timothysykes.com",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "GOOGL Jumps as Upgrades & Antitrust Relief Lift Stock - tradingpedia.com",
-          "keywords": [
-            "catalyst",
-            "upgrade",
-            "upgrades"
-          ]
-        },
-        {
-          "title": "GOOGL 260925 347.50C (GOOGL260925C347500) Stock Options Chain | Quotes & News - Moomoo",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
         }
       ]
     },
     {
       "symbol": "AAPL",
       "name": "AAPL",
-      "price": 333.2449951171875,
-      "volume": 15753383.0,
-      "avg_volume": 42083728.3,
-      "percent_change": -1.1142447723479227,
+      "price": 332.92999267578125,
+      "volume": 16988014.0,
+      "avg_volume": 42207191.4,
+      "percent_change": -1.2077173068898368,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
-      "liquidity_score": 86.24,
-      "rank_score": 65.33,
+      "liquidity_score": 86.25,
+      "rank_score": 65.4,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Apple iPhone Refresh Cycle Better-Than-Expected, Says Evercore As AAPL Stock Heads For 5th Straight Weekly Gain - TradingView",
       "top_headlines": [
@@ -12674,23 +12767,30 @@
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 347.57000732421875,
-      "volume": 2344933.0,
-      "avg_volume": 6712673.3,
-      "percent_change": -0.49812208254449736,
+      "price": 346.4150085449219,
+      "volume": 2529797.0,
+      "avg_volume": 6731159.7,
+      "percent_change": -0.8287735919113696,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 10,
-      "liquidity_score": 78.27,
-      "rank_score": 58.14,
+      "catalyst_score": 11,
+      "liquidity_score": 78.28,
+      "rank_score": 63.91,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): JPMorgan Chase & Co. $JPM Stock Holdings Trimmed by Commerce Bank - MarketBeat",
+      "catalyst": "Headline-driven setup (ai, catalyst): JPMorgan Chase (JPM) Expands Blockchain Banking And Lets Customers Invest Reward Points - simplywall.st",
       "top_headlines": [
+        "JPMorgan Chase (JPM) Expands Blockchain Banking And Lets Customers Invest Reward Points - simplywall.st",
         "JPMorgan Chase & Co. $JPM Stock Holdings Trimmed by Commerce Bank - MarketBeat",
-        "Why JPMorgan Chase (JPM) Is Back In The Spotlight - Yahoo Finance",
-        "JPMorgan Stock Could Hit $428 by 2030. Its Dividend Is Only Half the Story - TIKR.com"
+        "Why JPMorgan Chase (JPM) Is Back In The Spotlight - Yahoo Finance"
       ],
       "matched_headlines": [
+        {
+          "title": "JPMorgan Chase (JPM) Expands Blockchain Banking And Lets Customers Invest Reward Points - simplywall.st",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
         {
           "title": "JPMorgan Chase & Co. $JPM Stock Holdings Trimmed by Commerce Bank - MarketBeat",
           "keywords": [
@@ -12723,15 +12823,15 @@
     {
       "symbol": "LRCX",
       "name": "LRCX",
-      "price": 280.30999755859375,
-      "volume": 3483226.0,
-      "avg_volume": 8779302.6,
-      "percent_change": 4.08451230913057,
+      "price": 280.75,
+      "volume": 3789017.0,
+      "avg_volume": 8809881.7,
+      "percent_change": 4.247893708037055,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 79.43,
-      "rank_score": 57.18,
+      "liquidity_score": 79.45,
+      "rank_score": 57.32,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): 442,227 Shares in Lam Research Corporation $LRCX Acquired by Nykredit A S - MarketBeat",
       "top_headlines": [
@@ -12794,9 +12894,9 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 1,
+      "HOLD": 0,
       "BUY": 1,
-      "SELL": 2,
+      "SELL": 3,
       "live": 3,
       "fallback": 0
     },
@@ -12820,17 +12920,17 @@
   },
   "learning": {
     "candidate_signals_logged": 8,
-    "fills_logged": 350,
-    "closed_outcomes": 159,
-    "consensus_events": 700,
+    "fills_logged": 351,
+    "closed_outcomes": 160,
+    "consensus_events": 701,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1025.99,
-    "change": 25.99,
-    "change_pct": 2.6,
+    "latest_equity": 1026.24,
+    "change": 26.24,
+    "change_pct": 2.62,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15695,9 +15795,9 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-18T14:40:18.432006+00:00",
-        "equity": 1025.99,
-        "cash": 19.41,
+        "t": "2026-09-18T14:48:45.374698+00:00",
+        "equity": 1026.24,
+        "cash": 215.43,
         "event": "mark"
       }
     ],
