@@ -1,34 +1,34 @@
 {
-  "generated_at": "2026-09-18T15:30:14.281812+00:00",
+  "generated_at": "2026-09-18T15:32:54.408245+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1025.51,
+    "portfolio_value": 1025.14,
     "starting_cash": 1000.0,
-    "total_return_pct": 2.55,
-    "total_pnl": 25.51,
+    "total_return_pct": 2.51,
+    "total_pnl": 25.14,
     "realized_pnl": 4.31,
-    "open_pnl": 21.17,
-    "capital_deployed": 810.08,
+    "open_pnl": 20.8,
+    "capital_deployed": 809.71,
     "cash": 215.43,
     "closed_trades": 38,
     "win_rate_pct": 28.95,
-    "vs_spy_pct": 3.77,
-    "spy_return_pct": -1.22,
+    "vs_spy_pct": 3.78,
+    "spy_return_pct": -1.27,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-18T15:30:17.043600+00:00"
+    "updated_at": "2026-09-18T15:32:57.093189+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -1.22,
-    "price": 759.97998046875,
+    "return_pct": -1.27,
+    "price": 759.60498046875,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 2,
+    "consensus_count_today": 3,
     "validated_count_today": 2,
-    "blocked_count_today": 0,
+    "blocked_count_today": 1,
     "fills_today": 1,
     "simulated_orders_today": 2,
     "top_symbol_today": "AMD"
@@ -38,10 +38,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 107.19000244140625,
-      "market_value": 198.3,
-      "open_pnl": 2.33,
-      "open_pnl_pct": 1.19,
+      "last": 107.30010223388672,
+      "market_value": 198.51,
+      "open_pnl": 2.53,
+      "open_pnl_pct": 1.29,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -50,10 +50,10 @@
       "symbol": "LRCX",
       "qty": 0.74,
       "avg_cost": 267.36,
-      "last": 283.2047119140625,
-      "market_value": 209.57,
-      "open_pnl": 11.73,
-      "open_pnl_pct": 5.93,
+      "last": 283.2900085449219,
+      "market_value": 209.63,
+      "open_pnl": 11.79,
+      "open_pnl_pct": 5.96,
       "stop": 255.0,
       "target": 286.0,
       "thesis": "LRCX ranks top of the candidate list on a fresh institutional-lift/beat headline with bullish sentiment and neutral RSI, offering a liquid semi-equipment catalyst setup. Book has room under the 5-name cap and ~$200 notional can be deployed without forcing a rotation. Risk defined below recent support with target sized for at least 1.5:1 reward-to-risk while existing XOM/WMT/META holds remain constructive."
@@ -62,10 +62,10 @@
       "symbol": "TSLA",
       "qty": 0.55,
       "avg_cost": 357.18,
-      "last": 363.0840148925781,
-      "market_value": 199.7,
-      "open_pnl": 3.25,
-      "open_pnl_pct": 1.65,
+      "last": 362.4599914550781,
+      "market_value": 199.35,
+      "open_pnl": 2.9,
+      "open_pnl_pct": 1.48,
       "stop": 342.0,
       "target": 380.0,
       "thesis": "TSLA tops the ranked catalyst list on a PG&E grid deal headline with bullish sentiment and neutral RSI, offering a liquid setup while the book still has open slots and cash. Valuation is debated but the rank/catalyst edge is the cleanest available versus held names that are already working. Small notional keeps risk tight with stop/target structured for at least 1.5 R:R."
@@ -74,10 +74,10 @@
       "symbol": "AMZN",
       "qty": 0.8,
       "avg_cost": 248.31,
-      "last": 253.13999938964844,
-      "market_value": 202.51,
-      "open_pnl": 3.86,
-      "open_pnl_pct": 1.95,
+      "last": 252.77999877929688,
+      "market_value": 202.22,
+      "open_pnl": 3.58,
+      "open_pnl_pct": 1.8,
       "stop": 240.0,
       "target": 262.0,
       "thesis": "AMZN shows a ranked liquid setup with bullish sentiment and a headline institutional buy catalyst supporting near-term momentum. RSI near 50 leaves room for upside without overbought conditions. Portfolio has capacity for one more name under the 5-position guideline and cash covers a sub-$200 notional entry. Risk defined below recent support with 1.5+ R:R to the target."
@@ -86,15 +86,15 @@
   "latest_candidate": {
     "symbol": "AMZN",
     "name": "AMZN",
-    "price": 253.53500366210938,
-    "volume": 20647359.0,
-    "avg_volume": 30051305.9,
-    "percent_change": 0.9335567490390588,
+    "price": 253.02499389648438,
+    "volume": 21295360.0,
+    "avg_volume": 30116106.0,
+    "percent_change": 0.7305193030149214,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 15,
-    "liquidity_score": 84.78,
-    "rank_score": 80.96,
+    "liquidity_score": 84.79,
+    "rank_score": 80.8,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (beat): NFJ Investment Group LLC Purchases New Shares in Amazon.com, Inc. $AMZN - MarketBeat",
     "top_headlines": [
@@ -140,50 +140,50 @@
   "latest_decision": {
     "model": "grok-4.5",
     "action": "BUY",
-    "symbol": "GOOGL",
-    "confidence": 72,
+    "symbol": "PLTR",
+    "confidence": 74,
     "cache_stats": null,
-    "entry_price": 349.61,
-    "stop_loss": 336.0,
-    "take_profit": 370.0,
-    "qty": 0.57,
-    "thesis": "GOOGL is the top non-held liquid candidate with solid rank score, bullish sentiment, and a headline catalyst setup around deal/options flow plus technical compression that favors a bounce. Book has room for a fifth name and cash supports a sub-$200 notional add without forcing rotation. Defined stop below support keeps reward:risk at 1.5 on a clean upside target.",
+    "entry_price": 175.93,
+    "stop_loss": 168.0,
+    "take_profit": 188.5,
+    "qty": 1.13,
+    "thesis": "PLTR ranks near the top of the candidate list with a fresh AI/deal catalyst and bullish sentiment while RSI sits neutral, offering a clean liquid setup. Book has room for a fifth name and cash supports a sub-$200 notional add without forcing a rotation. Risk defined below recent support with target sized for at least 1.5R on continued momentum from the headline flow.",
     "reason_code": "new_entry",
     "reasoning": {
-      "headline": "Bought $GOOGL",
-      "narrative": "GOOGL is the top non-held liquid candidate with solid rank score, bullish sentiment, and a headline catalyst setup around deal/options flow plus technical compression that favors a bounce. Book has room for a fifth name and cash supports a sub-$200 notional add without forcing rotation. Defined stop below support keeps reward:risk at 1.5 on a clean upside target.",
+      "headline": "Bought $PLTR",
+      "narrative": "PLTR ranks near the top of the candidate list with a fresh AI/deal catalyst and bullish sentiment while RSI sits neutral, offering a clean liquid setup. Book has room for a fifth name and cash supports a sub-$200 notional add without forcing a rotation. Risk defined below recent support with target sized for at least 1.5R on continued momentum from the headline flow.",
       "bullets": [
-        "Second-ranked candidate after already-held AMZN",
-        "Bullish catalyst plus tight technicals",
-        "~$200 notional fits cash and size rules",
-        "R:R exactly 1.5 with room to 5 names"
+        "Rank ~80 with AI/deal catalyst headline",
+        "Neutral RSI + liquid name fits ~$200 size",
+        "R:R >=1.5 via 168 stop / 188.5 target",
+        "Adds 5th slot; no need to rotate holds"
       ],
       "risk_map": {
-        "stop": 336.0,
-        "target": 370.0,
+        "stop": 168.0,
+        "target": 188.5,
         "horizon_days": 5,
-        "rr": 1.5,
+        "rr": 1.59,
         "confidence_10": 7,
-        "confidence": 72
+        "confidence": 74
       },
-      "thesis": "GOOGL is the top non-held liquid candidate with solid rank score, bullish sentiment, and a headline catalyst setup around deal/options flow plus technical compression that favors a bounce. Book has room for a fifth name and cash supports a sub-$200 notional add without forcing rotation. Defined stop below support keeps reward:risk at 1.5 on a clean upside target."
+      "thesis": "PLTR ranks near the top of the candidate list with a fresh AI/deal catalyst and bullish sentiment while RSI sits neutral, offering a clean liquid setup. Book has room for a fifth name and cash supports a sub-$200 notional add without forcing a rotation. Risk defined below recent support with target sized for at least 1.5R on continued momentum from the headline flow."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Second-ranked candidate after already-held AMZN",
-      "Bullish catalyst plus tight technicals",
-      "~$200 notional fits cash and size rules",
-      "R:R exactly 1.5 with room to 5 names"
+      "Rank ~80 with AI/deal catalyst headline",
+      "Neutral RSI + liquid name fits ~$200 size",
+      "R:R >=1.5 via 168 stop / 188.5 target",
+      "Adds 5th slot; no need to rotate holds"
     ],
-    "timestamp": "2026-09-18T15:20:25.401854+00:00"
+    "timestamp": "2026-09-18T15:32:46.084605+00:00"
   },
-  "stance": "Buying pressure on GOOGL. GOOGL is the top non-held liquid candidate with solid rank score, bullish sentiment, and a headline catalyst setup around deal/options flow plus technical compression that favors a bounce. Book has room for a fifth name and cash supports a sub-$200 notional add without forcing rotation. Defined stop below support keeps reward:risk at 1.5 on a clean upside target.",
+  "stance": "Buying pressure on PLTR. PLTR ranks near the top of the candidate list with a fresh AI/deal catalyst and bullish sentiment while RSI sits neutral, offering a clean liquid setup. Book has room for a fifth name and cash supports a sub-$200 notional add without forcing a rotation. Risk defined below recent support with target sized for at least 1.5R on continued momentum from the headline flow.",
   "thinking": {
-    "badge": "Looking to buy GOOGL",
-    "headline": "Buying pressure on GOOGL.",
-    "plain_english": "Right now Hermes wants exposure to GOOGL. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
+    "badge": "Looking to buy PLTR",
+    "headline": "Buying pressure on PLTR.",
+    "plain_english": "Right now Hermes wants exposure to PLTR. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
     "triggers": [
       "It owns WMT, bought near $105.93. Simple plan: sell if it falls to about $102.50, or take profit near $112.00.",
       "It owns LRCX, bought near $267.36. Simple plan: sell if it falls to about $255.00, or take profit near $286.00.",
@@ -199,9 +199,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 107.19000244140625,
-        "open_pnl": 2.33,
-        "open_pnl_pct": 1.19,
+        "last": 107.30010223388672,
+        "open_pnl": 2.53,
+        "open_pnl_pct": 1.29,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -211,9 +211,9 @@
         "avg_cost": 267.36,
         "stop": 255.0,
         "target": 286.0,
-        "last": 283.2047119140625,
-        "open_pnl": 11.73,
-        "open_pnl_pct": 5.93,
+        "last": 283.2900085449219,
+        "open_pnl": 11.79,
+        "open_pnl_pct": 5.96,
         "line": "Bought near $267.36 \u00b7 Sell safety line $255.00 \u00b7 Profit target $286.00",
         "plan": "stop 255.0 or target 286.0"
       },
@@ -223,9 +223,9 @@
         "avg_cost": 357.18,
         "stop": 342.0,
         "target": 380.0,
-        "last": 363.0840148925781,
-        "open_pnl": 3.25,
-        "open_pnl_pct": 1.65,
+        "last": 362.4599914550781,
+        "open_pnl": 2.9,
+        "open_pnl_pct": 1.48,
         "line": "Bought near $357.18 \u00b7 Sell safety line $342.00 \u00b7 Profit target $380.00",
         "plan": "stop 342.0 or target 380.0"
       },
@@ -235,14 +235,14 @@
         "avg_cost": 248.31,
         "stop": 240.0,
         "target": 262.0,
-        "last": 253.13999938964844,
-        "open_pnl": 3.86,
-        "open_pnl_pct": 1.95,
+        "last": 252.77999877929688,
+        "open_pnl": 3.58,
+        "open_pnl_pct": 1.8,
         "line": "Bought near $248.31 \u00b7 Sell safety line $240.00 \u00b7 Profit target $262.00",
         "plan": "stop 240.0 or target 262.0"
       }
     ],
-    "last_checked": "2026-09-18T15:30:14.281812+00:00",
+    "last_checked": "2026-09-18T15:32:54.408245+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -256,18 +256,18 @@
       {
         "prefix": "J",
         "model": "grok-4.3",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 60,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "PLTR",
+        "confidence": 78,
+        "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "claude-haiku-4-5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 62,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "PLTR",
+        "confidence": 72,
+        "tone": "buy"
       },
       {
         "prefix": "J",
@@ -280,26 +280,26 @@
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "BUY",
-        "symbol": "GOOGL",
-        "confidence": 72,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 60,
+        "tone": "hold"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
         "action": "BUY",
-        "symbol": "GOOGL",
-        "confidence": 72,
+        "symbol": "PLTR",
+        "confidence": 74,
         "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "claude-sonnet-5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 65,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "PLTR",
+        "confidence": 78,
+        "tone": "buy"
       },
       {
         "prefix": "S",
@@ -312,6 +312,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "PLTR",
+      "status": "blocked",
+      "headline": "BUY PLTR \u2014 blocked",
+      "detail": "Insufficient buying power: $19.41 < $198.80",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "PLTR",
+          "confidence": 78,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "PLTR",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "HOLD",
+          "symbol": "WMT",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "PLTR",
+          "confidence": 74,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "PLTR",
+          "confidence": 78,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "WMT",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-18T15:32:46.084605+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "GOOGL",
@@ -12744,15 +12821,15 @@
     {
       "symbol": "AMZN",
       "name": "AMZN",
-      "price": 253.53500366210938,
-      "volume": 20647359.0,
-      "avg_volume": 30051305.9,
-      "percent_change": 0.9335567490390588,
+      "price": 253.02499389648438,
+      "volume": 21295360.0,
+      "avg_volume": 30116106.0,
+      "percent_change": 0.7305193030149214,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 15,
-      "liquidity_score": 84.78,
-      "rank_score": 80.96,
+      "liquidity_score": 84.79,
+      "rank_score": 80.8,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): NFJ Investment Group LLC Purchases New Shares in Amazon.com, Inc. $AMZN - MarketBeat",
       "top_headlines": [
@@ -12796,75 +12873,18 @@
       ]
     },
     {
-      "symbol": "GOOGL",
-      "name": "GOOGL",
-      "price": 349.6099853515625,
-      "volume": 18699990.0,
-      "avg_volume": 24218859.0,
-      "percent_change": 0.6564359161147457,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 13,
-      "liquidity_score": 83.84,
-      "rank_score": 72.6,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (catalyst, deal): Alphabet Stock Stays Flat - Ideal for GOOGL Short Put and Put Credit Spread Plays - barchart.com",
-      "top_headlines": [
-        "Alphabet Stock Stays Flat - Ideal for GOOGL Short Put and Put Credit Spread Plays - barchart.com",
-        "Alphabet GOOGL Stock Draws Fresh AI Price Target Hikes - timothysykes.com",
-        "GOOGL Stock Draws Bullish Targets As AI Bets Scale Up - StocksToTrade"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Alphabet Stock Stays Flat - Ideal for GOOGL Short Put and Put Credit Spread Plays - barchart.com",
-          "keywords": [
-            "catalyst",
-            "deal"
-          ]
-        },
-        {
-          "title": "Alphabet GOOGL Stock Draws Fresh AI Price Target Hikes - timothysykes.com",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "GOOGL Stock Draws Bullish Targets As AI Bets Scale Up - StocksToTrade",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Alphabet Inc. - GOOGL 6 1/4 05/15/29 (NASDAQ:GOOGM) Passes the GARP Screen for Growth at a Reasonable Price - ChartMill",
-          "keywords": [
-            "growth"
-          ]
-        },
-        {
-          "title": "GOOGL Jumps as Upgrades & Antitrust Relief Lift Stock - tradingpedia.com",
-          "keywords": [
-            "catalyst",
-            "upgrade",
-            "upgrades"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "PLTR",
       "name": "PLTR",
-      "price": 175.66000366210938,
-      "volume": 10923797.0,
-      "avg_volume": 22565039.7,
-      "percent_change": -0.32909771503450413,
+      "price": 175.9250030517578,
+      "volume": 11520658.0,
+      "avg_volume": 22624725.8,
+      "percent_change": -0.17873492486838818,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 12,
-      "liquidity_score": 83.53,
-      "rank_score": 68.29,
-      "news_hits": 7,
+      "catalyst_score": 15,
+      "liquidity_score": 83.55,
+      "rank_score": 80.18,
+      "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst, deal): Palantir Technologies (PLTR) AI Deal Rush Meets A Fair Value Debate - Yahoo Finance",
       "top_headlines": [
         "Palantir Technologies (PLTR) AI Deal Rush Meets A Fair Value Debate - Yahoo Finance",
@@ -12913,23 +12933,80 @@
       ]
     },
     {
+      "symbol": "GOOGL",
+      "name": "GOOGL",
+      "price": 350.7900085449219,
+      "volume": 19563957.0,
+      "avg_volume": 24305255.7,
+      "percent_change": 0.9961771532606664,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 13,
+      "liquidity_score": 83.86,
+      "rank_score": 72.88,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (catalyst, deal): Alphabet Stock Stays Flat - Ideal for GOOGL Short Put and Put Credit Spread Plays - barchart.com",
+      "top_headlines": [
+        "Alphabet Stock Stays Flat - Ideal for GOOGL Short Put and Put Credit Spread Plays - barchart.com",
+        "Alphabet GOOGL Stock Draws Fresh AI Price Target Hikes - timothysykes.com",
+        "GOOGL Stock Draws Bullish Targets As AI Bets Scale Up - StocksToTrade"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Alphabet Stock Stays Flat - Ideal for GOOGL Short Put and Put Credit Spread Plays - barchart.com",
+          "keywords": [
+            "catalyst",
+            "deal"
+          ]
+        },
+        {
+          "title": "Alphabet GOOGL Stock Draws Fresh AI Price Target Hikes - timothysykes.com",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "GOOGL Stock Draws Bullish Targets As AI Bets Scale Up - StocksToTrade",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Alphabet Inc. - GOOGL 6 1/4 05/15/29 (NASDAQ:GOOGM) Passes the GARP Screen for Growth at a Reasonable Price - ChartMill",
+          "keywords": [
+            "growth"
+          ]
+        },
+        {
+          "title": "GOOGL Jumps as Upgrades & Antitrust Relief Lift Stock - tradingpedia.com",
+          "keywords": [
+            "catalyst",
+            "upgrade",
+            "upgrades"
+          ]
+        }
+      ]
+    },
+    {
       "symbol": "AAPL",
       "name": "AAPL",
-      "price": 335.0199890136719,
-      "volume": 19351118.0,
-      "avg_volume": 42443501.8,
-      "percent_change": -0.5875403520261498,
+      "price": 334.9700012207031,
+      "volume": 20281177.0,
+      "avg_volume": 42536507.7,
+      "percent_change": -0.6023735250139095,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
-      "liquidity_score": 86.28,
-      "rank_score": 64.91,
+      "liquidity_score": 86.29,
+      "rank_score": 64.93,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Apple iPhone Refresh Cycle Better-Than-Expected, Says Evercore As AAPL Stock Heads For 5th Straight Weekly Gain - TradingView",
       "top_headlines": [
         "Apple iPhone Refresh Cycle Better-Than-Expected, Says Evercore As AAPL Stock Heads For 5th Straight Weekly Gain - TradingView",
         "AAPL Stock Heads For 5th Straight Weekly Gain: Evercore Sees Better-Than-Expected iPhone Refresh Cycle - Stocktwits",
-        "Apple (AAPL) Outperforms Broader Market: What You Need to Know - Yahoo Finance"
+        "Apple Stock: The $1,999 iPhone Hides A Bigger Problem (NASDAQ:AAPL) - Seeking Alpha"
       ],
       "matched_headlines": [
         {
@@ -12962,7 +13039,7 @@
           ]
         },
         {
-          "title": "Analysts\u2019 Top Technology Picks: Q2 Holdings (QTWO), Apple (AAPL) - The Globe and Mail",
+          "title": "Analysts\u2019 Top Technology Picks: Q2 Holdings (QTWO), Apple (AAPL) - theglobeandmail.com",
           "keywords": [
             "ai",
             "catalyst"
@@ -12973,15 +13050,15 @@
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 346.635009765625,
-      "volume": 3086579.0,
-      "avg_volume": 6786837.9,
-      "percent_change": -0.7657919360066537,
+      "price": 346.94000244140625,
+      "volume": 3192969.0,
+      "avg_volume": 6797476.9,
+      "percent_change": -0.678479039750345,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
       "liquidity_score": 78.32,
-      "rank_score": 63.86,
+      "rank_score": 63.79,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): JPMorgan Chase (JPM) Expands Blockchain Banking And Lets Customers Invest Reward Points - simplywall.st",
       "top_headlines": [
@@ -13053,8 +13130,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 3,
-      "BUY": 1,
+      "HOLD": 2,
+      "BUY": 2,
       "SELL": 0,
       "live": 3,
       "fallback": 0
@@ -13075,21 +13152,21 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 73.8
+    "live_share_recent": 73.5
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 351,
     "closed_outcomes": 160,
-    "consensus_events": 703,
+    "consensus_events": 704,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1025.51,
-    "change": 25.51,
-    "change_pct": 2.55,
+    "latest_equity": 1025.14,
+    "change": 25.14,
+    "change_pct": 2.51,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15966,8 +16043,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-18T15:30:17.043600+00:00",
-        "equity": 1025.51,
+        "t": "2026-09-18T15:32:57.093189+00:00",
+        "equity": 1025.14,
         "cash": 215.43,
         "event": "mark"
       }
