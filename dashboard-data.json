@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-18T17:10:21.832851+00:00",
+  "generated_at": "2026-09-18T17:17:56.267123+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1025.07,
+    "portfolio_value": 1024.95,
     "starting_cash": 1000.0,
-    "total_return_pct": 2.51,
-    "total_pnl": 25.07,
+    "total_return_pct": 2.5,
+    "total_pnl": 24.95,
     "realized_pnl": 4.31,
-    "open_pnl": 20.72,
-    "capital_deployed": 809.64,
+    "open_pnl": 20.6,
+    "capital_deployed": 809.52,
     "cash": 215.43,
     "closed_trades": 38,
     "win_rate_pct": 28.95,
-    "vs_spy_pct": 3.83,
-    "spy_return_pct": -1.32,
+    "vs_spy_pct": 3.79,
+    "spy_return_pct": -1.29,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-18T17:10:24.452174+00:00"
+    "updated_at": "2026-09-18T17:17:59.078704+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -1.32,
-    "price": 759.2589721679688,
+    "return_pct": -1.29,
+    "price": 759.469970703125,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,10 +38,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 107.26499938964844,
-      "market_value": 198.44,
-      "open_pnl": 2.47,
-      "open_pnl_pct": 1.26,
+      "last": 107.13500213623047,
+      "market_value": 198.2,
+      "open_pnl": 2.23,
+      "open_pnl_pct": 1.14,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -50,7 +50,7 @@
       "symbol": "LRCX",
       "qty": 0.74,
       "avg_cost": 267.36,
-      "last": 282.8599853515625,
+      "last": 282.864990234375,
       "market_value": 209.32,
       "open_pnl": 11.47,
       "open_pnl_pct": 5.8,
@@ -62,10 +62,10 @@
       "symbol": "TSLA",
       "qty": 0.55,
       "avg_cost": 357.18,
-      "last": 362.54998779296875,
-      "market_value": 199.4,
-      "open_pnl": 2.95,
-      "open_pnl_pct": 1.5,
+      "last": 362.75,
+      "market_value": 199.51,
+      "open_pnl": 3.06,
+      "open_pnl_pct": 1.56,
       "stop": 342.0,
       "target": 380.0,
       "thesis": "TSLA tops the ranked catalyst list on a PG&E grid deal headline with bullish sentiment and neutral RSI, offering a liquid setup while the book still has open slots and cash. Valuation is debated but the rank/catalyst edge is the cleanest available versus held names that are already working. Small notional keeps risk tight with stop/target structured for at least 1.5 R:R."
@@ -74,9 +74,9 @@
       "symbol": "AMZN",
       "qty": 0.8,
       "avg_cost": 248.31,
-      "last": 253.10000610351562,
-      "market_value": 202.48,
-      "open_pnl": 3.83,
+      "last": 253.11160278320312,
+      "market_value": 202.49,
+      "open_pnl": 3.84,
       "open_pnl_pct": 1.93,
       "stop": 240.0,
       "target": 262.0,
@@ -86,21 +86,21 @@
   "latest_candidate": {
     "symbol": "PLTR",
     "name": "PLTR",
-    "price": 175.5850067138672,
-    "volume": 13275235.0,
-    "avg_volume": 22800183.5,
-    "percent_change": -0.37165158810794574,
+    "price": 175.43499755859375,
+    "volume": 13469787.0,
+    "avg_volume": 22819638.7,
+    "percent_change": -0.45676799221476244,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 15,
     "liquidity_score": 83.58,
-    "rank_score": 80.33,
+    "rank_score": 80.4,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (ai, catalyst, deal): Palantir Technologies (PLTR) AI Deal Rush Meets A Fair Value Debate - Yahoo Finance",
     "top_headlines": [
       "Palantir Technologies (PLTR) AI Deal Rush Meets A Fair Value Debate - Yahoo Finance",
       "Palantir (PLTR) Lands First Aviation OperatorOS Deal As UK Hire Raises NHS Focus - simplywall.st",
-      "Palantir (NASDAQ: PLTR) insider sells 16,000 shares under preset plan - Stock Titan"
+      "Palantir (NASDAQ: PLTR) insider sells 16,000 shares under preset plan - stocktitan.net"
     ],
     "matched_headlines": [
       {
@@ -149,43 +149,41 @@
     "symbol": "PLTR",
     "confidence": 78,
     "cache_stats": null,
-    "entry_price": 175.59,
-    "stop_loss": 168.0,
-    "take_profit": 187.0,
-    "qty": 1.13,
-    "thesis": "PLTR shows a clean ranked catalyst setup around AI deal headlines with bullish sentiment and neutral RSI, fitting liquid momentum criteria. Portfolio has cash and slot capacity under the 5-name limit for a sub-$200 notional add. Reward-to-risk is set at 1.5 with defined invalidation below recent support. Social chatter is mixed/unverified and does not override the candidate rank.",
+    "entry_price": 175.43,
+    "stop_loss": 167.0,
+    "take_profit": 190.0,
+    "qty": 1.1,
+    "thesis": "PLTR screens as a liquid, ranked catalyst setup with bullish sentiment and an AI/deal headline tailwind at a neutral RSI near 50. Book has room for a fifth name and cash covers a sub-$200 notional add without forced rotation. Defined risk below recent support keeps reward:risk above 1.5 toward a measured upside extension.",
     "reason_code": "new_entry",
     "reasoning": {
       "headline": "Bought $PLTR",
-      "narrative": "PLTR shows a clean ranked catalyst setup around AI deal headlines with bullish sentiment and neutral RSI, fitting liquid momentum criteria. Portfolio has cash and slot capacity under the 5-name limit for a sub-$200 notional add. Reward-to-risk is set at 1.5 with defined invalidation below recent support. Social chatter is mixed/unverified and does not override the candidate rank.",
+      "narrative": "PLTR screens as a liquid, ranked catalyst setup with bullish sentiment and an AI/deal headline tailwind at a neutral RSI near 50. Book has room for a fifth name and cash covers a sub-$200 notional add without forced rotation. Defined risk below recent support keeps reward:risk above 1.5 toward a measured upside extension.",
       "bullets": [
-        "AI/deal headline catalyst + rank 80",
-        "Bullish sentiment, RSI 50 neutral",
-        "Notional ~$198 within cash/$200 cap",
-        "R:R exactly 1.5 on 168/187 levels"
+        "Rank 80.4 AI/deal catalyst, bullish tape",
+        "Neutral RSI ~50 leaves room for continuation",
+        "Notional capped ~$193; R:R ~1.7 with 167/190"
       ],
       "risk_map": {
-        "stop": 168.0,
-        "target": 187.0,
+        "stop": 167.0,
+        "target": 190.0,
         "horizon_days": 5,
-        "rr": 1.5,
+        "rr": 1.73,
         "confidence_10": 8,
         "confidence": 78
       },
-      "thesis": "PLTR shows a clean ranked catalyst setup around AI deal headlines with bullish sentiment and neutral RSI, fitting liquid momentum criteria. Portfolio has cash and slot capacity under the 5-name limit for a sub-$200 notional add. Reward-to-risk is set at 1.5 with defined invalidation below recent support. Social chatter is mixed/unverified and does not override the candidate rank."
+      "thesis": "PLTR screens as a liquid, ranked catalyst setup with bullish sentiment and an AI/deal headline tailwind at a neutral RSI near 50. Book has room for a fifth name and cash covers a sub-$200 notional add without forced rotation. Defined risk below recent support keeps reward:risk above 1.5 toward a measured upside extension."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "AI/deal headline catalyst + rank 80",
-      "Bullish sentiment, RSI 50 neutral",
-      "Notional ~$198 within cash/$200 cap",
-      "R:R exactly 1.5 on 168/187 levels"
+      "Rank 80.4 AI/deal catalyst, bullish tape",
+      "Neutral RSI ~50 leaves room for continuation",
+      "Notional capped ~$193; R:R ~1.7 with 167/190"
     ],
-    "timestamp": "2026-09-18T17:03:05.821637+00:00"
+    "timestamp": "2026-09-18T17:17:48.369920+00:00"
   },
-  "stance": "Buying pressure on PLTR. PLTR shows a clean ranked catalyst setup around AI deal headlines with bullish sentiment and neutral RSI, fitting liquid momentum criteria. Portfolio has cash and slot capacity under the 5-name limit for a sub-$200 notional add. Reward-to-risk is set at 1.5 with defined invalidation below recent support. Social chatter is mixed/unverified and does not override the candidate rank.",
+  "stance": "Buying pressure on PLTR. PLTR screens as a liquid, ranked catalyst setup with bullish sentiment and an AI/deal headline tailwind at a neutral RSI near 50. Book has room for a fifth name and cash covers a sub-$200 notional add without forced rotation. Defined risk below recent support keeps reward:risk above 1.5 toward a measured upside extension.",
   "thinking": {
     "badge": "Looking to buy PLTR",
     "headline": "Buying pressure on PLTR.",
@@ -206,9 +204,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 107.26499938964844,
-        "open_pnl": 2.47,
-        "open_pnl_pct": 1.26,
+        "last": 107.13500213623047,
+        "open_pnl": 2.23,
+        "open_pnl_pct": 1.14,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -218,7 +216,7 @@
         "avg_cost": 267.36,
         "stop": 255.0,
         "target": 286.0,
-        "last": 282.8599853515625,
+        "last": 282.864990234375,
         "open_pnl": 11.47,
         "open_pnl_pct": 5.8,
         "line": "Bought near $267.36 \u00b7 Sell safety line $255.00 \u00b7 Profit target $286.00",
@@ -230,9 +228,9 @@
         "avg_cost": 357.18,
         "stop": 342.0,
         "target": 380.0,
-        "last": 362.54998779296875,
-        "open_pnl": 2.95,
-        "open_pnl_pct": 1.5,
+        "last": 362.75,
+        "open_pnl": 3.06,
+        "open_pnl_pct": 1.56,
         "line": "Bought near $357.18 \u00b7 Sell safety line $342.00 \u00b7 Profit target $380.00",
         "plan": "stop 342.0 or target 380.0"
       },
@@ -242,14 +240,14 @@
         "avg_cost": 248.31,
         "stop": 240.0,
         "target": 262.0,
-        "last": 253.10000610351562,
-        "open_pnl": 3.83,
+        "last": 253.11160278320312,
+        "open_pnl": 3.84,
         "open_pnl_pct": 1.93,
         "line": "Bought near $248.31 \u00b7 Sell safety line $240.00 \u00b7 Profit target $262.00",
         "plan": "stop 240.0 or target 262.0"
       }
     ],
-    "last_checked": "2026-09-18T17:10:21.832851+00:00",
+    "last_checked": "2026-09-18T17:17:56.267123+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -279,10 +277,10 @@
       {
         "prefix": "J",
         "model": "deepseek-v4-flash",
-        "action": "BUY",
-        "symbol": "PLTR",
-        "confidence": 72,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "WMT",
+        "confidence": 80,
+        "tone": "hold"
       },
       {
         "prefix": "J",
@@ -319,6 +317,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "PLTR",
+      "status": "no_consensus",
+      "headline": "BUY PLTR \u2014 no consensus",
+      "detail": "Desks: BUY PLTR (78%) vs HOLD CASH (65%) vs HOLD WMT (80%). No 2-of-3 senior agreement",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "PLTR",
+          "confidence": 80,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "PLTR",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "HOLD",
+          "symbol": "WMT",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "PLTR",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "PLTR",
+          "confidence": 78,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "WMT",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "PLTR",
+      "timestamp": "2026-09-18T17:17:48.369920+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "PLTR",
@@ -857,83 +932,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-09-18T15:32:46.084605+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "GOOGL",
-      "status": "no_consensus",
-      "headline": "BUY GOOGL \u2014 no consensus",
-      "detail": "Desks: BUY GOOGL (72%) vs HOLD CASH (65%) vs HOLD WMT (80%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "HOLD",
-          "symbol": "WMT",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "GOOGL",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "GOOGL",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "WMT",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-18T15:20:25.402864+00:00"
     },
     {
       "type": "fill",
@@ -12905,21 +12903,21 @@
     {
       "symbol": "PLTR",
       "name": "PLTR",
-      "price": 175.5850067138672,
-      "volume": 13275235.0,
-      "avg_volume": 22800183.5,
-      "percent_change": -0.37165158810794574,
+      "price": 175.43499755859375,
+      "volume": 13469787.0,
+      "avg_volume": 22819638.7,
+      "percent_change": -0.45676799221476244,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 15,
       "liquidity_score": 83.58,
-      "rank_score": 80.33,
+      "rank_score": 80.4,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst, deal): Palantir Technologies (PLTR) AI Deal Rush Meets A Fair Value Debate - Yahoo Finance",
       "top_headlines": [
         "Palantir Technologies (PLTR) AI Deal Rush Meets A Fair Value Debate - Yahoo Finance",
         "Palantir (PLTR) Lands First Aviation OperatorOS Deal As UK Hire Raises NHS Focus - simplywall.st",
-        "Palantir (NASDAQ: PLTR) insider sells 16,000 shares under preset plan - Stock Titan"
+        "Palantir (NASDAQ: PLTR) insider sells 16,000 shares under preset plan - stocktitan.net"
       ],
       "matched_headlines": [
         {
@@ -12965,15 +12963,15 @@
     {
       "symbol": "GOOGL",
       "name": "GOOGL",
-      "price": 349.6300048828125,
-      "volume": 22445419.0,
-      "avg_volume": 24593401.9,
-      "percent_change": 0.6621997522429098,
+      "price": 349.42999267578125,
+      "volume": 22863543.0,
+      "avg_volume": 24635214.3,
+      "percent_change": 0.6046141089746355,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
-      "liquidity_score": 83.91,
-      "rank_score": 72.62,
+      "liquidity_score": 83.92,
+      "rank_score": 72.57,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, deal): Alphabet Stock Stays Flat - Ideal for GOOGL Short Put and Put Credit Spread Plays - Barchart.com",
       "top_headlines": [
@@ -13022,15 +13020,15 @@
     {
       "symbol": "AAPL",
       "name": "AAPL",
-      "price": 334.57000732421875,
-      "volume": 23794479.0,
-      "avg_volume": 42887837.9,
-      "percent_change": -0.7210660758994807,
+      "price": 334.739990234375,
+      "volume": 24303486.0,
+      "avg_volume": 42938738.6,
+      "percent_change": -0.6706260432121661,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
-      "liquidity_score": 86.32,
-      "rank_score": 65.02,
+      "liquidity_score": 86.33,
+      "rank_score": 64.99,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Apple iPhone Refresh Cycle Better-Than-Expected, Says Evercore As AAPL Stock Heads For 5th Straight Weekly Gain - Yahoo Finance",
       "top_headlines": [
@@ -13080,15 +13078,15 @@
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 347.1650085449219,
-      "volume": 4497639.0,
-      "avg_volume": 6927943.9,
-      "percent_change": -0.6140645926723216,
+      "price": 346.70001220703125,
+      "volume": 4570059.0,
+      "avg_volume": 6935185.9,
+      "percent_change": -0.747183123816746,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
       "liquidity_score": 78.41,
-      "rank_score": 63.75,
+      "rank_score": 63.86,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): JPMorgan Chase (JPM) Expands Blockchain Banking And Lets Customers Invest Reward Points - simplywall.st",
       "top_headlines": [
@@ -13136,15 +13134,15 @@
     {
       "symbol": "AMZN",
       "name": "AMZN",
-      "price": 253.42999267578125,
-      "volume": 23911993.0,
-      "avg_volume": 30377769.3,
-      "percent_change": 0.8917513486220499,
+      "price": 253.1199951171875,
+      "volume": 24196460.0,
+      "avg_volume": 30406216.0,
+      "percent_change": 0.7683397655252816,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
       "liquidity_score": 84.83,
-      "rank_score": 63.44,
+      "rank_score": 63.34,
       "news_hits": 7,
       "catalyst": "Headline-driven setup (beat): NFJ Investment Group LLC Purchases New Shares in Amazon.com, Inc. $AMZN - MarketBeat",
       "top_headlines": [
@@ -13207,10 +13205,10 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 0,
-      "BUY": 4,
+      "HOLD": 1,
+      "BUY": 3,
       "SELL": 0,
-      "live": 4,
+      "live": 3,
       "fallback": 0
     },
     "junior_model_3_enabled": true,
@@ -13229,21 +13227,21 @@
     "last_stage": "entry",
     "last_junior_nomination": "PLTR",
     "last_escalate_reason": "junior_nomination",
-    "live_share_recent": 78.0
+    "live_share_recent": 77.6
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 351,
     "closed_outcomes": 160,
-    "consensus_events": 710,
+    "consensus_events": 711,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1025.07,
-    "change": 25.07,
-    "change_pct": 2.51,
+    "latest_equity": 1024.95,
+    "change": 24.95,
+    "change_pct": 2.5,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -16144,8 +16142,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-18T17:10:24.452174+00:00",
-        "equity": 1025.07,
+        "t": "2026-09-18T17:17:59.078704+00:00",
+        "equity": 1024.95,
         "cash": 215.43,
         "event": "mark"
       }
