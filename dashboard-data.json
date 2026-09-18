@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-18T15:20:14.520432+00:00",
+  "generated_at": "2026-09-18T15:20:33.971704+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1025.03,
+    "portfolio_value": 1024.99,
     "starting_cash": 1000.0,
     "total_return_pct": 2.5,
-    "total_pnl": 25.03,
+    "total_pnl": 24.99,
     "realized_pnl": 4.31,
-    "open_pnl": 20.68,
-    "capital_deployed": 809.6,
+    "open_pnl": 20.64,
+    "capital_deployed": 809.56,
     "cash": 215.43,
     "closed_trades": 38,
     "win_rate_pct": 28.95,
     "vs_spy_pct": 3.75,
     "spy_return_pct": -1.25,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-18T15:20:17.193037+00:00"
+    "updated_at": "2026-09-18T15:20:36.619702+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
     "return_pct": -1.25,
-    "price": 759.75,
+    "price": 759.77001953125,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,10 +38,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 107.15499877929688,
-      "market_value": 198.24,
-      "open_pnl": 2.27,
-      "open_pnl_pct": 1.16,
+      "last": 107.12999725341797,
+      "market_value": 198.19,
+      "open_pnl": 2.22,
+      "open_pnl_pct": 1.13,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -50,9 +50,9 @@
       "symbol": "LRCX",
       "qty": 0.74,
       "avg_cost": 267.36,
-      "last": 281.75,
-      "market_value": 208.5,
-      "open_pnl": 10.65,
+      "last": 281.739990234375,
+      "market_value": 208.49,
+      "open_pnl": 10.64,
       "open_pnl_pct": 5.38,
       "stop": 255.0,
       "target": 286.0,
@@ -62,10 +62,10 @@
       "symbol": "TSLA",
       "qty": 0.55,
       "avg_cost": 357.18,
-      "last": 363.5249938964844,
-      "market_value": 199.94,
-      "open_pnl": 3.49,
-      "open_pnl_pct": 1.78,
+      "last": 363.56500244140625,
+      "market_value": 199.96,
+      "open_pnl": 3.51,
+      "open_pnl_pct": 1.79,
       "stop": 342.0,
       "target": 380.0,
       "thesis": "TSLA tops the ranked catalyst list on a PG&E grid deal headline with bullish sentiment and neutral RSI, offering a liquid setup while the book still has open slots and cash. Valuation is debated but the rank/catalyst edge is the cleanest available versus held names that are already working. Small notional keeps risk tight with stop/target structured for at least 1.5 R:R."
@@ -74,7 +74,7 @@
       "symbol": "AMZN",
       "qty": 0.8,
       "avg_cost": 248.31,
-      "last": 253.64500427246094,
+      "last": 253.64999389648438,
       "market_value": 202.92,
       "open_pnl": 4.27,
       "open_pnl_pct": 2.15,
@@ -141,45 +141,45 @@
     "model": "grok-4.5",
     "action": "BUY",
     "symbol": "GOOGL",
-    "confidence": 74,
+    "confidence": 72,
     "cache_stats": null,
-    "entry_price": 351.56,
-    "stop_loss": 340.0,
-    "take_profit": 372.0,
-    "qty": 0.56,
-    "thesis": "GOOGL is the sole ranked liquid candidate with bullish sentiment and a headline catalyst setup while RSI sits neutral near 50. Portfolio has room for one more name under the 5-position cap and cash supports a sub-$200 notional entry. Technical bounce chatter and flat price action support a defined long with asymmetric R:R. Stop and target enforce discipline on the new entry.",
+    "entry_price": 349.61,
+    "stop_loss": 336.0,
+    "take_profit": 370.0,
+    "qty": 0.57,
+    "thesis": "GOOGL is the top non-held liquid candidate with solid rank score, bullish sentiment, and a headline catalyst setup around deal/options flow plus technical compression that favors a bounce. Book has room for a fifth name and cash supports a sub-$200 notional add without forcing rotation. Defined stop below support keeps reward:risk at 1.5 on a clean upside target.",
     "reason_code": "new_entry",
     "reasoning": {
       "headline": "Bought $GOOGL",
-      "narrative": "GOOGL is the sole ranked liquid candidate with bullish sentiment and a headline catalyst setup while RSI sits neutral near 50. Portfolio has room for one more name under the 5-position cap and cash supports a sub-$200 notional entry. Technical bounce chatter and flat price action support a defined long with asymmetric R:R. Stop and target enforce discipline on the new entry.",
+      "narrative": "GOOGL is the top non-held liquid candidate with solid rank score, bullish sentiment, and a headline catalyst setup around deal/options flow plus technical compression that favors a bounce. Book has room for a fifth name and cash supports a sub-$200 notional add without forcing rotation. Defined stop below support keeps reward:risk at 1.5 on a clean upside target.",
       "bullets": [
-        "Rank score 73 with bullish sentiment",
-        "Neutral RSI 50 leaves room for bounce",
-        "Notional capped near $200 for size control",
-        "R:R >1.5 via 340 stop / 372 target"
+        "Second-ranked candidate after already-held AMZN",
+        "Bullish catalyst plus tight technicals",
+        "~$200 notional fits cash and size rules",
+        "R:R exactly 1.5 with room to 5 names"
       ],
       "risk_map": {
-        "stop": 340.0,
-        "target": 372.0,
+        "stop": 336.0,
+        "target": 370.0,
         "horizon_days": 5,
-        "rr": 1.77,
+        "rr": 1.5,
         "confidence_10": 7,
-        "confidence": 74
+        "confidence": 72
       },
-      "thesis": "GOOGL is the sole ranked liquid candidate with bullish sentiment and a headline catalyst setup while RSI sits neutral near 50. Portfolio has room for one more name under the 5-position cap and cash supports a sub-$200 notional entry. Technical bounce chatter and flat price action support a defined long with asymmetric R:R. Stop and target enforce discipline on the new entry."
+      "thesis": "GOOGL is the top non-held liquid candidate with solid rank score, bullish sentiment, and a headline catalyst setup around deal/options flow plus technical compression that favors a bounce. Book has room for a fifth name and cash supports a sub-$200 notional add without forcing rotation. Defined stop below support keeps reward:risk at 1.5 on a clean upside target."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Rank score 73 with bullish sentiment",
-      "Neutral RSI 50 leaves room for bounce",
-      "Notional capped near $200 for size control",
-      "R:R >1.5 via 340 stop / 372 target"
+      "Second-ranked candidate after already-held AMZN",
+      "Bullish catalyst plus tight technicals",
+      "~$200 notional fits cash and size rules",
+      "R:R exactly 1.5 with room to 5 names"
     ],
-    "timestamp": "2026-09-18T15:02:32.668853+00:00"
+    "timestamp": "2026-09-18T15:20:25.401854+00:00"
   },
-  "stance": "Buying pressure on GOOGL. GOOGL is the sole ranked liquid candidate with bullish sentiment and a headline catalyst setup while RSI sits neutral near 50. Portfolio has room for one more name under the 5-position cap and cash supports a sub-$200 notional entry. Technical bounce chatter and flat price action support a defined long with asymmetric R:R. Stop and target enforce discipline on the new entry.",
+  "stance": "Buying pressure on GOOGL. GOOGL is the top non-held liquid candidate with solid rank score, bullish sentiment, and a headline catalyst setup around deal/options flow plus technical compression that favors a bounce. Book has room for a fifth name and cash supports a sub-$200 notional add without forcing rotation. Defined stop below support keeps reward:risk at 1.5 on a clean upside target.",
   "thinking": {
     "badge": "Looking to buy GOOGL",
     "headline": "Buying pressure on GOOGL.",
@@ -199,9 +199,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 107.15499877929688,
-        "open_pnl": 2.27,
-        "open_pnl_pct": 1.16,
+        "last": 107.12999725341797,
+        "open_pnl": 2.22,
+        "open_pnl_pct": 1.13,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -211,8 +211,8 @@
         "avg_cost": 267.36,
         "stop": 255.0,
         "target": 286.0,
-        "last": 281.75,
-        "open_pnl": 10.65,
+        "last": 281.739990234375,
+        "open_pnl": 10.64,
         "open_pnl_pct": 5.38,
         "line": "Bought near $267.36 \u00b7 Sell safety line $255.00 \u00b7 Profit target $286.00",
         "plan": "stop 255.0 or target 286.0"
@@ -223,9 +223,9 @@
         "avg_cost": 357.18,
         "stop": 342.0,
         "target": 380.0,
-        "last": 363.5249938964844,
-        "open_pnl": 3.49,
-        "open_pnl_pct": 1.78,
+        "last": 363.56500244140625,
+        "open_pnl": 3.51,
+        "open_pnl_pct": 1.79,
         "line": "Bought near $357.18 \u00b7 Sell safety line $342.00 \u00b7 Profit target $380.00",
         "plan": "stop 342.0 or target 380.0"
       },
@@ -235,14 +235,14 @@
         "avg_cost": 248.31,
         "stop": 240.0,
         "target": 262.0,
-        "last": 253.64500427246094,
+        "last": 253.64999389648438,
         "open_pnl": 4.27,
         "open_pnl_pct": 2.15,
         "line": "Bought near $248.31 \u00b7 Sell safety line $240.00 \u00b7 Profit target $262.00",
         "plan": "stop 240.0 or target 262.0"
       }
     ],
-    "last_checked": "2026-09-18T15:20:14.520432+00:00",
+    "last_checked": "2026-09-18T15:20:33.971704+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -256,26 +256,26 @@
       {
         "prefix": "J",
         "model": "grok-4.3",
-        "action": "BUY",
-        "symbol": "GOOGL",
-        "confidence": 73,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 60,
+        "tone": "hold"
       },
       {
         "prefix": "J",
         "model": "claude-haiku-4-5",
-        "action": "BUY",
-        "symbol": "GOOGL",
-        "confidence": 72,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 62,
+        "tone": "hold"
       },
       {
         "prefix": "J",
         "model": "deepseek-v4-flash",
-        "action": "BUY",
-        "symbol": "GOOGL",
-        "confidence": 72,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "WMT",
+        "confidence": 80,
+        "tone": "hold"
       },
       {
         "prefix": "J",
@@ -290,7 +290,7 @@
         "model": "grok-4.5",
         "action": "BUY",
         "symbol": "GOOGL",
-        "confidence": 74,
+        "confidence": 72,
         "tone": "buy"
       },
       {
@@ -312,6 +312,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "GOOGL",
+      "status": "no_consensus",
+      "headline": "BUY GOOGL \u2014 no consensus",
+      "detail": "Desks: BUY GOOGL (72%) vs HOLD CASH (65%) vs HOLD WMT (80%). No 2-of-3 senior agreement",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "HOLD",
+          "symbol": "WMT",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "GOOGL",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "GOOGL",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "WMT",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-18T15:20:25.402864+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "GOOGL",
@@ -12976,10 +13053,10 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 0,
-      "BUY": 4,
+      "HOLD": 3,
+      "BUY": 1,
       "SELL": 0,
-      "live": 4,
+      "live": 3,
       "fallback": 0
     },
     "junior_model_3_enabled": true,
@@ -12996,22 +13073,22 @@
     "decision_mode": "live_dual_llm",
     "last_tier": "senior_escalated",
     "last_stage": "entry",
-    "last_junior_nomination": "GOOGL",
-    "last_escalate_reason": "junior_nomination",
-    "live_share_recent": 74.3
+    "last_junior_nomination": null,
+    "last_escalate_reason": "junior_trade_or_split",
+    "live_share_recent": 73.8
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 351,
     "closed_outcomes": 160,
-    "consensus_events": 702,
+    "consensus_events": 703,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1025.03,
-    "change": 25.03,
+    "latest_equity": 1024.99,
+    "change": 24.99,
     "change_pct": 2.5,
     "points": [
       {
@@ -15889,8 +15966,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-18T15:20:17.193037+00:00",
-        "equity": 1025.03,
+        "t": "2026-09-18T15:20:36.619702+00:00",
+        "equity": 1024.99,
         "cash": 215.43,
         "event": "mark"
       }
