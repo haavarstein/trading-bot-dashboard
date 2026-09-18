@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-18T19:18:15.356077+00:00",
+  "generated_at": "2026-09-18T19:20:31.458677+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1028.04,
+    "portfolio_value": 1027.91,
     "starting_cash": 1000.0,
-    "total_return_pct": 2.8,
-    "total_pnl": 28.04,
+    "total_return_pct": 2.79,
+    "total_pnl": 27.91,
     "realized_pnl": 4.31,
-    "open_pnl": 23.7,
-    "capital_deployed": 812.61,
+    "open_pnl": 23.58,
+    "capital_deployed": 812.48,
     "cash": 215.43,
     "closed_trades": 38,
     "win_rate_pct": 28.95,
     "vs_spy_pct": 3.86,
-    "spy_return_pct": -1.06,
+    "spy_return_pct": -1.07,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-18T19:18:18.066077+00:00"
+    "updated_at": "2026-09-18T19:20:34.149803+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -1.06,
-    "price": 761.2100219726562,
+    "return_pct": -1.07,
+    "price": 761.125,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -50,10 +50,10 @@
       "symbol": "LRCX",
       "qty": 0.74,
       "avg_cost": 267.36,
-      "last": 283.54998779296875,
-      "market_value": 209.83,
-      "open_pnl": 11.98,
-      "open_pnl_pct": 6.06,
+      "last": 283.3999938964844,
+      "market_value": 209.72,
+      "open_pnl": 11.87,
+      "open_pnl_pct": 6.0,
       "stop": 255.0,
       "target": 286.0,
       "thesis": "LRCX ranks top of the candidate list on a fresh institutional-lift/beat headline with bullish sentiment and neutral RSI, offering a liquid semi-equipment catalyst setup. Book has room under the 5-name cap and ~$200 notional can be deployed without forcing a rotation. Risk defined below recent support with target sized for at least 1.5:1 reward-to-risk while existing XOM/WMT/META holds remain constructive."
@@ -62,10 +62,10 @@
       "symbol": "TSLA",
       "qty": 0.55,
       "avg_cost": 357.18,
-      "last": 364.3699951171875,
-      "market_value": 200.4,
-      "open_pnl": 3.95,
-      "open_pnl_pct": 2.01,
+      "last": 364.33599853515625,
+      "market_value": 200.38,
+      "open_pnl": 3.94,
+      "open_pnl_pct": 2.0,
       "stop": 342.0,
       "target": 380.0,
       "thesis": "TSLA tops the ranked catalyst list on a PG&E grid deal headline with bullish sentiment and neutral RSI, offering a liquid setup while the book still has open slots and cash. Valuation is debated but the rank/catalyst edge is the cleanest available versus held names that are already working. Small notional keeps risk tight with stop/target structured for at least 1.5 R:R."
@@ -217,9 +217,9 @@
         "avg_cost": 267.36,
         "stop": 255.0,
         "target": 286.0,
-        "last": 283.54998779296875,
-        "open_pnl": 11.98,
-        "open_pnl_pct": 6.06,
+        "last": 283.3999938964844,
+        "open_pnl": 11.87,
+        "open_pnl_pct": 6.0,
         "line": "Bought near $267.36 \u00b7 Sell safety line $255.00 \u00b7 Profit target $286.00",
         "plan": "stop 255.0 or target 286.0"
       },
@@ -229,9 +229,9 @@
         "avg_cost": 357.18,
         "stop": 342.0,
         "target": 380.0,
-        "last": 364.3699951171875,
-        "open_pnl": 3.95,
-        "open_pnl_pct": 2.01,
+        "last": 364.33599853515625,
+        "open_pnl": 3.94,
+        "open_pnl_pct": 2.0,
         "line": "Bought near $357.18 \u00b7 Sell safety line $342.00 \u00b7 Profit target $380.00",
         "plan": "stop 342.0 or target 380.0"
       },
@@ -248,7 +248,7 @@
         "plan": "stop 240.0 or target 262.0"
       }
     ],
-    "last_checked": "2026-09-18T19:18:15.356077+00:00",
+    "last_checked": "2026-09-18T19:20:31.458677+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -13216,9 +13216,9 @@
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1028.04,
-    "change": 28.04,
-    "change_pct": 2.8,
+    "latest_equity": 1027.91,
+    "change": 27.91,
+    "change_pct": 2.79,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -16151,6 +16151,12 @@
       {
         "t": "2026-09-18T19:18:18.066077+00:00",
         "equity": 1028.04,
+        "cash": 215.43,
+        "event": "mark"
+      },
+      {
+        "t": "2026-09-18T19:20:34.149803+00:00",
+        "equity": 1027.91,
         "cash": 215.43,
         "event": "mark"
       }
