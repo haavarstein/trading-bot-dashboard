@@ -1,34 +1,34 @@
 {
-  "generated_at": "2026-09-21T17:30:58.405609+00:00",
+  "generated_at": "2026-09-21T17:33:55.369433+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1041.38,
+    "portfolio_value": 1041.22,
     "starting_cash": 1000.0,
-    "total_return_pct": 4.14,
-    "total_pnl": 41.38,
+    "total_return_pct": 4.12,
+    "total_pnl": 41.22,
     "realized_pnl": 22.95,
-    "open_pnl": 18.39,
-    "capital_deployed": 804.6,
+    "open_pnl": 18.24,
+    "capital_deployed": 804.44,
     "cash": 236.78,
     "closed_trades": 39,
     "win_rate_pct": 30.77,
-    "vs_spy_pct": 3.71,
-    "spy_return_pct": 0.43,
+    "vs_spy_pct": 3.74,
+    "spy_return_pct": 0.38,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-21T17:31:01.248678+00:00"
+    "updated_at": "2026-09-21T17:33:58.506523+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.43,
-    "price": 772.669921875,
+    "return_pct": 0.38,
+    "price": 772.3499755859375,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 6,
+    "consensus_count_today": 7,
     "validated_count_today": 3,
-    "blocked_count_today": 3,
+    "blocked_count_today": 4,
     "fills_today": 2,
     "simulated_orders_today": 3,
     "top_symbol_today": "LRCX"
@@ -38,10 +38,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 107.69000244140625,
-      "market_value": 199.23,
-      "open_pnl": 3.26,
-      "open_pnl_pct": 1.66,
+      "last": 107.55999755859375,
+      "market_value": 198.99,
+      "open_pnl": 3.02,
+      "open_pnl_pct": 1.54,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -50,10 +50,10 @@
       "symbol": "TSLA",
       "qty": 0.55,
       "avg_cost": 357.18,
-      "last": 372.94000244140625,
-      "market_value": 205.12,
-      "open_pnl": 8.67,
-      "open_pnl_pct": 4.41,
+      "last": 373.0450134277344,
+      "market_value": 205.17,
+      "open_pnl": 8.73,
+      "open_pnl_pct": 4.44,
       "stop": 342.0,
       "target": 380.0,
       "thesis": "TSLA tops the ranked catalyst list on a PG&E grid deal headline with bullish sentiment and neutral RSI, offering a liquid setup while the book still has open slots and cash. Valuation is debated but the rank/catalyst edge is the cleanest available versus held names that are already working. Small notional keeps risk tight with stop/target structured for at least 1.5 R:R."
@@ -62,10 +62,10 @@
       "symbol": "AMZN",
       "qty": 0.8,
       "avg_cost": 248.31,
-      "last": 257.67498779296875,
-      "market_value": 206.14,
-      "open_pnl": 7.49,
-      "open_pnl_pct": 3.77,
+      "last": 257.70001220703125,
+      "market_value": 206.16,
+      "open_pnl": 7.51,
+      "open_pnl_pct": 3.78,
       "stop": 240.0,
       "target": 262.0,
       "thesis": "AMZN shows a ranked liquid setup with bullish sentiment and a headline institutional buy catalyst supporting near-term momentum. RSI near 50 leaves room for upside without overbought conditions. Portfolio has capacity for one more name under the 5-position guideline and cash covers a sub-$200 notional entry. Risk defined below recent support with 1.5+ R:R to the target."
@@ -74,67 +74,68 @@
       "symbol": "AMD",
       "qty": 0.32,
       "avg_cost": 609.82,
-      "last": 606.594970703125,
-      "market_value": 194.11,
-      "open_pnl": -1.03,
-      "open_pnl_pct": -0.53,
+      "last": 606.6199951171875,
+      "market_value": 194.12,
+      "open_pnl": -1.02,
+      "open_pnl_pct": -0.52,
       "stop": 585.0,
       "target": 655.0,
       "thesis": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity."
     }
   ],
   "latest_candidate": {
-    "symbol": "WMT",
-    "name": "WMT",
-    "price": 107.68000030517578,
-    "volume": 7545914.0,
-    "avg_volume": 20276871.4,
-    "percent_change": 0.890093617879074,
+    "symbol": "PLTR",
+    "name": "PLTR",
+    "price": 181.3780059814453,
+    "volume": 12143467.0,
+    "avg_volume": 23820006.7,
+    "percent_change": 2.104259516235226,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 11,
-    "liquidity_score": 83.07,
-    "rank_score": 64.67,
+    "catalyst_score": 9,
+    "liquidity_score": 83.77,
+    "rank_score": 57.75,
     "news_hits": 8,
-    "catalyst": "Headline-driven setup (ai, catalyst, record): Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
+    "catalyst": "Headline-driven setup (growth): Palantir (PLTR) Stock Forecast: 85% Revenue Growth, Rule of 40 at 145% - Worth $129? - TradingKey",
     "top_headlines": [
-      "Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
-      "Is WMT Overvalued? DCF Says Worth $36 - GuruFocus",
-      "Walmart (NASDAQ: WMT) EVP sells shares under preset 10b5-1 plan - Stock Titan"
+      "Michael Burry Doubles Down On Palantir Bear Case: \u2018A Lot Of\u2019 Money Still To Be Made Shorting PLTR - Yahoo Finance",
+      "Palantir (PLTR) Stock Forecast: 85% Revenue Growth, Rule of 40 at 145% - Worth $129? - TradingKey",
+      "PLTR Stock Heads for Worst Month Ever: Retail Awaits Dip Below $100, Michael Burry Takes Victory Lap - Stocktwits"
     ],
     "matched_headlines": [
       {
-        "title": "Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
-        "keywords": [
-          "ai",
-          "catalyst",
-          "record"
-        ]
-      },
-      {
-        "title": "Walmart (NYSE: WMT) Stock Faces Steep Road Back To $1 Trillion Valuation As Growth Slows - foreignpolicyjournal.com",
+        "title": "Palantir (PLTR) Stock Forecast: 85% Revenue Growth, Rule of 40 at 145% - Worth $129? - TradingKey",
         "keywords": [
           "growth"
         ]
       },
       {
-        "title": "WMT Stock Rises Premarket: Analyst Says Walmart's Vibe.co Deal Strengthens Advertising Push - Stocktwits",
-        "keywords": [
-          "catalyst",
-          "deal"
-        ]
-      },
-      {
-        "title": "Could Walmart Inc. (NASDAQ:WMT) Shift the Retail Stocks Narrative? - Kalkine Media",
+        "title": "PLTR Stock Heads for Worst Month Ever: Retail Awaits Dip Below $100, Michael Burry Takes Victory Lap - Stocktwits",
         "keywords": [
           "ai",
           "catalyst"
         ]
       },
       {
-        "title": "Walmart (NASDAQ:WMT) EVP Sells $309,285.00 in Stock - MarketBeat",
+        "title": "Palantir (NASDAQ: PLTR) Nearly Doubles Revenue As Valuation Compresses Without A Price Drop - foreignpolicyjournal.com",
         "keywords": [
-          "beat"
+          "drop"
+        ]
+      },
+      {
+        "title": "Palantir (PLTR) Stock Looks Near Fair Value On Future Cash Flow - simplywall.st",
+        "keywords": [
+          "ai",
+          "catalyst"
+        ]
+      },
+      {
+        "title": "Palantir Grew Revenue 85% and Raised Full-Year Guidance by 10 Points \u2014 So Why Is PLTR Down 26% YTD? - TradingKey",
+        "keywords": [
+          "ai",
+          "catalyst",
+          "guidance",
+          "raised"
         ]
       }
     ]
@@ -143,45 +144,45 @@
     "model": "grok-4.5",
     "action": "BUY",
     "symbol": "PLTR",
-    "confidence": 72,
+    "confidence": 74,
     "cache_stats": null,
-    "entry_price": 181.65,
-    "stop_loss": 175.0,
-    "take_profit": 192.0,
+    "entry_price": 181.38,
+    "stop_loss": 174.5,
+    "take_profit": 192.5,
     "qty": 1.1,
-    "thesis": "PLTR offers a fresh liquid growth catalyst with strong ranked evidence and an 85% revenue-growth / Rule-of-40 narrative not already represented in the book. Book has room for a fifth name and ~$200 notional fits cash without forced rotation. Defined stop under recent support keeps reward:risk above 1.5 toward the next upside extension.",
+    "thesis": "PLTR leads the candidate list on rank and catalyst score with bullish growth headlines citing strong revenue expansion and Rule of 40 metrics. Room remains under the 5-name cap and ~$200 notional limit with available cash. Neutral RSI leaves room for continuation if the growth narrative holds. Social chatter is mixed and treated only as weak noise versus the ranked catalyst evidence.",
     "reason_code": "new_entry",
     "reasoning": {
       "headline": "Bought $PLTR",
-      "narrative": "PLTR offers a fresh liquid growth catalyst with strong ranked evidence and an 85% revenue-growth / Rule-of-40 narrative not already represented in the book. Book has room for a fifth name and ~$200 notional fits cash without forced rotation. Defined stop under recent support keeps reward:risk above 1.5 toward the next upside extension.",
+      "narrative": "PLTR leads the candidate list on rank and catalyst score with bullish growth headlines citing strong revenue expansion and Rule of 40 metrics. Room remains under the 5-name cap and ~$200 notional limit with available cash. Neutral RSI leaves room for continuation if the growth narrative holds. Social chatter is mixed and treated only as weak noise versus the ranked catalyst evidence.",
       "bullets": [
-        "Ranked catalyst #3, score 9, bullish growth setup",
-        "Notional ~$200; R:R ~1.56 with stop 175 / target 192",
-        "Adds diversified AI/software exposure vs existing retail/auto/semi holds",
-        "Room under 5-name cap; no need to rotate weaker AMD yet"
+        "Top rank_score 57.75 + catalyst_score 9 growth setup",
+        "Notional ~$200 fits cash and max size rules",
+        "R:R ~1.6 with stop 174.5 / target 192.5",
+        "Adds 5th name without forced rotation"
       ],
       "risk_map": {
-        "stop": 175.0,
-        "target": 192.0,
+        "stop": 174.5,
+        "target": 192.5,
         "horizon_days": 5,
-        "rr": 1.56,
+        "rr": 1.62,
         "confidence_10": 7,
-        "confidence": 72
+        "confidence": 74
       },
-      "thesis": "PLTR offers a fresh liquid growth catalyst with strong ranked evidence and an 85% revenue-growth / Rule-of-40 narrative not already represented in the book. Book has room for a fifth name and ~$200 notional fits cash without forced rotation. Defined stop under recent support keeps reward:risk above 1.5 toward the next upside extension."
+      "thesis": "PLTR leads the candidate list on rank and catalyst score with bullish growth headlines citing strong revenue expansion and Rule of 40 metrics. Room remains under the 5-name cap and ~$200 notional limit with available cash. Neutral RSI leaves room for continuation if the growth narrative holds. Social chatter is mixed and treated only as weak noise versus the ranked catalyst evidence."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Ranked catalyst #3, score 9, bullish growth setup",
-      "Notional ~$200; R:R ~1.56 with stop 175 / target 192",
-      "Adds diversified AI/software exposure vs existing retail/auto/semi holds",
-      "Room under 5-name cap; no need to rotate weaker AMD yet"
+      "Top rank_score 57.75 + catalyst_score 9 growth setup",
+      "Notional ~$200 fits cash and max size rules",
+      "R:R ~1.6 with stop 174.5 / target 192.5",
+      "Adds 5th name without forced rotation"
     ],
-    "timestamp": "2026-09-21T17:18:52.694098+00:00"
+    "timestamp": "2026-09-21T17:33:46.035071+00:00"
   },
-  "stance": "Buying pressure on PLTR. PLTR offers a fresh liquid growth catalyst with strong ranked evidence and an 85% revenue-growth / Rule-of-40 narrative not already represented in the book. Book has room for a fifth name and ~$200 notional fits cash without forced rotation. Defined stop under recent support keeps reward:risk above 1.5 toward the next upside extension.",
+  "stance": "Buying pressure on PLTR. PLTR leads the candidate list on rank and catalyst score with bullish growth headlines citing strong revenue expansion and Rule of 40 metrics. Room remains under the 5-name cap and ~$200 notional limit with available cash. Neutral RSI leaves room for continuation if the growth narrative holds. Social chatter is mixed and treated only as weak noise versus the ranked catalyst evidence.",
   "thinking": {
     "badge": "Looking to buy PLTR",
     "headline": "Buying pressure on PLTR.",
@@ -192,6 +193,7 @@
       "It owns AMZN, bought near $248.31. Simple plan: sell if it falls to about $240.00, or take profit near $262.00.",
       "It owns AMD, bought near $609.82. Simple plan: sell if it falls to about $585.00, or take profit near $655.00.",
       "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
+      "Top scanner name right now is PLTR, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
       "If nothing looks clean, do nothing. Sitting in cash or holdings is allowed."
     ],
     "owned": [
@@ -201,9 +203,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 107.69000244140625,
-        "open_pnl": 3.26,
-        "open_pnl_pct": 1.66,
+        "last": 107.55999755859375,
+        "open_pnl": 3.02,
+        "open_pnl_pct": 1.54,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -213,9 +215,9 @@
         "avg_cost": 357.18,
         "stop": 342.0,
         "target": 380.0,
-        "last": 372.94000244140625,
-        "open_pnl": 8.67,
-        "open_pnl_pct": 4.41,
+        "last": 373.0450134277344,
+        "open_pnl": 8.73,
+        "open_pnl_pct": 4.44,
         "line": "Bought near $357.18 \u00b7 Sell safety line $342.00 \u00b7 Profit target $380.00",
         "plan": "stop 342.0 or target 380.0"
       },
@@ -225,9 +227,9 @@
         "avg_cost": 248.31,
         "stop": 240.0,
         "target": 262.0,
-        "last": 257.67498779296875,
-        "open_pnl": 7.49,
-        "open_pnl_pct": 3.77,
+        "last": 257.70001220703125,
+        "open_pnl": 7.51,
+        "open_pnl_pct": 3.78,
         "line": "Bought near $248.31 \u00b7 Sell safety line $240.00 \u00b7 Profit target $262.00",
         "plan": "stop 240.0 or target 262.0"
       },
@@ -237,14 +239,14 @@
         "avg_cost": 609.82,
         "stop": 585.0,
         "target": 655.0,
-        "last": 606.594970703125,
-        "open_pnl": -1.03,
-        "open_pnl_pct": -0.53,
+        "last": 606.6199951171875,
+        "open_pnl": -1.02,
+        "open_pnl_pct": -0.52,
         "line": "Bought near $609.82 \u00b7 Sell safety line $585.00 \u00b7 Profit target $655.00",
         "plan": "stop 585.0 or target 655.0"
       }
     ],
-    "last_checked": "2026-09-21T17:30:58.405609+00:00",
+    "last_checked": "2026-09-21T17:33:55.369433+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -258,10 +260,10 @@
       {
         "prefix": "J",
         "model": "grok-4.3",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 60,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "PLTR",
+        "confidence": 72,
+        "tone": "buy"
       },
       {
         "prefix": "J",
@@ -284,7 +286,7 @@
         "model": "grok-build-0.1",
         "action": "BUY",
         "symbol": "PLTR",
-        "confidence": 72,
+        "confidence": 75,
         "tone": "buy"
       },
       {
@@ -292,16 +294,16 @@
         "model": "grok-4.5",
         "action": "BUY",
         "symbol": "PLTR",
-        "confidence": 72,
+        "confidence": 74,
         "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "claude-sonnet-5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 68,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "PLTR",
+        "confidence": 72,
+        "tone": "buy"
       },
       {
         "prefix": "S",
@@ -314,6 +316,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "PLTR",
+      "status": "blocked",
+      "headline": "BUY PLTR \u2014 blocked",
+      "detail": "Insufficient buying power: $20.29 < $199.52",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "PLTR",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "HOLD",
+          "symbol": "WMT",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "PLTR",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "PLTR",
+          "confidence": 74,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "PLTR",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "WMT",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-21T17:33:46.035071+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "PLTR",
@@ -852,83 +931,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-09-21T15:48:43.478991+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "PLTR",
-      "status": "no_consensus",
-      "headline": "BUY PLTR \u2014 no consensus",
-      "detail": "Desks: BUY PLTR (72%) vs HOLD CASH (65%) vs HOLD WMT (80%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "PLTR",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "PLTR",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "PLTR",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "PLTR",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "WMT",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "entry",
-      "junior_nomination": "PLTR",
-      "timestamp": "2026-09-21T15:33:36.727590+00:00"
     },
     {
       "type": "fill",
@@ -12974,119 +12976,17 @@
   ],
   "top_candidates": [
     {
-      "symbol": "WMT",
-      "name": "WMT",
-      "price": 107.68000030517578,
-      "volume": 7545914.0,
-      "avg_volume": 20276871.4,
-      "percent_change": 0.890093617879074,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 11,
-      "liquidity_score": 83.07,
-      "rank_score": 64.67,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst, record): Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
-      "top_headlines": [
-        "Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
-        "Is WMT Overvalued? DCF Says Worth $36 - GuruFocus",
-        "Walmart (NASDAQ: WMT) EVP sells shares under preset 10b5-1 plan - Stock Titan"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "record"
-          ]
-        },
-        {
-          "title": "Walmart (NYSE: WMT) Stock Faces Steep Road Back To $1 Trillion Valuation As Growth Slows - foreignpolicyjournal.com",
-          "keywords": [
-            "growth"
-          ]
-        },
-        {
-          "title": "WMT Stock Rises Premarket: Analyst Says Walmart's Vibe.co Deal Strengthens Advertising Push - Stocktwits",
-          "keywords": [
-            "catalyst",
-            "deal"
-          ]
-        },
-        {
-          "title": "Could Walmart Inc. (NASDAQ:WMT) Shift the Retail Stocks Narrative? - Kalkine Media",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Walmart (NASDAQ:WMT) EVP Sells $309,285.00 in Stock - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "TSLA",
-      "name": "TSLA",
-      "price": 372.8800048828125,
-      "volume": 23242660.0,
-      "avg_volume": 35242156.0,
-      "percent_change": 2.3636358000432125,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 10,
-      "liquidity_score": 85.47,
-      "rank_score": 59.21,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst, raises): Tesla Wins Over Another Skeptic: JPMorgan Raises TSLA Stock Price Target By More Than 200% - Stocktwits",
-      "top_headlines": [
-        "Tesla Inc Stock (TSLA) Opened Up by 3.29% on Sep 21: Key Drivers Unveiled - TradingKey",
-        "TSLA Stock Looks \u2018Slightly Undervalued\u2019 To This Analyst \u2014 But The Roadster Is Barely Part Of The Bull Case - Yahoo Finance",
-        "TSLA Stock Quote Price and Forecast - CNN"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Tesla Wins Over Another Skeptic: JPMorgan Raises TSLA Stock Price Target By More Than 200% - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "raises",
-            "wins"
-          ]
-        },
-        {
-          "title": "TSLA Stock Up for Fourth Straight Day Before Thursday Deliveries Report \u2014 Wall Street Expects Year-On-Year Growth - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "growth"
-          ]
-        },
-        {
-          "title": "Tesla heads to trial over California claims of racial discrimination (TSLA:NASDAQ) - Seeking Alpha",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "PLTR",
       "name": "PLTR",
-      "price": 181.64999389648438,
-      "volume": 11840189.0,
-      "avg_volume": 23789678.9,
-      "percent_change": 2.2573713806653,
+      "price": 181.3780059814453,
+      "volume": 12143467.0,
+      "avg_volume": 23820006.7,
+      "percent_change": 2.104259516235226,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 83.76,
-      "rank_score": 57.87,
+      "liquidity_score": 83.77,
+      "rank_score": 57.75,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (growth): Palantir (PLTR) Stock Forecast: 85% Revenue Growth, Rule of 40 at 145% - Worth $129? - TradingKey",
       "top_headlines": [
@@ -13133,19 +13033,58 @@
       ]
     },
     {
+      "symbol": "TSLA",
+      "name": "TSLA",
+      "price": 373.2250061035156,
+      "volume": 23866422.0,
+      "avg_volume": 35304532.2,
+      "percent_change": 2.4583461058900595,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 9,
+      "liquidity_score": 85.48,
+      "rank_score": 53.79,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst, raises): Tesla Wins Over Another Skeptic: JPMorgan Raises TSLA Stock Price Target By More Than 200% - Stocktwits",
+      "top_headlines": [
+        "Tesla Inc Stock (TSLA) Opened Up by 3.29% on Sep 21: Key Drivers Unveiled - TradingKey",
+        "TSLA Stock Looks \u2018Slightly Undervalued\u2019 To This Analyst \u2014 But The Roadster Is Barely Part Of The Bull Case - Yahoo Finance",
+        "TSLA Stock Quote Price and Forecast - CNN"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Tesla Wins Over Another Skeptic: JPMorgan Raises TSLA Stock Price Target By More Than 200% - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "raises",
+            "wins"
+          ]
+        },
+        {
+          "title": "TSLA Stock Up for Fourth Straight Day Before Thursday Deliveries Report \u2014 Wall Street Expects Year-On-Year Growth - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "growth"
+          ]
+        }
+      ]
+    },
+    {
       "symbol": "AMD",
       "name": "AMD",
-      "price": 607.8800048828125,
-      "volume": 29190322.0,
-      "avg_volume": 23905312.2,
-      "percent_change": 8.584901741598507,
+      "price": 606.75,
+      "volume": 29906880.0,
+      "avg_volume": 23976968.0,
+      "percent_change": 8.383050277194155,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
-      "liquidity_score": 83.78,
-      "rank_score": 53.43,
+      "liquidity_score": 83.8,
+      "rank_score": 53.28,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (record): AMD Stock Hits Fresh Record High, Up 183% This Year - Advanced Micro Devices (NASDAQ:AMD), Oracle (NYSE:O - Benzinga",
+      "catalyst": "Headline-driven setup (ai, catalyst): Meta\u2019s Muse AI Agent Triggers Intel, Chip Stock Rally. AMD Hits $1T Market Cap. - Barron's",
       "top_headlines": [
         "AMD hits $1 trillion market cap for the first time as stock rides 5-day rally - CNBC",
         "Why AMD Stock Is Rising Fast Today - Yahoo Finance",
@@ -13153,16 +13092,16 @@
       ],
       "matched_headlines": [
         {
-          "title": "AMD Stock Hits Fresh Record High, Up 183% This Year - Advanced Micro Devices (NASDAQ:AMD), Oracle (NYSE:O - Benzinga",
-          "keywords": [
-            "record"
-          ]
-        },
-        {
           "title": "Meta\u2019s Muse AI Agent Triggers Intel, Chip Stock Rally. AMD Hits $1T Market Cap. - Barron's",
           "keywords": [
             "ai",
             "catalyst"
+          ]
+        },
+        {
+          "title": "AMD Stock Hits Fresh Record High, Up 183% This Year - Advanced Micro Devices (NASDAQ:AMD), Oracle (NYSE:O - Benzinga",
+          "keywords": [
+            "record"
           ]
         },
         {
@@ -13183,17 +13122,74 @@
       ]
     },
     {
-      "symbol": "JPM",
-      "name": "JPM",
-      "price": 352.55499267578125,
-      "volume": 2246038.0,
-      "avg_volume": 8044473.8,
-      "percent_change": 0.8250576650156785,
+      "symbol": "WMT",
+      "name": "WMT",
+      "price": 107.69999694824219,
+      "volume": 7760028.0,
+      "avg_volume": 20298282.8,
+      "percent_change": 0.9088293458257248,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 79.05,
-      "rank_score": 50.52,
+      "liquidity_score": 83.07,
+      "rank_score": 52.69,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst, record): Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
+      "top_headlines": [
+        "Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
+        "Is WMT Overvalued? DCF Says Worth $36 - GuruFocus",
+        "Walmart (NASDAQ: WMT) EVP sells shares under preset 10b5-1 plan - Stock Titan"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "record"
+          ]
+        },
+        {
+          "title": "WMT Stock Climbs Premarket: Trump's Price-Cut Claim Sparks 'White House Funding' Speculation, Retail Buzz Soars - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "cut"
+          ]
+        },
+        {
+          "title": "Walmart (NYSE: WMT) Stock Faces Steep Road Back To $1 Trillion Valuation As Growth Slows - foreignpolicyjournal.com",
+          "keywords": [
+            "growth"
+          ]
+        },
+        {
+          "title": "Walmart (NASDAQ:WMT) EVP Sells $309,285.00 in Stock - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Could Walmart Inc. (NASDAQ:WMT) Shift the Retail Stocks Narrative? - Kalkine Media",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "JPM",
+      "name": "JPM",
+      "price": 352.2250061035156,
+      "volume": 2363577.0,
+      "avg_volume": 8056227.7,
+      "percent_change": 0.7306868126137689,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 8,
+      "liquidity_score": 79.06,
+      "rank_score": 50.44,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, partnership): J.P. Morgan and Qatar Investment Authority ink $20B partnership (JPM:NYSE) - Seeking Alpha",
       "top_headlines": [
@@ -13258,8 +13254,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 3,
-      "BUY": 1,
+      "HOLD": 2,
+      "BUY": 2,
       "SELL": 0,
       "live": 3,
       "fallback": 0
@@ -13280,21 +13276,21 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 77.4
+    "live_share_recent": 77.0
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 353,
     "closed_outcomes": 161,
-    "consensus_events": 735,
+    "consensus_events": 736,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1041.38,
-    "change": 41.38,
-    "change_pct": 4.14,
+    "latest_equity": 1041.22,
+    "change": 41.22,
+    "change_pct": 4.12,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -13303,26 +13299,20 @@
         "event": "start"
       },
       {
-        "t": "2026-08-07T11:41:13.000055+00:00",
+        "t": "2026-08-07T11:42:39.327971+00:00",
         "equity": 998.59,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-07T13:49:49.172502+00:00",
-        "equity": 1005.49,
+        "t": "2026-08-07T13:55:33.506036+00:00",
+        "equity": 1004.37,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-07T14:01:16.883722+00:00",
-        "equity": 1003.5,
-        "cash": 5.04,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-07T14:16:20.203225+00:00",
-        "equity": 1003.33,
+        "t": "2026-08-07T14:15:34.685113+00:00",
+        "equity": 1002.12,
         "cash": 5.04,
         "event": "mark"
       },
@@ -13333,26 +13323,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-07T14:46:27.269326+00:00",
-        "equity": 1001.09,
+        "t": "2026-08-07T14:50:38.106646+00:00",
+        "equity": 1001.8,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-07T15:01:24.689336+00:00",
-        "equity": 1003.06,
+        "t": "2026-08-07T15:10:38.858464+00:00",
+        "equity": 1003.51,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-07T15:17:10.246230+00:00",
-        "equity": 1003.0,
-        "cash": 5.04,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-07T15:30:40.873597+00:00",
-        "equity": 1004.66,
+        "t": "2026-08-07T15:26:13.904846+00:00",
+        "equity": 1004.41,
         "cash": 5.04,
         "event": "mark"
       },
@@ -13363,26 +13347,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-07T16:00:41.156043+00:00",
-        "equity": 1003.42,
+        "t": "2026-08-07T16:01:28.166763+00:00",
+        "equity": 1003.4,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-07T16:15:56.538866+00:00",
-        "equity": 1003.62,
+        "t": "2026-08-07T16:20:41.290103+00:00",
+        "equity": 1004.23,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-07T16:30:42.159861+00:00",
-        "equity": 1003.14,
-        "cash": 5.04,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-07T16:45:43.099476+00:00",
-        "equity": 1005.18,
+        "t": "2026-08-07T16:40:41.998921+00:00",
+        "equity": 1004.43,
         "cash": 5.04,
         "event": "mark"
       },
@@ -13393,26 +13371,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-07T17:15:44.411598+00:00",
-        "equity": 1004.58,
+        "t": "2026-08-07T17:16:25.614985+00:00",
+        "equity": 1004.61,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-07T17:30:44.631248+00:00",
-        "equity": 1004.27,
+        "t": "2026-08-07T17:35:44.779655+00:00",
+        "equity": 1003.31,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-07T17:45:47.048422+00:00",
-        "equity": 1003.08,
-        "cash": 5.04,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-07T18:00:45.922075+00:00",
-        "equity": 1001.81,
+        "t": "2026-08-07T17:55:45.295325+00:00",
+        "equity": 1002.13,
         "cash": 5.04,
         "event": "mark"
       },
@@ -13423,26 +13395,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-07T18:30:47.626718+00:00",
-        "equity": 1002.85,
+        "t": "2026-08-07T18:31:32.486481+00:00",
+        "equity": 1002.49,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-07T18:45:47.987333+00:00",
-        "equity": 1002.1,
+        "t": "2026-08-07T18:50:57.132645+00:00",
+        "equity": 1002.26,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-07T19:00:48.659378+00:00",
-        "equity": 1002.91,
-        "cash": 5.04,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-07T19:15:49.397900+00:00",
-        "equity": 1004.24,
+        "t": "2026-08-07T19:10:48.447373+00:00",
+        "equity": 1004.11,
         "cash": 5.04,
         "event": "mark"
       },
@@ -13453,26 +13419,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-07T19:45:51.519316+00:00",
-        "equity": 1002.82,
+        "t": "2026-08-07T19:46:35.053739+00:00",
+        "equity": 1002.86,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-10T13:30:32.454255+00:00",
-        "equity": 1013.75,
+        "t": "2026-08-10T13:35:24.761214+00:00",
+        "equity": 1015.68,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-10T13:45:25.991175+00:00",
-        "equity": 1019.67,
-        "cash": 5.04,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-10T14:00:27.546383+00:00",
-        "equity": 1021.89,
+        "t": "2026-08-10T13:55:25.997850+00:00",
+        "equity": 1020.44,
         "cash": 5.04,
         "event": "mark"
       },
@@ -13483,26 +13443,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-10T14:30:30.439981+00:00",
-        "equity": 1023.48,
+        "t": "2026-08-10T14:31:09.674587+00:00",
+        "equity": 1023.5,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-10T14:45:28.002712+00:00",
-        "equity": 1021.61,
+        "t": "2026-08-10T14:50:27.978293+00:00",
+        "equity": 1021.9,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-10T15:00:30.929380+00:00",
-        "equity": 1019.39,
-        "cash": 5.04,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-10T15:15:29.990210+00:00",
-        "equity": 1022.76,
+        "t": "2026-08-10T15:10:30.281700+00:00",
+        "equity": 1020.64,
         "cash": 5.04,
         "event": "mark"
       },
@@ -13513,26 +13467,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-10T15:45:43.705079+00:00",
-        "equity": 1024.22,
+        "t": "2026-08-10T15:46:22.842418+00:00",
+        "equity": 1023.97,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-10T16:00:31.641417+00:00",
+        "t": "2026-08-10T16:05:34.036899+00:00",
         "equity": 1025.03,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-10T16:15:32.999875+00:00",
-        "equity": 1024.6,
-        "cash": 5.04,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-10T16:30:33.623606+00:00",
-        "equity": 1024.57,
+        "t": "2026-08-10T16:25:31.829767+00:00",
+        "equity": 1025.23,
         "cash": 5.04,
         "event": "mark"
       },
@@ -13543,26 +13491,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-10T17:00:34.126452+00:00",
-        "equity": 1025.18,
+        "t": "2026-08-10T17:01:16.697812+00:00",
+        "equity": 1025.48,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-10T17:15:34.900462+00:00",
-        "equity": 1024.77,
+        "t": "2026-08-10T17:20:35.797984+00:00",
+        "equity": 1025.23,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-10T17:30:37.839984+00:00",
-        "equity": 1025.08,
-        "cash": 5.04,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-10T17:45:35.788890+00:00",
-        "equity": 1023.95,
+        "t": "2026-08-10T17:40:36.158476+00:00",
+        "equity": 1024.93,
         "cash": 5.04,
         "event": "mark"
       },
@@ -13573,26 +13515,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-10T18:15:37.468630+00:00",
-        "equity": 1022.58,
+        "t": "2026-08-10T18:16:23.935467+00:00",
+        "equity": 1022.65,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-10T18:26:16.282196+00:00",
-        "equity": 1022.7,
+        "t": "2026-08-10T18:31:35.740807+00:00",
+        "equity": 1023.24,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-10T18:37:27.238802+00:00",
-        "equity": 1023.18,
-        "cash": 5.04,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-10T18:46:36.930720+00:00",
-        "equity": 1023.45,
+        "t": "2026-08-10T18:45:41.908367+00:00",
+        "equity": 1023.28,
         "cash": 5.04,
         "event": "mark"
       },
@@ -13603,26 +13539,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-11T13:47:18.471708+00:00",
-        "equity": 1023.27,
+        "t": "2026-08-11T13:50:50.825653+00:00",
+        "equity": 1023.55,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-11T14:02:14.281192+00:00",
-        "equity": 1025.07,
+        "t": "2026-08-11T14:10:50.925216+00:00",
+        "equity": 1026.61,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-11T14:17:28.482435+00:00",
-        "equity": 1026.37,
-        "cash": 5.04,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-11T14:25:51.728498+00:00",
-        "equity": 1024.9,
+        "t": "2026-08-11T14:20:50.051227+00:00",
+        "equity": 1026.38,
         "cash": 5.04,
         "event": "mark"
       },
@@ -13633,26 +13563,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-11T14:55:57.413388+00:00",
-        "equity": 1025.1,
+        "t": "2026-08-11T15:00:52.519362+00:00",
+        "equity": 1025.12,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-11T15:10:53.606079+00:00",
-        "equity": 1024.44,
+        "t": "2026-08-11T15:18:20.051554+00:00",
+        "equity": 1024.29,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-11T15:25:53.260289+00:00",
-        "equity": 1023.6,
-        "cash": 5.04,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-11T15:41:24.846058+00:00",
-        "equity": 1023.98,
+        "t": "2026-08-11T15:36:03.027546+00:00",
+        "equity": 1023.62,
         "cash": 5.04,
         "event": "mark"
       },
@@ -13663,26 +13587,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-11T16:10:54.981967+00:00",
-        "equity": 1024.07,
+        "t": "2026-08-11T16:15:55.962063+00:00",
+        "equity": 1023.2,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-11T16:25:55.063623+00:00",
-        "equity": 1021.45,
+        "t": "2026-08-11T16:33:33.145377+00:00",
+        "equity": 1020.93,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-11T16:40:58.912667+00:00",
-        "equity": 1021.6,
-        "cash": 5.04,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-11T16:55:56.484336+00:00",
-        "equity": 1022.89,
+        "t": "2026-08-11T16:50:56.236827+00:00",
+        "equity": 1022.91,
         "cash": 5.04,
         "event": "mark"
       },
@@ -13693,26 +13611,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-11T17:26:01.304657+00:00",
-        "equity": 1023.33,
+        "t": "2026-08-11T17:30:59.026610+00:00",
+        "equity": 1023.35,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-11T17:41:02.091809+00:00",
-        "equity": 1023.71,
+        "t": "2026-08-11T17:48:26.198580+00:00",
+        "equity": 1023.64,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-11T17:55:59.401915+00:00",
-        "equity": 1023.72,
-        "cash": 5.04,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-11T18:07:39.405567+00:00",
-        "equity": 1023.51,
+        "t": "2026-08-11T18:06:02.166083+00:00",
+        "equity": 1024.07,
         "cash": 5.04,
         "event": "mark"
       },
@@ -13723,26 +13635,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-11T18:34:04.517309+00:00",
-        "equity": 1021.43,
+        "t": "2026-08-11T18:36:01.540060+00:00",
+        "equity": 1022.06,
         "cash": 5.04,
         "event": "mark"
       },
       {
-        "t": "2026-08-11T18:46:07.399872+00:00",
-        "equity": 1021.53,
+        "t": "2026-08-11T18:50:07.882731+00:00",
+        "equity": 1021.88,
         "cash": 210.6,
         "event": "mark"
       },
       {
-        "t": "2026-08-12T07:56:48.476951+00:00",
-        "equity": 1020.93,
-        "cash": 10.91,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-12T13:40:39.083241+00:00",
-        "equity": 1028.18,
+        "t": "2026-08-12T13:35:35.069848+00:00",
+        "equity": 1027.49,
         "cash": 223.5,
         "event": "mark"
       },
@@ -13753,26 +13659,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-12T14:15:38.222243+00:00",
-        "equity": 1029.37,
+        "t": "2026-08-12T14:20:41.640426+00:00",
+        "equity": 1029.4,
         "cash": 223.5,
         "event": "mark"
       },
       {
-        "t": "2026-08-12T14:35:41.901271+00:00",
-        "equity": 1029.79,
+        "t": "2026-08-12T14:45:38.682423+00:00",
+        "equity": 1028.97,
         "cash": 223.5,
         "event": "mark"
       },
       {
-        "t": "2026-08-12T14:55:44.561001+00:00",
-        "equity": 1029.37,
-        "cash": 223.5,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-12T15:06:05.410860+00:00",
-        "equity": 1028.8,
+        "t": "2026-08-12T15:05:39.888734+00:00",
+        "equity": 1028.81,
         "cash": 223.5,
         "event": "mark"
       },
@@ -13783,26 +13683,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-12T15:40:45.924409+00:00",
-        "equity": 1028.16,
+        "t": "2026-08-12T15:45:42.638806+00:00",
+        "equity": 1028.96,
         "cash": 23.69,
         "event": "mark"
       },
       {
-        "t": "2026-08-12T15:55:47.068882+00:00",
-        "equity": 1028.3,
+        "t": "2026-08-12T16:04:00.238543+00:00",
+        "equity": 1029.03,
         "cash": 23.69,
         "event": "mark"
       },
       {
-        "t": "2026-08-12T16:10:46.372930+00:00",
-        "equity": 1029.46,
-        "cash": 23.69,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-12T16:25:46.855575+00:00",
-        "equity": 1030.68,
+        "t": "2026-08-12T16:20:42.884342+00:00",
+        "equity": 1030.26,
         "cash": 23.69,
         "event": "mark"
       },
@@ -13813,26 +13707,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-12T17:00:44.142804+00:00",
-        "equity": 1030.15,
+        "t": "2026-08-12T17:03:57.210179+00:00",
+        "equity": 1030.36,
         "cash": 23.69,
         "event": "mark"
       },
       {
-        "t": "2026-08-12T17:15:45.203996+00:00",
-        "equity": 1030.17,
+        "t": "2026-08-12T17:20:45.298748+00:00",
+        "equity": 1030.86,
         "cash": 23.69,
         "event": "mark"
       },
       {
-        "t": "2026-08-12T17:30:45.633910+00:00",
-        "equity": 1030.07,
-        "cash": 23.69,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-12T17:45:50.672804+00:00",
-        "equity": 1030.02,
+        "t": "2026-08-12T17:40:51.786438+00:00",
+        "equity": 1030.12,
         "cash": 23.69,
         "event": "mark"
       },
@@ -13843,26 +13731,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-12T18:18:54.168889+00:00",
-        "equity": 1031.04,
+        "t": "2026-08-12T18:20:47.998847+00:00",
+        "equity": 1031.22,
         "cash": 221.05,
         "event": "mark"
       },
       {
-        "t": "2026-08-12T18:33:02.474943+00:00",
-        "equity": 1030.88,
+        "t": "2026-08-12T18:40:53.140802+00:00",
+        "equity": 1030.78,
         "cash": 21.82,
         "event": "mark"
       },
       {
-        "t": "2026-08-12T18:47:15.501756+00:00",
-        "equity": 1030.43,
-        "cash": 21.82,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-12T19:19:22.451819+00:00",
-        "equity": 1029.78,
+        "t": "2026-08-12T19:02:21.641531+00:00",
+        "equity": 1029.12,
         "cash": 21.82,
         "event": "mark"
       },
@@ -13873,26 +13755,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-13T13:46:17.294318+00:00",
-        "equity": 1024.68,
+        "t": "2026-08-13T13:49:00.113773+00:00",
+        "equity": 1024.32,
         "cash": 21.82,
         "event": "mark"
       },
       {
-        "t": "2026-08-13T14:01:15.557799+00:00",
-        "equity": 1026.37,
+        "t": "2026-08-13T14:06:14.984122+00:00",
+        "equity": 1025.11,
         "cash": 21.82,
         "event": "mark"
       },
       {
-        "t": "2026-08-13T14:16:23.697498+00:00",
-        "equity": 1026.36,
-        "cash": 21.82,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-13T14:31:18.708422+00:00",
-        "equity": 1026.47,
+        "t": "2026-08-13T14:26:19.692093+00:00",
+        "equity": 1024.6,
         "cash": 21.82,
         "event": "mark"
       },
@@ -13903,26 +13779,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-13T15:05:37.768796+00:00",
-        "equity": 1029.66,
+        "t": "2026-08-13T15:06:24.874543+00:00",
+        "equity": 1029.54,
         "cash": 21.82,
         "event": "mark"
       },
       {
-        "t": "2026-08-13T15:20:17.849048+00:00",
-        "equity": 1030.67,
+        "t": "2026-08-13T15:26:19.933318+00:00",
+        "equity": 1032.07,
         "cash": 21.82,
         "event": "mark"
       },
       {
-        "t": "2026-08-13T15:35:03.651932+00:00",
-        "equity": 1032.76,
-        "cash": 21.82,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-13T15:50:48.408096+00:00",
-        "equity": 1033.6,
+        "t": "2026-08-13T15:46:25.236530+00:00",
+        "equity": 1034.23,
         "cash": 21.82,
         "event": "mark"
       },
@@ -13933,26 +13803,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-13T16:16:26.509356+00:00",
-        "equity": 1033.71,
+        "t": "2026-08-13T16:20:39.819259+00:00",
+        "equity": 1034.09,
         "cash": 21.82,
         "event": "mark"
       },
       {
-        "t": "2026-08-13T16:31:23.254260+00:00",
-        "equity": 1033.82,
-        "cash": 21.82,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-13T16:46:16.612545+00:00",
-        "equity": 1035.29,
+        "t": "2026-08-13T16:36:15.125940+00:00",
+        "equity": 1034.82,
         "cash": 230.31,
         "event": "mark"
       },
       {
-        "t": "2026-08-13T17:01:16.665272+00:00",
-        "equity": 1034.9,
+        "t": "2026-08-13T16:56:15.788591+00:00",
+        "equity": 1034.59,
         "cash": 230.31,
         "event": "mark"
       },
@@ -13963,26 +13827,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-13T17:31:25.514055+00:00",
-        "equity": 1034.97,
+        "t": "2026-08-13T17:35:34.469963+00:00",
+        "equity": 1034.95,
         "cash": 30.55,
         "event": "mark"
       },
       {
-        "t": "2026-08-13T17:46:26.138972+00:00",
-        "equity": 1034.7,
+        "t": "2026-08-13T17:51:26.502989+00:00",
+        "equity": 1034.39,
         "cash": 30.55,
         "event": "mark"
       },
       {
-        "t": "2026-08-13T18:01:25.838717+00:00",
-        "equity": 1034.41,
-        "cash": 30.55,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-13T18:16:27.659106+00:00",
-        "equity": 1034.6,
+        "t": "2026-08-13T18:11:26.250187+00:00",
+        "equity": 1034.37,
         "cash": 30.55,
         "event": "mark"
       },
@@ -13993,26 +13851,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-13T18:50:56.682188+00:00",
-        "equity": 1033.63,
+        "t": "2026-08-13T18:51:32.885947+00:00",
+        "equity": 1033.45,
         "cash": 30.55,
         "event": "mark"
       },
       {
-        "t": "2026-08-13T19:19:50.046980+00:00",
-        "equity": 1033.79,
-        "cash": 30.55,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-13T20:09:01.603056+00:00",
+        "t": "2026-08-13T19:52:06.360052+00:00",
         "equity": 1034.56,
         "cash": 228.59,
         "event": "mark"
       },
       {
-        "t": "2026-08-14T09:51:04.366361+00:00",
-        "equity": 1034.8,
+        "t": "2026-08-13T20:40:23.994219+00:00",
+        "equity": 1034.43,
         "cash": 228.59,
         "event": "mark"
       },
@@ -14023,26 +13875,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-14T14:00:38.644332+00:00",
-        "equity": 1041.92,
+        "t": "2026-08-14T14:02:56.880794+00:00",
+        "equity": 1042.61,
         "cash": 30.01,
         "event": "mark"
       },
       {
-        "t": "2026-08-14T14:20:39.412958+00:00",
-        "equity": 1042.94,
+        "t": "2026-08-14T14:33:24.588114+00:00",
+        "equity": 1041.83,
         "cash": 30.01,
         "event": "mark"
       },
       {
-        "t": "2026-08-14T14:50:39.752300+00:00",
-        "equity": 1041.54,
-        "cash": 30.01,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-14T15:18:52.880508+00:00",
-        "equity": 1040.64,
+        "t": "2026-08-14T15:10:40.972816+00:00",
+        "equity": 1040.42,
         "cash": 30.01,
         "event": "mark"
       },
@@ -14053,26 +13899,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-14T16:05:33.289373+00:00",
-        "equity": 1040.94,
+        "t": "2026-08-14T16:10:44.111091+00:00",
+        "equity": 1040.97,
         "cash": 30.01,
         "event": "mark"
       },
       {
-        "t": "2026-08-14T16:30:51.647405+00:00",
-        "equity": 1040.44,
+        "t": "2026-08-14T16:40:46.128792+00:00",
+        "equity": 1040.6,
         "cash": 30.01,
         "event": "mark"
       },
       {
-        "t": "2026-08-14T16:50:46.691512+00:00",
-        "equity": 1040.15,
-        "cash": 30.01,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-14T17:10:47.268805+00:00",
-        "equity": 1040.4,
+        "t": "2026-08-14T17:03:54.112260+00:00",
+        "equity": 1040.29,
         "cash": 229.45,
         "event": "mark"
       },
@@ -14083,26 +13923,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-14T18:04:06.504975+00:00",
-        "equity": 1039.05,
+        "t": "2026-08-14T18:10:49.714624+00:00",
+        "equity": 1039.41,
         "cash": 229.45,
         "event": "mark"
       },
       {
-        "t": "2026-08-14T18:30:57.116536+00:00",
-        "equity": 1038.46,
+        "t": "2026-08-14T18:40:51.058088+00:00",
+        "equity": 1037.88,
         "cash": 229.45,
         "event": "mark"
       },
       {
-        "t": "2026-08-14T18:50:51.589286+00:00",
-        "equity": 1038.11,
-        "cash": 229.45,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-14T19:51:30.920223+00:00",
-        "equity": 1036.7,
+        "t": "2026-08-14T19:33:21.887546+00:00",
+        "equity": 1036.78,
         "cash": 229.45,
         "event": "mark"
       },
@@ -14113,26 +13947,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-17T14:10:40.248373+00:00",
+        "t": "2026-08-17T14:18:11.775126+00:00",
         "equity": 1033.13,
-        "cash": 229.45,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-17T14:30:41.523089+00:00",
-        "equity": 1031.83,
         "cash": 30.3,
-        "event": "mark"
+        "event": "BUY PANW"
       },
       {
-        "t": "2026-08-17T14:50:42.537972+00:00",
-        "equity": 1032.39,
+        "t": "2026-08-17T14:33:53.711951+00:00",
+        "equity": 1031.84,
         "cash": 225.21,
         "event": "mark"
       },
       {
-        "t": "2026-08-17T15:10:42.324345+00:00",
-        "equity": 1031.87,
+        "t": "2026-08-17T15:03:06.207572+00:00",
+        "equity": 1031.68,
         "cash": 225.21,
         "event": "mark"
       },
@@ -14143,26 +13971,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-17T16:00:48.012961+00:00",
-        "equity": 1033.64,
+        "t": "2026-08-17T16:05:34.931739+00:00",
+        "equity": 1032.5,
         "cash": 225.21,
         "event": "mark"
       },
       {
-        "t": "2026-08-17T16:20:46.693951+00:00",
-        "equity": 1032.32,
+        "t": "2026-08-17T16:34:05.168895+00:00",
+        "equity": 1032.28,
         "cash": 225.21,
         "event": "mark"
       },
       {
-        "t": "2026-08-17T16:48:18.483153+00:00",
-        "equity": 1031.61,
-        "cash": 225.21,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-17T17:10:50.952995+00:00",
-        "equity": 1032.22,
+        "t": "2026-08-17T17:03:13.767021+00:00",
+        "equity": 1031.6,
         "cash": 225.21,
         "event": "mark"
       },
@@ -14173,26 +13995,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-17T18:00:52.538782+00:00",
-        "equity": 1033.25,
+        "t": "2026-08-17T18:03:32.218861+00:00",
+        "equity": 1033.74,
         "cash": 435.42,
         "event": "mark"
       },
       {
-        "t": "2026-08-17T18:20:52.848402+00:00",
-        "equity": 1034.03,
+        "t": "2026-08-17T18:35:40.782429+00:00",
+        "equity": 1034.02,
         "cash": 435.42,
         "event": "mark"
       },
       {
-        "t": "2026-08-17T18:48:13.766048+00:00",
-        "equity": 1034.65,
-        "cash": 435.42,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-17T19:33:13.127098+00:00",
-        "equity": 1034.59,
+        "t": "2026-08-17T19:18:10.772719+00:00",
+        "equity": 1035.6,
         "cash": 435.42,
         "event": "mark"
       },
@@ -14203,28 +14019,22 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-18T13:35:00.113558+00:00",
-        "equity": 1028.9,
-        "cash": 237.11,
-        "event": "BUY JPM"
-      },
-      {
-        "t": "2026-08-18T13:50:09.902231+00:00",
-        "equity": 1034.87,
+        "t": "2026-08-18T13:35:20.619342+00:00",
+        "equity": 1036.59,
         "cash": 237.11,
         "event": "mark"
       },
       {
-        "t": "2026-08-18T14:18:04.182346+00:00",
-        "equity": 1034.26,
+        "t": "2026-08-18T14:03:44.706833+00:00",
+        "equity": 1034.28,
         "cash": 237.11,
         "event": "mark"
       },
       {
-        "t": "2026-08-18T14:32:59.170275+00:00",
-        "equity": 1034.22,
+        "t": "2026-08-18T14:32:38.562652+00:00",
+        "equity": 1034.19,
         "cash": 37.2,
-        "event": "mark"
+        "event": "BUY ANET"
       },
       {
         "t": "2026-08-18T15:03:39.023119+00:00",
@@ -14233,28 +14043,22 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-18T15:15:12.577875+00:00",
-        "equity": 1029.45,
-        "cash": 702.0,
-        "event": "BUY NVDA"
-      },
-      {
-        "t": "2026-08-18T15:33:23.069133+00:00",
-        "equity": 1030.68,
+        "t": "2026-08-18T15:18:50.011014+00:00",
+        "equity": 1029.74,
         "cash": 37.2,
         "event": "mark"
       },
       {
-        "t": "2026-08-18T16:00:16.634008+00:00",
-        "equity": 1030.82,
+        "t": "2026-08-18T15:48:49.503798+00:00",
+        "equity": 1030.83,
         "cash": 37.2,
         "event": "mark"
       },
       {
-        "t": "2026-08-18T16:18:54.352737+00:00",
-        "equity": 1032.5,
+        "t": "2026-08-18T16:18:34.818579+00:00",
+        "equity": 1031.66,
         "cash": 232.94,
-        "event": "mark"
+        "event": "SELL AMZN"
       },
       {
         "t": "2026-08-18T16:40:18.038505+00:00",
@@ -14263,26 +14067,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-18T17:02:43.354110+00:00",
-        "equity": 1033.32,
+        "t": "2026-08-18T17:10:19.690884+00:00",
+        "equity": 1033.51,
         "cash": 232.94,
         "event": "mark"
       },
       {
-        "t": "2026-08-18T17:30:20.243519+00:00",
-        "equity": 1034.63,
+        "t": "2026-08-18T17:40:20.963220+00:00",
+        "equity": 1035.14,
         "cash": 232.94,
         "event": "mark"
       },
       {
-        "t": "2026-08-18T17:50:21.149716+00:00",
-        "equity": 1036.37,
-        "cash": 232.94,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-18T18:18:09.225499+00:00",
-        "equity": 1037.82,
+        "t": "2026-08-18T18:10:28.920046+00:00",
+        "equity": 1036.66,
         "cash": 232.94,
         "event": "mark"
       },
@@ -14293,26 +14091,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-18T19:18:00.371012+00:00",
-        "equity": 1038.47,
+        "t": "2026-08-18T19:33:27.535585+00:00",
+        "equity": 1038.09,
         "cash": 232.94,
         "event": "mark"
       },
       {
-        "t": "2026-08-19T13:33:49.451766+00:00",
-        "equity": 1034.25,
-        "cash": 36.0,
-        "event": "BUY TSLA"
-      },
-      {
-        "t": "2026-08-19T13:50:46.749960+00:00",
-        "equity": 1024.05,
+        "t": "2026-08-19T13:40:46.304267+00:00",
+        "equity": 1029.1,
         "cash": 36.0,
         "event": "mark"
       },
       {
-        "t": "2026-08-19T14:10:47.790280+00:00",
-        "equity": 1019.05,
+        "t": "2026-08-19T14:01:23.560120+00:00",
+        "equity": 1024.04,
         "cash": 245.07,
         "event": "mark"
       },
@@ -14323,26 +14115,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-19T14:48:37.175597+00:00",
-        "equity": 1022.48,
+        "t": "2026-08-19T14:57:39.766138+00:00",
+        "equity": 1022.06,
         "cash": 623.61,
         "event": "mark"
       },
       {
-        "t": "2026-08-19T15:10:41.672294+00:00",
-        "equity": 1021.66,
+        "t": "2026-08-19T15:20:38.674983+00:00",
+        "equity": 1021.72,
         "cash": 623.61,
         "event": "mark"
       },
       {
-        "t": "2026-08-19T15:33:02.118426+00:00",
-        "equity": 1022.23,
-        "cash": 623.61,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-19T16:00:46.208453+00:00",
-        "equity": 1021.4,
+        "t": "2026-08-19T15:50:39.605793+00:00",
+        "equity": 1020.76,
         "cash": 623.61,
         "event": "mark"
       },
@@ -14353,26 +14139,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-19T16:48:41.836477+00:00",
-        "equity": 1021.4,
+        "t": "2026-08-19T16:50:44.277442+00:00",
+        "equity": 1021.37,
         "cash": 623.61,
         "event": "mark"
       },
       {
-        "t": "2026-08-19T17:10:50.079418+00:00",
-        "equity": 1021.47,
+        "t": "2026-08-19T17:20:46.991819+00:00",
+        "equity": 1021.44,
         "cash": 623.61,
         "event": "mark"
       },
       {
-        "t": "2026-08-19T17:33:36.207630+00:00",
-        "equity": 1020.97,
-        "cash": 623.61,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-19T18:00:49.373122+00:00",
-        "equity": 1021.33,
+        "t": "2026-08-19T17:50:49.547079+00:00",
+        "equity": 1021.24,
         "cash": 623.61,
         "event": "mark"
       },
@@ -14383,28 +14163,22 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-19T18:49:03.327038+00:00",
-        "equity": 1021.61,
+        "t": "2026-08-19T18:50:40.500336+00:00",
+        "equity": 1021.83,
         "cash": 623.61,
         "event": "mark"
       },
       {
-        "t": "2026-08-19T19:33:41.760335+00:00",
-        "equity": 1022.42,
-        "cash": 623.61,
-        "event": "mark"
+        "t": "2026-08-19T22:52:16.505709+00:00",
+        "equity": 1021.75,
+        "cash": 902.0,
+        "event": "BUY AAPL"
       },
       {
-        "t": "2026-08-21T18:35:39.991601+00:00",
-        "equity": 1028.56,
-        "cash": 623.61,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-21T18:47:29.571333+00:00",
+        "t": "2026-08-21T18:40:37.238612+00:00",
         "equity": 1028.52,
-        "cash": 635.51,
-        "event": "BUY CVX"
+        "cash": 834.93,
+        "event": "mark"
       },
       {
         "t": "2026-08-21T19:03:02.343995+00:00",
@@ -14413,26 +14187,20 @@
         "event": "BUY ORCL"
       },
       {
-        "t": "2026-08-21T19:20:34.385214+00:00",
-        "equity": 1028.17,
+        "t": "2026-08-21T19:30:43.259768+00:00",
+        "equity": 1028.28,
         "cash": 435.7,
         "event": "mark"
       },
       {
-        "t": "2026-08-21T19:50:43.207475+00:00",
-        "equity": 1027.86,
+        "t": "2026-08-24T13:40:20.387062+00:00",
+        "equity": 1023.21,
         "cash": 435.7,
         "event": "mark"
       },
       {
-        "t": "2026-08-24T14:00:33.295551+00:00",
-        "equity": 1023.94,
-        "cash": 435.7,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-24T14:20:21.571770+00:00",
-        "equity": 1024.06,
+        "t": "2026-08-24T14:18:02.027548+00:00",
+        "equity": 1023.87,
         "cash": 435.7,
         "event": "mark"
       },
@@ -14443,28 +14211,22 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-24T16:05:36.797956+00:00",
-        "equity": 1023.42,
+        "t": "2026-08-24T16:10:17.738440+00:00",
+        "equity": 1023.36,
         "cash": 435.7,
         "event": "mark"
       },
       {
-        "t": "2026-08-24T16:30:31.670000+00:00",
-        "equity": 1023.4,
+        "t": "2026-08-24T16:40:29.886715+00:00",
+        "equity": 1022.82,
         "cash": 235.89,
         "event": "mark"
       },
       {
-        "t": "2026-08-24T16:50:11.419833+00:00",
-        "equity": 1023.55,
-        "cash": 235.89,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-24T17:17:19.114757+00:00",
+        "t": "2026-08-24T17:10:16.080194+00:00",
         "equity": 1024.0,
-        "cash": 36.23,
-        "event": "BUY BAC"
+        "cash": 235.89,
+        "event": "mark"
       },
       {
         "t": "2026-08-24T17:33:24.707353+00:00",
@@ -14473,26 +14235,20 @@
         "event": "SELL ORCL"
       },
       {
-        "t": "2026-08-24T17:50:26.589055+00:00",
-        "equity": 1022.9,
+        "t": "2026-08-24T18:00:40.181371+00:00",
+        "equity": 1023.75,
         "cash": 231.36,
         "event": "mark"
       },
       {
-        "t": "2026-08-24T18:18:37.109636+00:00",
-        "equity": 1025.39,
+        "t": "2026-08-24T18:30:45.536973+00:00",
+        "equity": 1025.09,
         "cash": 231.36,
         "event": "mark"
       },
       {
-        "t": "2026-08-24T18:40:59.257381+00:00",
-        "equity": 1025.97,
-        "cash": 231.36,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-24T19:05:34.668071+00:00",
-        "equity": 1024.99,
+        "t": "2026-08-24T19:01:07.221304+00:00",
+        "equity": 1025.4,
         "cash": 231.36,
         "event": "mark"
       },
@@ -14503,26 +14259,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-24T19:50:18.442180+00:00",
-        "equity": 1024.6,
+        "t": "2026-08-25T13:30:40.635409+00:00",
+        "equity": 1023.22,
         "cash": 231.36,
         "event": "mark"
       },
       {
-        "t": "2026-08-25T14:00:45.331754+00:00",
-        "equity": 1019.67,
-        "cash": 231.36,
+        "t": "2026-08-25T14:05:32.711311+00:00",
+        "equity": 1018.25,
+        "cash": 32.36,
         "event": "mark"
       },
       {
-        "t": "2026-08-25T14:18:25.587764+00:00",
-        "equity": 1018.91,
-        "cash": 227.45,
-        "event": "SELL CVX"
-      },
-      {
-        "t": "2026-08-25T14:33:06.436848+00:00",
-        "equity": 1018.55,
+        "t": "2026-08-25T14:30:48.866712+00:00",
+        "equity": 1017.53,
         "cash": 227.45,
         "event": "mark"
       },
@@ -14533,26 +14283,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-25T15:21:03.214693+00:00",
-        "equity": 1021.24,
+        "t": "2026-08-25T15:31:10.889711+00:00",
+        "equity": 1020.14,
         "cash": 227.45,
         "event": "mark"
       },
       {
-        "t": "2026-08-25T15:47:29.619469+00:00",
-        "equity": 1018.47,
+        "t": "2026-08-25T16:00:14.623387+00:00",
+        "equity": 1020.57,
         "cash": 227.45,
         "event": "mark"
       },
       {
-        "t": "2026-08-25T16:10:18.331322+00:00",
-        "equity": 1020.8,
-        "cash": 227.45,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-25T16:34:53.514017+00:00",
-        "equity": 1019.5,
+        "t": "2026-08-25T16:30:30.179844+00:00",
+        "equity": 1019.78,
         "cash": 227.45,
         "event": "mark"
       },
@@ -14563,26 +14307,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-25T17:20:39.521247+00:00",
-        "equity": 1018.54,
+        "t": "2026-08-25T17:30:47.525770+00:00",
+        "equity": 1017.69,
         "cash": 227.45,
         "event": "mark"
       },
       {
-        "t": "2026-08-25T17:48:11.728958+00:00",
-        "equity": 1016.58,
-        "cash": 420.43,
-        "event": "SELL PANW"
-      },
-      {
-        "t": "2026-08-25T18:03:04.882965+00:00",
-        "equity": 1017.33,
+        "t": "2026-08-25T17:50:48.419196+00:00",
+        "equity": 1016.86,
         "cash": 420.43,
         "event": "mark"
       },
       {
-        "t": "2026-08-25T18:31:01.004599+00:00",
-        "equity": 1018.24,
+        "t": "2026-08-25T18:20:57.768963+00:00",
+        "equity": 1017.57,
         "cash": 420.43,
         "event": "mark"
       },
@@ -14593,26 +14331,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-25T19:17:07.750437+00:00",
-        "equity": 1018.65,
+        "t": "2026-08-25T19:20:14.212670+00:00",
+        "equity": 1017.96,
         "cash": 420.43,
         "event": "mark"
       },
       {
-        "t": "2026-08-25T19:40:20.269904+00:00",
-        "equity": 1018.78,
+        "t": "2026-08-25T19:50:23.022969+00:00",
+        "equity": 1018.41,
         "cash": 420.43,
         "event": "mark"
       },
       {
-        "t": "2026-08-26T13:40:16.895766+00:00",
-        "equity": 1021.19,
-        "cash": 420.43,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-26T14:10:32.064679+00:00",
-        "equity": 1019.0,
+        "t": "2026-08-26T14:05:26.250351+00:00",
+        "equity": 1020.11,
         "cash": 420.43,
         "event": "mark"
       },
@@ -14623,26 +14355,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-26T14:48:08.585149+00:00",
-        "equity": 1019.41,
+        "t": "2026-08-26T14:50:20.565979+00:00",
+        "equity": 1019.23,
         "cash": 25.3,
         "event": "mark"
       },
       {
-        "t": "2026-08-26T15:10:33.341948+00:00",
-        "equity": 1018.79,
+        "t": "2026-08-26T15:30:37.988013+00:00",
+        "equity": 1017.9,
         "cash": 25.3,
         "event": "mark"
       },
       {
-        "t": "2026-08-26T15:40:34.979284+00:00",
-        "equity": 1018.11,
-        "cash": 25.3,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-26T16:03:43.261911+00:00",
-        "equity": 1018.42,
+        "t": "2026-08-26T16:00:45.830478+00:00",
+        "equity": 1018.81,
         "cash": 25.3,
         "event": "mark"
       },
@@ -14653,26 +14379,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-26T16:50:56.599689+00:00",
-        "equity": 1016.88,
+        "t": "2026-08-26T17:00:59.589643+00:00",
+        "equity": 1017.96,
         "cash": 25.3,
         "event": "mark"
       },
       {
-        "t": "2026-08-26T17:10:08.796530+00:00",
-        "equity": 1018.19,
+        "t": "2026-08-26T17:20:11.751759+00:00",
+        "equity": 1018.91,
         "cash": 221.49,
         "event": "mark"
       },
       {
-        "t": "2026-08-26T17:33:03.337937+00:00",
-        "equity": 1019.41,
-        "cash": 221.49,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-26T18:03:20.016546+00:00",
-        "equity": 1019.3,
+        "t": "2026-08-26T18:00:26.675267+00:00",
+        "equity": 1019.46,
         "cash": 221.49,
         "event": "mark"
       },
@@ -14683,26 +14403,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-26T18:50:30.524278+00:00",
-        "equity": 1019.64,
+        "t": "2026-08-26T19:00:40.120475+00:00",
+        "equity": 1019.72,
         "cash": 221.49,
         "event": "mark"
       },
       {
-        "t": "2026-08-26T19:17:44.078316+00:00",
-        "equity": 1020.21,
+        "t": "2026-08-26T19:30:47.309169+00:00",
+        "equity": 1019.04,
         "cash": 221.49,
         "event": "mark"
       },
       {
-        "t": "2026-08-26T19:40:45.490513+00:00",
-        "equity": 1018.47,
-        "cash": 221.49,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-27T13:40:19.836568+00:00",
-        "equity": 1020.36,
+        "t": "2026-08-27T13:30:26.168555+00:00",
+        "equity": 1019.11,
         "cash": 221.49,
         "event": "mark"
       },
@@ -14713,26 +14427,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-27T14:30:38.660006+00:00",
+        "t": "2026-08-27T14:33:34.854722+00:00",
         "equity": 1020.14,
-        "cash": 21.48,
-        "event": "mark"
+        "cash": 215.71,
+        "event": "SELL UNH"
       },
       {
-        "t": "2026-08-27T14:47:42.925932+00:00",
-        "equity": 1020.49,
+        "t": "2026-08-27T15:00:47.316882+00:00",
+        "equity": 1021.48,
         "cash": 215.71,
         "event": "mark"
       },
       {
-        "t": "2026-08-27T15:10:45.185988+00:00",
-        "equity": 1022.49,
-        "cash": 215.71,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-27T15:40:54.006225+00:00",
-        "equity": 1019.94,
+        "t": "2026-08-27T15:33:50.485660+00:00",
+        "equity": 1022.11,
         "cash": 215.71,
         "event": "mark"
       },
@@ -14743,26 +14451,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-27T16:30:16.886126+00:00",
-        "equity": 1020.09,
+        "t": "2026-08-27T16:34:34.230429+00:00",
+        "equity": 1020.54,
         "cash": 215.71,
         "event": "mark"
       },
       {
-        "t": "2026-08-27T16:50:12.223342+00:00",
-        "equity": 1021.91,
-        "cash": 215.71,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-27T17:18:06.517547+00:00",
-        "equity": 1022.69,
+        "t": "2026-08-27T17:00:33.521310+00:00",
+        "equity": 1022.28,
         "cash": 423.03,
-        "event": "mark"
+        "event": "SELL AVGO"
       },
       {
-        "t": "2026-08-27T17:40:26.551039+00:00",
-        "equity": 1021.82,
+        "t": "2026-08-27T17:32:28.393798+00:00",
+        "equity": 1021.74,
         "cash": 423.03,
         "event": "mark"
       },
@@ -14773,26 +14475,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-27T18:40:20.211700+00:00",
-        "equity": 1020.07,
+        "t": "2026-08-27T18:47:51.504230+00:00",
+        "equity": 1020.31,
         "cash": 423.03,
         "event": "mark"
       },
       {
-        "t": "2026-08-27T19:04:26.416249+00:00",
-        "equity": 1019.95,
+        "t": "2026-08-28T13:40:34.996901+00:00",
+        "equity": 1021.83,
         "cash": 423.03,
         "event": "mark"
       },
       {
-        "t": "2026-08-28T14:00:40.358072+00:00",
-        "equity": 1024.15,
-        "cash": 423.03,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-28T14:20:46.277080+00:00",
-        "equity": 1023.79,
+        "t": "2026-08-28T14:18:42.939349+00:00",
+        "equity": 1023.64,
         "cash": 423.03,
         "event": "mark"
       },
@@ -14803,26 +14499,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-28T15:10:20.459780+00:00",
-        "equity": 1023.3,
+        "t": "2026-08-28T15:20:17.024687+00:00",
+        "equity": 1023.57,
         "cash": 423.03,
         "event": "mark"
       },
       {
-        "t": "2026-08-28T15:40:33.407727+00:00",
-        "equity": 1020.04,
+        "t": "2026-08-28T15:50:29.177225+00:00",
+        "equity": 1018.22,
         "cash": 423.03,
         "event": "mark"
       },
       {
-        "t": "2026-08-28T16:03:18.044020+00:00",
-        "equity": 1015.88,
-        "cash": 223.98,
-        "event": "BUY PANW"
-      },
-      {
-        "t": "2026-08-28T16:20:14.611896+00:00",
-        "equity": 1013.67,
+        "t": "2026-08-28T16:17:30.846597+00:00",
+        "equity": 1014.4,
         "cash": 223.98,
         "event": "mark"
       },
@@ -14833,26 +14523,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-28T17:10:30.694076+00:00",
-        "equity": 1015.22,
+        "t": "2026-08-28T17:18:35.720304+00:00",
+        "equity": 1016.15,
         "cash": 223.98,
         "event": "mark"
       },
       {
-        "t": "2026-08-28T17:33:36.624542+00:00",
-        "equity": 1017.36,
+        "t": "2026-08-28T17:50:17.662544+00:00",
+        "equity": 1018.07,
         "cash": 223.98,
         "event": "mark"
       },
       {
-        "t": "2026-08-28T18:03:05.713924+00:00",
-        "equity": 1017.89,
-        "cash": 24.94,
-        "event": "BUY AMZN"
-      },
-      {
-        "t": "2026-08-28T18:20:48.215341+00:00",
-        "equity": 1016.91,
+        "t": "2026-08-28T18:17:49.350343+00:00",
+        "equity": 1016.89,
         "cash": 24.94,
         "event": "mark"
       },
@@ -14863,28 +14547,22 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-28T19:10:19.872599+00:00",
-        "equity": 1017.68,
+        "t": "2026-08-28T19:17:31.840022+00:00",
+        "equity": 1017.12,
         "cash": 24.94,
         "event": "mark"
       },
       {
-        "t": "2026-08-28T19:32:12.617618+00:00",
-        "equity": 1017.42,
+        "t": "2026-08-28T19:47:15.264720+00:00",
+        "equity": 1017.1,
         "cash": 24.94,
         "event": "mark"
       },
       {
-        "t": "2026-08-31T13:30:44.490482+00:00",
-        "equity": 1011.55,
-        "cash": 24.94,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-31T14:05:51.067032+00:00",
+        "t": "2026-08-31T14:00:48.935674+00:00",
         "equity": 1015.37,
-        "cash": 217.13,
-        "event": "SELL LRCX"
+        "cash": 24.94,
+        "event": "mark"
       },
       {
         "t": "2026-08-31T14:20:48.301328+00:00",
@@ -14893,26 +14571,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-31T14:48:03.404920+00:00",
-        "equity": 1011.55,
+        "t": "2026-08-31T14:50:56.419441+00:00",
+        "equity": 1011.34,
         "cash": 217.13,
         "event": "mark"
       },
       {
-        "t": "2026-08-31T15:11:02.260256+00:00",
-        "equity": 1012.05,
+        "t": "2026-08-31T15:30:12.556239+00:00",
+        "equity": 1011.34,
         "cash": 217.13,
         "event": "mark"
       },
       {
-        "t": "2026-08-31T15:40:09.687030+00:00",
-        "equity": 1010.38,
-        "cash": 217.13,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-31T16:02:47.819780+00:00",
-        "equity": 1010.34,
+        "t": "2026-08-31T16:00:20.805409+00:00",
+        "equity": 1010.42,
         "cash": 217.13,
         "event": "mark"
       },
@@ -14923,26 +14595,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-31T16:50:37.875972+00:00",
-        "equity": 1013.26,
+        "t": "2026-08-31T17:00:32.669581+00:00",
+        "equity": 1013.79,
         "cash": 217.13,
         "event": "mark"
       },
       {
-        "t": "2026-08-31T17:17:56.186115+00:00",
-        "equity": 1012.88,
+        "t": "2026-08-31T17:30:47.934152+00:00",
+        "equity": 1012.38,
         "cash": 217.13,
         "event": "mark"
       },
       {
-        "t": "2026-08-31T17:40:53.188552+00:00",
-        "equity": 1012.47,
-        "cash": 217.13,
-        "event": "mark"
-      },
-      {
-        "t": "2026-08-31T18:03:16.338912+00:00",
-        "equity": 1012.95,
+        "t": "2026-08-31T18:01:10.171915+00:00",
+        "equity": 1011.92,
         "cash": 217.13,
         "event": "mark"
       },
@@ -14953,26 +14619,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-08-31T18:50:15.897949+00:00",
-        "equity": 1012.44,
+        "t": "2026-08-31T19:00:27.143899+00:00",
+        "equity": 1012.58,
         "cash": 217.13,
         "event": "mark"
       },
       {
-        "t": "2026-08-31T19:17:26.079615+00:00",
-        "equity": 1013.3,
+        "t": "2026-08-31T19:30:43.136195+00:00",
+        "equity": 1013.58,
         "cash": 217.13,
         "event": "mark"
       },
       {
-        "t": "2026-08-31T19:40:36.914331+00:00",
-        "equity": 1013.51,
-        "cash": 217.13,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-01T18:20:28.745776+00:00",
-        "equity": 993.36,
+        "t": "2026-09-01T18:18:19.737699+00:00",
+        "equity": 993.21,
         "cash": 217.13,
         "event": "mark"
       },
@@ -14983,26 +14643,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-01T19:01:06.193663+00:00",
-        "equity": 992.04,
+        "t": "2026-09-01T19:03:24.241531+00:00",
+        "equity": 992.15,
         "cash": 599.35,
         "event": "mark"
       },
       {
-        "t": "2026-09-01T19:20:13.146308+00:00",
-        "equity": 993.0,
+        "t": "2026-09-01T19:34:26.041852+00:00",
+        "equity": 992.19,
         "cash": 599.35,
         "event": "mark"
       },
       {
-        "t": "2026-09-01T19:47:21.158306+00:00",
-        "equity": 992.36,
-        "cash": 599.35,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-02T13:51:01.464033+00:00",
-        "equity": 977.79,
+        "t": "2026-09-02T13:41:02.674301+00:00",
+        "equity": 977.52,
         "cash": 599.35,
         "event": "mark"
       },
@@ -15013,26 +14667,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-02T14:30:19.024006+00:00",
-        "equity": 980.93,
+        "t": "2026-09-02T14:32:57.867814+00:00",
+        "equity": 979.94,
         "cash": 577.1,
         "event": "mark"
       },
       {
-        "t": "2026-09-02T14:50:21.531803+00:00",
-        "equity": 981.13,
+        "t": "2026-09-02T15:03:01.014474+00:00",
+        "equity": 981.38,
         "cash": 577.1,
         "event": "mark"
       },
       {
-        "t": "2026-09-02T15:20:13.610120+00:00",
-        "equity": 979.88,
-        "cash": 577.1,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-02T15:48:04.522123+00:00",
-        "equity": 976.97,
+        "t": "2026-09-02T15:40:39.758439+00:00",
+        "equity": 978.02,
         "cash": 577.1,
         "event": "mark"
       },
@@ -15043,26 +14691,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-02T16:35:40.866278+00:00",
-        "equity": 976.47,
+        "t": "2026-09-02T16:41:01.056127+00:00",
+        "equity": 976.35,
         "cash": 577.1,
         "event": "mark"
       },
       {
-        "t": "2026-09-02T17:01:08.196905+00:00",
-        "equity": 975.88,
+        "t": "2026-09-02T17:10:11.068600+00:00",
+        "equity": 975.98,
         "cash": 577.1,
         "event": "mark"
       },
       {
-        "t": "2026-09-02T17:20:14.264801+00:00",
-        "equity": 975.84,
-        "cash": 577.1,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-02T17:49:42.545717+00:00",
-        "equity": 976.92,
+        "t": "2026-09-02T17:40:21.352984+00:00",
+        "equity": 975.43,
         "cash": 577.1,
         "event": "mark"
       },
@@ -15073,26 +14715,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-02T18:33:02.555475+00:00",
-        "equity": 977.15,
+        "t": "2026-09-02T18:40:40.497501+00:00",
+        "equity": 977.42,
         "cash": 577.1,
         "event": "mark"
       },
       {
-        "t": "2026-09-02T19:00:48.109776+00:00",
-        "equity": 977.44,
+        "t": "2026-09-02T19:10:52.199253+00:00",
+        "equity": 977.93,
         "cash": 577.1,
         "event": "mark"
       },
       {
-        "t": "2026-09-02T19:20:55.325993+00:00",
-        "equity": 978.59,
-        "cash": 577.1,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-02T19:48:57.024277+00:00",
-        "equity": 979.14,
+        "t": "2026-09-02T19:41:01.887721+00:00",
+        "equity": 978.47,
         "cash": 577.1,
         "event": "mark"
       },
@@ -15103,26 +14739,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-03T14:10:42.475592+00:00",
+        "t": "2026-09-03T14:17:18.240660+00:00",
         "equity": 1002.78,
-        "cash": 801.82,
-        "event": "mark"
+        "cash": 602.55,
+        "event": "BUY HOOD"
       },
       {
-        "t": "2026-09-03T14:30:45.755601+00:00",
-        "equity": 1006.36,
+        "t": "2026-09-03T14:40:45.032569+00:00",
+        "equity": 1005.18,
         "cash": 602.55,
         "event": "mark"
       },
       {
-        "t": "2026-09-03T14:50:45.911111+00:00",
-        "equity": 1007.29,
-        "cash": 602.55,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-03T15:20:46.755293+00:00",
-        "equity": 1008.28,
+        "t": "2026-09-03T15:10:45.984354+00:00",
+        "equity": 1007.76,
         "cash": 602.55,
         "event": "mark"
       },
@@ -15133,26 +14763,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-03T16:02:21.153708+00:00",
-        "equity": 1007.92,
+        "t": "2026-09-03T16:10:16.749082+00:00",
+        "equity": 1008.13,
         "cash": 402.85,
         "event": "mark"
       },
       {
-        "t": "2026-09-03T16:30:23.685229+00:00",
-        "equity": 1008.0,
+        "t": "2026-09-03T16:40:27.918496+00:00",
+        "equity": 1007.72,
         "cash": 402.85,
         "event": "mark"
       },
       {
-        "t": "2026-09-03T16:50:30.524057+00:00",
-        "equity": 1008.16,
-        "cash": 402.85,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-03T17:17:35.174432+00:00",
-        "equity": 1008.65,
+        "t": "2026-09-03T17:10:36.937370+00:00",
+        "equity": 1008.38,
         "cash": 402.85,
         "event": "mark"
       },
@@ -15163,26 +14787,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-03T18:10:54.464416+00:00",
-        "equity": 1009.42,
+        "t": "2026-09-03T18:18:07.380619+00:00",
+        "equity": 1008.88,
         "cash": 402.85,
         "event": "mark"
       },
       {
-        "t": "2026-09-03T18:33:23.361096+00:00",
-        "equity": 1008.28,
+        "t": "2026-09-03T18:48:35.084443+00:00",
+        "equity": 1008.25,
         "cash": 402.85,
         "event": "mark"
       },
       {
-        "t": "2026-09-03T19:00:11.705770+00:00",
-        "equity": 1006.84,
-        "cash": 402.85,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-03T19:20:19.014234+00:00",
-        "equity": 1008.39,
+        "t": "2026-09-03T19:17:28.743286+00:00",
+        "equity": 1007.25,
         "cash": 402.85,
         "event": "mark"
       },
@@ -15193,26 +14811,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-04T13:50:26.679886+00:00",
-        "equity": 1000.69,
+        "t": "2026-09-04T14:00:29.015157+00:00",
+        "equity": 1000.34,
         "cash": 402.85,
         "event": "mark"
       },
       {
-        "t": "2026-09-04T14:10:32.452620+00:00",
-        "equity": 999.59,
+        "t": "2026-09-04T14:20:36.056634+00:00",
+        "equity": 999.7,
         "cash": 203.2,
         "event": "mark"
       },
       {
-        "t": "2026-09-04T14:33:05.970790+00:00",
-        "equity": 1001.09,
-        "cash": 203.2,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-04T15:00:42.991258+00:00",
-        "equity": 1002.37,
+        "t": "2026-09-04T14:50:42.902276+00:00",
+        "equity": 1001.73,
         "cash": 203.2,
         "event": "mark"
       },
@@ -15223,26 +14835,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-04T15:50:46.486512+00:00",
-        "equity": 1005.49,
+        "t": "2026-09-04T16:00:46.769546+00:00",
+        "equity": 1003.67,
         "cash": 203.2,
         "event": "mark"
       },
       {
-        "t": "2026-09-04T16:18:38.802825+00:00",
-        "equity": 1005.04,
+        "t": "2026-09-04T16:30:12.915567+00:00",
+        "equity": 1004.43,
         "cash": 203.2,
         "event": "mark"
       },
       {
-        "t": "2026-09-04T16:35:34.057763+00:00",
-        "equity": 1004.42,
-        "cash": 6.42,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-04T17:00:21.210889+00:00",
-        "equity": 1007.07,
+        "t": "2026-09-04T16:50:18.688384+00:00",
+        "equity": 1006.83,
         "cash": 6.42,
         "event": "mark"
       },
@@ -15253,26 +14859,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-04T17:49:57.360083+00:00",
-        "equity": 1004.22,
+        "t": "2026-09-04T17:50:36.412300+00:00",
+        "equity": 1004.3,
         "cash": 6.42,
         "event": "mark"
       },
       {
-        "t": "2026-09-04T18:10:43.271378+00:00",
-        "equity": 1003.75,
-        "cash": 6.42,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-04T18:30:48.696337+00:00",
-        "equity": 1005.17,
+        "t": "2026-09-04T18:18:30.531603+00:00",
+        "equity": 1004.93,
         "cash": 202.64,
         "event": "mark"
       },
       {
-        "t": "2026-09-04T18:50:52.885774+00:00",
-        "equity": 1003.45,
+        "t": "2026-09-04T18:48:14.382187+00:00",
+        "equity": 1003.95,
         "cash": 202.64,
         "event": "mark"
       },
@@ -15283,25 +14883,19 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-04T19:40:10.988882+00:00",
-        "equity": 1001.78,
+        "t": "2026-09-04T19:48:02.939429+00:00",
+        "equity": 1002.09,
         "cash": 202.64,
         "event": "mark"
       },
       {
-        "t": "2026-09-07T13:40:39.733118+00:00",
+        "t": "2026-09-07T14:00:40.133559+00:00",
         "equity": 1001.91,
         "cash": 202.64,
         "event": "mark"
       },
       {
-        "t": "2026-09-07T14:05:23.322599+00:00",
-        "equity": 1001.91,
-        "cash": 2.67,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-07T14:30:41.917613+00:00",
+        "t": "2026-09-07T14:20:44.278628+00:00",
         "equity": 1001.91,
         "cash": 2.67,
         "event": "mark"
@@ -15313,25 +14907,19 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-07T15:32:58.142713+00:00",
+        "t": "2026-09-07T15:40:26.222889+00:00",
         "equity": 1001.91,
         "cash": 2.67,
         "event": "mark"
       },
       {
-        "t": "2026-09-07T16:00:32.994276+00:00",
+        "t": "2026-09-07T16:10:36.633469+00:00",
         "equity": 1001.91,
         "cash": 2.67,
         "event": "mark"
       },
       {
-        "t": "2026-09-07T16:30:44.234392+00:00",
-        "equity": 1001.91,
-        "cash": 2.67,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-07T16:50:51.664034+00:00",
+        "t": "2026-09-07T16:46:16.095509+00:00",
         "equity": 1001.91,
         "cash": 2.67,
         "event": "mark"
@@ -15343,25 +14931,19 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-07T17:36:32.321322+00:00",
+        "t": "2026-09-07T17:40:10.209852+00:00",
         "equity": 1001.91,
         "cash": 202.01,
         "event": "mark"
       },
       {
-        "t": "2026-09-07T18:00:19.055865+00:00",
+        "t": "2026-09-07T18:10:22.378653+00:00",
         "equity": 1001.91,
         "cash": 202.01,
         "event": "mark"
       },
       {
-        "t": "2026-09-07T18:20:25.970804+00:00",
-        "equity": 1001.91,
-        "cash": 202.01,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-07T18:49:47.676378+00:00",
+        "t": "2026-09-07T18:40:32.940708+00:00",
         "equity": 1001.91,
         "cash": 202.01,
         "event": "mark"
@@ -15373,28 +14955,22 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-07T19:33:00.522215+00:00",
+        "t": "2026-09-07T19:40:54.907945+00:00",
         "equity": 1001.91,
         "cash": 202.01,
         "event": "mark"
       },
       {
-        "t": "2026-09-08T13:30:47.067795+00:00",
-        "equity": 1008.49,
+        "t": "2026-09-08T13:50:52.489519+00:00",
+        "equity": 1005.97,
         "cash": 202.01,
         "event": "mark"
       },
       {
-        "t": "2026-09-08T14:05:55.955258+00:00",
-        "equity": 1006.96,
-        "cash": 2.64,
-        "event": "BUY XOM"
-      },
-      {
-        "t": "2026-09-08T14:19:14.479583+00:00",
-        "equity": 1007.46,
+        "t": "2026-09-08T14:18:57.261387+00:00",
+        "equity": 1006.01,
         "cash": 198.23,
-        "event": "mark"
+        "event": "SELL JPM"
       },
       {
         "t": "2026-09-08T14:40:12.002234+00:00",
@@ -15403,26 +14979,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-08T15:02:23.811970+00:00",
-        "equity": 1005.57,
+        "t": "2026-09-08T15:10:23.245688+00:00",
+        "equity": 1006.55,
         "cash": 198.23,
         "event": "mark"
       },
       {
-        "t": "2026-09-08T15:30:34.613383+00:00",
-        "equity": 1006.57,
+        "t": "2026-09-08T15:40:39.840232+00:00",
+        "equity": 1005.6,
         "cash": 198.23,
         "event": "mark"
       },
       {
-        "t": "2026-09-08T15:50:42.952584+00:00",
-        "equity": 1005.78,
-        "cash": 198.23,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-08T16:17:58.334055+00:00",
-        "equity": 1004.48,
+        "t": "2026-09-08T16:10:50.693107+00:00",
+        "equity": 1005.47,
         "cash": 198.23,
         "event": "mark"
       },
@@ -15433,26 +15003,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-08T17:02:30.956412+00:00",
-        "equity": 1003.84,
+        "t": "2026-09-08T17:10:14.651277+00:00",
+        "equity": 1003.36,
         "cash": 198.23,
         "event": "mark"
       },
       {
-        "t": "2026-09-08T17:30:22.543207+00:00",
-        "equity": 1003.31,
+        "t": "2026-09-08T17:40:27.873930+00:00",
+        "equity": 1004.47,
         "cash": 198.23,
         "event": "mark"
       },
       {
-        "t": "2026-09-08T18:00:36.016106+00:00",
-        "equity": 1004.93,
-        "cash": 198.23,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-08T18:20:45.066357+00:00",
-        "equity": 1005.72,
+        "t": "2026-09-08T18:18:14.411434+00:00",
+        "equity": 1005.92,
         "cash": 198.23,
         "event": "mark"
       },
@@ -15463,26 +15027,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-08T19:11:07.266872+00:00",
-        "equity": 1003.52,
+        "t": "2026-09-08T19:18:44.905929+00:00",
+        "equity": 1003.32,
         "cash": 198.23,
         "event": "mark"
       },
       {
-        "t": "2026-09-08T19:33:21.706673+00:00",
-        "equity": 1002.58,
+        "t": "2026-09-08T19:48:29.562682+00:00",
+        "equity": 1001.12,
         "cash": 198.23,
         "event": "mark"
       },
       {
-        "t": "2026-09-09T13:30:18.855029+00:00",
-        "equity": 1006.21,
-        "cash": 198.23,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-09T14:05:40.393671+00:00",
-        "equity": 1001.53,
+        "t": "2026-09-09T14:00:20.961595+00:00",
+        "equity": 1001.62,
         "cash": 198.23,
         "event": "mark"
       },
@@ -15493,26 +15051,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-09T14:50:23.544984+00:00",
-        "equity": 1003.12,
+        "t": "2026-09-09T15:00:23.865309+00:00",
+        "equity": 1004.59,
         "cash": 198.23,
         "event": "mark"
       },
       {
-        "t": "2026-09-09T15:20:25.142100+00:00",
-        "equity": 998.73,
+        "t": "2026-09-09T15:33:00.150769+00:00",
+        "equity": 998.92,
         "cash": 198.23,
         "event": "mark"
       },
       {
-        "t": "2026-09-09T15:48:16.936165+00:00",
-        "equity": 1000.15,
-        "cash": 198.23,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-09T16:10:29.630154+00:00",
-        "equity": 999.26,
+        "t": "2026-09-09T16:03:06.229972+00:00",
+        "equity": 1000.41,
         "cash": 198.23,
         "event": "mark"
       },
@@ -15523,26 +15075,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-09T17:00:32.392803+00:00",
+        "t": "2026-09-09T17:02:51.116460+00:00",
         "equity": 1000.66,
-        "cash": 198.23,
-        "event": "mark"
+        "cash": 2.26,
+        "event": "BUY WMT"
       },
       {
-        "t": "2026-09-09T17:18:31.590698+00:00",
-        "equity": 1000.25,
-        "cash": 194.14,
-        "event": "SELL HOOD"
-      },
-      {
-        "t": "2026-09-09T17:33:16.774717+00:00",
-        "equity": 1000.1,
+        "t": "2026-09-09T17:20:34.524422+00:00",
+        "equity": 1001.1,
         "cash": 194.14,
         "event": "mark"
       },
       {
-        "t": "2026-09-09T18:03:08.973004+00:00",
-        "equity": 1000.45,
+        "t": "2026-09-09T18:00:36.257845+00:00",
+        "equity": 1000.49,
         "cash": 194.14,
         "event": "mark"
       },
@@ -15553,26 +15099,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-09T18:50:40.951466+00:00",
-        "equity": 1000.47,
+        "t": "2026-09-09T19:00:40.420306+00:00",
+        "equity": 1000.42,
         "cash": 194.14,
         "event": "mark"
       },
       {
-        "t": "2026-09-09T19:18:05.322281+00:00",
-        "equity": 1001.87,
+        "t": "2026-09-09T19:30:42.486500+00:00",
+        "equity": 1000.75,
         "cash": 194.14,
         "event": "mark"
       },
       {
-        "t": "2026-09-09T19:40:44.397550+00:00",
-        "equity": 1000.27,
-        "cash": 194.14,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-10T13:40:52.875877+00:00",
-        "equity": 995.39,
+        "t": "2026-09-10T13:30:53.914903+00:00",
+        "equity": 994.84,
         "cash": 194.14,
         "event": "mark"
       },
@@ -15583,26 +15123,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-10T14:31:08.201804+00:00",
-        "equity": 995.05,
+        "t": "2026-09-10T14:34:35.470535+00:00",
+        "equity": 996.09,
         "cash": 0.74,
         "event": "mark"
       },
       {
-        "t": "2026-09-10T14:48:51.818002+00:00",
-        "equity": 995.39,
+        "t": "2026-09-10T15:01:01.704618+00:00",
+        "equity": 994.76,
         "cash": 197.29,
         "event": "mark"
       },
       {
-        "t": "2026-09-10T15:11:03.119318+00:00",
-        "equity": 993.73,
-        "cash": 197.29,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-10T15:34:29.838775+00:00",
-        "equity": 993.34,
+        "t": "2026-09-10T15:31:05.056638+00:00",
+        "equity": 993.28,
         "cash": 197.29,
         "event": "mark"
       },
@@ -15613,26 +15147,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-10T16:20:11.201084+00:00",
-        "equity": 994.04,
+        "t": "2026-09-10T16:30:17.488690+00:00",
+        "equity": 993.17,
         "cash": 197.29,
         "event": "mark"
       },
       {
-        "t": "2026-09-10T16:48:19.986474+00:00",
-        "equity": 993.91,
+        "t": "2026-09-10T17:00:13.411734+00:00",
+        "equity": 993.76,
         "cash": 197.29,
         "event": "mark"
       },
       {
-        "t": "2026-09-10T17:10:15.101631+00:00",
-        "equity": 994.04,
-        "cash": 197.29,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-10T17:32:53.782283+00:00",
-        "equity": 993.2,
+        "t": "2026-09-10T17:30:17.399701+00:00",
+        "equity": 993.19,
         "cash": 197.29,
         "event": "mark"
       },
@@ -15643,26 +15171,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-10T18:20:20.484104+00:00",
-        "equity": 992.98,
+        "t": "2026-09-10T18:30:21.882028+00:00",
+        "equity": 992.84,
         "cash": 197.29,
         "event": "mark"
       },
       {
-        "t": "2026-09-10T18:47:58.110293+00:00",
-        "equity": 992.0,
+        "t": "2026-09-10T19:00:24.260720+00:00",
+        "equity": 991.59,
         "cash": 197.29,
         "event": "mark"
       },
       {
-        "t": "2026-09-10T19:10:24.710305+00:00",
-        "equity": 992.19,
-        "cash": 197.29,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-10T19:32:42.237103+00:00",
-        "equity": 991.27,
+        "t": "2026-09-10T19:30:27.069488+00:00",
+        "equity": 991.33,
         "cash": 197.29,
         "event": "mark"
       },
@@ -15673,26 +15195,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-11T14:05:24.928253+00:00",
-        "equity": 999.99,
-        "cash": 1.74,
-        "event": "BUY BAC"
-      },
-      {
-        "t": "2026-09-11T14:20:39.166567+00:00",
-        "equity": 995.07,
+        "t": "2026-09-11T14:05:43.727590+00:00",
+        "equity": 999.12,
         "cash": 1.74,
         "event": "mark"
       },
       {
-        "t": "2026-09-11T14:48:24.575745+00:00",
-        "equity": 991.78,
+        "t": "2026-09-11T14:32:58.276796+00:00",
+        "equity": 993.52,
         "cash": 1.74,
         "event": "mark"
       },
       {
-        "t": "2026-09-11T15:10:41.826942+00:00",
-        "equity": 992.14,
+        "t": "2026-09-11T15:03:27.112873+00:00",
+        "equity": 992.11,
         "cash": 1.74,
         "event": "mark"
       },
@@ -15703,26 +15219,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-11T16:03:54.575358+00:00",
-        "equity": 995.49,
+        "t": "2026-09-11T16:10:46.937521+00:00",
+        "equity": 995.62,
         "cash": 1.74,
         "event": "mark"
       },
       {
-        "t": "2026-09-11T16:30:49.181499+00:00",
-        "equity": 995.69,
+        "t": "2026-09-11T16:40:50.775176+00:00",
+        "equity": 995.12,
         "cash": 1.74,
         "event": "mark"
       },
       {
-        "t": "2026-09-11T17:00:52.041162+00:00",
-        "equity": 995.9,
-        "cash": 1.74,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-11T17:20:53.403927+00:00",
-        "equity": 995.7,
+        "t": "2026-09-11T17:18:00.556781+00:00",
+        "equity": 995.2,
         "cash": 1.74,
         "event": "mark"
       },
@@ -15733,26 +15243,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-11T18:17:56.115650+00:00",
-        "equity": 996.54,
+        "t": "2026-09-11T18:20:58.701821+00:00",
+        "equity": 996.88,
         "cash": 1.74,
         "event": "mark"
       },
       {
-        "t": "2026-09-11T18:40:59.587454+00:00",
-        "equity": 995.66,
+        "t": "2026-09-11T18:50:59.726113+00:00",
+        "equity": 995.98,
         "cash": 1.74,
         "event": "mark"
       },
       {
-        "t": "2026-09-11T19:05:46.266666+00:00",
-        "equity": 996.43,
-        "cash": 1.74,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-11T19:31:04.292227+00:00",
-        "equity": 997.11,
+        "t": "2026-09-11T19:21:03.488895+00:00",
+        "equity": 996.93,
         "cash": 1.74,
         "event": "mark"
       },
@@ -15763,26 +15267,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-14T14:01:07.216756+00:00",
+        "t": "2026-09-14T14:05:57.277258+00:00",
         "equity": 1001.78,
-        "cash": 1.74,
-        "event": "mark"
+        "cash": 394.79,
+        "event": "SELL BAC"
       },
       {
-        "t": "2026-09-14T14:17:58.865833+00:00",
-        "equity": 1001.86,
+        "t": "2026-09-14T14:30:12.194098+00:00",
+        "equity": 999.87,
         "cash": 394.79,
         "event": "mark"
       },
       {
-        "t": "2026-09-14T14:40:10.445779+00:00",
-        "equity": 1000.35,
-        "cash": 394.79,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-14T15:03:04.006647+00:00",
-        "equity": 1000.48,
+        "t": "2026-09-14T15:00:13.197993+00:00",
+        "equity": 1000.8,
         "cash": 394.79,
         "event": "mark"
       },
@@ -15793,26 +15291,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-14T15:50:15.672169+00:00",
-        "equity": 1000.09,
+        "t": "2026-09-14T16:00:16.899256+00:00",
+        "equity": 1000.81,
         "cash": 394.79,
         "event": "mark"
       },
       {
-        "t": "2026-09-14T16:17:23.580952+00:00",
-        "equity": 1001.2,
+        "t": "2026-09-14T16:30:18.592179+00:00",
+        "equity": 1001.8,
         "cash": 394.79,
         "event": "mark"
       },
       {
-        "t": "2026-09-14T16:40:19.019372+00:00",
-        "equity": 1001.39,
-        "cash": 394.79,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-14T17:02:24.236436+00:00",
-        "equity": 1000.51,
+        "t": "2026-09-14T17:00:21.794473+00:00",
+        "equity": 1000.68,
         "cash": 394.79,
         "event": "mark"
       },
@@ -15823,26 +15315,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-14T17:50:25.061154+00:00",
-        "equity": 1001.64,
+        "t": "2026-09-14T18:00:24.903096+00:00",
+        "equity": 1001.77,
         "cash": 394.79,
         "event": "mark"
       },
       {
-        "t": "2026-09-14T18:17:42.205821+00:00",
-        "equity": 1002.46,
+        "t": "2026-09-14T18:30:26.657998+00:00",
+        "equity": 1003.09,
         "cash": 394.79,
         "event": "mark"
       },
       {
-        "t": "2026-09-14T18:40:27.321433+00:00",
-        "equity": 1002.05,
-        "cash": 394.79,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-14T19:05:22.787426+00:00",
-        "equity": 1000.86,
+        "t": "2026-09-14T19:00:28.934434+00:00",
+        "equity": 1001.29,
         "cash": 394.79,
         "event": "mark"
       },
@@ -15853,26 +15339,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-14T19:50:34.813046+00:00",
-        "equity": 1001.3,
+        "t": "2026-09-15T13:30:12.432149+00:00",
+        "equity": 1000.97,
         "cash": 394.79,
         "event": "mark"
       },
       {
-        "t": "2026-09-15T14:00:13.875650+00:00",
-        "equity": 1006.06,
+        "t": "2026-09-15T14:10:13.796367+00:00",
+        "equity": 1004.3,
         "cash": 394.79,
         "event": "mark"
       },
       {
-        "t": "2026-09-15T14:20:14.792537+00:00",
-        "equity": 1005.41,
-        "cash": 394.79,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-15T14:47:54.963907+00:00",
-        "equity": 1003.54,
+        "t": "2026-09-15T14:40:16.027117+00:00",
+        "equity": 1003.78,
         "cash": 394.79,
         "event": "mark"
       },
@@ -15883,28 +15363,22 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-15T15:40:20.383963+00:00",
-        "equity": 1005.39,
+        "t": "2026-09-15T15:47:32.093786+00:00",
+        "equity": 1005.25,
         "cash": 394.79,
         "event": "mark"
       },
       {
-        "t": "2026-09-15T16:02:57.372644+00:00",
-        "equity": 1005.49,
+        "t": "2026-09-15T16:18:16.461926+00:00",
+        "equity": 1005.36,
         "cash": 394.79,
         "event": "mark"
       },
       {
-        "t": "2026-09-15T16:30:23.087064+00:00",
-        "equity": 1004.18,
-        "cash": 394.79,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-15T16:47:48.726773+00:00",
-        "equity": 1004.49,
+        "t": "2026-09-15T16:47:31.980723+00:00",
+        "equity": 1004.94,
         "cash": 196.94,
-        "event": "mark"
+        "event": "BUY LRCX"
       },
       {
         "t": "2026-09-15T17:10:28.241004+00:00",
@@ -15913,26 +15387,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-15T17:32:51.160069+00:00",
+        "t": "2026-09-15T17:40:27.086224+00:00",
         "equity": 1005.57,
         "cash": 196.94,
         "event": "mark"
       },
       {
-        "t": "2026-09-15T18:00:48.644847+00:00",
-        "equity": 1006.27,
-        "cash": 407.13,
-        "event": "SELL XOM"
-      },
-      {
-        "t": "2026-09-15T18:20:30.452089+00:00",
-        "equity": 1007.9,
+        "t": "2026-09-15T18:10:30.366134+00:00",
+        "equity": 1007.46,
         "cash": 407.13,
         "event": "mark"
       },
       {
-        "t": "2026-09-15T18:47:52.350369+00:00",
-        "equity": 1007.39,
+        "t": "2026-09-15T18:40:31.554171+00:00",
+        "equity": 1007.62,
         "cash": 407.13,
         "event": "mark"
       },
@@ -15943,28 +15411,22 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-15T19:30:35.132231+00:00",
-        "equity": 1007.85,
+        "t": "2026-09-15T19:33:11.950332+00:00",
+        "equity": 1006.84,
         "cash": 210.68,
         "event": "mark"
       },
       {
-        "t": "2026-09-15T19:50:37.224236+00:00",
-        "equity": 1006.94,
+        "t": "2026-09-16T13:40:44.092530+00:00",
+        "equity": 1013.36,
         "cash": 210.68,
         "event": "mark"
       },
       {
-        "t": "2026-09-16T14:00:44.554783+00:00",
-        "equity": 1014.58,
-        "cash": 210.68,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-16T14:16:04.723013+00:00",
+        "t": "2026-09-16T14:10:45.365571+00:00",
         "equity": 1013.81,
-        "cash": 216.27,
-        "event": "SELL META"
+        "cash": 12.03,
+        "event": "mark"
       },
       {
         "t": "2026-09-16T14:33:19.567318+00:00",
@@ -15973,26 +15435,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-16T15:00:50.040376+00:00",
-        "equity": 1018.19,
+        "t": "2026-09-16T15:03:27.059559+00:00",
+        "equity": 1017.69,
         "cash": 216.27,
         "event": "mark"
       },
       {
-        "t": "2026-09-16T15:21:00.057070+00:00",
-        "equity": 1017.71,
+        "t": "2026-09-16T15:33:25.720348+00:00",
+        "equity": 1016.71,
         "cash": 216.27,
         "event": "mark"
       },
       {
-        "t": "2026-09-16T15:48:29.518374+00:00",
-        "equity": 1017.35,
-        "cash": 216.27,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-16T16:10:54.798541+00:00",
-        "equity": 1015.81,
+        "t": "2026-09-16T16:03:11.920822+00:00",
+        "equity": 1016.1,
         "cash": 216.27,
         "event": "mark"
       },
@@ -16003,26 +15459,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-16T17:00:57.588409+00:00",
-        "equity": 1014.88,
+        "t": "2026-09-16T17:03:13.667856+00:00",
+        "equity": 1014.66,
         "cash": 216.27,
         "event": "mark"
       },
       {
-        "t": "2026-09-16T17:21:06.514903+00:00",
-        "equity": 1014.17,
+        "t": "2026-09-16T17:33:37.308991+00:00",
+        "equity": 1014.0,
         "cash": 216.27,
         "event": "mark"
       },
       {
-        "t": "2026-09-16T17:51:03.306151+00:00",
-        "equity": 1013.89,
-        "cash": 216.27,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-16T18:18:49.470931+00:00",
-        "equity": 1013.81,
+        "t": "2026-09-16T18:11:04.282716+00:00",
+        "equity": 1014.79,
         "cash": 216.27,
         "event": "mark"
       },
@@ -16033,26 +15483,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-16T19:05:49.322882+00:00",
-        "equity": 1007.63,
+        "t": "2026-09-16T19:10:08.886335+00:00",
+        "equity": 1007.0,
         "cash": 216.27,
         "event": "mark"
       },
       {
-        "t": "2026-09-16T19:30:13.572245+00:00",
-        "equity": 1005.14,
+        "t": "2026-09-16T19:40:14.914809+00:00",
+        "equity": 1006.37,
         "cash": 216.27,
         "event": "mark"
       },
       {
-        "t": "2026-09-16T19:50:13.983633+00:00",
-        "equity": 1007.63,
-        "cash": 216.27,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-17T14:00:29.023361+00:00",
-        "equity": 1017.21,
+        "t": "2026-09-17T13:50:29.020017+00:00",
+        "equity": 1015.99,
         "cash": 216.27,
         "event": "mark"
       },
@@ -16063,26 +15507,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-17T14:48:27.177923+00:00",
-        "equity": 1017.1,
+        "t": "2026-09-17T14:50:32.965609+00:00",
+        "equity": 1016.53,
         "cash": 216.27,
         "event": "mark"
       },
       {
-        "t": "2026-09-17T15:10:35.070785+00:00",
-        "equity": 1014.14,
+        "t": "2026-09-17T15:30:37.410729+00:00",
+        "equity": 1014.56,
         "cash": 216.27,
         "event": "mark"
       },
       {
-        "t": "2026-09-17T15:40:40.786844+00:00",
-        "equity": 1015.06,
-        "cash": 216.27,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-17T16:03:58.944390+00:00",
-        "equity": 1016.44,
+        "t": "2026-09-17T16:00:40.094134+00:00",
+        "equity": 1016.87,
         "cash": 216.27,
         "event": "mark"
       },
@@ -16093,26 +15531,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-17T16:50:47.730769+00:00",
-        "equity": 1014.45,
+        "t": "2026-09-17T17:00:45.538094+00:00",
+        "equity": 1014.98,
         "cash": 216.27,
         "event": "mark"
       },
       {
-        "t": "2026-09-17T17:18:41.200045+00:00",
-        "equity": 1015.28,
+        "t": "2026-09-17T17:30:47.380880+00:00",
+        "equity": 1015.77,
         "cash": 216.27,
         "event": "mark"
       },
       {
-        "t": "2026-09-17T17:40:48.424499+00:00",
-        "equity": 1016.22,
-        "cash": 216.27,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-17T18:00:52.909362+00:00",
-        "equity": 1016.0,
+        "t": "2026-09-17T17:50:48.928707+00:00",
+        "equity": 1016.16,
         "cash": 19.41,
         "event": "mark"
       },
@@ -16123,26 +15555,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-17T18:49:16.770045+00:00",
-        "equity": 1014.9,
+        "t": "2026-09-17T18:50:56.591390+00:00",
+        "equity": 1014.72,
         "cash": 19.41,
         "event": "mark"
       },
       {
-        "t": "2026-09-17T19:10:57.425703+00:00",
-        "equity": 1015.45,
+        "t": "2026-09-17T19:21:00.588350+00:00",
+        "equity": 1015.91,
         "cash": 19.41,
         "event": "mark"
       },
       {
-        "t": "2026-09-17T19:33:46.718534+00:00",
-        "equity": 1015.96,
-        "cash": 19.41,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-18T13:31:09.022831+00:00",
-        "equity": 1024.42,
+        "t": "2026-09-17T19:51:06.972686+00:00",
+        "equity": 1015.36,
         "cash": 19.41,
         "event": "mark"
       },
@@ -16153,26 +15579,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-18T14:30:13.343868+00:00",
-        "equity": 1025.85,
+        "t": "2026-09-18T14:33:34.527616+00:00",
+        "equity": 1025.05,
         "cash": 19.41,
         "event": "mark"
       },
       {
-        "t": "2026-09-18T14:48:45.374698+00:00",
-        "equity": 1026.24,
+        "t": "2026-09-18T15:00:15.580813+00:00",
+        "equity": 1028.45,
         "cash": 215.43,
         "event": "mark"
       },
       {
-        "t": "2026-09-18T15:10:16.174607+00:00",
-        "equity": 1028.1,
-        "cash": 215.43,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-18T15:40:17.909750+00:00",
-        "equity": 1024.26,
+        "t": "2026-09-18T15:32:57.093189+00:00",
+        "equity": 1025.14,
         "cash": 215.43,
         "event": "mark"
       },
@@ -16183,26 +15603,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-18T16:30:24.148248+00:00",
-        "equity": 1025.6,
+        "t": "2026-09-18T16:35:16.254567+00:00",
+        "equity": 1026.26,
         "cash": 215.43,
         "event": "mark"
       },
       {
-        "t": "2026-09-18T16:50:25.524896+00:00",
-        "equity": 1026.27,
+        "t": "2026-09-18T17:03:16.719413+00:00",
+        "equity": 1025.79,
         "cash": 215.43,
         "event": "mark"
       },
       {
-        "t": "2026-09-18T17:17:59.078704+00:00",
-        "equity": 1024.95,
-        "cash": 215.43,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-18T17:40:26.611062+00:00",
-        "equity": 1024.73,
+        "t": "2026-09-18T17:33:00.609377+00:00",
+        "equity": 1024.45,
         "cash": 215.43,
         "event": "mark"
       },
@@ -16213,26 +15627,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-18T18:30:29.918961+00:00",
-        "equity": 1025.23,
+        "t": "2026-09-18T18:33:38.242781+00:00",
+        "equity": 1024.95,
         "cash": 215.43,
         "event": "mark"
       },
       {
-        "t": "2026-09-18T18:50:32.013211+00:00",
-        "equity": 1026.65,
+        "t": "2026-09-18T19:05:21.910982+00:00",
+        "equity": 1027.55,
         "cash": 215.43,
         "event": "mark"
       },
       {
-        "t": "2026-09-18T19:18:18.066077+00:00",
-        "equity": 1028.04,
-        "cash": 215.43,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-18T19:40:38.005217+00:00",
-        "equity": 1027.15,
+        "t": "2026-09-18T19:33:10.541673+00:00",
+        "equity": 1027.9,
         "cash": 215.43,
         "event": "mark"
       },
@@ -16243,26 +15651,20 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-21T14:03:22.423422+00:00",
-        "equity": 1041.08,
+        "t": "2026-09-21T14:10:41.888678+00:00",
+        "equity": 1041.88,
         "cash": 431.92,
         "event": "mark"
       },
       {
-        "t": "2026-09-21T14:30:43.949602+00:00",
-        "equity": 1042.35,
-        "cash": 431.92,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-21T14:49:03.679566+00:00",
-        "equity": 1042.63,
+        "t": "2026-09-21T14:33:59.334919+00:00",
+        "equity": 1042.78,
         "cash": 236.78,
         "event": "mark"
       },
       {
-        "t": "2026-09-21T15:10:46.317734+00:00",
-        "equity": 1041.45,
+        "t": "2026-09-21T15:04:15.770076+00:00",
+        "equity": 1042.55,
         "cash": 236.78,
         "event": "mark"
       },
@@ -16273,32 +15675,26 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-21T16:04:00.457104+00:00",
-        "equity": 1041.62,
+        "t": "2026-09-21T16:10:53.015004+00:00",
+        "equity": 1042.88,
         "cash": 236.78,
         "event": "mark"
       },
       {
-        "t": "2026-09-21T16:30:54.345814+00:00",
-        "equity": 1044.2,
+        "t": "2026-09-21T16:41:03.168677+00:00",
+        "equity": 1043.58,
         "cash": 236.78,
         "event": "mark"
       },
       {
-        "t": "2026-09-21T16:50:59.464413+00:00",
-        "equity": 1043.47,
+        "t": "2026-09-21T17:11:01.559617+00:00",
+        "equity": 1042.69,
         "cash": 236.78,
         "event": "mark"
       },
       {
-        "t": "2026-09-21T17:19:06.518824+00:00",
-        "equity": 1041.9,
-        "cash": 236.78,
-        "event": "mark"
-      },
-      {
-        "t": "2026-09-21T17:31:01.248678+00:00",
-        "equity": 1041.38,
+        "t": "2026-09-21T17:33:58.506523+00:00",
+        "equity": 1041.22,
         "cash": 236.78,
         "event": "mark"
       }
