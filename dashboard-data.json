@@ -1,34 +1,34 @@
 {
-  "generated_at": "2026-09-21T19:30:13.091778+00:00",
+  "generated_at": "2026-09-21T19:32:43.987334+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1045.82,
+    "portfolio_value": 1046.29,
     "starting_cash": 1000.0,
-    "total_return_pct": 4.58,
-    "total_pnl": 45.82,
+    "total_return_pct": 4.63,
+    "total_pnl": 46.29,
     "realized_pnl": 22.95,
-    "open_pnl": 22.83,
-    "capital_deployed": 809.04,
+    "open_pnl": 23.3,
+    "capital_deployed": 809.51,
     "cash": 236.78,
     "closed_trades": 39,
     "win_rate_pct": 30.77,
-    "vs_spy_pct": 3.97,
-    "spy_return_pct": 0.61,
+    "vs_spy_pct": 3.99,
+    "spy_return_pct": 0.64,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-21T19:30:15.725821+00:00"
+    "updated_at": "2026-09-21T19:32:46.723516+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.61,
-    "price": 774.0800170898438,
+    "return_pct": 0.64,
+    "price": 774.2899780273438,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 8,
+    "consensus_count_today": 9,
     "validated_count_today": 3,
-    "blocked_count_today": 5,
+    "blocked_count_today": 6,
     "fills_today": 2,
     "simulated_orders_today": 3,
     "top_symbol_today": "LRCX"
@@ -38,10 +38,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 107.51000213623047,
-      "market_value": 198.89,
-      "open_pnl": 2.92,
-      "open_pnl_pct": 1.49,
+      "last": 107.4800033569336,
+      "market_value": 198.84,
+      "open_pnl": 2.87,
+      "open_pnl_pct": 1.46,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -50,10 +50,10 @@
       "symbol": "TSLA",
       "qty": 0.55,
       "avg_cost": 357.18,
-      "last": 375.114990234375,
-      "market_value": 206.31,
-      "open_pnl": 9.86,
-      "open_pnl_pct": 5.02,
+      "last": 375.7550048828125,
+      "market_value": 206.67,
+      "open_pnl": 10.22,
+      "open_pnl_pct": 5.2,
       "stop": 342.0,
       "target": 380.0,
       "thesis": "TSLA tops the ranked catalyst list on a PG&E grid deal headline with bullish sentiment and neutral RSI, offering a liquid setup while the book still has open slots and cash. Valuation is debated but the rank/catalyst edge is the cleanest available versus held names that are already working. Small notional keeps risk tight with stop/target structured for at least 1.5 R:R."
@@ -62,10 +62,10 @@
       "symbol": "AMZN",
       "qty": 0.8,
       "avg_cost": 248.31,
-      "last": 258.8500061035156,
-      "market_value": 207.08,
-      "open_pnl": 8.43,
-      "open_pnl_pct": 4.24,
+      "last": 259.05999755859375,
+      "market_value": 207.25,
+      "open_pnl": 8.6,
+      "open_pnl_pct": 4.33,
       "stop": 240.0,
       "target": 262.0,
       "thesis": "AMZN shows a ranked liquid setup with bullish sentiment and a headline institutional buy catalyst supporting near-term momentum. RSI near 50 leaves room for upside without overbought conditions. Portfolio has capacity for one more name under the 5-position guideline and cash covers a sub-$200 notional entry. Risk defined below recent support with 1.5+ R:R to the target."
@@ -74,10 +74,10 @@
       "symbol": "AMD",
       "qty": 0.32,
       "avg_cost": 609.82,
-      "last": 614.8800048828125,
-      "market_value": 196.76,
-      "open_pnl": 1.62,
-      "open_pnl_pct": 0.83,
+      "last": 614.8400268554688,
+      "market_value": 196.75,
+      "open_pnl": 1.61,
+      "open_pnl_pct": 0.82,
       "stop": 585.0,
       "target": 655.0,
       "thesis": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity."
@@ -86,15 +86,15 @@
   "latest_candidate": {
     "symbol": "JPM",
     "name": "JPM",
-    "price": 352.1199951171875,
-    "volume": 3361483.0,
-    "avg_volume": 8156018.3,
-    "percent_change": 0.7006553594449008,
+    "price": 351.635009765625,
+    "volume": 3532614.0,
+    "avg_volume": 8173131.4,
+    "percent_change": 0.5619573490526739,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 11,
-    "liquidity_score": 79.11,
-    "rank_score": 63.93,
+    "liquidity_score": 79.12,
+    "rank_score": 63.82,
     "news_hits": 7,
     "catalyst": "Headline-driven setup (catalyst, partnership): J.P. Morgan and Qatar Investment Authority ink $20B partnership (JPM:NYSE) - Seeking Alpha",
     "top_headlines": [
@@ -142,45 +142,45 @@
     "model": "grok-4.5",
     "action": "BUY",
     "symbol": "JPM",
-    "confidence": 74,
+    "confidence": 72,
     "cache_stats": null,
-    "entry_price": 352.12,
+    "entry_price": 351.64,
     "stop_loss": 340.0,
-    "take_profit": 372.0,
+    "take_profit": 370.0,
     "qty": 0.56,
-    "thesis": "JPM shows a clean headline catalyst with the $20B QIA partnership driving bullish sentiment and a solid rank score near 64. RSI at 50 leaves room for upside without being overbought. Liquid mega-cap setup fits the desk preference for catalyst trades and available cash allows a sub-$200 notional add while keeping open names at 5. Reward-to-risk clears 1.5x with defined levels.",
+    "thesis": "JPM has a clear headline catalyst from the reported $20B partnership with Qatar Investment Authority, supporting a liquid large-cap long setup. Rank and sentiment are constructive with RSI near neutral, allowing a defined risk entry. Position sized to ~$200 notional with R:R above 1.5 while keeping open names at the desk limit.",
     "reason_code": "new_entry",
     "reasoning": {
       "headline": "Bought $JPM",
-      "narrative": "JPM shows a clean headline catalyst with the $20B QIA partnership driving bullish sentiment and a solid rank score near 64. RSI at 50 leaves room for upside without being overbought. Liquid mega-cap setup fits the desk preference for catalyst trades and available cash allows a sub-$200 notional add while keeping open names at 5. Reward-to-risk clears 1.5x with defined levels.",
+      "narrative": "JPM has a clear headline catalyst from the reported $20B partnership with Qatar Investment Authority, supporting a liquid large-cap long setup. Rank and sentiment are constructive with RSI near neutral, allowing a defined risk entry. Position sized to ~$200 notional with R:R above 1.5 while keeping open names at the desk limit.",
       "bullets": [
-        "QIA $20B partnership catalyst",
-        "rank_score 63.93 + bullish sentiment",
-        "RSI 50 neutral room to run",
-        "fits ~$200 max notional and slot"
+        "Catalyst: $20B QIA partnership headline",
+        "R:R >=1.5 via 340 stop / 370 target",
+        "Notional capped near $200; 5th name OK",
+        "Confirming junior BUY JPM directive"
       ],
       "risk_map": {
         "stop": 340.0,
-        "target": 372.0,
+        "target": 370.0,
         "horizon_days": 5,
-        "rr": 1.64,
+        "rr": 1.58,
         "confidence_10": 7,
-        "confidence": 74
+        "confidence": 72
       },
-      "thesis": "JPM shows a clean headline catalyst with the $20B QIA partnership driving bullish sentiment and a solid rank score near 64. RSI at 50 leaves room for upside without being overbought. Liquid mega-cap setup fits the desk preference for catalyst trades and available cash allows a sub-$200 notional add while keeping open names at 5. Reward-to-risk clears 1.5x with defined levels."
+      "thesis": "JPM has a clear headline catalyst from the reported $20B partnership with Qatar Investment Authority, supporting a liquid large-cap long setup. Rank and sentiment are constructive with RSI near neutral, allowing a defined risk entry. Position sized to ~$200 notional with R:R above 1.5 while keeping open names at the desk limit."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "QIA $20B partnership catalyst",
-      "rank_score 63.93 + bullish sentiment",
-      "RSI 50 neutral room to run",
-      "fits ~$200 max notional and slot"
+      "Catalyst: $20B QIA partnership headline",
+      "R:R >=1.5 via 340 stop / 370 target",
+      "Notional capped near $200; 5th name OK",
+      "Confirming junior BUY JPM directive"
     ],
-    "timestamp": "2026-09-21T19:16:57.634170+00:00"
+    "timestamp": "2026-09-21T19:32:33.356581+00:00"
   },
-  "stance": "Buying pressure on JPM. JPM shows a clean headline catalyst with the $20B QIA partnership driving bullish sentiment and a solid rank score near 64. RSI at 50 leaves room for upside without being overbought. Liquid mega-cap setup fits the desk preference for catalyst trades and available cash allows a sub-$200 notional add while keeping open names at 5. Reward-to-risk clears 1.5x with defined levels.",
+  "stance": "Buying pressure on JPM. JPM has a clear headline catalyst from the reported $20B partnership with Qatar Investment Authority, supporting a liquid large-cap long setup. Rank and sentiment are constructive with RSI near neutral, allowing a defined risk entry. Position sized to ~$200 notional with R:R above 1.5 while keeping open names at the desk limit.",
   "thinking": {
     "badge": "Looking to buy JPM",
     "headline": "Buying pressure on JPM.",
@@ -201,9 +201,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 107.51000213623047,
-        "open_pnl": 2.92,
-        "open_pnl_pct": 1.49,
+        "last": 107.4800033569336,
+        "open_pnl": 2.87,
+        "open_pnl_pct": 1.46,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -213,9 +213,9 @@
         "avg_cost": 357.18,
         "stop": 342.0,
         "target": 380.0,
-        "last": 375.114990234375,
-        "open_pnl": 9.86,
-        "open_pnl_pct": 5.02,
+        "last": 375.7550048828125,
+        "open_pnl": 10.22,
+        "open_pnl_pct": 5.2,
         "line": "Bought near $357.18 \u00b7 Sell safety line $342.00 \u00b7 Profit target $380.00",
         "plan": "stop 342.0 or target 380.0"
       },
@@ -225,9 +225,9 @@
         "avg_cost": 248.31,
         "stop": 240.0,
         "target": 262.0,
-        "last": 258.8500061035156,
-        "open_pnl": 8.43,
-        "open_pnl_pct": 4.24,
+        "last": 259.05999755859375,
+        "open_pnl": 8.6,
+        "open_pnl_pct": 4.33,
         "line": "Bought near $248.31 \u00b7 Sell safety line $240.00 \u00b7 Profit target $262.00",
         "plan": "stop 240.0 or target 262.0"
       },
@@ -237,14 +237,14 @@
         "avg_cost": 609.82,
         "stop": 585.0,
         "target": 655.0,
-        "last": 614.8800048828125,
-        "open_pnl": 1.62,
-        "open_pnl_pct": 0.83,
+        "last": 614.8400268554688,
+        "open_pnl": 1.61,
+        "open_pnl_pct": 0.82,
         "line": "Bought near $609.82 \u00b7 Sell safety line $585.00 \u00b7 Profit target $655.00",
         "plan": "stop 585.0 or target 655.0"
       }
     ],
-    "last_checked": "2026-09-21T19:30:13.091778+00:00",
+    "last_checked": "2026-09-21T19:32:43.987334+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -260,7 +260,7 @@
         "model": "grok-4.3",
         "action": "BUY",
         "symbol": "JPM",
-        "confidence": 75,
+        "confidence": 72,
         "tone": "buy"
       },
       {
@@ -276,7 +276,7 @@
         "model": "deepseek-v4-flash",
         "action": "BUY",
         "symbol": "JPM",
-        "confidence": 75,
+        "confidence": 72,
         "tone": "buy"
       },
       {
@@ -292,7 +292,7 @@
         "model": "grok-4.5",
         "action": "BUY",
         "symbol": "JPM",
-        "confidence": 74,
+        "confidence": 72,
         "tone": "buy"
       },
       {
@@ -314,6 +314,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "JPM",
+      "status": "blocked",
+      "headline": "BUY JPM \u2014 blocked",
+      "detail": "Insufficient buying power: $20.29 < $196.92",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 72,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "WMT",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "JPM",
+      "timestamp": "2026-09-21T19:32:33.356581+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "JPM",
@@ -852,83 +929,6 @@
       "stage": "entry",
       "junior_nomination": "PLTR",
       "timestamp": "2026-09-21T17:50:42.480898+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "PLTR",
-      "status": "blocked",
-      "headline": "BUY PLTR \u2014 blocked",
-      "detail": "Insufficient buying power: $20.29 < $199.52",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "PLTR",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "HOLD",
-          "symbol": "WMT",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "PLTR",
-          "confidence": 75,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "PLTR",
-          "confidence": 74,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "PLTR",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "WMT",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-21T17:33:46.035071+00:00"
     },
     {
       "type": "fill",
@@ -12976,15 +12976,15 @@
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 352.1199951171875,
-      "volume": 3361483.0,
-      "avg_volume": 8156018.3,
-      "percent_change": 0.7006553594449008,
+      "price": 351.635009765625,
+      "volume": 3532614.0,
+      "avg_volume": 8173131.4,
+      "percent_change": 0.5619573490526739,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
-      "liquidity_score": 79.11,
-      "rank_score": 63.93,
+      "liquidity_score": 79.12,
+      "rank_score": 63.82,
       "news_hits": 7,
       "catalyst": "Headline-driven setup (catalyst, partnership): J.P. Morgan and Qatar Investment Authority ink $20B partnership (JPM:NYSE) - Seeking Alpha",
       "top_headlines": [
@@ -13031,15 +13031,15 @@
     {
       "symbol": "PLTR",
       "name": "PLTR",
-      "price": 181.5543975830078,
-      "volume": 14702294.0,
-      "avg_volume": 24075889.4,
-      "percent_change": 2.2035567478095124,
+      "price": 181.85000610351562,
+      "volume": 15232455.0,
+      "avg_volume": 24128905.5,
+      "percent_change": 2.3699655079555892,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 83.82,
-      "rank_score": 57.84,
+      "liquidity_score": 83.83,
+      "rank_score": 57.97,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (growth): Palantir (PLTR) Stock Forecast: 85% Revenue Growth, Rule of 40 at 145% - Worth $129? - TradingKey",
       "top_headlines": [
@@ -13088,19 +13088,19 @@
     {
       "symbol": "AMD",
       "name": "AMD",
-      "price": 613.402099609375,
-      "volume": 34268494.0,
-      "avg_volume": 24413129.4,
-      "percent_change": 9.571307131601724,
+      "price": 614.5700073242188,
+      "volume": 35600888.0,
+      "avg_volume": 24546368.8,
+      "percent_change": 9.779929135024936,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
-      "liquidity_score": 83.88,
-      "rank_score": 54.24,
+      "liquidity_score": 83.9,
+      "rank_score": 54.41,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Meta\u2019s Muse AI Agent Triggers Intel, Chip Stock Rally. AMD Hits $1T Market Cap. - barrons.com",
       "top_headlines": [
-        "AMD hits $1 trillion market cap for the first time as stock rides 5-day rally - CNBC",
+        "AMD hits $1 trillion market cap for the first time as stock rides 5-day rally - cnbc.com",
         "Why AMD Stock Is Rising Fast Today - Yahoo Finance",
         "Why AMD Stock Is Rising Fast Today - The Motley Fool"
       ],
@@ -13138,10 +13138,10 @@
     {
       "symbol": "WMT",
       "name": "WMT",
-      "price": 107.51010131835938,
-      "volume": 9719636.0,
-      "avg_volume": 20494243.6,
-      "percent_change": 0.7309078393044978,
+      "price": 107.51000213623047,
+      "volume": 10127475.0,
+      "avg_volume": 20535027.5,
+      "percent_change": 0.7308149112376124,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
@@ -13195,15 +13195,15 @@
     {
       "symbol": "NFLX",
       "name": "NFLX",
-      "price": 73.68000030517578,
-      "volume": 25410144.0,
-      "avg_volume": 35113224.4,
-      "percent_change": 2.6326777622866038,
+      "price": 73.83000183105469,
+      "volume": 26292955.0,
+      "avg_volume": 35201505.5,
+      "percent_change": 2.8416226347841085,
       "exchange": "",
       "sentiment": "bearish",
       "catalyst_score": -8,
-      "liquidity_score": 85.45,
-      "rank_score": 49.92,
+      "liquidity_score": 85.47,
+      "rank_score": 50.09,
       "news_hits": 7,
       "catalyst": "Headline-driven setup (catalyst, downgrade): Netflix (NFLX) Could Be 12% Undervalued After Wells Fargo Downgrade - simplywall.st",
       "top_headlines": [
@@ -13278,21 +13278,21 @@
     "last_stage": "entry",
     "last_junior_nomination": "JPM",
     "last_escalate_reason": "junior_nomination",
-    "live_share_recent": 79.3
+    "live_share_recent": 80.0
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 353,
     "closed_outcomes": 161,
-    "consensus_events": 743,
+    "consensus_events": 744,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1045.82,
-    "change": 45.82,
-    "change_pct": 4.58,
+    "latest_equity": 1046.29,
+    "change": 46.29,
+    "change_pct": 4.63,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15719,8 +15719,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-21T19:30:15.725821+00:00",
-        "equity": 1045.82,
+        "t": "2026-09-21T19:32:46.723516+00:00",
+        "equity": 1046.29,
         "cash": 236.78,
         "event": "mark"
       }
