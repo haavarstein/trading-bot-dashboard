@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-09-21T14:30:41.308960+00:00",
+  "generated_at": "2026-09-21T14:33:56.556959+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1042.35,
+    "portfolio_value": 1042.78,
     "starting_cash": 1000.0,
-    "total_return_pct": 4.23,
-    "total_pnl": 42.35,
+    "total_return_pct": 4.28,
+    "total_pnl": 42.78,
     "realized_pnl": 22.95,
-    "open_pnl": 19.36,
-    "capital_deployed": 610.43,
-    "cash": 431.92,
+    "open_pnl": 19.79,
+    "capital_deployed": 806.0,
+    "cash": 236.78,
     "closed_trades": 39,
     "win_rate_pct": 30.77,
-    "vs_spy_pct": 4.27,
-    "spy_return_pct": -0.04,
+    "vs_spy_pct": 4.31,
+    "spy_return_pct": -0.03,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-21T14:30:43.949602+00:00"
+    "updated_at": "2026-09-21T14:33:59.334919+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.04,
-    "price": 769.0800170898438,
+    "return_pct": -0.03,
+    "price": 769.1599731445312,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 2,
-    "validated_count_today": 2,
+    "consensus_count_today": 3,
+    "validated_count_today": 3,
     "blocked_count_today": 0,
-    "fills_today": 1,
-    "simulated_orders_today": 2,
+    "fills_today": 2,
+    "simulated_orders_today": 3,
     "top_symbol_today": "LRCX"
   },
   "holdings": [
@@ -38,9 +38,9 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 107.08999633789062,
-      "market_value": 198.12,
-      "open_pnl": 2.15,
+      "last": 107.09500122070312,
+      "market_value": 198.13,
+      "open_pnl": 2.16,
       "open_pnl_pct": 1.1,
       "stop": 102.5,
       "target": 112.0,
@@ -50,10 +50,10 @@
       "symbol": "TSLA",
       "qty": 0.55,
       "avg_cost": 357.18,
-      "last": 377.5700988769531,
-      "market_value": 207.66,
-      "open_pnl": 11.21,
-      "open_pnl_pct": 5.71,
+      "last": 377.489990234375,
+      "market_value": 207.62,
+      "open_pnl": 11.17,
+      "open_pnl_pct": 5.69,
       "stop": 342.0,
       "target": 380.0,
       "thesis": "TSLA tops the ranked catalyst list on a PG&E grid deal headline with bullish sentiment and neutral RSI, offering a liquid setup while the book still has open slots and cash. Valuation is debated but the rank/catalyst edge is the cleanest available versus held names that are already working. Small notional keeps risk tight with stop/target structured for at least 1.5 R:R."
@@ -62,33 +62,45 @@
       "symbol": "AMZN",
       "qty": 0.8,
       "avg_cost": 248.31,
-      "last": 255.80999755859375,
-      "market_value": 204.65,
-      "open_pnl": 6.0,
-      "open_pnl_pct": 3.02,
+      "last": 255.97500610351562,
+      "market_value": 204.78,
+      "open_pnl": 6.13,
+      "open_pnl_pct": 3.09,
       "stop": 240.0,
       "target": 262.0,
       "thesis": "AMZN shows a ranked liquid setup with bullish sentiment and a headline institutional buy catalyst supporting near-term momentum. RSI near 50 leaves room for upside without overbought conditions. Portfolio has capacity for one more name under the 5-position guideline and cash covers a sub-$200 notional entry. Risk defined below recent support with 1.5+ R:R to the target."
+    },
+    {
+      "symbol": "AMD",
+      "qty": 0.32,
+      "avg_cost": 609.82,
+      "last": 610.8499755859375,
+      "market_value": 195.47,
+      "open_pnl": 0.33,
+      "open_pnl_pct": 0.17,
+      "stop": 585.0,
+      "target": 655.0,
+      "thesis": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity."
     }
   ],
   "latest_candidate": {
     "symbol": "TSLA",
     "name": "TSLA",
-    "price": 375.79998779296875,
-    "volume": 11354150.0,
-    "avg_volume": 34053305.0,
-    "percent_change": 3.165234339100092,
+    "price": 377.3900146484375,
+    "volume": 12804068.0,
+    "avg_volume": 34198296.8,
+    "percent_change": 3.601731141862801,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 11,
-    "liquidity_score": 85.32,
-    "rank_score": 63.83,
+    "liquidity_score": 85.34,
+    "rank_score": 64.18,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (ai, catalyst, raises): Tesla Wins Over Another Skeptic: JPMorgan Raises TSLA Stock Price Target By More Than 200% - Stocktwits",
     "top_headlines": [
+      "Tesla Inc Stock (TSLA) Opened Up by 3.29% on Sep 21: Key Drivers Unveiled - TradingKey",
       "TSLA Stock Quote Price and Forecast - CNN",
-      "Tesla Wins Over Another Skeptic: JPMorgan Raises TSLA Stock Price Target By More Than 200% - Stocktwits",
-      "Tesla Inc Stock (TSLA) Opened Up by 3.29% on Sep 21: Key Drivers Unveiled - TradingKey"
+      "Tesla Wins Over Another Skeptic: JPMorgan Raises TSLA Stock Price Target By More Than 200% - Stocktwits"
     ],
     "matched_headlines": [
       {
@@ -119,55 +131,56 @@
   },
   "latest_decision": {
     "model": "grok-4.5",
-    "action": "HOLD",
-    "symbol": "CASH",
-    "confidence": 68,
+    "action": "BUY",
+    "symbol": "AMD",
+    "confidence": 72,
     "cache_stats": null,
-    "entry_price": 0.0,
-    "stop_loss": 0.0,
-    "take_profit": 0.0,
-    "qty": 0.0,
-    "thesis": "Existing book (TSLA/AMZN/WMT) is modestly green with TSLA approaching its 380 target on the fresh JPM PT raise; no stop or target has been hit. New candidates lack a clean liquid catalyst edge at attractive R:R within the $200 notional cap\u2014PLTR headlines and social lean mixed-to-bearish, AMD/LRCX/JPM size poorly, and HOOD looks extended after the volume spike. Prefer holding current names over forced rotation.",
-    "reason_code": "hold",
+    "entry_price": 609.82,
+    "stop_loss": 585.0,
+    "take_profit": 655.0,
+    "qty": 0.32,
+    "thesis": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity.",
+    "reason_code": "new_entry",
     "reasoning": {
-      "headline": "Hold $CASH",
-      "narrative": "Existing book (TSLA/AMZN/WMT) is modestly green with TSLA approaching its 380 target on the fresh JPM PT raise; no stop or target has been hit. New candidates lack a clean liquid catalyst edge at attractive R:R within the $200 notional cap\u2014PLTR headlines and social lean mixed-to-bearish, AMD/LRCX/JPM size poorly, and HOOD looks extended after the volume spike. Prefer holding current names over forced rotation.",
+      "headline": "Bought $AMD",
+      "narrative": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity.",
       "bullets": [
-        "TSLA top-ranked but already held and near TP",
-        "PLTR/HOOD catalysts mixed or extended",
-        "No >1.5 R:R setup worth $200 new risk",
-        "Book at 3 names; cash preserved"
+        "Catalyst: chip price hike + AI peer strength",
+        "Neutral RSI ~50 supports momentum continuation",
+        "R:R ~1.8 with stop 585 / target 655",
+        "Sized under $200 notional; book has room"
       ],
       "risk_map": {
-        "stop": 0.0,
-        "target": 0.0,
+        "stop": 585.0,
+        "target": 655.0,
         "horizon_days": 5,
-        "rr": 0.0,
+        "rr": 1.82,
         "confidence_10": 7,
-        "confidence": 68
+        "confidence": 72
       },
-      "thesis": "Existing book (TSLA/AMZN/WMT) is modestly green with TSLA approaching its 380 target on the fresh JPM PT raise; no stop or target has been hit. New candidates lack a clean liquid catalyst edge at attractive R:R within the $200 notional cap\u2014PLTR headlines and social lean mixed-to-bearish, AMD/LRCX/JPM size poorly, and HOOD looks extended after the volume spike. Prefer holding current names over forced rotation."
+      "thesis": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "TSLA top-ranked but already held and near TP",
-      "PLTR/HOOD catalysts mixed or extended",
-      "No >1.5 R:R setup worth $200 new risk",
-      "Book at 3 names; cash preserved"
+      "Catalyst: chip price hike + AI peer strength",
+      "Neutral RSI ~50 supports momentum continuation",
+      "R:R ~1.8 with stop 585 / target 655",
+      "Sized under $200 notional; book has room"
     ],
-    "timestamp": "2026-09-21T14:18:44.238671+00:00"
+    "timestamp": "2026-09-21T14:33:42.306525+00:00"
   },
-  "stance": "Holding WMT, TSLA, AMZN. No new trade right now.",
+  "stance": "Buying pressure on AMD. AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity.",
   "thinking": {
-    "badge": "Holding what it owns",
-    "headline": "Holding WMT, TSLA, AMZN. No new trade right now.",
-    "plain_english": "Right now Hermes is holding WMT, TSLA, AMZN and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
+    "badge": "Looking to buy AMD",
+    "headline": "Buying pressure on AMD.",
+    "plain_english": "Right now Hermes wants exposure to AMD. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
     "triggers": [
       "It owns WMT, bought near $105.93. Simple plan: sell if it falls to about $102.50, or take profit near $112.00.",
       "It owns TSLA, bought near $357.18. Simple plan: sell if it falls to about $342.00, or take profit near $380.00.",
       "It owns AMZN, bought near $248.31. Simple plan: sell if it falls to about $240.00, or take profit near $262.00.",
+      "It owns AMD, bought near $609.82. Simple plan: sell if it falls to about $585.00, or take profit near $655.00.",
       "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
       "If nothing looks clean, do nothing. Sitting in cash or holdings is allowed."
     ],
@@ -178,8 +191,8 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 107.08999633789062,
-        "open_pnl": 2.15,
+        "last": 107.09500122070312,
+        "open_pnl": 2.16,
         "open_pnl_pct": 1.1,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
@@ -190,9 +203,9 @@
         "avg_cost": 357.18,
         "stop": 342.0,
         "target": 380.0,
-        "last": 377.5700988769531,
-        "open_pnl": 11.21,
-        "open_pnl_pct": 5.71,
+        "last": 377.489990234375,
+        "open_pnl": 11.17,
+        "open_pnl_pct": 5.69,
         "line": "Bought near $357.18 \u00b7 Sell safety line $342.00 \u00b7 Profit target $380.00",
         "plan": "stop 342.0 or target 380.0"
       },
@@ -202,21 +215,34 @@
         "avg_cost": 248.31,
         "stop": 240.0,
         "target": 262.0,
-        "last": 255.80999755859375,
-        "open_pnl": 6.0,
-        "open_pnl_pct": 3.02,
+        "last": 255.97500610351562,
+        "open_pnl": 6.13,
+        "open_pnl_pct": 3.09,
         "line": "Bought near $248.31 \u00b7 Sell safety line $240.00 \u00b7 Profit target $262.00",
         "plan": "stop 240.0 or target 262.0"
+      },
+      {
+        "symbol": "AMD",
+        "qty": 0.32,
+        "avg_cost": 609.82,
+        "stop": 585.0,
+        "target": 655.0,
+        "last": 610.8499755859375,
+        "open_pnl": 0.33,
+        "open_pnl_pct": 0.17,
+        "line": "Bought near $609.82 \u00b7 Sell safety line $585.00 \u00b7 Profit target $655.00",
+        "plan": "stop 585.0 or target 655.0"
       }
     ],
-    "last_checked": "2026-09-21T14:30:41.308960+00:00",
+    "last_checked": "2026-09-21T14:33:56.556959+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "HOLD",
+    "action": "BUY",
     "symbols_held": [
       "WMT",
       "TSLA",
-      "AMZN"
+      "AMZN",
+      "AMD"
     ],
     "model_chips": [
       {
@@ -224,23 +250,23 @@
         "model": "grok-4.3",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 65,
+        "confidence": 60,
         "tone": "hold"
       },
       {
         "prefix": "J",
         "model": "claude-haiku-4-5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 62,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "AMD",
+        "confidence": 72,
+        "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "deepseek-v4-flash",
         "action": "BUY",
-        "symbol": "PLTR",
-        "confidence": 72,
+        "symbol": "LRCX",
+        "confidence": 90,
         "tone": "buy"
       },
       {
@@ -248,36 +274,121 @@
         "model": "grok-build-0.1",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 65,
+        "confidence": 60,
         "tone": "hold"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 68,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "AMD",
+        "confidence": 72,
+        "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "claude-sonnet-5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 65,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "AMD",
+        "confidence": 78,
+        "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "claude-opus-5",
         "action": "BUY",
-        "symbol": "PLTR",
+        "symbol": "LRCX",
         "confidence": 90,
         "tone": "buy"
       }
     ]
   },
   "activity": [
+    {
+      "type": "fill",
+      "symbol": "AMD",
+      "status": "filled_paper",
+      "headline": "BUY AMD @ $609.82",
+      "detail": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity.",
+      "timestamp": "2026-09-21T14:33:42.307525+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "AMD",
+      "status": "validated",
+      "headline": "BUY AMD \u2014 validated",
+      "detail": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "AMD",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "LRCX",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "AMD",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "AMD",
+          "confidence": 78,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "BUY",
+          "symbol": "LRCX",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-21T14:33:42.306525+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -398,6 +509,18 @@
   ],
   "recent_trades": [
     {
+      "timestamp": "2026-09-21T14:33:42.307525+00:00",
+      "action": "BUY",
+      "symbol": "AMD",
+      "qty": 0.32,
+      "price": 609.82,
+      "notional": 195.14,
+      "realized_pnl": null,
+      "reason": null,
+      "thesis": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity.",
+      "status": "FILLED_PAPER"
+    },
+    {
       "timestamp": "2026-09-21T14:03:06.487528+00:00",
       "action": "SELL",
       "symbol": "LRCX",
@@ -504,21 +627,37 @@
       "reason": "rotation",
       "thesis": "Junior desk directive to exit BAC is confirmed. Position is the weakest hold with negative open P/L, flat RSI, and no supportive catalyst or rank score in the candidate set. Freeing the name reduces drag and keeps the book within risk limits given tiny residual cash.",
       "status": "FILLED_PAPER"
-    },
-    {
-      "timestamp": "2026-09-11T14:05:24.928253+00:00",
-      "action": "BUY",
-      "symbol": "BAC",
-      "qty": 3.1,
-      "price": 63.08,
-      "notional": 195.55,
-      "realized_pnl": null,
-      "reason": null,
-      "thesis": "BAC is the clear top-ranked catalyst name with fresh post-earnings record-high momentum and CEO commentary on a constructive AI buildout environment. RSI is neutral and the name is already working modestly in the book, so adding within the ~$200 new-notional cap improves exposure without exceeding the 5-name limit. Defined risk to 60.50 keeps reward:risk at or above 1.5 toward 67.",
-      "status": "FILLED_PAPER"
     }
   ],
   "trade_reasoning": [
+    {
+      "timestamp": "2026-09-21T14:33:42.307525+00:00",
+      "action": "BUY",
+      "symbol": "AMD",
+      "qty": 0.32,
+      "price": 609.82,
+      "notional": 195.14,
+      "headline": "Bought $AMD",
+      "side_label": "buy",
+      "narrative": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity.",
+      "bullets": [
+        "Catalyst: chip price hike + AI peer strength",
+        "Neutral RSI ~50 supports momentum continuation",
+        "R:R ~1.8 with stop 585 / target 655",
+        "Sized under $200 notional; book has room"
+      ],
+      "risk_map": {
+        "stop": 585.0,
+        "target": 655.0,
+        "horizon_days": 5,
+        "rr": 1.82,
+        "confidence_10": 7,
+        "confidence": 72
+      },
+      "reason_code": "new_entry",
+      "realized_pnl": null,
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-09-21T14:03:06.487528+00:00",
       "action": "SELL",
@@ -12397,21 +12536,21 @@
     {
       "symbol": "TSLA",
       "name": "TSLA",
-      "price": 375.79998779296875,
-      "volume": 11354150.0,
-      "avg_volume": 34053305.0,
-      "percent_change": 3.165234339100092,
+      "price": 377.3900146484375,
+      "volume": 12804068.0,
+      "avg_volume": 34198296.8,
+      "percent_change": 3.601731141862801,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
-      "liquidity_score": 85.32,
-      "rank_score": 63.83,
+      "liquidity_score": 85.34,
+      "rank_score": 64.18,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst, raises): Tesla Wins Over Another Skeptic: JPMorgan Raises TSLA Stock Price Target By More Than 200% - Stocktwits",
       "top_headlines": [
+        "Tesla Inc Stock (TSLA) Opened Up by 3.29% on Sep 21: Key Drivers Unveiled - TradingKey",
         "TSLA Stock Quote Price and Forecast - CNN",
-        "Tesla Wins Over Another Skeptic: JPMorgan Raises TSLA Stock Price Target By More Than 200% - Stocktwits",
-        "Tesla Inc Stock (TSLA) Opened Up by 3.29% on Sep 21: Key Drivers Unveiled - TradingKey"
+        "Tesla Wins Over Another Skeptic: JPMorgan Raises TSLA Stock Price Target By More Than 200% - Stocktwits"
       ],
       "matched_headlines": [
         {
@@ -12441,36 +12580,92 @@
       ]
     },
     {
-      "symbol": "PLTR",
-      "name": "PLTR",
-      "price": 181.35000610351562,
-      "volume": 5119010.0,
-      "avg_volume": 23117561.0,
-      "percent_change": 2.0884973691816957,
+      "symbol": "AMD",
+      "name": "AMD",
+      "price": 609.8200073242188,
+      "volume": 16422883.0,
+      "avg_volume": 22628568.3,
+      "percent_change": 8.931442132442864,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 10,
-      "liquidity_score": 83.64,
-      "rank_score": 60.22,
+      "catalyst_score": 9,
+      "liquidity_score": 83.55,
+      "rank_score": 63.18,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): PLTR Stock Heads for Worst Month Ever: Retail Awaits Dip Below $100, Michael Burry Takes Victory Lap - Stocktwits",
+      "catalyst": "Headline-driven setup (ai, catalyst): AMD Rises 5% as Report Flags 10% Chip Price Increase; NVIDIA and Taiwan Semiconductor Tick Up - Yahoo Finance",
       "top_headlines": [
-        "Michael Burry Doubles Down On Palantir Bear Case: \u2018A Lot Of\u2019 Money Still To Be Made Shorting PLTR - Yahoo Finance",
-        "PLTR Stock Heads for Worst Month Ever: Retail Awaits Dip Below $100, Michael Burry Takes Victory Lap - Stocktwits",
-        "Palantir (PLTR) Stock Forecast: 85% Revenue Growth, Rule of 40 at 145% - Worth $129? - TradingKey"
+        "AMD Rises 5% as Report Flags 10% Chip Price Increase; NVIDIA and Taiwan Semiconductor Tick Up - Yahoo Finance",
+        "Amd stock hits all-time high at 584.95 USD - Investing.com",
+        "AMD Stock Opens the Door for $700 as Chip Demand Drives Fresh Record Highs - FXLeaders"
       ],
       "matched_headlines": [
         {
-          "title": "PLTR Stock Heads for Worst Month Ever: Retail Awaits Dip Below $100, Michael Burry Takes Victory Lap - Stocktwits",
+          "title": "AMD Rises 5% as Report Flags 10% Chip Price Increase; NVIDIA and Taiwan Semiconductor Tick Up - Yahoo Finance",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
+          "title": "AMD Stock Opens the Door for $700 as Chip Demand Drives Fresh Record Highs - FXLeaders",
+          "keywords": [
+            "demand",
+            "record"
+          ]
+        },
+        {
+          "title": "Intel, AMD, Strategy, Meta, Warner Bros, and More Stocks That Explain Today\u2019s Market - Barron's",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "My AMD Price Prediction Comes Down to One Crucial Growth Opportunity - 24/7 Wall St.",
+          "keywords": [
+            "growth"
+          ]
+        },
+        {
+          "title": "AMD vs. Broadcom: The AI Chip Race Is Big Enough for Both. Here's the Better Buy. - The Motley Fool",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "PLTR",
+      "name": "PLTR",
+      "price": 182.06500244140625,
+      "volume": 5969307.0,
+      "avg_volume": 23202590.7,
+      "percent_change": 2.4909947460941444,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 10,
+      "liquidity_score": 83.66,
+      "rank_score": 60.54,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (growth): Palantir (PLTR) Stock Forecast: 85% Revenue Growth, Rule of 40 at 145% - Worth $129? - TradingKey",
+      "top_headlines": [
+        "Michael Burry Doubles Down On Palantir Bear Case: \u2018A Lot Of\u2019 Money Still To Be Made Shorting PLTR - Yahoo Finance",
+        "Palantir (PLTR) Stock Forecast: 85% Revenue Growth, Rule of 40 at 145% - Worth $129? - TradingKey",
+        "PLTR Stock Heads for Worst Month Ever: Retail Awaits Dip Below $100, Michael Burry Takes Victory Lap - Stocktwits"
+      ],
+      "matched_headlines": [
+        {
           "title": "Palantir (PLTR) Stock Forecast: 85% Revenue Growth, Rule of 40 at 145% - Worth $129? - TradingKey",
           "keywords": [
             "growth"
+          ]
+        },
+        {
+          "title": "PLTR Stock Heads for Worst Month Ever: Retail Awaits Dip Below $100, Michael Burry Takes Victory Lap - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
           ]
         },
         {
@@ -12492,66 +12687,17 @@
       ]
     },
     {
-      "symbol": "AMD",
-      "name": "AMD",
-      "price": 610.9299926757812,
-      "volume": 14481681.0,
-      "avg_volume": 22434448.1,
-      "percent_change": 9.129717531149659,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 8,
-      "liquidity_score": 83.51,
-      "rank_score": 57.83,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): Intel, AMD, Strategy, Meta, Warner Bros, and More Stocks That Explain Today\u2019s Market - Barron's",
-      "top_headlines": [
-        "AMD Stock Jumped 8% Last Week. It Could Bring 325% More, Here\u2019s How. - Yahoo Finance",
-        "Amd stock hits all-time high at 584.95 USD - Investing.com",
-        "Intel, AMD, Strategy, Meta, Warner Bros, and More Stocks That Explain Today\u2019s Market - Barron's"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Intel, AMD, Strategy, Meta, Warner Bros, and More Stocks That Explain Today\u2019s Market - Barron's",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "My AMD Price Prediction Comes Down to One Crucial Growth Opportunity - 24/7 Wall St.",
-          "keywords": [
-            "growth"
-          ]
-        },
-        {
-          "title": "AMD vs. Broadcom: The AI Chip Race Is Big Enough for Both. Here's the Better Buy. - The Motley Fool",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "AMD Stock Opens the Door for $700 as Chip Demand Drives Fresh Record Highs - FXLeaders",
-          "keywords": [
-            "demand",
-            "record"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "LRCX",
       "name": "LRCX",
-      "price": 293.6600036621094,
-      "volume": 1713825.0,
-      "avg_volume": 9729102.5,
-      "percent_change": 1.9263540289221621,
+      "price": 296.2300109863281,
+      "volume": 2133564.0,
+      "avg_volume": 9771076.4,
+      "percent_change": 2.8183770253076332,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 79.88,
-      "rank_score": 55.52,
+      "liquidity_score": 79.9,
+      "rank_score": 56.24,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): New Buy Rating for Lam Research (LRCX), the Technology Giant - The Globe and Mail",
       "top_headlines": [
@@ -12590,48 +12736,51 @@
       ]
     },
     {
-      "symbol": "HOOD",
-      "name": "HOOD",
-      "price": 122.31999969482422,
-      "volume": 8673795.0,
-      "avg_volume": 23032639.5,
-      "percent_change": 2.086463033189267,
+      "symbol": "WMT",
+      "name": "WMT",
+      "price": 107.0999984741211,
+      "volume": 3509708.0,
+      "avg_volume": 19873250.8,
+      "percent_change": 0.34666457935931816,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 8,
-      "liquidity_score": 83.62,
-      "rank_score": 52.21,
+      "catalyst_score": 9,
+      "liquidity_score": 82.98,
+      "rank_score": 54.72,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (record): Robinhood (HOOD) Jumps 9% on Record Trading Volume \u2014 Can the Rally Continue Above $105? - TradingKey",
+      "catalyst": "Headline-driven setup (ai, catalyst, record): Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
       "top_headlines": [
-        "Robinhood Markets, Inc. (HOOD) Recently Broke Out Above the 20-Day Moving Average - Yahoo Finance",
-        "HOOD Stock Climbs As Wall Street Hikes Price Targets - StocksToTrade",
-        "Robinhood Stock Jumps 5% as Bitcoin Rally and SEC Rule Change Align - Benzinga"
+        "WMT Stock Quote Price and Forecast - CNN",
+        "Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
+        "Is WMT Overvalued? DCF Says Worth $36 - GuruFocus"
       ],
       "matched_headlines": [
         {
-          "title": "Robinhood (HOOD) Jumps 9% on Record Trading Volume \u2014 Can the Rally Continue Above $105? - TradingKey",
+          "title": "Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
           "keywords": [
+            "ai",
+            "catalyst",
             "record"
           ]
         },
         {
-          "title": "HOOD Stock: Robinhood Buckles Under SpaceX IPO Demand, Users Report Trading Issues - Stocktwits",
+          "title": "WMT Stock Rises Premarket: Analyst Says Walmart's Vibe.co Deal Strengthens Advertising Push - Stocktwits",
           "keywords": [
-            "demand"
+            "catalyst",
+            "deal"
           ]
         },
         {
-          "title": "Robinhood Chain Emerges as a Major Competitor to Binance in Crypto Trading - Intellectia AI",
+          "title": "Walmart (NASDAQ:WMT) EVP Sells $309,285.00 in Stock - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Could Walmart Inc. (NASDAQ:WMT) Shift the Retail Stocks Narrative? - Kalkine Media",
           "keywords": [
             "ai",
             "catalyst"
-          ]
-        },
-        {
-          "title": "Robinhood Markets, Inc. $HOOD Shares Sold by Engineers Gate Manager LP - MarketBeat",
-          "keywords": [
-            "beat"
           ]
         }
       ]
@@ -12663,10 +12812,10 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 3,
-      "BUY": 1,
+      "HOLD": 2,
+      "BUY": 2,
       "SELL": 0,
-      "live": 4,
+      "live": 3,
       "fallback": 0
     },
     "junior_model_3_enabled": true,
@@ -12685,21 +12834,21 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 66.7
+    "live_share_recent": 68.8
   },
   "learning": {
     "candidate_signals_logged": 8,
-    "fills_logged": 352,
+    "fills_logged": 353,
     "closed_outcomes": 161,
-    "consensus_events": 723,
+    "consensus_events": 724,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1042.35,
-    "change": 42.35,
-    "change_pct": 4.23,
+    "latest_equity": 1042.78,
+    "change": 42.78,
+    "change_pct": 4.28,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15657,6 +15806,12 @@
         "t": "2026-09-21T14:30:43.949602+00:00",
         "equity": 1042.35,
         "cash": 431.92,
+        "event": "mark"
+      },
+      {
+        "t": "2026-09-21T14:33:59.334919+00:00",
+        "equity": 1042.78,
+        "cash": 236.78,
         "event": "mark"
       }
     ],
