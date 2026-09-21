@@ -1,34 +1,34 @@
 {
-  "generated_at": "2026-09-21T16:40:55.839676+00:00",
+  "generated_at": "2026-09-21T16:49:05.697407+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1043.58,
+    "portfolio_value": 1043.47,
     "starting_cash": 1000.0,
-    "total_return_pct": 4.36,
-    "total_pnl": 43.58,
+    "total_return_pct": 4.35,
+    "total_pnl": 43.47,
     "realized_pnl": 22.95,
-    "open_pnl": 20.6,
-    "capital_deployed": 806.8,
+    "open_pnl": 20.47,
+    "capital_deployed": 806.69,
     "cash": 236.78,
     "closed_trades": 39,
     "win_rate_pct": 30.77,
-    "vs_spy_pct": 4.03,
-    "spy_return_pct": 0.33,
+    "vs_spy_pct": 3.98,
+    "spy_return_pct": 0.37,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-21T16:41:03.168677+00:00"
+    "updated_at": "2026-09-21T16:49:08.544745+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.33,
-    "price": 771.9199829101562,
+    "return_pct": 0.37,
+    "price": 772.2000122070312,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 5,
+    "consensus_count_today": 6,
     "validated_count_today": 3,
-    "blocked_count_today": 2,
+    "blocked_count_today": 3,
     "fills_today": 2,
     "simulated_orders_today": 3,
     "top_symbol_today": "LRCX"
@@ -38,10 +38,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 107.43009948730469,
-      "market_value": 198.75,
-      "open_pnl": 2.78,
-      "open_pnl_pct": 1.42,
+      "last": 107.5468978881836,
+      "market_value": 198.96,
+      "open_pnl": 2.99,
+      "open_pnl_pct": 1.53,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -50,10 +50,10 @@
       "symbol": "TSLA",
       "qty": 0.55,
       "avg_cost": 357.18,
-      "last": 374.1700134277344,
-      "market_value": 205.79,
-      "open_pnl": 9.34,
-      "open_pnl_pct": 4.76,
+      "last": 373.7799987792969,
+      "market_value": 205.58,
+      "open_pnl": 9.13,
+      "open_pnl_pct": 4.65,
       "stop": 342.0,
       "target": 380.0,
       "thesis": "TSLA tops the ranked catalyst list on a PG&E grid deal headline with bullish sentiment and neutral RSI, offering a liquid setup while the book still has open slots and cash. Valuation is debated but the rank/catalyst edge is the cleanest available versus held names that are already working. Small notional keeps risk tight with stop/target structured for at least 1.5 R:R."
@@ -62,10 +62,10 @@
       "symbol": "AMZN",
       "qty": 0.8,
       "avg_cost": 248.31,
-      "last": 258.5299987792969,
-      "market_value": 206.82,
-      "open_pnl": 8.18,
-      "open_pnl_pct": 4.12,
+      "last": 258.5950012207031,
+      "market_value": 206.88,
+      "open_pnl": 8.23,
+      "open_pnl_pct": 4.14,
       "stop": 240.0,
       "target": 262.0,
       "thesis": "AMZN shows a ranked liquid setup with bullish sentiment and a headline institutional buy catalyst supporting near-term momentum. RSI near 50 leaves room for upside without overbought conditions. Portfolio has capacity for one more name under the 5-position guideline and cash covers a sub-$200 notional entry. Risk defined below recent support with 1.5+ R:R to the target."
@@ -74,68 +74,68 @@
       "symbol": "AMD",
       "qty": 0.32,
       "avg_cost": 609.82,
-      "last": 610.760009765625,
-      "market_value": 195.44,
-      "open_pnl": 0.3,
-      "open_pnl_pct": 0.15,
+      "last": 610.2100219726562,
+      "market_value": 195.27,
+      "open_pnl": 0.12,
+      "open_pnl_pct": 0.06,
       "stop": 585.0,
       "target": 655.0,
       "thesis": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity."
     }
   ],
   "latest_candidate": {
-    "symbol": "PLTR",
-    "name": "PLTR",
-    "price": 182.86000061035156,
-    "volume": 10569610.0,
-    "avg_volume": 23662621.0,
-    "percent_change": 2.9385280559775255,
+    "symbol": "AMD",
+    "name": "AMD",
+    "price": 611.0,
+    "volume": 27235584.0,
+    "avg_volume": 23709838.4,
+    "percent_change": 9.142222858451797,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 12,
-    "liquidity_score": 83.74,
-    "rank_score": 70.41,
+    "catalyst_score": 11,
+    "liquidity_score": 83.75,
+    "rank_score": 71.38,
     "news_hits": 8,
-    "catalyst": "Headline-driven setup (growth): Palantir (PLTR) Stock Forecast: 85% Revenue Growth, Rule of 40 at 145% - Worth $129? - TradingKey",
+    "catalyst": "Headline-driven setup (demand, record): AMD Stock Opens the Door for $700 as Chip Demand Drives Fresh Record Highs - FXLeaders",
     "top_headlines": [
-      "Palantir (PLTR) Stock Forecast: 85% Revenue Growth, Rule of 40 at 145% - Worth $129? - TradingKey",
-      "PLTR Stock Heads for Worst Month Ever: Retail Awaits Dip Below $100, Michael Burry Takes Victory Lap - Stocktwits",
-      "Palantir (PLTR) Stock Looks Near Fair Value On Future Cash Flow - simplywall.st"
+      "AMD hits $1 trillion market cap for the first time as stock rides 5-day rally - CNBC",
+      "Why AMD Stock Is Rising Fast Today - Yahoo Finance",
+      "Why AMD Stock Is Rising Fast Today - The Motley Fool"
     ],
     "matched_headlines": [
       {
-        "title": "Palantir (PLTR) Stock Forecast: 85% Revenue Growth, Rule of 40 at 145% - Worth $129? - TradingKey",
+        "title": "AMD Stock Opens the Door for $700 as Chip Demand Drives Fresh Record Highs - FXLeaders",
         "keywords": [
-          "growth"
+          "demand",
+          "record"
         ]
       },
       {
-        "title": "PLTR Stock Heads for Worst Month Ever: Retail Awaits Dip Below $100, Michael Burry Takes Victory Lap - Stocktwits",
+        "title": "AMD Stock Hits Fresh Record High, Up 183% This Year - Advanced Micro Devices (NASDAQ:AMD), Oracle (NYSE:O - Benzinga",
         "keywords": [
-          "ai",
-          "catalyst"
+          "record"
         ]
       },
       {
-        "title": "Palantir (PLTR) Stock Looks Near Fair Value On Future Cash Flow - simplywall.st",
-        "keywords": [
-          "ai",
-          "catalyst"
-        ]
-      },
-      {
-        "title": "PLTR's 110% Commercial Revenue Surge Defines Its Q2 Growth - Yahoo Finance",
-        "keywords": [
-          "growth"
-        ]
-      },
-      {
-        "title": "Palantir Grew Revenue 85% and Raised Full-Year Guidance by 10 Points \u2014 So Why Is PLTR Down 26% YTD? - TradingKey",
+        "title": "AMD joins $1 trillion club as chipmakers rally on AI-driven demand - Reuters",
         "keywords": [
           "ai",
           "catalyst",
-          "guidance",
-          "raised"
+          "demand"
+        ]
+      },
+      {
+        "title": "Meta\u2019s Muse AI Agent Triggers Intel, Chip Stock Rally. AMD Hits $1T Market Cap. - Barron's",
+        "keywords": [
+          "ai",
+          "catalyst"
+        ]
+      },
+      {
+        "title": "AMD hits a major milestone as AI stocks blaze higher - MarketWatch",
+        "keywords": [
+          "ai",
+          "catalyst"
         ]
       }
     ]
@@ -144,45 +144,45 @@
     "model": "grok-4.5",
     "action": "BUY",
     "symbol": "PLTR",
-    "confidence": 72,
+    "confidence": 73,
     "cache_stats": null,
-    "entry_price": 182.86,
+    "entry_price": 182.16,
     "stop_loss": 175.0,
     "take_profit": 195.0,
-    "qty": 1.09,
-    "thesis": "PLTR is the sole ranked catalyst candidate with bullish sentiment and a growth headline setup citing strong revenue and Rule of 40 metrics. Portfolio has room under the ~5 name limit and ~$200 notional cap, so a starter long fits desk policy without forced rotation. R:R is structured above 1.5 with a defined stop below recent support and target into extension. Mixed social chatter is noted but does not override the candidate rank and catalyst score.",
+    "qty": 1.1,
+    "thesis": "PLTR ranks as the strongest new liquid catalyst setup with bullish growth headlines and an 85% revenue-growth narrative while the book still has room under the five-name cap. Adding a ~$200 slice keeps risk contained versus cash. Stop and target give roughly 1.8:1 reward-to-risk on a clean new entry. Existing holds are already working and do not need forced rotation.",
     "reason_code": "new_entry",
     "reasoning": {
       "headline": "Bought $PLTR",
-      "narrative": "PLTR is the sole ranked catalyst candidate with bullish sentiment and a growth headline setup citing strong revenue and Rule of 40 metrics. Portfolio has room under the ~5 name limit and ~$200 notional cap, so a starter long fits desk policy without forced rotation. R:R is structured above 1.5 with a defined stop below recent support and target into extension. Mixed social chatter is noted but does not override the candidate rank and catalyst score.",
+      "narrative": "PLTR ranks as the strongest new liquid catalyst setup with bullish growth headlines and an 85% revenue-growth narrative while the book still has room under the five-name cap. Adding a ~$200 slice keeps risk contained versus cash. Stop and target give roughly 1.8:1 reward-to-risk on a clean new entry. Existing holds are already working and do not need forced rotation.",
       "bullets": [
-        "Confirm junior directive BUY PLTR as only candidate",
-        "Notional ~$200 at 1.09 sh; open names 4->5",
-        "Stop 175 / target 195 gives R:R >1.5",
-        "Catalyst score and bullish tag support entry"
+        "Top non-held catalyst rank with growth headline",
+        "Fits ~$200 max new notional and 5-name limit",
+        "Defined stop/target at >=1.5 R:R",
+        "No weaker hold requiring rotation"
       ],
       "risk_map": {
         "stop": 175.0,
         "target": 195.0,
         "horizon_days": 5,
-        "rr": 1.54,
+        "rr": 1.79,
         "confidence_10": 7,
-        "confidence": 72
+        "confidence": 73
       },
-      "thesis": "PLTR is the sole ranked catalyst candidate with bullish sentiment and a growth headline setup citing strong revenue and Rule of 40 metrics. Portfolio has room under the ~5 name limit and ~$200 notional cap, so a starter long fits desk policy without forced rotation. R:R is structured above 1.5 with a defined stop below recent support and target into extension. Mixed social chatter is noted but does not override the candidate rank and catalyst score."
+      "thesis": "PLTR ranks as the strongest new liquid catalyst setup with bullish growth headlines and an 85% revenue-growth narrative while the book still has room under the five-name cap. Adding a ~$200 slice keeps risk contained versus cash. Stop and target give roughly 1.8:1 reward-to-risk on a clean new entry. Existing holds are already working and do not need forced rotation."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Confirm junior directive BUY PLTR as only candidate",
-      "Notional ~$200 at 1.09 sh; open names 4->5",
-      "Stop 175 / target 195 gives R:R >1.5",
-      "Catalyst score and bullish tag support entry"
+      "Top non-held catalyst rank with growth headline",
+      "Fits ~$200 max new notional and 5-name limit",
+      "Defined stop/target at >=1.5 R:R",
+      "No weaker hold requiring rotation"
     ],
-    "timestamp": "2026-09-21T16:35:37.993858+00:00"
+    "timestamp": "2026-09-21T16:48:54.918236+00:00"
   },
-  "stance": "Buying pressure on PLTR. PLTR is the sole ranked catalyst candidate with bullish sentiment and a growth headline setup citing strong revenue and Rule of 40 metrics. Portfolio has room under the ~5 name limit and ~$200 notional cap, so a starter long fits desk policy without forced rotation. R:R is structured above 1.5 with a defined stop below recent support and target into extension. Mixed social chatter is noted but does not override the candidate rank and catalyst score.",
+  "stance": "Buying pressure on PLTR. PLTR ranks as the strongest new liquid catalyst setup with bullish growth headlines and an 85% revenue-growth narrative while the book still has room under the five-name cap. Adding a ~$200 slice keeps risk contained versus cash. Stop and target give roughly 1.8:1 reward-to-risk on a clean new entry. Existing holds are already working and do not need forced rotation.",
   "thinking": {
     "badge": "Looking to buy PLTR",
     "headline": "Buying pressure on PLTR.",
@@ -193,7 +193,6 @@
       "It owns AMZN, bought near $248.31. Simple plan: sell if it falls to about $240.00, or take profit near $262.00.",
       "It owns AMD, bought near $609.82. Simple plan: sell if it falls to about $585.00, or take profit near $655.00.",
       "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
-      "Top scanner name right now is PLTR, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
       "If nothing looks clean, do nothing. Sitting in cash or holdings is allowed."
     ],
     "owned": [
@@ -203,9 +202,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 107.43009948730469,
-        "open_pnl": 2.78,
-        "open_pnl_pct": 1.42,
+        "last": 107.5468978881836,
+        "open_pnl": 2.99,
+        "open_pnl_pct": 1.53,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -215,9 +214,9 @@
         "avg_cost": 357.18,
         "stop": 342.0,
         "target": 380.0,
-        "last": 374.1700134277344,
-        "open_pnl": 9.34,
-        "open_pnl_pct": 4.76,
+        "last": 373.7799987792969,
+        "open_pnl": 9.13,
+        "open_pnl_pct": 4.65,
         "line": "Bought near $357.18 \u00b7 Sell safety line $342.00 \u00b7 Profit target $380.00",
         "plan": "stop 342.0 or target 380.0"
       },
@@ -227,9 +226,9 @@
         "avg_cost": 248.31,
         "stop": 240.0,
         "target": 262.0,
-        "last": 258.5299987792969,
-        "open_pnl": 8.18,
-        "open_pnl_pct": 4.12,
+        "last": 258.5950012207031,
+        "open_pnl": 8.23,
+        "open_pnl_pct": 4.14,
         "line": "Bought near $248.31 \u00b7 Sell safety line $240.00 \u00b7 Profit target $262.00",
         "plan": "stop 240.0 or target 262.0"
       },
@@ -239,14 +238,14 @@
         "avg_cost": 609.82,
         "stop": 585.0,
         "target": 655.0,
-        "last": 610.760009765625,
-        "open_pnl": 0.3,
-        "open_pnl_pct": 0.15,
+        "last": 610.2100219726562,
+        "open_pnl": 0.12,
+        "open_pnl_pct": 0.06,
         "line": "Bought near $609.82 \u00b7 Sell safety line $585.00 \u00b7 Profit target $655.00",
         "plan": "stop 585.0 or target 655.0"
       }
     ],
-    "last_checked": "2026-09-21T16:40:55.839676+00:00",
+    "last_checked": "2026-09-21T16:49:05.697407+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -260,50 +259,50 @@
       {
         "prefix": "J",
         "model": "grok-4.3",
-        "action": "BUY",
-        "symbol": "PLTR",
-        "confidence": 75,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 60,
+        "tone": "hold"
       },
       {
         "prefix": "J",
         "model": "claude-haiku-4-5",
-        "action": "BUY",
-        "symbol": "PLTR",
-        "confidence": 72,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 62,
+        "tone": "hold"
       },
       {
         "prefix": "J",
         "model": "deepseek-v4-flash",
         "action": "BUY",
         "symbol": "PLTR",
-        "confidence": 72,
+        "confidence": 70,
         "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "BUY",
-        "symbol": "PLTR",
-        "confidence": 75,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 60,
+        "tone": "hold"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
         "action": "BUY",
         "symbol": "PLTR",
-        "confidence": 72,
+        "confidence": 73,
         "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "claude-sonnet-5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 65,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "PLTR",
+        "confidence": 72,
+        "tone": "buy"
       },
       {
         "prefix": "S",
@@ -316,6 +315,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "PLTR",
+      "status": "blocked",
+      "headline": "BUY PLTR \u2014 blocked",
+      "detail": "Insufficient buying power: $20.29 < $200.38",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "BUY",
+          "symbol": "PLTR",
+          "confidence": 70,
+          "source": "live",
+          "provider": "nous",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "PLTR",
+          "confidence": 73,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "PLTR",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "WMT",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-21T16:48:54.918236+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "PLTR",
@@ -854,83 +930,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-09-21T15:04:04.575781+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "PLTR",
-      "status": "blocked",
-      "headline": "BUY PLTR \u2014 blocked",
-      "detail": "Insufficient buying power: $20.29 < $200.10",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "PLTR",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "HOLD",
-          "symbol": "WMT",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "PLTR",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "PLTR",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "WMT",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-21T14:48:52.852661+00:00"
     },
     {
       "type": "fill",
@@ -12976,80 +12975,23 @@
   ],
   "top_candidates": [
     {
-      "symbol": "PLTR",
-      "name": "PLTR",
-      "price": 182.86000061035156,
-      "volume": 10569610.0,
-      "avg_volume": 23662621.0,
-      "percent_change": 2.9385280559775255,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 12,
-      "liquidity_score": 83.74,
-      "rank_score": 70.41,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (growth): Palantir (PLTR) Stock Forecast: 85% Revenue Growth, Rule of 40 at 145% - Worth $129? - TradingKey",
-      "top_headlines": [
-        "Palantir (PLTR) Stock Forecast: 85% Revenue Growth, Rule of 40 at 145% - Worth $129? - TradingKey",
-        "PLTR Stock Heads for Worst Month Ever: Retail Awaits Dip Below $100, Michael Burry Takes Victory Lap - Stocktwits",
-        "Palantir (PLTR) Stock Looks Near Fair Value On Future Cash Flow - simplywall.st"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Palantir (PLTR) Stock Forecast: 85% Revenue Growth, Rule of 40 at 145% - Worth $129? - TradingKey",
-          "keywords": [
-            "growth"
-          ]
-        },
-        {
-          "title": "PLTR Stock Heads for Worst Month Ever: Retail Awaits Dip Below $100, Michael Burry Takes Victory Lap - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Palantir (PLTR) Stock Looks Near Fair Value On Future Cash Flow - simplywall.st",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "PLTR's 110% Commercial Revenue Surge Defines Its Q2 Growth - Yahoo Finance",
-          "keywords": [
-            "growth"
-          ]
-        },
-        {
-          "title": "Palantir Grew Revenue 85% and Raised Full-Year Guidance by 10 Points \u2014 So Why Is PLTR Down 26% YTD? - TradingKey",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "guidance",
-            "raised"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "AMD",
       "name": "AMD",
-      "price": 612.1099853515625,
-      "volume": 26144710.0,
-      "avg_volume": 23600751.0,
-      "percent_change": 9.340498257158591,
+      "price": 611.0,
+      "volume": 27235584.0,
+      "avg_volume": 23709838.4,
+      "percent_change": 9.142222858451797,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 10,
-      "liquidity_score": 83.73,
-      "rank_score": 66.03,
+      "catalyst_score": 11,
+      "liquidity_score": 83.75,
+      "rank_score": 71.38,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (demand, record): AMD Stock Opens the Door for $700 as Chip Demand Drives Fresh Record Highs - FXLeaders",
       "top_headlines": [
         "AMD hits $1 trillion market cap for the first time as stock rides 5-day rally - CNBC",
         "Why AMD Stock Is Rising Fast Today - Yahoo Finance",
-        "Amd stock hits all-time high at 584.95 USD - Investing.com"
+        "Why AMD Stock Is Rising Fast Today - The Motley Fool"
       ],
       "matched_headlines": [
         {
@@ -13066,6 +13008,14 @@
           ]
         },
         {
+          "title": "AMD joins $1 trillion club as chipmakers rally on AI-driven demand - Reuters",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "demand"
+          ]
+        },
+        {
           "title": "Meta\u2019s Muse AI Agent Triggers Intel, Chip Stock Rally. AMD Hits $1T Market Cap. - Barron's",
           "keywords": [
             "ai",
@@ -13073,11 +13023,64 @@
           ]
         },
         {
-          "title": "AMD joins $1 trillion club as chipmakers rally on AI-driven demand - Reuters",
+          "title": "AMD hits a major milestone as AI stocks blaze higher - MarketWatch",
           "keywords": [
             "ai",
-            "catalyst",
-            "demand"
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "PLTR",
+      "name": "PLTR",
+      "price": 182.16000366210938,
+      "volume": 10943387.0,
+      "avg_volume": 23699998.7,
+      "percent_change": 2.544474379639257,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 11,
+      "liquidity_score": 83.75,
+      "rank_score": 66.1,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (growth): Palantir (PLTR) Stock Forecast: 85% Revenue Growth, Rule of 40 at 145% - Worth $129? - TradingKey",
+      "top_headlines": [
+        "Palantir (PLTR) Stock Forecast: 85% Revenue Growth, Rule of 40 at 145% - Worth $129? - TradingKey",
+        "PLTR Stock Heads for Worst Month Ever: Retail Awaits Dip Below $100, Michael Burry Takes Victory Lap - Stocktwits",
+        "Palantir (NASDAQ: PLTR) Nearly Doubles Revenue As Valuation Compresses Without A Price Drop - foreignpolicyjournal.com"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Palantir (PLTR) Stock Forecast: 85% Revenue Growth, Rule of 40 at 145% - Worth $129? - TradingKey",
+          "keywords": [
+            "growth"
+          ]
+        },
+        {
+          "title": "PLTR Stock Heads for Worst Month Ever: Retail Awaits Dip Below $100, Michael Burry Takes Victory Lap - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Palantir (NASDAQ: PLTR) Nearly Doubles Revenue As Valuation Compresses Without A Price Drop - foreignpolicyjournal.com",
+          "keywords": [
+            "drop"
+          ]
+        },
+        {
+          "title": "Palantir (PLTR) Stock Looks Near Fair Value On Future Cash Flow - simplywall.st",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "PLTR's 110% Commercial Revenue Surge Defines Its Q2 Growth - Yahoo Finance",
+          "keywords": [
+            "growth"
           ]
         }
       ]
@@ -13085,15 +13088,15 @@
     {
       "symbol": "WMT",
       "name": "WMT",
-      "price": 107.57499694824219,
-      "volume": 5898233.0,
-      "avg_volume": 20112103.3,
-      "percent_change": 0.7917113882988552,
+      "price": 107.49500274658203,
+      "volume": 6128051.0,
+      "avg_volume": 20135085.1,
+      "percent_change": 0.7167613281994151,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
-      "liquidity_score": 83.03,
-      "rank_score": 64.59,
+      "liquidity_score": 83.04,
+      "rank_score": 64.53,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst, record): Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
       "top_headlines": [
@@ -13131,7 +13134,7 @@
           ]
         },
         {
-          "title": "Walmart (NASDAQ:WMT) EVP Sells $309,285.00 in Stock - MarketBeat",
+          "title": "Walmart (NASDAQ:WMT) EVP Sells $309,285.00 in Stock - marketbeat.com",
           "keywords": [
             "beat"
           ]
@@ -13141,15 +13144,15 @@
     {
       "symbol": "TSLA",
       "name": "TSLA",
-      "price": 374.90008544921875,
-      "volume": 21017846.0,
-      "avg_volume": 35019674.6,
-      "percent_change": 2.918191658975207,
+      "price": 373.8599853515625,
+      "volume": 21868600.0,
+      "avg_volume": 35104750.0,
+      "percent_change": 2.6326616595172463,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 10,
-      "liquidity_score": 85.44,
-      "rank_score": 59.65,
+      "liquidity_score": 85.45,
+      "rank_score": 59.42,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst, raises): Tesla Wins Over Another Skeptic: JPMorgan Raises TSLA Stock Price Target By More Than 200% - Stocktwits",
       "top_headlines": [
@@ -13185,50 +13188,51 @@
       ]
     },
     {
-      "symbol": "JPM",
-      "name": "JPM",
-      "price": 350.9750061035156,
-      "volume": 1953114.0,
-      "avg_volume": 8015181.4,
-      "percent_change": 0.37320691671233347,
+      "symbol": "MSFT",
+      "name": "MSFT",
+      "price": 495.9200134277344,
+      "volume": 9658104.0,
+      "avg_volume": 18692180.4,
+      "percent_change": 0.4333943565409612,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 79.04,
-      "rank_score": 50.15,
-      "news_hits": 7,
-      "catalyst": "Headline-driven setup (catalyst, partnership): J.P. Morgan and Qatar Investment Authority ink $20B partnership (JPM:NYSE) - Seeking Alpha",
+      "liquidity_score": 82.72,
+      "rank_score": 50.75,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst, raises): MSFT Stock: Redburn Raises Target To $440 As AI Safety, Spending Debate Continues - Yahoo Finance",
       "top_headlines": [
-        "J.P. Morgan and Qatar Investment Authority ink $20B partnership (JPM:NYSE) - Seeking Alpha",
-        "JPM Looks 15.1% Overvalued on GF Value\u2122 as Dividend Sustainabili - GuruFocus",
-        "Apple: JPM says iPhone 18 lead times increase in second week - Investing.com"
+        "MSFT Stock: Redburn Raises Target To $440 As AI Safety, Spending Debate Continues - Yahoo Finance",
+        "MSFT Stock Jumps 3% After-Hours \u2014 Lower-Than-Expected Q4 Capex, Strong Azure Sales Boost Sentiment - Stocktwits",
+        "Microsoft (NASDAQ:MSFT) Dividend Quality Backs Income Investors - ChartMill"
       ],
       "matched_headlines": [
         {
-          "title": "J.P. Morgan and Qatar Investment Authority ink $20B partnership (JPM:NYSE) - Seeking Alpha",
+          "title": "MSFT Stock: Redburn Raises Target To $440 As AI Safety, Spending Debate Continues - Yahoo Finance",
           "keywords": [
+            "ai",
             "catalyst",
-            "partnership"
+            "raises"
           ]
         },
         {
-          "title": "JPM Looks 15.1% Overvalued on GF Value\u2122 as Dividend Sustainabili - GuruFocus",
+          "title": "NOW Rides on Strong Workflow Demand: Can It Outpace CRM & MSFT? - TradingView",
+          "keywords": [
+            "demand"
+          ]
+        },
+        {
+          "title": "The Week That Proved AI Is Real: MSFT +16%, AMZN +10%, META -10%, AAPL -4% - Winners, Losers and Key Takeaways - TradingKey",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "JPMorgan Chase & Co. $JPM Shares Sold by Palisade Capital Management LP - MarketBeat",
+          "title": "Microsoft AI chief urges guardrails as White House resists broad regulation (MSFT:NASDAQ) - Seeking Alpha",
           "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "JPMorgan (JPM) Q2 2026 Earnings Preview: $5.59 EPS Consensus, $103B NII Guidance, and the $338.45 Trigger - TradingKey",
-          "keywords": [
-            "catalyst",
-            "guidance"
+            "ai",
+            "catalyst"
           ]
         }
       ]
@@ -13260,8 +13264,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 0,
-      "BUY": 4,
+      "HOLD": 3,
+      "BUY": 1,
       "SELL": 0,
       "live": 4,
       "fallback": 0
@@ -13280,23 +13284,23 @@
     "decision_mode": "live_dual_llm",
     "last_tier": "senior_escalated",
     "last_stage": "entry",
-    "last_junior_nomination": "PLTR",
-    "last_escalate_reason": "junior_nomination",
-    "live_share_recent": 76.4
+    "last_junior_nomination": null,
+    "last_escalate_reason": "junior_trade_or_split",
+    "live_share_recent": 77.2
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 353,
     "closed_outcomes": 161,
-    "consensus_events": 732,
+    "consensus_events": 733,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1043.58,
-    "change": 43.58,
-    "change_pct": 4.36,
+    "latest_equity": 1043.47,
+    "change": 43.47,
+    "change_pct": 4.35,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -16287,8 +16291,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-21T16:41:03.168677+00:00",
-        "equity": 1043.58,
+        "t": "2026-09-21T16:49:08.544745+00:00",
+        "equity": 1043.47,
         "cash": 236.78,
         "event": "mark"
       }
