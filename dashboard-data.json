@@ -1,71 +1,59 @@
 {
-  "generated_at": "2026-09-21T14:00:39.202518+00:00",
+  "generated_at": "2026-09-21T14:03:19.584652+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1039.79,
+    "portfolio_value": 1041.08,
     "starting_cash": 1000.0,
-    "total_return_pct": 3.98,
-    "total_pnl": 39.79,
-    "realized_pnl": 4.31,
-    "open_pnl": 35.46,
-    "capital_deployed": 824.36,
-    "cash": 215.43,
-    "closed_trades": 38,
-    "win_rate_pct": 28.95,
-    "vs_spy_pct": 4.21,
-    "spy_return_pct": -0.23,
+    "total_return_pct": 4.11,
+    "total_pnl": 41.08,
+    "realized_pnl": 22.95,
+    "open_pnl": 18.09,
+    "capital_deployed": 609.16,
+    "cash": 431.92,
+    "closed_trades": 39,
+    "win_rate_pct": 30.77,
+    "vs_spy_pct": 4.36,
+    "spy_return_pct": -0.25,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-21T14:00:41.899933+00:00"
+    "updated_at": "2026-09-21T14:03:22.423422+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.23,
-    "price": 767.5900268554688,
+    "return_pct": -0.25,
+    "price": 767.5,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 0,
-    "validated_count_today": 0,
+    "consensus_count_today": 1,
+    "validated_count_today": 1,
     "blocked_count_today": 0,
-    "fills_today": 0,
-    "simulated_orders_today": 0,
-    "top_symbol_today": "PLTR"
+    "fills_today": 1,
+    "simulated_orders_today": 1,
+    "top_symbol_today": "LRCX"
   },
   "holdings": [
     {
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 106.83999633789062,
-      "market_value": 197.65,
-      "open_pnl": 1.68,
+      "last": 106.84500122070312,
+      "market_value": 197.66,
+      "open_pnl": 1.69,
       "open_pnl_pct": 0.86,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
     },
     {
-      "symbol": "LRCX",
-      "qty": 0.74,
-      "avg_cost": 267.36,
-      "last": 291.9100036621094,
-      "market_value": 216.01,
-      "open_pnl": 18.17,
-      "open_pnl_pct": 9.18,
-      "stop": 255.0,
-      "target": 286.0,
-      "thesis": "LRCX ranks top of the candidate list on a fresh institutional-lift/beat headline with bullish sentiment and neutral RSI, offering a liquid semi-equipment catalyst setup. Book has room under the 5-name cap and ~$200 notional can be deployed without forcing a rotation. Risk defined below recent support with target sized for at least 1.5:1 reward-to-risk while existing XOM/WMT/META holds remain constructive."
-    },
-    {
       "symbol": "TSLA",
       "qty": 0.55,
       "avg_cost": 357.18,
-      "last": 376.5899963378906,
-      "market_value": 207.12,
-      "open_pnl": 10.68,
-      "open_pnl_pct": 5.43,
+      "last": 376.92498779296875,
+      "market_value": 207.31,
+      "open_pnl": 10.86,
+      "open_pnl_pct": 5.53,
       "stop": 342.0,
       "target": 380.0,
       "thesis": "TSLA tops the ranked catalyst list on a PG&E grid deal headline with bullish sentiment and neutral RSI, offering a liquid setup while the book still has open slots and cash. Valuation is debated but the rank/catalyst edge is the cleanest available versus held names that are already working. Small notional keeps risk tight with stop/target structured for at least 1.5 R:R."
@@ -74,128 +62,102 @@
       "symbol": "AMZN",
       "qty": 0.8,
       "avg_cost": 248.31,
-      "last": 254.47500610351562,
-      "market_value": 203.58,
-      "open_pnl": 4.93,
-      "open_pnl_pct": 2.48,
+      "last": 255.23500061035156,
+      "market_value": 204.19,
+      "open_pnl": 5.54,
+      "open_pnl_pct": 2.79,
       "stop": 240.0,
       "target": 262.0,
       "thesis": "AMZN shows a ranked liquid setup with bullish sentiment and a headline institutional buy catalyst supporting near-term momentum. RSI near 50 leaves room for upside without overbought conditions. Portfolio has capacity for one more name under the 5-position guideline and cash covers a sub-$200 notional entry. Risk defined below recent support with 1.5+ R:R to the target."
     }
   ],
   "latest_candidate": {
-    "symbol": "PLTR",
-    "name": "PLTR",
-    "price": 177.0399932861328,
-    "volume": 18040188.0,
-    "avg_volume": 23276678.8,
-    "percent_change": 0.45391952339662156,
+    "symbol": "TSLA",
+    "name": "TSLA",
+    "price": 376.5950012207031,
+    "volume": 9658278.0,
+    "avg_volume": 33883717.8,
+    "percent_change": 3.3834827404814463,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 14,
-    "liquidity_score": 83.67,
-    "rank_score": 76.41,
+    "catalyst_score": 11,
+    "liquidity_score": 85.3,
+    "rank_score": 64.0,
     "news_hits": 8,
-    "catalyst": "Headline-driven setup (ai, catalyst, deal): Palantir Technologies (PLTR) AI Deal Rush Meets A Fair Value Debate - finance.yahoo.com",
+    "catalyst": "Headline-driven setup (ai, catalyst, raises): Tesla Wins Over Another Skeptic: JPMorgan Raises TSLA Stock Price Target By More Than 200% - Stocktwits",
     "top_headlines": [
-      "Palantir Technologies (PLTR) AI Deal Rush Meets A Fair Value Debate - finance.yahoo.com",
-      "PLTR's 110% Commercial Revenue Surge Defines Its Q2 Growth - TradingView",
-      "Palantir (PLTR) Lands First Aviation OperatorOS Deal As UK Hire Raises NHS Focus - simplywall.st"
+      "TSLA Stock Quote Price and Forecast - CNN",
+      "Tesla Wins Over Another Skeptic: JPMorgan Raises TSLA Stock Price Target By More Than 200% - Stocktwits",
+      "Tesla Inc Stock (TSLA) Opened Up by 3.29% on Sep 21: Key Drivers Unveiled - TradingKey"
     ],
     "matched_headlines": [
       {
-        "title": "Palantir Technologies (PLTR) AI Deal Rush Meets A Fair Value Debate - finance.yahoo.com",
+        "title": "Tesla Wins Over Another Skeptic: JPMorgan Raises TSLA Stock Price Target By More Than 200% - Stocktwits",
         "keywords": [
           "ai",
           "catalyst",
-          "deal"
+          "raises",
+          "wins"
         ]
       },
       {
-        "title": "PLTR's 110% Commercial Revenue Surge Defines Its Q2 Growth - TradingView",
+        "title": "TSLA Stock Up for Fourth Straight Day Before Thursday Deliveries Report \u2014 Wall Street Expects Year-On-Year Growth - Stocktwits",
         "keywords": [
+          "ai",
+          "catalyst",
           "growth"
         ]
       },
       {
-        "title": "Palantir (PLTR) Lands First Aviation OperatorOS Deal As UK Hire Raises NHS Focus - simplywall.st",
+        "title": "Tesla (TSLA) Stock Price Forecast 2026: 480K Deliveries Beat by 18% - Why Did the Stock Drop 7%? - TradingKey",
         "keywords": [
-          "ai",
-          "catalyst",
-          "deal",
-          "raises"
-        ]
-      },
-      {
-        "title": "PLTR 260918 177.50C (PLTR260918C177500) Stock Options Chain | Quotes & News - Moomoo",
-        "keywords": [
-          "ai",
-          "catalyst"
-        ]
-      },
-      {
-        "title": "Michael Burry Sees More Trouble Ahead For PLTR Stock: Wall Street And Retail Traders Still Don't Care - Stocktwits",
-        "keywords": [
-          "ai",
-          "catalyst"
+          "beat",
+          "drop"
         ]
       }
     ]
   },
   "latest_decision": {
-    "model": "grok-4.5",
-    "action": "BUY",
-    "symbol": "PLTR",
-    "confidence": 78,
-    "cache_stats": null,
-    "entry_price": 177.04,
-    "stop_loss": 168.0,
-    "take_profit": 191.0,
-    "qty": 1.12,
-    "thesis": "PLTR is the sole ranked catalyst candidate with a bullish AI/deal headline setup and neutral RSI near 50, fitting a liquid momentum entry. Book has room under the 5-name cap and cash supports a sub-$200 notional add without forced rotation. Reward-to-risk clears 1.5x on a defined stop below recent support toward the AI narrative target.",
-    "reason_code": "new_entry",
+    "model": "risk-gate",
+    "action": "SELL",
+    "symbol": "LRCX",
+    "confidence": 90,
+    "entry_price": 292.54998779296875,
+    "stop_loss": 255.0,
+    "take_profit": 286.0,
+    "qty": 0.74,
+    "thesis": "HERMES AUTO-TRADE: Exiting full LRCX position on take-profit. Price $292.55 reached target $286.00. Realized path $+18.64.",
+    "reason_code": "take_profit",
     "reasoning": {
-      "headline": "Bought $PLTR",
-      "narrative": "PLTR is the sole ranked catalyst candidate with a bullish AI/deal headline setup and neutral RSI near 50, fitting a liquid momentum entry. Book has room under the 5-name cap and cash supports a sub-$200 notional add without forced rotation. Reward-to-risk clears 1.5x on a defined stop below recent support toward the AI narrative target.",
+      "headline": "Sold $LRCX",
+      "narrative": "HERMES AUTO-TRADE: Exiting full LRCX position on take-profit. Price $292.55 reached target $286.00. Realized path $+18.64.",
       "bullets": [
-        "AI deal/catalyst rank 76 with bullish sentiment",
-        "Notional ~$198 inside $200 cap; open names 4->5",
-        "R:R ~1.54 via 168 stop / 191 target",
-        "Directive-aligned new entry on only candidate"
+        "Target zone filled; lock gains and free risk budget.",
+        "No trail extension in current paper rules."
       ],
       "risk_map": {
-        "stop": 168.0,
-        "target": 191.0,
+        "stop": 255.0,
+        "target": 286.0,
         "horizon_days": 5,
-        "rr": 1.54,
-        "confidence_10": 8,
-        "confidence": 78
+        "rr": 1.51,
+        "confidence_10": 9,
+        "confidence": 90
       },
-      "thesis": "PLTR is the sole ranked catalyst candidate with a bullish AI/deal headline setup and neutral RSI near 50, fitting a liquid momentum entry. Book has room under the 5-name cap and cash supports a sub-$200 notional add without forced rotation. Reward-to-risk clears 1.5x on a defined stop below recent support toward the AI narrative target."
+      "thesis": "HERMES AUTO-TRADE: Exiting full LRCX position on take-profit. Price $292.55 reached target $286.00. Realized path $+18.64."
     },
-    "source": "live",
-    "provider": "xai",
-    "provider_model_id": "grok-4.5",
-    "bullets": [
-      "AI deal/catalyst rank 76 with bullish sentiment",
-      "Notional ~$198 inside $200 cap; open names 4->5",
-      "R:R ~1.54 via 168 stop / 191 target",
-      "Directive-aligned new entry on only candidate"
-    ],
-    "timestamp": "2026-09-18T19:48:03.727275+00:00"
+    "stage": "exit",
+    "timestamp": "2026-09-21T14:03:06.485490+00:00"
   },
-  "stance": "Buying pressure on PLTR. PLTR is the sole ranked catalyst candidate with a bullish AI/deal headline setup and neutral RSI near 50, fitting a liquid momentum entry. Book has room under the 5-name cap and cash supports a sub-$200 notional add without forced rotation. Reward-to-risk clears 1.5x on a defined stop below recent support toward the AI narrative target.",
+  "stance": "Holding WMT, TSLA, AMZN. No new trade right now. HERMES AUTO-TRADE: Exiting full LRCX position on take-profit. Price $292.55 reached target $286.00. Realized path $+18.64.",
   "thinking": {
-    "badge": "Looking to buy PLTR",
-    "headline": "Buying pressure on PLTR.",
-    "plain_english": "Right now Hermes wants exposure to PLTR. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
+    "badge": "Holding what it owns",
+    "headline": "Holding WMT, TSLA, AMZN. No new trade right now.",
+    "plain_english": "Right now Hermes is holding WMT, TSLA, AMZN and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
     "triggers": [
       "It owns WMT, bought near $105.93. Simple plan: sell if it falls to about $102.50, or take profit near $112.00.",
-      "It owns LRCX, bought near $267.36. Simple plan: sell if it falls to about $255.00, or take profit near $286.00.",
       "It owns TSLA, bought near $357.18. Simple plan: sell if it falls to about $342.00, or take profit near $380.00.",
       "It owns AMZN, bought near $248.31. Simple plan: sell if it falls to about $240.00, or take profit near $262.00.",
       "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
-      "Top scanner name right now is PLTR, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
       "If nothing looks clean, do nothing. Sitting in cash or holdings is allowed."
     ],
     "owned": [
@@ -205,23 +167,11 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 106.83999633789062,
-        "open_pnl": 1.68,
+        "last": 106.84500122070312,
+        "open_pnl": 1.69,
         "open_pnl_pct": 0.86,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
-      },
-      {
-        "symbol": "LRCX",
-        "qty": 0.74,
-        "avg_cost": 267.36,
-        "stop": 255.0,
-        "target": 286.0,
-        "last": 291.9100036621094,
-        "open_pnl": 18.17,
-        "open_pnl_pct": 9.18,
-        "line": "Bought near $267.36 \u00b7 Sell safety line $255.00 \u00b7 Profit target $286.00",
-        "plan": "stop 255.0 or target 286.0"
       },
       {
         "symbol": "TSLA",
@@ -229,9 +179,9 @@
         "avg_cost": 357.18,
         "stop": 342.0,
         "target": 380.0,
-        "last": 376.5899963378906,
-        "open_pnl": 10.68,
-        "open_pnl_pct": 5.43,
+        "last": 376.92498779296875,
+        "open_pnl": 10.86,
+        "open_pnl_pct": 5.53,
         "line": "Bought near $357.18 \u00b7 Sell safety line $342.00 \u00b7 Profit target $380.00",
         "plan": "stop 342.0 or target 380.0"
       },
@@ -241,84 +191,79 @@
         "avg_cost": 248.31,
         "stop": 240.0,
         "target": 262.0,
-        "last": 254.47500610351562,
-        "open_pnl": 4.93,
-        "open_pnl_pct": 2.48,
+        "last": 255.23500061035156,
+        "open_pnl": 5.54,
+        "open_pnl_pct": 2.79,
         "line": "Bought near $248.31 \u00b7 Sell safety line $240.00 \u00b7 Profit target $262.00",
         "plan": "stop 240.0 or target 262.0"
       }
     ],
-    "last_checked": "2026-09-21T14:00:39.202518+00:00",
+    "last_checked": "2026-09-21T14:03:19.584652+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "BUY",
+    "action": "SELL",
     "symbols_held": [
       "WMT",
-      "LRCX",
       "TSLA",
       "AMZN"
     ],
-    "model_chips": [
-      {
-        "prefix": "J",
-        "model": "grok-4.3",
-        "action": "BUY",
-        "symbol": "PLTR",
-        "confidence": 78,
-        "tone": "buy"
-      },
-      {
-        "prefix": "J",
-        "model": "claude-haiku-4-5",
-        "action": "BUY",
-        "symbol": "PLTR",
-        "confidence": 72,
-        "tone": "buy"
-      },
-      {
-        "prefix": "J",
-        "model": "deepseek-v4-flash",
-        "action": "BUY",
-        "symbol": "PLTR",
-        "confidence": 75,
-        "tone": "buy"
-      },
-      {
-        "prefix": "J",
-        "model": "grok-build-0.1",
-        "action": "BUY",
-        "symbol": "PLTR",
-        "confidence": 75,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "grok-4.5",
-        "action": "BUY",
-        "symbol": "PLTR",
-        "confidence": 78,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "claude-sonnet-5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 65,
-        "tone": "hold"
-      },
-      {
-        "prefix": "S",
-        "model": "claude-opus-5",
-        "action": "HOLD",
-        "symbol": "WMT",
-        "confidence": 80,
-        "tone": "hold"
-      }
-    ]
+    "model_chips": []
   },
-  "activity": [],
+  "activity": [
+    {
+      "type": "fill",
+      "symbol": "LRCX",
+      "status": "filled_paper",
+      "headline": "SELL LRCX @ $292.55",
+      "detail": "HERMES AUTO-TRADE: Exiting full LRCX position on take-profit. Price $292.55 reached target $286.00. Realized path $+18.64.",
+      "timestamp": "2026-09-21T14:03:06.487528+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "LRCX",
+      "status": "validated",
+      "headline": "SELL LRCX \u2014 validated",
+      "detail": "deterministic take_profit exit",
+      "agents": [
+        {
+          "model": "risk-gate",
+          "action": "SELL",
+          "symbol": "LRCX",
+          "confidence": 90,
+          "source": null,
+          "provider": null,
+          "tier": "senior"
+        },
+        {
+          "model": "risk-gate",
+          "action": "SELL",
+          "symbol": "LRCX",
+          "confidence": 90,
+          "source": null,
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "risk_exit",
+      "escalate_reason": "take_profit",
+      "stage": "exit",
+      "junior_nomination": null,
+      "timestamp": "2026-09-21T14:03:06.486534+00:00"
+    }
+  ],
   "recent_trades": [
+    {
+      "timestamp": "2026-09-21T14:03:06.487528+00:00",
+      "action": "SELL",
+      "symbol": "LRCX",
+      "qty": 0.74,
+      "price": 292.54998779296875,
+      "notional": 216.49,
+      "realized_pnl": 18.64,
+      "reason": "take_profit",
+      "thesis": "HERMES AUTO-TRADE: Exiting full LRCX position on take-profit. Price $292.55 reached target $286.00. Realized path $+18.64.",
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-09-18T14:48:27.955781+00:00",
       "action": "SELL",
@@ -426,21 +371,35 @@
       "reason": null,
       "thesis": "BAC is the clear top-ranked catalyst name with fresh post-earnings record-high momentum and CEO commentary on a constructive AI buildout environment. RSI is neutral and the name is already working modestly in the book, so adding within the ~$200 new-notional cap improves exposure without exceeding the 5-name limit. Defined risk to 60.50 keeps reward:risk at or above 1.5 toward 67.",
       "status": "FILLED_PAPER"
-    },
-    {
-      "timestamp": "2026-09-10T14:48:34.277107+00:00",
-      "action": "SELL",
-      "symbol": "LRCX",
-      "qty": 0.65,
-      "price": 302.39,
-      "notional": 196.55,
-      "realized_pnl": -3.42,
-      "reason": "rotation",
-      "thesis": "LRCX is the weakest open name with the largest unrealized loss and price drifting lower from the 307.65 average toward the 295 stop. Book is full with only $0.74 cash; exiting the underperformer frees risk and capital even though the memory-expansion headline is mildly bullish. Reward-to-risk on the exit plan exceeds 1.5 by targeting a clean break below recent support while capping any bounce.",
-      "status": "FILLED_PAPER"
     }
   ],
   "trade_reasoning": [
+    {
+      "timestamp": "2026-09-21T14:03:06.487528+00:00",
+      "action": "SELL",
+      "symbol": "LRCX",
+      "qty": 0.74,
+      "price": 292.54998779296875,
+      "notional": 216.49,
+      "headline": "Sold $LRCX",
+      "side_label": "sell",
+      "narrative": "HERMES AUTO-TRADE: Exiting full LRCX position on take-profit. Price $292.55 reached target $286.00. Realized path $+18.64.",
+      "bullets": [
+        "Target zone filled; lock gains and free risk budget.",
+        "No trail extension in current paper rules."
+      ],
+      "risk_map": {
+        "stop": 255.0,
+        "target": 286.0,
+        "horizon_days": 5,
+        "rr": 1.51,
+        "confidence_10": 9,
+        "confidence": 90
+      },
+      "reason_code": "take_profit",
+      "realized_pnl": 18.64,
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-09-18T14:48:27.955781+00:00",
       "action": "SELL",
@@ -9753,6 +9712,20 @@
   ],
   "closed_trades": [
     {
+      "timestamp": "2026-09-21T14:03:06.486534+00:00",
+      "symbol": "LRCX",
+      "qty": 0.74,
+      "avg_cost": 267.36,
+      "exit_price": 292.54998779296875,
+      "proceeds": 216.49,
+      "realized_pnl": 18.64,
+      "realized_pnl_pct": 9.42,
+      "reason": "take_profit",
+      "thesis": "HERMES AUTO-TRADE: Exiting full LRCX position on take-profit. Price $292.55 reached target $286.00. Realized path $+18.64.",
+      "opened_at": "2026-09-15T16:47:31.980723+00:00",
+      "hold_seconds": 508534
+    },
+    {
       "timestamp": "2026-09-18T14:48:27.954783+00:00",
       "symbol": "AMD",
       "qty": 0.36,
@@ -10017,23 +9990,23 @@
       "thesis": "CVX is the weakest open position with the largest unrealized loss and price drifting toward the stop. Juniors escalated an explicit SELL on CVX; confirming the exit to free risk and cash given no offsetting catalyst strength in the candidate set. Reward-to-risk on the original plan no longer justifies holding into further downside.",
       "opened_at": "2026-08-21T18:47:29.571333+00:00",
       "hold_seconds": 329456
-    },
-    {
-      "timestamp": "2026-08-24T17:33:24.706350+00:00",
-      "symbol": "ORCL",
-      "qty": 1.36,
-      "avg_cost": 146.92,
-      "exit_price": 143.48,
-      "proceeds": 195.13,
-      "realized_pnl": -4.68,
-      "realized_pnl_pct": -2.34,
-      "reason": "rotation",
-      "thesis": "Confirming the escalated SELL on ORCL. It is the weakest open name by P/L and is trading below cost with no fresh catalyst support in the candidate set. Exiting the full lot frees risk and respects the desk directive rather than waiting for the 140 stop.",
-      "opened_at": "2026-08-21T19:03:02.343995+00:00",
-      "hold_seconds": 253822
     }
   ],
   "closed_results": [
+    {
+      "timestamp": "2026-09-21T14:03:06.486534+00:00",
+      "symbol": "LRCX",
+      "qty": 0.74,
+      "avg_cost": 267.36,
+      "exit_price": 292.54998779296875,
+      "proceeds": 216.49,
+      "realized_pnl": 18.64,
+      "realized_pnl_pct": 9.42,
+      "reason": "take_profit",
+      "thesis": "HERMES AUTO-TRADE: Exiting full LRCX position on take-profit. Price $292.55 reached target $286.00. Realized path $+18.64.",
+      "opened_at": "2026-09-15T16:47:31.980723+00:00",
+      "hold_seconds": 508534
+    },
     {
       "timestamp": "2026-09-18T14:48:27.954783+00:00",
       "symbol": "AMD",
@@ -12138,6 +12111,21 @@
       "hold_seconds": 85598
     },
     {
+      "symbol": "LRCX",
+      "timestamp": "2026-09-21T14:03:06.486534+00:00",
+      "opened_at": "2026-09-15T16:47:31.980723+00:00",
+      "qty": 0.74,
+      "entry_price": 267.36,
+      "exit_price": 292.54998779296875,
+      "entry_value": 197.85,
+      "exit_value": 216.49,
+      "realized_pnl": 18.64,
+      "realized_pnl_pct": 9.42,
+      "reason": "take_profit",
+      "take_profit_hit": true,
+      "hold_seconds": 508534
+    },
+    {
       "symbol": "TSLA",
       "timestamp": "2026-08-21T18:38:07.885678+00:00",
       "opened_at": "2026-08-19T13:33:49.451766+00:00",
@@ -12181,21 +12169,6 @@
       "reason": "take_profit",
       "take_profit_hit": true,
       "hold_seconds": 519029
-    },
-    {
-      "symbol": "AVGO",
-      "timestamp": "2026-08-27T17:00:33.519310+00:00",
-      "opened_at": "2026-08-26T14:47:51.020479+00:00",
-      "qty": 0.56,
-      "entry_price": 351.74,
-      "exit_price": 370.2200012207031,
-      "entry_value": 196.97,
-      "exit_value": 207.32,
-      "realized_pnl": 10.35,
-      "realized_pnl_pct": 5.25,
-      "reason": "take_profit",
-      "take_profit_hit": true,
-      "hold_seconds": 94362
     }
   ],
   "top_stop_losses": [
@@ -12277,171 +12250,98 @@
   ],
   "top_candidates": [
     {
-      "symbol": "PLTR",
-      "name": "PLTR",
-      "price": 177.0399932861328,
-      "volume": 18040188.0,
-      "avg_volume": 23276678.8,
-      "percent_change": 0.45391952339662156,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 14,
-      "liquidity_score": 83.67,
-      "rank_score": 76.41,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst, deal): Palantir Technologies (PLTR) AI Deal Rush Meets A Fair Value Debate - finance.yahoo.com",
-      "top_headlines": [
-        "Palantir Technologies (PLTR) AI Deal Rush Meets A Fair Value Debate - finance.yahoo.com",
-        "PLTR's 110% Commercial Revenue Surge Defines Its Q2 Growth - TradingView",
-        "Palantir (PLTR) Lands First Aviation OperatorOS Deal As UK Hire Raises NHS Focus - simplywall.st"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Palantir Technologies (PLTR) AI Deal Rush Meets A Fair Value Debate - finance.yahoo.com",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "deal"
-          ]
-        },
-        {
-          "title": "PLTR's 110% Commercial Revenue Surge Defines Its Q2 Growth - TradingView",
-          "keywords": [
-            "growth"
-          ]
-        },
-        {
-          "title": "Palantir (PLTR) Lands First Aviation OperatorOS Deal As UK Hire Raises NHS Focus - simplywall.st",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "deal",
-            "raises"
-          ]
-        },
-        {
-          "title": "PLTR 260918 177.50C (PLTR260918C177500) Stock Options Chain | Quotes & News - Moomoo",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Michael Burry Sees More Trouble Ahead For PLTR Stock: Wall Street And Retail Traders Still Don't Care - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "AMZN",
-      "name": "AMZN",
-      "price": 254.31500244140625,
-      "volume": 28469775.0,
-      "avg_volume": 30833547.5,
-      "percent_change": 1.2440781757343038,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 13,
-      "liquidity_score": 84.89,
-      "rank_score": 73.23,
-      "news_hits": 7,
-      "catalyst": "Headline-driven setup (beat): NFJ Investment Group LLC Purchases New Shares in Amazon.com, Inc. $AMZN - MarketBeat",
-      "top_headlines": [
-        "Amazon.com, Inc. (AMZN) Is a Trending Stock: Facts to Know Before Betting on It - finance.yahoo.com",
-        "How to Play AMZN Stock as Amazon Unveils Project Mercury - Barchart.com",
-        "NFJ Investment Group LLC Purchases New Shares in Amazon.com, Inc. $AMZN - MarketBeat"
-      ],
-      "matched_headlines": [
-        {
-          "title": "NFJ Investment Group LLC Purchases New Shares in Amazon.com, Inc. $AMZN - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Amazon Stock (AMZN) Opinions on Market Correction and Growth Projections - Quiver Quantitative",
-          "keywords": [
-            "growth"
-          ]
-        },
-        {
-          "title": "What Amazon.com (AMZN)'s US$8 Billion Backup Power Deal With Generac Means For Shareholders - finance.yahoo.com",
-          "keywords": [
-            "catalyst",
-            "deal"
-          ]
-        },
-        {
-          "title": "3,785 Shares in Amazon.com, Inc. $AMZN Purchased by OneAscent Wealth Management LLC - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "9,853 Shares in Amazon.com, Inc. $AMZN Bought by G2 Capital Management LLC OH - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "AAPL",
-      "name": "AAPL",
-      "price": 336.05499267578125,
-      "volume": 31126281.0,
-      "avg_volume": 43621018.1,
-      "percent_change": -0.2804176036257418,
+      "symbol": "TSLA",
+      "name": "TSLA",
+      "price": 376.5950012207031,
+      "volume": 9658278.0,
+      "avg_volume": 33883717.8,
+      "percent_change": 3.3834827404814463,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 11,
-      "liquidity_score": 86.4,
-      "rank_score": 64.68,
+      "liquidity_score": 85.3,
+      "rank_score": 64.0,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): Apple iPhone Refresh Cycle Better-Than-Expected, Says Evercore As AAPL Stock Heads For 5th Straight Weekly Gain - finance.yahoo.com",
+      "catalyst": "Headline-driven setup (ai, catalyst, raises): Tesla Wins Over Another Skeptic: JPMorgan Raises TSLA Stock Price Target By More Than 200% - Stocktwits",
       "top_headlines": [
-        "Where AAPL Stock\u2019s $510 Billion Of Shareholder Cash Came From - Trefis",
-        "Apple iPhone Refresh Cycle Better-Than-Expected, Says Evercore As AAPL Stock Heads For 5th Straight Weekly Gain - finance.yahoo.com",
-        "Apple TV's Emmy Sweep Adds Momentum to AAPL's Services Business - TradingView"
+        "TSLA Stock Quote Price and Forecast - CNN",
+        "Tesla Wins Over Another Skeptic: JPMorgan Raises TSLA Stock Price Target By More Than 200% - Stocktwits",
+        "Tesla Inc Stock (TSLA) Opened Up by 3.29% on Sep 21: Key Drivers Unveiled - TradingKey"
       ],
       "matched_headlines": [
         {
-          "title": "Apple iPhone Refresh Cycle Better-Than-Expected, Says Evercore As AAPL Stock Heads For 5th Straight Weekly Gain - finance.yahoo.com",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Why Retail Traders Couldn\u2019t Take Their Eyes Off These Stocks Last Week: AAPL, MU, MSFT, INFQ, RKLB - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "AAPL Maintained by Evercore ISI Group -- Price Target Raised to $380 - GuruFocus",
+          "title": "Tesla Wins Over Another Skeptic: JPMorgan Raises TSLA Stock Price Target By More Than 200% - Stocktwits",
           "keywords": [
             "ai",
             "catalyst",
+            "raises",
+            "wins"
+          ]
+        },
+        {
+          "title": "TSLA Stock Up for Fourth Straight Day Before Thursday Deliveries Report \u2014 Wall Street Expects Year-On-Year Growth - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "growth"
+          ]
+        },
+        {
+          "title": "Tesla (TSLA) Stock Price Forecast 2026: 480K Deliveries Beat by 18% - Why Did the Stock Drop 7%? - TradingKey",
+          "keywords": [
+            "beat",
+            "drop"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "PLTR",
+      "name": "PLTR",
+      "price": 181.47000122070312,
+      "volume": 4016279.0,
+      "avg_volume": 23007287.9,
+      "percent_change": 2.1560469737751373,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 10,
+      "liquidity_score": 83.62,
+      "rank_score": 60.27,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst): PLTR Stock Heads for Worst Month Ever: Retail Awaits Dip Below $100, Michael Burry Takes Victory Lap - Stocktwits",
+      "top_headlines": [
+        "Michael Burry Doubles Down On Palantir Bear Case: \u2018A Lot Of\u2019 Money Still To Be Made Shorting PLTR - Yahoo Finance",
+        "PLTR Stock Heads for Worst Month Ever: Retail Awaits Dip Below $100, Michael Burry Takes Victory Lap - Stocktwits",
+        "Palantir (PLTR) Stock Forecast: 85% Revenue Growth, Rule of 40 at 145% - Worth $129? - TradingKey"
+      ],
+      "matched_headlines": [
+        {
+          "title": "PLTR Stock Heads for Worst Month Ever: Retail Awaits Dip Below $100, Michael Burry Takes Victory Lap - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Palantir (PLTR) Stock Forecast: 85% Revenue Growth, Rule of 40 at 145% - Worth $129? - TradingKey",
+          "keywords": [
+            "growth"
+          ]
+        },
+        {
+          "title": "Palantir (PLTR) Stock Looks Near Fair Value On Future Cash Flow - simplywall.st",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Palantir Grew Revenue 85% and Raised Full-Year Guidance by 10 Points \u2014 So Why Is PLTR Down 26% YTD? - TradingKey",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "guidance",
             "raised"
-          ]
-        },
-        {
-          "title": "Apple Stock (AAPL) Opinions on iPhone Launch Event - Quiver Quantitative",
-          "keywords": [
-            "catalyst",
-            "launch"
-          ]
-        },
-        {
-          "title": "Analysts\u2019 Top Technology Picks: Q2 Holdings (QTWO), Apple (AAPL) - The Globe and Mail",
-          "keywords": [
-            "ai",
-            "catalyst"
           ]
         }
       ]
@@ -12449,44 +12349,92 @@
     {
       "symbol": "LRCX",
       "name": "LRCX",
-      "price": 284.864990234375,
-      "volume": 7247705.0,
-      "avg_volume": 9155750.5,
-      "percent_change": 5.775869004787671,
+      "price": 291.9549865722656,
+      "volume": 1410027.0,
+      "avg_volume": 9698722.7,
+      "percent_change": 1.3345602083215935,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 9,
-      "liquidity_score": 79.62,
-      "rank_score": 58.56,
+      "catalyst_score": 10,
+      "liquidity_score": 79.87,
+      "rank_score": 59.05,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): 442,227 Shares in Lam Research Corporation $LRCX Acquired by Nykredit A S - MarketBeat",
+      "catalyst": "Headline-driven setup (wins): LRCX Rises As Lam Research Wins Higher Targets And Boosts Dividend - StocksToTrade",
       "top_headlines": [
-        "Lam Research (LRCX) Stock Trades At A Premium On Bigger Shareholder Returns - finance.yahoo.com",
-        "Lam Research Corp Stock (LRCX) Opened Up by 4.12% on Sep 18: Facts Behind the Movement - TradingKey",
-        "442,227 Shares in Lam Research Corporation $LRCX Acquired by Nykredit A S - MarketBeat"
+        "LRCX DCF Analysis: Intrinsic Value $182 vs Price $288 - GuruFocus",
+        "LRCX News | LAM RESEARCH CORP (NASDAQ:LRCX) - ChartMill",
+        "AMSL, AMAT, KLAC, LRCX: Chipmaking Equipment Stocks Rise On Intel\u2019s CapEx Bump - Stocktwits"
       ],
       "matched_headlines": [
         {
-          "title": "442,227 Shares in Lam Research Corporation $LRCX Acquired by Nykredit A S - MarketBeat",
+          "title": "LRCX Rises As Lam Research Wins Higher Targets And Boosts Dividend - StocksToTrade",
+          "keywords": [
+            "wins"
+          ]
+        },
+        {
+          "title": "Lam Research (NASDAQ:LRCX) Stock Price Up 7% - Here's What Happened - MarketBeat",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "Lam Research (NASDAQ:LRCX): Affordable Growth With Elite Profitability - ChartMill",
+          "title": "Lam Research (LRCX) Posts Record Results, Is The AI Upside Already Priced In? - simplywall.st",
           "keywords": [
-            "growth"
+            "ai",
+            "catalyst",
+            "record"
           ]
         },
         {
-          "title": "AMAT vs. LRCX: Which WFE Stock is a Safer Bet Right Now? - The Globe and Mail",
+          "title": "LRCX Rises As Lam Research Wins Fresh Analyst Upside - StocksToTrade",
+          "keywords": [
+            "wins"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "HOOD",
+      "name": "HOOD",
+      "price": 122.30000305175781,
+      "volume": 7255881.0,
+      "avg_volume": 22890848.1,
+      "percent_change": 2.069774130570892,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 8,
+      "liquidity_score": 83.6,
+      "rank_score": 52.2,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (record): Robinhood (HOOD) Jumps 9% on Record Trading Volume \u2014 Can the Rally Continue Above $105? - TradingKey",
+      "top_headlines": [
+        "Robinhood Markets, Inc. (HOOD) Recently Broke Out Above the 20-Day Moving Average - Yahoo Finance",
+        "HOOD Stock Climbs As Wall Street Hikes Price Targets - StocksToTrade",
+        "Robinhood Stock Jumps 5% as Bitcoin Rally and SEC Rule Change Align - Benzinga"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Robinhood (HOOD) Jumps 9% on Record Trading Volume \u2014 Can the Rally Continue Above $105? - TradingKey",
+          "keywords": [
+            "record"
+          ]
+        },
+        {
+          "title": "HOOD Stock: Robinhood Buckles Under SpaceX IPO Demand, Users Report Trading Issues - Stocktwits",
+          "keywords": [
+            "demand"
+          ]
+        },
+        {
+          "title": "Robinhood Chain Emerges as a Major Competitor to Binance in Crypto Trading - Intellectia AI",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "WINTON GROUP Ltd Sells 20,828 Shares of Lam Research Corporation $LRCX - MarketBeat",
+          "title": "Robinhood Markets, Inc. $HOOD Shares Sold by Engineers Gate Manager LP - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -12494,60 +12442,57 @@
       ]
     },
     {
-      "symbol": "META",
-      "name": "META",
-      "price": 669.4500122070312,
-      "volume": 17302600.0,
-      "avg_volume": 19847740.0,
-      "percent_change": -1.8847716430328492,
+      "symbol": "AMD",
+      "name": "AMD",
+      "price": 609.0900268554688,
+      "volume": 11547154.0,
+      "avg_volume": 22140995.4,
+      "percent_change": 8.801046566153781,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 9,
-      "liquidity_score": 82.98,
-      "rank_score": 57.45,
+      "catalyst_score": 6,
+      "liquidity_score": 83.45,
+      "rank_score": 51.06,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): Meta: Firm Settles Teen Social Media Case for $17 Billion, Lifting Uncertainty - Morningstar",
+      "catalyst": "Headline-driven setup (ai, catalyst): Intel, AMD, Strategy, Meta, Warner Bros, and More Stocks That Explain Today\u2019s Market - Barron's",
       "top_headlines": [
-        "Goldman Sachs analyst issues new Meta stock forecast - thestreet.com",
-        "Meta: Firm Settles Teen Social Media Case for $17 Billion, Lifting Uncertainty - Morningstar",
-        "Meta Platforms Has a Secret Weapon No One Is Talking About - finance.yahoo.com"
+        "AMD Stock Jumped 8% Last Week. It Could Bring 325% More, Here\u2019s How. - Yahoo Finance",
+        "Amd stock hits all-time high at 584.95 USD - Investing.com",
+        "Intel, AMD, Strategy, Meta, Warner Bros, and More Stocks That Explain Today\u2019s Market - Barron's"
       ],
       "matched_headlines": [
         {
-          "title": "Meta: Firm Settles Teen Social Media Case for $17 Billion, Lifting Uncertainty - Morningstar",
+          "title": "Intel, AMD, Strategy, Meta, Warner Bros, and More Stocks That Explain Today\u2019s Market - Barron's",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "Meta Muse May Be Biggest AI Launch Since ChatGPT. It\u2019s Just One of Many Catalysts for Meta Stock. - Barron's",
+          "title": "My AMD Price Prediction Comes Down to One Crucial Growth Opportunity - 24/7 Wall St.",
           "keywords": [
-            "ai",
-            "catalyst",
-            "launch"
+            "growth"
           ]
         },
         {
-          "title": "Meta Stock Surges as It Unveils New Personal AI Agent - Barchart.com",
+          "title": "AMD vs. Broadcom: The AI Chip Race Is Big Enough for Both. Here's the Better Buy. - The Motley Fool",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "Meta Launches Meta One Subscription Service, Seeking New Revenue Streams Under AI Investment Pressure - nai500.com",
+          "title": "My AMD Price Prediction Comes Down to One Crucial Growth Opportunity - Yahoo Finance",
           "keywords": [
-            "ai",
-            "catalyst",
-            "launch"
+            "growth"
           ]
         },
         {
-          "title": "Meta stock could rise 22% as AI-driven ad growt... - pluang.com",
+          "title": "AMD Price Forecast: Stock Falls 6% After Record High\u2014Is This the Best Buy-the-Dip Opportunity? - TradingKey",
           "keywords": [
-            "ai",
-            "catalyst"
+            "fall",
+            "falls",
+            "record"
           ]
         }
       ]
@@ -12578,13 +12523,7 @@
       "grok-build-0.1"
     ],
     "junior_min_agree": 3,
-    "junior_votes": {
-      "HOLD": 0,
-      "BUY": 4,
-      "SELL": 0,
-      "live": 4,
-      "fallback": 0
-    },
+    "junior_votes": null,
     "junior_model_3_enabled": true,
     "model_1": "grok-4.5",
     "model_1_effort": "medium",
@@ -12596,26 +12535,26 @@
     "min_confidence": 70,
     "max_candidates_to_llm": 8,
     "log_all_disagreements": true,
-    "decision_mode": "live_dual_llm",
-    "last_tier": "senior_escalated",
-    "last_stage": "entry",
-    "last_junior_nomination": "PLTR",
-    "last_escalate_reason": "junior_nomination",
-    "live_share_recent": 80.7
+    "decision_mode": "fallback_deterministic",
+    "last_tier": "risk_exit",
+    "last_stage": "exit",
+    "last_junior_nomination": null,
+    "last_escalate_reason": "take_profit",
+    "live_share_recent": 0.0
   },
   "learning": {
     "candidate_signals_logged": 8,
-    "fills_logged": 351,
-    "closed_outcomes": 160,
-    "consensus_events": 721,
+    "fills_logged": 352,
+    "closed_outcomes": 161,
+    "consensus_events": 722,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1039.79,
-    "change": 39.79,
-    "change_pct": 3.98,
+    "latest_equity": 1041.08,
+    "change": 41.08,
+    "change_pct": 4.11,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15564,9 +15503,9 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-21T14:00:41.899933+00:00",
-        "equity": 1039.79,
-        "cash": 215.43,
+        "t": "2026-09-21T14:03:22.423422+00:00",
+        "equity": 1041.08,
+        "cash": 431.92,
         "event": "mark"
       }
     ],
