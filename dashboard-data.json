@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-09-22T17:10:54.989148+00:00",
+  "generated_at": "2026-09-22T17:19:22.047087+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1049.37,
+    "portfolio_value": 1049.21,
     "starting_cash": 1000.0,
-    "total_return_pct": 4.94,
-    "total_pnl": 49.37,
+    "total_return_pct": 4.92,
+    "total_pnl": 49.21,
     "realized_pnl": 22.95,
-    "open_pnl": 26.38,
-    "capital_deployed": 1009.08,
+    "open_pnl": 26.21,
+    "capital_deployed": 1008.92,
     "cash": 40.29,
     "closed_trades": 39,
     "win_rate_pct": 30.77,
-    "vs_spy_pct": 4.43,
-    "spy_return_pct": 0.51,
+    "vs_spy_pct": 4.42,
+    "spy_return_pct": 0.5,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-22T17:10:57.604990+00:00"
+    "updated_at": "2026-09-22T17:19:24.783208+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.51,
-    "price": 773.3200073242188,
+    "return_pct": 0.5,
+    "price": 773.260009765625,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 6,
-    "validated_count_today": 6,
+    "consensus_count_today": 7,
+    "validated_count_today": 7,
     "blocked_count_today": 0,
     "fills_today": 1,
-    "simulated_orders_today": 6,
+    "simulated_orders_today": 7,
     "top_symbol_today": "BAC"
   },
   "holdings": [
@@ -38,10 +38,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 109.63999938964844,
-      "market_value": 202.83,
-      "open_pnl": 6.86,
-      "open_pnl_pct": 3.5,
+      "last": 109.5199966430664,
+      "market_value": 202.61,
+      "open_pnl": 6.64,
+      "open_pnl_pct": 3.39,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -50,10 +50,10 @@
       "symbol": "TSLA",
       "qty": 0.55,
       "avg_cost": 357.18,
-      "last": 378.42498779296875,
-      "market_value": 208.13,
-      "open_pnl": 11.68,
-      "open_pnl_pct": 5.95,
+      "last": 378.875,
+      "market_value": 208.38,
+      "open_pnl": 11.93,
+      "open_pnl_pct": 6.07,
       "stop": 342.0,
       "target": 380.0,
       "thesis": "TSLA tops the ranked catalyst list on a PG&E grid deal headline with bullish sentiment and neutral RSI, offering a liquid setup while the book still has open slots and cash. Valuation is debated but the rank/catalyst edge is the cleanest available versus held names that are already working. Small notional keeps risk tight with stop/target structured for at least 1.5 R:R."
@@ -62,7 +62,7 @@
       "symbol": "AMZN",
       "qty": 0.8,
       "avg_cost": 248.31,
-      "last": 254.36500549316406,
+      "last": 254.36000061035156,
       "market_value": 203.49,
       "open_pnl": 4.84,
       "open_pnl_pct": 2.44,
@@ -74,10 +74,10 @@
       "symbol": "AMD",
       "qty": 0.32,
       "avg_cost": 609.82,
-      "last": 617.3206176757812,
-      "market_value": 197.54,
-      "open_pnl": 2.4,
-      "open_pnl_pct": 1.23,
+      "last": 616.77001953125,
+      "market_value": 197.37,
+      "open_pnl": 2.22,
+      "open_pnl_pct": 1.14,
       "stop": 585.0,
       "target": 655.0,
       "thesis": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity."
@@ -86,10 +86,10 @@
       "symbol": "BAC",
       "qty": 3.5,
       "avg_cost": 56.14,
-      "last": 56.310001373291016,
-      "market_value": 197.09,
-      "open_pnl": 0.6,
-      "open_pnl_pct": 0.3,
+      "last": 56.30500030517578,
+      "market_value": 197.07,
+      "open_pnl": 0.58,
+      "open_pnl_pct": 0.29,
       "stop": 53.9,
       "target": 59.9,
       "thesis": "BAC is the sole ranked liquid candidate with a bullish headline catalyst framing valuation support amid new debt deals. RSI near 50 leaves room for upside without extreme extension. Book has room under the five-name cap and cash supports a sub-$200 notional add with defined risk. Reward-to-risk meets desk minimum on a clean new_entry."
@@ -98,15 +98,15 @@
   "latest_candidate": {
     "symbol": "META",
     "name": "META",
-    "price": 741.6699829101562,
-    "volume": 18687495.0,
-    "avg_volume": 24119519.5,
-    "percent_change": 0.05665873998735245,
+    "price": 745.77001953125,
+    "volume": 19358062.0,
+    "avg_volume": 24186576.2,
+    "percent_change": 0.609783410623946,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 9,
-    "liquidity_score": 83.82,
-    "rank_score": 56.12,
+    "liquidity_score": 83.84,
+    "rank_score": 56.56,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (ai, catalyst): Meta\u2019s stock is enjoying its best month in 13 years thanks to the company\u2019s hot new AI assistant - MarketWatch",
     "top_headlines": [
@@ -130,6 +130,13 @@
         ]
       },
       {
+        "title": "Wall Street expects Meta's AI agent to shape into a new revenue engine - Reuters",
+        "keywords": [
+          "ai",
+          "catalyst"
+        ]
+      },
+      {
         "title": "Meta stocks surge after Muse launch - Fox Business",
         "keywords": [
           "catalyst",
@@ -142,64 +149,54 @@
           "ai",
           "catalyst"
         ]
-      },
-      {
-        "title": "Meta stock rallied 20% since Muse AI launch: Is META the best Mag 7 buy now? - Investing.com",
-        "keywords": [
-          "ai",
-          "catalyst",
-          "launch"
-        ]
       }
     ]
   },
   "latest_decision": {
     "model": "grok-4.5",
-    "action": "SELL",
-    "symbol": "BAC",
-    "confidence": 72,
+    "action": "HOLD",
+    "symbol": "CASH",
+    "confidence": 62,
     "cache_stats": null,
-    "entry_price": 56.35,
-    "stop_loss": 53.9,
-    "take_profit": 59.9,
-    "qty": 3.5,
-    "thesis": "Book is full at 5 names with only ~$40 cash, so new risk requires a rotation. BAC is the weakest hold on open P/L and thesis versus top-ranked META\u2019s stronger AI/catalyst tape. Exiting BAC frees ~$197 notional to fund a higher-conviction liquid catalyst setup next while locking a small green.",
-    "reason_code": "rotation",
+    "entry_price": 0.0,
+    "stop_loss": 0.0,
+    "take_profit": 0.0,
+    "qty": 0.0,
+    "thesis": "Juniors directed SELL BAC, but BAC is only modestly green, far from stop or target, and remains the sole ranked candidate with a bullish debt-deal/valuation catalyst and neutral RSI. No technical breach or superior rotation candidate exists; book is full and cash is tight, so forced exit lacks edge. Reject the sell and stay flat on new risk.",
+    "reason_code": "hold",
     "reasoning": {
-      "headline": "Sold $BAC",
-      "narrative": "Book is full at 5 names with only ~$40 cash, so new risk requires a rotation. BAC is the weakest hold on open P/L and thesis versus top-ranked META\u2019s stronger AI/catalyst tape. Exiting BAC frees ~$197 notional to fund a higher-conviction liquid catalyst setup next while locking a small green.",
+      "headline": "Hold $CASH",
+      "narrative": "Juniors directed SELL BAC, but BAC is only modestly green, far from stop or target, and remains the sole ranked candidate with a bullish debt-deal/valuation catalyst and neutral RSI. No technical breach or superior rotation candidate exists; book is full and cash is tight, so forced exit lacks edge. Reject the sell and stay flat on new risk.",
       "bullets": [
-        "BAC weakest open P/L (~+$0.75) among 5 holds",
-        "META leads candidates on rank/catalyst (AI assistant momentum)",
-        "Rotation frees ~$200 notional under desk max-buy rule",
-        "R:R framework retained off existing 53.9/59.9 levels on exit"
+        "BAC open P/L +0.47, still inside 53.9-59.9 band",
+        "Only candidate is BAC itself with bullish catalyst score 8",
+        "No cleaner name to rotate into; reject directive"
       ],
       "risk_map": {
-        "stop": 53.9,
-        "target": 59.9,
+        "stop": 0.0,
+        "target": 0.0,
         "horizon_days": 5,
-        "rr": 1.45,
-        "confidence_10": 7,
-        "confidence": 72
+        "rr": 0.0,
+        "confidence_10": 6,
+        "confidence": 62
       },
-      "thesis": "Book is full at 5 names with only ~$40 cash, so new risk requires a rotation. BAC is the weakest hold on open P/L and thesis versus top-ranked META\u2019s stronger AI/catalyst tape. Exiting BAC frees ~$197 notional to fund a higher-conviction liquid catalyst setup next while locking a small green."
+      "thesis": "Juniors directed SELL BAC, but BAC is only modestly green, far from stop or target, and remains the sole ranked candidate with a bullish debt-deal/valuation catalyst and neutral RSI. No technical breach or superior rotation candidate exists; book is full and cash is tight, so forced exit lacks edge. Reject the sell and stay flat on new risk."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "BAC weakest open P/L (~+$0.75) among 5 holds",
-      "META leads candidates on rank/catalyst (AI assistant momentum)",
-      "Rotation frees ~$200 notional under desk max-buy rule",
-      "R:R framework retained off existing 53.9/59.9 levels on exit"
+      "BAC open P/L +0.47, still inside 53.9-59.9 band",
+      "Only candidate is BAC itself with bullish catalyst score 8",
+      "No cleaner name to rotate into; reject directive"
     ],
-    "timestamp": "2026-09-22T17:03:51.680541+00:00"
+    "timestamp": "2026-09-22T17:19:08.118803+00:00"
   },
-  "stance": "Selling BAC. Book is full at 5 names with only ~$40 cash, so new risk requires a rotation. BAC is the weakest hold on open P/L and thesis versus top-ranked META\u2019s stronger AI/catalyst tape. Exiting BAC frees ~$197 notional to fund a higher-conviction liquid catalyst setup next while locking a small green.",
+  "stance": "Holding WMT, TSLA, AMZN, AMD, BAC. No new trade right now.",
   "thinking": {
-    "badge": "Exiting BAC",
-    "headline": "Selling BAC.",
-    "plain_english": "Right now Hermes is exiting BAC. That can be stop, target, or gated rotation when a stronger setup needs risk budget.",
+    "badge": "Holding what it owns",
+    "headline": "Holding WMT, TSLA, AMZN, AMD, BAC. No new trade right now.",
+    "plain_english": "Right now Hermes is holding WMT, TSLA, AMZN, AMD, BAC and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
     "triggers": [
       "It owns WMT, bought near $105.93. Simple plan: sell if it falls to about $102.50, or take profit near $112.00.",
       "It owns TSLA, bought near $357.18. Simple plan: sell if it falls to about $342.00, or take profit near $380.00.",
@@ -217,9 +214,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 109.63999938964844,
-        "open_pnl": 6.86,
-        "open_pnl_pct": 3.5,
+        "last": 109.5199966430664,
+        "open_pnl": 6.64,
+        "open_pnl_pct": 3.39,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -229,9 +226,9 @@
         "avg_cost": 357.18,
         "stop": 342.0,
         "target": 380.0,
-        "last": 378.42498779296875,
-        "open_pnl": 11.68,
-        "open_pnl_pct": 5.95,
+        "last": 378.875,
+        "open_pnl": 11.93,
+        "open_pnl_pct": 6.07,
         "line": "Bought near $357.18 \u00b7 Sell safety line $342.00 \u00b7 Profit target $380.00",
         "plan": "stop 342.0 or target 380.0"
       },
@@ -241,7 +238,7 @@
         "avg_cost": 248.31,
         "stop": 240.0,
         "target": 262.0,
-        "last": 254.36500549316406,
+        "last": 254.36000061035156,
         "open_pnl": 4.84,
         "open_pnl_pct": 2.44,
         "line": "Bought near $248.31 \u00b7 Sell safety line $240.00 \u00b7 Profit target $262.00",
@@ -253,9 +250,9 @@
         "avg_cost": 609.82,
         "stop": 585.0,
         "target": 655.0,
-        "last": 617.3206176757812,
-        "open_pnl": 2.4,
-        "open_pnl_pct": 1.23,
+        "last": 616.77001953125,
+        "open_pnl": 2.22,
+        "open_pnl_pct": 1.14,
         "line": "Bought near $609.82 \u00b7 Sell safety line $585.00 \u00b7 Profit target $655.00",
         "plan": "stop 585.0 or target 655.0"
       },
@@ -265,17 +262,17 @@
         "avg_cost": 56.14,
         "stop": 53.9,
         "target": 59.9,
-        "last": 56.310001373291016,
-        "open_pnl": 0.6,
-        "open_pnl_pct": 0.3,
+        "last": 56.30500030517578,
+        "open_pnl": 0.58,
+        "open_pnl_pct": 0.29,
         "line": "Bought near $56.14 \u00b7 Sell safety line $53.90 \u00b7 Profit target $59.90",
         "plan": "stop 53.9 or target 59.9"
       }
     ],
-    "last_checked": "2026-09-22T17:10:54.989148+00:00",
+    "last_checked": "2026-09-22T17:19:22.047087+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "SELL",
+    "action": "HOLD",
     "symbols_held": [
       "WMT",
       "TSLA",
@@ -287,10 +284,10 @@
       {
         "prefix": "J",
         "model": "grok-4.3",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 60,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "META",
+        "confidence": 75,
+        "tone": "buy"
       },
       {
         "prefix": "J",
@@ -311,18 +308,18 @@
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 60,
-        "tone": "hold"
+        "action": "SELL",
+        "symbol": "BAC",
+        "confidence": 70,
+        "tone": "sell"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
-        "action": "SELL",
-        "symbol": "BAC",
-        "confidence": 72,
-        "tone": "sell"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 62,
+        "tone": "hold"
       },
       {
         "prefix": "S",
@@ -335,14 +332,91 @@
       {
         "prefix": "S",
         "model": "claude-opus-5",
-        "action": "SELL",
-        "symbol": "AMD",
-        "confidence": 78,
-        "tone": "sell"
+        "action": "HOLD",
+        "symbol": "WMT",
+        "confidence": 80,
+        "tone": "hold"
       }
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 no new trade",
+      "detail": "Juniors directed SELL BAC, but BAC is only modestly green, far from stop or target, and remains the sole ranked candidate with a bullish debt-deal/valuation catalyst and neutral RSI. No technical breach or superior rotation candidate exists; book is full and cash is tight, so forced exit lacks edge. Reject the sell and stay flat on new risk.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "META",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "META",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "SELL",
+          "symbol": "AMD",
+          "confidence": 78,
+          "source": "fallback",
+          "provider": null,
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "SELL",
+          "symbol": "BAC",
+          "confidence": 70,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "WMT",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "exit",
+      "junior_nomination": "BAC",
+      "timestamp": "2026-09-22T17:19:08.118803+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "BAC",
@@ -889,83 +963,6 @@
       "stage": "entry",
       "junior_nomination": "BAC",
       "timestamp": "2026-09-22T15:33:04.141411+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "BAC",
-      "status": "no_consensus",
-      "headline": "BUY BAC \u2014 no consensus",
-      "detail": "Desks: BUY BAC (72%) vs HOLD CASH (65%) vs BUY BAC (90%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "BAC",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "BAC",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "deepseek-v4-flash",
-          "action": "BUY",
-          "symbol": "BAC",
-          "confidence": 72,
-          "source": "live",
-          "provider": "nous",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "BAC",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "BAC",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "BUY",
-          "symbol": "BAC",
-          "confidence": 90,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "entry",
-      "junior_nomination": "BAC",
-      "timestamp": "2026-09-22T15:20:06.031654+00:00"
     }
   ],
   "recent_trades": [
@@ -13025,15 +13022,15 @@
     {
       "symbol": "META",
       "name": "META",
-      "price": 741.6699829101562,
-      "volume": 18687495.0,
-      "avg_volume": 24119519.5,
-      "percent_change": 0.05665873998735245,
+      "price": 745.77001953125,
+      "volume": 19358062.0,
+      "avg_volume": 24186576.2,
+      "percent_change": 0.609783410623946,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 83.82,
-      "rank_score": 56.12,
+      "liquidity_score": 83.84,
+      "rank_score": 56.56,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Meta\u2019s stock is enjoying its best month in 13 years thanks to the company\u2019s hot new AI assistant - MarketWatch",
       "top_headlines": [
@@ -13057,6 +13054,13 @@
           ]
         },
         {
+          "title": "Wall Street expects Meta's AI agent to shape into a new revenue engine - Reuters",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
           "title": "Meta stocks surge after Muse launch - Fox Business",
           "keywords": [
             "catalyst",
@@ -13069,29 +13073,21 @@
             "ai",
             "catalyst"
           ]
-        },
-        {
-          "title": "Meta stock rallied 20% since Muse AI launch: Is META the best Mag 7 buy now? - Investing.com",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "launch"
-          ]
         }
       ]
     },
     {
       "symbol": "BAC",
       "name": "BAC",
-      "price": 56.3849983215332,
-      "volume": 20087857.0,
-      "avg_volume": 40254305.7,
-      "percent_change": -2.7173926635920047,
+      "price": 56.290000915527344,
+      "volume": 20572925.0,
+      "avg_volume": 40302812.5,
+      "percent_change": -2.8812943328577467,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
       "liquidity_score": 86.05,
-      "rank_score": 53.08,
+      "rank_score": 53.21,
       "news_hits": 7,
       "catalyst": "Headline-driven setup (ai, catalyst, deal): Is Bank of America (BAC) A Bargain As New Debt Deals Test Its Valuation? - Yahoo Finance",
       "top_headlines": [
@@ -13133,80 +13129,23 @@
       ]
     },
     {
-      "symbol": "AAPL",
-      "name": "AAPL",
-      "price": 342.2650146484375,
-      "volume": 20283445.0,
-      "avg_volume": 47189444.5,
-      "percent_change": 0.9690847706774861,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 6,
-      "liquidity_score": 86.74,
-      "rank_score": 45.29,
-      "news_hits": 6,
-      "catalyst": "Headline-driven setup (ai, catalyst): AAPL Stock Slides Nearly 10% \u2014 Apple\u2019s Earnings Divide Wall Street, But Retail Sees A Buying Opportunity - Stocktwits",
-      "top_headlines": [
-        "AAPL Stock Slides Nearly 10% \u2014 Apple\u2019s Earnings Divide Wall Street, But Retail Sees A Buying Opportunity - Stocktwits",
-        "What's Going On With Apple Stock Tuesday? - Apple (NASDAQ:AAPL) - Benzinga",
-        "AAPL 260923 245.00C (AAPL260923C245000) Stock Options Chain | Quotes & News - Moomoo"
-      ],
-      "matched_headlines": [
-        {
-          "title": "AAPL Stock Slides Nearly 10% \u2014 Apple\u2019s Earnings Divide Wall Street, But Retail Sees A Buying Opportunity - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "AAPL 260923 245.00C (AAPL260923C245000) Stock Options Chain | Quotes & News - Moomoo",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "(AAPL) Technical Patterns and Signals (AAPL:CA) - Stock Traders Daily",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "How to Play AAPL Stock Amid Reports Apple Is Building Its Own AI Server - Barchart.com",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Apple (AAPL) Stock Could Look 31% Overvalued On New Health Device Launches - simplywall.st",
-          "keywords": [
-            "catalyst",
-            "launch"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "LRCX",
       "name": "LRCX",
-      "price": 307.07000732421875,
-      "volume": 3355440.0,
-      "avg_volume": 10134804.0,
-      "percent_change": 1.5846263610776297,
+      "price": 306.5299987792969,
+      "volume": 3502913.0,
+      "avg_volume": 10149551.3,
+      "percent_change": 1.4059812151524602,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 6,
       "liquidity_score": 80.06,
-      "rank_score": 43.28,
+      "rank_score": 43.13,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): LRCX Eyes Mid-40s Operating Margin: Is the Long-Term Goal Achievable? - The Globe and Mail",
       "top_headlines": [
         "LRCX Eyes Mid-40s Operating Margin: Is the Long-Term Goal Achievable? - The Globe and Mail",
         "LRCX Eyes Mid-40s Operating Margin: Is the Long-Term Goal Achievable? - Zacks Investment Research",
-        "Why Lam Research (LRCX) Stock Is Up Today - quiverquant.com"
+        "Why Lam Research (LRCX) Stock Is Up Today - Quiver Quantitative"
       ],
       "matched_headlines": [
         {
@@ -13239,45 +13178,86 @@
       ]
     },
     {
-      "symbol": "PANW",
-      "name": "PANW",
-      "price": 370.7900085449219,
-      "volume": 2502355.0,
-      "avg_volume": 6548015.5,
-      "percent_change": -0.260921345820563,
+      "symbol": "UBER",
+      "name": "UBER",
+      "price": 70.16500091552734,
+      "volume": 9955163.0,
+      "avg_volume": 20238616.3,
+      "percent_change": -0.9528450836497887,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 6,
-      "liquidity_score": 78.16,
-      "rank_score": 40.43,
-      "news_hits": 7,
-      "catalyst": "Headline-driven setup (ai, catalyst): CRWD, PANW, NET, ZS: One Cybersecurity Stock Won Over Retail Investors \u2013 But Another Tops Wall Street\u2019s List - Stocktwits",
+      "liquidity_score": 83.06,
+      "rank_score": 41.72,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst, guidance): Lyft Stock Slips 3% After Hours As Q2 Guidance Trails Uber\u2019s Stronger Outlook - Stocktwits",
       "top_headlines": [
-        "CRWD, PANW, NET, ZS: One Cybersecurity Stock Won Over Retail Investors \u2013 But Another Tops Wall Street\u2019s List - Stocktwits",
-        "Get Paid 12% A Year To Wait For PANW Stock To Go On Sale - Trefis",
-        "3 Reasons to Sell PANW and 1 Stock to Buy Instead - Yahoo Finance"
+        "Uber, Micron, Datadog And A Health Care Stock: CNBC\u2019s \u2018Final Trades\u2019 - Benzinga",
+        "Uber Technologies vs. DoorDash: Which Technology Stock Is a Better Buy in 2026? - The Motley Fool",
+        "Robotaxi competition revs up, weighing on Uber and Lyft stocks - Yahoo Finance"
       ],
       "matched_headlines": [
         {
-          "title": "CRWD, PANW, NET, ZS: One Cybersecurity Stock Won Over Retail Investors \u2013 But Another Tops Wall Street\u2019s List - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Get Paid 12% A Year To Wait For PANW Stock To Go On Sale - Trefis",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "PANW Maintained by Morgan Stanley -- Price Target Raised to $410 - GuruFocus",
+          "title": "Lyft Stock Slips 3% After Hours As Q2 Guidance Trails Uber\u2019s Stronger Outlook - Stocktwits",
           "keywords": [
             "ai",
             "catalyst",
-            "raised"
+            "guidance"
+          ]
+        },
+        {
+          "title": "UBER or GRAB: Which Ride-Hailing Stock Holds More Promise Now? - Zacks Investment Research",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Why Is Uber Technologies (UBER) Back In Focus After Its $15 Billion Deal Progress? - Yahoo Finance",
+          "keywords": [
+            "catalyst",
+            "deal"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "GS",
+      "name": "GS",
+      "price": 948.5999755859375,
+      "volume": 933166.0,
+      "avg_volume": 2289256.6,
+      "percent_change": -1.1246770237080217,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 6,
+      "liquidity_score": 73.6,
+      "rank_score": 40.44,
+      "news_hits": 6,
+      "catalyst": "Headline-driven setup (ai, catalyst): GS Looks 12.9% Overvalued on GF Value\u2122 as Dividend Sustainabilit - GuruFocus",
+      "top_headlines": [
+        "Goldman Sachs (GS) Rises Higher Than Market: Key Facts - Yahoo Finance",
+        "S&P 500, Nasdaq End Higher On Support From Chipmakers, Cybersecurity Stocks And Soft Inflation Data \u2014 NVDA, GS, SKHY, VZ, LCID In Focus - Stocktwits",
+        "Goldman Sachs Sinks Toward Bear-Market Territory\u2014Time To Buy (NYSE:GS) - Seeking Alpha"
+      ],
+      "matched_headlines": [
+        {
+          "title": "GS Looks 12.9% Overvalued on GF Value\u2122 as Dividend Sustainabilit - GuruFocus",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "The Goldman Sachs Group, Inc. (NYSE:GS) Receives Average Rating of \"Moderate Buy\" from Analysts - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Goldman Sachs (NYSE:GS) Faces Market activity and financing demand under closer - Kalkine Media",
+          "keywords": [
+            "demand"
           ]
         }
       ]
@@ -13309,9 +13289,9 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 2,
-      "BUY": 1,
-      "SELL": 1,
+      "HOLD": 0,
+      "BUY": 2,
+      "SELL": 2,
       "live": 3,
       "fallback": 0
     },
@@ -13328,24 +13308,24 @@
     "log_all_disagreements": true,
     "decision_mode": "live_dual_llm",
     "last_tier": "senior_escalated",
-    "last_stage": "entry",
-    "last_junior_nomination": null,
-    "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 89.0
+    "last_stage": "exit",
+    "last_junior_nomination": "BAC",
+    "last_escalate_reason": "junior_nomination",
+    "live_share_recent": 87.8
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 354,
     "closed_outcomes": 161,
-    "consensus_events": 758,
+    "consensus_events": 759,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1049.37,
-    "change": 49.37,
-    "change_pct": 4.94,
+    "latest_equity": 1049.21,
+    "change": 49.21,
+    "change_pct": 4.92,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15820,8 +15800,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-22T17:10:57.604990+00:00",
-        "equity": 1049.37,
+        "t": "2026-09-22T17:19:24.783208+00:00",
+        "equity": 1049.21,
         "cash": 40.29,
         "event": "mark"
       }
