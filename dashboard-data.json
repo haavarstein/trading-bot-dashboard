@@ -1,37 +1,37 @@
 {
-  "generated_at": "2026-09-23T14:00:19.721551+00:00",
+  "generated_at": "2026-09-23T14:03:25.243380+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1050.96,
+    "portfolio_value": 1049.94,
     "starting_cash": 1000.0,
-    "total_return_pct": 5.1,
-    "total_pnl": 50.96,
-    "realized_pnl": 22.95,
-    "open_pnl": 27.96,
-    "capital_deployed": 1010.67,
-    "cash": 40.29,
-    "closed_trades": 39,
-    "win_rate_pct": 30.77,
-    "vs_spy_pct": 4.9,
-    "spy_return_pct": 0.2,
+    "total_return_pct": 4.99,
+    "total_pnl": 49.94,
+    "realized_pnl": 37.9,
+    "open_pnl": 11.99,
+    "capital_deployed": 798.25,
+    "cash": 251.69,
+    "closed_trades": 40,
+    "win_rate_pct": 32.5,
+    "vs_spy_pct": 4.84,
+    "spy_return_pct": 0.15,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-23T14:00:22.386940+00:00"
+    "updated_at": "2026-09-23T14:03:27.850254+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.2,
-    "price": 770.9400024414062,
+    "return_pct": 0.15,
+    "price": 770.5299072265625,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 0,
-    "validated_count_today": 0,
+    "consensus_count_today": 1,
+    "validated_count_today": 1,
     "blocked_count_today": 0,
-    "fills_today": 0,
-    "simulated_orders_today": 0,
-    "top_symbol_today": "BAC"
+    "fills_today": 1,
+    "simulated_orders_today": 1,
+    "top_symbol_today": "TSLA"
   },
   "holdings": [
     {
@@ -47,25 +47,13 @@
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
     },
     {
-      "symbol": "TSLA",
-      "qty": 0.55,
-      "avg_cost": 357.18,
-      "last": 385.80999755859375,
-      "market_value": 212.2,
-      "open_pnl": 15.75,
-      "open_pnl_pct": 8.02,
-      "stop": 342.0,
-      "target": 380.0,
-      "thesis": "TSLA tops the ranked catalyst list on a PG&E grid deal headline with bullish sentiment and neutral RSI, offering a liquid setup while the book still has open slots and cash. Valuation is debated but the rank/catalyst edge is the cleanest available versus held names that are already working. Small notional keeps risk tight with stop/target structured for at least 1.5 R:R."
-    },
-    {
       "symbol": "AMZN",
       "qty": 0.8,
       "avg_cost": 248.31,
-      "last": 250.19000244140625,
-      "market_value": 200.15,
-      "open_pnl": 1.5,
-      "open_pnl_pct": 0.76,
+      "last": 249.98500061035156,
+      "market_value": 199.99,
+      "open_pnl": 1.34,
+      "open_pnl_pct": 0.67,
       "stop": 240.0,
       "target": 262.0,
       "thesis": "AMZN shows a ranked liquid setup with bullish sentiment and a headline institutional buy catalyst supporting near-term momentum. RSI near 50 leaves room for upside without overbought conditions. Portfolio has capacity for one more name under the 5-position guideline and cash covers a sub-$200 notional entry. Risk defined below recent support with 1.5+ R:R to the target."
@@ -74,10 +62,10 @@
       "symbol": "AMD",
       "qty": 0.32,
       "avg_cost": 609.82,
-      "last": 616.739990234375,
-      "market_value": 197.36,
-      "open_pnl": 2.21,
-      "open_pnl_pct": 1.13,
+      "last": 616.77001953125,
+      "market_value": 197.37,
+      "open_pnl": 2.22,
+      "open_pnl_pct": 1.14,
       "stop": 585.0,
       "target": 655.0,
       "thesis": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity."
@@ -86,120 +74,110 @@
       "symbol": "BAC",
       "qty": 3.5,
       "avg_cost": 56.14,
-      "last": 56.20000076293945,
-      "market_value": 196.7,
-      "open_pnl": 0.21,
-      "open_pnl_pct": 0.11,
+      "last": 56.18000030517578,
+      "market_value": 196.63,
+      "open_pnl": 0.14,
+      "open_pnl_pct": 0.07,
       "stop": 53.9,
       "target": 59.9,
       "thesis": "BAC is the sole ranked liquid candidate with a bullish headline catalyst framing valuation support amid new debt deals. RSI near 50 leaves room for upside without extreme extension. Book has room under the five-name cap and cash supports a sub-$200 notional add with defined risk. Reward-to-risk meets desk minimum on a clean new_entry."
     }
   ],
   "latest_candidate": {
-    "symbol": "BAC",
-    "name": "BAC",
-    "price": 56.494998931884766,
-    "volume": 27703504.0,
-    "avg_volume": 41017550.4,
-    "percent_change": -2.5276055481863535,
+    "symbol": "NVDA",
+    "name": "NVDA",
+    "price": 227.85499572753906,
+    "volume": 11761966.0,
+    "avg_volume": 101973929.55555555,
+    "percent_change": 0.2088973676341348,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 10,
-    "liquidity_score": 86.13,
-    "rank_score": 60.94,
+    "catalyst_score": 12,
+    "liquidity_score": 90.08,
+    "rank_score": 67.68,
     "news_hits": 7,
-    "catalyst": "Headline-driven setup (ai, catalyst, deal): Is Bank of America (BAC) A Bargain As New Debt Deals Test Its Valuation? - Yahoo Finance",
+    "catalyst": "Headline-driven setup (ai, beat, catalyst): NVDA Stock Looks 'Remarkably Cheap', Says Wall Street After Beat-And-Raise Q1 \u2014 Analyst Sees Nvidia Market Cap Soaring Past $10 Trillion - Stocktwits",
     "top_headlines": [
-      "Why Bank of America (BAC) Stock Is Down Today - Quiver Quantitative",
-      "Is Bank of America (BAC) A Bargain As New Debt Deals Test Its Valuation? - Yahoo Finance",
-      "Six banks partner to develop principles for future development of agentic commerce (BAC:NYSE) - Seeking Alpha"
+      "NVDA Stock Looks 'Remarkably Cheap', Says Wall Street After Beat-And-Raise Q1 \u2014 Analyst Sees Nvidia Market Cap Soaring Past $10 Trillion - Stocktwits",
+      "Nvidia (NVDA) Stock Could Be A Bargain After AI Expansion - simplywall.st",
+      "NVDA Stock Eyes the $236 Record High as 2027 NVIDIA Growth Forecasts Rise - FXLeaders"
     ],
     "matched_headlines": [
       {
-        "title": "Is Bank of America (BAC) A Bargain As New Debt Deals Test Its Valuation? - Yahoo Finance",
+        "title": "NVDA Stock Looks 'Remarkably Cheap', Says Wall Street After Beat-And-Raise Q1 \u2014 Analyst Sees Nvidia Market Cap Soaring Past $10 Trillion - Stocktwits",
         "keywords": [
           "ai",
-          "catalyst",
-          "deal"
-        ]
-      },
-      {
-        "title": "Andra AP fonden Has $62.41 Million Position in Bank of America Corporation $BAC - MarketBeat",
-        "keywords": [
-          "beat"
-        ]
-      },
-      {
-        "title": "Bank of America (BAC) Stock Trades Below Fair Value On Its 124% Run - simplywall.st",
-        "keywords": [
-          "ai",
+          "beat",
           "catalyst"
         ]
       },
       {
-        "title": "Will AI Become BAC's Next Major Efficiency & Growth Lever? - TradingView",
+        "title": "Nvidia (NVDA) Stock Could Be A Bargain After AI Expansion - simplywall.st",
         "keywords": [
           "ai",
           "catalyst",
-          "growth"
+          "expansion"
+        ]
+      },
+      {
+        "title": "NVDA Stock Eyes the $236 Record High as 2027 NVIDIA Growth Forecasts Rise - FXLeaders",
+        "keywords": [
+          "growth",
+          "record"
+        ]
+      },
+      {
+        "title": "NVDA 260923 215.00C (NVDA260923C215000) Stock Options Chain | Quotes & News - Moomoo",
+        "keywords": [
+          "ai",
+          "catalyst"
         ]
       }
     ]
   },
   "latest_decision": {
-    "model": "grok-4.3",
-    "action": "HOLD",
-    "symbol": "CASH",
-    "confidence": 60,
-    "cache_stats": null,
-    "entry_price": 0.0,
-    "stop_loss": 0.0,
-    "take_profit": 0.0,
-    "qty": 0.0,
-    "thesis": "Portfolio at max 5 names with limited cash. Top candidate BAC already held with positive but modest P/L. LRCX ranks close but not materially superior to justify rotation from weakest hold (BAC). No setup meets criteria for new entry or rotation.",
-    "reason_code": "hold",
+    "model": "risk-gate",
+    "action": "SELL",
+    "symbol": "TSLA",
+    "confidence": 90,
+    "entry_price": 384.3599853515625,
+    "stop_loss": 342.0,
+    "take_profit": 380.0,
+    "qty": 0.55,
+    "thesis": "HERMES AUTO-TRADE: Exiting full TSLA position on take-profit. Price $384.36 reached target $380.00. Realized path $+14.95.",
+    "reason_code": "take_profit",
     "reasoning": {
-      "headline": "Hold $CASH",
-      "narrative": "Portfolio at max 5 names with limited cash. Top candidate BAC already held with positive but modest P/L. LRCX ranks close but not materially superior to justify rotation from weakest hold (BAC). No setup meets criteria for new entry or rotation.",
+      "headline": "Sold $TSLA",
+      "narrative": "HERMES AUTO-TRADE: Exiting full TSLA position on take-profit. Price $384.36 reached target $380.00. Realized path $+14.95.",
       "bullets": [
-        "Book full at 5 positions",
-        "Cash insufficient for new buy",
-        "BAC top candidate but already held",
-        "No rotation edge vs current holdings"
+        "Target zone filled; lock gains and free risk budget.",
+        "No trail extension in current paper rules."
       ],
       "risk_map": {
-        "stop": 0.0,
-        "target": 0.0,
+        "stop": 342.0,
+        "target": 380.0,
         "horizon_days": 5,
-        "rr": 0.0,
-        "confidence_10": 6,
-        "confidence": 60
+        "rr": 1.5,
+        "confidence_10": 9,
+        "confidence": 90
       },
-      "thesis": "Portfolio at max 5 names with limited cash. Top candidate BAC already held with positive but modest P/L. LRCX ranks close but not materially superior to justify rotation from weakest hold (BAC). No setup meets criteria for new entry or rotation."
+      "thesis": "HERMES AUTO-TRADE: Exiting full TSLA position on take-profit. Price $384.36 reached target $380.00. Realized path $+14.95."
     },
-    "source": "live",
-    "provider": "xai",
-    "provider_model_id": "grok-4.3",
-    "bullets": [
-      "Book full at 5 positions",
-      "Cash insufficient for new buy",
-      "BAC top candidate but already held",
-      "No rotation edge vs current holdings"
-    ],
-    "timestamp": "2026-09-22T19:47:13.898459+00:00"
+    "stage": "exit",
+    "timestamp": "2026-09-23T14:03:12.137860+00:00"
   },
-  "stance": "Holding WMT, TSLA, AMZN, AMD, BAC. No new trade right now.",
+  "stance": "Holding WMT, AMZN, AMD, BAC. No new trade right now. HERMES AUTO-TRADE: Exiting full TSLA position on take-profit. Price $384.36 reached target $380.00. Realized path $+14.95.",
   "thinking": {
     "badge": "Holding what it owns",
-    "headline": "Holding WMT, TSLA, AMZN, AMD, BAC. No new trade right now.",
-    "plain_english": "Right now Hermes is holding WMT, TSLA, AMZN, AMD, BAC and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
+    "headline": "Holding WMT, AMZN, AMD, BAC. No new trade right now.",
+    "plain_english": "Right now Hermes is holding WMT, AMZN, AMD, BAC and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
     "triggers": [
       "It owns WMT, bought near $105.93. Simple plan: sell if it falls to about $102.50, or take profit near $112.00.",
-      "It owns TSLA, bought near $357.18. Simple plan: sell if it falls to about $342.00, or take profit near $380.00.",
       "It owns AMZN, bought near $248.31. Simple plan: sell if it falls to about $240.00, or take profit near $262.00.",
       "It owns AMD, bought near $609.82. Simple plan: sell if it falls to about $585.00, or take profit near $655.00.",
       "It owns BAC, bought near $56.14. Simple plan: sell if it falls to about $53.90, or take profit near $59.90.",
-      "Book is at max open names (5). A new buy needs a free slot, enough cash, or a gated rotation.",
+      "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
+      "Top scanner name right now is NVDA, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
       "If nothing looks clean, do nothing. Sitting in cash or holdings is allowed."
     ],
     "owned": [
@@ -216,26 +194,14 @@
         "plan": "stop 102.5 or target 112.0"
       },
       {
-        "symbol": "TSLA",
-        "qty": 0.55,
-        "avg_cost": 357.18,
-        "stop": 342.0,
-        "target": 380.0,
-        "last": 385.80999755859375,
-        "open_pnl": 15.75,
-        "open_pnl_pct": 8.02,
-        "line": "Bought near $357.18 \u00b7 Sell safety line $342.00 \u00b7 Profit target $380.00",
-        "plan": "stop 342.0 or target 380.0"
-      },
-      {
         "symbol": "AMZN",
         "qty": 0.8,
         "avg_cost": 248.31,
         "stop": 240.0,
         "target": 262.0,
-        "last": 250.19000244140625,
-        "open_pnl": 1.5,
-        "open_pnl_pct": 0.76,
+        "last": 249.98500061035156,
+        "open_pnl": 1.34,
+        "open_pnl_pct": 0.67,
         "line": "Bought near $248.31 \u00b7 Sell safety line $240.00 \u00b7 Profit target $262.00",
         "plan": "stop 240.0 or target 262.0"
       },
@@ -245,9 +211,9 @@
         "avg_cost": 609.82,
         "stop": 585.0,
         "target": 655.0,
-        "last": 616.739990234375,
-        "open_pnl": 2.21,
-        "open_pnl_pct": 1.13,
+        "last": 616.77001953125,
+        "open_pnl": 2.22,
+        "open_pnl_pct": 1.14,
         "line": "Bought near $609.82 \u00b7 Sell safety line $585.00 \u00b7 Profit target $655.00",
         "plan": "stop 585.0 or target 655.0"
       },
@@ -257,61 +223,80 @@
         "avg_cost": 56.14,
         "stop": 53.9,
         "target": 59.9,
-        "last": 56.20000076293945,
-        "open_pnl": 0.21,
-        "open_pnl_pct": 0.11,
+        "last": 56.18000030517578,
+        "open_pnl": 0.14,
+        "open_pnl_pct": 0.07,
         "line": "Bought near $56.14 \u00b7 Sell safety line $53.90 \u00b7 Profit target $59.90",
         "plan": "stop 53.9 or target 59.9"
       }
     ],
-    "last_checked": "2026-09-23T14:00:19.721551+00:00",
+    "last_checked": "2026-09-23T14:03:25.243380+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "HOLD",
+    "action": "SELL",
     "symbols_held": [
       "WMT",
-      "TSLA",
       "AMZN",
       "AMD",
       "BAC"
     ],
-    "model_chips": [
-      {
-        "prefix": "J",
-        "model": "grok-4.3",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 60,
-        "tone": "hold"
-      },
-      {
-        "prefix": "J",
-        "model": "claude-haiku-4-5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 62,
-        "tone": "hold"
-      },
-      {
-        "prefix": "J",
-        "model": "deepseek-v4-flash",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 65,
-        "tone": "hold"
-      },
-      {
-        "prefix": "J",
-        "model": "grok-build-0.1",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 60,
-        "tone": "hold"
-      }
-    ]
+    "model_chips": []
   },
-  "activity": [],
+  "activity": [
+    {
+      "type": "fill",
+      "symbol": "TSLA",
+      "status": "filled_paper",
+      "headline": "SELL TSLA @ $384.36",
+      "detail": "HERMES AUTO-TRADE: Exiting full TSLA position on take-profit. Price $384.36 reached target $380.00. Realized path $+14.95.",
+      "timestamp": "2026-09-23T14:03:12.140860+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "TSLA",
+      "status": "validated",
+      "headline": "SELL TSLA \u2014 validated",
+      "detail": "deterministic take_profit exit",
+      "agents": [
+        {
+          "model": "risk-gate",
+          "action": "SELL",
+          "symbol": "TSLA",
+          "confidence": 90,
+          "source": null,
+          "provider": null,
+          "tier": "senior"
+        },
+        {
+          "model": "risk-gate",
+          "action": "SELL",
+          "symbol": "TSLA",
+          "confidence": 90,
+          "source": null,
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "risk_exit",
+      "escalate_reason": "take_profit",
+      "stage": "exit",
+      "junior_nomination": null,
+      "timestamp": "2026-09-23T14:03:12.137860+00:00"
+    }
+  ],
   "recent_trades": [
+    {
+      "timestamp": "2026-09-23T14:03:12.140860+00:00",
+      "action": "SELL",
+      "symbol": "TSLA",
+      "qty": 0.55,
+      "price": 384.3599853515625,
+      "notional": 211.4,
+      "realized_pnl": 14.95,
+      "reason": "take_profit",
+      "thesis": "HERMES AUTO-TRADE: Exiting full TSLA position on take-profit. Price $384.36 reached target $380.00. Realized path $+14.95.",
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-09-22T15:33:04.142407+00:00",
       "action": "BUY",
@@ -419,21 +404,35 @@
       "reason": "take_profit",
       "thesis": "HERMES AUTO-TRADE: Exiting full XOM position on take-profit. Price $169.51 reached target $169.50. Realized path $+10.83.",
       "status": "FILLED_PAPER"
-    },
-    {
-      "timestamp": "2026-09-15T16:47:31.980723+00:00",
-      "action": "BUY",
-      "symbol": "LRCX",
-      "qty": 0.74,
-      "price": 267.36,
-      "notional": 197.85,
-      "realized_pnl": null,
-      "reason": null,
-      "thesis": "LRCX ranks top of the candidate list on a fresh institutional-lift/beat headline with bullish sentiment and neutral RSI, offering a liquid semi-equipment catalyst setup. Book has room under the 5-name cap and ~$200 notional can be deployed without forcing a rotation. Risk defined below recent support with target sized for at least 1.5:1 reward-to-risk while existing XOM/WMT/META holds remain constructive.",
-      "status": "FILLED_PAPER"
     }
   ],
   "trade_reasoning": [
+    {
+      "timestamp": "2026-09-23T14:03:12.140860+00:00",
+      "action": "SELL",
+      "symbol": "TSLA",
+      "qty": 0.55,
+      "price": 384.3599853515625,
+      "notional": 211.4,
+      "headline": "Sold $TSLA",
+      "side_label": "sell",
+      "narrative": "HERMES AUTO-TRADE: Exiting full TSLA position on take-profit. Price $384.36 reached target $380.00. Realized path $+14.95.",
+      "bullets": [
+        "Target zone filled; lock gains and free risk budget.",
+        "No trail extension in current paper rules."
+      ],
+      "risk_map": {
+        "stop": 342.0,
+        "target": 380.0,
+        "horizon_days": 5,
+        "rr": 1.5,
+        "confidence_10": 9,
+        "confidence": 90
+      },
+      "reason_code": "take_profit",
+      "realized_pnl": 14.95,
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-09-22T15:33:04.142407+00:00",
       "action": "BUY",
@@ -9828,6 +9827,20 @@
   ],
   "closed_trades": [
     {
+      "timestamp": "2026-09-23T14:03:12.138867+00:00",
+      "symbol": "TSLA",
+      "qty": 0.55,
+      "avg_cost": 357.18,
+      "exit_price": 384.3599853515625,
+      "proceeds": 211.4,
+      "realized_pnl": 14.95,
+      "realized_pnl_pct": 7.61,
+      "reason": "take_profit",
+      "thesis": "HERMES AUTO-TRADE: Exiting full TSLA position on take-profit. Price $384.36 reached target $380.00. Realized path $+14.95.",
+      "opened_at": "2026-09-15T19:05:16.206633+00:00",
+      "hold_seconds": 673075
+    },
+    {
       "timestamp": "2026-09-21T14:03:06.486534+00:00",
       "symbol": "LRCX",
       "qty": 0.74,
@@ -10092,23 +10105,23 @@
       "thesis": "HERMES AUTO-TRADE: Exiting full PANW position on stop-loss. Price $338.57 tagged invalidation at $340.00. Realized path $-6.83.",
       "opened_at": "2026-08-24T16:17:07.782369+00:00",
       "hold_seconds": 91863
-    },
-    {
-      "timestamp": "2026-08-25T14:18:25.586764+00:00",
-      "symbol": "CVX",
-      "qty": 0.97,
-      "avg_cost": 205.59,
-      "exit_price": 201.125,
-      "proceeds": 195.09,
-      "realized_pnl": -4.33,
-      "realized_pnl_pct": -2.17,
-      "reason": "rotation",
-      "thesis": "CVX is the weakest open position with the largest unrealized loss and price drifting toward the stop. Juniors escalated an explicit SELL on CVX; confirming the exit to free risk and cash given no offsetting catalyst strength in the candidate set. Reward-to-risk on the original plan no longer justifies holding into further downside.",
-      "opened_at": "2026-08-21T18:47:29.571333+00:00",
-      "hold_seconds": 329456
     }
   ],
   "closed_results": [
+    {
+      "timestamp": "2026-09-23T14:03:12.138867+00:00",
+      "symbol": "TSLA",
+      "qty": 0.55,
+      "avg_cost": 357.18,
+      "exit_price": 384.3599853515625,
+      "proceeds": 211.4,
+      "realized_pnl": 14.95,
+      "realized_pnl_pct": 7.61,
+      "reason": "take_profit",
+      "thesis": "HERMES AUTO-TRADE: Exiting full TSLA position on take-profit. Price $384.36 reached target $380.00. Realized path $+14.95.",
+      "opened_at": "2026-09-15T19:05:16.206633+00:00",
+      "hold_seconds": 673075
+    },
     {
       "timestamp": "2026-09-21T14:03:06.486534+00:00",
       "symbol": "LRCX",
@@ -12243,18 +12256,18 @@
     },
     {
       "symbol": "TSLA",
-      "timestamp": "2026-08-21T18:38:07.885678+00:00",
-      "opened_at": "2026-08-19T13:33:49.451766+00:00",
-      "qty": 0.58,
-      "entry_price": 339.55,
-      "exit_price": 364.3500061035156,
-      "entry_value": 196.94,
-      "exit_value": 211.32,
-      "realized_pnl": 14.38,
-      "realized_pnl_pct": 7.3,
+      "timestamp": "2026-09-23T14:03:12.138867+00:00",
+      "opened_at": "2026-09-15T19:05:16.206633+00:00",
+      "qty": 0.55,
+      "entry_price": 357.18,
+      "exit_price": 384.3599853515625,
+      "entry_value": 196.45,
+      "exit_value": 211.4,
+      "realized_pnl": 14.95,
+      "realized_pnl_pct": 7.61,
       "reason": "take_profit",
       "take_profit_hit": true,
-      "hold_seconds": 191058
+      "hold_seconds": 673075
     },
     {
       "symbol": "XOM",
@@ -12366,190 +12379,150 @@
   ],
   "top_candidates": [
     {
-      "symbol": "BAC",
-      "name": "BAC",
-      "price": 56.494998931884766,
-      "volume": 27703504.0,
-      "avg_volume": 41017550.4,
-      "percent_change": -2.5276055481863535,
+      "symbol": "NVDA",
+      "name": "NVDA",
+      "price": 227.85499572753906,
+      "volume": 11761966.0,
+      "avg_volume": 101973929.55555555,
+      "percent_change": 0.2088973676341348,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 10,
-      "liquidity_score": 86.13,
-      "rank_score": 60.94,
+      "catalyst_score": 12,
+      "liquidity_score": 90.08,
+      "rank_score": 67.68,
       "news_hits": 7,
-      "catalyst": "Headline-driven setup (ai, catalyst, deal): Is Bank of America (BAC) A Bargain As New Debt Deals Test Its Valuation? - Yahoo Finance",
+      "catalyst": "Headline-driven setup (ai, beat, catalyst): NVDA Stock Looks 'Remarkably Cheap', Says Wall Street After Beat-And-Raise Q1 \u2014 Analyst Sees Nvidia Market Cap Soaring Past $10 Trillion - Stocktwits",
       "top_headlines": [
-        "Why Bank of America (BAC) Stock Is Down Today - Quiver Quantitative",
-        "Is Bank of America (BAC) A Bargain As New Debt Deals Test Its Valuation? - Yahoo Finance",
-        "Six banks partner to develop principles for future development of agentic commerce (BAC:NYSE) - Seeking Alpha"
+        "NVDA Stock Looks 'Remarkably Cheap', Says Wall Street After Beat-And-Raise Q1 \u2014 Analyst Sees Nvidia Market Cap Soaring Past $10 Trillion - Stocktwits",
+        "Nvidia (NVDA) Stock Could Be A Bargain After AI Expansion - simplywall.st",
+        "NVDA Stock Eyes the $236 Record High as 2027 NVIDIA Growth Forecasts Rise - FXLeaders"
       ],
       "matched_headlines": [
         {
-          "title": "Is Bank of America (BAC) A Bargain As New Debt Deals Test Its Valuation? - Yahoo Finance",
+          "title": "NVDA Stock Looks 'Remarkably Cheap', Says Wall Street After Beat-And-Raise Q1 \u2014 Analyst Sees Nvidia Market Cap Soaring Past $10 Trillion - Stocktwits",
+          "keywords": [
+            "ai",
+            "beat",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Nvidia (NVDA) Stock Could Be A Bargain After AI Expansion - simplywall.st",
           "keywords": [
             "ai",
             "catalyst",
-            "deal"
+            "expansion"
           ]
         },
         {
-          "title": "Andra AP fonden Has $62.41 Million Position in Bank of America Corporation $BAC - MarketBeat",
+          "title": "NVDA Stock Eyes the $236 Record High as 2027 NVIDIA Growth Forecasts Rise - FXLeaders",
           "keywords": [
-            "beat"
+            "growth",
+            "record"
           ]
         },
         {
-          "title": "Bank of America (BAC) Stock Trades Below Fair Value On Its 124% Run - simplywall.st",
+          "title": "NVDA 260923 215.00C (NVDA260923C215000) Stock Options Chain | Quotes & News - Moomoo",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "MSFT",
+      "name": "MSFT",
+      "price": 503.5899963378906,
+      "volume": 4660519.0,
+      "avg_volume": 19798935.444444444,
+      "percent_change": 0.39473117444829137,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 11,
+      "liquidity_score": 82.97,
+      "rank_score": 59.76,
+      "news_hits": 6,
+      "catalyst": "Headline-driven setup (growth): MSFT Stock Rises Premarket Ahead Of Q4 Results: CapEx, Azure Growth In Focus - Stocktwits",
+      "top_headlines": [
+        "What's Going On With Microsoft Stock Wednesday? - Microsoft (NASDAQ:MSFT) - Benzinga",
+        "MSFT Stock Rises Premarket Ahead Of Q4 Results: CapEx, Azure Growth In Focus - Stocktwits",
+        "MSFT Ticks Up Overnight: Analyst Upgrades To \u2018Buy\u2019 And Sees 15% Upside On AI Growth, Cost Discipline - Yahoo Finance"
+      ],
+      "matched_headlines": [
+        {
+          "title": "MSFT Stock Rises Premarket Ahead Of Q4 Results: CapEx, Azure Growth In Focus - Stocktwits",
+          "keywords": [
+            "growth"
+          ]
+        },
+        {
+          "title": "MSFT Ticks Up Overnight: Analyst Upgrades To \u2018Buy\u2019 And Sees 15% Upside On AI Growth, Cost Discipline - Yahoo Finance",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "growth",
+            "upgrade",
+            "upgrades"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "PLTR",
+      "name": "PLTR",
+      "price": 190.4801025390625,
+      "volume": 8712548.0,
+      "avg_volume": 23545649.777777776,
+      "percent_change": 4.036324402745365,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 9,
+      "liquidity_score": 83.72,
+      "rank_score": 59.29,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst): Get Paid 8.9% A Year To Wait For PLTR Stock To Go On Sale - Trefis",
+      "top_headlines": [
+        "Get Paid 8.9% A Year To Wait For PLTR Stock To Go On Sale - Trefis",
+        "Michael Burry Doubles Down On Palantir Bear Case: \u2018A Lot Of\u2019 Money Still To Be Made Shorting PLTR - Yahoo Finance",
+        "Palantir Technologies Inc Stock (PLTR) Opened Up by 3.58% on Sep 23: Key Drivers Unveiled - TradingKey"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Get Paid 8.9% A Year To Wait For PLTR Stock To Go On Sale - Trefis",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "Will AI Become BAC's Next Major Efficiency & Growth Lever? - TradingView",
+          "title": "Palantir Stock Forecast: PLTR Holds Near $185 as AI Growth Drives Rally - FXLeaders",
           "keywords": [
             "ai",
             "catalyst",
             "growth"
           ]
-        }
-      ]
-    },
-    {
-      "symbol": "LRCX",
-      "name": "LRCX",
-      "price": 309.7749938964844,
-      "volume": 5390829.0,
-      "avg_volume": 10339432.9,
-      "percent_change": 2.4794876099823613,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 9,
-      "liquidity_score": 80.14,
-      "rank_score": 57.5,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): LRCX Eyes Mid-40s Operating Margin: Is the Long-Term Goal Achievable? - The Globe and Mail",
-      "top_headlines": [
-        "LRCX Eyes Mid-40s Operating Margin: Is the Long-Term Goal Achievable? - The Globe and Mail",
-        "State Street Corp Grows Position in Lam Research Corporation $LRCX - MarketBeat",
-        "Why Lam Research (LRCX) Stock Is Up Today - Quiver Quantitative"
-      ],
-      "matched_headlines": [
+        },
         {
-          "title": "LRCX Eyes Mid-40s Operating Margin: Is the Long-Term Goal Achievable? - The Globe and Mail",
+          "title": "PLTR Stock Heads for Worst Month Ever: Retail Awaits Dip Below $100, Michael Burry Takes Victory Lap - Stocktwits",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "State Street Corp Grows Position in Lam Research Corporation $LRCX - MarketBeat",
+          "title": "PLTR Looks 2.5% Overvalued on GF Value\u2122 as AI Enhancements Drive Military Demand - GuruFocus",
           "keywords": [
-            "beat"
+            "ai",
+            "catalyst",
+            "demand"
           ]
         },
         {
-          "title": "LRCX 260925 327.50P (LRCX260925P327500) Stock Options Chain | Quotes & News - Moomoo",
+          "title": "PLTR 260911 75.00P (PLTR260911P75000) Stock Options Chain | Quotes & News - Moomoo",
           "keywords": [
             "ai",
             "catalyst"
-          ]
-        },
-        {
-          "title": "Lam Research (NASDAQ:LRCX) Stock Price Up 4.9% - Here's What Happened - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "New Buy Rating for Lam Research (LRCX), the Technology Giant - The Globe and Mail",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "GS",
-      "name": "GS",
-      "price": 952.9600219726562,
-      "volume": 1389636.0,
-      "avg_volume": 2334903.6,
-      "percent_change": -0.6702167604003552,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 6,
-      "liquidity_score": 73.68,
-      "rank_score": 41.59,
-      "news_hits": 6,
-      "catalyst": "Headline-driven setup (beat): The Goldman Sachs Group, Inc. $GS Shares Sold by State Street Corp - MarketBeat",
-      "top_headlines": [
-        "The Goldman Sachs Group, Inc. $GS Shares Sold by State Street Corp - MarketBeat",
-        "Goldman Sachs (GS) Rises Higher Than Market: Key Facts - Yahoo Finance",
-        "Teradyne Partners With GS Microelectronics On New Semiconductor Test Center \u2014 Targets AI, Silicon Photonics And Auto Chips - Stocktwits"
-      ],
-      "matched_headlines": [
-        {
-          "title": "The Goldman Sachs Group, Inc. $GS Shares Sold by State Street Corp - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Teradyne Partners With GS Microelectronics On New Semiconductor Test Center \u2014 Targets AI, Silicon Photonics And Auto Chips - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "GS Looks 12.9% Overvalued on GF Value\u2122 as Dividend Sustainabilit - GuruFocus",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Teradyne Partners With GS Microelectronics On New Semiconductor Test Center \u2014 Targets AI, Silicon Photonics And Auto Chips - TradingView",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "WMT",
-      "name": "WMT",
-      "price": 110.08999633789062,
-      "volume": 11413604.0,
-      "avg_volume": 20798320.4,
-      "percent_change": 2.4664871893777014,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 6,
-      "liquidity_score": 83.18,
-      "rank_score": 41.45,
-      "news_hits": 6,
-      "catalyst": "Headline-driven setup (beat): State Street Corp Grows Stock Holdings in Walmart Inc. $WMT - MarketBeat",
-      "top_headlines": [
-        "State Street Corp Grows Stock Holdings in Walmart Inc. $WMT - MarketBeat",
-        "Is Walmart (NASDAQ:WMT) Stock Worth Watching Today? - Kalkine Media",
-        "S&P 500, Nasdaq End Lower As Investors Continue Rotation Out Of Tech And Chipmakers \u2014 WMT, META, GM, KR, QCOM In Focus - Stocktwits"
-      ],
-      "matched_headlines": [
-        {
-          "title": "State Street Corp Grows Stock Holdings in Walmart Inc. $WMT - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Andra AP fonden Sells 57,100 Shares of Walmart Inc. $WMT - MarketBeat",
-          "keywords": [
-            "beat"
           ]
         }
       ]
@@ -12557,28 +12530,29 @@
     {
       "symbol": "META",
       "name": "META",
-      "price": 739.0499877929688,
-      "volume": 25005455.0,
-      "avg_volume": 24766085.5,
-      "percent_change": -0.2967975995994941,
+      "price": 759.6998901367188,
+      "volume": 7044881.0,
+      "avg_volume": 21533286.777777776,
+      "percent_change": 2.4890239644814502,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 5,
-      "liquidity_score": 83.94,
-      "rank_score": 38.83,
+      "catalyst_score": 8,
+      "liquidity_score": 83.33,
+      "rank_score": 53.99,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): Meta\u2019s stock is enjoying its best month in 13 years thanks to the company\u2019s hot new AI assistant - MarketWatch",
+      "catalyst": "Headline-driven setup (ai, catalyst, raises): Cantor Fitzgerald raises Meta stock price target on AI agent potential - Investing.com",
       "top_headlines": [
-        "Why Muse just added billions to Meta's market cap - Yahoo Finance",
-        "Meta\u2019s stock is enjoying its best month in 13 years thanks to the company\u2019s hot new AI assistant - MarketWatch",
-        "Wall Street expects Meta's AI agent to shape into a new revenue engine - Reuters"
+        "Meta (META) Stock Trades Up, Here Is Why - Yahoo Finance",
+        "Meta\u2019s Muse Comes for Financial Stocks - WSJ",
+        "Cantor Fitzgerald raises Meta stock price target on AI agent potential - Investing.com"
       ],
       "matched_headlines": [
         {
-          "title": "Meta\u2019s stock is enjoying its best month in 13 years thanks to the company\u2019s hot new AI assistant - MarketWatch",
+          "title": "Cantor Fitzgerald raises Meta stock price target on AI agent potential - Investing.com",
           "keywords": [
             "ai",
-            "catalyst"
+            "catalyst",
+            "raises"
           ]
         },
         {
@@ -12589,17 +12563,72 @@
           ]
         },
         {
-          "title": "Meta Stock Scores Price Target Hike. Analyst Says Muse 'Flips The Narrative' On AI Concerns. - Investor's Business Daily",
+          "title": "Meta\u2019s stock is enjoying its best month in 13 years thanks to the company\u2019s hot new AI assistant - MarketWatch",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "Meta stocks surge after Muse launch - Fox Business",
+          "title": "Meta Just Leapfrogged Everyone In The AI Race - Seeking Alpha",
           "keywords": [
-            "catalyst",
-            "launch"
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "SpaceX Stock: Musk's Company Has a Meta Muse, Too. AI Agent Users Surge. - barrons.com",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "name": "AMZN",
+      "price": 250.1649932861328,
+      "volume": 6471137.0,
+      "avg_volume": 32054404.111111112,
+      "percent_change": -3.205656231218023,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 6,
+      "liquidity_score": 85.06,
+      "rank_score": 45.32,
+      "news_hits": 6,
+      "catalyst": "Headline-driven setup (expansion, miss): AMZN Stock Jumps \u2014 Amazon Announces Multibillion-Dollar Data Center Expansion In Missouri - Stocktwits",
+      "top_headlines": [
+        "AMZN Stock Jumps \u2014 Amazon Announces Multibillion-Dollar Data Center Expansion In Missouri - Stocktwits",
+        "AMZN Apr 2027 275.000 put (AMZN270416P00275000) interactive stock chart - Yahoo Finance UK",
+        "Amazon: Prepare For A Margin Collapse At AWS (NASDAQ:AMZN) - Seeking Alpha"
+      ],
+      "matched_headlines": [
+        {
+          "title": "AMZN Stock Jumps \u2014 Amazon Announces Multibillion-Dollar Data Center Expansion In Missouri - Stocktwits",
+          "keywords": [
+            "expansion",
+            "miss"
+          ]
+        },
+        {
+          "title": "Osterweis Capital Management Inc. Makes New Investment in Amazon.com, Inc. $AMZN - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Is AI And Delivery Spending Altering The Investment Case For Amazon (AMZN)? - simplywall.st",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Amazon.com, Inc. $AMZN Shares Purchased by Community Bank of Raymore - MarketBeat",
+          "keywords": [
+            "beat"
           ]
         }
       ]
@@ -12630,13 +12659,7 @@
       "grok-build-0.1"
     ],
     "junior_min_agree": 3,
-    "junior_votes": {
-      "HOLD": 4,
-      "BUY": 0,
-      "SELL": 0,
-      "live": 4,
-      "fallback": 0
-    },
+    "junior_votes": null,
     "junior_model_3_enabled": true,
     "model_1": "grok-4.5",
     "model_1_effort": "medium",
@@ -12648,26 +12671,26 @@
     "min_confidence": 70,
     "max_candidates_to_llm": 8,
     "log_all_disagreements": true,
-    "decision_mode": "live_dual_llm",
-    "last_tier": "junior_only",
-    "last_stage": "entry",
+    "decision_mode": "fallback_deterministic",
+    "last_tier": "risk_exit",
+    "last_stage": "exit",
     "last_junior_nomination": null,
-    "last_escalate_reason": "",
-    "live_share_recent": 81.4
+    "last_escalate_reason": "take_profit",
+    "live_share_recent": 0.0
   },
   "learning": {
     "candidate_signals_logged": 8,
-    "fills_logged": 354,
-    "closed_outcomes": 161,
-    "consensus_events": 769,
+    "fills_logged": 355,
+    "closed_outcomes": 162,
+    "consensus_events": 770,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1050.96,
-    "change": 50.96,
-    "change_pct": 5.1,
+    "latest_equity": 1049.94,
+    "change": 49.94,
+    "change_pct": 4.99,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15178,9 +15201,15 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-23T14:00:22.386940+00:00",
+        "t": "2026-09-23T14:03:12.140860+00:00",
         "equity": 1050.96,
-        "cash": 40.29,
+        "cash": 251.69,
+        "event": "SELL TSLA"
+      },
+      {
+        "t": "2026-09-23T14:03:27.850254+00:00",
+        "equity": 1049.94,
+        "cash": 251.69,
         "event": "mark"
       }
     ],
