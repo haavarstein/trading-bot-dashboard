@@ -1,34 +1,34 @@
 {
-  "generated_at": "2026-09-23T16:00:28.761953+00:00",
+  "generated_at": "2026-09-23T16:03:55.099592+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1047.1,
+    "portfolio_value": 1047.34,
     "starting_cash": 1000.0,
-    "total_return_pct": 4.71,
-    "total_pnl": 47.1,
+    "total_return_pct": 4.73,
+    "total_pnl": 47.34,
     "realized_pnl": 37.9,
-    "open_pnl": 9.16,
-    "capital_deployed": 795.41,
+    "open_pnl": 9.4,
+    "capital_deployed": 795.65,
     "cash": 251.69,
     "closed_trades": 40,
     "win_rate_pct": 32.5,
-    "vs_spy_pct": 4.84,
-    "spy_return_pct": -0.13,
+    "vs_spy_pct": 4.87,
+    "spy_return_pct": -0.14,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-23T16:00:31.468348+00:00"
+    "updated_at": "2026-09-23T16:03:57.747206+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.13,
-    "price": 768.4122924804688,
+    "return_pct": -0.14,
+    "price": 768.3499755859375,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 8,
+    "consensus_count_today": 9,
     "validated_count_today": 1,
-    "blocked_count_today": 7,
+    "blocked_count_today": 8,
     "fills_today": 1,
     "simulated_orders_today": 1,
     "top_symbol_today": "TSLA"
@@ -38,10 +38,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 109.94999694824219,
-      "market_value": 203.41,
-      "open_pnl": 7.44,
-      "open_pnl_pct": 3.79,
+      "last": 109.96620178222656,
+      "market_value": 203.44,
+      "open_pnl": 7.47,
+      "open_pnl_pct": 3.81,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -50,10 +50,10 @@
       "symbol": "AMZN",
       "qty": 0.8,
       "avg_cost": 248.31,
-      "last": 249.9980010986328,
-      "market_value": 200.0,
-      "open_pnl": 1.35,
-      "open_pnl_pct": 0.68,
+      "last": 250.20989990234375,
+      "market_value": 200.17,
+      "open_pnl": 1.52,
+      "open_pnl_pct": 0.77,
       "stop": 240.0,
       "target": 262.0,
       "thesis": "AMZN shows a ranked liquid setup with bullish sentiment and a headline institutional buy catalyst supporting near-term momentum. RSI near 50 leaves room for upside without overbought conditions. Portfolio has capacity for one more name under the 5-position guideline and cash covers a sub-$200 notional entry. Risk defined below recent support with 1.5+ R:R to the target."
@@ -62,10 +62,10 @@
       "symbol": "AMD",
       "qty": 0.32,
       "avg_cost": 609.82,
-      "last": 614.8499755859375,
-      "market_value": 196.75,
-      "open_pnl": 1.61,
-      "open_pnl_pct": 0.82,
+      "last": 614.5399780273438,
+      "market_value": 196.65,
+      "open_pnl": 1.51,
+      "open_pnl_pct": 0.77,
       "stop": 585.0,
       "target": 655.0,
       "thesis": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity."
@@ -74,67 +74,60 @@
       "symbol": "BAC",
       "qty": 3.5,
       "avg_cost": 56.14,
-      "last": 55.78499984741211,
-      "market_value": 195.25,
-      "open_pnl": -1.24,
-      "open_pnl_pct": -0.63,
+      "last": 55.82500076293945,
+      "market_value": 195.39,
+      "open_pnl": -1.1,
+      "open_pnl_pct": -0.56,
       "stop": 53.9,
       "target": 59.9,
       "thesis": "BAC is the sole ranked liquid candidate with a bullish headline catalyst framing valuation support amid new debt deals. RSI near 50 leaves room for upside without extreme extension. Book has room under the five-name cap and cash supports a sub-$200 notional add with defined risk. Reward-to-risk meets desk minimum on a clean new_entry."
     }
   ],
   "latest_candidate": {
-    "symbol": "PLTR",
-    "name": "PLTR",
-    "price": 192.49000549316406,
-    "volume": 19848157.0,
-    "avg_volume": 24782939.666666668,
-    "percent_change": 5.134092164121202,
+    "symbol": "NVDA",
+    "name": "NVDA",
+    "price": 224.75999450683594,
+    "volume": 35653614.0,
+    "avg_volume": 104628557.1111111,
+    "percent_change": -1.1522606736361307,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 11,
-    "liquidity_score": 83.94,
-    "rank_score": 68.2,
-    "news_hits": 8,
-    "catalyst": "Headline-driven setup (ai, catalyst): PLTR Stock Heads for Worst Month Ever: Retail Awaits Dip Below $100, Michael Burry Takes Victory Lap - Stocktwits",
+    "catalyst_score": 12,
+    "liquidity_score": 90.2,
+    "rank_score": 68.45,
+    "news_hits": 7,
+    "catalyst": "Headline-driven setup (ai, beat, catalyst): NVDA Stock Looks 'Remarkably Cheap', Says Wall Street After Beat-And-Raise Q1 \u2014 Analyst Sees Nvidia Market Cap Soaring Past $10 Trillion - Stocktwits",
     "top_headlines": [
-      "Palantir Technologies Inc Stock (PLTR) Opened Up by 3.58% on Sep 23: Key Drivers Unveiled - TradingKey",
-      "Michael Burry Doubles Down On Palantir Bear Case: \u2018A Lot Of\u2019 Money Still To Be Made Shorting PLTR - Yahoo Finance",
-      "PLTR Stock Heads for Worst Month Ever: Retail Awaits Dip Below $100, Michael Burry Takes Victory Lap - Stocktwits"
+      "NVDA Stock Quote Price and Forecast - CNN",
+      "NVDA Stock Looks 'Remarkably Cheap', Says Wall Street After Beat-And-Raise Q1 \u2014 Analyst Sees Nvidia Market Cap Soaring Past $10 Trillion - Stocktwits",
+      "Nvidia (NVDA) Stock Could Be A Bargain After AI Expansion - simplywall.st"
     ],
     "matched_headlines": [
       {
-        "title": "PLTR Stock Heads for Worst Month Ever: Retail Awaits Dip Below $100, Michael Burry Takes Victory Lap - Stocktwits",
+        "title": "NVDA Stock Looks 'Remarkably Cheap', Says Wall Street After Beat-And-Raise Q1 \u2014 Analyst Sees Nvidia Market Cap Soaring Past $10 Trillion - Stocktwits",
         "keywords": [
           "ai",
+          "beat",
           "catalyst"
         ]
       },
       {
-        "title": "Palantir Stock Forecast: PLTR Holds Near $185 as AI Growth Drives Rally - FXLeaders",
+        "title": "Nvidia (NVDA) Stock Could Be A Bargain After AI Expansion - simplywall.st",
         "keywords": [
           "ai",
           "catalyst",
-          "growth"
+          "expansion"
         ]
       },
       {
-        "title": "PLTR Looks 2.5% Overvalued on GF Value\u2122 as AI Enhancements Drive Military Demand - GuruFocus",
+        "title": "NVDA Stock Eyes the $236 Record High as 2027 NVIDIA Growth Forecasts Rise - FXLeaders",
         "keywords": [
-          "ai",
-          "catalyst",
-          "demand"
+          "growth",
+          "record"
         ]
       },
       {
-        "title": "Get Paid 8.9% A Year To Wait For PLTR Stock To Go On Sale - Trefis",
-        "keywords": [
-          "ai",
-          "catalyst"
-        ]
-      },
-      {
-        "title": "PLTR 260911 75.00P (PLTR260911P75000) Stock Options Chain | Quotes & News - Moomoo",
+        "title": "NVDA 260923 215.00C (NVDA260923C215000) Stock Options Chain | Quotes & News - Moomoo",
         "keywords": [
           "ai",
           "catalyst"
@@ -146,45 +139,45 @@
     "model": "grok-4.5",
     "action": "BUY",
     "symbol": "NVDA",
-    "confidence": 72,
+    "confidence": 76,
     "cache_stats": null,
-    "entry_price": 225.5,
-    "stop_loss": 216.0,
-    "take_profit": 245.0,
-    "qty": 0.88,
-    "thesis": "NVDA ranks near the top with a constructive beat-and-raise AI catalyst and Street framing the name as relatively cheap versus long-term AI capex. Liquidity and momentum support a small starter size within the ~$200 new-notional cap while book still has room under the 5-name limit. Defined risk below recent support keeps reward:risk above 1.5 toward a measured extension target.",
+    "entry_price": 224.76,
+    "stop_loss": 212.5,
+    "take_profit": 243.5,
+    "qty": 0.85,
+    "thesis": "NVDA ranks highest with a strong beat-and-raise catalyst and Wall Street calling the stock remarkably cheap amid AI demand, supporting upside toward multi-trillion market-cap narratives. RSI is neutral and liquidity is excellent for a small add within the $200 notional cap. Reward-to-risk is structured above 1.5 with room under the five-name limit, so no rotation is required.",
     "reason_code": "new_entry",
     "reasoning": {
       "headline": "Bought $NVDA",
-      "narrative": "NVDA ranks near the top with a constructive beat-and-raise AI catalyst and Street framing the name as relatively cheap versus long-term AI capex. Liquidity and momentum support a small starter size within the ~$200 new-notional cap while book still has room under the 5-name limit. Defined risk below recent support keeps reward:risk above 1.5 toward a measured extension target.",
+      "narrative": "NVDA ranks highest with a strong beat-and-raise catalyst and Wall Street calling the stock remarkably cheap amid AI demand, supporting upside toward multi-trillion market-cap narratives. RSI is neutral and liquidity is excellent for a small add within the $200 notional cap. Reward-to-risk is structured above 1.5 with room under the five-name limit, so no rotation is required.",
       "bullets": [
-        "Top-tier rank + positive beat/raise AI catalyst",
-        "~0.88 sh keeps notional \u2264$200 with cash headroom",
-        "Stop 216 / target 245 gives R:R \u22482.0",
-        "Book at 4 names; no forced rotation needed"
+        "Top rank_score 68.45 + catalyst 12 beat-and-raise AI setup",
+        "Neutral RSI 50 leaves room for continuation",
+        "Notional ~$191 keeps cash buffer; book has slot for 5th name",
+        "R:R ~1.53 with stop 212.5 / target 243.5"
       ],
       "risk_map": {
-        "stop": 216.0,
-        "target": 245.0,
+        "stop": 212.5,
+        "target": 243.5,
         "horizon_days": 5,
-        "rr": 2.05,
-        "confidence_10": 7,
-        "confidence": 72
+        "rr": 1.53,
+        "confidence_10": 8,
+        "confidence": 76
       },
-      "thesis": "NVDA ranks near the top with a constructive beat-and-raise AI catalyst and Street framing the name as relatively cheap versus long-term AI capex. Liquidity and momentum support a small starter size within the ~$200 new-notional cap while book still has room under the 5-name limit. Defined risk below recent support keeps reward:risk above 1.5 toward a measured extension target."
+      "thesis": "NVDA ranks highest with a strong beat-and-raise catalyst and Wall Street calling the stock remarkably cheap amid AI demand, supporting upside toward multi-trillion market-cap narratives. RSI is neutral and liquidity is excellent for a small add within the $200 notional cap. Reward-to-risk is structured above 1.5 with room under the five-name limit, so no rotation is required."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Top-tier rank + positive beat/raise AI catalyst",
-      "~0.88 sh keeps notional \u2264$200 with cash headroom",
-      "Stop 216 / target 245 gives R:R \u22482.0",
-      "Book at 4 names; no forced rotation needed"
+      "Top rank_score 68.45 + catalyst 12 beat-and-raise AI setup",
+      "Neutral RSI 50 leaves room for continuation",
+      "Notional ~$191 keeps cash buffer; book has slot for 5th name",
+      "R:R ~1.53 with stop 212.5 / target 243.5"
     ],
-    "timestamp": "2026-09-23T15:49:00.298452+00:00"
+    "timestamp": "2026-09-23T16:03:46.063364+00:00"
   },
-  "stance": "Buying pressure on NVDA. NVDA ranks near the top with a constructive beat-and-raise AI catalyst and Street framing the name as relatively cheap versus long-term AI capex. Liquidity and momentum support a small starter size within the ~$200 new-notional cap while book still has room under the 5-name limit. Defined risk below recent support keeps reward:risk above 1.5 toward a measured extension target.",
+  "stance": "Buying pressure on NVDA. NVDA ranks highest with a strong beat-and-raise catalyst and Wall Street calling the stock remarkably cheap amid AI demand, supporting upside toward multi-trillion market-cap narratives. RSI is neutral and liquidity is excellent for a small add within the $200 notional cap. Reward-to-risk is structured above 1.5 with room under the five-name limit, so no rotation is required.",
   "thinking": {
     "badge": "Looking to buy NVDA",
     "headline": "Buying pressure on NVDA.",
@@ -195,7 +188,7 @@
       "It owns AMD, bought near $609.82. Simple plan: sell if it falls to about $585.00, or take profit near $655.00.",
       "It owns BAC, bought near $56.14. Simple plan: sell if it falls to about $53.90, or take profit near $59.90.",
       "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
-      "Top scanner name right now is PLTR, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
+      "Top scanner name right now is NVDA, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
       "If nothing looks clean, do nothing. Sitting in cash or holdings is allowed."
     ],
     "owned": [
@@ -205,9 +198,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 109.94999694824219,
-        "open_pnl": 7.44,
-        "open_pnl_pct": 3.79,
+        "last": 109.96620178222656,
+        "open_pnl": 7.47,
+        "open_pnl_pct": 3.81,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -217,9 +210,9 @@
         "avg_cost": 248.31,
         "stop": 240.0,
         "target": 262.0,
-        "last": 249.9980010986328,
-        "open_pnl": 1.35,
-        "open_pnl_pct": 0.68,
+        "last": 250.20989990234375,
+        "open_pnl": 1.52,
+        "open_pnl_pct": 0.77,
         "line": "Bought near $248.31 \u00b7 Sell safety line $240.00 \u00b7 Profit target $262.00",
         "plan": "stop 240.0 or target 262.0"
       },
@@ -229,9 +222,9 @@
         "avg_cost": 609.82,
         "stop": 585.0,
         "target": 655.0,
-        "last": 614.8499755859375,
-        "open_pnl": 1.61,
-        "open_pnl_pct": 0.82,
+        "last": 614.5399780273438,
+        "open_pnl": 1.51,
+        "open_pnl_pct": 0.77,
         "line": "Bought near $609.82 \u00b7 Sell safety line $585.00 \u00b7 Profit target $655.00",
         "plan": "stop 585.0 or target 655.0"
       },
@@ -241,14 +234,14 @@
         "avg_cost": 56.14,
         "stop": 53.9,
         "target": 59.9,
-        "last": 55.78499984741211,
-        "open_pnl": -1.24,
-        "open_pnl_pct": -0.63,
+        "last": 55.82500076293945,
+        "open_pnl": -1.1,
+        "open_pnl_pct": -0.56,
         "line": "Bought near $56.14 \u00b7 Sell safety line $53.90 \u00b7 Profit target $59.90",
         "plan": "stop 53.9 or target 59.9"
       }
     ],
-    "last_checked": "2026-09-23T16:00:28.761953+00:00",
+    "last_checked": "2026-09-23T16:03:55.099592+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -263,8 +256,8 @@
         "prefix": "J",
         "model": "grok-4.3",
         "action": "BUY",
-        "symbol": "PLTR",
-        "confidence": 72,
+        "symbol": "NVDA",
+        "confidence": 75,
         "tone": "buy"
       },
       {
@@ -286,17 +279,17 @@
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "BUY",
-        "symbol": "NVDA",
+        "action": "SELL",
+        "symbol": "BAC",
         "confidence": 72,
-        "tone": "buy"
+        "tone": "sell"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
         "action": "BUY",
         "symbol": "NVDA",
-        "confidence": 72,
+        "confidence": 76,
         "tone": "buy"
       },
       {
@@ -318,6 +311,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "NVDA",
+      "status": "blocked",
+      "headline": "BUY NVDA \u2014 blocked",
+      "detail": "Insufficient buying power: $40.29 < $191.05",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "NVDA",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "NVDA",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "deepseek-v4-flash",
+          "action": "HOLD",
+          "symbol": "WMT",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "SELL",
+          "symbol": "BAC",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "NVDA",
+          "confidence": 76,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "NVDA",
+          "confidence": 78,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "WMT",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-23T16:03:46.063364+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "NVDA",
@@ -864,38 +934,6 @@
       "headline": "SELL TSLA @ $384.36",
       "detail": "HERMES AUTO-TRADE: Exiting full TSLA position on take-profit. Price $384.36 reached target $380.00. Realized path $+14.95.",
       "timestamp": "2026-09-23T14:03:12.140860+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "TSLA",
-      "status": "validated",
-      "headline": "SELL TSLA \u2014 validated",
-      "detail": "deterministic take_profit exit",
-      "agents": [
-        {
-          "model": "risk-gate",
-          "action": "SELL",
-          "symbol": "TSLA",
-          "confidence": 90,
-          "source": null,
-          "provider": null,
-          "tier": "senior"
-        },
-        {
-          "model": "risk-gate",
-          "action": "SELL",
-          "symbol": "TSLA",
-          "confidence": 90,
-          "source": null,
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "risk_exit",
-      "escalate_reason": "take_profit",
-      "stage": "exit",
-      "junior_nomination": null,
-      "timestamp": "2026-09-23T14:03:12.137860+00:00"
     }
   ],
   "recent_trades": [
@@ -12993,76 +13031,17 @@
   ],
   "top_candidates": [
     {
-      "symbol": "PLTR",
-      "name": "PLTR",
-      "price": 192.49000549316406,
-      "volume": 19848157.0,
-      "avg_volume": 24782939.666666668,
-      "percent_change": 5.134092164121202,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 11,
-      "liquidity_score": 83.94,
-      "rank_score": 68.2,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): PLTR Stock Heads for Worst Month Ever: Retail Awaits Dip Below $100, Michael Burry Takes Victory Lap - Stocktwits",
-      "top_headlines": [
-        "Palantir Technologies Inc Stock (PLTR) Opened Up by 3.58% on Sep 23: Key Drivers Unveiled - TradingKey",
-        "Michael Burry Doubles Down On Palantir Bear Case: \u2018A Lot Of\u2019 Money Still To Be Made Shorting PLTR - Yahoo Finance",
-        "PLTR Stock Heads for Worst Month Ever: Retail Awaits Dip Below $100, Michael Burry Takes Victory Lap - Stocktwits"
-      ],
-      "matched_headlines": [
-        {
-          "title": "PLTR Stock Heads for Worst Month Ever: Retail Awaits Dip Below $100, Michael Burry Takes Victory Lap - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Palantir Stock Forecast: PLTR Holds Near $185 as AI Growth Drives Rally - FXLeaders",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "growth"
-          ]
-        },
-        {
-          "title": "PLTR Looks 2.5% Overvalued on GF Value\u2122 as AI Enhancements Drive Military Demand - GuruFocus",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "demand"
-          ]
-        },
-        {
-          "title": "Get Paid 8.9% A Year To Wait For PLTR Stock To Go On Sale - Trefis",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "PLTR 260911 75.00P (PLTR260911P75000) Stock Options Chain | Quotes & News - Moomoo",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "NVDA",
       "name": "NVDA",
-      "price": 225.4949951171875,
-      "volume": 33149905.0,
-      "avg_volume": 104350367.22222222,
-      "percent_change": -0.8290129849352847,
+      "price": 224.75999450683594,
+      "volume": 35653614.0,
+      "avg_volume": 104628557.1111111,
+      "percent_change": -1.1522606736361307,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 12,
-      "liquidity_score": 90.18,
-      "rank_score": 68.19,
+      "liquidity_score": 90.2,
+      "rank_score": 68.45,
       "news_hits": 7,
       "catalyst": "Headline-driven setup (ai, beat, catalyst): NVDA Stock Looks 'Remarkably Cheap', Says Wall Street After Beat-And-Raise Q1 \u2014 Analyst Sees Nvidia Market Cap Soaring Past $10 Trillion - Stocktwits",
       "top_headlines": [
@@ -13104,27 +13083,92 @@
       ]
     },
     {
-      "symbol": "AMZN",
-      "name": "AMZN",
-      "price": 249.94500732421875,
-      "volume": 16939029.0,
-      "avg_volume": 33217503.222222224,
-      "percent_change": -3.2907736432991808,
+      "symbol": "PLTR",
+      "name": "PLTR",
+      "price": 191.3907928466797,
+      "volume": 20480178.0,
+      "avg_volume": 24853164.222222224,
+      "percent_change": 4.533724766409429,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 9,
-      "liquidity_score": 85.21,
-      "rank_score": 58.91,
+      "catalyst_score": 10,
+      "liquidity_score": 83.95,
+      "rank_score": 63.72,
+      "news_hits": 7,
+      "catalyst": "Headline-driven setup (ai, catalyst): PLTR Stock Heads for Worst Month Ever: Retail Awaits Dip Below $100, Michael Burry Takes Victory Lap - Stocktwits",
+      "top_headlines": [
+        "Palantir Technologies Inc Stock (PLTR) Opened Up by 3.58% on Sep 23: Key Drivers Unveiled - TradingKey",
+        "Michael Burry Doubles Down On Palantir Bear Case: \u2018A Lot Of\u2019 Money Still To Be Made Shorting PLTR - Yahoo Finance",
+        "PLTR Stock Heads for Worst Month Ever: Retail Awaits Dip Below $100, Michael Burry Takes Victory Lap - Stocktwits"
+      ],
+      "matched_headlines": [
+        {
+          "title": "PLTR Stock Heads for Worst Month Ever: Retail Awaits Dip Below $100, Michael Burry Takes Victory Lap - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Palantir Stock Forecast: PLTR Holds Near $185 as AI Growth Drives Rally - FXLeaders",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "growth"
+          ]
+        },
+        {
+          "title": "PLTR Looks 2.5% Overvalued on GF Value\u2122 as AI Enhancements Drive Military Demand - GuruFocus",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "demand"
+          ]
+        },
+        {
+          "title": "PLTR 260911 75.00P (PLTR260911P75000) Stock Options Chain | Quotes & News - Moomoo",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Palantir Technologies (NASDAQ:PLTR): High Growth Momentum Meets Breakout Setup - ChartMill",
+          "keywords": [
+            "growth"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "AMZN",
+      "name": "AMZN",
+      "price": 250.05169677734375,
+      "volume": 17827662.0,
+      "avg_volume": 33316240.222222224,
+      "percent_change": -3.249493144910372,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 7,
+      "liquidity_score": 85.23,
+      "rank_score": 50.88,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Amazon (AMZN) Stock May Be 41% Undervalued As AI Spending Climbs - Yahoo Finance",
       "top_headlines": [
         "Amazon (AMZN) Stock May Be 41% Undervalued As AI Spending Climbs - Yahoo Finance",
-        "AMZN Stock Jumps \u2014 Amazon Announces Multibillion-Dollar Data Center Expansion In Missouri - Stocktwits",
-        "Can Disney's International Streaming Expansion Challenge NFLX & AMZN? - tradingview.com"
+        "AMZN 260923 285.00P (AMZN260923P285000) Stock Options Chain | Quotes & News - Moomoo",
+        "AMZN Stock Jumps \u2014 Amazon Announces Multibillion-Dollar Data Center Expansion In Missouri - Stocktwits"
       ],
       "matched_headlines": [
         {
           "title": "Amazon (AMZN) Stock May Be 41% Undervalued As AI Spending Climbs - Yahoo Finance",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "AMZN 260923 285.00P (AMZN260923P285000) Stock Options Chain | Quotes & News - Moomoo",
           "keywords": [
             "ai",
             "catalyst"
@@ -13148,12 +13192,48 @@
           "keywords": [
             "beat"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "symbol": "JPM",
+      "name": "JPM",
+      "price": 337.6600036621094,
+      "volume": 2574866.0,
+      "avg_volume": 8362296.222222222,
+      "percent_change": -4.084764382960055,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 5,
+      "liquidity_score": 79.22,
+      "rank_score": 39.65,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst): Bessent \u2018inadvertently\u2019 failed to report at least $100K of JPMorgan stock - Politico",
+      "top_headlines": [
+        "JPMorgan Chase & Co. (JPM) Stock Price, News, Quote & History - ca.finance.yahoo.com",
+        "$JPM stock is down 4% today. Here's what we see in our data. - Quiver Quantitative",
+        "Why Did IMAX, JPM, CSX Stocks Surge To 52-Week Highs Last Week? - Stocktwits"
+      ],
+      "matched_headlines": [
         {
-          "title": "Is AI And Delivery Spending Altering The Investment Case For Amazon (AMZN)? - simplywall.st",
+          "title": "Bessent \u2018inadvertently\u2019 failed to report at least $100K of JPMorgan stock - Politico",
           "keywords": [
             "ai",
             "catalyst"
+          ]
+        },
+        {
+          "title": "JPMorgan Chase & Co. $JPM Shares Sold by Liontrust Investment Partners LLP - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "JPM Falls as Investors Weigh Bank-Sector Volatility Despite Recent Upbeat Q3 Commentary - Quiver Quantitative",
+          "keywords": [
+            "beat",
+            "fall",
+            "falls"
           ]
         }
       ]
@@ -13161,21 +13241,21 @@
     {
       "symbol": "CRWD",
       "name": "CRWD",
-      "price": 261.3900146484375,
-      "volume": 5580842.0,
-      "avg_volume": 13241260.222222222,
-      "percent_change": 4.828557549713299,
+      "price": 262.1700134277344,
+      "volume": 6186010.0,
+      "avg_volume": 13308501.111111112,
+      "percent_change": 5.141370367120275,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 6,
-      "liquidity_score": 81.22,
-      "rank_score": 44.55,
+      "catalyst_score": 5,
+      "liquidity_score": 81.24,
+      "rank_score": 39.3,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): CrowdStrike (CRWD) Stock Forecast and Price Target 2026 - MarketBeat",
       "top_headlines": [
         "CrowdStrike Holdings, Inc. (CRWD) Stock Price, News, Quote & History - ca.finance.yahoo.com",
         "CrowdStrike(CRWD.US) Officer Sells US$8.07 Million in Common Stock - Moomoo",
-        "CrowdStrike (NASDAQ: CRWD) CEO sells 3,014 shares in preset trading plan - Stock Titan"
+        "CrowdStrike (NASDAQ: CRWD) CEO sells 3,014 shares in preset trading plan - stocktitan.net"
       ],
       "matched_headlines": [
         {
@@ -13189,66 +13269,6 @@
           "keywords": [
             "beat",
             "drop"
-          ]
-        },
-        {
-          "title": "Is CRWD Stock The Safe Haven In AI-Driven Software Selloff? Wall Street Eyes Big Upside - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "GOOGL",
-      "name": "GOOGL",
-      "price": 340.93499755859375,
-      "volume": 14012378.0,
-      "avg_volume": 26262975.333333332,
-      "percent_change": -3.9538562734441016,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 4,
-      "liquidity_score": 84.19,
-      "rank_score": 37.79,
-      "news_hits": 7,
-      "catalyst": "Headline-driven setup (ai, catalyst, fall): GOOGL Stock Falls 5% As Google\u2019s Flagship AI Model Reportedly Runs Behind Schedule \u2014 Why Retail Traders Aren\u2019t Worried - Stocktwits",
-      "top_headlines": [
-        "GOOGL Stock Falls 5% As Google\u2019s Flagship AI Model Reportedly Runs Behind Schedule \u2014 Why Retail Traders Aren\u2019t Worried - Stocktwits",
-        "Alphabet (GOOGL) Stock May Be A Bargain After Privacy Fine - Yahoo Finance",
-        "GOOGL Stock (GOOG) Tests $340 as Gemini Spending and Regulation Weigh - FXLeaders"
-      ],
-      "matched_headlines": [
-        {
-          "title": "GOOGL Stock Falls 5% As Google\u2019s Flagship AI Model Reportedly Runs Behind Schedule \u2014 Why Retail Traders Aren\u2019t Worried - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "fall",
-            "falls"
-          ]
-        },
-        {
-          "title": "Alphabet (GOOGL) Stock May Be A Bargain After Privacy Fine - Yahoo Finance",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "GOOGL Stock Inches Up Premarket: Retail Traders Are Buying The Dip After CapEx-Fueled Selloff - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Google (GOOGL) Stock Fails at Resistance as Gemini Growth Meets Spending Concerns - FXLeaders",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "growth"
           ]
         }
       ]
@@ -13281,8 +13301,8 @@
     "junior_min_agree": 3,
     "junior_votes": {
       "HOLD": 1,
-      "BUY": 3,
-      "SELL": 0,
+      "BUY": 2,
+      "SELL": 1,
       "live": 3,
       "fallback": 0
     },
@@ -13302,21 +13322,21 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 80.4
+    "live_share_recent": 79.3
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 355,
     "closed_outcomes": 162,
-    "consensus_events": 777,
+    "consensus_events": 778,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1047.1,
-    "change": 47.1,
-    "change_pct": 4.71,
+    "latest_equity": 1047.34,
+    "change": 47.34,
+    "change_pct": 4.73,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15851,8 +15871,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-23T16:00:31.468348+00:00",
-        "equity": 1047.1,
+        "t": "2026-09-23T16:03:57.747206+00:00",
+        "equity": 1047.34,
         "cash": 251.69,
         "event": "mark"
       }
