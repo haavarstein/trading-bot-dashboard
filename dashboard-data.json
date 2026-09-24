@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-09-24T16:11:05.430587+00:00",
+  "generated_at": "2026-09-24T16:18:36.782137+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1040.27,
+    "portfolio_value": 1047.08,
     "starting_cash": 1000.0,
-    "total_return_pct": 4.03,
-    "total_pnl": 40.27,
+    "total_return_pct": 4.71,
+    "total_pnl": 47.08,
     "realized_pnl": 37.9,
-    "open_pnl": 2.34,
-    "capital_deployed": 985.76,
+    "open_pnl": 9.14,
+    "capital_deployed": 992.57,
     "cash": 54.51,
     "closed_trades": 40,
     "win_rate_pct": 32.5,
-    "vs_spy_pct": 4.75,
-    "spy_return_pct": -0.72,
+    "vs_spy_pct": 4.91,
+    "spy_return_pct": -0.2,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-24T16:11:08.164810+00:00"
+    "updated_at": "2026-09-24T16:18:39.840303+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.72,
-    "price": 763.8200073242188,
+    "return_pct": -0.2,
+    "price": 767.8399047851562,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 3,
-    "validated_count_today": 3,
+    "consensus_count_today": 4,
+    "validated_count_today": 4,
     "blocked_count_today": 0,
     "fills_today": 1,
-    "simulated_orders_today": 3,
+    "simulated_orders_today": 4,
     "top_symbol_today": "AMZN"
   },
   "holdings": [
@@ -38,10 +38,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 108.63500213623047,
-      "market_value": 200.97,
-      "open_pnl": 5.0,
-      "open_pnl_pct": 2.55,
+      "last": 108.7300033569336,
+      "market_value": 201.15,
+      "open_pnl": 5.18,
+      "open_pnl_pct": 2.64,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -50,10 +50,10 @@
       "symbol": "AMZN",
       "qty": 1.6,
       "avg_cost": 247.3925,
-      "last": 246.17080688476562,
-      "market_value": 393.87,
-      "open_pnl": -1.95,
-      "open_pnl_pct": -0.49,
+      "last": 248.1999969482422,
+      "market_value": 397.12,
+      "open_pnl": 1.29,
+      "open_pnl_pct": 0.33,
       "stop": 240.0,
       "target": 262.0,
       "thesis": "AMZN tops the ranked catalyst list on a Seeking Alpha upgrade arguing the market is overstating Meta Muse competitive risk to Amazon. Neutral RSI near 50 leaves room for a bounce toward the existing book target while the position is only modestly underwater. Adding within the $200 notional cap keeps name count unchanged and maintains >1.5 R:R to the 262 target versus a 240 stop. Liquidity and catalyst score dominate weaker HOOD/ANET setups."
@@ -62,10 +62,10 @@
       "symbol": "AMD",
       "qty": 0.32,
       "avg_cost": 609.82,
-      "last": 609.510009765625,
-      "market_value": 195.04,
-      "open_pnl": -0.1,
-      "open_pnl_pct": -0.05,
+      "last": 616.510009765625,
+      "market_value": 197.28,
+      "open_pnl": 2.14,
+      "open_pnl_pct": 1.1,
       "stop": 585.0,
       "target": 655.0,
       "thesis": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity."
@@ -74,10 +74,10 @@
       "symbol": "BAC",
       "qty": 3.5,
       "avg_cost": 56.14,
-      "last": 55.96500015258789,
-      "market_value": 195.88,
-      "open_pnl": -0.61,
-      "open_pnl_pct": -0.31,
+      "last": 56.290000915527344,
+      "market_value": 197.02,
+      "open_pnl": 0.53,
+      "open_pnl_pct": 0.27,
       "stop": 53.9,
       "target": 59.9,
       "thesis": "BAC is the sole ranked liquid candidate with a bullish headline catalyst framing valuation support amid new debt deals. RSI near 50 leaves room for upside without extreme extension. Book has room under the five-name cap and cash supports a sub-$200 notional add with defined risk. Reward-to-risk meets desk minimum on a clean new_entry."
@@ -86,15 +86,15 @@
   "latest_candidate": {
     "symbol": "AMZN",
     "name": "AMZN",
-    "price": 246.6300048828125,
-    "volume": 13012994.0,
-    "avg_volume": 35552879.4,
-    "percent_change": -1.0590922872383894,
+    "price": 247.41000366210938,
+    "volume": 13779172.0,
+    "avg_volume": 35629497.2,
+    "percent_change": -0.7461790742854547,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 16,
-    "liquidity_score": 85.51,
-    "rank_score": 85.17,
+    "liquidity_score": 85.52,
+    "rank_score": 84.92,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (catalyst, upgrade): Amazon: Market Misunderstanding The Threat From Meta Muse (Rating Upgrade) (NASDAQ:AMZN) - Seeking Alpha",
     "top_headlines": [
@@ -150,16 +150,16 @@
     "stop_loss": 0.0,
     "take_profit": 0.0,
     "qty": 0.0,
-    "thesis": "Cash is only ~$54.50, so any new buy would be a token size well under the ~$200 notional guideline and not worth the slot. No held name has hit stop or target. Top-ranked AMZN is already held on the upgrade catalyst; remaining candidates (META/HOOD/etc.) are not materially stronger than the current book to justify a forced rotation.",
+    "thesis": "Cash is only ~$55 and the book already holds four names including top-ranked AMZN, so no clean full-size new entry fits the ~$200 notional cap without a forced sale. No position has hit stop or target. Second-tier names like ANET lack a catalyst strong enough versus current holds to justify rotation under desk policy.",
     "reason_code": "hold",
     "reasoning": {
       "headline": "Hold $CASH",
-      "narrative": "Cash is only ~$54.50, so any new buy would be a token size well under the ~$200 notional guideline and not worth the slot. No held name has hit stop or target. Top-ranked AMZN is already held on the upgrade catalyst; remaining candidates (META/HOOD/etc.) are not materially stronger than the current book to justify a forced rotation.",
+      "narrative": "Cash is only ~$55 and the book already holds four names including top-ranked AMZN, so no clean full-size new entry fits the ~$200 notional cap without a forced sale. No position has hit stop or target. Second-tier names like ANET lack a catalyst strong enough versus current holds to justify rotation under desk policy.",
       "bullets": [
-        "cash too low for meaningful new entry",
-        "no stop/target triggered on WMT/AMZN/AMD/BAC",
-        "AMZN already captures the best catalyst rank",
-        "META/HOOD not clearly superior for rotation"
+        "AMZN already owned and remains #1 ranked catalyst",
+        "No stops/targets triggered on WMT/AMZN/AMD/BAC",
+        "ANET/META/etc. not clearly better enough to rotate weakest hold",
+        "Low cash blocks meaningful add without selling"
       ],
       "risk_map": {
         "stop": 0.0,
@@ -169,18 +169,18 @@
         "confidence_10": 6,
         "confidence": 62
       },
-      "thesis": "Cash is only ~$54.50, so any new buy would be a token size well under the ~$200 notional guideline and not worth the slot. No held name has hit stop or target. Top-ranked AMZN is already held on the upgrade catalyst; remaining candidates (META/HOOD/etc.) are not materially stronger than the current book to justify a forced rotation."
+      "thesis": "Cash is only ~$55 and the book already holds four names including top-ranked AMZN, so no clean full-size new entry fits the ~$200 notional cap without a forced sale. No position has hit stop or target. Second-tier names like ANET lack a catalyst strong enough versus current holds to justify rotation under desk policy."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "cash too low for meaningful new entry",
-      "no stop/target triggered on WMT/AMZN/AMD/BAC",
-      "AMZN already captures the best catalyst rank",
-      "META/HOOD not clearly superior for rotation"
+      "AMZN already owned and remains #1 ranked catalyst",
+      "No stops/targets triggered on WMT/AMZN/AMD/BAC",
+      "ANET/META/etc. not clearly better enough to rotate weakest hold",
+      "Low cash blocks meaningful add without selling"
     ],
-    "timestamp": "2026-09-24T16:03:28.127428+00:00"
+    "timestamp": "2026-09-24T16:18:22.455590+00:00"
   },
   "stance": "Holding WMT, AMZN, AMD, BAC. No new trade right now.",
   "thinking": {
@@ -202,9 +202,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 108.63500213623047,
-        "open_pnl": 5.0,
-        "open_pnl_pct": 2.55,
+        "last": 108.7300033569336,
+        "open_pnl": 5.18,
+        "open_pnl_pct": 2.64,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -214,9 +214,9 @@
         "avg_cost": 247.3925,
         "stop": 240.0,
         "target": 262.0,
-        "last": 246.17080688476562,
-        "open_pnl": -1.95,
-        "open_pnl_pct": -0.49,
+        "last": 248.1999969482422,
+        "open_pnl": 1.29,
+        "open_pnl_pct": 0.33,
         "line": "Bought near $247.39 \u00b7 Sell safety line $240.00 \u00b7 Profit target $262.00",
         "plan": "stop 240.0 or target 262.0"
       },
@@ -226,9 +226,9 @@
         "avg_cost": 609.82,
         "stop": 585.0,
         "target": 655.0,
-        "last": 609.510009765625,
-        "open_pnl": -0.1,
-        "open_pnl_pct": -0.05,
+        "last": 616.510009765625,
+        "open_pnl": 2.14,
+        "open_pnl_pct": 1.1,
         "line": "Bought near $609.82 \u00b7 Sell safety line $585.00 \u00b7 Profit target $655.00",
         "plan": "stop 585.0 or target 655.0"
       },
@@ -238,14 +238,14 @@
         "avg_cost": 56.14,
         "stop": 53.9,
         "target": 59.9,
-        "last": 55.96500015258789,
-        "open_pnl": -0.61,
-        "open_pnl_pct": -0.31,
+        "last": 56.290000915527344,
+        "open_pnl": 0.53,
+        "open_pnl_pct": 0.27,
         "line": "Bought near $56.14 \u00b7 Sell safety line $53.90 \u00b7 Profit target $59.90",
         "plan": "stop 53.9 or target 59.9"
       }
     ],
-    "last_checked": "2026-09-24T16:11:05.430587+00:00",
+    "last_checked": "2026-09-24T16:18:36.782137+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "HOLD",
@@ -261,16 +261,16 @@
         "model": "grok-4.3",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 60,
+        "confidence": 65,
         "tone": "hold"
       },
       {
         "prefix": "J",
         "model": "claude-haiku-4-5",
-        "action": "BUY",
-        "symbol": "META",
-        "confidence": 72,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 62,
+        "tone": "hold"
       },
       {
         "prefix": "J",
@@ -283,10 +283,10 @@
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 60,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "AMZN",
+        "confidence": 80,
+        "tone": "buy"
       },
       {
         "prefix": "S",
@@ -299,10 +299,10 @@
       {
         "prefix": "S",
         "model": "claude-sonnet-5",
-        "action": "BUY",
-        "symbol": "META",
-        "confidence": 72,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 65,
+        "tone": "hold"
       },
       {
         "prefix": "S",
@@ -315,6 +315,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 no new trade",
+      "detail": "Cash is only ~$55 and the book already holds four names including top-ranked AMZN, so no clean full-size new entry fits the ~$200 notional cap without a forced sale. No position has hit stop or target. Second-tier names like ANET lack a catalyst strong enough versus current holds to justify rotation under desk policy.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.20-0309-non-reasoning",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 68,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "AMZN",
+          "confidence": 80,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "WMT",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-24T16:18:22.455590+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -861,83 +938,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-09-24T14:32:48.904735+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "NVDA",
-      "status": "no_consensus",
-      "headline": "BUY NVDA \u2014 no consensus",
-      "detail": "Desks: BUY NVDA (73%) vs SELL AMZN (72%) vs BUY GS (90%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.20-0309-non-reasoning",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "AMZN",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "NVDA",
-          "confidence": 73,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "SELL",
-          "symbol": "AMZN",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "BUY",
-          "symbol": "GS",
-          "confidence": 90,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-24T14:18:07.552365+00:00"
     }
   ],
   "recent_trades": [
@@ -13452,15 +13452,15 @@
     {
       "symbol": "AMZN",
       "name": "AMZN",
-      "price": 246.6300048828125,
-      "volume": 13012994.0,
-      "avg_volume": 35552879.4,
-      "percent_change": -1.0590922872383894,
+      "price": 247.41000366210938,
+      "volume": 13779172.0,
+      "avg_volume": 35629497.2,
+      "percent_change": -0.7461790742854547,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 16,
-      "liquidity_score": 85.51,
-      "rank_score": 85.17,
+      "liquidity_score": 85.52,
+      "rank_score": 84.92,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, upgrade): Amazon: Market Misunderstanding The Threat From Meta Muse (Rating Upgrade) (NASDAQ:AMZN) - Seeking Alpha",
       "top_headlines": [
@@ -13507,16 +13507,62 @@
       ]
     },
     {
+      "symbol": "ANET",
+      "name": "ANET",
+      "price": 205.75999450683594,
+      "volume": 1241620.0,
+      "avg_volume": 5309191.111111111,
+      "percent_change": 1.125469736272752,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 12,
+      "liquidity_score": 77.25,
+      "rank_score": 66.49,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (beat): Arista Networks, Inc. $ANET Stock Position Lifted by Envestnet Portfolio Solutions Inc. - MarketBeat",
+      "top_headlines": [
+        "ANET Oct 2026 177.500 put (ANET261009P00177500) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+        "Arista Networks (ANET) CTO exercised options for 17,333 shares and sold 43,333 shares. - Stock Titan",
+        "Arista Networks(ANET.US) Officer Sells US$8.82 Million in Common Stock - moomoo.com"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Arista Networks, Inc. $ANET Stock Position Lifted by Envestnet Portfolio Solutions Inc. - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Arista Networks (NYSE:ANET) Insider Sells $5,291,000.00 in Stock - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Arista Networks, Inc. $ANET Shares Bought by Envestnet Asset Management Inc. - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "QRG Capital Management Inc. Acquires 337,133 Shares of Arista Networks, Inc. $ANET - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        }
+      ]
+    },
+    {
       "symbol": "META",
       "name": "META",
-      "price": 765.739990234375,
-      "volume": 18859152.0,
-      "avg_volume": 24255005.2,
-      "percent_change": 2.908213325957602,
+      "price": 765.6724243164062,
+      "volume": 19768283.0,
+      "avg_volume": 24345918.3,
+      "percent_change": 2.899133105532176,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 83.85,
+      "liquidity_score": 83.86,
       "rank_score": 56.9,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Why Meta Stock Won\u2019t Care If New Muse AI Gadget Flops - Barron's",
@@ -13559,17 +13605,75 @@
       ]
     },
     {
-      "symbol": "HOOD",
-      "name": "HOOD",
-      "price": 120.20999908447266,
-      "volume": 7717848.0,
-      "avg_volume": 23155904.8,
-      "percent_change": -2.0293381627547005,
+      "symbol": "AAPL",
+      "name": "AAPL",
+      "price": 338.3299865722656,
+      "volume": 9376962.0,
+      "avg_volume": 39767936.2,
+      "percent_change": 0.38870025556276644,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 83.65,
-      "rank_score": 56.17,
+      "liquidity_score": 86.0,
+      "rank_score": 56.71,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst, warning): Apple (AAPL) Stock Could Be 32% Overpriced After Fresh AI Cost Warnings - Yahoo Finance",
+      "top_headlines": [
+        "Apple (AAPL) Stock Could Be 32% Overpriced After Fresh AI Cost Warnings - Yahoo Finance",
+        "AAPL Stock Quote Price and Forecast - CNN",
+        "How to Play AAPL Stock as New Fitness+ Layoffs Hit Apple - Barchart.com"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Apple (AAPL) Stock Could Be 32% Overpriced After Fresh AI Cost Warnings - Yahoo Finance",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "warning"
+          ]
+        },
+        {
+          "title": "AAPL Stock Slides Nearly 10% \u2014 Apple\u2019s Earnings Divide Wall Street, But Retail Sees A Buying Opportunity - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "AAPL 260925 405.00C (AAPL260925C405000) Stock Options Chain | Quotes & News - moomoo.com",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Apple Stock Forecast After Beats 360: Is AAPL Too Expensive at $337? - techi.com",
+          "keywords": [
+            "beat",
+            "beats"
+          ]
+        },
+        {
+          "title": "Apple (AAPL) After The iPhone Duo Launch Is The Stock Already Fully Valued - simplywall.st",
+          "keywords": [
+            "catalyst",
+            "launch"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "HOOD",
+      "name": "HOOD",
+      "price": 120.83499908447266,
+      "volume": 8185814.0,
+      "avg_volume": 23202701.4,
+      "percent_change": -1.5199656969480058,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 9,
+      "liquidity_score": 83.66,
+      "rank_score": 55.76,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): HOOD Stock Slips Premarket: Early Backer Makes Massive Bet On Retail Trading Boom While CEO Vows To 'Disrupt' IPOs - Stocktwits",
       "top_headlines": [
@@ -13604,102 +13708,6 @@
         {
           "title": "HOOD Stock Swings As Robinhood\u2019s $1 Trillion Vision Meets Wall Street Caution After Q2 Earnings - Stocktwits",
           "keywords": [
-            "catalyst"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "ANET",
-      "name": "ANET",
-      "price": 204.89999389648438,
-      "volume": 1150470.0,
-      "avg_volume": 5299063.333333333,
-      "percent_change": 0.7028027066408391,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 9,
-      "liquidity_score": 77.24,
-      "rank_score": 52.65,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): Arista Networks, Inc. $ANET Stock Position Lifted by Envestnet Portfolio Solutions Inc. - MarketBeat",
-      "top_headlines": [
-        "ANET Jan 2029 210.000 put (ANET290119P00210000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-        "Arista Networks (ANET) CTO exercised options for 17,333 shares and sold 43,333 shares. - Stock Titan",
-        "Arista Networks(ANET.US) Officer Sells US$8.82 Million in Common Stock - Moomoo"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Arista Networks, Inc. $ANET Stock Position Lifted by Envestnet Portfolio Solutions Inc. - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Arista Networks (NYSE:ANET) Insider Sells $5,291,000.00 in Stock - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Arista Networks, Inc. $ANET Shares Bought by Envestnet Asset Management Inc. - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "PANW",
-      "name": "PANW",
-      "price": 391.28680419921875,
-      "volume": 1889742.0,
-      "avg_volume": 6895715.777777778,
-      "percent_change": -0.511869732070709,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 8,
-      "liquidity_score": 78.39,
-      "rank_score": 51.67,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): CRWD, PANW, NET, ZS: One Cybersecurity Stock Won Over Retail Investors \u2013 But Another Tops Wall Street\u2019s List - Stocktwits",
-      "top_headlines": [
-        "CRWD, PANW, NET, ZS: One Cybersecurity Stock Won Over Retail Investors \u2013 But Another Tops Wall Street\u2019s List - Stocktwits",
-        "Palo Alto Networks (PANW) is Strengthening from Enterprise Security Consolidation Amid Rising AI Threats - Yahoo Finance",
-        "Why Palo Alto Networks (PANW) Stock Is Up Today - Quiver Quantitative"
-      ],
-      "matched_headlines": [
-        {
-          "title": "CRWD, PANW, NET, ZS: One Cybersecurity Stock Won Over Retail Investors \u2013 But Another Tops Wall Street\u2019s List - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Palo Alto Networks (PANW) is Strengthening from Enterprise Security Consolidation Amid Rising AI Threats - Yahoo Finance",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "PANW 260925 447.50P (PANW260925P447500) Stock Options Chain | Quotes & News - Moomoo",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Envestnet Asset Management Inc. Decreases Stake in Palo Alto Networks, Inc. $PANW - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Why Did ATAI, PANW, TRV Stocks Surge To 52-Week Highs Last Week? - Stocktwits",
-          "keywords": [
-            "ai",
             "catalyst"
           ]
         }
@@ -13754,21 +13762,21 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 88.9
+    "live_share_recent": 88.6
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 368,
     "closed_outcomes": 167,
-    "consensus_events": 802,
+    "consensus_events": 803,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1040.27,
-    "change": 40.27,
-    "change_pct": 4.03,
+    "latest_equity": 1047.08,
+    "change": 47.08,
+    "change_pct": 4.71,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -16387,8 +16395,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-24T16:11:08.164810+00:00",
-        "equity": 1040.27,
+        "t": "2026-09-24T16:18:39.840303+00:00",
+        "equity": 1047.08,
         "cash": 54.51,
         "event": "mark"
       }
