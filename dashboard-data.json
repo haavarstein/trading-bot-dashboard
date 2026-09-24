@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-09-24T15:31:02.331500+00:00",
+  "generated_at": "2026-09-24T15:33:15.712928+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1041.8,
+    "portfolio_value": 1041.82,
     "starting_cash": 1000.0,
     "total_return_pct": 4.18,
-    "total_pnl": 41.8,
+    "total_pnl": 41.82,
     "realized_pnl": 37.9,
-    "open_pnl": 3.86,
-    "capital_deployed": 790.11,
+    "open_pnl": 3.87,
+    "capital_deployed": 790.13,
     "cash": 251.69,
     "closed_trades": 40,
     "win_rate_pct": 32.5,
-    "vs_spy_pct": 4.93,
-    "spy_return_pct": -0.75,
+    "vs_spy_pct": 4.92,
+    "spy_return_pct": -0.74,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-24T15:31:06.586177+00:00"
+    "updated_at": "2026-09-24T15:33:18.441025+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.75,
-    "price": 763.6400146484375,
+    "return_pct": -0.74,
+    "price": 763.7100219726562,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 1,
-    "validated_count_today": 1,
+    "consensus_count_today": 2,
+    "validated_count_today": 2,
     "blocked_count_today": 0,
     "fills_today": 0,
-    "simulated_orders_today": 1,
+    "simulated_orders_today": 2,
     "top_symbol_today": "AMZN"
   },
   "holdings": [
@@ -38,10 +38,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 109.08499908447266,
-      "market_value": 201.81,
-      "open_pnl": 5.84,
-      "open_pnl_pct": 2.98,
+      "last": 109.02999877929688,
+      "market_value": 201.71,
+      "open_pnl": 5.73,
+      "open_pnl_pct": 2.93,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -50,10 +50,10 @@
       "symbol": "AMZN",
       "qty": 0.8,
       "avg_cost": 248.31,
-      "last": 246.10000610351562,
-      "market_value": 196.88,
-      "open_pnl": -1.77,
-      "open_pnl_pct": -0.89,
+      "last": 246.19000244140625,
+      "market_value": 196.95,
+      "open_pnl": -1.7,
+      "open_pnl_pct": -0.85,
       "stop": 240.0,
       "target": 262.0,
       "thesis": "AMZN shows a ranked liquid setup with bullish sentiment and a headline institutional buy catalyst supporting near-term momentum. RSI near 50 leaves room for upside without overbought conditions. Portfolio has capacity for one more name under the 5-position guideline and cash covers a sub-$200 notional entry. Risk defined below recent support with 1.5+ R:R to the target."
@@ -62,10 +62,10 @@
       "symbol": "AMD",
       "qty": 0.32,
       "avg_cost": 609.82,
-      "last": 611.1300048828125,
-      "market_value": 195.56,
-      "open_pnl": 0.42,
-      "open_pnl_pct": 0.21,
+      "last": 611.5050048828125,
+      "market_value": 195.68,
+      "open_pnl": 0.54,
+      "open_pnl_pct": 0.28,
       "stop": 585.0,
       "target": 655.0,
       "thesis": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity."
@@ -74,10 +74,10 @@
       "symbol": "BAC",
       "qty": 3.5,
       "avg_cost": 56.14,
-      "last": 55.959999084472656,
-      "market_value": 195.86,
-      "open_pnl": -0.63,
-      "open_pnl_pct": -0.32,
+      "last": 55.93989944458008,
+      "market_value": 195.79,
+      "open_pnl": -0.7,
+      "open_pnl_pct": -0.36,
       "stop": 53.9,
       "target": 59.9,
       "thesis": "BAC is the sole ranked liquid candidate with a bullish headline catalyst framing valuation support amid new debt deals. RSI near 50 leaves room for upside without extreme extension. Book has room under the five-name cap and cash supports a sub-$200 notional add with defined risk. Reward-to-risk meets desk minimum on a clean new_entry."
@@ -86,14 +86,14 @@
   "latest_candidate": {
     "symbol": "AMZN",
     "name": "AMZN",
-    "price": 246.10000610351562,
-    "volume": 10100198.0,
-    "avg_volume": 35261599.8,
-    "percent_change": -1.2717126467733326,
+    "price": 246.08999633789062,
+    "volume": 11409386.0,
+    "avg_volume": 35392518.6,
+    "percent_change": -1.2757282785996389,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 12,
-    "liquidity_score": 85.47,
+    "liquidity_score": 85.49,
     "rank_score": 69.34,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (catalyst, upgrade): Amazon: Market Misunderstanding The Threat From Meta Muse (Rating Upgrade) (NASDAQ:AMZN) - Seeking Alpha",
@@ -141,52 +141,52 @@
     ]
   },
   "latest_decision": {
-    "model": "grok-4.5",
-    "action": "BUY",
-    "symbol": "META",
-    "confidence": 72,
+    "model": "grok-4.3",
+    "action": "HOLD",
+    "symbol": "CASH",
+    "confidence": 65,
     "cache_stats": null,
-    "entry_price": 766.1,
-    "stop_loss": 743.0,
-    "take_profit": 805.0,
-    "qty": 0.26,
-    "thesis": "META ranks as the strongest new liquid catalyst name with bullish AI/Muse framing and recent momentum, while the book still has room under the ~5 name cap. Entry sized to ~$200 notional preserves cash buffer. Stop below recent support keeps reward:risk at or above 1.5 toward a measured extension target.",
-    "reason_code": "new_entry",
+    "entry_price": 0.0,
+    "stop_loss": 0.0,
+    "take_profit": 0.0,
+    "qty": 0.0,
+    "thesis": "No high-conviction new entry meets reward:risk and catalyst thresholds among candidates. Top-ranked AMZN is already held with negative P/L and no material improvement signal. Portfolio has room for one more name but lacks clean edge for deployment under $200 notional limit.",
+    "reason_code": "hold",
     "reasoning": {
-      "headline": "Bought $META",
-      "narrative": "META ranks as the strongest new liquid catalyst name with bullish AI/Muse framing and recent momentum, while the book still has room under the ~5 name cap. Entry sized to ~$200 notional preserves cash buffer. Stop below recent support keeps reward:risk at or above 1.5 toward a measured extension target.",
+      "headline": "Hold $CASH",
+      "narrative": "No high-conviction new entry meets reward:risk and catalyst thresholds among candidates. Top-ranked AMZN is already held with negative P/L and no material improvement signal. Portfolio has room for one more name but lacks clean edge for deployment under $200 notional limit.",
       "bullets": [
-        "Ranked #2 candidate with catalyst_score 11 and bullish sentiment",
-        "Book at 4 names; add within $200 notional and cash limits",
-        "R:R >=1.5 with stop 743 / target 805",
-        "Prefer fresh META exposure over adding to underwater AMZN"
+        "AMZN held; weak open P/L, no rotation trigger",
+        "AAPL/HOOD catalysts lower ranked and less liquid",
+        "R:R requirement unmet for any BUY plan",
+        "4 open names; prefer waiting for better setup"
       ],
       "risk_map": {
-        "stop": 743.0,
-        "target": 805.0,
+        "stop": 0.0,
+        "target": 0.0,
         "horizon_days": 5,
-        "rr": 1.68,
-        "confidence_10": 7,
-        "confidence": 72
+        "rr": 0.0,
+        "confidence_10": 6,
+        "confidence": 65
       },
-      "thesis": "META ranks as the strongest new liquid catalyst name with bullish AI/Muse framing and recent momentum, while the book still has room under the ~5 name cap. Entry sized to ~$200 notional preserves cash buffer. Stop below recent support keeps reward:risk at or above 1.5 toward a measured extension target."
+      "thesis": "No high-conviction new entry meets reward:risk and catalyst thresholds among candidates. Top-ranked AMZN is already held with negative P/L and no material improvement signal. Portfolio has room for one more name but lacks clean edge for deployment under $200 notional limit."
     },
     "source": "live",
     "provider": "xai",
-    "provider_model_id": "grok-4.5",
+    "provider_model_id": "grok-4.3",
     "bullets": [
-      "Ranked #2 candidate with catalyst_score 11 and bullish sentiment",
-      "Book at 4 names; add within $200 notional and cash limits",
-      "R:R >=1.5 with stop 743 / target 805",
-      "Prefer fresh META exposure over adding to underwater AMZN"
+      "AMZN held; weak open P/L, no rotation trigger",
+      "AAPL/HOOD catalysts lower ranked and less liquid",
+      "R:R requirement unmet for any BUY plan",
+      "4 open names; prefer waiting for better setup"
     ],
-    "timestamp": "2026-09-24T15:20:40.756827+00:00"
+    "timestamp": "2026-09-24T15:33:00.410508+00:00"
   },
-  "stance": "Buying pressure on META. META ranks as the strongest new liquid catalyst name with bullish AI/Muse framing and recent momentum, while the book still has room under the ~5 name cap. Entry sized to ~$200 notional preserves cash buffer. Stop below recent support keeps reward:risk at or above 1.5 toward a measured extension target.",
+  "stance": "Holding WMT, AMZN, AMD, BAC. No new trade right now.",
   "thinking": {
-    "badge": "Looking to buy META",
-    "headline": "Buying pressure on META.",
-    "plain_english": "Right now Hermes wants exposure to META. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
+    "badge": "Holding what it owns",
+    "headline": "Holding WMT, AMZN, AMD, BAC. No new trade right now.",
+    "plain_english": "Right now Hermes is holding WMT, AMZN, AMD, BAC and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
     "triggers": [
       "It owns WMT, bought near $105.93. Simple plan: sell if it falls to about $102.50, or take profit near $112.00.",
       "It owns AMZN, bought near $248.31. Simple plan: sell if it falls to about $240.00, or take profit near $262.00.",
@@ -202,9 +202,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 109.08499908447266,
-        "open_pnl": 5.84,
-        "open_pnl_pct": 2.98,
+        "last": 109.02999877929688,
+        "open_pnl": 5.73,
+        "open_pnl_pct": 2.93,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -214,9 +214,9 @@
         "avg_cost": 248.31,
         "stop": 240.0,
         "target": 262.0,
-        "last": 246.10000610351562,
-        "open_pnl": -1.77,
-        "open_pnl_pct": -0.89,
+        "last": 246.19000244140625,
+        "open_pnl": -1.7,
+        "open_pnl_pct": -0.85,
         "line": "Bought near $248.31 \u00b7 Sell safety line $240.00 \u00b7 Profit target $262.00",
         "plan": "stop 240.0 or target 262.0"
       },
@@ -226,9 +226,9 @@
         "avg_cost": 609.82,
         "stop": 585.0,
         "target": 655.0,
-        "last": 611.1300048828125,
-        "open_pnl": 0.42,
-        "open_pnl_pct": 0.21,
+        "last": 611.5050048828125,
+        "open_pnl": 0.54,
+        "open_pnl_pct": 0.28,
         "line": "Bought near $609.82 \u00b7 Sell safety line $585.00 \u00b7 Profit target $655.00",
         "plan": "stop 585.0 or target 655.0"
       },
@@ -238,17 +238,17 @@
         "avg_cost": 56.14,
         "stop": 53.9,
         "target": 59.9,
-        "last": 55.959999084472656,
-        "open_pnl": -0.63,
-        "open_pnl_pct": -0.32,
+        "last": 55.93989944458008,
+        "open_pnl": -0.7,
+        "open_pnl_pct": -0.36,
         "line": "Bought near $56.14 \u00b7 Sell safety line $53.90 \u00b7 Profit target $59.90",
         "plan": "stop 53.9 or target 59.9"
       }
     ],
-    "last_checked": "2026-09-24T15:31:02.331500+00:00",
+    "last_checked": "2026-09-24T15:33:15.712928+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "BUY",
+    "action": "HOLD",
     "symbols_held": [
       "WMT",
       "AMZN",
@@ -259,18 +259,18 @@
       {
         "prefix": "J",
         "model": "grok-4.3",
-        "action": "BUY",
-        "symbol": "AMZN",
-        "confidence": 75,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 65,
+        "tone": "hold"
       },
       {
         "prefix": "J",
         "model": "claude-haiku-4-5",
-        "action": "BUY",
-        "symbol": "META",
-        "confidence": 72,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 62,
+        "tone": "hold"
       },
       {
         "prefix": "J",
@@ -283,38 +283,91 @@
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "BUY",
-        "symbol": "AMZN",
-        "confidence": 75,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "grok-4.5",
-        "action": "BUY",
-        "symbol": "META",
-        "confidence": 72,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "claude-sonnet-5",
-        "action": "SELL",
-        "symbol": "BAC",
-        "confidence": 72,
-        "tone": "sell"
-      },
-      {
-        "prefix": "S",
-        "model": "claude-opus-5",
-        "action": "BUY",
-        "symbol": "META",
-        "confidence": 90,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 60,
+        "tone": "hold"
       }
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 no new trade",
+      "detail": "No high-conviction new entry meets reward:risk and catalyst thresholds among candidates. Top-ranked AMZN is already held with negative P/L and no material improvement signal. Portfolio has room for one more name but lacks clean edge for deployment under $200 notional limit.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.20-0309-non-reasoning",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        }
+      ],
+      "tier": "junior_only",
+      "escalate_reason": "",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-24T15:33:00.410508+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "META",
@@ -13262,14 +13315,14 @@
     {
       "symbol": "AMZN",
       "name": "AMZN",
-      "price": 246.10000610351562,
-      "volume": 10100198.0,
-      "avg_volume": 35261599.8,
-      "percent_change": -1.2717126467733326,
+      "price": 246.08999633789062,
+      "volume": 11409386.0,
+      "avg_volume": 35392518.6,
+      "percent_change": -1.2757282785996389,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 12,
-      "liquidity_score": 85.47,
+      "liquidity_score": 85.49,
       "rank_score": 69.34,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, upgrade): Amazon: Market Misunderstanding The Threat From Meta Muse (Rating Upgrade) (NASDAQ:AMZN) - Seeking Alpha",
@@ -13317,121 +13370,17 @@
       ]
     },
     {
-      "symbol": "META",
-      "name": "META",
-      "price": 766.0999755859375,
-      "volume": 16464415.0,
-      "avg_volume": 24015531.5,
-      "percent_change": 2.9565919529396867,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 11,
-      "liquidity_score": 83.8,
-      "rank_score": 64.94,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): Why Meta Stock Won\u2019t Care If New Muse AI Gadget Flops - Barron's",
-      "top_headlines": [
-        "Why Meta Stock Won\u2019t Care If New Muse AI Gadget Flops - Barron's",
-        "What's Going On With Meta Platforms Stock Thursday? - Meta Platforms (NASDAQ:META) - Benzinga",
-        "Meta's standoff with Amazon over Muse could be a sign of things to come - cnbc.com"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Why Meta Stock Won\u2019t Care If New Muse AI Gadget Flops - Barron's",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Meta Rallies Into Connect Conference. Why The Muse AI Agent Is Sending Some Stocks Lower. - Investor's Business Daily",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Tigress Financial raises Meta stock price target on AI growth - Investing.com",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "growth",
-            "raises"
-          ]
-        },
-        {
-          "title": "Meta Platforms Stock (META) Opinions on AI Progress and Muse Launch - Quiver Quantitative",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "launch"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "HOOD",
-      "name": "HOOD",
-      "price": 121.20999908447266,
-      "volume": 6596708.0,
-      "avg_volume": 23043790.8,
-      "percent_change": -1.2143422174639893,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 10,
-      "liquidity_score": 83.63,
-      "rank_score": 59.52,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (catalyst): HOOD Stock Swings As Robinhood\u2019s $1 Trillion Vision Meets Wall Street Caution After Q2 Earnings - Stocktwits",
-      "top_headlines": [
-        "HOOD Stock Swings As Robinhood\u2019s $1 Trillion Vision Meets Wall Street Caution After Q2 Earnings - Stocktwits",
-        "Analysts Offer Insights on Financial Companies: Robinhood (HOOD), Goldman Sachs Group (GS) and MSCI (MSCI) - The Globe and Mail",
-        "Robinhood Markets, Inc. (HOOD) Sees a More Significant Dip Than Broader Market: Some Facts to Know - Yahoo Finance"
-      ],
-      "matched_headlines": [
-        {
-          "title": "HOOD Stock Swings As Robinhood\u2019s $1 Trillion Vision Meets Wall Street Caution After Q2 Earnings - Stocktwits",
-          "keywords": [
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Analysts Offer Insights on Financial Companies: Robinhood (HOOD), Goldman Sachs Group (GS) and MSCI (MSCI) - The Globe and Mail",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "QRG Capital Management Inc. Raises Stake in Robinhood Markets, Inc. $HOOD - MarketBeat",
-          "keywords": [
-            "ai",
-            "beat",
-            "catalyst",
-            "raises"
-          ]
-        },
-        {
-          "title": "HOOD Stock Jumps To Best Day This Month On Trump Accounts App Launch - Stocktwits",
-          "keywords": [
-            "catalyst",
-            "launch"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "AAPL",
       "name": "AAPL",
-      "price": 336.05999755859375,
-      "volume": 7230869.0,
-      "avg_volume": 39553326.9,
-      "percent_change": -0.28484703767502084,
+      "price": 336.2550048828125,
+      "volume": 7687573.0,
+      "avg_volume": 39598997.3,
+      "percent_change": -0.22698479490732576,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 85.97,
-      "rank_score": 56.62,
+      "liquidity_score": 85.98,
+      "rank_score": 56.58,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst, warning): Apple (AAPL) Stock Could Be 32% Overpriced After Fresh AI Cost Warnings - Yahoo Finance",
       "top_headlines": [
@@ -13456,7 +13405,7 @@
           ]
         },
         {
-          "title": "AAPL 260925 405.00C (AAPL260925C405000) Stock Options Chain | Quotes & News - Moomoo",
+          "title": "AAPL 260925 405.00C (AAPL260925C405000) Stock Options Chain | Quotes & News - moomoo.com",
           "keywords": [
             "ai",
             "catalyst"
@@ -13479,23 +13428,74 @@
       ]
     },
     {
-      "symbol": "ANET",
-      "name": "ANET",
-      "price": 202.64999389648438,
-      "volume": 810972.0,
-      "avg_volume": 5261341.333333333,
-      "percent_change": -0.40301141165733384,
+      "symbol": "HOOD",
+      "name": "HOOD",
+      "price": 120.27999877929688,
+      "volume": 7032213.0,
+      "avg_volume": 23087341.3,
+      "percent_change": -1.9722886953013745,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 77.21,
-      "rank_score": 52.4,
+      "liquidity_score": 83.63,
+      "rank_score": 56.12,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst): HOOD Stock Slips Premarket: Early Backer Makes Massive Bet On Retail Trading Boom While CEO Vows To 'Disrupt' IPOs - Stocktwits",
+      "top_headlines": [
+        "HOOD Stock Slips Premarket: Early Backer Makes Massive Bet On Retail Trading Boom While CEO Vows To 'Disrupt' IPOs - Stocktwits",
+        "Analysts Offer Insights on Financial Companies: Robinhood (HOOD), Goldman Sachs Group (GS) and MSCI (MSCI) - theglobeandmail.com",
+        "Robinhood Markets, Inc. (HOOD) Sees a More Significant Dip Than Broader Market: Some Facts to Know - Yahoo Finance"
+      ],
+      "matched_headlines": [
+        {
+          "title": "HOOD Stock Slips Premarket: Early Backer Makes Massive Bet On Retail Trading Boom While CEO Vows To 'Disrupt' IPOs - Stocktwits",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Analysts Offer Insights on Financial Companies: Robinhood (HOOD), Goldman Sachs Group (GS) and MSCI (MSCI) - theglobeandmail.com",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "QRG Capital Management Inc. Raises Stake in Robinhood Markets, Inc. $HOOD - MarketBeat",
+          "keywords": [
+            "ai",
+            "beat",
+            "catalyst",
+            "raises"
+          ]
+        },
+        {
+          "title": "HOOD Stock Swings As Robinhood\u2019s $1 Trillion Vision Meets Wall Street Caution After Q2 Earnings - Stocktwits",
+          "keywords": [
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "ANET",
+      "name": "ANET",
+      "price": 203.4600067138672,
+      "volume": 902048.0,
+      "avg_volume": 5271460.888888889,
+      "percent_change": -0.004912029673158794,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 9,
+      "liquidity_score": 77.22,
+      "rank_score": 52.09,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Arista Networks, Inc. $ANET Stock Position Lifted by Envestnet Portfolio Solutions Inc. - MarketBeat",
       "top_headlines": [
         "ANET Oct 2026 177.500 put (ANET261009P00177500) Stock Price, News, Quote & History - Yahoo! Finance Canada",
         "Arista Networks (ANET) CTO exercised options for 17,333 shares and sold 43,333 shares. - Stock Titan",
-        "Arista Networks(ANET.US) Officer Sells US$8.82 Million in Common Stock - Moomoo"
+        "Arista Networks(ANET.US) Officer Sells US$8.82 Million in Common Stock - moomoo.com"
       ],
       "matched_headlines": [
         {
@@ -13512,6 +13512,55 @@
         },
         {
           "title": "Arista Networks, Inc. $ANET Shares Bought by Envestnet Asset Management Inc. - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "GS",
+      "name": "GS",
+      "price": 917.239990234375,
+      "volume": 903485.0,
+      "avg_volume": 2381765.0,
+      "percent_change": -2.0419491879513383,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 8,
+      "liquidity_score": 73.77,
+      "rank_score": 50.7,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst): Can AI Investment Drive S&P 500 Earnings Even Higher? - Goldman Sachs",
+      "top_headlines": [
+        "Can AI Investment Drive S&P 500 Earnings Even Higher? - Goldman Sachs",
+        "GS vs. EVR: Which Investment Bank Stock Offers Greater Upside? - tradingview.com",
+        "Goldman Sachs Upgraded To Buy After Recent Pullback, Betting On Quality, Durability (GS) - Seeking Alpha"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Can AI Investment Drive S&P 500 Earnings Even Higher? - Goldman Sachs",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Goldman Sachs Upgraded To Buy After Recent Pullback, Betting On Quality, Durability (GS) - Seeking Alpha",
+          "keywords": [
+            "catalyst",
+            "upgrade"
+          ]
+        },
+        {
+          "title": "Analysts Offer Insights on Financial Companies: Robinhood (HOOD), Goldman Sachs Group (GS) and MSCI (MSCI) - theglobeandmail.com",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "The Goldman Sachs Group, Inc. $GS Shares Acquired by Envestnet Portfolio Solutions Inc. - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -13545,8 +13594,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 1,
-      "BUY": 3,
+      "HOLD": 4,
+      "BUY": 0,
       "SELL": 0,
       "live": 4,
       "fallback": 0
@@ -13563,24 +13612,24 @@
     "max_candidates_to_llm": 8,
     "log_all_disagreements": true,
     "decision_mode": "live_dual_llm",
-    "last_tier": "senior_escalated",
+    "last_tier": "junior_only",
     "last_stage": "entry",
     "last_junior_nomination": null,
-    "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 88.1
+    "last_escalate_reason": "",
+    "live_share_recent": 89.8
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 367,
     "closed_outcomes": 167,
-    "consensus_events": 799,
+    "consensus_events": 800,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1041.8,
-    "change": 41.8,
+    "latest_equity": 1041.82,
+    "change": 41.82,
     "change_pct": 4.18,
     "points": [
       {
@@ -16188,8 +16237,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-24T15:31:06.586177+00:00",
-        "equity": 1041.8,
+        "t": "2026-09-24T15:33:18.441025+00:00",
+        "equity": 1041.82,
         "cash": 251.69,
         "event": "mark"
       }
