@@ -1793,6 +1793,8 @@
           .replace(/^grok-4\.5$/i, 'Grok 4.5')
           .replace(/^grok-4\.3$/i, 'Grok 4.3')
           .replace(/^grok-build-0\.1$/i, 'Grok Build 0.1')
+          .replace(/^grok-4\.20-0309-non-reasoning$/i, 'Grok 4.20')
+          .replace(/^grok-4\.20-non-reasoning$/i, 'Grok 4.20')
           .replace(/^grok-4\.1-fast$/i, 'Grok 4.1 Fast')
           .replace(/^grok-beta$/i, 'Grok Beta');
         if (name === raw) {
@@ -1808,10 +1810,10 @@
       const mode = cons.decision_mode || 'fallback_deterministic';
       const j1n = prettyModel(cons.junior_model_1 || 'grok-4.3', null);
       const j2n = prettyModel(cons.junior_model_2 || 'claude-haiku-4-5', null);
-      const j3n = prettyModel(cons.junior_model_3 || 'deepseek-v4-flash', null);
+      const j3n = prettyModel(cons.junior_model_3 || 'grok-4.20-0309-non-reasoning', null);
       const juniorModels = (Array.isArray(cons.junior_models) && cons.junior_models.length)
         ? cons.junior_models
-        : [cons.junior_model_1 || 'grok-4.3', cons.junior_model_2 || 'claude-haiku-4-5', cons.junior_model_3 || 'deepseek-v4-flash', cons.junior_model_4 || 'grok-build-0.1'];
+        : [cons.junior_model_1 || 'grok-4.3', cons.junior_model_2 || 'claude-haiku-4-5', cons.junior_model_3 || 'grok-4.20-0309-non-reasoning', cons.junior_model_4 || 'grok-build-0.1'];
       const juniorNames = juniorModels.map(m => prettyModel(m, null)).join(' + ');
       const minJunior = cons.junior_min_agree ?? 3;
       const juniorOn = cons.junior_enabled !== false;
@@ -2016,6 +2018,8 @@
             const s = String(m || '');
             const map = {
               'grok-4.5': 'Grok 4.5', 'grok-4.3': 'Grok 4.3',
+              'grok-4.20-0309-non-reasoning': 'Grok 4.20',
+              'grok-4.20-non-reasoning': 'Grok 4.20',
               'grok-build-0.1': 'Grok Build 0.1',
               'claude-sonnet-5': 'Claude Sonnet 5', 'claude-sonnet-4-5': 'Claude Sonnet 4.5',
               'claude-haiku-4-5': 'Claude Haiku 4.5', 'claude-haiku-4.5': 'Claude Haiku 4.5',
