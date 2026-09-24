@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-09-24T15:00:59.677228+00:00",
+  "generated_at": "2026-09-24T15:03:10.600588+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1042.31,
+    "portfolio_value": 1042.41,
     "starting_cash": 1000.0,
-    "total_return_pct": 4.23,
-    "total_pnl": 42.31,
+    "total_return_pct": 4.24,
+    "total_pnl": 42.41,
     "realized_pnl": 37.9,
-    "open_pnl": 4.38,
-    "capital_deployed": 790.62,
+    "open_pnl": 4.47,
+    "capital_deployed": 790.72,
     "cash": 251.69,
     "closed_trades": 40,
     "win_rate_pct": 32.5,
-    "vs_spy_pct": 4.87,
-    "spy_return_pct": -0.64,
+    "vs_spy_pct": 4.89,
+    "spy_return_pct": -0.65,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-24T15:01:02.413407+00:00"
+    "updated_at": "2026-09-24T15:03:13.273107+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.64,
-    "price": 764.4849853515625,
+    "return_pct": -0.65,
+    "price": 764.3599853515625,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 0,
-    "validated_count_today": 0,
+    "consensus_count_today": 1,
+    "validated_count_today": 1,
     "blocked_count_today": 0,
     "fills_today": 0,
-    "simulated_orders_today": 0,
+    "simulated_orders_today": 1,
     "top_symbol_today": "AMZN"
   },
   "holdings": [
@@ -38,9 +38,9 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 108.875,
-      "market_value": 201.42,
-      "open_pnl": 5.45,
+      "last": 108.87999725341797,
+      "market_value": 201.43,
+      "open_pnl": 5.46,
       "open_pnl_pct": 2.78,
       "stop": 102.5,
       "target": 112.0,
@@ -50,9 +50,9 @@
       "symbol": "AMZN",
       "qty": 0.8,
       "avg_cost": 248.31,
-      "last": 246.52999877929688,
-      "market_value": 197.22,
-      "open_pnl": -1.42,
+      "last": 246.51499938964844,
+      "market_value": 197.21,
+      "open_pnl": -1.44,
       "open_pnl_pct": -0.72,
       "stop": 240.0,
       "target": 262.0,
@@ -62,10 +62,10 @@
       "symbol": "AMD",
       "qty": 0.32,
       "avg_cost": 609.82,
-      "last": 612.4351196289062,
-      "market_value": 195.98,
-      "open_pnl": 0.84,
-      "open_pnl_pct": 0.43,
+      "last": 612.6091918945312,
+      "market_value": 196.03,
+      "open_pnl": 0.89,
+      "open_pnl_pct": 0.46,
       "stop": 585.0,
       "target": 655.0,
       "thesis": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity."
@@ -74,10 +74,10 @@
       "symbol": "BAC",
       "qty": 3.5,
       "avg_cost": 56.14,
-      "last": 56.0,
-      "market_value": 196.0,
-      "open_pnl": -0.49,
-      "open_pnl_pct": -0.25,
+      "last": 56.01499938964844,
+      "market_value": 196.05,
+      "open_pnl": -0.44,
+      "open_pnl_pct": -0.22,
       "stop": 53.9,
       "target": 59.9,
       "thesis": "BAC is the sole ranked liquid candidate with a bullish headline catalyst framing valuation support amid new debt deals. RSI near 50 leaves room for upside without extreme extension. Book has room under the five-name cap and cash supports a sub-$200 notional add with defined risk. Reward-to-risk meets desk minimum on a clean new_entry."
@@ -86,15 +86,15 @@
   "latest_candidate": {
     "symbol": "AMZN",
     "name": "AMZN",
-    "price": 246.19000244140625,
-    "volume": 8295330.0,
-    "avg_volume": 35081113.0,
-    "percent_change": -1.2356086886764508,
+    "price": 246.5749969482422,
+    "volume": 9046434.0,
+    "avg_volume": 35156223.4,
+    "percent_change": -1.0811598981131365,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 12,
-    "liquidity_score": 85.45,
-    "rank_score": 69.31,
+    "liquidity_score": 85.46,
+    "rank_score": 69.18,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (catalyst, upgrade): Amazon: Market Misunderstanding The Threat From Meta Muse (Rating Upgrade) (NASDAQ:AMZN) - Seeking Alpha",
     "top_headlines": [
@@ -108,13 +108,6 @@
         "keywords": [
           "catalyst",
           "upgrade"
-        ]
-      },
-      {
-        "title": "AMZN, META, GOOGL, MSFT Earnings This Week: One AI Bubble Signal Will Keep Investors On Edge - Stocktwits",
-        "keywords": [
-          "ai",
-          "catalyst"
         ]
       },
       {
@@ -137,56 +130,61 @@
           "ai",
           "catalyst"
         ]
+      },
+      {
+        "title": "AMZN Looks 0.0% Fairly Valued on GF Value\u2122 at $249.26 - GuruFocus",
+        "keywords": [
+          "ai",
+          "catalyst"
+        ]
       }
     ]
   },
   "latest_decision": {
-    "model": "grok-4.5",
-    "action": "BUY",
-    "symbol": "AAPL",
-    "confidence": 72,
+    "model": "grok-4.3",
+    "action": "HOLD",
+    "symbol": "CASH",
+    "confidence": 60,
     "cache_stats": null,
-    "entry_price": 336.33,
-    "stop_loss": 325.0,
-    "take_profit": 353.5,
-    "qty": 0.59,
-    "thesis": "AAPL ranks second with a bullish post-earnings dip setup after a nearly 10% slide while retail frames a buying opportunity and Wall Street remains divided. Neutral RSI near 50 and mega-cap liquidity support a mean-reversion bounce within the AI/catalyst narrative. Sized under $200 notional as a fifth name with stop/target delivering reward:risk above 1.5. No stronger unheld catalyst requires rotation.",
-    "reason_code": "new_entry",
+    "entry_price": 0.0,
+    "stop_loss": 0.0,
+    "take_profit": 0.0,
+    "qty": 0.0,
+    "thesis": "No new candidate offers a materially superior catalyst or rank score to justify a fresh entry or rotation. Top candidate AMZN is already held with no breach of stop/target levels. Book remains within risk limits with 4 open names and sufficient cash buffer.",
+    "reason_code": "hold",
     "reasoning": {
-      "headline": "Bought $AAPL",
-      "narrative": "AAPL ranks second with a bullish post-earnings dip setup after a nearly 10% slide while retail frames a buying opportunity and Wall Street remains divided. Neutral RSI near 50 and mega-cap liquidity support a mean-reversion bounce within the AI/catalyst narrative. Sized under $200 notional as a fifth name with stop/target delivering reward:risk above 1.5. No stronger unheld catalyst requires rotation.",
+      "headline": "Hold $CASH",
+      "narrative": "No new candidate offers a materially superior catalyst or rank score to justify a fresh entry or rotation. Top candidate AMZN is already held with no breach of stop/target levels. Book remains within risk limits with 4 open names and sufficient cash buffer.",
       "bullets": [
-        "Post-earnings ~10% slide + retail dip-buy catalyst",
-        "Rank 59 bullish, liquid mega-cap, RSI 50",
-        "R:R >1.5 via 325 stop / 353.5 target",
-        "Fits open slot; ~$198 notional"
+        "AMZN rank 69 highest but already positioned",
+        "No rotation candidate exceeds current holdings materially",
+        "Reward:risk and notional limits preclude marginal adds"
       ],
       "risk_map": {
-        "stop": 325.0,
-        "target": 353.5,
+        "stop": 0.0,
+        "target": 0.0,
         "horizon_days": 5,
-        "rr": 1.52,
-        "confidence_10": 7,
-        "confidence": 72
+        "rr": 0.0,
+        "confidence_10": 6,
+        "confidence": 60
       },
-      "thesis": "AAPL ranks second with a bullish post-earnings dip setup after a nearly 10% slide while retail frames a buying opportunity and Wall Street remains divided. Neutral RSI near 50 and mega-cap liquidity support a mean-reversion bounce within the AI/catalyst narrative. Sized under $200 notional as a fifth name with stop/target delivering reward:risk above 1.5. No stronger unheld catalyst requires rotation."
+      "thesis": "No new candidate offers a materially superior catalyst or rank score to justify a fresh entry or rotation. Top candidate AMZN is already held with no breach of stop/target levels. Book remains within risk limits with 4 open names and sufficient cash buffer."
     },
     "source": "live",
     "provider": "xai",
-    "provider_model_id": "grok-4.5",
+    "provider_model_id": "grok-4.3",
     "bullets": [
-      "Post-earnings ~10% slide + retail dip-buy catalyst",
-      "Rank 59 bullish, liquid mega-cap, RSI 50",
-      "R:R >1.5 via 325 stop / 353.5 target",
-      "Fits open slot; ~$198 notional"
+      "AMZN rank 69 highest but already positioned",
+      "No rotation candidate exceeds current holdings materially",
+      "Reward:risk and notional limits preclude marginal adds"
     ],
-    "timestamp": "2026-09-24T14:48:14.871531+00:00"
+    "timestamp": "2026-09-24T15:02:56.916957+00:00"
   },
-  "stance": "Buying pressure on AAPL. AAPL ranks second with a bullish post-earnings dip setup after a nearly 10% slide while retail frames a buying opportunity and Wall Street remains divided. Neutral RSI near 50 and mega-cap liquidity support a mean-reversion bounce within the AI/catalyst narrative. Sized under $200 notional as a fifth name with stop/target delivering reward:risk above 1.5. No stronger unheld catalyst requires rotation.",
+  "stance": "Holding WMT, AMZN, AMD, BAC. No new trade right now.",
   "thinking": {
-    "badge": "Looking to buy AAPL",
-    "headline": "Buying pressure on AAPL.",
-    "plain_english": "Right now Hermes wants exposure to AAPL. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
+    "badge": "Holding what it owns",
+    "headline": "Holding WMT, AMZN, AMD, BAC. No new trade right now.",
+    "plain_english": "Right now Hermes is holding WMT, AMZN, AMD, BAC and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
     "triggers": [
       "It owns WMT, bought near $105.93. Simple plan: sell if it falls to about $102.50, or take profit near $112.00.",
       "It owns AMZN, bought near $248.31. Simple plan: sell if it falls to about $240.00, or take profit near $262.00.",
@@ -202,8 +200,8 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 108.875,
-        "open_pnl": 5.45,
+        "last": 108.87999725341797,
+        "open_pnl": 5.46,
         "open_pnl_pct": 2.78,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
@@ -214,8 +212,8 @@
         "avg_cost": 248.31,
         "stop": 240.0,
         "target": 262.0,
-        "last": 246.52999877929688,
-        "open_pnl": -1.42,
+        "last": 246.51499938964844,
+        "open_pnl": -1.44,
         "open_pnl_pct": -0.72,
         "line": "Bought near $248.31 \u00b7 Sell safety line $240.00 \u00b7 Profit target $262.00",
         "plan": "stop 240.0 or target 262.0"
@@ -226,9 +224,9 @@
         "avg_cost": 609.82,
         "stop": 585.0,
         "target": 655.0,
-        "last": 612.4351196289062,
-        "open_pnl": 0.84,
-        "open_pnl_pct": 0.43,
+        "last": 612.6091918945312,
+        "open_pnl": 0.89,
+        "open_pnl_pct": 0.46,
         "line": "Bought near $609.82 \u00b7 Sell safety line $585.00 \u00b7 Profit target $655.00",
         "plan": "stop 585.0 or target 655.0"
       },
@@ -238,17 +236,17 @@
         "avg_cost": 56.14,
         "stop": 53.9,
         "target": 59.9,
-        "last": 56.0,
-        "open_pnl": -0.49,
-        "open_pnl_pct": -0.25,
+        "last": 56.01499938964844,
+        "open_pnl": -0.44,
+        "open_pnl_pct": -0.22,
         "line": "Bought near $56.14 \u00b7 Sell safety line $53.90 \u00b7 Profit target $59.90",
         "plan": "stop 53.9 or target 59.9"
       }
     ],
-    "last_checked": "2026-09-24T15:00:59.677228+00:00",
+    "last_checked": "2026-09-24T15:03:10.600588+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "BUY",
+    "action": "HOLD",
     "symbols_held": [
       "WMT",
       "AMZN",
@@ -259,10 +257,10 @@
       {
         "prefix": "J",
         "model": "grok-4.3",
-        "action": "BUY",
-        "symbol": "AMZN",
-        "confidence": 72,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 60,
+        "tone": "hold"
       },
       {
         "prefix": "J",
@@ -283,38 +281,91 @@
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "BUY",
-        "symbol": "AMZN",
-        "confidence": 72,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "grok-4.5",
-        "action": "BUY",
-        "symbol": "AAPL",
-        "confidence": 72,
-        "tone": "buy"
-      },
-      {
-        "prefix": "S",
-        "model": "claude-sonnet-5",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 65,
+        "confidence": 60,
         "tone": "hold"
-      },
-      {
-        "prefix": "S",
-        "model": "claude-opus-5",
-        "action": "BUY",
-        "symbol": "HOOD",
-        "confidence": 90,
-        "tone": "buy"
       }
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 no new trade",
+      "detail": "No new candidate offers a materially superior catalyst or rank score to justify a fresh entry or rotation. Top candidate AMZN is already held with no breach of stop/target levels. Book remains within risk limits with 4 open names and sufficient cash buffer.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.20-0309-non-reasoning",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        }
+      ],
+      "tier": "junior_only",
+      "escalate_reason": "",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-24T15:02:56.916957+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "AAPL",
@@ -13108,15 +13159,15 @@
     {
       "symbol": "AMZN",
       "name": "AMZN",
-      "price": 246.19000244140625,
-      "volume": 8295330.0,
-      "avg_volume": 35081113.0,
-      "percent_change": -1.2356086886764508,
+      "price": 246.5749969482422,
+      "volume": 9046434.0,
+      "avg_volume": 35156223.4,
+      "percent_change": -1.0811598981131365,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 12,
-      "liquidity_score": 85.45,
-      "rank_score": 69.31,
+      "liquidity_score": 85.46,
+      "rank_score": 69.18,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, upgrade): Amazon: Market Misunderstanding The Threat From Meta Muse (Rating Upgrade) (NASDAQ:AMZN) - Seeking Alpha",
       "top_headlines": [
@@ -13130,13 +13181,6 @@
           "keywords": [
             "catalyst",
             "upgrade"
-          ]
-        },
-        {
-          "title": "AMZN, META, GOOGL, MSFT Earnings This Week: One AI Bubble Signal Will Keep Investors On Edge - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
           ]
         },
         {
@@ -13159,21 +13203,28 @@
             "ai",
             "catalyst"
           ]
+        },
+        {
+          "title": "AMZN Looks 0.0% Fairly Valued on GF Value\u2122 at $249.26 - GuruFocus",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
         }
       ]
     },
     {
       "symbol": "AAPL",
       "name": "AAPL",
-      "price": 336.32501220703125,
-      "volume": 6218148.0,
-      "avg_volume": 39452054.8,
-      "percent_change": -0.2062123403049639,
+      "price": 336.0,
+      "volume": 6643413.0,
+      "avg_volume": 39494581.3,
+      "percent_change": -0.30264941158445563,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 10,
-      "liquidity_score": 85.96,
-      "rank_score": 59.06,
+      "catalyst_score": 9,
+      "liquidity_score": 85.97,
+      "rank_score": 56.64,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): AAPL Stock Slides Nearly 10% \u2014 Apple\u2019s Earnings Divide Wall Street, But Retail Sees A Buying Opportunity - Stocktwits",
       "top_headlines": [
@@ -13204,6 +13255,14 @@
           ]
         },
         {
+          "title": "Apple (AAPL) Stock Could Be 32% Overpriced After Fresh AI Cost Warnings - Yahoo Finance",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "warning"
+          ]
+        },
+        {
           "title": "Apple (AAPL) After The iPhone Duo Launch Is The Stock Already Fully Valued - simplywall.st",
           "keywords": [
             "catalyst",
@@ -13215,15 +13274,15 @@
     {
       "symbol": "HOOD",
       "name": "HOOD",
-      "price": 122.09500122070312,
-      "volume": 5778493.0,
-      "avg_volume": 22961969.3,
-      "percent_change": -0.4930690648625397,
+      "price": 121.2699966430664,
+      "volume": 6325218.0,
+      "avg_volume": 23016641.8,
+      "percent_change": -1.165444450482741,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 83.61,
-      "rank_score": 54.94,
+      "liquidity_score": 83.62,
+      "rank_score": 55.48,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): HOOD Stock Slips Premarket: Early Backer Makes Massive Bet On Retail Trading Boom While CEO Vows To 'Disrupt' IPOs - Stocktwits",
       "top_headlines": [
@@ -13266,20 +13325,20 @@
     {
       "symbol": "BAC",
       "name": "BAC",
-      "price": 56.16999816894531,
-      "volume": 9933669.0,
-      "avg_volume": 40886516.9,
-      "percent_change": 0.3035681588309152,
+      "price": 55.974998474121094,
+      "volume": 11667785.0,
+      "avg_volume": 41059928.5,
+      "percent_change": -0.04464558192661831,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 86.12,
-      "rank_score": 52.66,
+      "liquidity_score": 86.13,
+      "rank_score": 52.46,
       "news_hits": 7,
       "catalyst": "Headline-driven setup (catalyst, upgrade): Bank of America: A Decent Value Play Amid A Sharp Selloff (Upgrade) (NYSE:BAC) - Seeking Alpha",
       "top_headlines": [
+        "Bank of America Corporation (BAC) Stock forecasts - Yahoo Finance Australia",
         "Bank of America: A Decent Value Play Amid A Sharp Selloff (Upgrade) (NYSE:BAC) - Seeking Alpha",
-        "BAC261002P00045000 Interactive Stock Chart | BAC Oct 2026 45.000 put Stock - Yahoo Finance",
         "Why Bank of America (BAC) Stock Is Down Today - quiverquant.com"
       ],
       "matched_headlines": [
@@ -13322,19 +13381,19 @@
     {
       "symbol": "ANET",
       "name": "ANET",
-      "price": 203.0,
-      "volume": 703912.0,
-      "avg_volume": 5249445.777777778,
-      "percent_change": -0.23099288243150717,
+      "price": 202.77999877929688,
+      "volume": 765222.0,
+      "avg_volume": 5256258.0,
+      "percent_change": -0.3391175294965507,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 77.2,
-      "rank_score": 52.26,
+      "liquidity_score": 77.21,
+      "rank_score": 52.35,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Arista Networks, Inc. $ANET Stock Position Lifted by Envestnet Portfolio Solutions Inc. - MarketBeat",
       "top_headlines": [
-        "ANET Jan 2029 210.000 put (ANET290119P00210000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+        "ANET Oct 2026 177.500 put (ANET261009P00177500) Stock Price, News, Quote & History - Yahoo! Finance Canada",
         "Arista Networks (ANET) CTO exercised options for 17,333 shares and sold 43,333 shares. - Stock Titan",
         "Arista Networks(ANET.US) Officer Sells US$8.82 Million in Common Stock - Moomoo"
       ],
@@ -13386,8 +13445,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 2,
-      "BUY": 2,
+      "HOLD": 4,
+      "BUY": 0,
       "SELL": 0,
       "live": 4,
       "fallback": 0
@@ -13404,25 +13463,25 @@
     "max_candidates_to_llm": 8,
     "log_all_disagreements": true,
     "decision_mode": "live_dual_llm",
-    "last_tier": "senior_escalated",
+    "last_tier": "junior_only",
     "last_stage": "entry",
     "last_junior_nomination": null,
-    "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 85.7
+    "last_escalate_reason": "",
+    "live_share_recent": 88.6
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 367,
     "closed_outcomes": 167,
-    "consensus_events": 797,
+    "consensus_events": 798,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1042.31,
-    "change": 42.31,
-    "change_pct": 4.23,
+    "latest_equity": 1042.41,
+    "change": 42.41,
+    "change_pct": 4.24,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -16023,8 +16082,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-24T15:01:02.413407+00:00",
-        "equity": 1042.31,
+        "t": "2026-09-24T15:03:13.273107+00:00",
+        "equity": 1042.41,
         "cash": 251.69,
         "event": "mark"
       }
