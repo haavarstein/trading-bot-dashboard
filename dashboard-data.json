@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-24T14:30:57.621091+00:00",
+  "generated_at": "2026-09-24T14:32:57.160699+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1045.29,
+    "portfolio_value": 1045.09,
     "starting_cash": 1000.0,
-    "total_return_pct": 4.53,
-    "total_pnl": 45.29,
+    "total_return_pct": 4.51,
+    "total_pnl": 45.09,
     "realized_pnl": 37.9,
-    "open_pnl": 7.35,
-    "capital_deployed": 793.6,
+    "open_pnl": 7.16,
+    "capital_deployed": 793.4,
     "cash": 251.69,
     "closed_trades": 40,
     "win_rate_pct": 32.5,
     "vs_spy_pct": 5.0,
-    "spy_return_pct": -0.47,
+    "spy_return_pct": -0.49,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-24T14:31:00.532519+00:00"
+    "updated_at": "2026-09-24T14:32:59.815809+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.47,
-    "price": 765.7899780273438,
+    "return_pct": -0.49,
+    "price": 765.5999755859375,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -38,10 +38,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 108.95999908447266,
-      "market_value": 201.58,
-      "open_pnl": 5.61,
-      "open_pnl_pct": 2.86,
+      "last": 108.86000061035156,
+      "market_value": 201.39,
+      "open_pnl": 5.42,
+      "open_pnl_pct": 2.77,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -50,10 +50,10 @@
       "symbol": "AMZN",
       "qty": 0.8,
       "avg_cost": 248.31,
-      "last": 246.5800018310547,
-      "market_value": 197.26,
-      "open_pnl": -1.38,
-      "open_pnl_pct": -0.7,
+      "last": 246.65499877929688,
+      "market_value": 197.32,
+      "open_pnl": -1.32,
+      "open_pnl_pct": -0.67,
       "stop": 240.0,
       "target": 262.0,
       "thesis": "AMZN shows a ranked liquid setup with bullish sentiment and a headline institutional buy catalyst supporting near-term momentum. RSI near 50 leaves room for upside without overbought conditions. Portfolio has capacity for one more name under the 5-position guideline and cash covers a sub-$200 notional entry. Risk defined below recent support with 1.5+ R:R to the target."
@@ -62,10 +62,10 @@
       "symbol": "AMD",
       "qty": 0.32,
       "avg_cost": 609.82,
-      "last": 616.52001953125,
-      "market_value": 197.29,
-      "open_pnl": 2.14,
-      "open_pnl_pct": 1.1,
+      "last": 617.1799926757812,
+      "market_value": 197.5,
+      "open_pnl": 2.36,
+      "open_pnl_pct": 1.21,
       "stop": 585.0,
       "target": 655.0,
       "thesis": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity."
@@ -74,10 +74,10 @@
       "symbol": "BAC",
       "qty": 3.5,
       "avg_cost": 56.14,
-      "last": 56.41999816894531,
-      "market_value": 197.47,
-      "open_pnl": 0.98,
-      "open_pnl_pct": 0.5,
+      "last": 56.34000015258789,
+      "market_value": 197.19,
+      "open_pnl": 0.7,
+      "open_pnl_pct": 0.36,
       "stop": 53.9,
       "target": 59.9,
       "thesis": "BAC is the sole ranked liquid candidate with a bullish headline catalyst framing valuation support amid new debt deals. RSI near 50 leaves room for upside without extreme extension. Book has room under the five-name cap and cash supports a sub-$200 notional add with defined risk. Reward-to-risk meets desk minimum on a clean new_entry."
@@ -86,15 +86,15 @@
   "latest_candidate": {
     "symbol": "AMZN",
     "name": "AMZN",
-    "price": 245.82550048828125,
-    "volume": 6405911.0,
-    "avg_volume": 34892171.1,
-    "percent_change": -1.3818364524977995,
+    "price": 246.60000610351562,
+    "volume": 7645264.0,
+    "avg_volume": 35016106.4,
+    "percent_change": -1.07112693993735,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 12,
-    "liquidity_score": 85.43,
-    "rank_score": 69.42,
+    "liquidity_score": 85.44,
+    "rank_score": 69.17,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (catalyst, upgrade): Amazon: Market Misunderstanding The Threat From Meta Muse (Rating Upgrade) (NASDAQ:AMZN) - Seeking Alpha",
     "top_headlines": [
@@ -143,50 +143,50 @@
   "latest_decision": {
     "model": "grok-4.5",
     "action": "BUY",
-    "symbol": "NVDA",
-    "confidence": 73,
+    "symbol": "HOOD",
+    "confidence": 72,
     "cache_stats": null,
-    "entry_price": 222.1,
-    "stop_loss": 213.5,
-    "take_profit": 236.5,
-    "qty": 0.9,
-    "thesis": "NVDA ranks as a top liquid catalyst candidate after its largest jump in 14 months on Raymond James $12T valuation commentary that supply remains the primary constraint. AI capex momentum supports continuation with RSI neutral at 50, offering a clean momentum entry. Book has room for a fifth name and $200 notional fits defined risk. Reward-to-risk exceeds 1.5 with stop below recent support and target into extension.",
+    "entry_price": 122.87,
+    "stop_loss": 117.5,
+    "take_profit": 131.0,
+    "qty": 1.6,
+    "thesis": "HOOD ranks second with a fresh post-earnings catalyst: record revenue and a Q2 beat driven by volatility, even as after-hours weakness creates a cleaner entry. Sentiment remains bullish and the name is liquid enough for a small starter under the $200 notional cap. Room exists for a fifth name without forced rotation; risk is defined below recent support with 1.5+ R:R to the upside target.",
     "reason_code": "new_entry",
     "reasoning": {
-      "headline": "Bought $NVDA",
-      "narrative": "NVDA ranks as a top liquid catalyst candidate after its largest jump in 14 months on Raymond James $12T valuation commentary that supply remains the primary constraint. AI capex momentum supports continuation with RSI neutral at 50, offering a clean momentum entry. Book has room for a fifth name and $200 notional fits defined risk. Reward-to-risk exceeds 1.5 with stop below recent support and target into extension.",
+      "headline": "Bought $HOOD",
+      "narrative": "HOOD ranks second with a fresh post-earnings catalyst: record revenue and a Q2 beat driven by volatility, even as after-hours weakness creates a cleaner entry. Sentiment remains bullish and the name is liquid enough for a small starter under the $200 notional cap. Room exists for a fifth name without forced rotation; risk is defined below recent support with 1.5+ R:R to the upside target.",
       "bullets": [
-        "RJ $12T call + supply-constraint catalyst",
-        "Liquid AI leader, rank_score 58+",
-        "R:R >1.5 with stop 213.5 / TP 236.5",
-        "Adds 5th name under max-open policy"
+        "Q2 beat + record revenue catalyst, rank_score 58.65",
+        "Starter size ~$197 notional, cash allows it",
+        "Stop 117.50 / target 131.00 gives R:R ~1.5",
+        "Book at 4 names; adding liquid fintech exposure"
       ],
       "risk_map": {
-        "stop": 213.5,
-        "target": 236.5,
+        "stop": 117.5,
+        "target": 131.0,
         "horizon_days": 5,
-        "rr": 1.67,
+        "rr": 1.51,
         "confidence_10": 7,
-        "confidence": 73
+        "confidence": 72
       },
-      "thesis": "NVDA ranks as a top liquid catalyst candidate after its largest jump in 14 months on Raymond James $12T valuation commentary that supply remains the primary constraint. AI capex momentum supports continuation with RSI neutral at 50, offering a clean momentum entry. Book has room for a fifth name and $200 notional fits defined risk. Reward-to-risk exceeds 1.5 with stop below recent support and target into extension."
+      "thesis": "HOOD ranks second with a fresh post-earnings catalyst: record revenue and a Q2 beat driven by volatility, even as after-hours weakness creates a cleaner entry. Sentiment remains bullish and the name is liquid enough for a small starter under the $200 notional cap. Room exists for a fifth name without forced rotation; risk is defined below recent support with 1.5+ R:R to the upside target."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "RJ $12T call + supply-constraint catalyst",
-      "Liquid AI leader, rank_score 58+",
-      "R:R >1.5 with stop 213.5 / TP 236.5",
-      "Adds 5th name under max-open policy"
+      "Q2 beat + record revenue catalyst, rank_score 58.65",
+      "Starter size ~$197 notional, cash allows it",
+      "Stop 117.50 / target 131.00 gives R:R ~1.5",
+      "Book at 4 names; adding liquid fintech exposure"
     ],
-    "timestamp": "2026-09-24T14:18:07.552365+00:00"
+    "timestamp": "2026-09-24T14:32:48.904735+00:00"
   },
-  "stance": "Buying pressure on NVDA. NVDA ranks as a top liquid catalyst candidate after its largest jump in 14 months on Raymond James $12T valuation commentary that supply remains the primary constraint. AI capex momentum supports continuation with RSI neutral at 50, offering a clean momentum entry. Book has room for a fifth name and $200 notional fits defined risk. Reward-to-risk exceeds 1.5 with stop below recent support and target into extension.",
+  "stance": "Buying pressure on HOOD. HOOD ranks second with a fresh post-earnings catalyst: record revenue and a Q2 beat driven by volatility, even as after-hours weakness creates a cleaner entry. Sentiment remains bullish and the name is liquid enough for a small starter under the $200 notional cap. Room exists for a fifth name without forced rotation; risk is defined below recent support with 1.5+ R:R to the upside target.",
   "thinking": {
-    "badge": "Looking to buy NVDA",
-    "headline": "Buying pressure on NVDA.",
-    "plain_english": "Right now Hermes wants exposure to NVDA. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
+    "badge": "Looking to buy HOOD",
+    "headline": "Buying pressure on HOOD.",
+    "plain_english": "Right now Hermes wants exposure to HOOD. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
     "triggers": [
       "It owns WMT, bought near $105.93. Simple plan: sell if it falls to about $102.50, or take profit near $112.00.",
       "It owns AMZN, bought near $248.31. Simple plan: sell if it falls to about $240.00, or take profit near $262.00.",
@@ -202,9 +202,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 108.95999908447266,
-        "open_pnl": 5.61,
-        "open_pnl_pct": 2.86,
+        "last": 108.86000061035156,
+        "open_pnl": 5.42,
+        "open_pnl_pct": 2.77,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -214,9 +214,9 @@
         "avg_cost": 248.31,
         "stop": 240.0,
         "target": 262.0,
-        "last": 246.5800018310547,
-        "open_pnl": -1.38,
-        "open_pnl_pct": -0.7,
+        "last": 246.65499877929688,
+        "open_pnl": -1.32,
+        "open_pnl_pct": -0.67,
         "line": "Bought near $248.31 \u00b7 Sell safety line $240.00 \u00b7 Profit target $262.00",
         "plan": "stop 240.0 or target 262.0"
       },
@@ -226,9 +226,9 @@
         "avg_cost": 609.82,
         "stop": 585.0,
         "target": 655.0,
-        "last": 616.52001953125,
-        "open_pnl": 2.14,
-        "open_pnl_pct": 1.1,
+        "last": 617.1799926757812,
+        "open_pnl": 2.36,
+        "open_pnl_pct": 1.21,
         "line": "Bought near $609.82 \u00b7 Sell safety line $585.00 \u00b7 Profit target $655.00",
         "plan": "stop 585.0 or target 655.0"
       },
@@ -238,14 +238,14 @@
         "avg_cost": 56.14,
         "stop": 53.9,
         "target": 59.9,
-        "last": 56.41999816894531,
-        "open_pnl": 0.98,
-        "open_pnl_pct": 0.5,
+        "last": 56.34000015258789,
+        "open_pnl": 0.7,
+        "open_pnl_pct": 0.36,
         "line": "Bought near $56.14 \u00b7 Sell safety line $53.90 \u00b7 Profit target $59.90",
         "plan": "stop 53.9 or target 59.9"
       }
     ],
-    "last_checked": "2026-09-24T14:30:57.621091+00:00",
+    "last_checked": "2026-09-24T14:32:57.160699+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -261,7 +261,7 @@
         "model": "grok-4.3",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 60,
+        "confidence": 62,
         "tone": "hold"
       },
       {
@@ -292,29 +292,106 @@
         "prefix": "S",
         "model": "grok-4.5",
         "action": "BUY",
-        "symbol": "NVDA",
-        "confidence": 73,
+        "symbol": "HOOD",
+        "confidence": 72,
         "tone": "buy"
       },
       {
         "prefix": "S",
         "model": "claude-sonnet-5",
-        "action": "SELL",
-        "symbol": "AMZN",
-        "confidence": 72,
-        "tone": "sell"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 65,
+        "tone": "hold"
       },
       {
         "prefix": "S",
         "model": "claude-opus-5",
         "action": "BUY",
-        "symbol": "GS",
+        "symbol": "HOOD",
         "confidence": 90,
         "tone": "buy"
       }
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "HOOD",
+      "status": "no_consensus",
+      "headline": "BUY HOOD \u2014 no consensus",
+      "detail": "Desks: BUY HOOD (72%) vs HOLD CASH (65%) vs BUY HOOD (90%). No 2-of-3 senior agreement",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.20-0309-non-reasoning",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "AMZN",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "HOOD",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "BUY",
+          "symbol": "HOOD",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-24T14:32:48.904735+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "NVDA",
@@ -12954,15 +13031,15 @@
     {
       "symbol": "AMZN",
       "name": "AMZN",
-      "price": 245.82550048828125,
-      "volume": 6405911.0,
-      "avg_volume": 34892171.1,
-      "percent_change": -1.3818364524977995,
+      "price": 246.60000610351562,
+      "volume": 7645264.0,
+      "avg_volume": 35016106.4,
+      "percent_change": -1.07112693993735,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 12,
-      "liquidity_score": 85.43,
-      "rank_score": 69.42,
+      "liquidity_score": 85.44,
+      "rank_score": 69.17,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, upgrade): Amazon: Market Misunderstanding The Threat From Meta Muse (Rating Upgrade) (NASDAQ:AMZN) - Seeking Alpha",
       "top_headlines": [
@@ -13009,72 +13086,17 @@
       ]
     },
     {
-      "symbol": "GS",
-      "name": "GS",
-      "price": 922.5,
-      "volume": 403976.0,
-      "avg_volume": 2326264.0,
-      "percent_change": -1.480198381860442,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 11,
-      "liquidity_score": 73.67,
-      "rank_score": 63.73,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): Can AI Investment Drive S&P 500 Earnings Even Higher? - Goldman Sachs",
-      "top_headlines": [
-        "GS vs. EVR: Which Investment Bank Stock Offers Greater Upside? - Yahoo Finance",
-        "Can AI Investment Drive S&P 500 Earnings Even Higher? - Goldman Sachs",
-        "Goldman Sachs Upgraded To Buy After Recent Pullback, Betting On Quality, Durability (GS) - Seeking Alpha"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Can AI Investment Drive S&P 500 Earnings Even Higher? - Goldman Sachs",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Goldman Sachs Upgraded To Buy After Recent Pullback, Betting On Quality, Durability (GS) - Seeking Alpha",
-          "keywords": [
-            "catalyst",
-            "upgrade"
-          ]
-        },
-        {
-          "title": "Analysts Offer Insights on Financial Companies: Robinhood (HOOD), Goldman Sachs Group (GS) and MSCI (MSCI) - The Globe and Mail",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "The Goldman Sachs Group, Inc. $GS Shares Acquired by Envestnet Portfolio Solutions Inc. - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "The Goldman Sachs Group, Inc. $GS Shares Purchased by QRG Capital Management Inc. - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "HOOD",
       "name": "HOOD",
-      "price": 121.43000030517578,
-      "volume": 4268529.0,
-      "avg_volume": 22810972.9,
-      "percent_change": -1.0350421146319355,
+      "price": 122.86859893798828,
+      "volume": 5010782.0,
+      "avg_volume": 22885198.2,
+      "percent_change": 0.13740993801101245,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 10,
-      "liquidity_score": 83.58,
-      "rank_score": 59.37,
+      "liquidity_score": 83.6,
+      "rank_score": 58.65,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (record): HOOD Stock Slips 1% After-Hours \u2014 Robinhood Tops Q2 Estimates As Volatility Drives Record Revenue, But Crypto Slump Weighs - Stocktwits",
       "top_headlines": [
@@ -13114,114 +13136,155 @@
       ]
     },
     {
-      "symbol": "NVDA",
-      "name": "NVDA",
-      "price": 222.10000610351562,
-      "volume": 15193571.0,
-      "avg_volume": 100048237.1,
-      "percent_change": -1.5121229596841415,
+      "symbol": "BAC",
+      "name": "BAC",
+      "price": 56.42499923706055,
+      "volume": 8411952.0,
+      "avg_volume": 40734345.2,
+      "percent_change": 0.7589272090366909,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 9,
-      "liquidity_score": 90.0,
-      "rank_score": 58.21,
-      "news_hits": 6,
-      "catalyst": "Headline-driven setup (ai, catalyst): NVDA Stock Posts Biggest Jump In 14 Months On $12 Trillion Valuation Call From Raymond James \u2013 \u2018Supply Is The Primary Constraint\u2019 - Stocktwits",
+      "catalyst_score": 8,
+      "liquidity_score": 86.1,
+      "rank_score": 53.02,
+      "news_hits": 7,
+      "catalyst": "Headline-driven setup (catalyst, upgrade): Bank of America: A Decent Value Play Amid A Sharp Selloff (Upgrade) (NYSE:BAC) - Seeking Alpha",
       "top_headlines": [
-        "NVDA Stock Posts Biggest Jump In 14 Months On $12 Trillion Valuation Call From Raymond James \u2013 \u2018Supply Is The Primary Constraint\u2019 - Stocktwits",
-        "REG - Leverage Shares PLC Leverage Inc Gold $ Leverage Inc NVDA $ Leverage Inc Tesla $ Leverage Inc S&P500$ - IncomeShares Interest Notification Calendar - TradingView",
-        "NVIDIA's (NVDA) Buy Rating Reaffirmed at Sanford C. Bernstein - MarketBeat"
+        "Bank of America: A Decent Value Play Amid A Sharp Selloff (Upgrade) (NYSE:BAC) - Seeking Alpha",
+        "BAC261002P00045000 Interactive Stock Chart | BAC Oct 2026 45.000 put Stock - Yahoo Finance",
+        "Why Bank of America (BAC) Stock Is Down Today - quiverquant.com"
       ],
       "matched_headlines": [
         {
-          "title": "NVDA Stock Posts Biggest Jump In 14 Months On $12 Trillion Valuation Call From Raymond James \u2013 \u2018Supply Is The Primary Constraint\u2019 - Stocktwits",
+          "title": "Bank of America: A Decent Value Play Amid A Sharp Selloff (Upgrade) (NYSE:BAC) - Seeking Alpha",
+          "keywords": [
+            "catalyst",
+            "upgrade"
+          ]
+        },
+        {
+          "title": "Bank of America (BAC) Warns Oil Could Surge Above $150 Per Barrel - simplywall.st",
+          "keywords": [
+            "warns"
+          ]
+        },
+        {
+          "title": "Bank of America (NYSE:BAC) Stock Price Down 3% - Time to Sell? - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "BAC Looks 4.7% Overvalued on GF Value\u2122 as Dividend Sustainabilit - GuruFocus",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "NVIDIA's (NVDA) Buy Rating Reaffirmed at Sanford C. Bernstein - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "NVDA, Chip Stocks Extend Rout: Analysts Say OpenAI Deal Fears Overblown - Stocktwits",
+          "title": "Is Bank of America (BAC) A Bargain As New Debt Deals Test Its Valuation? - Yahoo Finance",
           "keywords": [
             "ai",
             "catalyst",
             "deal"
           ]
-        },
-        {
-          "title": "NVDA Stock Eyes Third Weekly Gains: Why Japan Wants Nvidia\u2019s Rubin Chips To Power Its Next Robotics Boom - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Forget Waiting for a Dip: Nvidia (NVDA) Is Worth Buying Today Based on The Motley Fool's Long-Term Conviction Ratings - Yahoo Finance",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
         }
       ]
     },
     {
-      "symbol": "WMT",
-      "name": "WMT",
-      "price": 109.13999938964844,
-      "volume": 7657529.0,
-      "avg_volume": 21367572.9,
-      "percent_change": -1.257576590065787,
+      "symbol": "ANET",
+      "name": "ANET",
+      "price": 202.42999267578125,
+      "volume": 627217.0,
+      "avg_volume": 5240924.111111111,
+      "percent_change": -0.5111360587223773,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 8,
-      "liquidity_score": 83.3,
-      "rank_score": 53.0,
+      "catalyst_score": 9,
+      "liquidity_score": 77.19,
+      "rank_score": 52.49,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): Walmart Stock: Failing To Live Up To Rich Multiples (NASDAQ:WMT) - Seeking Alpha",
+      "catalyst": "Headline-driven setup (beat): Arista Networks, Inc. $ANET Stock Position Lifted by Envestnet Portfolio Solutions Inc. - MarketBeat",
       "top_headlines": [
-        "Walmart Inc. (WMT) Stock forecasts - Yahoo Finance Australia",
-        "Walmart Stock: Failing To Live Up To Rich Multiples (NASDAQ:WMT) - Seeking Alpha",
-        "Walmart To Pay $50M To Settle DOJ Lawsuit Over Invalid Opioid Prescriptions \u2014 WMT Stock In Focus - Stocktwits"
+        "ANET Oct 2026 177.500 put (ANET261009P00177500) Stock Price, News, Quote & History - ca.finance.yahoo.com",
+        "Arista Networks (ANET) CTO exercised options for 17,333 shares and sold 43,333 shares. - Stock Titan",
+        "Arista Networks(ANET.US) Officer Sells US$8.82 Million in Common Stock - Moomoo"
       ],
       "matched_headlines": [
         {
-          "title": "Walmart Stock: Failing To Live Up To Rich Multiples (NASDAQ:WMT) - Seeking Alpha",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "Walmart To Pay $50M To Settle DOJ Lawsuit Over Invalid Opioid Prescriptions \u2014 WMT Stock In Focus - Stocktwits",
-          "keywords": [
-            "lawsuit"
-          ]
-        },
-        {
-          "title": "Envestnet Portfolio Solutions Inc. Buys 20,942 Shares of Walmart Inc. $WMT - MarketBeat",
+          "title": "Arista Networks, Inc. $ANET Stock Position Lifted by Envestnet Portfolio Solutions Inc. - MarketBeat",
           "keywords": [
             "beat"
           ]
         },
         {
-          "title": "Walmart (NASDAQ: WMT) Shares Rise As Senators Push FTC To Scrutinize Sparky AI Shopping Assistant - foreignpolicyjournal.com",
+          "title": "Arista Networks (NYSE:ANET) Insider Sells $5,291,000.00 in Stock - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Arista Networks, Inc. $ANET Shares Bought by Envestnet Asset Management Inc. - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "META",
+      "name": "META",
+      "price": 765.9500122070312,
+      "volume": 12497273.0,
+      "avg_volume": 23618817.3,
+      "percent_change": 2.936438292971056,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 7,
+      "liquidity_score": 83.73,
+      "rank_score": 50.41,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst): Why Meta Stock Won\u2019t Care If New Muse AI Gadget Flops - Barron's",
+      "top_headlines": [
+        "What's Going On With Meta Platforms Stock Thursday? - Meta Platforms (NASDAQ:META) - Benzinga",
+        "Why Meta Stock Won\u2019t Care If New Muse AI Gadget Flops - Barron's",
+        "Meta's standoff with Amazon over Muse could be a sign of things to come - CNBC"
+      ],
+      "matched_headlines": [
+        {
+          "title": "Why Meta Stock Won\u2019t Care If New Muse AI Gadget Flops - Barron's",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
+          "title": "Meta Rallies Into Connect Conference. Why The Muse AI Agent Is Sending Some Stocks Lower. - Investor's Business Daily",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Meta Platforms Stock (META) Opinions on AI Progress and Muse Launch - quiverquant.com",
           "keywords": [
             "ai",
             "catalyst",
-            "record"
+            "launch"
+          ]
+        },
+        {
+          "title": "Mizuho reiterates Meta stock rating on AI momentum - Investing.com",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Meta\u2019s New AI Agent Is an Instant Hit\u2014and the Backlash Has Already Begun - WSJ",
+          "keywords": [
+            "ai",
+            "catalyst"
           ]
         }
       ]
@@ -13281,15 +13344,15 @@
     "candidate_signals_logged": 8,
     "fills_logged": 367,
     "closed_outcomes": 167,
-    "consensus_events": 795,
+    "consensus_events": 796,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1045.29,
-    "change": 45.29,
-    "change_pct": 4.53,
+    "latest_equity": 1045.09,
+    "change": 45.09,
+    "change_pct": 4.51,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15884,8 +15947,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-24T14:31:00.532519+00:00",
-        "equity": 1045.29,
+        "t": "2026-09-24T14:32:59.815809+00:00",
+        "equity": 1045.09,
         "cash": 251.69,
         "event": "mark"
       }
