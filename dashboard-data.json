@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-09-25T15:11:03.857767+00:00",
+  "generated_at": "2026-09-25T15:21:03.997049+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1047.02,
+    "portfolio_value": 1047.06,
     "starting_cash": 1000.0,
-    "total_return_pct": 4.7,
-    "total_pnl": 47.02,
+    "total_return_pct": 4.71,
+    "total_pnl": 47.06,
     "realized_pnl": 35.94,
-    "open_pnl": 11.04,
-    "capital_deployed": 994.47,
+    "open_pnl": 11.08,
+    "capital_deployed": 994.51,
     "cash": 52.55,
     "closed_trades": 41,
     "win_rate_pct": 31.71,
-    "vs_spy_pct": 4.79,
-    "spy_return_pct": -0.09,
+    "vs_spy_pct": 4.78,
+    "spy_return_pct": -0.07,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-25T15:11:06.746707+00:00"
+    "updated_at": "2026-09-25T15:21:06.809226+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.09,
-    "price": 768.719970703125,
+    "return_pct": -0.07,
+    "price": 768.8300170898438,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 2,
-    "validated_count_today": 2,
+    "consensus_count_today": 3,
+    "validated_count_today": 3,
     "blocked_count_today": 0,
     "fills_today": 1,
-    "simulated_orders_today": 2,
+    "simulated_orders_today": 3,
     "top_symbol_today": "PANW"
   },
   "holdings": [
@@ -38,10 +38,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 107.19000244140625,
-      "market_value": 198.3,
-      "open_pnl": 2.33,
-      "open_pnl_pct": 1.19,
+      "last": 107.31009674072266,
+      "market_value": 198.52,
+      "open_pnl": 2.55,
+      "open_pnl_pct": 1.3,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -50,10 +50,10 @@
       "symbol": "AMZN",
       "qty": 1.6,
       "avg_cost": 247.3925,
-      "last": 248.64500427246094,
-      "market_value": 397.83,
-      "open_pnl": 2.0,
-      "open_pnl_pct": 0.51,
+      "last": 248.89999389648438,
+      "market_value": 398.24,
+      "open_pnl": 2.41,
+      "open_pnl_pct": 0.61,
       "stop": 240.0,
       "target": 262.0,
       "thesis": "AMZN tops the ranked catalyst list on a Seeking Alpha upgrade arguing the market is overstating Meta Muse competitive risk to Amazon. Neutral RSI near 50 leaves room for a bounce toward the existing book target while the position is only modestly underwater. Adding within the $200 notional cap keeps name count unchanged and maintains >1.5 R:R to the 262 target versus a 240 stop. Liquidity and catalyst score dominate weaker HOOD/ANET setups."
@@ -62,10 +62,10 @@
       "symbol": "AMD",
       "qty": 0.32,
       "avg_cost": 609.82,
-      "last": 633.0399780273438,
-      "market_value": 202.57,
-      "open_pnl": 7.43,
-      "open_pnl_pct": 3.81,
+      "last": 630.5422973632812,
+      "market_value": 201.77,
+      "open_pnl": 6.63,
+      "open_pnl_pct": 3.4,
       "stop": 585.0,
       "target": 655.0,
       "thesis": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity."
@@ -74,55 +74,61 @@
       "symbol": "BAC",
       "qty": 3.5,
       "avg_cost": 56.14,
-      "last": 55.935001373291016,
-      "market_value": 195.77,
-      "open_pnl": -0.72,
-      "open_pnl_pct": -0.37,
+      "last": 55.994998931884766,
+      "market_value": 195.98,
+      "open_pnl": -0.51,
+      "open_pnl_pct": -0.26,
       "stop": 53.9,
       "target": 59.9,
       "thesis": "BAC is the sole ranked liquid candidate with a bullish headline catalyst framing valuation support amid new debt deals. RSI near 50 leaves room for upside without extreme extension. Book has room under the five-name cap and cash supports a sub-$200 notional add with defined risk. Reward-to-risk meets desk minimum on a clean new_entry."
     }
   ],
   "latest_candidate": {
-    "symbol": "XOM",
-    "name": "XOM",
-    "price": 161.05999755859375,
-    "volume": 2266309.0,
-    "avg_volume": 14557320.9,
-    "percent_change": -0.6660921642532326,
+    "symbol": "COST",
+    "name": "COST",
+    "price": 915.885009765625,
+    "volume": 2086438.0,
+    "avg_volume": 2418553.8,
+    "percent_change": 2.164580327463479,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 11,
-    "liquidity_score": 81.63,
-    "rank_score": 62.78,
+    "catalyst_score": 9,
+    "liquidity_score": 73.84,
+    "rank_score": 56.31,
     "news_hits": 8,
-    "catalyst": "Headline-driven setup (beat): ExxonMobil (NYSE:XOM) Stock Price Expected to Rise, The Goldman Sachs Group Analyst Says - MarketBeat",
+    "catalyst": "Headline-driven setup (beat): Costco Confirms Its Food Court Churro Is Coming Back \u2014 COST Stock Flat Despite Q4 Beat - Yahoo Finance",
     "top_headlines": [
-      "XOM|Exxon Mobil Corp|Price:160.830|Chg%:-1.310 - tradingkey.com",
-      "ExxonMobil (NYSE:XOM) Stock Price Expected to Rise, The Goldman Sachs Group Analyst Says - MarketBeat",
-      "Investors Heavily Search ExxonMobil Holdings Corporation (XOM): Here is What You Need to Know - Yahoo Finance"
+      "Costco Confirms Its Food Court Churro Is Coming Back \u2014 COST Stock Flat Despite Q4 Beat - Yahoo Finance",
+      "COST Stock In Focus: Analysts Flag Membership Growth Concerns Post Q4 Report - Stocktwits",
+      "Costco earned nearly $3 billion in Q4, helped by tariff refunds. - Stock Titan"
     ],
     "matched_headlines": [
       {
-        "title": "ExxonMobil (NYSE:XOM) Stock Price Expected to Rise, The Goldman Sachs Group Analyst Says - MarketBeat",
+        "title": "Costco Confirms Its Food Court Churro Is Coming Back \u2014 COST Stock Flat Despite Q4 Beat - Yahoo Finance",
         "keywords": [
           "beat"
         ]
       },
       {
-        "title": "Should Record Oil Output Require Action From ExxonMobil (XOM) Investors? - simplywall.st",
+        "title": "COST Stock In Focus: Analysts Flag Membership Growth Concerns Post Q4 Report - Stocktwits",
         "keywords": [
-          "record"
+          "growth"
         ]
       },
       {
-        "title": "ExxonMobil Corporation (NYSE:XOM) Stock Has Average Target Price of $167.30 According to Brokerages - MarketBeat",
+        "title": "DA Davidson Issues Positive Forecast for Costco Wholesale (NASDAQ:COST) Stock Price - MarketBeat",
         "keywords": [
           "beat"
         ]
       },
       {
-        "title": "ExxonMobil (NYSE:XOM) Shares Up 1.5% - Here's Why - MarketBeat",
+        "title": "These Analysts Cut Their Forecasts On Costco Following Q4 Results - Benzinga",
+        "keywords": [
+          "cut"
+        ]
+      },
+      {
+        "title": "COST Stock Traders Shrug Off Q4 EPS Beat, Watch Core Sales Pace And Trump Tariff Refund Use - es.tradingview.com",
         "keywords": [
           "beat"
         ]
@@ -131,58 +137,56 @@
   },
   "latest_decision": {
     "model": "grok-4.5",
-    "action": "SELL",
-    "symbol": "BAC",
-    "confidence": 73,
+    "action": "HOLD",
+    "symbol": "CASH",
+    "confidence": 62,
     "cache_stats": null,
-    "entry_price": 55.97,
-    "stop_loss": 53.9,
-    "take_profit": 59.9,
-    "qty": 3.5,
-    "thesis": "BAC is the weakest open hold with a small unrealized loss and no fresh catalyst, while cash is too low to add the top-ranked name without freeing capital. XOM leads the candidate list on rank and catalyst scores with a bullish Goldman-driven setup and acceptable liquidity, making a rotation the cleaner desk action versus holding a lagging bank name. Exiting BAC full size funds a disciplined XOM starter within the ~$200 new-buy notional cap and keeps name count in line.",
-    "reason_code": "rotation",
+    "entry_price": 0.0,
+    "stop_loss": 0.0,
+    "take_profit": 0.0,
+    "qty": 0.0,
+    "thesis": "Cash is only ~$53 with four open names already near the desk cap, so fresh buys are constrained without a forced sale. Ranked catalysts are mostly soft headline noise (churro/Q4 optics, analyst notes, undervaluation takes) rather than high-conviction liquid setups with clear edge. No position has breached stop or target; BAC is the softest P/L but not weak enough to justify rotation into middling candidates.",
+    "reason_code": "hold",
     "reasoning": {
-      "headline": "Sold $BAC",
-      "narrative": "BAC is the weakest open hold with a small unrealized loss and no fresh catalyst, while cash is too low to add the top-ranked name without freeing capital. XOM leads the candidate list on rank and catalyst scores with a bullish Goldman-driven setup and acceptable liquidity, making a rotation the cleaner desk action versus holding a lagging bank name. Exiting BAC full size funds a disciplined XOM starter within the ~$200 new-buy notional cap and keeps name count in line.",
+      "headline": "Hold $CASH",
+      "narrative": "Cash is only ~$53 with four open names already near the desk cap, so fresh buys are constrained without a forced sale. Ranked catalysts are mostly soft headline noise (churro/Q4 optics, analyst notes, undervaluation takes) rather than high-conviction liquid setups with clear edge. No position has breached stop or target; BAC is the softest P/L but not weak enough to justify rotation into middling candidates.",
       "bullets": [
-        "BAC worst open P/L and softest thesis among holds",
-        "XOM top rank/catalyst (GS beat/headline) materially better",
-        "Free ~$196 + cash for ~$200 XOM entry with R:R>=1.5",
-        "Maintain <=5 names; no clean add on $52 cash alone"
+        "Cash-constrained; max notional and name-count limit new entries",
+        "No stop/target hits on WMT/AMZN/AMD/BAC",
+        "Candidate catalysts lack clean R:R edge vs current book"
       ],
       "risk_map": {
-        "stop": 53.9,
-        "target": 59.9,
+        "stop": 0.0,
+        "target": 0.0,
         "horizon_days": 5,
-        "rr": 1.9,
-        "confidence_10": 7,
-        "confidence": 73
+        "rr": 0.0,
+        "confidence_10": 6,
+        "confidence": 62
       },
-      "thesis": "BAC is the weakest open hold with a small unrealized loss and no fresh catalyst, while cash is too low to add the top-ranked name without freeing capital. XOM leads the candidate list on rank and catalyst scores with a bullish Goldman-driven setup and acceptable liquidity, making a rotation the cleaner desk action versus holding a lagging bank name. Exiting BAC full size funds a disciplined XOM starter within the ~$200 new-buy notional cap and keeps name count in line."
+      "thesis": "Cash is only ~$53 with four open names already near the desk cap, so fresh buys are constrained without a forced sale. Ranked catalysts are mostly soft headline noise (churro/Q4 optics, analyst notes, undervaluation takes) rather than high-conviction liquid setups with clear edge. No position has breached stop or target; BAC is the softest P/L but not weak enough to justify rotation into middling candidates."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "BAC worst open P/L and softest thesis among holds",
-      "XOM top rank/catalyst (GS beat/headline) materially better",
-      "Free ~$196 + cash for ~$200 XOM entry with R:R>=1.5",
-      "Maintain <=5 names; no clean add on $52 cash alone"
+      "Cash-constrained; max notional and name-count limit new entries",
+      "No stop/target hits on WMT/AMZN/AMD/BAC",
+      "Candidate catalysts lack clean R:R edge vs current book"
     ],
-    "timestamp": "2026-09-25T15:03:31.718194+00:00"
+    "timestamp": "2026-09-25T15:20:32.913132+00:00"
   },
-  "stance": "Selling BAC. BAC is the weakest open hold with a small unrealized loss and no fresh catalyst, while cash is too low to add the top-ranked name without freeing capital. XOM leads the candidate list on rank and catalyst scores with a bullish Goldman-driven setup and acceptable liquidity, making a rotation the cleaner desk action versus holding a lagging bank name. Exiting BAC full size funds a disciplined XOM starter within the ~$200 new-buy notional cap and keeps name count in line.",
+  "stance": "Holding WMT, AMZN, AMD, BAC. No new trade right now.",
   "thinking": {
-    "badge": "Exiting BAC",
-    "headline": "Selling BAC.",
-    "plain_english": "Right now Hermes is exiting BAC. That can be stop, target, or gated rotation when a stronger setup needs risk budget.",
+    "badge": "Holding what it owns",
+    "headline": "Holding WMT, AMZN, AMD, BAC. No new trade right now.",
+    "plain_english": "Right now Hermes is holding WMT, AMZN, AMD, BAC and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
     "triggers": [
       "It owns WMT, bought near $105.93. Simple plan: sell if it falls to about $102.50, or take profit near $112.00.",
       "It owns AMZN, bought near $247.39. Simple plan: sell if it falls to about $240.00, or take profit near $262.00.",
       "It owns AMD, bought near $609.82. Simple plan: sell if it falls to about $585.00, or take profit near $655.00.",
       "It owns BAC, bought near $56.14. Simple plan: sell if it falls to about $53.90, or take profit near $59.90.",
       "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
-      "Top scanner name right now is XOM, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
+      "Top scanner name right now is COST, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
       "If nothing looks clean, do nothing. Sitting in cash or holdings is allowed."
     ],
     "owned": [
@@ -192,9 +196,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 107.19000244140625,
-        "open_pnl": 2.33,
-        "open_pnl_pct": 1.19,
+        "last": 107.31009674072266,
+        "open_pnl": 2.55,
+        "open_pnl_pct": 1.3,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -204,9 +208,9 @@
         "avg_cost": 247.3925,
         "stop": 240.0,
         "target": 262.0,
-        "last": 248.64500427246094,
-        "open_pnl": 2.0,
-        "open_pnl_pct": 0.51,
+        "last": 248.89999389648438,
+        "open_pnl": 2.41,
+        "open_pnl_pct": 0.61,
         "line": "Bought near $247.39 \u00b7 Sell safety line $240.00 \u00b7 Profit target $262.00",
         "plan": "stop 240.0 or target 262.0"
       },
@@ -216,9 +220,9 @@
         "avg_cost": 609.82,
         "stop": 585.0,
         "target": 655.0,
-        "last": 633.0399780273438,
-        "open_pnl": 7.43,
-        "open_pnl_pct": 3.81,
+        "last": 630.5422973632812,
+        "open_pnl": 6.63,
+        "open_pnl_pct": 3.4,
         "line": "Bought near $609.82 \u00b7 Sell safety line $585.00 \u00b7 Profit target $655.00",
         "plan": "stop 585.0 or target 655.0"
       },
@@ -228,17 +232,17 @@
         "avg_cost": 56.14,
         "stop": 53.9,
         "target": 59.9,
-        "last": 55.935001373291016,
-        "open_pnl": -0.72,
-        "open_pnl_pct": -0.37,
+        "last": 55.994998931884766,
+        "open_pnl": -0.51,
+        "open_pnl_pct": -0.26,
         "line": "Bought near $56.14 \u00b7 Sell safety line $53.90 \u00b7 Profit target $59.90",
         "plan": "stop 53.9 or target 59.9"
       }
     ],
-    "last_checked": "2026-09-25T15:11:03.857767+00:00",
+    "last_checked": "2026-09-25T15:21:03.997049+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "SELL",
+    "action": "HOLD",
     "symbols_held": [
       "WMT",
       "AMZN",
@@ -251,7 +255,7 @@
         "model": "grok-4.3",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 60,
+        "confidence": 65,
         "tone": "hold"
       },
       {
@@ -273,26 +277,26 @@
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "BUY",
-        "symbol": "XOM",
-        "confidence": 75,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 60,
+        "tone": "hold"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
-        "action": "SELL",
-        "symbol": "BAC",
-        "confidence": 73,
-        "tone": "sell"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 62,
+        "tone": "hold"
       },
       {
         "prefix": "S",
         "model": "claude-sonnet-5",
-        "action": "BUY",
-        "symbol": "XOM",
-        "confidence": 72,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 65,
+        "tone": "hold"
       },
       {
         "prefix": "S",
@@ -305,6 +309,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 no new trade",
+      "detail": "Cash is only ~$53 with four open names already near the desk cap, so fresh buys are constrained without a forced sale. Ranked catalysts are mostly soft headline noise (churro/Q4 optics, analyst notes, undervaluation takes) rather than high-conviction liquid setups with clear edge. No position has breached stop or target; BAC is the softest P/L but not weak enough to justify rotation into middling candidates.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "XOM",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.20-0309-non-reasoning",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "WMT",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-25T15:20:32.913132+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "BAC",
@@ -13279,63 +13360,17 @@
   ],
   "top_candidates": [
     {
-      "symbol": "XOM",
-      "name": "XOM",
-      "price": 161.05999755859375,
-      "volume": 2266309.0,
-      "avg_volume": 14557320.9,
-      "percent_change": -0.6660921642532326,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 11,
-      "liquidity_score": 81.63,
-      "rank_score": 62.78,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): ExxonMobil (NYSE:XOM) Stock Price Expected to Rise, The Goldman Sachs Group Analyst Says - MarketBeat",
-      "top_headlines": [
-        "XOM|Exxon Mobil Corp|Price:160.830|Chg%:-1.310 - tradingkey.com",
-        "ExxonMobil (NYSE:XOM) Stock Price Expected to Rise, The Goldman Sachs Group Analyst Says - MarketBeat",
-        "Investors Heavily Search ExxonMobil Holdings Corporation (XOM): Here is What You Need to Know - Yahoo Finance"
-      ],
-      "matched_headlines": [
-        {
-          "title": "ExxonMobil (NYSE:XOM) Stock Price Expected to Rise, The Goldman Sachs Group Analyst Says - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Should Record Oil Output Require Action From ExxonMobil (XOM) Investors? - simplywall.st",
-          "keywords": [
-            "record"
-          ]
-        },
-        {
-          "title": "ExxonMobil Corporation (NYSE:XOM) Stock Has Average Target Price of $167.30 According to Brokerages - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "ExxonMobil (NYSE:XOM) Shares Up 1.5% - Here's Why - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "COST",
       "name": "COST",
-      "price": 916.3001098632812,
-      "volume": 1989928.0,
-      "avg_volume": 2408902.8,
-      "percent_change": 2.2108836590157575,
+      "price": 915.885009765625,
+      "volume": 2086438.0,
+      "avg_volume": 2418553.8,
+      "percent_change": 2.164580327463479,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 73.82,
-      "rank_score": 56.34,
+      "liquidity_score": 73.84,
+      "rank_score": 56.31,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Costco Confirms Its Food Court Churro Is Coming Back \u2014 COST Stock Flat Despite Q4 Beat - Yahoo Finance",
       "top_headlines": [
@@ -13369,7 +13404,47 @@
           ]
         },
         {
-          "title": "COST Stock Traders Shrug Off Q4 EPS Beat, Watch Core Sales Pace And Trump Tariff Refund Use - TradingView",
+          "title": "COST Stock Traders Shrug Off Q4 EPS Beat, Watch Core Sales Pace And Trump Tariff Refund Use - es.tradingview.com",
+          "keywords": [
+            "beat"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "XOM",
+      "name": "XOM",
+      "price": 161.54010009765625,
+      "volume": 2438674.0,
+      "avg_volume": 14574557.4,
+      "percent_change": -0.3699884632110632,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 8,
+      "liquidity_score": 81.64,
+      "rank_score": 49.04,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (beat): ExxonMobil (NYSE:XOM) Stock Price Expected to Rise, The Goldman Sachs Group Analyst Says - MarketBeat",
+      "top_headlines": [
+        "XOM|Exxon Mobil Corp|Price:160.830|Chg%:-1.310 - tradingkey.com",
+        "Exxon Mobil Corporation (XOM) Stock Price Today: $160.93 - Pluang",
+        "ExxonMobil (NYSE:XOM) Stock Price Expected to Rise, The Goldman Sachs Group Analyst Says - MarketBeat"
+      ],
+      "matched_headlines": [
+        {
+          "title": "ExxonMobil (NYSE:XOM) Stock Price Expected to Rise, The Goldman Sachs Group Analyst Says - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Should Record Oil Output Require Action From ExxonMobil (XOM) Investors? - simplywall.st",
+          "keywords": [
+            "record"
+          ]
+        },
+        {
+          "title": "ExxonMobil Corporation (NYSE:XOM) Stock Has Average Target Price of $167.30 According to Brokerages - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -13379,21 +13454,21 @@
     {
       "symbol": "UBER",
       "name": "UBER",
-      "price": 69.44999694824219,
-      "volume": 2727892.0,
-      "avg_volume": 17154239.2,
-      "percent_change": 0.3322677311225945,
+      "price": 69.36499786376953,
+      "volume": 3090584.0,
+      "avg_volume": 17190508.4,
+      "percent_change": 0.20947217640764643,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
-      "liquidity_score": 82.34,
-      "rank_score": 45.12,
+      "liquidity_score": 82.35,
+      "rank_score": 45.02,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, deal): Uber (UBER) Stock May Be Undervalued After $15B Deal Review - simplywall.st",
       "top_headlines": [
         "UBER Stock Eyes Worst Day In Over 8 Months Amid Robotaxi Spending Concerns, Cautious Q3 Forecast - Stocktwits",
-        "Citizens reiterates Uber stock rating on limited Waymo impact - Investing.com",
-        "Uber Has Disappointed For More Than a Year: Here's Why a Highly Respected Wall Street Firm Says It's Going to Double - 24/7 Wall St."
+        "Uber Has Disappointed For More Than a Year: Here's Why a Highly Respected Wall Street Firm Says It's Going to Double - 24/7 Wall St.",
+        "Citizens reiterates Uber stock rating on limited Waymo impact - Investing.com"
       ],
       "matched_headlines": [
         {
@@ -13421,54 +13496,50 @@
       ]
     },
     {
-      "symbol": "AMZN",
-      "name": "AMZN",
-      "price": 248.60220336914062,
-      "volume": 10439814.0,
-      "avg_volume": 35942811.4,
-      "percent_change": -0.3118940967369761,
+      "symbol": "AVGO",
+      "name": "AVGO",
+      "price": 351.3800048828125,
+      "volume": 5938536.0,
+      "avg_volume": 24630433.6,
+      "percent_change": 0.2911347111247535,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 6,
-      "liquidity_score": 85.56,
-      "rank_score": 44.58,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (drop, drops, probe): AMZN Stock Drops Nearly 2% After-Hours \u2014 Senate Panel Reportedly Probes Amazon Over Alleged Chinese Influence - Stocktwits",
+      "liquidity_score": 83.91,
+      "rank_score": 42.82,
+      "news_hits": 7,
+      "catalyst": "Headline-driven setup (ai, catalyst, demand): Broadcom (AVGO) Stock May Be 24% Undervalued Following Fresh AI Demand Fears - Yahoo Finance",
       "top_headlines": [
-        "AMZN Stock Quote Price and Forecast - CNN",
-        "AMZN Stock Drops Nearly 2% After-Hours \u2014 Senate Panel Reportedly Probes Amazon Over Alleged Chinese Influence - Stocktwits",
-        "Arthedge Capital Management LLC Purchases 84,860 Shares of Amazon.com, Inc. $AMZN - MarketBeat"
+        "Broadcom (AVGO) Stock May Be 24% Undervalued Following Fresh AI Demand Fears - Yahoo Finance",
+        "AVGO Stock Heads For Worst Month In 7 Years: Co-Founder\u2019s Quarterly Stake Sales Top $720M - Stocktwits",
+        "$Broadcom (AVGO.US)$ Shorted 32 shares at $363.58 and took profit at $352.36 after the strong reversal confirmed. - Moomoo"
       ],
       "matched_headlines": [
         {
-          "title": "AMZN Stock Drops Nearly 2% After-Hours \u2014 Senate Panel Reportedly Probes Amazon Over Alleged Chinese Influence - Stocktwits",
+          "title": "Broadcom (AVGO) Stock May Be 24% Undervalued Following Fresh AI Demand Fears - Yahoo Finance",
           "keywords": [
-            "drop",
-            "drops",
-            "probe"
+            "ai",
+            "catalyst",
+            "demand"
           ]
         },
         {
-          "title": "Arthedge Capital Management LLC Purchases 84,860 Shares of Amazon.com, Inc. $AMZN - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Amazon (AMZN) Stock May Be 41% Undervalued As AI Spending Climbs - Yahoo Finance",
+          "title": "AVGO Stock Extends Post-Earnings Selloff: Analysts, Retail Expect Strong Rebound - Stocktwits",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "AMZN Stock Jumps Overnight: AWS Sticks With Nvidia Bet Even Amid Surging Demand For In-House Chips - Stocktwits",
+          "title": "Broadcom (NASDAQ:AVGO) Stock Falls 1.3% - Here's Why - MarketBeat",
           "keywords": [
-            "demand"
+            "beat",
+            "fall",
+            "falls"
           ]
         },
         {
-          "title": "AMZN Stock In Focus \u2014 Amazon Reportedly Taps Former Employees And Laid-Off Staff In Accelerated Push For AI Talent - Yahoo Finance",
+          "title": "Broadcom: China Just Added A New Risk To The AI Story, Beyond Margins (NASDAQ:AVGO) - Seeking Alpha",
           "keywords": [
             "ai",
             "catalyst"
@@ -13479,21 +13550,21 @@
     {
       "symbol": "META",
       "name": "META",
-      "price": 750.5449829101562,
-      "volume": 10234429.0,
-      "avg_volume": 25222792.9,
-      "percent_change": -3.478059518674792,
+      "price": 753.0701293945312,
+      "volume": 11446271.0,
+      "avg_volume": 25343977.1,
+      "percent_change": -3.1533194375054703,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 5,
-      "liquidity_score": 84.02,
-      "rank_score": 41.39,
+      "liquidity_score": 84.04,
+      "rank_score": 41.13,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst, warns): Meta's Stock May Plunge As Credit Market Warns Against Massive Rally (NASDAQ:META) - Seeking Alpha",
       "top_headlines": [
-        "Meta's Stock May Plunge As Credit Market Warns Against Massive Rally (NASDAQ:META) - Seeking Alpha",
         "Why Meta Stock Could Spike if It Crosses This Price Target - Barron's",
-        "Meta Platforms Inc Stock (META) Moved Down by 3.14% on Sep 25: Facts Behind the Movement - tradingkey.com"
+        "Meta's Stock May Plunge As Credit Market Warns Against Massive Rally (NASDAQ:META) - Seeking Alpha",
+        "'Meta is having its moment' as stock's monster rally vindicates the bulls: Chart of the Day - Yahoo Finance"
       ],
       "matched_headlines": [
         {
@@ -13555,8 +13626,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 2,
-      "BUY": 2,
+      "HOLD": 3,
+      "BUY": 1,
       "SELL": 0,
       "live": 4,
       "fallback": 0
@@ -13583,15 +13654,15 @@
     "candidate_signals_logged": 8,
     "fills_logged": 370,
     "closed_outcomes": 168,
-    "consensus_events": 822,
+    "consensus_events": 823,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1047.02,
-    "change": 47.02,
-    "change_pct": 4.7,
+    "latest_equity": 1047.06,
+    "change": 47.06,
+    "change_pct": 4.71,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -16272,6 +16343,12 @@
       {
         "t": "2026-09-25T15:11:06.746707+00:00",
         "equity": 1047.02,
+        "cash": 52.55,
+        "event": "mark"
+      },
+      {
+        "t": "2026-09-25T15:21:06.809226+00:00",
+        "equity": 1047.06,
         "cash": 52.55,
         "event": "mark"
       }
