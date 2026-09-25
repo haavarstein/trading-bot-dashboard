@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-09-25T14:01:24.989257+00:00",
+  "generated_at": "2026-09-25T14:06:33.837138+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1048.05,
+    "portfolio_value": 1046.92,
     "starting_cash": 1000.0,
-    "total_return_pct": 4.8,
-    "total_pnl": 48.05,
-    "realized_pnl": 37.9,
-    "open_pnl": 10.12,
-    "capital_deployed": 1044.68,
-    "cash": 3.37,
-    "closed_trades": 40,
-    "win_rate_pct": 32.5,
-    "vs_spy_pct": 4.85,
-    "spy_return_pct": -0.05,
+    "total_return_pct": 4.69,
+    "total_pnl": 46.92,
+    "realized_pnl": 35.94,
+    "open_pnl": 10.94,
+    "capital_deployed": 994.37,
+    "cash": 52.55,
+    "closed_trades": 41,
+    "win_rate_pct": 31.71,
+    "vs_spy_pct": 5.02,
+    "spy_return_pct": -0.33,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-25T14:01:28.652088+00:00"
+    "updated_at": "2026-09-25T14:06:36.614398+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.05,
-    "price": 768.969970703125,
+    "return_pct": -0.33,
+    "price": 766.85498046875,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 0,
-    "validated_count_today": 0,
+    "consensus_count_today": 1,
+    "validated_count_today": 1,
     "blocked_count_today": 0,
-    "fills_today": 0,
-    "simulated_orders_today": 0,
-    "top_symbol_today": "XOM"
+    "fills_today": 1,
+    "simulated_orders_today": 1,
+    "top_symbol_today": "PANW"
   },
   "holdings": [
     {
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 107.5250015258789,
-      "market_value": 198.92,
-      "open_pnl": 2.95,
-      "open_pnl_pct": 1.51,
+      "last": 107.43000030517578,
+      "market_value": 198.75,
+      "open_pnl": 2.78,
+      "open_pnl_pct": 1.42,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -50,10 +50,10 @@
       "symbol": "AMZN",
       "qty": 1.6,
       "avg_cost": 247.3925,
-      "last": 248.1199951171875,
-      "market_value": 396.99,
-      "open_pnl": 1.16,
-      "open_pnl_pct": 0.29,
+      "last": 247.735595703125,
+      "market_value": 396.38,
+      "open_pnl": 0.55,
+      "open_pnl_pct": 0.14,
       "stop": 240.0,
       "target": 262.0,
       "thesis": "AMZN tops the ranked catalyst list on a Seeking Alpha upgrade arguing the market is overstating Meta Muse competitive risk to Amazon. Neutral RSI near 50 leaves room for a bounce toward the existing book target while the position is only modestly underwater. Adding within the $200 notional cap keeps name count unchanged and maintains >1.5 R:R to the 262 target versus a 240 stop. Liquidity and catalyst score dominate weaker HOOD/ANET setups."
@@ -62,10 +62,10 @@
       "symbol": "AMD",
       "qty": 0.32,
       "avg_cost": 609.82,
-      "last": 635.1199951171875,
-      "market_value": 203.24,
-      "open_pnl": 8.1,
-      "open_pnl_pct": 4.15,
+      "last": 636.2899780273438,
+      "market_value": 203.61,
+      "open_pnl": 8.47,
+      "open_pnl_pct": 4.34,
       "stop": 585.0,
       "target": 655.0,
       "thesis": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity."
@@ -74,25 +74,13 @@
       "symbol": "BAC",
       "qty": 3.5,
       "avg_cost": 56.14,
-      "last": 56.099998474121094,
-      "market_value": 196.35,
-      "open_pnl": -0.14,
-      "open_pnl_pct": -0.07,
+      "last": 55.89500045776367,
+      "market_value": 195.63,
+      "open_pnl": -0.86,
+      "open_pnl_pct": -0.44,
       "stop": 53.9,
       "target": 59.9,
       "thesis": "BAC is the sole ranked liquid candidate with a bullish headline catalyst framing valuation support amid new debt deals. RSI near 50 leaves room for upside without extreme extension. Book has room under the five-name cap and cash supports a sub-$200 notional add with defined risk. Reward-to-risk meets desk minimum on a clean new_entry."
-    },
-    {
-      "symbol": "PANW",
-      "qty": 0.13,
-      "avg_cost": 393.36,
-      "last": 378.3374938964844,
-      "market_value": 49.18,
-      "open_pnl": -1.95,
-      "open_pnl_pct": -3.82,
-      "stop": 378.0,
-      "target": 420.0,
-      "thesis": "PANW leads the candidate list with the strongest rank and a clear cybersecurity catalyst highlighting Wall Street preference over retail-favored peers. Neutral RSI leaves room for continuation on the headline setup. Portfolio has an open slot and residual cash supports a small starter position within notional limits while maintaining R:R above 1.5."
     }
   ],
   "latest_candidate": {
@@ -142,57 +130,58 @@
     ]
   },
   "latest_decision": {
-    "model": "grok-4.3",
-    "action": "HOLD",
-    "symbol": "CASH",
-    "confidence": 60,
+    "model": "grok-4.5",
+    "action": "SELL",
+    "symbol": "PANW",
+    "confidence": 78,
     "cache_stats": null,
-    "entry_price": 0.0,
-    "stop_loss": 0.0,
-    "take_profit": 0.0,
-    "qty": 0.0,
-    "thesis": "No new edge available. Top candidate PANW already held with marginal negative P/L. Book is full at 5 names with minimal cash. No rotation justified as no materially superior candidate outside current holdings.",
-    "reason_code": "hold",
+    "entry_price": 378.31,
+    "stop_loss": 378.0,
+    "take_profit": 420.0,
+    "qty": 0.13,
+    "thesis": "PANW is at/through the predefined stop of 378 after drifting lower from the 393 average, locking in the small open loss per risk rules. Despite a fresh bullish catalyst headline on AI-driven demand and forecast beat, price action has already invalidated the long thesis at the stop level. Closing frees a slot and tiny residual cash while respecting desk stop discipline on the weakest P/L name.",
+    "reason_code": "stop_loss",
     "reasoning": {
-      "headline": "Hold $CASH",
-      "narrative": "No new edge available. Top candidate PANW already held with marginal negative P/L. Book is full at 5 names with minimal cash. No rotation justified as no materially superior candidate outside current holdings.",
+      "headline": "Sold $PANW",
+      "narrative": "PANW is at/through the predefined stop of 378 after drifting lower from the 393 average, locking in the small open loss per risk rules. Despite a fresh bullish catalyst headline on AI-driven demand and forecast beat, price action has already invalidated the long thesis at the stop level. Closing frees a slot and tiny residual cash while respecting desk stop discipline on the weakest P/L name.",
       "bullets": [
-        "PANW top ranked but already positioned",
-        "Insufficient cash for new notional",
-        "All other candidates lower rank_score"
+        "price at stop 378",
+        "weakest open P/L name",
+        "directive confirm SELL PANW",
+        "book at max 5 names"
       ],
       "risk_map": {
-        "stop": 0.0,
-        "target": 0.0,
+        "stop": 378.0,
+        "target": 420.0,
         "horizon_days": 5,
-        "rr": 0.0,
-        "confidence_10": 6,
-        "confidence": 60
+        "rr": 134.48,
+        "confidence_10": 8,
+        "confidence": 78
       },
-      "thesis": "No new edge available. Top candidate PANW already held with marginal negative P/L. Book is full at 5 names with minimal cash. No rotation justified as no materially superior candidate outside current holdings."
+      "thesis": "PANW is at/through the predefined stop of 378 after drifting lower from the 393 average, locking in the small open loss per risk rules. Despite a fresh bullish catalyst headline on AI-driven demand and forecast beat, price action has already invalidated the long thesis at the stop level. Closing frees a slot and tiny residual cash while respecting desk stop discipline on the weakest P/L name."
     },
     "source": "live",
     "provider": "xai",
-    "provider_model_id": "grok-4.3",
+    "provider_model_id": "grok-4.5",
     "bullets": [
-      "PANW top ranked but already positioned",
-      "Insufficient cash for new notional",
-      "All other candidates lower rank_score"
+      "price at stop 378",
+      "weakest open P/L name",
+      "directive confirm SELL PANW",
+      "book at max 5 names"
     ],
-    "timestamp": "2026-09-24T19:47:14.844002+00:00"
+    "timestamp": "2026-09-25T14:06:16.748490+00:00"
   },
-  "stance": "Holding WMT, AMZN, AMD, BAC, PANW. No new trade right now.",
+  "stance": "Holding WMT, AMZN, AMD, BAC. No new trade right now. PANW is at/through the predefined stop of 378 after drifting lower from the 393 average, locking in the small open loss per risk rules. Despite a fresh bullish catalyst headline on AI-driven demand and forecast beat, price action has already invalidated the long thesis at the stop level. Closing frees a slot and tiny residual cash while respecting desk stop discipline on the weakest P/L name.",
   "thinking": {
     "badge": "Holding what it owns",
-    "headline": "Holding WMT, AMZN, AMD, BAC, PANW. No new trade right now.",
-    "plain_english": "Right now Hermes is holding WMT, AMZN, AMD, BAC, PANW and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
+    "headline": "Holding WMT, AMZN, AMD, BAC. No new trade right now.",
+    "plain_english": "Right now Hermes is holding WMT, AMZN, AMD, BAC and not forcing a new trade. Nothing new looked clean enough, so the safe move is patience.",
     "triggers": [
       "It owns WMT, bought near $105.93. Simple plan: sell if it falls to about $102.50, or take profit near $112.00.",
       "It owns AMZN, bought near $247.39. Simple plan: sell if it falls to about $240.00, or take profit near $262.00.",
       "It owns AMD, bought near $609.82. Simple plan: sell if it falls to about $585.00, or take profit near $655.00.",
       "It owns BAC, bought near $56.14. Simple plan: sell if it falls to about $53.90, or take profit near $59.90.",
-      "It owns PANW, bought near $393.36. Simple plan: sell if it falls to about $378.00, or take profit near $420.00.",
-      "Book is at max open names (5). A new buy needs a free slot, enough cash, or a gated rotation.",
+      "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
       "Top scanner name right now is XOM, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
       "If nothing looks clean, do nothing. Sitting in cash or holdings is allowed."
     ],
@@ -203,9 +192,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 107.5250015258789,
-        "open_pnl": 2.95,
-        "open_pnl_pct": 1.51,
+        "last": 107.43000030517578,
+        "open_pnl": 2.78,
+        "open_pnl_pct": 1.42,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -215,9 +204,9 @@
         "avg_cost": 247.3925,
         "stop": 240.0,
         "target": 262.0,
-        "last": 248.1199951171875,
-        "open_pnl": 1.16,
-        "open_pnl_pct": 0.29,
+        "last": 247.735595703125,
+        "open_pnl": 0.55,
+        "open_pnl_pct": 0.14,
         "line": "Bought near $247.39 \u00b7 Sell safety line $240.00 \u00b7 Profit target $262.00",
         "plan": "stop 240.0 or target 262.0"
       },
@@ -227,9 +216,9 @@
         "avg_cost": 609.82,
         "stop": 585.0,
         "target": 655.0,
-        "last": 635.1199951171875,
-        "open_pnl": 8.1,
-        "open_pnl_pct": 4.15,
+        "last": 636.2899780273438,
+        "open_pnl": 8.47,
+        "open_pnl_pct": 4.34,
         "line": "Bought near $609.82 \u00b7 Sell safety line $585.00 \u00b7 Profit target $655.00",
         "plan": "stop 585.0 or target 655.0"
       },
@@ -239,52 +228,39 @@
         "avg_cost": 56.14,
         "stop": 53.9,
         "target": 59.9,
-        "last": 56.099998474121094,
-        "open_pnl": -0.14,
-        "open_pnl_pct": -0.07,
+        "last": 55.89500045776367,
+        "open_pnl": -0.86,
+        "open_pnl_pct": -0.44,
         "line": "Bought near $56.14 \u00b7 Sell safety line $53.90 \u00b7 Profit target $59.90",
         "plan": "stop 53.9 or target 59.9"
-      },
-      {
-        "symbol": "PANW",
-        "qty": 0.13,
-        "avg_cost": 393.36,
-        "stop": 378.0,
-        "target": 420.0,
-        "last": 378.3374938964844,
-        "open_pnl": -1.95,
-        "open_pnl_pct": -3.82,
-        "line": "Bought near $393.36 \u00b7 Sell safety line $378.00 \u00b7 Profit target $420.00",
-        "plan": "stop 378.0 or target 420.0"
       }
     ],
-    "last_checked": "2026-09-25T14:01:24.989257+00:00",
+    "last_checked": "2026-09-25T14:06:33.837138+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "HOLD",
+    "action": "SELL",
     "symbols_held": [
       "WMT",
       "AMZN",
       "AMD",
-      "BAC",
-      "PANW"
+      "BAC"
     ],
     "model_chips": [
       {
         "prefix": "J",
         "model": "grok-4.3",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 60,
-        "tone": "hold"
+        "action": "SELL",
+        "symbol": "PANW",
+        "confidence": 72,
+        "tone": "sell"
       },
       {
         "prefix": "J",
         "model": "claude-haiku-4-5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 62,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "XOM",
+        "confidence": 72,
+        "tone": "buy"
       },
       {
         "prefix": "J",
@@ -297,15 +273,137 @@
       {
         "prefix": "J",
         "model": "grok-build-0.1",
+        "action": "SELL",
+        "symbol": "PANW",
+        "confidence": 72,
+        "tone": "sell"
+      },
+      {
+        "prefix": "S",
+        "model": "grok-4.5",
+        "action": "SELL",
+        "symbol": "PANW",
+        "confidence": 78,
+        "tone": "sell"
+      },
+      {
+        "prefix": "S",
+        "model": "claude-sonnet-5",
+        "action": "SELL",
+        "symbol": "PANW",
+        "confidence": 75,
+        "tone": "sell"
+      },
+      {
+        "prefix": "S",
+        "model": "claude-opus-5",
         "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 60,
+        "symbol": "WMT",
+        "confidence": 80,
         "tone": "hold"
       }
     ]
   },
-  "activity": [],
+  "activity": [
+    {
+      "type": "fill",
+      "symbol": "PANW",
+      "status": "filled_paper",
+      "headline": "SELL PANW @ $378.31",
+      "detail": "PANW is at/through the predefined stop of 378 after drifting lower from the 393 average, locking in the small open loss per risk rules. Despite a fresh bullish catalyst headline on AI-driven demand and forecast beat, price action has already invalidated the long thesis at the stop level. Closing frees a slot and tiny residual cash while respecting desk stop discipline on the weakest P/L name.",
+      "timestamp": "2026-09-25T14:06:16.750491+00:00"
+    },
+    {
+      "type": "consensus",
+      "symbol": "PANW",
+      "status": "validated",
+      "headline": "SELL PANW \u2014 validated",
+      "detail": "PANW is at/through the predefined stop of 378 after drifting lower from the 393 average, locking in the small open loss per risk rules. Despite a fresh bullish catalyst headline on AI-driven demand and forecast beat, price action has already invalidated the long thesis at the stop level. Closing frees a slot and tiny residual cash while respecting desk stop discipline on the weakest P/L name.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "SELL",
+          "symbol": "PANW",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "XOM",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.20-0309-non-reasoning",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "SELL",
+          "symbol": "PANW",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "SELL",
+          "symbol": "PANW",
+          "confidence": 78,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "SELL",
+          "symbol": "PANW",
+          "confidence": 75,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "WMT",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "exit",
+      "junior_nomination": "PANW",
+      "timestamp": "2026-09-25T14:06:16.748490+00:00"
+    }
+  ],
   "recent_trades": [
+    {
+      "timestamp": "2026-09-25T14:06:16.750491+00:00",
+      "action": "SELL",
+      "symbol": "PANW",
+      "qty": 0.13,
+      "price": 378.31,
+      "notional": 49.18,
+      "realized_pnl": -1.96,
+      "reason": "rotation",
+      "thesis": "PANW is at/through the predefined stop of 378 after drifting lower from the 393 average, locking in the small open loss per risk rules. Despite a fresh bullish catalyst headline on AI-driven demand and forecast beat, price action has already invalidated the long thesis at the stop level. Closing frees a slot and tiny residual cash while respecting desk stop discipline on the weakest P/L name.",
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-09-24T19:05:12.767225+00:00",
       "action": "BUY",
@@ -413,21 +511,37 @@
       "reason": null,
       "thesis": "",
       "status": "FILLED_PAPER"
-    },
-    {
-      "timestamp": "2026-09-23T20:30:55.153077+00:00",
-      "action": "SELL",
-      "symbol": "MSFT",
-      "qty": 0.4,
-      "price": 505.0,
-      "notional": 202.0,
-      "realized_pnl": 2.0,
-      "reason": "rotation",
-      "thesis": "",
-      "status": "FILLED_PAPER"
     }
   ],
   "trade_reasoning": [
+    {
+      "timestamp": "2026-09-25T14:06:16.750491+00:00",
+      "action": "SELL",
+      "symbol": "PANW",
+      "qty": 0.13,
+      "price": 378.31,
+      "notional": 49.18,
+      "headline": "Sold PANW (rotation)",
+      "side_label": "sell",
+      "narrative": "PANW is at/through the predefined stop of 378 after drifting lower from the 393 average, locking in the small open loss per risk rules. Despite a fresh bullish catalyst headline on AI-driven demand and forecast beat, price action has already invalidated the long thesis at the stop level. Closing frees a slot and tiny residual cash while respecting desk stop discipline on the weakest P/L name.",
+      "bullets": [
+        "price at stop 378",
+        "weakest open P/L name",
+        "directive confirm SELL PANW",
+        "book at max 5 names"
+      ],
+      "risk_map": {
+        "stop": 378.0,
+        "target": 420.0,
+        "horizon_days": 5,
+        "rr": 134.48,
+        "confidence_10": 8,
+        "confidence": 78
+      },
+      "reason_code": "rotation",
+      "realized_pnl": -1.96,
+      "status": "FILLED_PAPER"
+    },
     {
       "timestamp": "2026-09-24T19:05:12.767225+00:00",
       "action": "BUY",
@@ -10221,6 +10335,20 @@
   ],
   "closed_trades": [
     {
+      "timestamp": "2026-09-25T14:06:16.749493+00:00",
+      "symbol": "PANW",
+      "qty": 0.13,
+      "avg_cost": 393.36,
+      "exit_price": 378.31,
+      "proceeds": 49.18,
+      "realized_pnl": -1.96,
+      "realized_pnl_pct": -3.83,
+      "reason": "rotation",
+      "thesis": "PANW is at/through the predefined stop of 378 after drifting lower from the 393 average, locking in the small open loss per risk rules. Despite a fresh bullish catalyst headline on AI-driven demand and forecast beat, price action has already invalidated the long thesis at the stop level. Closing frees a slot and tiny residual cash while respecting desk stop discipline on the weakest P/L name.",
+      "opened_at": "2026-09-24T19:05:12.767225+00:00",
+      "hold_seconds": 68463
+    },
+    {
       "timestamp": "2026-09-23T20:31:19.774859+00:00",
       "symbol": "MSFT",
       "qty": 0.4,
@@ -10485,23 +10613,23 @@
       "thesis": "HERMES AUTO-TRADE: Exiting full AMZN position on stop-loss. Price $254.93 tagged invalidation at $255.00. Realized path $-7.84.",
       "opened_at": "2026-08-28T18:03:05.713924+00:00",
       "hold_seconds": 347280
-    },
-    {
-      "timestamp": "2026-09-01T18:20:37.715630+00:00",
-      "symbol": "AMD",
-      "qty": 0.42,
-      "avg_cost": 473.82,
-      "exit_price": 454.79998779296875,
-      "proceeds": 191.02,
-      "realized_pnl": -7.99,
-      "realized_pnl_pct": -4.01,
-      "reason": "stop_loss",
-      "thesis": "HERMES AUTO-TRADE: Exiting full AMD position on stop-loss. Price $454.80 tagged invalidation at $458.00. Realized path $-7.99.",
-      "opened_at": "2026-08-25T14:05:14.583956+00:00",
-      "hold_seconds": 620123
     }
   ],
   "closed_results": [
+    {
+      "timestamp": "2026-09-25T14:06:16.749493+00:00",
+      "symbol": "PANW",
+      "qty": 0.13,
+      "avg_cost": 393.36,
+      "exit_price": 378.31,
+      "proceeds": 49.18,
+      "realized_pnl": -1.96,
+      "realized_pnl_pct": -3.83,
+      "reason": "rotation",
+      "thesis": "PANW is at/through the predefined stop of 378 after drifting lower from the 393 average, locking in the small open loss per risk rules. Despite a fresh bullish catalyst headline on AI-driven demand and forecast beat, price action has already invalidated the long thesis at the stop level. Closing frees a slot and tiny residual cash while respecting desk stop discipline on the weakest P/L name.",
+      "opened_at": "2026-09-24T19:05:12.767225+00:00",
+      "hold_seconds": 68463
+    },
     {
       "timestamp": "2026-09-23T20:31:19.774859+00:00",
       "symbol": "MSFT",
@@ -13117,9 +13245,9 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 4,
-      "BUY": 0,
-      "SELL": 0,
+      "HOLD": 1,
+      "BUY": 1,
+      "SELL": 2,
       "live": 4,
       "fallback": 0
     },
@@ -13135,25 +13263,25 @@
     "max_candidates_to_llm": 8,
     "log_all_disagreements": true,
     "decision_mode": "live_dual_llm",
-    "last_tier": "junior_only",
-    "last_stage": "entry",
-    "last_junior_nomination": null,
-    "last_escalate_reason": "",
-    "live_share_recent": 90.7
+    "last_tier": "senior_escalated",
+    "last_stage": "exit",
+    "last_junior_nomination": "PANW",
+    "last_escalate_reason": "junior_nomination",
+    "live_share_recent": 85.7
   },
   "learning": {
     "candidate_signals_logged": 8,
-    "fills_logged": 369,
-    "closed_outcomes": 167,
-    "consensus_events": 817,
+    "fills_logged": 370,
+    "closed_outcomes": 168,
+    "consensus_events": 818,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1048.05,
-    "change": 48.05,
-    "change_pct": 4.8,
+    "latest_equity": 1046.92,
+    "change": 46.92,
+    "change_pct": 4.69,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15820,9 +15948,9 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-25T14:01:28.652088+00:00",
-        "equity": 1048.05,
-        "cash": 3.37,
+        "t": "2026-09-25T14:06:36.614398+00:00",
+        "equity": 1046.92,
+        "cash": 52.55,
         "event": "mark"
       }
     ],
