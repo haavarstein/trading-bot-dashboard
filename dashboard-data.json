@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-09-25T15:41:06.212358+00:00",
+  "generated_at": "2026-09-25T15:48:25.692035+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1046.57,
+    "portfolio_value": 1045.52,
     "starting_cash": 1000.0,
-    "total_return_pct": 4.66,
-    "total_pnl": 46.57,
+    "total_return_pct": 4.55,
+    "total_pnl": 45.52,
     "realized_pnl": 35.94,
-    "open_pnl": 10.58,
-    "capital_deployed": 994.02,
+    "open_pnl": 9.53,
+    "capital_deployed": 992.97,
     "cash": 52.55,
     "closed_trades": 41,
     "win_rate_pct": 31.71,
-    "vs_spy_pct": 4.78,
-    "spy_return_pct": -0.12,
+    "vs_spy_pct": 4.72,
+    "spy_return_pct": -0.17,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-25T15:41:08.924356+00:00"
+    "updated_at": "2026-09-25T15:48:28.347491+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.12,
-    "price": 768.5,
+    "return_pct": -0.17,
+    "price": 768.0700073242188,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 4,
-    "validated_count_today": 4,
+    "consensus_count_today": 5,
+    "validated_count_today": 5,
     "blocked_count_today": 0,
     "fills_today": 1,
-    "simulated_orders_today": 4,
+    "simulated_orders_today": 5,
     "top_symbol_today": "PANW"
   },
   "holdings": [
@@ -38,10 +38,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 107.29609680175781,
-      "market_value": 198.5,
-      "open_pnl": 2.53,
-      "open_pnl_pct": 1.29,
+      "last": 107.33000183105469,
+      "market_value": 198.56,
+      "open_pnl": 2.59,
+      "open_pnl_pct": 1.32,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -50,10 +50,10 @@
       "symbol": "AMZN",
       "qty": 1.6,
       "avg_cost": 247.3925,
-      "last": 249.0050048828125,
-      "market_value": 398.41,
-      "open_pnl": 2.58,
-      "open_pnl_pct": 0.65,
+      "last": 248.47659301757812,
+      "market_value": 397.56,
+      "open_pnl": 1.73,
+      "open_pnl_pct": 0.44,
       "stop": 240.0,
       "target": 262.0,
       "thesis": "AMZN tops the ranked catalyst list on a Seeking Alpha upgrade arguing the market is overstating Meta Muse competitive risk to Amazon. Neutral RSI near 50 leaves room for a bounce toward the existing book target while the position is only modestly underwater. Adding within the $200 notional cap keeps name count unchanged and maintains >1.5 R:R to the 262 target versus a 240 stop. Liquidity and catalyst score dominate weaker HOOD/ANET setups."
@@ -62,10 +62,10 @@
       "symbol": "AMD",
       "qty": 0.32,
       "avg_cost": 609.82,
-      "last": 627.2050170898438,
-      "market_value": 200.71,
-      "open_pnl": 5.56,
-      "open_pnl_pct": 2.85,
+      "last": 627.239990234375,
+      "market_value": 200.72,
+      "open_pnl": 5.57,
+      "open_pnl_pct": 2.86,
       "stop": 585.0,
       "target": 655.0,
       "thesis": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity."
@@ -74,10 +74,10 @@
       "symbol": "BAC",
       "qty": 3.5,
       "avg_cost": 56.14,
-      "last": 56.1150016784668,
-      "market_value": 196.4,
-      "open_pnl": -0.09,
-      "open_pnl_pct": -0.04,
+      "last": 56.03689956665039,
+      "market_value": 196.13,
+      "open_pnl": -0.36,
+      "open_pnl_pct": -0.18,
       "stop": 53.9,
       "target": 59.9,
       "thesis": "BAC is the sole ranked liquid candidate with a bullish headline catalyst framing valuation support amid new debt deals. RSI near 50 leaves room for upside without extreme extension. Book has room under the five-name cap and cash supports a sub-$200 notional add with defined risk. Reward-to-risk meets desk minimum on a clean new_entry."
@@ -86,21 +86,21 @@
   "latest_candidate": {
     "symbol": "COST",
     "name": "COST",
-    "price": 918.4199829101562,
-    "volume": 2197525.0,
-    "avg_volume": 2429662.5,
-    "percent_change": 2.447349959776491,
+    "price": 918.7150268554688,
+    "volume": 2300304.0,
+    "avg_volume": 2439940.4,
+    "percent_change": 2.4802613411503653,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 9,
-    "liquidity_score": 73.86,
-    "rank_score": 56.54,
+    "liquidity_score": 73.87,
+    "rank_score": 56.56,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (beat): Costco Confirms Its Food Court Churro Is Coming Back \u2014 COST Stock Flat Despite Q4 Beat - Yahoo Finance",
     "top_headlines": [
       "Costco Confirms Its Food Court Churro Is Coming Back \u2014 COST Stock Flat Despite Q4 Beat - Yahoo Finance",
       "COST Stock In Focus: Analysts Flag Membership Growth Concerns Post Q4 Report - Stocktwits",
-      "Costco earned nearly $3 billion in Q4, helped by tariff refunds. - Stock Titan"
+      "DA Davidson Issues Positive Forecast for Costco Wholesale (NASDAQ:COST) Stock Price - MarketBeat"
     ],
     "matched_headlines": [
       {
@@ -139,21 +139,22 @@
     "model": "grok-4.3",
     "action": "HOLD",
     "symbol": "CASH",
-    "confidence": 65,
+    "confidence": 60,
     "cache_stats": null,
     "entry_price": 0.0,
     "stop_loss": 0.0,
     "take_profit": 0.0,
     "qty": 0.0,
-    "thesis": "No high-conviction catalyst setup justifies new exposure or rotation given low cash and modest candidate scores. Weakest hold BAC shows minimal downside but no rotation target offers materially superior risk-reward. Book remains at policy limit with four names already open.",
+    "thesis": "No sufficiently strong catalyst or edge in candidates to justify new capital deployment given limited cash. Portfolio already holds 4 names with positive open P/L in most. Rotation not warranted as top candidates like COST lack compelling R:R setup at current prices.",
     "reason_code": "hold",
     "reasoning": {
       "headline": "Hold $CASH",
-      "narrative": "No high-conviction catalyst setup justifies new exposure or rotation given low cash and modest candidate scores. Weakest hold BAC shows minimal downside but no rotation target offers materially superior risk-reward. Book remains at policy limit with four names already open.",
+      "narrative": "No sufficiently strong catalyst or edge in candidates to justify new capital deployment given limited cash. Portfolio already holds 4 names with positive open P/L in most. Rotation not warranted as top candidates like COST lack compelling R:R setup at current prices.",
       "bullets": [
-        "Cash insufficient for meaningful new position under $200 notional cap",
-        "Top candidate COST lacks liquidity fit and R:R clarity at current levels",
-        "BAC weakest P/L but rotation not warranted by rank differentials"
+        "Cash only $52 limits new buys under $200 notional rule",
+        "BAC weakest hold but no material upgrade candidate available",
+        "AMD already positioned with strong open P/L and catalyst overlap",
+        "Require R:R >=1.5 and clean liquid setup before committing"
       ],
       "risk_map": {
         "stop": 0.0,
@@ -161,19 +162,20 @@
         "horizon_days": 5,
         "rr": 0.0,
         "confidence_10": 6,
-        "confidence": 65
+        "confidence": 60
       },
-      "thesis": "No high-conviction catalyst setup justifies new exposure or rotation given low cash and modest candidate scores. Weakest hold BAC shows minimal downside but no rotation target offers materially superior risk-reward. Book remains at policy limit with four names already open."
+      "thesis": "No sufficiently strong catalyst or edge in candidates to justify new capital deployment given limited cash. Portfolio already holds 4 names with positive open P/L in most. Rotation not warranted as top candidates like COST lack compelling R:R setup at current prices."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.3",
     "bullets": [
-      "Cash insufficient for meaningful new position under $200 notional cap",
-      "Top candidate COST lacks liquidity fit and R:R clarity at current levels",
-      "BAC weakest P/L but rotation not warranted by rank differentials"
+      "Cash only $52 limits new buys under $200 notional rule",
+      "BAC weakest hold but no material upgrade candidate available",
+      "AMD already positioned with strong open P/L and catalyst overlap",
+      "Require R:R >=1.5 and clean liquid setup before committing"
     ],
-    "timestamp": "2026-09-25T15:33:08.595833+00:00"
+    "timestamp": "2026-09-25T15:48:07.588171+00:00"
   },
   "stance": "Holding WMT, AMZN, AMD, BAC. No new trade right now.",
   "thinking": {
@@ -196,9 +198,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 107.29609680175781,
-        "open_pnl": 2.53,
-        "open_pnl_pct": 1.29,
+        "last": 107.33000183105469,
+        "open_pnl": 2.59,
+        "open_pnl_pct": 1.32,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -208,9 +210,9 @@
         "avg_cost": 247.3925,
         "stop": 240.0,
         "target": 262.0,
-        "last": 249.0050048828125,
-        "open_pnl": 2.58,
-        "open_pnl_pct": 0.65,
+        "last": 248.47659301757812,
+        "open_pnl": 1.73,
+        "open_pnl_pct": 0.44,
         "line": "Bought near $247.39 \u00b7 Sell safety line $240.00 \u00b7 Profit target $262.00",
         "plan": "stop 240.0 or target 262.0"
       },
@@ -220,9 +222,9 @@
         "avg_cost": 609.82,
         "stop": 585.0,
         "target": 655.0,
-        "last": 627.2050170898438,
-        "open_pnl": 5.56,
-        "open_pnl_pct": 2.85,
+        "last": 627.239990234375,
+        "open_pnl": 5.57,
+        "open_pnl_pct": 2.86,
         "line": "Bought near $609.82 \u00b7 Sell safety line $585.00 \u00b7 Profit target $655.00",
         "plan": "stop 585.0 or target 655.0"
       },
@@ -232,14 +234,14 @@
         "avg_cost": 56.14,
         "stop": 53.9,
         "target": 59.9,
-        "last": 56.1150016784668,
-        "open_pnl": -0.09,
-        "open_pnl_pct": -0.04,
+        "last": 56.03689956665039,
+        "open_pnl": -0.36,
+        "open_pnl_pct": -0.18,
         "line": "Bought near $56.14 \u00b7 Sell safety line $53.90 \u00b7 Profit target $59.90",
         "plan": "stop 53.9 or target 59.9"
       }
     ],
-    "last_checked": "2026-09-25T15:41:06.212358+00:00",
+    "last_checked": "2026-09-25T15:48:25.692035+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "HOLD",
@@ -255,7 +257,7 @@
         "model": "grok-4.3",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 65,
+        "confidence": 60,
         "tone": "hold"
       },
       {
@@ -279,12 +281,89 @@
         "model": "grok-build-0.1",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 60,
+        "confidence": 65,
         "tone": "hold"
       }
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 no new trade",
+      "detail": "No sufficiently strong catalyst or edge in candidates to justify new capital deployment given limited cash. Portfolio already holds 4 names with positive open P/L in most. Rotation not warranted as top candidates like COST lack compelling R:R setup at current prices.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.20-0309-non-reasoning",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        }
+      ],
+      "tier": "junior_only",
+      "escalate_reason": "",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-25T15:48:07.588171+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -13415,21 +13494,21 @@
     {
       "symbol": "COST",
       "name": "COST",
-      "price": 918.4199829101562,
-      "volume": 2197525.0,
-      "avg_volume": 2429662.5,
-      "percent_change": 2.447349959776491,
+      "price": 918.7150268554688,
+      "volume": 2300304.0,
+      "avg_volume": 2439940.4,
+      "percent_change": 2.4802613411503653,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 73.86,
-      "rank_score": 56.54,
+      "liquidity_score": 73.87,
+      "rank_score": 56.56,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Costco Confirms Its Food Court Churro Is Coming Back \u2014 COST Stock Flat Despite Q4 Beat - Yahoo Finance",
       "top_headlines": [
         "Costco Confirms Its Food Court Churro Is Coming Back \u2014 COST Stock Flat Despite Q4 Beat - Yahoo Finance",
         "COST Stock In Focus: Analysts Flag Membership Growth Concerns Post Q4 Report - Stocktwits",
-        "Costco earned nearly $3 billion in Q4, helped by tariff refunds. - Stock Titan"
+        "DA Davidson Issues Positive Forecast for Costco Wholesale (NASDAQ:COST) Stock Price - MarketBeat"
       ],
       "matched_headlines": [
         {
@@ -13467,15 +13546,15 @@
     {
       "symbol": "AMD",
       "name": "AMD",
-      "price": 629.3350219726562,
-      "volume": 8717943.0,
-      "avg_volume": 24768634.3,
-      "percent_change": 0.011920701437739408,
+      "price": 626.9349975585938,
+      "volume": 9389078.0,
+      "avg_volume": 24835747.8,
+      "percent_change": -0.3694835474921133,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 83.94,
-      "rank_score": 56.1,
+      "liquidity_score": 83.95,
+      "rank_score": 56.39,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): AMD vs. Nvidia: Which AI Stock Is the Better Buy? - Yahoo Finance",
       "top_headlines": [
@@ -13526,15 +13605,15 @@
     {
       "symbol": "LRCX",
       "name": "LRCX",
-      "price": 312.5299987792969,
-      "volume": 2085700.0,
-      "avg_volume": 10138700.0,
-      "percent_change": 1.748272904402863,
+      "price": 311.0,
+      "volume": 2185374.0,
+      "avg_volume": 10148667.4,
+      "percent_change": 1.2501615744590249,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
       "liquidity_score": 80.06,
-      "rank_score": 49.91,
+      "rank_score": 49.51,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (growth): Lam Research (LRCX) Following Higher 2026 Outlook And Packaging Growth Is It Still Undervalued - Yahoo Finance",
       "top_headlines": [
@@ -13566,19 +13645,19 @@
     {
       "symbol": "XOM",
       "name": "XOM",
-      "price": 161.57000732421875,
-      "volume": 2701799.0,
-      "avg_volume": 14600869.9,
-      "percent_change": -0.35154315256897534,
+      "price": 161.6699981689453,
+      "volume": 2881643.0,
+      "avg_volume": 14618854.3,
+      "percent_change": -0.2898737032640765,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 81.64,
-      "rank_score": 49.03,
+      "liquidity_score": 81.65,
+      "rank_score": 48.98,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): ExxonMobil (NYSE:XOM) Stock Price Expected to Rise, The Goldman Sachs Group Analyst Says - MarketBeat",
       "top_headlines": [
-        "XOM|Exxon Mobil Corp|Price:160.830|Chg%:-1.310 - tradingkey.com",
+        "XOM|Exxon Mobil Corp|Price:162.140|Chg%:+0.910 - TradingKey",
         "Exxon Mobil Corporation (XOM) Stock Price Today: $160.93 - Pluang",
         "ExxonMobil (NYSE:XOM) Stock Price Expected to Rise, The Goldman Sachs Group Analyst Says - MarketBeat"
       ],
@@ -13606,15 +13685,15 @@
     {
       "symbol": "UBER",
       "name": "UBER",
-      "price": 69.375,
-      "volume": 3288802.0,
-      "avg_volume": 17210330.2,
-      "percent_change": 0.22392195400672163,
+      "price": 69.22989654541016,
+      "volume": 3498275.0,
+      "avg_volume": 17231277.5,
+      "percent_change": 0.014295470286804389,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
       "liquidity_score": 82.36,
-      "rank_score": 45.03,
+      "rank_score": 44.87,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, deal): Uber (UBER) Stock May Be Undervalued After $15B Deal Review - simplywall.st",
       "top_headlines": [
@@ -13696,21 +13775,21 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "",
-    "live_share_recent": 87.8
+    "live_share_recent": 89.3
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 370,
     "closed_outcomes": 168,
-    "consensus_events": 824,
+    "consensus_events": 825,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1046.57,
-    "change": 46.57,
-    "change_pct": 4.66,
+    "latest_equity": 1045.52,
+    "change": 45.52,
+    "change_pct": 4.55,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -16395,8 +16474,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-25T15:41:08.924356+00:00",
-        "equity": 1046.57,
+        "t": "2026-09-25T15:48:28.347491+00:00",
+        "equity": 1045.52,
         "cash": 52.55,
         "event": "mark"
       }
