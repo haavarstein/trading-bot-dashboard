@@ -1,34 +1,34 @@
 {
-  "generated_at": "2026-09-25T19:40:31.289132+00:00",
+  "generated_at": "2026-09-25T19:48:33.594988+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1052.35,
+    "portfolio_value": 1053.64,
     "starting_cash": 1000.0,
-    "total_return_pct": 5.23,
-    "total_pnl": 52.35,
+    "total_return_pct": 5.36,
+    "total_pnl": 53.64,
     "realized_pnl": 35.94,
-    "open_pnl": 16.38,
-    "capital_deployed": 999.8,
+    "open_pnl": 17.67,
+    "capital_deployed": 1001.09,
     "cash": 52.55,
     "closed_trades": 41,
     "win_rate_pct": 31.71,
-    "vs_spy_pct": 5.05,
-    "spy_return_pct": 0.18,
+    "vs_spy_pct": 5.04,
+    "spy_return_pct": 0.32,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-25T19:40:33.967870+00:00"
+    "updated_at": "2026-09-25T19:48:36.386922+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.18,
-    "price": 770.77001953125,
+    "return_pct": 0.32,
+    "price": 771.8400268554688,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 9,
+    "consensus_count_today": 10,
     "validated_count_today": 9,
-    "blocked_count_today": 0,
+    "blocked_count_today": 1,
     "fills_today": 1,
     "simulated_orders_today": 9,
     "top_symbol_today": "PANW"
@@ -38,10 +38,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 108.07499694824219,
-      "market_value": 199.94,
-      "open_pnl": 3.97,
-      "open_pnl_pct": 2.02,
+      "last": 108.05999755859375,
+      "market_value": 199.91,
+      "open_pnl": 3.94,
+      "open_pnl_pct": 2.01,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -50,10 +50,10 @@
       "symbol": "AMZN",
       "qty": 1.6,
       "avg_cost": 247.3925,
-      "last": 250.13999938964844,
-      "market_value": 400.22,
-      "open_pnl": 4.4,
-      "open_pnl_pct": 1.11,
+      "last": 250.58999633789062,
+      "market_value": 400.94,
+      "open_pnl": 5.12,
+      "open_pnl_pct": 1.29,
       "stop": 240.0,
       "target": 262.0,
       "thesis": "AMZN tops the ranked catalyst list on a Seeking Alpha upgrade arguing the market is overstating Meta Muse competitive risk to Amazon. Neutral RSI near 50 leaves room for a bounce toward the existing book target while the position is only modestly underwater. Adding within the $200 notional cap keeps name count unchanged and maintains >1.5 R:R to the 262 target versus a 240 stop. Liquidity and catalyst score dominate weaker HOOD/ANET setups."
@@ -62,10 +62,10 @@
       "symbol": "AMD",
       "qty": 0.32,
       "avg_cost": 609.82,
-      "last": 629.7000122070312,
-      "market_value": 201.5,
-      "open_pnl": 6.36,
-      "open_pnl_pct": 3.26,
+      "last": 630.9500122070312,
+      "market_value": 201.9,
+      "open_pnl": 6.76,
+      "open_pnl_pct": 3.46,
       "stop": 585.0,
       "target": 655.0,
       "thesis": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity."
@@ -74,10 +74,10 @@
       "symbol": "BAC",
       "qty": 3.5,
       "avg_cost": 56.14,
-      "last": 56.61000061035156,
-      "market_value": 198.14,
-      "open_pnl": 1.65,
-      "open_pnl_pct": 0.84,
+      "last": 56.667198181152344,
+      "market_value": 198.34,
+      "open_pnl": 1.85,
+      "open_pnl_pct": 0.94,
       "stop": 53.9,
       "target": 59.9,
       "thesis": "BAC is the sole ranked liquid candidate with a bullish headline catalyst framing valuation support amid new debt deals. RSI near 50 leaves room for upside without extreme extension. Book has room under the five-name cap and cash supports a sub-$200 notional add with defined risk. Reward-to-risk meets desk minimum on a clean new_entry."
@@ -86,15 +86,15 @@
   "latest_candidate": {
     "symbol": "COST",
     "name": "COST",
-    "price": 919.4000244140625,
-    "volume": 3578728.0,
-    "avg_volume": 2567782.8,
-    "percent_change": 2.5566710294331507,
+    "price": 922.0399780273438,
+    "volume": 3715920.0,
+    "avg_volume": 2583402.0,
+    "percent_change": 2.8511509588009964,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 15,
-    "liquidity_score": 74.1,
-    "rank_score": 80.66,
+    "catalyst_score": 18,
+    "liquidity_score": 74.12,
+    "rank_score": 92.9,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (beat, catalyst): Costco (COST) Stock May Trade At A Premium Following Q4 Earnings Beat - simplywall.st",
     "top_headlines": [
@@ -144,43 +144,43 @@
     "symbol": "COST",
     "confidence": 74,
     "cache_stats": null,
-    "entry_price": 919.4,
+    "entry_price": 922.04,
     "stop_loss": 890.0,
     "take_profit": 970.0,
-    "qty": 0.057,
-    "thesis": "COST is the sole ranked catalyst candidate after a Q4 earnings beat, with bullish sentiment and a premium-multiple narrative that supports a momentum continuation entry. RSI near 50 leaves room for upside without extreme overbought risk. Small cash-constrained starter size keeps notional well under the desk cap while preserving R:R above 1.5 toward a post-beat extension.",
+    "qty": 0.055,
+    "thesis": "COST leads the candidate list with a strong post-Q4 earnings beat catalyst and clearly superior rank/catalyst scores versus the rest of the tape. A small fractional starter fits remaining cash while keeping total open names at five and notional well under the $200 cap. Reward-to-risk from 890 stop to 970 target is approximately 1.5 with room for a premium re-rating. Existing holds are modestly green and do not require defensive exits.",
     "reason_code": "new_entry",
     "reasoning": {
       "headline": "Bought $COST",
-      "narrative": "COST is the sole ranked catalyst candidate after a Q4 earnings beat, with bullish sentiment and a premium-multiple narrative that supports a momentum continuation entry. RSI near 50 leaves room for upside without extreme overbought risk. Small cash-constrained starter size keeps notional well under the desk cap while preserving R:R above 1.5 toward a post-beat extension.",
+      "narrative": "COST leads the candidate list with a strong post-Q4 earnings beat catalyst and clearly superior rank/catalyst scores versus the rest of the tape. A small fractional starter fits remaining cash while keeping total open names at five and notional well under the $200 cap. Reward-to-risk from 890 stop to 970 target is approximately 1.5 with room for a premium re-rating. Existing holds are modestly green and do not require defensive exits.",
       "bullets": [
-        "Q4 beat headline + rank_score 80.66 catalyst setup",
-        "R:R ~1.72 with stop 890 / target 970",
-        "Notional ~$52 from available cash only",
-        "Book has room (<5 names); no forced rotation"
+        "Top rank_score 92.9 + earnings-beat catalyst",
+        "Fractional size uses ~$51 cash, stays under $200 notional",
+        "R:R ~1.5 with stop 890 / target 970",
+        "Book at 4 names; adding keeps diversification intact"
       ],
       "risk_map": {
         "stop": 890.0,
         "target": 970.0,
         "horizon_days": 5,
-        "rr": 1.72,
+        "rr": 1.5,
         "confidence_10": 7,
         "confidence": 74
       },
-      "thesis": "COST is the sole ranked catalyst candidate after a Q4 earnings beat, with bullish sentiment and a premium-multiple narrative that supports a momentum continuation entry. RSI near 50 leaves room for upside without extreme overbought risk. Small cash-constrained starter size keeps notional well under the desk cap while preserving R:R above 1.5 toward a post-beat extension."
+      "thesis": "COST leads the candidate list with a strong post-Q4 earnings beat catalyst and clearly superior rank/catalyst scores versus the rest of the tape. A small fractional starter fits remaining cash while keeping total open names at five and notional well under the $200 cap. Reward-to-risk from 890 stop to 970 target is approximately 1.5 with room for a premium re-rating. Existing holds are modestly green and do not require defensive exits."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Q4 beat headline + rank_score 80.66 catalyst setup",
-      "R:R ~1.72 with stop 890 / target 970",
-      "Notional ~$52 from available cash only",
-      "Book has room (<5 names); no forced rotation"
+      "Top rank_score 92.9 + earnings-beat catalyst",
+      "Fractional size uses ~$51 cash, stays under $200 notional",
+      "R:R ~1.5 with stop 890 / target 970",
+      "Book at 4 names; adding keeps diversification intact"
     ],
-    "timestamp": "2026-09-25T19:32:59.488930+00:00"
+    "timestamp": "2026-09-25T19:48:25.277388+00:00"
   },
-  "stance": "Buying pressure on COST. COST is the sole ranked catalyst candidate after a Q4 earnings beat, with bullish sentiment and a premium-multiple narrative that supports a momentum continuation entry. RSI near 50 leaves room for upside without extreme overbought risk. Small cash-constrained starter size keeps notional well under the desk cap while preserving R:R above 1.5 toward a post-beat extension.",
+  "stance": "Buying pressure on COST. COST leads the candidate list with a strong post-Q4 earnings beat catalyst and clearly superior rank/catalyst scores versus the rest of the tape. A small fractional starter fits remaining cash while keeping total open names at five and notional well under the $200 cap. Reward-to-risk from 890 stop to 970 target is approximately 1.5 with room for a premium re-rating. Existing holds are modestly green and do not require defensive exits.",
   "thinking": {
     "badge": "Looking to buy COST",
     "headline": "Buying pressure on COST.",
@@ -201,9 +201,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 108.07499694824219,
-        "open_pnl": 3.97,
-        "open_pnl_pct": 2.02,
+        "last": 108.05999755859375,
+        "open_pnl": 3.94,
+        "open_pnl_pct": 2.01,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -213,9 +213,9 @@
         "avg_cost": 247.3925,
         "stop": 240.0,
         "target": 262.0,
-        "last": 250.13999938964844,
-        "open_pnl": 4.4,
-        "open_pnl_pct": 1.11,
+        "last": 250.58999633789062,
+        "open_pnl": 5.12,
+        "open_pnl_pct": 1.29,
         "line": "Bought near $247.39 \u00b7 Sell safety line $240.00 \u00b7 Profit target $262.00",
         "plan": "stop 240.0 or target 262.0"
       },
@@ -225,9 +225,9 @@
         "avg_cost": 609.82,
         "stop": 585.0,
         "target": 655.0,
-        "last": 629.7000122070312,
-        "open_pnl": 6.36,
-        "open_pnl_pct": 3.26,
+        "last": 630.9500122070312,
+        "open_pnl": 6.76,
+        "open_pnl_pct": 3.46,
         "line": "Bought near $609.82 \u00b7 Sell safety line $585.00 \u00b7 Profit target $655.00",
         "plan": "stop 585.0 or target 655.0"
       },
@@ -237,14 +237,14 @@
         "avg_cost": 56.14,
         "stop": 53.9,
         "target": 59.9,
-        "last": 56.61000061035156,
-        "open_pnl": 1.65,
-        "open_pnl_pct": 0.84,
+        "last": 56.667198181152344,
+        "open_pnl": 1.85,
+        "open_pnl_pct": 0.94,
         "line": "Bought near $56.14 \u00b7 Sell safety line $53.90 \u00b7 Profit target $59.90",
         "plan": "stop 53.9 or target 59.9"
       }
     ],
-    "last_checked": "2026-09-25T19:40:31.289132+00:00",
+    "last_checked": "2026-09-25T19:48:33.594988+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -258,10 +258,10 @@
       {
         "prefix": "J",
         "model": "grok-4.3",
-        "action": "BUY",
-        "symbol": "COST",
+        "action": "SELL",
+        "symbol": "BAC",
         "confidence": 75,
-        "tone": "buy"
+        "tone": "sell"
       },
       {
         "prefix": "J",
@@ -276,16 +276,16 @@
         "model": "grok-4.20-0309-non-reasoning",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 65,
+        "confidence": 68,
         "tone": "hold"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
-        "action": "BUY",
-        "symbol": "COST",
-        "confidence": 80,
-        "tone": "buy"
+        "action": "SELL",
+        "symbol": "BAC",
+        "confidence": 75,
+        "tone": "sell"
       },
       {
         "prefix": "S",
@@ -298,10 +298,10 @@
       {
         "prefix": "S",
         "model": "claude-sonnet-5",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 65,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "COST",
+        "confidence": 78,
+        "tone": "buy"
       },
       {
         "prefix": "S",
@@ -314,6 +314,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "COST",
+      "status": "blocked",
+      "headline": "BUY COST \u2014 blocked",
+      "detail": "Insufficient buying power: $3.37 < $50.71",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "SELL",
+          "symbol": "BAC",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "COST",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.20-0309-non-reasoning",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 68,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "SELL",
+          "symbol": "BAC",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "COST",
+          "confidence": 74,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "COST",
+          "confidence": 78,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "WMT",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-25T19:48:25.277388+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "COST",
@@ -852,83 +929,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-09-25T18:03:19.413592+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "CASH",
-      "status": "hold",
-      "headline": "HOLD \u2014 no new trade",
-      "detail": "Cash is only ~$52.55 with four open names already near max book size, so new buys are constrained without a forced rotation. Top-ranked COST and HOOD carry mixed headline catalysts (membership concerns; ARK selling HOOD) and poor share-size fit at current prices. Existing holds remain within stops with modest unrealized gains and no clean stop/target breach, so standing aside preserves optionality.",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "COST",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.20-0309-non-reasoning",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "COST",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "WMT",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-25T17:50:22.402225+00:00"
     },
     {
       "type": "fill",
@@ -13521,15 +13521,15 @@
     {
       "symbol": "COST",
       "name": "COST",
-      "price": 919.4000244140625,
-      "volume": 3578728.0,
-      "avg_volume": 2567782.8,
-      "percent_change": 2.5566710294331507,
+      "price": 922.0399780273438,
+      "volume": 3715920.0,
+      "avg_volume": 2583402.0,
+      "percent_change": 2.8511509588009964,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 15,
-      "liquidity_score": 74.1,
-      "rank_score": 80.66,
+      "catalyst_score": 18,
+      "liquidity_score": 74.12,
+      "rank_score": 92.9,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat, catalyst): Costco (COST) Stock May Trade At A Premium Following Q4 Earnings Beat - simplywall.st",
       "top_headlines": [
@@ -13576,15 +13576,15 @@
     {
       "symbol": "LRCX",
       "name": "LRCX",
-      "price": 314.8800048828125,
-      "volume": 4218289.0,
-      "avg_volume": 10351958.9,
-      "percent_change": 2.5133484596502007,
+      "price": 316.1600036621094,
+      "volume": 4482613.0,
+      "avg_volume": 10378391.3,
+      "percent_change": 2.9300689844698753,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 80.15,
-      "rank_score": 50.53,
+      "liquidity_score": 80.16,
+      "rank_score": 50.87,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (growth): Lam Research (LRCX) Following Higher 2026 Outlook And Packaging Growth Is It Still Undervalued - Yahoo Finance",
       "top_headlines": [
@@ -13616,17 +13616,17 @@
     {
       "symbol": "XOM",
       "name": "XOM",
-      "price": 160.42999267578125,
-      "volume": 5992830.0,
-      "avg_volume": 14929973.0,
-      "percent_change": -1.0546482794524792,
+      "price": 160.6199951171875,
+      "volume": 6431597.0,
+      "avg_volume": 14975389.7,
+      "percent_change": -0.9374640916385618,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 8,
-      "liquidity_score": 81.74,
-      "rank_score": 49.6,
+      "catalyst_score": 7,
+      "liquidity_score": 81.75,
+      "rank_score": 47.01,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): ExxonMobil (NYSE:XOM) Stock Price Expected to Rise, The Goldman Sachs Group Analyst Says - MarketBeat",
+      "catalyst": "Headline-driven setup (beat): ExxonMobil Corporation (NYSE:XOM) Stock Has Average Target Price of $167.30 According to Brokerages - MarketBeat",
       "top_headlines": [
         "XOM, CVX Are Already Up More Than 25% This Year \u2014 One Analyst Thinks There's Still More To Come For Big Oil - Stocktwits",
         "XOM|Exxon Mobil Corp|Price:160.140|Chg%:-2.000 - TradingKey",
@@ -13634,7 +13634,7 @@
       ],
       "matched_headlines": [
         {
-          "title": "ExxonMobil (NYSE:XOM) Stock Price Expected to Rise, The Goldman Sachs Group Analyst Says - MarketBeat",
+          "title": "ExxonMobil Corporation (NYSE:XOM) Stock Has Average Target Price of $167.30 According to Brokerages - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -13646,61 +13646,53 @@
           ]
         },
         {
-          "title": "ExxonMobil Corporation (NYSE:XOM) Stock Has Average Target Price of $167.30 According to Brokerages - MarketBeat",
+          "title": "ExxonMobil (NYSE:XOM) Stock Price Expected to Rise, The Goldman Sachs Group Analyst Says - MarketBeat",
           "keywords": [
             "beat"
+          ]
+        },
+        {
+          "title": "USO, CVX, XOM, OXY Drop Premarket As Trump\u2019s Iran Talks Trigger Crude Oil Selloff - Stocktwits",
+          "keywords": [
+            "drop"
           ]
         }
       ]
     },
     {
-      "symbol": "WMT",
-      "name": "WMT",
-      "price": 107.86499786376953,
-      "volume": 11161547.0,
-      "avg_volume": 22632304.7,
-      "percent_change": 0.2556013897567699,
+      "symbol": "PANW",
+      "name": "PANW",
+      "price": 375.3699951171875,
+      "volume": 3609403.0,
+      "avg_volume": 7117500.3,
+      "percent_change": -3.7315392412509483,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 6,
-      "liquidity_score": 83.55,
-      "rank_score": 42.74,
-      "news_hits": 7,
-      "catalyst": "Headline-driven setup (ai, catalyst, record): Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
+      "catalyst_score": 7,
+      "liquidity_score": 78.52,
+      "rank_score": 45.76,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (ai, catalyst): Why Did ATAI, PANW, TRV Stocks Surge To 52-Week Highs Last Week? - Stocktwits",
       "top_headlines": [
-        "Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
-        "Walmart (WMT) Stock Looks Fully Valued On Digital Payments News - simplywall.st",
-        "(WMT) Movement Within Algorithmic Entry Frameworks - Stock Traders Daily"
+        "Why Did ATAI, PANW, TRV Stocks Surge To 52-Week Highs Last Week? - Stocktwits",
+        "Palo Alto Networks Inc Stock (PANW) Moved Down by 3.95% on Sep 25: Key Drivers Unveiled - TradingKey",
+        "Why Palo Alto Networks (PANW) Stock Is Trading Up Today - Yahoo Finance"
       ],
       "matched_headlines": [
         {
-          "title": "Walton Family Cashes Out $534M In Walmart Stock \u2014 Retail Traders Cry 'Zero Trust' As WMT Slips From Record Highs - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst",
-            "record"
-          ]
-        },
-        {
-          "title": "(WMT) Movement Within Algorithmic Entry Frameworks - Stock Traders Daily",
+          "title": "Why Did ATAI, PANW, TRV Stocks Surge To 52-Week Highs Last Week? - Stocktwits",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "Walmart (NASDAQ:WMT) Stock Falls 2.7% - Here's Why - MarketBeat",
+          "title": "PANW Stock Gains After Revenue Forecast Beat As AI Usage Drives Cybersecurity Demand - Stocktwits",
           "keywords": [
+            "ai",
             "beat",
-            "fall",
-            "falls"
-          ]
-        },
-        {
-          "title": "Walmart Stock: Failing To Live Up To Rich Multiples (NASDAQ:WMT) - Seeking Alpha",
-          "keywords": [
-            "ai",
-            "catalyst"
+            "catalyst",
+            "demand"
           ]
         }
       ]
@@ -13708,21 +13700,21 @@
     {
       "symbol": "NVDA",
       "name": "NVDA",
-      "price": 223.8000030517578,
-      "volume": 60193972.0,
-      "avg_volume": 103396847.2,
-      "percent_change": -0.34731444159647235,
+      "price": 224.4199981689453,
+      "volume": 62498045.0,
+      "avg_volume": 103643724.5,
+      "percent_change": -0.07124573016512009,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 6,
-      "liquidity_score": 90.15,
-      "rank_score": 42.3,
-      "news_hits": 5,
+      "liquidity_score": 90.16,
+      "rank_score": 43.58,
+      "news_hits": 6,
       "catalyst": "Headline-driven setup (ai, catalyst, demand): Why Dan Ives Sees NVDA And Korea Memory Stocks Driving AI Demand - Stocktwits",
       "top_headlines": [
-        "NVDA Stock Quote Price and Forecast - CNN",
+        "NVDA Stock Quote Price and Forecast - cnn.com",
         "Why Dan Ives Sees NVDA And Korea Memory Stocks Driving AI Demand - Stocktwits",
-        "Nvidia (NVDA) Stock Quotes, Company News And Chart Analysis - Investor's Business Daily"
+        "Nvidia (NVDA) Down 1.5% Since Last Earnings Report: Can It Rebound? - ca.finance.yahoo.com"
       ],
       "matched_headlines": [
         {
@@ -13731,6 +13723,12 @@
             "ai",
             "catalyst",
             "demand"
+          ]
+        },
+        {
+          "title": "Nvidia (NVDA) Down 1.5% Since Last Earnings Report: Can It Rebound? - ca.finance.yahoo.com",
+          "keywords": [
+            "catalyst"
           ]
         },
         {
@@ -13776,8 +13774,8 @@
     "junior_min_agree": 3,
     "junior_votes": {
       "HOLD": 1,
-      "BUY": 3,
-      "SELL": 0,
+      "BUY": 1,
+      "SELL": 2,
       "live": 4,
       "fallback": 0
     },
@@ -13795,23 +13793,23 @@
     "decision_mode": "live_dual_llm",
     "last_tier": "senior_escalated",
     "last_stage": "entry",
-    "last_junior_nomination": "COST",
-    "last_escalate_reason": "junior_nomination",
+    "last_junior_nomination": null,
+    "last_escalate_reason": "junior_trade_or_split",
     "live_share_recent": 87.9
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 370,
     "closed_outcomes": 168,
-    "consensus_events": 840,
+    "consensus_events": 841,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1052.35,
-    "change": 52.35,
-    "change_pct": 5.24,
+    "latest_equity": 1053.64,
+    "change": 53.64,
+    "change_pct": 5.36,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -16544,8 +16542,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-25T19:40:33.967870+00:00",
-        "equity": 1052.35,
+        "t": "2026-09-25T19:48:36.386922+00:00",
+        "equity": 1053.64,
         "cash": 52.55,
         "event": "mark"
       }
