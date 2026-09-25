@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-09-25T16:00:09.133087+00:00",
+  "generated_at": "2026-09-25T16:02:21.595895+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1049.16,
+    "portfolio_value": 1050.15,
     "starting_cash": 1000.0,
-    "total_return_pct": 4.92,
-    "total_pnl": 49.16,
+    "total_return_pct": 5.02,
+    "total_pnl": 50.15,
     "realized_pnl": 35.94,
-    "open_pnl": 13.18,
-    "capital_deployed": 996.61,
+    "open_pnl": 14.18,
+    "capital_deployed": 997.6,
     "cash": 52.55,
     "closed_trades": 41,
     "win_rate_pct": 31.71,
-    "vs_spy_pct": 4.86,
-    "spy_return_pct": 0.06,
+    "vs_spy_pct": 4.82,
+    "spy_return_pct": 0.2,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-25T16:00:11.866229+00:00"
+    "updated_at": "2026-09-25T16:02:24.293708+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": 0.06,
-    "price": 769.8300170898438,
+    "return_pct": 0.2,
+    "price": 770.9600219726562,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 5,
-    "validated_count_today": 5,
+    "consensus_count_today": 6,
+    "validated_count_today": 6,
     "blocked_count_today": 0,
     "fills_today": 1,
-    "simulated_orders_today": 5,
+    "simulated_orders_today": 6,
     "top_symbol_today": "PANW"
   },
   "holdings": [
@@ -38,10 +38,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 107.61000061035156,
-      "market_value": 199.08,
-      "open_pnl": 3.11,
-      "open_pnl_pct": 1.59,
+      "last": 107.75,
+      "market_value": 199.34,
+      "open_pnl": 3.37,
+      "open_pnl_pct": 1.72,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -50,10 +50,10 @@
       "symbol": "AMZN",
       "qty": 1.6,
       "avg_cost": 247.3925,
-      "last": 249.64500427246094,
-      "market_value": 399.43,
-      "open_pnl": 3.6,
-      "open_pnl_pct": 0.91,
+      "last": 249.9467010498047,
+      "market_value": 399.91,
+      "open_pnl": 4.09,
+      "open_pnl_pct": 1.03,
       "stop": 240.0,
       "target": 262.0,
       "thesis": "AMZN tops the ranked catalyst list on a Seeking Alpha upgrade arguing the market is overstating Meta Muse competitive risk to Amazon. Neutral RSI near 50 leaves room for a bounce toward the existing book target while the position is only modestly underwater. Adding within the $200 notional cap keeps name count unchanged and maintains >1.5 R:R to the 262 target versus a 240 stop. Liquidity and catalyst score dominate weaker HOOD/ANET setups."
@@ -62,10 +62,10 @@
       "symbol": "AMD",
       "qty": 0.32,
       "avg_cost": 609.82,
-      "last": 629.3049926757812,
-      "market_value": 201.38,
-      "open_pnl": 6.24,
-      "open_pnl_pct": 3.2,
+      "last": 630.0,
+      "market_value": 201.6,
+      "open_pnl": 6.46,
+      "open_pnl_pct": 3.31,
       "stop": 585.0,
       "target": 655.0,
       "thesis": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity."
@@ -74,10 +74,10 @@
       "symbol": "BAC",
       "qty": 3.5,
       "avg_cost": 56.14,
-      "last": 56.20500183105469,
-      "market_value": 196.72,
-      "open_pnl": 0.23,
-      "open_pnl_pct": 0.12,
+      "last": 56.21500015258789,
+      "market_value": 196.75,
+      "open_pnl": 0.26,
+      "open_pnl_pct": 0.13,
       "stop": 53.9,
       "target": 59.9,
       "thesis": "BAC is the sole ranked liquid candidate with a bullish headline catalyst framing valuation support amid new debt deals. RSI near 50 leaves room for upside without extreme extension. Book has room under the five-name cap and cash supports a sub-$200 notional add with defined risk. Reward-to-risk meets desk minimum on a clean new_entry."
@@ -86,15 +86,15 @@
   "latest_candidate": {
     "symbol": "COST",
     "name": "COST",
-    "price": 918.7150268554688,
-    "volume": 2300304.0,
-    "avg_volume": 2439940.4,
-    "percent_change": 2.4802613411503653,
+    "price": 919.114990234375,
+    "volume": 2405257.0,
+    "avg_volume": 2450435.7,
+    "percent_change": 2.524876211266831,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 9,
-    "liquidity_score": 73.87,
-    "rank_score": 56.56,
+    "liquidity_score": 73.89,
+    "rank_score": 56.6,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (beat): Costco Confirms Its Food Court Churro Is Coming Back \u2014 COST Stock Flat Despite Q4 Beat - Yahoo Finance",
     "top_headlines": [
@@ -139,22 +139,21 @@
     "model": "grok-4.3",
     "action": "HOLD",
     "symbol": "CASH",
-    "confidence": 60,
+    "confidence": 65,
     "cache_stats": null,
     "entry_price": 0.0,
     "stop_loss": 0.0,
     "take_profit": 0.0,
     "qty": 0.0,
-    "thesis": "No sufficiently strong catalyst or edge in candidates to justify new capital deployment given limited cash. Portfolio already holds 4 names with positive open P/L in most. Rotation not warranted as top candidates like COST lack compelling R:R setup at current prices.",
+    "thesis": "No material edge to deploy limited cash into new names or rotate. Held names show positive open P/L with AMD strongest. Top candidates like COST lack sufficient catalyst strength or liquidity fit for small book size.",
     "reason_code": "hold",
     "reasoning": {
       "headline": "Hold $CASH",
-      "narrative": "No sufficiently strong catalyst or edge in candidates to justify new capital deployment given limited cash. Portfolio already holds 4 names with positive open P/L in most. Rotation not warranted as top candidates like COST lack compelling R:R setup at current prices.",
+      "narrative": "No material edge to deploy limited cash into new names or rotate. Held names show positive open P/L with AMD strongest. Top candidates like COST lack sufficient catalyst strength or liquidity fit for small book size.",
       "bullets": [
-        "Cash only $52 limits new buys under $200 notional rule",
-        "BAC weakest hold but no material upgrade candidate available",
-        "AMD already positioned with strong open P/L and catalyst overlap",
-        "Require R:R >=1.5 and clean liquid setup before committing"
+        "Cash $52 limits new notional; max 5 names already near limit",
+        "BAC weakest hold but rotation not justified by candidate scores",
+        "Reward:risk and catalyst thresholds not met for BUY/SELL"
       ],
       "risk_map": {
         "stop": 0.0,
@@ -162,20 +161,19 @@
         "horizon_days": 5,
         "rr": 0.0,
         "confidence_10": 6,
-        "confidence": 60
+        "confidence": 65
       },
-      "thesis": "No sufficiently strong catalyst or edge in candidates to justify new capital deployment given limited cash. Portfolio already holds 4 names with positive open P/L in most. Rotation not warranted as top candidates like COST lack compelling R:R setup at current prices."
+      "thesis": "No material edge to deploy limited cash into new names or rotate. Held names show positive open P/L with AMD strongest. Top candidates like COST lack sufficient catalyst strength or liquidity fit for small book size."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.3",
     "bullets": [
-      "Cash only $52 limits new buys under $200 notional rule",
-      "BAC weakest hold but no material upgrade candidate available",
-      "AMD already positioned with strong open P/L and catalyst overlap",
-      "Require R:R >=1.5 and clean liquid setup before committing"
+      "Cash $52 limits new notional; max 5 names already near limit",
+      "BAC weakest hold but rotation not justified by candidate scores",
+      "Reward:risk and catalyst thresholds not met for BUY/SELL"
     ],
-    "timestamp": "2026-09-25T15:48:07.588171+00:00"
+    "timestamp": "2026-09-25T16:02:06.115578+00:00"
   },
   "stance": "Holding WMT, AMZN, AMD, BAC. No new trade right now.",
   "thinking": {
@@ -198,9 +196,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 107.61000061035156,
-        "open_pnl": 3.11,
-        "open_pnl_pct": 1.59,
+        "last": 107.75,
+        "open_pnl": 3.37,
+        "open_pnl_pct": 1.72,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -210,9 +208,9 @@
         "avg_cost": 247.3925,
         "stop": 240.0,
         "target": 262.0,
-        "last": 249.64500427246094,
-        "open_pnl": 3.6,
-        "open_pnl_pct": 0.91,
+        "last": 249.9467010498047,
+        "open_pnl": 4.09,
+        "open_pnl_pct": 1.03,
         "line": "Bought near $247.39 \u00b7 Sell safety line $240.00 \u00b7 Profit target $262.00",
         "plan": "stop 240.0 or target 262.0"
       },
@@ -222,9 +220,9 @@
         "avg_cost": 609.82,
         "stop": 585.0,
         "target": 655.0,
-        "last": 629.3049926757812,
-        "open_pnl": 6.24,
-        "open_pnl_pct": 3.2,
+        "last": 630.0,
+        "open_pnl": 6.46,
+        "open_pnl_pct": 3.31,
         "line": "Bought near $609.82 \u00b7 Sell safety line $585.00 \u00b7 Profit target $655.00",
         "plan": "stop 585.0 or target 655.0"
       },
@@ -234,14 +232,14 @@
         "avg_cost": 56.14,
         "stop": 53.9,
         "target": 59.9,
-        "last": 56.20500183105469,
-        "open_pnl": 0.23,
-        "open_pnl_pct": 0.12,
+        "last": 56.21500015258789,
+        "open_pnl": 0.26,
+        "open_pnl_pct": 0.13,
         "line": "Bought near $56.14 \u00b7 Sell safety line $53.90 \u00b7 Profit target $59.90",
         "plan": "stop 53.9 or target 59.9"
       }
     ],
-    "last_checked": "2026-09-25T16:00:09.133087+00:00",
+    "last_checked": "2026-09-25T16:02:21.595895+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "HOLD",
@@ -257,7 +255,7 @@
         "model": "grok-4.3",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 60,
+        "confidence": 65,
         "tone": "hold"
       },
       {
@@ -281,12 +279,89 @@
         "model": "grok-build-0.1",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 65,
+        "confidence": 60,
         "tone": "hold"
       }
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "CASH",
+      "status": "hold",
+      "headline": "HOLD \u2014 no new trade",
+      "detail": "No material edge to deploy limited cash into new names or rotate. Held names show positive open P/L with AMD strongest. Top candidates like COST lack sufficient catalyst strength or liquidity fit for small book size.",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.20-0309-non-reasoning",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        }
+      ],
+      "tier": "junior_only",
+      "escalate_reason": "",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-25T16:02:06.115578+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "CASH",
@@ -833,83 +908,6 @@
       "headline": "SELL PANW @ $378.31",
       "detail": "PANW is at/through the predefined stop of 378 after drifting lower from the 393 average, locking in the small open loss per risk rules. Despite a fresh bullish catalyst headline on AI-driven demand and forecast beat, price action has already invalidated the long thesis at the stop level. Closing frees a slot and tiny residual cash while respecting desk stop discipline on the weakest P/L name.",
       "timestamp": "2026-09-25T14:06:16.750491+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "PANW",
-      "status": "validated",
-      "headline": "SELL PANW \u2014 validated",
-      "detail": "PANW is at/through the predefined stop of 378 after drifting lower from the 393 average, locking in the small open loss per risk rules. Despite a fresh bullish catalyst headline on AI-driven demand and forecast beat, price action has already invalidated the long thesis at the stop level. Closing frees a slot and tiny residual cash while respecting desk stop discipline on the weakest P/L name.",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "SELL",
-          "symbol": "PANW",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "XOM",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.20-0309-non-reasoning",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "SELL",
-          "symbol": "PANW",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "SELL",
-          "symbol": "PANW",
-          "confidence": 78,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "SELL",
-          "symbol": "PANW",
-          "confidence": 75,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "WMT",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_nomination",
-      "stage": "exit",
-      "junior_nomination": "PANW",
-      "timestamp": "2026-09-25T14:06:16.748490+00:00"
     }
   ],
   "recent_trades": [
@@ -13494,15 +13492,15 @@
     {
       "symbol": "COST",
       "name": "COST",
-      "price": 918.7150268554688,
-      "volume": 2300304.0,
-      "avg_volume": 2439940.4,
-      "percent_change": 2.4802613411503653,
+      "price": 919.114990234375,
+      "volume": 2405257.0,
+      "avg_volume": 2450435.7,
+      "percent_change": 2.524876211266831,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 73.87,
-      "rank_score": 56.56,
+      "liquidity_score": 73.89,
+      "rank_score": 56.6,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Costco Confirms Its Food Court Churro Is Coming Back \u2014 COST Stock Flat Despite Q4 Beat - Yahoo Finance",
       "top_headlines": [
@@ -13546,15 +13544,15 @@
     {
       "symbol": "AMD",
       "name": "AMD",
-      "price": 626.9349975585938,
-      "volume": 9389078.0,
-      "avg_volume": 24835747.8,
-      "percent_change": -0.3694835474921133,
+      "price": 629.2999877929688,
+      "volume": 9886949.0,
+      "avg_volume": 24885534.9,
+      "percent_change": 0.006353180994075925,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 83.95,
-      "rank_score": 56.39,
+      "liquidity_score": 83.96,
+      "rank_score": 56.1,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): AMD vs. Nvidia: Which AI Stock Is the Better Buy? - Yahoo Finance",
       "top_headlines": [
@@ -13605,15 +13603,15 @@
     {
       "symbol": "LRCX",
       "name": "LRCX",
-      "price": 311.0,
-      "volume": 2185374.0,
-      "avg_volume": 10148667.4,
-      "percent_change": 1.2501615744590249,
+      "price": 312.18499755859375,
+      "volume": 2277270.0,
+      "avg_volume": 10157857.0,
+      "percent_change": 1.6359531959154774,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 80.06,
-      "rank_score": 49.51,
+      "liquidity_score": 80.07,
+      "rank_score": 49.82,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (growth): Lam Research (LRCX) Following Higher 2026 Outlook And Packaging Growth Is It Still Undervalued - Yahoo Finance",
       "top_headlines": [
@@ -13645,19 +13643,19 @@
     {
       "symbol": "XOM",
       "name": "XOM",
-      "price": 161.6699981689453,
-      "volume": 2881643.0,
-      "avg_volume": 14618854.3,
-      "percent_change": -0.2898737032640765,
+      "price": 160.52000427246094,
+      "volume": 3119395.0,
+      "avg_volume": 14642629.5,
+      "percent_change": -0.9991335409434606,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 8,
-      "liquidity_score": 81.65,
-      "rank_score": 48.98,
+      "liquidity_score": 81.66,
+      "rank_score": 49.55,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): ExxonMobil (NYSE:XOM) Stock Price Expected to Rise, The Goldman Sachs Group Analyst Says - MarketBeat",
       "top_headlines": [
-        "XOM|Exxon Mobil Corp|Price:162.140|Chg%:+0.910 - TradingKey",
+        "XOM|Exxon Mobil Corp|Price:162.140|Chg%:+0.910 - tradingkey.com",
         "Exxon Mobil Corporation (XOM) Stock Price Today: $160.93 - Pluang",
         "ExxonMobil (NYSE:XOM) Stock Price Expected to Rise, The Goldman Sachs Group Analyst Says - MarketBeat"
       ],
@@ -13683,42 +13681,55 @@
       ]
     },
     {
-      "symbol": "UBER",
-      "name": "UBER",
-      "price": 69.22989654541016,
-      "volume": 3498275.0,
-      "avg_volume": 17231277.5,
-      "percent_change": 0.014295470286804389,
+      "symbol": "AMZN",
+      "name": "AMZN",
+      "price": 249.63999938964844,
+      "volume": 14052891.0,
+      "avg_volume": 36304119.1,
+      "percent_change": 0.10425635646214416,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 7,
-      "liquidity_score": 82.36,
-      "rank_score": 44.87,
+      "liquidity_score": 85.6,
+      "rank_score": 48.42,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (catalyst, deal): Uber (UBER) Stock May Be Undervalued After $15B Deal Review - simplywall.st",
+      "catalyst": "Headline-driven setup (cut, cuts, drop): AMZN Stock Drops For Second Day \u2014 Amazon Reportedly Cuts Jobs In Artificial General Intelligence Unit Amid Strategic Realignment - Stocktwits",
       "top_headlines": [
-        "UBER Stock Eyes Worst Day In Over 8 Months Amid Robotaxi Spending Concerns, Cautious Q3 Forecast - Stocktwits",
-        "Uber Has Disappointed For More Than a Year: Here's Why a Highly Respected Wall Street Firm Says It's Going to Double - 24/7 Wall St.",
-        "Citizens reiterates Uber stock rating on limited Waymo impact - Investing.com"
+        "AMZN Stock Drops For Second Day \u2014 Amazon Reportedly Cuts Jobs In Artificial General Intelligence Unit Amid Strategic Realignment - Stocktwits",
+        "Amazon: Meta's Muse Just Handed Investors A $65 Billion Gift (NASDAQ:AMZN) - Seeking Alpha",
+        "Arthedge Capital Management LLC Purchases 84,860 Shares of Amazon.com, Inc. $AMZN - MarketBeat"
       ],
       "matched_headlines": [
         {
-          "title": "Uber (UBER) Stock May Be Undervalued After $15B Deal Review - simplywall.st",
+          "title": "AMZN Stock Drops For Second Day \u2014 Amazon Reportedly Cuts Jobs In Artificial General Intelligence Unit Amid Strategic Realignment - Stocktwits",
           "keywords": [
-            "catalyst",
-            "deal"
+            "cut",
+            "cuts",
+            "drop",
+            "drops"
           ]
         },
         {
-          "title": "Uber: I Sold In March - Here's Why I'm Buying Again (Double Upgrade) (NYSE:UBER) - Seeking Alpha",
+          "title": "Arthedge Capital Management LLC Purchases 84,860 Shares of Amazon.com, Inc. $AMZN - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "Amazon (AMZN) Stock May Be 41% Undervalued As AI Spending Climbs - Yahoo Finance",
           "keywords": [
             "ai",
-            "catalyst",
-            "upgrade"
+            "catalyst"
           ]
         },
         {
-          "title": "Get Paid 8.3% A Year To Wait For UBER Stock To Go On Sale - Trefis",
+          "title": "AMZN Stock Jumps Overnight: AWS Sticks With Nvidia Bet Even Amid Surging Demand For In-House Chips - Stocktwits",
+          "keywords": [
+            "demand"
+          ]
+        },
+        {
+          "title": "AMZN Stock In Focus \u2014 Amazon Reportedly Taps Former Employees And Laid-Off Staff In Accelerated Push For AI Talent - Yahoo Finance",
           "keywords": [
             "ai",
             "catalyst"
@@ -13775,21 +13786,21 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "",
-    "live_share_recent": 89.3
+    "live_share_recent": 90.5
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 370,
     "closed_outcomes": 168,
-    "consensus_events": 825,
+    "consensus_events": 826,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1049.16,
-    "change": 49.16,
-    "change_pct": 4.92,
+    "latest_equity": 1050.15,
+    "change": 50.15,
+    "change_pct": 5.01,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -16480,8 +16491,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-25T16:00:11.866229+00:00",
-        "equity": 1049.16,
+        "t": "2026-09-25T16:02:24.293708+00:00",
+        "equity": 1050.15,
         "cash": 52.55,
         "event": "mark"
       }
