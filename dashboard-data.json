@@ -1,34 +1,34 @@
 {
-  "generated_at": "2026-09-28T17:40:56.171998+00:00",
+  "generated_at": "2026-09-28T17:50:33.180993+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1037.11,
+    "portfolio_value": 1036.79,
     "starting_cash": 1000.0,
-    "total_return_pct": 3.71,
-    "total_pnl": 37.11,
+    "total_return_pct": 3.68,
+    "total_pnl": 36.79,
     "realized_pnl": 34.14,
-    "open_pnl": 2.93,
-    "capital_deployed": 642.64,
+    "open_pnl": 2.6,
+    "capital_deployed": 642.32,
     "cash": 394.47,
     "closed_trades": 42,
     "win_rate_pct": 30.95,
-    "vs_spy_pct": 3.99,
-    "spy_return_pct": -0.28,
+    "vs_spy_pct": 3.94,
+    "spy_return_pct": -0.26,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-28T17:40:59.654529+00:00"
+    "updated_at": "2026-09-28T17:50:36.096744+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.28,
-    "price": 767.2000122070312,
+    "return_pct": -0.26,
+    "price": 767.3599853515625,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 5,
+    "consensus_count_today": 6,
     "validated_count_today": 2,
-    "blocked_count_today": 3,
+    "blocked_count_today": 4,
     "fills_today": 2,
     "simulated_orders_today": 2,
     "top_symbol_today": "PANW"
@@ -38,10 +38,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 108.75,
-      "market_value": 201.19,
-      "open_pnl": 5.22,
-      "open_pnl_pct": 2.66,
+      "last": 108.69999694824219,
+      "market_value": 201.09,
+      "open_pnl": 5.12,
+      "open_pnl_pct": 2.61,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -50,10 +50,10 @@
       "symbol": "AMD",
       "qty": 0.32,
       "avg_cost": 609.82,
-      "last": 605.5999755859375,
-      "market_value": 193.79,
-      "open_pnl": -1.35,
-      "open_pnl_pct": -0.69,
+      "last": 605.3300170898438,
+      "market_value": 193.71,
+      "open_pnl": -1.44,
+      "open_pnl_pct": -0.74,
       "stop": 585.0,
       "target": 655.0,
       "thesis": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity."
@@ -62,10 +62,10 @@
       "symbol": "BAC",
       "qty": 3.5,
       "avg_cost": 56.14,
-      "last": 55.64500045776367,
-      "market_value": 194.76,
-      "open_pnl": -1.73,
-      "open_pnl_pct": -0.88,
+      "last": 55.60499954223633,
+      "market_value": 194.62,
+      "open_pnl": -1.87,
+      "open_pnl_pct": -0.95,
       "stop": 53.9,
       "target": 59.9,
       "thesis": "BAC is the sole ranked liquid candidate with a bullish headline catalyst framing valuation support amid new debt deals. RSI near 50 leaves room for upside without extreme extension. Book has room under the five-name cap and cash supports a sub-$200 notional add with defined risk. Reward-to-risk meets desk minimum on a clean new_entry."
@@ -74,7 +74,7 @@
       "symbol": "PANW",
       "qty": 0.135,
       "avg_cost": 386.03,
-      "last": 391.8800048828125,
+      "last": 391.885009765625,
       "market_value": 52.9,
       "open_pnl": 0.79,
       "open_pnl_pct": 1.52,
@@ -86,15 +86,15 @@
   "latest_candidate": {
     "symbol": "PANW",
     "name": "PANW",
-    "price": 391.2090148925781,
-    "volume": 3170890.0,
-    "avg_volume": 6358829.0,
-    "percent_change": 4.3947870756742144,
+    "price": 391.7749938964844,
+    "volume": 3315347.0,
+    "avg_volume": 6373274.7,
+    "percent_change": 4.545819529817224,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 16,
-    "liquidity_score": 78.03,
-    "rank_score": 86.72,
+    "liquidity_score": 78.04,
+    "rank_score": 86.84,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (ai, catalyst): Analysts Raise Palo Alto Networks Stock Price Targets - What's the Best PANW Play? - Barchart.com",
     "top_headlines": [
@@ -148,45 +148,45 @@
     "model": "grok-4.5",
     "action": "BUY",
     "symbol": "JPM",
-    "confidence": 73,
+    "confidence": 74,
     "cache_stats": null,
-    "entry_price": 337.93,
-    "stop_loss": 324.0,
-    "take_profit": 360.0,
+    "entry_price": 337.39,
+    "stop_loss": 325.0,
+    "take_profit": 356.5,
     "qty": 0.59,
-    "thesis": "JPM ranks #2 with a solid earnings catalyst after a record year and sits ~6% below highs, offering a liquid mega-cap entry. Bullish sentiment and catalyst score support a defined-risk long while the book still has room under the 5-name cap. Stop sits below nearby support; target aims at a retest of highs for ~1.6R.",
+    "thesis": "JPM ranks as the top new liquid catalyst name with bullish sentiment into a post-record-year setup where Q3 earnings must validate the next leg. Price sits ~6% below highs, offering a defined pullback entry with institutional flow support. Adding a fifth name stays within book limits and ~$200 notional while keeping R:R at 1.5. Position size kept small given cash and existing bank exposure via BAC.",
     "reason_code": "new_entry",
     "reasoning": {
       "headline": "Bought $JPM",
-      "narrative": "JPM ranks #2 with a solid earnings catalyst after a record year and sits ~6% below highs, offering a liquid mega-cap entry. Bullish sentiment and catalyst score support a defined-risk long while the book still has room under the 5-name cap. Stop sits below nearby support; target aims at a retest of highs for ~1.6R.",
+      "narrative": "JPM ranks as the top new liquid catalyst name with bullish sentiment into a post-record-year setup where Q3 earnings must validate the next leg. Price sits ~6% below highs, offering a defined pullback entry with institutional flow support. Adding a fifth name stays within book limits and ~$200 notional while keeping R:R at 1.5. Position size kept small given cash and existing bank exposure via BAC.",
       "bullets": [
-        "Rank 80.65 / catalyst 15, earnings setup",
-        "Notional ~$199 within $200 new-buy limit",
-        "R:R ~1.58 with stop 324 / target 360",
-        "Adds 5th name; no rotation required"
+        "Rank 80.8 catalyst score 15 earnings/record setup",
+        "~ $199 notional fits max new buy and cash",
+        "R:R 1.54 with stop under recent structure",
+        "Book at 4 names; room to add without forced rotation"
       ],
       "risk_map": {
-        "stop": 324.0,
-        "target": 360.0,
+        "stop": 325.0,
+        "target": 356.5,
         "horizon_days": 5,
-        "rr": 1.58,
+        "rr": 1.54,
         "confidence_10": 7,
-        "confidence": 73
+        "confidence": 74
       },
-      "thesis": "JPM ranks #2 with a solid earnings catalyst after a record year and sits ~6% below highs, offering a liquid mega-cap entry. Bullish sentiment and catalyst score support a defined-risk long while the book still has room under the 5-name cap. Stop sits below nearby support; target aims at a retest of highs for ~1.6R."
+      "thesis": "JPM ranks as the top new liquid catalyst name with bullish sentiment into a post-record-year setup where Q3 earnings must validate the next leg. Price sits ~6% below highs, offering a defined pullback entry with institutional flow support. Adding a fifth name stays within book limits and ~$200 notional while keeping R:R at 1.5. Position size kept small given cash and existing bank exposure via BAC."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Rank 80.65 / catalyst 15, earnings setup",
-      "Notional ~$199 within $200 new-buy limit",
-      "R:R ~1.58 with stop 324 / target 360",
-      "Adds 5th name; no rotation required"
+      "Rank 80.8 catalyst score 15 earnings/record setup",
+      "~ $199 notional fits max new buy and cash",
+      "R:R 1.54 with stop under recent structure",
+      "Book at 4 names; room to add without forced rotation"
     ],
-    "timestamp": "2026-09-28T17:33:20.904589+00:00"
+    "timestamp": "2026-09-28T17:50:24.763559+00:00"
   },
-  "stance": "Buying pressure on JPM. JPM ranks #2 with a solid earnings catalyst after a record year and sits ~6% below highs, offering a liquid mega-cap entry. Bullish sentiment and catalyst score support a defined-risk long while the book still has room under the 5-name cap. Stop sits below nearby support; target aims at a retest of highs for ~1.6R.",
+  "stance": "Buying pressure on JPM. JPM ranks as the top new liquid catalyst name with bullish sentiment into a post-record-year setup where Q3 earnings must validate the next leg. Price sits ~6% below highs, offering a defined pullback entry with institutional flow support. Adding a fifth name stays within book limits and ~$200 notional while keeping R:R at 1.5. Position size kept small given cash and existing bank exposure via BAC.",
   "thinking": {
     "badge": "Looking to buy JPM",
     "headline": "Buying pressure on JPM.",
@@ -206,9 +206,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 108.75,
-        "open_pnl": 5.22,
-        "open_pnl_pct": 2.66,
+        "last": 108.69999694824219,
+        "open_pnl": 5.12,
+        "open_pnl_pct": 2.61,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -218,9 +218,9 @@
         "avg_cost": 609.82,
         "stop": 585.0,
         "target": 655.0,
-        "last": 605.5999755859375,
-        "open_pnl": -1.35,
-        "open_pnl_pct": -0.69,
+        "last": 605.3300170898438,
+        "open_pnl": -1.44,
+        "open_pnl_pct": -0.74,
         "line": "Bought near $609.82 \u00b7 Sell safety line $585.00 \u00b7 Profit target $655.00",
         "plan": "stop 585.0 or target 655.0"
       },
@@ -230,9 +230,9 @@
         "avg_cost": 56.14,
         "stop": 53.9,
         "target": 59.9,
-        "last": 55.64500045776367,
-        "open_pnl": -1.73,
-        "open_pnl_pct": -0.88,
+        "last": 55.60499954223633,
+        "open_pnl": -1.87,
+        "open_pnl_pct": -0.95,
         "line": "Bought near $56.14 \u00b7 Sell safety line $53.90 \u00b7 Profit target $59.90",
         "plan": "stop 53.9 or target 59.9"
       },
@@ -242,14 +242,14 @@
         "avg_cost": 386.03,
         "stop": 370.0,
         "target": 412.0,
-        "last": 391.8800048828125,
+        "last": 391.885009765625,
         "open_pnl": 0.79,
         "open_pnl_pct": 1.52,
         "line": "Bought near $386.03 \u00b7 Sell safety line $370.00 \u00b7 Profit target $412.00",
         "plan": "stop 370.0 or target 412.0"
       }
     ],
-    "last_checked": "2026-09-28T17:40:56.171998+00:00",
+    "last_checked": "2026-09-28T17:50:33.180993+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -265,7 +265,7 @@
         "model": "grok-4.3",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 65,
+        "confidence": 62,
         "tone": "hold"
       },
       {
@@ -281,7 +281,7 @@
         "model": "grok-4.20-0309-non-reasoning",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 65,
+        "confidence": 68,
         "tone": "hold"
       },
       {
@@ -289,7 +289,7 @@
         "model": "grok-build-0.1",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 60,
+        "confidence": 65,
         "tone": "hold"
       },
       {
@@ -297,7 +297,7 @@
         "model": "grok-4.5",
         "action": "BUY",
         "symbol": "JPM",
-        "confidence": 73,
+        "confidence": 74,
         "tone": "buy"
       },
       {
@@ -305,7 +305,7 @@
         "model": "claude-sonnet-5",
         "action": "BUY",
         "symbol": "JPM",
-        "confidence": 75,
+        "confidence": 74,
         "tone": "buy"
       },
       {
@@ -319,6 +319,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "JPM",
+      "status": "blocked",
+      "headline": "BUY JPM \u2014 blocked",
+      "detail": "Insufficient buying power: $0.44 < $199.06",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 62,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.20-0309-non-reasoning",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 68,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 74,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 74,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "WMT",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-28T17:50:24.763559+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "JPM",
@@ -873,83 +950,6 @@
       "headline": "BUY PANW @ $386.03",
       "detail": "PANW tops the candidate list on analyst price-target raises and a solid AI/cyber catalyst with rank_score 81.6. RSI at 50 is neutral, leaving room for continuation without being extended. Position is strictly cash-constrained to available ~$52 notional while keeping reward:risk above 1.5. Cybersecurity demand remains a durable theme versus weaker held names.",
       "timestamp": "2026-09-28T15:48:13.059895+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "PANW",
-      "status": "validated",
-      "headline": "BUY PANW \u2014 validated",
-      "detail": "PANW tops the candidate list on analyst price-target raises and a solid AI/cyber catalyst with rank_score 81.6. RSI at 50 is neutral, leaving room for continuation without being extended. Position is strictly cash-constrained to available ~$52 notional while keeping reward:risk above 1.5. Cybersecurity demand remains a durable theme versus weaker held names.",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "SELL",
-          "symbol": "AMD",
-          "confidence": 72,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "PANW",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.20-0309-non-reasoning",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "PANW",
-          "confidence": 78,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "PANW",
-          "confidence": 76,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "PANW",
-          "confidence": 78,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "WMT",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-28T15:48:13.058895+00:00"
     }
   ],
   "recent_trades": [
@@ -13604,15 +13604,15 @@
     {
       "symbol": "PANW",
       "name": "PANW",
-      "price": 391.2090148925781,
-      "volume": 3170890.0,
-      "avg_volume": 6358829.0,
-      "percent_change": 4.3947870756742144,
+      "price": 391.7749938964844,
+      "volume": 3315347.0,
+      "avg_volume": 6373274.7,
+      "percent_change": 4.545819529817224,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 16,
-      "liquidity_score": 78.03,
-      "rank_score": 86.72,
+      "liquidity_score": 78.04,
+      "rank_score": 86.84,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Analysts Raise Palo Alto Networks Stock Price Targets - What's the Best PANW Play? - Barchart.com",
       "top_headlines": [
@@ -13665,15 +13665,15 @@
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 337.93450927734375,
-      "volume": 2740220.0,
-      "avg_volume": 9322602.0,
-      "percent_change": -1.4940501130198311,
+      "price": 337.3900146484375,
+      "volume": 2896071.0,
+      "avg_volume": 9338187.1,
+      "percent_change": -1.6527671400067074,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 15,
       "liquidity_score": 79.7,
-      "rank_score": 80.65,
+      "rank_score": 80.78,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, record): JPMorgan Stock Sits 6% Below Its High After a Record Year. Here\u2019s What Q3 Earnings Must Prove - Yahoo Finance",
       "top_headlines": [
@@ -13723,15 +13723,15 @@
     {
       "symbol": "UNH",
       "name": "UNH",
-      "price": 375.80999755859375,
-      "volume": 1745921.0,
-      "avg_volume": 4678722.1,
-      "percent_change": -0.20712148142061396,
+      "price": 377.57000732421875,
+      "volume": 1837220.0,
+      "avg_volume": 4687852.0,
+      "percent_change": 0.2602328781587768,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 15,
-      "liquidity_score": 76.7,
-      "rank_score": 74.67,
+      "liquidity_score": 76.71,
+      "rank_score": 74.71,
       "news_hits": 7,
       "catalyst": "Headline-driven setup (ai, beat, beats): UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
       "top_headlines": [
@@ -13762,21 +13762,21 @@
     {
       "symbol": "MSFT",
       "name": "MSFT",
-      "price": 511.99749755859375,
-      "volume": 10404459.0,
-      "avg_volume": 22620335.9,
-      "percent_change": -0.808354900460912,
+      "price": 511.80999755859375,
+      "volume": 10669157.0,
+      "avg_volume": 22646805.7,
+      "percent_change": -0.8446801433475438,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 12,
-      "liquidity_score": 83.54,
-      "rank_score": 68.68,
+      "liquidity_score": 83.55,
+      "rank_score": 68.71,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Microsoft: Why The $3.8T Fortress Won't Deliver An AI Moonshot (NASDAQ:MSFT) - Seeking Alpha",
       "top_headlines": [
         "Microsoft Corporation (MSFT) stock price, news, quote and history - Yahoo Finance Singapore",
-        "Microsoft (MSFT) Stock Price, Quote & Analysis - tipranks.com",
-        "Microsoft: Why The $3.8T Fortress Won't Deliver An AI Moonshot (NASDAQ:MSFT) - Seeking Alpha"
+        "Microsoft: Why The $3.8T Fortress Won't Deliver An AI Moonshot (NASDAQ:MSFT) - Seeking Alpha",
+        "Microsoft (MSFT) Stock Price, Quote & Analysis - tipranks.com"
       ],
       "matched_headlines": [
         {
@@ -13820,15 +13820,15 @@
     {
       "symbol": "GS",
       "name": "GS",
-      "price": 921.010009765625,
-      "volume": 870349.0,
-      "avg_volume": 2439374.9,
-      "percent_change": -1.543642338230087,
+      "price": 920.1799926757812,
+      "volume": 895088.0,
+      "avg_volume": 2441848.8,
+      "percent_change": -1.6323715144567745,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 10,
-      "liquidity_score": 73.87,
-      "rank_score": 59.82,
+      "liquidity_score": 73.88,
+      "rank_score": 59.89,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): The Goldman Sachs Group (NYSE:GS) Stock Gets Price Target Boost from HSBC - MarketBeat",
       "top_headlines": [
@@ -13929,15 +13929,15 @@
     "candidate_signals_logged": 8,
     "fills_logged": 372,
     "closed_outcomes": 169,
-    "consensus_events": 856,
+    "consensus_events": 857,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1037.11,
-    "change": 37.11,
-    "change_pct": 3.71,
+    "latest_equity": 1036.79,
+    "change": 36.79,
+    "change_pct": 3.68,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -16724,8 +16724,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-28T17:40:59.654529+00:00",
-        "equity": 1037.11,
+        "t": "2026-09-28T17:50:36.096744+00:00",
+        "equity": 1036.79,
         "cash": 394.47,
         "event": "mark"
       }
