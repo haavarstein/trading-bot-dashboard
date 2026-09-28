@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-28T14:00:35.278262+00:00",
+  "generated_at": "2026-09-28T14:05:35.861570+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1041.57,
+    "portfolio_value": 1040.12,
     "starting_cash": 1000.0,
-    "total_return_pct": 4.16,
-    "total_pnl": 41.57,
+    "total_return_pct": 4.01,
+    "total_pnl": 40.12,
     "realized_pnl": 35.94,
-    "open_pnl": 5.58,
-    "capital_deployed": 989.02,
+    "open_pnl": 4.14,
+    "capital_deployed": 987.57,
     "cash": 52.55,
     "closed_trades": 41,
     "win_rate_pct": 31.71,
-    "vs_spy_pct": 4.31,
-    "spy_return_pct": -0.15,
+    "vs_spy_pct": 4.24,
+    "spy_return_pct": -0.23,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-28T14:00:37.969013+00:00"
+    "updated_at": "2026-09-28T14:05:38.620827+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.15,
-    "price": 768.2050170898438,
+    "return_pct": -0.23,
+    "price": 767.5999755859375,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -31,17 +31,17 @@
     "blocked_count_today": 0,
     "fills_today": 0,
     "simulated_orders_today": 0,
-    "top_symbol_today": "COST"
+    "top_symbol_today": "PANW"
   },
   "holdings": [
     {
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 108.91000366210938,
-      "market_value": 201.48,
-      "open_pnl": 5.51,
-      "open_pnl_pct": 2.81,
+      "last": 108.75,
+      "market_value": 201.19,
+      "open_pnl": 5.22,
+      "open_pnl_pct": 2.66,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -50,10 +50,10 @@
       "symbol": "AMZN",
       "qty": 1.6,
       "avg_cost": 247.3925,
-      "last": 245.90499877929688,
-      "market_value": 393.45,
-      "open_pnl": -2.38,
-      "open_pnl_pct": -0.6,
+      "last": 245.4499969482422,
+      "market_value": 392.72,
+      "open_pnl": -3.11,
+      "open_pnl_pct": -0.79,
       "stop": 240.0,
       "target": 262.0,
       "thesis": "AMZN tops the ranked catalyst list on a Seeking Alpha upgrade arguing the market is overstating Meta Muse competitive risk to Amazon. Neutral RSI near 50 leaves room for a bounce toward the existing book target while the position is only modestly underwater. Adding within the $200 notional cap keeps name count unchanged and maintains >1.5 R:R to the 262 target versus a 240 stop. Liquidity and catalyst score dominate weaker HOOD/ANET setups."
@@ -62,10 +62,10 @@
       "symbol": "AMD",
       "qty": 0.32,
       "avg_cost": 609.82,
-      "last": 614.3300170898438,
-      "market_value": 196.59,
-      "open_pnl": 1.44,
-      "open_pnl_pct": 0.74,
+      "last": 612.80712890625,
+      "market_value": 196.1,
+      "open_pnl": 0.96,
+      "open_pnl_pct": 0.49,
       "stop": 585.0,
       "target": 655.0,
       "thesis": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity."
@@ -74,65 +74,70 @@
       "symbol": "BAC",
       "qty": 3.5,
       "avg_cost": 56.14,
-      "last": 56.429901123046875,
-      "market_value": 197.5,
-      "open_pnl": 1.01,
-      "open_pnl_pct": 0.52,
+      "last": 56.44499969482422,
+      "market_value": 197.56,
+      "open_pnl": 1.07,
+      "open_pnl_pct": 0.54,
       "stop": 53.9,
       "target": 59.9,
       "thesis": "BAC is the sole ranked liquid candidate with a bullish headline catalyst framing valuation support amid new debt deals. RSI near 50 leaves room for upside without extreme extension. Book has room under the five-name cap and cash supports a sub-$200 notional add with defined risk. Reward-to-risk meets desk minimum on a clean new_entry."
     }
   ],
   "latest_candidate": {
-    "symbol": "COST",
-    "name": "COST",
-    "price": 922.0399780273438,
-    "volume": 3715920.0,
-    "avg_volume": 2583402.0,
-    "percent_change": 2.8511509588009964,
+    "symbol": "PANW",
+    "name": "PANW",
+    "price": 382.19000244140625,
+    "volume": 984174.0,
+    "avg_volume": 6140157.4,
+    "percent_change": 1.9880483538390878,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 18,
-    "liquidity_score": 74.12,
-    "rank_score": 92.9,
+    "catalyst_score": 15,
+    "liquidity_score": 77.88,
+    "rank_score": 80.77,
     "news_hits": 8,
-    "catalyst": "Headline-driven setup (beat, catalyst): Costco (COST) Stock May Trade At A Premium Following Q4 Earnings Beat - simplywall.st",
+    "catalyst": "Headline-driven setup (ai, catalyst): Analysts Raise Palo Alto Networks Stock Price Targets - What's the Best PANW Play? - Barchart.com",
     "top_headlines": [
-      "Costco (COST) Stock May Trade At A Premium Following Q4 Earnings Beat - simplywall.st",
-      "COST Stock In Focus: Analysts Flag Membership Growth Concerns Post Q4 Report - Stocktwits",
-      "Costco Confirms Its Food Court Churro Is Coming Back \u2014 COST Stock Flat Despite Q4 Beat - Yahoo Finance"
+      "Analysts Raise Palo Alto Networks Stock Price Targets - What's the Best PANW Play? - Barchart.com",
+      "Palo Alto Networks (PANW) Lets Customers Pay Later. Is Credit Risk Rising? - Yahoo Finance",
+      "PANW Maintained by BTIG -- Price Target Raised to $425 - GuruFocus"
     ],
     "matched_headlines": [
       {
-        "title": "Costco (COST) Stock May Trade At A Premium Following Q4 Earnings Beat - simplywall.st",
+        "title": "Analysts Raise Palo Alto Networks Stock Price Targets - What's the Best PANW Play? - Barchart.com",
         "keywords": [
-          "beat",
+          "ai",
           "catalyst"
         ]
       },
       {
-        "title": "COST Stock In Focus: Analysts Flag Membership Growth Concerns Post Q4 Report - Stocktwits",
+        "title": "PANW Maintained by BTIG -- Price Target Raised to $425 - GuruFocus",
         "keywords": [
-          "growth"
+          "ai",
+          "catalyst",
+          "raised"
         ]
       },
       {
-        "title": "Costco Confirms Its Food Court Churro Is Coming Back \u2014 COST Stock Flat Despite Q4 Beat - Yahoo Finance",
+        "title": "Palo Alto Networks (NASDAQ:PANW) Price Target Raised to $425.00 - MarketBeat",
         "keywords": [
-          "beat"
-        ]
-      },
-      {
-        "title": "Freedom Broker Has Lowered Expectations for Costco Wholesale (NASDAQ:COST) Stock Price - MarketBeat",
-        "keywords": [
-          "beat"
-        ]
-      },
-      {
-        "title": "Costco Beats Quarterly Revenue and Earnings Expectations - TIKR.com",
-        "keywords": [
+          "ai",
           "beat",
-          "beats",
+          "catalyst",
+          "raised"
+        ]
+      },
+      {
+        "title": "Palo Alto Networks (PANW) Could Be 5% Undervalued After Its New AI Defense Launch - simplywall.st",
+        "keywords": [
+          "ai",
+          "catalyst",
+          "launch"
+        ]
+      },
+      {
+        "title": "PANW vs CRWD vs AVGO: Morningstar Has A 'Top Pick' Trading At A 40% Discount After Earnings - stocktwits.com",
+        "keywords": [
           "catalyst"
         ]
       }
@@ -140,58 +145,58 @@
   },
   "latest_decision": {
     "model": "grok-4.5",
-    "action": "BUY",
-    "symbol": "COST",
-    "confidence": 74,
+    "action": "SELL",
+    "symbol": "AMZN",
+    "confidence": 73,
     "cache_stats": null,
-    "entry_price": 922.04,
-    "stop_loss": 890.0,
-    "take_profit": 970.0,
-    "qty": 0.055,
-    "thesis": "COST leads the candidate list with a strong post-Q4 earnings beat catalyst and clearly superior rank/catalyst scores versus the rest of the tape. A small fractional starter fits remaining cash while keeping total open names at five and notional well under the $200 cap. Reward-to-risk from 890 stop to 970 target is approximately 1.5 with room for a premium re-rating. Existing holds are modestly green and do not require defensive exits.",
-    "reason_code": "new_entry",
+    "entry_price": 245.79,
+    "stop_loss": 240.0,
+    "take_profit": 262.0,
+    "qty": 1.6,
+    "thesis": "AMZN is the weakest hold on open P/L and faces a negative AGI-unit job-cut headline that undercuts near-term momentum versus higher-ranked catalyst names. Freeing ~$393 notional allows rotation into a cleaner liquid setup (PANW/UNH analyst/guidance catalysts) while staying inside the 5-name and ~$200 new-buy constraints. Existing stop remains intact; exit is policy rotation, not a stop hit.",
+    "reason_code": "rotation",
     "reasoning": {
-      "headline": "Bought $COST",
-      "narrative": "COST leads the candidate list with a strong post-Q4 earnings beat catalyst and clearly superior rank/catalyst scores versus the rest of the tape. A small fractional starter fits remaining cash while keeping total open names at five and notional well under the $200 cap. Reward-to-risk from 890 stop to 970 target is approximately 1.5 with room for a premium re-rating. Existing holds are modestly green and do not require defensive exits.",
+      "headline": "Sold $AMZN",
+      "narrative": "AMZN is the weakest hold on open P/L and faces a negative AGI-unit job-cut headline that undercuts near-term momentum versus higher-ranked catalyst names. Freeing ~$393 notional allows rotation into a cleaner liquid setup (PANW/UNH analyst/guidance catalysts) while staying inside the 5-name and ~$200 new-buy constraints. Existing stop remains intact; exit is policy rotation, not a stop hit.",
       "bullets": [
-        "Top rank_score 92.9 + earnings-beat catalyst",
-        "Fractional size uses ~$51 cash, stays under $200 notional",
-        "R:R ~1.5 with stop 890 / target 970",
-        "Book at 4 names; adding keeps diversification intact"
+        "AMZN open_pnl worst at -2.56 with job-cut catalyst drag",
+        "Cash only $52; sell frees size for top-ranked PANW/UNH",
+        "Rank/catalyst leaders (~80) materially stronger than AMZN hold",
+        "Book policy allows rotate weakest hold into better candidate"
       ],
       "risk_map": {
-        "stop": 890.0,
-        "target": 970.0,
+        "stop": 240.0,
+        "target": 262.0,
         "horizon_days": 5,
-        "rr": 1.5,
+        "rr": 2.8,
         "confidence_10": 7,
-        "confidence": 74
+        "confidence": 73
       },
-      "thesis": "COST leads the candidate list with a strong post-Q4 earnings beat catalyst and clearly superior rank/catalyst scores versus the rest of the tape. A small fractional starter fits remaining cash while keeping total open names at five and notional well under the $200 cap. Reward-to-risk from 890 stop to 970 target is approximately 1.5 with room for a premium re-rating. Existing holds are modestly green and do not require defensive exits."
+      "thesis": "AMZN is the weakest hold on open P/L and faces a negative AGI-unit job-cut headline that undercuts near-term momentum versus higher-ranked catalyst names. Freeing ~$393 notional allows rotation into a cleaner liquid setup (PANW/UNH analyst/guidance catalysts) while staying inside the 5-name and ~$200 new-buy constraints. Existing stop remains intact; exit is policy rotation, not a stop hit."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Top rank_score 92.9 + earnings-beat catalyst",
-      "Fractional size uses ~$51 cash, stays under $200 notional",
-      "R:R ~1.5 with stop 890 / target 970",
-      "Book at 4 names; adding keeps diversification intact"
+      "AMZN open_pnl worst at -2.56 with job-cut catalyst drag",
+      "Cash only $52; sell frees size for top-ranked PANW/UNH",
+      "Rank/catalyst leaders (~80) materially stronger than AMZN hold",
+      "Book policy allows rotate weakest hold into better candidate"
     ],
-    "timestamp": "2026-09-25T19:48:25.277388+00:00"
+    "timestamp": "2026-09-28T14:05:26.947642+00:00"
   },
-  "stance": "Buying pressure on COST. COST leads the candidate list with a strong post-Q4 earnings beat catalyst and clearly superior rank/catalyst scores versus the rest of the tape. A small fractional starter fits remaining cash while keeping total open names at five and notional well under the $200 cap. Reward-to-risk from 890 stop to 970 target is approximately 1.5 with room for a premium re-rating. Existing holds are modestly green and do not require defensive exits.",
+  "stance": "Selling AMZN. AMZN is the weakest hold on open P/L and faces a negative AGI-unit job-cut headline that undercuts near-term momentum versus higher-ranked catalyst names. Freeing ~$393 notional allows rotation into a cleaner liquid setup (PANW/UNH analyst/guidance catalysts) while staying inside the 5-name and ~$200 new-buy constraints. Existing stop remains intact; exit is policy rotation, not a stop hit.",
   "thinking": {
-    "badge": "Looking to buy COST",
-    "headline": "Buying pressure on COST.",
-    "plain_english": "Right now Hermes wants exposure to COST. The desk agreed on a buy only after ranked catalyst evidence and risk checks cleared.",
+    "badge": "Exiting AMZN",
+    "headline": "Selling AMZN.",
+    "plain_english": "Right now Hermes is exiting AMZN. That can be stop, target, or gated rotation when a stronger setup needs risk budget.",
     "triggers": [
       "It owns WMT, bought near $105.93. Simple plan: sell if it falls to about $102.50, or take profit near $112.00.",
       "It owns AMZN, bought near $247.39. Simple plan: sell if it falls to about $240.00, or take profit near $262.00.",
       "It owns AMD, bought near $609.82. Simple plan: sell if it falls to about $585.00, or take profit near $655.00.",
       "It owns BAC, bought near $56.14. Simple plan: sell if it falls to about $53.90, or take profit near $59.90.",
       "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
-      "Top scanner name right now is COST, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
+      "Top scanner name right now is PANW, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
       "If nothing looks clean, do nothing. Sitting in cash or holdings is allowed."
     ],
     "owned": [
@@ -201,9 +206,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 108.91000366210938,
-        "open_pnl": 5.51,
-        "open_pnl_pct": 2.81,
+        "last": 108.75,
+        "open_pnl": 5.22,
+        "open_pnl_pct": 2.66,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -213,9 +218,9 @@
         "avg_cost": 247.3925,
         "stop": 240.0,
         "target": 262.0,
-        "last": 245.90499877929688,
-        "open_pnl": -2.38,
-        "open_pnl_pct": -0.6,
+        "last": 245.4499969482422,
+        "open_pnl": -3.11,
+        "open_pnl_pct": -0.79,
         "line": "Bought near $247.39 \u00b7 Sell safety line $240.00 \u00b7 Profit target $262.00",
         "plan": "stop 240.0 or target 262.0"
       },
@@ -225,9 +230,9 @@
         "avg_cost": 609.82,
         "stop": 585.0,
         "target": 655.0,
-        "last": 614.3300170898438,
-        "open_pnl": 1.44,
-        "open_pnl_pct": 0.74,
+        "last": 612.80712890625,
+        "open_pnl": 0.96,
+        "open_pnl_pct": 0.49,
         "line": "Bought near $609.82 \u00b7 Sell safety line $585.00 \u00b7 Profit target $655.00",
         "plan": "stop 585.0 or target 655.0"
       },
@@ -237,17 +242,17 @@
         "avg_cost": 56.14,
         "stop": 53.9,
         "target": 59.9,
-        "last": 56.429901123046875,
-        "open_pnl": 1.01,
-        "open_pnl_pct": 0.52,
+        "last": 56.44499969482422,
+        "open_pnl": 1.07,
+        "open_pnl_pct": 0.54,
         "line": "Bought near $56.14 \u00b7 Sell safety line $53.90 \u00b7 Profit target $59.90",
         "plan": "stop 53.9 or target 59.9"
       }
     ],
-    "last_checked": "2026-09-28T14:00:35.278262+00:00",
+    "last_checked": "2026-09-28T14:05:35.861570+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
-    "action": "BUY",
+    "action": "SELL",
     "symbols_held": [
       "WMT",
       "AMZN",
@@ -259,47 +264,47 @@
         "prefix": "J",
         "model": "grok-4.3",
         "action": "SELL",
-        "symbol": "BAC",
-        "confidence": 75,
+        "symbol": "AMZN",
+        "confidence": 72,
         "tone": "sell"
       },
       {
         "prefix": "J",
         "model": "claude-haiku-4-5",
         "action": "BUY",
-        "symbol": "COST",
+        "symbol": "UNH",
         "confidence": 72,
         "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "grok-4.20-0309-non-reasoning",
-        "action": "HOLD",
-        "symbol": "CASH",
-        "confidence": 68,
-        "tone": "hold"
+        "action": "BUY",
+        "symbol": "PANW",
+        "confidence": 72,
+        "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
         "action": "SELL",
-        "symbol": "BAC",
-        "confidence": 75,
+        "symbol": "AMZN",
+        "confidence": 72,
         "tone": "sell"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
-        "action": "BUY",
-        "symbol": "COST",
-        "confidence": 74,
-        "tone": "buy"
+        "action": "SELL",
+        "symbol": "AMZN",
+        "confidence": 73,
+        "tone": "sell"
       },
       {
         "prefix": "S",
         "model": "claude-sonnet-5",
         "action": "BUY",
-        "symbol": "COST",
+        "symbol": "PANW",
         "confidence": 78,
         "tone": "buy"
       },
@@ -313,7 +318,85 @@
       }
     ]
   },
-  "activity": [],
+  "activity": [
+    {
+      "type": "consensus",
+      "symbol": "AMZN",
+      "status": "no_consensus",
+      "headline": "SELL AMZN \u2014 no consensus",
+      "detail": "Desks: SELL AMZN (73%) vs BUY PANW (78%) vs HOLD WMT (80%). No 2-of-3 senior agreement",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "SELL",
+          "symbol": "AMZN",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "UNH",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.20-0309-non-reasoning",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "SELL",
+          "symbol": "AMZN",
+          "confidence": 72,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "SELL",
+          "symbol": "AMZN",
+          "confidence": 73,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "PANW",
+          "confidence": 78,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "WMT",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-28T14:05:26.947642+00:00"
+    }
+  ],
   "recent_trades": [
     {
       "timestamp": "2026-09-25T14:06:16.750491+00:00",
@@ -12894,180 +12977,158 @@
   ],
   "top_candidates": [
     {
-      "symbol": "COST",
-      "name": "COST",
-      "price": 922.0399780273438,
-      "volume": 3715920.0,
-      "avg_volume": 2583402.0,
-      "percent_change": 2.8511509588009964,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 18,
-      "liquidity_score": 74.12,
-      "rank_score": 92.9,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat, catalyst): Costco (COST) Stock May Trade At A Premium Following Q4 Earnings Beat - simplywall.st",
-      "top_headlines": [
-        "Costco (COST) Stock May Trade At A Premium Following Q4 Earnings Beat - simplywall.st",
-        "COST Stock In Focus: Analysts Flag Membership Growth Concerns Post Q4 Report - Stocktwits",
-        "Costco Confirms Its Food Court Churro Is Coming Back \u2014 COST Stock Flat Despite Q4 Beat - Yahoo Finance"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Costco (COST) Stock May Trade At A Premium Following Q4 Earnings Beat - simplywall.st",
-          "keywords": [
-            "beat",
-            "catalyst"
-          ]
-        },
-        {
-          "title": "COST Stock In Focus: Analysts Flag Membership Growth Concerns Post Q4 Report - Stocktwits",
-          "keywords": [
-            "growth"
-          ]
-        },
-        {
-          "title": "Costco Confirms Its Food Court Churro Is Coming Back \u2014 COST Stock Flat Despite Q4 Beat - Yahoo Finance",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Freedom Broker Has Lowered Expectations for Costco Wholesale (NASDAQ:COST) Stock Price - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Costco Beats Quarterly Revenue and Earnings Expectations - TIKR.com",
-          "keywords": [
-            "beat",
-            "beats",
-            "catalyst"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "LRCX",
-      "name": "LRCX",
-      "price": 316.1600036621094,
-      "volume": 4482613.0,
-      "avg_volume": 10378391.3,
-      "percent_change": 2.9300689844698753,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 8,
-      "liquidity_score": 80.16,
-      "rank_score": 50.87,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (growth): Lam Research (LRCX) Following Higher 2026 Outlook And Packaging Growth Is It Still Undervalued - Yahoo Finance",
-      "top_headlines": [
-        "Lam Research (LRCX) Following Higher 2026 Outlook And Packaging Growth Is It Still Undervalued - Yahoo Finance",
-        "AMSL, AMAT, KLAC, LRCX: Chipmaking Equipment Stocks Rise On Intel\u2019s CapEx Bump - Stocktwits",
-        "Wall Street Bulls Look Optimistic About Lam Research (LRCX): Should You Buy? - Yahoo Finance Australia"
-      ],
-      "matched_headlines": [
-        {
-          "title": "Lam Research (LRCX) Following Higher 2026 Outlook And Packaging Growth Is It Still Undervalued - Yahoo Finance",
-          "keywords": [
-            "growth"
-          ]
-        },
-        {
-          "title": "Lam Research (NASDAQ:LRCX) Shares Down 1.2% - Time to Sell? - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Envestnet Asset Management Inc. Acquires 99,166 Shares of Lam Research Corporation $LRCX - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        }
-      ]
-    },
-    {
-      "symbol": "XOM",
-      "name": "XOM",
-      "price": 160.6199951171875,
-      "volume": 6431597.0,
-      "avg_volume": 14975389.7,
-      "percent_change": -0.9374640916385618,
-      "exchange": "",
-      "sentiment": "bullish",
-      "catalyst_score": 7,
-      "liquidity_score": 81.75,
-      "rank_score": 47.01,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (beat): ExxonMobil Corporation (NYSE:XOM) Stock Has Average Target Price of $167.30 According to Brokerages - MarketBeat",
-      "top_headlines": [
-        "XOM, CVX Are Already Up More Than 25% This Year \u2014 One Analyst Thinks There's Still More To Come For Big Oil - Stocktwits",
-        "XOM|Exxon Mobil Corp|Price:160.140|Chg%:-2.000 - TradingKey",
-        "Investors Heavily Search ExxonMobil Holdings Corporation (XOM): Here is What You Need to Know - Yahoo Finance"
-      ],
-      "matched_headlines": [
-        {
-          "title": "ExxonMobil Corporation (NYSE:XOM) Stock Has Average Target Price of $167.30 According to Brokerages - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "Should Record Oil Output Require Action From ExxonMobil (XOM) Investors? - simplywall.st",
-          "keywords": [
-            "record"
-          ]
-        },
-        {
-          "title": "ExxonMobil (NYSE:XOM) Stock Price Expected to Rise, The Goldman Sachs Group Analyst Says - MarketBeat",
-          "keywords": [
-            "beat"
-          ]
-        },
-        {
-          "title": "USO, CVX, XOM, OXY Drop Premarket As Trump\u2019s Iran Talks Trigger Crude Oil Selloff - Stocktwits",
-          "keywords": [
-            "drop"
-          ]
-        }
-      ]
-    },
-    {
       "symbol": "PANW",
       "name": "PANW",
-      "price": 375.3699951171875,
-      "volume": 3609403.0,
-      "avg_volume": 7117500.3,
-      "percent_change": -3.7315392412509483,
+      "price": 382.19000244140625,
+      "volume": 984174.0,
+      "avg_volume": 6140157.4,
+      "percent_change": 1.9880483538390878,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 7,
-      "liquidity_score": 78.52,
-      "rank_score": 45.76,
+      "catalyst_score": 15,
+      "liquidity_score": 77.88,
+      "rank_score": 80.77,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): Why Did ATAI, PANW, TRV Stocks Surge To 52-Week Highs Last Week? - Stocktwits",
+      "catalyst": "Headline-driven setup (ai, catalyst): Analysts Raise Palo Alto Networks Stock Price Targets - What's the Best PANW Play? - Barchart.com",
       "top_headlines": [
-        "Why Did ATAI, PANW, TRV Stocks Surge To 52-Week Highs Last Week? - Stocktwits",
-        "Palo Alto Networks Inc Stock (PANW) Moved Down by 3.95% on Sep 25: Key Drivers Unveiled - TradingKey",
-        "Why Palo Alto Networks (PANW) Stock Is Trading Up Today - Yahoo Finance"
+        "Analysts Raise Palo Alto Networks Stock Price Targets - What's the Best PANW Play? - Barchart.com",
+        "Palo Alto Networks (PANW) Lets Customers Pay Later. Is Credit Risk Rising? - Yahoo Finance",
+        "PANW Maintained by BTIG -- Price Target Raised to $425 - GuruFocus"
       ],
       "matched_headlines": [
         {
-          "title": "Why Did ATAI, PANW, TRV Stocks Surge To 52-Week Highs Last Week? - Stocktwits",
+          "title": "Analysts Raise Palo Alto Networks Stock Price Targets - What's the Best PANW Play? - Barchart.com",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "PANW Stock Gains After Revenue Forecast Beat As AI Usage Drives Cybersecurity Demand - Stocktwits",
+          "title": "PANW Maintained by BTIG -- Price Target Raised to $425 - GuruFocus",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "raised"
+          ]
+        },
+        {
+          "title": "Palo Alto Networks (NASDAQ:PANW) Price Target Raised to $425.00 - MarketBeat",
           "keywords": [
             "ai",
             "beat",
             "catalyst",
-            "demand"
+            "raised"
+          ]
+        },
+        {
+          "title": "Palo Alto Networks (PANW) Could Be 5% Undervalued After Its New AI Defense Launch - simplywall.st",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "launch"
+          ]
+        },
+        {
+          "title": "PANW vs CRWD vs AVGO: Morningstar Has A 'Top Pick' Trading At A 40% Discount After Earnings - stocktwits.com",
+          "keywords": [
+            "catalyst"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "UNH",
+      "name": "UNH",
+      "price": 376.9700012207031,
+      "volume": 487620.0,
+      "avg_volume": 4552892.0,
+      "percent_change": 0.10090679160567649,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 16,
+      "liquidity_score": 76.58,
+      "rank_score": 80.07,
+      "news_hits": 7,
+      "catalyst": "Headline-driven setup (ai, beat, beats): UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
+      "top_headlines": [
+        "UnitedHealth Group Incorporated (UNH) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+        "UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
+        "UnitedHealth: Quality Dividends From Health Insurance (NYSE:UNH) - Seeking Alpha"
+      ],
+      "matched_headlines": [
+        {
+          "title": "UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
+          "keywords": [
+            "ai",
+            "beat",
+            "beats",
+            "catalyst",
+            "guidance",
+            "raises"
+          ]
+        },
+        {
+          "title": "Why Did AAPL, ATAI, UNH Stocks Jump To 52-Week Highs Today? - stocktwits.com",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "UnitedHealth (UNH) Beat Q2 EPS by 30% and the Medical Cost Ratio Hit a Two-Year Low; Is $454 the Target? - TradingKey",
+          "keywords": [
+            "beat"
+          ]
+        }
+      ]
+    },
+    {
+      "symbol": "JPM",
+      "name": "JPM",
+      "price": 339.3800048828125,
+      "volume": 912233.0,
+      "avg_volume": 9139803.3,
+      "percent_change": -1.0726965259634262,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 14,
+      "liquidity_score": 79.61,
+      "rank_score": 74.8,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (catalyst, record): JPMorgan Stock Sits 6% Below Its High After a Record Year. Here\u2019s What Q3 Earnings Must Prove - TIKR.com",
+      "top_headlines": [
+        "JPMorgan Stock Sits 6% Below Its High After a Record Year. Here\u2019s What Q3 Earnings Must Prove - TIKR.com",
+        "Why Did IMAX, JPM, CSX Stocks Surge To 52-Week Highs Last Week? - stocktwits.com",
+        "JPMorgan Chase & Co. (NYSE:JPM) Stock Price Target Raised at HSBC - MarketBeat"
+      ],
+      "matched_headlines": [
+        {
+          "title": "JPMorgan Stock Sits 6% Below Its High After a Record Year. Here\u2019s What Q3 Earnings Must Prove - TIKR.com",
+          "keywords": [
+            "catalyst",
+            "record"
+          ]
+        },
+        {
+          "title": "JPMorgan Chase & Co. (NYSE:JPM) Stock Price Target Raised at HSBC - MarketBeat",
+          "keywords": [
+            "ai",
+            "beat",
+            "catalyst",
+            "raised"
+          ]
+        },
+        {
+          "title": "Qatar Partnership Could Be A Game Changer For JPMorgan Stock (JPM) - simplywall.st",
+          "keywords": [
+            "catalyst",
+            "partnership"
+          ]
+        },
+        {
+          "title": "Athena Investment Management Sells 5,294 Shares of JPMorgan Chase & Co. $JPM - MarketBeat",
+          "keywords": [
+            "beat"
           ]
         }
       ]
@@ -13075,48 +13136,112 @@
     {
       "symbol": "NVDA",
       "name": "NVDA",
-      "price": 224.4199981689453,
-      "volume": 62498045.0,
-      "avg_volume": 103643724.5,
-      "percent_change": -0.07124573016512009,
+      "price": 232.1873016357422,
+      "volume": 39972385.0,
+      "avg_volume": 97145278.5,
+      "percent_change": 3.1622579996946483,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 6,
-      "liquidity_score": 90.16,
-      "rank_score": 43.58,
+      "catalyst_score": 10,
+      "liquidity_score": 89.87,
+      "rank_score": 63.51,
       "news_hits": 6,
-      "catalyst": "Headline-driven setup (ai, catalyst, demand): Why Dan Ives Sees NVDA And Korea Memory Stocks Driving AI Demand - Stocktwits",
+      "catalyst": "Headline-driven setup (ai, catalyst): Why Is NVIDIA Stock Gaining Monday? - NVIDIA (NASDAQ:NVDA) - Benzinga",
       "top_headlines": [
-        "NVDA Stock Quote Price and Forecast - cnn.com",
-        "Why Dan Ives Sees NVDA And Korea Memory Stocks Driving AI Demand - Stocktwits",
-        "Nvidia (NVDA) Down 1.5% Since Last Earnings Report: Can It Rebound? - ca.finance.yahoo.com"
+        "Why Is NVIDIA Stock Gaining Monday? - NVIDIA (NASDAQ:NVDA) - Benzinga",
+        "NVIDIA (NASDAQ:NVDA) Combines High Growth Momentum With a Breakout Setup - ChartMill",
+        "Nvidia unveils massive $150B increase to share buyback program (NVDA:NASDAQ) - Seeking Alpha"
       ],
       "matched_headlines": [
         {
-          "title": "Why Dan Ives Sees NVDA And Korea Memory Stocks Driving AI Demand - Stocktwits",
+          "title": "Why Is NVIDIA Stock Gaining Monday? - NVIDIA (NASDAQ:NVDA) - Benzinga",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "NVIDIA (NASDAQ:NVDA) Combines High Growth Momentum With a Breakout Setup - ChartMill",
+          "keywords": [
+            "growth"
+          ]
+        },
+        {
+          "title": "Nvidia unveils massive $150B increase to share buyback program (NVDA:NASDAQ) - Seeking Alpha",
+          "keywords": [
+            "buyback",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "NVDA Stock Rides Massive AI Spending And Bold Growth Bets - timothysykes.com",
           "keywords": [
             "ai",
             "catalyst",
-            "demand"
+            "growth"
           ]
         },
         {
-          "title": "Nvidia (NVDA) Down 1.5% Since Last Earnings Report: Can It Rebound? - ca.finance.yahoo.com",
+          "title": "NVDA Stock Eyes Worst First Half Since 2022: Retail Patience Wears Thin As Board Member Trims Stake For Third Time This Year - stocktwits.com",
           "keywords": [
+            "ai",
             "catalyst"
           ]
+        }
+      ]
+    },
+    {
+      "symbol": "COST",
+      "name": "COST",
+      "price": 927.0700073242188,
+      "volume": 230739.0,
+      "avg_volume": 2496533.9,
+      "percent_change": 0.46598694170331456,
+      "exchange": "",
+      "sentiment": "bullish",
+      "catalyst_score": 10,
+      "liquidity_score": 73.97,
+      "rank_score": 58.97,
+      "news_hits": 8,
+      "catalyst": "Headline-driven setup (growth): COST Stock Wrapped Its Best Week Since May: Analysts Still See Multiple Growth Drivers For Costco Despite Trimming Price Targets - Yahoo Finance",
+      "top_headlines": [
+        "COST Stock Wrapped Its Best Week Since May: Analysts Still See Multiple Growth Drivers For Costco Despite Trimming Price Targets - Yahoo Finance",
+        "COST Stock Wrapped Its Best Week Since May: Analysts Still See Multiple Growth Drivers For Costco Despite Trimming Price Targets - stocktwits.com",
+        "Prediction: Here's What a $10,000 Investment in Costco (COST) Stock Could Be Worth in 5 Years - The Motley Fool"
+      ],
+      "matched_headlines": [
+        {
+          "title": "COST Stock Wrapped Its Best Week Since May: Analysts Still See Multiple Growth Drivers For Costco Despite Trimming Price Targets - Yahoo Finance",
+          "keywords": [
+            "growth"
+          ]
         },
         {
-          "title": "Nvidia (NVDA) Stock Quotes, Company News And Chart Analysis - Investor's Business Daily",
+          "title": "COST Stock Wrapped Its Best Week Since May: Analysts Still See Multiple Growth Drivers For Costco Despite Trimming Price Targets - stocktwits.com",
+          "keywords": [
+            "growth"
+          ]
+        },
+        {
+          "title": "Stocktwits Retail Therapy: Defensive Bets Take Off As COST, DG, WMT Lead Weekly Consumer Staples Gains - TradingView",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "NVIDIA (NVDA) Faces Limited Growth Potential Amid Industry Chall - GuruFocus",
+          "title": "Costco Wholesale Corp (NASDAQ:COST): High-ROIC Quality Stock, But Valuation Is the Main Constraint - ChartMill",
           "keywords": [
-            "growth"
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "Jefferies raises Charles River Labs stock price target on cost efficiency outlook - Investing.com Canada",
+          "keywords": [
+            "ai",
+            "catalyst",
+            "raises"
           ]
         }
       ]
@@ -13148,8 +13273,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 1,
-      "BUY": 1,
+      "HOLD": 0,
+      "BUY": 2,
       "SELL": 2,
       "live": 4,
       "fallback": 0
@@ -13170,21 +13295,21 @@
     "last_stage": "entry",
     "last_junior_nomination": null,
     "last_escalate_reason": "junior_trade_or_split",
-    "live_share_recent": 87.9
+    "live_share_recent": 85.7
   },
   "learning": {
     "candidate_signals_logged": 8,
     "fills_logged": 370,
     "closed_outcomes": 168,
-    "consensus_events": 841,
+    "consensus_events": 842,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1041.57,
-    "change": 41.57,
-    "change_pct": 4.16,
+    "latest_equity": 1040.12,
+    "change": 40.12,
+    "change_pct": 4.01,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -15925,6 +16050,12 @@
       {
         "t": "2026-09-28T14:00:37.969013+00:00",
         "equity": 1041.57,
+        "cash": 52.55,
+        "event": "mark"
+      },
+      {
+        "t": "2026-09-28T14:05:38.620827+00:00",
+        "equity": 1040.12,
         "cash": 52.55,
         "event": "mark"
       }
