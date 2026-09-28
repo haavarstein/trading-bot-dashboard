@@ -1,34 +1,34 @@
 {
-  "generated_at": "2026-09-28T19:11:00.319664+00:00",
+  "generated_at": "2026-09-28T19:18:29.126142+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1037.42,
+    "portfolio_value": 1037.59,
     "starting_cash": 1000.0,
-    "total_return_pct": 3.74,
-    "total_pnl": 37.42,
+    "total_return_pct": 3.76,
+    "total_pnl": 37.59,
     "realized_pnl": 34.14,
-    "open_pnl": 3.23,
-    "capital_deployed": 642.95,
+    "open_pnl": 3.4,
+    "capital_deployed": 643.12,
     "cash": 394.47,
     "closed_trades": 42,
     "win_rate_pct": 30.95,
-    "vs_spy_pct": 4.16,
-    "spy_return_pct": -0.42,
+    "vs_spy_pct": 4.19,
+    "spy_return_pct": -0.43,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-28T19:11:03.152482+00:00"
+    "updated_at": "2026-09-28T19:18:31.707858+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.42,
-    "price": 766.1900024414062,
+    "return_pct": -0.43,
+    "price": 766.0599975585938,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 10,
+    "consensus_count_today": 11,
     "validated_count_today": 2,
-    "blocked_count_today": 8,
+    "blocked_count_today": 9,
     "fills_today": 2,
     "simulated_orders_today": 2,
     "top_symbol_today": "PANW"
@@ -38,10 +38,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 108.82499694824219,
-      "market_value": 201.33,
-      "open_pnl": 5.36,
-      "open_pnl_pct": 2.73,
+      "last": 108.8949966430664,
+      "market_value": 201.46,
+      "open_pnl": 5.49,
+      "open_pnl_pct": 2.8,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -50,10 +50,10 @@
       "symbol": "AMD",
       "qty": 0.32,
       "avg_cost": 609.82,
-      "last": 606.8599853515625,
-      "market_value": 194.2,
-      "open_pnl": -0.95,
-      "open_pnl_pct": -0.49,
+      "last": 607.9199829101562,
+      "market_value": 194.53,
+      "open_pnl": -0.61,
+      "open_pnl_pct": -0.31,
       "stop": 585.0,
       "target": 655.0,
       "thesis": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity."
@@ -62,10 +62,10 @@
       "symbol": "BAC",
       "qty": 3.5,
       "avg_cost": 56.14,
-      "last": 55.4900016784668,
-      "market_value": 194.22,
-      "open_pnl": -2.27,
-      "open_pnl_pct": -1.16,
+      "last": 55.439998626708984,
+      "market_value": 194.04,
+      "open_pnl": -2.45,
+      "open_pnl_pct": -1.25,
       "stop": 53.9,
       "target": 59.9,
       "thesis": "BAC is the sole ranked liquid candidate with a bullish headline catalyst framing valuation support amid new debt deals. RSI near 50 leaves room for upside without extreme extension. Book has room under the five-name cap and cash supports a sub-$200 notional add with defined risk. Reward-to-risk meets desk minimum on a clean new_entry."
@@ -74,10 +74,10 @@
       "symbol": "PANW",
       "qty": 0.135,
       "avg_cost": 386.03,
-      "last": 394.0874938964844,
-      "market_value": 53.2,
-      "open_pnl": 1.09,
-      "open_pnl_pct": 2.09,
+      "last": 393.2449951171875,
+      "market_value": 53.09,
+      "open_pnl": 0.97,
+      "open_pnl_pct": 1.87,
       "stop": 370.0,
       "target": 412.0,
       "thesis": "PANW tops the candidate list on analyst price-target raises and a solid AI/cyber catalyst with rank_score 81.6. RSI at 50 is neutral, leaving room for continuation without being extended. Position is strictly cash-constrained to available ~$52 notional while keeping reward:risk above 1.5. Cybersecurity demand remains a durable theme versus weaker held names."
@@ -86,15 +86,15 @@
   "latest_candidate": {
     "symbol": "PANW",
     "name": "PANW",
-    "price": 393.2601013183594,
-    "volume": 4027710.0,
-    "avg_volume": 6444511.0,
-    "percent_change": 4.942122956346686,
+    "price": 393.2200012207031,
+    "volume": 4179596.0,
+    "avg_volume": 6459699.6,
+    "percent_change": 4.9314221774863425,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 16,
-    "liquidity_score": 78.09,
-    "rank_score": 87.17,
+    "liquidity_score": 78.1,
+    "rank_score": 87.16,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (ai, catalyst): Analysts Raise Palo Alto Networks Stock Price Targets - What's the Best PANW Play? - Barchart.com",
     "top_headlines": [
@@ -150,43 +150,43 @@
     "symbol": "UNH",
     "confidence": 78,
     "cache_stats": null,
-    "entry_price": 376.11,
-    "stop_loss": 362.0,
+    "entry_price": 375.74,
+    "stop_loss": 360.0,
     "take_profit": 400.0,
     "qty": 0.53,
-    "thesis": "UNH posts a clean beat-and-raise catalyst with guidance lifted after Q1 strength and an already sharp post-print move, ranking second on the desk list with solid bullish sentiment. Room remains for a fifth name under the open-position cap, and ~$200 notional fits cash without forced rotation. Risk is defined below the recent gap zone with a 1.7R target back toward extension of the earnings impulse. Prefer this over lower-ranked financials and already-held PANW add.",
+    "thesis": "UNH posts a clean post-earnings catalyst with a beat and raised guidance after an 8% jump, ranking second among liquid setups while we still have room under the 5-name cap. Entry near 376 keeps notional under $200 with a defined 360 stop and 400 target for roughly 1.5:1 reward-to-risk. Sentiment is bullish and the name is highly liquid, offering a clearer incremental edge than adding to already-owned PANW or forcing a rotation.",
     "reason_code": "new_entry",
     "reasoning": {
       "headline": "Bought $UNH",
-      "narrative": "UNH posts a clean beat-and-raise catalyst with guidance lifted after Q1 strength and an already sharp post-print move, ranking second on the desk list with solid bullish sentiment. Room remains for a fifth name under the open-position cap, and ~$200 notional fits cash without forced rotation. Risk is defined below the recent gap zone with a 1.7R target back toward extension of the earnings impulse. Prefer this over lower-ranked financials and already-held PANW add.",
+      "narrative": "UNH posts a clean post-earnings catalyst with a beat and raised guidance after an 8% jump, ranking second among liquid setups while we still have room under the 5-name cap. Entry near 376 keeps notional under $200 with a defined 360 stop and 400 target for roughly 1.5:1 reward-to-risk. Sentiment is bullish and the name is highly liquid, offering a clearer incremental edge than adding to already-owned PANW or forcing a rotation.",
       "bullets": [
-        "Q1 beat + guidance raise; rank 74.6 catalyst 15",
-        "Max 5 names: add UNH without selling weakest hold",
-        "R:R ~1.7 with stop 362 / target 400; qty ~$200",
-        "Social chatter supportive but secondary to catalyst score"
+        "Q1 beat + guidance raise catalyst",
+        "Rank/catalyst scores support new risk",
+        "R:R ~1.5 with ~$200 notional",
+        "Book has room (4/5 names)"
       ],
       "risk_map": {
-        "stop": 362.0,
+        "stop": 360.0,
         "target": 400.0,
         "horizon_days": 5,
-        "rr": 1.69,
+        "rr": 1.54,
         "confidence_10": 8,
         "confidence": 78
       },
-      "thesis": "UNH posts a clean beat-and-raise catalyst with guidance lifted after Q1 strength and an already sharp post-print move, ranking second on the desk list with solid bullish sentiment. Room remains for a fifth name under the open-position cap, and ~$200 notional fits cash without forced rotation. Risk is defined below the recent gap zone with a 1.7R target back toward extension of the earnings impulse. Prefer this over lower-ranked financials and already-held PANW add."
+      "thesis": "UNH posts a clean post-earnings catalyst with a beat and raised guidance after an 8% jump, ranking second among liquid setups while we still have room under the 5-name cap. Entry near 376 keeps notional under $200 with a defined 360 stop and 400 target for roughly 1.5:1 reward-to-risk. Sentiment is bullish and the name is highly liquid, offering a clearer incremental edge than adding to already-owned PANW or forcing a rotation."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Q1 beat + guidance raise; rank 74.6 catalyst 15",
-      "Max 5 names: add UNH without selling weakest hold",
-      "R:R ~1.7 with stop 362 / target 400; qty ~$200",
-      "Social chatter supportive but secondary to catalyst score"
+      "Q1 beat + guidance raise catalyst",
+      "Rank/catalyst scores support new risk",
+      "R:R ~1.5 with ~$200 notional",
+      "Book has room (4/5 names)"
     ],
-    "timestamp": "2026-09-28T19:05:45.832440+00:00"
+    "timestamp": "2026-09-28T19:18:20.169262+00:00"
   },
-  "stance": "Buying pressure on UNH. UNH posts a clean beat-and-raise catalyst with guidance lifted after Q1 strength and an already sharp post-print move, ranking second on the desk list with solid bullish sentiment. Room remains for a fifth name under the open-position cap, and ~$200 notional fits cash without forced rotation. Risk is defined below the recent gap zone with a 1.7R target back toward extension of the earnings impulse. Prefer this over lower-ranked financials and already-held PANW add.",
+  "stance": "Buying pressure on UNH. UNH posts a clean post-earnings catalyst with a beat and raised guidance after an 8% jump, ranking second among liquid setups while we still have room under the 5-name cap. Entry near 376 keeps notional under $200 with a defined 360 stop and 400 target for roughly 1.5:1 reward-to-risk. Sentiment is bullish and the name is highly liquid, offering a clearer incremental edge than adding to already-owned PANW or forcing a rotation.",
   "thinking": {
     "badge": "Looking to buy UNH",
     "headline": "Buying pressure on UNH.",
@@ -206,9 +206,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 108.82499694824219,
-        "open_pnl": 5.36,
-        "open_pnl_pct": 2.73,
+        "last": 108.8949966430664,
+        "open_pnl": 5.49,
+        "open_pnl_pct": 2.8,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -218,9 +218,9 @@
         "avg_cost": 609.82,
         "stop": 585.0,
         "target": 655.0,
-        "last": 606.8599853515625,
-        "open_pnl": -0.95,
-        "open_pnl_pct": -0.49,
+        "last": 607.9199829101562,
+        "open_pnl": -0.61,
+        "open_pnl_pct": -0.31,
         "line": "Bought near $609.82 \u00b7 Sell safety line $585.00 \u00b7 Profit target $655.00",
         "plan": "stop 585.0 or target 655.0"
       },
@@ -230,9 +230,9 @@
         "avg_cost": 56.14,
         "stop": 53.9,
         "target": 59.9,
-        "last": 55.4900016784668,
-        "open_pnl": -2.27,
-        "open_pnl_pct": -1.16,
+        "last": 55.439998626708984,
+        "open_pnl": -2.45,
+        "open_pnl_pct": -1.25,
         "line": "Bought near $56.14 \u00b7 Sell safety line $53.90 \u00b7 Profit target $59.90",
         "plan": "stop 53.9 or target 59.9"
       },
@@ -242,14 +242,14 @@
         "avg_cost": 386.03,
         "stop": 370.0,
         "target": 412.0,
-        "last": 394.0874938964844,
-        "open_pnl": 1.09,
-        "open_pnl_pct": 2.09,
+        "last": 393.2449951171875,
+        "open_pnl": 0.97,
+        "open_pnl_pct": 1.87,
         "line": "Bought near $386.03 \u00b7 Sell safety line $370.00 \u00b7 Profit target $412.00",
         "plan": "stop 370.0 or target 412.0"
       }
     ],
-    "last_checked": "2026-09-28T19:11:00.319664+00:00",
+    "last_checked": "2026-09-28T19:18:29.126142+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -263,10 +263,10 @@
       {
         "prefix": "J",
         "model": "grok-4.3",
-        "action": "BUY",
-        "symbol": "UNH",
-        "confidence": 75,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 65,
+        "tone": "hold"
       },
       {
         "prefix": "J",
@@ -319,6 +319,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "UNH",
+      "status": "blocked",
+      "headline": "BUY UNH \u2014 blocked",
+      "detail": "Insufficient buying power: $0.44 < $199.14",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "UNH",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.20-0309-non-reasoning",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 60,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "UNH",
+          "confidence": 78,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "UNH",
+          "confidence": 78,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "WMT",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-28T19:18:20.169262+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "UNH",
@@ -857,83 +934,6 @@
       "stage": "entry",
       "junior_nomination": null,
       "timestamp": "2026-09-28T17:33:20.904589+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "JPM",
-      "status": "no_consensus",
-      "headline": "BUY JPM \u2014 no consensus",
-      "detail": "Desks: BUY JPM (76%) vs BUY UNH (78%) vs HOLD WMT (80%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 62,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "JPM",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.20-0309-non-reasoning",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 68,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "JPM",
-          "confidence": 76,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "UNH",
-          "confidence": 78,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "WMT",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-28T17:18:11.293431+00:00"
     },
     {
       "type": "fill",
@@ -13604,15 +13604,15 @@
     {
       "symbol": "PANW",
       "name": "PANW",
-      "price": 393.2601013183594,
-      "volume": 4027710.0,
-      "avg_volume": 6444511.0,
-      "percent_change": 4.942122956346686,
+      "price": 393.2200012207031,
+      "volume": 4179596.0,
+      "avg_volume": 6459699.6,
+      "percent_change": 4.9314221774863425,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 16,
-      "liquidity_score": 78.09,
-      "rank_score": 87.17,
+      "liquidity_score": 78.1,
+      "rank_score": 87.16,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Analysts Raise Palo Alto Networks Stock Price Targets - What's the Best PANW Play? - Barchart.com",
       "top_headlines": [
@@ -13665,15 +13665,15 @@
     {
       "symbol": "UNH",
       "name": "UNH",
-      "price": 376.114990234375,
-      "volume": 2289893.0,
-      "avg_volume": 4733119.3,
-      "percent_change": -0.1261334895070956,
+      "price": 375.739990234375,
+      "volume": 2389755.0,
+      "avg_volume": 4743105.5,
+      "percent_change": -0.2257112806451098,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 15,
-      "liquidity_score": 76.75,
-      "rank_score": 74.61,
+      "liquidity_score": 76.76,
+      "rank_score": 74.69,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, beat, beats): UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - tradingkey.com",
       "top_headlines": [
@@ -13704,15 +13704,15 @@
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 337.1099853515625,
-      "volume": 3611374.0,
-      "avg_volume": 9409717.4,
-      "percent_change": -1.734394056251051,
+      "price": 336.875,
+      "volume": 3785405.0,
+      "avg_volume": 9427120.5,
+      "percent_change": -1.8028909236313302,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
       "liquidity_score": 79.74,
-      "rank_score": 71.35,
+      "rank_score": 71.4,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, beat, catalyst): JPMorgan Chase & Co. (NYSE:JPM) Stock Price Target Raised at HSBC - MarketBeat",
       "top_headlines": [
@@ -13755,15 +13755,15 @@
     {
       "symbol": "MSFT",
       "name": "MSFT",
-      "price": 510.8900146484375,
-      "volume": 11992383.0,
-      "avg_volume": 22779128.3,
-      "percent_change": -1.0229126908834163,
+      "price": 509.8299865722656,
+      "volume": 12379380.0,
+      "avg_volume": 22817828.0,
+      "percent_change": -1.2282768366625758,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 10,
       "liquidity_score": 83.58,
-      "rank_score": 60.86,
+      "rank_score": 61.02,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Microsoft: Why The $3.8T Fortress Won't Deliver An AI Moonshot (NASDAQ:MSFT) - Seeking Alpha",
       "top_headlines": [
@@ -13813,15 +13813,15 @@
     {
       "symbol": "GOOGL",
       "name": "GOOGL",
-      "price": 342.3861083984375,
-      "volume": 11238043.0,
-      "avg_volume": 26041784.3,
-      "percent_change": -0.4460063297884187,
+      "price": 341.9100036621094,
+      "volume": 11524826.0,
+      "avg_volume": 26070462.6,
+      "percent_change": -0.584441058137883,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 10,
       "liquidity_score": 84.16,
-      "rank_score": 60.48,
+      "rank_score": 60.59,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, upgrade, upgrades): Wall Street upgrades Google (GOOGL) stock price target for next 12 months - Finbold",
       "top_headlines": [
@@ -13895,8 +13895,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 2,
-      "BUY": 2,
+      "HOLD": 3,
+      "BUY": 1,
       "SELL": 0,
       "live": 4,
       "fallback": 0
@@ -13923,15 +13923,15 @@
     "candidate_signals_logged": 8,
     "fills_logged": 372,
     "closed_outcomes": 169,
-    "consensus_events": 862,
+    "consensus_events": 863,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1037.42,
-    "change": 37.42,
-    "change_pct": 3.74,
+    "latest_equity": 1037.59,
+    "change": 37.59,
+    "change_pct": 3.76,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -16736,8 +16736,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-28T19:11:03.152482+00:00",
-        "equity": 1037.42,
+        "t": "2026-09-28T19:18:31.707858+00:00",
+        "equity": 1037.59,
         "cash": 394.47,
         "event": "mark"
       }
