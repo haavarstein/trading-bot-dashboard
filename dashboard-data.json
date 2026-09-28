@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-28T14:40:37.989903+00:00",
+  "generated_at": "2026-09-28T14:48:32.401862+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1039.32,
+    "portfolio_value": 1035.78,
     "starting_cash": 1000.0,
-    "total_return_pct": 3.93,
-    "total_pnl": 39.32,
+    "total_return_pct": 3.58,
+    "total_pnl": 35.78,
     "realized_pnl": 35.94,
-    "open_pnl": 3.34,
-    "capital_deployed": 986.77,
+    "open_pnl": -0.2,
+    "capital_deployed": 983.23,
     "cash": 52.55,
     "closed_trades": 41,
     "win_rate_pct": 31.71,
-    "vs_spy_pct": 4.31,
-    "spy_return_pct": -0.38,
+    "vs_spy_pct": 4.26,
+    "spy_return_pct": -0.68,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-28T14:40:40.599467+00:00"
+    "updated_at": "2026-09-28T14:48:35.077673+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.38,
-    "price": 766.4598999023438,
+    "return_pct": -0.68,
+    "price": 764.14501953125,
     "start_price": 769.3900146484375
   },
   "stats": {
@@ -31,17 +31,17 @@
     "blocked_count_today": 0,
     "fills_today": 0,
     "simulated_orders_today": 0,
-    "top_symbol_today": "UNH"
+    "top_symbol_today": "JPM"
   },
   "holdings": [
     {
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 108.97000122070312,
-      "market_value": 201.59,
-      "open_pnl": 5.62,
-      "open_pnl_pct": 2.87,
+      "last": 109.16000366210938,
+      "market_value": 201.95,
+      "open_pnl": 5.98,
+      "open_pnl_pct": 3.05,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -50,10 +50,10 @@
       "symbol": "AMZN",
       "qty": 1.6,
       "avg_cost": 247.3925,
-      "last": 246.8000030517578,
-      "market_value": 394.88,
-      "open_pnl": -0.95,
-      "open_pnl_pct": -0.24,
+      "last": 246.13499450683594,
+      "market_value": 393.82,
+      "open_pnl": -2.01,
+      "open_pnl_pct": -0.51,
       "stop": 240.0,
       "target": 262.0,
       "thesis": "AMZN tops the ranked catalyst list on a Seeking Alpha upgrade arguing the market is overstating Meta Muse competitive risk to Amazon. Neutral RSI near 50 leaves room for a bounce toward the existing book target while the position is only modestly underwater. Adding within the $200 notional cap keeps name count unchanged and maintains >1.5 R:R to the 262 target versus a 240 stop. Liquidity and catalyst score dominate weaker HOOD/ANET setups."
@@ -62,10 +62,10 @@
       "symbol": "AMD",
       "qty": 0.32,
       "avg_cost": 609.82,
-      "last": 606.3760986328125,
-      "market_value": 194.04,
-      "open_pnl": -1.1,
-      "open_pnl_pct": -0.56,
+      "last": 598.375,
+      "market_value": 191.48,
+      "open_pnl": -3.66,
+      "open_pnl_pct": -1.88,
       "stop": 585.0,
       "target": 655.0,
       "thesis": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity."
@@ -74,55 +74,66 @@
       "symbol": "BAC",
       "qty": 3.5,
       "avg_cost": 56.14,
-      "last": 56.07500076293945,
-      "market_value": 196.26,
-      "open_pnl": -0.23,
-      "open_pnl_pct": -0.12,
+      "last": 55.994998931884766,
+      "market_value": 195.98,
+      "open_pnl": -0.51,
+      "open_pnl_pct": -0.26,
       "stop": 53.9,
       "target": 59.9,
       "thesis": "BAC is the sole ranked liquid candidate with a bullish headline catalyst framing valuation support amid new debt deals. RSI near 50 leaves room for upside without extreme extension. Book has room under the five-name cap and cash supports a sub-$200 notional add with defined risk. Reward-to-risk meets desk minimum on a clean new_entry."
     }
   ],
   "latest_candidate": {
-    "symbol": "UNH",
-    "name": "UNH",
-    "price": 376.5,
-    "volume": 687177.0,
-    "avg_volume": 4572847.7,
-    "percent_change": -0.023897697433756825,
+    "symbol": "JPM",
+    "name": "JPM",
+    "price": 339.70001220703125,
+    "volume": 1359578.0,
+    "avg_volume": 9184537.8,
+    "percent_change": -0.9794162465673729,
     "exchange": "",
     "sentiment": "bullish",
-    "catalyst_score": 16,
-    "liquidity_score": 76.6,
-    "rank_score": 80.01,
+    "catalyst_score": 17,
+    "liquidity_score": 79.63,
+    "rank_score": 88.23,
     "news_hits": 8,
-    "catalyst": "Headline-driven setup (ai, beat, beats): UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
+    "catalyst": "Headline-driven setup (catalyst, record): JPMorgan Stock Sits 6% Below Its High After a Record Year. Here\u2019s What Q3 Earnings Must Prove - TIKR.com",
     "top_headlines": [
-      "UnitedHealth Group Incorporated (UNH) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-      "UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
-      "UnitedHealth: Quality Dividends From Health Insurance (NYSE:UNH) - Seeking Alpha"
+      "JPMorgan Stock Sits 6% Below Its High After a Record Year. Here\u2019s What Q3 Earnings Must Prove - TIKR.com",
+      "Why Did IMAX, JPM, CSX Stocks Surge To 52-Week Highs Last Week? - Stocktwits",
+      "JPMorgan Chase & Co. (NYSE:JPM) Stock Price Target Raised at HSBC - MarketBeat"
     ],
     "matched_headlines": [
       {
-        "title": "UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
+        "title": "JPMorgan Stock Sits 6% Below Its High After a Record Year. Here\u2019s What Q3 Earnings Must Prove - TIKR.com",
+        "keywords": [
+          "catalyst",
+          "record"
+        ]
+      },
+      {
+        "title": "JPMorgan Chase & Co. (NYSE:JPM) Stock Price Target Raised at HSBC - MarketBeat",
         "keywords": [
           "ai",
           "beat",
-          "beats",
           "catalyst",
-          "guidance",
-          "raises"
+          "raised"
         ]
       },
       {
-        "title": "Why Did AAPL, ATAI, UNH Stocks Jump To 52-Week Highs Today? - Stocktwits",
+        "title": "Qatar Partnership Could Be A Game Changer For JPMorgan Stock (JPM) - simplywall.st",
         "keywords": [
-          "ai",
-          "catalyst"
+          "catalyst",
+          "partnership"
         ]
       },
       {
-        "title": "UnitedHealth (UNH) Beat Q2 EPS by 30% and the Medical Cost Ratio Hit a Two-Year Low; Is $454 the Target? - TradingKey",
+        "title": "Athena Investment Management Sells 5,294 Shares of JPMorgan Chase & Co. $JPM - MarketBeat",
+        "keywords": [
+          "beat"
+        ]
+      },
+      {
+        "title": "JPMorgan Chase & Co. $JPM Holdings Lifted by Concurrent Investment Advisors LLC - MarketBeat",
         "keywords": [
           "beat"
         ]
@@ -132,57 +143,57 @@
   "latest_decision": {
     "model": "grok-4.5",
     "action": "SELL",
-    "symbol": "AMZN",
-    "confidence": 72,
+    "symbol": "AMD",
+    "confidence": 74,
     "cache_stats": null,
-    "entry_price": 246.87,
-    "stop_loss": 255.0,
-    "take_profit": 230.0,
-    "qty": 1.6,
-    "thesis": "Rotating out of lagging AMZN (slight open loss, no fresh catalyst edge) to free capital for a higher-ranked setup. UNH leads candidates on rank/catalyst after beating and raising guidance with an 8% jump, offering cleaner upside than the current AMZN hold. Book policy allows selling the weakest P/L name to fund the materially stronger liquid catalyst.",
+    "entry_price": 600.87,
+    "stop_loss": 585.0,
+    "take_profit": 655.0,
+    "qty": 0.32,
+    "thesis": "AMD is the weakest open hold on both open P/L and relative rank versus top catalyst names. Freeing the ~$192 notional plus cash enables a cleaner rotation into higher-conviction JPM, which leads the candidate list on rank and earnings catalyst while sitting ~6% below highs. Book policy allows rotating the weakest name when a materially stronger liquid setup is available. Maintaining discipline on underwater AI beta with softer catalyst score versus mega-bank earnings setup.",
     "reason_code": "rotation",
     "reasoning": {
-      "headline": "Sold $AMZN",
-      "narrative": "Rotating out of lagging AMZN (slight open loss, no fresh catalyst edge) to free capital for a higher-ranked setup. UNH leads candidates on rank/catalyst after beating and raising guidance with an 8% jump, offering cleaner upside than the current AMZN hold. Book policy allows selling the weakest P/L name to fund the materially stronger liquid catalyst.",
+      "headline": "Sold $AMD",
+      "narrative": "AMD is the weakest open hold on both open P/L and relative rank versus top catalyst names. Freeing the ~$192 notional plus cash enables a cleaner rotation into higher-conviction JPM, which leads the candidate list on rank and earnings catalyst while sitting ~6% below highs. Book policy allows rotating the weakest name when a materially stronger liquid setup is available. Maintaining discipline on underwater AI beta with softer catalyst score versus mega-bank earnings setup.",
       "bullets": [
-        "AMZN weakest open P/L among holds",
-        "UNH top rank 80 + earnings beat/raise catalyst",
-        "Frees notional for ~$200 max new entry",
-        "R:R on exit plan exceeds 1.5"
+        "AMD worst open P/L and lowest held conviction",
+        "JPM rank 88 + Q3 earnings catalyst leads board",
+        "Frees ~$192 notional for higher-quality entry",
+        "Keeps book lean ahead of stronger liquid name"
       ],
       "risk_map": {
-        "stop": 255.0,
-        "target": 230.0,
+        "stop": 585.0,
+        "target": 655.0,
         "horizon_days": 5,
-        "rr": 2.08,
+        "rr": 3.41,
         "confidence_10": 7,
-        "confidence": 72
+        "confidence": 74
       },
-      "thesis": "Rotating out of lagging AMZN (slight open loss, no fresh catalyst edge) to free capital for a higher-ranked setup. UNH leads candidates on rank/catalyst after beating and raising guidance with an 8% jump, offering cleaner upside than the current AMZN hold. Book policy allows selling the weakest P/L name to fund the materially stronger liquid catalyst."
+      "thesis": "AMD is the weakest open hold on both open P/L and relative rank versus top catalyst names. Freeing the ~$192 notional plus cash enables a cleaner rotation into higher-conviction JPM, which leads the candidate list on rank and earnings catalyst while sitting ~6% below highs. Book policy allows rotating the weakest name when a materially stronger liquid setup is available. Maintaining discipline on underwater AI beta with softer catalyst score versus mega-bank earnings setup."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "AMZN weakest open P/L among holds",
-      "UNH top rank 80 + earnings beat/raise catalyst",
-      "Frees notional for ~$200 max new entry",
-      "R:R on exit plan exceeds 1.5"
+      "AMD worst open P/L and lowest held conviction",
+      "JPM rank 88 + Q3 earnings catalyst leads board",
+      "Frees ~$192 notional for higher-quality entry",
+      "Keeps book lean ahead of stronger liquid name"
     ],
-    "timestamp": "2026-09-28T14:33:23.447076+00:00"
+    "timestamp": "2026-09-28T14:48:24.141403+00:00"
   },
-  "stance": "Selling AMZN. Rotating out of lagging AMZN (slight open loss, no fresh catalyst edge) to free capital for a higher-ranked setup. UNH leads candidates on rank/catalyst after beating and raising guidance with an 8% jump, offering cleaner upside than the current AMZN hold. Book policy allows selling the weakest P/L name to fund the materially stronger liquid catalyst.",
+  "stance": "Selling AMD. AMD is the weakest open hold on both open P/L and relative rank versus top catalyst names. Freeing the ~$192 notional plus cash enables a cleaner rotation into higher-conviction JPM, which leads the candidate list on rank and earnings catalyst while sitting ~6% below highs. Book policy allows rotating the weakest name when a materially stronger liquid setup is available. Maintaining discipline on underwater AI beta with softer catalyst score versus mega-bank earnings setup.",
   "thinking": {
-    "badge": "Exiting AMZN",
-    "headline": "Selling AMZN.",
-    "plain_english": "Right now Hermes is exiting AMZN. That can be stop, target, or gated rotation when a stronger setup needs risk budget.",
+    "badge": "Exiting AMD",
+    "headline": "Selling AMD.",
+    "plain_english": "Right now Hermes is exiting AMD. That can be stop, target, or gated rotation when a stronger setup needs risk budget.",
     "triggers": [
       "It owns WMT, bought near $105.93. Simple plan: sell if it falls to about $102.50, or take profit near $112.00.",
       "It owns AMZN, bought near $247.39. Simple plan: sell if it falls to about $240.00, or take profit near $262.00.",
       "It owns AMD, bought near $609.82. Simple plan: sell if it falls to about $585.00, or take profit near $655.00.",
       "It owns BAC, bought near $56.14. Simple plan: sell if it falls to about $53.90, or take profit near $59.90.",
       "Only buy something new if the story is strong, the stock trades enough volume, and the upside is clearly bigger than the downside.",
-      "Top scanner name right now is UNH, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
+      "Top scanner name right now is JPM, but it still has to clear the senior 2-of-3 live-majority gate and risk code before any fill.",
       "If nothing looks clean, do nothing. Sitting in cash or holdings is allowed."
     ],
     "owned": [
@@ -192,9 +203,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 108.97000122070312,
-        "open_pnl": 5.62,
-        "open_pnl_pct": 2.87,
+        "last": 109.16000366210938,
+        "open_pnl": 5.98,
+        "open_pnl_pct": 3.05,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -204,9 +215,9 @@
         "avg_cost": 247.3925,
         "stop": 240.0,
         "target": 262.0,
-        "last": 246.8000030517578,
-        "open_pnl": -0.95,
-        "open_pnl_pct": -0.24,
+        "last": 246.13499450683594,
+        "open_pnl": -2.01,
+        "open_pnl_pct": -0.51,
         "line": "Bought near $247.39 \u00b7 Sell safety line $240.00 \u00b7 Profit target $262.00",
         "plan": "stop 240.0 or target 262.0"
       },
@@ -216,9 +227,9 @@
         "avg_cost": 609.82,
         "stop": 585.0,
         "target": 655.0,
-        "last": 606.3760986328125,
-        "open_pnl": -1.1,
-        "open_pnl_pct": -0.56,
+        "last": 598.375,
+        "open_pnl": -3.66,
+        "open_pnl_pct": -1.88,
         "line": "Bought near $609.82 \u00b7 Sell safety line $585.00 \u00b7 Profit target $655.00",
         "plan": "stop 585.0 or target 655.0"
       },
@@ -228,14 +239,14 @@
         "avg_cost": 56.14,
         "stop": 53.9,
         "target": 59.9,
-        "last": 56.07500076293945,
-        "open_pnl": -0.23,
-        "open_pnl_pct": -0.12,
+        "last": 55.994998931884766,
+        "open_pnl": -0.51,
+        "open_pnl_pct": -0.26,
         "line": "Bought near $56.14 \u00b7 Sell safety line $53.90 \u00b7 Profit target $59.90",
         "plan": "stop 53.9 or target 59.9"
       }
     ],
-    "last_checked": "2026-09-28T14:40:37.989903+00:00",
+    "last_checked": "2026-09-28T14:48:32.401862+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "SELL",
@@ -250,47 +261,47 @@
         "prefix": "J",
         "model": "grok-4.3",
         "action": "SELL",
-        "symbol": "AMZN",
-        "confidence": 72,
+        "symbol": "AMD",
+        "confidence": 75,
         "tone": "sell"
       },
       {
         "prefix": "J",
         "model": "claude-haiku-4-5",
         "action": "BUY",
-        "symbol": "UNH",
+        "symbol": "JPM",
         "confidence": 72,
         "tone": "buy"
       },
       {
         "prefix": "J",
         "model": "grok-4.20-0309-non-reasoning",
-        "action": "BUY",
-        "symbol": "UNH",
-        "confidence": 78,
-        "tone": "buy"
+        "action": "HOLD",
+        "symbol": "CASH",
+        "confidence": 65,
+        "tone": "hold"
       },
       {
         "prefix": "J",
         "model": "grok-build-0.1",
         "action": "SELL",
-        "symbol": "AMZN",
-        "confidence": 70,
+        "symbol": "AMD",
+        "confidence": 75,
         "tone": "sell"
       },
       {
         "prefix": "S",
         "model": "grok-4.5",
         "action": "SELL",
-        "symbol": "AMZN",
-        "confidence": 72,
+        "symbol": "AMD",
+        "confidence": 74,
         "tone": "sell"
       },
       {
         "prefix": "S",
         "model": "claude-sonnet-5",
         "action": "BUY",
-        "symbol": "UNH",
+        "symbol": "JPM",
         "confidence": 78,
         "tone": "buy"
       },
@@ -305,6 +316,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "AMD",
+      "status": "no_consensus",
+      "headline": "SELL AMD \u2014 no consensus",
+      "detail": "Desks: SELL AMD (74%) vs BUY JPM (78%) vs HOLD WMT (80%). No 2-of-3 senior agreement",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "SELL",
+          "symbol": "AMD",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.20-0309-non-reasoning",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "SELL",
+          "symbol": "AMD",
+          "confidence": 75,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "SELL",
+          "symbol": "AMD",
+          "confidence": 74,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "JPM",
+          "confidence": 78,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "HOLD",
+          "symbol": "WMT",
+          "confidence": 80,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_trade_or_split",
+      "stage": "entry",
+      "junior_nomination": null,
+      "timestamp": "2026-09-28T14:48:24.141403+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "AMZN",
@@ -13117,45 +13205,56 @@
   ],
   "top_candidates": [
     {
-      "symbol": "UNH",
-      "name": "UNH",
-      "price": 376.5,
-      "volume": 687177.0,
-      "avg_volume": 4572847.7,
-      "percent_change": -0.023897697433756825,
+      "symbol": "JPM",
+      "name": "JPM",
+      "price": 339.70001220703125,
+      "volume": 1359578.0,
+      "avg_volume": 9184537.8,
+      "percent_change": -0.9794162465673729,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 16,
-      "liquidity_score": 76.6,
-      "rank_score": 80.01,
+      "catalyst_score": 17,
+      "liquidity_score": 79.63,
+      "rank_score": 88.23,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, beat, beats): UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
+      "catalyst": "Headline-driven setup (catalyst, record): JPMorgan Stock Sits 6% Below Its High After a Record Year. Here\u2019s What Q3 Earnings Must Prove - TIKR.com",
       "top_headlines": [
-        "UnitedHealth Group Incorporated (UNH) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-        "UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
-        "UnitedHealth: Quality Dividends From Health Insurance (NYSE:UNH) - Seeking Alpha"
+        "JPMorgan Stock Sits 6% Below Its High After a Record Year. Here\u2019s What Q3 Earnings Must Prove - TIKR.com",
+        "Why Did IMAX, JPM, CSX Stocks Surge To 52-Week Highs Last Week? - Stocktwits",
+        "JPMorgan Chase & Co. (NYSE:JPM) Stock Price Target Raised at HSBC - MarketBeat"
       ],
       "matched_headlines": [
         {
-          "title": "UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
+          "title": "JPMorgan Stock Sits 6% Below Its High After a Record Year. Here\u2019s What Q3 Earnings Must Prove - TIKR.com",
+          "keywords": [
+            "catalyst",
+            "record"
+          ]
+        },
+        {
+          "title": "JPMorgan Chase & Co. (NYSE:JPM) Stock Price Target Raised at HSBC - MarketBeat",
           "keywords": [
             "ai",
             "beat",
-            "beats",
             "catalyst",
-            "guidance",
-            "raises"
+            "raised"
           ]
         },
         {
-          "title": "Why Did AAPL, ATAI, UNH Stocks Jump To 52-Week Highs Today? - Stocktwits",
+          "title": "Qatar Partnership Could Be A Game Changer For JPMorgan Stock (JPM) - simplywall.st",
           "keywords": [
-            "ai",
-            "catalyst"
+            "catalyst",
+            "partnership"
           ]
         },
         {
-          "title": "UnitedHealth (UNH) Beat Q2 EPS by 30% and the Medical Cost Ratio Hit a Two-Year Low; Is $454 the Target? - TradingKey",
+          "title": "Athena Investment Management Sells 5,294 Shares of JPMorgan Chase & Co. $JPM - MarketBeat",
+          "keywords": [
+            "beat"
+          ]
+        },
+        {
+          "title": "JPMorgan Chase & Co. $JPM Holdings Lifted by Concurrent Investment Advisors LLC - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -13165,20 +13264,20 @@
     {
       "symbol": "PANW",
       "name": "PANW",
-      "price": 378.0400085449219,
-      "volume": 1309628.0,
-      "avg_volume": 6172702.8,
-      "percent_change": 0.8806154658014833,
+      "price": 378.8699951171875,
+      "volume": 1426128.0,
+      "avg_volume": 6184352.8,
+      "percent_change": 1.1020987859420759,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 15,
-      "liquidity_score": 77.9,
-      "rank_score": 79.89,
+      "liquidity_score": 77.91,
+      "rank_score": 80.07,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): Analysts Raise Palo Alto Networks Stock Price Targets - What's the Best PANW Play? - Barchart.com",
       "top_headlines": [
         "Analysts Raise Palo Alto Networks Stock Price Targets - What's the Best PANW Play? - Barchart.com",
-        "Palo Alto Networks (PANW) Lets Customers Pay Later. Is Credit Risk Rising? - Yahoo Finance",
+        "Palo Alto Networks (PANW) Lets Customers Pay Later. Is Credit Risk Rising? - finance.yahoo.com",
         "PANW Maintained by BTIG -- Price Target Raised to $425 - GuruFocus"
       ],
       "matched_headlines": [
@@ -13223,50 +13322,45 @@
       ]
     },
     {
-      "symbol": "JPM",
-      "name": "JPM",
-      "price": 340.2998046875,
-      "volume": 1232983.0,
-      "avg_volume": 9171878.3,
-      "percent_change": -0.8045802165034751,
+      "symbol": "UNH",
+      "name": "UNH",
+      "price": 376.5920104980469,
+      "volume": 762979.0,
+      "avg_volume": 4580427.9,
+      "percent_change": 0.0005348416516201934,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 14,
-      "liquidity_score": 79.62,
-      "rank_score": 74.59,
-      "news_hits": 8,
-      "catalyst": "Headline-driven setup (catalyst, record): JPMorgan Stock Sits 6% Below Its High After a Record Year. Here\u2019s What Q3 Earnings Must Prove - TIKR.com",
+      "catalyst_score": 16,
+      "liquidity_score": 76.61,
+      "rank_score": 79.99,
+      "news_hits": 7,
+      "catalyst": "Headline-driven setup (ai, beat, beats): UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
       "top_headlines": [
-        "JPMorgan Stock Sits 6% Below Its High After a Record Year. Here\u2019s What Q3 Earnings Must Prove - TIKR.com",
-        "Why Did IMAX, JPM, CSX Stocks Surge To 52-Week Highs Last Week? - stocktwits.com",
-        "JPMorgan Chase & Co. (NYSE:JPM) Stock Price Target Raised at HSBC - MarketBeat"
+        "UnitedHealth Group Incorporated (UNH) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+        "UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
+        "UnitedHealth: Quality Dividends From Health Insurance (NYSE:UNH) - Seeking Alpha"
       ],
       "matched_headlines": [
         {
-          "title": "JPMorgan Stock Sits 6% Below Its High After a Record Year. Here\u2019s What Q3 Earnings Must Prove - TIKR.com",
-          "keywords": [
-            "catalyst",
-            "record"
-          ]
-        },
-        {
-          "title": "JPMorgan Chase & Co. (NYSE:JPM) Stock Price Target Raised at HSBC - MarketBeat",
+          "title": "UnitedHealth Beats Q1 2026 and Raises Guidance - Is UNH Stock a Buy After Jumping 8%? - TradingKey",
           "keywords": [
             "ai",
             "beat",
+            "beats",
             "catalyst",
-            "raised"
+            "guidance",
+            "raises"
           ]
         },
         {
-          "title": "Qatar Partnership Could Be A Game Changer For JPMorgan Stock (JPM) - simplywall.st",
+          "title": "Why Did AAPL, ATAI, UNH Stocks Jump To 52-Week Highs Today? - Stocktwits",
           "keywords": [
-            "catalyst",
-            "partnership"
+            "ai",
+            "catalyst"
           ]
         },
         {
-          "title": "Athena Investment Management Sells 5,294 Shares of JPMorgan Chase & Co. $JPM - MarketBeat",
+          "title": "UnitedHealth (UNH) Beat Q2 EPS by 30% and the Medical Cost Ratio Hit a Two-Year Low; Is $454 the Target? - TradingKey",
           "keywords": [
             "beat"
           ]
@@ -13276,25 +13370,25 @@
     {
       "symbol": "COST",
       "name": "COST",
-      "price": 926.3099975585938,
-      "volume": 397046.0,
-      "avg_volume": 2513164.6,
-      "percent_change": 0.38362516687982484,
+      "price": 929.3599853515625,
+      "volume": 474780.0,
+      "avg_volume": 2520938.0,
+      "percent_change": 0.7141504037658354,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 13,
-      "liquidity_score": 74.0,
-      "rank_score": 70.91,
+      "liquidity_score": 74.02,
+      "rank_score": 71.17,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (growth): COST Stock Wrapped Its Best Week Since May: Analysts Still See Multiple Growth Drivers For Costco Despite Trimming Price Targets - Yahoo Finance",
+      "catalyst": "Headline-driven setup (growth): COST Stock Wrapped Its Best Week Since May: Analysts Still See Multiple Growth Drivers For Costco Despite Trimming Price Targets - finance.yahoo.com",
       "top_headlines": [
-        "COST Stock Wrapped Its Best Week Since May: Analysts Still See Multiple Growth Drivers For Costco Despite Trimming Price Targets - Yahoo Finance",
+        "COST Stock Wrapped Its Best Week Since May: Analysts Still See Multiple Growth Drivers For Costco Despite Trimming Price Targets - finance.yahoo.com",
         "COST Stock Wrapped Its Best Week Since May: Analysts Still See Multiple Growth Drivers For Costco Despite Trimming Price Targets - Stocktwits",
         "Costco Wholesale (NASDAQ:COST) Stock Rating Reaffirmed as \"Buy\" by Argus - MarketBeat"
       ],
       "matched_headlines": [
         {
-          "title": "COST Stock Wrapped Its Best Week Since May: Analysts Still See Multiple Growth Drivers For Costco Despite Trimming Price Targets - Yahoo Finance",
+          "title": "COST Stock Wrapped Its Best Week Since May: Analysts Still See Multiple Growth Drivers For Costco Despite Trimming Price Targets - finance.yahoo.com",
           "keywords": [
             "growth"
           ]
@@ -13328,51 +13422,58 @@
       ]
     },
     {
-      "symbol": "NVDA",
-      "name": "NVDA",
-      "price": 231.27499389648438,
-      "volume": 50908938.0,
-      "avg_volume": 98238933.8,
-      "percent_change": 2.756914013570539,
+      "symbol": "AMZN",
+      "name": "AMZN",
+      "price": 246.22169494628906,
+      "volume": 9249667.0,
+      "avg_volume": 35815466.7,
+      "percent_change": -1.3811444097992387,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 9,
-      "liquidity_score": 89.92,
-      "rank_score": 57.69,
-      "news_hits": 6,
-      "catalyst": "Headline-driven setup (ai, catalyst): Why Is NVIDIA Stock Gaining Monday? - NVIDIA (NASDAQ:NVDA) - Benzinga",
+      "liquidity_score": 85.54,
+      "rank_score": 57.44,
+      "news_hits": 7,
+      "catalyst": "Headline-driven setup (cut, cuts, drop): AMZN Stock Drops For Second Day \u2014 Amazon Reportedly Cuts Jobs In Artificial General Intelligence Unit Amid Strategic Realignment - Stocktwits",
       "top_headlines": [
-        "Why Is NVIDIA Stock Gaining Monday? - NVIDIA (NASDAQ:NVDA) - Benzinga",
-        "NVIDIA (NASDAQ:NVDA) Combines High Growth Momentum With a Breakout Setup - ChartMill",
-        "NVDA Stock Rides Massive AI Spending And Bold Growth Bets - timothysykes.com"
+        "AMZN Stock Drops For Second Day \u2014 Amazon Reportedly Cuts Jobs In Artificial General Intelligence Unit Amid Strategic Realignment - Stocktwits",
+        "Amazon.com, Inc. $AMZN Stock Acquired by Ferguson Wellman Capital Management Inc. - MarketBeat",
+        "AMZN Stock Gains On Hitting Satellite Milestone to Launch Starlink Internet Rival This Year - Stocktwits"
       ],
       "matched_headlines": [
         {
-          "title": "Why Is NVIDIA Stock Gaining Monday? - NVIDIA (NASDAQ:NVDA) - Benzinga",
+          "title": "AMZN Stock Drops For Second Day \u2014 Amazon Reportedly Cuts Jobs In Artificial General Intelligence Unit Amid Strategic Realignment - Stocktwits",
           "keywords": [
-            "ai",
-            "catalyst"
+            "cut",
+            "cuts",
+            "drop",
+            "drops"
           ]
         },
         {
-          "title": "NVIDIA (NASDAQ:NVDA) Combines High Growth Momentum With a Breakout Setup - ChartMill",
+          "title": "Amazon.com, Inc. $AMZN Stock Acquired by Ferguson Wellman Capital Management Inc. - MarketBeat",
           "keywords": [
-            "growth"
+            "beat"
           ]
         },
         {
-          "title": "NVDA Stock Rides Massive AI Spending And Bold Growth Bets - timothysykes.com",
+          "title": "AMZN Stock Gains On Hitting Satellite Milestone to Launch Starlink Internet Rival This Year - Stocktwits",
           "keywords": [
             "ai",
             "catalyst",
-            "growth"
+            "launch"
           ]
         },
         {
-          "title": "Nvidia unveils massive $150B increase to share buyback program (NVDA:NASDAQ) - Seeking Alpha",
+          "title": "Amazon.com, Inc. $AMZN Stock Acquired by New Mexico Educational Retirement Board - MarketBeat",
           "keywords": [
-            "buyback",
-            "catalyst"
+            "beat"
+          ]
+        },
+        {
+          "title": "Amazon.com, Inc. $AMZN Stock Holdings Lifted by Braun Stacey Associates Inc. - MarketBeat",
+          "keywords": [
+            "beat"
           ]
         }
       ]
@@ -13404,8 +13505,8 @@
     ],
     "junior_min_agree": 3,
     "junior_votes": {
-      "HOLD": 0,
-      "BUY": 2,
+      "HOLD": 1,
+      "BUY": 1,
       "SELL": 2,
       "live": 4,
       "fallback": 0
@@ -13432,15 +13533,15 @@
     "candidate_signals_logged": 8,
     "fills_logged": 370,
     "closed_outcomes": 168,
-    "consensus_events": 844,
+    "consensus_events": 845,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1039.32,
-    "change": 39.32,
-    "change_pct": 3.93,
+    "latest_equity": 1035.78,
+    "change": 35.78,
+    "change_pct": 3.58,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -16191,8 +16292,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-28T14:40:40.599467+00:00",
-        "equity": 1039.32,
+        "t": "2026-09-28T14:48:35.077673+00:00",
+        "equity": 1035.78,
         "cash": 52.55,
         "event": "mark"
       }
