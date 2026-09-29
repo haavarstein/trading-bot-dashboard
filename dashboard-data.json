@@ -1,34 +1,34 @@
 {
-  "generated_at": "2026-09-29T14:40:12.995554+00:00",
+  "generated_at": "2026-09-29T14:47:24.786771+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1032.67,
+    "portfolio_value": 1032.36,
     "starting_cash": 1000.0,
-    "total_return_pct": 3.27,
-    "total_pnl": 32.67,
+    "total_return_pct": 3.24,
+    "total_pnl": 32.36,
     "realized_pnl": 31.65,
-    "open_pnl": 0.98,
-    "capital_deployed": 641.97,
+    "open_pnl": 0.67,
+    "capital_deployed": 641.66,
     "cash": 390.7,
     "closed_trades": 43,
     "win_rate_pct": 30.23,
-    "vs_spy_pct": 3.78,
-    "spy_return_pct": -0.51,
+    "vs_spy_pct": 3.8,
+    "spy_return_pct": -0.56,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-29T14:40:15.840889+00:00"
+    "updated_at": "2026-09-29T14:47:27.453743+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.51,
-    "price": 765.4400024414062,
+    "return_pct": -0.56,
+    "price": 765.0900268554688,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 3,
+    "consensus_count_today": 4,
     "validated_count_today": 2,
-    "blocked_count_today": 1,
+    "blocked_count_today": 2,
     "fills_today": 2,
     "simulated_orders_today": 2,
     "top_symbol_today": "JPM"
@@ -38,10 +38,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 105.44999694824219,
-      "market_value": 195.08,
-      "open_pnl": -0.89,
-      "open_pnl_pct": -0.45,
+      "last": 105.49500274658203,
+      "market_value": 195.17,
+      "open_pnl": -0.8,
+      "open_pnl_pct": -0.41,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -50,10 +50,10 @@
       "symbol": "AMD",
       "qty": 0.32,
       "avg_cost": 609.82,
-      "last": 616.8699951171875,
-      "market_value": 197.4,
-      "open_pnl": 2.26,
-      "open_pnl_pct": 1.16,
+      "last": 615.7750244140625,
+      "market_value": 197.05,
+      "open_pnl": 1.91,
+      "open_pnl_pct": 0.98,
       "stop": 585.0,
       "target": 655.0,
       "thesis": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity."
@@ -62,10 +62,10 @@
       "symbol": "PANW",
       "qty": 0.135,
       "avg_cost": 386.03,
-      "last": 381.614990234375,
-      "market_value": 51.52,
-      "open_pnl": -0.6,
-      "open_pnl_pct": -1.14,
+      "last": 380.3999938964844,
+      "market_value": 51.35,
+      "open_pnl": -0.76,
+      "open_pnl_pct": -1.46,
       "stop": 370.0,
       "target": 412.0,
       "thesis": "PANW tops the candidate list on analyst price-target raises and a solid AI/cyber catalyst with rank_score 81.6. RSI at 50 is neutral, leaving room for continuation without being extended. Position is strictly cash-constrained to available ~$52 notional while keeping reward:risk above 1.5. Cybersecurity demand remains a durable theme versus weaker held names."
@@ -74,10 +74,10 @@
       "symbol": "JPM",
       "qty": 0.59,
       "avg_cost": 335.2,
-      "last": 335.54998779296875,
-      "market_value": 197.97,
-      "open_pnl": 0.21,
-      "open_pnl_pct": 0.1,
+      "last": 335.74969482421875,
+      "market_value": 198.09,
+      "open_pnl": 0.32,
+      "open_pnl_pct": 0.16,
       "stop": 325.0,
       "target": 355.0,
       "thesis": "JPM shows a high rank score with bullish sentiment and a headline catalyst around record dealmaking that could support upside from current levels. RSI is neutral at 50, leaving room for a move higher without being overbought. Portfolio has room for one more name under the 5-position limit and cash supports a sub-$200 notional entry. Risk-reward is structured above 1.5 with a clear invalidation below recent support."
@@ -86,15 +86,15 @@
   "latest_candidate": {
     "symbol": "AMZN",
     "name": "AMZN",
-    "price": 246.5675048828125,
-    "volume": 5137800.0,
-    "avg_volume": 34977050.0,
-    "percent_change": 0.1696164926592298,
+    "price": 246.8699951171875,
+    "volume": 6144282.0,
+    "avg_volume": 35077698.2,
+    "percent_change": 0.2925050735552378,
     "exchange": "",
     "sentiment": "bullish",
     "catalyst_score": 18,
-    "liquidity_score": 85.44,
-    "rank_score": 92.45,
+    "liquidity_score": 85.45,
+    "rank_score": 92.55,
     "news_hits": 8,
     "catalyst": "Headline-driven setup (beat): Amazon.com, Inc. $AMZN Stock Sold by Strategic Advisors LLC - MarketBeat",
     "top_headlines": [
@@ -128,7 +128,7 @@
         ]
       },
       {
-        "title": "Amazon.com, Inc. $AMZN Shares Newly Bought by Susquehanna Fundamental Investments LLC - MarketBeat",
+        "title": "Amazon.com, Inc. $AMZN Shares Bought by GTS Securities LLC - MarketBeat",
         "keywords": [
           "beat"
         ]
@@ -141,43 +141,43 @@
     "symbol": "AMZN",
     "confidence": 78,
     "cache_stats": null,
-    "entry_price": 246.57,
-    "stop_loss": 238.0,
-    "take_profit": 262.0,
-    "qty": 0.81,
-    "thesis": "AMZN screens as the top-ranked liquid candidate with bullish sentiment and a headline catalyst setup while RSI sits neutral near 50, offering a clean momentum entry. Portfolio has room under the 5-name cap and cash supports a sub-$200 notional add without forced rotation. Defined risk to 238 keeps reward:risk above 1.5 toward 262 on continuation.",
+    "entry_price": 246.87,
+    "stop_loss": 240.0,
+    "take_profit": 258.0,
+    "qty": 0.8,
+    "thesis": "AMZN is the sole ranked candidate with a strong 92.55 rank score, bullish sentiment, and catalyst_score of 18, fitting a liquid setup. Book has room at 4 open names and cash supports a ~$200 notional add without forced rotation. RSI neutral at 50 supports a clean new entry with defined risk. Reward-to-risk exceeds 1.5 from the planned stop and target.",
     "reason_code": "new_entry",
     "reasoning": {
       "headline": "Bought $AMZN",
-      "narrative": "AMZN screens as the top-ranked liquid candidate with bullish sentiment and a headline catalyst setup while RSI sits neutral near 50, offering a clean momentum entry. Portfolio has room under the 5-name cap and cash supports a sub-$200 notional add without forced rotation. Defined risk to 238 keeps reward:risk above 1.5 toward 262 on continuation.",
+      "narrative": "AMZN is the sole ranked candidate with a strong 92.55 rank score, bullish sentiment, and catalyst_score of 18, fitting a liquid setup. Book has room at 4 open names and cash supports a ~$200 notional add without forced rotation. RSI neutral at 50 supports a clean new entry with defined risk. Reward-to-risk exceeds 1.5 from the planned stop and target.",
       "bullets": [
-        "Rank 92.45 leader with bullish sentiment",
-        "Neutral RSI 50 leaves upside room",
-        "Notional ~$200 fits cash and size rules",
-        "R:R >1.5 with stop 238 / target 262"
+        "Rank 92.55 + bullish catalyst setup",
+        "Notional capped near $200 (0.8 sh)",
+        "R:R ~1.62 with stop 240 / tp 258",
+        "Open slots available (4/5)"
       ],
       "risk_map": {
-        "stop": 238.0,
-        "target": 262.0,
+        "stop": 240.0,
+        "target": 258.0,
         "horizon_days": 5,
-        "rr": 1.8,
+        "rr": 1.62,
         "confidence_10": 8,
         "confidence": 78
       },
-      "thesis": "AMZN screens as the top-ranked liquid candidate with bullish sentiment and a headline catalyst setup while RSI sits neutral near 50, offering a clean momentum entry. Portfolio has room under the 5-name cap and cash supports a sub-$200 notional add without forced rotation. Defined risk to 238 keeps reward:risk above 1.5 toward 262 on continuation."
+      "thesis": "AMZN is the sole ranked candidate with a strong 92.55 rank score, bullish sentiment, and catalyst_score of 18, fitting a liquid setup. Book has room at 4 open names and cash supports a ~$200 notional add without forced rotation. RSI neutral at 50 supports a clean new entry with defined risk. Reward-to-risk exceeds 1.5 from the planned stop and target."
     },
     "source": "live",
     "provider": "xai",
     "provider_model_id": "grok-4.5",
     "bullets": [
-      "Rank 92.45 leader with bullish sentiment",
-      "Neutral RSI 50 leaves upside room",
-      "Notional ~$200 fits cash and size rules",
-      "R:R >1.5 with stop 238 / target 262"
+      "Rank 92.55 + bullish catalyst setup",
+      "Notional capped near $200 (0.8 sh)",
+      "R:R ~1.62 with stop 240 / tp 258",
+      "Open slots available (4/5)"
     ],
-    "timestamp": "2026-09-29T14:32:03.544518+00:00"
+    "timestamp": "2026-09-29T14:47:15.900798+00:00"
   },
-  "stance": "Buying pressure on AMZN. AMZN screens as the top-ranked liquid candidate with bullish sentiment and a headline catalyst setup while RSI sits neutral near 50, offering a clean momentum entry. Portfolio has room under the 5-name cap and cash supports a sub-$200 notional add without forced rotation. Defined risk to 238 keeps reward:risk above 1.5 toward 262 on continuation.",
+  "stance": "Buying pressure on AMZN. AMZN is the sole ranked candidate with a strong 92.55 rank score, bullish sentiment, and catalyst_score of 18, fitting a liquid setup. Book has room at 4 open names and cash supports a ~$200 notional add without forced rotation. RSI neutral at 50 supports a clean new entry with defined risk. Reward-to-risk exceeds 1.5 from the planned stop and target.",
   "thinking": {
     "badge": "Looking to buy AMZN",
     "headline": "Buying pressure on AMZN.",
@@ -198,9 +198,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 105.44999694824219,
-        "open_pnl": -0.89,
-        "open_pnl_pct": -0.45,
+        "last": 105.49500274658203,
+        "open_pnl": -0.8,
+        "open_pnl_pct": -0.41,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -210,9 +210,9 @@
         "avg_cost": 609.82,
         "stop": 585.0,
         "target": 655.0,
-        "last": 616.8699951171875,
-        "open_pnl": 2.26,
-        "open_pnl_pct": 1.16,
+        "last": 615.7750244140625,
+        "open_pnl": 1.91,
+        "open_pnl_pct": 0.98,
         "line": "Bought near $609.82 \u00b7 Sell safety line $585.00 \u00b7 Profit target $655.00",
         "plan": "stop 585.0 or target 655.0"
       },
@@ -222,9 +222,9 @@
         "avg_cost": 386.03,
         "stop": 370.0,
         "target": 412.0,
-        "last": 381.614990234375,
-        "open_pnl": -0.6,
-        "open_pnl_pct": -1.14,
+        "last": 380.3999938964844,
+        "open_pnl": -0.76,
+        "open_pnl_pct": -1.46,
         "line": "Bought near $386.03 \u00b7 Sell safety line $370.00 \u00b7 Profit target $412.00",
         "plan": "stop 370.0 or target 412.0"
       },
@@ -234,14 +234,14 @@
         "avg_cost": 335.2,
         "stop": 325.0,
         "target": 355.0,
-        "last": 335.54998779296875,
-        "open_pnl": 0.21,
-        "open_pnl_pct": 0.1,
+        "last": 335.74969482421875,
+        "open_pnl": 0.32,
+        "open_pnl_pct": 0.16,
         "line": "Bought near $335.20 \u00b7 Sell safety line $325.00 \u00b7 Profit target $355.00",
         "plan": "stop 325.0 or target 355.0"
       }
     ],
-    "last_checked": "2026-09-29T14:40:12.995554+00:00",
+    "last_checked": "2026-09-29T14:47:24.786771+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -257,7 +257,7 @@
         "model": "grok-4.3",
         "action": "BUY",
         "symbol": "AMZN",
-        "confidence": 85,
+        "confidence": 82,
         "tone": "buy"
       },
       {
@@ -273,7 +273,7 @@
         "model": "grok-4.20-0309-non-reasoning",
         "action": "HOLD",
         "symbol": "CASH",
-        "confidence": 68,
+        "confidence": 65,
         "tone": "hold"
       },
       {
@@ -311,6 +311,83 @@
     ]
   },
   "activity": [
+    {
+      "type": "consensus",
+      "symbol": "AMZN",
+      "status": "blocked",
+      "headline": "BUY AMZN \u2014 blocked",
+      "detail": "Insufficient buying power: $196.70 < $197.50",
+      "agents": [
+        {
+          "model": "grok-4.3",
+          "action": "BUY",
+          "symbol": "AMZN",
+          "confidence": 82,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "claude-haiku-4-5",
+          "action": "BUY",
+          "symbol": "AMZN",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.20-0309-non-reasoning",
+          "action": "HOLD",
+          "symbol": "CASH",
+          "confidence": 65,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-build-0.1",
+          "action": "BUY",
+          "symbol": "AMZN",
+          "confidence": 80,
+          "source": "live",
+          "provider": "xai",
+          "tier": "junior"
+        },
+        {
+          "model": "grok-4.5",
+          "action": "BUY",
+          "symbol": "AMZN",
+          "confidence": 78,
+          "source": "live",
+          "provider": "xai",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-sonnet-5",
+          "action": "BUY",
+          "symbol": "AMZN",
+          "confidence": 72,
+          "source": "live",
+          "provider": "anthropic",
+          "tier": "senior"
+        },
+        {
+          "model": "claude-opus-5",
+          "action": "BUY",
+          "symbol": "AMZN",
+          "confidence": 90,
+          "source": "fallback",
+          "provider": null,
+          "tier": "senior"
+        }
+      ],
+      "tier": "senior_escalated",
+      "escalate_reason": "junior_nomination",
+      "stage": "entry",
+      "junior_nomination": "AMZN",
+      "timestamp": "2026-09-29T14:47:15.900798+00:00"
+    },
     {
       "type": "consensus",
       "symbol": "AMZN",
@@ -13280,15 +13357,15 @@
     {
       "symbol": "AMZN",
       "name": "AMZN",
-      "price": 246.5675048828125,
-      "volume": 5137800.0,
-      "avg_volume": 34977050.0,
-      "percent_change": 0.1696164926592298,
+      "price": 246.8699951171875,
+      "volume": 6144282.0,
+      "avg_volume": 35077698.2,
+      "percent_change": 0.2925050735552378,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 18,
-      "liquidity_score": 85.44,
-      "rank_score": 92.45,
+      "liquidity_score": 85.45,
+      "rank_score": 92.55,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): Amazon.com, Inc. $AMZN Stock Sold by Strategic Advisors LLC - MarketBeat",
       "top_headlines": [
@@ -13322,7 +13399,7 @@
           ]
         },
         {
-          "title": "Amazon.com, Inc. $AMZN Shares Newly Bought by Susquehanna Fundamental Investments LLC - MarketBeat",
+          "title": "Amazon.com, Inc. $AMZN Shares Bought by GTS Securities LLC - MarketBeat",
           "keywords": [
             "beat"
           ]
@@ -13332,15 +13409,15 @@
     {
       "symbol": "JPM",
       "name": "JPM",
-      "price": 335.7550048828125,
-      "volume": 784760.0,
-      "avg_volume": 8703416.0,
-      "percent_change": -0.2480737586270707,
+      "price": 335.3699951171875,
+      "volume": 909216.0,
+      "avg_volume": 8715861.6,
+      "percent_change": -0.36245914435270665,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 15,
       "liquidity_score": 79.4,
-      "rank_score": 79.61,
+      "rank_score": 79.7,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (catalyst, deal, record): JPMorgan Chase (JPM) Stock May Trade At A Discount Following Record Dealmaking News - simplywall.st",
       "top_headlines": [
@@ -13388,15 +13465,15 @@
     {
       "symbol": "XOM",
       "name": "XOM",
-      "price": 160.91000366210938,
-      "volume": 1230043.0,
-      "avg_volume": 14208724.3,
-      "percent_change": -0.9906476544588533,
+      "price": 160.58999633789062,
+      "volume": 1519749.0,
+      "avg_volume": 14237694.9,
+      "percent_change": -1.1875509991586635,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 14,
       "liquidity_score": 81.53,
-      "rank_score": 75.02,
+      "rank_score": 75.18,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (beat): ExxonMobil (NYSE:XOM) Stock Sold by Rep. Kevin Hern - MarketBeat",
       "top_headlines": [
@@ -13419,7 +13496,7 @@
           ]
         },
         {
-          "title": "XOM Maintained by TD Cowen -- Price Target Raised to $180 - gurufocus.com",
+          "title": "XOM Maintained by TD Cowen -- Price Target Raised to $180 - GuruFocus",
           "keywords": [
             "ai",
             "catalyst",
@@ -13439,21 +13516,21 @@
     {
       "symbol": "AMD",
       "name": "AMD",
-      "price": 615.8989868164062,
-      "volume": 6296006.0,
-      "avg_volume": 24300750.6,
-      "percent_change": 1.3208402723794403,
+      "price": 614.9600219726562,
+      "volume": 6865180.0,
+      "avg_volume": 24357668.0,
+      "percent_change": 1.1663722362380968,
       "exchange": "",
       "sentiment": "bullish",
       "catalyst_score": 12,
-      "liquidity_score": 83.86,
-      "rank_score": 69.14,
+      "liquidity_score": 83.87,
+      "rank_score": 69.01,
       "news_hits": 8,
       "catalyst": "Headline-driven setup (ai, catalyst): AMD just spent $8.2 billion to enlist the 'Godmother of AI' - Yahoo Finance",
       "top_headlines": [
         "AMD just spent $8.2 billion to enlist the 'Godmother of AI' - Yahoo Finance",
         "Stocks making the biggest moves premarket: Fair Isaac, SpaceX, AMD & more - CNBC",
-        "Nvidia vs. AMD: Which AI Chip Stock Has More Room to Run After AMD's Surge Past $1 Trillion? - The Motley Fool"
+        "AMD Expands AI Expertise With World Labs Acquisition - Investor's Business Daily"
       ],
       "matched_headlines": [
         {
@@ -13471,14 +13548,14 @@
           ]
         },
         {
-          "title": "Nvidia vs. AMD: Which AI Chip Stock Has More Room to Run After AMD's Surge Past $1 Trillion? - The Motley Fool",
+          "title": "AMD Expands AI Expertise With World Labs Acquisition - Investor's Business Daily",
           "keywords": [
             "ai",
             "catalyst"
           ]
         },
         {
-          "title": "AMD Expands AI Expertise With World Labs Acquisition - Investor's Business Daily",
+          "title": "Nvidia vs. AMD: Which AI Chip Stock Has More Room to Run After AMD's Surge Past $1 Trillion? - The Motley Fool",
           "keywords": [
             "ai",
             "catalyst"
@@ -13496,30 +13573,23 @@
     {
       "symbol": "MSFT",
       "name": "MSFT",
-      "price": 509.239990234375,
-      "volume": 3507145.0,
-      "avg_volume": 22116194.5,
-      "percent_change": 0.003925418016565983,
+      "price": 512.7899780273438,
+      "volume": 4532488.0,
+      "avg_volume": 22218728.8,
+      "percent_change": 0.7010676717494737,
       "exchange": "",
       "sentiment": "bullish",
-      "catalyst_score": 9,
-      "liquidity_score": 83.45,
-      "rank_score": 56.02,
+      "catalyst_score": 10,
+      "liquidity_score": 83.47,
+      "rank_score": 60.58,
       "news_hits": 8,
-      "catalyst": "Headline-driven setup (ai, catalyst): MSFT Stock Gains After Microsoft Grows India Cloud Footprint In Battle With Google Cloud, AWS - Stocktwits",
+      "catalyst": "Headline-driven setup (ai, catalyst, raises): Microsoft: Still Great Business, But AI Raises Serious Questions (NASDAQ:MSFT) - Seeking Alpha",
       "top_headlines": [
         "Microsoft Corporation (MSFT) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-        "MSFT Stock Gains After Microsoft Grows India Cloud Footprint In Battle With Google Cloud, AWS - Stocktwits",
-        "Microsoft: Still Great Business, But AI Raises Serious Questions (NASDAQ:MSFT) - Seeking Alpha"
+        "Microsoft: Still Great Business, But AI Raises Serious Questions (NASDAQ:MSFT) - Seeking Alpha",
+        "Should Copilot Relaunch Require Action From Microsoft (MSFT) Investors? - simplywall.st"
       ],
       "matched_headlines": [
-        {
-          "title": "MSFT Stock Gains After Microsoft Grows India Cloud Footprint In Battle With Google Cloud, AWS - Stocktwits",
-          "keywords": [
-            "ai",
-            "catalyst"
-          ]
-        },
         {
           "title": "Microsoft: Still Great Business, But AI Raises Serious Questions (NASDAQ:MSFT) - Seeking Alpha",
           "keywords": [
@@ -13537,6 +13607,13 @@
         },
         {
           "title": "Analysts Offer Insights on Technology Companies: Marvell (MRVL) and Microsoft (MSFT) - The Globe and Mail",
+          "keywords": [
+            "ai",
+            "catalyst"
+          ]
+        },
+        {
+          "title": "MSFT Stock Gains 3% \u2014 Microsoft Unveils AI Cybersecurity Model To Combat Real-Time Threats - Stocktwits",
           "keywords": [
             "ai",
             "catalyst"
@@ -13606,15 +13683,15 @@
     "candidate_signals_logged": 8,
     "fills_logged": 374,
     "closed_outcomes": 170,
-    "consensus_events": 868,
+    "consensus_events": 869,
     "note": "Paper sample is provisional until large enough for durable edge review."
   },
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1032.67,
-    "change": 32.67,
-    "change_pct": 3.27,
+    "latest_equity": 1032.36,
+    "change": 32.36,
+    "change_pct": 3.24,
     "points": [
       {
         "t": "2026-08-06T15:49:32.343883+00:00",
@@ -16443,8 +16520,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-29T14:40:15.840889+00:00",
-        "equity": 1032.67,
+        "t": "2026-09-29T14:47:27.453743+00:00",
+        "equity": 1032.36,
         "cash": 390.7,
         "event": "mark"
       }
