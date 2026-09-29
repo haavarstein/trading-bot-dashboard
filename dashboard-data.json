@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-09-28T19:51:07.102855+00:00",
+  "generated_at": "2026-09-29T13:30:08.424199+00:00",
   "mode": "SIMULATED_PAPER",
   "scanner": "alpha_radar_v2_news_ranked",
   "summary": {
-    "portfolio_value": 1037.51,
+    "portfolio_value": 1037.53,
     "starting_cash": 1000.0,
     "total_return_pct": 3.75,
-    "total_pnl": 37.51,
+    "total_pnl": 37.53,
     "realized_pnl": 34.14,
-    "open_pnl": 3.33,
-    "capital_deployed": 643.04,
+    "open_pnl": 3.35,
+    "capital_deployed": 643.06,
     "cash": 394.47,
     "closed_trades": 42,
     "win_rate_pct": 30.95,
-    "vs_spy_pct": 4.3,
-    "spy_return_pct": -0.55,
+    "vs_spy_pct": 4.13,
+    "spy_return_pct": -0.38,
     "started_at": "2026-08-06T15:49:32.343883+00:00",
-    "updated_at": "2026-09-28T19:51:10.682298+00:00"
+    "updated_at": "2026-09-29T13:30:11.083188+00:00"
   },
   "benchmark": {
     "symbol": "SPY",
-    "return_pct": -0.55,
-    "price": 765.1699829101562,
+    "return_pct": -0.38,
+    "price": 766.4500122070312,
     "start_price": 769.3900146484375
   },
   "stats": {
     "candidate_count": 8,
-    "consensus_count_today": 13,
-    "validated_count_today": 2,
-    "blocked_count_today": 11,
-    "fills_today": 2,
-    "simulated_orders_today": 2,
+    "consensus_count_today": 0,
+    "validated_count_today": 0,
+    "blocked_count_today": 0,
+    "fills_today": 0,
+    "simulated_orders_today": 0,
     "top_symbol_today": "PANW"
   },
   "holdings": [
@@ -38,10 +38,10 @@
       "symbol": "WMT",
       "qty": 1.85,
       "avg_cost": 105.93,
-      "last": 108.86000061035156,
-      "market_value": 201.39,
-      "open_pnl": 5.42,
-      "open_pnl_pct": 2.77,
+      "last": 107.55999755859375,
+      "market_value": 198.99,
+      "open_pnl": 3.02,
+      "open_pnl_pct": 1.54,
       "stop": 102.5,
       "target": 112.0,
       "thesis": "WMT screens as the top ranked liquid candidate with bullish sentiment and neutral RSI near 50, offering a clean add while portfolio has room under the 5-name cap and sufficient cash. Notional stays inside the ~$200 new-buy limit. Reward-to-risk clears 1.5x with defined levels below recent support and above near-term resistance. Catalyst score supports a tactical long despite mixed headline noise."
@@ -50,10 +50,10 @@
       "symbol": "AMD",
       "qty": 0.32,
       "avg_cost": 609.82,
-      "last": 607.5999755859375,
-      "market_value": 194.43,
-      "open_pnl": -0.71,
-      "open_pnl_pct": -0.36,
+      "last": 616.219970703125,
+      "market_value": 197.19,
+      "open_pnl": 2.05,
+      "open_pnl_pct": 1.05,
       "stop": 585.0,
       "target": 655.0,
       "thesis": "AMD ranks near the top with a fresh bullish catalyst around reported chip price increases and AI-linked strength, alongside positive sector tape. RSI is neutral leaving room for continuation. Position sized to ~$195 notional with clear invalidation below recent support and a 1.8 R:R target into the next resistance zone. Adding as a new liquid name while book still has capacity."
@@ -62,10 +62,10 @@
       "symbol": "BAC",
       "qty": 3.5,
       "avg_cost": 56.14,
-      "last": 55.505001068115234,
-      "market_value": 194.27,
-      "open_pnl": -2.22,
-      "open_pnl_pct": -1.13,
+      "last": 55.45000076293945,
+      "market_value": 194.08,
+      "open_pnl": -2.41,
+      "open_pnl_pct": -1.23,
       "stop": 53.9,
       "target": 59.9,
       "thesis": "BAC is the sole ranked liquid candidate with a bullish headline catalyst framing valuation support amid new debt deals. RSI near 50 leaves room for upside without extreme extension. Book has room under the five-name cap and cash supports a sub-$200 notional add with defined risk. Reward-to-risk meets desk minimum on a clean new_entry."
@@ -74,10 +74,10 @@
       "symbol": "PANW",
       "qty": 0.135,
       "avg_cost": 386.03,
-      "last": 392.2550048828125,
-      "market_value": 52.95,
-      "open_pnl": 0.84,
-      "open_pnl_pct": 1.61,
+      "last": 391.1400146484375,
+      "market_value": 52.8,
+      "open_pnl": 0.69,
+      "open_pnl_pct": 1.32,
       "stop": 370.0,
       "target": 412.0,
       "thesis": "PANW tops the candidate list on analyst price-target raises and a solid AI/cyber catalyst with rank_score 81.6. RSI at 50 is neutral, leaving room for continuation without being extended. Position is strictly cash-constrained to available ~$52 notional while keeping reward:risk above 1.5. Cybersecurity demand remains a durable theme versus weaker held names."
@@ -206,9 +206,9 @@
         "avg_cost": 105.93,
         "stop": 102.5,
         "target": 112.0,
-        "last": 108.86000061035156,
-        "open_pnl": 5.42,
-        "open_pnl_pct": 2.77,
+        "last": 107.55999755859375,
+        "open_pnl": 3.02,
+        "open_pnl_pct": 1.54,
         "line": "Bought near $105.93 \u00b7 Sell safety line $102.50 \u00b7 Profit target $112.00",
         "plan": "stop 102.5 or target 112.0"
       },
@@ -218,9 +218,9 @@
         "avg_cost": 609.82,
         "stop": 585.0,
         "target": 655.0,
-        "last": 607.5999755859375,
-        "open_pnl": -0.71,
-        "open_pnl_pct": -0.36,
+        "last": 616.219970703125,
+        "open_pnl": 2.05,
+        "open_pnl_pct": 1.05,
         "line": "Bought near $609.82 \u00b7 Sell safety line $585.00 \u00b7 Profit target $655.00",
         "plan": "stop 585.0 or target 655.0"
       },
@@ -230,9 +230,9 @@
         "avg_cost": 56.14,
         "stop": 53.9,
         "target": 59.9,
-        "last": 55.505001068115234,
-        "open_pnl": -2.22,
-        "open_pnl_pct": -1.13,
+        "last": 55.45000076293945,
+        "open_pnl": -2.41,
+        "open_pnl_pct": -1.23,
         "line": "Bought near $56.14 \u00b7 Sell safety line $53.90 \u00b7 Profit target $59.90",
         "plan": "stop 53.9 or target 59.9"
       },
@@ -242,14 +242,14 @@
         "avg_cost": 386.03,
         "stop": 370.0,
         "target": 412.0,
-        "last": 392.2550048828125,
-        "open_pnl": 0.84,
-        "open_pnl_pct": 1.61,
+        "last": 391.1400146484375,
+        "open_pnl": 0.69,
+        "open_pnl_pct": 1.32,
         "line": "Bought near $386.03 \u00b7 Sell safety line $370.00 \u00b7 Profit target $412.00",
         "plan": "stop 370.0 or target 412.0"
       }
     ],
-    "last_checked": "2026-09-28T19:51:07.102855+00:00",
+    "last_checked": "2026-09-29T13:30:08.424199+00:00",
     "cadence_note": "Checked about every 15 minutes while the market is open",
     "footer": "Written for normal people. Updated on each live check. Private account details are removed.",
     "action": "BUY",
@@ -318,640 +318,7 @@
       }
     ]
   },
-  "activity": [
-    {
-      "type": "consensus",
-      "symbol": "UNH",
-      "status": "blocked",
-      "headline": "BUY UNH \u2014 blocked",
-      "detail": "Insufficient buying power: $0.44 < $199.18",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "UNH",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.20-0309-non-reasoning",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 68,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "UNH",
-          "confidence": 78,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "UNH",
-          "confidence": 78,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "WMT",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-28T19:48:30.726390+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "UNH",
-      "status": "blocked",
-      "headline": "BUY UNH \u2014 blocked",
-      "detail": "Insufficient buying power: $0.44 < $199.64",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "UNH",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.20-0309-non-reasoning",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "BUY",
-          "symbol": "PANW",
-          "confidence": 82,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "UNH",
-          "confidence": 76,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "UNH",
-          "confidence": 78,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "WMT",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-28T19:33:27.548874+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "UNH",
-      "status": "blocked",
-      "headline": "BUY UNH \u2014 blocked",
-      "detail": "Insufficient buying power: $0.44 < $199.14",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "UNH",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.20-0309-non-reasoning",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "UNH",
-          "confidence": 78,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "UNH",
-          "confidence": 78,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "WMT",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-28T19:18:20.169262+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "UNH",
-      "status": "blocked",
-      "headline": "BUY UNH \u2014 blocked",
-      "detail": "Insufficient buying power: $0.44 < $199.34",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "BUY",
-          "symbol": "UNH",
-          "confidence": 75,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "UNH",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.20-0309-non-reasoning",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "UNH",
-          "confidence": 78,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "UNH",
-          "confidence": 78,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "WMT",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-28T19:05:45.832440+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "UNH",
-      "status": "blocked",
-      "headline": "BUY UNH \u2014 blocked",
-      "detail": "Insufficient buying power: $0.44 < $199.24",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "UNH",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.20-0309-non-reasoning",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "UNH",
-          "confidence": 73,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "UNH",
-          "confidence": 78,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "WMT",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-28T18:48:22.889833+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "UNH",
-      "status": "blocked",
-      "headline": "BUY UNH \u2014 blocked",
-      "detail": "Insufficient buying power: $0.44 < $198.91",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "UNH",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.20-0309-non-reasoning",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 68,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "UNH",
-          "confidence": 78,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "UNH",
-          "confidence": 78,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "WMT",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-28T18:33:15.925787+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "JPM",
-      "status": "no_consensus",
-      "headline": "BUY JPM \u2014 no consensus",
-      "detail": "Desks: BUY JPM (74%) vs BUY UNH (78%) vs HOLD WMT (80%). No 2-of-3 senior agreement",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "JPM",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.20-0309-non-reasoning",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "JPM",
-          "confidence": 74,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "UNH",
-          "confidence": 78,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "WMT",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-28T18:18:12.733533+00:00"
-    },
-    {
-      "type": "consensus",
-      "symbol": "JPM",
-      "status": "blocked",
-      "headline": "BUY JPM \u2014 blocked",
-      "detail": "Insufficient buying power: $0.44 < $199.02",
-      "agents": [
-        {
-          "model": "grok-4.3",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 60,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "claude-haiku-4-5",
-          "action": "BUY",
-          "symbol": "JPM",
-          "confidence": 72,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.20-0309-non-reasoning",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-build-0.1",
-          "action": "HOLD",
-          "symbol": "CASH",
-          "confidence": 65,
-          "source": "live",
-          "provider": "xai",
-          "tier": "junior"
-        },
-        {
-          "model": "grok-4.5",
-          "action": "BUY",
-          "symbol": "JPM",
-          "confidence": 78,
-          "source": "live",
-          "provider": "xai",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-sonnet-5",
-          "action": "BUY",
-          "symbol": "JPM",
-          "confidence": 78,
-          "source": "live",
-          "provider": "anthropic",
-          "tier": "senior"
-        },
-        {
-          "model": "claude-opus-5",
-          "action": "HOLD",
-          "symbol": "WMT",
-          "confidence": 80,
-          "source": "fallback",
-          "provider": null,
-          "tier": "senior"
-        }
-      ],
-      "tier": "senior_escalated",
-      "escalate_reason": "junior_trade_or_split",
-      "stage": "entry",
-      "junior_nomination": null,
-      "timestamp": "2026-09-28T18:03:23.648956+00:00"
-    },
-    {
-      "type": "fill",
-      "symbol": "AMZN",
-      "status": "filled_paper",
-      "headline": "SELL AMZN @ $246.27",
-      "detail": "Directive to exit AMZN is confirmed on negative headline catalyst of AGI unit job cuts and second-day drop, which weakens the prior long thesis while price sits below cost basis with open loss. Book is at max 5 names with negligible cash; closing the softest position frees capital without waiting for distant 240 stop. Reward-to-risk on the exit plan exceeds 1.5 given defined bounce invalidation versus downside continuation target. No stronger non-held candidate exists to justify holding through the cut news.",
-      "timestamp": "2026-09-28T16:18:20.491672+00:00"
-    },
-    {
-      "type": "fill",
-      "symbol": "PANW",
-      "status": "filled_paper",
-      "headline": "BUY PANW @ $386.03",
-      "detail": "PANW tops the candidate list on analyst price-target raises and a solid AI/cyber catalyst with rank_score 81.6. RSI at 50 is neutral, leaving room for continuation without being extended. Position is strictly cash-constrained to available ~$52 notional while keeping reward:risk above 1.5. Cybersecurity demand remains a durable theme versus weaker held names.",
-      "timestamp": "2026-09-28T15:48:13.059895+00:00"
-    }
-  ],
+  "activity": [],
   "recent_trades": [
     {
       "timestamp": "2026-09-28T16:18:20.491672+00:00",
@@ -13930,8 +13297,8 @@
   "equity_curve": {
     "currency": "USD",
     "start_equity": 1000.0,
-    "latest_equity": 1037.51,
-    "change": 37.51,
+    "latest_equity": 1037.53,
+    "change": 37.53,
     "change_pct": 3.75,
     "points": [
       {
@@ -16743,8 +16110,8 @@
         "event": "mark"
       },
       {
-        "t": "2026-09-28T19:51:10.682298+00:00",
-        "equity": 1037.51,
+        "t": "2026-09-29T13:30:11.083188+00:00",
+        "equity": 1037.53,
         "cash": 394.47,
         "event": "mark"
       }
